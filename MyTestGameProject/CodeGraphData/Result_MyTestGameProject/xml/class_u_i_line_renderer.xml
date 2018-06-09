@@ -1,0 +1,266 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_u_i_line_renderer" kind="class" prot="public">
+    <compoundname>UILineRenderer</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MaskableGraphic</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_u_i_line_renderer_1ade23cea5f7aca9daabffb303b49b61ba" prot="private" static="no" mutable="no">
+        <type>Texture</type>
+        <definition>Texture UILineRenderer.m_Texture</definition>
+        <argsstring></argsstring>
+        <name>m_Texture</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/UILineRenderer.cs" line="9" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/UILineRenderer.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_i_line_renderer_1aea2141b4318838a1ba18654ef926f10b" prot="private" static="no" mutable="no">
+        <type>Rect</type>
+        <definition>Rect UILineRenderer.m_UVRect</definition>
+        <argsstring></argsstring>
+        <name>m_UVRect</name>
+        <initializer>= new Rect(0f, 0f, 1f, 1f)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/UILineRenderer.cs" line="11" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/UILineRenderer.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_u_i_line_renderer_1a628490ccaac144cb95acb6533eff9bba" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float UILineRenderer.LineThickness</definition>
+        <argsstring></argsstring>
+        <name>LineThickness</name>
+        <initializer>= 2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/UILineRenderer.cs" line="13" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/UILineRenderer.cs" bodystart="13" bodyend="-1"/>
+        <referencedby refid="class_u_i_line_renderer_1a01d87571916a5ee5feb87f29c5ec5c27" compoundref="_u_i_line_renderer_8cs" startline="65" endline="156">OnPopulateMesh</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_i_line_renderer_1a5679975ea4e930242c9a9bdd18396211" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool UILineRenderer.UseMargins</definition>
+        <argsstring></argsstring>
+        <name>UseMargins</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/UILineRenderer.cs" line="14" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/UILineRenderer.cs" bodystart="14" bodyend="-1"/>
+        <referencedby refid="class_u_i_line_renderer_1a01d87571916a5ee5feb87f29c5ec5c27" compoundref="_u_i_line_renderer_8cs" startline="65" endline="156">OnPopulateMesh</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_i_line_renderer_1ae3a92b1fb20bbe527b0777b9c5ae09f9" prot="public" static="no" mutable="no">
+        <type>Vector2</type>
+        <definition>Vector2 UILineRenderer.Margin</definition>
+        <argsstring></argsstring>
+        <name>Margin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/UILineRenderer.cs" line="15" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/UILineRenderer.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_i_line_renderer_1a9d5e98290eef8efe2d6b4a1ef9401e93" prot="public" static="no" mutable="no">
+        <type>Vector2[]</type>
+        <definition>Vector2 [] UILineRenderer.Points</definition>
+        <argsstring></argsstring>
+        <name>Points</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/UILineRenderer.cs" line="16" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/UILineRenderer.cs" bodystart="16" bodyend="-1"/>
+        <referencedby refid="class_u_i_line_renderer_1a01d87571916a5ee5feb87f29c5ec5c27" compoundref="_u_i_line_renderer_8cs" startline="65" endline="156">OnPopulateMesh</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_i_line_renderer_1aec36ed88b80e510d925c2a3c27a33db6" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool UILineRenderer.relativeSize</definition>
+        <argsstring></argsstring>
+        <name>relativeSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/UILineRenderer.cs" line="17" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/UILineRenderer.cs" bodystart="17" bodyend="-1"/>
+        <referencedby refid="class_u_i_line_renderer_1a01d87571916a5ee5feb87f29c5ec5c27" compoundref="_u_i_line_renderer_8cs" startline="65" endline="156">OnPopulateMesh</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_u_i_line_renderer_1a22d976d437ceff0281500dece7f847e8" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>override Texture</type>
+        <definition>override Texture UILineRenderer.mainTexture</definition>
+        <argsstring></argsstring>
+        <name>mainTexture</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/UILineRenderer.cs" line="19" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/UILineRenderer.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_u_i_line_renderer_1af8b04ab6853e818db76981fbc891df06" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>Texture</type>
+        <definition>Texture UILineRenderer.texture</definition>
+        <argsstring></argsstring>
+        <name>texture</name>
+        <briefdescription>
+<para>Texture to be used. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/UILineRenderer.cs" line="30" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/UILineRenderer.cs" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_u_i_line_renderer_1a37a173107d8c6b164e84692251777025" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>Rect</type>
+        <definition>Rect UILineRenderer.uvRect</definition>
+        <argsstring></argsstring>
+        <name>uvRect</name>
+        <briefdescription>
+<para>UV rectangle used by the texture. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/UILineRenderer.cs" line="50" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/UILineRenderer.cs" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_u_i_line_renderer_1a01d87571916a5ee5feb87f29c5ec5c27" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void UILineRenderer.OnPopulateMesh</definition>
+        <argsstring>(VertexHelper vh)</argsstring>
+        <name>OnPopulateMesh</name>
+        <param>
+          <type>VertexHelper</type>
+          <declname>vh</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/UILineRenderer.cs" line="65" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/UILineRenderer.cs" bodystart="65" bodyend="156"/>
+        <references refid="class_u_i_line_renderer_1a628490ccaac144cb95acb6533eff9bba" compoundref="_u_i_line_renderer_8cs" startline="13">LineThickness</references>
+        <references refid="class_u_i_line_renderer_1a9d5e98290eef8efe2d6b4a1ef9401e93" compoundref="_u_i_line_renderer_8cs" startline="16">Points</references>
+        <references refid="class_u_i_line_renderer_1aec36ed88b80e510d925c2a3c27a33db6" compoundref="_u_i_line_renderer_8cs" startline="17">relativeSize</references>
+        <references refid="class_u_i_line_renderer_1a21f77556a53b03dd43c783da31e7e7ed" compoundref="_u_i_line_renderer_8cs" startline="172" endline="178">RotatePointAroundPivot</references>
+        <references refid="class_u_i_line_renderer_1aef81cc961bac0431d325e75650011e70" compoundref="_u_i_line_renderer_8cs" startline="158" endline="170">SetVbo</references>
+        <references refid="class_u_i_line_renderer_1a5679975ea4e930242c9a9bdd18396211" compoundref="_u_i_line_renderer_8cs" startline="14">UseMargins</references>
+      </memberdef>
+      <memberdef kind="function" id="class_u_i_line_renderer_1aef81cc961bac0431d325e75650011e70" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>UIVertex[]</type>
+        <definition>UIVertex [] UILineRenderer.SetVbo</definition>
+        <argsstring>(Vector2[] vertices, Vector2[] uvs)</argsstring>
+        <name>SetVbo</name>
+        <param>
+          <type>Vector2[]</type>
+          <declname>vertices</declname>
+        </param>
+        <param>
+          <type>Vector2[]</type>
+          <declname>uvs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/UILineRenderer.cs" line="158" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/UILineRenderer.cs" bodystart="158" bodyend="170"/>
+        <referencedby refid="class_u_i_line_renderer_1a01d87571916a5ee5feb87f29c5ec5c27" compoundref="_u_i_line_renderer_8cs" startline="65" endline="156">OnPopulateMesh</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_u_i_line_renderer_1a21f77556a53b03dd43c783da31e7e7ed" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Vector3</type>
+        <definition>Vector3 UILineRenderer.RotatePointAroundPivot</definition>
+        <argsstring>(Vector3 point, Vector3 pivot, Vector3 angles)</argsstring>
+        <name>RotatePointAroundPivot</name>
+        <param>
+          <type>Vector3</type>
+          <declname>point</declname>
+        </param>
+        <param>
+          <type>Vector3</type>
+          <declname>pivot</declname>
+        </param>
+        <param>
+          <type>Vector3</type>
+          <declname>angles</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/UILineRenderer.cs" line="172" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/UILineRenderer.cs" bodystart="172" bodyend="178"/>
+        <referencedby refid="class_u_i_line_renderer_1a01d87571916a5ee5feb87f29c5ec5c27" compoundref="_u_i_line_renderer_8cs" startline="65" endline="156">OnPopulateMesh</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1204">
+        <label>MaskableGraphic</label>
+      </node>
+      <node id="1203">
+        <label>UILineRenderer</label>
+        <link refid="class_u_i_line_renderer"/>
+        <childnode refid="1204" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1206">
+        <label>MaskableGraphic</label>
+      </node>
+      <node id="1205">
+        <label>UILineRenderer</label>
+        <link refid="class_u_i_line_renderer"/>
+        <childnode refid="1206" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/UILineRenderer.cs" line="7" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/UILineRenderer.cs" bodystart="6" bodyend="179"/>
+    <listofallmembers>
+      <member refid="class_u_i_line_renderer_1a628490ccaac144cb95acb6533eff9bba" prot="public" virt="non-virtual"><scope>UILineRenderer</scope><name>LineThickness</name></member>
+      <member refid="class_u_i_line_renderer_1ade23cea5f7aca9daabffb303b49b61ba" prot="private" virt="non-virtual"><scope>UILineRenderer</scope><name>m_Texture</name></member>
+      <member refid="class_u_i_line_renderer_1aea2141b4318838a1ba18654ef926f10b" prot="private" virt="non-virtual"><scope>UILineRenderer</scope><name>m_UVRect</name></member>
+      <member refid="class_u_i_line_renderer_1a22d976d437ceff0281500dece7f847e8" prot="public" virt="non-virtual"><scope>UILineRenderer</scope><name>mainTexture</name></member>
+      <member refid="class_u_i_line_renderer_1ae3a92b1fb20bbe527b0777b9c5ae09f9" prot="public" virt="non-virtual"><scope>UILineRenderer</scope><name>Margin</name></member>
+      <member refid="class_u_i_line_renderer_1a01d87571916a5ee5feb87f29c5ec5c27" prot="protected" virt="non-virtual"><scope>UILineRenderer</scope><name>OnPopulateMesh</name></member>
+      <member refid="class_u_i_line_renderer_1a9d5e98290eef8efe2d6b4a1ef9401e93" prot="public" virt="non-virtual"><scope>UILineRenderer</scope><name>Points</name></member>
+      <member refid="class_u_i_line_renderer_1aec36ed88b80e510d925c2a3c27a33db6" prot="public" virt="non-virtual"><scope>UILineRenderer</scope><name>relativeSize</name></member>
+      <member refid="class_u_i_line_renderer_1a21f77556a53b03dd43c783da31e7e7ed" prot="public" virt="non-virtual"><scope>UILineRenderer</scope><name>RotatePointAroundPivot</name></member>
+      <member refid="class_u_i_line_renderer_1aef81cc961bac0431d325e75650011e70" prot="protected" virt="non-virtual"><scope>UILineRenderer</scope><name>SetVbo</name></member>
+      <member refid="class_u_i_line_renderer_1af8b04ab6853e818db76981fbc891df06" prot="public" virt="non-virtual"><scope>UILineRenderer</scope><name>texture</name></member>
+      <member refid="class_u_i_line_renderer_1a5679975ea4e930242c9a9bdd18396211" prot="public" virt="non-virtual"><scope>UILineRenderer</scope><name>UseMargins</name></member>
+      <member refid="class_u_i_line_renderer_1a37a173107d8c6b164e84692251777025" prot="public" virt="non-virtual"><scope>UILineRenderer</scope><name>uvRect</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

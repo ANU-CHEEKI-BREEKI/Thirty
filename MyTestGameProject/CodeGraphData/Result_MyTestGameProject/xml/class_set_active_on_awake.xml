@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_set_active_on_awake" kind="class" prot="public">
+    <compoundname>SetActiveOnAwake</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_set_active_on_awake_1a1754ea113923d9f2fdaf5365775c0160" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SetActiveOnAwake.ActiveOnAwake</definition>
+        <argsstring></argsstring>
+        <name>ActiveOnAwake</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SetActiveOnAwake.cs" line="7" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SetActiveOnAwake.cs" bodystart="7" bodyend="-1"/>
+        <referencedby refid="class_set_active_on_awake_1ab6b86ac547a158e8f743fa7fb753aedd" compoundref="_set_active_on_awake_8cs" startline="9" endline="13">Awake</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_set_active_on_awake_1ab6b86ac547a158e8f743fa7fb753aedd" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SetActiveOnAwake.Awake</definition>
+        <argsstring>()</argsstring>
+        <name>Awake</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SetActiveOnAwake.cs" line="9" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SetActiveOnAwake.cs" bodystart="9" bodyend="13"/>
+        <references refid="class_set_active_on_awake_1a1754ea113923d9f2fdaf5365775c0160" compoundref="_set_active_on_awake_8cs" startline="7">ActiveOnAwake</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="841">
+        <label>SetActiveOnAwake</label>
+        <link refid="class_set_active_on_awake"/>
+        <childnode refid="842" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="842">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="843">
+        <label>SetActiveOnAwake</label>
+        <link refid="class_set_active_on_awake"/>
+        <childnode refid="844" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="844">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SetActiveOnAwake.cs" line="6" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SetActiveOnAwake.cs" bodystart="5" bodyend="14"/>
+    <listofallmembers>
+      <member refid="class_set_active_on_awake_1a1754ea113923d9f2fdaf5365775c0160" prot="private" virt="non-virtual"><scope>SetActiveOnAwake</scope><name>ActiveOnAwake</name></member>
+      <member refid="class_set_active_on_awake_1ab6b86ac547a158e8f743fa7fb753aedd" prot="private" virt="non-virtual"><scope>SetActiveOnAwake</scope><name>Awake</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

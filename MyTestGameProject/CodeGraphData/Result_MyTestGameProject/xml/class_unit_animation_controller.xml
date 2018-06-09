@@ -1,0 +1,855 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_unit_animation_controller" kind="class" prot="public">
+    <compoundname>UnitAnimationController</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="private-type">
+      <memberdef kind="enum" id="class_unit_animation_controller_1ae890d36f4eb15a0420b3888ef918f4cd" prot="private" static="no">
+        <name>EquipmentIndex</name>
+        <enumvalue id="class_unit_animation_controller_1ae890d36f4eb15a0420b3888ef918f4cdafa210a33410373b3274f91cd1f289fb1" prot="public">
+          <name>SHIELD</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unit_animation_controller_1ae890d36f4eb15a0420b3888ef918f4cda5c125644dfa6f2fe7d909b3b25f3274b" prot="public">
+          <name>HELMET</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unit_animation_controller_1ae890d36f4eb15a0420b3888ef918f4cda192633948703cf46924846d15ea7b5c1" prot="public">
+          <name>WEAPON</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unit_animation_controller_1ae890d36f4eb15a0420b3888ef918f4cda786329b34bbe53ab40a54a19cd597f2d" prot="public">
+          <name>BODY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unit_animation_controller_1ae890d36f4eb15a0420b3888ef918f4cdaa987da94b3b84ee68948993882cff6e2" prot="public">
+          <name>ARMS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unit_animation_controller_1ae890d36f4eb15a0420b3888ef918f4cda994822189b7aa270c0ef47c2b1825379" prot="public">
+          <name>LEGS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimationController.cs" line="15" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimationController.cs" bodystart="15" bodyend="15"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_unit_animation_controller_1a446589e6ec36f512dd33d65d6bfab73f" prot="private" static="no" mutable="no">
+        <type><ref refid="class_unit_outline" kindref="compound">UnitOutline</ref></type>
+        <definition>UnitOutline UnitAnimationController.underlayerOutline</definition>
+        <argsstring></argsstring>
+        <name>underlayerOutline</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimationController.cs" line="9" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimationController.cs" bodystart="9" bodyend="-1"/>
+        <referencedby refid="class_unit_animation_controller_1a7480cd3ff5939c58469fc7644208444d" compoundref="_unit_animation_controller_8cs" startline="139" endline="168">Death</referencedby>
+        <referencedby refid="class_unit_animation_controller_1a1d4a45116a2d2a596b78e3da531a6c3d" compoundref="_unit_animation_controller_8cs" startline="269" endline="276">Outline</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_unit_animation_controller_1adc47a0f96b20b7bf6761b10a1c6756c6" prot="private" static="no" mutable="no">
+        <type>new SpriteRenderer[]</type>
+        <definition>new SpriteRenderer [] UnitAnimationController.renderer</definition>
+        <argsstring></argsstring>
+        <name>renderer</name>
+        <initializer>= new SpriteRenderer[6]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimationController.cs" line="11" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimationController.cs" bodystart="11" bodyend="-1"/>
+        <referencedby refid="class_unit_animation_controller_1a7480cd3ff5939c58469fc7644208444d" compoundref="_unit_animation_controller_8cs" startline="139" endline="168">Death</referencedby>
+        <referencedby refid="class_unit_animation_controller_1aa796bbd96a56d0d968965a202d437a17" compoundref="_unit_animation_controller_8cs" startline="170" endline="267">SetAnimationStates</referencedby>
+        <referencedby refid="class_unit_animation_controller_1afdcdeded7e51377a309c11a7069ff058" compoundref="_unit_animation_controller_8cs" startline="109" endline="116">SetNewEquipment</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_unit_animation_controller_1a1ffec04d7e7b6fbee786acf73ee0a910" prot="private" static="no" mutable="no">
+        <type>new <ref refid="class_unit_animation" kindref="compound">UnitAnimation</ref>[]</type>
+        <definition>new UnitAnimation [] UnitAnimationController.animation</definition>
+        <argsstring></argsstring>
+        <name>animation</name>
+        <initializer>= new <ref refid="class_unit_animation" kindref="compound">UnitAnimation</ref>[6]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimationController.cs" line="12" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimationController.cs" bodystart="12" bodyend="-1"/>
+        <referencedby refid="class_unit_animation_controller_1a7480cd3ff5939c58469fc7644208444d" compoundref="_unit_animation_controller_8cs" startline="139" endline="168">Death</referencedby>
+        <referencedby refid="class_unit_animation_controller_1aa796bbd96a56d0d968965a202d437a17" compoundref="_unit_animation_controller_8cs" startline="170" endline="267">SetAnimationStates</referencedby>
+        <referencedby refid="class_unit_animation_controller_1afdcdeded7e51377a309c11a7069ff058" compoundref="_unit_animation_controller_8cs" startline="109" endline="116">SetNewEquipment</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_unit_animation_controller_1a7b4807416914b62c0accefcae9eac31f" prot="private" static="no" mutable="no">
+        <type><ref refid="class_sprite_outline" kindref="compound">SpriteOutline</ref>[]</type>
+        <definition>SpriteOutline [] UnitAnimationController.outline</definition>
+        <argsstring></argsstring>
+        <name>outline</name>
+        <initializer>= new <ref refid="class_sprite_outline" kindref="compound">SpriteOutline</ref>[6]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimationController.cs" line="13" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimationController.cs" bodystart="13" bodyend="-1"/>
+        <referencedby refid="class_unit_animation_controller_1a7480cd3ff5939c58469fc7644208444d" compoundref="_unit_animation_controller_8cs" startline="139" endline="168">Death</referencedby>
+        <referencedby refid="class_unit_animation_controller_1a1d4a45116a2d2a596b78e3da531a6c3d" compoundref="_unit_animation_controller_8cs" startline="269" endline="276">Outline</referencedby>
+        <referencedby refid="class_unit_animation_controller_1afdcdeded7e51377a309c11a7069ff058" compoundref="_unit_animation_controller_8cs" startline="109" endline="116">SetNewEquipment</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_unit_animation_controller_1afacae942193f4c7bced69fb5e34b33fa" prot="private" static="no" mutable="no">
+        <type><ref refid="class_squad" kindref="compound">Squad</ref></type>
+        <definition>Squad UnitAnimationController.squad</definition>
+        <argsstring></argsstring>
+        <name>squad</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimationController.cs" line="17" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimationController.cs" bodystart="17" bodyend="-1"/>
+        <referencedby refid="class_unit_animation_controller_1a0a67ded86a69eb074f83e5fdfbc76284" compoundref="_unit_animation_controller_8cs" startline="118" endline="137">OnDestroy</referencedby>
+        <referencedby refid="class_unit_animation_controller_1aa74bba18e508a2adfe1f0d3c2e283974" compoundref="_unit_animation_controller_8cs" startline="61" endline="69">Unit_AfterInitiate</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_unit_animation_controller_1aed454917339685a324b28f6dcc4fcdd3" prot="private" static="no" mutable="no">
+        <type><ref refid="class_unit" kindref="compound">Unit</ref></type>
+        <definition>Unit UnitAnimationController.unit</definition>
+        <argsstring></argsstring>
+        <name>unit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimationController.cs" line="18" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimationController.cs" bodystart="18" bodyend="-1"/>
+        <referencedby refid="class_unit_animation_controller_1a300e56f4b8d66194736fb94a31513087" compoundref="_unit_animation_controller_8cs" startline="41" endline="59">Awake</referencedby>
+        <referencedby refid="class_unit_animation_controller_1a7480cd3ff5939c58469fc7644208444d" compoundref="_unit_animation_controller_8cs" startline="139" endline="168">Death</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_unit_animation_controller_1a0869e507cf4416352cbf401a8f47098c" prot="private" static="no" mutable="no">
+        <type><ref refid="class_formation_stats_1ab336466e6a234574db24f2ec914e1dd4" kindref="member">FormationStats.Formations</ref></type>
+        <definition>FormationStats.Formations UnitAnimationController.formation</definition>
+        <argsstring></argsstring>
+        <name>formation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimationController.cs" line="20" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimationController.cs" bodystart="20" bodyend="-1"/>
+        <referencedby refid="class_unit_animation_controller_1aa796bbd96a56d0d968965a202d437a17" compoundref="_unit_animation_controller_8cs" startline="170" endline="267">SetAnimationStates</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_unit_animation_controller_1a05b9b110859949e4a7041145ee45020d" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool UnitAnimationController.hit</definition>
+        <argsstring></argsstring>
+        <name>hit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimationController.cs" line="21" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimationController.cs" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unit_animation_controller_1a533827806954007517b791aab2ebd88c" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool UnitAnimationController.run</definition>
+        <argsstring></argsstring>
+        <name>run</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimationController.cs" line="22" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimationController.cs" bodystart="22" bodyend="-1"/>
+        <referencedby refid="class_unit_animation_controller_1aa796bbd96a56d0d968965a202d437a17" compoundref="_unit_animation_controller_8cs" startline="170" endline="267">SetAnimationStates</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_unit_animation_controller_1a45cafb28c092685976a09a3f3d60c709" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool UnitAnimationController.inFight</definition>
+        <argsstring></argsstring>
+        <name>inFight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimationController.cs" line="23" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimationController.cs" bodystart="23" bodyend="-1"/>
+        <referencedby refid="class_unit_animation_controller_1aa796bbd96a56d0d968965a202d437a17" compoundref="_unit_animation_controller_8cs" startline="170" endline="267">SetAnimationStates</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_unit_animation_controller_1af92685a21dc04e61e1befd899a8ad310" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_formation_stats_1ab336466e6a234574db24f2ec914e1dd4" kindref="member">FormationStats.Formations</ref></type>
+        <definition>FormationStats.Formations UnitAnimationController.Formation</definition>
+        <argsstring></argsstring>
+        <name>Formation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimationController.cs" line="25" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimationController.cs" bodystart="26" bodyend="-1"/>
+        <referencedby refid="class_unit_animation_controller_1ad26c3d034e8dc87c7b0138d7f7bb55a1" compoundref="_unit_animation_controller_8cs" startline="71" endline="74">Squad_OnFormationChanged</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_unit_animation_controller_1a61c8f8d0c2edbb7f8b1e554dd1fec687" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>bool</type>
+        <definition>bool UnitAnimationController.Run</definition>
+        <argsstring></argsstring>
+        <name>Run</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimationController.cs" line="30" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimationController.cs" bodystart="31" bodyend="-1"/>
+        <referencedby refid="class_unit_animation_controller_1a9c1d68771dabf9ea5f85c85a915e8a75" compoundref="_unit_animation_controller_8cs" startline="80" endline="83">Unit_OnRunValueChanged</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_unit_animation_controller_1a7042aed379fcbab8e77b58fb637621b9" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>bool</type>
+        <definition>bool UnitAnimationController.InFight</definition>
+        <argsstring></argsstring>
+        <name>InFight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimationController.cs" line="35" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimationController.cs" bodystart="36" bodyend="-1"/>
+        <referencedby refid="class_unit_animation_controller_1ab28a1646647dfc0fec5cc7a224f69618" compoundref="_unit_animation_controller_8cs" startline="75" endline="78">Squad_OnInFightFlagChanged</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_unit_animation_controller_1a300e56f4b8d66194736fb94a31513087" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnitAnimationController.Awake</definition>
+        <argsstring>()</argsstring>
+        <name>Awake</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimationController.cs" line="41" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimationController.cs" bodystart="41" bodyend="59"/>
+        <references refid="class_unit_1a763073471f02015e11f355ed655dc571" compoundref="_unit_8cs" startline="25">Unit.Arms</references>
+        <references refid="class_unit_animation_controller_1a7480cd3ff5939c58469fc7644208444d" compoundref="_unit_animation_controller_8cs" startline="139" endline="168">Death</references>
+        <references refid="class_unit_1a259a436f935f4d34bebd348139262181" compoundref="_unit_8cs" startline="33">Unit.Legs</references>
+        <references refid="class_unit_animation_controller_1aed454917339685a324b28f6dcc4fcdd3" compoundref="_unit_animation_controller_8cs" startline="18">unit</references>
+        <references refid="class_unit_animation_controller_1aa74bba18e508a2adfe1f0d3c2e283974" compoundref="_unit_animation_controller_8cs" startline="61" endline="69">Unit_AfterInitiate</references>
+        <references refid="class_unit_animation_controller_1ac7e8a92ede8555fe93aca973cb917ab2" compoundref="_unit_animation_controller_8cs" startline="104" endline="107">Unit_OnArmsChanged</references>
+        <references refid="class_unit_animation_controller_1ae204dec63649f91793269f8606edb169" compoundref="_unit_animation_controller_8cs" startline="100" endline="103">Unit_OnBodyChanged</references>
+        <references refid="class_unit_animation_controller_1a725c13559bdca2daf200b643d5526181" compoundref="_unit_animation_controller_8cs" startline="96" endline="99">Unit_OnHelmetChanged</references>
+        <references refid="class_unit_animation_controller_1ae2f621174423cb095fe0b921d1b4cb06" compoundref="_unit_animation_controller_8cs" startline="92" endline="95">Unit_OnLegsChanged</references>
+        <references refid="class_unit_animation_controller_1a9c1d68771dabf9ea5f85c85a915e8a75" compoundref="_unit_animation_controller_8cs" startline="80" endline="83">Unit_OnRunValueChanged</references>
+        <references refid="class_unit_animation_controller_1ad30606cde36255c6e46cbcc160b83d24" compoundref="_unit_animation_controller_8cs" startline="88" endline="91">Unit_OnShieldChanged</references>
+        <references refid="class_unit_animation_controller_1a5a73e3cc719a639bacfc6dd072a909bd" compoundref="_unit_animation_controller_8cs" startline="84" endline="87">Unit_OnWeaponChanged</references>
+      </memberdef>
+      <memberdef kind="function" id="class_unit_animation_controller_1aa74bba18e508a2adfe1f0d3c2e283974" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnitAnimationController.Unit_AfterInitiate</definition>
+        <argsstring>()</argsstring>
+        <name>Unit_AfterInitiate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimationController.cs" line="61" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimationController.cs" bodystart="61" bodyend="69"/>
+        <references refid="class_unit_animation_controller_1afacae942193f4c7bced69fb5e34b33fa" compoundref="_unit_animation_controller_8cs" startline="17">squad</references>
+        <references refid="class_unit_animation_controller_1ad26c3d034e8dc87c7b0138d7f7bb55a1" compoundref="_unit_animation_controller_8cs" startline="71" endline="74">Squad_OnFormationChanged</references>
+        <references refid="class_unit_animation_controller_1ab28a1646647dfc0fec5cc7a224f69618" compoundref="_unit_animation_controller_8cs" startline="75" endline="78">Squad_OnInFightFlagChanged</references>
+        <referencedby refid="class_unit_animation_controller_1a300e56f4b8d66194736fb94a31513087" compoundref="_unit_animation_controller_8cs" startline="41" endline="59">Awake</referencedby>
+        <referencedby refid="class_unit_animation_controller_1a0a67ded86a69eb074f83e5fdfbc76284" compoundref="_unit_animation_controller_8cs" startline="118" endline="137">OnDestroy</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_unit_animation_controller_1ad26c3d034e8dc87c7b0138d7f7bb55a1" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnitAnimationController.Squad_OnFormationChanged</definition>
+        <argsstring>(FormationStats.Formations value)</argsstring>
+        <name>Squad_OnFormationChanged</name>
+        <param>
+          <type><ref refid="class_formation_stats_1ab336466e6a234574db24f2ec914e1dd4" kindref="member">FormationStats.Formations</ref></type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimationController.cs" line="71" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimationController.cs" bodystart="71" bodyend="74"/>
+        <references refid="class_unit_animation_controller_1af92685a21dc04e61e1befd899a8ad310" compoundref="_unit_animation_controller_8cs" startline="26">Formation</references>
+        <referencedby refid="class_unit_animation_controller_1a0a67ded86a69eb074f83e5fdfbc76284" compoundref="_unit_animation_controller_8cs" startline="118" endline="137">OnDestroy</referencedby>
+        <referencedby refid="class_unit_animation_controller_1aa74bba18e508a2adfe1f0d3c2e283974" compoundref="_unit_animation_controller_8cs" startline="61" endline="69">Unit_AfterInitiate</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_unit_animation_controller_1ab28a1646647dfc0fec5cc7a224f69618" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnitAnimationController.Squad_OnInFightFlagChanged</definition>
+        <argsstring>(bool value)</argsstring>
+        <name>Squad_OnInFightFlagChanged</name>
+        <param>
+          <type>bool</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimationController.cs" line="75" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimationController.cs" bodystart="75" bodyend="78"/>
+        <references refid="class_unit_animation_controller_1a7042aed379fcbab8e77b58fb637621b9" compoundref="_unit_animation_controller_8cs" startline="36">InFight</references>
+        <referencedby refid="class_unit_animation_controller_1a0a67ded86a69eb074f83e5fdfbc76284" compoundref="_unit_animation_controller_8cs" startline="118" endline="137">OnDestroy</referencedby>
+        <referencedby refid="class_unit_animation_controller_1aa74bba18e508a2adfe1f0d3c2e283974" compoundref="_unit_animation_controller_8cs" startline="61" endline="69">Unit_AfterInitiate</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_unit_animation_controller_1a9c1d68771dabf9ea5f85c85a915e8a75" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnitAnimationController.Unit_OnRunValueChanged</definition>
+        <argsstring>(bool value)</argsstring>
+        <name>Unit_OnRunValueChanged</name>
+        <param>
+          <type>bool</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimationController.cs" line="80" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimationController.cs" bodystart="80" bodyend="83"/>
+        <references refid="class_unit_animation_controller_1a61c8f8d0c2edbb7f8b1e554dd1fec687" compoundref="_unit_animation_controller_8cs" startline="31">Run</references>
+        <referencedby refid="class_unit_animation_controller_1a300e56f4b8d66194736fb94a31513087" compoundref="_unit_animation_controller_8cs" startline="41" endline="59">Awake</referencedby>
+        <referencedby refid="class_unit_animation_controller_1a0a67ded86a69eb074f83e5fdfbc76284" compoundref="_unit_animation_controller_8cs" startline="118" endline="137">OnDestroy</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_unit_animation_controller_1a5a73e3cc719a639bacfc6dd072a909bd" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnitAnimationController.Unit_OnWeaponChanged</definition>
+        <argsstring>(GameObject obj)</argsstring>
+        <name>Unit_OnWeaponChanged</name>
+        <param>
+          <type>GameObject</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimationController.cs" line="84" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimationController.cs" bodystart="84" bodyend="87"/>
+        <references refid="class_unit_animation_controller_1afdcdeded7e51377a309c11a7069ff058" compoundref="_unit_animation_controller_8cs" startline="109" endline="116">SetNewEquipment</references>
+        <referencedby refid="class_unit_animation_controller_1a300e56f4b8d66194736fb94a31513087" compoundref="_unit_animation_controller_8cs" startline="41" endline="59">Awake</referencedby>
+        <referencedby refid="class_unit_animation_controller_1a0a67ded86a69eb074f83e5fdfbc76284" compoundref="_unit_animation_controller_8cs" startline="118" endline="137">OnDestroy</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_unit_animation_controller_1ad30606cde36255c6e46cbcc160b83d24" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnitAnimationController.Unit_OnShieldChanged</definition>
+        <argsstring>(GameObject obj)</argsstring>
+        <name>Unit_OnShieldChanged</name>
+        <param>
+          <type>GameObject</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimationController.cs" line="88" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimationController.cs" bodystart="88" bodyend="91"/>
+        <references refid="class_unit_animation_controller_1afdcdeded7e51377a309c11a7069ff058" compoundref="_unit_animation_controller_8cs" startline="109" endline="116">SetNewEquipment</references>
+        <referencedby refid="class_unit_animation_controller_1a300e56f4b8d66194736fb94a31513087" compoundref="_unit_animation_controller_8cs" startline="41" endline="59">Awake</referencedby>
+        <referencedby refid="class_unit_animation_controller_1a0a67ded86a69eb074f83e5fdfbc76284" compoundref="_unit_animation_controller_8cs" startline="118" endline="137">OnDestroy</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_unit_animation_controller_1ae2f621174423cb095fe0b921d1b4cb06" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnitAnimationController.Unit_OnLegsChanged</definition>
+        <argsstring>(GameObject obj)</argsstring>
+        <name>Unit_OnLegsChanged</name>
+        <param>
+          <type>GameObject</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimationController.cs" line="92" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimationController.cs" bodystart="92" bodyend="95"/>
+        <references refid="class_unit_animation_controller_1afdcdeded7e51377a309c11a7069ff058" compoundref="_unit_animation_controller_8cs" startline="109" endline="116">SetNewEquipment</references>
+        <referencedby refid="class_unit_animation_controller_1a300e56f4b8d66194736fb94a31513087" compoundref="_unit_animation_controller_8cs" startline="41" endline="59">Awake</referencedby>
+        <referencedby refid="class_unit_animation_controller_1a0a67ded86a69eb074f83e5fdfbc76284" compoundref="_unit_animation_controller_8cs" startline="118" endline="137">OnDestroy</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_unit_animation_controller_1a725c13559bdca2daf200b643d5526181" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnitAnimationController.Unit_OnHelmetChanged</definition>
+        <argsstring>(GameObject obj)</argsstring>
+        <name>Unit_OnHelmetChanged</name>
+        <param>
+          <type>GameObject</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimationController.cs" line="96" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimationController.cs" bodystart="96" bodyend="99"/>
+        <references refid="class_unit_animation_controller_1afdcdeded7e51377a309c11a7069ff058" compoundref="_unit_animation_controller_8cs" startline="109" endline="116">SetNewEquipment</references>
+        <referencedby refid="class_unit_animation_controller_1a300e56f4b8d66194736fb94a31513087" compoundref="_unit_animation_controller_8cs" startline="41" endline="59">Awake</referencedby>
+        <referencedby refid="class_unit_animation_controller_1a0a67ded86a69eb074f83e5fdfbc76284" compoundref="_unit_animation_controller_8cs" startline="118" endline="137">OnDestroy</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_unit_animation_controller_1ae204dec63649f91793269f8606edb169" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnitAnimationController.Unit_OnBodyChanged</definition>
+        <argsstring>(GameObject obj)</argsstring>
+        <name>Unit_OnBodyChanged</name>
+        <param>
+          <type>GameObject</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimationController.cs" line="100" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimationController.cs" bodystart="100" bodyend="103"/>
+        <references refid="class_unit_animation_controller_1afdcdeded7e51377a309c11a7069ff058" compoundref="_unit_animation_controller_8cs" startline="109" endline="116">SetNewEquipment</references>
+        <referencedby refid="class_unit_animation_controller_1a300e56f4b8d66194736fb94a31513087" compoundref="_unit_animation_controller_8cs" startline="41" endline="59">Awake</referencedby>
+        <referencedby refid="class_unit_animation_controller_1a0a67ded86a69eb074f83e5fdfbc76284" compoundref="_unit_animation_controller_8cs" startline="118" endline="137">OnDestroy</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_unit_animation_controller_1ac7e8a92ede8555fe93aca973cb917ab2" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnitAnimationController.Unit_OnArmsChanged</definition>
+        <argsstring>(GameObject obj)</argsstring>
+        <name>Unit_OnArmsChanged</name>
+        <param>
+          <type>GameObject</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimationController.cs" line="104" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimationController.cs" bodystart="104" bodyend="107"/>
+        <references refid="class_unit_animation_controller_1afdcdeded7e51377a309c11a7069ff058" compoundref="_unit_animation_controller_8cs" startline="109" endline="116">SetNewEquipment</references>
+        <referencedby refid="class_unit_animation_controller_1a300e56f4b8d66194736fb94a31513087" compoundref="_unit_animation_controller_8cs" startline="41" endline="59">Awake</referencedby>
+        <referencedby refid="class_unit_animation_controller_1a0a67ded86a69eb074f83e5fdfbc76284" compoundref="_unit_animation_controller_8cs" startline="118" endline="137">OnDestroy</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_unit_animation_controller_1afdcdeded7e51377a309c11a7069ff058" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnitAnimationController.SetNewEquipment</definition>
+        <argsstring>(EquipmentIndex index, GameObject equipment)</argsstring>
+        <name>SetNewEquipment</name>
+        <param>
+          <type><ref refid="class_unit_animation_controller_1ae890d36f4eb15a0420b3888ef918f4cd" kindref="member">EquipmentIndex</ref></type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>GameObject</type>
+          <declname>equipment</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimationController.cs" line="109" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimationController.cs" bodystart="109" bodyend="116"/>
+        <references refid="class_unit_animation_controller_1a1ffec04d7e7b6fbee786acf73ee0a910" compoundref="_unit_animation_controller_8cs" startline="12">animation</references>
+        <references refid="class_unit_animation_controller_1a7b4807416914b62c0accefcae9eac31f" compoundref="_unit_animation_controller_8cs" startline="13">outline</references>
+        <references refid="class_unit_animation_controller_1adc47a0f96b20b7bf6761b10a1c6756c6" compoundref="_unit_animation_controller_8cs" startline="11">renderer</references>
+        <references refid="class_unit_animation_controller_1aa796bbd96a56d0d968965a202d437a17" compoundref="_unit_animation_controller_8cs" startline="170" endline="267">SetAnimationStates</references>
+        <referencedby refid="class_unit_animation_controller_1ac7e8a92ede8555fe93aca973cb917ab2" compoundref="_unit_animation_controller_8cs" startline="104" endline="107">Unit_OnArmsChanged</referencedby>
+        <referencedby refid="class_unit_animation_controller_1ae204dec63649f91793269f8606edb169" compoundref="_unit_animation_controller_8cs" startline="100" endline="103">Unit_OnBodyChanged</referencedby>
+        <referencedby refid="class_unit_animation_controller_1a725c13559bdca2daf200b643d5526181" compoundref="_unit_animation_controller_8cs" startline="96" endline="99">Unit_OnHelmetChanged</referencedby>
+        <referencedby refid="class_unit_animation_controller_1ae2f621174423cb095fe0b921d1b4cb06" compoundref="_unit_animation_controller_8cs" startline="92" endline="95">Unit_OnLegsChanged</referencedby>
+        <referencedby refid="class_unit_animation_controller_1ad30606cde36255c6e46cbcc160b83d24" compoundref="_unit_animation_controller_8cs" startline="88" endline="91">Unit_OnShieldChanged</referencedby>
+        <referencedby refid="class_unit_animation_controller_1a5a73e3cc719a639bacfc6dd072a909bd" compoundref="_unit_animation_controller_8cs" startline="84" endline="87">Unit_OnWeaponChanged</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_unit_animation_controller_1a0a67ded86a69eb074f83e5fdfbc76284" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnitAnimationController.OnDestroy</definition>
+        <argsstring>()</argsstring>
+        <name>OnDestroy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimationController.cs" line="118" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimationController.cs" bodystart="118" bodyend="137"/>
+        <references refid="class_unit_animation_controller_1a7480cd3ff5939c58469fc7644208444d" compoundref="_unit_animation_controller_8cs" startline="139" endline="168">Death</references>
+        <references refid="class_unit_animation_controller_1afacae942193f4c7bced69fb5e34b33fa" compoundref="_unit_animation_controller_8cs" startline="17">squad</references>
+        <references refid="class_unit_animation_controller_1ad26c3d034e8dc87c7b0138d7f7bb55a1" compoundref="_unit_animation_controller_8cs" startline="71" endline="74">Squad_OnFormationChanged</references>
+        <references refid="class_unit_animation_controller_1ab28a1646647dfc0fec5cc7a224f69618" compoundref="_unit_animation_controller_8cs" startline="75" endline="78">Squad_OnInFightFlagChanged</references>
+        <references refid="class_unit_animation_controller_1aa74bba18e508a2adfe1f0d3c2e283974" compoundref="_unit_animation_controller_8cs" startline="61" endline="69">Unit_AfterInitiate</references>
+        <references refid="class_unit_animation_controller_1ac7e8a92ede8555fe93aca973cb917ab2" compoundref="_unit_animation_controller_8cs" startline="104" endline="107">Unit_OnArmsChanged</references>
+        <references refid="class_unit_animation_controller_1ae204dec63649f91793269f8606edb169" compoundref="_unit_animation_controller_8cs" startline="100" endline="103">Unit_OnBodyChanged</references>
+        <references refid="class_unit_animation_controller_1a725c13559bdca2daf200b643d5526181" compoundref="_unit_animation_controller_8cs" startline="96" endline="99">Unit_OnHelmetChanged</references>
+        <references refid="class_unit_animation_controller_1ae2f621174423cb095fe0b921d1b4cb06" compoundref="_unit_animation_controller_8cs" startline="92" endline="95">Unit_OnLegsChanged</references>
+        <references refid="class_unit_animation_controller_1a9c1d68771dabf9ea5f85c85a915e8a75" compoundref="_unit_animation_controller_8cs" startline="80" endline="83">Unit_OnRunValueChanged</references>
+        <references refid="class_unit_animation_controller_1ad30606cde36255c6e46cbcc160b83d24" compoundref="_unit_animation_controller_8cs" startline="88" endline="91">Unit_OnShieldChanged</references>
+        <references refid="class_unit_animation_controller_1a5a73e3cc719a639bacfc6dd072a909bd" compoundref="_unit_animation_controller_8cs" startline="84" endline="87">Unit_OnWeaponChanged</references>
+      </memberdef>
+      <memberdef kind="function" id="class_unit_animation_controller_1a7480cd3ff5939c58469fc7644208444d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnitAnimationController.Death</definition>
+        <argsstring>()</argsstring>
+        <name>Death</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimationController.cs" line="139" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimationController.cs" bodystart="139" bodyend="168"/>
+        <references refid="class_unit_animation_controller_1a1ffec04d7e7b6fbee786acf73ee0a910" compoundref="_unit_animation_controller_8cs" startline="12">animation</references>
+        <references refid="class_unit_animation_controller_1a7b4807416914b62c0accefcae9eac31f" compoundref="_unit_animation_controller_8cs" startline="13">outline</references>
+        <references refid="class_unit_animation_controller_1a1d4a45116a2d2a596b78e3da531a6c3d" compoundref="_unit_animation_controller_8cs" startline="269" endline="276">Outline</references>
+        <references refid="class_unit_animation_controller_1adc47a0f96b20b7bf6761b10a1c6756c6" compoundref="_unit_animation_controller_8cs" startline="11">renderer</references>
+        <references refid="class_unit_1a8b7a9c5d8a4bee4ef8f040e92f0b34fd" compoundref="_unit_8cs" startline="20">Unit.Shadow</references>
+        <references refid="class_unit_animation_controller_1a446589e6ec36f512dd33d65d6bfab73f" compoundref="_unit_animation_controller_8cs" startline="9">underlayerOutline</references>
+        <references refid="class_unit_animation_controller_1aed454917339685a324b28f6dcc4fcdd3" compoundref="_unit_animation_controller_8cs" startline="18">unit</references>
+        <referencedby refid="class_unit_animation_controller_1a300e56f4b8d66194736fb94a31513087" compoundref="_unit_animation_controller_8cs" startline="41" endline="59">Awake</referencedby>
+        <referencedby refid="class_unit_animation_controller_1a0a67ded86a69eb074f83e5fdfbc76284" compoundref="_unit_animation_controller_8cs" startline="118" endline="137">OnDestroy</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_unit_animation_controller_1aa796bbd96a56d0d968965a202d437a17" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnitAnimationController.SetAnimationStates</definition>
+        <argsstring>()</argsstring>
+        <name>SetAnimationStates</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimationController.cs" line="170" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimationController.cs" bodystart="170" bodyend="267"/>
+        <references refid="class_unit_animation_controller_1a1ffec04d7e7b6fbee786acf73ee0a910" compoundref="_unit_animation_controller_8cs" startline="12">animation</references>
+        <references refid="class_unit_animation_controller_1a0869e507cf4416352cbf401a8f47098c" compoundref="_unit_animation_controller_8cs" startline="20">formation</references>
+        <references refid="class_unit_animation_controller_1a45cafb28c092685976a09a3f3d60c709" compoundref="_unit_animation_controller_8cs" startline="23">inFight</references>
+        <references refid="class_unit_animation_controller_1a1d4a45116a2d2a596b78e3da531a6c3d" compoundref="_unit_animation_controller_8cs" startline="269" endline="276">Outline</references>
+        <references refid="class_unit_animation_controller_1adc47a0f96b20b7bf6761b10a1c6756c6" compoundref="_unit_animation_controller_8cs" startline="11">renderer</references>
+        <references refid="class_unit_animation_controller_1a533827806954007517b791aab2ebd88c" compoundref="_unit_animation_controller_8cs" startline="22">run</references>
+        <referencedby refid="class_unit_animation_controller_1afdcdeded7e51377a309c11a7069ff058" compoundref="_unit_animation_controller_8cs" startline="109" endline="116">SetNewEquipment</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_unit_animation_controller_1a1d4a45116a2d2a596b78e3da531a6c3d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnitAnimationController.Outline</definition>
+        <argsstring>(int itemIndex)</argsstring>
+        <name>Outline</name>
+        <param>
+          <type>int</type>
+          <declname>itemIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimationController.cs" line="269" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimationController.cs" bodystart="269" bodyend="276"/>
+        <references refid="class_unit_animation_controller_1a7b4807416914b62c0accefcae9eac31f" compoundref="_unit_animation_controller_8cs" startline="13">outline</references>
+        <references refid="class_unit_animation_controller_1a446589e6ec36f512dd33d65d6bfab73f" compoundref="_unit_animation_controller_8cs" startline="9">underlayerOutline</references>
+        <referencedby refid="class_unit_animation_controller_1a7480cd3ff5939c58469fc7644208444d" compoundref="_unit_animation_controller_8cs" startline="139" endline="168">Death</referencedby>
+        <referencedby refid="class_unit_animation_controller_1aa796bbd96a56d0d968965a202d437a17" compoundref="_unit_animation_controller_8cs" startline="170" endline="267">SetAnimationStates</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1230">
+        <label>UnitAnimationController</label>
+        <link refid="class_unit_animation_controller"/>
+        <childnode refid="1231" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1231">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1236">
+        <label>Squad</label>
+        <link refid="class_squad"/>
+        <childnode refid="1233" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1234" relation="usage">
+          <edgelabel>currentFormationModifyers</edgelabel>
+          <edgelabel>formation</edgelabel>
+        </childnode>
+        <childnode refid="1235" relation="usage">
+          <edgelabel>unitOriginal</edgelabel>
+        </childnode>
+        <childnode refid="1236" relation="usage">
+          <edgelabel>playerSquadInstance</edgelabel>
+        </childnode>
+        <childnode refid="1237" relation="usage">
+          <edgelabel>inventory</edgelabel>
+        </childnode>
+        <childnode refid="1248" relation="usage">
+          <edgelabel>unitStats</edgelabel>
+        </childnode>
+      </node>
+      <node id="1232">
+        <label>UnitAnimationController</label>
+        <link refid="class_unit_animation_controller"/>
+        <childnode refid="1233" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1234" relation="usage">
+          <edgelabel>formation</edgelabel>
+        </childnode>
+        <childnode refid="1235" relation="usage">
+          <edgelabel>unit</edgelabel>
+        </childnode>
+        <childnode refid="1236" relation="usage">
+          <edgelabel>squad</edgelabel>
+        </childnode>
+        <childnode refid="1250" relation="usage">
+          <edgelabel>outline</edgelabel>
+        </childnode>
+        <childnode refid="1251" relation="usage">
+          <edgelabel>animation</edgelabel>
+        </childnode>
+        <childnode refid="1252" relation="usage">
+          <edgelabel>underlayerOutline</edgelabel>
+        </childnode>
+      </node>
+      <node id="1244">
+        <label>Equipment</label>
+        <link refid="class_equipment"/>
+        <childnode refid="1242" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1245" relation="usage">
+          <edgelabel>stats</edgelabel>
+        </childnode>
+      </node>
+      <node id="1249">
+        <label>UnitPosition</label>
+        <link refid="class_unit_position"/>
+        <childnode refid="1233" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1243">
+        <label>Item.MainProperties</label>
+        <link refid="struct_item_1_1_main_properties"/>
+      </node>
+      <node id="1246">
+        <label>Damage</label>
+        <link refid="struct_damage"/>
+      </node>
+      <node id="1240">
+        <label>IDescriptionable</label>
+        <link refid="interface_i_descriptionable"/>
+      </node>
+      <node id="1251">
+        <label>UnitAnimation</label>
+        <link refid="class_unit_animation"/>
+        <childnode refid="1233" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1242">
+        <label>Item</label>
+        <link refid="class_item"/>
+        <childnode refid="1233" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1243" relation="usage">
+          <edgelabel>mainProperties</edgelabel>
+        </childnode>
+      </node>
+      <node id="1238">
+        <label>SkillStack</label>
+        <link refid="class_skill_stack"/>
+        <childnode refid="1239" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1240" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1241" relation="usage">
+          <edgelabel>skill</edgelabel>
+        </childnode>
+      </node>
+      <node id="1245">
+        <label>EquipmentStats</label>
+        <link refid="struct_equipment_stats"/>
+        <childnode refid="1240" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1246" relation="usage">
+          <edgelabel>damage</edgelabel>
+        </childnode>
+      </node>
+      <node id="1239">
+        <label>AStack</label>
+        <link refid="class_a_stack"/>
+      </node>
+      <node id="1248">
+        <label>UnitStats</label>
+        <link refid="struct_unit_stats"/>
+        <childnode refid="1246" relation="usage">
+          <edgelabel>damage</edgelabel>
+        </childnode>
+      </node>
+      <node id="1233">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1235">
+        <label>Unit</label>
+        <link refid="class_unit"/>
+        <childnode refid="1233" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1235" relation="usage">
+          <edgelabel>target</edgelabel>
+        </childnode>
+        <childnode refid="1236" relation="usage">
+          <edgelabel>squad</edgelabel>
+        </childnode>
+        <childnode refid="1244" relation="usage">
+          <edgelabel>body</edgelabel>
+          <edgelabel>shield</edgelabel>
+          <edgelabel>weapon</edgelabel>
+          <edgelabel>helmet</edgelabel>
+        </childnode>
+        <childnode refid="1249" relation="usage">
+          <edgelabel>TargetMovePositionObject</edgelabel>
+          <edgelabel>unitPosOriginal</edgelabel>
+        </childnode>
+        <childnode refid="1248" relation="usage">
+          <edgelabel>stats</edgelabel>
+        </childnode>
+      </node>
+      <node id="1252">
+        <label>UnitOutline</label>
+        <link refid="class_unit_outline"/>
+        <childnode refid="1233" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1241">
+        <label>Skill</label>
+        <link refid="class_skill"/>
+        <childnode refid="1242" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1240" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1247">
+        <label>EquipmentStack</label>
+        <link refid="class_equipment_stack"/>
+        <childnode refid="1239" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1242" relation="usage">
+          <edgelabel>equipmentMainProperties</edgelabel>
+        </childnode>
+        <childnode refid="1245" relation="usage">
+          <edgelabel>equipmentStats</edgelabel>
+        </childnode>
+      </node>
+      <node id="1234">
+        <label>FormationStats</label>
+        <link refid="class_formation_stats"/>
+      </node>
+      <node id="1250">
+        <label>SpriteOutline</label>
+        <link refid="class_sprite_outline"/>
+        <childnode refid="1233" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1237">
+        <label>Inventory</label>
+        <link refid="class_inventory"/>
+        <childnode refid="1238" relation="usage">
+          <edgelabel>firstSkill</edgelabel>
+          <edgelabel>secondSkill</edgelabel>
+        </childnode>
+        <childnode refid="1244" relation="usage">
+          <edgelabel>body</edgelabel>
+          <edgelabel>shieldNone</edgelabel>
+          <edgelabel>helmetNone</edgelabel>
+          <edgelabel>shield</edgelabel>
+          <edgelabel>weapon</edgelabel>
+          <edgelabel>helmet</edgelabel>
+          <edgelabel>bodyNone</edgelabel>
+        </childnode>
+        <childnode refid="1247" relation="usage">
+          <edgelabel>inventory</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimationController.cs" line="8" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimationController.cs" bodystart="7" bodyend="278"/>
+    <listofallmembers>
+      <member refid="class_unit_animation_controller_1a1ffec04d7e7b6fbee786acf73ee0a910" prot="private" virt="non-virtual"><scope>UnitAnimationController</scope><name>animation</name></member>
+      <member refid="class_unit_animation_controller_1a300e56f4b8d66194736fb94a31513087" prot="private" virt="non-virtual"><scope>UnitAnimationController</scope><name>Awake</name></member>
+      <member refid="class_unit_animation_controller_1a7480cd3ff5939c58469fc7644208444d" prot="private" virt="non-virtual"><scope>UnitAnimationController</scope><name>Death</name></member>
+      <member refid="class_unit_animation_controller_1ae890d36f4eb15a0420b3888ef918f4cd" prot="private" virt="non-virtual"><scope>UnitAnimationController</scope><name>EquipmentIndex</name></member>
+      <member refid="class_unit_animation_controller_1a0869e507cf4416352cbf401a8f47098c" prot="private" virt="non-virtual"><scope>UnitAnimationController</scope><name>formation</name></member>
+      <member refid="class_unit_animation_controller_1af92685a21dc04e61e1befd899a8ad310" prot="public" virt="non-virtual"><scope>UnitAnimationController</scope><name>Formation</name></member>
+      <member refid="class_unit_animation_controller_1a05b9b110859949e4a7041145ee45020d" prot="private" virt="non-virtual"><scope>UnitAnimationController</scope><name>hit</name></member>
+      <member refid="class_unit_animation_controller_1a45cafb28c092685976a09a3f3d60c709" prot="private" virt="non-virtual"><scope>UnitAnimationController</scope><name>inFight</name></member>
+      <member refid="class_unit_animation_controller_1a7042aed379fcbab8e77b58fb637621b9" prot="public" virt="non-virtual"><scope>UnitAnimationController</scope><name>InFight</name></member>
+      <member refid="class_unit_animation_controller_1a0a67ded86a69eb074f83e5fdfbc76284" prot="private" virt="non-virtual"><scope>UnitAnimationController</scope><name>OnDestroy</name></member>
+      <member refid="class_unit_animation_controller_1a7b4807416914b62c0accefcae9eac31f" prot="private" virt="non-virtual"><scope>UnitAnimationController</scope><name>outline</name></member>
+      <member refid="class_unit_animation_controller_1a1d4a45116a2d2a596b78e3da531a6c3d" prot="private" virt="non-virtual"><scope>UnitAnimationController</scope><name>Outline</name></member>
+      <member refid="class_unit_animation_controller_1adc47a0f96b20b7bf6761b10a1c6756c6" prot="private" virt="non-virtual"><scope>UnitAnimationController</scope><name>renderer</name></member>
+      <member refid="class_unit_animation_controller_1a61c8f8d0c2edbb7f8b1e554dd1fec687" prot="public" virt="non-virtual"><scope>UnitAnimationController</scope><name>Run</name></member>
+      <member refid="class_unit_animation_controller_1a533827806954007517b791aab2ebd88c" prot="private" virt="non-virtual"><scope>UnitAnimationController</scope><name>run</name></member>
+      <member refid="class_unit_animation_controller_1aa796bbd96a56d0d968965a202d437a17" prot="private" virt="non-virtual"><scope>UnitAnimationController</scope><name>SetAnimationStates</name></member>
+      <member refid="class_unit_animation_controller_1afdcdeded7e51377a309c11a7069ff058" prot="private" virt="non-virtual"><scope>UnitAnimationController</scope><name>SetNewEquipment</name></member>
+      <member refid="class_unit_animation_controller_1afacae942193f4c7bced69fb5e34b33fa" prot="private" virt="non-virtual"><scope>UnitAnimationController</scope><name>squad</name></member>
+      <member refid="class_unit_animation_controller_1ad26c3d034e8dc87c7b0138d7f7bb55a1" prot="private" virt="non-virtual"><scope>UnitAnimationController</scope><name>Squad_OnFormationChanged</name></member>
+      <member refid="class_unit_animation_controller_1ab28a1646647dfc0fec5cc7a224f69618" prot="private" virt="non-virtual"><scope>UnitAnimationController</scope><name>Squad_OnInFightFlagChanged</name></member>
+      <member refid="class_unit_animation_controller_1a446589e6ec36f512dd33d65d6bfab73f" prot="private" virt="non-virtual"><scope>UnitAnimationController</scope><name>underlayerOutline</name></member>
+      <member refid="class_unit_animation_controller_1aed454917339685a324b28f6dcc4fcdd3" prot="private" virt="non-virtual"><scope>UnitAnimationController</scope><name>unit</name></member>
+      <member refid="class_unit_animation_controller_1aa74bba18e508a2adfe1f0d3c2e283974" prot="private" virt="non-virtual"><scope>UnitAnimationController</scope><name>Unit_AfterInitiate</name></member>
+      <member refid="class_unit_animation_controller_1ac7e8a92ede8555fe93aca973cb917ab2" prot="private" virt="non-virtual"><scope>UnitAnimationController</scope><name>Unit_OnArmsChanged</name></member>
+      <member refid="class_unit_animation_controller_1ae204dec63649f91793269f8606edb169" prot="private" virt="non-virtual"><scope>UnitAnimationController</scope><name>Unit_OnBodyChanged</name></member>
+      <member refid="class_unit_animation_controller_1a725c13559bdca2daf200b643d5526181" prot="private" virt="non-virtual"><scope>UnitAnimationController</scope><name>Unit_OnHelmetChanged</name></member>
+      <member refid="class_unit_animation_controller_1ae2f621174423cb095fe0b921d1b4cb06" prot="private" virt="non-virtual"><scope>UnitAnimationController</scope><name>Unit_OnLegsChanged</name></member>
+      <member refid="class_unit_animation_controller_1a9c1d68771dabf9ea5f85c85a915e8a75" prot="private" virt="non-virtual"><scope>UnitAnimationController</scope><name>Unit_OnRunValueChanged</name></member>
+      <member refid="class_unit_animation_controller_1ad30606cde36255c6e46cbcc160b83d24" prot="private" virt="non-virtual"><scope>UnitAnimationController</scope><name>Unit_OnShieldChanged</name></member>
+      <member refid="class_unit_animation_controller_1a5a73e3cc719a639bacfc6dd072a909bd" prot="private" virt="non-virtual"><scope>UnitAnimationController</scope><name>Unit_OnWeaponChanged</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

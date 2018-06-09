@@ -1,0 +1,253 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="struct_map_block" kind="struct" prot="public">
+    <compoundname>MapBlock</compoundname>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="struct_map_block_1a6bdb8970fb09cd0570ed7036457f96a3" prot="public" static="no">
+        <name>Direction</name>
+        <enumvalue id="struct_map_block_1a6bdb8970fb09cd0570ed7036457f96a3a1fabf63de5c96c78e2a40805bcdeb73b" prot="public">
+          <name>BOTTOM</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_map_block_1a6bdb8970fb09cd0570ed7036457f96a3a6705777b712ee811e76fb07162081d63" prot="public">
+          <name>TOP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_map_block_1a6bdb8970fb09cd0570ed7036457f96a3a684d325a7303f52e64011467ff5c5758" prot="public">
+          <name>LEFT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_map_block_1a6bdb8970fb09cd0570ed7036457f96a3a21507b40c80068eda19865706fdc2403" prot="public">
+          <name>RIGHT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/MapBlock.cs" line="42" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/MapBlock.cs" bodystart="42" bodyend="42"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_map_block_1a8fb3e875d60f04656e388e30da38e6f7" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int MapBlock.WORLD_BLOCK_SIZE</definition>
+        <argsstring></argsstring>
+        <name>WORLD_BLOCK_SIZE</name>
+        <initializer>= 100</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/MapBlock.cs" line="8" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/MapBlock.cs" bodystart="8" bodyend="-1"/>
+        <referencedby refid="class_mc_grid_1adba118d7d0e6239205ef268ae876bed8" compoundref="_mc_grid_8cs" startline="46" endline="89">McGrid.DrawBlockAreas</referencedby>
+        <referencedby refid="class_mc_grid_1a1355b61cc25821c23732f1b46fc0c1e8" compoundref="_mc_grid_8cs" startline="91" endline="140">McGrid.DrawGrid</referencedby>
+        <referencedby refid="class_mc_grid_1a7701745ee3e3a5206150f5752a29ab71" compoundref="_mc_grid_8cs" startline="142" endline="186">McGrid.DrawInputedBlock</referencedby>
+        <referencedby refid="class_ground_1ae1e260633e2bc8ffb04a832958a3f83a" compoundref="_ground_8cs" startline="150" endline="264">Ground.GeneradeMap</referencedby>
+        <referencedby refid="class_ai_squad_controller_1a884586ff08b60c2ee405902e8313abdc" compoundref="_ai_squad_controller_8cs" startline="181" endline="223">AiSquadController.GoTo</referencedby>
+        <referencedby refid="class_game_manager_1ad11968766e26ab5495ba1d686f3e286c" compoundref="_game_manager_8cs" startline="144" endline="183">GameManager.InitPlayer</referencedby>
+        <referencedby refid="class_ground_1a7f9246ff763af4ab468ade1cd36c89cd" compoundref="_ground_8cs" startline="440" endline="453">Ground.InstantiateMapBlockSprite</referencedby>
+        <referencedby refid="class_mc_grid_construct_controller_1abd877ad2beab54a368ae70399b7a0cdb" compoundref="_mc_grid_construct_controller_8cs" startline="51" endline="87">McGridConstructController.OnPointerDown</referencedby>
+        <referencedby refid="class_player_squad_path_finder_controller_1a16d7e9b844dc620e9f1ff5f7713b8c59" compoundref="_player_squad_path_finder_controller_8cs" startline="71" endline="147">PlayerSquadPathFinderController.OnPointerUp</referencedby>
+        <referencedby refid="class_player_squad_controller_1a14624c20b184262769b880804049fb0b" compoundref="_player_squad_controller_8cs" startline="216" endline="297">PlayerSquadController.OnPointerUp</referencedby>
+        <referencedby refid="class_ground_1a67925fbb09e492d80017e6fc0d59cea4" compoundref="_ground_8cs" startline="68" endline="95">Ground.Start</referencedby>
+        <referencedby refid="class_player_squad_path_finder_controller_1ab80ba8abaa0d312a85c41614ca4be146" compoundref="_player_squad_path_finder_controller_8cs" startline="149" endline="173">PlayerSquadPathFinderController.TextureToWorldPosition</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_map_block_1a3da7202e195233db372ff06be195e549" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int MapBlock.BLOCK_SIZE</definition>
+        <argsstring></argsstring>
+        <name>BLOCK_SIZE</name>
+        <initializer>= 20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/MapBlock.cs" line="9" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/MapBlock.cs" bodystart="9" bodyend="-1"/>
+        <referencedby refid="class_mc_grid_1a1355b61cc25821c23732f1b46fc0c1e8" compoundref="_mc_grid_8cs" startline="91" endline="140">McGrid.DrawGrid</referencedby>
+        <referencedby refid="class_mc_grid_1a7701745ee3e3a5206150f5752a29ab71" compoundref="_mc_grid_8cs" startline="142" endline="186">McGrid.DrawInputedBlock</referencedby>
+        <referencedby refid="class_ground_1ae1e260633e2bc8ffb04a832958a3f83a" compoundref="_ground_8cs" startline="150" endline="264">Ground.GeneradeMap</referencedby>
+        <referencedby refid="class_mc_grid_1abe7666fff4d9fbf9466eb066af05808b" compoundref="_mc_grid_8cs" startline="206" endline="223">McGrid.GetSelectedBlocks</referencedby>
+        <referencedby refid="class_mc_grid_1a417f06ce0026fe50ad784331bb435550" compoundref="_mc_grid_8cs" startline="188" endline="199">McGrid.InputMapBlock</referencedby>
+        <referencedby refid="class_ground_1afdf3d8d5ee9fdba7eee55aa855e27dc9" compoundref="_ground_8cs" startline="351" endline="358">Ground.InsertToGrid</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_map_block_1a9e46c3698814e50f60550ebd48ab9cb2" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int MapBlock.BLOCK_SCALE</definition>
+        <argsstring></argsstring>
+        <name>BLOCK_SCALE</name>
+        <initializer>= 5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/MapBlock.cs" line="10" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/MapBlock.cs" bodystart="10" bodyend="-1"/>
+        <referencedby refid="class_mc_grid_1adba118d7d0e6239205ef268ae876bed8" compoundref="_mc_grid_8cs" startline="46" endline="89">McGrid.DrawBlockAreas</referencedby>
+        <referencedby refid="class_mc_grid_1a1355b61cc25821c23732f1b46fc0c1e8" compoundref="_mc_grid_8cs" startline="91" endline="140">McGrid.DrawGrid</referencedby>
+        <referencedby refid="class_mc_grid_1a7701745ee3e3a5206150f5752a29ab71" compoundref="_mc_grid_8cs" startline="142" endline="186">McGrid.DrawInputedBlock</referencedby>
+        <referencedby refid="class_mc_grid_1ad721c0cf95f01fe7ffc384621a9ac2ba" compoundref="_mc_grid_8cs" startline="225" endline="250">McGrid.FillCell</referencedby>
+        <referencedby refid="class_player_squad_path_finder_controller_1a2719708f1160f1214325079c0fd99649" compoundref="_player_squad_path_finder_controller_8cs" startline="175" endline="183">PlayerSquadPathFinderController.FindPath</referencedby>
+        <referencedby refid="class_ai_squad_controller_1ae39f06c85f8ec06184d765876aa53f83" compoundref="_ai_squad_controller_8cs" startline="251" endline="263">AiSquadController.FindPath</referencedby>
+        <referencedby refid="class_player_squad_controller_1a022a61e02daa6ee4e9ae23c3be718131" compoundref="_player_squad_controller_8cs" startline="344" endline="352">PlayerSquadController.FindPath</referencedby>
+        <referencedby refid="class_ai_squad_controller_1a884586ff08b60c2ee405902e8313abdc" compoundref="_ai_squad_controller_8cs" startline="181" endline="223">AiSquadController.GoTo</referencedby>
+        <referencedby refid="class_game_manager_1ad11968766e26ab5495ba1d686f3e286c" compoundref="_game_manager_8cs" startline="144" endline="183">GameManager.InitPlayer</referencedby>
+        <referencedby refid="class_ground_1afdf3d8d5ee9fdba7eee55aa855e27dc9" compoundref="_ground_8cs" startline="351" endline="358">Ground.InsertToGrid</referencedby>
+        <referencedby refid="class_ground_1a7f9246ff763af4ab468ade1cd36c89cd" compoundref="_ground_8cs" startline="440" endline="453">Ground.InstantiateMapBlockSprite</referencedby>
+        <referencedby refid="class_ground_1ac4d2b5e0755e859a3f7095c500ee0a8e" compoundref="_ground_8cs" startline="455" endline="477">Ground.OnDrawGizmos</referencedby>
+        <referencedby refid="class_player_squad_path_finder_controller_1a16d7e9b844dc620e9f1ff5f7713b8c59" compoundref="_player_squad_path_finder_controller_8cs" startline="71" endline="147">PlayerSquadPathFinderController.OnPointerUp</referencedby>
+        <referencedby refid="class_player_squad_controller_1a14624c20b184262769b880804049fb0b" compoundref="_player_squad_controller_8cs" startline="216" endline="297">PlayerSquadController.OnPointerUp</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_map_block_1ad3c350cfa4b549e6df9a1f9f844e6723" prot="public" static="no" mutable="no">
+        <type>bool[][]</type>
+        <definition>bool [][] MapBlock.Grid</definition>
+        <argsstring></argsstring>
+        <name>Grid</name>
+        <briefdescription>
+<para>if true - wall in this plase, cant walc if false - empty cell, can walc </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/MapBlock.cs" line="18" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/MapBlock.cs" bodystart="18" bodyend="-1"/>
+        <referencedby refid="class_mc_grid_1a7701745ee3e3a5206150f5752a29ab71" compoundref="_mc_grid_8cs" startline="142" endline="186">McGrid.DrawInputedBlock</referencedby>
+        <referencedby refid="class_mc_grid_1a417f06ce0026fe50ad784331bb435550" compoundref="_mc_grid_8cs" startline="188" endline="199">McGrid.InputMapBlock</referencedby>
+        <referencedby refid="class_ground_1afdf3d8d5ee9fdba7eee55aa855e27dc9" compoundref="_ground_8cs" startline="351" endline="358">Ground.InsertToGrid</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_map_block_1a457d821d01f6a9031f49dcf1d3ef6785" prot="public" static="no" mutable="no">
+        <type>List&lt; <ref refid="struct_map_block_1a6bdb8970fb09cd0570ed7036457f96a3" kindref="member">Direction</ref> &gt;</type>
+        <definition>List&lt;Direction&gt; MapBlock.Entrance</definition>
+        <argsstring></argsstring>
+        <name>Entrance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/MapBlock.cs" line="19" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/MapBlock.cs" bodystart="19" bodyend="-1"/>
+        <referencedby refid="class_mc_file_manager_1a55f9c081c604f45babc0dc174a59070d" compoundref="_mc_file_manager_8cs" startline="104" endline="125">McFileManager.OnOkButtonClick</referencedby>
+        <referencedby refid="struct_map_block_1a706c7d6ef471f5c66919ebe71a9a7b7b" compoundref="_map_block_8cs" startline="25" endline="40">ToString</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_map_block_1a9ee28ce0eb05219689f005ec055a2f56" prot="public" static="no" mutable="no">
+        <type>Vector2</type>
+        <definition>Vector2 MapBlock.WorldPosition</definition>
+        <argsstring></argsstring>
+        <name>WorldPosition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/MapBlock.cs" line="20" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/MapBlock.cs" bodystart="20" bodyend="-1"/>
+        <referencedby refid="class_ground_1afdf3d8d5ee9fdba7eee55aa855e27dc9" compoundref="_ground_8cs" startline="351" endline="358">Ground.InsertToGrid</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_map_block_1a73e60907d5e0da25e87e477255bb3e3a" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MapBlock.HasExit</definition>
+        <argsstring></argsstring>
+        <name>HasExit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/MapBlock.cs" line="22" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/MapBlock.cs" bodystart="22" bodyend="-1"/>
+        <referencedby refid="class_ground_1a7a98426f8b61f2fdddb4bcc8bea0c8f4" compoundref="_ground_8cs" startline="97" endline="148">Ground.LoadMapBlocks</referencedby>
+        <referencedby refid="class_mc_file_manager_1a55f9c081c604f45babc0dc174a59070d" compoundref="_mc_file_manager_8cs" startline="104" endline="125">McFileManager.OnOkButtonClick</referencedby>
+        <referencedby refid="struct_map_block_1a706c7d6ef471f5c66919ebe71a9a7b7b" compoundref="_map_block_8cs" startline="25" endline="40">ToString</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_map_block_1ae2a96207d757c40799df1eebf9796351" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_map_block_1a6bdb8970fb09cd0570ed7036457f96a3" kindref="member">Direction</ref></type>
+        <definition>Direction MapBlock.Exit</definition>
+        <argsstring></argsstring>
+        <name>Exit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/MapBlock.cs" line="23" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/MapBlock.cs" bodystart="23" bodyend="-1"/>
+        <referencedby refid="class_game_manager_1ad11968766e26ab5495ba1d686f3e286c" compoundref="_game_manager_8cs" startline="144" endline="183">GameManager.InitPlayer</referencedby>
+        <referencedby refid="class_ground_1a7a98426f8b61f2fdddb4bcc8bea0c8f4" compoundref="_ground_8cs" startline="97" endline="148">Ground.LoadMapBlocks</referencedby>
+        <referencedby refid="class_mc_file_manager_1a55f9c081c604f45babc0dc174a59070d" compoundref="_mc_file_manager_8cs" startline="104" endline="125">McFileManager.OnOkButtonClick</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="struct_map_block_1a07051335369f7aef299caf00a5754900" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string MapBlock.ExitString</definition>
+        <argsstring></argsstring>
+        <name>ExitString</name>
+        <initializer>= &quot;EXIT &quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/MapBlock.cs" line="12" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/MapBlock.cs" bodystart="12" bodyend="-1"/>
+        <referencedby refid="class_ground_1a7a98426f8b61f2fdddb4bcc8bea0c8f4" compoundref="_ground_8cs" startline="97" endline="148">Ground.LoadMapBlocks</referencedby>
+        <referencedby refid="struct_map_block_1a706c7d6ef471f5c66919ebe71a9a7b7b" compoundref="_map_block_8cs" startline="25" endline="40">ToString</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_map_block_1a706c7d6ef471f5c66919ebe71a9a7b7b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override string</type>
+        <definition>override string MapBlock.ToString</definition>
+        <argsstring>()</argsstring>
+        <name>ToString</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/MapBlock.cs" line="25" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/MapBlock.cs" bodystart="25" bodyend="40"/>
+        <references refid="struct_map_block_1a457d821d01f6a9031f49dcf1d3ef6785" compoundref="_map_block_8cs" startline="19">Entrance</references>
+        <references refid="struct_map_block_1a07051335369f7aef299caf00a5754900" compoundref="_map_block_8cs" startline="12">ExitString</references>
+        <references refid="struct_map_block_1a73e60907d5e0da25e87e477255bb3e3a" compoundref="_map_block_8cs" startline="22">HasExit</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/MapBlock.cs" line="7" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/MapBlock.cs" bodystart="6" bodyend="43"/>
+    <listofallmembers>
+      <member refid="struct_map_block_1a9e46c3698814e50f60550ebd48ab9cb2" prot="public" virt="non-virtual"><scope>MapBlock</scope><name>BLOCK_SCALE</name></member>
+      <member refid="struct_map_block_1a3da7202e195233db372ff06be195e549" prot="public" virt="non-virtual"><scope>MapBlock</scope><name>BLOCK_SIZE</name></member>
+      <member refid="struct_map_block_1a6bdb8970fb09cd0570ed7036457f96a3" prot="public" virt="non-virtual"><scope>MapBlock</scope><name>Direction</name></member>
+      <member refid="struct_map_block_1a457d821d01f6a9031f49dcf1d3ef6785" prot="public" virt="non-virtual"><scope>MapBlock</scope><name>Entrance</name></member>
+      <member refid="struct_map_block_1ae2a96207d757c40799df1eebf9796351" prot="public" virt="non-virtual"><scope>MapBlock</scope><name>Exit</name></member>
+      <member refid="struct_map_block_1a07051335369f7aef299caf00a5754900" prot="public" virt="non-virtual"><scope>MapBlock</scope><name>ExitString</name></member>
+      <member refid="struct_map_block_1ad3c350cfa4b549e6df9a1f9f844e6723" prot="public" virt="non-virtual"><scope>MapBlock</scope><name>Grid</name></member>
+      <member refid="struct_map_block_1a73e60907d5e0da25e87e477255bb3e3a" prot="public" virt="non-virtual"><scope>MapBlock</scope><name>HasExit</name></member>
+      <member refid="struct_map_block_1a706c7d6ef471f5c66919ebe71a9a7b7b" prot="public" virt="non-virtual"><scope>MapBlock</scope><name>ToString</name></member>
+      <member refid="struct_map_block_1a8fb3e875d60f04656e388e30da38e6f7" prot="public" virt="non-virtual"><scope>MapBlock</scope><name>WORLD_BLOCK_SIZE</name></member>
+      <member refid="struct_map_block_1a9ee28ce0eb05219689f005ec055a2f56" prot="public" virt="non-virtual"><scope>MapBlock</scope><name>WorldPosition</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

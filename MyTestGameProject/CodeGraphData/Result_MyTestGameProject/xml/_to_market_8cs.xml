@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_to_market_8cs" kind="file">
+    <compoundname>ToMarket.cs</compoundname>
+    <innerclass refid="class_to_market" prot="public">ToMarket</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using</highlight><highlight class="normal"><sp/>UnityEngine;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>UnityEngine.UI;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal">[RequireComponent(typeof(Button))]</highlight></codeline>
+<codeline lineno="5" refid="class_to_market" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_to_market" kindref="compound">ToMarket</ref><sp/>:<sp/>MonoBehaviour</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="7" refid="class_to_market_1a1df8abbac1b758e454266d3ea4aa334d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Button<sp/><ref refid="class_to_market_1a1df8abbac1b758e454266d3ea4aa334d" kindref="member">btn</ref>;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="class_to_market_1afa6ba466fe0dd2581bafbcf6a9727363" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_to_market_1afa6ba466fe0dd2581bafbcf6a9727363" kindref="member">Start</ref>()</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_to_market_1a1df8abbac1b758e454266d3ea4aa334d" kindref="member">btn</ref><sp/>=<sp/>GetComponent&lt;Button&gt;();</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>btn.onClick.AddListener(<ref refid="class_to_market_1aa896336e4034ed1a27639d3bc93191f5" kindref="member">OnClick</ref>);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="class_to_market_1aa896336e4034ed1a27639d3bc93191f5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_to_market_1aa896336e4034ed1a27639d3bc93191f5" kindref="member">OnClick</ref>()</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_fade_screen" kindref="compound">FadeScreen</ref><sp/>ds<sp/>=<sp/>GameObject.FindWithTag(</highlight><highlight class="stringliteral">&quot;DarkScreen&quot;</highlight><highlight class="normal">).GetComponent&lt;FadeScreen&gt;();</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ds.OnFadeOn<sp/>+=<sp/>GameManager.Instance.LoadMarket;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ds.FadeOn(0.5f);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/ScenesButtons/ToMarket.cs"/>
+  </compounddef>
+</doxygen>

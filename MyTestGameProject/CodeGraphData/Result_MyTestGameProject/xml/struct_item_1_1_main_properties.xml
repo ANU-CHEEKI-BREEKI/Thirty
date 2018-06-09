@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="struct_item_1_1_main_properties" kind="struct" prot="public">
+    <compoundname>Item::MainProperties</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_item_1_1_main_properties_1a4aa0b53f1eb57e3a4c40099c29165203" prot="public" static="no" mutable="no">
+        <type>Sprite</type>
+        <definition>Sprite Item.MainProperties.icon</definition>
+        <argsstring></argsstring>
+        <name>icon</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Item.cs" line="13" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Item.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_item_1_1_main_properties_1a429cf67e30b5a7e89beecd89eab57e64" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Item.MainProperties.pathToPrefab</definition>
+        <argsstring></argsstring>
+        <name>pathToPrefab</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Item.cs" line="16" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Item.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_item_1_1_main_properties_1aecaa9e293b57b85fd26e498b6c40d719" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Item.MainProperties.stringResourceName</definition>
+        <argsstring></argsstring>
+        <name>stringResourceName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Item.cs" line="19" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Item.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_item_1_1_main_properties_1aac9afe31c2db33004a2fab7ede10ce00" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Item.MainProperties.stringResourceDescription</definition>
+        <argsstring></argsstring>
+        <name>stringResourceDescription</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Item.cs" line="22" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Item.cs" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="struct_item_1_1_main_properties_1a163dd8db99a3920c5cd62547b0742c18" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>Sprite</type>
+        <definition>Sprite Item.MainProperties.Icon</definition>
+        <argsstring></argsstring>
+        <name>Icon</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Item.cs" line="14" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Item.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="struct_item_1_1_main_properties_1a74b146bc965410c0aefa0645b4fb9a6f" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>string</type>
+        <definition>string Item.MainProperties.PathToPrefab</definition>
+        <argsstring></argsstring>
+        <name>PathToPrefab</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Item.cs" line="17" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Item.cs" bodystart="17" bodyend="-1"/>
+        <referencedby refid="class_unit_1a56ddc994513940e041ed23df85e376cf" compoundref="_unit_8cs" startline="527" endline="534">Unit.SetBody</referencedby>
+        <referencedby refid="class_unit_1a0a2b4ee4c7f6a9f602d9c67adc244ff4" compoundref="_unit_8cs" startline="536" endline="543">Unit.SetHelmet</referencedby>
+        <referencedby refid="class_unit_1aaac6e00f66c4165d5c152d9e8f88fc03" compoundref="_unit_8cs" startline="518" endline="525">Unit.SetShield</referencedby>
+        <referencedby refid="class_unit_1ac1b02baf91d8c2b7d784e469f04c71a5" compoundref="_unit_8cs" startline="496" endline="516">Unit.SetWeapon</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="struct_item_1_1_main_properties_1a4a5ee2ea2914c5712fbc8ea69480ecb9" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>string</type>
+        <definition>string Item.MainProperties.StringResourceName</definition>
+        <argsstring></argsstring>
+        <name>StringResourceName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Item.cs" line="20" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Item.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="struct_item_1_1_main_properties_1a9dc41a372815dbd33054064e1363e77e" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>string</type>
+        <definition>string Item.MainProperties.StringResourceDescription</definition>
+        <argsstring></argsstring>
+        <name>StringResourceDescription</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Item.cs" line="23" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Item.cs" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Item.cs" line="11" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Item.cs" bodystart="10" bodyend="24"/>
+    <listofallmembers>
+      <member refid="struct_item_1_1_main_properties_1a4aa0b53f1eb57e3a4c40099c29165203" prot="public" virt="non-virtual"><scope>Item::MainProperties</scope><name>icon</name></member>
+      <member refid="struct_item_1_1_main_properties_1a163dd8db99a3920c5cd62547b0742c18" prot="public" virt="non-virtual"><scope>Item::MainProperties</scope><name>Icon</name></member>
+      <member refid="struct_item_1_1_main_properties_1a74b146bc965410c0aefa0645b4fb9a6f" prot="public" virt="non-virtual"><scope>Item::MainProperties</scope><name>PathToPrefab</name></member>
+      <member refid="struct_item_1_1_main_properties_1a429cf67e30b5a7e89beecd89eab57e64" prot="public" virt="non-virtual"><scope>Item::MainProperties</scope><name>pathToPrefab</name></member>
+      <member refid="struct_item_1_1_main_properties_1aac9afe31c2db33004a2fab7ede10ce00" prot="public" virt="non-virtual"><scope>Item::MainProperties</scope><name>stringResourceDescription</name></member>
+      <member refid="struct_item_1_1_main_properties_1a9dc41a372815dbd33054064e1363e77e" prot="public" virt="non-virtual"><scope>Item::MainProperties</scope><name>StringResourceDescription</name></member>
+      <member refid="struct_item_1_1_main_properties_1a4a5ee2ea2914c5712fbc8ea69480ecb9" prot="public" virt="non-virtual"><scope>Item::MainProperties</scope><name>StringResourceName</name></member>
+      <member refid="struct_item_1_1_main_properties_1aecaa9e293b57b85fd26e498b6c40d719" prot="public" virt="non-virtual"><scope>Item::MainProperties</scope><name>stringResourceName</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

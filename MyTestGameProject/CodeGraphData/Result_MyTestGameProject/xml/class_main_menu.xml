@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_main_menu" kind="class" prot="public">
+    <compoundname>MainMenu</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_main_menu_1a02faee8df4fbdfe4cfc2fd5f3bd9b68e" prot="private" static="no" mutable="no">
+        <type>CanvasGroup</type>
+        <definition>CanvasGroup MainMenu.buttons</definition>
+        <argsstring></argsstring>
+        <name>buttons</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MainMenu.cs" line="8" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MainMenu.cs" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_main_menu_1a60959b6b249275e97f7924141f6234bb" prot="private" static="no" mutable="no">
+        <type>CanvasGroup</type>
+        <definition>CanvasGroup MainMenu.settings</definition>
+        <argsstring></argsstring>
+        <name>settings</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MainMenu.cs" line="9" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MainMenu.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_main_menu_1ad629921d8cbec1c1bf97e6bc6ad65902" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainMenu.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MainMenu.cs" line="11" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MainMenu.cs" bodystart="11" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_main_menu_1acea2a950d92fd5e18a2e518a645cc6c0" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerator</type>
+        <definition>IEnumerator MainMenu.WaitForLoadLevel</definition>
+        <argsstring>()</argsstring>
+        <name>WaitForLoadLevel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MainMenu.cs" line="57" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MainMenu.cs" bodystart="57" bodyend="68"/>
+        <referencedby refid="class_main_menu_1af2636bb9c40440ceda3c21d4b37966f3" compoundref="_main_menu_8cs" startline="52" endline="55">OnPlay</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_main_menu_1aaaef9d29c3966df3e657831f7b461f94" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainMenu.OnValChanged</definition>
+        <argsstring>(bool val)</argsstring>
+        <name>OnValChanged</name>
+        <param>
+          <type>bool</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MainMenu.cs" line="20" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MainMenu.cs" bodystart="20" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="class_main_menu_1af2636bb9c40440ceda3c21d4b37966f3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainMenu.OnPlay</definition>
+        <argsstring>()</argsstring>
+        <name>OnPlay</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MainMenu.cs" line="52" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MainMenu.cs" bodystart="52" bodyend="55"/>
+        <references refid="class_main_menu_1acea2a950d92fd5e18a2e518a645cc6c0" compoundref="_main_menu_8cs" startline="57" endline="68">WaitForLoadLevel</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="565">
+        <label>MainMenu</label>
+        <link refid="class_main_menu"/>
+        <childnode refid="566" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="566">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="567">
+        <label>MainMenu</label>
+        <link refid="class_main_menu"/>
+        <childnode refid="568" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="568">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MainMenu.cs" line="7" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MainMenu.cs" bodystart="6" bodyend="69"/>
+    <listofallmembers>
+      <member refid="class_main_menu_1a02faee8df4fbdfe4cfc2fd5f3bd9b68e" prot="private" virt="non-virtual"><scope>MainMenu</scope><name>buttons</name></member>
+      <member refid="class_main_menu_1af2636bb9c40440ceda3c21d4b37966f3" prot="public" virt="non-virtual"><scope>MainMenu</scope><name>OnPlay</name></member>
+      <member refid="class_main_menu_1aaaef9d29c3966df3e657831f7b461f94" prot="public" virt="non-virtual"><scope>MainMenu</scope><name>OnValChanged</name></member>
+      <member refid="class_main_menu_1a60959b6b249275e97f7924141f6234bb" prot="private" virt="non-virtual"><scope>MainMenu</scope><name>settings</name></member>
+      <member refid="class_main_menu_1ad629921d8cbec1c1bf97e6bc6ad65902" prot="private" virt="non-virtual"><scope>MainMenu</scope><name>Start</name></member>
+      <member refid="class_main_menu_1acea2a950d92fd5e18a2e518a645cc6c0" prot="private" virt="non-virtual"><scope>MainMenu</scope><name>WaitForLoadLevel</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

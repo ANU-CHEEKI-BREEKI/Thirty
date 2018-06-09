@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_s_o_tip" kind="class" prot="public">
+    <compoundname>SOTip</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ScriptableObject</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_s_o_tip_1a727483aee348e5e43c6f1afbe5e3f31d" prot="public" static="no" mutable="no">
+        <type>Sprite[]</type>
+        <definition>Sprite [] SOTip.images</definition>
+        <argsstring></argsstring>
+        <name>images</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/ScriptableObjects/SOTip.cs" line="8" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/ScriptableObjects/SOTip.cs" bodystart="8" bodyend="-1"/>
+        <referencedby refid="class_death_screen_1a6960f77b5aeb8a5c4289a472dab34265" compoundref="_death_screen_8cs" startline="42" endline="60">DeathScreen.SetTips</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_s_o_tip_1afae696a9b9b5eb9ad03125d5125ff87d" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string SOTip.tipName</definition>
+        <argsstring></argsstring>
+        <name>tipName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/ScriptableObjects/SOTip.cs" line="10" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/ScriptableObjects/SOTip.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1008">
+        <label>ScriptableObject</label>
+      </node>
+      <node id="1007">
+        <label>SOTip</label>
+        <link refid="class_s_o_tip"/>
+        <childnode refid="1008" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1010">
+        <label>ScriptableObject</label>
+      </node>
+      <node id="1009">
+        <label>SOTip</label>
+        <link refid="class_s_o_tip"/>
+        <childnode refid="1010" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/ScriptableObjects/SOTip.cs" line="7" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/ScriptableObjects/SOTip.cs" bodystart="6" bodyend="11"/>
+    <listofallmembers>
+      <member refid="class_s_o_tip_1a727483aee348e5e43c6f1afbe5e3f31d" prot="public" virt="non-virtual"><scope>SOTip</scope><name>images</name></member>
+      <member refid="class_s_o_tip_1afae696a9b9b5eb9ad03125d5125ff87d" prot="public" virt="non-virtual"><scope>SOTip</scope><name>tipName</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

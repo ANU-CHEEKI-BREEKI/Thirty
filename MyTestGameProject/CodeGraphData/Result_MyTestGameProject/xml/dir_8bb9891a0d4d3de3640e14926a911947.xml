@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_8bb9891a0d4d3de3640e14926a911947" kind="dir">
+    <compoundname>D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage</compoundname>
+    <innerdir refid="dir_a3a8cc25849ccac28e224934504e11c1">D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses</innerdir>
+    <innerdir refid="dir_8501387af200b63ac5420d24b1bbc999">D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/SavingManagers</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/"/>
+  </compounddef>
+</doxygen>

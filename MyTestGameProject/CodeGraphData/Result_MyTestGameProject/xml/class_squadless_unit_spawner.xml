@@ -1,0 +1,333 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_squadless_unit_spawner" kind="class" prot="public">
+    <compoundname>SquadlessUnitSpawner</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_squadless_unit_spawner_1a8cd664c137afd90808e0a98b5841735a" prot="private" static="no" mutable="no">
+        <type><ref refid="class_unit" kindref="compound">Unit</ref></type>
+        <definition>Unit SquadlessUnitSpawner.unitOriginal</definition>
+        <argsstring></argsstring>
+        <name>unitOriginal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/SquadlessUnitSpawner.cs" line="7" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/SquadlessUnitSpawner.cs" bodystart="7" bodyend="-1"/>
+        <referencedby refid="class_squadless_unit_spawner_1ad6b8b2eff853ab9d2bd5ecd85e2d8ab3" compoundref="_squadless_unit_spawner_8cs" startline="16" endline="43">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_squadless_unit_spawner_1a07792c3769c964dc2db4b8a9131b31cd" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SquadlessUnitSpawner.count</definition>
+        <argsstring></argsstring>
+        <name>count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/SquadlessUnitSpawner.cs" line="9" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/SquadlessUnitSpawner.cs" bodystart="9" bodyend="-1"/>
+        <referencedby refid="class_squadless_unit_spawner_1ad6b8b2eff853ab9d2bd5ecd85e2d8ab3" compoundref="_squadless_unit_spawner_8cs" startline="16" endline="43">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_squadless_unit_spawner_1aae34890101e0583fbe76bcec88c90b9c" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SquadlessUnitSpawner.radiusSpawn</definition>
+        <argsstring></argsstring>
+        <name>radiusSpawn</name>
+        <initializer>= 5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/SquadlessUnitSpawner.cs" line="10" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/SquadlessUnitSpawner.cs" bodystart="10" bodyend="-1"/>
+        <referencedby refid="class_squadless_unit_spawner_1a6b78cb430ddbfc604f02a417f58d0d47" compoundref="_squadless_unit_spawner_8cs" startline="45" endline="50">OnDrawGizmos</referencedby>
+        <referencedby refid="class_squadless_unit_spawner_1ad6b8b2eff853ab9d2bd5ecd85e2d8ab3" compoundref="_squadless_unit_spawner_8cs" startline="16" endline="43">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_squadless_unit_spawner_1adc5ed4f7c73e537fe609b6d59795a26a" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SquadlessUnitSpawner.rangeRotation</definition>
+        <argsstring></argsstring>
+        <name>rangeRotation</name>
+        <initializer>= 360</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/SquadlessUnitSpawner.cs" line="11" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/SquadlessUnitSpawner.cs" bodystart="11" bodyend="-1"/>
+        <referencedby refid="class_squadless_unit_spawner_1ad6b8b2eff853ab9d2bd5ecd85e2d8ab3" compoundref="_squadless_unit_spawner_8cs" startline="16" endline="43">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_squadless_unit_spawner_1a786bd88912ec36ec8413729bb7222e74" prot="private" static="no" mutable="no">
+        <type><ref refid="class_equipment" kindref="compound">Equipment</ref></type>
+        <definition>Equipment SquadlessUnitSpawner.helmet</definition>
+        <argsstring></argsstring>
+        <name>helmet</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/SquadlessUnitSpawner.cs" line="13" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/SquadlessUnitSpawner.cs" bodystart="13" bodyend="-1"/>
+        <referencedby refid="class_squadless_unit_spawner_1ad6b8b2eff853ab9d2bd5ecd85e2d8ab3" compoundref="_squadless_unit_spawner_8cs" startline="16" endline="43">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_squadless_unit_spawner_1ad82fae4685f90330d1b64fd2756e104f" prot="private" static="no" mutable="no">
+        <type><ref refid="class_equipment" kindref="compound">Equipment</ref></type>
+        <definition>Equipment SquadlessUnitSpawner.body</definition>
+        <argsstring></argsstring>
+        <name>body</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/SquadlessUnitSpawner.cs" line="14" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/SquadlessUnitSpawner.cs" bodystart="14" bodyend="-1"/>
+        <referencedby refid="class_squadless_unit_spawner_1ad6b8b2eff853ab9d2bd5ecd85e2d8ab3" compoundref="_squadless_unit_spawner_8cs" startline="16" endline="43">Start</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_squadless_unit_spawner_1ad6b8b2eff853ab9d2bd5ecd85e2d8ab3" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SquadlessUnitSpawner.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/SquadlessUnitSpawner.cs" line="16" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/SquadlessUnitSpawner.cs" bodystart="16" bodyend="43"/>
+        <references refid="class_squadless_unit_spawner_1ad82fae4685f90330d1b64fd2756e104f" compoundref="_squadless_unit_spawner_8cs" startline="14">body</references>
+        <references refid="class_squadless_unit_spawner_1a07792c3769c964dc2db4b8a9131b31cd" compoundref="_squadless_unit_spawner_8cs" startline="9">count</references>
+        <references refid="class_squadless_unit_spawner_1a786bd88912ec36ec8413729bb7222e74" compoundref="_squadless_unit_spawner_8cs" startline="13">helmet</references>
+        <references refid="class_squadless_unit_spawner_1aae34890101e0583fbe76bcec88c90b9c" compoundref="_squadless_unit_spawner_8cs" startline="10">radiusSpawn</references>
+        <references refid="class_squadless_unit_spawner_1adc5ed4f7c73e537fe609b6d59795a26a" compoundref="_squadless_unit_spawner_8cs" startline="11">rangeRotation</references>
+        <references refid="class_squadless_unit_spawner_1a8cd664c137afd90808e0a98b5841735a" compoundref="_squadless_unit_spawner_8cs" startline="7">unitOriginal</references>
+      </memberdef>
+      <memberdef kind="function" id="class_squadless_unit_spawner_1a6b78cb430ddbfc604f02a417f58d0d47" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SquadlessUnitSpawner.OnDrawGizmos</definition>
+        <argsstring>()</argsstring>
+        <name>OnDrawGizmos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/SquadlessUnitSpawner.cs" line="45" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/SquadlessUnitSpawner.cs" bodystart="45" bodyend="50"/>
+        <references refid="class_squadless_unit_spawner_1aae34890101e0583fbe76bcec88c90b9c" compoundref="_squadless_unit_spawner_8cs" startline="10">radiusSpawn</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1059">
+        <label>SquadlessUnitSpawner</label>
+        <link refid="class_squadless_unit_spawner"/>
+        <childnode refid="1060" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1060">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1061">
+        <label>SquadlessUnitSpawner</label>
+        <link refid="class_squadless_unit_spawner"/>
+        <childnode refid="1062" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1063" relation="usage">
+          <edgelabel>unitOriginal</edgelabel>
+        </childnode>
+        <childnode refid="1073" relation="usage">
+          <edgelabel>body</edgelabel>
+          <edgelabel>helmet</edgelabel>
+        </childnode>
+      </node>
+      <node id="1064">
+        <label>Squad</label>
+        <link refid="class_squad"/>
+        <childnode refid="1062" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1065" relation="usage">
+          <edgelabel>currentFormationModifyers</edgelabel>
+          <edgelabel>formation</edgelabel>
+        </childnode>
+        <childnode refid="1063" relation="usage">
+          <edgelabel>unitOriginal</edgelabel>
+        </childnode>
+        <childnode refid="1064" relation="usage">
+          <edgelabel>playerSquadInstance</edgelabel>
+        </childnode>
+        <childnode refid="1066" relation="usage">
+          <edgelabel>inventory</edgelabel>
+        </childnode>
+        <childnode refid="1077" relation="usage">
+          <edgelabel>unitStats</edgelabel>
+        </childnode>
+      </node>
+      <node id="1073">
+        <label>Equipment</label>
+        <link refid="class_equipment"/>
+        <childnode refid="1071" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1074" relation="usage">
+          <edgelabel>stats</edgelabel>
+        </childnode>
+      </node>
+      <node id="1078">
+        <label>UnitPosition</label>
+        <link refid="class_unit_position"/>
+        <childnode refid="1062" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1072">
+        <label>Item.MainProperties</label>
+        <link refid="struct_item_1_1_main_properties"/>
+      </node>
+      <node id="1075">
+        <label>Damage</label>
+        <link refid="struct_damage"/>
+      </node>
+      <node id="1069">
+        <label>IDescriptionable</label>
+        <link refid="interface_i_descriptionable"/>
+      </node>
+      <node id="1071">
+        <label>Item</label>
+        <link refid="class_item"/>
+        <childnode refid="1062" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1072" relation="usage">
+          <edgelabel>mainProperties</edgelabel>
+        </childnode>
+      </node>
+      <node id="1067">
+        <label>SkillStack</label>
+        <link refid="class_skill_stack"/>
+        <childnode refid="1068" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1069" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1070" relation="usage">
+          <edgelabel>skill</edgelabel>
+        </childnode>
+      </node>
+      <node id="1074">
+        <label>EquipmentStats</label>
+        <link refid="struct_equipment_stats"/>
+        <childnode refid="1069" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1075" relation="usage">
+          <edgelabel>damage</edgelabel>
+        </childnode>
+      </node>
+      <node id="1068">
+        <label>AStack</label>
+        <link refid="class_a_stack"/>
+      </node>
+      <node id="1077">
+        <label>UnitStats</label>
+        <link refid="struct_unit_stats"/>
+        <childnode refid="1075" relation="usage">
+          <edgelabel>damage</edgelabel>
+        </childnode>
+      </node>
+      <node id="1062">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1063">
+        <label>Unit</label>
+        <link refid="class_unit"/>
+        <childnode refid="1062" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1063" relation="usage">
+          <edgelabel>target</edgelabel>
+        </childnode>
+        <childnode refid="1064" relation="usage">
+          <edgelabel>squad</edgelabel>
+        </childnode>
+        <childnode refid="1073" relation="usage">
+          <edgelabel>body</edgelabel>
+          <edgelabel>shield</edgelabel>
+          <edgelabel>weapon</edgelabel>
+          <edgelabel>helmet</edgelabel>
+        </childnode>
+        <childnode refid="1078" relation="usage">
+          <edgelabel>TargetMovePositionObject</edgelabel>
+          <edgelabel>unitPosOriginal</edgelabel>
+        </childnode>
+        <childnode refid="1077" relation="usage">
+          <edgelabel>stats</edgelabel>
+        </childnode>
+      </node>
+      <node id="1070">
+        <label>Skill</label>
+        <link refid="class_skill"/>
+        <childnode refid="1071" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1069" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1076">
+        <label>EquipmentStack</label>
+        <link refid="class_equipment_stack"/>
+        <childnode refid="1068" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1071" relation="usage">
+          <edgelabel>equipmentMainProperties</edgelabel>
+        </childnode>
+        <childnode refid="1074" relation="usage">
+          <edgelabel>equipmentStats</edgelabel>
+        </childnode>
+      </node>
+      <node id="1065">
+        <label>FormationStats</label>
+        <link refid="class_formation_stats"/>
+      </node>
+      <node id="1066">
+        <label>Inventory</label>
+        <link refid="class_inventory"/>
+        <childnode refid="1067" relation="usage">
+          <edgelabel>firstSkill</edgelabel>
+          <edgelabel>secondSkill</edgelabel>
+        </childnode>
+        <childnode refid="1073" relation="usage">
+          <edgelabel>body</edgelabel>
+          <edgelabel>shieldNone</edgelabel>
+          <edgelabel>helmetNone</edgelabel>
+          <edgelabel>shield</edgelabel>
+          <edgelabel>weapon</edgelabel>
+          <edgelabel>helmet</edgelabel>
+          <edgelabel>bodyNone</edgelabel>
+        </childnode>
+        <childnode refid="1076" relation="usage">
+          <edgelabel>inventory</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/SquadlessUnitSpawner.cs" line="6" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/SquadlessUnitSpawner.cs" bodystart="5" bodyend="51"/>
+    <listofallmembers>
+      <member refid="class_squadless_unit_spawner_1ad82fae4685f90330d1b64fd2756e104f" prot="private" virt="non-virtual"><scope>SquadlessUnitSpawner</scope><name>body</name></member>
+      <member refid="class_squadless_unit_spawner_1a07792c3769c964dc2db4b8a9131b31cd" prot="private" virt="non-virtual"><scope>SquadlessUnitSpawner</scope><name>count</name></member>
+      <member refid="class_squadless_unit_spawner_1a786bd88912ec36ec8413729bb7222e74" prot="private" virt="non-virtual"><scope>SquadlessUnitSpawner</scope><name>helmet</name></member>
+      <member refid="class_squadless_unit_spawner_1a6b78cb430ddbfc604f02a417f58d0d47" prot="private" virt="non-virtual"><scope>SquadlessUnitSpawner</scope><name>OnDrawGizmos</name></member>
+      <member refid="class_squadless_unit_spawner_1aae34890101e0583fbe76bcec88c90b9c" prot="private" virt="non-virtual"><scope>SquadlessUnitSpawner</scope><name>radiusSpawn</name></member>
+      <member refid="class_squadless_unit_spawner_1adc5ed4f7c73e537fe609b6d59795a26a" prot="private" virt="non-virtual"><scope>SquadlessUnitSpawner</scope><name>rangeRotation</name></member>
+      <member refid="class_squadless_unit_spawner_1ad6b8b2eff853ab9d2bd5ecd85e2d8ab3" prot="private" virt="non-virtual"><scope>SquadlessUnitSpawner</scope><name>Start</name></member>
+      <member refid="class_squadless_unit_spawner_1a8cd664c137afd90808e0a98b5841735a" prot="private" virt="non-virtual"><scope>SquadlessUnitSpawner</scope><name>unitOriginal</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

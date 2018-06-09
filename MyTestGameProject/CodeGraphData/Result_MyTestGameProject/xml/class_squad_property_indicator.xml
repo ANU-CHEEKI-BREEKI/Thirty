@@ -1,0 +1,238 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_squad_property_indicator" kind="class" prot="public">
+    <compoundname>SquadPropertyIndicator</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+    <basecompoundref refid="interface_i_descriptionable" prot="public" virt="non-virtual">IDescriptionable</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">IPointerClickHandler</basecompoundref>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="class_squad_property_indicator_1a0b02bb9bc2a5cd2d294e329333f61271" prot="public" static="no">
+        <name>Type</name>
+        <enumvalue id="class_squad_property_indicator_1a0b02bb9bc2a5cd2d294e329333f61271a9f768c0bb1c3e84ca086a85211e978ac" prot="public">
+          <name>CONDITION</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_squad_property_indicator_1a0b02bb9bc2a5cd2d294e329333f61271a8cd6185ac0e2ec043c3b493c8c096df8" prot="public">
+          <name>FORMATION</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_squad_property_indicator_1a0b02bb9bc2a5cd2d294e329333f61271a6ac77312005227702c841e2a875a8f4a" prot="public">
+          <name>TERRAIN_MODIFIER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SquadPropertyIndicator.cs" line="69" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SquadPropertyIndicator.cs" bodystart="69" bodyend="69"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_squad_property_indicator_1ae383525442ee9b71a1ec3b56e6569937" prot="private" static="no" mutable="no">
+        <type><ref refid="class_squad_property_indicator_1a0b02bb9bc2a5cd2d294e329333f61271" kindref="member">Type</ref></type>
+        <definition>Type SquadPropertyIndicator.type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SquadPropertyIndicator.cs" line="10" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SquadPropertyIndicator.cs" bodystart="10" bodyend="-1"/>
+        <referencedby refid="class_squad_property_indicator_1af62c0fe843fc1a0167fb402d3944f05c" compoundref="_squad_property_indicator_8cs" startline="39" endline="67">GetDescription</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_squad_property_indicator_1a93c16b7b8d412df5aeaa614e9d8a0b96" prot="private" static="no" mutable="no">
+        <type><ref refid="class_formation_stats_1ab336466e6a234574db24f2ec914e1dd4" kindref="member">FormationStats.Formations</ref></type>
+        <definition>FormationStats.Formations SquadPropertyIndicator.formation</definition>
+        <argsstring></argsstring>
+        <name>formation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SquadPropertyIndicator.cs" line="11" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SquadPropertyIndicator.cs" bodystart="11" bodyend="-1"/>
+        <referencedby refid="class_squad_property_indicator_1a314aea8508308e6d5f5910983dda57c8" compoundref="_squad_property_indicator_8cs" startline="18" endline="32">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_squad_property_indicator_1aa2cb853e6b834d89f50155173b55590c" prot="private" static="no" mutable="no">
+        <type><ref refid="class_formation_stats" kindref="compound">FormationStats</ref></type>
+        <definition>FormationStats SquadPropertyIndicator.f</definition>
+        <argsstring></argsstring>
+        <name>f</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SquadPropertyIndicator.cs" line="13" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SquadPropertyIndicator.cs" bodystart="13" bodyend="-1"/>
+        <referencedby refid="class_squad_property_indicator_1a314aea8508308e6d5f5910983dda57c8" compoundref="_squad_property_indicator_8cs" startline="18" endline="32">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_squad_property_indicator_1af2075f9510c36154e036c85ce335d0a4" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string SquadPropertyIndicator.stringResourceName</definition>
+        <argsstring></argsstring>
+        <name>stringResourceName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SquadPropertyIndicator.cs" line="15" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SquadPropertyIndicator.cs" bodystart="15" bodyend="-1"/>
+        <referencedby refid="class_squad_property_indicator_1af62c0fe843fc1a0167fb402d3944f05c" compoundref="_squad_property_indicator_8cs" startline="39" endline="67">GetDescription</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_squad_property_indicator_1a8afe11bb88bc125ce6382f70d297e15c" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string SquadPropertyIndicator.stringResourceDescription</definition>
+        <argsstring></argsstring>
+        <name>stringResourceDescription</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SquadPropertyIndicator.cs" line="16" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SquadPropertyIndicator.cs" bodystart="16" bodyend="-1"/>
+        <referencedby refid="class_squad_property_indicator_1af62c0fe843fc1a0167fb402d3944f05c" compoundref="_squad_property_indicator_8cs" startline="39" endline="67">GetDescription</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_squad_property_indicator_1a314aea8508308e6d5f5910983dda57c8" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SquadPropertyIndicator.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SquadPropertyIndicator.cs" line="18" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SquadPropertyIndicator.cs" bodystart="18" bodyend="32"/>
+        <references refid="class_squad_property_indicator_1aa2cb853e6b834d89f50155173b55590c" compoundref="_squad_property_indicator_8cs" startline="13">f</references>
+        <references refid="class_squad_property_indicator_1a93c16b7b8d412df5aeaa614e9d8a0b96" compoundref="_squad_property_indicator_8cs" startline="11">formation</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_squad_property_indicator_1a68626a1c2a4ad42217b0251d7ffebd51" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SquadPropertyIndicator.OnPointerClick</definition>
+        <argsstring>(PointerEventData eventData)</argsstring>
+        <name>OnPointerClick</name>
+        <param>
+          <type>PointerEventData</type>
+          <declname>eventData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SquadPropertyIndicator.cs" line="34" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SquadPropertyIndicator.cs" bodystart="34" bodyend="37"/>
+        <references refid="class_squad_property_indicator_1af62c0fe843fc1a0167fb402d3944f05c" compoundref="_squad_property_indicator_8cs" startline="39" endline="67">GetDescription</references>
+      </memberdef>
+      <memberdef kind="function" id="class_squad_property_indicator_1af62c0fe843fc1a0167fb402d3944f05c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_description" kindref="compound">Description</ref></type>
+        <definition>Description SquadPropertyIndicator.GetDescription</definition>
+        <argsstring>()</argsstring>
+        <name>GetDescription</name>
+        <reimplements refid="interface_i_descriptionable_1a33be6e4687ad788d949f989aaadad45d">GetDescription</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SquadPropertyIndicator.cs" line="39" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SquadPropertyIndicator.cs" bodystart="39" bodyend="67"/>
+        <references refid="class_localization_1a9898617e4dd2c6ce6a1ff3386cfafcdd" compoundref="_localization_8cs" startline="241" endline="249">Localization.GetString</references>
+        <references refid="class_squad_property_indicator_1a8afe11bb88bc125ce6382f70d297e15c" compoundref="_squad_property_indicator_8cs" startline="16">stringResourceDescription</references>
+        <references refid="class_squad_property_indicator_1af2075f9510c36154e036c85ce335d0a4" compoundref="_squad_property_indicator_8cs" startline="15">stringResourceName</references>
+        <references refid="class_squad_property_indicator_1ae383525442ee9b71a1ec3b56e6569937" compoundref="_squad_property_indicator_8cs" startline="10">type</references>
+        <referencedby refid="class_squad_property_indicator_1a68626a1c2a4ad42217b0251d7ffebd51" compoundref="_squad_property_indicator_8cs" startline="34" endline="37">OnPointerClick</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1081">
+        <label>IDescriptionable</label>
+        <link refid="interface_i_descriptionable"/>
+      </node>
+      <node id="1082">
+        <label>IPointerClickHandler</label>
+      </node>
+      <node id="1080">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1079">
+        <label>SquadPropertyIndicator</label>
+        <link refid="class_squad_property_indicator"/>
+        <childnode refid="1080" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1081" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1082" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1085">
+        <label>IDescriptionable</label>
+        <link refid="interface_i_descriptionable"/>
+      </node>
+      <node id="1086">
+        <label>IPointerClickHandler</label>
+      </node>
+      <node id="1084">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1083">
+        <label>SquadPropertyIndicator</label>
+        <link refid="class_squad_property_indicator"/>
+        <childnode refid="1084" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1085" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1086" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1087" relation="usage">
+          <edgelabel>f</edgelabel>
+          <edgelabel>formation</edgelabel>
+        </childnode>
+      </node>
+      <node id="1087">
+        <label>FormationStats</label>
+        <link refid="class_formation_stats"/>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SquadPropertyIndicator.cs" line="9" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SquadPropertyIndicator.cs" bodystart="8" bodyend="70"/>
+    <listofallmembers>
+      <member refid="class_squad_property_indicator_1aa2cb853e6b834d89f50155173b55590c" prot="private" virt="non-virtual"><scope>SquadPropertyIndicator</scope><name>f</name></member>
+      <member refid="class_squad_property_indicator_1a93c16b7b8d412df5aeaa614e9d8a0b96" prot="private" virt="non-virtual"><scope>SquadPropertyIndicator</scope><name>formation</name></member>
+      <member refid="class_squad_property_indicator_1af62c0fe843fc1a0167fb402d3944f05c" prot="public" virt="non-virtual"><scope>SquadPropertyIndicator</scope><name>GetDescription</name></member>
+      <member refid="class_squad_property_indicator_1a68626a1c2a4ad42217b0251d7ffebd51" prot="public" virt="non-virtual"><scope>SquadPropertyIndicator</scope><name>OnPointerClick</name></member>
+      <member refid="class_squad_property_indicator_1a314aea8508308e6d5f5910983dda57c8" prot="private" virt="non-virtual"><scope>SquadPropertyIndicator</scope><name>Start</name></member>
+      <member refid="class_squad_property_indicator_1a8afe11bb88bc125ce6382f70d297e15c" prot="private" virt="non-virtual"><scope>SquadPropertyIndicator</scope><name>stringResourceDescription</name></member>
+      <member refid="class_squad_property_indicator_1af2075f9510c36154e036c85ce335d0a4" prot="private" virt="non-virtual"><scope>SquadPropertyIndicator</scope><name>stringResourceName</name></member>
+      <member refid="class_squad_property_indicator_1a0b02bb9bc2a5cd2d294e329333f61271" prot="public" virt="non-virtual"><scope>SquadPropertyIndicator</scope><name>Type</name></member>
+      <member refid="class_squad_property_indicator_1ae383525442ee9b71a1ec3b56e6569937" prot="private" virt="non-virtual"><scope>SquadPropertyIndicator</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

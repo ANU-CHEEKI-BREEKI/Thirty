@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_77b9ccd7034a1ba4b2e2cdc90e12dd39" kind="dir">
+    <compoundname>D:/development/unity/mytestgame/MyTestGameProject/Assets</compoundname>
+    <innerdir refid="dir_282eacc443eb6798e98e40f824032f1f">D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master</innerdir>
+    <innerdir refid="dir_1954d134dc9a53bbfc153c1495fb2e8b">D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/"/>
+  </compounddef>
+</doxygen>

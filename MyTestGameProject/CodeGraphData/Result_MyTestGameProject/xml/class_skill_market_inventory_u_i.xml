@@ -1,0 +1,251 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_skill_market_inventory_u_i" kind="class" prot="public">
+    <compoundname>SkillMarketInventoryUI</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_skill_market_inventory_u_i_1a10e6401847ed245adfdba7504c601fdb" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_skill_market_inventory_u_i" kindref="compound">SkillMarketInventoryUI</ref></type>
+        <definition>SkillMarketInventoryUI SkillMarketInventoryUI.Instance</definition>
+        <argsstring></argsstring>
+        <name>Instance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/SkillMarketInventoryUI.cs" line="8" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/SkillMarketInventoryUI.cs" bodystart="8" bodyend="-1"/>
+        <referencedby refid="class_skill_market_inventory_u_i_1a9d3db682c32ab02175ac58adb48c3732" compoundref="_skill_market_inventory_u_i_8cs" startline="19" endline="22">Awake</referencedby>
+        <referencedby refid="class_a_drop_to_me_1aa823b910877eb709c120b6e082063ac0" compoundref="_a_drop_to_me_8cs" startline="37" endline="53">ADropToMe.RefreshUI</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_skill_market_inventory_u_i_1a9332909bc8e875f8cf56e69b50aecb85" prot="private" static="no" mutable="no">
+        <type>GameObject</type>
+        <definition>GameObject SkillMarketInventoryUI.skillItemOriginal</definition>
+        <argsstring></argsstring>
+        <name>skillItemOriginal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/SkillMarketInventoryUI.cs" line="10" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/SkillMarketInventoryUI.cs" bodystart="10" bodyend="-1"/>
+        <referencedby refid="class_skill_market_inventory_u_i_1a3e3fbd5ba1960faeef0d48952983b3db" compoundref="_skill_market_inventory_u_i_8cs" startline="40" endline="91">RefreshUI</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_skill_market_inventory_u_i_1a6324c12e79b8937d833288fa7ca8d12c" prot="private" static="no" mutable="no">
+        <type>Transform</type>
+        <definition>Transform SkillMarketInventoryUI.skillsContainer</definition>
+        <argsstring></argsstring>
+        <name>skillsContainer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/SkillMarketInventoryUI.cs" line="13" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/SkillMarketInventoryUI.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_skill_market_inventory_u_i_1aecc51a9e1559f549f4e4fdd72754046c" prot="private" static="no" mutable="no">
+        <type>Color</type>
+        <definition>Color SkillMarketInventoryUI.disabledColor</definition>
+        <argsstring></argsstring>
+        <name>disabledColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/SkillMarketInventoryUI.cs" line="14" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/SkillMarketInventoryUI.cs" bodystart="14" bodyend="-1"/>
+        <referencedby refid="class_skill_market_inventory_u_i_1a3e3fbd5ba1960faeef0d48952983b3db" compoundref="_skill_market_inventory_u_i_8cs" startline="40" endline="91">RefreshUI</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_skill_market_inventory_u_i_1a6cd7d17626621ec4ebbdb773c917aaee" prot="private" static="no" mutable="no">
+        <type><ref refid="class_skill_stack" kindref="compound">SkillStack</ref>[]</type>
+        <definition>SkillStack [] SkillMarketInventoryUI.skills</definition>
+        <argsstring></argsstring>
+        <name>skills</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/SkillMarketInventoryUI.cs" line="16" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/SkillMarketInventoryUI.cs" bodystart="16" bodyend="-1"/>
+        <referencedby refid="class_skill_market_inventory_u_i_1a3e3fbd5ba1960faeef0d48952983b3db" compoundref="_skill_market_inventory_u_i_8cs" startline="40" endline="91">RefreshUI</referencedby>
+        <referencedby refid="class_skill_market_inventory_u_i_1a0132c9d38802b8989a7fe7532dc3f1ea" compoundref="_skill_market_inventory_u_i_8cs" startline="24" endline="38">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_skill_market_inventory_u_i_1a536d483837752588aed0e46bb6c65a4b" prot="private" static="no" mutable="no">
+        <type><ref refid="class_drop_to_skill_market" kindref="compound">DropToSkillMarket</ref>[]</type>
+        <definition>DropToSkillMarket [] SkillMarketInventoryUI.skillCells</definition>
+        <argsstring></argsstring>
+        <name>skillCells</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/SkillMarketInventoryUI.cs" line="17" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/SkillMarketInventoryUI.cs" bodystart="17" bodyend="-1"/>
+        <referencedby refid="class_skill_market_inventory_u_i_1a3e3fbd5ba1960faeef0d48952983b3db" compoundref="_skill_market_inventory_u_i_8cs" startline="40" endline="91">RefreshUI</referencedby>
+        <referencedby refid="class_skill_market_inventory_u_i_1a0132c9d38802b8989a7fe7532dc3f1ea" compoundref="_skill_market_inventory_u_i_8cs" startline="24" endline="38">Start</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_skill_market_inventory_u_i_1a9d3db682c32ab02175ac58adb48c3732" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SkillMarketInventoryUI.Awake</definition>
+        <argsstring>()</argsstring>
+        <name>Awake</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/SkillMarketInventoryUI.cs" line="19" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/SkillMarketInventoryUI.cs" bodystart="19" bodyend="22"/>
+        <references refid="class_skill_market_inventory_u_i_1a10e6401847ed245adfdba7504c601fdb" compoundref="_skill_market_inventory_u_i_8cs" startline="8">Instance</references>
+      </memberdef>
+      <memberdef kind="function" id="class_skill_market_inventory_u_i_1a0132c9d38802b8989a7fe7532dc3f1ea" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SkillMarketInventoryUI.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/SkillMarketInventoryUI.cs" line="24" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/SkillMarketInventoryUI.cs" bodystart="24" bodyend="38"/>
+        <references refid="class_skill_market_inventory_u_i_1a3e3fbd5ba1960faeef0d48952983b3db" compoundref="_skill_market_inventory_u_i_8cs" startline="40" endline="91">RefreshUI</references>
+        <references refid="class_skill_market_inventory_u_i_1a536d483837752588aed0e46bb6c65a4b" compoundref="_skill_market_inventory_u_i_8cs" startline="17">skillCells</references>
+        <references refid="class_skill_market_inventory_u_i_1a6cd7d17626621ec4ebbdb773c917aaee" compoundref="_skill_market_inventory_u_i_8cs" startline="16">skills</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_skill_market_inventory_u_i_1a3e3fbd5ba1960faeef0d48952983b3db" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SkillMarketInventoryUI.RefreshUI</definition>
+        <argsstring>()</argsstring>
+        <name>RefreshUI</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/SkillMarketInventoryUI.cs" line="40" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/SkillMarketInventoryUI.cs" bodystart="40" bodyend="91"/>
+        <references refid="class_skill_market_inventory_u_i_1aecc51a9e1559f549f4e4fdd72754046c" compoundref="_skill_market_inventory_u_i_8cs" startline="14">disabledColor</references>
+        <references refid="class_skill_1a193e8c3a91b5e51b0c0c85ca261ef7c5" compoundref="_skill_8cs" startline="15">Skill.Id</references>
+        <references refid="class_skill_market_inventory_u_i_1a536d483837752588aed0e46bb6c65a4b" compoundref="_skill_market_inventory_u_i_8cs" startline="17">skillCells</references>
+        <references refid="class_skill_market_inventory_u_i_1a9332909bc8e875f8cf56e69b50aecb85" compoundref="_skill_market_inventory_u_i_8cs" startline="10">skillItemOriginal</references>
+        <references refid="class_skill_market_inventory_u_i_1a6cd7d17626621ec4ebbdb773c917aaee" compoundref="_skill_market_inventory_u_i_8cs" startline="16">skills</references>
+        <referencedby refid="class_skill_market_inventory_u_i_1a0132c9d38802b8989a7fe7532dc3f1ea" compoundref="_skill_market_inventory_u_i_8cs" startline="24" endline="38">Start</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="961">
+        <label>SkillMarketInventoryUI</label>
+        <link refid="class_skill_market_inventory_u_i"/>
+        <childnode refid="962" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="962">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="972">
+        <label>ADropToMe</label>
+        <link refid="class_a_drop_to_me"/>
+        <childnode refid="964" relation="public-inheritance">
+        </childnode>
+        <childnode refid="973" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="963">
+        <label>SkillMarketInventoryUI</label>
+        <link refid="class_skill_market_inventory_u_i"/>
+        <childnode refid="964" relation="public-inheritance">
+        </childnode>
+        <childnode refid="965" relation="usage">
+          <edgelabel>skills</edgelabel>
+        </childnode>
+        <childnode refid="971" relation="usage">
+          <edgelabel>skillCells</edgelabel>
+        </childnode>
+      </node>
+      <node id="970">
+        <label>Item.MainProperties</label>
+        <link refid="struct_item_1_1_main_properties"/>
+      </node>
+      <node id="967">
+        <label>IDescriptionable</label>
+        <link refid="interface_i_descriptionable"/>
+      </node>
+      <node id="969">
+        <label>Item</label>
+        <link refid="class_item"/>
+        <childnode refid="964" relation="public-inheritance">
+        </childnode>
+        <childnode refid="970" relation="usage">
+          <edgelabel>mainProperties</edgelabel>
+        </childnode>
+      </node>
+      <node id="965">
+        <label>SkillStack</label>
+        <link refid="class_skill_stack"/>
+        <childnode refid="966" relation="public-inheritance">
+        </childnode>
+        <childnode refid="967" relation="public-inheritance">
+        </childnode>
+        <childnode refid="968" relation="usage">
+          <edgelabel>skill</edgelabel>
+        </childnode>
+      </node>
+      <node id="966">
+        <label>AStack</label>
+        <link refid="class_a_stack"/>
+      </node>
+      <node id="964">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="973">
+        <label>IDropHandler</label>
+      </node>
+      <node id="968">
+        <label>Skill</label>
+        <link refid="class_skill"/>
+        <childnode refid="969" relation="public-inheritance">
+        </childnode>
+        <childnode refid="967" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="971">
+        <label>DropToSkillMarket</label>
+        <link refid="class_drop_to_skill_market"/>
+        <childnode refid="972" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/SkillMarketInventoryUI.cs" line="7" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/SkillMarketInventoryUI.cs" bodystart="6" bodyend="92"/>
+    <listofallmembers>
+      <member refid="class_skill_market_inventory_u_i_1a9d3db682c32ab02175ac58adb48c3732" prot="private" virt="non-virtual"><scope>SkillMarketInventoryUI</scope><name>Awake</name></member>
+      <member refid="class_skill_market_inventory_u_i_1aecc51a9e1559f549f4e4fdd72754046c" prot="private" virt="non-virtual"><scope>SkillMarketInventoryUI</scope><name>disabledColor</name></member>
+      <member refid="class_skill_market_inventory_u_i_1a10e6401847ed245adfdba7504c601fdb" prot="public" virt="non-virtual"><scope>SkillMarketInventoryUI</scope><name>Instance</name></member>
+      <member refid="class_skill_market_inventory_u_i_1a3e3fbd5ba1960faeef0d48952983b3db" prot="public" virt="non-virtual"><scope>SkillMarketInventoryUI</scope><name>RefreshUI</name></member>
+      <member refid="class_skill_market_inventory_u_i_1a536d483837752588aed0e46bb6c65a4b" prot="private" virt="non-virtual"><scope>SkillMarketInventoryUI</scope><name>skillCells</name></member>
+      <member refid="class_skill_market_inventory_u_i_1a9332909bc8e875f8cf56e69b50aecb85" prot="private" virt="non-virtual"><scope>SkillMarketInventoryUI</scope><name>skillItemOriginal</name></member>
+      <member refid="class_skill_market_inventory_u_i_1a6cd7d17626621ec4ebbdb773c917aaee" prot="private" virt="non-virtual"><scope>SkillMarketInventoryUI</scope><name>skills</name></member>
+      <member refid="class_skill_market_inventory_u_i_1a6324c12e79b8937d833288fa7ca8d12c" prot="private" virt="non-virtual"><scope>SkillMarketInventoryUI</scope><name>skillsContainer</name></member>
+      <member refid="class_skill_market_inventory_u_i_1a0132c9d38802b8989a7fe7532dc3f1ea" prot="private" virt="non-virtual"><scope>SkillMarketInventoryUI</scope><name>Start</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

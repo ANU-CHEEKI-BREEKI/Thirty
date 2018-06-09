@@ -1,0 +1,324 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_equipment_stack" kind="class" prot="public">
+    <compoundname>EquipmentStack</compoundname>
+    <basecompoundref refid="class_a_stack" prot="public" virt="non-virtual">AStack</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_equipment_stack_1a8f3979e80349c3d7767e350b8e68ac5f" prot="private" static="no" mutable="no">
+        <type><ref refid="struct_item_1_1_main_properties" kindref="compound">Item.MainProperties</ref></type>
+        <definition>Item.MainProperties EquipmentStack.equipmentMainProperties</definition>
+        <argsstring></argsstring>
+        <name>equipmentMainProperties</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStack.cs" line="9" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStack.cs" bodystart="9" bodyend="-1"/>
+        <referencedby refid="class_equipment_stack_1a633b5e73263ce80e5aa611157ef8b43a" compoundref="_equipment_stack_8cs" startline="22" endline="27">EquipmentStack</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_equipment_stack_1a311ca7807ed3901dcd6cb2d0028c9321" prot="private" static="no" mutable="no">
+        <type><ref refid="struct_equipment_stats" kindref="compound">EquipmentStats</ref></type>
+        <definition>EquipmentStats EquipmentStack.equipmentStats</definition>
+        <argsstring></argsstring>
+        <name>equipmentStats</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStack.cs" line="12" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStack.cs" bodystart="12" bodyend="-1"/>
+        <referencedby refid="class_equipment_stack_1a633b5e73263ce80e5aa611157ef8b43a" compoundref="_equipment_stack_8cs" startline="22" endline="27">EquipmentStack</referencedby>
+        <referencedby refid="class_equipment_stack_1a48314cadc8c8206c68b098062ee88422" compoundref="_equipment_stack_8cs" startline="43" endline="51">PushItems</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_equipment_stack_1a14bdd10e43f2201f197679e5e5a890d6" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int EquipmentStack.count</definition>
+        <argsstring></argsstring>
+        <name>count</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStack.cs" line="15" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStack.cs" bodystart="15" bodyend="-1"/>
+        <referencedby refid="class_equipment_stack_1a633b5e73263ce80e5aa611157ef8b43a" compoundref="_equipment_stack_8cs" startline="22" endline="27">EquipmentStack</referencedby>
+        <referencedby refid="class_equipment_stack_1a70ce254d4905ef33e8b3e8ab1b4a02f3" compoundref="_equipment_stack_8cs" startline="53" endline="59">PopItems</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_equipment_stack_1a7c41008f3dc56ac19774468efd798d48" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="struct_item_1_1_main_properties" kindref="compound">Item.MainProperties</ref></type>
+        <definition>Item.MainProperties EquipmentStack.EquipmentMainProperties</definition>
+        <argsstring></argsstring>
+        <name>EquipmentMainProperties</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStack.cs" line="10" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStack.cs" bodystart="10" bodyend="-1"/>
+        <referencedby refid="class_drop_to_inventory_1a3eee684dd1a719784a7814bf8a4b6704" compoundref="_drop_to_inventory_8cs" startline="56" endline="71">DropToInventory.AddToThisInventory</referencedby>
+        <referencedby refid="class_drop_to_ground_1a91a5ee1b7fdb866f90a2d7156184cc2a" compoundref="_drop_to_ground_8cs" startline="5" endline="26">DropToGround.OnDrop</referencedby>
+        <referencedby refid="class_drop_to_equipment_market_1ae51fe5f1f0dda746010d2c85a79da913" compoundref="_drop_to_equipment_market_8cs" startline="6" endline="26">DropToEquipmentMarket.OnDrop</referencedby>
+        <referencedby refid="class_drop_to_equipment_1ae3d4d93b720430bbd8a03ecd83bac01b" compoundref="_drop_to_equipment_8cs" startline="7" endline="44">DropToEquipment.OnDrop</referencedby>
+        <referencedby refid="class_drop_to_inventory_1a0d4c04875df9f644d56798b13b0fe471" compoundref="_drop_to_inventory_8cs" startline="9" endline="54">DropToInventory.OnDrop</referencedby>
+        <referencedby refid="class_unit_1a16901fd541a019ec9d03c4d87f605090" compoundref="_unit_8cs" startline="787" endline="796">Unit.OnDropStack</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_equipment_stack_1afd0cfe57cae1b79a1e63aa64caaebe9e" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="struct_equipment_stats" kindref="compound">EquipmentStats</ref></type>
+        <definition>EquipmentStats EquipmentStack.EquipmentStats</definition>
+        <argsstring></argsstring>
+        <name>EquipmentStats</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStack.cs" line="13" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStack.cs" bodystart="13" bodyend="-1"/>
+        <referencedby refid="class_drop_to_inventory_1a3eee684dd1a719784a7814bf8a4b6704" compoundref="_drop_to_inventory_8cs" startline="56" endline="71">DropToInventory.AddToThisInventory</referencedby>
+        <referencedby refid="class_drag_equipment_1a73db69b6e53ca46b849e46eb3a8cb398" compoundref="_drag_equipment_8cs" startline="11" endline="17">DragEquipment.OnCantDrag</referencedby>
+        <referencedby refid="class_drop_to_ground_1a91a5ee1b7fdb866f90a2d7156184cc2a" compoundref="_drop_to_ground_8cs" startline="5" endline="26">DropToGround.OnDrop</referencedby>
+        <referencedby refid="class_drop_to_equipment_market_1ae51fe5f1f0dda746010d2c85a79da913" compoundref="_drop_to_equipment_market_8cs" startline="6" endline="26">DropToEquipmentMarket.OnDrop</referencedby>
+        <referencedby refid="class_drop_to_equipment_1ae3d4d93b720430bbd8a03ecd83bac01b" compoundref="_drop_to_equipment_8cs" startline="7" endline="44">DropToEquipment.OnDrop</referencedby>
+        <referencedby refid="class_drop_to_inventory_1a0d4c04875df9f644d56798b13b0fe471" compoundref="_drop_to_inventory_8cs" startline="9" endline="54">DropToInventory.OnDrop</referencedby>
+        <referencedby refid="class_unit_1a16901fd541a019ec9d03c4d87f605090" compoundref="_unit_8cs" startline="787" endline="796">Unit.OnDropStack</referencedby>
+        <referencedby refid="class_envirinmant_inventory_u_i_1a9bf125b3eecfde16b932c6f8fbc414e3" compoundref="_envirinmant_inventory_u_i_8cs" startline="188" endline="213">EnvirinmantInventoryUI.PickUpEquipment</referencedby>
+        <referencedby refid="class_drop_to_inventory_1aca372615bb6aa26b2c85a1bbdb05e3d2" compoundref="_drop_to_inventory_8cs" startline="73" endline="91">DropToInventory.RemoveFromThisInventory</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_equipment_stack_1aea353e00a5c0c6e964fcfe01db42d12b" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>int</type>
+        <definition>int EquipmentStack.Count</definition>
+        <argsstring></argsstring>
+        <name>Count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStack.cs" line="16" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStack.cs" bodystart="16" bodyend="-1"/>
+        <referencedby refid="class_drop_to_ground_1acd40eb31f5bafd44f2ee71a975be8191" compoundref="_drop_to_ground_8cs" startline="28" endline="39">DropToGround.AddToThisInventory</referencedby>
+        <referencedby refid="class_drop_to_inventory_1a3eee684dd1a719784a7814bf8a4b6704" compoundref="_drop_to_inventory_8cs" startline="56" endline="71">DropToInventory.AddToThisInventory</referencedby>
+        <referencedby refid="class_drop_to_ground_1a91a5ee1b7fdb866f90a2d7156184cc2a" compoundref="_drop_to_ground_8cs" startline="5" endline="26">DropToGround.OnDrop</referencedby>
+        <referencedby refid="class_drop_to_equipment_market_1ae51fe5f1f0dda746010d2c85a79da913" compoundref="_drop_to_equipment_market_8cs" startline="6" endline="26">DropToEquipmentMarket.OnDrop</referencedby>
+        <referencedby refid="class_drop_to_equipment_1ae3d4d93b720430bbd8a03ecd83bac01b" compoundref="_drop_to_equipment_8cs" startline="7" endline="44">DropToEquipment.OnDrop</referencedby>
+        <referencedby refid="class_unit_1a16901fd541a019ec9d03c4d87f605090" compoundref="_unit_8cs" startline="787" endline="796">Unit.OnDropStack</referencedby>
+        <referencedby refid="class_envirinmant_inventory_u_i_1a9bf125b3eecfde16b932c6f8fbc414e3" compoundref="_envirinmant_inventory_u_i_8cs" startline="188" endline="213">EnvirinmantInventoryUI.PickUpEquipment</referencedby>
+        <referencedby refid="class_drop_to_inventory_1aca372615bb6aa26b2c85a1bbdb05e3d2" compoundref="_drop_to_inventory_8cs" startline="73" endline="91">DropToInventory.RemoveFromThisInventory</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_equipment_stack_1ac5a0b0d9002006caf74bb60997333077" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>EquipmentStack.EquipmentStack</definition>
+        <argsstring>()</argsstring>
+        <name>EquipmentStack</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStack.cs" line="18" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStack.cs" bodystart="18" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_equipment_stack_1a633b5e73263ce80e5aa611157ef8b43a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>EquipmentStack.EquipmentStack</definition>
+        <argsstring>(Item.MainProperties equipmentMainProperties, EquipmentStats equipmentStats, int count=1)</argsstring>
+        <name>EquipmentStack</name>
+        <param>
+          <type><ref refid="struct_item_1_1_main_properties" kindref="compound">Item.MainProperties</ref></type>
+          <declname>equipmentMainProperties</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_equipment_stats" kindref="compound">EquipmentStats</ref></type>
+          <declname>equipmentStats</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStack.cs" line="22" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStack.cs" bodystart="22" bodyend="27"/>
+        <references refid="class_equipment_stack_1a14bdd10e43f2201f197679e5e5a890d6" compoundref="_equipment_stack_8cs" startline="15">count</references>
+        <references refid="class_equipment_stack_1a8f3979e80349c3d7767e350b8e68ac5f" compoundref="_equipment_stack_8cs" startline="9">equipmentMainProperties</references>
+        <references refid="class_equipment_stack_1a311ca7807ed3901dcd6cb2d0028c9321" compoundref="_equipment_stack_8cs" startline="12">equipmentStats</references>
+      </memberdef>
+      <memberdef kind="function" id="class_equipment_stack_1adefe21bce48ae5082346ac0b236134fc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>EquipmentStack.EquipmentStack</definition>
+        <argsstring>(Equipment item, int count=1)</argsstring>
+        <name>EquipmentStack</name>
+        <param>
+          <type><ref refid="class_equipment" kindref="compound">Equipment</ref></type>
+          <declname>item</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStack.cs" line="29" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStack.cs" bodystart="29" bodyend="34"/>
+        <references refid="class_equipment_stack_1a14bdd10e43f2201f197679e5e5a890d6" compoundref="_equipment_stack_8cs" startline="15">count</references>
+      </memberdef>
+      <memberdef kind="function" id="class_equipment_stack_1a94883ca3317773d47bbae3c83ed44814" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>EquipmentStack.EquipmentStack</definition>
+        <argsstring>(EquipmentStack itemStackToCopy)</argsstring>
+        <name>EquipmentStack</name>
+        <param>
+          <type><ref refid="class_equipment_stack" kindref="compound">EquipmentStack</ref></type>
+          <declname>itemStackToCopy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStack.cs" line="36" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStack.cs" bodystart="36" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="class_equipment_stack_1a48314cadc8c8206c68b098062ee88422" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void EquipmentStack.PushItems</definition>
+        <argsstring>(EquipmentStack stack)</argsstring>
+        <name>PushItems</name>
+        <param>
+          <type><ref refid="class_equipment_stack" kindref="compound">EquipmentStack</ref></type>
+          <declname>stack</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStack.cs" line="43" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStack.cs" bodystart="43" bodyend="51"/>
+        <references refid="class_equipment_stack_1a311ca7807ed3901dcd6cb2d0028c9321" compoundref="_equipment_stack_8cs" startline="12">equipmentStats</references>
+        <references refid="struct_equipment_stats_1a40d92422bb84c73f61b6f3102da17dfb" compoundref="_equipment_stats_8cs" startline="19">EquipmentStats.Id</references>
+        <references refid="struct_equipment_stats_1a8dc2ea9210642e140167bb1030760f3e" compoundref="_equipment_stats_8cs" startline="35">EquipmentStats.ItemDurability</references>
+        <references refid="struct_equipment_stats_1aeb10a54b818a9a8c9c1aec28a00da3ca" compoundref="_equipment_stats_8cs" startline="16">EquipmentStats.Type</references>
+      </memberdef>
+      <memberdef kind="function" id="class_equipment_stack_1a70ce254d4905ef33e8b3e8ab1b4a02f3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void EquipmentStack.PopItems</definition>
+        <argsstring>(int count=1)</argsstring>
+        <name>PopItems</name>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStack.cs" line="53" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStack.cs" bodystart="53" bodyend="59"/>
+        <references refid="class_equipment_stack_1a14bdd10e43f2201f197679e5e5a890d6" compoundref="_equipment_stack_8cs" startline="15">count</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="323">
+        <label>AStack</label>
+        <link refid="class_a_stack"/>
+      </node>
+      <node id="322">
+        <label>EquipmentStack</label>
+        <link refid="class_equipment_stack"/>
+        <childnode refid="323" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="328">
+        <label>Item.MainProperties</label>
+        <link refid="struct_item_1_1_main_properties"/>
+      </node>
+      <node id="331">
+        <label>Damage</label>
+        <link refid="struct_damage"/>
+      </node>
+      <node id="330">
+        <label>IDescriptionable</label>
+        <link refid="interface_i_descriptionable"/>
+      </node>
+      <node id="326">
+        <label>Item</label>
+        <link refid="class_item"/>
+        <childnode refid="327" relation="public-inheritance">
+        </childnode>
+        <childnode refid="328" relation="usage">
+          <edgelabel>mainProperties</edgelabel>
+        </childnode>
+      </node>
+      <node id="329">
+        <label>EquipmentStats</label>
+        <link refid="struct_equipment_stats"/>
+        <childnode refid="330" relation="public-inheritance">
+        </childnode>
+        <childnode refid="331" relation="usage">
+          <edgelabel>damage</edgelabel>
+        </childnode>
+      </node>
+      <node id="325">
+        <label>AStack</label>
+        <link refid="class_a_stack"/>
+      </node>
+      <node id="327">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="324">
+        <label>EquipmentStack</label>
+        <link refid="class_equipment_stack"/>
+        <childnode refid="325" relation="public-inheritance">
+        </childnode>
+        <childnode refid="326" relation="usage">
+          <edgelabel>equipmentMainProperties</edgelabel>
+        </childnode>
+        <childnode refid="329" relation="usage">
+          <edgelabel>equipmentStats</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStack.cs" line="8" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStack.cs" bodystart="7" bodyend="60"/>
+    <listofallmembers>
+      <member refid="class_equipment_stack_1a14bdd10e43f2201f197679e5e5a890d6" prot="private" virt="non-virtual"><scope>EquipmentStack</scope><name>count</name></member>
+      <member refid="class_equipment_stack_1aea353e00a5c0c6e964fcfe01db42d12b" prot="public" virt="non-virtual"><scope>EquipmentStack</scope><name>Count</name></member>
+      <member refid="class_equipment_stack_1a8f3979e80349c3d7767e350b8e68ac5f" prot="private" virt="non-virtual"><scope>EquipmentStack</scope><name>equipmentMainProperties</name></member>
+      <member refid="class_equipment_stack_1a7c41008f3dc56ac19774468efd798d48" prot="public" virt="non-virtual"><scope>EquipmentStack</scope><name>EquipmentMainProperties</name></member>
+      <member refid="class_equipment_stack_1ac5a0b0d9002006caf74bb60997333077" prot="public" virt="non-virtual"><scope>EquipmentStack</scope><name>EquipmentStack</name></member>
+      <member refid="class_equipment_stack_1a633b5e73263ce80e5aa611157ef8b43a" prot="public" virt="non-virtual"><scope>EquipmentStack</scope><name>EquipmentStack</name></member>
+      <member refid="class_equipment_stack_1adefe21bce48ae5082346ac0b236134fc" prot="public" virt="non-virtual"><scope>EquipmentStack</scope><name>EquipmentStack</name></member>
+      <member refid="class_equipment_stack_1a94883ca3317773d47bbae3c83ed44814" prot="public" virt="non-virtual"><scope>EquipmentStack</scope><name>EquipmentStack</name></member>
+      <member refid="class_equipment_stack_1afd0cfe57cae1b79a1e63aa64caaebe9e" prot="public" virt="non-virtual"><scope>EquipmentStack</scope><name>EquipmentStats</name></member>
+      <member refid="class_equipment_stack_1a311ca7807ed3901dcd6cb2d0028c9321" prot="private" virt="non-virtual"><scope>EquipmentStack</scope><name>equipmentStats</name></member>
+      <member refid="class_equipment_stack_1a70ce254d4905ef33e8b3e8ab1b4a02f3" prot="public" virt="non-virtual"><scope>EquipmentStack</scope><name>PopItems</name></member>
+      <member refid="class_equipment_stack_1a48314cadc8c8206c68b098062ee88422" prot="public" virt="non-virtual"><scope>EquipmentStack</scope><name>PushItems</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_break_on_collision" kind="class" prot="public">
+    <compoundname>BreakOnCollision</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_break_on_collision_1a0e26037c2b1dbd0994e3faf0929eefc0" prot="private" static="no" mutable="no">
+        <type><ref refid="class_durabilityable" kindref="compound">Durabilityable</ref></type>
+        <definition>Durabilityable BreakOnCollision.durabilityable</definition>
+        <argsstring></argsstring>
+        <name>durabilityable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/BreakOnCollision.cs" line="8" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/BreakOnCollision.cs" bodystart="8" bodyend="-1"/>
+        <referencedby refid="class_break_on_collision_1a40bd09cf83bf9c6fb8be78ca3e5fe876" compoundref="_break_on_collision_8cs" startline="11" endline="15">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_break_on_collision_1a26ad22c5488c8eae3f29f43ce7d99763" prot="private" static="no" mutable="no">
+        <type>Collider2D[]</type>
+        <definition>Collider2D [] BreakOnCollision.colliders</definition>
+        <argsstring></argsstring>
+        <name>colliders</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/BreakOnCollision.cs" line="9" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/BreakOnCollision.cs" bodystart="9" bodyend="-1"/>
+        <referencedby refid="class_break_on_collision_1a901d1f1997e707c52513850cc1f41ae0" compoundref="_break_on_collision_8cs" startline="17" endline="29">OnCollisionEnter2D</referencedby>
+        <referencedby refid="class_break_on_collision_1a40bd09cf83bf9c6fb8be78ca3e5fe876" compoundref="_break_on_collision_8cs" startline="11" endline="15">Start</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_break_on_collision_1a40bd09cf83bf9c6fb8be78ca3e5fe876" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BreakOnCollision.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/BreakOnCollision.cs" line="11" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/BreakOnCollision.cs" bodystart="11" bodyend="15"/>
+        <references refid="class_break_on_collision_1a26ad22c5488c8eae3f29f43ce7d99763" compoundref="_break_on_collision_8cs" startline="9">colliders</references>
+        <references refid="class_break_on_collision_1a0e26037c2b1dbd0994e3faf0929eefc0" compoundref="_break_on_collision_8cs" startline="8">durabilityable</references>
+      </memberdef>
+      <memberdef kind="function" id="class_break_on_collision_1a901d1f1997e707c52513850cc1f41ae0" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BreakOnCollision.OnCollisionEnter2D</definition>
+        <argsstring>(Collision2D collision)</argsstring>
+        <name>OnCollisionEnter2D</name>
+        <param>
+          <type>Collision2D</type>
+          <declname>collision</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/BreakOnCollision.cs" line="17" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/BreakOnCollision.cs" bodystart="17" bodyend="29"/>
+        <references refid="class_break_on_collision_1a26ad22c5488c8eae3f29f43ce7d99763" compoundref="_break_on_collision_8cs" startline="9">colliders</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="81">
+        <label>BreakOnCollision</label>
+        <link refid="class_break_on_collision"/>
+        <childnode refid="82" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="82">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="85">
+        <label>Durabilityable</label>
+        <link refid="class_durabilityable"/>
+        <childnode refid="84" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="83">
+        <label>BreakOnCollision</label>
+        <link refid="class_break_on_collision"/>
+        <childnode refid="84" relation="public-inheritance">
+        </childnode>
+        <childnode refid="85" relation="usage">
+          <edgelabel>durabilityable</edgelabel>
+        </childnode>
+      </node>
+      <node id="84">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/BreakOnCollision.cs" line="7" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/BreakOnCollision.cs" bodystart="6" bodyend="30"/>
+    <listofallmembers>
+      <member refid="class_break_on_collision_1a26ad22c5488c8eae3f29f43ce7d99763" prot="private" virt="non-virtual"><scope>BreakOnCollision</scope><name>colliders</name></member>
+      <member refid="class_break_on_collision_1a0e26037c2b1dbd0994e3faf0929eefc0" prot="private" virt="non-virtual"><scope>BreakOnCollision</scope><name>durabilityable</name></member>
+      <member refid="class_break_on_collision_1a901d1f1997e707c52513850cc1f41ae0" prot="private" virt="non-virtual"><scope>BreakOnCollision</scope><name>OnCollisionEnter2D</name></member>
+      <member refid="class_break_on_collision_1a40bd09cf83bf9c6fb8be78ca3e5fe876" prot="private" virt="non-virtual"><scope>BreakOnCollision</scope><name>Start</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

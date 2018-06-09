@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_camera_controller_8cs" kind="file">
+    <compoundname>CameraController.cs</compoundname>
+    <innerclass refid="class_camera_controller" prot="public">CameraController</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>UnityEngine;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="class_camera_controller" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_camera_controller" kindref="compound">CameraController</ref><sp/>:<sp/>MonoBehaviour</highlight></codeline>
+<codeline lineno="5"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="class_camera_controller_1a922b61d2fe82ca65e9890b887b6e406f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_squad" kindref="compound">Squad</ref><sp/><ref refid="class_camera_controller_1a922b61d2fe82ca65e9890b887b6e406f" kindref="member">squadForFollow</ref>;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="class_camera_controller_1a4f640c5b4ca7a9047262f68cea74b996" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Transform<sp/><ref refid="class_camera_controller_1a4f640c5b4ca7a9047262f68cea74b996" kindref="member">thisTransform</ref>;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="class_camera_controller_1ab019249f505cf46cac870a057ff96415" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_camera_controller_1ab019249f505cf46cac870a057ff96415" kindref="member">defaultCameraSize</ref>;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="13" refid="class_camera_controller_1af069f60b026c101acaa824ea86f64713" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[SerializeField]<sp/>[Range(0,<sp/>100)]<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_camera_controller_1af069f60b026c101acaa824ea86f64713" kindref="member">aceleration</ref><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="14" refid="class_camera_controller_1a936c9c5cd167f41544272916b100c102" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[SerializeField]<sp/>[Range(0,<sp/>1)]<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_camera_controller_1a936c9c5cd167f41544272916b100c102" kindref="member">acurasy</ref><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="class_camera_controller_1acafb62cf49f688a7778044dcfeec7190" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[SerializeField]<sp/>[Range(0,<sp/>100)]<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_camera_controller_1acafb62cf49f688a7778044dcfeec7190" kindref="member">maxSpeed</ref>;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>[Space]</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="class_camera_controller_1a25af92b0e086aed1bd02a99d674411d0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[SerializeField]<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_camera_controller_1a25af92b0e086aed1bd02a99d674411d0" kindref="member">currentSpeed</ref>;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="class_camera_controller_1ad4a238c6f7db3ee003302a245d860860" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_camera_controller_1ad4a238c6f7db3ee003302a245d860860" kindref="member">Start</ref><sp/>()</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_camera_controller_1a4f640c5b4ca7a9047262f68cea74b996" kindref="member">thisTransform</ref><sp/>=<sp/>transform;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_camera_controller_1a922b61d2fe82ca65e9890b887b6e406f" kindref="member">squadForFollow</ref><sp/>=<sp/>GameObject.FindWithTag(</highlight><highlight class="stringliteral">&quot;Player&quot;</highlight><highlight class="normal">).GetComponent&lt;Squad&gt;();</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_camera_controller_1ab019249f505cf46cac870a057ff96415" kindref="member">defaultCameraSize</ref><sp/>=<sp/>Camera.main.orthographicSize;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="30" refid="class_camera_controller_1a7c4f486f4bcbd1d54a346fdce9707bd5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_camera_controller_1a7c4f486f4bcbd1d54a346fdce9707bd5" kindref="member">Update</ref><sp/>()</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_camera_controller_1a922b61d2fe82ca65e9890b887b6e406f" kindref="member">squadForFollow</ref><sp/>!=<sp/>null)</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Vector2.SqrMagnitude((Vector2)<ref refid="class_camera_controller_1a4f640c5b4ca7a9047262f68cea74b996" kindref="member">thisTransform</ref>.position<sp/>-<sp/><ref refid="class_camera_controller_1a922b61d2fe82ca65e9890b887b6e406f" kindref="member">squadForFollow</ref>.<ref refid="class_squad_1a2d34961b1e379d63c8f74f30583b299c" kindref="member">CenterSquad</ref>)<sp/>&gt;<sp/><ref refid="class_camera_controller_1a936c9c5cd167f41544272916b100c102" kindref="member">acurasy</ref><sp/>*<sp/><ref refid="class_camera_controller_1a936c9c5cd167f41544272916b100c102" kindref="member">acurasy</ref>)</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_camera_controller_1a25af92b0e086aed1bd02a99d674411d0" kindref="member">currentSpeed</ref><sp/>&lt;<sp/><ref refid="class_camera_controller_1acafb62cf49f688a7778044dcfeec7190" kindref="member">maxSpeed</ref>)</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_camera_controller_1a25af92b0e086aed1bd02a99d674411d0" kindref="member">currentSpeed</ref><sp/>+=<sp/><ref refid="class_camera_controller_1af069f60b026c101acaa824ea86f64713" kindref="member">aceleration</ref><sp/>*<sp/>Time.deltaTime;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_camera_controller_1a25af92b0e086aed1bd02a99d674411d0" kindref="member">currentSpeed</ref><sp/>=<sp/><ref refid="class_camera_controller_1acafb62cf49f688a7778044dcfeec7190" kindref="member">maxSpeed</ref>;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_camera_controller_1a25af92b0e086aed1bd02a99d674411d0" kindref="member">currentSpeed</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Vector3<sp/>newPosition<sp/>=<sp/>Vector3.MoveTowards(thisTransform.position,<sp/>squadForFollow.CenterSquad,<sp/><ref refid="class_camera_controller_1a25af92b0e086aed1bd02a99d674411d0" kindref="member">currentSpeed</ref><sp/>*<sp/>Time.deltaTime);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>thisTransform.position<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Vector3(newPosition.x,<sp/>newPosition.y,<sp/><ref refid="class_camera_controller_1a4f640c5b4ca7a9047262f68cea74b996" kindref="member">thisTransform</ref>.position.z);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="class_camera_controller_1ad79dac56c7bfc8cf179e29bb781776ee" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_camera_controller_1ad79dac56c7bfc8cf179e29bb781776ee" kindref="member">OnScrolbarValueChanged</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>newValue)</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Camera.main.orthographicSize<sp/>=<sp/><ref refid="class_camera_controller_1ab019249f505cf46cac870a057ff96415" kindref="member">defaultCameraSize</ref><sp/>+<sp/>newValue;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/CameraController.cs"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,490 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_squad_spawner" kind="class" prot="public">
+    <compoundname>SquadSpawner</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_squad_spawner_1add54a53e6503886dd41439c7b4520473" prot="private" static="no" mutable="no">
+        <type>Quaternion</type>
+        <definition>Quaternion SquadSpawner.rotation</definition>
+        <argsstring></argsstring>
+        <name>rotation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/SquadSpawner.cs" line="8" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/SquadSpawner.cs" bodystart="8" bodyend="-1"/>
+        <referencedby refid="class_squad_spawner_1a386c5a7c6effe5a297da9b531c9804e0" compoundref="_squad_spawner_8cs" startline="35" endline="76">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_squad_spawner_1a4fafa06123eeca94446f3fab5489a338" prot="private" static="no" mutable="no">
+        <type>Transform</type>
+        <definition>Transform SquadSpawner.lookTarget</definition>
+        <argsstring></argsstring>
+        <name>lookTarget</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/SquadSpawner.cs" line="12" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/SquadSpawner.cs" bodystart="12" bodyend="-1"/>
+        <referencedby refid="class_squad_spawner_1a386c5a7c6effe5a297da9b531c9804e0" compoundref="_squad_spawner_8cs" startline="35" endline="76">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_squad_spawner_1a234077b37e08507f305f55773d217fe8" prot="private" static="no" mutable="no">
+        <type><ref refid="class_formation_stats_1ab336466e6a234574db24f2ec914e1dd4" kindref="member">FormationStats.Formations</ref></type>
+        <definition>FormationStats.Formations SquadSpawner.formation</definition>
+        <argsstring></argsstring>
+        <name>formation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/SquadSpawner.cs" line="15" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/SquadSpawner.cs" bodystart="15" bodyend="-1"/>
+        <referencedby refid="class_squad_spawner_1a386c5a7c6effe5a297da9b531c9804e0" compoundref="_squad_spawner_8cs" startline="35" endline="76">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_squad_spawner_1a94a3f06140ba1369cf7afc5250086421" prot="private" static="no" mutable="no">
+        <type><ref refid="class_inventory" kindref="compound">Inventory</ref></type>
+        <definition>Inventory SquadSpawner.inventory</definition>
+        <argsstring></argsstring>
+        <name>inventory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/SquadSpawner.cs" line="16" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/SquadSpawner.cs" bodystart="16" bodyend="-1"/>
+        <referencedby refid="class_squad_spawner_1a386c5a7c6effe5a297da9b531c9804e0" compoundref="_squad_spawner_8cs" startline="35" endline="76">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_squad_spawner_1a28cda3cd3176c43c71550bcd39f286a8" prot="private" static="no" mutable="no">
+        <type><ref refid="class_squad_1abe71578ac0516480f581c7011b1a3ea5" kindref="member">Squad.UnitFraction</ref></type>
+        <definition>Squad.UnitFraction SquadSpawner.fraction</definition>
+        <argsstring></argsstring>
+        <name>fraction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/SquadSpawner.cs" line="19" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/SquadSpawner.cs" bodystart="19" bodyend="-1"/>
+        <referencedby refid="class_squad_spawner_1a386c5a7c6effe5a297da9b531c9804e0" compoundref="_squad_spawner_8cs" startline="35" endline="76">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_squad_spawner_1a90f80da290aa355a03e051907ae12515" prot="private" static="no" mutable="no">
+        <type><ref refid="class_ai_squad_controller_1a7cdd0c2c427799902c544d12cc68d644" kindref="member">AiSquadController.AiSquadBehaviour</ref></type>
+        <definition>AiSquadController.AiSquadBehaviour SquadSpawner.mode</definition>
+        <argsstring></argsstring>
+        <name>mode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/SquadSpawner.cs" line="22" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/SquadSpawner.cs" bodystart="22" bodyend="-1"/>
+        <referencedby refid="class_squad_spawner_1a386c5a7c6effe5a297da9b531c9804e0" compoundref="_squad_spawner_8cs" startline="35" endline="76">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_squad_spawner_1a518628f882fd22e136f0362b144a7905" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SquadSpawner.useDefaultDistancesValues</definition>
+        <argsstring></argsstring>
+        <name>useDefaultDistancesValues</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/SquadSpawner.cs" line="25" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/SquadSpawner.cs" bodystart="25" bodyend="-1"/>
+        <referencedby refid="class_squad_spawner_1a2ae40ad08c4de53309c345bfd5e46d76" compoundref="_squad_spawner_8cs" startline="79" endline="101">OnDrawGizmos</referencedby>
+        <referencedby refid="class_squad_spawner_1a386c5a7c6effe5a297da9b531c9804e0" compoundref="_squad_spawner_8cs" startline="35" endline="76">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_squad_spawner_1a2829e1738b031906aa2e6c1523f13780" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SquadSpawner.distanceToActivateSquad</definition>
+        <argsstring></argsstring>
+        <name>distanceToActivateSquad</name>
+        <initializer>= 50</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/SquadSpawner.cs" line="26" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/SquadSpawner.cs" bodystart="26" bodyend="-1"/>
+        <referencedby refid="class_squad_spawner_1a2ae40ad08c4de53309c345bfd5e46d76" compoundref="_squad_spawner_8cs" startline="79" endline="101">OnDrawGizmos</referencedby>
+        <referencedby refid="class_squad_spawner_1a386c5a7c6effe5a297da9b531c9804e0" compoundref="_squad_spawner_8cs" startline="35" endline="76">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_squad_spawner_1af48a82fc8303c1bc29eddd7686b6d748" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SquadSpawner.radiusOfDefendArea</definition>
+        <argsstring></argsstring>
+        <name>radiusOfDefendArea</name>
+        <initializer>= 15</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/SquadSpawner.cs" line="27" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/SquadSpawner.cs" bodystart="27" bodyend="-1"/>
+        <referencedby refid="class_squad_spawner_1a2ae40ad08c4de53309c345bfd5e46d76" compoundref="_squad_spawner_8cs" startline="79" endline="101">OnDrawGizmos</referencedby>
+        <referencedby refid="class_squad_spawner_1a386c5a7c6effe5a297da9b531c9804e0" compoundref="_squad_spawner_8cs" startline="35" endline="76">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_squad_spawner_1a250713cd499dfa486f4d7491bf138ad9" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SquadSpawner.radiusOfAttackArea</definition>
+        <argsstring></argsstring>
+        <name>radiusOfAttackArea</name>
+        <initializer>= 30</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/SquadSpawner.cs" line="28" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/SquadSpawner.cs" bodystart="28" bodyend="-1"/>
+        <referencedby refid="class_squad_spawner_1a2ae40ad08c4de53309c345bfd5e46d76" compoundref="_squad_spawner_8cs" startline="79" endline="101">OnDrawGizmos</referencedby>
+        <referencedby refid="class_squad_spawner_1a386c5a7c6effe5a297da9b531c9804e0" compoundref="_squad_spawner_8cs" startline="35" endline="76">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_squad_spawner_1a7d391a3b397a74fec55cb1bf1be7fdbe" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SquadSpawner.useDefaultTimeValues</definition>
+        <argsstring></argsstring>
+        <name>useDefaultTimeValues</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/SquadSpawner.cs" line="31" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/SquadSpawner.cs" bodystart="31" bodyend="-1"/>
+        <referencedby refid="class_squad_spawner_1a386c5a7c6effe5a297da9b531c9804e0" compoundref="_squad_spawner_8cs" startline="35" endline="76">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_squad_spawner_1a305275205af188dd5bc6ab178bfcba85" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SquadSpawner.slowApdateDeltaTime</definition>
+        <argsstring></argsstring>
+        <name>slowApdateDeltaTime</name>
+        <initializer>= 0.2f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/SquadSpawner.cs" line="32" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/SquadSpawner.cs" bodystart="32" bodyend="-1"/>
+        <referencedby refid="class_squad_spawner_1a386c5a7c6effe5a297da9b531c9804e0" compoundref="_squad_spawner_8cs" startline="35" endline="76">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_squad_spawner_1a5655cb8e91a95a67ef8716d9b729ee77" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SquadSpawner.attackDeltaTime</definition>
+        <argsstring></argsstring>
+        <name>attackDeltaTime</name>
+        <initializer>= 1f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/SquadSpawner.cs" line="33" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/SquadSpawner.cs" bodystart="33" bodyend="-1"/>
+        <referencedby refid="class_squad_spawner_1a386c5a7c6effe5a297da9b531c9804e0" compoundref="_squad_spawner_8cs" startline="35" endline="76">Start</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_squad_spawner_1a386c5a7c6effe5a297da9b531c9804e0" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SquadSpawner.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/SquadSpawner.cs" line="35" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/SquadSpawner.cs" bodystart="35" bodyend="76"/>
+        <references refid="class_squad_spawner_1a5655cb8e91a95a67ef8716d9b729ee77" compoundref="_squad_spawner_8cs" startline="33">attackDeltaTime</references>
+        <references refid="class_inventory_1aa1cf6e7ace4e2897220ff4f8896fca53" compoundref="_inventory_8cs" startline="48">Inventory.Body</references>
+        <references refid="class_squad_spawner_1a2829e1738b031906aa2e6c1523f13780" compoundref="_squad_spawner_8cs" startline="26">distanceToActivateSquad</references>
+        <references refid="class_squad_spawner_1a234077b37e08507f305f55773d217fe8" compoundref="_squad_spawner_8cs" startline="15">formation</references>
+        <references refid="class_squad_spawner_1a28cda3cd3176c43c71550bcd39f286a8" compoundref="_squad_spawner_8cs" startline="19">fraction</references>
+        <references refid="class_inventory_1a9fd46393a3045d9798b8cc8b9bc78d05" compoundref="_inventory_8cs" startline="36">Inventory.Helmet</references>
+        <references refid="class_squad_spawner_1a94a3f06140ba1369cf7afc5250086421" compoundref="_squad_spawner_8cs" startline="16">inventory</references>
+        <references refid="class_squad_spawner_1a4fafa06123eeca94446f3fab5489a338" compoundref="_squad_spawner_8cs" startline="12">lookTarget</references>
+        <references refid="class_squad_spawner_1a90f80da290aa355a03e051907ae12515" compoundref="_squad_spawner_8cs" startline="22">mode</references>
+        <references refid="class_squad_spawner_1a250713cd499dfa486f4d7491bf138ad9" compoundref="_squad_spawner_8cs" startline="28">radiusOfAttackArea</references>
+        <references refid="class_squad_spawner_1af48a82fc8303c1bc29eddd7686b6d748" compoundref="_squad_spawner_8cs" startline="27">radiusOfDefendArea</references>
+        <references refid="class_squad_spawner_1add54a53e6503886dd41439c7b4520473" compoundref="_squad_spawner_8cs" startline="8">rotation</references>
+        <references refid="class_inventory_1a4280a990d639f958ff4c0e7249697a1f" compoundref="_inventory_8cs" startline="60">Inventory.Shield</references>
+        <references refid="class_squad_spawner_1a305275205af188dd5bc6ab178bfcba85" compoundref="_squad_spawner_8cs" startline="32">slowApdateDeltaTime</references>
+        <references refid="class_squad_spawner_1a518628f882fd22e136f0362b144a7905" compoundref="_squad_spawner_8cs" startline="25">useDefaultDistancesValues</references>
+        <references refid="class_squad_spawner_1a7d391a3b397a74fec55cb1bf1be7fdbe" compoundref="_squad_spawner_8cs" startline="31">useDefaultTimeValues</references>
+        <references refid="class_inventory_1aada92657ba049bb0a3856e157b4e0e22" compoundref="_inventory_8cs" startline="72">Inventory.Weapon</references>
+      </memberdef>
+      <memberdef kind="function" id="class_squad_spawner_1a2ae40ad08c4de53309c345bfd5e46d76" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SquadSpawner.OnDrawGizmos</definition>
+        <argsstring>()</argsstring>
+        <name>OnDrawGizmos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/SquadSpawner.cs" line="79" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/SquadSpawner.cs" bodystart="79" bodyend="101"/>
+        <references refid="class_squad_spawner_1a2829e1738b031906aa2e6c1523f13780" compoundref="_squad_spawner_8cs" startline="26">distanceToActivateSquad</references>
+        <references refid="class_squad_spawner_1a250713cd499dfa486f4d7491bf138ad9" compoundref="_squad_spawner_8cs" startline="28">radiusOfAttackArea</references>
+        <references refid="class_squad_spawner_1af48a82fc8303c1bc29eddd7686b6d748" compoundref="_squad_spawner_8cs" startline="27">radiusOfDefendArea</references>
+        <references refid="class_squad_spawner_1a518628f882fd22e136f0362b144a7905" compoundref="_squad_spawner_8cs" startline="25">useDefaultDistancesValues</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1092">
+        <label>SquadSpawner</label>
+        <link refid="class_squad_spawner"/>
+        <childnode refid="1093" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1093">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1097">
+        <label>Squad</label>
+        <link refid="class_squad"/>
+        <childnode refid="1095" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1096" relation="usage">
+          <edgelabel>currentFormationModifyers</edgelabel>
+          <edgelabel>formation</edgelabel>
+        </childnode>
+        <childnode refid="1098" relation="usage">
+          <edgelabel>unitOriginal</edgelabel>
+        </childnode>
+        <childnode refid="1097" relation="usage">
+          <edgelabel>playerSquadInstance</edgelabel>
+        </childnode>
+        <childnode refid="1107" relation="usage">
+          <edgelabel>inventory</edgelabel>
+        </childnode>
+        <childnode refid="1106" relation="usage">
+          <edgelabel>unitStats</edgelabel>
+        </childnode>
+      </node>
+      <node id="1099">
+        <label>Equipment</label>
+        <link refid="class_equipment"/>
+        <childnode refid="1100" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1102" relation="usage">
+          <edgelabel>stats</edgelabel>
+        </childnode>
+      </node>
+      <node id="1105">
+        <label>UnitPosition</label>
+        <link refid="class_unit_position"/>
+        <childnode refid="1095" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1101">
+        <label>Item.MainProperties</label>
+        <link refid="struct_item_1_1_main_properties"/>
+      </node>
+      <node id="1104">
+        <label>Damage</label>
+        <link refid="struct_damage"/>
+      </node>
+      <node id="1103">
+        <label>IDescriptionable</label>
+        <link refid="interface_i_descriptionable"/>
+      </node>
+      <node id="1112">
+        <label>AiSquadController</label>
+        <link refid="class_ai_squad_controller"/>
+        <childnode refid="1095" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1097" relation="usage">
+          <edgelabel>squad</edgelabel>
+          <edgelabel>playerSquad</edgelabel>
+        </childnode>
+        <childnode refid="1113" relation="usage">
+          <edgelabel>ground</edgelabel>
+        </childnode>
+      </node>
+      <node id="1113">
+        <label>Ground</label>
+        <link refid="class_ground"/>
+        <childnode refid="1095" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1114" relation="usage">
+          <edgelabel>rnd</edgelabel>
+        </childnode>
+      </node>
+      <node id="1094">
+        <label>SquadSpawner</label>
+        <link refid="class_squad_spawner"/>
+        <childnode refid="1095" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1096" relation="usage">
+          <edgelabel>formation</edgelabel>
+        </childnode>
+        <childnode refid="1097" relation="usage">
+          <edgelabel>fraction</edgelabel>
+        </childnode>
+        <childnode refid="1112" relation="usage">
+          <edgelabel>mode</edgelabel>
+        </childnode>
+        <childnode refid="1107" relation="usage">
+          <edgelabel>inventory</edgelabel>
+        </childnode>
+      </node>
+      <node id="1100">
+        <label>Item</label>
+        <link refid="class_item"/>
+        <childnode refid="1095" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1101" relation="usage">
+          <edgelabel>mainProperties</edgelabel>
+        </childnode>
+      </node>
+      <node id="1114">
+        <label>System</label>
+      </node>
+      <node id="1108">
+        <label>SkillStack</label>
+        <link refid="class_skill_stack"/>
+        <childnode refid="1109" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1103" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1110" relation="usage">
+          <edgelabel>skill</edgelabel>
+        </childnode>
+      </node>
+      <node id="1102">
+        <label>EquipmentStats</label>
+        <link refid="struct_equipment_stats"/>
+        <childnode refid="1103" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1104" relation="usage">
+          <edgelabel>damage</edgelabel>
+        </childnode>
+      </node>
+      <node id="1109">
+        <label>AStack</label>
+        <link refid="class_a_stack"/>
+      </node>
+      <node id="1106">
+        <label>UnitStats</label>
+        <link refid="struct_unit_stats"/>
+        <childnode refid="1104" relation="usage">
+          <edgelabel>damage</edgelabel>
+        </childnode>
+      </node>
+      <node id="1095">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1098">
+        <label>Unit</label>
+        <link refid="class_unit"/>
+        <childnode refid="1095" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1098" relation="usage">
+          <edgelabel>target</edgelabel>
+        </childnode>
+        <childnode refid="1097" relation="usage">
+          <edgelabel>squad</edgelabel>
+        </childnode>
+        <childnode refid="1099" relation="usage">
+          <edgelabel>body</edgelabel>
+          <edgelabel>shield</edgelabel>
+          <edgelabel>weapon</edgelabel>
+          <edgelabel>helmet</edgelabel>
+        </childnode>
+        <childnode refid="1105" relation="usage">
+          <edgelabel>TargetMovePositionObject</edgelabel>
+          <edgelabel>unitPosOriginal</edgelabel>
+        </childnode>
+        <childnode refid="1106" relation="usage">
+          <edgelabel>stats</edgelabel>
+        </childnode>
+      </node>
+      <node id="1110">
+        <label>Skill</label>
+        <link refid="class_skill"/>
+        <childnode refid="1100" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1103" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1111">
+        <label>EquipmentStack</label>
+        <link refid="class_equipment_stack"/>
+        <childnode refid="1109" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1100" relation="usage">
+          <edgelabel>equipmentMainProperties</edgelabel>
+        </childnode>
+        <childnode refid="1102" relation="usage">
+          <edgelabel>equipmentStats</edgelabel>
+        </childnode>
+      </node>
+      <node id="1096">
+        <label>FormationStats</label>
+        <link refid="class_formation_stats"/>
+      </node>
+      <node id="1107">
+        <label>Inventory</label>
+        <link refid="class_inventory"/>
+        <childnode refid="1108" relation="usage">
+          <edgelabel>firstSkill</edgelabel>
+          <edgelabel>secondSkill</edgelabel>
+        </childnode>
+        <childnode refid="1099" relation="usage">
+          <edgelabel>body</edgelabel>
+          <edgelabel>shieldNone</edgelabel>
+          <edgelabel>helmetNone</edgelabel>
+          <edgelabel>shield</edgelabel>
+          <edgelabel>weapon</edgelabel>
+          <edgelabel>helmet</edgelabel>
+          <edgelabel>bodyNone</edgelabel>
+        </childnode>
+        <childnode refid="1111" relation="usage">
+          <edgelabel>inventory</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/SquadSpawner.cs" line="6" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/SquadSpawner.cs" bodystart="5" bodyend="102"/>
+    <listofallmembers>
+      <member refid="class_squad_spawner_1a5655cb8e91a95a67ef8716d9b729ee77" prot="private" virt="non-virtual"><scope>SquadSpawner</scope><name>attackDeltaTime</name></member>
+      <member refid="class_squad_spawner_1a2829e1738b031906aa2e6c1523f13780" prot="private" virt="non-virtual"><scope>SquadSpawner</scope><name>distanceToActivateSquad</name></member>
+      <member refid="class_squad_spawner_1a234077b37e08507f305f55773d217fe8" prot="private" virt="non-virtual"><scope>SquadSpawner</scope><name>formation</name></member>
+      <member refid="class_squad_spawner_1a28cda3cd3176c43c71550bcd39f286a8" prot="private" virt="non-virtual"><scope>SquadSpawner</scope><name>fraction</name></member>
+      <member refid="class_squad_spawner_1a94a3f06140ba1369cf7afc5250086421" prot="private" virt="non-virtual"><scope>SquadSpawner</scope><name>inventory</name></member>
+      <member refid="class_squad_spawner_1a4fafa06123eeca94446f3fab5489a338" prot="private" virt="non-virtual"><scope>SquadSpawner</scope><name>lookTarget</name></member>
+      <member refid="class_squad_spawner_1a90f80da290aa355a03e051907ae12515" prot="private" virt="non-virtual"><scope>SquadSpawner</scope><name>mode</name></member>
+      <member refid="class_squad_spawner_1a2ae40ad08c4de53309c345bfd5e46d76" prot="private" virt="non-virtual"><scope>SquadSpawner</scope><name>OnDrawGizmos</name></member>
+      <member refid="class_squad_spawner_1a250713cd499dfa486f4d7491bf138ad9" prot="private" virt="non-virtual"><scope>SquadSpawner</scope><name>radiusOfAttackArea</name></member>
+      <member refid="class_squad_spawner_1af48a82fc8303c1bc29eddd7686b6d748" prot="private" virt="non-virtual"><scope>SquadSpawner</scope><name>radiusOfDefendArea</name></member>
+      <member refid="class_squad_spawner_1add54a53e6503886dd41439c7b4520473" prot="private" virt="non-virtual"><scope>SquadSpawner</scope><name>rotation</name></member>
+      <member refid="class_squad_spawner_1a305275205af188dd5bc6ab178bfcba85" prot="private" virt="non-virtual"><scope>SquadSpawner</scope><name>slowApdateDeltaTime</name></member>
+      <member refid="class_squad_spawner_1a386c5a7c6effe5a297da9b531c9804e0" prot="private" virt="non-virtual"><scope>SquadSpawner</scope><name>Start</name></member>
+      <member refid="class_squad_spawner_1a518628f882fd22e136f0362b144a7905" prot="private" virt="non-virtual"><scope>SquadSpawner</scope><name>useDefaultDistancesValues</name></member>
+      <member refid="class_squad_spawner_1a7d391a3b397a74fec55cb1bf1be7fdbe" prot="private" virt="non-virtual"><scope>SquadSpawner</scope><name>useDefaultTimeValues</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

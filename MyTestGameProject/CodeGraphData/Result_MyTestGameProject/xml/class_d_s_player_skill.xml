@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_d_s_player_skill" kind="class" prot="public">
+    <compoundname>DSPlayerSkill</compoundname>
+    <innerclass refid="class_d_s_player_skill_1_1_skill_upgrade" prot="public">DSPlayerSkill::SkillUpgrade</innerclass>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_d_s_player_skill_1ad429d5cdea1be51ec6ef34989c63156d" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int DSPlayerSkill.id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSPlayerSkill.cs" line="8" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSPlayerSkill.cs" bodystart="8" bodyend="-1"/>
+        <referencedby refid="class_d_s_player_skill_1aeebe089d9cf01f863a55ef57906aa2b3" compoundref="_d_s_player_skill_8cs" startline="16" endline="20">DSPlayerSkill</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_d_s_player_skill_1a9463d0a3256c9a0e8b9266632f827334" prot="private" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_d_s_player_skill_1_1_skill_upgrade" kindref="compound">SkillUpgrade</ref> &gt;</type>
+        <definition>List&lt;SkillUpgrade&gt; DSPlayerSkill.upgrades</definition>
+        <argsstring></argsstring>
+        <name>upgrades</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSPlayerSkill.cs" line="13" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSPlayerSkill.cs" bodystart="13" bodyend="-1"/>
+        <referencedby refid="class_d_s_player_skill_1aeebe089d9cf01f863a55ef57906aa2b3" compoundref="_d_s_player_skill_8cs" startline="16" endline="20">DSPlayerSkill</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_d_s_player_skill_1a433f54ae1e00430e63b1a6e761cba3e3" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>int</type>
+        <definition>int DSPlayerSkill.Id</definition>
+        <argsstring></argsstring>
+        <name>Id</name>
+        <briefdescription>
+<para>Идентификатор скила. Чтобы скил мог найти свои сохранения и загрузится. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSPlayerSkill.cs" line="12" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSPlayerSkill.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_d_s_player_skill_1a09782d57e4579deb717a4d5ac30ee300" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>List&lt; <ref refid="class_d_s_player_skill_1_1_skill_upgrade" kindref="compound">SkillUpgrade</ref> &gt;</type>
+        <definition>List&lt;SkillUpgrade&gt; DSPlayerSkill.Upgrades</definition>
+        <argsstring></argsstring>
+        <name>Upgrades</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSPlayerSkill.cs" line="14" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSPlayerSkill.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_d_s_player_skill_1aeebe089d9cf01f863a55ef57906aa2b3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>DSPlayerSkill.DSPlayerSkill</definition>
+        <argsstring>(int id)</argsstring>
+        <name>DSPlayerSkill</name>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSPlayerSkill.cs" line="16" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSPlayerSkill.cs" bodystart="16" bodyend="20"/>
+        <references refid="class_d_s_player_skill_1ad429d5cdea1be51ec6ef34989c63156d" compoundref="_d_s_player_skill_8cs" startline="8">id</references>
+        <references refid="class_d_s_player_skill_1a9463d0a3256c9a0e8b9266632f827334" compoundref="_d_s_player_skill_8cs" startline="13">upgrades</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSPlayerSkill.cs" line="7" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSPlayerSkill.cs" bodystart="6" bodyend="41"/>
+    <listofallmembers>
+      <member refid="class_d_s_player_skill_1aeebe089d9cf01f863a55ef57906aa2b3" prot="public" virt="non-virtual"><scope>DSPlayerSkill</scope><name>DSPlayerSkill</name></member>
+      <member refid="class_d_s_player_skill_1a433f54ae1e00430e63b1a6e761cba3e3" prot="public" virt="non-virtual"><scope>DSPlayerSkill</scope><name>Id</name></member>
+      <member refid="class_d_s_player_skill_1ad429d5cdea1be51ec6ef34989c63156d" prot="private" virt="non-virtual"><scope>DSPlayerSkill</scope><name>id</name></member>
+      <member refid="class_d_s_player_skill_1a9463d0a3256c9a0e8b9266632f827334" prot="private" virt="non-virtual"><scope>DSPlayerSkill</scope><name>upgrades</name></member>
+      <member refid="class_d_s_player_skill_1a09782d57e4579deb717a4d5ac30ee300" prot="public" virt="non-virtual"><scope>DSPlayerSkill</scope><name>Upgrades</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

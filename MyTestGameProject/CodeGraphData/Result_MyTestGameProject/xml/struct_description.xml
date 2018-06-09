@@ -1,0 +1,169 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="struct_description" kind="struct" prot="public">
+    <compoundname>Description</compoundname>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="struct_description_1a5744ce90a0795b8206e1e5f113db5820" prot="public" static="no">
+        <name>Currency</name>
+        <enumvalue id="struct_description_1a5744ce90a0795b8206e1e5f113db5820a2c0898822ab3baf7f93bea86648adb26" prot="public">
+          <name>GOLD</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_description_1a5744ce90a0795b8206e1e5f113db5820a0efc7a9b83f3cfe984a3b046f0269ccc" prot="public">
+          <name>SILVER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_description_1a5744ce90a0795b8206e1e5f113db5820a6cf2e6f0e86af75f96dd98519eedb29e" prot="public">
+          <name>EXPIRIENCE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Description.cs" line="14" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Description.cs" bodystart="14" bodyend="14"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="struct_description_1af7d669eada92fa3c5ffc7d38e69622db" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>Sprite</type>
+        <definition>Sprite Description.Icon</definition>
+        <argsstring></argsstring>
+        <name>Icon</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Description.cs" line="5" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Description.cs" bodystart="5" bodyend="-1"/>
+        <referencedby refid="class_tips_panel_1ae567a4e86cfbd2781a6e25eb3a530721" compoundref="_tips_panel_8cs" startline="51" endline="129">TipsPanel.SetDescription</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="struct_description_1ae16a73e92eea15dd4d2b090013a15db9" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Description.Name</definition>
+        <argsstring></argsstring>
+        <name>Name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Description.cs" line="6" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Description.cs" bodystart="6" bodyend="-1"/>
+        <referencedby refid="class_tips_panel_1ae567a4e86cfbd2781a6e25eb3a530721" compoundref="_tips_panel_8cs" startline="51" endline="129">TipsPanel.SetDescription</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="struct_description_1af7115539b821d7f26043789e9fb0b2e3" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Description.Desc</definition>
+        <argsstring></argsstring>
+        <name>Desc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Description.cs" line="7" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Description.cs" bodystart="7" bodyend="-1"/>
+        <referencedby refid="class_tips_panel_1ae567a4e86cfbd2781a6e25eb3a530721" compoundref="_tips_panel_8cs" startline="51" endline="129">TipsPanel.SetDescription</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="struct_description_1ab407d6dd760d0097a89b6af21247af1f" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="struct_description_item" kindref="compound">DescriptionItem</ref>[]</type>
+        <definition>DescriptionItem [] Description.Constraints</definition>
+        <argsstring></argsstring>
+        <name>Constraints</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Description.cs" line="8" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Description.cs" bodystart="8" bodyend="-1"/>
+        <referencedby refid="class_tips_panel_1ae567a4e86cfbd2781a6e25eb3a530721" compoundref="_tips_panel_8cs" startline="51" endline="129">TipsPanel.SetDescription</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="struct_description_1a181ab1da8ea4e8479ba6d25d44eee546" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="struct_description_item" kindref="compound">DescriptionItem</ref>[]</type>
+        <definition>DescriptionItem [] Description.Stats</definition>
+        <argsstring></argsstring>
+        <name>Stats</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Description.cs" line="9" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Description.cs" bodystart="9" bodyend="-1"/>
+        <referencedby refid="class_tips_panel_1ae567a4e86cfbd2781a6e25eb3a530721" compoundref="_tips_panel_8cs" startline="51" endline="129">TipsPanel.SetDescription</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="struct_description_1a05ae4fc8b29e33f9c0af655a56e00ac6" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>int</type>
+        <definition>int Description.Cost</definition>
+        <argsstring></argsstring>
+        <name>Cost</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Description.cs" line="10" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Description.cs" bodystart="10" bodyend="-1"/>
+        <referencedby refid="class_tips_panel_1ae567a4e86cfbd2781a6e25eb3a530721" compoundref="_tips_panel_8cs" startline="51" endline="129">TipsPanel.SetDescription</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="struct_description_1aefce98b67740aa8a77a7ee804dfe514d" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="struct_description_1a5744ce90a0795b8206e1e5f113db5820" kindref="member">Currency</ref></type>
+        <definition>Currency Description.CostCurrency</definition>
+        <argsstring></argsstring>
+        <name>CostCurrency</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Description.cs" line="11" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Description.cs" bodystart="11" bodyend="-1"/>
+        <referencedby refid="class_tips_panel_1ae567a4e86cfbd2781a6e25eb3a530721" compoundref="_tips_panel_8cs" startline="51" endline="129">TipsPanel.SetDescription</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="struct_description_1a77c231d559cc4ef2404d307c6bc2d833" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="struct_equipment_stats_1adb97d89712a349151f7c761bdcff561b" kindref="member">EquipmentStats.Durability</ref></type>
+        <definition>EquipmentStats.Durability Description.Durability</definition>
+        <argsstring></argsstring>
+        <name>Durability</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Description.cs" line="12" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Description.cs" bodystart="12" bodyend="-1"/>
+        <referencedby refid="class_tips_panel_1ae567a4e86cfbd2781a6e25eb3a530721" compoundref="_tips_panel_8cs" startline="51" endline="129">TipsPanel.SetDescription</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Description.cs" line="4" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Description.cs" bodystart="3" bodyend="15"/>
+    <listofallmembers>
+      <member refid="struct_description_1ab407d6dd760d0097a89b6af21247af1f" prot="public" virt="non-virtual"><scope>Description</scope><name>Constraints</name></member>
+      <member refid="struct_description_1a05ae4fc8b29e33f9c0af655a56e00ac6" prot="public" virt="non-virtual"><scope>Description</scope><name>Cost</name></member>
+      <member refid="struct_description_1aefce98b67740aa8a77a7ee804dfe514d" prot="public" virt="non-virtual"><scope>Description</scope><name>CostCurrency</name></member>
+      <member refid="struct_description_1a5744ce90a0795b8206e1e5f113db5820" prot="public" virt="non-virtual"><scope>Description</scope><name>Currency</name></member>
+      <member refid="struct_description_1af7115539b821d7f26043789e9fb0b2e3" prot="public" virt="non-virtual"><scope>Description</scope><name>Desc</name></member>
+      <member refid="struct_description_1a77c231d559cc4ef2404d307c6bc2d833" prot="public" virt="non-virtual"><scope>Description</scope><name>Durability</name></member>
+      <member refid="struct_description_1af7d669eada92fa3c5ffc7d38e69622db" prot="public" virt="non-virtual"><scope>Description</scope><name>Icon</name></member>
+      <member refid="struct_description_1ae16a73e92eea15dd4d2b090013a15db9" prot="public" virt="non-virtual"><scope>Description</scope><name>Name</name></member>
+      <member refid="struct_description_1a181ab1da8ea4e8479ba6d25d44eee546" prot="public" virt="non-virtual"><scope>Description</scope><name>Stats</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

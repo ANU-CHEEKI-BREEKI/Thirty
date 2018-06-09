@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_mc_slider_wheel_controller" kind="class" prot="public">
+    <compoundname>McSliderWheelController</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">IScrollHandler</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_mc_slider_wheel_controller_1ae87bb657c654f8854853cf1a20930d81" prot="private" static="no" mutable="no">
+        <type>Slider</type>
+        <definition>Slider McSliderWheelController.slider</definition>
+        <argsstring></argsstring>
+        <name>slider</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McSliderWheelController.cs" line="12" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McSliderWheelController.cs" bodystart="12" bodyend="-1"/>
+        <referencedby refid="class_mc_slider_wheel_controller_1a128a8f0a484056ea19e5b19df80457ac" compoundref="_mc_slider_wheel_controller_8cs" startline="21" endline="24">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_mc_slider_wheel_controller_1a3c63ed2349ba13ef2f655eaec7ae69e2" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float McSliderWheelController.step</definition>
+        <argsstring></argsstring>
+        <name>step</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McSliderWheelController.cs" line="13" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McSliderWheelController.cs" bodystart="13" bodyend="-1"/>
+        <referencedby refid="class_mc_slider_wheel_controller_1ab22ac7dbcc95c766f874c37639f7c3e7" compoundref="_mc_slider_wheel_controller_8cs" startline="15" endline="18">OnScroll</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_mc_slider_wheel_controller_1ab22ac7dbcc95c766f874c37639f7c3e7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void McSliderWheelController.OnScroll</definition>
+        <argsstring>(PointerEventData eventData)</argsstring>
+        <name>OnScroll</name>
+        <param>
+          <type>PointerEventData</type>
+          <declname>eventData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McSliderWheelController.cs" line="15" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McSliderWheelController.cs" bodystart="15" bodyend="18"/>
+        <references refid="class_mc_slider_wheel_controller_1a3c63ed2349ba13ef2f655eaec7ae69e2" compoundref="_mc_slider_wheel_controller_8cs" startline="13">step</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_mc_slider_wheel_controller_1a128a8f0a484056ea19e5b19df80457ac" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void McSliderWheelController.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McSliderWheelController.cs" line="21" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McSliderWheelController.cs" bodystart="21" bodyend="24"/>
+        <references refid="class_mc_slider_wheel_controller_1ae87bb657c654f8854853cf1a20930d81" compoundref="_mc_slider_wheel_controller_8cs" startline="12">slider</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="670">
+        <label>IScrollHandler</label>
+      </node>
+      <node id="669">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="668">
+        <label>McSliderWheelController</label>
+        <link refid="class_mc_slider_wheel_controller"/>
+        <childnode refid="669" relation="public-inheritance">
+        </childnode>
+        <childnode refid="670" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="673">
+        <label>IScrollHandler</label>
+      </node>
+      <node id="672">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="671">
+        <label>McSliderWheelController</label>
+        <link refid="class_mc_slider_wheel_controller"/>
+        <childnode refid="672" relation="public-inheritance">
+        </childnode>
+        <childnode refid="673" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McSliderWheelController.cs" line="11" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McSliderWheelController.cs" bodystart="8" bodyend="25"/>
+    <listofallmembers>
+      <member refid="class_mc_slider_wheel_controller_1ab22ac7dbcc95c766f874c37639f7c3e7" prot="public" virt="non-virtual"><scope>McSliderWheelController</scope><name>OnScroll</name></member>
+      <member refid="class_mc_slider_wheel_controller_1ae87bb657c654f8854853cf1a20930d81" prot="private" virt="non-virtual"><scope>McSliderWheelController</scope><name>slider</name></member>
+      <member refid="class_mc_slider_wheel_controller_1a128a8f0a484056ea19e5b19df80457ac" prot="private" virt="non-virtual"><scope>McSliderWheelController</scope><name>Start</name></member>
+      <member refid="class_mc_slider_wheel_controller_1a3c63ed2349ba13ef2f655eaec7ae69e2" prot="private" virt="non-virtual"><scope>McSliderWheelController</scope><name>step</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

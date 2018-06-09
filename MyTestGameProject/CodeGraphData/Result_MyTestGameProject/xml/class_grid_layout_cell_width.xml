@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_grid_layout_cell_width" kind="class" prot="public">
+    <compoundname>GridLayoutCellWidth</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_grid_layout_cell_width_1a53e2274349487b9ca5092edca54b5fed" prot="private" static="no" mutable="no">
+        <type>GridLayoutGroup</type>
+        <definition>GridLayoutGroup GridLayoutCellWidth.layout</definition>
+        <argsstring></argsstring>
+        <name>layout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/GridLayoutCellWidth.cs" line="9" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/GridLayoutCellWidth.cs" bodystart="9" bodyend="-1"/>
+        <referencedby refid="class_grid_layout_cell_width_1afe731fbc620b15b4caef12f4af8bcd1b" compoundref="_grid_layout_cell_width_8cs" startline="14" endline="21">Start</referencedby>
+        <referencedby refid="class_grid_layout_cell_width_1aaca77212e02e9612792942d78dd71d9c" compoundref="_grid_layout_cell_width_8cs" startline="23" endline="39">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_grid_layout_cell_width_1a989793f21c38f54427056dc02f7c672a" prot="private" static="no" mutable="no">
+        <type>RectTransform</type>
+        <definition>RectTransform GridLayoutCellWidth.thisTransform</definition>
+        <argsstring></argsstring>
+        <name>thisTransform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/GridLayoutCellWidth.cs" line="10" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/GridLayoutCellWidth.cs" bodystart="10" bodyend="-1"/>
+        <referencedby refid="class_grid_layout_cell_width_1afe731fbc620b15b4caef12f4af8bcd1b" compoundref="_grid_layout_cell_width_8cs" startline="14" endline="21">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_grid_layout_cell_width_1a8f30f02dff1f44b9d7c8f9d3241865ff" prot="private" static="no" mutable="no">
+        <type>LayoutGroup</type>
+        <definition>LayoutGroup GridLayoutCellWidth.parentLayout</definition>
+        <argsstring></argsstring>
+        <name>parentLayout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/GridLayoutCellWidth.cs" line="11" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/GridLayoutCellWidth.cs" bodystart="11" bodyend="-1"/>
+        <referencedby refid="class_grid_layout_cell_width_1afe731fbc620b15b4caef12f4af8bcd1b" compoundref="_grid_layout_cell_width_8cs" startline="14" endline="21">Start</referencedby>
+        <referencedby refid="class_grid_layout_cell_width_1aaca77212e02e9612792942d78dd71d9c" compoundref="_grid_layout_cell_width_8cs" startline="23" endline="39">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_grid_layout_cell_width_1aad97132fd4f91004adfe8a8c265dbb7e" prot="private" static="no" mutable="no">
+        <type>RectTransform</type>
+        <definition>RectTransform GridLayoutCellWidth.parentTransform</definition>
+        <argsstring></argsstring>
+        <name>parentTransform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/GridLayoutCellWidth.cs" line="12" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/GridLayoutCellWidth.cs" bodystart="12" bodyend="-1"/>
+        <referencedby refid="class_grid_layout_cell_width_1afe731fbc620b15b4caef12f4af8bcd1b" compoundref="_grid_layout_cell_width_8cs" startline="14" endline="21">Start</referencedby>
+        <referencedby refid="class_grid_layout_cell_width_1aaca77212e02e9612792942d78dd71d9c" compoundref="_grid_layout_cell_width_8cs" startline="23" endline="39">Update</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_grid_layout_cell_width_1afe731fbc620b15b4caef12f4af8bcd1b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void GridLayoutCellWidth.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/GridLayoutCellWidth.cs" line="14" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/GridLayoutCellWidth.cs" bodystart="14" bodyend="21"/>
+        <references refid="class_grid_layout_cell_width_1a53e2274349487b9ca5092edca54b5fed" compoundref="_grid_layout_cell_width_8cs" startline="9">layout</references>
+        <references refid="class_grid_layout_cell_width_1a8f30f02dff1f44b9d7c8f9d3241865ff" compoundref="_grid_layout_cell_width_8cs" startline="11">parentLayout</references>
+        <references refid="class_grid_layout_cell_width_1aad97132fd4f91004adfe8a8c265dbb7e" compoundref="_grid_layout_cell_width_8cs" startline="12">parentTransform</references>
+        <references refid="class_grid_layout_cell_width_1a989793f21c38f54427056dc02f7c672a" compoundref="_grid_layout_cell_width_8cs" startline="10">thisTransform</references>
+      </memberdef>
+      <memberdef kind="function" id="class_grid_layout_cell_width_1aaca77212e02e9612792942d78dd71d9c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void GridLayoutCellWidth.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/GridLayoutCellWidth.cs" line="23" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/GridLayoutCellWidth.cs" bodystart="23" bodyend="39"/>
+        <references refid="class_grid_layout_cell_width_1a53e2274349487b9ca5092edca54b5fed" compoundref="_grid_layout_cell_width_8cs" startline="9">layout</references>
+        <references refid="class_grid_layout_cell_width_1a8f30f02dff1f44b9d7c8f9d3241865ff" compoundref="_grid_layout_cell_width_8cs" startline="11">parentLayout</references>
+        <references refid="class_grid_layout_cell_width_1aad97132fd4f91004adfe8a8c265dbb7e" compoundref="_grid_layout_cell_width_8cs" startline="12">parentTransform</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="446">
+        <label>GridLayoutCellWidth</label>
+        <link refid="class_grid_layout_cell_width"/>
+        <childnode refid="447" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="447">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="448">
+        <label>GridLayoutCellWidth</label>
+        <link refid="class_grid_layout_cell_width"/>
+        <childnode refid="449" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="449">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/GridLayoutCellWidth.cs" line="8" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/GridLayoutCellWidth.cs" bodystart="7" bodyend="40"/>
+    <listofallmembers>
+      <member refid="class_grid_layout_cell_width_1a53e2274349487b9ca5092edca54b5fed" prot="private" virt="non-virtual"><scope>GridLayoutCellWidth</scope><name>layout</name></member>
+      <member refid="class_grid_layout_cell_width_1a8f30f02dff1f44b9d7c8f9d3241865ff" prot="private" virt="non-virtual"><scope>GridLayoutCellWidth</scope><name>parentLayout</name></member>
+      <member refid="class_grid_layout_cell_width_1aad97132fd4f91004adfe8a8c265dbb7e" prot="private" virt="non-virtual"><scope>GridLayoutCellWidth</scope><name>parentTransform</name></member>
+      <member refid="class_grid_layout_cell_width_1afe731fbc620b15b4caef12f4af8bcd1b" prot="private" virt="non-virtual"><scope>GridLayoutCellWidth</scope><name>Start</name></member>
+      <member refid="class_grid_layout_cell_width_1a989793f21c38f54427056dc02f7c672a" prot="private" virt="non-virtual"><scope>GridLayoutCellWidth</scope><name>thisTransform</name></member>
+      <member refid="class_grid_layout_cell_width_1aaca77212e02e9612792942d78dd71d9c" prot="private" virt="non-virtual"><scope>GridLayoutCellWidth</scope><name>Update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

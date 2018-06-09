@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_45708955072536b94f603ec678839c32" kind="dir">
+    <compoundname>D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour</compoundname>
+    <innerdir refid="dir_8bb9891a0d4d3de3640e14926a911947">D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage</innerdir>
+    <innerfile refid="_a_stack_8cs">AStack.cs</innerfile>
+    <innerfile refid="_damage_8cs">Damage.cs</innerfile>
+    <innerfile refid="_description_8cs">Description.cs</innerfile>
+    <innerfile refid="_description_item_8cs">DescriptionItem.cs</innerfile>
+    <innerfile refid="_equipment_stack_8cs">EquipmentStack.cs</innerfile>
+    <innerfile refid="_equipment_stats_8cs">EquipmentStats.cs</innerfile>
+    <innerfile refid="_extensions_8cs">Extensions.cs</innerfile>
+    <innerfile refid="_formation_stats_8cs">FormationStats.cs</innerfile>
+    <innerfile refid="_i_descriptionable_8cs">IDescriptionable.cs</innerfile>
+    <innerfile refid="_inventory_8cs">Inventory.cs</innerfile>
+    <innerfile refid="_i_skill_cooldownable_8cs">ISkillCooldownable.cs</innerfile>
+    <innerfile refid="_i_skill_lockable_8cs">ISkillLockable.cs</innerfile>
+    <innerfile refid="_i_terrain_walker_8cs">ITerrainWalker.cs</innerfile>
+    <innerfile refid="_labirinth_8cs">Labirinth.cs</innerfile>
+    <innerfile refid="_localization_8cs">Localization.cs</innerfile>
+    <innerfile refid="_map_block_8cs">MapBlock.cs</innerfile>
+    <innerfile refid="_same_blocks_container_8cs">SameBlocksContainer.cs</innerfile>
+    <innerfile refid="_skill_stack_8cs">SkillStack.cs</innerfile>
+    <innerfile refid="_string_formats_8cs">StringFormats.cs</innerfile>
+    <innerfile refid="_unit_stats_8cs">UnitStats.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/"/>
+  </compounddef>
+</doxygen>

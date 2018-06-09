@@ -1,0 +1,522 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_mc_file_manager" kind="class" prot="public">
+    <compoundname>McFileManager</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_mc_file_manager_1a550eadb38090611c476d5877ad224f26" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_mc_file_manager" kindref="compound">McFileManager</ref></type>
+        <definition>McFileManager McFileManager.Instance</definition>
+        <argsstring></argsstring>
+        <name>Instance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McFileManager.cs" line="11" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McFileManager.cs" bodystart="11" bodyend="-1"/>
+        <referencedby refid="class_mc_file_manager_1a61086f6d6fcdcd7b391c9e374059eff6" compoundref="_mc_file_manager_8cs" startline="38" endline="41">Awake</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_mc_file_manager_1a00ee331a97c6e6d3224d20cadf212bf1" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="no">
+        <type>bool</type>
+        <definition>bool McFileManager.DialogShowed</definition>
+        <argsstring></argsstring>
+        <name>DialogShowed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McFileManager.cs" line="22" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McFileManager.cs" bodystart="23" bodyend="-1"/>
+        <referencedby refid="class_mc_grid_1a1355b61cc25821c23732f1b46fc0c1e8" compoundref="_mc_grid_8cs" startline="91" endline="140">McGrid.DrawGrid</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_mc_file_manager_1a497e4adabd4249396957a3d78db525cf" prot="private" static="no" mutable="no">
+        <type><ref refid="class_mc_hider" kindref="compound">McHider</ref></type>
+        <definition>McHider McFileManager.dialogPanel</definition>
+        <argsstring></argsstring>
+        <name>dialogPanel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McFileManager.cs" line="13" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McFileManager.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mc_file_manager_1a832a3207b4d893eb7382bb2facbaa258" prot="private" static="no" mutable="no">
+        <type>InputField</type>
+        <definition>InputField McFileManager.dialogPanelText</definition>
+        <argsstring></argsstring>
+        <name>dialogPanelText</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McFileManager.cs" line="14" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McFileManager.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mc_file_manager_1a95965e1eb10963c61afeaec129f03180" prot="private" static="no" mutable="no">
+        <type>Transform</type>
+        <definition>Transform McFileManager.parentFileList</definition>
+        <argsstring></argsstring>
+        <name>parentFileList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McFileManager.cs" line="16" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McFileManager.cs" bodystart="16" bodyend="-1"/>
+        <referencedby refid="class_mc_file_manager_1a1ec1c3f33b3a0d8158f339b3fe1b10b9" compoundref="_mc_file_manager_8cs" startline="71" endline="76">ClearFileList</referencedby>
+        <referencedby refid="class_mc_file_manager_1ab34cd2e2e519b740becbcc5b3a3b22b3" compoundref="_mc_file_manager_8cs" startline="62" endline="69">CreateItem</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_mc_file_manager_1a57be9444734975252f5745ed56180d48" prot="private" static="no" mutable="no">
+        <type>GameObject</type>
+        <definition>GameObject McFileManager.originalItemOfList</definition>
+        <argsstring></argsstring>
+        <name>originalItemOfList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McFileManager.cs" line="17" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McFileManager.cs" bodystart="17" bodyend="-1"/>
+        <referencedby refid="class_mc_file_manager_1ab34cd2e2e519b740becbcc5b3a3b22b3" compoundref="_mc_file_manager_8cs" startline="62" endline="69">CreateItem</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_mc_file_manager_1aa9601090d5b051fba596fd0bc65f2881" prot="private" static="no" mutable="no">
+        <type><ref refid="class_mc_grid_construct_controller" kindref="compound">McGridConstructController</ref></type>
+        <definition>McGridConstructController McFileManager.gridConstructController</definition>
+        <argsstring></argsstring>
+        <name>gridConstructController</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McFileManager.cs" line="19" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McFileManager.cs" bodystart="19" bodyend="-1"/>
+        <referencedby refid="class_mc_file_manager_1ad6029cc6b718c266739da80bef599296" compoundref="_mc_file_manager_8cs" startline="43" endline="48">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_mc_file_manager_1a3be57a8241591c2778388fc0926aa677" prot="private" static="no" mutable="no">
+        <type>string[]</type>
+        <definition>string [] McFileManager.fnames</definition>
+        <argsstring></argsstring>
+        <name>fnames</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McFileManager.cs" line="30" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McFileManager.cs" bodystart="30" bodyend="-1"/>
+        <referencedby refid="class_mc_file_manager_1a35fad90b5a8dad3e128eb9dc55fb862a" compoundref="_mc_file_manager_8cs" startline="51" endline="60">RefreshFileList</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_mc_file_manager_1ad900cc11f5d70daaf93119ca13bf40fa" prot="private" static="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool McFileManager.dialogShowed</definition>
+        <argsstring></argsstring>
+        <name>dialogShowed</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McFileManager.cs" line="21" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McFileManager.cs" bodystart="21" bodyend="-1"/>
+        <referencedby refid="class_mc_file_manager_1a4e8be22eb4de7f2ec9d6662c15ee2f53" compoundref="_mc_file_manager_8cs" startline="132" endline="136">HideDialog</referencedby>
+        <referencedby refid="class_mc_file_manager_1af99f4bb713097f2391b09fc7a3419657" compoundref="_mc_file_manager_8cs" startline="97" endline="102">ShowDialogPanel</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_mc_file_manager_1a10187f96c047e7d051f8aa6b28cadd39" prot="private" static="yes" mutable="no">
+        <type>XmlSerializer</type>
+        <definition>XmlSerializer McFileManager.blockSerializer</definition>
+        <argsstring></argsstring>
+        <name>blockSerializer</name>
+        <initializer>= new XmlSerializer(typeof(<ref refid="struct_map_block" kindref="compound">MapBlock</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McFileManager.cs" line="34" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McFileManager.cs" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_mc_file_manager_1abba7468d0c32fd59814543e3c0c40454" prot="public" static="yes" mutable="no">
+        <type><ref refid="struct_map_block" kindref="compound">MapBlock</ref></type>
+        <definition>MapBlock McFileManager.mapBlocks</definition>
+        <argsstring></argsstring>
+        <name>mapBlocks</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McFileManager.cs" line="32" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McFileManager.cs" bodystart="32" bodyend="-1"/>
+        <referencedby refid="class_mc_file_manager_1a55f9c081c604f45babc0dc174a59070d" compoundref="_mc_file_manager_8cs" startline="104" endline="125">OnOkButtonClick</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_mc_file_manager_1ad67dcd3f7ed16f07d22a59175718104f" prot="public" static="no" mutable="no">
+        <type>const string</type>
+        <definition>const string McFileManager.PATH_TO_GRIDS</definition>
+        <argsstring></argsstring>
+        <name>PATH_TO_GRIDS</name>
+        <initializer>= @&quot;Assets/Resources/TextAssets/MapBlockGrids/Current/&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McFileManager.cs" line="35" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McFileManager.cs" bodystart="35" bodyend="-1"/>
+        <referencedby refid="class_mc_file_manager_1a19e2058681c7bd14aa2ffead30755186" compoundref="_mc_file_manager_8cs" startline="78" endline="95">GeneradeFileName</referencedby>
+        <referencedby refid="class_mc_file_manager_1a55f9c081c604f45babc0dc174a59070d" compoundref="_mc_file_manager_8cs" startline="104" endline="125">OnOkButtonClick</referencedby>
+        <referencedby refid="class_mc_file_manager_1a35fad90b5a8dad3e128eb9dc55fb862a" compoundref="_mc_file_manager_8cs" startline="51" endline="60">RefreshFileList</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_mc_file_manager_1a6a411bde2251b4c8f9d389d1599d8457" prot="public" static="no" mutable="no">
+        <type>const string</type>
+        <definition>const string McFileManager.DIMEN</definition>
+        <argsstring></argsstring>
+        <name>DIMEN</name>
+        <initializer>= &quot;.xml&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McFileManager.cs" line="36" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McFileManager.cs" bodystart="36" bodyend="-1"/>
+        <referencedby refid="class_mc_ui_list_item_1acc71e200430f9596ff4ab1a0db11306c" compoundref="_mc_ui_list_item_8cs" startline="19" endline="23">McUiListItem.LoadMapBlock</referencedby>
+        <referencedby refid="class_mc_file_manager_1a55f9c081c604f45babc0dc174a59070d" compoundref="_mc_file_manager_8cs" startline="104" endline="125">OnOkButtonClick</referencedby>
+        <referencedby refid="class_mc_file_manager_1a35fad90b5a8dad3e128eb9dc55fb862a" compoundref="_mc_file_manager_8cs" startline="51" endline="60">RefreshFileList</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_mc_file_manager_1a61086f6d6fcdcd7b391c9e374059eff6" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void McFileManager.Awake</definition>
+        <argsstring>()</argsstring>
+        <name>Awake</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McFileManager.cs" line="38" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McFileManager.cs" bodystart="38" bodyend="41"/>
+        <references refid="class_mc_file_manager_1a550eadb38090611c476d5877ad224f26" compoundref="_mc_file_manager_8cs" startline="11">Instance</references>
+      </memberdef>
+      <memberdef kind="function" id="class_mc_file_manager_1ad6029cc6b718c266739da80bef599296" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void McFileManager.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McFileManager.cs" line="43" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McFileManager.cs" bodystart="43" bodyend="48"/>
+        <references refid="class_mc_file_manager_1aa9601090d5b051fba596fd0bc65f2881" compoundref="_mc_file_manager_8cs" startline="19">gridConstructController</references>
+        <references refid="class_mc_file_manager_1a35fad90b5a8dad3e128eb9dc55fb862a" compoundref="_mc_file_manager_8cs" startline="51" endline="60">RefreshFileList</references>
+      </memberdef>
+      <memberdef kind="function" id="class_mc_file_manager_1a35fad90b5a8dad3e128eb9dc55fb862a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void McFileManager.RefreshFileList</definition>
+        <argsstring>()</argsstring>
+        <name>RefreshFileList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McFileManager.cs" line="51" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McFileManager.cs" bodystart="51" bodyend="60"/>
+        <references refid="class_mc_file_manager_1a1ec1c3f33b3a0d8158f339b3fe1b10b9" compoundref="_mc_file_manager_8cs" startline="71" endline="76">ClearFileList</references>
+        <references refid="class_mc_file_manager_1ab34cd2e2e519b740becbcc5b3a3b22b3" compoundref="_mc_file_manager_8cs" startline="62" endline="69">CreateItem</references>
+        <references refid="class_mc_file_manager_1a6a411bde2251b4c8f9d389d1599d8457" compoundref="_mc_file_manager_8cs" startline="36">DIMEN</references>
+        <references refid="class_mc_file_manager_1a3be57a8241591c2778388fc0926aa677" compoundref="_mc_file_manager_8cs" startline="30">fnames</references>
+        <references refid="class_mc_file_manager_1ad67dcd3f7ed16f07d22a59175718104f" compoundref="_mc_file_manager_8cs" startline="35">PATH_TO_GRIDS</references>
+        <referencedby refid="class_mc_file_manager_1a55f9c081c604f45babc0dc174a59070d" compoundref="_mc_file_manager_8cs" startline="104" endline="125">OnOkButtonClick</referencedby>
+        <referencedby refid="class_mc_file_manager_1ad6029cc6b718c266739da80bef599296" compoundref="_mc_file_manager_8cs" startline="43" endline="48">Start</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_mc_file_manager_1ab34cd2e2e519b740becbcc5b3a3b22b3" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void McFileManager.CreateItem</definition>
+        <argsstring>(string file)</argsstring>
+        <name>CreateItem</name>
+        <param>
+          <type>string</type>
+          <declname>file</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McFileManager.cs" line="62" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McFileManager.cs" bodystart="62" bodyend="69"/>
+        <references refid="class_mc_file_manager_1a57be9444734975252f5745ed56180d48" compoundref="_mc_file_manager_8cs" startline="17">originalItemOfList</references>
+        <references refid="class_mc_file_manager_1a95965e1eb10963c61afeaec129f03180" compoundref="_mc_file_manager_8cs" startline="16">parentFileList</references>
+        <referencedby refid="class_mc_file_manager_1a35fad90b5a8dad3e128eb9dc55fb862a" compoundref="_mc_file_manager_8cs" startline="51" endline="60">RefreshFileList</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_mc_file_manager_1a1ec1c3f33b3a0d8158f339b3fe1b10b9" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void McFileManager.ClearFileList</definition>
+        <argsstring>()</argsstring>
+        <name>ClearFileList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McFileManager.cs" line="71" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McFileManager.cs" bodystart="71" bodyend="76"/>
+        <references refid="class_mc_file_manager_1a95965e1eb10963c61afeaec129f03180" compoundref="_mc_file_manager_8cs" startline="16">parentFileList</references>
+        <referencedby refid="class_mc_file_manager_1a35fad90b5a8dad3e128eb9dc55fb862a" compoundref="_mc_file_manager_8cs" startline="51" endline="60">RefreshFileList</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_mc_file_manager_1a4e8be22eb4de7f2ec9d6662c15ee2f53" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void McFileManager.HideDialog</definition>
+        <argsstring>()</argsstring>
+        <name>HideDialog</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McFileManager.cs" line="132" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McFileManager.cs" bodystart="132" bodyend="136"/>
+        <references refid="class_mc_file_manager_1ad900cc11f5d70daaf93119ca13bf40fa" compoundref="_mc_file_manager_8cs" startline="21">dialogShowed</references>
+        <referencedby refid="class_mc_file_manager_1a75dc007feeefd73438001c1ca97b873d" compoundref="_mc_file_manager_8cs" startline="127" endline="130">OnCancelButtonClick</referencedby>
+        <referencedby refid="class_mc_file_manager_1a55f9c081c604f45babc0dc174a59070d" compoundref="_mc_file_manager_8cs" startline="104" endline="125">OnOkButtonClick</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_mc_file_manager_1a19e2058681c7bd14aa2ffead30755186" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void McFileManager.GeneradeFileName</definition>
+        <argsstring>()</argsstring>
+        <name>GeneradeFileName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McFileManager.cs" line="78" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McFileManager.cs" bodystart="78" bodyend="95"/>
+        <references refid="class_mc_block_entry_chooser_1aa648a467a4db0500a1e77ce9aaeb6b6f" compoundref="_mc_block_entry_chooser_8cs" startline="27">McBlockEntryChooser.BlockEntrance</references>
+        <references refid="class_mc_exit_direction_chooser_1aa69a783b5c7bc5c2693939699362f8a7" compoundref="_mc_exit_direction_chooser_8cs" startline="8">McExitDirectionChooser.exit</references>
+        <references refid="class_mc_exit_direction_chooser_1ae38420170a1773cccc4c27a878898782" compoundref="_mc_exit_direction_chooser_8cs" startline="9">McExitDirectionChooser.hasExit</references>
+        <references refid="class_mc_file_manager_1ad67dcd3f7ed16f07d22a59175718104f" compoundref="_mc_file_manager_8cs" startline="35">PATH_TO_GRIDS</references>
+      </memberdef>
+      <memberdef kind="function" id="class_mc_file_manager_1af99f4bb713097f2391b09fc7a3419657" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void McFileManager.ShowDialogPanel</definition>
+        <argsstring>()</argsstring>
+        <name>ShowDialogPanel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McFileManager.cs" line="97" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McFileManager.cs" bodystart="97" bodyend="102"/>
+        <references refid="class_mc_file_manager_1ad900cc11f5d70daaf93119ca13bf40fa" compoundref="_mc_file_manager_8cs" startline="21">dialogShowed</references>
+      </memberdef>
+      <memberdef kind="function" id="class_mc_file_manager_1a55f9c081c604f45babc0dc174a59070d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void McFileManager.OnOkButtonClick</definition>
+        <argsstring>()</argsstring>
+        <name>OnOkButtonClick</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McFileManager.cs" line="104" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McFileManager.cs" bodystart="104" bodyend="125"/>
+        <references refid="class_mc_block_entry_chooser_1aa648a467a4db0500a1e77ce9aaeb6b6f" compoundref="_mc_block_entry_chooser_8cs" startline="27">McBlockEntryChooser.BlockEntrance</references>
+        <references refid="class_mc_file_manager_1a6a411bde2251b4c8f9d389d1599d8457" compoundref="_mc_file_manager_8cs" startline="36">DIMEN</references>
+        <references refid="struct_map_block_1a457d821d01f6a9031f49dcf1d3ef6785" compoundref="_map_block_8cs" startline="19">MapBlock.Entrance</references>
+        <references refid="class_mc_exit_direction_chooser_1aa69a783b5c7bc5c2693939699362f8a7" compoundref="_mc_exit_direction_chooser_8cs" startline="8">McExitDirectionChooser.exit</references>
+        <references refid="struct_map_block_1ae2a96207d757c40799df1eebf9796351" compoundref="_map_block_8cs" startline="23">MapBlock.Exit</references>
+        <references refid="class_mc_exit_direction_chooser_1ae38420170a1773cccc4c27a878898782" compoundref="_mc_exit_direction_chooser_8cs" startline="9">McExitDirectionChooser.hasExit</references>
+        <references refid="struct_map_block_1a73e60907d5e0da25e87e477255bb3e3a" compoundref="_map_block_8cs" startline="22">MapBlock.HasExit</references>
+        <references refid="class_mc_file_manager_1a4e8be22eb4de7f2ec9d6662c15ee2f53" compoundref="_mc_file_manager_8cs" startline="132" endline="136">HideDialog</references>
+        <references refid="class_mc_file_manager_1abba7468d0c32fd59814543e3c0c40454" compoundref="_mc_file_manager_8cs" startline="32">mapBlocks</references>
+        <references refid="class_mc_file_manager_1ad67dcd3f7ed16f07d22a59175718104f" compoundref="_mc_file_manager_8cs" startline="35">PATH_TO_GRIDS</references>
+        <references refid="class_mc_file_manager_1a35fad90b5a8dad3e128eb9dc55fb862a" compoundref="_mc_file_manager_8cs" startline="51" endline="60">RefreshFileList</references>
+      </memberdef>
+      <memberdef kind="function" id="class_mc_file_manager_1a75dc007feeefd73438001c1ca97b873d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void McFileManager.OnCancelButtonClick</definition>
+        <argsstring>()</argsstring>
+        <name>OnCancelButtonClick</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McFileManager.cs" line="127" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McFileManager.cs" bodystart="127" bodyend="130"/>
+        <references refid="class_mc_file_manager_1a4e8be22eb4de7f2ec9d6662c15ee2f53" compoundref="_mc_file_manager_8cs" startline="132" endline="136">HideDialog</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_mc_file_manager_1ad43c3715f53aaafb619a6eacad16f5b1" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_map_block" kindref="compound">MapBlock</ref></type>
+        <definition>static MapBlock McFileManager.Deserialize</definition>
+        <argsstring>(string path)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type>string</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McFileManager.cs" line="138" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McFileManager.cs" bodystart="138" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mc_file_manager_1a3c8c045f9c52bce90074e696d2893c2e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_map_block" kindref="compound">MapBlock</ref></type>
+        <definition>static MapBlock McFileManager.Deserialize</definition>
+        <argsstring>(TextReader reader)</argsstring>
+        <name>Deserialize</name>
+        <param>
+          <type>TextReader</type>
+          <declname>reader</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McFileManager.cs" line="144" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McFileManager.cs" bodystart="144" bodyend="147"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="627">
+        <label>McFileManager</label>
+        <link refid="class_mc_file_manager"/>
+        <childnode refid="628" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="628">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="629">
+        <label>McFileManager</label>
+        <link refid="class_mc_file_manager"/>
+        <childnode refid="630" relation="public-inheritance">
+        </childnode>
+        <childnode refid="631" relation="usage">
+          <edgelabel>gridConstructController</edgelabel>
+        </childnode>
+        <childnode refid="635" relation="usage">
+          <edgelabel>mapBlocks</edgelabel>
+        </childnode>
+        <childnode refid="636" relation="usage">
+          <edgelabel>dialogPanel</edgelabel>
+        </childnode>
+      </node>
+      <node id="636">
+        <label>McHider</label>
+        <link refid="class_mc_hider"/>
+        <childnode refid="630" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="634">
+        <label>McGrid</label>
+        <link refid="class_mc_grid"/>
+        <childnode refid="630" relation="public-inheritance">
+        </childnode>
+        <childnode refid="631" relation="usage">
+          <edgelabel>controller</edgelabel>
+        </childnode>
+        <childnode refid="635" relation="usage">
+          <edgelabel>inputedMapBlock</edgelabel>
+        </childnode>
+      </node>
+      <node id="635">
+        <label>MapBlock</label>
+        <link refid="struct_map_block"/>
+      </node>
+      <node id="631">
+        <label>McGridConstructController</label>
+        <link refid="class_mc_grid_construct_controller"/>
+        <childnode refid="630" relation="public-inheritance">
+        </childnode>
+        <childnode refid="632" relation="public-inheritance">
+        </childnode>
+        <childnode refid="633" relation="public-inheritance">
+        </childnode>
+        <childnode refid="629" relation="usage">
+          <edgelabel>fileManager</edgelabel>
+        </childnode>
+        <childnode refid="634" relation="usage">
+          <edgelabel>grid</edgelabel>
+        </childnode>
+      </node>
+      <node id="633">
+        <label>IPointerDownHandler</label>
+      </node>
+      <node id="630">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="632">
+        <label>IDragHandler</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McFileManager.cs" line="10" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McFileManager.cs" bodystart="9" bodyend="148"/>
+    <listofallmembers>
+      <member refid="class_mc_file_manager_1a61086f6d6fcdcd7b391c9e374059eff6" prot="private" virt="non-virtual"><scope>McFileManager</scope><name>Awake</name></member>
+      <member refid="class_mc_file_manager_1a10187f96c047e7d051f8aa6b28cadd39" prot="private" virt="non-virtual"><scope>McFileManager</scope><name>blockSerializer</name></member>
+      <member refid="class_mc_file_manager_1a1ec1c3f33b3a0d8158f339b3fe1b10b9" prot="private" virt="non-virtual"><scope>McFileManager</scope><name>ClearFileList</name></member>
+      <member refid="class_mc_file_manager_1ab34cd2e2e519b740becbcc5b3a3b22b3" prot="private" virt="non-virtual"><scope>McFileManager</scope><name>CreateItem</name></member>
+      <member refid="class_mc_file_manager_1ad43c3715f53aaafb619a6eacad16f5b1" prot="public" virt="non-virtual"><scope>McFileManager</scope><name>Deserialize</name></member>
+      <member refid="class_mc_file_manager_1a3c8c045f9c52bce90074e696d2893c2e" prot="public" virt="non-virtual"><scope>McFileManager</scope><name>Deserialize</name></member>
+      <member refid="class_mc_file_manager_1a497e4adabd4249396957a3d78db525cf" prot="private" virt="non-virtual"><scope>McFileManager</scope><name>dialogPanel</name></member>
+      <member refid="class_mc_file_manager_1a832a3207b4d893eb7382bb2facbaa258" prot="private" virt="non-virtual"><scope>McFileManager</scope><name>dialogPanelText</name></member>
+      <member refid="class_mc_file_manager_1a00ee331a97c6e6d3224d20cadf212bf1" prot="public" virt="non-virtual"><scope>McFileManager</scope><name>DialogShowed</name></member>
+      <member refid="class_mc_file_manager_1ad900cc11f5d70daaf93119ca13bf40fa" prot="private" virt="non-virtual"><scope>McFileManager</scope><name>dialogShowed</name></member>
+      <member refid="class_mc_file_manager_1a6a411bde2251b4c8f9d389d1599d8457" prot="public" virt="non-virtual"><scope>McFileManager</scope><name>DIMEN</name></member>
+      <member refid="class_mc_file_manager_1a3be57a8241591c2778388fc0926aa677" prot="private" virt="non-virtual"><scope>McFileManager</scope><name>fnames</name></member>
+      <member refid="class_mc_file_manager_1a19e2058681c7bd14aa2ffead30755186" prot="public" virt="non-virtual"><scope>McFileManager</scope><name>GeneradeFileName</name></member>
+      <member refid="class_mc_file_manager_1aa9601090d5b051fba596fd0bc65f2881" prot="private" virt="non-virtual"><scope>McFileManager</scope><name>gridConstructController</name></member>
+      <member refid="class_mc_file_manager_1a4e8be22eb4de7f2ec9d6662c15ee2f53" prot="private" virt="non-virtual"><scope>McFileManager</scope><name>HideDialog</name></member>
+      <member refid="class_mc_file_manager_1a550eadb38090611c476d5877ad224f26" prot="public" virt="non-virtual"><scope>McFileManager</scope><name>Instance</name></member>
+      <member refid="class_mc_file_manager_1abba7468d0c32fd59814543e3c0c40454" prot="public" virt="non-virtual"><scope>McFileManager</scope><name>mapBlocks</name></member>
+      <member refid="class_mc_file_manager_1a75dc007feeefd73438001c1ca97b873d" prot="public" virt="non-virtual"><scope>McFileManager</scope><name>OnCancelButtonClick</name></member>
+      <member refid="class_mc_file_manager_1a55f9c081c604f45babc0dc174a59070d" prot="public" virt="non-virtual"><scope>McFileManager</scope><name>OnOkButtonClick</name></member>
+      <member refid="class_mc_file_manager_1a57be9444734975252f5745ed56180d48" prot="private" virt="non-virtual"><scope>McFileManager</scope><name>originalItemOfList</name></member>
+      <member refid="class_mc_file_manager_1a95965e1eb10963c61afeaec129f03180" prot="private" virt="non-virtual"><scope>McFileManager</scope><name>parentFileList</name></member>
+      <member refid="class_mc_file_manager_1ad67dcd3f7ed16f07d22a59175718104f" prot="public" virt="non-virtual"><scope>McFileManager</scope><name>PATH_TO_GRIDS</name></member>
+      <member refid="class_mc_file_manager_1a35fad90b5a8dad3e128eb9dc55fb862a" prot="private" virt="non-virtual"><scope>McFileManager</scope><name>RefreshFileList</name></member>
+      <member refid="class_mc_file_manager_1af99f4bb713097f2391b09fc7a3419657" prot="public" virt="non-virtual"><scope>McFileManager</scope><name>ShowDialogPanel</name></member>
+      <member refid="class_mc_file_manager_1ad6029cc6b718c266739da80bef599296" prot="private" virt="non-virtual"><scope>McFileManager</scope><name>Start</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

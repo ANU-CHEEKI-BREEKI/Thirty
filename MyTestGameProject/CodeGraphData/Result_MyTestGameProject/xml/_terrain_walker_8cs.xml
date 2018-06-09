@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_terrain_walker_8cs" kind="file">
+    <compoundname>TerrainWalker.cs</compoundname>
+    <innerclass refid="class_terrain_walker" prot="public">TerrainWalker</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Collections;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Collections.Generic;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>UnityEngine;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="class_terrain_walker" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_terrain_walker" kindref="compound">TerrainWalker</ref><sp/>:<sp/>MonoBehaviour,<sp/><ref refid="interface_i_terrain_walker" kindref="compound">ITerrainWalker</ref></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8" refid="class_terrain_walker_1ad64942cade28235c61201134fb6d5a3e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Transform<sp/><ref refid="class_terrain_walker_1ad64942cade28235c61201134fb6d5a3e" kindref="member">thisTransform</ref>;</highlight></codeline>
+<codeline lineno="9" refid="class_terrain_walker_1ad7ae09833d5d8fdedea373757d672ea8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_unit_position" kindref="compound">UnitPosition</ref><sp/><ref refid="class_terrain_walker_1ad7ae09833d5d8fdedea373757d672ea8" kindref="member">unitPos</ref>;</highlight></codeline>
+<codeline lineno="10" refid="class_terrain_walker_1a02035afaa7abd7098bf0d74ac0fe3a41" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_terrain_walker_1a02035afaa7abd7098bf0d74ac0fe3a41" kindref="member">scale</ref><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_terrain_walker_1a82e854291105c56ec94f2d2170c8d70c" kindref="member">Scale</ref></highlight></codeline>
+<codeline lineno="13" refid="class_terrain_walker_1a82e854291105c56ec94f2d2170c8d70c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_terrain_walker_1a02035afaa7abd7098bf0d74ac0fe3a41" kindref="member">scale</ref>;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>set</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_terrain_walker_1a02035afaa7abd7098bf0d74ac0fe3a41" kindref="member">scale</ref><sp/>=<sp/>value;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>thisTransform.localScale<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Vector2(<ref refid="class_terrain_walker_1a02035afaa7abd7098bf0d74ac0fe3a41" kindref="member">scale</ref>,<sp/><ref refid="class_terrain_walker_1a02035afaa7abd7098bf0d74ac0fe3a41" kindref="member">scale</ref>);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>unitPos.Scale<sp/>=<sp/><ref refid="class_terrain_walker_1a02035afaa7abd7098bf0d74ac0fe3a41" kindref="member">scale</ref>;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>Vector2<sp/><ref refid="class_terrain_walker_1a3df6839e30ab42b6c99394affa2d1bf3" kindref="member">Position</ref></highlight></codeline>
+<codeline lineno="28" refid="class_terrain_walker_1a3df6839e30ab42b6c99394affa2d1bf3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>thisTransform.position;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="class_terrain_walker_1a65f5e449c3b9be12509915b9325cdc6a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_terrain_walker_1a65f5e449c3b9be12509915b9325cdc6a" kindref="member">Start</ref>()</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_terrain_walker_1ad64942cade28235c61201134fb6d5a3e" kindref="member">thisTransform</ref><sp/>=<sp/>transform;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_terrain_walker_1ad7ae09833d5d8fdedea373757d672ea8" kindref="member">unitPos</ref><sp/>=<sp/>thisTransform.GetComponent&lt;<ref refid="class_unit" kindref="compound">Unit</ref>&gt;().TargetMovePositionObject.GetComponent&lt;<ref refid="class_unit_position" kindref="compound">UnitPosition</ref>&gt;();</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/TerrainWalker.cs"/>
+  </compounddef>
+</doxygen>

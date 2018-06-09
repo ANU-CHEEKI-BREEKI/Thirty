@@ -1,0 +1,335 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_stats_panel_u_i" kind="class" prot="public">
+    <compoundname>StatsPanelUI</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_stats_panel_u_i_1a322dbe4f4d185f4783e10faaf4ab6169" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_stats_panel_u_i" kindref="compound">StatsPanelUI</ref></type>
+        <definition>StatsPanelUI StatsPanelUI.Instance</definition>
+        <argsstring></argsstring>
+        <name>Instance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/StatsPanelUI.cs" line="8" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/StatsPanelUI.cs" bodystart="8" bodyend="-1"/>
+        <referencedby refid="class_stats_panel_u_i_1a23bfc63bbfd0f857bb995799173fc680" compoundref="_stats_panel_u_i_8cs" startline="20" endline="23">Awake</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_stats_panel_u_i_1a3806c5cf46edc211a7c69651e325b451" prot="private" static="no" mutable="no">
+        <type>Toggle</type>
+        <definition>Toggle StatsPanelUI.StatsToggle</definition>
+        <argsstring></argsstring>
+        <name>StatsToggle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/StatsPanelUI.cs" line="10" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/StatsPanelUI.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_stats_panel_u_i_1a34ccc93f5d4fa3ff4811aeea9ba16fcb" prot="private" static="no" mutable="no">
+        <type>GameObject</type>
+        <definition>GameObject StatsPanelUI.statsPanel</definition>
+        <argsstring></argsstring>
+        <name>statsPanel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/StatsPanelUI.cs" line="11" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/StatsPanelUI.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_stats_panel_u_i_1a33fd729fab4793a26a8f4a0195fa5a52" prot="private" static="no" mutable="no">
+        <type>new Animation</type>
+        <definition>new Animation StatsPanelUI.animation</definition>
+        <argsstring></argsstring>
+        <name>animation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/StatsPanelUI.cs" line="12" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/StatsPanelUI.cs" bodystart="12" bodyend="-1"/>
+        <referencedby refid="class_stats_panel_u_i_1a24315365fa15631f7268b38f3d702cf5" compoundref="_stats_panel_u_i_8cs" startline="25" endline="38">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_stats_panel_u_i_1aec606591b06a5d7a0f701072f534f155" prot="private" static="no" mutable="no">
+        <type>List&lt; string &gt;</type>
+        <definition>List&lt;string&gt; StatsPanelUI.animNames</definition>
+        <argsstring></argsstring>
+        <name>animNames</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/StatsPanelUI.cs" line="13" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/StatsPanelUI.cs" bodystart="13" bodyend="-1"/>
+        <referencedby refid="class_stats_panel_u_i_1add9495a3cb9ee011c9da34466fb46528" compoundref="_stats_panel_u_i_8cs" startline="49" endline="55">OnToggle</referencedby>
+        <referencedby refid="class_stats_panel_u_i_1a24315365fa15631f7268b38f3d702cf5" compoundref="_stats_panel_u_i_8cs" startline="25" endline="38">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_stats_panel_u_i_1a7fefc18b09a92c8797308d38fe510aff" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string StatsPanelUI.formatNumberPercent</definition>
+        <argsstring></argsstring>
+        <name>formatNumberPercent</name>
+        <initializer>= &quot;##0%&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/StatsPanelUI.cs" line="15" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/StatsPanelUI.cs" bodystart="15" bodyend="-1"/>
+        <referencedby refid="class_stats_panel_u_i_1addec74faa8300e212a7e2500b18d5fd7" compoundref="_stats_panel_u_i_8cs" startline="62" endline="120">OnEquipmentChanged</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_stats_panel_u_i_1adf685cc35aaebd9c3ec7914dbbe5c055" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string StatsPanelUI.formatNumber</definition>
+        <argsstring></argsstring>
+        <name>formatNumber</name>
+        <initializer>= &quot;##0.#&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/StatsPanelUI.cs" line="16" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/StatsPanelUI.cs" bodystart="16" bodyend="-1"/>
+        <referencedby refid="class_stats_panel_u_i_1addec74faa8300e212a7e2500b18d5fd7" compoundref="_stats_panel_u_i_8cs" startline="62" endline="120">OnEquipmentChanged</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_stats_panel_u_i_1a0c5e06dbfe95fa32b5d67aa42ea9f7df" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string StatsPanelUI.formatConnat</definition>
+        <argsstring></argsstring>
+        <name>formatConnat</name>
+        <initializer>= &quot;({0})&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/StatsPanelUI.cs" line="17" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/StatsPanelUI.cs" bodystart="17" bodyend="-1"/>
+        <referencedby refid="class_stats_panel_u_i_1addec74faa8300e212a7e2500b18d5fd7" compoundref="_stats_panel_u_i_8cs" startline="62" endline="120">OnEquipmentChanged</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_stats_panel_u_i_1a7c9b57eca38787a0c7227cdd5976b69b" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string StatsPanelUI.zero</definition>
+        <argsstring></argsstring>
+        <name>zero</name>
+        <initializer>= &quot;0&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/StatsPanelUI.cs" line="18" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/StatsPanelUI.cs" bodystart="18" bodyend="-1"/>
+        <referencedby refid="class_stats_panel_u_i_1addec74faa8300e212a7e2500b18d5fd7" compoundref="_stats_panel_u_i_8cs" startline="62" endline="120">OnEquipmentChanged</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_stats_panel_u_i_1a23bfc63bbfd0f857bb995799173fc680" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void StatsPanelUI.Awake</definition>
+        <argsstring>()</argsstring>
+        <name>Awake</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/StatsPanelUI.cs" line="20" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/StatsPanelUI.cs" bodystart="20" bodyend="23"/>
+        <references refid="class_stats_panel_u_i_1a322dbe4f4d185f4783e10faaf4ab6169" compoundref="_stats_panel_u_i_8cs" startline="8">Instance</references>
+      </memberdef>
+      <memberdef kind="function" id="class_stats_panel_u_i_1a24315365fa15631f7268b38f3d702cf5" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void StatsPanelUI.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/StatsPanelUI.cs" line="25" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/StatsPanelUI.cs" bodystart="25" bodyend="38"/>
+        <references refid="class_stats_panel_u_i_1a33fd729fab4793a26a8f4a0195fa5a52" compoundref="_stats_panel_u_i_8cs" startline="12">animation</references>
+        <references refid="class_stats_panel_u_i_1aec606591b06a5d7a0f701072f534f155" compoundref="_stats_panel_u_i_8cs" startline="13">animNames</references>
+        <references refid="class_stats_panel_u_i_1addec74faa8300e212a7e2500b18d5fd7" compoundref="_stats_panel_u_i_8cs" startline="62" endline="120">OnEquipmentChanged</references>
+        <references refid="class_stats_panel_u_i_1a183c79dc25db4627c1b8b3e1255c5429" compoundref="_stats_panel_u_i_8cs" startline="57" endline="60">OnFormationChanged</references>
+        <references refid="class_stats_panel_u_i_1add9495a3cb9ee011c9da34466fb46528" compoundref="_stats_panel_u_i_8cs" startline="49" endline="55">OnToggle</references>
+        <references refid="class_stats_panel_u_i_1ade9c19373d54a865aaee5816044d18a8" compoundref="_stats_panel_u_i_8cs" startline="122" endline="125">RefreshPanel</references>
+      </memberdef>
+      <memberdef kind="function" id="class_stats_panel_u_i_1a96ddd8d71002b50707398c45a5068711" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void StatsPanelUI.OnDestroy</definition>
+        <argsstring>()</argsstring>
+        <name>OnDestroy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/StatsPanelUI.cs" line="40" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/StatsPanelUI.cs" bodystart="40" bodyend="47"/>
+        <references refid="class_stats_panel_u_i_1addec74faa8300e212a7e2500b18d5fd7" compoundref="_stats_panel_u_i_8cs" startline="62" endline="120">OnEquipmentChanged</references>
+        <references refid="class_stats_panel_u_i_1a183c79dc25db4627c1b8b3e1255c5429" compoundref="_stats_panel_u_i_8cs" startline="57" endline="60">OnFormationChanged</references>
+        <references refid="class_squad_1a781a32dd5c6fadbe0a9e04f142ddc9da" compoundref="_squad_8cs" startline="10">Squad.playerSquadInstance</references>
+      </memberdef>
+      <memberdef kind="function" id="class_stats_panel_u_i_1add9495a3cb9ee011c9da34466fb46528" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void StatsPanelUI.OnToggle</definition>
+        <argsstring>(bool value)</argsstring>
+        <name>OnToggle</name>
+        <param>
+          <type>bool</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/StatsPanelUI.cs" line="49" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/StatsPanelUI.cs" bodystart="49" bodyend="55"/>
+        <references refid="class_stats_panel_u_i_1aec606591b06a5d7a0f701072f534f155" compoundref="_stats_panel_u_i_8cs" startline="13">animNames</references>
+        <referencedby refid="class_stats_panel_u_i_1a24315365fa15631f7268b38f3d702cf5" compoundref="_stats_panel_u_i_8cs" startline="25" endline="38">Start</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_stats_panel_u_i_1a183c79dc25db4627c1b8b3e1255c5429" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void StatsPanelUI.OnFormationChanged</definition>
+        <argsstring>(FormationStats.Formations formation)</argsstring>
+        <name>OnFormationChanged</name>
+        <param>
+          <type><ref refid="class_formation_stats_1ab336466e6a234574db24f2ec914e1dd4" kindref="member">FormationStats.Formations</ref></type>
+          <declname>formation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/StatsPanelUI.cs" line="57" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/StatsPanelUI.cs" bodystart="57" bodyend="60"/>
+        <references refid="class_stats_panel_u_i_1addec74faa8300e212a7e2500b18d5fd7" compoundref="_stats_panel_u_i_8cs" startline="62" endline="120">OnEquipmentChanged</references>
+        <referencedby refid="class_stats_panel_u_i_1a96ddd8d71002b50707398c45a5068711" compoundref="_stats_panel_u_i_8cs" startline="40" endline="47">OnDestroy</referencedby>
+        <referencedby refid="class_stats_panel_u_i_1a24315365fa15631f7268b38f3d702cf5" compoundref="_stats_panel_u_i_8cs" startline="25" endline="38">Start</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_stats_panel_u_i_1addec74faa8300e212a7e2500b18d5fd7" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void StatsPanelUI.OnEquipmentChanged</definition>
+        <argsstring>(Equipment eq)</argsstring>
+        <name>OnEquipmentChanged</name>
+        <param>
+          <type><ref refid="class_equipment" kindref="compound">Equipment</ref></type>
+          <declname>eq</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/StatsPanelUI.cs" line="62" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/StatsPanelUI.cs" bodystart="62" bodyend="120"/>
+        <references refid="class_localization_1a1705af76ee97c6053422a9e2fa58ab1b" compoundref="_localization_8cs" startline="40">Localization.armour</references>
+        <references refid="class_localization_1ab212481a364e4ab6e9f7ace911480a55" compoundref="_localization_8cs" startline="42">Localization.armourDamage</references>
+        <references refid="struct_unit_stats_1a71142dd4e1516afdef7e4011feacbf1c" compoundref="_unit_stats_8cs" startline="30">UnitStats.Attack</references>
+        <references refid="class_localization_1abe988043268bf1df9b043b4c6132eac4" compoundref="_localization_8cs" startline="43">Localization.attack</references>
+        <references refid="class_localization_1a349de7b4318325f7659f950c65cd1be8" compoundref="_localization_8cs" startline="47">Localization.attackDistance</references>
+        <references refid="class_localization_1a69e3dec51c793b9e3076ccdf872fd90e" compoundref="_localization_8cs" startline="41">Localization.baseDamage</references>
+        <references refid="struct_unit_stats_1acca72d8186dcec880688920c58e0813c" compoundref="_unit_stats_8cs" startline="33">UnitStats.Defence</references>
+        <references refid="class_localization_1aaf52bb22da36d2eaf241712e760b03db" compoundref="_localization_8cs" startline="44">Localization.defence</references>
+        <references refid="class_stats_panel_u_i_1a0c5e06dbfe95fa32b5d67aa42ea9f7df" compoundref="_stats_panel_u_i_8cs" startline="17">formatConnat</references>
+        <references refid="class_stats_panel_u_i_1adf685cc35aaebd9c3ec7914dbbe5c055" compoundref="_stats_panel_u_i_8cs" startline="16">formatNumber</references>
+        <references refid="class_stats_panel_u_i_1a7fefc18b09a92c8797308d38fe510aff" compoundref="_stats_panel_u_i_8cs" startline="15">formatNumberPercent</references>
+        <references refid="struct_unit_stats_1ab53484f4715c9dbe92dbdc920dbd755f" compoundref="_unit_stats_8cs" startline="17">UnitStats.Health</references>
+        <references refid="class_localization_1af746b56fb22f5872e7d3dceea0e65098" compoundref="_localization_8cs" startline="38">Localization.health</references>
+        <references refid="class_localization_1a97de6c8c625d72e0d039d828ad9a87a3" compoundref="_localization_8cs" startline="46">Localization.missileBlock</references>
+        <references refid="class_squad_1a781a32dd5c6fadbe0a9e04f142ddc9da" compoundref="_squad_8cs" startline="10">Squad.playerSquadInstance</references>
+        <references refid="class_localization_1a5fafeb8a861de28ae27422531c1d7c05" compoundref="_localization_8cs" startline="50">Localization.rotationSpeed</references>
+        <references refid="struct_unit_stats_1a7847ec1951d4e2ebbcc7951a4758f29b" compoundref="_unit_stats_8cs" startline="57">UnitStats.RotationSpeed</references>
+        <references refid="class_localization_1ad8453dce5e4c888a9e54160258499dcd" compoundref="_localization_8cs" startline="48">Localization.speed</references>
+        <references refid="struct_unit_stats_1a3ae741eba64620c23193afb733961547" compoundref="_unit_stats_8cs" startline="51">UnitStats.Speed</references>
+        <references refid="class_squad_1a14f16d0bd1098a523c721fb610247c56" compoundref="_squad_8cs" startline="165">Squad.UnitCount</references>
+        <references refid="class_squad_1a193bf163c91b4a816ad644fed3b3404d" compoundref="_squad_8cs" startline="18">Squad.UnitStats</references>
+        <references refid="class_stats_panel_u_i_1a7c9b57eca38787a0c7227cdd5976b69b" compoundref="_stats_panel_u_i_8cs" startline="18">zero</references>
+        <referencedby refid="class_stats_panel_u_i_1a96ddd8d71002b50707398c45a5068711" compoundref="_stats_panel_u_i_8cs" startline="40" endline="47">OnDestroy</referencedby>
+        <referencedby refid="class_stats_panel_u_i_1a183c79dc25db4627c1b8b3e1255c5429" compoundref="_stats_panel_u_i_8cs" startline="57" endline="60">OnFormationChanged</referencedby>
+        <referencedby refid="class_stats_panel_u_i_1ade9c19373d54a865aaee5816044d18a8" compoundref="_stats_panel_u_i_8cs" startline="122" endline="125">RefreshPanel</referencedby>
+        <referencedby refid="class_stats_panel_u_i_1a24315365fa15631f7268b38f3d702cf5" compoundref="_stats_panel_u_i_8cs" startline="25" endline="38">Start</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_stats_panel_u_i_1ade9c19373d54a865aaee5816044d18a8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void StatsPanelUI.RefreshPanel</definition>
+        <argsstring>()</argsstring>
+        <name>RefreshPanel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/StatsPanelUI.cs" line="122" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/StatsPanelUI.cs" bodystart="122" bodyend="125"/>
+        <references refid="class_stats_panel_u_i_1addec74faa8300e212a7e2500b18d5fd7" compoundref="_stats_panel_u_i_8cs" startline="62" endline="120">OnEquipmentChanged</references>
+        <referencedby refid="class_stats_panel_u_i_1a24315365fa15631f7268b38f3d702cf5" compoundref="_stats_panel_u_i_8cs" startline="25" endline="38">Start</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1128">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1127">
+        <label>StatsPanelUI</label>
+        <link refid="class_stats_panel_u_i"/>
+        <childnode refid="1128" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1130">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1129">
+        <label>StatsPanelUI</label>
+        <link refid="class_stats_panel_u_i"/>
+        <childnode refid="1130" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/StatsPanelUI.cs" line="7" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/StatsPanelUI.cs" bodystart="6" bodyend="126"/>
+    <listofallmembers>
+      <member refid="class_stats_panel_u_i_1a33fd729fab4793a26a8f4a0195fa5a52" prot="private" virt="non-virtual"><scope>StatsPanelUI</scope><name>animation</name></member>
+      <member refid="class_stats_panel_u_i_1aec606591b06a5d7a0f701072f534f155" prot="private" virt="non-virtual"><scope>StatsPanelUI</scope><name>animNames</name></member>
+      <member refid="class_stats_panel_u_i_1a23bfc63bbfd0f857bb995799173fc680" prot="private" virt="non-virtual"><scope>StatsPanelUI</scope><name>Awake</name></member>
+      <member refid="class_stats_panel_u_i_1a0c5e06dbfe95fa32b5d67aa42ea9f7df" prot="private" virt="non-virtual"><scope>StatsPanelUI</scope><name>formatConnat</name></member>
+      <member refid="class_stats_panel_u_i_1adf685cc35aaebd9c3ec7914dbbe5c055" prot="private" virt="non-virtual"><scope>StatsPanelUI</scope><name>formatNumber</name></member>
+      <member refid="class_stats_panel_u_i_1a7fefc18b09a92c8797308d38fe510aff" prot="private" virt="non-virtual"><scope>StatsPanelUI</scope><name>formatNumberPercent</name></member>
+      <member refid="class_stats_panel_u_i_1a322dbe4f4d185f4783e10faaf4ab6169" prot="public" virt="non-virtual"><scope>StatsPanelUI</scope><name>Instance</name></member>
+      <member refid="class_stats_panel_u_i_1a96ddd8d71002b50707398c45a5068711" prot="private" virt="non-virtual"><scope>StatsPanelUI</scope><name>OnDestroy</name></member>
+      <member refid="class_stats_panel_u_i_1addec74faa8300e212a7e2500b18d5fd7" prot="private" virt="non-virtual"><scope>StatsPanelUI</scope><name>OnEquipmentChanged</name></member>
+      <member refid="class_stats_panel_u_i_1a183c79dc25db4627c1b8b3e1255c5429" prot="private" virt="non-virtual"><scope>StatsPanelUI</scope><name>OnFormationChanged</name></member>
+      <member refid="class_stats_panel_u_i_1add9495a3cb9ee011c9da34466fb46528" prot="private" virt="non-virtual"><scope>StatsPanelUI</scope><name>OnToggle</name></member>
+      <member refid="class_stats_panel_u_i_1ade9c19373d54a865aaee5816044d18a8" prot="public" virt="non-virtual"><scope>StatsPanelUI</scope><name>RefreshPanel</name></member>
+      <member refid="class_stats_panel_u_i_1a24315365fa15631f7268b38f3d702cf5" prot="private" virt="non-virtual"><scope>StatsPanelUI</scope><name>Start</name></member>
+      <member refid="class_stats_panel_u_i_1a34ccc93f5d4fa3ff4811aeea9ba16fcb" prot="private" virt="non-virtual"><scope>StatsPanelUI</scope><name>statsPanel</name></member>
+      <member refid="class_stats_panel_u_i_1a3806c5cf46edc211a7c69651e325b451" prot="private" virt="non-virtual"><scope>StatsPanelUI</scope><name>StatsToggle</name></member>
+      <member refid="class_stats_panel_u_i_1a7c9b57eca38787a0c7227cdd5976b69b" prot="private" virt="non-virtual"><scope>StatsPanelUI</scope><name>zero</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

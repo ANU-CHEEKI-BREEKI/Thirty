@@ -1,0 +1,1047 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_player_squad_controller" kind="class" prot="public">
+    <compoundname>PlayerSquadController</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">IPointerDownHandler</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">IPointerUpHandler</basecompoundref>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_player_squad_controller_1a053c9c73ccce50be379da2ee7b140a00" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_player_squad_controller" kindref="compound">PlayerSquadController</ref></type>
+        <definition>PlayerSquadController PlayerSquadController.Instance</definition>
+        <argsstring></argsstring>
+        <name>Instance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" line="10" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" bodystart="10" bodyend="-1"/>
+        <referencedby refid="class_player_squad_controller_1acc429ba9e603d4eb7b04ffac5cf34119" compoundref="_player_squad_controller_8cs" startline="58" endline="61">Awake</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_player_squad_controller_1a2b17d31dee7c07042ea51feb83b032c0" prot="private" static="no" mutable="no">
+        <type><ref refid="class_squad" kindref="compound">Squad</ref></type>
+        <definition>Squad PlayerSquadController.squad</definition>
+        <argsstring></argsstring>
+        <name>squad</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" line="12" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" bodystart="12" bodyend="-1"/>
+        <referencedby refid="class_player_squad_controller_1aec93b7ccc7f17d32adb4875b7831e5a2" compoundref="_player_squad_controller_8cs" startline="191" endline="214">OnPointerDown</referencedby>
+        <referencedby refid="class_player_squad_controller_1a14624c20b184262769b880804049fb0b" compoundref="_player_squad_controller_8cs" startline="216" endline="297">OnPointerUp</referencedby>
+        <referencedby refid="class_player_squad_controller_1ad6c8f15152c309d015043d88d21b91e0" compoundref="_player_squad_controller_8cs" startline="299" endline="328">SetStartPosition</referencedby>
+        <referencedby refid="class_player_squad_controller_1a2aaade11832a060e36f438cb239ec888" compoundref="_player_squad_controller_8cs" startline="63" endline="99">Start</referencedby>
+        <referencedby refid="class_player_squad_controller_1a9c1cd18c24ba0f1896bde74712ce992f" compoundref="_player_squad_controller_8cs" startline="101" endline="151">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_squad_controller_1a3738bb578b7fbec4b8566ad861ee47e2" prot="private" static="no" mutable="no">
+        <type><ref refid="class_ground" kindref="compound">Ground</ref></type>
+        <definition>Ground PlayerSquadController.ground</definition>
+        <argsstring></argsstring>
+        <name>ground</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" line="13" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" bodystart="13" bodyend="-1"/>
+        <referencedby refid="class_player_squad_controller_1a14624c20b184262769b880804049fb0b" compoundref="_player_squad_controller_8cs" startline="216" endline="297">OnPointerUp</referencedby>
+        <referencedby refid="class_player_squad_controller_1a2aaade11832a060e36f438cb239ec888" compoundref="_player_squad_controller_8cs" startline="63" endline="99">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_squad_controller_1ae78e6f88ab7b342f9cd1df6afb9ff271" prot="private" static="no" mutable="no">
+        <type>LayerMask</type>
+        <definition>LayerMask PlayerSquadController.directFindPathLayers</definition>
+        <argsstring></argsstring>
+        <name>directFindPathLayers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" line="16" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_squad_controller_1ac02ff387e5e7c046908b6b378f119d05" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float PlayerSquadController.lookVectorDistanse</definition>
+        <argsstring></argsstring>
+        <name>lookVectorDistanse</name>
+        <initializer>= 2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" line="18" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" bodystart="18" bodyend="-1"/>
+        <referencedby refid="class_player_squad_controller_1a14624c20b184262769b880804049fb0b" compoundref="_player_squad_controller_8cs" startline="216" endline="297">OnPointerUp</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_squad_controller_1a3b41b9750a6f9e8360be2c124730ee82" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float PlayerSquadController.cicleCastRadius</definition>
+        <argsstring></argsstring>
+        <name>cicleCastRadius</name>
+        <initializer>= 3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" line="19" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" bodystart="19" bodyend="-1"/>
+        <referencedby refid="class_player_squad_controller_1aea37cb1546ea59c88544f3dbaf37e3e9" compoundref="_player_squad_controller_8cs" startline="354" endline="388">CircleCastConstrict</referencedby>
+        <referencedby refid="class_player_squad_controller_1aa5b69f85bbe7ba1f620f934e0c188a8b" compoundref="_player_squad_controller_8cs" startline="177" endline="189">CreatePoints</referencedby>
+        <referencedby refid="class_player_squad_controller_1a6d91216410d2a07577a5c2a354f088c0" compoundref="_player_squad_controller_8cs" startline="330" endline="342">SelectEnemyes</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_squad_controller_1a68444b7b396b119d6af24de208f58d8e" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float PlayerSquadController.circleConstrincInPercent</definition>
+        <argsstring></argsstring>
+        <name>circleConstrincInPercent</name>
+        <initializer>= 0.2f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" line="20" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" bodystart="20" bodyend="-1"/>
+        <referencedby refid="class_player_squad_controller_1aea37cb1546ea59c88544f3dbaf37e3e9" compoundref="_player_squad_controller_8cs" startline="354" endline="388">CircleCastConstrict</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_squad_controller_1aed71fd996215339d38b3e138e0e01458" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float PlayerSquadController.circleConstrincGuaranteeUnits</definition>
+        <argsstring></argsstring>
+        <name>circleConstrincGuaranteeUnits</name>
+        <initializer>= 0.2f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" line="21" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" bodystart="21" bodyend="-1"/>
+        <referencedby refid="class_player_squad_controller_1aea37cb1546ea59c88544f3dbaf37e3e9" compoundref="_player_squad_controller_8cs" startline="354" endline="388">CircleCastConstrict</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_squad_controller_1a7210b4e839c5315688a420fa6bb1e3c7" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float PlayerSquadController.circleExpandDurationInSec</definition>
+        <argsstring></argsstring>
+        <name>circleExpandDurationInSec</name>
+        <initializer>= 2f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" line="22" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" bodystart="22" bodyend="-1"/>
+        <referencedby refid="class_player_squad_controller_1aea37cb1546ea59c88544f3dbaf37e3e9" compoundref="_player_squad_controller_8cs" startline="354" endline="388">CircleCastConstrict</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_squad_controller_1a16eb94d32eed53b12ab4a4c89897f837" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float PlayerSquadController.circleExpandDeltaTime</definition>
+        <argsstring></argsstring>
+        <name>circleExpandDeltaTime</name>
+        <initializer>= 0.2f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" line="23" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" bodystart="23" bodyend="-1"/>
+        <referencedby refid="class_player_squad_controller_1aea37cb1546ea59c88544f3dbaf37e3e9" compoundref="_player_squad_controller_8cs" startline="354" endline="388">CircleCastConstrict</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_squad_controller_1a93a18f2556ce6bf592445fc0b3b58ae2" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float PlayerSquadController.circleMinRadius</definition>
+        <argsstring></argsstring>
+        <name>circleMinRadius</name>
+        <initializer>= 0.5f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" line="24" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" bodystart="24" bodyend="-1"/>
+        <referencedby refid="class_player_squad_controller_1aea37cb1546ea59c88544f3dbaf37e3e9" compoundref="_player_squad_controller_8cs" startline="354" endline="388">CircleCastConstrict</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_squad_controller_1a5a816e031677fd5e8162922dc564698e" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool PlayerSquadController.coroutineAlive</definition>
+        <argsstring></argsstring>
+        <name>coroutineAlive</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" line="26" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" bodystart="26" bodyend="-1"/>
+        <referencedby refid="class_player_squad_controller_1aea37cb1546ea59c88544f3dbaf37e3e9" compoundref="_player_squad_controller_8cs" startline="354" endline="388">CircleCastConstrict</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_squad_controller_1ac6a1e71c92aa41abe1b32e0140405a13" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float PlayerSquadController.rHitCirclreAngle</definition>
+        <argsstring></argsstring>
+        <name>rHitCirclreAngle</name>
+        <initializer>= 20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" line="28" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" bodystart="28" bodyend="-1"/>
+        <referencedby refid="class_player_squad_controller_1aed4154b331a0585833630252733591f8" compoundref="_player_squad_controller_8cs" startline="166" endline="175">CreateSinCosAngles</referencedby>
+        <referencedby refid="class_player_squad_controller_1a2aaade11832a060e36f438cb239ec888" compoundref="_player_squad_controller_8cs" startline="63" endline="99">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_squad_controller_1aae572bf7291bfdcc3ffd5e5eaa682362" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int PlayerSquadController.rHitCirclreSegmentCount</definition>
+        <argsstring></argsstring>
+        <name>rHitCirclreSegmentCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" line="29" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" bodystart="29" bodyend="-1"/>
+        <referencedby refid="class_player_squad_controller_1aa5b69f85bbe7ba1f620f934e0c188a8b" compoundref="_player_squad_controller_8cs" startline="177" endline="189">CreatePoints</referencedby>
+        <referencedby refid="class_player_squad_controller_1aed4154b331a0585833630252733591f8" compoundref="_player_squad_controller_8cs" startline="166" endline="175">CreateSinCosAngles</referencedby>
+        <referencedby refid="class_player_squad_controller_1a2aaade11832a060e36f438cb239ec888" compoundref="_player_squad_controller_8cs" startline="63" endline="99">Start</referencedby>
+        <referencedby refid="class_player_squad_controller_1a9c1cd18c24ba0f1896bde74712ce992f" compoundref="_player_squad_controller_8cs" startline="101" endline="151">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_squad_controller_1ae6b7e5f56ce1cd82d572a5b9ae3c0775" prot="private" static="no" mutable="no">
+        <type>Vector3[]</type>
+        <definition>Vector3 [] PlayerSquadController.rHitCirclreSegments</definition>
+        <argsstring></argsstring>
+        <name>rHitCirclreSegments</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" line="31" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" bodystart="31" bodyend="-1"/>
+        <referencedby refid="class_player_squad_controller_1aa5b69f85bbe7ba1f620f934e0c188a8b" compoundref="_player_squad_controller_8cs" startline="177" endline="189">CreatePoints</referencedby>
+        <referencedby refid="class_player_squad_controller_1a2aaade11832a060e36f438cb239ec888" compoundref="_player_squad_controller_8cs" startline="63" endline="99">Start</referencedby>
+        <referencedby refid="class_player_squad_controller_1a9c1cd18c24ba0f1896bde74712ce992f" compoundref="_player_squad_controller_8cs" startline="101" endline="151">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_squad_controller_1a2aceb4f696ea9044b01b336d2ac29e0c" prot="private" static="no" mutable="no">
+        <type>float[]</type>
+        <definition>float [] PlayerSquadController.sinAngles</definition>
+        <argsstring></argsstring>
+        <name>sinAngles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" line="32" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" bodystart="32" bodyend="-1"/>
+        <referencedby refid="class_player_squad_controller_1aa5b69f85bbe7ba1f620f934e0c188a8b" compoundref="_player_squad_controller_8cs" startline="177" endline="189">CreatePoints</referencedby>
+        <referencedby refid="class_player_squad_controller_1aed4154b331a0585833630252733591f8" compoundref="_player_squad_controller_8cs" startline="166" endline="175">CreateSinCosAngles</referencedby>
+        <referencedby refid="class_player_squad_controller_1a2aaade11832a060e36f438cb239ec888" compoundref="_player_squad_controller_8cs" startline="63" endline="99">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_squad_controller_1ad236f9a83bfac4747bb03dd72fcac0ee" prot="private" static="no" mutable="no">
+        <type>float[]</type>
+        <definition>float [] PlayerSquadController.cosAngles</definition>
+        <argsstring></argsstring>
+        <name>cosAngles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" line="33" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" bodystart="33" bodyend="-1"/>
+        <referencedby refid="class_player_squad_controller_1aa5b69f85bbe7ba1f620f934e0c188a8b" compoundref="_player_squad_controller_8cs" startline="177" endline="189">CreatePoints</referencedby>
+        <referencedby refid="class_player_squad_controller_1aed4154b331a0585833630252733591f8" compoundref="_player_squad_controller_8cs" startline="166" endline="175">CreateSinCosAngles</referencedby>
+        <referencedby refid="class_player_squad_controller_1a2aaade11832a060e36f438cb239ec888" compoundref="_player_squad_controller_8cs" startline="63" endline="99">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_squad_controller_1acd89b69b02fb9d6e089d06007fa54d47" prot="private" static="no" mutable="no">
+        <type>Thread</type>
+        <definition>Thread PlayerSquadController.thread</definition>
+        <argsstring></argsstring>
+        <name>thread</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" line="35" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" bodystart="35" bodyend="-1"/>
+        <referencedby refid="class_player_squad_controller_1a14624c20b184262769b880804049fb0b" compoundref="_player_squad_controller_8cs" startline="216" endline="297">OnPointerUp</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_squad_controller_1a074a7e569c2c17860539f659839779b0" prot="private" static="no" mutable="no">
+        <type>List&lt; Vector3 &gt;</type>
+        <definition>List&lt;Vector3&gt; PlayerSquadController.path</definition>
+        <argsstring></argsstring>
+        <name>path</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" line="37" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" bodystart="37" bodyend="-1"/>
+        <referencedby refid="class_player_squad_controller_1a022a61e02daa6ee4e9ae23c3be718131" compoundref="_player_squad_controller_8cs" startline="344" endline="352">FindPath</referencedby>
+        <referencedby refid="class_player_squad_controller_1a14624c20b184262769b880804049fb0b" compoundref="_player_squad_controller_8cs" startline="216" endline="297">OnPointerUp</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_squad_controller_1a0122e6b0525b8bcd059840ea6e907ccc" prot="private" static="no" mutable="no">
+        <type>Vector2</type>
+        <definition>Vector2 PlayerSquadController.startFindPath</definition>
+        <argsstring></argsstring>
+        <name>startFindPath</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" line="38" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" bodystart="38" bodyend="-1"/>
+        <referencedby refid="class_player_squad_controller_1a022a61e02daa6ee4e9ae23c3be718131" compoundref="_player_squad_controller_8cs" startline="344" endline="352">FindPath</referencedby>
+        <referencedby refid="class_player_squad_controller_1a14624c20b184262769b880804049fb0b" compoundref="_player_squad_controller_8cs" startline="216" endline="297">OnPointerUp</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_squad_controller_1abd9ce4ac1b1b546540335955b76d0078" prot="private" static="no" mutable="no">
+        <type>Vector2</type>
+        <definition>Vector2 PlayerSquadController.endFindPath</definition>
+        <argsstring></argsstring>
+        <name>endFindPath</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" line="39" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" bodystart="39" bodyend="-1"/>
+        <referencedby refid="class_player_squad_controller_1a022a61e02daa6ee4e9ae23c3be718131" compoundref="_player_squad_controller_8cs" startline="344" endline="352">FindPath</referencedby>
+        <referencedby refid="class_player_squad_controller_1a14624c20b184262769b880804049fb0b" compoundref="_player_squad_controller_8cs" startline="216" endline="297">OnPointerUp</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_squad_controller_1ab18ae3c485545e38de91634e822da564" prot="private" static="no" mutable="no">
+        <type>Vector3</type>
+        <definition>Vector3 PlayerSquadController.lookPosition</definition>
+        <argsstring></argsstring>
+        <name>lookPosition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" line="41" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" bodystart="41" bodyend="-1"/>
+        <referencedby refid="class_player_squad_controller_1aec93b7ccc7f17d32adb4875b7831e5a2" compoundref="_player_squad_controller_8cs" startline="191" endline="214">OnPointerDown</referencedby>
+        <referencedby refid="class_player_squad_controller_1a14624c20b184262769b880804049fb0b" compoundref="_player_squad_controller_8cs" startline="216" endline="297">OnPointerUp</referencedby>
+        <referencedby refid="class_player_squad_controller_1a9c1cd18c24ba0f1896bde74712ce992f" compoundref="_player_squad_controller_8cs" startline="101" endline="151">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_squad_controller_1a4e693ef908a7d98ff7fcde33ae37363e" prot="private" static="no" mutable="no">
+        <type>Vector3</type>
+        <definition>Vector3 PlayerSquadController.movePosition</definition>
+        <argsstring></argsstring>
+        <name>movePosition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" line="42" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" bodystart="42" bodyend="-1"/>
+        <referencedby refid="class_player_squad_controller_1a022a61e02daa6ee4e9ae23c3be718131" compoundref="_player_squad_controller_8cs" startline="344" endline="352">FindPath</referencedby>
+        <referencedby refid="class_player_squad_controller_1aec93b7ccc7f17d32adb4875b7831e5a2" compoundref="_player_squad_controller_8cs" startline="191" endline="214">OnPointerDown</referencedby>
+        <referencedby refid="class_player_squad_controller_1a14624c20b184262769b880804049fb0b" compoundref="_player_squad_controller_8cs" startline="216" endline="297">OnPointerUp</referencedby>
+        <referencedby refid="class_player_squad_controller_1a6d91216410d2a07577a5c2a354f088c0" compoundref="_player_squad_controller_8cs" startline="330" endline="342">SelectEnemyes</referencedby>
+        <referencedby refid="class_player_squad_controller_1ad6c8f15152c309d015043d88d21b91e0" compoundref="_player_squad_controller_8cs" startline="299" endline="328">SetStartPosition</referencedby>
+        <referencedby refid="class_player_squad_controller_1a9c1cd18c24ba0f1896bde74712ce992f" compoundref="_player_squad_controller_8cs" startline="101" endline="151">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_squad_controller_1aed8bc7fcaf4f0a6041850dd0b39673f7" prot="private" static="no" mutable="no">
+        <type>Quaternion</type>
+        <definition>Quaternion PlayerSquadController.lookRotation</definition>
+        <argsstring></argsstring>
+        <name>lookRotation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" line="43" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" bodystart="43" bodyend="-1"/>
+        <referencedby refid="class_player_squad_controller_1a022a61e02daa6ee4e9ae23c3be718131" compoundref="_player_squad_controller_8cs" startline="344" endline="352">FindPath</referencedby>
+        <referencedby refid="class_player_squad_controller_1a14624c20b184262769b880804049fb0b" compoundref="_player_squad_controller_8cs" startline="216" endline="297">OnPointerUp</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_squad_controller_1a578690e873892234b2f136cc80d3817a" prot="private" static="no" mutable="no">
+        <type>LineRenderer</type>
+        <definition>LineRenderer PlayerSquadController.lineRenderer</definition>
+        <argsstring></argsstring>
+        <name>lineRenderer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" line="45" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" bodystart="45" bodyend="-1"/>
+        <referencedby refid="class_player_squad_controller_1a2aaade11832a060e36f438cb239ec888" compoundref="_player_squad_controller_8cs" startline="63" endline="99">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_squad_controller_1a0b5acecc56298ce89e5dfaa1c7b531f3" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int PlayerSquadController.maxHitsCount</definition>
+        <argsstring></argsstring>
+        <name>maxHitsCount</name>
+        <initializer>= 100</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" line="47" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" bodystart="47" bodyend="-1"/>
+        <referencedby refid="class_player_squad_controller_1a2aaade11832a060e36f438cb239ec888" compoundref="_player_squad_controller_8cs" startline="63" endline="99">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_squad_controller_1aeba304ec13d61136b226d72914a8c2c7" prot="private" static="no" mutable="no">
+        <type>RaycastHit2D[]</type>
+        <definition>RaycastHit2D [] PlayerSquadController.rHits</definition>
+        <argsstring></argsstring>
+        <name>rHits</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" line="49" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" bodystart="49" bodyend="-1"/>
+        <referencedby refid="class_player_squad_controller_1aa403a38b926b0b97d8830e8c6ecb0944" compoundref="_player_squad_controller_8cs" startline="153" endline="164">DeselectEnemyes</referencedby>
+        <referencedby refid="class_player_squad_controller_1a6d91216410d2a07577a5c2a354f088c0" compoundref="_player_squad_controller_8cs" startline="330" endline="342">SelectEnemyes</referencedby>
+        <referencedby refid="class_player_squad_controller_1a2aaade11832a060e36f438cb239ec888" compoundref="_player_squad_controller_8cs" startline="63" endline="99">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_squad_controller_1ae150db825b7167a1313f23502d5896fe" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int PlayerSquadController.rHitsCount</definition>
+        <argsstring></argsstring>
+        <name>rHitsCount</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" line="50" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" bodystart="50" bodyend="-1"/>
+        <referencedby refid="class_player_squad_controller_1aa403a38b926b0b97d8830e8c6ecb0944" compoundref="_player_squad_controller_8cs" startline="153" endline="164">DeselectEnemyes</referencedby>
+        <referencedby refid="class_player_squad_controller_1a14624c20b184262769b880804049fb0b" compoundref="_player_squad_controller_8cs" startline="216" endline="297">OnPointerUp</referencedby>
+        <referencedby refid="class_player_squad_controller_1a6d91216410d2a07577a5c2a354f088c0" compoundref="_player_squad_controller_8cs" startline="330" endline="342">SelectEnemyes</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_squad_controller_1a163a4ede32bd5e34d27d897c0e475af3" prot="private" static="no" mutable="no">
+        <type>ContactFilter2D</type>
+        <definition>ContactFilter2D PlayerSquadController.rHitFilter</definition>
+        <argsstring></argsstring>
+        <name>rHitFilter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" line="51" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" bodystart="51" bodyend="-1"/>
+        <referencedby refid="class_player_squad_controller_1a6d91216410d2a07577a5c2a354f088c0" compoundref="_player_squad_controller_8cs" startline="330" endline="342">SelectEnemyes</referencedby>
+        <referencedby refid="class_player_squad_controller_1a2aaade11832a060e36f438cb239ec888" compoundref="_player_squad_controller_8cs" startline="63" endline="99">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_squad_controller_1a1a96a3a83f0faea7f5887b9c662a4ce8" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int PlayerSquadController.rHitLayer</definition>
+        <argsstring></argsstring>
+        <name>rHitLayer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" line="52" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" bodystart="52" bodyend="-1"/>
+        <referencedby refid="class_player_squad_controller_1a2aaade11832a060e36f438cb239ec888" compoundref="_player_squad_controller_8cs" startline="63" endline="99">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_squad_controller_1a79d47991ac147a4c07b56fca8c585a15" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool PlayerSquadController.mouseDown</definition>
+        <argsstring></argsstring>
+        <name>mouseDown</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" line="54" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" bodystart="54" bodyend="-1"/>
+        <referencedby refid="class_player_squad_controller_1aec93b7ccc7f17d32adb4875b7831e5a2" compoundref="_player_squad_controller_8cs" startline="191" endline="214">OnPointerDown</referencedby>
+        <referencedby refid="class_player_squad_controller_1a14624c20b184262769b880804049fb0b" compoundref="_player_squad_controller_8cs" startline="216" endline="297">OnPointerUp</referencedby>
+        <referencedby refid="class_player_squad_controller_1a9c1cd18c24ba0f1896bde74712ce992f" compoundref="_player_squad_controller_8cs" startline="101" endline="151">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_squad_controller_1a4dc2e5a4d71ed8cb3225150213fcaa94" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int PlayerSquadController.touchId</definition>
+        <argsstring></argsstring>
+        <name>touchId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" line="56" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" bodystart="56" bodyend="-1"/>
+        <referencedby refid="class_player_squad_controller_1aec93b7ccc7f17d32adb4875b7831e5a2" compoundref="_player_squad_controller_8cs" startline="191" endline="214">OnPointerDown</referencedby>
+        <referencedby refid="class_player_squad_controller_1a14624c20b184262769b880804049fb0b" compoundref="_player_squad_controller_8cs" startline="216" endline="297">OnPointerUp</referencedby>
+        <referencedby refid="class_player_squad_controller_1a9c1cd18c24ba0f1896bde74712ce992f" compoundref="_player_squad_controller_8cs" startline="101" endline="151">Update</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_player_squad_controller_1acc429ba9e603d4eb7b04ffac5cf34119" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerSquadController.Awake</definition>
+        <argsstring>()</argsstring>
+        <name>Awake</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" line="58" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" bodystart="58" bodyend="61"/>
+        <references refid="class_player_squad_controller_1a053c9c73ccce50be379da2ee7b140a00" compoundref="_player_squad_controller_8cs" startline="10">Instance</references>
+      </memberdef>
+      <memberdef kind="function" id="class_player_squad_controller_1a2aaade11832a060e36f438cb239ec888" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerSquadController.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" line="63" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" bodystart="63" bodyend="99"/>
+        <references refid="class_player_squad_controller_1ad236f9a83bfac4747bb03dd72fcac0ee" compoundref="_player_squad_controller_8cs" startline="33">cosAngles</references>
+        <references refid="class_player_squad_controller_1aed4154b331a0585833630252733591f8" compoundref="_player_squad_controller_8cs" startline="166" endline="175">CreateSinCosAngles</references>
+        <references refid="class_squad_1aa71cd8ace8efe45c6201040f570a73f7" compoundref="_squad_8cs" startline="98">Squad.fraction</references>
+        <references refid="class_player_squad_controller_1a3738bb578b7fbec4b8566ad861ee47e2" compoundref="_player_squad_controller_8cs" startline="13">ground</references>
+        <references refid="class_player_squad_controller_1a578690e873892234b2f136cc80d3817a" compoundref="_player_squad_controller_8cs" startline="45">lineRenderer</references>
+        <references refid="class_player_squad_controller_1a0b5acecc56298ce89e5dfaa1c7b531f3" compoundref="_player_squad_controller_8cs" startline="47">maxHitsCount</references>
+        <references refid="class_squad_1a781a32dd5c6fadbe0a9e04f142ddc9da" compoundref="_squad_8cs" startline="10">Squad.playerSquadInstance</references>
+        <references refid="class_player_squad_controller_1ac6a1e71c92aa41abe1b32e0140405a13" compoundref="_player_squad_controller_8cs" startline="28">rHitCirclreAngle</references>
+        <references refid="class_player_squad_controller_1aae572bf7291bfdcc3ffd5e5eaa682362" compoundref="_player_squad_controller_8cs" startline="29">rHitCirclreSegmentCount</references>
+        <references refid="class_player_squad_controller_1ae6b7e5f56ce1cd82d572a5b9ae3c0775" compoundref="_player_squad_controller_8cs" startline="31">rHitCirclreSegments</references>
+        <references refid="class_player_squad_controller_1a163a4ede32bd5e34d27d897c0e475af3" compoundref="_player_squad_controller_8cs" startline="51">rHitFilter</references>
+        <references refid="class_player_squad_controller_1a1a96a3a83f0faea7f5887b9c662a4ce8" compoundref="_player_squad_controller_8cs" startline="52">rHitLayer</references>
+        <references refid="class_player_squad_controller_1aeba304ec13d61136b226d72914a8c2c7" compoundref="_player_squad_controller_8cs" startline="49">rHits</references>
+        <references refid="class_player_squad_controller_1a2aceb4f696ea9044b01b336d2ac29e0c" compoundref="_player_squad_controller_8cs" startline="32">sinAngles</references>
+        <references refid="class_player_squad_controller_1a2b17d31dee7c07042ea51feb83b032c0" compoundref="_player_squad_controller_8cs" startline="12">squad</references>
+      </memberdef>
+      <memberdef kind="function" id="class_player_squad_controller_1a9c1cd18c24ba0f1896bde74712ce992f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerSquadController.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" line="101" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" bodystart="101" bodyend="151"/>
+        <references refid="class_player_squad_controller_1aa5b69f85bbe7ba1f620f934e0c188a8b" compoundref="_player_squad_controller_8cs" startline="177" endline="189">CreatePoints</references>
+        <references refid="class_squad_1a0e61b22b389bca6483cb8d01a88bba55" compoundref="_squad_8cs" startline="40">Squad.CurrentFormation</references>
+        <references refid="class_player_squad_controller_1ab18ae3c485545e38de91634e822da564" compoundref="_player_squad_controller_8cs" startline="41">lookPosition</references>
+        <references refid="class_player_squad_controller_1a79d47991ac147a4c07b56fca8c585a15" compoundref="_player_squad_controller_8cs" startline="54">mouseDown</references>
+        <references refid="class_player_squad_controller_1a4e693ef908a7d98ff7fcde33ae37363e" compoundref="_player_squad_controller_8cs" startline="42">movePosition</references>
+        <references refid="class_player_squad_controller_1aae572bf7291bfdcc3ffd5e5eaa682362" compoundref="_player_squad_controller_8cs" startline="29">rHitCirclreSegmentCount</references>
+        <references refid="class_player_squad_controller_1ae6b7e5f56ce1cd82d572a5b9ae3c0775" compoundref="_player_squad_controller_8cs" startline="31">rHitCirclreSegments</references>
+        <references refid="class_player_squad_controller_1a2b17d31dee7c07042ea51feb83b032c0" compoundref="_player_squad_controller_8cs" startline="12">squad</references>
+        <references refid="class_player_squad_controller_1a4dc2e5a4d71ed8cb3225150213fcaa94" compoundref="_player_squad_controller_8cs" startline="56">touchId</references>
+      </memberdef>
+      <memberdef kind="function" id="class_player_squad_controller_1aed4154b331a0585833630252733591f8" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerSquadController.CreateSinCosAngles</definition>
+        <argsstring>()</argsstring>
+        <name>CreateSinCosAngles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" line="166" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" bodystart="166" bodyend="175"/>
+        <references refid="class_player_squad_controller_1ad236f9a83bfac4747bb03dd72fcac0ee" compoundref="_player_squad_controller_8cs" startline="33">cosAngles</references>
+        <references refid="class_player_squad_controller_1ac6a1e71c92aa41abe1b32e0140405a13" compoundref="_player_squad_controller_8cs" startline="28">rHitCirclreAngle</references>
+        <references refid="class_player_squad_controller_1aae572bf7291bfdcc3ffd5e5eaa682362" compoundref="_player_squad_controller_8cs" startline="29">rHitCirclreSegmentCount</references>
+        <references refid="class_player_squad_controller_1a2aceb4f696ea9044b01b336d2ac29e0c" compoundref="_player_squad_controller_8cs" startline="32">sinAngles</references>
+        <referencedby refid="class_player_squad_controller_1a2aaade11832a060e36f438cb239ec888" compoundref="_player_squad_controller_8cs" startline="63" endline="99">Start</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_player_squad_controller_1aa5b69f85bbe7ba1f620f934e0c188a8b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerSquadController.CreatePoints</definition>
+        <argsstring>()</argsstring>
+        <name>CreatePoints</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" line="177" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" bodystart="177" bodyend="189"/>
+        <references refid="class_player_squad_controller_1a3b41b9750a6f9e8360be2c124730ee82" compoundref="_player_squad_controller_8cs" startline="19">cicleCastRadius</references>
+        <references refid="class_player_squad_controller_1ad236f9a83bfac4747bb03dd72fcac0ee" compoundref="_player_squad_controller_8cs" startline="33">cosAngles</references>
+        <references refid="class_player_squad_controller_1aae572bf7291bfdcc3ffd5e5eaa682362" compoundref="_player_squad_controller_8cs" startline="29">rHitCirclreSegmentCount</references>
+        <references refid="class_player_squad_controller_1ae6b7e5f56ce1cd82d572a5b9ae3c0775" compoundref="_player_squad_controller_8cs" startline="31">rHitCirclreSegments</references>
+        <references refid="class_player_squad_controller_1a2aceb4f696ea9044b01b336d2ac29e0c" compoundref="_player_squad_controller_8cs" startline="32">sinAngles</references>
+        <referencedby refid="class_player_squad_controller_1a9c1cd18c24ba0f1896bde74712ce992f" compoundref="_player_squad_controller_8cs" startline="101" endline="151">Update</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_player_squad_controller_1ad6c8f15152c309d015043d88d21b91e0" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerSquadController.SetStartPosition</definition>
+        <argsstring>()</argsstring>
+        <name>SetStartPosition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" line="299" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" bodystart="299" bodyend="328"/>
+        <references refid="class_squad_1a2daafef1aec88ff88eb32f4f514b1f3b" compoundref="_squad_8cs" startline="115">Squad.FlipRotation</references>
+        <references refid="class_player_squad_controller_1a4e693ef908a7d98ff7fcde33ae37363e" compoundref="_player_squad_controller_8cs" startline="42">movePosition</references>
+        <references refid="class_squad_1a024d83821917a7c547e23ffcdf81caa4" compoundref="_squad_8cs" startline="208">Squad.PositionsTransform</references>
+        <references refid="class_player_squad_controller_1a2b17d31dee7c07042ea51feb83b032c0" compoundref="_player_squad_controller_8cs" startline="12">squad</references>
+        <referencedby refid="class_player_squad_controller_1a14624c20b184262769b880804049fb0b" compoundref="_player_squad_controller_8cs" startline="216" endline="297">OnPointerUp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_player_squad_controller_1a6d91216410d2a07577a5c2a354f088c0" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerSquadController.SelectEnemyes</definition>
+        <argsstring>()</argsstring>
+        <name>SelectEnemyes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" line="330" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" bodystart="330" bodyend="342"/>
+        <references refid="class_player_squad_controller_1a3b41b9750a6f9e8360be2c124730ee82" compoundref="_player_squad_controller_8cs" startline="19">cicleCastRadius</references>
+        <references refid="class_player_squad_controller_1aa403a38b926b0b97d8830e8c6ecb0944" compoundref="_player_squad_controller_8cs" startline="153" endline="164">DeselectEnemyes</references>
+        <references refid="class_player_squad_controller_1a4e693ef908a7d98ff7fcde33ae37363e" compoundref="_player_squad_controller_8cs" startline="42">movePosition</references>
+        <references refid="class_player_squad_controller_1a163a4ede32bd5e34d27d897c0e475af3" compoundref="_player_squad_controller_8cs" startline="51">rHitFilter</references>
+        <references refid="class_player_squad_controller_1aeba304ec13d61136b226d72914a8c2c7" compoundref="_player_squad_controller_8cs" startline="49">rHits</references>
+        <references refid="class_player_squad_controller_1ae150db825b7167a1313f23502d5896fe" compoundref="_player_squad_controller_8cs" startline="50">rHitsCount</references>
+        <referencedby refid="class_player_squad_controller_1a14624c20b184262769b880804049fb0b" compoundref="_player_squad_controller_8cs" startline="216" endline="297">OnPointerUp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_player_squad_controller_1a022a61e02daa6ee4e9ae23c3be718131" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerSquadController.FindPath</definition>
+        <argsstring>()</argsstring>
+        <name>FindPath</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" line="344" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" bodystart="344" bodyend="352"/>
+        <references refid="struct_map_block_1a9e46c3698814e50f60550ebd48ab9cb2" compoundref="_map_block_8cs" startline="10">MapBlock.BLOCK_SCALE</references>
+        <references refid="class_player_squad_controller_1abd9ce4ac1b1b546540335955b76d0078" compoundref="_player_squad_controller_8cs" startline="39">endFindPath</references>
+        <references refid="class_player_squad_controller_1aed8bc7fcaf4f0a6041850dd0b39673f7" compoundref="_player_squad_controller_8cs" startline="43">lookRotation</references>
+        <references refid="class_player_squad_controller_1a4e693ef908a7d98ff7fcde33ae37363e" compoundref="_player_squad_controller_8cs" startline="42">movePosition</references>
+        <references refid="class_player_squad_controller_1a074a7e569c2c17860539f659839779b0" compoundref="_player_squad_controller_8cs" startline="37">path</references>
+        <references refid="class_player_squad_controller_1a0122e6b0525b8bcd059840ea6e907ccc" compoundref="_player_squad_controller_8cs" startline="38">startFindPath</references>
+        <referencedby refid="class_player_squad_controller_1a14624c20b184262769b880804049fb0b" compoundref="_player_squad_controller_8cs" startline="216" endline="297">OnPointerUp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_player_squad_controller_1aea37cb1546ea59c88544f3dbaf37e3e9" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerator</type>
+        <definition>IEnumerator PlayerSquadController.CircleCastConstrict</definition>
+        <argsstring>()</argsstring>
+        <name>CircleCastConstrict</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" line="354" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" bodystart="354" bodyend="388"/>
+        <references refid="class_player_squad_controller_1a3b41b9750a6f9e8360be2c124730ee82" compoundref="_player_squad_controller_8cs" startline="19">cicleCastRadius</references>
+        <references refid="class_player_squad_controller_1aed71fd996215339d38b3e138e0e01458" compoundref="_player_squad_controller_8cs" startline="21">circleConstrincGuaranteeUnits</references>
+        <references refid="class_player_squad_controller_1a68444b7b396b119d6af24de208f58d8e" compoundref="_player_squad_controller_8cs" startline="20">circleConstrincInPercent</references>
+        <references refid="class_player_squad_controller_1a16eb94d32eed53b12ab4a4c89897f837" compoundref="_player_squad_controller_8cs" startline="23">circleExpandDeltaTime</references>
+        <references refid="class_player_squad_controller_1a7210b4e839c5315688a420fa6bb1e3c7" compoundref="_player_squad_controller_8cs" startline="22">circleExpandDurationInSec</references>
+        <references refid="class_player_squad_controller_1a93a18f2556ce6bf592445fc0b3b58ae2" compoundref="_player_squad_controller_8cs" startline="24">circleMinRadius</references>
+        <references refid="class_player_squad_controller_1a5a816e031677fd5e8162922dc564698e" compoundref="_player_squad_controller_8cs" startline="26">coroutineAlive</references>
+        <referencedby refid="class_player_squad_controller_1a14624c20b184262769b880804049fb0b" compoundref="_player_squad_controller_8cs" startline="216" endline="297">OnPointerUp</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_player_squad_controller_1aa403a38b926b0b97d8830e8c6ecb0944" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerSquadController.DeselectEnemyes</definition>
+        <argsstring>()</argsstring>
+        <name>DeselectEnemyes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" line="153" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" bodystart="153" bodyend="164"/>
+        <references refid="class_player_squad_controller_1aeba304ec13d61136b226d72914a8c2c7" compoundref="_player_squad_controller_8cs" startline="49">rHits</references>
+        <references refid="class_player_squad_controller_1ae150db825b7167a1313f23502d5896fe" compoundref="_player_squad_controller_8cs" startline="50">rHitsCount</references>
+        <referencedby refid="class_player_squad_controller_1a6d91216410d2a07577a5c2a354f088c0" compoundref="_player_squad_controller_8cs" startline="330" endline="342">SelectEnemyes</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_player_squad_controller_1aec93b7ccc7f17d32adb4875b7831e5a2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerSquadController.OnPointerDown</definition>
+        <argsstring>(PointerEventData eventData)</argsstring>
+        <name>OnPointerDown</name>
+        <param>
+          <type>PointerEventData</type>
+          <declname>eventData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" line="191" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" bodystart="191" bodyend="214"/>
+        <references refid="class_squad_1a1fada86fc64219edfc97196cc3bbc7e5" compoundref="_squad_8cs" startline="224">Squad.Charging</references>
+        <references refid="class_game_manager_1a9a7aa34c324c433dd80fa0d7d1bf37e8" compoundref="_game_manager_8cs" startline="10">GameManager.GamePaused</references>
+        <references refid="class_game_manager_1ad3e717f4fb0f378b969f4457de81f23e" compoundref="_game_manager_8cs" startline="7">GameManager.Instance</references>
+        <references refid="class_player_squad_controller_1ab18ae3c485545e38de91634e822da564" compoundref="_player_squad_controller_8cs" startline="41">lookPosition</references>
+        <references refid="class_player_squad_controller_1a79d47991ac147a4c07b56fca8c585a15" compoundref="_player_squad_controller_8cs" startline="54">mouseDown</references>
+        <references refid="class_player_squad_controller_1a4e693ef908a7d98ff7fcde33ae37363e" compoundref="_player_squad_controller_8cs" startline="42">movePosition</references>
+        <references refid="class_player_squad_controller_1a2b17d31dee7c07042ea51feb83b032c0" compoundref="_player_squad_controller_8cs" startline="12">squad</references>
+        <references refid="class_player_squad_controller_1a4dc2e5a4d71ed8cb3225150213fcaa94" compoundref="_player_squad_controller_8cs" startline="56">touchId</references>
+      </memberdef>
+      <memberdef kind="function" id="class_player_squad_controller_1a14624c20b184262769b880804049fb0b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerSquadController.OnPointerUp</definition>
+        <argsstring>(PointerEventData eventData)</argsstring>
+        <name>OnPointerUp</name>
+        <param>
+          <type>PointerEventData</type>
+          <declname>eventData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" line="216" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" bodystart="216" bodyend="297"/>
+        <references refid="struct_map_block_1a9e46c3698814e50f60550ebd48ab9cb2" compoundref="_map_block_8cs" startline="10">MapBlock.BLOCK_SCALE</references>
+        <references refid="class_squad_1a1fada86fc64219edfc97196cc3bbc7e5" compoundref="_squad_8cs" startline="224">Squad.Charging</references>
+        <references refid="class_player_squad_controller_1aea37cb1546ea59c88544f3dbaf37e3e9" compoundref="_player_squad_controller_8cs" startline="354" endline="388">CircleCastConstrict</references>
+        <references refid="class_ground_1a51db3f48d60129133133b200d30453de" compoundref="_ground_8cs" startline="18">Ground.ColCountOfBlocks</references>
+        <references refid="class_squad_1a0e61b22b389bca6483cb8d01a88bba55" compoundref="_squad_8cs" startline="40">Squad.CurrentFormation</references>
+        <references refid="class_player_squad_controller_1abd9ce4ac1b1b546540335955b76d0078" compoundref="_player_squad_controller_8cs" startline="39">endFindPath</references>
+        <references refid="class_player_squad_controller_1a022a61e02daa6ee4e9ae23c3be718131" compoundref="_player_squad_controller_8cs" startline="344" endline="352">FindPath</references>
+        <references refid="class_game_manager_1a9a7aa34c324c433dd80fa0d7d1bf37e8" compoundref="_game_manager_8cs" startline="10">GameManager.GamePaused</references>
+        <references refid="class_ground_1a13daf84b12b3105ca4a7a376ebf94018" compoundref="_ground_8cs" startline="41">Ground.Grid</references>
+        <references refid="class_player_squad_controller_1a3738bb578b7fbec4b8566ad861ee47e2" compoundref="_player_squad_controller_8cs" startline="13">ground</references>
+        <references refid="class_game_manager_1ad3e717f4fb0f378b969f4457de81f23e" compoundref="_game_manager_8cs" startline="7">GameManager.Instance</references>
+        <references refid="class_player_squad_controller_1ab18ae3c485545e38de91634e822da564" compoundref="_player_squad_controller_8cs" startline="41">lookPosition</references>
+        <references refid="class_player_squad_controller_1aed8bc7fcaf4f0a6041850dd0b39673f7" compoundref="_player_squad_controller_8cs" startline="43">lookRotation</references>
+        <references refid="class_player_squad_controller_1ac02ff387e5e7c046908b6b378f119d05" compoundref="_player_squad_controller_8cs" startline="18">lookVectorDistanse</references>
+        <references refid="class_player_squad_controller_1a79d47991ac147a4c07b56fca8c585a15" compoundref="_player_squad_controller_8cs" startline="54">mouseDown</references>
+        <references refid="class_player_squad_controller_1a4e693ef908a7d98ff7fcde33ae37363e" compoundref="_player_squad_controller_8cs" startline="42">movePosition</references>
+        <references refid="class_player_squad_controller_1a074a7e569c2c17860539f659839779b0" compoundref="_player_squad_controller_8cs" startline="37">path</references>
+        <references refid="class_squad_1a024d83821917a7c547e23ffcdf81caa4" compoundref="_squad_8cs" startline="208">Squad.PositionsTransform</references>
+        <references refid="class_player_squad_controller_1ae150db825b7167a1313f23502d5896fe" compoundref="_player_squad_controller_8cs" startline="50">rHitsCount</references>
+        <references refid="class_ground_1a4587daf6f5efbee79a00724a7d906853" compoundref="_ground_8cs" startline="16">Ground.RowCountOfBlocks</references>
+        <references refid="class_player_squad_controller_1a6d91216410d2a07577a5c2a354f088c0" compoundref="_player_squad_controller_8cs" startline="330" endline="342">SelectEnemyes</references>
+        <references refid="class_player_squad_controller_1ad6c8f15152c309d015043d88d21b91e0" compoundref="_player_squad_controller_8cs" startline="299" endline="328">SetStartPosition</references>
+        <references refid="class_player_squad_controller_1a2b17d31dee7c07042ea51feb83b032c0" compoundref="_player_squad_controller_8cs" startline="12">squad</references>
+        <references refid="class_player_squad_controller_1a0122e6b0525b8bcd059840ea6e907ccc" compoundref="_player_squad_controller_8cs" startline="38">startFindPath</references>
+        <references refid="class_player_squad_controller_1acd89b69b02fb9d6e089d06007fa54d47" compoundref="_player_squad_controller_8cs" startline="35">thread</references>
+        <references refid="class_player_squad_controller_1a4dc2e5a4d71ed8cb3225150213fcaa94" compoundref="_player_squad_controller_8cs" startline="56">touchId</references>
+        <references refid="struct_map_block_1a8fb3e875d60f04656e388e30da38e6f7" compoundref="_map_block_8cs" startline="8">MapBlock.WORLD_BLOCK_SIZE</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="745">
+        <label>PlayerSquadController</label>
+        <link refid="class_player_squad_controller"/>
+        <childnode refid="746" relation="public-inheritance">
+        </childnode>
+        <childnode refid="747" relation="public-inheritance">
+        </childnode>
+        <childnode refid="748" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="747">
+        <label>IPointerDownHandler</label>
+      </node>
+      <node id="746">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="748">
+        <label>IPointerUpHandler</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="755">
+        <label>Squad</label>
+        <link refid="class_squad"/>
+        <childnode refid="750" relation="public-inheritance">
+        </childnode>
+        <childnode refid="756" relation="usage">
+          <edgelabel>currentFormationModifyers</edgelabel>
+          <edgelabel>formation</edgelabel>
+        </childnode>
+        <childnode refid="757" relation="usage">
+          <edgelabel>unitOriginal</edgelabel>
+        </childnode>
+        <childnode refid="755" relation="usage">
+          <edgelabel>playerSquadInstance</edgelabel>
+        </childnode>
+        <childnode refid="766" relation="usage">
+          <edgelabel>inventory</edgelabel>
+        </childnode>
+        <childnode refid="765" relation="usage">
+          <edgelabel>unitStats</edgelabel>
+        </childnode>
+      </node>
+      <node id="758">
+        <label>Equipment</label>
+        <link refid="class_equipment"/>
+        <childnode refid="759" relation="public-inheritance">
+        </childnode>
+        <childnode refid="761" relation="usage">
+          <edgelabel>stats</edgelabel>
+        </childnode>
+      </node>
+      <node id="764">
+        <label>UnitPosition</label>
+        <link refid="class_unit_position"/>
+        <childnode refid="750" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="760">
+        <label>Item.MainProperties</label>
+        <link refid="struct_item_1_1_main_properties"/>
+      </node>
+      <node id="763">
+        <label>Damage</label>
+        <link refid="struct_damage"/>
+      </node>
+      <node id="762">
+        <label>IDescriptionable</label>
+        <link refid="interface_i_descriptionable"/>
+      </node>
+      <node id="749">
+        <label>PlayerSquadController</label>
+        <link refid="class_player_squad_controller"/>
+        <childnode refid="750" relation="public-inheritance">
+        </childnode>
+        <childnode refid="751" relation="public-inheritance">
+        </childnode>
+        <childnode refid="752" relation="public-inheritance">
+        </childnode>
+        <childnode refid="753" relation="usage">
+          <edgelabel>ground</edgelabel>
+        </childnode>
+        <childnode refid="755" relation="usage">
+          <edgelabel>squad</edgelabel>
+        </childnode>
+      </node>
+      <node id="753">
+        <label>Ground</label>
+        <link refid="class_ground"/>
+        <childnode refid="750" relation="public-inheritance">
+        </childnode>
+        <childnode refid="754" relation="usage">
+          <edgelabel>rnd</edgelabel>
+        </childnode>
+      </node>
+      <node id="759">
+        <label>Item</label>
+        <link refid="class_item"/>
+        <childnode refid="750" relation="public-inheritance">
+        </childnode>
+        <childnode refid="760" relation="usage">
+          <edgelabel>mainProperties</edgelabel>
+        </childnode>
+      </node>
+      <node id="751">
+        <label>IPointerDownHandler</label>
+      </node>
+      <node id="754">
+        <label>System</label>
+      </node>
+      <node id="767">
+        <label>SkillStack</label>
+        <link refid="class_skill_stack"/>
+        <childnode refid="768" relation="public-inheritance">
+        </childnode>
+        <childnode refid="762" relation="public-inheritance">
+        </childnode>
+        <childnode refid="769" relation="usage">
+          <edgelabel>skill</edgelabel>
+        </childnode>
+      </node>
+      <node id="761">
+        <label>EquipmentStats</label>
+        <link refid="struct_equipment_stats"/>
+        <childnode refid="762" relation="public-inheritance">
+        </childnode>
+        <childnode refid="763" relation="usage">
+          <edgelabel>damage</edgelabel>
+        </childnode>
+      </node>
+      <node id="768">
+        <label>AStack</label>
+        <link refid="class_a_stack"/>
+      </node>
+      <node id="765">
+        <label>UnitStats</label>
+        <link refid="struct_unit_stats"/>
+        <childnode refid="763" relation="usage">
+          <edgelabel>damage</edgelabel>
+        </childnode>
+      </node>
+      <node id="750">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="757">
+        <label>Unit</label>
+        <link refid="class_unit"/>
+        <childnode refid="750" relation="public-inheritance">
+        </childnode>
+        <childnode refid="757" relation="usage">
+          <edgelabel>target</edgelabel>
+        </childnode>
+        <childnode refid="755" relation="usage">
+          <edgelabel>squad</edgelabel>
+        </childnode>
+        <childnode refid="758" relation="usage">
+          <edgelabel>body</edgelabel>
+          <edgelabel>shield</edgelabel>
+          <edgelabel>weapon</edgelabel>
+          <edgelabel>helmet</edgelabel>
+        </childnode>
+        <childnode refid="764" relation="usage">
+          <edgelabel>TargetMovePositionObject</edgelabel>
+          <edgelabel>unitPosOriginal</edgelabel>
+        </childnode>
+        <childnode refid="765" relation="usage">
+          <edgelabel>stats</edgelabel>
+        </childnode>
+      </node>
+      <node id="769">
+        <label>Skill</label>
+        <link refid="class_skill"/>
+        <childnode refid="759" relation="public-inheritance">
+        </childnode>
+        <childnode refid="762" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="770">
+        <label>EquipmentStack</label>
+        <link refid="class_equipment_stack"/>
+        <childnode refid="768" relation="public-inheritance">
+        </childnode>
+        <childnode refid="759" relation="usage">
+          <edgelabel>equipmentMainProperties</edgelabel>
+        </childnode>
+        <childnode refid="761" relation="usage">
+          <edgelabel>equipmentStats</edgelabel>
+        </childnode>
+      </node>
+      <node id="756">
+        <label>FormationStats</label>
+        <link refid="class_formation_stats"/>
+      </node>
+      <node id="766">
+        <label>Inventory</label>
+        <link refid="class_inventory"/>
+        <childnode refid="767" relation="usage">
+          <edgelabel>firstSkill</edgelabel>
+          <edgelabel>secondSkill</edgelabel>
+        </childnode>
+        <childnode refid="758" relation="usage">
+          <edgelabel>body</edgelabel>
+          <edgelabel>shieldNone</edgelabel>
+          <edgelabel>helmetNone</edgelabel>
+          <edgelabel>shield</edgelabel>
+          <edgelabel>weapon</edgelabel>
+          <edgelabel>helmet</edgelabel>
+          <edgelabel>bodyNone</edgelabel>
+        </childnode>
+        <childnode refid="770" relation="usage">
+          <edgelabel>inventory</edgelabel>
+        </childnode>
+      </node>
+      <node id="752">
+        <label>IPointerUpHandler</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" line="9" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PlayerSquadController.cs" bodystart="8" bodyend="389"/>
+    <listofallmembers>
+      <member refid="class_player_squad_controller_1acc429ba9e603d4eb7b04ffac5cf34119" prot="private" virt="non-virtual"><scope>PlayerSquadController</scope><name>Awake</name></member>
+      <member refid="class_player_squad_controller_1a3b41b9750a6f9e8360be2c124730ee82" prot="private" virt="non-virtual"><scope>PlayerSquadController</scope><name>cicleCastRadius</name></member>
+      <member refid="class_player_squad_controller_1aea37cb1546ea59c88544f3dbaf37e3e9" prot="private" virt="non-virtual"><scope>PlayerSquadController</scope><name>CircleCastConstrict</name></member>
+      <member refid="class_player_squad_controller_1aed71fd996215339d38b3e138e0e01458" prot="private" virt="non-virtual"><scope>PlayerSquadController</scope><name>circleConstrincGuaranteeUnits</name></member>
+      <member refid="class_player_squad_controller_1a68444b7b396b119d6af24de208f58d8e" prot="private" virt="non-virtual"><scope>PlayerSquadController</scope><name>circleConstrincInPercent</name></member>
+      <member refid="class_player_squad_controller_1a16eb94d32eed53b12ab4a4c89897f837" prot="private" virt="non-virtual"><scope>PlayerSquadController</scope><name>circleExpandDeltaTime</name></member>
+      <member refid="class_player_squad_controller_1a7210b4e839c5315688a420fa6bb1e3c7" prot="private" virt="non-virtual"><scope>PlayerSquadController</scope><name>circleExpandDurationInSec</name></member>
+      <member refid="class_player_squad_controller_1a93a18f2556ce6bf592445fc0b3b58ae2" prot="private" virt="non-virtual"><scope>PlayerSquadController</scope><name>circleMinRadius</name></member>
+      <member refid="class_player_squad_controller_1a5a816e031677fd5e8162922dc564698e" prot="private" virt="non-virtual"><scope>PlayerSquadController</scope><name>coroutineAlive</name></member>
+      <member refid="class_player_squad_controller_1ad236f9a83bfac4747bb03dd72fcac0ee" prot="private" virt="non-virtual"><scope>PlayerSquadController</scope><name>cosAngles</name></member>
+      <member refid="class_player_squad_controller_1aa5b69f85bbe7ba1f620f934e0c188a8b" prot="private" virt="non-virtual"><scope>PlayerSquadController</scope><name>CreatePoints</name></member>
+      <member refid="class_player_squad_controller_1aed4154b331a0585833630252733591f8" prot="private" virt="non-virtual"><scope>PlayerSquadController</scope><name>CreateSinCosAngles</name></member>
+      <member refid="class_player_squad_controller_1aa403a38b926b0b97d8830e8c6ecb0944" prot="public" virt="non-virtual"><scope>PlayerSquadController</scope><name>DeselectEnemyes</name></member>
+      <member refid="class_player_squad_controller_1ae78e6f88ab7b342f9cd1df6afb9ff271" prot="private" virt="non-virtual"><scope>PlayerSquadController</scope><name>directFindPathLayers</name></member>
+      <member refid="class_player_squad_controller_1abd9ce4ac1b1b546540335955b76d0078" prot="private" virt="non-virtual"><scope>PlayerSquadController</scope><name>endFindPath</name></member>
+      <member refid="class_player_squad_controller_1a022a61e02daa6ee4e9ae23c3be718131" prot="private" virt="non-virtual"><scope>PlayerSquadController</scope><name>FindPath</name></member>
+      <member refid="class_player_squad_controller_1a3738bb578b7fbec4b8566ad861ee47e2" prot="private" virt="non-virtual"><scope>PlayerSquadController</scope><name>ground</name></member>
+      <member refid="class_player_squad_controller_1a053c9c73ccce50be379da2ee7b140a00" prot="public" virt="non-virtual"><scope>PlayerSquadController</scope><name>Instance</name></member>
+      <member refid="class_player_squad_controller_1a578690e873892234b2f136cc80d3817a" prot="private" virt="non-virtual"><scope>PlayerSquadController</scope><name>lineRenderer</name></member>
+      <member refid="class_player_squad_controller_1ab18ae3c485545e38de91634e822da564" prot="private" virt="non-virtual"><scope>PlayerSquadController</scope><name>lookPosition</name></member>
+      <member refid="class_player_squad_controller_1aed8bc7fcaf4f0a6041850dd0b39673f7" prot="private" virt="non-virtual"><scope>PlayerSquadController</scope><name>lookRotation</name></member>
+      <member refid="class_player_squad_controller_1ac02ff387e5e7c046908b6b378f119d05" prot="private" virt="non-virtual"><scope>PlayerSquadController</scope><name>lookVectorDistanse</name></member>
+      <member refid="class_player_squad_controller_1a0b5acecc56298ce89e5dfaa1c7b531f3" prot="private" virt="non-virtual"><scope>PlayerSquadController</scope><name>maxHitsCount</name></member>
+      <member refid="class_player_squad_controller_1a79d47991ac147a4c07b56fca8c585a15" prot="private" virt="non-virtual"><scope>PlayerSquadController</scope><name>mouseDown</name></member>
+      <member refid="class_player_squad_controller_1a4e693ef908a7d98ff7fcde33ae37363e" prot="private" virt="non-virtual"><scope>PlayerSquadController</scope><name>movePosition</name></member>
+      <member refid="class_player_squad_controller_1aec93b7ccc7f17d32adb4875b7831e5a2" prot="public" virt="non-virtual"><scope>PlayerSquadController</scope><name>OnPointerDown</name></member>
+      <member refid="class_player_squad_controller_1a14624c20b184262769b880804049fb0b" prot="public" virt="non-virtual"><scope>PlayerSquadController</scope><name>OnPointerUp</name></member>
+      <member refid="class_player_squad_controller_1a074a7e569c2c17860539f659839779b0" prot="private" virt="non-virtual"><scope>PlayerSquadController</scope><name>path</name></member>
+      <member refid="class_player_squad_controller_1ac6a1e71c92aa41abe1b32e0140405a13" prot="private" virt="non-virtual"><scope>PlayerSquadController</scope><name>rHitCirclreAngle</name></member>
+      <member refid="class_player_squad_controller_1aae572bf7291bfdcc3ffd5e5eaa682362" prot="private" virt="non-virtual"><scope>PlayerSquadController</scope><name>rHitCirclreSegmentCount</name></member>
+      <member refid="class_player_squad_controller_1ae6b7e5f56ce1cd82d572a5b9ae3c0775" prot="private" virt="non-virtual"><scope>PlayerSquadController</scope><name>rHitCirclreSegments</name></member>
+      <member refid="class_player_squad_controller_1a163a4ede32bd5e34d27d897c0e475af3" prot="private" virt="non-virtual"><scope>PlayerSquadController</scope><name>rHitFilter</name></member>
+      <member refid="class_player_squad_controller_1a1a96a3a83f0faea7f5887b9c662a4ce8" prot="private" virt="non-virtual"><scope>PlayerSquadController</scope><name>rHitLayer</name></member>
+      <member refid="class_player_squad_controller_1aeba304ec13d61136b226d72914a8c2c7" prot="private" virt="non-virtual"><scope>PlayerSquadController</scope><name>rHits</name></member>
+      <member refid="class_player_squad_controller_1ae150db825b7167a1313f23502d5896fe" prot="private" virt="non-virtual"><scope>PlayerSquadController</scope><name>rHitsCount</name></member>
+      <member refid="class_player_squad_controller_1a6d91216410d2a07577a5c2a354f088c0" prot="private" virt="non-virtual"><scope>PlayerSquadController</scope><name>SelectEnemyes</name></member>
+      <member refid="class_player_squad_controller_1ad6c8f15152c309d015043d88d21b91e0" prot="private" virt="non-virtual"><scope>PlayerSquadController</scope><name>SetStartPosition</name></member>
+      <member refid="class_player_squad_controller_1a2aceb4f696ea9044b01b336d2ac29e0c" prot="private" virt="non-virtual"><scope>PlayerSquadController</scope><name>sinAngles</name></member>
+      <member refid="class_player_squad_controller_1a2b17d31dee7c07042ea51feb83b032c0" prot="private" virt="non-virtual"><scope>PlayerSquadController</scope><name>squad</name></member>
+      <member refid="class_player_squad_controller_1a2aaade11832a060e36f438cb239ec888" prot="private" virt="non-virtual"><scope>PlayerSquadController</scope><name>Start</name></member>
+      <member refid="class_player_squad_controller_1a0122e6b0525b8bcd059840ea6e907ccc" prot="private" virt="non-virtual"><scope>PlayerSquadController</scope><name>startFindPath</name></member>
+      <member refid="class_player_squad_controller_1acd89b69b02fb9d6e089d06007fa54d47" prot="private" virt="non-virtual"><scope>PlayerSquadController</scope><name>thread</name></member>
+      <member refid="class_player_squad_controller_1a4dc2e5a4d71ed8cb3225150213fcaa94" prot="private" virt="non-virtual"><scope>PlayerSquadController</scope><name>touchId</name></member>
+      <member refid="class_player_squad_controller_1a9c1cd18c24ba0f1896bde74712ce992f" prot="private" virt="non-virtual"><scope>PlayerSquadController</scope><name>Update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

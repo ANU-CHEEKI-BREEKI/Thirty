@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_terrain_walker" kind="class" prot="public">
+    <compoundname>TerrainWalker</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+    <basecompoundref refid="interface_i_terrain_walker" prot="public" virt="non-virtual">ITerrainWalker</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_terrain_walker_1ad64942cade28235c61201134fb6d5a3e" prot="private" static="no" mutable="no">
+        <type>Transform</type>
+        <definition>Transform TerrainWalker.thisTransform</definition>
+        <argsstring></argsstring>
+        <name>thisTransform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/TerrainWalker.cs" line="8" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/TerrainWalker.cs" bodystart="8" bodyend="-1"/>
+        <referencedby refid="class_terrain_walker_1a65f5e449c3b9be12509915b9325cdc6a" compoundref="_terrain_walker_8cs" startline="35" endline="39">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_terrain_walker_1ad7ae09833d5d8fdedea373757d672ea8" prot="private" static="no" mutable="no">
+        <type><ref refid="class_unit_position" kindref="compound">UnitPosition</ref></type>
+        <definition>UnitPosition TerrainWalker.unitPos</definition>
+        <argsstring></argsstring>
+        <name>unitPos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/TerrainWalker.cs" line="9" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/TerrainWalker.cs" bodystart="9" bodyend="-1"/>
+        <referencedby refid="class_terrain_walker_1a65f5e449c3b9be12509915b9325cdc6a" compoundref="_terrain_walker_8cs" startline="35" endline="39">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_terrain_walker_1a02035afaa7abd7098bf0d74ac0fe3a41" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float TerrainWalker.scale</definition>
+        <argsstring></argsstring>
+        <name>scale</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/TerrainWalker.cs" line="10" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/TerrainWalker.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_terrain_walker_1a82e854291105c56ec94f2d2170c8d70c" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>float</type>
+        <definition>float TerrainWalker.Scale</definition>
+        <argsstring></argsstring>
+        <name>Scale</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/TerrainWalker.cs" line="12" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/TerrainWalker.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_terrain_walker_1a3df6839e30ab42b6c99394affa2d1bf3" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>Vector2</type>
+        <definition>Vector2 TerrainWalker.Position</definition>
+        <argsstring></argsstring>
+        <name>Position</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/TerrainWalker.cs" line="27" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/TerrainWalker.cs" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_terrain_walker_1a65f5e449c3b9be12509915b9325cdc6a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void TerrainWalker.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/TerrainWalker.cs" line="35" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/TerrainWalker.cs" bodystart="35" bodyend="39"/>
+        <references refid="class_terrain_walker_1ad64942cade28235c61201134fb6d5a3e" compoundref="_terrain_walker_8cs" startline="8">thisTransform</references>
+        <references refid="class_terrain_walker_1ad7ae09833d5d8fdedea373757d672ea8" compoundref="_terrain_walker_8cs" startline="9">unitPos</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1149">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1148">
+        <label>TerrainWalker</label>
+        <link refid="class_terrain_walker"/>
+        <childnode refid="1149" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1150" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1150">
+        <label>ITerrainWalker</label>
+        <link refid="interface_i_terrain_walker"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1154">
+        <label>UnitPosition</label>
+        <link refid="class_unit_position"/>
+        <childnode refid="1152" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1152">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1151">
+        <label>TerrainWalker</label>
+        <link refid="class_terrain_walker"/>
+        <childnode refid="1152" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1153" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1154" relation="usage">
+          <edgelabel>unitPos</edgelabel>
+        </childnode>
+      </node>
+      <node id="1153">
+        <label>ITerrainWalker</label>
+        <link refid="interface_i_terrain_walker"/>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/TerrainWalker.cs" line="7" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/TerrainWalker.cs" bodystart="6" bodyend="40"/>
+    <listofallmembers>
+      <member refid="class_terrain_walker_1a3df6839e30ab42b6c99394affa2d1bf3" prot="public" virt="non-virtual"><scope>TerrainWalker</scope><name>Position</name></member>
+      <member refid="class_terrain_walker_1a02035afaa7abd7098bf0d74ac0fe3a41" prot="private" virt="non-virtual"><scope>TerrainWalker</scope><name>scale</name></member>
+      <member refid="class_terrain_walker_1a82e854291105c56ec94f2d2170c8d70c" prot="public" virt="non-virtual"><scope>TerrainWalker</scope><name>Scale</name></member>
+      <member refid="class_terrain_walker_1a65f5e449c3b9be12509915b9325cdc6a" prot="private" virt="non-virtual"><scope>TerrainWalker</scope><name>Start</name></member>
+      <member refid="class_terrain_walker_1ad64942cade28235c61201134fb6d5a3e" prot="private" virt="non-virtual"><scope>TerrainWalker</scope><name>thisTransform</name></member>
+      <member refid="class_terrain_walker_1ad7ae09833d5d8fdedea373757d672ea8" prot="private" virt="non-virtual"><scope>TerrainWalker</scope><name>unitPos</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

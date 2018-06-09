@@ -1,0 +1,81 @@
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using TMPro;
+using UnityEngine;
+
+public class DebugCunvas : MonoBehaviour
+{
+    [SerializeField] TextMeshProUGUI fpsText;
+    [SerializeField] TextMeshProUGUI fpsScaledText;
+    [SerializeField] TextMeshProUGUI levelText;
+    [SerializeField] TextMeshProUGUI timescaleText;
+
+    static DebugCunvas instance;
+
+    void Awake()
+    {
+        if (instance != null)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
+        instance = this;
+
+        Init();
+
+        DontDestroyOnLoad(gameObject);
+    }
+
+    void Init()
+    {
+        StartCoroutine(Coroutine(
+            condition: () => { return true; },
+            action: () => { fpsText.text = "fps:    " + (1f / Time.unscaledDeltaTime).ToString(StringFormats.floatNumber); },
+            cleanup: () => { },
+            deltaTime: 0.1f,
+            type: CoroutineType.REAL_TIME
+        ));
+
+        StartCoroutine(Coroutine(
+            condition: () => { return true; },
+            action: () => { fpsScaledText.text = "scaled fps:    " + (1f / Time.deltaTime).ToString(StringFormats.floatNumber); },
+            cleanup: () => { },
+            deltaTime: 0.1f,
+            type: CoroutineType.REAL_TIME
+        ));
+
+        StartCoroutine(Coroutine(
+            condition: () => { return true; },
+            action: () => { levelText.text = "level:    " + GameManager.Instance.Level.ToString(StringFormats.intNumber); },
+            cleanup: () => { },
+            deltaTime: 1f,
+            type: CoroutineType.REAL_TIME
+        ));
+
+        StartCoroutine(Coroutine(
+            condition: () => { return true; },
+            action: () => { timescaleText.text = "timescale:    " + Time.timeScale.ToString(StringFormats.floatNumber); },
+            cleanup: () => { },
+            deltaTime: 0.1f,
+            type: CoroutineType.REAL_TIME
+        ));
+    }
+
+    public enum CoroutineType { SCALED_TIME, REAL_TIME }
+
+    IEnumerator Coroutine(Func<bool> condition, Action action, Action cleanup, float deltaTime, CoroutineType type)
+    {
+        while (condition())
+        {
+            action();
+
+            if (type == CoroutineType.REAL_TIME)
+                yield return new WaitForSecondsRealtime(deltaTime);
+            else if (type == CoroutineType.SCALED_TIME)
+                yield return new WaitForSeconds(deltaTime);
+        }
+        cleanup();
+    }
+}

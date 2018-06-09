@@ -1,0 +1,224 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="struct_skill_arrows_valley_1_1_arrow_walley_stats" kind="struct" prot="public">
+    <compoundname>SkillArrowsValley::ArrowWalleyStats</compoundname>
+    <basecompoundref refid="interface_i_skill_radiusable" prot="public" virt="non-virtual">ISkillRadiusable</basecompoundref>
+    <basecompoundref refid="interface_i_skill_lockable" prot="public" virt="non-virtual">ISkillLockable</basecompoundref>
+    <basecompoundref refid="interface_i_skill_cooldownable" prot="public" virt="non-virtual">ISkillCooldownable</basecompoundref>
+    <basecompoundref refid="interface_i_descriptionable" prot="public" virt="non-virtual">IDescriptionable</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_skill_arrows_valley_1_1_arrow_walley_stats_1a20793e85d9643e3ab91c60cdadd9aead" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_damage" kindref="compound">Damage</ref></type>
+        <definition>Damage SkillArrowsValley.ArrowWalleyStats.damage</definition>
+        <argsstring></argsstring>
+        <name>damage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Skill/SkillArrowsValley.cs" line="11" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Skill/SkillArrowsValley.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_skill_arrows_valley_1_1_arrow_walley_stats_1ade0e640d20416ce5b03854830b2f02ca" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SkillArrowsValley.ArrowWalleyStats.radius</definition>
+        <argsstring></argsstring>
+        <name>radius</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Skill/SkillArrowsValley.cs" line="12" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Skill/SkillArrowsValley.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_skill_arrows_valley_1_1_arrow_walley_stats_1a61e03f8ea51766a632d8dc2cb0f5838e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SkillArrowsValley.ArrowWalleyStats.countOfArrows</definition>
+        <argsstring></argsstring>
+        <name>countOfArrows</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Skill/SkillArrowsValley.cs" line="13" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Skill/SkillArrowsValley.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_skill_arrows_valley_1_1_arrow_walley_stats_1af612ef4ba7b233f779b140036fc482a4" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SkillArrowsValley.ArrowWalleyStats.cooldown</definition>
+        <argsstring></argsstring>
+        <name>cooldown</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Skill/SkillArrowsValley.cs" line="14" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Skill/SkillArrowsValley.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_skill_arrows_valley_1_1_arrow_walley_stats_1a55b90987c8c2280197fd26be1335303f" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SkillArrowsValley.ArrowWalleyStats.unlocked</definition>
+        <argsstring></argsstring>
+        <name>unlocked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Skill/SkillArrowsValley.cs" line="15" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Skill/SkillArrowsValley.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="struct_skill_arrows_valley_1_1_arrow_walley_stats_1a26515ba624f0cb47002eb0cc1e9ac290" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>float</type>
+        <definition>float SkillArrowsValley.ArrowWalleyStats.Radius</definition>
+        <argsstring></argsstring>
+        <name>Radius</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Skill/SkillArrowsValley.cs" line="17" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Skill/SkillArrowsValley.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="struct_skill_arrows_valley_1_1_arrow_walley_stats_1a0e12b679e2defd35f7a57bcdb7fa5fe3" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>bool</type>
+        <definition>bool SkillArrowsValley.ArrowWalleyStats.Unlocked</definition>
+        <argsstring></argsstring>
+        <name>Unlocked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Skill/SkillArrowsValley.cs" line="18" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Skill/SkillArrowsValley.cs" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="struct_skill_arrows_valley_1_1_arrow_walley_stats_1af7189a400a62f1072e0d84d73fad173e" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>float</type>
+        <definition>float SkillArrowsValley.ArrowWalleyStats.Cooldown</definition>
+        <argsstring></argsstring>
+        <name>Cooldown</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Skill/SkillArrowsValley.cs" line="19" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Skill/SkillArrowsValley.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_skill_arrows_valley_1_1_arrow_walley_stats_1aa41c15eb6177138bc53a22c3863d9387" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_description" kindref="compound">Description</ref></type>
+        <definition>Description SkillArrowsValley.ArrowWalleyStats.GetDescription</definition>
+        <argsstring>()</argsstring>
+        <name>GetDescription</name>
+        <reimplements refid="interface_i_descriptionable_1a33be6e4687ad788d949f989aaadad45d">GetDescription</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Skill/SkillArrowsValley.cs" line="21" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Skill/SkillArrowsValley.cs" bodystart="21" bodyend="37"/>
+        <references refid="class_localization_1ab212481a364e4ab6e9f7ace911480a55" compoundref="_localization_8cs" startline="42">Localization.armourDamage</references>
+        <references refid="class_localization_1a09b4e2dd2c8f1f283f02622a64fa1447" compoundref="_localization_8cs" startline="56">Localization.arrowWalley_arrowscount</references>
+        <references refid="class_localization_1ae1201a67c56e0c1b44490f63148df938" compoundref="_localization_8cs" startline="55">Localization.arrowWalley_radius</references>
+        <references refid="class_localization_1a69e3dec51c793b9e3076ccdf872fd90e" compoundref="_localization_8cs" startline="41">Localization.baseDamage</references>
+        <references refid="class_localization_1af79ed39182d42c9cf1be8f61a3432c96" compoundref="_localization_8cs" startline="57">Localization.cooldown</references>
+        <references refid="class_string_formats_1ab8e8b55f89d499d469b9509e2398470b" compoundref="_string_formats_8cs" startline="9">StringFormats.floatNumber</references>
+        <references refid="class_skill_arrows_valley_1a050226f0bc99e0adb85f15b700b2bee8" compoundref="_skill_arrows_valley_8cs" startline="44">SkillArrowsValley.stats</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="59">
+        <label>SkillArrowsValley.ArrowWalleyStats</label>
+        <link refid="struct_skill_arrows_valley_1_1_arrow_walley_stats"/>
+        <childnode refid="60" relation="public-inheritance">
+        </childnode>
+        <childnode refid="61" relation="public-inheritance">
+        </childnode>
+        <childnode refid="62" relation="public-inheritance">
+        </childnode>
+        <childnode refid="63" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="61">
+        <label>ISkillLockable</label>
+        <link refid="interface_i_skill_lockable"/>
+      </node>
+      <node id="63">
+        <label>IDescriptionable</label>
+        <link refid="interface_i_descriptionable"/>
+      </node>
+      <node id="60">
+        <label>ISkillRadiusable</label>
+        <link refid="interface_i_skill_radiusable"/>
+      </node>
+      <node id="62">
+        <label>ISkillCooldownable</label>
+        <link refid="interface_i_skill_cooldownable"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="64">
+        <label>SkillArrowsValley.ArrowWalleyStats</label>
+        <link refid="struct_skill_arrows_valley_1_1_arrow_walley_stats"/>
+        <childnode refid="65" relation="public-inheritance">
+        </childnode>
+        <childnode refid="66" relation="public-inheritance">
+        </childnode>
+        <childnode refid="67" relation="public-inheritance">
+        </childnode>
+        <childnode refid="68" relation="public-inheritance">
+        </childnode>
+        <childnode refid="69" relation="usage">
+          <edgelabel>damage</edgelabel>
+        </childnode>
+      </node>
+      <node id="66">
+        <label>ISkillLockable</label>
+        <link refid="interface_i_skill_lockable"/>
+      </node>
+      <node id="69">
+        <label>Damage</label>
+        <link refid="struct_damage"/>
+      </node>
+      <node id="68">
+        <label>IDescriptionable</label>
+        <link refid="interface_i_descriptionable"/>
+      </node>
+      <node id="65">
+        <label>ISkillRadiusable</label>
+        <link refid="interface_i_skill_radiusable"/>
+      </node>
+      <node id="67">
+        <label>ISkillCooldownable</label>
+        <link refid="interface_i_skill_cooldownable"/>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Skill/SkillArrowsValley.cs" line="10" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Skill/SkillArrowsValley.cs" bodystart="9" bodyend="38"/>
+    <listofallmembers>
+      <member refid="struct_skill_arrows_valley_1_1_arrow_walley_stats_1af612ef4ba7b233f779b140036fc482a4" prot="public" virt="non-virtual"><scope>SkillArrowsValley::ArrowWalleyStats</scope><name>cooldown</name></member>
+      <member refid="struct_skill_arrows_valley_1_1_arrow_walley_stats_1af7189a400a62f1072e0d84d73fad173e" prot="public" virt="non-virtual"><scope>SkillArrowsValley::ArrowWalleyStats</scope><name>Cooldown</name></member>
+      <member refid="struct_skill_arrows_valley_1_1_arrow_walley_stats_1a61e03f8ea51766a632d8dc2cb0f5838e" prot="public" virt="non-virtual"><scope>SkillArrowsValley::ArrowWalleyStats</scope><name>countOfArrows</name></member>
+      <member refid="struct_skill_arrows_valley_1_1_arrow_walley_stats_1a20793e85d9643e3ab91c60cdadd9aead" prot="public" virt="non-virtual"><scope>SkillArrowsValley::ArrowWalleyStats</scope><name>damage</name></member>
+      <member refid="struct_skill_arrows_valley_1_1_arrow_walley_stats_1aa41c15eb6177138bc53a22c3863d9387" prot="public" virt="non-virtual"><scope>SkillArrowsValley::ArrowWalleyStats</scope><name>GetDescription</name></member>
+      <member refid="struct_skill_arrows_valley_1_1_arrow_walley_stats_1ade0e640d20416ce5b03854830b2f02ca" prot="public" virt="non-virtual"><scope>SkillArrowsValley::ArrowWalleyStats</scope><name>radius</name></member>
+      <member refid="struct_skill_arrows_valley_1_1_arrow_walley_stats_1a26515ba624f0cb47002eb0cc1e9ac290" prot="public" virt="non-virtual"><scope>SkillArrowsValley::ArrowWalleyStats</scope><name>Radius</name></member>
+      <member refid="struct_skill_arrows_valley_1_1_arrow_walley_stats_1a0e12b679e2defd35f7a57bcdb7fa5fe3" prot="public" virt="non-virtual"><scope>SkillArrowsValley::ArrowWalleyStats</scope><name>Unlocked</name></member>
+      <member refid="struct_skill_arrows_valley_1_1_arrow_walley_stats_1a55b90987c8c2280197fd26be1335303f" prot="public" virt="non-virtual"><scope>SkillArrowsValley::ArrowWalleyStats</scope><name>unlocked</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

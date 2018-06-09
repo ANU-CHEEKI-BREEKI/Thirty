@@ -1,0 +1,285 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_tint_texture_generator" kind="class" prot="public">
+    <compoundname>TintTextureGenerator</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_tint_texture_generator_1a0128285c557b53d9531b8fb3452c7df5" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int TintTextureGenerator.k_TintMapSize</definition>
+        <argsstring></argsstring>
+        <name>k_TintMapSize</name>
+        <initializer>= 256</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Brushes/Tint Brush Smooth/Scripts/TintTextureGenerator.cs" line="7" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Brushes/Tint Brush Smooth/Scripts/TintTextureGenerator.cs" bodystart="7" bodyend="-1"/>
+        <referencedby refid="class_tint_texture_generator_1a85bc3f10b7079c4971e7e3fcacf4723f" compoundref="_tint_texture_generator_8cs" startline="97" endline="101">RefreshGlobalShaderValues</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_tint_texture_generator_1ad215d58aa9f43d295ff3702b242d2844" prot="private" static="no" mutable="no">
+        <type>Texture2D</type>
+        <definition>Texture2D TintTextureGenerator.m_TintTexture</definition>
+        <argsstring></argsstring>
+        <name>m_TintTexture</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Brushes/Tint Brush Smooth/Scripts/TintTextureGenerator.cs" line="14" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Brushes/Tint Brush Smooth/Scripts/TintTextureGenerator.cs" bodystart="14" bodyend="-1"/>
+        <referencedby refid="class_tint_texture_generator_1a85bc3f10b7079c4971e7e3fcacf4723f" compoundref="_tint_texture_generator_8cs" startline="97" endline="101">RefreshGlobalShaderValues</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_tint_texture_generator_1ae0d3a3717f7e9598f67a8945483be713" prot="private" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>Texture2D</type>
+        <definition>Texture2D TintTextureGenerator.tintTexture</definition>
+        <argsstring></argsstring>
+        <name>tintTexture</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Brushes/Tint Brush Smooth/Scripts/TintTextureGenerator.cs" line="15" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Brushes/Tint Brush Smooth/Scripts/TintTextureGenerator.cs" bodystart="16" bodyend="-1"/>
+        <referencedby refid="class_tint_texture_generator_1a0498e0d53899482c848450d1c3dcd7b0" compoundref="_tint_texture_generator_8cs" startline="82" endline="85">TextureToWorld</referencedby>
+        <referencedby refid="class_tint_texture_generator_1ab25f50c6e24850787e6ac243729170ee" compoundref="_tint_texture_generator_8cs" startline="77" endline="80">WorldToTexture</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_tint_texture_generator_1a591797d34558b765f7e1b9a0422d5453" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void TintTextureGenerator.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Brushes/Tint Brush Smooth/Scripts/TintTextureGenerator.cs" line="9" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Brushes/Tint Brush Smooth/Scripts/TintTextureGenerator.cs" bodystart="9" bodyend="12"/>
+        <references refid="class_tint_texture_generator_1ac5982fc605870d62460ed31f013bee82" compoundref="_tint_texture_generator_8cs" startline="31" endline="47">Refresh</references>
+      </memberdef>
+      <memberdef kind="function" id="class_tint_texture_generator_1ac5982fc605870d62460ed31f013bee82" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void TintTextureGenerator.Refresh</definition>
+        <argsstring>(Grid grid)</argsstring>
+        <name>Refresh</name>
+        <param>
+          <type>Grid</type>
+          <declname>grid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Brushes/Tint Brush Smooth/Scripts/TintTextureGenerator.cs" line="31" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Brushes/Tint Brush Smooth/Scripts/TintTextureGenerator.cs" bodystart="31" bodyend="47"/>
+        <references refid="class_tint_texture_generator_1ab5c498fe3256c15cec2fe7ebc68b8067" compoundref="_tint_texture_generator_8cs" startline="87" endline="95">GetGridInformation</references>
+        <references refid="class_tint_texture_generator_1a0498e0d53899482c848450d1c3dcd7b0" compoundref="_tint_texture_generator_8cs" startline="82" endline="85">TextureToWorld</references>
+        <referencedby refid="class_tint_texture_generator_1a2feee8c66a00ecc891e0b954fd6b23c9" compoundref="_tint_texture_generator_8cs" startline="68" endline="75">SetColor</referencedby>
+        <referencedby refid="class_tint_texture_generator_1a591797d34558b765f7e1b9a0422d5453" compoundref="_tint_texture_generator_8cs" startline="9" endline="12">Start</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_tint_texture_generator_1a9147825e59facfa42fe0d9a78fca000c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void TintTextureGenerator.Refresh</definition>
+        <argsstring>(Grid grid, Vector3Int position)</argsstring>
+        <name>Refresh</name>
+        <param>
+          <type>Grid</type>
+          <declname>grid</declname>
+        </param>
+        <param>
+          <type>Vector3Int</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Brushes/Tint Brush Smooth/Scripts/TintTextureGenerator.cs" line="49" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Brushes/Tint Brush Smooth/Scripts/TintTextureGenerator.cs" bodystart="49" bodyend="58"/>
+        <references refid="class_tint_texture_generator_1ab5c498fe3256c15cec2fe7ebc68b8067" compoundref="_tint_texture_generator_8cs" startline="87" endline="95">GetGridInformation</references>
+        <references refid="class_tint_texture_generator_1a85bc3f10b7079c4971e7e3fcacf4723f" compoundref="_tint_texture_generator_8cs" startline="97" endline="101">RefreshGlobalShaderValues</references>
+        <references refid="class_tint_texture_generator_1ab25f50c6e24850787e6ac243729170ee" compoundref="_tint_texture_generator_8cs" startline="77" endline="80">WorldToTexture</references>
+      </memberdef>
+      <memberdef kind="function" id="class_tint_texture_generator_1aaac9e6b9f6b86ae1efe06093ba959291" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Color</type>
+        <definition>Color TintTextureGenerator.GetColor</definition>
+        <argsstring>(Grid grid, Vector3Int position)</argsstring>
+        <name>GetColor</name>
+        <param>
+          <type>Grid</type>
+          <declname>grid</declname>
+        </param>
+        <param>
+          <type>Vector3Int</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Brushes/Tint Brush Smooth/Scripts/TintTextureGenerator.cs" line="60" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Brushes/Tint Brush Smooth/Scripts/TintTextureGenerator.cs" bodystart="60" bodyend="66"/>
+        <references refid="namespace_unity_engine_1_1_tilemaps_1a8410807eeae7d80388b1b8e0f9cb9681acb5feb1b7314637725a2e73bdc9f7295">UnityEngine.Tilemaps.Color</references>
+        <references refid="class_tint_texture_generator_1ab5c498fe3256c15cec2fe7ebc68b8067" compoundref="_tint_texture_generator_8cs" startline="87" endline="95">GetGridInformation</references>
+      </memberdef>
+      <memberdef kind="function" id="class_tint_texture_generator_1a2feee8c66a00ecc891e0b954fd6b23c9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void TintTextureGenerator.SetColor</definition>
+        <argsstring>(Grid grid, Vector3Int position, Color color)</argsstring>
+        <name>SetColor</name>
+        <param>
+          <type>Grid</type>
+          <declname>grid</declname>
+        </param>
+        <param>
+          <type>Vector3Int</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>Color</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Brushes/Tint Brush Smooth/Scripts/TintTextureGenerator.cs" line="68" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Brushes/Tint Brush Smooth/Scripts/TintTextureGenerator.cs" bodystart="68" bodyend="75"/>
+        <references refid="class_tint_texture_generator_1ab5c498fe3256c15cec2fe7ebc68b8067" compoundref="_tint_texture_generator_8cs" startline="87" endline="95">GetGridInformation</references>
+        <references refid="class_tint_texture_generator_1ac5982fc605870d62460ed31f013bee82" compoundref="_tint_texture_generator_8cs" startline="31" endline="47">Refresh</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_tint_texture_generator_1ab25f50c6e24850787e6ac243729170ee" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Vector3Int</type>
+        <definition>Vector3Int TintTextureGenerator.WorldToTexture</definition>
+        <argsstring>(Vector3Int world)</argsstring>
+        <name>WorldToTexture</name>
+        <param>
+          <type>Vector3Int</type>
+          <declname>world</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Brushes/Tint Brush Smooth/Scripts/TintTextureGenerator.cs" line="77" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Brushes/Tint Brush Smooth/Scripts/TintTextureGenerator.cs" bodystart="77" bodyend="80"/>
+        <references refid="class_tint_texture_generator_1ae0d3a3717f7e9598f67a8945483be713" compoundref="_tint_texture_generator_8cs" startline="16">tintTexture</references>
+        <referencedby refid="class_tint_texture_generator_1a9147825e59facfa42fe0d9a78fca000c" compoundref="_tint_texture_generator_8cs" startline="49" endline="58">Refresh</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_tint_texture_generator_1a0498e0d53899482c848450d1c3dcd7b0" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Vector3Int</type>
+        <definition>Vector3Int TintTextureGenerator.TextureToWorld</definition>
+        <argsstring>(Vector3Int texpos)</argsstring>
+        <name>TextureToWorld</name>
+        <param>
+          <type>Vector3Int</type>
+          <declname>texpos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Brushes/Tint Brush Smooth/Scripts/TintTextureGenerator.cs" line="82" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Brushes/Tint Brush Smooth/Scripts/TintTextureGenerator.cs" bodystart="82" bodyend="85"/>
+        <references refid="class_tint_texture_generator_1ae0d3a3717f7e9598f67a8945483be713" compoundref="_tint_texture_generator_8cs" startline="16">tintTexture</references>
+        <referencedby refid="class_tint_texture_generator_1ac5982fc605870d62460ed31f013bee82" compoundref="_tint_texture_generator_8cs" startline="31" endline="47">Refresh</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_tint_texture_generator_1ab5c498fe3256c15cec2fe7ebc68b8067" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_unity_engine_1_1_tilemaps_1_1_grid_information" kindref="compound">GridInformation</ref></type>
+        <definition>GridInformation TintTextureGenerator.GetGridInformation</definition>
+        <argsstring>(Grid grid)</argsstring>
+        <name>GetGridInformation</name>
+        <param>
+          <type>Grid</type>
+          <declname>grid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Brushes/Tint Brush Smooth/Scripts/TintTextureGenerator.cs" line="87" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Brushes/Tint Brush Smooth/Scripts/TintTextureGenerator.cs" bodystart="87" bodyend="95"/>
+        <referencedby refid="class_tint_texture_generator_1aaac9e6b9f6b86ae1efe06093ba959291" compoundref="_tint_texture_generator_8cs" startline="60" endline="66">GetColor</referencedby>
+        <referencedby refid="class_tint_texture_generator_1ac5982fc605870d62460ed31f013bee82" compoundref="_tint_texture_generator_8cs" startline="31" endline="47">Refresh</referencedby>
+        <referencedby refid="class_tint_texture_generator_1a2feee8c66a00ecc891e0b954fd6b23c9" compoundref="_tint_texture_generator_8cs" startline="68" endline="75">SetColor</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_tint_texture_generator_1a85bc3f10b7079c4971e7e3fcacf4723f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void TintTextureGenerator.RefreshGlobalShaderValues</definition>
+        <argsstring>()</argsstring>
+        <name>RefreshGlobalShaderValues</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Brushes/Tint Brush Smooth/Scripts/TintTextureGenerator.cs" line="97" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Brushes/Tint Brush Smooth/Scripts/TintTextureGenerator.cs" bodystart="97" bodyend="101"/>
+        <references refid="class_tint_texture_generator_1a0128285c557b53d9531b8fb3452c7df5" compoundref="_tint_texture_generator_8cs" startline="7">k_TintMapSize</references>
+        <references refid="class_tint_texture_generator_1ad215d58aa9f43d295ff3702b242d2844" compoundref="_tint_texture_generator_8cs" startline="14">m_TintTexture</references>
+        <referencedby refid="class_tint_texture_generator_1a9147825e59facfa42fe0d9a78fca000c" compoundref="_tint_texture_generator_8cs" startline="49" endline="58">Refresh</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1157">
+        <label>TintTextureGenerator</label>
+        <link refid="class_tint_texture_generator"/>
+        <childnode refid="1158" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1158">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1159">
+        <label>TintTextureGenerator</label>
+        <link refid="class_tint_texture_generator"/>
+        <childnode refid="1160" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1160">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Brushes/Tint Brush Smooth/Scripts/TintTextureGenerator.cs" line="6" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Brushes/Tint Brush Smooth/Scripts/TintTextureGenerator.cs" bodystart="5" bodyend="102"/>
+    <listofallmembers>
+      <member refid="class_tint_texture_generator_1aaac9e6b9f6b86ae1efe06093ba959291" prot="public" virt="non-virtual"><scope>TintTextureGenerator</scope><name>GetColor</name></member>
+      <member refid="class_tint_texture_generator_1ab5c498fe3256c15cec2fe7ebc68b8067" prot="private" virt="non-virtual"><scope>TintTextureGenerator</scope><name>GetGridInformation</name></member>
+      <member refid="class_tint_texture_generator_1a0128285c557b53d9531b8fb3452c7df5" prot="public" virt="non-virtual"><scope>TintTextureGenerator</scope><name>k_TintMapSize</name></member>
+      <member refid="class_tint_texture_generator_1ad215d58aa9f43d295ff3702b242d2844" prot="private" virt="non-virtual"><scope>TintTextureGenerator</scope><name>m_TintTexture</name></member>
+      <member refid="class_tint_texture_generator_1ac5982fc605870d62460ed31f013bee82" prot="public" virt="non-virtual"><scope>TintTextureGenerator</scope><name>Refresh</name></member>
+      <member refid="class_tint_texture_generator_1a9147825e59facfa42fe0d9a78fca000c" prot="public" virt="non-virtual"><scope>TintTextureGenerator</scope><name>Refresh</name></member>
+      <member refid="class_tint_texture_generator_1a85bc3f10b7079c4971e7e3fcacf4723f" prot="private" virt="non-virtual"><scope>TintTextureGenerator</scope><name>RefreshGlobalShaderValues</name></member>
+      <member refid="class_tint_texture_generator_1a2feee8c66a00ecc891e0b954fd6b23c9" prot="public" virt="non-virtual"><scope>TintTextureGenerator</scope><name>SetColor</name></member>
+      <member refid="class_tint_texture_generator_1a591797d34558b765f7e1b9a0422d5453" prot="public" virt="non-virtual"><scope>TintTextureGenerator</scope><name>Start</name></member>
+      <member refid="class_tint_texture_generator_1a0498e0d53899482c848450d1c3dcd7b0" prot="private" virt="non-virtual"><scope>TintTextureGenerator</scope><name>TextureToWorld</name></member>
+      <member refid="class_tint_texture_generator_1ae0d3a3717f7e9598f67a8945483be713" prot="private" virt="non-virtual"><scope>TintTextureGenerator</scope><name>tintTexture</name></member>
+      <member refid="class_tint_texture_generator_1ab25f50c6e24850787e6ac243729170ee" prot="private" virt="non-virtual"><scope>TintTextureGenerator</scope><name>WorldToTexture</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

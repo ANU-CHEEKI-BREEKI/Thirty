@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 2ba1c64d2e48d8b4b948cb197c5e31de
+timeCreated: 1519976335
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: PF Hellenica Serif Pro
+  fontNames:
+  - PF Hellenica Serif Pro
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

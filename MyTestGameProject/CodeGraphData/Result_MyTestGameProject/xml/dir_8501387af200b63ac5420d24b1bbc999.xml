@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_8501387af200b63ac5420d24b1bbc999" kind="dir">
+    <compoundname>D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/SavingManagers</compoundname>
+    <innerfile refid="_i_saving_manager_8cs">ISavingManager.cs</innerfile>
+    <innerfile refid="_mock_saving_manager_8cs">MockSavingManager.cs</innerfile>
+    <innerfile refid="_player_prefs_saving_manager_8cs">PlayerPrefsSavingManager.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/SavingManagers/"/>
+  </compounddef>
+</doxygen>

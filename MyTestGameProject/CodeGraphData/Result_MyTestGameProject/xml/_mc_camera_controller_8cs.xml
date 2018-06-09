@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_mc_camera_controller_8cs" kind="file">
+    <compoundname>McCameraController.cs</compoundname>
+    <innerclass refid="class_mc_camera_controller" prot="public">McCameraController</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>UnityEngine;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>UnityEngine.EventSystems;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="class_mc_camera_controller" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_mc_camera_controller" kindref="compound">McCameraController</ref><sp/>:<sp/></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>MonoBehaviour,<sp/></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>IScrollHandler,<sp/></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>IDragHandler,<sp/></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>IPointerDownHandler,</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>IPointerUpHandler</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12" refid="class_mc_camera_controller_1a6fd692cede66d0ea3c7222632c38d886" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_mc_cursor" kindref="compound">McCursor</ref><sp/><ref refid="class_mc_camera_controller_1a6fd692cede66d0ea3c7222632c38d886" kindref="member">cursor</ref>;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="class_mc_camera_controller_1a73dc5c1d690cada02fd40eb87fa80b07" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_mc_camera_controller_1a73dc5c1d690cada02fd40eb87fa80b07" kindref="member">CanChangeCamera</ref><sp/>{<sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">;<sp/>set;<sp/>}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="class_mc_camera_controller_1a0ce7ec5075b2dd266d71c81774b72c61" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[SerializeField]<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_mc_camera_controller_1a0ce7ec5075b2dd266d71c81774b72c61" kindref="member">cameraScaleStep</ref><sp/>=<sp/>10f;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="class_mc_camera_controller_1afecd6101c51a20327b4553efa86ea14f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Camera<sp/><ref refid="class_mc_camera_controller_1afecd6101c51a20327b4553efa86ea14f" kindref="member">camera</ref>;</highlight></codeline>
+<codeline lineno="19" refid="class_mc_camera_controller_1a9fb9c12ad121d339846a9ccaa4783f67" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Transform<sp/><ref refid="class_mc_camera_controller_1a9fb9c12ad121d339846a9ccaa4783f67" kindref="member">cameraTransform</ref>;</highlight></codeline>
+<codeline lineno="20" refid="class_mc_camera_controller_1adc555721a96785d629b05a4a5b39e5ba" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Vector3<sp/><ref refid="class_mc_camera_controller_1adc555721a96785d629b05a4a5b39e5ba" kindref="member">startCameraPosition</ref>;</highlight></codeline>
+<codeline lineno="21" refid="class_mc_camera_controller_1ae990afd9d8d11cb3acbf442de7c33fb6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Vector3<sp/><ref refid="class_mc_camera_controller_1ae990afd9d8d11cb3acbf442de7c33fb6" kindref="member">startMousePosition</ref>;</highlight></codeline>
+<codeline lineno="22" refid="class_mc_camera_controller_1a6b58d603f789c74d1827911935c6df60" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Vector3<sp/><ref refid="class_mc_camera_controller_1a6b58d603f789c74d1827911935c6df60" kindref="member">mouseDelta</ref>;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="class_mc_camera_controller_1a5f95524f0f5e49a2b622f2e408163e4a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_mc_camera_controller_1a5f95524f0f5e49a2b622f2e408163e4a" kindref="member">OnDrag</ref>(PointerEventData<sp/>eventData)</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_mc_camera_controller_1a73dc5c1d690cada02fd40eb87fa80b07" kindref="member">CanChangeCamera</ref>)</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(eventData.button<sp/>==<sp/>PointerEventData.InputButton.Middle)</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_mc_camera_controller_1a6b58d603f789c74d1827911935c6df60" kindref="member">mouseDelta</ref><sp/>=<sp/>Camera.main.ScreenToWorldPoint(eventData.position)<sp/>-<sp/><ref refid="class_mc_camera_controller_1ae990afd9d8d11cb3acbf442de7c33fb6" kindref="member">startMousePosition</ref>;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Vector3<sp/>cameraDrag<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Vector3(<ref refid="class_mc_camera_controller_1a6b58d603f789c74d1827911935c6df60" kindref="member">mouseDelta</ref>.x,<sp/><ref refid="class_mc_camera_controller_1a6b58d603f789c74d1827911935c6df60" kindref="member">mouseDelta</ref>.y,<sp/>0);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cameraTransform.position<sp/>-=<sp/>cameraDrag;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="38" refid="class_mc_camera_controller_1ad1d6938707aa5a8217a402f9701a8595" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_mc_camera_controller_1ad1d6938707aa5a8217a402f9701a8595" kindref="member">OnPointerDown</ref>(PointerEventData<sp/>eventData)</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_mc_camera_controller_1a73dc5c1d690cada02fd40eb87fa80b07" kindref="member">CanChangeCamera</ref>)</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(eventData.button<sp/>==<sp/>PointerEventData.InputButton.Middle)</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_mc_camera_controller_1ae990afd9d8d11cb3acbf442de7c33fb6" kindref="member">startMousePosition</ref><sp/>=<sp/>Camera.main.ScreenToWorldPoint(eventData.position);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cursor.SetHandCursor();</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="class_mc_camera_controller_1a0ede1e025b3e0221c1661bc5e78a9a96" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_mc_camera_controller_1a0ede1e025b3e0221c1661bc5e78a9a96" kindref="member">OnPointerUp</ref>(PointerEventData<sp/>eventData)</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cursor.SetBrushCursor();</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="class_mc_camera_controller_1a43f464b3f3b9828a5a328c7426069ed6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_mc_camera_controller_1a43f464b3f3b9828a5a328c7426069ed6" kindref="member">OnScroll</ref>(PointerEventData<sp/>eventData)</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_mc_camera_controller_1a73dc5c1d690cada02fd40eb87fa80b07" kindref="member">CanChangeCamera</ref>)</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>size<sp/>=<sp/>camera.orthographicSize<sp/>-<sp/><ref refid="class_mc_camera_controller_1a0ce7ec5075b2dd266d71c81774b72c61" kindref="member">cameraScaleStep</ref><sp/>*<sp/>Math.Sign(eventData.scrollDelta.y);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(size<sp/>&gt;<sp/>0)</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>camera.orthographicSize<sp/>=<sp/>size;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Use<sp/>this<sp/>for<sp/>initialization</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="class_mc_camera_controller_1a0a05ca8a272a6c3ca66d2d2da4cb9106" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_mc_camera_controller_1a0a05ca8a272a6c3ca66d2d2da4cb9106" kindref="member">Start</ref><sp/>()</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_mc_camera_controller_1afecd6101c51a20327b4553efa86ea14f" kindref="member">camera</ref><sp/>=<sp/>Camera.main;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_mc_camera_controller_1a9fb9c12ad121d339846a9ccaa4783f67" kindref="member">cameraTransform</ref><sp/>=<sp/>camera.transform;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_mc_camera_controller_1a73dc5c1d690cada02fd40eb87fa80b07" kindref="member">CanChangeCamera</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_mc_camera_controller_1a6fd692cede66d0ea3c7222632c38d886" kindref="member">cursor</ref><sp/>=<sp/>gameObject.GetComponent&lt;<ref refid="class_mc_cursor" kindref="compound">McCursor</ref>&gt;();</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="class_mc_camera_controller_1a635be8451752bfcf2e0563616e95d9a3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_mc_camera_controller_1a635be8451752bfcf2e0563616e95d9a3" kindref="member">CameraScaleStepSlider_ValueChanged</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>newValue)</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_mc_camera_controller_1a0ce7ec5075b2dd266d71c81774b72c61" kindref="member">cameraScaleStep</ref><sp/>=<sp/>newValue;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McCameraController.cs"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_d_s_player_score_1_1_score" kind="class" prot="public">
+    <compoundname>DSPlayerScore::Score</compoundname>
+      <sectiondef kind="event">
+      <memberdef kind="event" id="class_d_s_player_score_1_1_score_1af2b7b4402a04b99bf9836552aba5e2fa" prot="public" static="no" add="no" remove="no" raise="no">
+        <type><ref refid="class_d_s_player_score_1_1_score_1a7f69c35db3ce29aaa8f814ba91d0abdb" kindref="member">OnValChanged</ref></type>
+        <definition>OnValChanged DSPlayerScore.Score.OnValueChanged</definition>
+        <argsstring></argsstring>
+        <name>OnValueChanged</name>
+        <briefdescription>
+<para>float - old value. даже если новое значение такое же как и старое. <ref refid="class_d_s_player_score_1_1_score" kindref="compound">Score</ref> - sender </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSPlayerScore.cs" line="33" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSPlayerScore.cs" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_d_s_player_score_1_1_score_1afcc6ede4de138f4a0c215a7b2cb2e206" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float DSPlayerScore.Score.value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSPlayerScore.cs" line="36" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSPlayerScore.cs" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_d_s_player_score_1_1_score_1aa2c8486030b9e8277f4cc396d7ed667c" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>float</type>
+        <definition>float DSPlayerScore.Score.Value</definition>
+        <argsstring></argsstring>
+        <name>Value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSPlayerScore.cs" line="37" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSPlayerScore.cs" bodystart="38" bodyend="-1"/>
+        <referencedby refid="class_drop_to_equipment_market_1a60ed19a062359f3ec6c2e0d920e8686b" compoundref="_drop_to_equipment_market_8cs" startline="61" endline="75">DropToEquipmentMarket.CanGetFromThisIventory</referencedby>
+        <referencedby refid="class_stats_upgrade_1ab4ae84b87abf69440f15605d7b6e70e8" compoundref="_stats_upgrade_8cs" startline="120" endline="146">StatsUpgrade.OnClick</referencedby>
+        <referencedby refid="class_call_converter_number_picker_1a5936c56affe137d478776a297ab8d8ae" compoundref="_call_converter_number_picker_8cs" startline="15" endline="70">CallConverterNumberPicker.OnPointerClick</referencedby>
+        <referencedby refid="class_hospital_room_1a0a29986bed0b4100bcefa68633e59772" compoundref="_hospital_room_8cs" startline="123" endline="143">HospitalRoom.ResetConverter</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_d_s_player_score_1_1_score_1a7f69c35db3ce29aaa8f814ba91d0abdb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>delegate void</type>
+        <definition>delegate void DSPlayerScore.Score.OnValChanged</definition>
+        <argsstring>(float oldValue, float newValue, Score sender)</argsstring>
+        <name>OnValChanged</name>
+        <param>
+          <type>float</type>
+          <declname>oldValue</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>newValue</declname>
+        </param>
+        <param>
+          <type><ref refid="class_d_s_player_score_1_1_score" kindref="compound">Score</ref></type>
+          <declname>sender</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSPlayerScore.cs" line="34" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSPlayerScore.cs" line="27" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSPlayerScore.cs" bodystart="26" bodyend="42"/>
+    <listofallmembers>
+      <member refid="class_d_s_player_score_1_1_score_1a7f69c35db3ce29aaa8f814ba91d0abdb" prot="public" virt="non-virtual"><scope>DSPlayerScore::Score</scope><name>OnValChanged</name></member>
+      <member refid="class_d_s_player_score_1_1_score_1af2b7b4402a04b99bf9836552aba5e2fa" prot="public" virt="non-virtual"><scope>DSPlayerScore::Score</scope><name>OnValueChanged</name></member>
+      <member refid="class_d_s_player_score_1_1_score_1aa2c8486030b9e8277f4cc396d7ed667c" prot="public" virt="non-virtual"><scope>DSPlayerScore::Score</scope><name>Value</name></member>
+      <member refid="class_d_s_player_score_1_1_score_1afcc6ede4de138f4a0c215a7b2cb2e206" prot="private" virt="non-virtual"><scope>DSPlayerScore::Score</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

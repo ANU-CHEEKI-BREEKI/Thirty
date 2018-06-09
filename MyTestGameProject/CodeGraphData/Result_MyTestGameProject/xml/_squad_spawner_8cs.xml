@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_squad_spawner_8cs" kind="file">
+    <compoundname>SquadSpawner.cs</compoundname>
+    <innerclass refid="class_squad_spawner" prot="public">SquadSpawner</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Collections;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Collections.Generic;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>UnityEngine;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="class_squad_spawner" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_squad_spawner" kindref="compound">SquadSpawner</ref><sp/>:<sp/>MonoBehaviour</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="8" refid="class_squad_spawner_1add54a53e6503886dd41439c7b4520473" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Quaternion<sp/><ref refid="class_squad_spawner_1add54a53e6503886dd41439c7b4520473" kindref="member">rotation</ref>;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>[Header(</highlight><highlight class="stringliteral">&quot;Squad<sp/>properties&quot;</highlight><highlight class="normal">)]</highlight></codeline>
+<codeline lineno="12" refid="class_squad_spawner_1a4fafa06123eeca94446f3fab5489a338" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[SerializeField]<sp/>Transform<sp/><ref refid="class_squad_spawner_1a4fafa06123eeca94446f3fab5489a338" kindref="member">lookTarget</ref>;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>[Space]</highlight></codeline>
+<codeline lineno="15" refid="class_squad_spawner_1a234077b37e08507f305f55773d217fe8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[SerializeField]<sp/><ref refid="class_formation_stats_1ab336466e6a234574db24f2ec914e1dd4" kindref="member">FormationStats.Formations</ref><sp/><ref refid="class_squad_spawner_1a234077b37e08507f305f55773d217fe8" kindref="member">formation</ref>;</highlight></codeline>
+<codeline lineno="16" refid="class_squad_spawner_1a94a3f06140ba1369cf7afc5250086421" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[SerializeField]<sp/><ref refid="class_inventory" kindref="compound">Inventory</ref><sp/><ref refid="class_squad_spawner_1a94a3f06140ba1369cf7afc5250086421" kindref="member">inventory</ref>;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>[Space]</highlight></codeline>
+<codeline lineno="19" refid="class_squad_spawner_1a28cda3cd3176c43c71550bcd39f286a8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[SerializeField]<sp/><ref refid="class_squad_1abe71578ac0516480f581c7011b1a3ea5" kindref="member">Squad.UnitFraction</ref><sp/><ref refid="class_squad_spawner_1a28cda3cd3176c43c71550bcd39f286a8" kindref="member">fraction</ref>;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>[Header(</highlight><highlight class="stringliteral">&quot;AI<sp/>properties&quot;</highlight><highlight class="normal">)]</highlight></codeline>
+<codeline lineno="22" refid="class_squad_spawner_1a90f80da290aa355a03e051907ae12515" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[SerializeField]<sp/><ref refid="class_ai_squad_controller_1a7cdd0c2c427799902c544d12cc68d644" kindref="member">AiSquadController.AiSquadBehaviour</ref><sp/><ref refid="class_squad_spawner_1a90f80da290aa355a03e051907ae12515" kindref="member">mode</ref>;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>[Space]</highlight></codeline>
+<codeline lineno="25" refid="class_squad_spawner_1a518628f882fd22e136f0362b144a7905" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[SerializeField]<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_squad_spawner_1a518628f882fd22e136f0362b144a7905" kindref="member">useDefaultDistancesValues</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="26" refid="class_squad_spawner_1a2829e1738b031906aa2e6c1523f13780" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[SerializeField]<sp/>[Range(1,<sp/>200)]<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_squad_spawner_1a2829e1738b031906aa2e6c1523f13780" kindref="member">distanceToActivateSquad</ref><sp/>=<sp/>50;</highlight></codeline>
+<codeline lineno="27" refid="class_squad_spawner_1af48a82fc8303c1bc29eddd7686b6d748" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[SerializeField]<sp/>[Range(1,<sp/>50)]<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_squad_spawner_1af48a82fc8303c1bc29eddd7686b6d748" kindref="member">radiusOfDefendArea</ref><sp/>=<sp/>15;</highlight></codeline>
+<codeline lineno="28" refid="class_squad_spawner_1a250713cd499dfa486f4d7491bf138ad9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[SerializeField]<sp/>[Range(1,<sp/>50)]<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_squad_spawner_1a250713cd499dfa486f4d7491bf138ad9" kindref="member">radiusOfAttackArea</ref><sp/>=<sp/>30;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>[Space]</highlight></codeline>
+<codeline lineno="31" refid="class_squad_spawner_1a7d391a3b397a74fec55cb1bf1be7fdbe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[SerializeField]<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_squad_spawner_1a7d391a3b397a74fec55cb1bf1be7fdbe" kindref="member">useDefaultTimeValues</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="32" refid="class_squad_spawner_1a305275205af188dd5bc6ab178bfcba85" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[SerializeField]<sp/>[Range(0,<sp/>1)]<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_squad_spawner_1a305275205af188dd5bc6ab178bfcba85" kindref="member">slowApdateDeltaTime</ref><sp/>=<sp/>0.2f;</highlight></codeline>
+<codeline lineno="33" refid="class_squad_spawner_1a5655cb8e91a95a67ef8716d9b729ee77" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[SerializeField]<sp/>[Range(0,<sp/>5)]<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_squad_spawner_1a5655cb8e91a95a67ef8716d9b729ee77" kindref="member">attackDeltaTime</ref><sp/>=<sp/>1f;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="class_squad_spawner_1a386c5a7c6effe5a297da9b531c9804e0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_squad_spawner_1a386c5a7c6effe5a297da9b531c9804e0" kindref="member">Start</ref><sp/>()</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_squad_spawner_1a4fafa06123eeca94446f3fab5489a338" kindref="member">lookTarget</ref><sp/>=<sp/>transform.GetChild(0);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_squad_spawner_1add54a53e6503886dd41439c7b4520473" kindref="member">rotation</ref><sp/>=<sp/>Quaternion.LookRotation(Vector3.forward,<sp/>lookTarget.position<sp/>-<sp/>transform.position);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GameObject<sp/>go<sp/>=<sp/>Instantiate(Resources.Load(</highlight><highlight class="stringliteral">&quot;Prefabs/Squads/EnemySquad&quot;</highlight><highlight class="normal">))<sp/>as<sp/>GameObject;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_squad" kindref="compound">Squad</ref><sp/>squad<sp/>=<sp/>go.GetComponent&lt;<ref refid="class_squad" kindref="compound">Squad</ref>&gt;();</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>squad.CurrentFormation<sp/>=<sp/><ref refid="class_squad_spawner_1a234077b37e08507f305f55773d217fe8" kindref="member">formation</ref>;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>squad.fraction<sp/>=<sp/><ref refid="class_squad_spawner_1a28cda3cd3176c43c71550bcd39f286a8" kindref="member">fraction</ref>;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>squad.PositionsTransform.position<sp/>=<sp/>transform.position;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>squad.PositionsTransform.rotation<sp/>=<sp/><ref refid="class_squad_spawner_1add54a53e6503886dd41439c7b4520473" kindref="member">rotation</ref>;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>squad.endLookRotation<sp/>=<sp/><ref refid="class_squad_spawner_1add54a53e6503886dd41439c7b4520473" kindref="member">rotation</ref>;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_squad_spawner_1a94a3f06140ba1369cf7afc5250086421" kindref="member">inventory</ref>.<ref refid="class_inventory_1a9fd46393a3045d9798b8cc8b9bc78d05" kindref="member">Helmet</ref><sp/>!=<sp/>null)</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>squad.Inventory.Helmet<sp/>=<sp/>inventory.Helmet;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_squad_spawner_1a94a3f06140ba1369cf7afc5250086421" kindref="member">inventory</ref>.<ref refid="class_inventory_1aa1cf6e7ace4e2897220ff4f8896fca53" kindref="member">Body</ref><sp/>!=<sp/>null)</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>squad.Inventory.Body<sp/>=<sp/>inventory.Body;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_squad_spawner_1a94a3f06140ba1369cf7afc5250086421" kindref="member">inventory</ref>.<ref refid="class_inventory_1a4280a990d639f958ff4c0e7249697a1f" kindref="member">Shield</ref><sp/>!=<sp/>null)</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>squad.Inventory.Shield<sp/>=<sp/>inventory.Shield;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_squad_spawner_1a94a3f06140ba1369cf7afc5250086421" kindref="member">inventory</ref>.<ref refid="class_inventory_1aada92657ba049bb0a3856e157b4e0e22" kindref="member">Weapon</ref><sp/>!=<sp/>null)</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>squad.Inventory.Weapon<sp/>=<sp/>inventory.Weapon;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ai_squad_controller" kindref="compound">AiSquadController</ref><sp/>controller<sp/>=<sp/>go.GetComponent&lt;<ref refid="class_ai_squad_controller" kindref="compound">AiSquadController</ref>&gt;();</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>controller.mode<sp/>=<sp/><ref refid="class_squad_spawner_1a90f80da290aa355a03e051907ae12515" kindref="member">mode</ref>;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!<ref refid="class_squad_spawner_1a518628f882fd22e136f0362b144a7905" kindref="member">useDefaultDistancesValues</ref>)</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>controller.distanceToActivateSquad<sp/>=<sp/><ref refid="class_squad_spawner_1a2829e1738b031906aa2e6c1523f13780" kindref="member">distanceToActivateSquad</ref>;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>controller.radiusOfDefendArea<sp/>=<sp/><ref refid="class_squad_spawner_1af48a82fc8303c1bc29eddd7686b6d748" kindref="member">radiusOfDefendArea</ref>;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>controller.radiusOfAttackArea<sp/>=<sp/><ref refid="class_squad_spawner_1a250713cd499dfa486f4d7491bf138ad9" kindref="member">radiusOfAttackArea</ref>;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!<ref refid="class_squad_spawner_1a7d391a3b397a74fec55cb1bf1be7fdbe" kindref="member">useDefaultTimeValues</ref>)</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>controller.slowApdateDeltaTime<sp/>=<sp/><ref refid="class_squad_spawner_1a305275205af188dd5bc6ab178bfcba85" kindref="member">slowApdateDeltaTime</ref>;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>controller.attackDeltaTime<sp/>=<sp/><ref refid="class_squad_spawner_1a5655cb8e91a95a67ef8716d9b729ee77" kindref="member">attackDeltaTime</ref>;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Destroy(gameObject);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="class_squad_spawner_1a2ae40ad08c4de53309c345bfd5e46d76" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_squad_spawner_1a2ae40ad08c4de53309c345bfd5e46d76" kindref="member">OnDrawGizmos</ref>()</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Gizmos.color<sp/>=<sp/>Color.green;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Gizmos.DrawLine(transform.position,<sp/>lookTarget.position);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Gizmos.color<sp/>=<sp/>Color.green;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Gizmos.DrawWireSphere(transform.position,<sp/>2);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Gizmos.color<sp/>=<sp/>Color.blue;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Gizmos.DrawWireSphere(lookTarget.position,<sp/>1);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="class_squad_spawner_1a518628f882fd22e136f0362b144a7905" kindref="member">useDefaultDistancesValues</ref>)</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Gizmos.color<sp/>=<sp/>Color.red;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Gizmos.DrawWireSphere(transform.position,<sp/><ref refid="class_squad_spawner_1a2829e1738b031906aa2e6c1523f13780" kindref="member">distanceToActivateSquad</ref>);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Gizmos.color<sp/>=<sp/>Color.green;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Gizmos.DrawWireSphere(transform.position,<sp/><ref refid="class_squad_spawner_1af48a82fc8303c1bc29eddd7686b6d748" kindref="member">radiusOfDefendArea</ref>);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Gizmos.color<sp/>=<sp/>Color.yellow;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Gizmos.DrawWireSphere(transform.position,<sp/><ref refid="class_squad_spawner_1a250713cd499dfa486f4d7491bf138ad9" kindref="member">radiusOfAttackArea</ref>);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/SquadSpawner.cs"/>
+  </compounddef>
+</doxygen>

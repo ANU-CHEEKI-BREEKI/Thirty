@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_unit_position" kind="class" prot="public">
+    <compoundname>UnitPosition</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_unit_position_1a20331b754e86007a8e8574e4037f6f2a" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>Transform</type>
+        <definition>Transform UnitPosition.ThisTrnsform</definition>
+        <argsstring></argsstring>
+        <name>ThisTrnsform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/UnitPosition.cs" line="7" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/UnitPosition.cs" bodystart="7" bodyend="-1"/>
+        <referencedby refid="class_unit_position_1a9c4d3efd6bd43187d3693f35e0fd7f56" compoundref="_unit_position_8cs" startline="23" endline="26">Start</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_unit_position_1aa042b22033acdb69b1774cb712d513c3" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>Vector2</type>
+        <definition>Vector2 UnitPosition.PositionInArray</definition>
+        <argsstring></argsstring>
+        <name>PositionInArray</name>
+        <briefdescription>
+<para>Начиная с нуля. Так как индексы в массивах начитнаются с нуля. </para>        </briefdescription>
+        <detaileddescription>
+<para>x - столбец</para><para>y - строка</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/UnitPosition.cs" line="14" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/UnitPosition.cs" bodystart="14" bodyend="-1"/>
+        <referencedby refid="class_squad_1accd6bf28b56f1d9fefc471aecdccd000" compoundref="_squad_8cs" startline="874" endline="965">Squad.ReformSquadInPhalanx</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_unit_position_1a8e107c9536de535de0d311aff6d0a4fe" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>float</type>
+        <definition>float UnitPosition.Scale</definition>
+        <argsstring></argsstring>
+        <name>Scale</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/UnitPosition.cs" line="15" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/UnitPosition.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_unit_position_1a523b554d81acb6664a3aae1b4b787d4b" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_unit" kindref="compound">Unit</ref></type>
+        <definition>Unit UnitPosition.Unit</definition>
+        <argsstring></argsstring>
+        <name>Unit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/UnitPosition.cs" line="16" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/UnitPosition.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_unit_position_1a18e889abd8d8bc91636c455fc82542b8" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_squad" kindref="compound">Squad</ref></type>
+        <definition>Squad UnitPosition.Squad</definition>
+        <argsstring></argsstring>
+        <name>Squad</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/UnitPosition.cs" line="17" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/UnitPosition.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_unit_position_1a2fc4721874458770dec4f2e29c71904a" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>int</type>
+        <definition>int UnitPosition.RowInPhalanx</definition>
+        <argsstring></argsstring>
+        <name>RowInPhalanx</name>
+        <briefdescription>
+<para>Начиная с единицы (1,2,3,...) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/UnitPosition.cs" line="21" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/UnitPosition.cs" bodystart="21" bodyend="-1"/>
+        <referencedby refid="class_unit_1a3aa682580b85a10b6fd92be762fb8439" compoundref="_unit_8cs" startline="755" endline="764">Unit.OnReformInPhalanx</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_unit_position_1a9c4d3efd6bd43187d3693f35e0fd7f56" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnitPosition.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/UnitPosition.cs" line="23" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/UnitPosition.cs" bodystart="23" bodyend="26"/>
+        <references refid="class_unit_position_1a20331b754e86007a8e8574e4037f6f2a" compoundref="_unit_position_8cs" startline="7">ThisTrnsform</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1257">
+        <label>UnitPosition</label>
+        <link refid="class_unit_position"/>
+        <childnode refid="1258" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1258">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1259">
+        <label>UnitPosition</label>
+        <link refid="class_unit_position"/>
+        <childnode refid="1260" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1260">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/UnitPosition.cs" line="6" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/UnitPosition.cs" bodystart="5" bodyend="27"/>
+    <listofallmembers>
+      <member refid="class_unit_position_1aa042b22033acdb69b1774cb712d513c3" prot="public" virt="non-virtual"><scope>UnitPosition</scope><name>PositionInArray</name></member>
+      <member refid="class_unit_position_1a2fc4721874458770dec4f2e29c71904a" prot="public" virt="non-virtual"><scope>UnitPosition</scope><name>RowInPhalanx</name></member>
+      <member refid="class_unit_position_1a8e107c9536de535de0d311aff6d0a4fe" prot="public" virt="non-virtual"><scope>UnitPosition</scope><name>Scale</name></member>
+      <member refid="class_unit_position_1a18e889abd8d8bc91636c455fc82542b8" prot="public" virt="non-virtual"><scope>UnitPosition</scope><name>Squad</name></member>
+      <member refid="class_unit_position_1a9c4d3efd6bd43187d3693f35e0fd7f56" prot="private" virt="non-virtual"><scope>UnitPosition</scope><name>Start</name></member>
+      <member refid="class_unit_position_1a20331b754e86007a8e8574e4037f6f2a" prot="public" virt="non-virtual"><scope>UnitPosition</scope><name>ThisTrnsform</name></member>
+      <member refid="class_unit_position_1a523b554d81acb6664a3aae1b4b787d4b" prot="public" virt="non-virtual"><scope>UnitPosition</scope><name>Unit</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

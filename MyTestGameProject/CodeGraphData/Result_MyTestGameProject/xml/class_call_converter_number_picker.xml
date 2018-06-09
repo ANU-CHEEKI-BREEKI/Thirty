@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_call_converter_number_picker" kind="class" prot="public">
+    <compoundname>CallConverterNumberPicker</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">IPointerClickHandler</basecompoundref>
+      <sectiondef kind="private-type">
+      <memberdef kind="enum" id="class_call_converter_number_picker_1aeecd631d4893bdb43a08737de16a4bc7" prot="private" static="no">
+        <name>Type</name>
+        <enumvalue id="class_call_converter_number_picker_1aeecd631d4893bdb43a08737de16a4bc7aaa4242e6f45df5630b54e16a65306f64" prot="public">
+          <name>INPUT_VALUE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_call_converter_number_picker_1aeecd631d4893bdb43a08737de16a4bc7a29f473cc4559840abdf05ce8fe6a7951" prot="public">
+          <name>OUTPUT_VALUE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/CallConverterNumberPicker.cs" line="13" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/CallConverterNumberPicker.cs" bodystart="13" bodyend="13"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_call_converter_number_picker_1a420c1131a0dffeb422fc83a85ed60c5e" prot="private" static="no" mutable="no">
+        <type><ref refid="class_call_converter_number_picker_1aeecd631d4893bdb43a08737de16a4bc7" kindref="member">Type</ref></type>
+        <definition>Type CallConverterNumberPicker.type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/CallConverterNumberPicker.cs" line="10" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/CallConverterNumberPicker.cs" bodystart="10" bodyend="-1"/>
+        <referencedby refid="class_call_converter_number_picker_1a5936c56affe137d478776a297ab8d8ae" compoundref="_call_converter_number_picker_8cs" startline="15" endline="70">OnPointerClick</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_call_converter_number_picker_1aec8c19ea38bc76334573cdbe7918e65b" prot="private" static="no" mutable="no">
+        <type><ref refid="class_number_converter" kindref="compound">NumberConverter</ref></type>
+        <definition>NumberConverter CallConverterNumberPicker.converter</definition>
+        <argsstring></argsstring>
+        <name>converter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/CallConverterNumberPicker.cs" line="11" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/CallConverterNumberPicker.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_call_converter_number_picker_1a5936c56affe137d478776a297ab8d8ae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CallConverterNumberPicker.OnPointerClick</definition>
+        <argsstring>(PointerEventData eventData)</argsstring>
+        <name>OnPointerClick</name>
+        <param>
+          <type>PointerEventData</type>
+          <declname>eventData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/CallConverterNumberPicker.cs" line="15" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/CallConverterNumberPicker.cs" bodystart="15" bodyend="70"/>
+        <references refid="class_d_s_player_score_1a4502f5363f2fb5db9940ec117dd2ab19" compoundref="_d_s_player_score_8cs" startline="7">DSPlayerScore.gold</references>
+        <references refid="class_game_manager_1ad3e717f4fb0f378b969f4457de81f23e" compoundref="_game_manager_8cs" startline="7">GameManager.Instance</references>
+        <references refid="class_game_manager_1abdc418f4be1d760ab41c5b1f212dd85a" compoundref="_game_manager_8cs" startline="17">GameManager.PlayerProgress</references>
+        <references refid="class_player_progress_1ac41622da7c01719336fc86a0a06385d6" compoundref="_player_progress_8cs" startline="7">PlayerProgress.score</references>
+        <references refid="class_call_converter_number_picker_1a420c1131a0dffeb422fc83a85ed60c5e" compoundref="_call_converter_number_picker_8cs" startline="10">type</references>
+        <references refid="class_d_s_player_score_1_1_score_1aa2c8486030b9e8277f4cc396d7ed667c" compoundref="_d_s_player_score_8cs" startline="38">DSPlayerScore.Score.Value</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="93">
+        <label>CallConverterNumberPicker</label>
+        <link refid="class_call_converter_number_picker"/>
+        <childnode refid="94" relation="public-inheritance">
+        </childnode>
+        <childnode refid="95" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="95">
+        <label>IPointerClickHandler</label>
+      </node>
+      <node id="94">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="96">
+        <label>CallConverterNumberPicker</label>
+        <link refid="class_call_converter_number_picker"/>
+        <childnode refid="97" relation="public-inheritance">
+        </childnode>
+        <childnode refid="98" relation="public-inheritance">
+        </childnode>
+        <childnode refid="99" relation="usage">
+          <edgelabel>converter</edgelabel>
+        </childnode>
+      </node>
+      <node id="98">
+        <label>IPointerClickHandler</label>
+      </node>
+      <node id="97">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="99">
+        <label>NumberConverter</label>
+        <link refid="class_number_converter"/>
+        <childnode refid="97" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/CallConverterNumberPicker.cs" line="9" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/CallConverterNumberPicker.cs" bodystart="8" bodyend="71"/>
+    <listofallmembers>
+      <member refid="class_call_converter_number_picker_1aec8c19ea38bc76334573cdbe7918e65b" prot="private" virt="non-virtual"><scope>CallConverterNumberPicker</scope><name>converter</name></member>
+      <member refid="class_call_converter_number_picker_1a5936c56affe137d478776a297ab8d8ae" prot="public" virt="non-virtual"><scope>CallConverterNumberPicker</scope><name>OnPointerClick</name></member>
+      <member refid="class_call_converter_number_picker_1aeecd631d4893bdb43a08737de16a4bc7" prot="private" virt="non-virtual"><scope>CallConverterNumberPicker</scope><name>Type</name></member>
+      <member refid="class_call_converter_number_picker_1a420c1131a0dffeb422fc83a85ed60c5e" prot="private" virt="non-virtual"><scope>CallConverterNumberPicker</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

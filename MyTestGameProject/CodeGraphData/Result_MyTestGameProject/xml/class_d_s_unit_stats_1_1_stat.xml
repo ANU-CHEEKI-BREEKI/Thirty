@@ -1,0 +1,165 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_d_s_unit_stats_1_1_stat" kind="class" prot="public">
+    <compoundname>DSUnitStats::Stat</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_d_s_unit_stats_1_1_stat_1a3c8b58ce2f18fa0b559e35a3751f2011" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float DSUnitStats.Stat.minValue</definition>
+        <argsstring></argsstring>
+        <name>minValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSUnitStats.cs" line="28" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSUnitStats.cs" bodystart="28" bodyend="-1"/>
+        <referencedby refid="class_d_s_unit_stats_1_1_stat_1a7dfe9f3e10086bb3076acca37677d6b1" compoundref="_d_s_unit_stats_8cs" startline="68" endline="74">DSUnitStats.Stat.Stat</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_d_s_unit_stats_1_1_stat_1a475b5a16aeeb7cf8fec4bf53340b7abf" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float DSUnitStats.Stat.maxValue</definition>
+        <argsstring></argsstring>
+        <name>maxValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSUnitStats.cs" line="31" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSUnitStats.cs" bodystart="31" bodyend="-1"/>
+        <referencedby refid="class_d_s_unit_stats_1_1_stat_1a7dfe9f3e10086bb3076acca37677d6b1" compoundref="_d_s_unit_stats_8cs" startline="68" endline="74">DSUnitStats.Stat.Stat</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_d_s_unit_stats_1_1_stat_1a37e2b293e52130ff1b979ca685d67d3d" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float DSUnitStats.Stat.value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSUnitStats.cs" line="34" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSUnitStats.cs" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_d_s_unit_stats_1_1_stat_1ae146727d041cce79e94c0216740fe03d" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float DSUnitStats.Stat.progress</definition>
+        <argsstring></argsstring>
+        <name>progress</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSUnitStats.cs" line="49" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSUnitStats.cs" bodystart="49" bodyend="-1"/>
+        <referencedby refid="class_d_s_unit_stats_1_1_stat_1a7dfe9f3e10086bb3076acca37677d6b1" compoundref="_d_s_unit_stats_8cs" startline="68" endline="74">DSUnitStats.Stat.Stat</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_d_s_unit_stats_1_1_stat_1ac8abde8f71b56e16a27d98e6e8a57a9c" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>float</type>
+        <definition>float DSUnitStats.Stat.MinValue</definition>
+        <argsstring></argsstring>
+        <name>MinValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSUnitStats.cs" line="29" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSUnitStats.cs" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_d_s_unit_stats_1_1_stat_1a2ac0175b08d2b7189415657074d2c7df" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>float</type>
+        <definition>float DSUnitStats.Stat.MaxValue</definition>
+        <argsstring></argsstring>
+        <name>MaxValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSUnitStats.cs" line="32" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSUnitStats.cs" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_d_s_unit_stats_1_1_stat_1aa699480d01ef3b31a64064a6515e6ca2" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>float</type>
+        <definition>float DSUnitStats.Stat.Value</definition>
+        <argsstring></argsstring>
+        <name>Value</name>
+        <briefdescription>
+<para>Значение не может быть больше максимального или меньше минимального, установленных при создании, значений </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSUnitStats.cs" line="38" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSUnitStats.cs" bodystart="39" bodyend="-1"/>
+        <referencedby refid="class_d_s_unit_stats_1_1_stat_1a7dfe9f3e10086bb3076acca37677d6b1" compoundref="_d_s_unit_stats_8cs" startline="68" endline="74">DSUnitStats.Stat.Stat</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_d_s_unit_stats_1_1_stat_1a94d5502a0386b5101bab632fb214e0de" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>float</type>
+        <definition>float DSUnitStats.Stat.Progress</definition>
+        <argsstring></argsstring>
+        <name>Progress</name>
+        <briefdescription>
+<para>Свойство для контроля прогресса прокачки с предыдущего уровня на следующий. НЕ ПОЛНОЙ ПРОКАЧКИ, А БЛИзЛЕЖАЩИХУРОВНЕЙ. Короче говоря, для возможности вкинуть свободный опыт, если остался лишний. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSUnitStats.cs" line="54" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSUnitStats.cs" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_d_s_unit_stats_1_1_stat_1a7dfe9f3e10086bb3076acca37677d6b1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>DSUnitStats.Stat.Stat</definition>
+        <argsstring>(float min, float max, float val)</argsstring>
+        <name>Stat</name>
+        <param>
+          <type>float</type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>max</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSUnitStats.cs" line="68" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSUnitStats.cs" bodystart="68" bodyend="74"/>
+        <references refid="class_d_s_unit_stats_1_1_stat_1a475b5a16aeeb7cf8fec4bf53340b7abf" compoundref="_d_s_unit_stats_8cs" startline="31">DSUnitStats.Stat.maxValue</references>
+        <references refid="class_d_s_unit_stats_1_1_stat_1a3c8b58ce2f18fa0b559e35a3751f2011" compoundref="_d_s_unit_stats_8cs" startline="28">DSUnitStats.Stat.minValue</references>
+        <references refid="class_d_s_unit_stats_1_1_stat_1ae146727d041cce79e94c0216740fe03d" compoundref="_d_s_unit_stats_8cs" startline="49">DSUnitStats.Stat.progress</references>
+        <references refid="class_d_s_unit_stats_1_1_stat_1aa699480d01ef3b31a64064a6515e6ca2" compoundref="_d_s_unit_stats_8cs" startline="39">DSUnitStats.Stat.Value</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSUnitStats.cs" line="27" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSUnitStats.cs" bodystart="26" bodyend="75"/>
+    <listofallmembers>
+      <member refid="class_d_s_unit_stats_1_1_stat_1a475b5a16aeeb7cf8fec4bf53340b7abf" prot="private" virt="non-virtual"><scope>DSUnitStats::Stat</scope><name>maxValue</name></member>
+      <member refid="class_d_s_unit_stats_1_1_stat_1a2ac0175b08d2b7189415657074d2c7df" prot="public" virt="non-virtual"><scope>DSUnitStats::Stat</scope><name>MaxValue</name></member>
+      <member refid="class_d_s_unit_stats_1_1_stat_1ac8abde8f71b56e16a27d98e6e8a57a9c" prot="public" virt="non-virtual"><scope>DSUnitStats::Stat</scope><name>MinValue</name></member>
+      <member refid="class_d_s_unit_stats_1_1_stat_1a3c8b58ce2f18fa0b559e35a3751f2011" prot="private" virt="non-virtual"><scope>DSUnitStats::Stat</scope><name>minValue</name></member>
+      <member refid="class_d_s_unit_stats_1_1_stat_1a94d5502a0386b5101bab632fb214e0de" prot="public" virt="non-virtual"><scope>DSUnitStats::Stat</scope><name>Progress</name></member>
+      <member refid="class_d_s_unit_stats_1_1_stat_1ae146727d041cce79e94c0216740fe03d" prot="private" virt="non-virtual"><scope>DSUnitStats::Stat</scope><name>progress</name></member>
+      <member refid="class_d_s_unit_stats_1_1_stat_1a7dfe9f3e10086bb3076acca37677d6b1" prot="public" virt="non-virtual"><scope>DSUnitStats::Stat</scope><name>Stat</name></member>
+      <member refid="class_d_s_unit_stats_1_1_stat_1a37e2b293e52130ff1b979ca685d67d3d" prot="private" virt="non-virtual"><scope>DSUnitStats::Stat</scope><name>value</name></member>
+      <member refid="class_d_s_unit_stats_1_1_stat_1aa699480d01ef3b31a64064a6515e6ca2" prot="public" virt="non-virtual"><scope>DSUnitStats::Stat</scope><name>Value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

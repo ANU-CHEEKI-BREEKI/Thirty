@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_equipment" kind="class" prot="public">
+    <compoundname>Equipment</compoundname>
+    <basecompoundref refid="class_item" prot="public" virt="non-virtual">Item</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_equipment_1aee4c7bd07a5ffb5b43b38dfb71fa69d7" prot="private" static="no" mutable="no">
+        <type><ref refid="struct_equipment_stats" kindref="compound">EquipmentStats</ref></type>
+        <definition>EquipmentStats Equipment.stats</definition>
+        <argsstring></argsstring>
+        <name>stats</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Equipment.cs" line="10" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Equipment.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_equipment_1a41b8725e8599baea7fd05b0725fa4812" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="struct_equipment_stats" kindref="compound">EquipmentStats</ref></type>
+        <definition>EquipmentStats Equipment.Stats</definition>
+        <argsstring></argsstring>
+        <name>Stats</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Equipment.cs" line="11" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Equipment.cs" bodystart="11" bodyend="-1"/>
+        <referencedby refid="class_drop_to_equipment_1a0bc83af63ecd40bb3c2be8355c878a7f" compoundref="_drop_to_equipment_8cs" startline="46" endline="84">DropToEquipment.AddToThisInventory</referencedby>
+        <referencedby refid="class_unit_1a95a18047de7c98c3a6256788b178880d" compoundref="_unit_8cs" startline="798" endline="825">Unit.CheckEquipment</referencedby>
+        <referencedby refid="class_unit_1a668a8b3411432237b13db3c5a9d768d6" compoundref="_unit_8cs" startline="312" endline="390">Unit.Death</referencedby>
+        <referencedby refid="class_squad_inventory_u_i_1a1c33efc57d748213dac793c00997c015" compoundref="_squad_inventory_u_i_8cs" startline="61" endline="108">SquadInventoryUI.RefreshUI</referencedby>
+        <referencedby refid="class_squad_1a682baf77f537896bdf4ea37f354ab115" compoundref="_squad_8cs" startline="349" endline="371">Squad.SetProp</referencedby>
+        <referencedby refid="class_unit_1ac1b02baf91d8c2b7d784e469f04c71a5" compoundref="_unit_8cs" startline="496" endline="516">Unit.SetWeapon</referencedby>
+        <referencedby refid="class_unit_1a81ef87020279968371316b61ae6b408c" compoundref="_unit_8cs" startline="901" endline="946">Unit.TakeHitFromArrow</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="312">
+        <label>Equipment</label>
+        <link refid="class_equipment"/>
+        <childnode refid="313" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="313">
+        <label>Item</label>
+        <link refid="class_item"/>
+        <childnode refid="314" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="314">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="315">
+        <label>Equipment</label>
+        <link refid="class_equipment"/>
+        <childnode refid="316" relation="public-inheritance">
+        </childnode>
+        <childnode refid="319" relation="usage">
+          <edgelabel>stats</edgelabel>
+        </childnode>
+      </node>
+      <node id="318">
+        <label>Item.MainProperties</label>
+        <link refid="struct_item_1_1_main_properties"/>
+      </node>
+      <node id="321">
+        <label>Damage</label>
+        <link refid="struct_damage"/>
+      </node>
+      <node id="320">
+        <label>IDescriptionable</label>
+        <link refid="interface_i_descriptionable"/>
+      </node>
+      <node id="316">
+        <label>Item</label>
+        <link refid="class_item"/>
+        <childnode refid="317" relation="public-inheritance">
+        </childnode>
+        <childnode refid="318" relation="usage">
+          <edgelabel>mainProperties</edgelabel>
+        </childnode>
+      </node>
+      <node id="319">
+        <label>EquipmentStats</label>
+        <link refid="struct_equipment_stats"/>
+        <childnode refid="320" relation="public-inheritance">
+        </childnode>
+        <childnode refid="321" relation="usage">
+          <edgelabel>damage</edgelabel>
+        </childnode>
+      </node>
+      <node id="317">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Equipment.cs" line="8" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Equipment.cs" bodystart="7" bodyend="12"/>
+    <listofallmembers>
+      <member refid="class_item_1ab5454b792ec8183e499e187313654aa5" prot="public" virt="non-virtual"><scope>Equipment</scope><name>MainPropertie</name></member>
+      <member refid="class_equipment_1aee4c7bd07a5ffb5b43b38dfb71fa69d7" prot="private" virt="non-virtual"><scope>Equipment</scope><name>stats</name></member>
+      <member refid="class_equipment_1a41b8725e8599baea7fd05b0725fa4812" prot="public" virt="non-virtual"><scope>Equipment</scope><name>Stats</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

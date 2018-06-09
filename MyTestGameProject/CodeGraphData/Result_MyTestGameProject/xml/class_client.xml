@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_client" kind="class" prot="public">
+    <compoundname>Client</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_client_1a78bd60d166f9b3dc3cfcb27cd0522a75" prot="private" static="no" mutable="no">
+        <type>TcpClient</type>
+        <definition>TcpClient Client.client</definition>
+        <argsstring></argsstring>
+        <name>client</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/CW/Client.cs" line="7" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/CW/Client.cs" bodystart="7" bodyend="-1"/>
+        <referencedby refid="class_client_1a2d2be6c4f8b81957b11f0ffd1966ad30" compoundref="_client_8cs" startline="9" endline="12">Client</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_client_1a2d2be6c4f8b81957b11f0ffd1966ad30" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Client.Client</definition>
+        <argsstring>(string hostname, int port)</argsstring>
+        <name>Client</name>
+        <param>
+          <type>string</type>
+          <declname>hostname</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>port</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/CW/Client.cs" line="9" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/CW/Client.cs" bodystart="9" bodyend="12"/>
+        <references refid="class_client_1a78bd60d166f9b3dc3cfcb27cd0522a75" compoundref="_client_8cs" startline="7">client</references>
+      </memberdef>
+      <memberdef kind="function" id="class_client_1af0d8141728d16de25189b2a76962cd58" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>string Client.ReadMessage</definition>
+        <argsstring>()</argsstring>
+        <name>ReadMessage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/CW/Client.cs" line="19" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/CW/Client.cs" bodystart="19" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="class_client_1ac2fe1254e8e8415c14ebac1dec54d97a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Client.SendMessage</definition>
+        <argsstring>(string message)</argsstring>
+        <name>SendMessage</name>
+        <param>
+          <type>string</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/CW/Client.cs" line="38" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/CW/Client.cs" bodystart="38" bodyend="42"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_client_1ad1de72d57d0e288e34854083043c5a8d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Client.~Client</definition>
+        <argsstring>()</argsstring>
+        <name>~Client</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/CW/Client.cs" line="14" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/CW/Client.cs" bodystart="14" bodyend="17"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/CW/Client.cs" line="6" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/CW/Client.cs" bodystart="5" bodyend="44"/>
+    <listofallmembers>
+      <member refid="class_client_1a78bd60d166f9b3dc3cfcb27cd0522a75" prot="private" virt="non-virtual"><scope>Client</scope><name>client</name></member>
+      <member refid="class_client_1a2d2be6c4f8b81957b11f0ffd1966ad30" prot="public" virt="non-virtual"><scope>Client</scope><name>Client</name></member>
+      <member refid="class_client_1af0d8141728d16de25189b2a76962cd58" prot="public" virt="non-virtual"><scope>Client</scope><name>ReadMessage</name></member>
+      <member refid="class_client_1ac2fe1254e8e8415c14ebac1dec54d97a" prot="public" virt="non-virtual"><scope>Client</scope><name>SendMessage</name></member>
+      <member refid="class_client_1ad1de72d57d0e288e34854083043c5a8d" prot="private" virt="non-virtual"><scope>Client</scope><name>~Client</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

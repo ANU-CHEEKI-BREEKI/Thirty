@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_78fa1aecdafef33ccfc37a46a0fa1119" kind="dir">
+    <compoundname>D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Pipeline Tile/Scripts</compoundname>
+    <innerfile refid="_pipeline_tile_8cs">PipelineTile.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Pipeline Tile/Scripts/"/>
+  </compounddef>
+</doxygen>

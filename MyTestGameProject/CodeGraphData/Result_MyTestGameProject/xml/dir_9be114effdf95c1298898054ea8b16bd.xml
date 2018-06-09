@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_9be114effdf95c1298898054ea8b16bd" kind="dir">
+    <compoundname>D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene</compoundname>
+    <innerfile refid="_buy_the_gold_8cs">BuyTheGold.cs</innerfile>
+    <innerfile refid="_call_converter_number_picker_8cs">CallConverterNumberPicker.cs</innerfile>
+    <innerfile refid="_hospital_room_8cs">HospitalRoom.cs</innerfile>
+    <innerfile refid="_number_converter_8cs">NumberConverter.cs</innerfile>
+    <innerfile refid="_score_market_8cs">ScoreMarket.cs</innerfile>
+    <innerfile refid="_score_panel_8cs">ScorePanel.cs</innerfile>
+    <innerfile refid="_skills_panel_scroll_and_height_8cs">SkillsPanelScrollAndHeight.cs</innerfile>
+    <innerfile refid="_skills_upgrade_8cs">SkillsUpgrade.cs</innerfile>
+    <innerfile refid="_skill_upgrade_button_8cs">SkillUpgradeButton.cs</innerfile>
+    <innerfile refid="_stats_upgrade_8cs">StatsUpgrade.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/"/>
+  </compounddef>
+</doxygen>

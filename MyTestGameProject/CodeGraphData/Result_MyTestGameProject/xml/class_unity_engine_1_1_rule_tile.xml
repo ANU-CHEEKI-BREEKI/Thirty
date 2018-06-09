@@ -1,0 +1,413 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_unity_engine_1_1_rule_tile" kind="class" prot="public">
+    <compoundname>UnityEngine::RuleTile</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">TileBase</basecompoundref>
+    <innerclass refid="class_unity_engine_1_1_rule_tile_1_1_tiling_rule" prot="public">UnityEngine::RuleTile::TilingRule</innerclass>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_unity_engine_1_1_rule_tile_1a72deb656b40422aacac89f85660eac8b" prot="public" static="no" mutable="no">
+        <type>Sprite</type>
+        <definition>Sprite UnityEngine.RuleTile.m_DefaultSprite</definition>
+        <argsstring></argsstring>
+        <name>m_DefaultSprite</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Rule Tile/Scripts/RuleTile.cs" line="11" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Rule Tile/Scripts/RuleTile.cs" bodystart="11" bodyend="-1"/>
+        <referencedby refid="class_unity_engine_1_1_rule_tile_1aedbf83058e4543979f7a19fbf187f1a5" compoundref="_rule_tile_8cs" startline="46" endline="76">UnityEngine.RuleTile.GetTileData</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_rule_tile_1aae3cd98cb97f6fea52504b60a45c0c23" prot="public" static="no" mutable="no">
+        <type>Tile.ColliderType</type>
+        <definition>Tile.ColliderType UnityEngine.RuleTile.m_DefaultColliderType</definition>
+        <argsstring></argsstring>
+        <name>m_DefaultColliderType</name>
+        <initializer>= Tile.ColliderType.Sprite</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Rule Tile/Scripts/RuleTile.cs" line="12" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Rule Tile/Scripts/RuleTile.cs" bodystart="12" bodyend="-1"/>
+        <referencedby refid="class_unity_engine_1_1_rule_tile_1aedbf83058e4543979f7a19fbf187f1a5" compoundref="_rule_tile_8cs" startline="46" endline="76">UnityEngine.RuleTile.GetTileData</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_rule_tile_1a86ab9602a011da6b7af0bd7cf5952596" prot="public" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_unity_engine_1_1_rule_tile_1_1_tiling_rule" kindref="compound">TilingRule</ref> &gt;</type>
+        <definition>List&lt;TilingRule&gt; UnityEngine.RuleTile.m_TilingRules</definition>
+        <argsstring></argsstring>
+        <name>m_TilingRules</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Rule Tile/Scripts/RuleTile.cs" line="44" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Rule Tile/Scripts/RuleTile.cs" bodystart="44" bodyend="-1"/>
+        <referencedby refid="class_unity_engine_1_1_rule_tile_1a277e81c8de1d6618173235705e69f5f9" compoundref="_rule_tile_8cs" startline="83" endline="96">UnityEngine.RuleTile.GetTileAnimationData</referencedby>
+        <referencedby refid="class_unity_engine_1_1_rule_tile_1aedbf83058e4543979f7a19fbf187f1a5" compoundref="_rule_tile_8cs" startline="46" endline="76">UnityEngine.RuleTile.GetTileData</referencedby>
+        <referencedby refid="class_unity_engine_1_1_rule_tile_1a8d9103d83e69c651d25b2fa86a26c1b1" compoundref="_rule_tile_8cs" startline="98" endline="114">UnityEngine.RuleTile.RefreshTile</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_unity_engine_1_1_rule_tile_1aedbf83058e4543979f7a19fbf187f1a5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void UnityEngine.RuleTile.GetTileData</definition>
+        <argsstring>(Vector3Int position, ITilemap tileMap, ref TileData tileData)</argsstring>
+        <name>GetTileData</name>
+        <param>
+          <type>Vector3Int</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>ITilemap</type>
+          <declname>tileMap</declname>
+        </param>
+        <param>
+          <type>ref TileData</type>
+          <declname>tileData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Rule Tile/Scripts/RuleTile.cs" line="46" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Rule Tile/Scripts/RuleTile.cs" bodystart="46" bodyend="76"/>
+        <references refid="class_unity_engine_1_1_rule_tile_1a8379f88ce27052c1dde683155b33205b" compoundref="_rule_tile_8cs" startline="145" endline="159">UnityEngine.RuleTile.ApplyRandomTransform</references>
+        <references refid="class_unity_engine_1_1_rule_tile_1a63d0d37db66ac7eafe8ea71d47d383ab" compoundref="_rule_tile_8cs" startline="78" endline="81">UnityEngine.RuleTile.GetPerlinValue</references>
+        <references refid="class_unity_engine_1_1_rule_tile_1aae3cd98cb97f6fea52504b60a45c0c23" compoundref="_rule_tile_8cs" startline="12">UnityEngine.RuleTile.m_DefaultColliderType</references>
+        <references refid="class_unity_engine_1_1_rule_tile_1a72deb656b40422aacac89f85660eac8b" compoundref="_rule_tile_8cs" startline="11">UnityEngine.RuleTile.m_DefaultSprite</references>
+        <references refid="class_unity_engine_1_1_rule_tile_1_1_tiling_rule_1a24ddc81ce7dd07fd1decc6c5932f310e" compoundref="_rule_tile_8cs" startline="22">UnityEngine.RuleTile.TilingRule.m_Output</references>
+        <references refid="class_unity_engine_1_1_rule_tile_1_1_tiling_rule_1a25f9ca6ce5d8693914a3c0d3a2548830" compoundref="_rule_tile_8cs" startline="20">UnityEngine.RuleTile.TilingRule.m_PerlinScale</references>
+        <references refid="class_unity_engine_1_1_rule_tile_1_1_tiling_rule_1a488a29071aa4f7eadc88674168eca726" compoundref="_rule_tile_8cs" startline="24">UnityEngine.RuleTile.TilingRule.m_RandomTransform</references>
+        <references refid="class_unity_engine_1_1_rule_tile_1_1_tiling_rule_1a01ac0a7bed580e1babf2523f84d79075" compoundref="_rule_tile_8cs" startline="18">UnityEngine.RuleTile.TilingRule.m_Sprites</references>
+        <references refid="class_unity_engine_1_1_rule_tile_1a86ab9602a011da6b7af0bd7cf5952596" compoundref="_rule_tile_8cs" startline="44">UnityEngine.RuleTile.m_TilingRules</references>
+        <references refid="class_unity_engine_1_1_rule_tile_1adc06e1532351ac0d0d3fa358c68c39b7" compoundref="_rule_tile_8cs" startline="116" endline="143">UnityEngine.RuleTile.RuleMatches</references>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_rule_tile_1a277e81c8de1d6618173235705e69f5f9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override bool</type>
+        <definition>override bool UnityEngine.RuleTile.GetTileAnimationData</definition>
+        <argsstring>(Vector3Int position, ITilemap tilemap, ref TileAnimationData tileAnimationData)</argsstring>
+        <name>GetTileAnimationData</name>
+        <param>
+          <type>Vector3Int</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>ITilemap</type>
+          <declname>tilemap</declname>
+        </param>
+        <param>
+          <type>ref TileAnimationData</type>
+          <declname>tileAnimationData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Rule Tile/Scripts/RuleTile.cs" line="83" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Rule Tile/Scripts/RuleTile.cs" bodystart="83" bodyend="96"/>
+        <references refid="class_unity_engine_1_1_rule_tile_1_1_tiling_rule_1a24ddc81ce7dd07fd1decc6c5932f310e" compoundref="_rule_tile_8cs" startline="22">UnityEngine.RuleTile.TilingRule.m_Output</references>
+        <references refid="class_unity_engine_1_1_rule_tile_1a86ab9602a011da6b7af0bd7cf5952596" compoundref="_rule_tile_8cs" startline="44">UnityEngine.RuleTile.m_TilingRules</references>
+        <references refid="class_unity_engine_1_1_rule_tile_1adc06e1532351ac0d0d3fa358c68c39b7" compoundref="_rule_tile_8cs" startline="116" endline="143">UnityEngine.RuleTile.RuleMatches</references>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_rule_tile_1a8d9103d83e69c651d25b2fa86a26c1b1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void UnityEngine.RuleTile.RefreshTile</definition>
+        <argsstring>(Vector3Int location, ITilemap tileMap)</argsstring>
+        <name>RefreshTile</name>
+        <param>
+          <type>Vector3Int</type>
+          <declname>location</declname>
+        </param>
+        <param>
+          <type>ITilemap</type>
+          <declname>tileMap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Rule Tile/Scripts/RuleTile.cs" line="98" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Rule Tile/Scripts/RuleTile.cs" bodystart="98" bodyend="114"/>
+        <references refid="class_unity_engine_1_1_rule_tile_1a86ab9602a011da6b7af0bd7cf5952596" compoundref="_rule_tile_8cs" startline="44">UnityEngine.RuleTile.m_TilingRules</references>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_rule_tile_1adc06e1532351ac0d0d3fa358c68c39b7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UnityEngine.RuleTile.RuleMatches</definition>
+        <argsstring>(TilingRule rule, Vector3Int position, ITilemap tilemap, ref Matrix4x4 transform)</argsstring>
+        <name>RuleMatches</name>
+        <param>
+          <type><ref refid="class_unity_engine_1_1_rule_tile_1_1_tiling_rule" kindref="compound">TilingRule</ref></type>
+          <declname>rule</declname>
+        </param>
+        <param>
+          <type>Vector3Int</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>ITilemap</type>
+          <declname>tilemap</declname>
+        </param>
+        <param>
+          <type>ref Matrix4x4</type>
+          <declname>transform</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Rule Tile/Scripts/RuleTile.cs" line="116" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Rule Tile/Scripts/RuleTile.cs" bodystart="116" bodyend="143"/>
+        <references refid="class_unity_engine_1_1_rule_tile_1_1_tiling_rule_1a52359561b735c918d14d3aec26493b07" compoundref="_rule_tile_8cs" startline="21">UnityEngine.RuleTile.TilingRule.m_RuleTransform</references>
+        <referencedby refid="class_unity_engine_1_1_rule_tile_1a277e81c8de1d6618173235705e69f5f9" compoundref="_rule_tile_8cs" startline="83" endline="96">UnityEngine.RuleTile.GetTileAnimationData</referencedby>
+        <referencedby refid="class_unity_engine_1_1_rule_tile_1aedbf83058e4543979f7a19fbf187f1a5" compoundref="_rule_tile_8cs" startline="46" endline="76">UnityEngine.RuleTile.GetTileData</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_rule_tile_1a57c23abe3c5191166a3b58a9d096db5d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UnityEngine.RuleTile.RuleMatches</definition>
+        <argsstring>(TilingRule rule, Vector3Int position, ITilemap tilemap, int angle)</argsstring>
+        <name>RuleMatches</name>
+        <param>
+          <type><ref refid="class_unity_engine_1_1_rule_tile_1_1_tiling_rule" kindref="compound">TilingRule</ref></type>
+          <declname>rule</declname>
+        </param>
+        <param>
+          <type>Vector3Int</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>ITilemap</type>
+          <declname>tilemap</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>angle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Rule Tile/Scripts/RuleTile.cs" line="161" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Rule Tile/Scripts/RuleTile.cs" bodystart="161" bodyend="182"/>
+        <references refid="class_unity_engine_1_1_rule_tile_1a47f206050bb34478edd8f071dafc999e" compoundref="_rule_tile_8cs" startline="207" endline="213">UnityEngine.RuleTile.GetIndexOfOffset</references>
+        <references refid="class_unity_engine_1_1_rule_tile_1ae3751c5df087537b64888416eaa3b6e1" compoundref="_rule_tile_8cs" startline="215" endline="229">UnityEngine.RuleTile.GetRotatedPos</references>
+        <references refid="class_unity_engine_1_1_rule_tile_1_1_tiling_rule_1ad660a15e46af3cf952fddddab1eb2bd9" compoundref="_rule_tile_8cs" startline="17">UnityEngine.RuleTile.TilingRule.m_Neighbors</references>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_rule_tile_1a8366198531c29cf1c997ae9a348e4b59" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UnityEngine.RuleTile.RuleMatches</definition>
+        <argsstring>(TilingRule rule, Vector3Int position, ITilemap tilemap, bool mirrorX, bool mirrorY)</argsstring>
+        <name>RuleMatches</name>
+        <param>
+          <type><ref refid="class_unity_engine_1_1_rule_tile_1_1_tiling_rule" kindref="compound">TilingRule</ref></type>
+          <declname>rule</declname>
+        </param>
+        <param>
+          <type>Vector3Int</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>ITilemap</type>
+          <declname>tilemap</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>mirrorX</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>mirrorY</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Rule Tile/Scripts/RuleTile.cs" line="184" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Rule Tile/Scripts/RuleTile.cs" bodystart="184" bodyend="205"/>
+        <references refid="class_unity_engine_1_1_rule_tile_1a47f206050bb34478edd8f071dafc999e" compoundref="_rule_tile_8cs" startline="207" endline="213">UnityEngine.RuleTile.GetIndexOfOffset</references>
+        <references refid="class_unity_engine_1_1_rule_tile_1a04c76f9027bb53879f794a6375585f61" compoundref="_rule_tile_8cs" startline="231" endline="234">UnityEngine.RuleTile.GetMirroredPos</references>
+        <references refid="class_unity_engine_1_1_rule_tile_1_1_tiling_rule_1ad660a15e46af3cf952fddddab1eb2bd9" compoundref="_rule_tile_8cs" startline="17">UnityEngine.RuleTile.TilingRule.m_Neighbors</references>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_rule_tile_1ae3751c5df087537b64888416eaa3b6e1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Vector3Int</type>
+        <definition>Vector3Int UnityEngine.RuleTile.GetRotatedPos</definition>
+        <argsstring>(Vector3Int original, int rotation)</argsstring>
+        <name>GetRotatedPos</name>
+        <param>
+          <type>Vector3Int</type>
+          <declname>original</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>rotation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Rule Tile/Scripts/RuleTile.cs" line="215" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Rule Tile/Scripts/RuleTile.cs" bodystart="215" bodyend="229"/>
+        <referencedby refid="class_unity_engine_1_1_rule_tile_1a57c23abe3c5191166a3b58a9d096db5d" compoundref="_rule_tile_8cs" startline="161" endline="182">UnityEngine.RuleTile.RuleMatches</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_rule_tile_1a04c76f9027bb53879f794a6375585f61" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Vector3Int</type>
+        <definition>Vector3Int UnityEngine.RuleTile.GetMirroredPos</definition>
+        <argsstring>(Vector3Int original, bool mirrorX, bool mirrorY)</argsstring>
+        <name>GetMirroredPos</name>
+        <param>
+          <type>Vector3Int</type>
+          <declname>original</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>mirrorX</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>mirrorY</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Rule Tile/Scripts/RuleTile.cs" line="231" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Rule Tile/Scripts/RuleTile.cs" bodystart="231" bodyend="234"/>
+        <referencedby refid="class_unity_engine_1_1_rule_tile_1a8366198531c29cf1c997ae9a348e4b59" compoundref="_rule_tile_8cs" startline="184" endline="205">UnityEngine.RuleTile.RuleMatches</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_unity_engine_1_1_rule_tile_1a63d0d37db66ac7eafe8ea71d47d383ab" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>static float UnityEngine.RuleTile.GetPerlinValue</definition>
+        <argsstring>(Vector3Int position, float scale, float offset)</argsstring>
+        <name>GetPerlinValue</name>
+        <param>
+          <type>Vector3Int</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>scale</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Rule Tile/Scripts/RuleTile.cs" line="78" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Rule Tile/Scripts/RuleTile.cs" bodystart="78" bodyend="81"/>
+        <referencedby refid="class_unity_engine_1_1_rule_tile_1a8379f88ce27052c1dde683155b33205b" compoundref="_rule_tile_8cs" startline="145" endline="159">UnityEngine.RuleTile.ApplyRandomTransform</referencedby>
+        <referencedby refid="class_unity_engine_1_1_rule_tile_1aedbf83058e4543979f7a19fbf187f1a5" compoundref="_rule_tile_8cs" startline="46" endline="76">UnityEngine.RuleTile.GetTileData</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_rule_tile_1a8379f88ce27052c1dde683155b33205b" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Matrix4x4</type>
+        <definition>static Matrix4x4 UnityEngine.RuleTile.ApplyRandomTransform</definition>
+        <argsstring>(TilingRule.Transform type, Matrix4x4 original, float perlinScale, Vector3Int position)</argsstring>
+        <name>ApplyRandomTransform</name>
+        <param>
+          <type><ref refid="class_unity_engine_1_1_rule_tile_1_1_tiling_rule_1a481dc17612fba290b911e5bfcd508c32" kindref="member">TilingRule.Transform</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>Matrix4x4</type>
+          <declname>original</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>perlinScale</declname>
+        </param>
+        <param>
+          <type>Vector3Int</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Rule Tile/Scripts/RuleTile.cs" line="145" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Rule Tile/Scripts/RuleTile.cs" bodystart="145" bodyend="159"/>
+        <references refid="class_unity_engine_1_1_rule_tile_1a63d0d37db66ac7eafe8ea71d47d383ab" compoundref="_rule_tile_8cs" startline="78" endline="81">UnityEngine.RuleTile.GetPerlinValue</references>
+        <referencedby refid="class_unity_engine_1_1_rule_tile_1aedbf83058e4543979f7a19fbf187f1a5" compoundref="_rule_tile_8cs" startline="46" endline="76">UnityEngine.RuleTile.GetTileData</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_unity_engine_1_1_rule_tile_1a47f206050bb34478edd8f071dafc999e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int UnityEngine.RuleTile.GetIndexOfOffset</definition>
+        <argsstring>(Vector3Int offset)</argsstring>
+        <name>GetIndexOfOffset</name>
+        <param>
+          <type>Vector3Int</type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Rule Tile/Scripts/RuleTile.cs" line="207" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Rule Tile/Scripts/RuleTile.cs" bodystart="207" bodyend="213"/>
+        <referencedby refid="class_unity_engine_1_1_rule_tile_1a57c23abe3c5191166a3b58a9d096db5d" compoundref="_rule_tile_8cs" startline="161" endline="182">UnityEngine.RuleTile.RuleMatches</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="824">
+        <label>UnityEngine.RuleTile</label>
+        <link refid="class_unity_engine_1_1_rule_tile"/>
+        <childnode refid="825" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="825">
+        <label>TileBase</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="826">
+        <label>UnityEngine.RuleTile</label>
+        <link refid="class_unity_engine_1_1_rule_tile"/>
+        <childnode refid="827" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="827">
+        <label>TileBase</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Rule Tile/Scripts/RuleTile.cs" line="10" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Rule Tile/Scripts/RuleTile.cs" bodystart="9" bodyend="235"/>
+    <listofallmembers>
+      <member refid="class_unity_engine_1_1_rule_tile_1a8379f88ce27052c1dde683155b33205b" prot="private" virt="non-virtual"><scope>UnityEngine::RuleTile</scope><name>ApplyRandomTransform</name></member>
+      <member refid="class_unity_engine_1_1_rule_tile_1a47f206050bb34478edd8f071dafc999e" prot="private" virt="non-virtual"><scope>UnityEngine::RuleTile</scope><name>GetIndexOfOffset</name></member>
+      <member refid="class_unity_engine_1_1_rule_tile_1a04c76f9027bb53879f794a6375585f61" prot="public" virt="non-virtual"><scope>UnityEngine::RuleTile</scope><name>GetMirroredPos</name></member>
+      <member refid="class_unity_engine_1_1_rule_tile_1a63d0d37db66ac7eafe8ea71d47d383ab" prot="private" virt="non-virtual"><scope>UnityEngine::RuleTile</scope><name>GetPerlinValue</name></member>
+      <member refid="class_unity_engine_1_1_rule_tile_1ae3751c5df087537b64888416eaa3b6e1" prot="public" virt="non-virtual"><scope>UnityEngine::RuleTile</scope><name>GetRotatedPos</name></member>
+      <member refid="class_unity_engine_1_1_rule_tile_1a277e81c8de1d6618173235705e69f5f9" prot="public" virt="non-virtual"><scope>UnityEngine::RuleTile</scope><name>GetTileAnimationData</name></member>
+      <member refid="class_unity_engine_1_1_rule_tile_1aedbf83058e4543979f7a19fbf187f1a5" prot="public" virt="non-virtual"><scope>UnityEngine::RuleTile</scope><name>GetTileData</name></member>
+      <member refid="class_unity_engine_1_1_rule_tile_1aae3cd98cb97f6fea52504b60a45c0c23" prot="public" virt="non-virtual"><scope>UnityEngine::RuleTile</scope><name>m_DefaultColliderType</name></member>
+      <member refid="class_unity_engine_1_1_rule_tile_1a72deb656b40422aacac89f85660eac8b" prot="public" virt="non-virtual"><scope>UnityEngine::RuleTile</scope><name>m_DefaultSprite</name></member>
+      <member refid="class_unity_engine_1_1_rule_tile_1a86ab9602a011da6b7af0bd7cf5952596" prot="public" virt="non-virtual"><scope>UnityEngine::RuleTile</scope><name>m_TilingRules</name></member>
+      <member refid="class_unity_engine_1_1_rule_tile_1a8d9103d83e69c651d25b2fa86a26c1b1" prot="public" virt="non-virtual"><scope>UnityEngine::RuleTile</scope><name>RefreshTile</name></member>
+      <member refid="class_unity_engine_1_1_rule_tile_1adc06e1532351ac0d0d3fa358c68c39b7" prot="public" virt="non-virtual"><scope>UnityEngine::RuleTile</scope><name>RuleMatches</name></member>
+      <member refid="class_unity_engine_1_1_rule_tile_1a57c23abe3c5191166a3b58a9d096db5d" prot="public" virt="non-virtual"><scope>UnityEngine::RuleTile</scope><name>RuleMatches</name></member>
+      <member refid="class_unity_engine_1_1_rule_tile_1a8366198531c29cf1c997ae9a348e4b59" prot="public" virt="non-virtual"><scope>UnityEngine::RuleTile</scope><name>RuleMatches</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

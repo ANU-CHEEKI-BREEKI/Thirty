@@ -1,0 +1,373 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_pop_up_text_controller" kind="class" prot="public">
+    <compoundname>PopUpTextController</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+    <innerclass refid="class_pop_up_text_controller_1_1_item" prot="private">PopUpTextController::Item</innerclass>
+    <innerclass refid="struct_pop_up_text_controller_1_1_pop_up_text_properties" prot="private">PopUpTextController::PopUpTextProperties</innerclass>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_pop_up_text_controller_1a31966646a54b7fae0869d38658a55105" prot="private" static="no" mutable="no">
+        <type>GameObject[]</type>
+        <definition>GameObject [] PopUpTextController.textOrigin</definition>
+        <argsstring></argsstring>
+        <name>textOrigin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PopUpTextController.cs" line="9" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PopUpTextController.cs" bodystart="9" bodyend="-1"/>
+        <referencedby refid="class_pop_up_text_controller_1ad9decb10b89e48cddc36c41aa73b28e1" compoundref="_pop_up_text_controller_8cs" startline="109" endline="123">GetText</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_pop_up_text_controller_1afbf9bd4bdb30d908667ccc093a285b4c" prot="private" static="no" mutable="no">
+        <type>Vector2</type>
+        <definition>Vector2 PopUpTextController.floatSpeed</definition>
+        <argsstring></argsstring>
+        <name>floatSpeed</name>
+        <initializer>= new Vector2(0, 2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PopUpTextController.cs" line="12" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PopUpTextController.cs" bodystart="12" bodyend="-1"/>
+        <referencedby refid="class_pop_up_text_controller_1a1e4b45a5364c994c3db66a9f487253f0" compoundref="_pop_up_text_controller_8cs" startline="78" endline="107">AddTextLabel</referencedby>
+        <referencedby refid="struct_pop_up_text_controller_1_1_pop_up_text_properties_1a35f741d50657c3657052c29ef8ef626e" compoundref="_pop_up_text_controller_8cs" startline="150" endline="160">PopUpTextController.PopUpTextProperties.PopUpTextProperties</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_pop_up_text_controller_1af3fa144cf093ea3b8ec68106a610c0f4" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float PopUpTextController.textLifeTime</definition>
+        <argsstring></argsstring>
+        <name>textLifeTime</name>
+        <initializer>= 1f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PopUpTextController.cs" line="13" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PopUpTextController.cs" bodystart="13" bodyend="-1"/>
+        <referencedby refid="class_pop_up_text_controller_1a1e4b45a5364c994c3db66a9f487253f0" compoundref="_pop_up_text_controller_8cs" startline="78" endline="107">AddTextLabel</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_pop_up_text_controller_1a989792cc83426dd782b04fd86e269a11" prot="private" static="no" mutable="no">
+        <type>Color</type>
+        <definition>Color PopUpTextController.startColor</definition>
+        <argsstring></argsstring>
+        <name>startColor</name>
+        <initializer>= Color.green</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PopUpTextController.cs" line="14" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PopUpTextController.cs" bodystart="14" bodyend="-1"/>
+        <referencedby refid="class_pop_up_text_controller_1a1e4b45a5364c994c3db66a9f487253f0" compoundref="_pop_up_text_controller_8cs" startline="78" endline="107">AddTextLabel</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_pop_up_text_controller_1afacdbe8a02b568d1de65e48793c1aa46" prot="private" static="no" mutable="no">
+        <type>Color</type>
+        <definition>Color PopUpTextController.endColor</definition>
+        <argsstring></argsstring>
+        <name>endColor</name>
+        <initializer>= Color.red</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PopUpTextController.cs" line="15" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PopUpTextController.cs" bodystart="15" bodyend="-1"/>
+        <referencedby refid="class_pop_up_text_controller_1a1e4b45a5364c994c3db66a9f487253f0" compoundref="_pop_up_text_controller_8cs" startline="78" endline="107">AddTextLabel</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_pop_up_text_controller_1a6f272dd005475beac190f440f77161d2" prot="private" static="no" mutable="no">
+        <type>Transform</type>
+        <definition>Transform PopUpTextController.thisTransform</definition>
+        <argsstring></argsstring>
+        <name>thisTransform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PopUpTextController.cs" line="19" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PopUpTextController.cs" bodystart="19" bodyend="-1"/>
+        <referencedby refid="class_pop_up_text_controller_1a5a7fc68d8f12a1131ec1417830aa27fe" compoundref="_pop_up_text_controller_8cs" startline="25" endline="29">Awake</referencedby>
+        <referencedby refid="class_pop_up_text_controller_1ad9decb10b89e48cddc36c41aa73b28e1" compoundref="_pop_up_text_controller_8cs" startline="109" endline="123">GetText</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_pop_up_text_controller_1a6e167942bd74a1bb60e89d90fdf38f2f" prot="private" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_pop_up_text_controller_1_1_item" kindref="compound">Item</ref> &gt;</type>
+        <definition>List&lt;Item&gt; PopUpTextController.textes</definition>
+        <argsstring></argsstring>
+        <name>textes</name>
+        <initializer>= new List&lt;<ref refid="class_pop_up_text_controller_1_1_item" kindref="compound">Item</ref>&gt;(30)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PopUpTextController.cs" line="20" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PopUpTextController.cs" bodystart="20" bodyend="-1"/>
+        <referencedby refid="class_pop_up_text_controller_1a328572eb2c310dcd24e6ea6494ce0750" compoundref="_pop_up_text_controller_8cs" startline="53" endline="76">PopUpTexts</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_pop_up_text_controller_1a5a192bcd8d24e87a1bab766089f5c725" prot="private" static="no" mutable="no">
+        <type>Stack&lt; TextMeshPro &gt;</type>
+        <definition>Stack&lt;TextMeshPro&gt; PopUpTextController.pool</definition>
+        <argsstring></argsstring>
+        <name>pool</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PopUpTextController.cs" line="21" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PopUpTextController.cs" bodystart="21" bodyend="-1"/>
+        <referencedby refid="class_pop_up_text_controller_1ad9decb10b89e48cddc36c41aa73b28e1" compoundref="_pop_up_text_controller_8cs" startline="109" endline="123">GetText</referencedby>
+        <referencedby refid="class_pop_up_text_controller_1ac0e515efbed18ea3b85b5203abe8dc3e" compoundref="_pop_up_text_controller_8cs" startline="31" endline="46">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_pop_up_text_controller_1ab0e3e88dac75ea107481dfde601d6db3" prot="private" static="no" mutable="no">
+        <type>Camera</type>
+        <definition>Camera PopUpTextController.mainCamera</definition>
+        <argsstring></argsstring>
+        <name>mainCamera</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PopUpTextController.cs" line="23" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PopUpTextController.cs" bodystart="23" bodyend="-1"/>
+        <referencedby refid="class_pop_up_text_controller_1ac0e515efbed18ea3b85b5203abe8dc3e" compoundref="_pop_up_text_controller_8cs" startline="31" endline="46">Start</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_pop_up_text_controller_1acea68bc7c971abbeabb2e2ed5cef381c" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_pop_up_text_controller" kindref="compound">PopUpTextController</ref></type>
+        <definition>PopUpTextController PopUpTextController.Instance</definition>
+        <argsstring></argsstring>
+        <name>Instance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PopUpTextController.cs" line="18" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PopUpTextController.cs" bodystart="18" bodyend="-1"/>
+        <referencedby refid="class_pop_up_text_controller_1a5a7fc68d8f12a1131ec1417830aa27fe" compoundref="_pop_up_text_controller_8cs" startline="25" endline="29">Awake</referencedby>
+        <referencedby refid="class_unit_1a03d76f15a5d46dda8d06eeae656bbb76" compoundref="_unit_8cs" startline="1031" endline="1057">Unit.ShowPopUpTakenDamageText</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_pop_up_text_controller_1a5a7fc68d8f12a1131ec1417830aa27fe" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PopUpTextController.Awake</definition>
+        <argsstring>()</argsstring>
+        <name>Awake</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PopUpTextController.cs" line="25" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PopUpTextController.cs" bodystart="25" bodyend="29"/>
+        <references refid="class_pop_up_text_controller_1acea68bc7c971abbeabb2e2ed5cef381c" compoundref="_pop_up_text_controller_8cs" startline="18">Instance</references>
+        <references refid="class_pop_up_text_controller_1a6f272dd005475beac190f440f77161d2" compoundref="_pop_up_text_controller_8cs" startline="19">thisTransform</references>
+      </memberdef>
+      <memberdef kind="function" id="class_pop_up_text_controller_1ac0e515efbed18ea3b85b5203abe8dc3e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PopUpTextController.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PopUpTextController.cs" line="31" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PopUpTextController.cs" bodystart="31" bodyend="46"/>
+        <references refid="class_pop_up_text_controller_1ad9decb10b89e48cddc36c41aa73b28e1" compoundref="_pop_up_text_controller_8cs" startline="109" endline="123">GetText</references>
+        <references refid="class_pop_up_text_controller_1ae4c5567b17cce06ba3b8d8f7160ed7ae" compoundref="_pop_up_text_controller_8cs" startline="125" endline="129">GiveBackText</references>
+        <references refid="class_pop_up_text_controller_1ab0e3e88dac75ea107481dfde601d6db3" compoundref="_pop_up_text_controller_8cs" startline="23">mainCamera</references>
+        <references refid="class_pop_up_text_controller_1a5a192bcd8d24e87a1bab766089f5c725" compoundref="_pop_up_text_controller_8cs" startline="21">pool</references>
+      </memberdef>
+      <memberdef kind="function" id="class_pop_up_text_controller_1a9af81e53f128a90d21ddc73b39daa770" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PopUpTextController.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PopUpTextController.cs" line="48" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PopUpTextController.cs" bodystart="48" bodyend="51"/>
+        <references refid="class_pop_up_text_controller_1a328572eb2c310dcd24e6ea6494ce0750" compoundref="_pop_up_text_controller_8cs" startline="53" endline="76">PopUpTexts</references>
+      </memberdef>
+      <memberdef kind="function" id="class_pop_up_text_controller_1a328572eb2c310dcd24e6ea6494ce0750" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PopUpTextController.PopUpTexts</definition>
+        <argsstring>()</argsstring>
+        <name>PopUpTexts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PopUpTextController.cs" line="53" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PopUpTextController.cs" bodystart="53" bodyend="76"/>
+        <references refid="class_pop_up_text_controller_1ae4c5567b17cce06ba3b8d8f7160ed7ae" compoundref="_pop_up_text_controller_8cs" startline="125" endline="129">GiveBackText</references>
+        <references refid="class_pop_up_text_controller_1a6e167942bd74a1bb60e89d90fdf38f2f" compoundref="_pop_up_text_controller_8cs" startline="20">textes</references>
+        <referencedby refid="class_pop_up_text_controller_1a9af81e53f128a90d21ddc73b39daa770" compoundref="_pop_up_text_controller_8cs" startline="48" endline="51">Update</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_pop_up_text_controller_1a1e4b45a5364c994c3db66a9f487253f0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PopUpTextController.AddTextLabel</definition>
+        <argsstring>(string text, Vector2 worldPosition, float?lifetime=null, Vector2?screenFloatSpeed=null, Color?startColor=null, Color?endColor=null, int sortingOrder=0, float?fontSize=null)</argsstring>
+        <name>AddTextLabel</name>
+        <param>
+          <type>string</type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type>Vector2</type>
+          <declname>worldPosition</declname>
+        </param>
+        <param>
+          <type>float?</type>
+          <declname>lifetime</declname>
+          <defval>null</defval>
+        </param>
+        <param>
+          <type>Vector2?</type>
+          <declname>screenFloatSpeed</declname>
+          <defval>null</defval>
+        </param>
+        <param>
+          <type>Color?</type>
+          <declname>startColor</declname>
+          <defval>null</defval>
+        </param>
+        <param>
+          <type>Color?</type>
+          <declname>endColor</declname>
+          <defval>null</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sortingOrder</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>float?</type>
+          <declname>fontSize</declname>
+          <defval>null</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PopUpTextController.cs" line="78" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PopUpTextController.cs" bodystart="78" bodyend="107"/>
+        <references refid="class_pop_up_text_controller_1afacdbe8a02b568d1de65e48793c1aa46" compoundref="_pop_up_text_controller_8cs" startline="15">endColor</references>
+        <references refid="class_pop_up_text_controller_1afbf9bd4bdb30d908667ccc093a285b4c" compoundref="_pop_up_text_controller_8cs" startline="12">floatSpeed</references>
+        <references refid="class_pop_up_text_controller_1ad9decb10b89e48cddc36c41aa73b28e1" compoundref="_pop_up_text_controller_8cs" startline="109" endline="123">GetText</references>
+        <references refid="class_pop_up_text_controller_1a989792cc83426dd782b04fd86e269a11" compoundref="_pop_up_text_controller_8cs" startline="14">startColor</references>
+        <references refid="class_pop_up_text_controller_1af3fa144cf093ea3b8ec68106a610c0f4" compoundref="_pop_up_text_controller_8cs" startline="13">textLifeTime</references>
+        <referencedby refid="class_unit_1a03d76f15a5d46dda8d06eeae656bbb76" compoundref="_unit_8cs" startline="1031" endline="1057">Unit.ShowPopUpTakenDamageText</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_pop_up_text_controller_1ad9decb10b89e48cddc36c41aa73b28e1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>TextMeshPro</type>
+        <definition>TextMeshPro PopUpTextController.GetText</definition>
+        <argsstring>(int index=0)</argsstring>
+        <name>GetText</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PopUpTextController.cs" line="109" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PopUpTextController.cs" bodystart="109" bodyend="123"/>
+        <references refid="class_pop_up_text_controller_1a5a192bcd8d24e87a1bab766089f5c725" compoundref="_pop_up_text_controller_8cs" startline="21">pool</references>
+        <references refid="class_pop_up_text_controller_1a31966646a54b7fae0869d38658a55105" compoundref="_pop_up_text_controller_8cs" startline="9">textOrigin</references>
+        <references refid="class_pop_up_text_controller_1a6f272dd005475beac190f440f77161d2" compoundref="_pop_up_text_controller_8cs" startline="19">thisTransform</references>
+        <referencedby refid="class_pop_up_text_controller_1a1e4b45a5364c994c3db66a9f487253f0" compoundref="_pop_up_text_controller_8cs" startline="78" endline="107">AddTextLabel</referencedby>
+        <referencedby refid="class_pop_up_text_controller_1ac0e515efbed18ea3b85b5203abe8dc3e" compoundref="_pop_up_text_controller_8cs" startline="31" endline="46">Start</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_pop_up_text_controller_1ae4c5567b17cce06ba3b8d8f7160ed7ae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PopUpTextController.GiveBackText</definition>
+        <argsstring>(TextMeshPro text)</argsstring>
+        <name>GiveBackText</name>
+        <param>
+          <type>TextMeshPro</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PopUpTextController.cs" line="125" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PopUpTextController.cs" bodystart="125" bodyend="129"/>
+        <referencedby refid="class_pop_up_text_controller_1a328572eb2c310dcd24e6ea6494ce0750" compoundref="_pop_up_text_controller_8cs" startline="53" endline="76">PopUpTexts</referencedby>
+        <referencedby refid="class_pop_up_text_controller_1ac0e515efbed18ea3b85b5203abe8dc3e" compoundref="_pop_up_text_controller_8cs" startline="31" endline="46">Start</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="797">
+        <label>PopUpTextController</label>
+        <link refid="class_pop_up_text_controller"/>
+        <childnode refid="798" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="798">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="799">
+        <label>PopUpTextController</label>
+        <link refid="class_pop_up_text_controller"/>
+        <childnode refid="800" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="800">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PopUpTextController.cs" line="8" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PopUpTextController.cs" bodystart="7" bodyend="169"/>
+    <listofallmembers>
+      <member refid="class_pop_up_text_controller_1a1e4b45a5364c994c3db66a9f487253f0" prot="public" virt="non-virtual"><scope>PopUpTextController</scope><name>AddTextLabel</name></member>
+      <member refid="class_pop_up_text_controller_1a5a7fc68d8f12a1131ec1417830aa27fe" prot="private" virt="non-virtual"><scope>PopUpTextController</scope><name>Awake</name></member>
+      <member refid="class_pop_up_text_controller_1afacdbe8a02b568d1de65e48793c1aa46" prot="private" virt="non-virtual"><scope>PopUpTextController</scope><name>endColor</name></member>
+      <member refid="class_pop_up_text_controller_1afbf9bd4bdb30d908667ccc093a285b4c" prot="private" virt="non-virtual"><scope>PopUpTextController</scope><name>floatSpeed</name></member>
+      <member refid="class_pop_up_text_controller_1ad9decb10b89e48cddc36c41aa73b28e1" prot="public" virt="non-virtual"><scope>PopUpTextController</scope><name>GetText</name></member>
+      <member refid="class_pop_up_text_controller_1ae4c5567b17cce06ba3b8d8f7160ed7ae" prot="public" virt="non-virtual"><scope>PopUpTextController</scope><name>GiveBackText</name></member>
+      <member refid="class_pop_up_text_controller_1acea68bc7c971abbeabb2e2ed5cef381c" prot="public" virt="non-virtual"><scope>PopUpTextController</scope><name>Instance</name></member>
+      <member refid="class_pop_up_text_controller_1ab0e3e88dac75ea107481dfde601d6db3" prot="private" virt="non-virtual"><scope>PopUpTextController</scope><name>mainCamera</name></member>
+      <member refid="class_pop_up_text_controller_1a5a192bcd8d24e87a1bab766089f5c725" prot="private" virt="non-virtual"><scope>PopUpTextController</scope><name>pool</name></member>
+      <member refid="class_pop_up_text_controller_1a328572eb2c310dcd24e6ea6494ce0750" prot="private" virt="non-virtual"><scope>PopUpTextController</scope><name>PopUpTexts</name></member>
+      <member refid="class_pop_up_text_controller_1ac0e515efbed18ea3b85b5203abe8dc3e" prot="private" virt="non-virtual"><scope>PopUpTextController</scope><name>Start</name></member>
+      <member refid="class_pop_up_text_controller_1a989792cc83426dd782b04fd86e269a11" prot="private" virt="non-virtual"><scope>PopUpTextController</scope><name>startColor</name></member>
+      <member refid="class_pop_up_text_controller_1a6e167942bd74a1bb60e89d90fdf38f2f" prot="private" virt="non-virtual"><scope>PopUpTextController</scope><name>textes</name></member>
+      <member refid="class_pop_up_text_controller_1af3fa144cf093ea3b8ec68106a610c0f4" prot="private" virt="non-virtual"><scope>PopUpTextController</scope><name>textLifeTime</name></member>
+      <member refid="class_pop_up_text_controller_1a31966646a54b7fae0869d38658a55105" prot="private" virt="non-virtual"><scope>PopUpTextController</scope><name>textOrigin</name></member>
+      <member refid="class_pop_up_text_controller_1a6f272dd005475beac190f440f77161d2" prot="private" virt="non-virtual"><scope>PopUpTextController</scope><name>thisTransform</name></member>
+      <member refid="class_pop_up_text_controller_1a9af81e53f128a90d21ddc73b39daa770" prot="private" virt="non-virtual"><scope>PopUpTextController</scope><name>Update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

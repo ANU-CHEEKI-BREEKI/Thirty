@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_a3a8cc25849ccac28e224934504e11c1" kind="dir">
+    <compoundname>D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses</compoundname>
+    <innerdir refid="dir_cda74075fbd421f927123c5af3eea36b">D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress</innerdir>
+    <innerfile refid="_audio_settings_8cs">AudioSettings.cs</innerfile>
+    <innerfile refid="_common_settings_8cs">CommonSettings.cs</innerfile>
+    <innerfile refid="_graphix_settings_8cs">GraphixSettings.cs</innerfile>
+    <innerfile refid="_i_saveble_8cs">ISaveble.cs</innerfile>
+    <innerfile refid="_player_progress_8cs">PlayerProgress.cs</innerfile>
+    <innerfile refid="_settings_8cs">Settings.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_pop_up_text_controller_1_1_item" kind="class" prot="private">
+    <compoundname>PopUpTextController::Item</compoundname>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_pop_up_text_controller_1_1_item_1aff3d57f1b48927b99cad11ff7a82e621" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="struct_pop_up_text_controller_1_1_pop_up_text_properties" kindref="compound">PopUpTextProperties</ref></type>
+        <definition>PopUpTextProperties PopUpTextController.Item.properties</definition>
+        <argsstring></argsstring>
+        <name>properties</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PopUpTextController.cs" line="166" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PopUpTextController.cs" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_pop_up_text_controller_1_1_item_1ad472f68428dd0cfe3c8f6a3afdf5ad21" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>TextMeshPro</type>
+        <definition>TextMeshPro PopUpTextController.Item.textUI</definition>
+        <argsstring></argsstring>
+        <name>textUI</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PopUpTextController.cs" line="167" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PopUpTextController.cs" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PopUpTextController.cs" line="165" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PopUpTextController.cs" bodystart="164" bodyend="168"/>
+    <listofallmembers>
+      <member refid="class_pop_up_text_controller_1_1_item_1aff3d57f1b48927b99cad11ff7a82e621" prot="public" virt="non-virtual"><scope>PopUpTextController::Item</scope><name>properties</name></member>
+      <member refid="class_pop_up_text_controller_1_1_item_1ad472f68428dd0cfe3c8f6a3afdf5ad21" prot="public" virt="non-virtual"><scope>PopUpTextController::Item</scope><name>textUI</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

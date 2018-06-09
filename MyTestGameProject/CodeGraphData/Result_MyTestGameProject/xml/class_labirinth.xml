@@ -1,0 +1,324 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_labirinth" kind="class" prot="public">
+    <compoundname>Labirinth</compoundname>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_labirinth_1aae4c4842e219553c1cc52e0ce37d1180" prot="private" static="yes" mutable="no">
+        <type>System.Random</type>
+        <definition>System.Random Labirinth.rnd</definition>
+        <argsstring></argsstring>
+        <name>rnd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Labirinth.cs" line="9" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Labirinth.cs" bodystart="9" bodyend="-1"/>
+        <referencedby refid="class_labirinth_1a9cdb2b485b853a35a434119f18450a71" compoundref="_labirinth_8cs" startline="18" endline="149">CreateLabirinth</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_labirinth_1a7fbdded29abb022cac83159a71c50940" prot="private" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int Labirinth.labirintHeight</definition>
+        <argsstring></argsstring>
+        <name>labirintHeight</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Labirinth.cs" line="10" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Labirinth.cs" bodystart="10" bodyend="-1"/>
+        <referencedby refid="class_labirinth_1a8fea9544fe56dac34e1d94eadd751c64" compoundref="_labirinth_8cs" startline="354" endline="390">CreateLabirinthPathMatrix</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_labirinth_1a63b65f1f02f7d70fd6cd7806ac44413e" prot="private" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int Labirinth.labirintWindth</definition>
+        <argsstring></argsstring>
+        <name>labirintWindth</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Labirinth.cs" line="11" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Labirinth.cs" bodystart="11" bodyend="-1"/>
+        <referencedby refid="class_labirinth_1a8fea9544fe56dac34e1d94eadd751c64" compoundref="_labirinth_8cs" startline="354" endline="390">CreateLabirinthPathMatrix</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_labirinth_1a1141876cfa73082b69774d924fc87d81" prot="private" static="yes" mutable="no">
+        <type>float[][]</type>
+        <definition>float [][] Labirinth.pathMatrix</definition>
+        <argsstring></argsstring>
+        <name>pathMatrix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Labirinth.cs" line="13" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Labirinth.cs" bodystart="13" bodyend="-1"/>
+        <referencedby refid="class_labirinth_1a8fea9544fe56dac34e1d94eadd751c64" compoundref="_labirinth_8cs" startline="354" endline="390">CreateLabirinthPathMatrix</referencedby>
+        <referencedby refid="class_labirinth_1aa1ecfdc951a66da6a1038e2987c04e7f" compoundref="_labirinth_8cs" startline="159" endline="352">FindPathLee</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_labirinth_1afc4b13a394960198cf5955065ac08a06" prot="private" static="yes" mutable="no">
+        <type>List&lt; Vector2 &gt;</type>
+        <definition>List&lt;Vector2&gt; Labirinth.oldLabelCell</definition>
+        <argsstring></argsstring>
+        <name>oldLabelCell</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Labirinth.cs" line="14" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Labirinth.cs" bodystart="14" bodyend="-1"/>
+        <referencedby refid="class_labirinth_1a8fea9544fe56dac34e1d94eadd751c64" compoundref="_labirinth_8cs" startline="354" endline="390">CreateLabirinthPathMatrix</referencedby>
+        <referencedby refid="class_labirinth_1aa1ecfdc951a66da6a1038e2987c04e7f" compoundref="_labirinth_8cs" startline="159" endline="352">FindPathLee</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_labirinth_1a3711f2207813a87fdc164b10c58190f0" prot="private" static="yes" mutable="no">
+        <type>List&lt; Vector2 &gt;</type>
+        <definition>List&lt;Vector2&gt; Labirinth.newLabelCell</definition>
+        <argsstring></argsstring>
+        <name>newLabelCell</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Labirinth.cs" line="15" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Labirinth.cs" bodystart="15" bodyend="-1"/>
+        <referencedby refid="class_labirinth_1a8fea9544fe56dac34e1d94eadd751c64" compoundref="_labirinth_8cs" startline="354" endline="390">CreateLabirinthPathMatrix</referencedby>
+        <referencedby refid="class_labirinth_1aa1ecfdc951a66da6a1038e2987c04e7f" compoundref="_labirinth_8cs" startline="159" endline="352">FindPathLee</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_labirinth_1ad496b88ec06a10f246b06120f6fcbf81" prot="private" static="yes" mutable="no">
+        <type>List&lt; Vector2 &gt;</type>
+        <definition>List&lt;Vector2&gt; Labirinth.tempList</definition>
+        <argsstring></argsstring>
+        <name>tempList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Labirinth.cs" line="16" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Labirinth.cs" bodystart="16" bodyend="-1"/>
+        <referencedby refid="class_labirinth_1a8fea9544fe56dac34e1d94eadd751c64" compoundref="_labirinth_8cs" startline="354" endline="390">CreateLabirinthPathMatrix</referencedby>
+        <referencedby refid="class_labirinth_1aa1ecfdc951a66da6a1038e2987c04e7f" compoundref="_labirinth_8cs" startline="159" endline="352">FindPathLee</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_labirinth_1a9cdb2b485b853a35a434119f18450a71" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Labirinth.CreateLabirinth</definition>
+        <argsstring>(int width, int height, out bool[][] rightWalls, out bool[][] bottomWalls, int?seed, float rightWallsChanse, float bottomWallsChanse, bool willHaveLoops)</argsstring>
+        <name>CreateLabirinth</name>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>out bool</type>
+          <declname>rightWalls</declname>
+          <array>[][]</array>
+        </param>
+        <param>
+          <type>out bool</type>
+          <declname>bottomWalls</declname>
+          <array>[][]</array>
+        </param>
+        <param>
+          <type>int?</type>
+          <declname>seed</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>rightWallsChanse</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>bottomWallsChanse</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>willHaveLoops</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Labirinth.cs" line="18" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Labirinth.cs" bodystart="18" bodyend="149"/>
+        <references refid="class_labirinth_1aae4c4842e219553c1cc52e0ce37d1180" compoundref="_labirinth_8cs" startline="9">rnd</references>
+      </memberdef>
+      <memberdef kind="function" id="class_labirinth_1aa1ecfdc951a66da6a1038e2987c04e7f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; Vector3 &gt;</type>
+        <definition>static List&lt;Vector3&gt; Labirinth.FindPathLee</definition>
+        <argsstring>(bool[][] labirinth, Vector2 start, Vector2 finish, int scale)</argsstring>
+        <name>FindPathLee</name>
+        <param>
+          <type>bool</type>
+          <declname>labirinth</declname>
+          <array>[][]</array>
+        </param>
+        <param>
+          <type>Vector2</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>Vector2</type>
+          <declname>finish</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>scale</declname>
+        </param>
+        <briefdescription>
+<para>Поиск пути в лабиринте из ячейки start к ячейке finish. Алгоритм поиска - волновой (Алгоритм Ли) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>labirinth</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Матрица проходимости, где true - если ячейка занята и пройти нельзя, false - ячейка пустая и пройти можно</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>start</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Интексы ячейки с которой начинается путь. x - столбец, y - строка</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>finish</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Индексы ячейки к торорой нужно найти путь. x - столбец, y - строка</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>scale</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Масштаб, к которому нужно привести полученный координаты</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>один из искомых путей. null - если пути нет</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Labirinth.cs" line="159" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Labirinth.cs" bodystart="159" bodyend="352"/>
+        <references refid="class_labirinth_1a8fea9544fe56dac34e1d94eadd751c64" compoundref="_labirinth_8cs" startline="354" endline="390">CreateLabirinthPathMatrix</references>
+        <references refid="class_labirinth_1a3711f2207813a87fdc164b10c58190f0" compoundref="_labirinth_8cs" startline="15">newLabelCell</references>
+        <references refid="class_labirinth_1afc4b13a394960198cf5955065ac08a06" compoundref="_labirinth_8cs" startline="14">oldLabelCell</references>
+        <references refid="class_labirinth_1ae49d60cf5f1fd05eb18fea430c348393" compoundref="_labirinth_8cs" startline="398" endline="445">pathLeeExistNearWall</references>
+        <references refid="class_labirinth_1a1141876cfa73082b69774d924fc87d81" compoundref="_labirinth_8cs" startline="13">pathMatrix</references>
+        <references refid="class_labirinth_1ad496b88ec06a10f246b06120f6fcbf81" compoundref="_labirinth_8cs" startline="16">tempList</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_labirinth_1a8fea9544fe56dac34e1d94eadd751c64" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Labirinth.CreateLabirinthPathMatrix</definition>
+        <argsstring>(bool[][] labirinth)</argsstring>
+        <name>CreateLabirinthPathMatrix</name>
+        <param>
+          <type>bool</type>
+          <declname>labirinth</declname>
+          <array>[][]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Labirinth.cs" line="354" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Labirinth.cs" bodystart="354" bodyend="390"/>
+        <references refid="class_labirinth_1a7fbdded29abb022cac83159a71c50940" compoundref="_labirinth_8cs" startline="10">labirintHeight</references>
+        <references refid="class_labirinth_1a63b65f1f02f7d70fd6cd7806ac44413e" compoundref="_labirinth_8cs" startline="11">labirintWindth</references>
+        <references refid="class_labirinth_1a3711f2207813a87fdc164b10c58190f0" compoundref="_labirinth_8cs" startline="15">newLabelCell</references>
+        <references refid="class_labirinth_1afc4b13a394960198cf5955065ac08a06" compoundref="_labirinth_8cs" startline="14">oldLabelCell</references>
+        <references refid="class_labirinth_1a1141876cfa73082b69774d924fc87d81" compoundref="_labirinth_8cs" startline="13">pathMatrix</references>
+        <references refid="class_labirinth_1ad496b88ec06a10f246b06120f6fcbf81" compoundref="_labirinth_8cs" startline="16">tempList</references>
+        <referencedby refid="class_labirinth_1aa1ecfdc951a66da6a1038e2987c04e7f" compoundref="_labirinth_8cs" startline="159" endline="352">FindPathLee</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_labirinth_1ae49d60cf5f1fd05eb18fea430c348393" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Labirinth.pathLeeExistNearWall</definition>
+        <argsstring>(bool[][] labirinth, Vector2 target)</argsstring>
+        <name>pathLeeExistNearWall</name>
+        <param>
+          <type>bool</type>
+          <declname>labirinth</declname>
+          <array>[][]</array>
+        </param>
+        <param>
+          <type>Vector2</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+<para>Проверка есть ли возле передаваемой ячейки стена. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>labirinth</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Матрица проходимости, где true - если ячейка занята и пройти нельзя, false - ячейка пустая и пройти можно</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Интексы проверяемой ячейки. x - столбец, y - строка</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Labirinth.cs" line="398" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Labirinth.cs" bodystart="398" bodyend="445"/>
+        <referencedby refid="class_labirinth_1aa1ecfdc951a66da6a1038e2987c04e7f" compoundref="_labirinth_8cs" startline="159" endline="352">FindPathLee</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="556">
+        <label>Labirinth</label>
+        <link refid="class_labirinth"/>
+        <childnode refid="557" relation="usage">
+          <edgelabel>rnd</edgelabel>
+        </childnode>
+      </node>
+      <node id="557">
+        <label>System</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Labirinth.cs" line="7" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Labirinth.cs" bodystart="6" bodyend="447"/>
+    <listofallmembers>
+      <member refid="class_labirinth_1a9cdb2b485b853a35a434119f18450a71" prot="public" virt="non-virtual"><scope>Labirinth</scope><name>CreateLabirinth</name></member>
+      <member refid="class_labirinth_1a8fea9544fe56dac34e1d94eadd751c64" prot="private" virt="non-virtual"><scope>Labirinth</scope><name>CreateLabirinthPathMatrix</name></member>
+      <member refid="class_labirinth_1aa1ecfdc951a66da6a1038e2987c04e7f" prot="public" virt="non-virtual"><scope>Labirinth</scope><name>FindPathLee</name></member>
+      <member refid="class_labirinth_1a7fbdded29abb022cac83159a71c50940" prot="private" virt="non-virtual"><scope>Labirinth</scope><name>labirintHeight</name></member>
+      <member refid="class_labirinth_1a63b65f1f02f7d70fd6cd7806ac44413e" prot="private" virt="non-virtual"><scope>Labirinth</scope><name>labirintWindth</name></member>
+      <member refid="class_labirinth_1a3711f2207813a87fdc164b10c58190f0" prot="private" virt="non-virtual"><scope>Labirinth</scope><name>newLabelCell</name></member>
+      <member refid="class_labirinth_1afc4b13a394960198cf5955065ac08a06" prot="private" virt="non-virtual"><scope>Labirinth</scope><name>oldLabelCell</name></member>
+      <member refid="class_labirinth_1ae49d60cf5f1fd05eb18fea430c348393" prot="private" virt="non-virtual"><scope>Labirinth</scope><name>pathLeeExistNearWall</name></member>
+      <member refid="class_labirinth_1a1141876cfa73082b69774d924fc87d81" prot="private" virt="non-virtual"><scope>Labirinth</scope><name>pathMatrix</name></member>
+      <member refid="class_labirinth_1aae4c4842e219553c1cc52e0ce37d1180" prot="private" virt="non-virtual"><scope>Labirinth</scope><name>rnd</name></member>
+      <member refid="class_labirinth_1ad496b88ec06a10f246b06120f6fcbf81" prot="private" virt="non-virtual"><scope>Labirinth</scope><name>tempList</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,187 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_u_i_line_connector" kind="class" prot="public">
+    <compoundname>UILineConnector</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_u_i_line_connector_1a924d12c3995fc2e2480985555b9d1655" prot="private" static="no" mutable="no">
+        <type><ref refid="class_u_i_line_renderer" kindref="compound">UILineRenderer</ref></type>
+        <definition>UILineRenderer UILineConnector.line</definition>
+        <argsstring></argsstring>
+        <name>line</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/UILineConnector.cs" line="8" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/UILineConnector.cs" bodystart="8" bodyend="-1"/>
+        <referencedby refid="class_u_i_line_connector_1a1b1e93df097156bf4da5234823c3b1b9" compoundref="_u_i_line_connector_8cs" startline="46" endline="80">DrawLine</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_i_line_connector_1afded4a5825c95d6f5b302ad6ff193ec0" prot="private" static="no" mutable="no">
+        <type>Color</type>
+        <definition>Color UILineConnector.enabledColor</definition>
+        <argsstring></argsstring>
+        <name>enabledColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/UILineConnector.cs" line="9" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/UILineConnector.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_i_line_connector_1a4caa9ce46de44d5ebe737b5eaddd3e58" prot="private" static="no" mutable="no">
+        <type>Color</type>
+        <definition>Color UILineConnector.disabledColor</definition>
+        <argsstring></argsstring>
+        <name>disabledColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/UILineConnector.cs" line="10" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/UILineConnector.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_i_line_connector_1a187668e648d3cdc6f18f6dcbedfa6ed2" prot="private" static="no" mutable="no">
+        <type>Transform</type>
+        <definition>Transform UILineConnector.prevObj</definition>
+        <argsstring></argsstring>
+        <name>prevObj</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/UILineConnector.cs" line="12" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/UILineConnector.cs" bodystart="12" bodyend="-1"/>
+        <referencedby refid="class_u_i_line_connector_1a1b1e93df097156bf4da5234823c3b1b9" compoundref="_u_i_line_connector_8cs" startline="46" endline="80">DrawLine</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_i_line_connector_1a33ec8ab03aa6861292ef2124ed8c6ccd" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool UILineConnector.enabled</definition>
+        <argsstring></argsstring>
+        <name>enabled</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/UILineConnector.cs" line="29" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/UILineConnector.cs" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_u_i_line_connector_1abe9183804ee48e21bd52e5c301f4bbe7" prot="public" static="no" readable="no" writable="no" gettable="no" settable="yes">
+        <type>Transform</type>
+        <definition>Transform UILineConnector.PrevObj</definition>
+        <argsstring></argsstring>
+        <name>PrevObj</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/UILineConnector.cs" line="13" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/UILineConnector.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_u_i_line_connector_1aca8eee7c97ac8d072b2d3e8cf37e388e" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>bool</type>
+        <definition>bool UILineConnector.Enabled</definition>
+        <argsstring></argsstring>
+        <name>Enabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/UILineConnector.cs" line="30" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/UILineConnector.cs" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_u_i_line_connector_1ae128665b3c8545e36cb6b1d7d255784e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UILineConnector.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/UILineConnector.cs" line="15" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/UILineConnector.cs" bodystart="15" bodyend="18"/>
+        <references refid="class_u_i_line_connector_1a1b1e93df097156bf4da5234823c3b1b9" compoundref="_u_i_line_connector_8cs" startline="46" endline="80">DrawLine</references>
+      </memberdef>
+      <memberdef kind="function" id="class_u_i_line_connector_1a1b1e93df097156bf4da5234823c3b1b9" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UILineConnector.DrawLine</definition>
+        <argsstring>()</argsstring>
+        <name>DrawLine</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/UILineConnector.cs" line="46" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/UILineConnector.cs" bodystart="46" bodyend="80"/>
+        <references refid="class_u_i_line_connector_1a924d12c3995fc2e2480985555b9d1655" compoundref="_u_i_line_connector_8cs" startline="8">line</references>
+        <references refid="class_u_i_line_connector_1a187668e648d3cdc6f18f6dcbedfa6ed2" compoundref="_u_i_line_connector_8cs" startline="12">prevObj</references>
+        <referencedby refid="class_u_i_line_connector_1ae128665b3c8545e36cb6b1d7d255784e" compoundref="_u_i_line_connector_8cs" startline="15" endline="18">Start</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1197">
+        <label>UILineConnector</label>
+        <link refid="class_u_i_line_connector"/>
+        <childnode refid="1198" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1198">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1202">
+        <label>MaskableGraphic</label>
+      </node>
+      <node id="1199">
+        <label>UILineConnector</label>
+        <link refid="class_u_i_line_connector"/>
+        <childnode refid="1200" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1201" relation="usage">
+          <edgelabel>line</edgelabel>
+        </childnode>
+      </node>
+      <node id="1200">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1201">
+        <label>UILineRenderer</label>
+        <link refid="class_u_i_line_renderer"/>
+        <childnode refid="1202" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/UILineConnector.cs" line="7" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/UILineConnector.cs" bodystart="6" bodyend="81"/>
+    <listofallmembers>
+      <member refid="class_u_i_line_connector_1a4caa9ce46de44d5ebe737b5eaddd3e58" prot="private" virt="non-virtual"><scope>UILineConnector</scope><name>disabledColor</name></member>
+      <member refid="class_u_i_line_connector_1a1b1e93df097156bf4da5234823c3b1b9" prot="private" virt="non-virtual"><scope>UILineConnector</scope><name>DrawLine</name></member>
+      <member refid="class_u_i_line_connector_1a33ec8ab03aa6861292ef2124ed8c6ccd" prot="private" virt="non-virtual"><scope>UILineConnector</scope><name>enabled</name></member>
+      <member refid="class_u_i_line_connector_1aca8eee7c97ac8d072b2d3e8cf37e388e" prot="public" virt="non-virtual"><scope>UILineConnector</scope><name>Enabled</name></member>
+      <member refid="class_u_i_line_connector_1afded4a5825c95d6f5b302ad6ff193ec0" prot="private" virt="non-virtual"><scope>UILineConnector</scope><name>enabledColor</name></member>
+      <member refid="class_u_i_line_connector_1a924d12c3995fc2e2480985555b9d1655" prot="private" virt="non-virtual"><scope>UILineConnector</scope><name>line</name></member>
+      <member refid="class_u_i_line_connector_1a187668e648d3cdc6f18f6dcbedfa6ed2" prot="private" virt="non-virtual"><scope>UILineConnector</scope><name>prevObj</name></member>
+      <member refid="class_u_i_line_connector_1abe9183804ee48e21bd52e5c301f4bbe7" prot="public" virt="non-virtual"><scope>UILineConnector</scope><name>PrevObj</name></member>
+      <member refid="class_u_i_line_connector_1ae128665b3c8545e36cb6b1d7d255784e" prot="private" virt="non-virtual"><scope>UILineConnector</scope><name>Start</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

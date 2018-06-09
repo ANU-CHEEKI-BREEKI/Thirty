@@ -1,0 +1,183 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_dialog_box_1_1_dialog_data" kind="class" prot="private">
+    <compoundname>DialogBox::DialogData</compoundname>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_dialog_box_1_1_dialog_data_1a557a4b367328fc8218885b56bad8598b" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>Sprite</type>
+        <definition>Sprite DialogBox.DialogData.Icon</definition>
+        <argsstring></argsstring>
+        <name>Icon</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" line="21" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" bodystart="21" bodyend="-1"/>
+        <referencedby refid="class_dialog_box_1afa16758c02722fdd335091e0f5f58a54" compoundref="_dialog_box_8cs" startline="107" endline="207">DialogBox.Show</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_dialog_box_1_1_dialog_data_1ac7499cfb320e9498acbfa8c6d09518a4" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string DialogBox.DialogData.Title</definition>
+        <argsstring></argsstring>
+        <name>Title</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" line="22" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" bodystart="22" bodyend="-1"/>
+        <referencedby refid="class_dialog_box_1afa16758c02722fdd335091e0f5f58a54" compoundref="_dialog_box_8cs" startline="107" endline="207">DialogBox.Show</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_dialog_box_1_1_dialog_data_1af932569973f145204a83c77300b41a7c" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string DialogBox.DialogData.Text</definition>
+        <argsstring></argsstring>
+        <name>Text</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" line="23" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" bodystart="23" bodyend="-1"/>
+        <referencedby refid="class_dialog_box_1afa16758c02722fdd335091e0f5f58a54" compoundref="_dialog_box_8cs" startline="107" endline="207">DialogBox.Show</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_dialog_box_1_1_dialog_data_1ae15afaf8c1cc7a4abea24d989339e342" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>bool</type>
+        <definition>bool DialogBox.DialogData.IsTextScrolable</definition>
+        <argsstring></argsstring>
+        <name>IsTextScrolable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" line="24" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" bodystart="24" bodyend="-1"/>
+        <referencedby refid="class_dialog_box_1afa16758c02722fdd335091e0f5f58a54" compoundref="_dialog_box_8cs" startline="107" endline="207">DialogBox.Show</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_dialog_box_1_1_dialog_data_1aa7a5c76cc811ccd4a03d8e7db7b23940" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>List&lt; <ref refid="class_dialog_box_1_1_button_data" kindref="compound">ButtonData</ref> &gt;</type>
+        <definition>List&lt;ButtonData&gt; DialogBox.DialogData.ButtonsData</definition>
+        <argsstring></argsstring>
+        <name>ButtonsData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" line="25" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" bodystart="25" bodyend="-1"/>
+        <referencedby refid="class_dialog_box_1_1_dialog_data_1aa5050694ff34b4e9afa2ce919aa94649" compoundref="_dialog_box_8cs" startline="34" endline="37">DialogBox.DialogData.DialogData</referencedby>
+        <referencedby refid="class_dialog_box_1afa16758c02722fdd335091e0f5f58a54" compoundref="_dialog_box_8cs" startline="107" endline="207">DialogBox.Show</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_dialog_box_1_1_dialog_data_1ac1a154ddeb9966bc6c46ea676dc2b6ac" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>Color</type>
+        <definition>Color DialogBox.DialogData.TitleColor</definition>
+        <argsstring></argsstring>
+        <name>TitleColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" line="27" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" bodystart="27" bodyend="-1"/>
+        <referencedby refid="class_dialog_box_1afa16758c02722fdd335091e0f5f58a54" compoundref="_dialog_box_8cs" startline="107" endline="207">DialogBox.Show</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_dialog_box_1_1_dialog_data_1acddfdf4aea87a756bd21826ab2f1c173" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>Color</type>
+        <definition>Color DialogBox.DialogData.TextColor</definition>
+        <argsstring></argsstring>
+        <name>TextColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" line="28" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" bodystart="28" bodyend="-1"/>
+        <referencedby refid="class_dialog_box_1afa16758c02722fdd335091e0f5f58a54" compoundref="_dialog_box_8cs" startline="107" endline="207">DialogBox.Show</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_dialog_box_1_1_dialog_data_1a70dc6482308874a42822ffc809449517" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>float</type>
+        <definition>float DialogBox.DialogData.PrefButtonHeight</definition>
+        <argsstring></argsstring>
+        <name>PrefButtonHeight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" line="29" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" bodystart="29" bodyend="-1"/>
+        <referencedby refid="class_dialog_box_1afa16758c02722fdd335091e0f5f58a54" compoundref="_dialog_box_8cs" startline="107" endline="207">DialogBox.Show</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_dialog_box_1_1_dialog_data_1ac7fab6b3609bc73b08925b8acb484a58" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>float</type>
+        <definition>float DialogBox.DialogData.Wifth</definition>
+        <argsstring></argsstring>
+        <name>Wifth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" line="31" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" bodystart="31" bodyend="-1"/>
+        <referencedby refid="class_dialog_box_1afa16758c02722fdd335091e0f5f58a54" compoundref="_dialog_box_8cs" startline="107" endline="207">DialogBox.Show</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_dialog_box_1_1_dialog_data_1ae8cc979f128013e77c4915d5f12f3036" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>float</type>
+        <definition>float DialogBox.DialogData.Height</definition>
+        <argsstring></argsstring>
+        <name>Height</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" line="32" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" bodystart="32" bodyend="-1"/>
+        <referencedby refid="class_dialog_box_1afa16758c02722fdd335091e0f5f58a54" compoundref="_dialog_box_8cs" startline="107" endline="207">DialogBox.Show</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_dialog_box_1_1_dialog_data_1aa5050694ff34b4e9afa2ce919aa94649" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>DialogBox.DialogData.DialogData</definition>
+        <argsstring>()</argsstring>
+        <name>DialogData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" line="34" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" bodystart="34" bodyend="37"/>
+        <references refid="class_dialog_box_1_1_dialog_data_1aa7a5c76cc811ccd4a03d8e7db7b23940" compoundref="_dialog_box_8cs" startline="25">DialogBox.DialogData.ButtonsData</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" line="20" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" bodystart="19" bodyend="38"/>
+    <listofallmembers>
+      <member refid="class_dialog_box_1_1_dialog_data_1aa7a5c76cc811ccd4a03d8e7db7b23940" prot="public" virt="non-virtual"><scope>DialogBox::DialogData</scope><name>ButtonsData</name></member>
+      <member refid="class_dialog_box_1_1_dialog_data_1aa5050694ff34b4e9afa2ce919aa94649" prot="public" virt="non-virtual"><scope>DialogBox::DialogData</scope><name>DialogData</name></member>
+      <member refid="class_dialog_box_1_1_dialog_data_1ae8cc979f128013e77c4915d5f12f3036" prot="public" virt="non-virtual"><scope>DialogBox::DialogData</scope><name>Height</name></member>
+      <member refid="class_dialog_box_1_1_dialog_data_1a557a4b367328fc8218885b56bad8598b" prot="public" virt="non-virtual"><scope>DialogBox::DialogData</scope><name>Icon</name></member>
+      <member refid="class_dialog_box_1_1_dialog_data_1ae15afaf8c1cc7a4abea24d989339e342" prot="public" virt="non-virtual"><scope>DialogBox::DialogData</scope><name>IsTextScrolable</name></member>
+      <member refid="class_dialog_box_1_1_dialog_data_1a70dc6482308874a42822ffc809449517" prot="public" virt="non-virtual"><scope>DialogBox::DialogData</scope><name>PrefButtonHeight</name></member>
+      <member refid="class_dialog_box_1_1_dialog_data_1af932569973f145204a83c77300b41a7c" prot="public" virt="non-virtual"><scope>DialogBox::DialogData</scope><name>Text</name></member>
+      <member refid="class_dialog_box_1_1_dialog_data_1acddfdf4aea87a756bd21826ab2f1c173" prot="public" virt="non-virtual"><scope>DialogBox::DialogData</scope><name>TextColor</name></member>
+      <member refid="class_dialog_box_1_1_dialog_data_1ac7499cfb320e9498acbfa8c6d09518a4" prot="public" virt="non-virtual"><scope>DialogBox::DialogData</scope><name>Title</name></member>
+      <member refid="class_dialog_box_1_1_dialog_data_1ac1a154ddeb9966bc6c46ea676dc2b6ac" prot="public" virt="non-virtual"><scope>DialogBox::DialogData</scope><name>TitleColor</name></member>
+      <member refid="class_dialog_box_1_1_dialog_data_1ac7fab6b3609bc73b08925b8acb484a58" prot="public" virt="non-virtual"><scope>DialogBox::DialogData</scope><name>Wifth</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

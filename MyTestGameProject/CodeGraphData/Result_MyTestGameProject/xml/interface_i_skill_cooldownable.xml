@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="interface_i_skill_cooldownable" kind="interface" prot="public">
+    <compoundname>ISkillCooldownable</compoundname>
+    <derivedcompoundref refid="struct_skill_arrows_valley_1_1_arrow_walley_stats" prot="public" virt="non-virtual">SkillArrowsValley.ArrowWalleyStats</derivedcompoundref>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="interface_i_skill_cooldownable_1a60cb71c455161e5fa35fc0266f983c0a" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>float</type>
+        <definition>float ISkillCooldownable.Cooldown</definition>
+        <argsstring></argsstring>
+        <name>Cooldown</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/ISkillCooldownable.cs" line="7" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/ISkillCooldownable.cs" bodystart="7" bodyend="-1"/>
+        <referencedby refid="class_skill_button_1a5ceba885332c906ee9c3910cdd568485" compoundref="_skill_button_8cs" startline="99" endline="117">SkillButton.OnEndDrag</referencedby>
+        <referencedby refid="class_skill_button_1a2b16ac3915324df320bac7437a3851e9" compoundref="_skill_button_8cs" startline="70" endline="82">SkillButton.OnPointerClick</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="533">
+        <label>SkillArrowsValley.ArrowWalleyStats</label>
+        <link refid="struct_skill_arrows_valley_1_1_arrow_walley_stats"/>
+        <childnode refid="532" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="532">
+        <label>ISkillCooldownable</label>
+        <link refid="interface_i_skill_cooldownable"/>
+      </node>
+    </inheritancegraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/ISkillCooldownable.cs" line="6" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/ISkillCooldownable.cs" bodystart="5" bodyend="8"/>
+    <listofallmembers>
+      <member refid="interface_i_skill_cooldownable_1a60cb71c455161e5fa35fc0266f983c0a" prot="public" virt="non-virtual"><scope>ISkillCooldownable</scope><name>Cooldown</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

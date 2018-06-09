@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="struct_skill_charge_1_1_chargr_stats" kind="struct" prot="public">
+    <compoundname>SkillCharge::ChargrStats</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_skill_charge_1_1_chargr_stats_1aba2337730514877634d087ec709f0fbe" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SkillCharge.ChargrStats.addSpeed</definition>
+        <argsstring></argsstring>
+        <name>addSpeed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Skill/SkillCharge.cs" line="11" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Skill/SkillCharge.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_skill_charge_1_1_chargr_stats_1aea23bae6e9e44ebd43b29d0e0a672e9f" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SkillCharge.ChargrStats.addAcceleretion</definition>
+        <argsstring></argsstring>
+        <name>addAcceleretion</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Skill/SkillCharge.cs" line="12" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Skill/SkillCharge.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_skill_charge_1_1_chargr_stats_1ad446d73abbec48351f6ac31aa623b686" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SkillCharge.ChargrStats.duration</definition>
+        <argsstring></argsstring>
+        <name>duration</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Skill/SkillCharge.cs" line="13" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Skill/SkillCharge.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_skill_charge_1_1_chargr_stats_1a7700bb8af18eefe93e348a180014b59d" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SkillCharge.ChargrStats.cooldown</definition>
+        <argsstring></argsstring>
+        <name>cooldown</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Skill/SkillCharge.cs" line="14" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Skill/SkillCharge.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Skill/SkillCharge.cs" line="10" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Skill/SkillCharge.cs" bodystart="9" bodyend="15"/>
+    <listofallmembers>
+      <member refid="struct_skill_charge_1_1_chargr_stats_1aea23bae6e9e44ebd43b29d0e0a672e9f" prot="public" virt="non-virtual"><scope>SkillCharge::ChargrStats</scope><name>addAcceleretion</name></member>
+      <member refid="struct_skill_charge_1_1_chargr_stats_1aba2337730514877634d087ec709f0fbe" prot="public" virt="non-virtual"><scope>SkillCharge::ChargrStats</scope><name>addSpeed</name></member>
+      <member refid="struct_skill_charge_1_1_chargr_stats_1a7700bb8af18eefe93e348a180014b59d" prot="public" virt="non-virtual"><scope>SkillCharge::ChargrStats</scope><name>cooldown</name></member>
+      <member refid="struct_skill_charge_1_1_chargr_stats_1ad446d73abbec48351f6ac31aa623b686" prot="public" virt="non-virtual"><scope>SkillCharge::ChargrStats</scope><name>duration</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

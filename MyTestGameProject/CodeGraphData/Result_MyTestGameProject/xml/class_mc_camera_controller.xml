@@ -1,0 +1,338 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_mc_camera_controller" kind="class" prot="public">
+    <compoundname>McCameraController</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">IScrollHandler</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">IDragHandler</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">IPointerDownHandler</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">IPointerUpHandler</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_mc_camera_controller_1a6fd692cede66d0ea3c7222632c38d886" prot="private" static="no" mutable="no">
+        <type><ref refid="class_mc_cursor" kindref="compound">McCursor</ref></type>
+        <definition>McCursor McCameraController.cursor</definition>
+        <argsstring></argsstring>
+        <name>cursor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McCameraController.cs" line="12" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McCameraController.cs" bodystart="12" bodyend="-1"/>
+        <referencedby refid="class_mc_camera_controller_1a0a05ca8a272a6c3ca66d2d2da4cb9106" compoundref="_mc_camera_controller_8cs" startline="67" endline="75">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_mc_camera_controller_1a0ce7ec5075b2dd266d71c81774b72c61" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float McCameraController.cameraScaleStep</definition>
+        <argsstring></argsstring>
+        <name>cameraScaleStep</name>
+        <initializer>= 10f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McCameraController.cs" line="16" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McCameraController.cs" bodystart="16" bodyend="-1"/>
+        <referencedby refid="class_mc_camera_controller_1a635be8451752bfcf2e0563616e95d9a3" compoundref="_mc_camera_controller_8cs" startline="77" endline="80">CameraScaleStepSlider_ValueChanged</referencedby>
+        <referencedby refid="class_mc_camera_controller_1a43f464b3f3b9828a5a328c7426069ed6" compoundref="_mc_camera_controller_8cs" startline="56" endline="64">OnScroll</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_mc_camera_controller_1afecd6101c51a20327b4553efa86ea14f" prot="private" static="no" mutable="no">
+        <type>new Camera</type>
+        <definition>new Camera McCameraController.camera</definition>
+        <argsstring></argsstring>
+        <name>camera</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McCameraController.cs" line="18" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McCameraController.cs" bodystart="18" bodyend="-1"/>
+        <referencedby refid="class_mc_camera_controller_1a0a05ca8a272a6c3ca66d2d2da4cb9106" compoundref="_mc_camera_controller_8cs" startline="67" endline="75">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_mc_camera_controller_1a9fb9c12ad121d339846a9ccaa4783f67" prot="private" static="no" mutable="no">
+        <type>Transform</type>
+        <definition>Transform McCameraController.cameraTransform</definition>
+        <argsstring></argsstring>
+        <name>cameraTransform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McCameraController.cs" line="19" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McCameraController.cs" bodystart="19" bodyend="-1"/>
+        <referencedby refid="class_mc_camera_controller_1a0a05ca8a272a6c3ca66d2d2da4cb9106" compoundref="_mc_camera_controller_8cs" startline="67" endline="75">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_mc_camera_controller_1adc555721a96785d629b05a4a5b39e5ba" prot="private" static="no" mutable="no">
+        <type>Vector3</type>
+        <definition>Vector3 McCameraController.startCameraPosition</definition>
+        <argsstring></argsstring>
+        <name>startCameraPosition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McCameraController.cs" line="20" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McCameraController.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mc_camera_controller_1ae990afd9d8d11cb3acbf442de7c33fb6" prot="private" static="no" mutable="no">
+        <type>Vector3</type>
+        <definition>Vector3 McCameraController.startMousePosition</definition>
+        <argsstring></argsstring>
+        <name>startMousePosition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McCameraController.cs" line="21" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McCameraController.cs" bodystart="21" bodyend="-1"/>
+        <referencedby refid="class_mc_camera_controller_1a5f95524f0f5e49a2b622f2e408163e4a" compoundref="_mc_camera_controller_8cs" startline="24" endline="36">OnDrag</referencedby>
+        <referencedby refid="class_mc_camera_controller_1ad1d6938707aa5a8217a402f9701a8595" compoundref="_mc_camera_controller_8cs" startline="38" endline="49">OnPointerDown</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_mc_camera_controller_1a6b58d603f789c74d1827911935c6df60" prot="private" static="no" mutable="no">
+        <type>Vector3</type>
+        <definition>Vector3 McCameraController.mouseDelta</definition>
+        <argsstring></argsstring>
+        <name>mouseDelta</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McCameraController.cs" line="22" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McCameraController.cs" bodystart="22" bodyend="-1"/>
+        <referencedby refid="class_mc_camera_controller_1a5f95524f0f5e49a2b622f2e408163e4a" compoundref="_mc_camera_controller_8cs" startline="24" endline="36">OnDrag</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_mc_camera_controller_1a73dc5c1d690cada02fd40eb87fa80b07" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>bool</type>
+        <definition>bool McCameraController.CanChangeCamera</definition>
+        <argsstring></argsstring>
+        <name>CanChangeCamera</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McCameraController.cs" line="14" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McCameraController.cs" bodystart="14" bodyend="-1"/>
+        <referencedby refid="class_mc_camera_controller_1a5f95524f0f5e49a2b622f2e408163e4a" compoundref="_mc_camera_controller_8cs" startline="24" endline="36">OnDrag</referencedby>
+        <referencedby refid="class_mc_camera_controller_1ad1d6938707aa5a8217a402f9701a8595" compoundref="_mc_camera_controller_8cs" startline="38" endline="49">OnPointerDown</referencedby>
+        <referencedby refid="class_mc_camera_controller_1a43f464b3f3b9828a5a328c7426069ed6" compoundref="_mc_camera_controller_8cs" startline="56" endline="64">OnScroll</referencedby>
+        <referencedby refid="class_mc_camera_controller_1a0a05ca8a272a6c3ca66d2d2da4cb9106" compoundref="_mc_camera_controller_8cs" startline="67" endline="75">Start</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_mc_camera_controller_1a5f95524f0f5e49a2b622f2e408163e4a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void McCameraController.OnDrag</definition>
+        <argsstring>(PointerEventData eventData)</argsstring>
+        <name>OnDrag</name>
+        <param>
+          <type>PointerEventData</type>
+          <declname>eventData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McCameraController.cs" line="24" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McCameraController.cs" bodystart="24" bodyend="36"/>
+        <references refid="class_mc_camera_controller_1a73dc5c1d690cada02fd40eb87fa80b07" compoundref="_mc_camera_controller_8cs" startline="14">CanChangeCamera</references>
+        <references refid="class_mc_camera_controller_1a6b58d603f789c74d1827911935c6df60" compoundref="_mc_camera_controller_8cs" startline="22">mouseDelta</references>
+        <references refid="class_mc_camera_controller_1ae990afd9d8d11cb3acbf442de7c33fb6" compoundref="_mc_camera_controller_8cs" startline="21">startMousePosition</references>
+      </memberdef>
+      <memberdef kind="function" id="class_mc_camera_controller_1ad1d6938707aa5a8217a402f9701a8595" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void McCameraController.OnPointerDown</definition>
+        <argsstring>(PointerEventData eventData)</argsstring>
+        <name>OnPointerDown</name>
+        <param>
+          <type>PointerEventData</type>
+          <declname>eventData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McCameraController.cs" line="38" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McCameraController.cs" bodystart="38" bodyend="49"/>
+        <references refid="class_mc_camera_controller_1a73dc5c1d690cada02fd40eb87fa80b07" compoundref="_mc_camera_controller_8cs" startline="14">CanChangeCamera</references>
+        <references refid="class_mc_camera_controller_1ae990afd9d8d11cb3acbf442de7c33fb6" compoundref="_mc_camera_controller_8cs" startline="21">startMousePosition</references>
+      </memberdef>
+      <memberdef kind="function" id="class_mc_camera_controller_1a0ede1e025b3e0221c1661bc5e78a9a96" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void McCameraController.OnPointerUp</definition>
+        <argsstring>(PointerEventData eventData)</argsstring>
+        <name>OnPointerUp</name>
+        <param>
+          <type>PointerEventData</type>
+          <declname>eventData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McCameraController.cs" line="51" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McCameraController.cs" bodystart="51" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mc_camera_controller_1a43f464b3f3b9828a5a328c7426069ed6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void McCameraController.OnScroll</definition>
+        <argsstring>(PointerEventData eventData)</argsstring>
+        <name>OnScroll</name>
+        <param>
+          <type>PointerEventData</type>
+          <declname>eventData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McCameraController.cs" line="56" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McCameraController.cs" bodystart="56" bodyend="64"/>
+        <references refid="class_mc_camera_controller_1a0ce7ec5075b2dd266d71c81774b72c61" compoundref="_mc_camera_controller_8cs" startline="16">cameraScaleStep</references>
+        <references refid="class_mc_camera_controller_1a73dc5c1d690cada02fd40eb87fa80b07" compoundref="_mc_camera_controller_8cs" startline="14">CanChangeCamera</references>
+      </memberdef>
+      <memberdef kind="function" id="class_mc_camera_controller_1a635be8451752bfcf2e0563616e95d9a3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void McCameraController.CameraScaleStepSlider_ValueChanged</definition>
+        <argsstring>(float newValue)</argsstring>
+        <name>CameraScaleStepSlider_ValueChanged</name>
+        <param>
+          <type>float</type>
+          <declname>newValue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McCameraController.cs" line="77" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McCameraController.cs" bodystart="77" bodyend="80"/>
+        <references refid="class_mc_camera_controller_1a0ce7ec5075b2dd266d71c81774b72c61" compoundref="_mc_camera_controller_8cs" startline="16">cameraScaleStep</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_mc_camera_controller_1a0a05ca8a272a6c3ca66d2d2da4cb9106" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void McCameraController.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McCameraController.cs" line="67" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McCameraController.cs" bodystart="67" bodyend="75"/>
+        <references refid="class_mc_camera_controller_1afecd6101c51a20327b4553efa86ea14f" compoundref="_mc_camera_controller_8cs" startline="18">camera</references>
+        <references refid="class_mc_camera_controller_1a9fb9c12ad121d339846a9ccaa4783f67" compoundref="_mc_camera_controller_8cs" startline="19">cameraTransform</references>
+        <references refid="class_mc_camera_controller_1a73dc5c1d690cada02fd40eb87fa80b07" compoundref="_mc_camera_controller_8cs" startline="14">CanChangeCamera</references>
+        <references refid="class_mc_camera_controller_1a6fd692cede66d0ea3c7222632c38d886" compoundref="_mc_camera_controller_8cs" startline="12">cursor</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="605">
+        <label>McCameraController</label>
+        <link refid="class_mc_camera_controller"/>
+        <childnode refid="606" relation="public-inheritance">
+        </childnode>
+        <childnode refid="607" relation="public-inheritance">
+        </childnode>
+        <childnode refid="608" relation="public-inheritance">
+        </childnode>
+        <childnode refid="609" relation="public-inheritance">
+        </childnode>
+        <childnode refid="610" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="609">
+        <label>IPointerDownHandler</label>
+      </node>
+      <node id="607">
+        <label>IScrollHandler</label>
+      </node>
+      <node id="606">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="608">
+        <label>IDragHandler</label>
+      </node>
+      <node id="610">
+        <label>IPointerUpHandler</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="611">
+        <label>McCameraController</label>
+        <link refid="class_mc_camera_controller"/>
+        <childnode refid="612" relation="public-inheritance">
+        </childnode>
+        <childnode refid="613" relation="public-inheritance">
+        </childnode>
+        <childnode refid="614" relation="public-inheritance">
+        </childnode>
+        <childnode refid="615" relation="public-inheritance">
+        </childnode>
+        <childnode refid="616" relation="public-inheritance">
+        </childnode>
+        <childnode refid="617" relation="usage">
+          <edgelabel>cursor</edgelabel>
+        </childnode>
+      </node>
+      <node id="615">
+        <label>IPointerDownHandler</label>
+      </node>
+      <node id="617">
+        <label>McCursor</label>
+        <link refid="class_mc_cursor"/>
+        <childnode refid="612" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="613">
+        <label>IScrollHandler</label>
+      </node>
+      <node id="612">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="614">
+        <label>IDragHandler</label>
+      </node>
+      <node id="616">
+        <label>IPointerUpHandler</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McCameraController.cs" line="11" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McCameraController.cs" bodystart="5" bodyend="81"/>
+    <listofallmembers>
+      <member refid="class_mc_camera_controller_1afecd6101c51a20327b4553efa86ea14f" prot="private" virt="non-virtual"><scope>McCameraController</scope><name>camera</name></member>
+      <member refid="class_mc_camera_controller_1a0ce7ec5075b2dd266d71c81774b72c61" prot="private" virt="non-virtual"><scope>McCameraController</scope><name>cameraScaleStep</name></member>
+      <member refid="class_mc_camera_controller_1a635be8451752bfcf2e0563616e95d9a3" prot="public" virt="non-virtual"><scope>McCameraController</scope><name>CameraScaleStepSlider_ValueChanged</name></member>
+      <member refid="class_mc_camera_controller_1a9fb9c12ad121d339846a9ccaa4783f67" prot="private" virt="non-virtual"><scope>McCameraController</scope><name>cameraTransform</name></member>
+      <member refid="class_mc_camera_controller_1a73dc5c1d690cada02fd40eb87fa80b07" prot="public" virt="non-virtual"><scope>McCameraController</scope><name>CanChangeCamera</name></member>
+      <member refid="class_mc_camera_controller_1a6fd692cede66d0ea3c7222632c38d886" prot="private" virt="non-virtual"><scope>McCameraController</scope><name>cursor</name></member>
+      <member refid="class_mc_camera_controller_1a6b58d603f789c74d1827911935c6df60" prot="private" virt="non-virtual"><scope>McCameraController</scope><name>mouseDelta</name></member>
+      <member refid="class_mc_camera_controller_1a5f95524f0f5e49a2b622f2e408163e4a" prot="public" virt="non-virtual"><scope>McCameraController</scope><name>OnDrag</name></member>
+      <member refid="class_mc_camera_controller_1ad1d6938707aa5a8217a402f9701a8595" prot="public" virt="non-virtual"><scope>McCameraController</scope><name>OnPointerDown</name></member>
+      <member refid="class_mc_camera_controller_1a0ede1e025b3e0221c1661bc5e78a9a96" prot="public" virt="non-virtual"><scope>McCameraController</scope><name>OnPointerUp</name></member>
+      <member refid="class_mc_camera_controller_1a43f464b3f3b9828a5a328c7426069ed6" prot="public" virt="non-virtual"><scope>McCameraController</scope><name>OnScroll</name></member>
+      <member refid="class_mc_camera_controller_1a0a05ca8a272a6c3ca66d2d2da4cb9106" prot="private" virt="non-virtual"><scope>McCameraController</scope><name>Start</name></member>
+      <member refid="class_mc_camera_controller_1adc555721a96785d629b05a4a5b39e5ba" prot="private" virt="non-virtual"><scope>McCameraController</scope><name>startCameraPosition</name></member>
+      <member refid="class_mc_camera_controller_1ae990afd9d8d11cb3acbf442de7c33fb6" prot="private" virt="non-virtual"><scope>McCameraController</scope><name>startMousePosition</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

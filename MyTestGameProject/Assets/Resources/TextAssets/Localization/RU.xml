@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <string name = "current_languade">Русский</string>
+  
+  <string name = "downloading">Загрузка...</string>
+  
+  <string name = "play_game">В бой</string>
+  <string name = "settings">Настройки</string>
+  <string name = "squad">Отряд</string>
+
+  <string name = "healtarget_weakest">сначала слабых</string>
+  <string name = "healtarget_strongest">сначала сильных</string>
+  <string name = "healtarget_all">Всех</string>
+
+  <string name = "error">-ERROR-</string>
+
+  <string name = "formation_ranks_name">Свобоный строй</string>
+  <string name = "formation_ranks_description">Отряд не держит строй.
+  При получении урона юниты будут ошеломлены, и некоторое время не смогут защищатся.</string>
+  <string name = "formation_phalanx_name">Фаланга</string>
+  <string name = "formation_phalanx_description">Отряд постоен в фалангу.
+  Плотные ряды юнитов будут отталкивать врага назад, не давая ему пройти сквозь Ваш отряд.</string>
+  <string name = "formation_shields_name">Поднятые щиты</string>
+  <string name = "formation_shields_description">Отряд поднял щиты и защищается от обстрела.
+Пока щиты подняты, учитывается их броня против обстрела и полностью учитывается свойство блокирования обстрела.
+Если щиты будут опущены, их броня не будет учитываться, а их блокирование обстрела будет учитываться наполовину.
+При обстреле в тыл, блокировка обстрела щита не учитывается, не зависимо от построения.</string>
+  <string name = "condition_inFight_name">Ближний бой</string>
+  <string name = "condition_inFight_description">  Отряд сражается в ближнем бою.
+  Это может накладывать некоторые ограничения, например, нельзя пополнить отряд или опустить пики, поэтому, внимательно читайте описение предметов.</string>
+  
+  <string name = "health">Здоровье</string>
+  <string name = "squadHealth">Здоровье отряда</string>
+  <string name = "armour">Броня</string>
+  <string name = "baseDamage">Базовый урон</string>
+  <string name = "armourDamage">Урон сквозь доспехи</string>
+  <string name = "attack">Атака</string>
+  <string name = "defence">Защита</string>
+  <string name = "defenceHalfSector">Сектор защиты</string>
+  <string name = "missileBlock">Блокирование обстрела</string>
+  <string name = "attackDistance">Дальность атаки</string>
+  <string name = "speed">Скорость перемещения</string>
+  <string name = "acceleration">Ускорение</string>
+  <string name = "rotationSpeed">Скорость поворота</string>
+  <string name = "chargeImpact">Сила натиска</string>
+  <string name = "chargeDeflect">Отражение натиска</string>
+  <string name = "chargeDamage">Урон натиска</string>
+  <string name = "defenceGoingThrough">Защита "на бегу"</string>
+  <string name = "flyingSpeed">Скорость полета</string>
+  
+  <string name = "arrowWalley_radius">Радиус поражения залпа</string>
+  <string name = "arrowWalley_arrowscount">Количество стрел в залпе</string>
+  <string name = "cooldown">Время перезарядки</string>
+  <string name = "duration">Время действия</string>
+
+  <string name = "cost">Стоимость</string>
+  <string name = "mass">Масса</string>
+  
+  <string name = "weaponConstraint_cantReformPhalanx">отряд не может перестроиться в фалангу</string>
+  <string name = "weaponConstraint_cantReformPhalanxInFight">отряд не может перестроиться в фалангу во время ближнего боя</string>
+  <string name = "weaponConstraint_cantUseShield">отряд не может использовать щит</string>
+  
+  <string name = "attention">Внимание :</string>
+  
+  <string name = "yes">Да</string>
+  <string name = "no">Нет</string>
+  <string name = "ok">Принять</string>
+  <string name = "cancel">Отмена</string>
+  <string name = "upgrade">улучшить</string>
+  
+  <string name = "gold">Золото</string>
+  <string name = "silver">Серебро</string>
+  <string name = "expirience">Опыт</string>
+  
+  <string name = "name">Название</string>
+  <string name = "description">Описание</string>
+  <string name = "equipment">Экипировка</string>
+  <string name = "inventory">Инвентарь</string>
+  <string name = "consumables">Расходники</string>
+  <string name = "equipment_market">Магазин экипировки</string>
+  <string name = "consumables_market">Магазин расходников</string>
+  <string name = "equipment_ground">Экипировка на земле</string>
+  
+  <string name = "equipment_body_chainmail_name">Простая кольчуга</string>
+  <string name = "equipment_body_chainmail_description">Простая кольчуга. Легкая, защищает от порезов, но прошивается стрелами насквозь, что заставляет ее хозяина рваться в ближний бог, где стрелы, скорее всего, его не достанут. </string>
+  <string name = "equipment_body_linotorax_name">Обычный линоторакс</string>
+  <string name = "equipment_body_linotorax_description">Обычный линоторакс, такие есть у всех. Защищает от порезов и, слегка, от стрел.</string>
+  <string name = "equipment_body_anatomic_armour_name">Анатомичный панцирь</string>
+  <string name = "equipment_body_anatomic_armour_description">Тяжелая броня, внешне повторяющая мускулистое тело. Отлично защищает хозяина от стрел, порезов и колющих ударов.</string>
+  <string name = "equipment_body_none_name">Нет брони</string>
+  <string name = "equipment_body_none_description">Просто туника.</string>
+  <string name = "equipment_helmet_corinthian_close_name">Коринфский закрытый шлем</string>
+  <string name = "equipment_helmet_corinthian_close_description">Хорошая защита, но пришлось пожертвовать обзором. Хорошо подойдет для фаланги, так как солдаты прикрыты с флангов.</string>
+  <string name = "equipment_helmet_thrace_open_name">Фракийский открытый шлем</string>
+  <string name = "equipment_helmet_thrace_open_description">Средяя защита, но зато, не уменьшает обзор. Такие шлемы предпочитают мечники, так как им часто приходится сражаться нарушив строй.</string>
+  <string name = "equipment_helmet_none_name">Нет шлема</string>
+  <string name = "equipment_helmet_none_description">У вас нет шлемов.</string>
+  <string name = "equipment_shield_hoplon_name">Гоплон</string>
+  <string name = "equipment_shield_hoplon_description">Щит фалангитов. Дает очень хорошую защиту, но атаковать вне фаланги очень тяжело.</string>
+  <string name = "equipment_shield_bakler_name">Железный баклер</string>
+  <string name = "equipment_shield_bakler_description">Малый щит. Средняя защита, но не мешает махать мечем. Из за размеров щита, под обстрел лучше не попадать.</string>
+  <string name = "equipment_shield_none_name">Нет щита</string>
+  <string name = "equipment_shield_none_description">У вас нет щитов.</string>
+  <string name = "equipment_weapon_doru_name">Дору</string>
+  <string name = "equipment_weapon_doru_description">Универсальное оружие. Эффективно и в фаланге, и если придется нарушить строй. Однако, универсальность лишила это оружие высоких показателей в любых характеристиках.</string>
+  <string name = "equipment_weapon_sharp_doru_name">Заостренное дору</string>
+  <string name = "equipment_weapon_sharp_doru_description">Почти то же что и дору, но намного острее. Легче пробить броню, но повреждения будут меньше.</string>
+  <string name = "equipment_weapon_kopis_name">Копис</string>
+  <string name = "equipment_weapon_kopis_description">Меч с изгибом вовнутрь. Отлично рубит врагов, но в фалангу с таким не станешь, как, впрочем, и с любым мечем.</string>
+  <string name = "equipment_weapon_ksifos_name">Ксифос</string>
+  <string name = "equipment_weapon_ksifos_description">Прямой короткий меч. Позволяет наносить как рубящие так и колящие удары, что делает его сбалансированным оружием нападения.</string>
+  <string name = "equipment_weapon_sarrisa_name">Сарриса</string>
+  <string name = "equipment_weapon_sarrisa_description">Пика. Ооочень длинная палка с ооочень острым наконечником. Держать приходится двумя руками. Идеальное оружие для фаланги, но если нарушить строй, стает огомной обузой для своего хозяина. Кроме того, если враг подберется вплотную, пику уже не опустить.</string>
+  <string name = "equipment_weapon_wings_sarrisa_name">Крылатая сарриса</string>
+  <string name = "equipment_weapon_wings_sarrisa_description">Пика. За счет крылатого наконечника, наносит ужасные увечия, но броню пробить тяжелее. Держать приходится двумя руками. Идеальное оружие для фаланги, но если нарушить строй, стает огомной обузой для своего хозяина. Кроме того, если враг подберется вплотную, пику уже не опустить.</string>
+
+  <string name = "skill_arrowWalley_name">Залп стрел</string>
+  <string name = "skill_arrowWalley_description">Залп стрел в небольшой области, который замочит все что там есть</string>
+  <string name = "skill_charge_name">Натиск</string>
+  <string name = "skill_charge_description">Быстрый натиск для стремительного сближения с врагом.</string>
+
+ 
+  <string name = "consumable_pilums_name">Пилумы</string>
+  <string name = "consumable_pilums_description">Пилумы - метательное оружие. Намного тяжелее стрел, что позволяет легко пробивать броню, но кинуть их можно совсем недалеко, и только по прямой траектории.</string>
+  <string name = "consumable_pilums_light_name">Легкие пилумы</string>
+  <string name = "consumable_pilums_light_description">Метательное оружие. Облегченный вариант обычных пилумов. Летят дальше, можно взять с собой больше штук, но урон сквозь доспехи меньше. Можно кинуть только по прямой траектории.</string>
+  <string name = "consumable_pilums_heavy_name">Тежёлые пилумы</string>
+  <string name = "consumable_pilums_heavy_description">Метательное оружие. Намного тяжелее обычных пилумов. Летят на меньшее растояние, можно взять меньше штук, но урон сквозь доспехи намного больше. Можно кинуть только по прямой траектории.</string>
+  <string name = "consumable_pilums_perfect_name">Калёные острые сбалансированные пилумы</string>
+  <string name = "consumable_pilums_perfect_description">Метательное оружие с закаленным и заточеным наконечником. Прошивает блоню насквозь. Можно кинуть только по прямой траектории.</string>
+
+  <string name = "skill_upgrade_arrowWalley_startunlock_name">Созвать ополчение</string>
+  <string name = "skill_upgrade_arrowWalley_startunlock_description">Созвать ополчение и вооружить луками. Теперь вы сможете вызывать ливень стрел на указанную територию.</string>
+  <string name = "skill_upgrade_arrowWalley_basedamage_largebow_name">Большой лук</string>
+  <string name = "skill_upgrade_arrowWalley_basedamage_largebow_description">Вооружить лучников большими луками. Стрелы, выпущеные с таколо лука наносят намного больше урона.</string>
+  <string name = "skill_upgrade_arrowWalley_basedamage_weightarrows_name">Утяжелить стрелы</string>
+  <string name = "skill_upgrade_arrowWalley_basedamage_weightarrows_description">Приказать лучникам утяжелить наконечники своих стрел. Такие стрелы лугче будут наносить больше урона.</string>
+  <string name = "skill_upgrade_arrowWalley_armourdamage_sharparrows_name">Заточить стрелы</string>
+  <string name = "skill_upgrade_arrowWalley_armourdamage_sharparrows_description">Приказать лучникам заточить наконечники своих стрел. Такие стрелы будут лугче пробивать броню.</string>
+  <string name = "skill_upgrade_arrowWalley_armourdamage_temperedarrows_name">Закаленные стрелы</string>
+  <string name = "skill_upgrade_arrowWalley_armourdamage_temperedarrows_description">Вооружить лучников стрелами с закаленными наконечниками. Такие стрелы не остановят даже самые лучьшие доспехи.</string>
+  <string name = "skill_upgrade_arrowWalley_arrowscount_name">Набрать рекрутов</string>
+  <string name = "skill_upgrade_arrowWalley_arrowscount_description">Набрать новых рекрутов. Теперь даже солнце закроется огромной тучей выпущеных стрел.</string>
+  <string name = "skill_upgrade_arrowWalley_radius_name">Штре строй!</string>
+  <string name = "skill_upgrade_arrowWalley_radius_description">Рассредоточить ряды. Это позволит снарядить лучников более мощными луками.</string>  
+  <string name = "skill_upgrade_arrowWalley_radius_minus_name">Орлиный глаз</string>
+  <string name = "skill_upgrade_arrowWalley_radius_minus_description">Обучть лучников точной стрельбе на большие расстояния. Это увеличит кучность стрельбы.</string>
+  <string name = "skill_upgrade_arrowWalley_cooldown_name">Быстрые руки</string>
+  <string name = "skill_upgrade_arrowWalley_cooldown_description">Обучть лучников технике быстрой перезарядки. Это позволит стрелять чаще.</string>
+  
+  <string name = "skill_upgrade_charge_startunlock_name">Тренировать натиск</string>
+  <string name = "skill_upgrade_charge_startunlock_description">Обучить солдат в отряде, по команде, быстро ускоряться и сбивать врагов с ног, нанося им урон своим оружием.</string>
+  <string name = "skill_upgrade_charge_speed_moretrain_name">Больше тренировок!</string>
+  <string name = "skill_upgrade_charge_speed_moretrain_description">Тренировать солдат ещё и ещё, пока они не станут бегать быстрее.</string>
+  <string name = "skill_upgrade_charge_speed_ligthfootwear_name">Облегченная обувь</string>
+  <string name = "skill_upgrade_charge_speed_ligthfootwear_description">Более легкая обувь позволит бегать ещё быстрее.</string>
+  <string name = "skill_upgrade_charge_speed_shortranderun_name">Бег на малые дистинции</string>
+  <string name = "skill_upgrade_charge_speed_shortranderun_description">Тренировать быстый бег на малые дистанции, что повысит максимальную скорость бега.</string>
+  <string name = "skill_upgrade_charge_duration_longrangerun_name">Бег на большие дистинции</string>
+  <string name = "skill_upgrade_charge_duration_longrangerun_description">Тренировать быстый бег на большие дистанции, что повысит продолжительность натиска.</string>
+  <string name = "skill_upgrade_charge_acceleration_reinforcefootbase_name">Укрепить подошву</string>
+  <string name = "skill_upgrade_charge_acceleration_reinforcefootbase_description">Лучшее сцепление с землей позволить быстрее ускоряться.</string>
+  <string name = "skill_upgrade_charge_acceleration_lowerstart_name">Низкий старт</string>
+  <string name = "skill_upgrade_charge_acceleration_lowerstart_description">Тренировать бег с низкого старта. Это позволит повысить ускорение натиска.</string>
+  <string name = "skill_upgrade_charge_intensivtrain_name">Интенсивные тренировки</string>
+  <string name = "skill_upgrade_charge_intensivtrain_description">Интенсивные тренировки позволят солдатам быстрее перевоить дух после бага. Скорость перезарядки умения сократится.</string>
+  <string name = "skill_upgrade_charge_damage_runningpunch_name">Удар на бегу</string>
+  <string name = "skill_upgrade_charge_damage_runningpunch_description">Тренировать удар оружием на бегу. Это позволит наносить больше урона при столкновении с врагом.</string>
+  
+  <string name = "toMainMenu">В главное меню</string>
+  <string name = "goToMainMenu_header">Вы действительно хотите выйти в главное меню?</string>
+  <string name = "goToMainMenu_info">Текущий прогресс игры будет утерян.</string>
+  <string name = "resetSettings_header">Вы дейcтвительно хотите установить настройки по умолчанию?</string>
+  <string name = "resetSettings_info">Все настройки будут установлены по умолчанию.</string>
+
+  <string name = "currentValue">тек.знач.</string>
+  <string name = "baseValue">баз.знач.</string>
+  <string name = "currentValue_baseValue">тек.знач.(баз.знач.)</string>
+
+  <string name = "durability_new">новый</string>
+  <string name = "durability_worn">поношенный</string>
+  <string name = "durability_damaged">испорченный</string>
+  
+  <string name = "toast_cant_use_with_shield">Нельзя использовать вместе со щитом</string>
+  <string name = "toast_cant_use_with_current_weapon">Нельзя использовать вместе с текущим оружием</string>
+  <string name = "toast_not_enough_gold">Недостаточно золота</string>
+  <string name = "toast_not_enough_silver">Недостаточно серебра</string>
+  <string name = "toast_not_enough_expirience">Недостаточно опыта</string>
+  <string name = "toast_not_enough_equipment_count">Экипировки не хватает на весь отряд</string>
+  <string name = "toast_stat_max_upgrade">Уже изучено на максимум</string>
+  <string name = "toast_cant_drop_weapon">Нельзя снимать оружие</string>
+  <string name = "toast_cant_drop">Невозможно снять</string>
+  
+  <string name = "you_died">Вы погибли</string>
+  <string name = "tip_death_try_bay_equip_and_train_squad">Попробуйте, перед боем, купить снаряряжение и улучшить характеристики отряда, чтобы продержаться в бою дольше и победить!</string>
+
+
+</resources>

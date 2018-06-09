@@ -1,0 +1,164 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_unity_engine_1_1_tilemaps_1_1_animated_tile" kind="class" prot="public">
+    <compoundname>UnityEngine::Tilemaps::AnimatedTile</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">TileBase</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_unity_engine_1_1_tilemaps_1_1_animated_tile_1a0971e594bbe49908272701568d210954" prot="public" static="no" mutable="no">
+        <type>Sprite[]</type>
+        <definition>Sprite [] UnityEngine.Tilemaps.AnimatedTile.m_AnimatedSprites</definition>
+        <argsstring></argsstring>
+        <name>m_AnimatedSprites</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Animated Tile/Scripts/AnimatedTile.cs" line="16" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Animated Tile/Scripts/AnimatedTile.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_tilemaps_1_1_animated_tile_1a1b76359848eca0be7e72d42e45382629" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float UnityEngine.Tilemaps.AnimatedTile.m_MinSpeed</definition>
+        <argsstring></argsstring>
+        <name>m_MinSpeed</name>
+        <initializer>= 1f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Animated Tile/Scripts/AnimatedTile.cs" line="17" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Animated Tile/Scripts/AnimatedTile.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_tilemaps_1_1_animated_tile_1a84a2cac93dbf8c9d4061e58b94568a87" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float UnityEngine.Tilemaps.AnimatedTile.m_MaxSpeed</definition>
+        <argsstring></argsstring>
+        <name>m_MaxSpeed</name>
+        <initializer>= 1f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Animated Tile/Scripts/AnimatedTile.cs" line="18" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Animated Tile/Scripts/AnimatedTile.cs" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_tilemaps_1_1_animated_tile_1ae50da32771822970561cb83c7b76bac9" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float UnityEngine.Tilemaps.AnimatedTile.m_AnimationStartTime</definition>
+        <argsstring></argsstring>
+        <name>m_AnimationStartTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Animated Tile/Scripts/AnimatedTile.cs" line="19" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Animated Tile/Scripts/AnimatedTile.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_tilemaps_1_1_animated_tile_1a35a94233a218ae6fb893746ddd3735f5" prot="public" static="no" mutable="no">
+        <type>Tile.ColliderType</type>
+        <definition>Tile.ColliderType UnityEngine.Tilemaps.AnimatedTile.m_TileColliderType</definition>
+        <argsstring></argsstring>
+        <name>m_TileColliderType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Animated Tile/Scripts/AnimatedTile.cs" line="20" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Animated Tile/Scripts/AnimatedTile.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_unity_engine_1_1_tilemaps_1_1_animated_tile_1a42a4cf6da06300a2bf96a6f995302b6e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void UnityEngine.Tilemaps.AnimatedTile.GetTileData</definition>
+        <argsstring>(Vector3Int location, ITilemap tileMap, ref TileData tileData)</argsstring>
+        <name>GetTileData</name>
+        <param>
+          <type>Vector3Int</type>
+          <declname>location</declname>
+        </param>
+        <param>
+          <type>ITilemap</type>
+          <declname>tileMap</declname>
+        </param>
+        <param>
+          <type>ref TileData</type>
+          <declname>tileData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Animated Tile/Scripts/AnimatedTile.cs" line="22" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Animated Tile/Scripts/AnimatedTile.cs" bodystart="22" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_tilemaps_1_1_animated_tile_1ab0f08f23f893b2c74bf31cf7a323b07a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override bool</type>
+        <definition>override bool UnityEngine.Tilemaps.AnimatedTile.GetTileAnimationData</definition>
+        <argsstring>(Vector3Int location, ITilemap tileMap, ref TileAnimationData tileAnimationData)</argsstring>
+        <name>GetTileAnimationData</name>
+        <param>
+          <type>Vector3Int</type>
+          <declname>location</declname>
+        </param>
+        <param>
+          <type>ITilemap</type>
+          <declname>tileMap</declname>
+        </param>
+        <param>
+          <type>ref TileAnimationData</type>
+          <declname>tileAnimationData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Animated Tile/Scripts/AnimatedTile.cs" line="33" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Animated Tile/Scripts/AnimatedTile.cs" bodystart="33" bodyend="43"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="35">
+        <label>UnityEngine.Tilemaps.AnimatedTile</label>
+        <link refid="class_unity_engine_1_1_tilemaps_1_1_animated_tile"/>
+        <childnode refid="36" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>TileBase</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="37">
+        <label>UnityEngine.Tilemaps.AnimatedTile</label>
+        <link refid="class_unity_engine_1_1_tilemaps_1_1_animated_tile"/>
+        <childnode refid="38" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>TileBase</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Animated Tile/Scripts/AnimatedTile.cs" line="15" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Animated Tile/Scripts/AnimatedTile.cs" bodystart="14" bodyend="56"/>
+    <listofallmembers>
+      <member refid="class_unity_engine_1_1_tilemaps_1_1_animated_tile_1ab0f08f23f893b2c74bf31cf7a323b07a" prot="public" virt="non-virtual"><scope>UnityEngine::Tilemaps::AnimatedTile</scope><name>GetTileAnimationData</name></member>
+      <member refid="class_unity_engine_1_1_tilemaps_1_1_animated_tile_1a42a4cf6da06300a2bf96a6f995302b6e" prot="public" virt="non-virtual"><scope>UnityEngine::Tilemaps::AnimatedTile</scope><name>GetTileData</name></member>
+      <member refid="class_unity_engine_1_1_tilemaps_1_1_animated_tile_1a0971e594bbe49908272701568d210954" prot="public" virt="non-virtual"><scope>UnityEngine::Tilemaps::AnimatedTile</scope><name>m_AnimatedSprites</name></member>
+      <member refid="class_unity_engine_1_1_tilemaps_1_1_animated_tile_1ae50da32771822970561cb83c7b76bac9" prot="public" virt="non-virtual"><scope>UnityEngine::Tilemaps::AnimatedTile</scope><name>m_AnimationStartTime</name></member>
+      <member refid="class_unity_engine_1_1_tilemaps_1_1_animated_tile_1a84a2cac93dbf8c9d4061e58b94568a87" prot="public" virt="non-virtual"><scope>UnityEngine::Tilemaps::AnimatedTile</scope><name>m_MaxSpeed</name></member>
+      <member refid="class_unity_engine_1_1_tilemaps_1_1_animated_tile_1a1b76359848eca0be7e72d42e45382629" prot="public" virt="non-virtual"><scope>UnityEngine::Tilemaps::AnimatedTile</scope><name>m_MinSpeed</name></member>
+      <member refid="class_unity_engine_1_1_tilemaps_1_1_animated_tile_1a35a94233a218ae6fb893746ddd3735f5" prot="public" virt="non-virtual"><scope>UnityEngine::Tilemaps::AnimatedTile</scope><name>m_TileColliderType</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

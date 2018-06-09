@@ -1,0 +1,720 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_skill_upgrade_button" kind="class" prot="public">
+    <compoundname>SkillUpgradeButton</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+    <basecompoundref refid="interface_i_descriptionable" prot="public" virt="non-virtual">IDescriptionable</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">IPointerClickHandler</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_skill_upgrade_button_1aa38cbb96e556ab3b69b6732a330334e1" prot="private" static="no" mutable="no">
+        <type>Image</type>
+        <definition>Image SkillUpgradeButton.icon</definition>
+        <argsstring></argsstring>
+        <name>icon</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillUpgradeButton.cs" line="13" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillUpgradeButton.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_skill_upgrade_button_1ac4c2aa5c923b9b289446c3d19e2b90cc" prot="private" static="no" mutable="no">
+        <type>TextMeshProUGUI</type>
+        <definition>TextMeshProUGUI SkillUpgradeButton.costText</definition>
+        <argsstring></argsstring>
+        <name>costText</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillUpgradeButton.cs" line="14" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillUpgradeButton.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_skill_upgrade_button_1a08d5321184fc6ad28809d550b360bba7" prot="private" static="no" mutable="no">
+        <type>TextMeshProUGUI</type>
+        <definition>TextMeshProUGUI SkillUpgradeButton.currentLevelText</definition>
+        <argsstring></argsstring>
+        <name>currentLevelText</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillUpgradeButton.cs" line="15" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillUpgradeButton.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_skill_upgrade_button_1ac25aff19837e8ac41ab927aece9a6876" prot="private" static="no" mutable="no">
+        <type>TextMeshProUGUI</type>
+        <definition>TextMeshProUGUI SkillUpgradeButton.maximumLevelText</definition>
+        <argsstring></argsstring>
+        <name>maximumLevelText</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillUpgradeButton.cs" line="16" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillUpgradeButton.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_skill_upgrade_button_1a549589a45c13840760fa52d2ad155b7f" prot="private" static="no" mutable="no">
+        <type>GameObject</type>
+        <definition>GameObject SkillUpgradeButton.costPanel</definition>
+        <argsstring></argsstring>
+        <name>costPanel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillUpgradeButton.cs" line="18" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillUpgradeButton.cs" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_skill_upgrade_button_1ad776b9c515e504cd128d4d2fc37976f8" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string SkillUpgradeButton.nameResourceString</definition>
+        <argsstring></argsstring>
+        <name>nameResourceString</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillUpgradeButton.cs" line="20" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillUpgradeButton.cs" bodystart="20" bodyend="-1"/>
+        <referencedby refid="class_skill_upgrade_button_1a9e2143326595f1001d28b53cdb12f0c9" compoundref="_skill_upgrade_button_8cs" startline="184" endline="208">GetDescription</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_skill_upgrade_button_1a63c713dc7b354bc9f2067989f5825138" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string SkillUpgradeButton.descriptionResourceString</definition>
+        <argsstring></argsstring>
+        <name>descriptionResourceString</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillUpgradeButton.cs" line="21" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillUpgradeButton.cs" bodystart="21" bodyend="-1"/>
+        <referencedby refid="class_skill_upgrade_button_1a9e2143326595f1001d28b53cdb12f0c9" compoundref="_skill_upgrade_button_8cs" startline="184" endline="208">GetDescription</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_skill_upgrade_button_1a73c177832fff6aebdfa8aa079da2fedd" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string SkillUpgradeButton.upgradeStatDescriptionResourceString</definition>
+        <argsstring></argsstring>
+        <name>upgradeStatDescriptionResourceString</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillUpgradeButton.cs" line="22" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillUpgradeButton.cs" bodystart="22" bodyend="-1"/>
+        <referencedby refid="class_skill_upgrade_button_1a9e2143326595f1001d28b53cdb12f0c9" compoundref="_skill_upgrade_button_8cs" startline="184" endline="208">GetDescription</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_skill_upgrade_button_1aa691d7bd4883c6e4bdb1a3ecdc0d6f71" prot="private" static="no" mutable="no">
+        <type>Image</type>
+        <definition>Image SkillUpgradeButton.background</definition>
+        <argsstring></argsstring>
+        <name>background</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillUpgradeButton.cs" line="24" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillUpgradeButton.cs" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_skill_upgrade_button_1aac70630ffff13c2f3ca6a02adaade129" prot="private" static="no" mutable="no">
+        <type>Color</type>
+        <definition>Color SkillUpgradeButton.lockedColor</definition>
+        <argsstring></argsstring>
+        <name>lockedColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillUpgradeButton.cs" line="25" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillUpgradeButton.cs" bodystart="25" bodyend="-1"/>
+        <referencedby refid="class_skill_upgrade_button_1a3a39a5c511686d47ac71f879641a7fd7" compoundref="_skill_upgrade_button_8cs" startline="120" endline="159">Refresh</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_skill_upgrade_button_1a6e440214a7ee4e932a9c8aab610c4abe" prot="private" static="no" mutable="no">
+        <type>Color</type>
+        <definition>Color SkillUpgradeButton.unlockedColor</definition>
+        <argsstring></argsstring>
+        <name>unlockedColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillUpgradeButton.cs" line="26" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillUpgradeButton.cs" bodystart="26" bodyend="-1"/>
+        <referencedby refid="class_skill_upgrade_button_1a3a39a5c511686d47ac71f879641a7fd7" compoundref="_skill_upgrade_button_8cs" startline="120" endline="159">Refresh</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_skill_upgrade_button_1a71f6e9a11adb0411fcfbad79221e1407" prot="private" static="no" mutable="no">
+        <type>Color</type>
+        <definition>Color SkillUpgradeButton.doneColor</definition>
+        <argsstring></argsstring>
+        <name>doneColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillUpgradeButton.cs" line="27" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillUpgradeButton.cs" bodystart="27" bodyend="-1"/>
+        <referencedby refid="class_skill_upgrade_button_1a3a39a5c511686d47ac71f879641a7fd7" compoundref="_skill_upgrade_button_8cs" startline="120" endline="159">Refresh</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_skill_upgrade_button_1a40ea504cc6a434b3539ffb3c2bca06f9" prot="private" static="no" mutable="no">
+        <type><ref refid="class_skills_upgrade" kindref="compound">SkillsUpgrade</ref></type>
+        <definition>SkillsUpgrade SkillUpgradeButton.parent</definition>
+        <argsstring></argsstring>
+        <name>parent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillUpgradeButton.cs" line="29" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillUpgradeButton.cs" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_skill_upgrade_button_1ac1a1eab4d6f93f8f3cc6832955697cbc" prot="private" static="no" mutable="no">
+        <type><ref refid="class_skill_upgrade_button" kindref="compound">SkillUpgradeButton</ref>[]</type>
+        <definition>SkillUpgradeButton [] SkillUpgradeButton.previousButton</definition>
+        <argsstring></argsstring>
+        <name>previousButton</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillUpgradeButton.cs" line="31" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillUpgradeButton.cs" bodystart="31" bodyend="-1"/>
+        <referencedby refid="class_skill_upgrade_button_1ac8b5f40e84a93c9e6ba2b29058b0cdf8" compoundref="_skill_upgrade_button_8cs" startline="54" endline="62">Awake</referencedby>
+        <referencedby refid="class_skill_upgrade_button_1a3a39a5c511686d47ac71f879641a7fd7" compoundref="_skill_upgrade_button_8cs" startline="120" endline="159">Refresh</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_skill_upgrade_button_1a338f883e1586e5fdcfe604bd860d1e47" prot="private" static="no" mutable="no">
+        <type><ref refid="class_skill_upgrade_button" kindref="compound">SkillUpgradeButton</ref>[]</type>
+        <definition>SkillUpgradeButton [] SkillUpgradeButton.nextButton</definition>
+        <argsstring></argsstring>
+        <name>nextButton</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillUpgradeButton.cs" line="32" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillUpgradeButton.cs" bodystart="32" bodyend="-1"/>
+        <referencedby refid="class_skill_upgrade_button_1aa4c1683f4f496c4a4d6e70c2cbea4215" compoundref="_skill_upgrade_button_8cs" startline="161" endline="182">Upgrade</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_skill_upgrade_button_1a6ef0bce1cf2db263bef157c107266011" prot="private" static="no" mutable="no">
+        <type><ref refid="class_d_s_player_skill_1_1_skill_upgrade" kindref="compound">DSPlayerSkill.SkillUpgrade</ref></type>
+        <definition>DSPlayerSkill.SkillUpgrade SkillUpgradeButton.upgradeStats</definition>
+        <argsstring></argsstring>
+        <name>upgradeStats</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillUpgradeButton.cs" line="34" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillUpgradeButton.cs" bodystart="34" bodyend="-1"/>
+        <referencedby refid="class_skill_upgrade_button_1a9e2143326595f1001d28b53cdb12f0c9" compoundref="_skill_upgrade_button_8cs" startline="184" endline="208">GetDescription</referencedby>
+        <referencedby refid="class_skill_upgrade_button_1afb8312a7d206af7a57b0a06c28e13b13" compoundref="_skill_upgrade_button_8cs" startline="79" endline="104">Initiate</referencedby>
+        <referencedby refid="class_skill_upgrade_button_1a3a39a5c511686d47ac71f879641a7fd7" compoundref="_skill_upgrade_button_8cs" startline="120" endline="159">Refresh</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_skill_upgrade_button_1ab6a2d68ec6b79da72e44bc5ddf990c6d" prot="private" static="no" mutable="no">
+        <type>AnimationCurve</type>
+        <definition>AnimationCurve SkillUpgradeButton.costDependency</definition>
+        <argsstring></argsstring>
+        <name>costDependency</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillUpgradeButton.cs" line="37" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillUpgradeButton.cs" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_skill_upgrade_button_1a1bdbb4664711894350eb792e8bd0fd0a" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SkillUpgradeButton.minCost</definition>
+        <argsstring></argsstring>
+        <name>minCost</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillUpgradeButton.cs" line="38" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillUpgradeButton.cs" bodystart="38" bodyend="-1"/>
+        <referencedby refid="class_skill_upgrade_button_1a1301427f864f89d7111d56d98fbaa939" compoundref="_skill_upgrade_button_8cs" startline="106" endline="118">CalcLevelCost</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_skill_upgrade_button_1a5fb8bb2a354a5811caed5f5237f57162" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SkillUpgradeButton.maxCost</definition>
+        <argsstring></argsstring>
+        <name>maxCost</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillUpgradeButton.cs" line="39" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillUpgradeButton.cs" bodystart="39" bodyend="-1"/>
+        <referencedby refid="class_skill_upgrade_button_1a1301427f864f89d7111d56d98fbaa939" compoundref="_skill_upgrade_button_8cs" startline="106" endline="118">CalcLevelCost</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_skill_upgrade_button_1a091473a37b80fe1980be2825ca4f9714" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SkillUpgradeButton.maxLevel</definition>
+        <argsstring></argsstring>
+        <name>maxLevel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillUpgradeButton.cs" line="40" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillUpgradeButton.cs" bodystart="40" bodyend="-1"/>
+        <referencedby refid="class_skill_upgrade_button_1a1301427f864f89d7111d56d98fbaa939" compoundref="_skill_upgrade_button_8cs" startline="106" endline="118">CalcLevelCost</referencedby>
+        <referencedby refid="class_skill_upgrade_button_1a3a39a5c511686d47ac71f879641a7fd7" compoundref="_skill_upgrade_button_8cs" startline="120" endline="159">Refresh</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_skill_upgrade_button_1afe473d2629495faa7f58e71006dea513" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SkillUpgradeButton.isPositiveUpgrade</definition>
+        <argsstring></argsstring>
+        <name>isPositiveUpgrade</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillUpgradeButton.cs" line="41" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillUpgradeButton.cs" bodystart="41" bodyend="-1"/>
+        <referencedby refid="class_skill_upgrade_button_1a9e2143326595f1001d28b53cdb12f0c9" compoundref="_skill_upgrade_button_8cs" startline="184" endline="208">GetDescription</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_skill_upgrade_button_1aab41eb48e9b37e6e185edb5a3f5fbcb7" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SkillUpgradeButton.currentCost</definition>
+        <argsstring></argsstring>
+        <name>currentCost</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillUpgradeButton.cs" line="44" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillUpgradeButton.cs" bodystart="44" bodyend="-1"/>
+        <referencedby refid="class_skill_upgrade_button_1a9e2143326595f1001d28b53cdb12f0c9" compoundref="_skill_upgrade_button_8cs" startline="184" endline="208">GetDescription</referencedby>
+        <referencedby refid="class_skill_upgrade_button_1a3a39a5c511686d47ac71f879641a7fd7" compoundref="_skill_upgrade_button_8cs" startline="120" endline="159">Refresh</referencedby>
+        <referencedby refid="class_skill_upgrade_button_1aa4c1683f4f496c4a4d6e70c2cbea4215" compoundref="_skill_upgrade_button_8cs" startline="161" endline="182">Upgrade</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_skill_upgrade_button_1ac59d3e7de3e3ec7bc895c512c018f488" prot="private" static="no" mutable="no">
+        <type>List&lt; Action &gt;</type>
+        <definition>List&lt;Action&gt; SkillUpgradeButton.actions</definition>
+        <argsstring></argsstring>
+        <name>actions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillUpgradeButton.cs" line="46" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillUpgradeButton.cs" bodystart="46" bodyend="-1"/>
+        <referencedby refid="class_skill_upgrade_button_1afb8312a7d206af7a57b0a06c28e13b13" compoundref="_skill_upgrade_button_8cs" startline="79" endline="104">Initiate</referencedby>
+        <referencedby refid="class_skill_upgrade_button_1a2bfddaaa5fd0d66344800d12908234de" compoundref="_skill_upgrade_button_8cs" startline="210" endline="216">OnPointerClick</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_skill_upgrade_button_1a39e6d7ea5e22fe77ba3067e7cabffec6" prot="private" static="no" mutable="no">
+        <type>List&lt; string &gt;</type>
+        <definition>List&lt;string&gt; SkillUpgradeButton.actionsNames</definition>
+        <argsstring></argsstring>
+        <name>actionsNames</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillUpgradeButton.cs" line="47" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillUpgradeButton.cs" bodystart="47" bodyend="-1"/>
+        <referencedby refid="class_skill_upgrade_button_1afb8312a7d206af7a57b0a06c28e13b13" compoundref="_skill_upgrade_button_8cs" startline="79" endline="104">Initiate</referencedby>
+        <referencedby refid="class_skill_upgrade_button_1a2bfddaaa5fd0d66344800d12908234de" compoundref="_skill_upgrade_button_8cs" startline="210" endline="216">OnPointerClick</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_skill_upgrade_button_1a7d2b5e21c8b500f6cae8ae1c76e6ef45" prot="private" static="no" mutable="no">
+        <type>Button</type>
+        <definition>Button SkillUpgradeButton.btn</definition>
+        <argsstring></argsstring>
+        <name>btn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillUpgradeButton.cs" line="49" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillUpgradeButton.cs" bodystart="49" bodyend="-1"/>
+        <referencedby refid="class_skill_upgrade_button_1afb8312a7d206af7a57b0a06c28e13b13" compoundref="_skill_upgrade_button_8cs" startline="79" endline="104">Initiate</referencedby>
+        <referencedby refid="class_skill_upgrade_button_1a2bfddaaa5fd0d66344800d12908234de" compoundref="_skill_upgrade_button_8cs" startline="210" endline="216">OnPointerClick</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_skill_upgrade_button_1ab28c96812975fb7e7cdcde334aab6444" prot="private" static="no" mutable="no">
+        <type><ref refid="class_u_i_line_connector" kindref="compound">UILineConnector</ref></type>
+        <definition>UILineConnector SkillUpgradeButton.connector</definition>
+        <argsstring></argsstring>
+        <name>connector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillUpgradeButton.cs" line="51" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillUpgradeButton.cs" bodystart="51" bodyend="-1"/>
+        <referencedby refid="class_skill_upgrade_button_1ac8b5f40e84a93c9e6ba2b29058b0cdf8" compoundref="_skill_upgrade_button_8cs" startline="54" endline="62">Awake</referencedby>
+        <referencedby refid="class_skill_upgrade_button_1a3a39a5c511686d47ac71f879641a7fd7" compoundref="_skill_upgrade_button_8cs" startline="120" endline="159">Refresh</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_skill_upgrade_button_1aea1a842bb748b259186577a75152241a" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SkillUpgradeButton.locked</definition>
+        <argsstring></argsstring>
+        <name>locked</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillUpgradeButton.cs" line="52" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillUpgradeButton.cs" bodystart="52" bodyend="-1"/>
+        <referencedby refid="class_skill_upgrade_button_1a3a39a5c511686d47ac71f879641a7fd7" compoundref="_skill_upgrade_button_8cs" startline="120" endline="159">Refresh</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_skill_upgrade_button_1a5779cf47c51a0c7af841160d34741dc0" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type><ref refid="class_d_s_player_skill_1_1_skill_upgrade" kindref="compound">DSPlayerSkill.SkillUpgrade</ref></type>
+        <definition>DSPlayerSkill.SkillUpgrade SkillUpgradeButton.UpgradeStats</definition>
+        <argsstring></argsstring>
+        <name>UpgradeStats</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillUpgradeButton.cs" line="35" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillUpgradeButton.cs" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_skill_upgrade_button_1a9aace8edf1625ff0027fd03a2f5b1106" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>int</type>
+        <definition>int SkillUpgradeButton.Id</definition>
+        <argsstring></argsstring>
+        <name>Id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillUpgradeButton.cs" line="43" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillUpgradeButton.cs" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_skill_upgrade_button_1ac8b5f40e84a93c9e6ba2b29058b0cdf8" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SkillUpgradeButton.Awake</definition>
+        <argsstring>()</argsstring>
+        <name>Awake</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillUpgradeButton.cs" line="54" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillUpgradeButton.cs" bodystart="54" bodyend="62"/>
+        <references refid="class_skill_upgrade_button_1ab28c96812975fb7e7cdcde334aab6444" compoundref="_skill_upgrade_button_8cs" startline="51">connector</references>
+        <references refid="class_skill_upgrade_button_1ac1a1eab4d6f93f8f3cc6832955697cbc" compoundref="_skill_upgrade_button_8cs" startline="31">previousButton</references>
+      </memberdef>
+      <memberdef kind="function" id="class_skill_upgrade_button_1a1301427f864f89d7111d56d98fbaa939" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int SkillUpgradeButton.CalcLevelCost</definition>
+        <argsstring>(int level)</argsstring>
+        <name>CalcLevelCost</name>
+        <param>
+          <type>int</type>
+          <declname>level</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillUpgradeButton.cs" line="106" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillUpgradeButton.cs" bodystart="106" bodyend="118"/>
+        <references refid="class_skill_upgrade_button_1a5fb8bb2a354a5811caed5f5237f57162" compoundref="_skill_upgrade_button_8cs" startline="39">maxCost</references>
+        <references refid="class_skill_upgrade_button_1a091473a37b80fe1980be2825ca4f9714" compoundref="_skill_upgrade_button_8cs" startline="40">maxLevel</references>
+        <references refid="class_skill_upgrade_button_1a1bdbb4664711894350eb792e8bd0fd0a" compoundref="_skill_upgrade_button_8cs" startline="38">minCost</references>
+        <referencedby refid="class_skill_upgrade_button_1a3a39a5c511686d47ac71f879641a7fd7" compoundref="_skill_upgrade_button_8cs" startline="120" endline="159">Refresh</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_skill_upgrade_button_1a3a39a5c511686d47ac71f879641a7fd7" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SkillUpgradeButton.Refresh</definition>
+        <argsstring>()</argsstring>
+        <name>Refresh</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillUpgradeButton.cs" line="120" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillUpgradeButton.cs" bodystart="120" bodyend="159"/>
+        <references refid="class_skill_upgrade_button_1a1301427f864f89d7111d56d98fbaa939" compoundref="_skill_upgrade_button_8cs" startline="106" endline="118">CalcLevelCost</references>
+        <references refid="class_skill_upgrade_button_1ab28c96812975fb7e7cdcde334aab6444" compoundref="_skill_upgrade_button_8cs" startline="51">connector</references>
+        <references refid="class_skill_upgrade_button_1aab41eb48e9b37e6e185edb5a3f5fbcb7" compoundref="_skill_upgrade_button_8cs" startline="44">currentCost</references>
+        <references refid="class_skill_upgrade_button_1a71f6e9a11adb0411fcfbad79221e1407" compoundref="_skill_upgrade_button_8cs" startline="27">doneColor</references>
+        <references refid="class_string_formats_1a96409259c22f35583f98794987ad0441" compoundref="_string_formats_8cs" startline="18">StringFormats.intSeparatorNumber</references>
+        <references refid="class_skill_upgrade_button_1aea1a842bb748b259186577a75152241a" compoundref="_skill_upgrade_button_8cs" startline="52">locked</references>
+        <references refid="class_skill_upgrade_button_1aac70630ffff13c2f3ca6a02adaade129" compoundref="_skill_upgrade_button_8cs" startline="25">lockedColor</references>
+        <references refid="class_skill_upgrade_button_1a091473a37b80fe1980be2825ca4f9714" compoundref="_skill_upgrade_button_8cs" startline="40">maxLevel</references>
+        <references refid="class_string_formats_1a8a568c4aa83d93614f4742bb39127c62" compoundref="_string_formats_8cs" startline="20">StringFormats.nfi</references>
+        <references refid="class_skill_upgrade_button_1ac1a1eab4d6f93f8f3cc6832955697cbc" compoundref="_skill_upgrade_button_8cs" startline="31">previousButton</references>
+        <references refid="class_skill_upgrade_button_1a6e440214a7ee4e932a9c8aab610c4abe" compoundref="_skill_upgrade_button_8cs" startline="26">unlockedColor</references>
+        <references refid="class_skill_upgrade_button_1a6ef0bce1cf2db263bef157c107266011" compoundref="_skill_upgrade_button_8cs" startline="34">upgradeStats</references>
+        <referencedby refid="class_skill_upgrade_button_1afb8312a7d206af7a57b0a06c28e13b13" compoundref="_skill_upgrade_button_8cs" startline="79" endline="104">Initiate</referencedby>
+        <referencedby refid="class_skill_upgrade_button_1aa4c1683f4f496c4a4d6e70c2cbea4215" compoundref="_skill_upgrade_button_8cs" startline="161" endline="182">Upgrade</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_skill_upgrade_button_1aa4c1683f4f496c4a4d6e70c2cbea4215" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SkillUpgradeButton.Upgrade</definition>
+        <argsstring>()</argsstring>
+        <name>Upgrade</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillUpgradeButton.cs" line="161" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillUpgradeButton.cs" bodystart="161" bodyend="182"/>
+        <references refid="class_skill_upgrade_button_1aab41eb48e9b37e6e185edb5a3f5fbcb7" compoundref="_skill_upgrade_button_8cs" startline="44">currentCost</references>
+        <references refid="class_skill_upgrade_button_1a338f883e1586e5fdcfe604bd860d1e47" compoundref="_skill_upgrade_button_8cs" startline="32">nextButton</references>
+        <references refid="class_skill_upgrade_button_1a3a39a5c511686d47ac71f879641a7fd7" compoundref="_skill_upgrade_button_8cs" startline="120" endline="159">Refresh</references>
+        <references refid="class_localization_1a3073ed76eae3d6b84aaca68fdcc8d8d9" compoundref="_localization_8cs" startline="150">Localization.toast_not_enough_expirience</references>
+        <referencedby refid="class_skill_upgrade_button_1afb8312a7d206af7a57b0a06c28e13b13" compoundref="_skill_upgrade_button_8cs" startline="79" endline="104">Initiate</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_skill_upgrade_button_1afb8312a7d206af7a57b0a06c28e13b13" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SkillUpgradeButton.Initiate</definition>
+        <argsstring>(DSPlayerSkill.SkillUpgrade upgrade, bool load)</argsstring>
+        <name>Initiate</name>
+        <param>
+          <type><ref refid="class_d_s_player_skill_1_1_skill_upgrade" kindref="compound">DSPlayerSkill.SkillUpgrade</ref></type>
+          <declname>upgrade</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>load</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>upgrade</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>load</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>передаем false и этот метод переприсвоит переданный в первом параметре апгрейд. если передадим true то будет загружен переданный в первом параметре апгрейд</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillUpgradeButton.cs" line="79" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillUpgradeButton.cs" bodystart="79" bodyend="104"/>
+        <references refid="class_skill_upgrade_button_1ac59d3e7de3e3ec7bc895c512c018f488" compoundref="_skill_upgrade_button_8cs" startline="46">actions</references>
+        <references refid="class_skill_upgrade_button_1a39e6d7ea5e22fe77ba3067e7cabffec6" compoundref="_skill_upgrade_button_8cs" startline="47">actionsNames</references>
+        <references refid="class_skill_upgrade_button_1a7d2b5e21c8b500f6cae8ae1c76e6ef45" compoundref="_skill_upgrade_button_8cs" startline="49">btn</references>
+        <references refid="class_localization_1a55633df40f79b1840331cda0a064ad03" compoundref="_localization_8cs" startline="71">Localization.cancel</references>
+        <references refid="class_skill_upgrade_button_1a3a39a5c511686d47ac71f879641a7fd7" compoundref="_skill_upgrade_button_8cs" startline="120" endline="159">Refresh</references>
+        <references refid="class_localization_1a22a0cd2282456808499a02afefcdf1e2" compoundref="_localization_8cs" startline="72">Localization.upgrade</references>
+        <references refid="class_skill_upgrade_button_1aa4c1683f4f496c4a4d6e70c2cbea4215" compoundref="_skill_upgrade_button_8cs" startline="161" endline="182">Upgrade</references>
+        <references refid="class_skill_upgrade_button_1a6ef0bce1cf2db263bef157c107266011" compoundref="_skill_upgrade_button_8cs" startline="34">upgradeStats</references>
+      </memberdef>
+      <memberdef kind="function" id="class_skill_upgrade_button_1a9e2143326595f1001d28b53cdb12f0c9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_description" kindref="compound">Description</ref></type>
+        <definition>Description SkillUpgradeButton.GetDescription</definition>
+        <argsstring>()</argsstring>
+        <name>GetDescription</name>
+        <reimplements refid="interface_i_descriptionable_1a33be6e4687ad788d949f989aaadad45d">GetDescription</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillUpgradeButton.cs" line="184" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillUpgradeButton.cs" bodystart="184" bodyend="208"/>
+        <references refid="class_skill_upgrade_button_1aab41eb48e9b37e6e185edb5a3f5fbcb7" compoundref="_skill_upgrade_button_8cs" startline="44">currentCost</references>
+        <references refid="class_skill_upgrade_button_1a63c713dc7b354bc9f2067989f5825138" compoundref="_skill_upgrade_button_8cs" startline="21">descriptionResourceString</references>
+        <references refid="class_string_formats_1a7ec67be90f0210b6983d0d65145c5c4b" compoundref="_string_formats_8cs" startline="11">StringFormats.floatSignNumber</references>
+        <references refid="class_skill_upgrade_button_1afe473d2629495faa7f58e71006dea513" compoundref="_skill_upgrade_button_8cs" startline="41">isPositiveUpgrade</references>
+        <references refid="class_skill_upgrade_button_1ad776b9c515e504cd128d4d2fc37976f8" compoundref="_skill_upgrade_button_8cs" startline="20">nameResourceString</references>
+        <references refid="class_skill_upgrade_button_1a73c177832fff6aebdfa8aa079da2fedd" compoundref="_skill_upgrade_button_8cs" startline="22">upgradeStatDescriptionResourceString</references>
+        <references refid="class_skill_upgrade_button_1a6ef0bce1cf2db263bef157c107266011" compoundref="_skill_upgrade_button_8cs" startline="34">upgradeStats</references>
+        <referencedby refid="class_skill_upgrade_button_1a2bfddaaa5fd0d66344800d12908234de" compoundref="_skill_upgrade_button_8cs" startline="210" endline="216">OnPointerClick</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_skill_upgrade_button_1a2bfddaaa5fd0d66344800d12908234de" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SkillUpgradeButton.OnPointerClick</definition>
+        <argsstring>(PointerEventData eventData)</argsstring>
+        <name>OnPointerClick</name>
+        <param>
+          <type>PointerEventData</type>
+          <declname>eventData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillUpgradeButton.cs" line="210" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillUpgradeButton.cs" bodystart="210" bodyend="216"/>
+        <references refid="class_skill_upgrade_button_1ac59d3e7de3e3ec7bc895c512c018f488" compoundref="_skill_upgrade_button_8cs" startline="46">actions</references>
+        <references refid="class_skill_upgrade_button_1a39e6d7ea5e22fe77ba3067e7cabffec6" compoundref="_skill_upgrade_button_8cs" startline="47">actionsNames</references>
+        <references refid="class_skill_upgrade_button_1a7d2b5e21c8b500f6cae8ae1c76e6ef45" compoundref="_skill_upgrade_button_8cs" startline="49">btn</references>
+        <references refid="class_skill_upgrade_button_1a9e2143326595f1001d28b53cdb12f0c9" compoundref="_skill_upgrade_button_8cs" startline="184" endline="208">GetDescription</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="996">
+        <label>IDescriptionable</label>
+        <link refid="interface_i_descriptionable"/>
+      </node>
+      <node id="994">
+        <label>SkillUpgradeButton</label>
+        <link refid="class_skill_upgrade_button"/>
+        <childnode refid="995" relation="public-inheritance">
+        </childnode>
+        <childnode refid="996" relation="public-inheritance">
+        </childnode>
+        <childnode refid="997" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="997">
+        <label>IPointerClickHandler</label>
+      </node>
+      <node id="995">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1004">
+        <label>MaskableGraphic</label>
+      </node>
+      <node id="1002">
+        <label>UILineConnector</label>
+        <link refid="class_u_i_line_connector"/>
+        <childnode refid="999" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1003" relation="usage">
+          <edgelabel>line</edgelabel>
+        </childnode>
+      </node>
+      <node id="1000">
+        <label>IDescriptionable</label>
+        <link refid="interface_i_descriptionable"/>
+      </node>
+      <node id="998">
+        <label>SkillUpgradeButton</label>
+        <link refid="class_skill_upgrade_button"/>
+        <childnode refid="999" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1000" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1001" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1002" relation="usage">
+          <edgelabel>connector</edgelabel>
+        </childnode>
+        <childnode refid="998" relation="usage">
+          <edgelabel>nextButton</edgelabel>
+          <edgelabel>previousButton</edgelabel>
+        </childnode>
+        <childnode refid="1005" relation="usage">
+          <edgelabel>parent</edgelabel>
+        </childnode>
+        <childnode refid="1006" relation="usage">
+          <edgelabel>upgradeStats</edgelabel>
+        </childnode>
+      </node>
+      <node id="1005">
+        <label>SkillsUpgrade</label>
+        <link refid="class_skills_upgrade"/>
+        <childnode refid="999" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1001">
+        <label>IPointerClickHandler</label>
+      </node>
+      <node id="999">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1006">
+        <label>DSPlayerSkill</label>
+        <link refid="class_d_s_player_skill"/>
+      </node>
+      <node id="1003">
+        <label>UILineRenderer</label>
+        <link refid="class_u_i_line_renderer"/>
+        <childnode refid="1004" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillUpgradeButton.cs" line="11" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillUpgradeButton.cs" bodystart="10" bodyend="217"/>
+    <listofallmembers>
+      <member refid="class_skill_upgrade_button_1ac59d3e7de3e3ec7bc895c512c018f488" prot="private" virt="non-virtual"><scope>SkillUpgradeButton</scope><name>actions</name></member>
+      <member refid="class_skill_upgrade_button_1a39e6d7ea5e22fe77ba3067e7cabffec6" prot="private" virt="non-virtual"><scope>SkillUpgradeButton</scope><name>actionsNames</name></member>
+      <member refid="class_skill_upgrade_button_1ac8b5f40e84a93c9e6ba2b29058b0cdf8" prot="private" virt="non-virtual"><scope>SkillUpgradeButton</scope><name>Awake</name></member>
+      <member refid="class_skill_upgrade_button_1aa691d7bd4883c6e4bdb1a3ecdc0d6f71" prot="private" virt="non-virtual"><scope>SkillUpgradeButton</scope><name>background</name></member>
+      <member refid="class_skill_upgrade_button_1a7d2b5e21c8b500f6cae8ae1c76e6ef45" prot="private" virt="non-virtual"><scope>SkillUpgradeButton</scope><name>btn</name></member>
+      <member refid="class_skill_upgrade_button_1a1301427f864f89d7111d56d98fbaa939" prot="private" virt="non-virtual"><scope>SkillUpgradeButton</scope><name>CalcLevelCost</name></member>
+      <member refid="class_skill_upgrade_button_1ab28c96812975fb7e7cdcde334aab6444" prot="private" virt="non-virtual"><scope>SkillUpgradeButton</scope><name>connector</name></member>
+      <member refid="class_skill_upgrade_button_1ab6a2d68ec6b79da72e44bc5ddf990c6d" prot="private" virt="non-virtual"><scope>SkillUpgradeButton</scope><name>costDependency</name></member>
+      <member refid="class_skill_upgrade_button_1a549589a45c13840760fa52d2ad155b7f" prot="private" virt="non-virtual"><scope>SkillUpgradeButton</scope><name>costPanel</name></member>
+      <member refid="class_skill_upgrade_button_1ac4c2aa5c923b9b289446c3d19e2b90cc" prot="private" virt="non-virtual"><scope>SkillUpgradeButton</scope><name>costText</name></member>
+      <member refid="class_skill_upgrade_button_1aab41eb48e9b37e6e185edb5a3f5fbcb7" prot="private" virt="non-virtual"><scope>SkillUpgradeButton</scope><name>currentCost</name></member>
+      <member refid="class_skill_upgrade_button_1a08d5321184fc6ad28809d550b360bba7" prot="private" virt="non-virtual"><scope>SkillUpgradeButton</scope><name>currentLevelText</name></member>
+      <member refid="class_skill_upgrade_button_1a63c713dc7b354bc9f2067989f5825138" prot="private" virt="non-virtual"><scope>SkillUpgradeButton</scope><name>descriptionResourceString</name></member>
+      <member refid="class_skill_upgrade_button_1a71f6e9a11adb0411fcfbad79221e1407" prot="private" virt="non-virtual"><scope>SkillUpgradeButton</scope><name>doneColor</name></member>
+      <member refid="class_skill_upgrade_button_1a9e2143326595f1001d28b53cdb12f0c9" prot="public" virt="non-virtual"><scope>SkillUpgradeButton</scope><name>GetDescription</name></member>
+      <member refid="class_skill_upgrade_button_1aa38cbb96e556ab3b69b6732a330334e1" prot="private" virt="non-virtual"><scope>SkillUpgradeButton</scope><name>icon</name></member>
+      <member refid="class_skill_upgrade_button_1a9aace8edf1625ff0027fd03a2f5b1106" prot="public" virt="non-virtual"><scope>SkillUpgradeButton</scope><name>Id</name></member>
+      <member refid="class_skill_upgrade_button_1afb8312a7d206af7a57b0a06c28e13b13" prot="public" virt="non-virtual"><scope>SkillUpgradeButton</scope><name>Initiate</name></member>
+      <member refid="class_skill_upgrade_button_1afe473d2629495faa7f58e71006dea513" prot="private" virt="non-virtual"><scope>SkillUpgradeButton</scope><name>isPositiveUpgrade</name></member>
+      <member refid="class_skill_upgrade_button_1aea1a842bb748b259186577a75152241a" prot="private" virt="non-virtual"><scope>SkillUpgradeButton</scope><name>locked</name></member>
+      <member refid="class_skill_upgrade_button_1aac70630ffff13c2f3ca6a02adaade129" prot="private" virt="non-virtual"><scope>SkillUpgradeButton</scope><name>lockedColor</name></member>
+      <member refid="class_skill_upgrade_button_1a5fb8bb2a354a5811caed5f5237f57162" prot="private" virt="non-virtual"><scope>SkillUpgradeButton</scope><name>maxCost</name></member>
+      <member refid="class_skill_upgrade_button_1ac25aff19837e8ac41ab927aece9a6876" prot="private" virt="non-virtual"><scope>SkillUpgradeButton</scope><name>maximumLevelText</name></member>
+      <member refid="class_skill_upgrade_button_1a091473a37b80fe1980be2825ca4f9714" prot="private" virt="non-virtual"><scope>SkillUpgradeButton</scope><name>maxLevel</name></member>
+      <member refid="class_skill_upgrade_button_1a1bdbb4664711894350eb792e8bd0fd0a" prot="private" virt="non-virtual"><scope>SkillUpgradeButton</scope><name>minCost</name></member>
+      <member refid="class_skill_upgrade_button_1ad776b9c515e504cd128d4d2fc37976f8" prot="private" virt="non-virtual"><scope>SkillUpgradeButton</scope><name>nameResourceString</name></member>
+      <member refid="class_skill_upgrade_button_1a338f883e1586e5fdcfe604bd860d1e47" prot="private" virt="non-virtual"><scope>SkillUpgradeButton</scope><name>nextButton</name></member>
+      <member refid="class_skill_upgrade_button_1a2bfddaaa5fd0d66344800d12908234de" prot="public" virt="non-virtual"><scope>SkillUpgradeButton</scope><name>OnPointerClick</name></member>
+      <member refid="class_skill_upgrade_button_1a40ea504cc6a434b3539ffb3c2bca06f9" prot="private" virt="non-virtual"><scope>SkillUpgradeButton</scope><name>parent</name></member>
+      <member refid="class_skill_upgrade_button_1ac1a1eab4d6f93f8f3cc6832955697cbc" prot="private" virt="non-virtual"><scope>SkillUpgradeButton</scope><name>previousButton</name></member>
+      <member refid="class_skill_upgrade_button_1a3a39a5c511686d47ac71f879641a7fd7" prot="private" virt="non-virtual"><scope>SkillUpgradeButton</scope><name>Refresh</name></member>
+      <member refid="class_skill_upgrade_button_1a6e440214a7ee4e932a9c8aab610c4abe" prot="private" virt="non-virtual"><scope>SkillUpgradeButton</scope><name>unlockedColor</name></member>
+      <member refid="class_skill_upgrade_button_1aa4c1683f4f496c4a4d6e70c2cbea4215" prot="private" virt="non-virtual"><scope>SkillUpgradeButton</scope><name>Upgrade</name></member>
+      <member refid="class_skill_upgrade_button_1a73c177832fff6aebdfa8aa079da2fedd" prot="private" virt="non-virtual"><scope>SkillUpgradeButton</scope><name>upgradeStatDescriptionResourceString</name></member>
+      <member refid="class_skill_upgrade_button_1a6ef0bce1cf2db263bef157c107266011" prot="private" virt="non-virtual"><scope>SkillUpgradeButton</scope><name>upgradeStats</name></member>
+      <member refid="class_skill_upgrade_button_1a5779cf47c51a0c7af841160d34741dc0" prot="public" virt="non-virtual"><scope>SkillUpgradeButton</scope><name>UpgradeStats</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,313 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_drag" kind="class" prot="public" abstract="yes">
+    <compoundname>Drag</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">IDragHandler</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">IBeginDragHandler</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">IEndDragHandler</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">IPointerClickHandler</basecompoundref>
+    <derivedcompoundref refid="class_drag_equipment" prot="public" virt="non-virtual">DragEquipment</derivedcompoundref>
+    <derivedcompoundref refid="class_drag_skill" prot="public" virt="non-virtual">DragSkill</derivedcompoundref>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_drag_1acf7e1336c789b77a2e0f6b2bc69eeadc" prot="protected" static="no" mutable="no">
+        <type>Transform</type>
+        <definition>Transform Drag.thisTransform</definition>
+        <argsstring></argsstring>
+        <name>thisTransform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/Drag.cs" line="9" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/Drag.cs" bodystart="9" bodyend="-1"/>
+        <referencedby refid="class_drag_1a61dd1ea2bf61dd6cbc4a4f01f584a913" compoundref="_drag_8cs" startline="64" endline="77">OnEndDrag</referencedby>
+        <referencedby refid="class_drag_skill_1a0a2d9be51e4294c51d81db7073b72432" compoundref="_drag_skill_8cs" startline="12" endline="15">DragSkill.OnPointerClick</referencedby>
+        <referencedby refid="class_drag_1aa54f5937fee611ef2d66be84685aa94e" compoundref="_drag_8cs" startline="16" endline="21">Start</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_drag_1a42a81d5b2994e200f9aa11c46e0b4432" prot="private" static="no" mutable="no">
+        <type>Transform</type>
+        <definition>Transform Drag.canvas</definition>
+        <argsstring></argsstring>
+        <name>canvas</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/Drag.cs" line="10" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/Drag.cs" bodystart="10" bodyend="-1"/>
+        <referencedby refid="class_drag_1aad55b07fe50345d2a29e1fad325e3fdf" compoundref="_drag_8cs" startline="45" endline="57">OnBeginDrag</referencedby>
+        <referencedby refid="class_drag_1a61dd1ea2bf61dd6cbc4a4f01f584a913" compoundref="_drag_8cs" startline="64" endline="77">OnEndDrag</referencedby>
+        <referencedby refid="class_drag_1aa54f5937fee611ef2d66be84685aa94e" compoundref="_drag_8cs" startline="16" endline="21">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_drag_1a527fdfd370be7f58c9267a6fa5f7c41a" prot="private" static="no" mutable="no">
+        <type>CanvasGroup</type>
+        <definition>CanvasGroup Drag.canvasGroup</definition>
+        <argsstring></argsstring>
+        <name>canvasGroup</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/Drag.cs" line="12" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/Drag.cs" bodystart="12" bodyend="-1"/>
+        <referencedby refid="class_drag_1aa54f5937fee611ef2d66be84685aa94e" compoundref="_drag_8cs" startline="16" endline="21">Start</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_drag_1a8f7e285708ce9e7ba67c00677dc1e950" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>Transform</type>
+        <definition>Transform Drag.OldParent</definition>
+        <argsstring></argsstring>
+        <name>OldParent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/Drag.cs" line="11" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/Drag.cs" bodystart="11" bodyend="-1"/>
+        <referencedby refid="class_drag_1aad55b07fe50345d2a29e1fad325e3fdf" compoundref="_drag_8cs" startline="45" endline="57">OnBeginDrag</referencedby>
+        <referencedby refid="class_drag_1a61dd1ea2bf61dd6cbc4a4f01f584a913" compoundref="_drag_8cs" startline="64" endline="77">OnEndDrag</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_drag_1abc72e7d1bdad6b2267f5b539e2bc1fda" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>bool</type>
+        <definition>bool Drag.CanDrag</definition>
+        <argsstring></argsstring>
+        <name>CanDrag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/Drag.cs" line="14" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/Drag.cs" bodystart="14" bodyend="-1"/>
+        <referencedby refid="class_drag_1aad55b07fe50345d2a29e1fad325e3fdf" compoundref="_drag_8cs" startline="45" endline="57">OnBeginDrag</referencedby>
+        <referencedby refid="class_drag_1aaac914cb203c06ba1e4cdb5eb0e8b519" compoundref="_drag_8cs" startline="23" endline="43">OnDrag</referencedby>
+        <referencedby refid="class_drop_to_ground_1a91a5ee1b7fdb866f90a2d7156184cc2a" compoundref="_drop_to_ground_8cs" startline="5" endline="26">DropToGround.OnDrop</referencedby>
+        <referencedby refid="class_drop_to_consumable_market_1aa8aab46043df942d1ccc7e4242051516" compoundref="_drop_to_consumable_market_8cs" startline="6" endline="26">DropToConsumableMarket.OnDrop</referencedby>
+        <referencedby refid="class_drop_to_equipment_market_1ae51fe5f1f0dda746010d2c85a79da913" compoundref="_drop_to_equipment_market_8cs" startline="6" endline="26">DropToEquipmentMarket.OnDrop</referencedby>
+        <referencedby refid="class_drop_to_equipment_1ae3d4d93b720430bbd8a03ecd83bac01b" compoundref="_drop_to_equipment_8cs" startline="7" endline="44">DropToEquipment.OnDrop</referencedby>
+        <referencedby refid="class_drop_to_inventory_1a0d4c04875df9f644d56798b13b0fe471" compoundref="_drop_to_inventory_8cs" startline="9" endline="54">DropToInventory.OnDrop</referencedby>
+        <referencedby refid="class_drop_to_skill_market_1a0a1708ed8b9c2a967ec983ba27e5de22" compoundref="_drop_to_skill_market_8cs" startline="19" endline="32">DropToSkillMarket.OnDrop</referencedby>
+        <referencedby refid="class_drop_to_skill_1a0e0b6cb3b59a4e1dca3303591d7dddc0" compoundref="_drop_to_skill_8cs" startline="41" endline="59">DropToSkill.OnDrop</referencedby>
+        <referencedby refid="class_drag_1a61dd1ea2bf61dd6cbc4a4f01f584a913" compoundref="_drag_8cs" startline="64" endline="77">OnEndDrag</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_drag_1aa54f5937fee611ef2d66be84685aa94e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Drag.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/Drag.cs" line="16" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/Drag.cs" bodystart="16" bodyend="21"/>
+        <references refid="class_drag_1a42a81d5b2994e200f9aa11c46e0b4432" compoundref="_drag_8cs" startline="10">canvas</references>
+        <references refid="class_drag_1a527fdfd370be7f58c9267a6fa5f7c41a" compoundref="_drag_8cs" startline="12">canvasGroup</references>
+        <references refid="class_drag_1acf7e1336c789b77a2e0f6b2bc69eeadc" compoundref="_drag_8cs" startline="9">thisTransform</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_drag_1aaac914cb203c06ba1e4cdb5eb0e8b519" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Drag.OnDrag</definition>
+        <argsstring>(PointerEventData eventData)</argsstring>
+        <name>OnDrag</name>
+        <param>
+          <type>PointerEventData</type>
+          <declname>eventData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/Drag.cs" line="23" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/Drag.cs" bodystart="23" bodyend="43"/>
+        <references refid="class_drag_1abc72e7d1bdad6b2267f5b539e2bc1fda" compoundref="_drag_8cs" startline="14">CanDrag</references>
+      </memberdef>
+      <memberdef kind="function" id="class_drag_1aad55b07fe50345d2a29e1fad325e3fdf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Drag.OnBeginDrag</definition>
+        <argsstring>(PointerEventData eventData)</argsstring>
+        <name>OnBeginDrag</name>
+        <param>
+          <type>PointerEventData</type>
+          <declname>eventData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/Drag.cs" line="45" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/Drag.cs" bodystart="45" bodyend="57"/>
+        <references refid="class_drag_1abc72e7d1bdad6b2267f5b539e2bc1fda" compoundref="_drag_8cs" startline="14">CanDrag</references>
+        <references refid="class_drag_1a42a81d5b2994e200f9aa11c46e0b4432" compoundref="_drag_8cs" startline="10">canvas</references>
+        <references refid="class_drag_1a8f7e285708ce9e7ba67c00677dc1e950" compoundref="_drag_8cs" startline="11">OldParent</references>
+        <references refid="class_drag_1ae357e9a731b2eaa2438f98e350914bb4" compoundref="_drag_8cs" startline="59" endline="62">OnCantDrag</references>
+      </memberdef>
+      <memberdef kind="function" id="class_drag_1a61dd1ea2bf61dd6cbc4a4f01f584a913" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Drag.OnEndDrag</definition>
+        <argsstring>(PointerEventData eventData)</argsstring>
+        <name>OnEndDrag</name>
+        <param>
+          <type>PointerEventData</type>
+          <declname>eventData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/Drag.cs" line="64" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/Drag.cs" bodystart="64" bodyend="77"/>
+        <references refid="class_drag_1abc72e7d1bdad6b2267f5b539e2bc1fda" compoundref="_drag_8cs" startline="14">CanDrag</references>
+        <references refid="class_drag_1a42a81d5b2994e200f9aa11c46e0b4432" compoundref="_drag_8cs" startline="10">canvas</references>
+        <references refid="class_drag_1a8f7e285708ce9e7ba67c00677dc1e950" compoundref="_drag_8cs" startline="11">OldParent</references>
+        <references refid="class_drag_1acf7e1336c789b77a2e0f6b2bc69eeadc" compoundref="_drag_8cs" startline="9">thisTransform</references>
+      </memberdef>
+      <memberdef kind="function" id="class_drag_1a87c2a317cab05131748dad16109be796" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>abstract void</type>
+        <definition>abstract void Drag.OnPointerClick</definition>
+        <argsstring>(PointerEventData eventData)</argsstring>
+        <name>OnPointerClick</name>
+        <reimplementedby refid="class_drag_skill_1a0a2d9be51e4294c51d81db7073b72432">OnPointerClick</reimplementedby>
+        <reimplementedby refid="class_drag_equipment_1a6dad6b2a4327de1e39c816378a99f891">OnPointerClick</reimplementedby>
+        <param>
+          <type>PointerEventData</type>
+          <declname>eventData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/Drag.cs" line="79" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_drag_1ae357e9a731b2eaa2438f98e350914bb4" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Drag.OnCantDrag</definition>
+        <argsstring>()</argsstring>
+        <name>OnCantDrag</name>
+        <reimplementedby refid="class_drag_equipment_1a73db69b6e53ca46b849e46eb3a8cb398">OnCantDrag</reimplementedby>
+        <reimplementedby refid="class_drag_skill_1a214f88611808e3efbfe1e8d73f1260bc">OnCantDrag</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/Drag.cs" line="59" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/Drag.cs" bodystart="59" bodyend="62"/>
+        <references refid="class_localization_1aefe701465676d3f06f8cdfe268971b24" compoundref="_localization_8cs" startline="154">Localization.toast_cant_drop</references>
+        <referencedby refid="class_drag_1aad55b07fe50345d2a29e1fad325e3fdf" compoundref="_drag_8cs" startline="45" endline="57">OnBeginDrag</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="179">
+        <label>IEndDragHandler</label>
+      </node>
+      <node id="175">
+        <label>Drag</label>
+        <link refid="class_drag"/>
+        <childnode refid="176" relation="public-inheritance">
+        </childnode>
+        <childnode refid="177" relation="public-inheritance">
+        </childnode>
+        <childnode refid="178" relation="public-inheritance">
+        </childnode>
+        <childnode refid="179" relation="public-inheritance">
+        </childnode>
+        <childnode refid="180" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="178">
+        <label>IBeginDragHandler</label>
+      </node>
+      <node id="180">
+        <label>IPointerClickHandler</label>
+      </node>
+      <node id="176">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="182">
+        <label>DragSkill</label>
+        <link refid="class_drag_skill"/>
+        <childnode refid="175" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="181">
+        <label>DragEquipment</label>
+        <link refid="class_drag_equipment"/>
+        <childnode refid="175" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="177">
+        <label>IDragHandler</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="187">
+        <label>IEndDragHandler</label>
+      </node>
+      <node id="183">
+        <label>Drag</label>
+        <link refid="class_drag"/>
+        <childnode refid="184" relation="public-inheritance">
+        </childnode>
+        <childnode refid="185" relation="public-inheritance">
+        </childnode>
+        <childnode refid="186" relation="public-inheritance">
+        </childnode>
+        <childnode refid="187" relation="public-inheritance">
+        </childnode>
+        <childnode refid="188" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="186">
+        <label>IBeginDragHandler</label>
+      </node>
+      <node id="188">
+        <label>IPointerClickHandler</label>
+      </node>
+      <node id="184">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="185">
+        <label>IDragHandler</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/Drag.cs" line="8" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/Drag.cs" bodystart="7" bodyend="80"/>
+    <listofallmembers>
+      <member refid="class_drag_1abc72e7d1bdad6b2267f5b539e2bc1fda" prot="public" virt="non-virtual"><scope>Drag</scope><name>CanDrag</name></member>
+      <member refid="class_drag_1a42a81d5b2994e200f9aa11c46e0b4432" prot="private" virt="non-virtual"><scope>Drag</scope><name>canvas</name></member>
+      <member refid="class_drag_1a527fdfd370be7f58c9267a6fa5f7c41a" prot="private" virt="non-virtual"><scope>Drag</scope><name>canvasGroup</name></member>
+      <member refid="class_drag_1a8f7e285708ce9e7ba67c00677dc1e950" prot="public" virt="non-virtual"><scope>Drag</scope><name>OldParent</name></member>
+      <member refid="class_drag_1aad55b07fe50345d2a29e1fad325e3fdf" prot="public" virt="non-virtual"><scope>Drag</scope><name>OnBeginDrag</name></member>
+      <member refid="class_drag_1ae357e9a731b2eaa2438f98e350914bb4" prot="protected" virt="virtual"><scope>Drag</scope><name>OnCantDrag</name></member>
+      <member refid="class_drag_1aaac914cb203c06ba1e4cdb5eb0e8b519" prot="public" virt="non-virtual"><scope>Drag</scope><name>OnDrag</name></member>
+      <member refid="class_drag_1a61dd1ea2bf61dd6cbc4a4f01f584a913" prot="public" virt="non-virtual"><scope>Drag</scope><name>OnEndDrag</name></member>
+      <member refid="class_drag_1a87c2a317cab05131748dad16109be796" prot="public" virt="pure-virtual"><scope>Drag</scope><name>OnPointerClick</name></member>
+      <member refid="class_drag_1aa54f5937fee611ef2d66be84685aa94e" prot="private" virt="non-virtual"><scope>Drag</scope><name>Start</name></member>
+      <member refid="class_drag_1acf7e1336c789b77a2e0f6b2bc69eeadc" prot="protected" virt="non-virtual"><scope>Drag</scope><name>thisTransform</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

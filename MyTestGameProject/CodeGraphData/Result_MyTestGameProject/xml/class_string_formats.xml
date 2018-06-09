@@ -1,0 +1,179 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_string_formats" kind="class" prot="public">
+    <compoundname>StringFormats</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_string_formats_1ab8e8b55f89d499d469b9509e2398470b" prot="public" static="no" mutable="no">
+        <type>const string</type>
+        <definition>const string StringFormats.floatNumber</definition>
+        <argsstring></argsstring>
+        <name>floatNumber</name>
+        <initializer>= &quot;0.##&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/StringFormats.cs" line="9" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/StringFormats.cs" bodystart="9" bodyend="-1"/>
+        <referencedby refid="struct_skill_arrows_valley_1_1_arrow_walley_stats_1aa41c15eb6177138bc53a22c3863d9387" compoundref="_skill_arrows_valley_8cs" startline="21" endline="37">SkillArrowsValley.ArrowWalleyStats.GetDescription</referencedby>
+        <referencedby refid="struct_equipment_stats_1aa5808678f48da4fbb5d2b4f1d162a781" compoundref="_equipment_stats_8cs" startline="92" endline="314">EquipmentStats.GetDescription</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_string_formats_1a6f42e44b5d97ab658efac91637b1aae4" prot="public" static="no" mutable="no">
+        <type>const string</type>
+        <definition>const string StringFormats.floatNumberPercent</definition>
+        <argsstring></argsstring>
+        <name>floatNumberPercent</name>
+        <initializer>= &quot;0.##%&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/StringFormats.cs" line="10" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/StringFormats.cs" bodystart="10" bodyend="-1"/>
+        <referencedby refid="struct_equipment_stats_1aa5808678f48da4fbb5d2b4f1d162a781" compoundref="_equipment_stats_8cs" startline="92" endline="314">EquipmentStats.GetDescription</referencedby>
+        <referencedby refid="class_progress_circle_1a530caf9ddd11e3f5e49b453bec71907d" compoundref="_progress_circle_8cs" startline="29" endline="53">ProgressCircle.Running</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_string_formats_1a7ec67be90f0210b6983d0d65145c5c4b" prot="public" static="no" mutable="no">
+        <type>const string</type>
+        <definition>const string StringFormats.floatSignNumber</definition>
+        <argsstring></argsstring>
+        <name>floatSignNumber</name>
+        <initializer>= &quot;+0.##;-0.##&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/StringFormats.cs" line="11" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/StringFormats.cs" bodystart="11" bodyend="-1"/>
+        <referencedby refid="class_skill_upgrade_button_1a9e2143326595f1001d28b53cdb12f0c9" compoundref="_skill_upgrade_button_8cs" startline="184" endline="208">SkillUpgradeButton.GetDescription</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_string_formats_1a2d12b5f5de02f7a616c45a0ca3d358f6" prot="public" static="no" mutable="no">
+        <type>const string</type>
+        <definition>const string StringFormats.floatSignNumberPercent</definition>
+        <argsstring></argsstring>
+        <name>floatSignNumberPercent</name>
+        <initializer>= &quot;+0.##%;-0.##%&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/StringFormats.cs" line="12" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/StringFormats.cs" bodystart="12" bodyend="-1"/>
+        <referencedby refid="struct_equipment_stats_1aa5808678f48da4fbb5d2b4f1d162a781" compoundref="_equipment_stats_8cs" startline="92" endline="314">EquipmentStats.GetDescription</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_string_formats_1ac225f54643d26ef845a63ea0cc71478b" prot="public" static="no" mutable="no">
+        <type>const string</type>
+        <definition>const string StringFormats.intNumber</definition>
+        <argsstring></argsstring>
+        <name>intNumber</name>
+        <initializer>= &quot;0.&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/StringFormats.cs" line="14" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/StringFormats.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_string_formats_1ad184cb80a5ce4fd75f359ecba690174e" prot="public" static="no" mutable="no">
+        <type>const string</type>
+        <definition>const string StringFormats.intNumberPercent</definition>
+        <argsstring></argsstring>
+        <name>intNumberPercent</name>
+        <initializer>= &quot;0.%&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/StringFormats.cs" line="15" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/StringFormats.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_string_formats_1a65ccd7f45184f2de33e0926c29c6c8d0" prot="public" static="no" mutable="no">
+        <type>const string</type>
+        <definition>const string StringFormats.intSignNumber</definition>
+        <argsstring></argsstring>
+        <name>intSignNumber</name>
+        <initializer>= &quot;+0.;-0.&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/StringFormats.cs" line="16" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/StringFormats.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_string_formats_1a2a354c880ee9d0ef87204114f33802cd" prot="public" static="no" mutable="no">
+        <type>const string</type>
+        <definition>const string StringFormats.intSignNumberPercent</definition>
+        <argsstring></argsstring>
+        <name>intSignNumberPercent</name>
+        <initializer>= &quot;+0.%;-0.%&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/StringFormats.cs" line="17" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/StringFormats.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_string_formats_1a96409259c22f35583f98794987ad0441" prot="public" static="no" mutable="no">
+        <type>const string</type>
+        <definition>const string StringFormats.intSeparatorNumber</definition>
+        <argsstring></argsstring>
+        <name>intSeparatorNumber</name>
+        <initializer>= &quot;#,0&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/StringFormats.cs" line="18" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/StringFormats.cs" bodystart="18" bodyend="-1"/>
+        <referencedby refid="class_skill_upgrade_button_1a3a39a5c511686d47ac71f879641a7fd7" compoundref="_skill_upgrade_button_8cs" startline="120" endline="159">SkillUpgradeButton.Refresh</referencedby>
+        <referencedby refid="class_score_panel_1a723d01e7fe73b1e2931ed2df73f9ecef" compoundref="_score_panel_8cs" startline="41" endline="104">ScorePanel.RefreshByEvent</referencedby>
+        <referencedby refid="class_tips_panel_1ae567a4e86cfbd2781a6e25eb3a530721" compoundref="_tips_panel_8cs" startline="51" endline="129">TipsPanel.SetDescription</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_string_formats_1a8a568c4aa83d93614f4742bb39127c62" prot="public" static="yes" mutable="no">
+        <type>readonly NumberFormatInfo</type>
+        <definition>readonly NumberFormatInfo StringFormats.nfi</definition>
+        <argsstring></argsstring>
+        <name>nfi</name>
+        <initializer>= new NumberFormatInfo { NumberGroupSeparator = &quot; &quot; }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/StringFormats.cs" line="20" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/StringFormats.cs" bodystart="20" bodyend="-1"/>
+        <referencedby refid="class_skill_upgrade_button_1a3a39a5c511686d47ac71f879641a7fd7" compoundref="_skill_upgrade_button_8cs" startline="120" endline="159">SkillUpgradeButton.Refresh</referencedby>
+        <referencedby refid="class_score_panel_1a723d01e7fe73b1e2931ed2df73f9ecef" compoundref="_score_panel_8cs" startline="41" endline="104">ScorePanel.RefreshByEvent</referencedby>
+        <referencedby refid="class_tips_panel_1ae567a4e86cfbd2781a6e25eb3a530721" compoundref="_tips_panel_8cs" startline="51" endline="129">TipsPanel.SetDescription</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/StringFormats.cs" line="7" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/StringFormats.cs" bodystart="6" bodyend="22"/>
+    <listofallmembers>
+      <member refid="class_string_formats_1ab8e8b55f89d499d469b9509e2398470b" prot="public" virt="non-virtual"><scope>StringFormats</scope><name>floatNumber</name></member>
+      <member refid="class_string_formats_1a6f42e44b5d97ab658efac91637b1aae4" prot="public" virt="non-virtual"><scope>StringFormats</scope><name>floatNumberPercent</name></member>
+      <member refid="class_string_formats_1a7ec67be90f0210b6983d0d65145c5c4b" prot="public" virt="non-virtual"><scope>StringFormats</scope><name>floatSignNumber</name></member>
+      <member refid="class_string_formats_1a2d12b5f5de02f7a616c45a0ca3d358f6" prot="public" virt="non-virtual"><scope>StringFormats</scope><name>floatSignNumberPercent</name></member>
+      <member refid="class_string_formats_1ac225f54643d26ef845a63ea0cc71478b" prot="public" virt="non-virtual"><scope>StringFormats</scope><name>intNumber</name></member>
+      <member refid="class_string_formats_1ad184cb80a5ce4fd75f359ecba690174e" prot="public" virt="non-virtual"><scope>StringFormats</scope><name>intNumberPercent</name></member>
+      <member refid="class_string_formats_1a96409259c22f35583f98794987ad0441" prot="public" virt="non-virtual"><scope>StringFormats</scope><name>intSeparatorNumber</name></member>
+      <member refid="class_string_formats_1a65ccd7f45184f2de33e0926c29c6c8d0" prot="public" virt="non-virtual"><scope>StringFormats</scope><name>intSignNumber</name></member>
+      <member refid="class_string_formats_1a2a354c880ee9d0ef87204114f33802cd" prot="public" virt="non-virtual"><scope>StringFormats</scope><name>intSignNumberPercent</name></member>
+      <member refid="class_string_formats_1a8a568c4aa83d93614f4742bb39127c62" prot="public" virt="non-virtual"><scope>StringFormats</scope><name>nfi</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

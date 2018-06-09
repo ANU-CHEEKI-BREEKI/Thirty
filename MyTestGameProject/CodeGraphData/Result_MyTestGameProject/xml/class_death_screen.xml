@@ -1,0 +1,206 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_death_screen" kind="class" prot="public">
+    <compoundname>DeathScreen</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_death_screen_1a30fbb68df03f19f7b8b383c5a79d1f0b" prot="private" static="no" mutable="no">
+        <type>TextMeshProUGUI</type>
+        <definition>TextMeshProUGUI DeathScreen.headerText</definition>
+        <argsstring></argsstring>
+        <name>headerText</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DeathScreen.cs" line="12" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DeathScreen.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_death_screen_1aae5f7ec5a8de10585b6dff178f70327a" prot="private" static="no" mutable="no">
+        <type>TextMeshProUGUI</type>
+        <definition>TextMeshProUGUI DeathScreen.tipsText</definition>
+        <argsstring></argsstring>
+        <name>tipsText</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DeathScreen.cs" line="13" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DeathScreen.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_death_screen_1ade582038efdd7d0588eabd0033fbffd0" prot="private" static="no" mutable="no">
+        <type>Image</type>
+        <definition>Image DeathScreen.tipsImage1</definition>
+        <argsstring></argsstring>
+        <name>tipsImage1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DeathScreen.cs" line="14" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DeathScreen.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_death_screen_1a096cdea5f1c725a778bad43a56fd23a8" prot="private" static="no" mutable="no">
+        <type>Image</type>
+        <definition>Image DeathScreen.tipsImage2</definition>
+        <argsstring></argsstring>
+        <name>tipsImage2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DeathScreen.cs" line="15" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DeathScreen.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_death_screen_1a0f5ced1c5e309fbfb20359871154b059" prot="private" static="no" mutable="no">
+        <type><ref refid="class_s_o_tip" kindref="compound">SOTip</ref>[]</type>
+        <definition>SOTip [] DeathScreen.tips</definition>
+        <argsstring></argsstring>
+        <name>tips</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DeathScreen.cs" line="17" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DeathScreen.cs" bodystart="17" bodyend="-1"/>
+        <referencedby refid="class_death_screen_1a6960f77b5aeb8a5c4289a472dab34265" compoundref="_death_screen_8cs" startline="42" endline="60">SetTips</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_death_screen_1a57ab70b2ce8614760ac1e14c5feb21de" prot="private" static="no" mutable="no">
+        <type>CanvasGroup</type>
+        <definition>CanvasGroup DeathScreen.cg</definition>
+        <argsstring></argsstring>
+        <name>cg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DeathScreen.cs" line="19" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DeathScreen.cs" bodystart="19" bodyend="-1"/>
+        <referencedby refid="class_death_screen_1afe8406b347cd759ef84b7727d3dd98ea" compoundref="_death_screen_8cs" startline="36" endline="40">PlayerSquadInstance_OnSquadDestroy</referencedby>
+        <referencedby refid="class_death_screen_1a51867b801842430804fb8ec8c63a88fb" compoundref="_death_screen_8cs" startline="21" endline="28">Start</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_death_screen_1a51867b801842430804fb8ec8c63a88fb" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void DeathScreen.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DeathScreen.cs" line="21" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DeathScreen.cs" bodystart="21" bodyend="28"/>
+        <references refid="class_death_screen_1a57ab70b2ce8614760ac1e14c5feb21de" compoundref="_death_screen_8cs" startline="19">cg</references>
+        <references refid="class_death_screen_1afe8406b347cd759ef84b7727d3dd98ea" compoundref="_death_screen_8cs" startline="36" endline="40">PlayerSquadInstance_OnSquadDestroy</references>
+      </memberdef>
+      <memberdef kind="function" id="class_death_screen_1a8ad463929b0527085f2bad36b9720163" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void DeathScreen.OnDestroy</definition>
+        <argsstring>()</argsstring>
+        <name>OnDestroy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DeathScreen.cs" line="30" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DeathScreen.cs" bodystart="30" bodyend="34"/>
+        <references refid="class_squad_1a781a32dd5c6fadbe0a9e04f142ddc9da" compoundref="_squad_8cs" startline="10">Squad.playerSquadInstance</references>
+        <references refid="class_death_screen_1afe8406b347cd759ef84b7727d3dd98ea" compoundref="_death_screen_8cs" startline="36" endline="40">PlayerSquadInstance_OnSquadDestroy</references>
+      </memberdef>
+      <memberdef kind="function" id="class_death_screen_1afe8406b347cd759ef84b7727d3dd98ea" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void DeathScreen.PlayerSquadInstance_OnSquadDestroy</definition>
+        <argsstring>()</argsstring>
+        <name>PlayerSquadInstance_OnSquadDestroy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DeathScreen.cs" line="36" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DeathScreen.cs" bodystart="36" bodyend="40"/>
+        <references refid="class_death_screen_1a57ab70b2ce8614760ac1e14c5feb21de" compoundref="_death_screen_8cs" startline="19">cg</references>
+        <references refid="class_death_screen_1a6960f77b5aeb8a5c4289a472dab34265" compoundref="_death_screen_8cs" startline="42" endline="60">SetTips</references>
+        <referencedby refid="class_death_screen_1a8ad463929b0527085f2bad36b9720163" compoundref="_death_screen_8cs" startline="30" endline="34">OnDestroy</referencedby>
+        <referencedby refid="class_death_screen_1a51867b801842430804fb8ec8c63a88fb" compoundref="_death_screen_8cs" startline="21" endline="28">Start</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_death_screen_1a6960f77b5aeb8a5c4289a472dab34265" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void DeathScreen.SetTips</definition>
+        <argsstring>()</argsstring>
+        <name>SetTips</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DeathScreen.cs" line="42" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DeathScreen.cs" bodystart="42" bodyend="60"/>
+        <references refid="class_s_o_tip_1a727483aee348e5e43c6f1afbe5e3f31d" compoundref="_s_o_tip_8cs" startline="8">SOTip.images</references>
+        <references refid="class_death_screen_1a0f5ced1c5e309fbfb20359871154b059" compoundref="_death_screen_8cs" startline="17">tips</references>
+        <referencedby refid="class_death_screen_1afe8406b347cd759ef84b7727d3dd98ea" compoundref="_death_screen_8cs" startline="36" endline="40">PlayerSquadInstance_OnSquadDestroy</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="148">
+        <label>DeathScreen</label>
+        <link refid="class_death_screen"/>
+        <childnode refid="149" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="149">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="150">
+        <label>DeathScreen</label>
+        <link refid="class_death_screen"/>
+        <childnode refid="151" relation="public-inheritance">
+        </childnode>
+        <childnode refid="152" relation="usage">
+          <edgelabel>tips</edgelabel>
+        </childnode>
+      </node>
+      <node id="153">
+        <label>ScriptableObject</label>
+      </node>
+      <node id="151">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="152">
+        <label>SOTip</label>
+        <link refid="class_s_o_tip"/>
+        <childnode refid="153" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DeathScreen.cs" line="10" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DeathScreen.cs" bodystart="9" bodyend="61"/>
+    <listofallmembers>
+      <member refid="class_death_screen_1a57ab70b2ce8614760ac1e14c5feb21de" prot="private" virt="non-virtual"><scope>DeathScreen</scope><name>cg</name></member>
+      <member refid="class_death_screen_1a30fbb68df03f19f7b8b383c5a79d1f0b" prot="private" virt="non-virtual"><scope>DeathScreen</scope><name>headerText</name></member>
+      <member refid="class_death_screen_1a8ad463929b0527085f2bad36b9720163" prot="private" virt="non-virtual"><scope>DeathScreen</scope><name>OnDestroy</name></member>
+      <member refid="class_death_screen_1afe8406b347cd759ef84b7727d3dd98ea" prot="private" virt="non-virtual"><scope>DeathScreen</scope><name>PlayerSquadInstance_OnSquadDestroy</name></member>
+      <member refid="class_death_screen_1a6960f77b5aeb8a5c4289a472dab34265" prot="private" virt="non-virtual"><scope>DeathScreen</scope><name>SetTips</name></member>
+      <member refid="class_death_screen_1a51867b801842430804fb8ec8c63a88fb" prot="private" virt="non-virtual"><scope>DeathScreen</scope><name>Start</name></member>
+      <member refid="class_death_screen_1a0f5ced1c5e309fbfb20359871154b059" prot="private" virt="non-virtual"><scope>DeathScreen</scope><name>tips</name></member>
+      <member refid="class_death_screen_1ade582038efdd7d0588eabd0033fbffd0" prot="private" virt="non-virtual"><scope>DeathScreen</scope><name>tipsImage1</name></member>
+      <member refid="class_death_screen_1a096cdea5f1c725a778bad43a56fd23a8" prot="private" virt="non-virtual"><scope>DeathScreen</scope><name>tipsImage2</name></member>
+      <member refid="class_death_screen_1aae5f7ec5a8de10585b6dff178f70327a" prot="private" virt="non-virtual"><scope>DeathScreen</scope><name>tipsText</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

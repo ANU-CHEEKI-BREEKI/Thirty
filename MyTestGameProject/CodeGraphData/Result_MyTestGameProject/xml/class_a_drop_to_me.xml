@@ -1,0 +1,292 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_a_drop_to_me" kind="class" prot="public" abstract="yes">
+    <compoundname>ADropToMe</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">IDropHandler</basecompoundref>
+    <derivedcompoundref refid="class_drop_to_consumable_market" prot="public" virt="non-virtual">DropToConsumableMarket</derivedcompoundref>
+    <derivedcompoundref refid="class_drop_to_equipment" prot="public" virt="non-virtual">DropToEquipment</derivedcompoundref>
+    <derivedcompoundref refid="class_drop_to_equipment_market" prot="public" virt="non-virtual">DropToEquipmentMarket</derivedcompoundref>
+    <derivedcompoundref refid="class_drop_to_ground" prot="public" virt="non-virtual">DropToGround</derivedcompoundref>
+    <derivedcompoundref refid="class_drop_to_inventory" prot="public" virt="non-virtual">DropToInventory</derivedcompoundref>
+    <derivedcompoundref refid="class_drop_to_skill" prot="public" virt="non-virtual">DropToSkill</derivedcompoundref>
+    <derivedcompoundref refid="class_drop_to_skill_market" prot="public" virt="non-virtual">DropToSkillMarket</derivedcompoundref>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_a_drop_to_me_1ab52ef47bd3496981b5ac94eb4dc3ab73" prot="protected" static="no" mutable="no">
+        <type>new Transform</type>
+        <definition>new Transform ADropToMe.transform</definition>
+        <argsstring></argsstring>
+        <name>transform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/ADropToMe.cs" line="7" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/ADropToMe.cs" bodystart="7" bodyend="-1"/>
+        <referencedby refid="class_drop_to_inventory_1a0d4c04875df9f644d56798b13b0fe471" compoundref="_drop_to_inventory_8cs" startline="9" endline="54">DropToInventory.OnDrop</referencedby>
+        <referencedby refid="class_drop_to_skill_1a0e0b6cb3b59a4e1dca3303591d7dddc0" compoundref="_drop_to_skill_8cs" startline="41" endline="59">DropToSkill.OnDrop</referencedby>
+        <referencedby refid="class_a_drop_to_me_1acf047269c37d94d2983181a2aa0fe23a" compoundref="_a_drop_to_me_8cs" startline="9" endline="12">Start</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_a_drop_to_me_1acf047269c37d94d2983181a2aa0fe23a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ADropToMe.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/ADropToMe.cs" line="9" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/ADropToMe.cs" bodystart="9" bodyend="12"/>
+        <references refid="class_a_drop_to_me_1ab52ef47bd3496981b5ac94eb4dc3ab73" compoundref="_a_drop_to_me_8cs" startline="7">transform</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_a_drop_to_me_1a7969b529009a8693922cb6fa4b162fcf" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>abstract void</type>
+        <definition>abstract void ADropToMe.OnDrop</definition>
+        <argsstring>(PointerEventData eventData)</argsstring>
+        <name>OnDrop</name>
+        <reimplementedby refid="class_drop_to_ground_1a91a5ee1b7fdb866f90a2d7156184cc2a">OnDrop</reimplementedby>
+        <reimplementedby refid="class_drop_to_equipment_market_1ae51fe5f1f0dda746010d2c85a79da913">OnDrop</reimplementedby>
+        <reimplementedby refid="class_drop_to_consumable_market_1aa8aab46043df942d1ccc7e4242051516">OnDrop</reimplementedby>
+        <reimplementedby refid="class_drop_to_equipment_1ae3d4d93b720430bbd8a03ecd83bac01b">OnDrop</reimplementedby>
+        <reimplementedby refid="class_drop_to_inventory_1a0d4c04875df9f644d56798b13b0fe471">OnDrop</reimplementedby>
+        <reimplementedby refid="class_drop_to_skill_market_1a0a1708ed8b9c2a967ec983ba27e5de22">OnDrop</reimplementedby>
+        <reimplementedby refid="class_drop_to_skill_1a0e0b6cb3b59a4e1dca3303591d7dddc0">OnDrop</reimplementedby>
+        <param>
+          <type>PointerEventData</type>
+          <declname>eventData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/ADropToMe.cs" line="14" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_drop_to_me_1a54510994ccc4bd8f7dbdaa78a36d40a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>abstract bool</type>
+        <definition>abstract bool ADropToMe.CanGetFromThisIventory</definition>
+        <argsstring>(AStack aStack)</argsstring>
+        <name>CanGetFromThisIventory</name>
+        <reimplementedby refid="class_drop_to_skill_market_1ad8f0f5e4c060752b3412eefa98c8f426">CanGetFromThisIventory</reimplementedby>
+        <reimplementedby refid="class_drop_to_skill_1ad16b4d4230724969a7fc617d716758c8">CanGetFromThisIventory</reimplementedby>
+        <reimplementedby refid="class_drop_to_ground_1a973fb807352f633134b47515e9e83803">CanGetFromThisIventory</reimplementedby>
+        <reimplementedby refid="class_drop_to_equipment_market_1a60ed19a062359f3ec6c2e0d920e8686b">CanGetFromThisIventory</reimplementedby>
+        <reimplementedby refid="class_drop_to_consumable_market_1a9652eea4463456b68ee37a49ad1ec687">CanGetFromThisIventory</reimplementedby>
+        <reimplementedby refid="class_drop_to_inventory_1a2a5cf20c927a03ccdc9b0bcdd34869d1">CanGetFromThisIventory</reimplementedby>
+        <reimplementedby refid="class_drop_to_equipment_1aabf7575f7d805ff499d46878083c3305">CanGetFromThisIventory</reimplementedby>
+        <param>
+          <type><ref refid="class_a_stack" kindref="compound">AStack</ref></type>
+          <declname>aStack</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stack</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true если можно добавлять</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/ADropToMe.cs" line="21" column="1"/>
+        <referencedby refid="class_drop_to_ground_1a91a5ee1b7fdb866f90a2d7156184cc2a" compoundref="_drop_to_ground_8cs" startline="5" endline="26">DropToGround.OnDrop</referencedby>
+        <referencedby refid="class_drop_to_consumable_market_1aa8aab46043df942d1ccc7e4242051516" compoundref="_drop_to_consumable_market_8cs" startline="6" endline="26">DropToConsumableMarket.OnDrop</referencedby>
+        <referencedby refid="class_drop_to_equipment_market_1ae51fe5f1f0dda746010d2c85a79da913" compoundref="_drop_to_equipment_market_8cs" startline="6" endline="26">DropToEquipmentMarket.OnDrop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_a_drop_to_me_1a61dd1651d009bf4816d5705b10a01c2f" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>abstract bool</type>
+        <definition>abstract bool ADropToMe.AddToThisInventory</definition>
+        <argsstring>(AStack aStack)</argsstring>
+        <name>AddToThisInventory</name>
+        <reimplementedby refid="class_drop_to_skill_market_1a56c02a147a710c8f5bc9a6e6b43a6c5e">AddToThisInventory</reimplementedby>
+        <reimplementedby refid="class_drop_to_skill_1ac0d9fd0230e9ea38d88ddb2686f2ed5c">AddToThisInventory</reimplementedby>
+        <reimplementedby refid="class_drop_to_ground_1acd40eb31f5bafd44f2ee71a975be8191">AddToThisInventory</reimplementedby>
+        <reimplementedby refid="class_drop_to_equipment_market_1af9e870c0b5ae52ac88b77dcf433c3409">AddToThisInventory</reimplementedby>
+        <reimplementedby refid="class_drop_to_consumable_market_1ae8efc2668c6163d732ca30971a36b677">AddToThisInventory</reimplementedby>
+        <reimplementedby refid="class_drop_to_equipment_1a0bc83af63ecd40bb3c2be8355c878a7f">AddToThisInventory</reimplementedby>
+        <reimplementedby refid="class_drop_to_inventory_1a3eee684dd1a719784a7814bf8a4b6704">AddToThisInventory</reimplementedby>
+        <param>
+          <type><ref refid="class_a_stack" kindref="compound">AStack</ref></type>
+          <declname>aStack</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stack</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true если добавление произошло удачно</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/ADropToMe.cs" line="28" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_drop_to_me_1a00ce4c22d728d9b610cc4309dec60dc7" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>abstract bool</type>
+        <definition>abstract bool ADropToMe.RemoveFromThisInventory</definition>
+        <argsstring>(AStack aStack)</argsstring>
+        <name>RemoveFromThisInventory</name>
+        <reimplementedby refid="class_drop_to_skill_market_1a18f493d740ca2445f04b7533978d81c1">RemoveFromThisInventory</reimplementedby>
+        <reimplementedby refid="class_drop_to_ground_1aa3a70eb419de3cb9fdc8a279fdec4a35">RemoveFromThisInventory</reimplementedby>
+        <reimplementedby refid="class_drop_to_equipment_market_1a86679d66d73137c4bb79abd7b4ca0fad">RemoveFromThisInventory</reimplementedby>
+        <reimplementedby refid="class_drop_to_consumable_market_1a74f14692d7a6f3e198fd859b9daf4657">RemoveFromThisInventory</reimplementedby>
+        <reimplementedby refid="class_drop_to_skill_1ac494bb5fc71c5525b04fb58604c6236d">RemoveFromThisInventory</reimplementedby>
+        <reimplementedby refid="class_drop_to_inventory_1aca372615bb6aa26b2c85a1bbdb05e3d2">RemoveFromThisInventory</reimplementedby>
+        <reimplementedby refid="class_drop_to_equipment_1a666d32caf01e05419532609deaeaccac">RemoveFromThisInventory</reimplementedby>
+        <param>
+          <type><ref refid="class_a_stack" kindref="compound">AStack</ref></type>
+          <declname>aStack</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stack</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true если удаление произошло удачно</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/ADropToMe.cs" line="35" column="1"/>
+        <referencedby refid="class_drop_to_ground_1a91a5ee1b7fdb866f90a2d7156184cc2a" compoundref="_drop_to_ground_8cs" startline="5" endline="26">DropToGround.OnDrop</referencedby>
+        <referencedby refid="class_drop_to_consumable_market_1aa8aab46043df942d1ccc7e4242051516" compoundref="_drop_to_consumable_market_8cs" startline="6" endline="26">DropToConsumableMarket.OnDrop</referencedby>
+        <referencedby refid="class_drop_to_equipment_market_1ae51fe5f1f0dda746010d2c85a79da913" compoundref="_drop_to_equipment_market_8cs" startline="6" endline="26">DropToEquipmentMarket.OnDrop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_a_drop_to_me_1aa823b910877eb709c120b6e082063ac0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ADropToMe.RefreshUI</definition>
+        <argsstring>()</argsstring>
+        <name>RefreshUI</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/ADropToMe.cs" line="37" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/ADropToMe.cs" bodystart="37" bodyend="53"/>
+        <references refid="class_squad_skills_inventory_u_i_1ad33490ef883abd556e1ae61bbfc12b97" compoundref="_squad_skills_inventory_u_i_8cs" startline="8">SquadSkillsInventoryUI.Instance</references>
+        <references refid="class_skill_market_inventory_u_i_1a10e6401847ed245adfdba7504c601fdb" compoundref="_skill_market_inventory_u_i_8cs" startline="8">SkillMarketInventoryUI.Instance</references>
+        <references refid="class_squad_inventory_u_i_1a0545068926bec542ebe7b973634f46a8" compoundref="_squad_inventory_u_i_8cs" startline="10">SquadInventoryUI.Instance</references>
+        <references refid="class_envirinmant_inventory_u_i_1a6e66b605d092395812f43280ca33ceb2" compoundref="_envirinmant_inventory_u_i_8cs" startline="10">EnvirinmantInventoryUI.Instance</references>
+        <references refid="class_market_inventory_u_i_1ad9973a305d4f6ba6990e20204047d7ea" compoundref="_market_inventory_u_i_8cs" startline="28">MarketInventoryUI.Instance</references>
+        <referencedby refid="class_drop_to_ground_1a91a5ee1b7fdb866f90a2d7156184cc2a" compoundref="_drop_to_ground_8cs" startline="5" endline="26">DropToGround.OnDrop</referencedby>
+        <referencedby refid="class_drop_to_equipment_market_1ae51fe5f1f0dda746010d2c85a79da913" compoundref="_drop_to_equipment_market_8cs" startline="6" endline="26">DropToEquipmentMarket.OnDrop</referencedby>
+        <referencedby refid="class_drop_to_equipment_1ae3d4d93b720430bbd8a03ecd83bac01b" compoundref="_drop_to_equipment_8cs" startline="7" endline="44">DropToEquipment.OnDrop</referencedby>
+        <referencedby refid="class_drop_to_inventory_1a0d4c04875df9f644d56798b13b0fe471" compoundref="_drop_to_inventory_8cs" startline="9" endline="54">DropToInventory.OnDrop</referencedby>
+        <referencedby refid="class_drop_to_skill_market_1a0a1708ed8b9c2a967ec983ba27e5de22" compoundref="_drop_to_skill_market_8cs" startline="19" endline="32">DropToSkillMarket.OnDrop</referencedby>
+        <referencedby refid="class_drop_to_skill_1a0e0b6cb3b59a4e1dca3303591d7dddc0" compoundref="_drop_to_skill_8cs" startline="41" endline="59">DropToSkill.OnDrop</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="0">
+        <label>ADropToMe</label>
+        <link refid="class_a_drop_to_me"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>DropToInventory</label>
+        <link refid="class_drop_to_inventory"/>
+        <childnode refid="0" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>DropToGround</label>
+        <link refid="class_drop_to_ground"/>
+        <childnode refid="0" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>DropToSkill</label>
+        <link refid="class_drop_to_skill"/>
+        <childnode refid="0" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>DropToConsumableMarket</label>
+        <link refid="class_drop_to_consumable_market"/>
+        <childnode refid="0" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="2">
+        <label>IDropHandler</label>
+      </node>
+      <node id="9">
+        <label>DropToSkillMarket</label>
+        <link refid="class_drop_to_skill_market"/>
+        <childnode refid="0" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>DropToEquipmentMarket</label>
+        <link refid="class_drop_to_equipment_market"/>
+        <childnode refid="0" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>DropToEquipment</label>
+        <link refid="class_drop_to_equipment"/>
+        <childnode refid="0" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="10">
+        <label>ADropToMe</label>
+        <link refid="class_a_drop_to_me"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="12">
+        <label>IDropHandler</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/ADropToMe.cs" line="6" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/ADropToMe.cs" bodystart="5" bodyend="54"/>
+    <listofallmembers>
+      <member refid="class_a_drop_to_me_1a61dd1651d009bf4816d5705b10a01c2f" prot="public" virt="pure-virtual"><scope>ADropToMe</scope><name>AddToThisInventory</name></member>
+      <member refid="class_a_drop_to_me_1a54510994ccc4bd8f7dbdaa78a36d40a9" prot="public" virt="pure-virtual"><scope>ADropToMe</scope><name>CanGetFromThisIventory</name></member>
+      <member refid="class_a_drop_to_me_1a7969b529009a8693922cb6fa4b162fcf" prot="public" virt="pure-virtual"><scope>ADropToMe</scope><name>OnDrop</name></member>
+      <member refid="class_a_drop_to_me_1aa823b910877eb709c120b6e082063ac0" prot="public" virt="non-virtual"><scope>ADropToMe</scope><name>RefreshUI</name></member>
+      <member refid="class_a_drop_to_me_1a00ce4c22d728d9b610cc4309dec60dc7" prot="public" virt="pure-virtual"><scope>ADropToMe</scope><name>RemoveFromThisInventory</name></member>
+      <member refid="class_a_drop_to_me_1acf047269c37d94d2983181a2aa0fe23a" prot="private" virt="non-virtual"><scope>ADropToMe</scope><name>Start</name></member>
+      <member refid="class_a_drop_to_me_1ab52ef47bd3496981b5ac94eb4dc3ab73" prot="protected" virt="non-virtual"><scope>ADropToMe</scope><name>transform</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

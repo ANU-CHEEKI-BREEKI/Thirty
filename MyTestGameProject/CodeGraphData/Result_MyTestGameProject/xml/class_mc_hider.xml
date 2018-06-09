@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_mc_hider" kind="class" prot="public">
+    <compoundname>McHider</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_mc_hider_1ac52498af25f6597fce31d548a3968737" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int McHider.DELTA_Y</definition>
+        <argsstring></argsstring>
+        <name>DELTA_Y</name>
+        <initializer>= 400</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McHider.cs" line="8" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McHider.cs" bodystart="8" bodyend="-1"/>
+        <referencedby refid="class_mc_hider_1a1f40324aaa6c3552297125560a07ef36" compoundref="_mc_hider_8cs" startline="18" endline="21">Hide</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_mc_hider_1aa323c09ee217355b93340d247d17c389" prot="private" static="no" mutable="no">
+        <type>RectTransform</type>
+        <definition>RectTransform McHider.rectTransform</definition>
+        <argsstring></argsstring>
+        <name>rectTransform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McHider.cs" line="10" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McHider.cs" bodystart="10" bodyend="-1"/>
+        <referencedby refid="class_mc_hider_1a1f40324aaa6c3552297125560a07ef36" compoundref="_mc_hider_8cs" startline="18" endline="21">Hide</referencedby>
+        <referencedby refid="class_mc_hider_1a3aee73b06d8d48c15eb9cf2277324874" compoundref="_mc_hider_8cs" startline="23" endline="26">Show</referencedby>
+        <referencedby refid="class_mc_hider_1ad5ad7f7530e0fab01fb9fc8da164da6d" compoundref="_mc_hider_8cs" startline="12" endline="16">Start</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_mc_hider_1ad5ad7f7530e0fab01fb9fc8da164da6d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void McHider.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McHider.cs" line="12" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McHider.cs" bodystart="12" bodyend="16"/>
+        <references refid="class_mc_hider_1a1f40324aaa6c3552297125560a07ef36" compoundref="_mc_hider_8cs" startline="18" endline="21">Hide</references>
+        <references refid="class_mc_hider_1aa323c09ee217355b93340d247d17c389" compoundref="_mc_hider_8cs" startline="10">rectTransform</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_mc_hider_1a1f40324aaa6c3552297125560a07ef36" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void McHider.Hide</definition>
+        <argsstring>()</argsstring>
+        <name>Hide</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McHider.cs" line="18" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McHider.cs" bodystart="18" bodyend="21"/>
+        <references refid="class_mc_hider_1ac52498af25f6597fce31d548a3968737" compoundref="_mc_hider_8cs" startline="8">DELTA_Y</references>
+        <references refid="class_mc_hider_1aa323c09ee217355b93340d247d17c389" compoundref="_mc_hider_8cs" startline="10">rectTransform</references>
+        <referencedby refid="class_mc_hider_1ad5ad7f7530e0fab01fb9fc8da164da6d" compoundref="_mc_hider_8cs" startline="12" endline="16">Start</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_mc_hider_1a3aee73b06d8d48c15eb9cf2277324874" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void McHider.Show</definition>
+        <argsstring>()</argsstring>
+        <name>Show</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McHider.cs" line="23" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McHider.cs" bodystart="23" bodyend="26"/>
+        <references refid="class_mc_hider_1aa323c09ee217355b93340d247d17c389" compoundref="_mc_hider_8cs" startline="10">rectTransform</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="659">
+        <label>McHider</label>
+        <link refid="class_mc_hider"/>
+        <childnode refid="660" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="660">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="661">
+        <label>McHider</label>
+        <link refid="class_mc_hider"/>
+        <childnode refid="662" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="662">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McHider.cs" line="7" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McHider.cs" bodystart="6" bodyend="27"/>
+    <listofallmembers>
+      <member refid="class_mc_hider_1ac52498af25f6597fce31d548a3968737" prot="public" virt="non-virtual"><scope>McHider</scope><name>DELTA_Y</name></member>
+      <member refid="class_mc_hider_1a1f40324aaa6c3552297125560a07ef36" prot="public" virt="non-virtual"><scope>McHider</scope><name>Hide</name></member>
+      <member refid="class_mc_hider_1aa323c09ee217355b93340d247d17c389" prot="private" virt="non-virtual"><scope>McHider</scope><name>rectTransform</name></member>
+      <member refid="class_mc_hider_1a3aee73b06d8d48c15eb9cf2277324874" prot="public" virt="non-virtual"><scope>McHider</scope><name>Show</name></member>
+      <member refid="class_mc_hider_1ad5ad7f7530e0fab01fb9fc8da164da6d" prot="private" virt="non-virtual"><scope>McHider</scope><name>Start</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

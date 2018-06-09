@@ -1,0 +1,625 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_arrows_valley" kind="class" prot="public">
+    <compoundname>ArrowsValley</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_arrows_valley_1ae2218908e5d426901545e93153a033ee" prot="private" static="no" mutable="no">
+        <type>ParticleSystem</type>
+        <definition>ParticleSystem ArrowsValley.realValleyParticleSystem</definition>
+        <argsstring></argsstring>
+        <name>realValleyParticleSystem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/ArrowsValley.cs" line="9" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/ArrowsValley.cs" bodystart="9" bodyend="-1"/>
+        <referencedby refid="class_arrows_valley_1a1d510f788914f1568287246815413361" compoundref="_arrows_valley_8cs" startline="40" endline="48">Awake</referencedby>
+        <referencedby refid="class_arrows_valley_1a60634334ed802f4487a114e7a6350f85" compoundref="_arrows_valley_8cs" startline="55" endline="62">DestroyValleyObject</referencedby>
+        <referencedby refid="class_arrows_valley_1adcc0d505a472dde15515d4aecf8b8009" compoundref="_arrows_valley_8cs" startline="64" endline="96">Init</referencedby>
+        <referencedby refid="class_arrows_valley_1a41da19fc93c636d711de3f6e29e66445" compoundref="_arrows_valley_8cs" startline="108" endline="116">WAitForWarningValley</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_arrows_valley_1a680853df8cec063cb145152873502d0a" prot="private" static="no" mutable="no">
+        <type>ParticleSystem</type>
+        <definition>ParticleSystem ArrowsValley.warningValleyParticleSystem</definition>
+        <argsstring></argsstring>
+        <name>warningValleyParticleSystem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/ArrowsValley.cs" line="12" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/ArrowsValley.cs" bodystart="12" bodyend="-1"/>
+        <referencedby refid="class_arrows_valley_1a1d510f788914f1568287246815413361" compoundref="_arrows_valley_8cs" startline="40" endline="48">Awake</referencedby>
+        <referencedby refid="class_arrows_valley_1adcc0d505a472dde15515d4aecf8b8009" compoundref="_arrows_valley_8cs" startline="64" endline="96">Init</referencedby>
+        <referencedby refid="class_arrows_valley_1ad00d61b73c056d1284cecb88e779af86" compoundref="_arrows_valley_8cs" startline="98" endline="106">StartValley</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_arrows_valley_1a59db2dce116605c8f5be70d992ce6637" prot="private" static="no" mutable="no">
+        <type>List&lt; ParticleSystem.Particle &gt;</type>
+        <definition>List&lt;ParticleSystem.Particle&gt; ArrowsValley.trigPartc</definition>
+        <argsstring></argsstring>
+        <name>trigPartc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/ArrowsValley.cs" line="15" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/ArrowsValley.cs" bodystart="15" bodyend="-1"/>
+        <referencedby refid="class_arrows_valley_1a1d510f788914f1568287246815413361" compoundref="_arrows_valley_8cs" startline="40" endline="48">Awake</referencedby>
+        <referencedby refid="class_arrows_valley_1ae86a9d72e417c3de5179b62ba59bf7ab" compoundref="_arrows_valley_8cs" startline="179" endline="219">RealValley</referencedby>
+        <referencedby refid="class_arrows_valley_1a4ba3a86be9981943757c70ef521fe9ac" compoundref="_arrows_valley_8cs" startline="137" endline="177">WarningValley</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_arrows_valley_1ae07d47c18fcef02d0191a004d5dee9f9" prot="private" static="no" mutable="no">
+        <type>List&lt; ParticleSystem.Particle &gt;</type>
+        <definition>List&lt;ParticleSystem.Particle&gt; ArrowsValley.stayingParticles</definition>
+        <argsstring></argsstring>
+        <name>stayingParticles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/ArrowsValley.cs" line="18" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/ArrowsValley.cs" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_arrows_valley_1a1417fed82355701143b57c6a1f165041" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ArrowsValley.layerMask</definition>
+        <argsstring></argsstring>
+        <name>layerMask</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/ArrowsValley.cs" line="21" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/ArrowsValley.cs" bodystart="21" bodyend="-1"/>
+        <referencedby refid="class_arrows_valley_1a1d510f788914f1568287246815413361" compoundref="_arrows_valley_8cs" startline="40" endline="48">Awake</referencedby>
+        <referencedby refid="class_arrows_valley_1ae86a9d72e417c3de5179b62ba59bf7ab" compoundref="_arrows_valley_8cs" startline="179" endline="219">RealValley</referencedby>
+        <referencedby refid="class_arrows_valley_1a4ba3a86be9981943757c70ef521fe9ac" compoundref="_arrows_valley_8cs" startline="137" endline="177">WarningValley</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_arrows_valley_1a8dcf4d5b8c3473c4d8ff57e1577a4340" prot="private" static="no" mutable="no">
+        <type><ref refid="class_unit" kindref="compound">Unit</ref></type>
+        <definition>Unit ArrowsValley.unit</definition>
+        <argsstring></argsstring>
+        <name>unit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/ArrowsValley.cs" line="24" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/ArrowsValley.cs" bodystart="24" bodyend="-1"/>
+        <referencedby refid="class_arrows_valley_1ae86a9d72e417c3de5179b62ba59bf7ab" compoundref="_arrows_valley_8cs" startline="179" endline="219">RealValley</referencedby>
+        <referencedby refid="class_arrows_valley_1a4ba3a86be9981943757c70ef521fe9ac" compoundref="_arrows_valley_8cs" startline="137" endline="177">WarningValley</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_arrows_valley_1a0bd6dbb5c44460b307fe1e8b1da5320a" prot="private" static="no" mutable="no">
+        <type>RaycastHit2D</type>
+        <definition>RaycastHit2D ArrowsValley.rhit</definition>
+        <argsstring></argsstring>
+        <name>rhit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/ArrowsValley.cs" line="27" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/ArrowsValley.cs" bodystart="27" bodyend="-1"/>
+        <referencedby refid="class_arrows_valley_1ae86a9d72e417c3de5179b62ba59bf7ab" compoundref="_arrows_valley_8cs" startline="179" endline="219">RealValley</referencedby>
+        <referencedby refid="class_arrows_valley_1a4ba3a86be9981943757c70ef521fe9ac" compoundref="_arrows_valley_8cs" startline="137" endline="177">WarningValley</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_arrows_valley_1a9299830740d5b5e4f5b75154b69135e6" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ArrowsValley.dalayBeforeWarningValley</definition>
+        <argsstring></argsstring>
+        <name>dalayBeforeWarningValley</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/ArrowsValley.cs" line="30" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/ArrowsValley.cs" bodystart="30" bodyend="-1"/>
+        <referencedby refid="class_arrows_valley_1ad00d61b73c056d1284cecb88e779af86" compoundref="_arrows_valley_8cs" startline="98" endline="106">StartValley</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_arrows_valley_1a7e1042ae8ad191268007493c48582fbb" prot="private" static="no" mutable="no">
+        <type>Transform</type>
+        <definition>Transform ArrowsValley.endPoint</definition>
+        <argsstring></argsstring>
+        <name>endPoint</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/ArrowsValley.cs" line="36" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/ArrowsValley.cs" bodystart="36" bodyend="-1"/>
+        <referencedby refid="class_arrows_valley_1adcc0d505a472dde15515d4aecf8b8009" compoundref="_arrows_valley_8cs" startline="64" endline="96">Init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_arrows_valley_1ad67fc8a970296c1799fcadf7921037fa" prot="private" static="no" mutable="no">
+        <type>LayerMask</type>
+        <definition>LayerMask ArrowsValley.raycastTargetLayers</definition>
+        <argsstring></argsstring>
+        <name>raycastTargetLayers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/ArrowsValley.cs" line="38" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/ArrowsValley.cs" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_arrows_valley_1a58f454577ca8c063d1c23d96b6d5366b" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string ArrowsValley.PROFILING_NAME</definition>
+        <argsstring></argsstring>
+        <name>PROFILING_NAME</name>
+        <initializer>= &quot;Залп Стрел -&gt; <ref refid="class_arrows_valley_1aabacc084636a8eb9266145ccfe617d49" kindref="member">OnParticleTrigger</ref>&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/ArrowsValley.cs" line="124" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/ArrowsValley.cs" bodystart="124" bodyend="-1"/>
+        <referencedby refid="class_arrows_valley_1aabacc084636a8eb9266145ccfe617d49" compoundref="_arrows_valley_8cs" startline="126" endline="135">OnParticleTrigger</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_arrows_valley_1a263e54a04a4a5fa71f76dd9aada9b9a8" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_damage" kindref="compound">Damage</ref></type>
+        <definition>Damage ArrowsValley.damage</definition>
+        <argsstring></argsstring>
+        <name>damage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/ArrowsValley.cs" line="32" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/ArrowsValley.cs" bodystart="32" bodyend="-1"/>
+        <referencedby refid="class_arrows_valley_1ae86a9d72e417c3de5179b62ba59bf7ab" compoundref="_arrows_valley_8cs" startline="179" endline="219">RealValley</referencedby>
+        <referencedby refid="class_arrows_valley_1a4ba3a86be9981943757c70ef521fe9ac" compoundref="_arrows_valley_8cs" startline="137" endline="177">WarningValley</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_arrows_valley_1afd5dda6f06671410bc6c12ed1cdf4ac2" prot="public" static="no" mutable="no">
+        <type><ref refid="class_squad" kindref="compound">Squad</ref></type>
+        <definition>Squad ArrowsValley.owner</definition>
+        <argsstring></argsstring>
+        <name>owner</name>
+        <initializer>= <ref refid="class_squad_1a781a32dd5c6fadbe0a9e04f142ddc9da" kindref="member">Squad.playerSquadInstance</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/ArrowsValley.cs" line="34" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/ArrowsValley.cs" bodystart="34" bodyend="-1"/>
+        <referencedby refid="class_arrows_valley_1adcc0d505a472dde15515d4aecf8b8009" compoundref="_arrows_valley_8cs" startline="64" endline="96">Init</referencedby>
+        <referencedby refid="class_unit_1a81ef87020279968371316b61ae6b408c" compoundref="_unit_8cs" startline="901" endline="946">Unit.TakeHitFromArrow</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_arrows_valley_1a1d510f788914f1568287246815413361" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ArrowsValley.Awake</definition>
+        <argsstring>()</argsstring>
+        <name>Awake</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/ArrowsValley.cs" line="40" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/ArrowsValley.cs" bodystart="40" bodyend="48"/>
+        <references refid="class_arrows_valley_1a1417fed82355701143b57c6a1f165041" compoundref="_arrows_valley_8cs" startline="21">layerMask</references>
+        <references refid="class_arrows_valley_1ae2218908e5d426901545e93153a033ee" compoundref="_arrows_valley_8cs" startline="9">realValleyParticleSystem</references>
+        <references refid="class_arrows_valley_1a59db2dce116605c8f5be70d992ce6637" compoundref="_arrows_valley_8cs" startline="15">trigPartc</references>
+        <references refid="class_arrows_valley_1a680853df8cec063cb145152873502d0a" compoundref="_arrows_valley_8cs" startline="12">warningValleyParticleSystem</references>
+      </memberdef>
+      <memberdef kind="function" id="class_arrows_valley_1ac2d5d3203cf4bc57b170661ad7a762c7" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ArrowsValley.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/ArrowsValley.cs" line="50" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/ArrowsValley.cs" bodystart="50" bodyend="53"/>
+        <references refid="class_arrows_valley_1a60634334ed802f4487a114e7a6350f85" compoundref="_arrows_valley_8cs" startline="55" endline="62">DestroyValleyObject</references>
+      </memberdef>
+      <memberdef kind="function" id="class_arrows_valley_1a60634334ed802f4487a114e7a6350f85" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerator</type>
+        <definition>IEnumerator ArrowsValley.DestroyValleyObject</definition>
+        <argsstring>()</argsstring>
+        <name>DestroyValleyObject</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/ArrowsValley.cs" line="55" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/ArrowsValley.cs" bodystart="55" bodyend="62"/>
+        <references refid="class_arrows_valley_1ae2218908e5d426901545e93153a033ee" compoundref="_arrows_valley_8cs" startline="9">realValleyParticleSystem</references>
+        <referencedby refid="class_arrows_valley_1ac2d5d3203cf4bc57b170661ad7a762c7" compoundref="_arrows_valley_8cs" startline="50" endline="53">Start</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_arrows_valley_1a41da19fc93c636d711de3f6e29e66445" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerator</type>
+        <definition>IEnumerator ArrowsValley.WAitForWarningValley</definition>
+        <argsstring>(float time)</argsstring>
+        <name>WAitForWarningValley</name>
+        <param>
+          <type>float</type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/ArrowsValley.cs" line="108" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/ArrowsValley.cs" bodystart="108" bodyend="116"/>
+        <references refid="class_arrows_valley_1a5fa18573c0281d688602fdf3aa2de678" compoundref="_arrows_valley_8cs" startline="118" endline="122">GoToLowLevelRendering</references>
+        <references refid="class_arrows_valley_1ae2218908e5d426901545e93153a033ee" compoundref="_arrows_valley_8cs" startline="9">realValleyParticleSystem</references>
+        <referencedby refid="class_arrows_valley_1ad00d61b73c056d1284cecb88e779af86" compoundref="_arrows_valley_8cs" startline="98" endline="106">StartValley</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_arrows_valley_1a5fa18573c0281d688602fdf3aa2de678" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerator</type>
+        <definition>IEnumerator ArrowsValley.GoToLowLevelRendering</definition>
+        <argsstring>(ParticleSystem pSys, float time)</argsstring>
+        <name>GoToLowLevelRendering</name>
+        <param>
+          <type>ParticleSystem</type>
+          <declname>pSys</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/ArrowsValley.cs" line="118" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/ArrowsValley.cs" bodystart="118" bodyend="122"/>
+        <referencedby refid="class_arrows_valley_1ad00d61b73c056d1284cecb88e779af86" compoundref="_arrows_valley_8cs" startline="98" endline="106">StartValley</referencedby>
+        <referencedby refid="class_arrows_valley_1a41da19fc93c636d711de3f6e29e66445" compoundref="_arrows_valley_8cs" startline="108" endline="116">WAitForWarningValley</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_arrows_valley_1aabacc084636a8eb9266145ccfe617d49" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ArrowsValley.OnParticleTrigger</definition>
+        <argsstring>()</argsstring>
+        <name>OnParticleTrigger</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/ArrowsValley.cs" line="126" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/ArrowsValley.cs" bodystart="126" bodyend="135"/>
+        <references refid="class_arrows_valley_1a58f454577ca8c063d1c23d96b6d5366b" compoundref="_arrows_valley_8cs" startline="124">PROFILING_NAME</references>
+        <references refid="class_arrows_valley_1ae86a9d72e417c3de5179b62ba59bf7ab" compoundref="_arrows_valley_8cs" startline="179" endline="219">RealValley</references>
+      </memberdef>
+      <memberdef kind="function" id="class_arrows_valley_1a4ba3a86be9981943757c70ef521fe9ac" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ArrowsValley.WarningValley</definition>
+        <argsstring>()</argsstring>
+        <name>WarningValley</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/ArrowsValley.cs" line="137" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/ArrowsValley.cs" bodystart="137" bodyend="177"/>
+        <references refid="class_arrows_valley_1a263e54a04a4a5fa71f76dd9aada9b9a8" compoundref="_arrows_valley_8cs" startline="32">damage</references>
+        <references refid="class_arrows_valley_1a1417fed82355701143b57c6a1f165041" compoundref="_arrows_valley_8cs" startline="21">layerMask</references>
+        <references refid="class_arrows_valley_1a0bd6dbb5c44460b307fe1e8b1da5320a" compoundref="_arrows_valley_8cs" startline="27">rhit</references>
+        <references refid="class_arrows_valley_1a59db2dce116605c8f5be70d992ce6637" compoundref="_arrows_valley_8cs" startline="15">trigPartc</references>
+        <references refid="class_arrows_valley_1a8dcf4d5b8c3473c4d8ff57e1577a4340" compoundref="_arrows_valley_8cs" startline="24">unit</references>
+      </memberdef>
+      <memberdef kind="function" id="class_arrows_valley_1ae86a9d72e417c3de5179b62ba59bf7ab" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ArrowsValley.RealValley</definition>
+        <argsstring>()</argsstring>
+        <name>RealValley</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/ArrowsValley.cs" line="179" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/ArrowsValley.cs" bodystart="179" bodyend="219"/>
+        <references refid="class_arrows_valley_1a263e54a04a4a5fa71f76dd9aada9b9a8" compoundref="_arrows_valley_8cs" startline="32">damage</references>
+        <references refid="class_arrows_valley_1a1417fed82355701143b57c6a1f165041" compoundref="_arrows_valley_8cs" startline="21">layerMask</references>
+        <references refid="class_arrows_valley_1a0bd6dbb5c44460b307fe1e8b1da5320a" compoundref="_arrows_valley_8cs" startline="27">rhit</references>
+        <references refid="class_arrows_valley_1a59db2dce116605c8f5be70d992ce6637" compoundref="_arrows_valley_8cs" startline="15">trigPartc</references>
+        <references refid="class_arrows_valley_1a8dcf4d5b8c3473c4d8ff57e1577a4340" compoundref="_arrows_valley_8cs" startline="24">unit</references>
+        <referencedby refid="class_arrows_valley_1aabacc084636a8eb9266145ccfe617d49" compoundref="_arrows_valley_8cs" startline="126" endline="135">OnParticleTrigger</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_arrows_valley_1adcc0d505a472dde15515d4aecf8b8009" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ArrowsValley.Init</definition>
+        <argsstring>(Vector2 position, Damage damage, float radius, int countOfArrows, Squad owner=null)</argsstring>
+        <name>Init</name>
+        <param>
+          <type>Vector2</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_damage" kindref="compound">Damage</ref></type>
+          <declname>damage</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>radius</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>countOfArrows</declname>
+        </param>
+        <param>
+          <type><ref refid="class_squad" kindref="compound">Squad</ref></type>
+          <declname>owner</declname>
+          <defval>null</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/ArrowsValley.cs" line="64" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/ArrowsValley.cs" bodystart="64" bodyend="96"/>
+        <references refid="class_arrows_valley_1a7e1042ae8ad191268007493c48582fbb" compoundref="_arrows_valley_8cs" startline="36">endPoint</references>
+        <references refid="class_arrows_valley_1afd5dda6f06671410bc6c12ed1cdf4ac2" compoundref="_arrows_valley_8cs" startline="34">owner</references>
+        <references refid="class_arrows_valley_1ae2218908e5d426901545e93153a033ee" compoundref="_arrows_valley_8cs" startline="9">realValleyParticleSystem</references>
+        <references refid="class_arrows_valley_1a680853df8cec063cb145152873502d0a" compoundref="_arrows_valley_8cs" startline="12">warningValleyParticleSystem</references>
+      </memberdef>
+      <memberdef kind="function" id="class_arrows_valley_1ad00d61b73c056d1284cecb88e779af86" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ArrowsValley.StartValley</definition>
+        <argsstring>()</argsstring>
+        <name>StartValley</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/ArrowsValley.cs" line="98" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/ArrowsValley.cs" bodystart="98" bodyend="106"/>
+        <references refid="class_arrows_valley_1a9299830740d5b5e4f5b75154b69135e6" compoundref="_arrows_valley_8cs" startline="30">dalayBeforeWarningValley</references>
+        <references refid="class_arrows_valley_1a5fa18573c0281d688602fdf3aa2de678" compoundref="_arrows_valley_8cs" startline="118" endline="122">GoToLowLevelRendering</references>
+        <references refid="class_arrows_valley_1a41da19fc93c636d711de3f6e29e66445" compoundref="_arrows_valley_8cs" startline="108" endline="116">WAitForWarningValley</references>
+        <references refid="class_arrows_valley_1a680853df8cec063cb145152873502d0a" compoundref="_arrows_valley_8cs" startline="12">warningValleyParticleSystem</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="40">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="39">
+        <label>ArrowsValley</label>
+        <link refid="class_arrows_valley"/>
+        <childnode refid="40" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="44">
+        <label>Squad</label>
+        <link refid="class_squad"/>
+        <childnode refid="42" relation="public-inheritance">
+        </childnode>
+        <childnode refid="45" relation="usage">
+          <edgelabel>currentFormationModifyers</edgelabel>
+          <edgelabel>formation</edgelabel>
+        </childnode>
+        <childnode refid="43" relation="usage">
+          <edgelabel>unitOriginal</edgelabel>
+        </childnode>
+        <childnode refid="44" relation="usage">
+          <edgelabel>playerSquadInstance</edgelabel>
+        </childnode>
+        <childnode refid="46" relation="usage">
+          <edgelabel>inventory</edgelabel>
+        </childnode>
+        <childnode refid="57" relation="usage">
+          <edgelabel>unitStats</edgelabel>
+        </childnode>
+      </node>
+      <node id="53">
+        <label>Equipment</label>
+        <link refid="class_equipment"/>
+        <childnode refid="51" relation="public-inheritance">
+        </childnode>
+        <childnode refid="54" relation="usage">
+          <edgelabel>stats</edgelabel>
+        </childnode>
+      </node>
+      <node id="58">
+        <label>UnitPosition</label>
+        <link refid="class_unit_position"/>
+        <childnode refid="42" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>Item.MainProperties</label>
+        <link refid="struct_item_1_1_main_properties"/>
+      </node>
+      <node id="55">
+        <label>Damage</label>
+        <link refid="struct_damage"/>
+      </node>
+      <node id="49">
+        <label>IDescriptionable</label>
+        <link refid="interface_i_descriptionable"/>
+      </node>
+      <node id="51">
+        <label>Item</label>
+        <link refid="class_item"/>
+        <childnode refid="42" relation="public-inheritance">
+        </childnode>
+        <childnode refid="52" relation="usage">
+          <edgelabel>mainProperties</edgelabel>
+        </childnode>
+      </node>
+      <node id="47">
+        <label>SkillStack</label>
+        <link refid="class_skill_stack"/>
+        <childnode refid="48" relation="public-inheritance">
+        </childnode>
+        <childnode refid="49" relation="public-inheritance">
+        </childnode>
+        <childnode refid="50" relation="usage">
+          <edgelabel>skill</edgelabel>
+        </childnode>
+      </node>
+      <node id="54">
+        <label>EquipmentStats</label>
+        <link refid="struct_equipment_stats"/>
+        <childnode refid="49" relation="public-inheritance">
+        </childnode>
+        <childnode refid="55" relation="usage">
+          <edgelabel>damage</edgelabel>
+        </childnode>
+      </node>
+      <node id="48">
+        <label>AStack</label>
+        <link refid="class_a_stack"/>
+      </node>
+      <node id="57">
+        <label>UnitStats</label>
+        <link refid="struct_unit_stats"/>
+        <childnode refid="55" relation="usage">
+          <edgelabel>damage</edgelabel>
+        </childnode>
+      </node>
+      <node id="42">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="43">
+        <label>Unit</label>
+        <link refid="class_unit"/>
+        <childnode refid="42" relation="public-inheritance">
+        </childnode>
+        <childnode refid="43" relation="usage">
+          <edgelabel>target</edgelabel>
+        </childnode>
+        <childnode refid="44" relation="usage">
+          <edgelabel>squad</edgelabel>
+        </childnode>
+        <childnode refid="53" relation="usage">
+          <edgelabel>body</edgelabel>
+          <edgelabel>shield</edgelabel>
+          <edgelabel>weapon</edgelabel>
+          <edgelabel>helmet</edgelabel>
+        </childnode>
+        <childnode refid="58" relation="usage">
+          <edgelabel>TargetMovePositionObject</edgelabel>
+          <edgelabel>unitPosOriginal</edgelabel>
+        </childnode>
+        <childnode refid="57" relation="usage">
+          <edgelabel>stats</edgelabel>
+        </childnode>
+      </node>
+      <node id="41">
+        <label>ArrowsValley</label>
+        <link refid="class_arrows_valley"/>
+        <childnode refid="42" relation="public-inheritance">
+        </childnode>
+        <childnode refid="43" relation="usage">
+          <edgelabel>unit</edgelabel>
+        </childnode>
+        <childnode refid="44" relation="usage">
+          <edgelabel>owner</edgelabel>
+        </childnode>
+        <childnode refid="55" relation="usage">
+          <edgelabel>damage</edgelabel>
+        </childnode>
+      </node>
+      <node id="50">
+        <label>Skill</label>
+        <link refid="class_skill"/>
+        <childnode refid="51" relation="public-inheritance">
+        </childnode>
+        <childnode refid="49" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>EquipmentStack</label>
+        <link refid="class_equipment_stack"/>
+        <childnode refid="48" relation="public-inheritance">
+        </childnode>
+        <childnode refid="51" relation="usage">
+          <edgelabel>equipmentMainProperties</edgelabel>
+        </childnode>
+        <childnode refid="54" relation="usage">
+          <edgelabel>equipmentStats</edgelabel>
+        </childnode>
+      </node>
+      <node id="45">
+        <label>FormationStats</label>
+        <link refid="class_formation_stats"/>
+      </node>
+      <node id="46">
+        <label>Inventory</label>
+        <link refid="class_inventory"/>
+        <childnode refid="47" relation="usage">
+          <edgelabel>firstSkill</edgelabel>
+          <edgelabel>secondSkill</edgelabel>
+        </childnode>
+        <childnode refid="53" relation="usage">
+          <edgelabel>body</edgelabel>
+          <edgelabel>shieldNone</edgelabel>
+          <edgelabel>helmetNone</edgelabel>
+          <edgelabel>shield</edgelabel>
+          <edgelabel>weapon</edgelabel>
+          <edgelabel>helmet</edgelabel>
+          <edgelabel>bodyNone</edgelabel>
+        </childnode>
+        <childnode refid="56" relation="usage">
+          <edgelabel>inventory</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/ArrowsValley.cs" line="7" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/ArrowsValley.cs" bodystart="6" bodyend="220"/>
+    <listofallmembers>
+      <member refid="class_arrows_valley_1a1d510f788914f1568287246815413361" prot="private" virt="non-virtual"><scope>ArrowsValley</scope><name>Awake</name></member>
+      <member refid="class_arrows_valley_1a9299830740d5b5e4f5b75154b69135e6" prot="private" virt="non-virtual"><scope>ArrowsValley</scope><name>dalayBeforeWarningValley</name></member>
+      <member refid="class_arrows_valley_1a263e54a04a4a5fa71f76dd9aada9b9a8" prot="public" virt="non-virtual"><scope>ArrowsValley</scope><name>damage</name></member>
+      <member refid="class_arrows_valley_1a60634334ed802f4487a114e7a6350f85" prot="private" virt="non-virtual"><scope>ArrowsValley</scope><name>DestroyValleyObject</name></member>
+      <member refid="class_arrows_valley_1a7e1042ae8ad191268007493c48582fbb" prot="private" virt="non-virtual"><scope>ArrowsValley</scope><name>endPoint</name></member>
+      <member refid="class_arrows_valley_1a5fa18573c0281d688602fdf3aa2de678" prot="private" virt="non-virtual"><scope>ArrowsValley</scope><name>GoToLowLevelRendering</name></member>
+      <member refid="class_arrows_valley_1adcc0d505a472dde15515d4aecf8b8009" prot="public" virt="non-virtual"><scope>ArrowsValley</scope><name>Init</name></member>
+      <member refid="class_arrows_valley_1a1417fed82355701143b57c6a1f165041" prot="private" virt="non-virtual"><scope>ArrowsValley</scope><name>layerMask</name></member>
+      <member refid="class_arrows_valley_1aabacc084636a8eb9266145ccfe617d49" prot="private" virt="non-virtual"><scope>ArrowsValley</scope><name>OnParticleTrigger</name></member>
+      <member refid="class_arrows_valley_1afd5dda6f06671410bc6c12ed1cdf4ac2" prot="public" virt="non-virtual"><scope>ArrowsValley</scope><name>owner</name></member>
+      <member refid="class_arrows_valley_1a58f454577ca8c063d1c23d96b6d5366b" prot="private" virt="non-virtual"><scope>ArrowsValley</scope><name>PROFILING_NAME</name></member>
+      <member refid="class_arrows_valley_1ad67fc8a970296c1799fcadf7921037fa" prot="private" virt="non-virtual"><scope>ArrowsValley</scope><name>raycastTargetLayers</name></member>
+      <member refid="class_arrows_valley_1ae86a9d72e417c3de5179b62ba59bf7ab" prot="private" virt="non-virtual"><scope>ArrowsValley</scope><name>RealValley</name></member>
+      <member refid="class_arrows_valley_1ae2218908e5d426901545e93153a033ee" prot="private" virt="non-virtual"><scope>ArrowsValley</scope><name>realValleyParticleSystem</name></member>
+      <member refid="class_arrows_valley_1a0bd6dbb5c44460b307fe1e8b1da5320a" prot="private" virt="non-virtual"><scope>ArrowsValley</scope><name>rhit</name></member>
+      <member refid="class_arrows_valley_1ac2d5d3203cf4bc57b170661ad7a762c7" prot="private" virt="non-virtual"><scope>ArrowsValley</scope><name>Start</name></member>
+      <member refid="class_arrows_valley_1ad00d61b73c056d1284cecb88e779af86" prot="public" virt="non-virtual"><scope>ArrowsValley</scope><name>StartValley</name></member>
+      <member refid="class_arrows_valley_1ae07d47c18fcef02d0191a004d5dee9f9" prot="private" virt="non-virtual"><scope>ArrowsValley</scope><name>stayingParticles</name></member>
+      <member refid="class_arrows_valley_1a59db2dce116605c8f5be70d992ce6637" prot="private" virt="non-virtual"><scope>ArrowsValley</scope><name>trigPartc</name></member>
+      <member refid="class_arrows_valley_1a8dcf4d5b8c3473c4d8ff57e1577a4340" prot="private" virt="non-virtual"><scope>ArrowsValley</scope><name>unit</name></member>
+      <member refid="class_arrows_valley_1a41da19fc93c636d711de3f6e29e66445" prot="private" virt="non-virtual"><scope>ArrowsValley</scope><name>WAitForWarningValley</name></member>
+      <member refid="class_arrows_valley_1a4ba3a86be9981943757c70ef521fe9ac" prot="private" virt="non-virtual"><scope>ArrowsValley</scope><name>WarningValley</name></member>
+      <member refid="class_arrows_valley_1a680853df8cec063cb145152873502d0a" prot="private" virt="non-virtual"><scope>ArrowsValley</scope><name>warningValleyParticleSystem</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

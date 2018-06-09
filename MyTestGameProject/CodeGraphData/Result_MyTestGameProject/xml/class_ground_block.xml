@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_ground_block" kind="class" prot="public">
+    <compoundname>GroundBlock</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_ground_block_1a4854644656c238822ecf6d024a5098b2" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_map_block" kindref="compound">MapBlock</ref></type>
+        <definition>MapBlock GroundBlock.block</definition>
+        <argsstring></argsstring>
+        <name>block</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GroundBlock.cs" line="8" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GroundBlock.cs" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ground_block_1a5794044afa730f3b88ecc134905956f8" prot="public" static="no" mutable="no">
+        <type>Vector2</type>
+        <definition>Vector2 GroundBlock.posInMinigrid</definition>
+        <argsstring></argsstring>
+        <name>posInMinigrid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GroundBlock.cs" line="9" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GroundBlock.cs" bodystart="9" bodyend="-1"/>
+        <referencedby refid="class_exit_1ae1a78adb937ee237c528ab0a1b03dc67" compoundref="_exit_8cs" startline="19" endline="38">Exit.Start</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="455">
+        <label>GroundBlock</label>
+        <link refid="class_ground_block"/>
+        <childnode refid="456" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="456">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="457">
+        <label>GroundBlock</label>
+        <link refid="class_ground_block"/>
+        <childnode refid="458" relation="public-inheritance">
+        </childnode>
+        <childnode refid="459" relation="usage">
+          <edgelabel>block</edgelabel>
+        </childnode>
+      </node>
+      <node id="459">
+        <label>MapBlock</label>
+        <link refid="struct_map_block"/>
+      </node>
+      <node id="458">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GroundBlock.cs" line="7" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GroundBlock.cs" bodystart="6" bodyend="10"/>
+    <listofallmembers>
+      <member refid="class_ground_block_1a4854644656c238822ecf6d024a5098b2" prot="public" virt="non-virtual"><scope>GroundBlock</scope><name>block</name></member>
+      <member refid="class_ground_block_1a5794044afa730f3b88ecc134905956f8" prot="public" virt="non-virtual"><scope>GroundBlock</scope><name>posInMinigrid</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,158 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_drag_equipment" kind="class" prot="public">
+    <compoundname>DragEquipment</compoundname>
+    <basecompoundref refid="class_drag" prot="public" virt="non-virtual">Drag</basecompoundref>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_drag_equipment_1a259c84b153659538e0f63e8a80c02ce4" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_equipment_stack" kindref="compound">EquipmentStack</ref></type>
+        <definition>EquipmentStack DragEquipment.EquipStack</definition>
+        <argsstring></argsstring>
+        <name>EquipStack</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/DragEquipment.cs" line="9" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/DragEquipment.cs" bodystart="9" bodyend="-1"/>
+        <referencedby refid="class_drag_equipment_1a73db69b6e53ca46b849e46eb3a8cb398" compoundref="_drag_equipment_8cs" startline="11" endline="17">OnCantDrag</referencedby>
+        <referencedby refid="class_drop_to_ground_1a91a5ee1b7fdb866f90a2d7156184cc2a" compoundref="_drop_to_ground_8cs" startline="5" endline="26">DropToGround.OnDrop</referencedby>
+        <referencedby refid="class_drop_to_consumable_market_1aa8aab46043df942d1ccc7e4242051516" compoundref="_drop_to_consumable_market_8cs" startline="6" endline="26">DropToConsumableMarket.OnDrop</referencedby>
+        <referencedby refid="class_drop_to_equipment_market_1ae51fe5f1f0dda746010d2c85a79da913" compoundref="_drop_to_equipment_market_8cs" startline="6" endline="26">DropToEquipmentMarket.OnDrop</referencedby>
+        <referencedby refid="class_drop_to_equipment_1ae3d4d93b720430bbd8a03ecd83bac01b" compoundref="_drop_to_equipment_8cs" startline="7" endline="44">DropToEquipment.OnDrop</referencedby>
+        <referencedby refid="class_drop_to_inventory_1a0d4c04875df9f644d56798b13b0fe471" compoundref="_drop_to_inventory_8cs" startline="9" endline="54">DropToInventory.OnDrop</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_drag_equipment_1a73db69b6e53ca46b849e46eb3a8cb398" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void DragEquipment.OnCantDrag</definition>
+        <argsstring>()</argsstring>
+        <name>OnCantDrag</name>
+        <reimplements refid="class_drag_1ae357e9a731b2eaa2438f98e350914bb4">OnCantDrag</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/DragEquipment.cs" line="11" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/DragEquipment.cs" bodystart="11" bodyend="17"/>
+        <references refid="class_equipment_stack_1afd0cfe57cae1b79a1e63aa64caaebe9e" compoundref="_equipment_stack_8cs" startline="13">EquipmentStack.EquipmentStats</references>
+        <references refid="class_drag_equipment_1a259c84b153659538e0f63e8a80c02ce4" compoundref="_drag_equipment_8cs" startline="9">EquipStack</references>
+        <references refid="class_localization_1a807c845440a15261147d129f58902ea7" compoundref="_localization_8cs" startline="153">Localization.toast_cant_drop_weapon</references>
+        <references refid="struct_equipment_stats_1aeb10a54b818a9a8c9c1aec28a00da3ca" compoundref="_equipment_stats_8cs" startline="16">EquipmentStats.Type</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_drag_equipment_1a6dad6b2a4327de1e39c816378a99f891" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void DragEquipment.OnPointerClick</definition>
+        <argsstring>(PointerEventData eventData)</argsstring>
+        <name>OnPointerClick</name>
+        <reimplements refid="class_drag_1a87c2a317cab05131748dad16109be796">OnPointerClick</reimplements>
+        <param>
+          <type>PointerEventData</type>
+          <declname>eventData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/DragEquipment.cs" line="19" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/DragEquipment.cs" bodystart="19" bodyend="27"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="194">
+        <label>IEndDragHandler</label>
+      </node>
+      <node id="190">
+        <label>Drag</label>
+        <link refid="class_drag"/>
+        <childnode refid="191" relation="public-inheritance">
+        </childnode>
+        <childnode refid="192" relation="public-inheritance">
+        </childnode>
+        <childnode refid="193" relation="public-inheritance">
+        </childnode>
+        <childnode refid="194" relation="public-inheritance">
+        </childnode>
+        <childnode refid="195" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="193">
+        <label>IBeginDragHandler</label>
+      </node>
+      <node id="195">
+        <label>IPointerClickHandler</label>
+      </node>
+      <node id="191">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="189">
+        <label>DragEquipment</label>
+        <link refid="class_drag_equipment"/>
+        <childnode refid="190" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="192">
+        <label>IDragHandler</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="201">
+        <label>IEndDragHandler</label>
+      </node>
+      <node id="197">
+        <label>Drag</label>
+        <link refid="class_drag"/>
+        <childnode refid="198" relation="public-inheritance">
+        </childnode>
+        <childnode refid="199" relation="public-inheritance">
+        </childnode>
+        <childnode refid="200" relation="public-inheritance">
+        </childnode>
+        <childnode refid="201" relation="public-inheritance">
+        </childnode>
+        <childnode refid="202" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="200">
+        <label>IBeginDragHandler</label>
+      </node>
+      <node id="202">
+        <label>IPointerClickHandler</label>
+      </node>
+      <node id="198">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="196">
+        <label>DragEquipment</label>
+        <link refid="class_drag_equipment"/>
+        <childnode refid="197" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="199">
+        <label>IDragHandler</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/DragEquipment.cs" line="8" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/DragEquipment.cs" bodystart="7" bodyend="28"/>
+    <listofallmembers>
+      <member refid="class_drag_1abc72e7d1bdad6b2267f5b539e2bc1fda" prot="public" virt="non-virtual"><scope>DragEquipment</scope><name>CanDrag</name></member>
+      <member refid="class_drag_equipment_1a259c84b153659538e0f63e8a80c02ce4" prot="public" virt="non-virtual"><scope>DragEquipment</scope><name>EquipStack</name></member>
+      <member refid="class_drag_1a8f7e285708ce9e7ba67c00677dc1e950" prot="public" virt="non-virtual"><scope>DragEquipment</scope><name>OldParent</name></member>
+      <member refid="class_drag_1aad55b07fe50345d2a29e1fad325e3fdf" prot="public" virt="non-virtual"><scope>DragEquipment</scope><name>OnBeginDrag</name></member>
+      <member refid="class_drag_equipment_1a73db69b6e53ca46b849e46eb3a8cb398" prot="protected" virt="virtual"><scope>DragEquipment</scope><name>OnCantDrag</name></member>
+      <member refid="class_drag_1aaac914cb203c06ba1e4cdb5eb0e8b519" prot="public" virt="non-virtual"><scope>DragEquipment</scope><name>OnDrag</name></member>
+      <member refid="class_drag_1a61dd1ea2bf61dd6cbc4a4f01f584a913" prot="public" virt="non-virtual"><scope>DragEquipment</scope><name>OnEndDrag</name></member>
+      <member refid="class_drag_equipment_1a6dad6b2a4327de1e39c816378a99f891" prot="public" virt="virtual"><scope>DragEquipment</scope><name>OnPointerClick</name></member>
+      <member refid="class_drag_1acf7e1336c789b77a2e0f6b2bc69eeadc" prot="protected" virt="non-virtual"><scope>DragEquipment</scope><name>thisTransform</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

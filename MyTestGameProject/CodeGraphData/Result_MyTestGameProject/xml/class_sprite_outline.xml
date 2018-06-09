@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_sprite_outline" kind="class" prot="public">
+    <compoundname>SpriteOutline</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_sprite_outline_1ae7df08b9c5b2a65c910345ef9bb1c3b5" prot="private" static="no" mutable="no">
+        <type>MaterialPropertyBlock</type>
+        <definition>MaterialPropertyBlock SpriteOutline.mpb</definition>
+        <argsstring></argsstring>
+        <name>mpb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/SpriteOutline.cs" line="7" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/SpriteOutline.cs" bodystart="7" bodyend="-1"/>
+        <referencedby refid="class_sprite_outline_1a37ebae4a3bb6a1ac3c5364426a4aedca" compoundref="_sprite_outline_8cs" startline="20" endline="78">ActivateOutline</referencedby>
+        <referencedby refid="class_sprite_outline_1a4fdc39feb09e7d8551df11b5d41bbc81" compoundref="_sprite_outline_8cs" startline="10" endline="18">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_sprite_outline_1ae459f21a5ea3b4f7f51d479e85e6db05" prot="private" static="no" mutable="no">
+        <type>new SpriteRenderer</type>
+        <definition>new SpriteRenderer SpriteOutline.renderer</definition>
+        <argsstring></argsstring>
+        <name>renderer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/SpriteOutline.cs" line="8" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/SpriteOutline.cs" bodystart="8" bodyend="-1"/>
+        <referencedby refid="class_sprite_outline_1a37ebae4a3bb6a1ac3c5364426a4aedca" compoundref="_sprite_outline_8cs" startline="20" endline="78">ActivateOutline</referencedby>
+        <referencedby refid="class_sprite_outline_1a4fdc39feb09e7d8551df11b5d41bbc81" compoundref="_sprite_outline_8cs" startline="10" endline="18">Start</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_sprite_outline_1a4fdc39feb09e7d8551df11b5d41bbc81" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SpriteOutline.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/SpriteOutline.cs" line="10" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/SpriteOutline.cs" bodystart="10" bodyend="18"/>
+        <references refid="class_sprite_outline_1a37ebae4a3bb6a1ac3c5364426a4aedca" compoundref="_sprite_outline_8cs" startline="20" endline="78">ActivateOutline</references>
+        <references refid="class_sprite_outline_1ae7df08b9c5b2a65c910345ef9bb1c3b5" compoundref="_sprite_outline_8cs" startline="7">mpb</references>
+        <references refid="class_sprite_outline_1ae459f21a5ea3b4f7f51d479e85e6db05" compoundref="_sprite_outline_8cs" startline="8">renderer</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_sprite_outline_1a37ebae4a3bb6a1ac3c5364426a4aedca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SpriteOutline.ActivateOutline</definition>
+        <argsstring>(bool useGameManager=true)</argsstring>
+        <name>ActivateOutline</name>
+        <param>
+          <type>bool</type>
+          <declname>useGameManager</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/SpriteOutline.cs" line="20" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/SpriteOutline.cs" bodystart="20" bodyend="78"/>
+        <references refid="class_graphix_settings_1a26e18463f421ad6a9ec4820499548606" compoundref="_graphix_settings_8cs" startline="34">GraphixSettings.AllyOutline</references>
+        <references refid="class_graphix_settings_1aa6e596a5f6e498d623e599ee18f509a5" compoundref="_graphix_settings_8cs" startline="43">GraphixSettings.EnemyOutline</references>
+        <references refid="class_sprite_outline_1ae7df08b9c5b2a65c910345ef9bb1c3b5" compoundref="_sprite_outline_8cs" startline="7">mpb</references>
+        <references refid="class_graphix_settings_1a9579a525ff2944a4fd04a7977a0a7f4d" compoundref="_graphix_settings_8cs" startline="52">GraphixSettings.NeutralOutline</references>
+        <references refid="class_graphix_settings_1a7ae59e9a75004fc4584c6cbceb71b38d" compoundref="_graphix_settings_8cs" startline="29">GraphixSettings.OutlineType</references>
+        <references refid="class_sprite_outline_1ae459f21a5ea3b4f7f51d479e85e6db05" compoundref="_sprite_outline_8cs" startline="8">renderer</references>
+        <referencedby refid="class_sprite_outline_1a4fdc39feb09e7d8551df11b5d41bbc81" compoundref="_sprite_outline_8cs" startline="10" endline="18">Start</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1012">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1011">
+        <label>SpriteOutline</label>
+        <link refid="class_sprite_outline"/>
+        <childnode refid="1012" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1014">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1013">
+        <label>SpriteOutline</label>
+        <link refid="class_sprite_outline"/>
+        <childnode refid="1014" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/SpriteOutline.cs" line="6" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/SpriteOutline.cs" bodystart="5" bodyend="79"/>
+    <listofallmembers>
+      <member refid="class_sprite_outline_1a37ebae4a3bb6a1ac3c5364426a4aedca" prot="public" virt="non-virtual"><scope>SpriteOutline</scope><name>ActivateOutline</name></member>
+      <member refid="class_sprite_outline_1ae7df08b9c5b2a65c910345ef9bb1c3b5" prot="private" virt="non-virtual"><scope>SpriteOutline</scope><name>mpb</name></member>
+      <member refid="class_sprite_outline_1ae459f21a5ea3b4f7f51d479e85e6db05" prot="private" virt="non-virtual"><scope>SpriteOutline</scope><name>renderer</name></member>
+      <member refid="class_sprite_outline_1a4fdc39feb09e7d8551df11b5d41bbc81" prot="private" virt="non-virtual"><scope>SpriteOutline</scope><name>Start</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

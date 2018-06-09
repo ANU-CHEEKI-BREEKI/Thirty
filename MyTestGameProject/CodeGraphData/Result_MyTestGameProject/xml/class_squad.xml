@@ -1,0 +1,2344 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_squad" kind="class" prot="public">
+    <compoundname>Squad</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="class_squad_1abe71578ac0516480f581c7011b1a3ea5" prot="public" static="no">
+        <name>UnitFraction</name>
+        <enumvalue id="class_squad_1abe71578ac0516480f581c7011b1a3ea5a8a909f5ee9185002151cd3779f9fbb0b" prot="public">
+          <name>ALLY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_squad_1abe71578ac0516480f581c7011b1a3ea5a92b09d1635332c90ae8508618a174244" prot="public">
+          <name>ENEMY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_squad_1abe71578ac0516480f581c7011b1a3ea5a31ba17aa58cdb681423f07ca21a6efc7" prot="public">
+          <name>NEUTRAL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="8" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="8" bodyend="8"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_squad_1a781a32dd5c6fadbe0a9e04f142ddc9da" prot="public" static="yes" mutable="no">
+        <type><ref refid="class_squad" kindref="compound">Squad</ref></type>
+        <definition>Squad Squad.playerSquadInstance</definition>
+        <argsstring></argsstring>
+        <name>playerSquadInstance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="10" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="10" bodyend="-1"/>
+        <referencedby refid="class_drop_to_equipment_1a0bc83af63ecd40bb3c2be8355c878a7f" compoundref="_drop_to_equipment_8cs" startline="46" endline="84">DropToEquipment.AddToThisInventory</referencedby>
+        <referencedby refid="class_drop_to_inventory_1a3eee684dd1a719784a7814bf8a4b6704" compoundref="_drop_to_inventory_8cs" startline="56" endline="71">DropToInventory.AddToThisInventory</referencedby>
+        <referencedby refid="class_unit_1adaa305f796b977b923b801a9d2f8e7ce" compoundref="_unit_8cs" startline="1016" endline="1029">Unit.AfterTakingDamage</referencedby>
+        <referencedby refid="class_squad_1a3a3ad2fe111893838082805bacd70613" compoundref="_squad_8cs" startline="230" endline="255">Awake</referencedby>
+        <referencedby refid="class_unit_1ae4d010414df5ec67d5586d0c79279f5d" compoundref="_unit_8cs" startline="656" endline="668">Unit.CheckToUnion</referencedby>
+        <referencedby refid="class_game_manager_1ad11968766e26ab5495ba1d686f3e286c" compoundref="_game_manager_8cs" startline="144" endline="183">GameManager.InitPlayer</referencedby>
+        <referencedby refid="class_game_manager_1acc5bf2b58e880874333d37213a346d6a" compoundref="_game_manager_8cs" startline="241" endline="257">GameManager.LoadMainMenu</referencedby>
+        <referencedby refid="class_skill_button_1af806ebe2cb4f9a134df72231a6eac335" compoundref="_skill_button_8cs" startline="119" endline="125">SkillButton.OnBeginDrag</referencedby>
+        <referencedby refid="class_death_screen_1a8ad463929b0527085f2bad36b9720163" compoundref="_death_screen_8cs" startline="30" endline="34">DeathScreen.OnDestroy</referencedby>
+        <referencedby refid="class_stats_panel_u_i_1a96ddd8d71002b50707398c45a5068711" compoundref="_stats_panel_u_i_8cs" startline="40" endline="47">StatsPanelUI.OnDestroy</referencedby>
+        <referencedby refid="class_squad_inventory_u_i_1a2bb81bccdcb100a5d9f0d99d1cddae13" compoundref="_squad_inventory_u_i_8cs" startline="41" endline="45">SquadInventoryUI.OnDestroy</referencedby>
+        <referencedby refid="class_skill_button_1ad17124063d5b0e14189d26844e0d28ec" compoundref="_skill_button_8cs" startline="84" endline="97">SkillButton.OnDrag</referencedby>
+        <referencedby refid="class_envirinmant_inventory_u_i_1a8dc32bccb1f74c40f278702dd1c7d8cb" compoundref="_envirinmant_inventory_u_i_8cs" startline="283" endline="290">EnvirinmantInventoryUI.OnDrawGizmos</referencedby>
+        <referencedby refid="class_drop_to_equipment_1ae3d4d93b720430bbd8a03ecd83bac01b" compoundref="_drop_to_equipment_8cs" startline="7" endline="44">DropToEquipment.OnDrop</referencedby>
+        <referencedby refid="class_hospital_room_1ae7a29701bfd6999de1dec6ec98335e4a" compoundref="_hospital_room_8cs" startline="36" endline="53">HospitalRoom.OnEnable</referencedby>
+        <referencedby refid="class_skill_button_1a5ceba885332c906ee9c3910cdd568485" compoundref="_skill_button_8cs" startline="99" endline="117">SkillButton.OnEndDrag</referencedby>
+        <referencedby refid="class_stats_panel_u_i_1addec74faa8300e212a7e2500b18d5fd7" compoundref="_stats_panel_u_i_8cs" startline="62" endline="120">StatsPanelUI.OnEquipmentChanged</referencedby>
+        <referencedby refid="class_skill_button_1a2b16ac3915324df320bac7437a3851e9" compoundref="_skill_button_8cs" startline="70" endline="82">SkillButton.OnPointerClick</referencedby>
+        <referencedby refid="class_show_ally_units_hp_1af3d88bf576969bda4d7e0c20739313bf" compoundref="_show_ally_units_hp_8cs" startline="12" endline="21">ShowAllyUnitsHp.OnPointerDown</referencedby>
+        <referencedby refid="class_show_ally_units_hp_1a8ab2c5326df22a357e251c3138c394a4" compoundref="_show_ally_units_hp_8cs" startline="23" endline="27">ShowAllyUnitsHp.OnPointerUp</referencedby>
+        <referencedby refid="class_squad_inventory_u_i_1a1c33efc57d748213dac793c00997c015" compoundref="_squad_inventory_u_i_8cs" startline="61" endline="108">SquadInventoryUI.RefreshUI</referencedby>
+        <referencedby refid="class_drop_to_inventory_1aca372615bb6aa26b2c85a1bbdb05e3d2" compoundref="_drop_to_inventory_8cs" startline="73" endline="91">DropToInventory.RemoveFromThisInventory</referencedby>
+        <referencedby refid="class_squad_cerrent_prop_1adb36c58e0b969ec0d6cb8eff25358b73" compoundref="_squad_cerrent_prop_8cs" startline="15" endline="27">SquadCerrentProp.Start</referencedby>
+        <referencedby refid="class_health_bar_1a5e79cfbfe4284911e4aecab62c632843" compoundref="_health_bar_8cs" startline="16" endline="28">HealthBar.Start</referencedby>
+        <referencedby refid="class_formation_button_1ae6e626d750035a2fcc4924a316a38c9e" compoundref="_formation_button_8cs" startline="31" endline="48">FormationButton.Start</referencedby>
+        <referencedby refid="class_player_squad_path_finder_controller_1ac83070996eb9c85701fa92b42070c648" compoundref="_player_squad_path_finder_controller_8cs" startline="33" endline="44">PlayerSquadPathFinderController.Start</referencedby>
+        <referencedby refid="class_player_squad_controller_1a2aaade11832a060e36f438cb239ec888" compoundref="_player_squad_controller_8cs" startline="63" endline="99">PlayerSquadController.Start</referencedby>
+        <referencedby refid="class_squad_1ac63b45f46fca96eeffd568a4dba416f1" compoundref="_squad_8cs" startline="257" endline="301">Start</referencedby>
+        <referencedby refid="class_show_ally_units_hp_1abb259f1e3f6e28a9bef4d569c8e26561" compoundref="_show_ally_units_hp_8cs" startline="29" endline="35">ShowAllyUnitsHp.StopDrawing</referencedby>
+        <referencedby refid="class_unit_1a81ef87020279968371316b61ae6b408c" compoundref="_unit_8cs" startline="901" endline="946">Unit.TakeHitFromArrow</referencedby>
+        <referencedby refid="class_squad_1ad4036318632360c56c6a555d6181ed41" compoundref="_squad_8cs" startline="595" endline="613">UnitDeath</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_squad_1aef06ca10b32abf1ca2b54bc4e6f50b58" prot="private" static="no" mutable="no">
+        <type>Transform</type>
+        <definition>Transform Squad.minimapMark</definition>
+        <argsstring></argsstring>
+        <name>minimapMark</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="12" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="12" bodyend="-1"/>
+        <referencedby refid="class_squad_1ac63b45f46fca96eeffd568a4dba416f1" compoundref="_squad_8cs" startline="257" endline="301">Start</referencedby>
+        <referencedby refid="class_squad_1ab779e7794192aa244f5f01d23ead3b22" compoundref="_squad_8cs" startline="321" endline="329">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_squad_1a167ab01912442ed62585fcc218c90d36" prot="private" static="no" mutable="no">
+        <type><ref refid="class_unit" kindref="compound">Unit</ref></type>
+        <definition>Unit Squad.unitOriginal</definition>
+        <argsstring></argsstring>
+        <name>unitOriginal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="15" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="15" bodyend="-1"/>
+        <referencedby refid="class_squad_1ac63b45f46fca96eeffd568a4dba416f1" compoundref="_squad_8cs" startline="257" endline="301">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_squad_1a8ea1c18c1d8ed5921e96ec506d83d94d" prot="private" static="no" mutable="no">
+        <type><ref refid="struct_unit_stats" kindref="compound">UnitStats</ref></type>
+        <definition>UnitStats Squad.unitStats</definition>
+        <argsstring></argsstring>
+        <name>unitStats</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="17" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="17" bodyend="-1"/>
+        <referencedby refid="class_squad_1a659400d2151603678b90fc118c1f77e7" compoundref="_squad_8cs" startline="303" endline="319">SetUnitsStats</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_squad_1ac2b59a0d5b4f07e22822b5c6746f8d3a" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Squad.fullSquadUnitCount</definition>
+        <argsstring></argsstring>
+        <name>fullSquadUnitCount</name>
+        <initializer>= 30</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="21" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="21" bodyend="-1"/>
+        <referencedby refid="class_squad_1a3a3ad2fe111893838082805bacd70613" compoundref="_squad_8cs" startline="230" endline="255">Awake</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_squad_1a527bbc26009e5e23603ea7ba5376a49d" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Squad.squadLength</definition>
+        <argsstring></argsstring>
+        <name>squadLength</name>
+        <initializer>= 10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="23" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="23" bodyend="-1"/>
+        <referencedby refid="class_squad_1a3a3ad2fe111893838082805bacd70613" compoundref="_squad_8cs" startline="230" endline="255">Awake</referencedby>
+        <referencedby refid="class_squad_1a3d51327f459e299ad4dc1a212ceb1b17" compoundref="_squad_8cs" startline="648" endline="713">FlipPhalanx</referencedby>
+        <referencedby refid="class_squad_1accd6bf28b56f1d9fefc471aecdccd000" compoundref="_squad_8cs" startline="874" endline="965">ReformSquadInPhalanx</referencedby>
+        <referencedby refid="class_squad_1a80d6f9db669a20ae8d423b860cc916d2" compoundref="_squad_8cs" startline="841" endline="872">ReformSquadInRanks</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_squad_1a10736df810e0a0a16f14c78053a8696f" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Squad.squadRowsMax</definition>
+        <argsstring></argsstring>
+        <name>squadRowsMax</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="25" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="25" bodyend="-1"/>
+        <referencedby refid="class_squad_1a3a3ad2fe111893838082805bacd70613" compoundref="_squad_8cs" startline="230" endline="255">Awake</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_squad_1ab77ab278b16b1ad17b14c605894eb754" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Squad.maxSpeed</definition>
+        <argsstring></argsstring>
+        <name>maxSpeed</name>
+        <initializer>= 4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="28" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="28" bodyend="-1"/>
+        <referencedby refid="class_squad_1ad8dc04ae98d0db2c5a464213a2299076" compoundref="_squad_8cs" startline="337" endline="341">CalcSpeed</referencedby>
+        <referencedby refid="class_squad_1a659400d2151603678b90fc118c1f77e7" compoundref="_squad_8cs" startline="303" endline="319">SetUnitsStats</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_squad_1adbfee7e2b464254c8b0020f8e9673988" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Squad.maxRotationSpeed</definition>
+        <argsstring></argsstring>
+        <name>maxRotationSpeed</name>
+        <initializer>= 50</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="30" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="30" bodyend="-1"/>
+        <referencedby refid="class_squad_1ad8dc04ae98d0db2c5a464213a2299076" compoundref="_squad_8cs" startline="337" endline="341">CalcSpeed</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_squad_1ad56edcc0e3a6a6fa4a3663ceb46fc43f" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Squad.rotationAcuracy</definition>
+        <argsstring></argsstring>
+        <name>rotationAcuracy</name>
+        <initializer>= 5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="33" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="33" bodyend="-1"/>
+        <referencedby refid="class_squad_1ac82c1c80fdbe1f22bae354f5f59bfb12" compoundref="_squad_8cs" startline="442" endline="469">MovingInPhalanx</referencedby>
+        <referencedby refid="class_squad_1a6d62ff909779a91493639aa4204f65d4" compoundref="_squad_8cs" startline="474" endline="499">MovingInRanks</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_squad_1a05e2226c14667a23c638f0de945265da" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Squad.positionAcuracy</definition>
+        <argsstring></argsstring>
+        <name>positionAcuracy</name>
+        <initializer>= 0.1f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="35" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="35" bodyend="-1"/>
+        <referencedby refid="class_squad_1ac82c1c80fdbe1f22bae354f5f59bfb12" compoundref="_squad_8cs" startline="442" endline="469">MovingInPhalanx</referencedby>
+        <referencedby refid="class_squad_1a6d62ff909779a91493639aa4204f65d4" compoundref="_squad_8cs" startline="474" endline="499">MovingInRanks</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_squad_1a678bc4d0538b7b9b1c0e93e841fd6aec" prot="private" static="no" mutable="no">
+        <type><ref refid="class_formation_stats_1ab336466e6a234574db24f2ec914e1dd4" kindref="member">FormationStats.Formations</ref></type>
+        <definition>FormationStats.Formations Squad.formation</definition>
+        <argsstring></argsstring>
+        <name>formation</name>
+        <initializer>= FormationStats.Formations.RANKS</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="38" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_squad_1a363560f896930a74d7b9b770592da23b" prot="private" static="no" mutable="no">
+        <type><ref refid="class_formation_stats" kindref="compound">FormationStats</ref></type>
+        <definition>FormationStats Squad.currentFormationModifyers</definition>
+        <argsstring></argsstring>
+        <name>currentFormationModifyers</name>
+        <initializer>= new <ref refid="class_formation_stats_1_1_ranks" kindref="compound">FormationStats.Ranks</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="96" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_squad_1af1130afc95aa89821e63455e9ce3fbd4" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Squad.delayToGetOutOfTheFight</definition>
+        <argsstring></argsstring>
+        <name>delayToGetOutOfTheFight</name>
+        <initializer>= 1f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="100" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="100" bodyend="-1"/>
+        <referencedby refid="class_squad_1acca1ce36076843e54325f38904dfaf8e" compoundref="_squad_8cs" startline="373" endline="379">SetFlagFight</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_squad_1a3431c66cd0c85e3199677b9e7b97c3fe" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Squad.distanceToUnionWithSquad</definition>
+        <argsstring></argsstring>
+        <name>distanceToUnionWithSquad</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="102" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="102" bodyend="-1"/>
+        <referencedby refid="class_squad_1a8eb5b43710e1bbdc826e791fecaf712c" compoundref="_squad_8cs" startline="1032" endline="1044">OnDrawGizmos</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_squad_1a30eab7088e8e490e79d33d869e7a1013" prot="private" static="no" mutable="no">
+        <type><ref refid="class_inventory" kindref="compound">Inventory</ref></type>
+        <definition>Inventory Squad.inventory</definition>
+        <argsstring></argsstring>
+        <name>inventory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="105" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="105" bodyend="-1"/>
+        <referencedby refid="class_squad_1a682baf77f537896bdf4ea37f354ab115" compoundref="_squad_8cs" startline="349" endline="371">SetProp</referencedby>
+        <referencedby refid="class_squad_1ac63b45f46fca96eeffd568a4dba416f1" compoundref="_squad_8cs" startline="257" endline="301">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_squad_1a128b03d3db7b8d3c781d7e60b82a8b74" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Squad.currentSpeed</definition>
+        <argsstring></argsstring>
+        <name>currentSpeed</name>
+        <initializer>= 4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="108" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="108" bodyend="-1"/>
+        <referencedby refid="class_squad_1ad8dc04ae98d0db2c5a464213a2299076" compoundref="_squad_8cs" startline="337" endline="341">CalcSpeed</referencedby>
+        <referencedby refid="class_squad_1a1eda8168cb8c51880175b2a0d8191831" compoundref="_squad_8cs" startline="402" endline="416">WaitForEndGharge</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_squad_1a88a964b4857aee92fbef4c5ac7857128" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Squad.currentRotationSpeed</definition>
+        <argsstring></argsstring>
+        <name>currentRotationSpeed</name>
+        <initializer>= 50</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="110" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="110" bodyend="-1"/>
+        <referencedby refid="class_squad_1ad8dc04ae98d0db2c5a464213a2299076" compoundref="_squad_8cs" startline="337" endline="341">CalcSpeed</referencedby>
+        <referencedby refid="class_squad_1afb3d1570673d5f2fa08d83b396c149f7" compoundref="_squad_8cs" startline="1011" endline="1014">LookTo</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_squad_1a15ea5a68b1450478fecf7a5d8aff6508" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Squad.flipRotation</definition>
+        <argsstring></argsstring>
+        <name>flipRotation</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="113" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="113" bodyend="-1"/>
+        <referencedby refid="class_squad_1adb5dc627a20987f7a72fb3510dc58e3a" compoundref="_squad_8cs" startline="585" endline="589">AddUnit</referencedby>
+        <referencedby refid="class_squad_1a3d51327f459e299ad4dc1a212ceb1b17" compoundref="_squad_8cs" startline="648" endline="713">FlipPhalanx</referencedby>
+        <referencedby refid="class_squad_1aa28faa8a48f202a36128de532921380a" compoundref="_squad_8cs" startline="560" endline="579">LookWithoutFullRotation</referencedby>
+        <referencedby refid="class_squad_1ad4036318632360c56c6a555d6181ed41" compoundref="_squad_8cs" startline="595" endline="613">UnitDeath</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_squad_1aca3362ed3f8d30ce94cc1d4377a5d2f7" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Squad.attakingUnitsCount</definition>
+        <argsstring></argsstring>
+        <name>attakingUnitsCount</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="129" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="129" bodyend="-1"/>
+        <referencedby refid="class_squad_1a0c4c26bf46d538f989a52439d796d855" compoundref="_squad_8cs" startline="381" endline="395">OlreadyNotInFight</referencedby>
+        <referencedby refid="class_squad_1acca1ce36076843e54325f38904dfaf8e" compoundref="_squad_8cs" startline="373" endline="379">SetFlagFight</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_squad_1ad2bff49c1e4d2d4e4abb6272c985c8e4" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Squad.targettedUnitsCount</definition>
+        <argsstring></argsstring>
+        <name>targettedUnitsCount</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="135" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="135" bodyend="-1"/>
+        <referencedby refid="class_squad_1a0c4c26bf46d538f989a52439d796d855" compoundref="_squad_8cs" startline="381" endline="395">OlreadyNotInFight</referencedby>
+        <referencedby refid="class_squad_1acca1ce36076843e54325f38904dfaf8e" compoundref="_squad_8cs" startline="373" endline="379">SetFlagFight</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_squad_1a534f2813dc8b27121af551b89a997c5e" prot="private" static="no" mutable="no">
+        <type>Vector2</type>
+        <definition>Vector2 Squad.centerSquad</definition>
+        <argsstring></argsstring>
+        <name>centerSquad</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="142" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="142" bodyend="-1"/>
+        <referencedby refid="class_squad_1a6cb72ce194257d000b86e13c1fc84509" compoundref="_squad_8cs" startline="527" endline="553">DrawPath</referencedby>
+        <referencedby refid="class_squad_1a8eb5b43710e1bbdc826e791fecaf712c" compoundref="_squad_8cs" startline="1032" endline="1044">OnDrawGizmos</referencedby>
+        <referencedby refid="class_squad_1a30ffdb7c2bf17482cb7c8336786e36ac" compoundref="_squad_8cs" startline="506" endline="522">SumPositionUnit</referencedby>
+        <referencedby refid="class_squad_1ab779e7794192aa244f5f01d23ead3b22" compoundref="_squad_8cs" startline="321" endline="329">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_squad_1af1de16b9018e66396f36ca497a9338c6" prot="private" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_unit_position" kindref="compound">UnitPosition</ref> &gt;</type>
+        <definition>List&lt;UnitPosition&gt; Squad.unitPositions</definition>
+        <argsstring></argsstring>
+        <name>unitPositions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="145" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="145" bodyend="-1"/>
+        <referencedby refid="class_squad_1a16c2f886723e5b9b4e20e782b5aa87e3" compoundref="_squad_8cs" startline="619" endline="642">AddUnitWithoutReformSquad</referencedby>
+        <referencedby refid="class_squad_1a3a3ad2fe111893838082805bacd70613" compoundref="_squad_8cs" startline="230" endline="255">Awake</referencedby>
+        <referencedby refid="class_squad_1a3d51327f459e299ad4dc1a212ceb1b17" compoundref="_squad_8cs" startline="648" endline="713">FlipPhalanx</referencedby>
+        <referencedby refid="class_squad_1accd6bf28b56f1d9fefc471aecdccd000" compoundref="_squad_8cs" startline="874" endline="965">ReformSquadInPhalanx</referencedby>
+        <referencedby refid="class_squad_1a80d6f9db669a20ae8d423b860cc916d2" compoundref="_squad_8cs" startline="841" endline="872">ReformSquadInRanks</referencedby>
+        <referencedby refid="class_squad_1a659400d2151603678b90fc118c1f77e7" compoundref="_squad_8cs" startline="303" endline="319">SetUnitsStats</referencedby>
+        <referencedby refid="class_squad_1a30ffdb7c2bf17482cb7c8336786e36ac" compoundref="_squad_8cs" startline="506" endline="522">SumPositionUnit</referencedby>
+        <referencedby refid="class_squad_1ad4036318632360c56c6a555d6181ed41" compoundref="_squad_8cs" startline="595" endline="613">UnitDeath</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_squad_1a79eb73265b3faab3ce3459bcd51eb0b9" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Squad.inFight</definition>
+        <argsstring></argsstring>
+        <name>inFight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="152" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="152" bodyend="-1"/>
+        <referencedby refid="class_squad_1a8eb5b43710e1bbdc826e791fecaf712c" compoundref="_squad_8cs" startline="1032" endline="1044">OnDrawGizmos</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_squad_1a122e86d1207c94837863126218e9e8a4" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Squad.squadHelth</definition>
+        <argsstring></argsstring>
+        <name>squadHelth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="167" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="167" bodyend="-1"/>
+        <referencedby refid="class_squad_1a3a3ad2fe111893838082805bacd70613" compoundref="_squad_8cs" startline="230" endline="255">Awake</referencedby>
+        <referencedby refid="class_squad_1a659400d2151603678b90fc118c1f77e7" compoundref="_squad_8cs" startline="303" endline="319">SetUnitsStats</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_squad_1af8bc3f834d3f6a567293e2fd858b1a03" prot="private" static="no" mutable="no">
+        <type>List&lt; Vector3 &gt;</type>
+        <definition>List&lt;Vector3&gt; Squad.path</definition>
+        <argsstring></argsstring>
+        <name>path</name>
+        <initializer>= null</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="174" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="174" bodyend="-1"/>
+        <referencedby refid="class_squad_1a6cb72ce194257d000b86e13c1fc84509" compoundref="_squad_8cs" startline="527" endline="553">DrawPath</referencedby>
+        <referencedby refid="class_squad_1aec3c15d32af8b5a694b59f1293a5664f" compoundref="_squad_8cs" startline="982" endline="991">GoTo</referencedby>
+        <referencedby refid="class_squad_1ac82c1c80fdbe1f22bae354f5f59bfb12" compoundref="_squad_8cs" startline="442" endline="469">MovingInPhalanx</referencedby>
+        <referencedby refid="class_squad_1a6d62ff909779a91493639aa4204f65d4" compoundref="_squad_8cs" startline="474" endline="499">MovingInRanks</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_squad_1a7ee8297c0fe7112fe0c87b71c81941c1" prot="private" static="no" mutable="no">
+        <type>Vector3</type>
+        <definition>Vector3 Squad.endMovePosition</definition>
+        <argsstring></argsstring>
+        <name>endMovePosition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="176" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="176" bodyend="-1"/>
+        <referencedby refid="class_squad_1aec3c15d32af8b5a694b59f1293a5664f" compoundref="_squad_8cs" startline="982" endline="991">GoTo</referencedby>
+        <referencedby refid="class_squad_1adc62597e8e24aca794d3b3d9510c342f" compoundref="_squad_8cs" startline="972" endline="976">SetEndMovePositions</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_squad_1a757878aa6a8481996ec89a266b783bb6" prot="private" static="no" mutable="no">
+        <type>LineRenderer</type>
+        <definition>LineRenderer Squad.lineRenderer</definition>
+        <argsstring></argsstring>
+        <name>lineRenderer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="178" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="178" bodyend="-1"/>
+        <referencedby refid="class_squad_1a3a3ad2fe111893838082805bacd70613" compoundref="_squad_8cs" startline="230" endline="255">Awake</referencedby>
+        <referencedby refid="class_squad_1a6cb72ce194257d000b86e13c1fc84509" compoundref="_squad_8cs" startline="527" endline="553">DrawPath</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_squad_1a838966550a97ec4e0ce4de042467ccb4" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Squad.pathStep</definition>
+        <argsstring></argsstring>
+        <name>pathStep</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="180" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="180" bodyend="-1"/>
+        <referencedby refid="class_squad_1a6cb72ce194257d000b86e13c1fc84509" compoundref="_squad_8cs" startline="527" endline="553">DrawPath</referencedby>
+        <referencedby refid="class_squad_1aec3c15d32af8b5a694b59f1293a5664f" compoundref="_squad_8cs" startline="982" endline="991">GoTo</referencedby>
+        <referencedby refid="class_squad_1ac82c1c80fdbe1f22bae354f5f59bfb12" compoundref="_squad_8cs" startline="442" endline="469">MovingInPhalanx</referencedby>
+        <referencedby refid="class_squad_1a6d62ff909779a91493639aa4204f65d4" compoundref="_squad_8cs" startline="474" endline="499">MovingInRanks</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_squad_1a9038a9cba572d6d0b3a06ec04fae418c" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Squad.drawUnitHp</definition>
+        <argsstring></argsstring>
+        <name>drawUnitHp</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="210" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="210" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_squad_1a251a4fb5a335ac30e63287601ac044c1" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Squad.charging</definition>
+        <argsstring></argsstring>
+        <name>charging</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="223" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="223" bodyend="-1"/>
+        <referencedby refid="class_squad_1a1eda8168cb8c51880175b2a0d8191831" compoundref="_squad_8cs" startline="402" endline="416">WaitForEndGharge</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_squad_1a9a08bdd12e848411d126a957c0d73b27" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Squad.sumX</definition>
+        <argsstring></argsstring>
+        <name>sumX</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="226" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="226" bodyend="-1"/>
+        <referencedby refid="class_squad_1a30ffdb7c2bf17482cb7c8336786e36ac" compoundref="_squad_8cs" startline="506" endline="522">SumPositionUnit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_squad_1a0176a9cf81dd6b54f787021af98d7314" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Squad.sumY</definition>
+        <argsstring></argsstring>
+        <name>sumY</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="227" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="227" bodyend="-1"/>
+        <referencedby refid="class_squad_1a30ffdb7c2bf17482cb7c8336786e36ac" compoundref="_squad_8cs" startline="506" endline="522">SumPositionUnit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_squad_1a529df289b6bb54d2d6cd8f61d6948d30" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Squad.countSumUnit</definition>
+        <argsstring></argsstring>
+        <name>countSumUnit</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="228" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="228" bodyend="-1"/>
+        <referencedby refid="class_squad_1a30ffdb7c2bf17482cb7c8336786e36ac" compoundref="_squad_8cs" startline="506" endline="522">SumPositionUnit</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_squad_1a193bf163c91b4a816ad644fed3b3404d" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type><ref refid="struct_unit_stats" kindref="compound">UnitStats</ref></type>
+        <definition>UnitStats Squad.UnitStats</definition>
+        <argsstring></argsstring>
+        <name>UnitStats</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="18" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="18" bodyend="-1"/>
+        <referencedby refid="class_stats_panel_u_i_1addec74faa8300e212a7e2500b18d5fd7" compoundref="_stats_panel_u_i_8cs" startline="62" endline="120">StatsPanelUI.OnEquipmentChanged</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_squad_1a0e83cf3d9cc58d693d73490ce0e04db4" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>int</type>
+        <definition>int Squad.FULL_SQUAD_UNIT_COUNT</definition>
+        <argsstring></argsstring>
+        <name>FULL_SQUAD_UNIT_COUNT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="22" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="22" bodyend="-1"/>
+        <referencedby refid="class_squad_1a3a3ad2fe111893838082805bacd70613" compoundref="_squad_8cs" startline="230" endline="255">Awake</referencedby>
+        <referencedby refid="class_unit_1ae4d010414df5ec67d5586d0c79279f5d" compoundref="_unit_8cs" startline="656" endline="668">Unit.CheckToUnion</referencedby>
+        <referencedby refid="class_squad_1accd6bf28b56f1d9fefc471aecdccd000" compoundref="_squad_8cs" startline="874" endline="965">ReformSquadInPhalanx</referencedby>
+        <referencedby refid="class_squad_1ac63b45f46fca96eeffd568a4dba416f1" compoundref="_squad_8cs" startline="257" endline="301">Start</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_squad_1acc877c2a44f1cd43386577674e2a26b9" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>int</type>
+        <definition>int Squad.SQUAD_LENGTH</definition>
+        <argsstring></argsstring>
+        <name>SQUAD_LENGTH</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="24" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="24" bodyend="-1"/>
+        <referencedby refid="class_squad_1accd6bf28b56f1d9fefc471aecdccd000" compoundref="_squad_8cs" startline="874" endline="965">ReformSquadInPhalanx</referencedby>
+        <referencedby refid="class_squad_1a80d6f9db669a20ae8d423b860cc916d2" compoundref="_squad_8cs" startline="841" endline="872">ReformSquadInRanks</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_squad_1aa9139733734fa44d9123ad952851979e" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>int</type>
+        <definition>int Squad.SQUAD_ROWS_MAX</definition>
+        <argsstring></argsstring>
+        <name>SQUAD_ROWS_MAX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="26" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_squad_1a7ced4df56d8bef5634cb5b59f3769527" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>float</type>
+        <definition>float Squad.MaxSpeed</definition>
+        <argsstring></argsstring>
+        <name>MaxSpeed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="29" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_squad_1ab8e2fc5dfa081f339fe4a6690b1c2a1a" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>float</type>
+        <definition>float Squad.MaxRotationSpeed</definition>
+        <argsstring></argsstring>
+        <name>MaxRotationSpeed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="31" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_squad_1a62ffe0c80a501d247d1981a77b6f90a4" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>float</type>
+        <definition>float Squad.RotationAcuracy</definition>
+        <argsstring></argsstring>
+        <name>RotationAcuracy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="34" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_squad_1a420523d8beb3b803001128034c040126" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>float</type>
+        <definition>float Squad.PositionAcuracy</definition>
+        <argsstring></argsstring>
+        <name>PositionAcuracy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="36" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_squad_1a0e61b22b389bca6483cb8d01a88bba55" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_formation_stats_1ab336466e6a234574db24f2ec914e1dd4" kindref="member">FormationStats.Formations</ref></type>
+        <definition>FormationStats.Formations Squad.CurrentFormation</definition>
+        <argsstring></argsstring>
+        <name>CurrentFormation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="39" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="40" bodyend="-1"/>
+        <referencedby refid="class_unit_1adaa305f796b977b923b801a9d2f8e7ce" compoundref="_unit_8cs" startline="1016" endline="1029">Unit.AfterTakingDamage</referencedby>
+        <referencedby refid="class_skill_charge_1ac7aee442f45a7895b102cc98c8a94c04" compoundref="_skill_charge_8cs" startline="26" endline="42">SkillCharge.DoSkill</referencedby>
+        <referencedby refid="class_unit_1a5249bde8d5dfe29dfdfe6e93caa4d005" compoundref="_unit_8cs" startline="670" endline="708">Unit.FindTarget</referencedby>
+        <referencedby refid="class_unit_1aaf4c2806352040617d7973983ea5bee6" compoundref="_unit_8cs" startline="280" endline="310">Unit.Init</referencedby>
+        <referencedby refid="class_squad_1a9e562dc28e755105a8a9eda78d537692" compoundref="_squad_8cs" startline="418" endline="432">Moving</referencedby>
+        <referencedby refid="class_unit_1a1e9e529012bcd3c9538eda06da32840b" compoundref="_unit_8cs" startline="1099" endline="1116">Unit.Moving</referencedby>
+        <referencedby refid="class_unit_1ac54c63324f75df592ac77af1ed3eaefe" compoundref="_unit_8cs" startline="827" endline="842">Unit.OnFormationChanged</referencedby>
+        <referencedby refid="class_player_squad_path_finder_controller_1a16d7e9b844dc620e9f1ff5f7713b8c59" compoundref="_player_squad_path_finder_controller_8cs" startline="71" endline="147">PlayerSquadPathFinderController.OnPointerUp</referencedby>
+        <referencedby refid="class_formation_button_1a1f52fd250bb5861dfab65df0c1e387bb" compoundref="_formation_button_8cs" startline="130" endline="158">FormationButton.OnPointerUp</referencedby>
+        <referencedby refid="class_player_squad_controller_1a14624c20b184262769b880804049fb0b" compoundref="_player_squad_controller_8cs" startline="216" endline="297">PlayerSquadController.OnPointerUp</referencedby>
+        <referencedby refid="class_unit_1afbd20963ecbec94e3afa6e24ea91142a" compoundref="_unit_8cs" startline="1259" endline="1277">Unit.OnPushEnd</referencedby>
+        <referencedby refid="class_unit_1aee45dbd2a9c87a44be301b708c5e1503" compoundref="_unit_8cs" startline="1215" endline="1257">Unit.OnPushStart</referencedby>
+        <referencedby refid="class_formation_button_1a7a2cbaaf7725cd1875236ab357703de3" compoundref="_formation_button_8cs" startline="74" endline="77">FormationButton.PlayerSquadInstance_OnFormationChanged</referencedby>
+        <referencedby refid="class_squad_1a5d2feca0974663a6008e01bc66b65bfa" compoundref="_squad_8cs" startline="726" endline="753">ReformSquad</referencedby>
+        <referencedby refid="class_squad_1a682baf77f537896bdf4ea37f354ab115" compoundref="_squad_8cs" startline="349" endline="371">SetProp</referencedby>
+        <referencedby refid="class_squad_cerrent_prop_1adb36c58e0b969ec0d6cb8eff25358b73" compoundref="_squad_cerrent_prop_8cs" startline="15" endline="27">SquadCerrentProp.Start</referencedby>
+        <referencedby refid="class_formation_button_1ae6e626d750035a2fcc4924a316a38c9e" compoundref="_formation_button_8cs" startline="31" endline="48">FormationButton.Start</referencedby>
+        <referencedby refid="class_squad_1ac63b45f46fca96eeffd568a4dba416f1" compoundref="_squad_8cs" startline="257" endline="301">Start</referencedby>
+        <referencedby refid="class_unit_1a81ef87020279968371316b61ae6b408c" compoundref="_unit_8cs" startline="901" endline="946">Unit.TakeHitFromArrow</referencedby>
+        <referencedby refid="class_unit_1a6122214b77883efe36237c9f25aaab5b" compoundref="_unit_8cs" startline="862" endline="899">Unit.TakeHitFromUnit</referencedby>
+        <referencedby refid="class_player_squad_controller_1a9c1cd18c24ba0f1896bde74712ce992f" compoundref="_player_squad_controller_8cs" startline="101" endline="151">PlayerSquadController.Update</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_squad_1a00c8aef1fb2e5c56df608bcd126aedf7" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type><ref refid="class_formation_stats" kindref="compound">FormationStats</ref></type>
+        <definition>FormationStats Squad.CurrentFormationModifyers</definition>
+        <argsstring></argsstring>
+        <name>CurrentFormationModifyers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="97" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_squad_1a5765e8f707742c3c62885caf0b761813" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>float</type>
+        <definition>float Squad.DistanceToUnionWithSquad</definition>
+        <argsstring></argsstring>
+        <name>DistanceToUnionWithSquad</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="103" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="103" bodyend="-1"/>
+        <referencedby refid="class_unit_1ae4d010414df5ec67d5586d0c79279f5d" compoundref="_unit_8cs" startline="656" endline="668">Unit.CheckToUnion</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_squad_1a000c2e8cc307d9629751785b96b53ce5" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type><ref refid="class_inventory" kindref="compound">Inventory</ref></type>
+        <definition>Inventory Squad.Inventory</definition>
+        <argsstring></argsstring>
+        <name>Inventory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="106" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="106" bodyend="-1"/>
+        <referencedby refid="class_drop_to_equipment_1a0bc83af63ecd40bb3c2be8355c878a7f" compoundref="_drop_to_equipment_8cs" startline="46" endline="84">DropToEquipment.AddToThisInventory</referencedby>
+        <referencedby refid="class_drop_to_inventory_1a3eee684dd1a719784a7814bf8a4b6704" compoundref="_drop_to_inventory_8cs" startline="56" endline="71">DropToInventory.AddToThisInventory</referencedby>
+        <referencedby refid="class_unit_1a95a18047de7c98c3a6256788b178880d" compoundref="_unit_8cs" startline="798" endline="825">Unit.CheckEquipment</referencedby>
+        <referencedby refid="class_unit_1a668a8b3411432237b13db3c5a9d768d6" compoundref="_unit_8cs" startline="312" endline="390">Unit.Death</referencedby>
+        <referencedby refid="class_squad_inventory_u_i_1a1c33efc57d748213dac793c00997c015" compoundref="_squad_inventory_u_i_8cs" startline="61" endline="108">SquadInventoryUI.RefreshUI</referencedby>
+        <referencedby refid="class_drop_to_inventory_1aca372615bb6aa26b2c85a1bbdb05e3d2" compoundref="_drop_to_inventory_8cs" startline="73" endline="91">DropToInventory.RemoveFromThisInventory</referencedby>
+        <referencedby refid="class_unit_1aa1a39b5e6d44e1b7a3ff80c484d2729d" compoundref="_unit_8cs" startline="488" endline="494">Unit.SetEquipment</referencedby>
+        <referencedby refid="class_unit_1a81ef87020279968371316b61ae6b408c" compoundref="_unit_8cs" startline="901" endline="946">Unit.TakeHitFromArrow</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_squad_1a60d10a682abd3c7b5ada3af0edbdfa15" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>float</type>
+        <definition>float Squad.CurrentSpeed</definition>
+        <argsstring></argsstring>
+        <name>CurrentSpeed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="109" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="109" bodyend="-1"/>
+        <referencedby refid="class_squad_1a954fac58a34be8029215affeb7841104" compoundref="_squad_8cs" startline="1016" endline="1019">MoveTo</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_squad_1a386347ac8e9205ec90d6a3ea2dc31177" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>float</type>
+        <definition>float Squad.CurrentRotationSpeed</definition>
+        <argsstring></argsstring>
+        <name>CurrentRotationSpeed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="111" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_squad_1a2daafef1aec88ff88eb32f4f514b1f3b" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>bool</type>
+        <definition>bool Squad.FlipRotation</definition>
+        <argsstring></argsstring>
+        <name>FlipRotation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="114" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="115" bodyend="-1"/>
+        <referencedby refid="class_squad_1aa28faa8a48f202a36128de532921380a" compoundref="_squad_8cs" startline="560" endline="579">LookWithoutFullRotation</referencedby>
+        <referencedby refid="class_ai_squad_controller_1aeef156bef0b33c8a69c090d4e61375a2" compoundref="_ai_squad_controller_8cs" startline="225" endline="249">AiSquadController.SetStartPosition</referencedby>
+        <referencedby refid="class_player_squad_controller_1ad6c8f15152c309d015043d88d21b91e0" compoundref="_player_squad_controller_8cs" startline="299" endline="328">PlayerSquadController.SetStartPosition</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_squad_1a2ce8c36b16323c33475471e664d75a2b" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>int</type>
+        <definition>int Squad.AttakingUnitsCount</definition>
+        <argsstring></argsstring>
+        <name>AttakingUnitsCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="130" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_squad_1ae024589f77bb7b51467a92c6b6ff2c86" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>int</type>
+        <definition>int Squad.TargettedUnitsCount</definition>
+        <argsstring></argsstring>
+        <name>TargettedUnitsCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="136" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_squad_1a2d34961b1e379d63c8f74f30583b299c" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>Vector2</type>
+        <definition>Vector2 Squad.CenterSquad</definition>
+        <argsstring></argsstring>
+        <name>CenterSquad</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="143" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="143" bodyend="-1"/>
+        <referencedby refid="class_exit_1a92357cf7bc75aaffd2252467bb86af92" compoundref="_exit_8cs" startline="40" endline="52">Exit.CheckCenterSquadToExit</referencedby>
+        <referencedby refid="class_camera_controller_1a7c4f486f4bcbd1d54a346fdce9707bd5" compoundref="_camera_controller_8cs" startline="30" endline="49">CameraController.Update</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_squad_1abc939c4b24727c83d7dc7cd826be5662" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>List&lt; <ref refid="class_unit_position" kindref="compound">UnitPosition</ref> &gt;</type>
+        <definition>List&lt;UnitPosition&gt; Squad.UnitPositions</definition>
+        <argsstring></argsstring>
+        <name>UnitPositions</name>
+        <briefdescription>
+<para>Ни в коем случае не надо ничкго менять в позициях! Понял, йопта?! </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="149" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_squad_1a17079c457a2cd7ba2d4fd936d8c9d17e" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>bool</type>
+        <definition>bool Squad.InFight</definition>
+        <argsstring></argsstring>
+        <name>InFight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="153" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="154" bodyend="-1"/>
+        <referencedby refid="class_unit_1ae4d010414df5ec67d5586d0c79279f5d" compoundref="_unit_8cs" startline="656" endline="668">Unit.CheckToUnion</referencedby>
+        <referencedby refid="class_squad_1a0c4c26bf46d538f989a52439d796d855" compoundref="_squad_8cs" startline="381" endline="395">OlreadyNotInFight</referencedby>
+        <referencedby refid="class_unit_1aee45dbd2a9c87a44be301b708c5e1503" compoundref="_unit_8cs" startline="1215" endline="1257">Unit.OnPushStart</referencedby>
+        <referencedby refid="class_squad_1acca1ce36076843e54325f38904dfaf8e" compoundref="_squad_8cs" startline="373" endline="379">SetFlagFight</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_squad_1a450b8b71c4017544305c4123e2d08d21" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>GameObject</type>
+        <definition>GameObject Squad.UnitsContainer</definition>
+        <argsstring></argsstring>
+        <name>UnitsContainer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="164" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="164" bodyend="-1"/>
+        <referencedby refid="class_squad_1a3a3ad2fe111893838082805bacd70613" compoundref="_squad_8cs" startline="230" endline="255">Awake</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_squad_1a14f16d0bd1098a523c721fb610247c56" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>int</type>
+        <definition>int Squad.UnitCount</definition>
+        <argsstring></argsstring>
+        <name>UnitCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="165" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="165" bodyend="-1"/>
+        <referencedby refid="class_unit_1ae4d010414df5ec67d5586d0c79279f5d" compoundref="_unit_8cs" startline="656" endline="668">Unit.CheckToUnion</referencedby>
+        <referencedby refid="class_unit_1a668a8b3411432237b13db3c5a9d768d6" compoundref="_unit_8cs" startline="312" endline="390">Unit.Death</referencedby>
+        <referencedby refid="class_drop_to_equipment_1ae3d4d93b720430bbd8a03ecd83bac01b" compoundref="_drop_to_equipment_8cs" startline="7" endline="44">DropToEquipment.OnDrop</referencedby>
+        <referencedby refid="class_stats_panel_u_i_1addec74faa8300e212a7e2500b18d5fd7" compoundref="_stats_panel_u_i_8cs" startline="62" endline="120">StatsPanelUI.OnEquipmentChanged</referencedby>
+        <referencedby refid="class_squad_1a682baf77f537896bdf4ea37f354ab115" compoundref="_squad_8cs" startline="349" endline="371">SetProp</referencedby>
+        <referencedby refid="class_health_bar_1a5e79cfbfe4284911e4aecab62c632843" compoundref="_health_bar_8cs" startline="16" endline="28">HealthBar.Start</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_squad_1a4e9a1bb8a4c693726c806427b646eaf2" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>float</type>
+        <definition>float Squad.SquadHealth</definition>
+        <argsstring></argsstring>
+        <name>SquadHealth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="168" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="169" bodyend="-1"/>
+        <referencedby refid="class_squad_1a16c2f886723e5b9b4e20e782b5aa87e3" compoundref="_squad_8cs" startline="619" endline="642">AddUnitWithoutReformSquad</referencedby>
+        <referencedby refid="class_squad_1a659400d2151603678b90fc118c1f77e7" compoundref="_squad_8cs" startline="303" endline="319">SetUnitsStats</referencedby>
+        <referencedby refid="class_health_bar_1a5e79cfbfe4284911e4aecab62c632843" compoundref="_health_bar_8cs" startline="16" endline="28">HealthBar.Start</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_squad_1a024d83821917a7c547e23ffcdf81caa4" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>Transform</type>
+        <definition>Transform Squad.PositionsTransform</definition>
+        <argsstring></argsstring>
+        <name>PositionsTransform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="208" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="208" bodyend="-1"/>
+        <referencedby refid="class_squad_1a16c2f886723e5b9b4e20e782b5aa87e3" compoundref="_squad_8cs" startline="619" endline="642">AddUnitWithoutReformSquad</referencedby>
+        <referencedby refid="class_squad_1a3a3ad2fe111893838082805bacd70613" compoundref="_squad_8cs" startline="230" endline="255">Awake</referencedby>
+        <referencedby refid="class_squad_1a9f5532c3ee71aef16d92d76263de74ac" compoundref="_squad_8cs" startline="1003" endline="1009">CheckPositionInRange</referencedby>
+        <referencedby refid="class_ai_squad_controller_1a884586ff08b60c2ee405902e8313abdc" compoundref="_ai_squad_controller_8cs" startline="181" endline="223">AiSquadController.GoTo</referencedby>
+        <referencedby refid="class_game_manager_1ad11968766e26ab5495ba1d686f3e286c" compoundref="_game_manager_8cs" startline="144" endline="183">GameManager.InitPlayer</referencedby>
+        <referencedby refid="class_player_squad_path_finder_controller_1a16d7e9b844dc620e9f1ff5f7713b8c59" compoundref="_player_squad_path_finder_controller_8cs" startline="71" endline="147">PlayerSquadPathFinderController.OnPointerUp</referencedby>
+        <referencedby refid="class_player_squad_controller_1a14624c20b184262769b880804049fb0b" compoundref="_player_squad_controller_8cs" startline="216" endline="297">PlayerSquadController.OnPointerUp</referencedby>
+        <referencedby refid="class_ai_squad_controller_1aeef156bef0b33c8a69c090d4e61375a2" compoundref="_ai_squad_controller_8cs" startline="225" endline="249">AiSquadController.SetStartPosition</referencedby>
+        <referencedby refid="class_player_squad_controller_1ad6c8f15152c309d015043d88d21b91e0" compoundref="_player_squad_controller_8cs" startline="299" endline="328">PlayerSquadController.SetStartPosition</referencedby>
+        <referencedby refid="class_ai_squad_controller_1a805ebf99b7ed211f9161f0654815a9c6" compoundref="_ai_squad_controller_8cs" startline="120" endline="149">AiSquadController.SquadAttack</referencedby>
+        <referencedby refid="class_squad_1ac63b45f46fca96eeffd568a4dba416f1" compoundref="_squad_8cs" startline="257" endline="301">Start</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_squad_1a67533dd4d7786030e65c7548c751c407" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>bool</type>
+        <definition>bool Squad.DrawUnitHp</definition>
+        <argsstring></argsstring>
+        <name>DrawUnitHp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="211" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="212" bodyend="-1"/>
+        <referencedby refid="class_show_ally_units_hp_1af3d88bf576969bda4d7e0c20739313bf" compoundref="_show_ally_units_hp_8cs" startline="12" endline="21">ShowAllyUnitsHp.OnPointerDown</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_squad_1a1fada86fc64219edfc97196cc3bbc7e5" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>bool</type>
+        <definition>bool Squad.Charging</definition>
+        <argsstring></argsstring>
+        <name>Charging</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="224" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="224" bodyend="-1"/>
+        <referencedby refid="class_player_squad_path_finder_controller_1afbb6180e00693a141b33efa735ce442c" compoundref="_player_squad_path_finder_controller_8cs" startline="46" endline="69">PlayerSquadPathFinderController.OnPointerDown</referencedby>
+        <referencedby refid="class_player_squad_controller_1aec93b7ccc7f17d32adb4875b7831e5a2" compoundref="_player_squad_controller_8cs" startline="191" endline="214">PlayerSquadController.OnPointerDown</referencedby>
+        <referencedby refid="class_player_squad_path_finder_controller_1a16d7e9b844dc620e9f1ff5f7713b8c59" compoundref="_player_squad_path_finder_controller_8cs" startline="71" endline="147">PlayerSquadPathFinderController.OnPointerUp</referencedby>
+        <referencedby refid="class_player_squad_controller_1a14624c20b184262769b880804049fb0b" compoundref="_player_squad_controller_8cs" startline="216" endline="297">PlayerSquadController.OnPointerUp</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_squad_1aa71cd8ace8efe45c6201040f570a73f7" prot="public" static="no" mutable="no">
+        <type><ref refid="class_squad_1abe71578ac0516480f581c7011b1a3ea5" kindref="member">UnitFraction</ref></type>
+        <definition>UnitFraction Squad.fraction</definition>
+        <argsstring></argsstring>
+        <name>fraction</name>
+        <initializer>= UnitFraction.ALLY</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="98" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="98" bodyend="-1"/>
+        <referencedby refid="class_squad_1a16c2f886723e5b9b4e20e782b5aa87e3" compoundref="_squad_8cs" startline="619" endline="642">AddUnitWithoutReformSquad</referencedby>
+        <referencedby refid="class_player_squad_controller_1a2aaade11832a060e36f438cb239ec888" compoundref="_player_squad_controller_8cs" startline="63" endline="99">PlayerSquadController.Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_squad_1a71b750c40e090769192c7e2956a20fd4" prot="public" static="no" mutable="no">
+        <type>Quaternion</type>
+        <definition>Quaternion Squad.endLookRotation</definition>
+        <argsstring></argsstring>
+        <name>endLookRotation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="175" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="175" bodyend="-1"/>
+        <referencedby refid="class_squad_1ac82c1c80fdbe1f22bae354f5f59bfb12" compoundref="_squad_8cs" startline="442" endline="469">MovingInPhalanx</referencedby>
+        <referencedby refid="class_unit_1a197231e948c8f7d19d677b23e29a8c6e" compoundref="_unit_8cs" startline="1123" endline="1155">Unit.MovingInPhalanx</referencedby>
+        <referencedby refid="class_squad_1a6d62ff909779a91493639aa4204f65d4" compoundref="_squad_8cs" startline="474" endline="499">MovingInRanks</referencedby>
+        <referencedby refid="class_squad_1adc62597e8e24aca794d3b3d9510c342f" compoundref="_squad_8cs" startline="972" endline="976">SetEndMovePositions</referencedby>
+        <referencedby refid="class_squad_1ac63b45f46fca96eeffd568a4dba416f1" compoundref="_squad_8cs" startline="257" endline="301">Start</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="event">
+      <memberdef kind="event" id="class_squad_1a9e8311044b04633e7bd62a52f15e1f13" prot="public" static="no" add="no" remove="no" raise="no">
+        <type>Action&lt; bool &gt;</type>
+        <definition>Action&lt;bool&gt; Squad.OnInFightFlagChanged</definition>
+        <argsstring></argsstring>
+        <name>OnInFightFlagChanged</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="151" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="event" id="class_squad_1afd2133a496c0a15fa187346fadbcf80d" prot="public" static="no" add="no" remove="no" raise="no">
+        <type>Action&lt; int &gt;</type>
+        <definition>Action&lt;int&gt; Squad.OnUitCountChanged</definition>
+        <argsstring></argsstring>
+        <name>OnUitCountChanged</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="182" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="182" bodyend="-1"/>
+        <referencedby refid="class_squad_1a16c2f886723e5b9b4e20e782b5aa87e3" compoundref="_squad_8cs" startline="619" endline="642">AddUnitWithoutReformSquad</referencedby>
+        <referencedby refid="class_health_bar_1a5e79cfbfe4284911e4aecab62c632843" compoundref="_health_bar_8cs" startline="16" endline="28">HealthBar.Start</referencedby>
+        <referencedby refid="class_squad_1ad4036318632360c56c6a555d6181ed41" compoundref="_squad_8cs" startline="595" endline="613">UnitDeath</referencedby>
+      </memberdef>
+      <memberdef kind="event" id="class_squad_1a65b75c51bbcefabed4baa6a5874e82f9" prot="public" static="no" add="no" remove="no" raise="no">
+        <type>Action&lt; float &gt;</type>
+        <definition>Action&lt;float&gt; Squad.OnSumHealthChanged</definition>
+        <argsstring></argsstring>
+        <name>OnSumHealthChanged</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="183" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="183" bodyend="-1"/>
+        <referencedby refid="class_health_bar_1a5e79cfbfe4284911e4aecab62c632843" compoundref="_health_bar_8cs" startline="16" endline="28">HealthBar.Start</referencedby>
+      </memberdef>
+      <memberdef kind="event" id="class_squad_1ae118b8ab61bad5e8fed1edf91b5aab67" prot="public" static="no" add="no" remove="no" raise="no">
+        <type>Action&lt; <ref refid="class_formation_stats_1ab336466e6a234574db24f2ec914e1dd4" kindref="member">FormationStats.Formations</ref> &gt;</type>
+        <definition>Action&lt;FormationStats.Formations&gt; Squad.OnFormationChanged</definition>
+        <argsstring></argsstring>
+        <name>OnFormationChanged</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="184" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="184" bodyend="-1"/>
+        <referencedby refid="class_squad_1ac63b45f46fca96eeffd568a4dba416f1" compoundref="_squad_8cs" startline="257" endline="301">Start</referencedby>
+      </memberdef>
+      <memberdef kind="event" id="class_squad_1aabfeb19ecbfd773cce98e957c336b06c" prot="public" static="no" add="no" remove="no" raise="no">
+        <type>Action&lt; <ref refid="class_equipment_stack" kindref="compound">EquipmentStack</ref> &gt;</type>
+        <definition>Action&lt;EquipmentStack&gt; Squad.OnDropStackFromInventory</definition>
+        <argsstring></argsstring>
+        <name>OnDropStackFromInventory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="185" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="185" bodyend="-1"/>
+        <referencedby refid="class_squad_1ac2faf6f7981192eaf66177a727996a9e" compoundref="_squad_8cs" startline="1026" endline="1030">DropEquipment</referencedby>
+      </memberdef>
+      <memberdef kind="event" id="class_squad_1ac0857cd3883ee6f50bf921f09bdd9a70" prot="public" static="no" add="no" remove="no" raise="no">
+        <type>Action&lt; <ref refid="class_formation_stats_1ab336466e6a234574db24f2ec914e1dd4" kindref="member">FormationStats.Formations</ref> &gt;</type>
+        <definition>Action&lt;FormationStats.Formations&gt; Squad.OnReformSquad</definition>
+        <argsstring></argsstring>
+        <name>OnReformSquad</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="186" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="186" bodyend="-1"/>
+        <referencedby refid="class_squad_1a5d2feca0974663a6008e01bc66b65bfa" compoundref="_squad_8cs" startline="726" endline="753">ReformSquad</referencedby>
+      </memberdef>
+      <memberdef kind="event" id="class_squad_1ab66f10e8a2b01f2183da97191e47ffc1" prot="public" static="no" add="no" remove="no" raise="no">
+        <type>Action</type>
+        <definition>Action Squad.OnInitiateUnitPositions</definition>
+        <argsstring></argsstring>
+        <name>OnInitiateUnitPositions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="187" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="187" bodyend="-1"/>
+        <referencedby refid="class_squad_1a3302f71c78e2e62275a17fd071c8a232" compoundref="_squad_8cs" startline="715" endline="719">ResetUnitPositions</referencedby>
+      </memberdef>
+      <memberdef kind="event" id="class_squad_1abd75cf1c7abdd594d9762195bd4a794c" prot="public" static="no" add="no" remove="no" raise="no">
+        <type>Action&lt; float, float &gt;</type>
+        <definition>Action&lt;float, float&gt; Squad.OnBeginCharge</definition>
+        <argsstring></argsstring>
+        <name>OnBeginCharge</name>
+        <briefdescription>
+<para>Первый аргумент - бонус скорости. </para>        </briefdescription>
+        <detaileddescription>
+<para>Второй аргумент - бонус ускорения.</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="192" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="192" bodyend="-1"/>
+        <referencedby refid="class_squad_1a1eda8168cb8c51880175b2a0d8191831" compoundref="_squad_8cs" startline="402" endline="416">WaitForEndGharge</referencedby>
+      </memberdef>
+      <memberdef kind="event" id="class_squad_1aa8d1911bae8a743c2336973fbca70dc2" prot="public" static="no" add="no" remove="no" raise="no">
+        <type>Action&lt; float, float &gt;</type>
+        <definition>Action&lt;float, float&gt; Squad.OnEndCharge</definition>
+        <argsstring></argsstring>
+        <name>OnEndCharge</name>
+        <briefdescription>
+<para>Первый аргумент - бонус скорости. </para>        </briefdescription>
+        <detaileddescription>
+<para>Второй аргумент - бонус ускорения.</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="197" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="197" bodyend="-1"/>
+        <referencedby refid="class_squad_1a1eda8168cb8c51880175b2a0d8191831" compoundref="_squad_8cs" startline="402" endline="416">WaitForEndGharge</referencedby>
+      </memberdef>
+      <memberdef kind="event" id="class_squad_1a781f3e1b725b4f87bd5fd5ed6c6e9e5e" prot="public" static="no" add="no" remove="no" raise="no">
+        <type>Action&lt; <ref refid="struct_unit_stats" kindref="compound">UnitStats</ref>, <ref refid="struct_unit_stats" kindref="compound">UnitStats</ref> &gt;</type>
+        <definition>Action&lt;UnitStats, UnitStats&gt; Squad.OnUnitStatsChanged</definition>
+        <argsstring></argsstring>
+        <name>OnUnitStatsChanged</name>
+        <briefdescription>
+<para>старые статы и новые статы </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="202" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="202" bodyend="-1"/>
+        <referencedby refid="class_squad_1a659400d2151603678b90fc118c1f77e7" compoundref="_squad_8cs" startline="303" endline="319">SetUnitsStats</referencedby>
+      </memberdef>
+      <memberdef kind="event" id="class_squad_1ad593b4c45ea48f9dac330f479e565465" prot="public" static="no" add="no" remove="no" raise="no">
+        <type>Action&lt; bool &gt;</type>
+        <definition>Action&lt;bool&gt; Squad.OnDrawUnitHpChanged</definition>
+        <argsstring></argsstring>
+        <name>OnDrawUnitHpChanged</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="204" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="event" id="class_squad_1acce17b94d3ab8eabff8c0409a926c735" prot="public" static="no" add="no" remove="no" raise="no">
+        <type>Action</type>
+        <definition>Action Squad.OnSquadDestroy</definition>
+        <argsstring></argsstring>
+        <name>OnSquadDestroy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="206" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="206" bodyend="-1"/>
+        <referencedby refid="class_squad_1ad4036318632360c56c6a555d6181ed41" compoundref="_squad_8cs" startline="595" endline="613">UnitDeath</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_squad_1a3a3ad2fe111893838082805bacd70613" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Squad.Awake</definition>
+        <argsstring>()</argsstring>
+        <name>Awake</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="230" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="230" bodyend="255"/>
+        <references refid="class_squad_1a0e83cf3d9cc58d693d73490ce0e04db4" compoundref="_squad_8cs" startline="22">FULL_SQUAD_UNIT_COUNT</references>
+        <references refid="class_squad_1ac2b59a0d5b4f07e22822b5c6746f8d3a" compoundref="_squad_8cs" startline="21">fullSquadUnitCount</references>
+        <references refid="class_squad_1a757878aa6a8481996ec89a266b783bb6" compoundref="_squad_8cs" startline="178">lineRenderer</references>
+        <references refid="class_squad_1a781a32dd5c6fadbe0a9e04f142ddc9da" compoundref="_squad_8cs" startline="10">playerSquadInstance</references>
+        <references refid="class_squad_1a024d83821917a7c547e23ffcdf81caa4" compoundref="_squad_8cs" startline="208">PositionsTransform</references>
+        <references refid="class_squad_1a122e86d1207c94837863126218e9e8a4" compoundref="_squad_8cs" startline="167">squadHelth</references>
+        <references refid="class_squad_1a527bbc26009e5e23603ea7ba5376a49d" compoundref="_squad_8cs" startline="23">squadLength</references>
+        <references refid="class_squad_1a10736df810e0a0a16f14c78053a8696f" compoundref="_squad_8cs" startline="25">squadRowsMax</references>
+        <references refid="class_squad_1af1de16b9018e66396f36ca497a9338c6" compoundref="_squad_8cs" startline="145">unitPositions</references>
+        <references refid="class_squad_1a450b8b71c4017544305c4123e2d08d21" compoundref="_squad_8cs" startline="164">UnitsContainer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_squad_1ac63b45f46fca96eeffd568a4dba416f1" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Squad.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="257" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="257" bodyend="301"/>
+        <references refid="class_squad_1a16c2f886723e5b9b4e20e782b5aa87e3" compoundref="_squad_8cs" startline="619" endline="642">AddUnitWithoutReformSquad</references>
+        <references refid="class_squad_1a0e61b22b389bca6483cb8d01a88bba55" compoundref="_squad_8cs" startline="40">CurrentFormation</references>
+        <references refid="class_squad_1a71b750c40e090769192c7e2956a20fd4" compoundref="_squad_8cs" startline="175">endLookRotation</references>
+        <references refid="class_squad_1a0e83cf3d9cc58d693d73490ce0e04db4" compoundref="_squad_8cs" startline="22">FULL_SQUAD_UNIT_COUNT</references>
+        <references refid="class_squad_1a30eab7088e8e490e79d33d869e7a1013" compoundref="_squad_8cs" startline="105">inventory</references>
+        <references refid="class_squad_1aa28faa8a48f202a36128de532921380a" compoundref="_squad_8cs" startline="560" endline="579">LookWithoutFullRotation</references>
+        <references refid="class_squad_1aef06ca10b32abf1ca2b54bc4e6f50b58" compoundref="_squad_8cs" startline="12">minimapMark</references>
+        <references refid="class_squad_1ae118b8ab61bad5e8fed1edf91b5aab67" compoundref="_squad_8cs" startline="184">OnFormationChanged</references>
+        <references refid="class_squad_1a781a32dd5c6fadbe0a9e04f142ddc9da" compoundref="_squad_8cs" startline="10">playerSquadInstance</references>
+        <references refid="class_squad_1a024d83821917a7c547e23ffcdf81caa4" compoundref="_squad_8cs" startline="208">PositionsTransform</references>
+        <references refid="class_squad_1a682baf77f537896bdf4ea37f354ab115" compoundref="_squad_8cs" startline="349" endline="371">SetProp</references>
+        <references refid="class_squad_1a659400d2151603678b90fc118c1f77e7" compoundref="_squad_8cs" startline="303" endline="319">SetUnitsStats</references>
+        <references refid="class_squad_1a167ab01912442ed62585fcc218c90d36" compoundref="_squad_8cs" startline="15">unitOriginal</references>
+        <references refid="class_inventory_1aada92657ba049bb0a3856e157b4e0e22" compoundref="_inventory_8cs" startline="72">Inventory.Weapon</references>
+      </memberdef>
+      <memberdef kind="function" id="class_squad_1ab779e7794192aa244f5f01d23ead3b22" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Squad.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="321" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="321" bodyend="329"/>
+        <references refid="class_squad_1a534f2813dc8b27121af551b89a997c5e" compoundref="_squad_8cs" startline="142">centerSquad</references>
+        <references refid="class_squad_1a6cb72ce194257d000b86e13c1fc84509" compoundref="_squad_8cs" startline="527" endline="553">DrawPath</references>
+        <references refid="class_squad_1aef06ca10b32abf1ca2b54bc4e6f50b58" compoundref="_squad_8cs" startline="12">minimapMark</references>
+        <references refid="class_squad_1a9e562dc28e755105a8a9eda78d537692" compoundref="_squad_8cs" startline="418" endline="432">Moving</references>
+      </memberdef>
+      <memberdef kind="function" id="class_squad_1ad8dc04ae98d0db2c5a464213a2299076" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Squad.CalcSpeed</definition>
+        <argsstring>()</argsstring>
+        <name>CalcSpeed</name>
+        <briefdescription>
+<para>тут старая реализация !!! ЕСЛИЕСТЬ БАГСПЕРЕМЕЩЕНИЕМ, НАДО ПОСМОТРЕТЬ СЮДА </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="337" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="337" bodyend="341"/>
+        <references refid="class_squad_1a88a964b4857aee92fbef4c5ac7857128" compoundref="_squad_8cs" startline="110">currentRotationSpeed</references>
+        <references refid="class_squad_1a128b03d3db7b8d3c781d7e60b82a8b74" compoundref="_squad_8cs" startline="108">currentSpeed</references>
+        <references refid="class_squad_1adbfee7e2b464254c8b0020f8e9673988" compoundref="_squad_8cs" startline="30">maxRotationSpeed</references>
+        <references refid="class_squad_1ab77ab278b16b1ad17b14c605894eb754" compoundref="_squad_8cs" startline="28">maxSpeed</references>
+        <referencedby refid="class_squad_1a682baf77f537896bdf4ea37f354ab115" compoundref="_squad_8cs" startline="349" endline="371">SetProp</referencedby>
+        <referencedby refid="class_squad_1a659400d2151603678b90fc118c1f77e7" compoundref="_squad_8cs" startline="303" endline="319">SetUnitsStats</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_squad_1a682baf77f537896bdf4ea37f354ab115" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Squad.SetProp</definition>
+        <argsstring>(Equipment newEquipment=null)</argsstring>
+        <name>SetProp</name>
+        <param>
+          <type><ref refid="class_equipment" kindref="compound">Equipment</ref></type>
+          <declname>newEquipment</declname>
+          <defval>null</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="349" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="349" bodyend="371"/>
+        <references refid="class_squad_1ad8dc04ae98d0db2c5a464213a2299076" compoundref="_squad_8cs" startline="337" endline="341">CalcSpeed</references>
+        <references refid="struct_equipment_stats_1a4c2deb6509d0a0722248f5929f6af58c" compoundref="_equipment_stats_8cs" startline="31">EquipmentStats.CanUseWithShield</references>
+        <references refid="class_squad_1a0e61b22b389bca6483cb8d01a88bba55" compoundref="_squad_8cs" startline="40">CurrentFormation</references>
+        <references refid="class_squad_1ac2faf6f7981192eaf66177a727996a9e" compoundref="_squad_8cs" startline="1026" endline="1030">DropEquipment</references>
+        <references refid="struct_equipment_stats_1abd05f10096c1d46af0f13806b754118e" compoundref="_equipment_stats_8cs" startline="22">EquipmentStats.Empty</references>
+        <references refid="class_squad_1a30eab7088e8e490e79d33d869e7a1013" compoundref="_squad_8cs" startline="105">inventory</references>
+        <references refid="class_inventory_1a4280a990d639f958ff4c0e7249697a1f" compoundref="_inventory_8cs" startline="60">Inventory.Shield</references>
+        <references refid="class_equipment_1a41b8725e8599baea7fd05b0725fa4812" compoundref="_equipment_8cs" startline="11">Equipment.Stats</references>
+        <references refid="class_squad_1a14f16d0bd1098a523c721fb610247c56" compoundref="_squad_8cs" startline="165">UnitCount</references>
+        <references refid="class_inventory_1aada92657ba049bb0a3856e157b4e0e22" compoundref="_inventory_8cs" startline="72">Inventory.Weapon</references>
+        <referencedby refid="class_squad_1ac63b45f46fca96eeffd568a4dba416f1" compoundref="_squad_8cs" startline="257" endline="301">Start</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_squad_1acca1ce36076843e54325f38904dfaf8e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Squad.SetFlagFight</definition>
+        <argsstring>()</argsstring>
+        <name>SetFlagFight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="373" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="373" bodyend="379"/>
+        <references refid="class_squad_1aca3362ed3f8d30ce94cc1d4377a5d2f7" compoundref="_squad_8cs" startline="129">attakingUnitsCount</references>
+        <references refid="class_squad_1af1130afc95aa89821e63455e9ce3fbd4" compoundref="_squad_8cs" startline="100">delayToGetOutOfTheFight</references>
+        <references refid="class_squad_1a17079c457a2cd7ba2d4fd936d8c9d17e" compoundref="_squad_8cs" startline="154">InFight</references>
+        <references refid="class_squad_1a0c4c26bf46d538f989a52439d796d855" compoundref="_squad_8cs" startline="381" endline="395">OlreadyNotInFight</references>
+        <references refid="class_squad_1ad2bff49c1e4d2d4e4abb6272c985c8e4" compoundref="_squad_8cs" startline="135">targettedUnitsCount</references>
+      </memberdef>
+      <memberdef kind="function" id="class_squad_1a0c4c26bf46d538f989a52439d796d855" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerator</type>
+        <definition>IEnumerator Squad.OlreadyNotInFight</definition>
+        <argsstring>(float duration)</argsstring>
+        <name>OlreadyNotInFight</name>
+        <param>
+          <type>float</type>
+          <declname>duration</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="381" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="381" bodyend="395"/>
+        <references refid="class_squad_1aca3362ed3f8d30ce94cc1d4377a5d2f7" compoundref="_squad_8cs" startline="129">attakingUnitsCount</references>
+        <references refid="class_squad_1a17079c457a2cd7ba2d4fd936d8c9d17e" compoundref="_squad_8cs" startline="154">InFight</references>
+        <references refid="class_squad_1ad2bff49c1e4d2d4e4abb6272c985c8e4" compoundref="_squad_8cs" startline="135">targettedUnitsCount</references>
+        <referencedby refid="class_squad_1acca1ce36076843e54325f38904dfaf8e" compoundref="_squad_8cs" startline="373" endline="379">SetFlagFight</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_squad_1a1eda8168cb8c51880175b2a0d8191831" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerator</type>
+        <definition>IEnumerator Squad.WaitForEndGharge</definition>
+        <argsstring>(float addSpeed, float addAcceleration, float duration)</argsstring>
+        <name>WaitForEndGharge</name>
+        <param>
+          <type>float</type>
+          <declname>addSpeed</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>addAcceleration</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>duration</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="402" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="402" bodyend="416"/>
+        <references refid="class_squad_1a251a4fb5a335ac30e63287601ac044c1" compoundref="_squad_8cs" startline="223">charging</references>
+        <references refid="class_squad_1a128b03d3db7b8d3c781d7e60b82a8b74" compoundref="_squad_8cs" startline="108">currentSpeed</references>
+        <references refid="class_squad_1abd75cf1c7abdd594d9762195bd4a794c" compoundref="_squad_8cs" startline="192">OnBeginCharge</references>
+        <references refid="class_squad_1aa8d1911bae8a743c2336973fbca70dc2" compoundref="_squad_8cs" startline="197">OnEndCharge</references>
+        <referencedby refid="class_squad_1a24de595926b13acbff3763a2c3438192" compoundref="_squad_8cs" startline="397" endline="400">Charge</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_squad_1a9e562dc28e755105a8a9eda78d537692" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Squad.Moving</definition>
+        <argsstring>()</argsstring>
+        <name>Moving</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="418" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="418" bodyend="432"/>
+        <references refid="class_squad_1a0e61b22b389bca6483cb8d01a88bba55" compoundref="_squad_8cs" startline="40">CurrentFormation</references>
+        <references refid="class_squad_1ac82c1c80fdbe1f22bae354f5f59bfb12" compoundref="_squad_8cs" startline="442" endline="469">MovingInPhalanx</references>
+        <references refid="class_squad_1a6d62ff909779a91493639aa4204f65d4" compoundref="_squad_8cs" startline="474" endline="499">MovingInRanks</references>
+        <references refid="class_squad_1a10b78281627d9341174d2fabf0e0d80c" compoundref="_squad_8cs" startline="434" endline="437">MovingInRiseshields</references>
+        <referencedby refid="class_squad_1ab779e7794192aa244f5f01d23ead3b22" compoundref="_squad_8cs" startline="321" endline="329">Update</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_squad_1a10b78281627d9341174d2fabf0e0d80c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Squad.MovingInRiseshields</definition>
+        <argsstring>()</argsstring>
+        <name>MovingInRiseshields</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="434" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="434" bodyend="437"/>
+        <references refid="class_squad_1a6d62ff909779a91493639aa4204f65d4" compoundref="_squad_8cs" startline="474" endline="499">MovingInRanks</references>
+        <referencedby refid="class_squad_1a9e562dc28e755105a8a9eda78d537692" compoundref="_squad_8cs" startline="418" endline="432">Moving</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_squad_1ac82c1c80fdbe1f22bae354f5f59bfb12" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Squad.MovingInPhalanx</definition>
+        <argsstring>()</argsstring>
+        <name>MovingInPhalanx</name>
+        <briefdescription>
+<para>При передвижении отряд будет всегда развеернут в конечное направление взгляда </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="442" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="442" bodyend="469"/>
+        <references refid="class_squad_1a9f5532c3ee71aef16d92d76263de74ac" compoundref="_squad_8cs" startline="1003" endline="1009">CheckPositionInRange</references>
+        <references refid="class_squad_1a3235d5b7c70dc792d0f7b5f48761c65f" compoundref="_squad_8cs" startline="998" endline="1001">CheckRotationInRange</references>
+        <references refid="class_squad_1a71b750c40e090769192c7e2956a20fd4" compoundref="_squad_8cs" startline="175">endLookRotation</references>
+        <references refid="class_squad_1aa28faa8a48f202a36128de532921380a" compoundref="_squad_8cs" startline="560" endline="579">LookWithoutFullRotation</references>
+        <references refid="class_squad_1a954fac58a34be8029215affeb7841104" compoundref="_squad_8cs" startline="1016" endline="1019">MoveTo</references>
+        <references refid="class_squad_1af8bc3f834d3f6a567293e2fd858b1a03" compoundref="_squad_8cs" startline="174">path</references>
+        <references refid="class_squad_1a838966550a97ec4e0ce4de042467ccb4" compoundref="_squad_8cs" startline="180">pathStep</references>
+        <references refid="class_squad_1a05e2226c14667a23c638f0de945265da" compoundref="_squad_8cs" startline="35">positionAcuracy</references>
+        <references refid="class_squad_1ad56edcc0e3a6a6fa4a3663ceb46fc43f" compoundref="_squad_8cs" startline="33">rotationAcuracy</references>
+        <referencedby refid="class_squad_1a9e562dc28e755105a8a9eda78d537692" compoundref="_squad_8cs" startline="418" endline="432">Moving</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_squad_1a6d62ff909779a91493639aa4204f65d4" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Squad.MovingInRanks</definition>
+        <argsstring>()</argsstring>
+        <name>MovingInRanks</name>
+        <briefdescription>
+<para>При передвижении отряд будет разворачиваться в сторону движения </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="474" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="474" bodyend="499"/>
+        <references refid="class_squad_1adda2c99b89494dc3ed1837ba56f88d67" compoundref="_squad_8cs" startline="993" endline="996">CalcTargetRotations</references>
+        <references refid="class_squad_1a9f5532c3ee71aef16d92d76263de74ac" compoundref="_squad_8cs" startline="1003" endline="1009">CheckPositionInRange</references>
+        <references refid="class_squad_1a3235d5b7c70dc792d0f7b5f48761c65f" compoundref="_squad_8cs" startline="998" endline="1001">CheckRotationInRange</references>
+        <references refid="class_squad_1a71b750c40e090769192c7e2956a20fd4" compoundref="_squad_8cs" startline="175">endLookRotation</references>
+        <references refid="class_squad_1aa28faa8a48f202a36128de532921380a" compoundref="_squad_8cs" startline="560" endline="579">LookWithoutFullRotation</references>
+        <references refid="class_squad_1a954fac58a34be8029215affeb7841104" compoundref="_squad_8cs" startline="1016" endline="1019">MoveTo</references>
+        <references refid="class_squad_1af8bc3f834d3f6a567293e2fd858b1a03" compoundref="_squad_8cs" startline="174">path</references>
+        <references refid="class_squad_1a838966550a97ec4e0ce4de042467ccb4" compoundref="_squad_8cs" startline="180">pathStep</references>
+        <references refid="class_squad_1a05e2226c14667a23c638f0de945265da" compoundref="_squad_8cs" startline="35">positionAcuracy</references>
+        <references refid="class_squad_1ad56edcc0e3a6a6fa4a3663ceb46fc43f" compoundref="_squad_8cs" startline="33">rotationAcuracy</references>
+        <referencedby refid="class_squad_1a9e562dc28e755105a8a9eda78d537692" compoundref="_squad_8cs" startline="418" endline="432">Moving</referencedby>
+        <referencedby refid="class_squad_1a10b78281627d9341174d2fabf0e0d80c" compoundref="_squad_8cs" startline="434" endline="437">MovingInRiseshields</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_squad_1a6cb72ce194257d000b86e13c1fc84509" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Squad.DrawPath</definition>
+        <argsstring>()</argsstring>
+        <name>DrawPath</name>
+        <briefdescription>
+<para>Если добавлен компонент LineRenderer, будет отрисовываться текущий путь отряда </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="527" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="527" bodyend="553"/>
+        <references refid="class_squad_1a534f2813dc8b27121af551b89a997c5e" compoundref="_squad_8cs" startline="142">centerSquad</references>
+        <references refid="class_squad_1a757878aa6a8481996ec89a266b783bb6" compoundref="_squad_8cs" startline="178">lineRenderer</references>
+        <references refid="class_squad_1af8bc3f834d3f6a567293e2fd858b1a03" compoundref="_squad_8cs" startline="174">path</references>
+        <references refid="class_squad_1a838966550a97ec4e0ce4de042467ccb4" compoundref="_squad_8cs" startline="180">pathStep</references>
+        <referencedby refid="class_squad_1ab779e7794192aa244f5f01d23ead3b22" compoundref="_squad_8cs" startline="321" endline="329">Update</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_squad_1aa28faa8a48f202a36128de532921380a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Squad.LookWithoutFullRotation</definition>
+        <argsstring>(Quaternion lookRot)</argsstring>
+        <name>LookWithoutFullRotation</name>
+        <param>
+          <type>Quaternion</type>
+          <declname>lookRot</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Проверяем нужно ли отражать формацию отряда, высчитываем новы угол поворота отряда и устанавливаем соответствующее значение флага.</para><para>При изменении флага отражения отряда происходит перестроение отряда.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lookRot</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="560" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="560" bodyend="579"/>
+        <references refid="class_squad_1a15ea5a68b1450478fecf7a5d8aff6508" compoundref="_squad_8cs" startline="113">flipRotation</references>
+        <references refid="class_squad_1a2daafef1aec88ff88eb32f4f514b1f3b" compoundref="_squad_8cs" startline="115">FlipRotation</references>
+        <references refid="class_squad_1afb3d1570673d5f2fa08d83b396c149f7" compoundref="_squad_8cs" startline="1011" endline="1014">LookTo</references>
+        <references refid="class_squad_1a5d2feca0974663a6008e01bc66b65bfa" compoundref="_squad_8cs" startline="726" endline="753">ReformSquad</references>
+        <referencedby refid="class_squad_1ac82c1c80fdbe1f22bae354f5f59bfb12" compoundref="_squad_8cs" startline="442" endline="469">MovingInPhalanx</referencedby>
+        <referencedby refid="class_squad_1a6d62ff909779a91493639aa4204f65d4" compoundref="_squad_8cs" startline="474" endline="499">MovingInRanks</referencedby>
+        <referencedby refid="class_squad_1ac63b45f46fca96eeffd568a4dba416f1" compoundref="_squad_8cs" startline="257" endline="301">Start</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_squad_1a16c2f886723e5b9b4e20e782b5aa87e3" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Squad.AddUnitWithoutReformSquad</definition>
+        <argsstring>(Unit unit)</argsstring>
+        <name>AddUnitWithoutReformSquad</name>
+        <param>
+          <type><ref refid="class_unit" kindref="compound">Unit</ref></type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+<para>Добавляем юнит в коллекцию юнитов и создаем для него объект расположения. При этом отряд не будут перестроен. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="619" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="619" bodyend="642"/>
+        <references refid="class_squad_1aa71cd8ace8efe45c6201040f570a73f7" compoundref="_squad_8cs" startline="98">fraction</references>
+        <references refid="class_squad_1afd2133a496c0a15fa187346fadbcf80d" compoundref="_squad_8cs" startline="182">OnUitCountChanged</references>
+        <references refid="class_squad_1a024d83821917a7c547e23ffcdf81caa4" compoundref="_squad_8cs" startline="208">PositionsTransform</references>
+        <references refid="class_squad_1a4e9a1bb8a4c693726c806427b646eaf2" compoundref="_squad_8cs" startline="169">SquadHealth</references>
+        <references refid="class_squad_1af1de16b9018e66396f36ca497a9338c6" compoundref="_squad_8cs" startline="145">unitPositions</references>
+        <referencedby refid="class_squad_1adb5dc627a20987f7a72fb3510dc58e3a" compoundref="_squad_8cs" startline="585" endline="589">AddUnit</referencedby>
+        <referencedby refid="class_squad_1ac63b45f46fca96eeffd568a4dba416f1" compoundref="_squad_8cs" startline="257" endline="301">Start</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_squad_1a3d51327f459e299ad4dc1a212ceb1b17" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Squad.FlipPhalanx</definition>
+        <argsstring>()</argsstring>
+        <name>FlipPhalanx</name>
+        <briefdescription>
+<para>Меняем местами первые и последние ряды, отзеркаливая отряд относительно рогизонтальной прямой На ссамом деле просто меняем местами объекты в списке. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="648" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="648" bodyend="713"/>
+        <references refid="class_squad_1a15ea5a68b1450478fecf7a5d8aff6508" compoundref="_squad_8cs" startline="113">flipRotation</references>
+        <references refid="class_squad_1a5d2feca0974663a6008e01bc66b65bfa" compoundref="_squad_8cs" startline="726" endline="753">ReformSquad</references>
+        <references refid="class_squad_1a527bbc26009e5e23603ea7ba5376a49d" compoundref="_squad_8cs" startline="23">squadLength</references>
+        <references refid="class_squad_1af1de16b9018e66396f36ca497a9338c6" compoundref="_squad_8cs" startline="145">unitPositions</references>
+      </memberdef>
+      <memberdef kind="function" id="class_squad_1a5d2feca0974663a6008e01bc66b65bfa" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Squad.ReformSquad</definition>
+        <argsstring>(bool flipRotation, UnitPosition objToRemove=null)</argsstring>
+        <name>ReformSquad</name>
+        <param>
+          <type>bool</type>
+          <declname>flipRotation</declname>
+        </param>
+        <param>
+          <type><ref refid="class_unit_position" kindref="compound">UnitPosition</ref></type>
+          <declname>objToRemove</declname>
+          <defval>null</defval>
+        </param>
+        <briefdescription>
+<para>Перестраиваем отряд, что бы он держал заднную формацию </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>flipRotation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>отражать ли формацию отряда по горизонтали</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>objToRemove</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>позиция юнита, которую нужно удалить пере перестроением</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="726" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="726" bodyend="753"/>
+        <references refid="class_squad_1a0e61b22b389bca6483cb8d01a88bba55" compoundref="_squad_8cs" startline="40">CurrentFormation</references>
+        <references refid="class_squad_1ac0857cd3883ee6f50bf921f09bdd9a70" compoundref="_squad_8cs" startline="186">OnReformSquad</references>
+        <references refid="class_squad_1accd6bf28b56f1d9fefc471aecdccd000" compoundref="_squad_8cs" startline="874" endline="965">ReformSquadInPhalanx</references>
+        <references refid="class_squad_1a80d6f9db669a20ae8d423b860cc916d2" compoundref="_squad_8cs" startline="841" endline="872">ReformSquadInRanks</references>
+        <referencedby refid="class_squad_1adb5dc627a20987f7a72fb3510dc58e3a" compoundref="_squad_8cs" startline="585" endline="589">AddUnit</referencedby>
+        <referencedby refid="class_squad_1a3d51327f459e299ad4dc1a212ceb1b17" compoundref="_squad_8cs" startline="648" endline="713">FlipPhalanx</referencedby>
+        <referencedby refid="class_squad_1aa28faa8a48f202a36128de532921380a" compoundref="_squad_8cs" startline="560" endline="579">LookWithoutFullRotation</referencedby>
+        <referencedby refid="class_squad_1ad4036318632360c56c6a555d6181ed41" compoundref="_squad_8cs" startline="595" endline="613">UnitDeath</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_squad_1a80d6f9db669a20ae8d423b860cc916d2" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Squad.ReformSquadInRanks</definition>
+        <argsstring>(bool flipRotation, UnitPosition objToRemove)</argsstring>
+        <name>ReformSquadInRanks</name>
+        <param>
+          <type>bool</type>
+          <declname>flipRotation</declname>
+        </param>
+        <param>
+          <type><ref refid="class_unit_position" kindref="compound">UnitPosition</ref></type>
+          <declname>objToRemove</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="841" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="841" bodyend="872"/>
+        <references refid="class_squad_1acc877c2a44f1cd43386577674e2a26b9" compoundref="_squad_8cs" startline="24">SQUAD_LENGTH</references>
+        <references refid="class_squad_1a527bbc26009e5e23603ea7ba5376a49d" compoundref="_squad_8cs" startline="23">squadLength</references>
+        <references refid="class_squad_1af1de16b9018e66396f36ca497a9338c6" compoundref="_squad_8cs" startline="145">unitPositions</references>
+        <referencedby refid="class_squad_1a5d2feca0974663a6008e01bc66b65bfa" compoundref="_squad_8cs" startline="726" endline="753">ReformSquad</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_squad_1accd6bf28b56f1d9fefc471aecdccd000" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Squad.ReformSquadInPhalanx</definition>
+        <argsstring>(bool flipRotation, UnitPosition objToRemove)</argsstring>
+        <name>ReformSquadInPhalanx</name>
+        <param>
+          <type>bool</type>
+          <declname>flipRotation</declname>
+        </param>
+        <param>
+          <type><ref refid="class_unit_position" kindref="compound">UnitPosition</ref></type>
+          <declname>objToRemove</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="874" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="874" bodyend="965"/>
+        <references refid="class_squad_1a0e83cf3d9cc58d693d73490ce0e04db4" compoundref="_squad_8cs" startline="22">FULL_SQUAD_UNIT_COUNT</references>
+        <references refid="class_unit_position_1aa042b22033acdb69b1774cb712d513c3" compoundref="_unit_position_8cs" startline="14">UnitPosition.PositionInArray</references>
+        <references refid="class_squad_1acc877c2a44f1cd43386577674e2a26b9" compoundref="_squad_8cs" startline="24">SQUAD_LENGTH</references>
+        <references refid="class_squad_1a527bbc26009e5e23603ea7ba5376a49d" compoundref="_squad_8cs" startline="23">squadLength</references>
+        <references refid="class_squad_1af1de16b9018e66396f36ca497a9338c6" compoundref="_squad_8cs" startline="145">unitPositions</references>
+        <referencedby refid="class_squad_1a5d2feca0974663a6008e01bc66b65bfa" compoundref="_squad_8cs" startline="726" endline="753">ReformSquad</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_squad_1adda2c99b89494dc3ed1837ba56f88d67" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Quaternion</type>
+        <definition>Quaternion Squad.CalcTargetRotations</definition>
+        <argsstring>(Vector3 targetPosition)</argsstring>
+        <name>CalcTargetRotations</name>
+        <param>
+          <type>Vector3</type>
+          <declname>targetPosition</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="993" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="993" bodyend="996"/>
+        <referencedby refid="class_squad_1a6d62ff909779a91493639aa4204f65d4" compoundref="_squad_8cs" startline="474" endline="499">MovingInRanks</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_squad_1a3235d5b7c70dc792d0f7b5f48761c65f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Squad.CheckRotationInRange</definition>
+        <argsstring>(Quaternion targetRotation, float rotationRange)</argsstring>
+        <name>CheckRotationInRange</name>
+        <param>
+          <type>Quaternion</type>
+          <declname>targetRotation</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>rotationRange</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="998" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="998" bodyend="1001"/>
+        <referencedby refid="class_squad_1ac82c1c80fdbe1f22bae354f5f59bfb12" compoundref="_squad_8cs" startline="442" endline="469">MovingInPhalanx</referencedby>
+        <referencedby refid="class_squad_1a6d62ff909779a91493639aa4204f65d4" compoundref="_squad_8cs" startline="474" endline="499">MovingInRanks</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_squad_1a9f5532c3ee71aef16d92d76263de74ac" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Squad.CheckPositionInRange</definition>
+        <argsstring>(Vector2 position, float positionRange)</argsstring>
+        <name>CheckPositionInRange</name>
+        <param>
+          <type>Vector2</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>positionRange</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="1003" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="1003" bodyend="1009"/>
+        <references refid="class_squad_1a024d83821917a7c547e23ffcdf81caa4" compoundref="_squad_8cs" startline="208">PositionsTransform</references>
+        <referencedby refid="class_squad_1ac82c1c80fdbe1f22bae354f5f59bfb12" compoundref="_squad_8cs" startline="442" endline="469">MovingInPhalanx</referencedby>
+        <referencedby refid="class_squad_1a6d62ff909779a91493639aa4204f65d4" compoundref="_squad_8cs" startline="474" endline="499">MovingInRanks</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_squad_1afb3d1570673d5f2fa08d83b396c149f7" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Squad.LookTo</definition>
+        <argsstring>(Quaternion lookRotation)</argsstring>
+        <name>LookTo</name>
+        <param>
+          <type>Quaternion</type>
+          <declname>lookRotation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="1011" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="1011" bodyend="1014"/>
+        <references refid="class_squad_1a88a964b4857aee92fbef4c5ac7857128" compoundref="_squad_8cs" startline="110">currentRotationSpeed</references>
+        <referencedby refid="class_squad_1aa28faa8a48f202a36128de532921380a" compoundref="_squad_8cs" startline="560" endline="579">LookWithoutFullRotation</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_squad_1a954fac58a34be8029215affeb7841104" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Squad.MoveTo</definition>
+        <argsstring>(Vector2 position)</argsstring>
+        <name>MoveTo</name>
+        <param>
+          <type>Vector2</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="1016" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="1016" bodyend="1019"/>
+        <references refid="class_squad_1a60d10a682abd3c7b5ada3af0edbdfa15" compoundref="_squad_8cs" startline="109">CurrentSpeed</references>
+        <referencedby refid="class_squad_1ac82c1c80fdbe1f22bae354f5f59bfb12" compoundref="_squad_8cs" startline="442" endline="469">MovingInPhalanx</referencedby>
+        <referencedby refid="class_squad_1a6d62ff909779a91493639aa4204f65d4" compoundref="_squad_8cs" startline="474" endline="499">MovingInRanks</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_squad_1a8eb5b43710e1bbdc826e791fecaf712c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Squad.OnDrawGizmos</definition>
+        <argsstring>()</argsstring>
+        <name>OnDrawGizmos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="1032" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="1032" bodyend="1044"/>
+        <references refid="class_squad_1a534f2813dc8b27121af551b89a997c5e" compoundref="_squad_8cs" startline="142">centerSquad</references>
+        <references refid="class_squad_1a3431c66cd0c85e3199677b9e7b97c3fe" compoundref="_squad_8cs" startline="102">distanceToUnionWithSquad</references>
+        <references refid="class_squad_1a79eb73265b3faab3ce3459bcd51eb0b9" compoundref="_squad_8cs" startline="152">inFight</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_squad_1a659400d2151603678b90fc118c1f77e7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Squad.SetUnitsStats</definition>
+        <argsstring>(DSUnitStats stats)</argsstring>
+        <name>SetUnitsStats</name>
+        <param>
+          <type><ref refid="class_d_s_unit_stats" kindref="compound">DSUnitStats</ref></type>
+          <declname>stats</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="303" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="303" bodyend="319"/>
+        <references refid="class_squad_1ad8dc04ae98d0db2c5a464213a2299076" compoundref="_squad_8cs" startline="337" endline="341">CalcSpeed</references>
+        <references refid="class_squad_1ab77ab278b16b1ad17b14c605894eb754" compoundref="_squad_8cs" startline="28">maxSpeed</references>
+        <references refid="class_squad_1a781f3e1b725b4f87bd5fd5ed6c6e9e5e" compoundref="_squad_8cs" startline="202">OnUnitStatsChanged</references>
+        <references refid="class_squad_1a4e9a1bb8a4c693726c806427b646eaf2" compoundref="_squad_8cs" startline="169">SquadHealth</references>
+        <references refid="class_squad_1a122e86d1207c94837863126218e9e8a4" compoundref="_squad_8cs" startline="167">squadHelth</references>
+        <references refid="class_squad_1af1de16b9018e66396f36ca497a9338c6" compoundref="_squad_8cs" startline="145">unitPositions</references>
+        <references refid="class_squad_1a8ea1c18c1d8ed5921e96ec506d83d94d" compoundref="_squad_8cs" startline="17">unitStats</references>
+        <referencedby refid="class_squad_1ac63b45f46fca96eeffd568a4dba416f1" compoundref="_squad_8cs" startline="257" endline="301">Start</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_squad_1a24de595926b13acbff3763a2c3438192" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Squad.Charge</definition>
+        <argsstring>(float addSpeed, float addAcceleration, float duration)</argsstring>
+        <name>Charge</name>
+        <param>
+          <type>float</type>
+          <declname>addSpeed</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>addAcceleration</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>duration</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="397" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="397" bodyend="400"/>
+        <references refid="class_squad_1a1eda8168cb8c51880175b2a0d8191831" compoundref="_squad_8cs" startline="402" endline="416">WaitForEndGharge</references>
+      </memberdef>
+      <memberdef kind="function" id="class_squad_1a30ffdb7c2bf17482cb7c8336786e36ac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Squad.SumPositionUnit</definition>
+        <argsstring>(Unit unit)</argsstring>
+        <name>SumPositionUnit</name>
+        <param>
+          <type><ref refid="class_unit" kindref="compound">Unit</ref></type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Прибавляет позицию юнита к общей сумме и вычисляя среднее значение, определяет координаты центра отряда.</para><para>Этот метод необходимо вызывать в отдном из методов Update</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="506" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="506" bodyend="522"/>
+        <references refid="class_squad_1a534f2813dc8b27121af551b89a997c5e" compoundref="_squad_8cs" startline="142">centerSquad</references>
+        <references refid="class_squad_1a529df289b6bb54d2d6cd8f61d6948d30" compoundref="_squad_8cs" startline="228">countSumUnit</references>
+        <references refid="class_squad_1a9a08bdd12e848411d126a957c0d73b27" compoundref="_squad_8cs" startline="226">sumX</references>
+        <references refid="class_squad_1a0176a9cf81dd6b54f787021af98d7314" compoundref="_squad_8cs" startline="227">sumY</references>
+        <references refid="class_squad_1af1de16b9018e66396f36ca497a9338c6" compoundref="_squad_8cs" startline="145">unitPositions</references>
+      </memberdef>
+      <memberdef kind="function" id="class_squad_1adb5dc627a20987f7a72fb3510dc58e3a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Squad.AddUnit</definition>
+        <argsstring>(Unit unit)</argsstring>
+        <name>AddUnit</name>
+        <param>
+          <type><ref refid="class_unit" kindref="compound">Unit</ref></type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+<para>Добавляет юнит в коллекцию юнитов и создает для него объект расположения. При этом отряд будут перестроен. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unit</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="585" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="585" bodyend="589"/>
+        <references refid="class_squad_1a16c2f886723e5b9b4e20e782b5aa87e3" compoundref="_squad_8cs" startline="619" endline="642">AddUnitWithoutReformSquad</references>
+        <references refid="class_squad_1a15ea5a68b1450478fecf7a5d8aff6508" compoundref="_squad_8cs" startline="113">flipRotation</references>
+        <references refid="class_squad_1a5d2feca0974663a6008e01bc66b65bfa" compoundref="_squad_8cs" startline="726" endline="753">ReformSquad</references>
+      </memberdef>
+      <memberdef kind="function" id="class_squad_1ad4036318632360c56c6a555d6181ed41" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Squad.UnitDeath</definition>
+        <argsstring>(Unit unit)</argsstring>
+        <name>UnitDeath</name>
+        <param>
+          <type><ref refid="class_unit" kindref="compound">Unit</ref></type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+<para>Удаляет объект расположения юнита из отряда. Отряд будет перестроен. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>unitPositionObject</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="595" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="595" bodyend="613"/>
+        <references refid="class_squad_1a15ea5a68b1450478fecf7a5d8aff6508" compoundref="_squad_8cs" startline="113">flipRotation</references>
+        <references refid="class_squad_1acce17b94d3ab8eabff8c0409a926c735" compoundref="_squad_8cs" startline="206">OnSquadDestroy</references>
+        <references refid="class_squad_1afd2133a496c0a15fa187346fadbcf80d" compoundref="_squad_8cs" startline="182">OnUitCountChanged</references>
+        <references refid="class_squad_1a781a32dd5c6fadbe0a9e04f142ddc9da" compoundref="_squad_8cs" startline="10">playerSquadInstance</references>
+        <references refid="class_squad_1a5d2feca0974663a6008e01bc66b65bfa" compoundref="_squad_8cs" startline="726" endline="753">ReformSquad</references>
+        <references refid="class_unit_1ae64583504b6d818650d5b48ab1b26614" compoundref="_unit_8cs" startline="11">Unit.TargetMovePositionObject</references>
+        <references refid="class_squad_1af1de16b9018e66396f36ca497a9338c6" compoundref="_squad_8cs" startline="145">unitPositions</references>
+      </memberdef>
+      <memberdef kind="function" id="class_squad_1a3302f71c78e2e62275a17fd071c8a232" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Squad.ResetUnitPositions</definition>
+        <argsstring>()</argsstring>
+        <name>ResetUnitPositions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="715" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="715" bodyend="719"/>
+        <references refid="class_squad_1ab66f10e8a2b01f2183da97191e47ffc1" compoundref="_squad_8cs" startline="187">OnInitiateUnitPositions</references>
+      </memberdef>
+      <memberdef kind="function" id="class_squad_1adc62597e8e24aca794d3b3d9510c342f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Squad.SetEndMovePositions</definition>
+        <argsstring>(Vector3 positionMove, Quaternion rotationLook)</argsstring>
+        <name>SetEndMovePositions</name>
+        <param>
+          <type>Vector3</type>
+          <declname>positionMove</declname>
+        </param>
+        <param>
+          <type>Quaternion</type>
+          <declname>rotationLook</declname>
+        </param>
+        <briefdescription>
+<para>Усанавливает конечную точку пути и поворот отряда </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>positionMove</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>конечная точка пути отряда</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rotationLook</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>конечный поворот отряда</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="972" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="972" bodyend="976"/>
+        <references refid="class_squad_1a71b750c40e090769192c7e2956a20fd4" compoundref="_squad_8cs" startline="175">endLookRotation</references>
+        <references refid="class_squad_1a7ee8297c0fe7112fe0c87b71c81941c1" compoundref="_squad_8cs" startline="176">endMovePosition</references>
+      </memberdef>
+      <memberdef kind="function" id="class_squad_1aec3c15d32af8b5a694b59f1293a5664f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Squad.GoTo</definition>
+        <argsstring>(List&lt; Vector3 &gt; path)</argsstring>
+        <name>GoTo</name>
+        <param>
+          <type>List&lt; Vector3 &gt;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>Задает отряду путь </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Путь для отряда</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="982" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="982" bodyend="991"/>
+        <references refid="class_squad_1a7ee8297c0fe7112fe0c87b71c81941c1" compoundref="_squad_8cs" startline="176">endMovePosition</references>
+        <references refid="class_squad_1af8bc3f834d3f6a567293e2fd858b1a03" compoundref="_squad_8cs" startline="174">path</references>
+        <references refid="class_squad_1a838966550a97ec4e0ce4de042467ccb4" compoundref="_squad_8cs" startline="180">pathStep</references>
+      </memberdef>
+      <memberdef kind="function" id="class_squad_1ac2faf6f7981192eaf66177a727996a9e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Squad.DropEquipment</definition>
+        <argsstring>(EquipmentStack stack)</argsstring>
+        <name>DropEquipment</name>
+        <param>
+          <type><ref refid="class_equipment_stack" kindref="compound">EquipmentStack</ref></type>
+          <declname>stack</declname>
+        </param>
+        <briefdescription>
+<para>Указать отряду что нужно выкинуть стак. Это укажет всем юнитам что нужно дропнуть итем с этого стака </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stack</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="1026" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="1026" bodyend="1030"/>
+        <references refid="class_squad_1aabfeb19ecbfd773cce98e957c336b06c" compoundref="_squad_8cs" startline="185">OnDropStackFromInventory</references>
+        <referencedby refid="class_squad_1a682baf77f537896bdf4ea37f354ab115" compoundref="_squad_8cs" startline="349" endline="371">SetProp</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1015">
+        <label>Squad</label>
+        <link refid="class_squad"/>
+        <childnode refid="1016" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1016">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1017">
+        <label>Squad</label>
+        <link refid="class_squad"/>
+        <childnode refid="1018" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1019" relation="usage">
+          <edgelabel>currentFormationModifyers</edgelabel>
+          <edgelabel>formation</edgelabel>
+        </childnode>
+        <childnode refid="1020" relation="usage">
+          <edgelabel>unitOriginal</edgelabel>
+        </childnode>
+        <childnode refid="1017" relation="usage">
+          <edgelabel>playerSquadInstance</edgelabel>
+        </childnode>
+        <childnode refid="1029" relation="usage">
+          <edgelabel>inventory</edgelabel>
+        </childnode>
+        <childnode refid="1028" relation="usage">
+          <edgelabel>unitStats</edgelabel>
+        </childnode>
+      </node>
+      <node id="1021">
+        <label>Equipment</label>
+        <link refid="class_equipment"/>
+        <childnode refid="1022" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1024" relation="usage">
+          <edgelabel>stats</edgelabel>
+        </childnode>
+      </node>
+      <node id="1027">
+        <label>UnitPosition</label>
+        <link refid="class_unit_position"/>
+        <childnode refid="1018" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1023">
+        <label>Item.MainProperties</label>
+        <link refid="struct_item_1_1_main_properties"/>
+      </node>
+      <node id="1026">
+        <label>Damage</label>
+        <link refid="struct_damage"/>
+      </node>
+      <node id="1025">
+        <label>IDescriptionable</label>
+        <link refid="interface_i_descriptionable"/>
+      </node>
+      <node id="1022">
+        <label>Item</label>
+        <link refid="class_item"/>
+        <childnode refid="1018" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1023" relation="usage">
+          <edgelabel>mainProperties</edgelabel>
+        </childnode>
+      </node>
+      <node id="1030">
+        <label>SkillStack</label>
+        <link refid="class_skill_stack"/>
+        <childnode refid="1031" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1025" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1032" relation="usage">
+          <edgelabel>skill</edgelabel>
+        </childnode>
+      </node>
+      <node id="1024">
+        <label>EquipmentStats</label>
+        <link refid="struct_equipment_stats"/>
+        <childnode refid="1025" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1026" relation="usage">
+          <edgelabel>damage</edgelabel>
+        </childnode>
+      </node>
+      <node id="1031">
+        <label>AStack</label>
+        <link refid="class_a_stack"/>
+      </node>
+      <node id="1028">
+        <label>UnitStats</label>
+        <link refid="struct_unit_stats"/>
+        <childnode refid="1026" relation="usage">
+          <edgelabel>damage</edgelabel>
+        </childnode>
+      </node>
+      <node id="1018">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1020">
+        <label>Unit</label>
+        <link refid="class_unit"/>
+        <childnode refid="1018" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1020" relation="usage">
+          <edgelabel>target</edgelabel>
+        </childnode>
+        <childnode refid="1017" relation="usage">
+          <edgelabel>squad</edgelabel>
+        </childnode>
+        <childnode refid="1021" relation="usage">
+          <edgelabel>body</edgelabel>
+          <edgelabel>shield</edgelabel>
+          <edgelabel>weapon</edgelabel>
+          <edgelabel>helmet</edgelabel>
+        </childnode>
+        <childnode refid="1027" relation="usage">
+          <edgelabel>TargetMovePositionObject</edgelabel>
+          <edgelabel>unitPosOriginal</edgelabel>
+        </childnode>
+        <childnode refid="1028" relation="usage">
+          <edgelabel>stats</edgelabel>
+        </childnode>
+      </node>
+      <node id="1032">
+        <label>Skill</label>
+        <link refid="class_skill"/>
+        <childnode refid="1022" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1025" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1033">
+        <label>EquipmentStack</label>
+        <link refid="class_equipment_stack"/>
+        <childnode refid="1031" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1022" relation="usage">
+          <edgelabel>equipmentMainProperties</edgelabel>
+        </childnode>
+        <childnode refid="1024" relation="usage">
+          <edgelabel>equipmentStats</edgelabel>
+        </childnode>
+      </node>
+      <node id="1019">
+        <label>FormationStats</label>
+        <link refid="class_formation_stats"/>
+      </node>
+      <node id="1029">
+        <label>Inventory</label>
+        <link refid="class_inventory"/>
+        <childnode refid="1030" relation="usage">
+          <edgelabel>firstSkill</edgelabel>
+          <edgelabel>secondSkill</edgelabel>
+        </childnode>
+        <childnode refid="1021" relation="usage">
+          <edgelabel>body</edgelabel>
+          <edgelabel>shieldNone</edgelabel>
+          <edgelabel>helmetNone</edgelabel>
+          <edgelabel>shield</edgelabel>
+          <edgelabel>weapon</edgelabel>
+          <edgelabel>helmet</edgelabel>
+          <edgelabel>bodyNone</edgelabel>
+        </childnode>
+        <childnode refid="1033" relation="usage">
+          <edgelabel>inventory</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" line="7" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/Squad.cs" bodystart="6" bodyend="1045"/>
+    <listofallmembers>
+      <member refid="class_squad_1adb5dc627a20987f7a72fb3510dc58e3a" prot="public" virt="non-virtual"><scope>Squad</scope><name>AddUnit</name></member>
+      <member refid="class_squad_1a16c2f886723e5b9b4e20e782b5aa87e3" prot="private" virt="non-virtual"><scope>Squad</scope><name>AddUnitWithoutReformSquad</name></member>
+      <member refid="class_squad_1aca3362ed3f8d30ce94cc1d4377a5d2f7" prot="private" virt="non-virtual"><scope>Squad</scope><name>attakingUnitsCount</name></member>
+      <member refid="class_squad_1a2ce8c36b16323c33475471e664d75a2b" prot="public" virt="non-virtual"><scope>Squad</scope><name>AttakingUnitsCount</name></member>
+      <member refid="class_squad_1a3a3ad2fe111893838082805bacd70613" prot="private" virt="non-virtual"><scope>Squad</scope><name>Awake</name></member>
+      <member refid="class_squad_1ad8dc04ae98d0db2c5a464213a2299076" prot="private" virt="non-virtual"><scope>Squad</scope><name>CalcSpeed</name></member>
+      <member refid="class_squad_1adda2c99b89494dc3ed1837ba56f88d67" prot="private" virt="non-virtual"><scope>Squad</scope><name>CalcTargetRotations</name></member>
+      <member refid="class_squad_1a534f2813dc8b27121af551b89a997c5e" prot="private" virt="non-virtual"><scope>Squad</scope><name>centerSquad</name></member>
+      <member refid="class_squad_1a2d34961b1e379d63c8f74f30583b299c" prot="public" virt="non-virtual"><scope>Squad</scope><name>CenterSquad</name></member>
+      <member refid="class_squad_1a24de595926b13acbff3763a2c3438192" prot="public" virt="non-virtual"><scope>Squad</scope><name>Charge</name></member>
+      <member refid="class_squad_1a251a4fb5a335ac30e63287601ac044c1" prot="private" virt="non-virtual"><scope>Squad</scope><name>charging</name></member>
+      <member refid="class_squad_1a1fada86fc64219edfc97196cc3bbc7e5" prot="public" virt="non-virtual"><scope>Squad</scope><name>Charging</name></member>
+      <member refid="class_squad_1a9f5532c3ee71aef16d92d76263de74ac" prot="private" virt="non-virtual"><scope>Squad</scope><name>CheckPositionInRange</name></member>
+      <member refid="class_squad_1a3235d5b7c70dc792d0f7b5f48761c65f" prot="private" virt="non-virtual"><scope>Squad</scope><name>CheckRotationInRange</name></member>
+      <member refid="class_squad_1a529df289b6bb54d2d6cd8f61d6948d30" prot="private" virt="non-virtual"><scope>Squad</scope><name>countSumUnit</name></member>
+      <member refid="class_squad_1a0e61b22b389bca6483cb8d01a88bba55" prot="public" virt="non-virtual"><scope>Squad</scope><name>CurrentFormation</name></member>
+      <member refid="class_squad_1a363560f896930a74d7b9b770592da23b" prot="private" virt="non-virtual"><scope>Squad</scope><name>currentFormationModifyers</name></member>
+      <member refid="class_squad_1a00c8aef1fb2e5c56df608bcd126aedf7" prot="public" virt="non-virtual"><scope>Squad</scope><name>CurrentFormationModifyers</name></member>
+      <member refid="class_squad_1a386347ac8e9205ec90d6a3ea2dc31177" prot="public" virt="non-virtual"><scope>Squad</scope><name>CurrentRotationSpeed</name></member>
+      <member refid="class_squad_1a88a964b4857aee92fbef4c5ac7857128" prot="private" virt="non-virtual"><scope>Squad</scope><name>currentRotationSpeed</name></member>
+      <member refid="class_squad_1a60d10a682abd3c7b5ada3af0edbdfa15" prot="public" virt="non-virtual"><scope>Squad</scope><name>CurrentSpeed</name></member>
+      <member refid="class_squad_1a128b03d3db7b8d3c781d7e60b82a8b74" prot="private" virt="non-virtual"><scope>Squad</scope><name>currentSpeed</name></member>
+      <member refid="class_squad_1af1130afc95aa89821e63455e9ce3fbd4" prot="private" virt="non-virtual"><scope>Squad</scope><name>delayToGetOutOfTheFight</name></member>
+      <member refid="class_squad_1a3431c66cd0c85e3199677b9e7b97c3fe" prot="private" virt="non-virtual"><scope>Squad</scope><name>distanceToUnionWithSquad</name></member>
+      <member refid="class_squad_1a5765e8f707742c3c62885caf0b761813" prot="public" virt="non-virtual"><scope>Squad</scope><name>DistanceToUnionWithSquad</name></member>
+      <member refid="class_squad_1a6cb72ce194257d000b86e13c1fc84509" prot="private" virt="non-virtual"><scope>Squad</scope><name>DrawPath</name></member>
+      <member refid="class_squad_1a9038a9cba572d6d0b3a06ec04fae418c" prot="private" virt="non-virtual"><scope>Squad</scope><name>drawUnitHp</name></member>
+      <member refid="class_squad_1a67533dd4d7786030e65c7548c751c407" prot="public" virt="non-virtual"><scope>Squad</scope><name>DrawUnitHp</name></member>
+      <member refid="class_squad_1ac2faf6f7981192eaf66177a727996a9e" prot="public" virt="non-virtual"><scope>Squad</scope><name>DropEquipment</name></member>
+      <member refid="class_squad_1a71b750c40e090769192c7e2956a20fd4" prot="public" virt="non-virtual"><scope>Squad</scope><name>endLookRotation</name></member>
+      <member refid="class_squad_1a7ee8297c0fe7112fe0c87b71c81941c1" prot="private" virt="non-virtual"><scope>Squad</scope><name>endMovePosition</name></member>
+      <member refid="class_squad_1a3d51327f459e299ad4dc1a212ceb1b17" prot="private" virt="non-virtual"><scope>Squad</scope><name>FlipPhalanx</name></member>
+      <member refid="class_squad_1a15ea5a68b1450478fecf7a5d8aff6508" prot="private" virt="non-virtual"><scope>Squad</scope><name>flipRotation</name></member>
+      <member refid="class_squad_1a2daafef1aec88ff88eb32f4f514b1f3b" prot="public" virt="non-virtual"><scope>Squad</scope><name>FlipRotation</name></member>
+      <member refid="class_squad_1a678bc4d0538b7b9b1c0e93e841fd6aec" prot="private" virt="non-virtual"><scope>Squad</scope><name>formation</name></member>
+      <member refid="class_squad_1aa71cd8ace8efe45c6201040f570a73f7" prot="public" virt="non-virtual"><scope>Squad</scope><name>fraction</name></member>
+      <member refid="class_squad_1a0e83cf3d9cc58d693d73490ce0e04db4" prot="public" virt="non-virtual"><scope>Squad</scope><name>FULL_SQUAD_UNIT_COUNT</name></member>
+      <member refid="class_squad_1ac2b59a0d5b4f07e22822b5c6746f8d3a" prot="private" virt="non-virtual"><scope>Squad</scope><name>fullSquadUnitCount</name></member>
+      <member refid="class_squad_1aec3c15d32af8b5a694b59f1293a5664f" prot="public" virt="non-virtual"><scope>Squad</scope><name>GoTo</name></member>
+      <member refid="class_squad_1a79eb73265b3faab3ce3459bcd51eb0b9" prot="private" virt="non-virtual"><scope>Squad</scope><name>inFight</name></member>
+      <member refid="class_squad_1a17079c457a2cd7ba2d4fd936d8c9d17e" prot="public" virt="non-virtual"><scope>Squad</scope><name>InFight</name></member>
+      <member refid="class_squad_1a30eab7088e8e490e79d33d869e7a1013" prot="private" virt="non-virtual"><scope>Squad</scope><name>inventory</name></member>
+      <member refid="class_squad_1a000c2e8cc307d9629751785b96b53ce5" prot="public" virt="non-virtual"><scope>Squad</scope><name>Inventory</name></member>
+      <member refid="class_squad_1a757878aa6a8481996ec89a266b783bb6" prot="private" virt="non-virtual"><scope>Squad</scope><name>lineRenderer</name></member>
+      <member refid="class_squad_1afb3d1570673d5f2fa08d83b396c149f7" prot="private" virt="non-virtual"><scope>Squad</scope><name>LookTo</name></member>
+      <member refid="class_squad_1aa28faa8a48f202a36128de532921380a" prot="private" virt="non-virtual"><scope>Squad</scope><name>LookWithoutFullRotation</name></member>
+      <member refid="class_squad_1ab8e2fc5dfa081f339fe4a6690b1c2a1a" prot="public" virt="non-virtual"><scope>Squad</scope><name>MaxRotationSpeed</name></member>
+      <member refid="class_squad_1adbfee7e2b464254c8b0020f8e9673988" prot="private" virt="non-virtual"><scope>Squad</scope><name>maxRotationSpeed</name></member>
+      <member refid="class_squad_1ab77ab278b16b1ad17b14c605894eb754" prot="private" virt="non-virtual"><scope>Squad</scope><name>maxSpeed</name></member>
+      <member refid="class_squad_1a7ced4df56d8bef5634cb5b59f3769527" prot="public" virt="non-virtual"><scope>Squad</scope><name>MaxSpeed</name></member>
+      <member refid="class_squad_1aef06ca10b32abf1ca2b54bc4e6f50b58" prot="private" virt="non-virtual"><scope>Squad</scope><name>minimapMark</name></member>
+      <member refid="class_squad_1a954fac58a34be8029215affeb7841104" prot="private" virt="non-virtual"><scope>Squad</scope><name>MoveTo</name></member>
+      <member refid="class_squad_1a9e562dc28e755105a8a9eda78d537692" prot="private" virt="non-virtual"><scope>Squad</scope><name>Moving</name></member>
+      <member refid="class_squad_1ac82c1c80fdbe1f22bae354f5f59bfb12" prot="private" virt="non-virtual"><scope>Squad</scope><name>MovingInPhalanx</name></member>
+      <member refid="class_squad_1a6d62ff909779a91493639aa4204f65d4" prot="private" virt="non-virtual"><scope>Squad</scope><name>MovingInRanks</name></member>
+      <member refid="class_squad_1a10b78281627d9341174d2fabf0e0d80c" prot="private" virt="non-virtual"><scope>Squad</scope><name>MovingInRiseshields</name></member>
+      <member refid="class_squad_1a0c4c26bf46d538f989a52439d796d855" prot="private" virt="non-virtual"><scope>Squad</scope><name>OlreadyNotInFight</name></member>
+      <member refid="class_squad_1abd75cf1c7abdd594d9762195bd4a794c" prot="public" virt="non-virtual"><scope>Squad</scope><name>OnBeginCharge</name></member>
+      <member refid="class_squad_1a8eb5b43710e1bbdc826e791fecaf712c" prot="private" virt="non-virtual"><scope>Squad</scope><name>OnDrawGizmos</name></member>
+      <member refid="class_squad_1ad593b4c45ea48f9dac330f479e565465" prot="public" virt="non-virtual"><scope>Squad</scope><name>OnDrawUnitHpChanged</name></member>
+      <member refid="class_squad_1aabfeb19ecbfd773cce98e957c336b06c" prot="public" virt="non-virtual"><scope>Squad</scope><name>OnDropStackFromInventory</name></member>
+      <member refid="class_squad_1aa8d1911bae8a743c2336973fbca70dc2" prot="public" virt="non-virtual"><scope>Squad</scope><name>OnEndCharge</name></member>
+      <member refid="class_squad_1ae118b8ab61bad5e8fed1edf91b5aab67" prot="public" virt="non-virtual"><scope>Squad</scope><name>OnFormationChanged</name></member>
+      <member refid="class_squad_1a9e8311044b04633e7bd62a52f15e1f13" prot="public" virt="non-virtual"><scope>Squad</scope><name>OnInFightFlagChanged</name></member>
+      <member refid="class_squad_1ab66f10e8a2b01f2183da97191e47ffc1" prot="public" virt="non-virtual"><scope>Squad</scope><name>OnInitiateUnitPositions</name></member>
+      <member refid="class_squad_1ac0857cd3883ee6f50bf921f09bdd9a70" prot="public" virt="non-virtual"><scope>Squad</scope><name>OnReformSquad</name></member>
+      <member refid="class_squad_1acce17b94d3ab8eabff8c0409a926c735" prot="public" virt="non-virtual"><scope>Squad</scope><name>OnSquadDestroy</name></member>
+      <member refid="class_squad_1a65b75c51bbcefabed4baa6a5874e82f9" prot="public" virt="non-virtual"><scope>Squad</scope><name>OnSumHealthChanged</name></member>
+      <member refid="class_squad_1afd2133a496c0a15fa187346fadbcf80d" prot="public" virt="non-virtual"><scope>Squad</scope><name>OnUitCountChanged</name></member>
+      <member refid="class_squad_1a781f3e1b725b4f87bd5fd5ed6c6e9e5e" prot="public" virt="non-virtual"><scope>Squad</scope><name>OnUnitStatsChanged</name></member>
+      <member refid="class_squad_1af8bc3f834d3f6a567293e2fd858b1a03" prot="private" virt="non-virtual"><scope>Squad</scope><name>path</name></member>
+      <member refid="class_squad_1a838966550a97ec4e0ce4de042467ccb4" prot="private" virt="non-virtual"><scope>Squad</scope><name>pathStep</name></member>
+      <member refid="class_squad_1a781a32dd5c6fadbe0a9e04f142ddc9da" prot="public" virt="non-virtual"><scope>Squad</scope><name>playerSquadInstance</name></member>
+      <member refid="class_squad_1a05e2226c14667a23c638f0de945265da" prot="private" virt="non-virtual"><scope>Squad</scope><name>positionAcuracy</name></member>
+      <member refid="class_squad_1a420523d8beb3b803001128034c040126" prot="public" virt="non-virtual"><scope>Squad</scope><name>PositionAcuracy</name></member>
+      <member refid="class_squad_1a024d83821917a7c547e23ffcdf81caa4" prot="public" virt="non-virtual"><scope>Squad</scope><name>PositionsTransform</name></member>
+      <member refid="class_squad_1a5d2feca0974663a6008e01bc66b65bfa" prot="private" virt="non-virtual"><scope>Squad</scope><name>ReformSquad</name></member>
+      <member refid="class_squad_1accd6bf28b56f1d9fefc471aecdccd000" prot="private" virt="non-virtual"><scope>Squad</scope><name>ReformSquadInPhalanx</name></member>
+      <member refid="class_squad_1a80d6f9db669a20ae8d423b860cc916d2" prot="private" virt="non-virtual"><scope>Squad</scope><name>ReformSquadInRanks</name></member>
+      <member refid="class_squad_1a3302f71c78e2e62275a17fd071c8a232" prot="public" virt="non-virtual"><scope>Squad</scope><name>ResetUnitPositions</name></member>
+      <member refid="class_squad_1a62ffe0c80a501d247d1981a77b6f90a4" prot="public" virt="non-virtual"><scope>Squad</scope><name>RotationAcuracy</name></member>
+      <member refid="class_squad_1ad56edcc0e3a6a6fa4a3663ceb46fc43f" prot="private" virt="non-virtual"><scope>Squad</scope><name>rotationAcuracy</name></member>
+      <member refid="class_squad_1adc62597e8e24aca794d3b3d9510c342f" prot="public" virt="non-virtual"><scope>Squad</scope><name>SetEndMovePositions</name></member>
+      <member refid="class_squad_1acca1ce36076843e54325f38904dfaf8e" prot="private" virt="non-virtual"><scope>Squad</scope><name>SetFlagFight</name></member>
+      <member refid="class_squad_1a682baf77f537896bdf4ea37f354ab115" prot="private" virt="non-virtual"><scope>Squad</scope><name>SetProp</name></member>
+      <member refid="class_squad_1a659400d2151603678b90fc118c1f77e7" prot="public" virt="non-virtual"><scope>Squad</scope><name>SetUnitsStats</name></member>
+      <member refid="class_squad_1acc877c2a44f1cd43386577674e2a26b9" prot="public" virt="non-virtual"><scope>Squad</scope><name>SQUAD_LENGTH</name></member>
+      <member refid="class_squad_1aa9139733734fa44d9123ad952851979e" prot="public" virt="non-virtual"><scope>Squad</scope><name>SQUAD_ROWS_MAX</name></member>
+      <member refid="class_squad_1a4e9a1bb8a4c693726c806427b646eaf2" prot="public" virt="non-virtual"><scope>Squad</scope><name>SquadHealth</name></member>
+      <member refid="class_squad_1a122e86d1207c94837863126218e9e8a4" prot="private" virt="non-virtual"><scope>Squad</scope><name>squadHelth</name></member>
+      <member refid="class_squad_1a527bbc26009e5e23603ea7ba5376a49d" prot="private" virt="non-virtual"><scope>Squad</scope><name>squadLength</name></member>
+      <member refid="class_squad_1a10736df810e0a0a16f14c78053a8696f" prot="private" virt="non-virtual"><scope>Squad</scope><name>squadRowsMax</name></member>
+      <member refid="class_squad_1ac63b45f46fca96eeffd568a4dba416f1" prot="private" virt="non-virtual"><scope>Squad</scope><name>Start</name></member>
+      <member refid="class_squad_1a30ffdb7c2bf17482cb7c8336786e36ac" prot="public" virt="non-virtual"><scope>Squad</scope><name>SumPositionUnit</name></member>
+      <member refid="class_squad_1a9a08bdd12e848411d126a957c0d73b27" prot="private" virt="non-virtual"><scope>Squad</scope><name>sumX</name></member>
+      <member refid="class_squad_1a0176a9cf81dd6b54f787021af98d7314" prot="private" virt="non-virtual"><scope>Squad</scope><name>sumY</name></member>
+      <member refid="class_squad_1ad2bff49c1e4d2d4e4abb6272c985c8e4" prot="private" virt="non-virtual"><scope>Squad</scope><name>targettedUnitsCount</name></member>
+      <member refid="class_squad_1ae024589f77bb7b51467a92c6b6ff2c86" prot="public" virt="non-virtual"><scope>Squad</scope><name>TargettedUnitsCount</name></member>
+      <member refid="class_squad_1a14f16d0bd1098a523c721fb610247c56" prot="public" virt="non-virtual"><scope>Squad</scope><name>UnitCount</name></member>
+      <member refid="class_squad_1ad4036318632360c56c6a555d6181ed41" prot="public" virt="non-virtual"><scope>Squad</scope><name>UnitDeath</name></member>
+      <member refid="class_squad_1abe71578ac0516480f581c7011b1a3ea5" prot="public" virt="non-virtual"><scope>Squad</scope><name>UnitFraction</name></member>
+      <member refid="class_squad_1a167ab01912442ed62585fcc218c90d36" prot="private" virt="non-virtual"><scope>Squad</scope><name>unitOriginal</name></member>
+      <member refid="class_squad_1abc939c4b24727c83d7dc7cd826be5662" prot="public" virt="non-virtual"><scope>Squad</scope><name>UnitPositions</name></member>
+      <member refid="class_squad_1af1de16b9018e66396f36ca497a9338c6" prot="private" virt="non-virtual"><scope>Squad</scope><name>unitPositions</name></member>
+      <member refid="class_squad_1a450b8b71c4017544305c4123e2d08d21" prot="public" virt="non-virtual"><scope>Squad</scope><name>UnitsContainer</name></member>
+      <member refid="class_squad_1a8ea1c18c1d8ed5921e96ec506d83d94d" prot="private" virt="non-virtual"><scope>Squad</scope><name>unitStats</name></member>
+      <member refid="class_squad_1a193bf163c91b4a816ad644fed3b3404d" prot="public" virt="non-virtual"><scope>Squad</scope><name>UnitStats</name></member>
+      <member refid="class_squad_1ab779e7794192aa244f5f01d23ead3b22" prot="private" virt="non-virtual"><scope>Squad</scope><name>Update</name></member>
+      <member refid="class_squad_1a1eda8168cb8c51880175b2a0d8191831" prot="private" virt="non-virtual"><scope>Squad</scope><name>WaitForEndGharge</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

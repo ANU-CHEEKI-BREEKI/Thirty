@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_mc_ui_list_item" kind="class" prot="public">
+    <compoundname>McUiListItem</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_mc_ui_list_item_1a18719f307edf03e9f684a1114ac84461" prot="public" static="no" mutable="no">
+        <type>Text</type>
+        <definition>Text McUiListItem.text</definition>
+        <argsstring></argsstring>
+        <name>text</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McUiListItem.cs" line="8" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McUiListItem.cs" bodystart="8" bodyend="-1"/>
+        <referencedby refid="class_mc_ui_list_item_1a994167def4cf5b88fa3ed0f018c9e52a" compoundref="_mc_ui_list_item_8cs" startline="11" endline="17">Initiate</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_mc_ui_list_item_1a9816a4cb78cc9895ef429806498b8970" prot="public" static="no" mutable="no">
+        <type>Button</type>
+        <definition>Button McUiListItem.button</definition>
+        <argsstring></argsstring>
+        <name>button</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McUiListItem.cs" line="9" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McUiListItem.cs" bodystart="9" bodyend="-1"/>
+        <referencedby refid="class_mc_ui_list_item_1a994167def4cf5b88fa3ed0f018c9e52a" compoundref="_mc_ui_list_item_8cs" startline="11" endline="17">Initiate</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_mc_ui_list_item_1a994167def4cf5b88fa3ed0f018c9e52a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void McUiListItem.Initiate</definition>
+        <argsstring>()</argsstring>
+        <name>Initiate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McUiListItem.cs" line="11" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McUiListItem.cs" bodystart="11" bodyend="17"/>
+        <references refid="class_mc_ui_list_item_1a9816a4cb78cc9895ef429806498b8970" compoundref="_mc_ui_list_item_8cs" startline="9">button</references>
+        <references refid="class_mc_ui_list_item_1acc71e200430f9596ff4ab1a0db11306c" compoundref="_mc_ui_list_item_8cs" startline="19" endline="23">LoadMapBlock</references>
+        <references refid="class_mc_ui_list_item_1a18719f307edf03e9f684a1114ac84461" compoundref="_mc_ui_list_item_8cs" startline="8">text</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_mc_ui_list_item_1acc71e200430f9596ff4ab1a0db11306c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void McUiListItem.LoadMapBlock</definition>
+        <argsstring>(string name)</argsstring>
+        <name>LoadMapBlock</name>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McUiListItem.cs" line="19" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McUiListItem.cs" bodystart="19" bodyend="23"/>
+        <references refid="class_mc_file_manager_1a6a411bde2251b4c8f9d389d1599d8457" compoundref="_mc_file_manager_8cs" startline="36">McFileManager.DIMEN</references>
+        <referencedby refid="class_mc_ui_list_item_1a994167def4cf5b88fa3ed0f018c9e52a" compoundref="_mc_ui_list_item_8cs" startline="11" endline="17">Initiate</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="680">
+        <label>McUiListItem</label>
+        <link refid="class_mc_ui_list_item"/>
+        <childnode refid="681" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="681">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="682">
+        <label>McUiListItem</label>
+        <link refid="class_mc_ui_list_item"/>
+        <childnode refid="683" relation="public-inheritance">
+        </childnode>
+        <childnode refid="684" relation="usage">
+          <edgelabel>text</edgelabel>
+        </childnode>
+      </node>
+      <node id="684">
+        <label>Text</label>
+      </node>
+      <node id="683">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McUiListItem.cs" line="7" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McUiListItem.cs" bodystart="6" bodyend="24"/>
+    <listofallmembers>
+      <member refid="class_mc_ui_list_item_1a9816a4cb78cc9895ef429806498b8970" prot="public" virt="non-virtual"><scope>McUiListItem</scope><name>button</name></member>
+      <member refid="class_mc_ui_list_item_1a994167def4cf5b88fa3ed0f018c9e52a" prot="public" virt="non-virtual"><scope>McUiListItem</scope><name>Initiate</name></member>
+      <member refid="class_mc_ui_list_item_1acc71e200430f9596ff4ab1a0db11306c" prot="private" virt="non-virtual"><scope>McUiListItem</scope><name>LoadMapBlock</name></member>
+      <member refid="class_mc_ui_list_item_1a18719f307edf03e9f684a1114ac84461" prot="public" virt="non-virtual"><scope>McUiListItem</scope><name>text</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

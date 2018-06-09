@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_terrain_height_8cs" kind="file">
+    <compoundname>TerrainHeight.cs</compoundname>
+    <innerclass refid="class_terrain_height" prot="public">TerrainHeight</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Collections;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Collections.Generic;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>UnityEngine;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal">[RequireComponent(typeof(PolygonCollider2D))]</highlight></codeline>
+<codeline lineno="6" refid="class_terrain_height" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_terrain_height" kindref="compound">TerrainHeight</ref><sp/>:<sp/>MonoBehaviour</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8" refid="class_terrain_height_1a6fd76d59c903307996808da7a550d184" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[SerializeField]<sp/>[Range(-1,<sp/>1)]<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_terrain_height_1a6fd76d59c903307996808da7a550d184" kindref="member">outterAddWalkerSizeInPercent</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="9" refid="class_terrain_height_1ac2b3a3720a62454c21d9d91c26ece28b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[SerializeField]<sp/>[Range(-1,<sp/>1)]<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_terrain_height_1ac2b3a3720a62454c21d9d91c26ece28b" kindref="member">innerAddWalkerSizeInPercent</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>[Space]</highlight></codeline>
+<codeline lineno="11" refid="class_terrain_height_1a23a2125a5650d430c26ac7d02ce2fa0f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[SerializeField]<sp/>Transform<sp/><ref refid="class_terrain_height_1a23a2125a5650d430c26ac7d02ce2fa0f" kindref="member">center</ref>;</highlight></codeline>
+<codeline lineno="12" refid="class_terrain_height_1ae6aa02375f0b05bef6df1bd3b89ec7d4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[SerializeField]<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_terrain_height_1ae6aa02375f0b05bef6df1bd3b89ec7d4" kindref="member">distance</ref>;</highlight></codeline>
+<codeline lineno="13" refid="class_terrain_height_1ab2c2abd47752e98f627f05d02d0330cb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Vector2<sp/><ref refid="class_terrain_height_1ab2c2abd47752e98f627f05d02d0330cb" kindref="member">centerPos</ref>;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="class_terrain_height_1a334483f4ecfbc9c398843f3355b28583" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_terrain_height_1a334483f4ecfbc9c398843f3355b28583" kindref="member">rHitLayer</ref>;</highlight></codeline>
+<codeline lineno="16" refid="class_terrain_height_1ac89942881814d21292e44dfd0ea90d28" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>ContactFilter2D<sp/><ref refid="class_terrain_height_1ac89942881814d21292e44dfd0ea90d28" kindref="member">rHitFilter</ref>;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="class_terrain_height_1a98b699d7c9d821c524a5906844928fb4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>RaycastHit2D<sp/><ref refid="class_terrain_height_1aed652029ea7413b77862a46fba0eb8df" kindref="member">hit</ref>,<sp/><ref refid="class_terrain_height_1a98b699d7c9d821c524a5906844928fb4" kindref="member">hit2</ref>;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="class_terrain_height_1a27126dfbbb4253500480aa5cb16fcdeb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_terrain_height_1a27126dfbbb4253500480aa5cb16fcdeb" kindref="member">Start</ref>()</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_terrain_height_1ab2c2abd47752e98f627f05d02d0330cb" kindref="member">centerPos</ref><sp/>=<sp/>center.position;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_terrain_height_1a334483f4ecfbc9c398843f3355b28583" kindref="member">rHitLayer</ref><sp/>=<sp/>1<sp/>&lt;&lt;<sp/>LayerMask.NameToLayer(</highlight><highlight class="stringliteral">&quot;TERRAIN_HEIGHT&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_terrain_height_1ac89942881814d21292e44dfd0ea90d28" kindref="member">rHitFilter</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>ContactFilter2D()</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>useTriggers<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>useLayerMask<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>layerMask<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>LayerMask()</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>value<sp/>=<sp/><ref refid="class_terrain_height_1a334483f4ecfbc9c398843f3355b28583" kindref="member">rHitLayer</ref></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="class_terrain_height_1aa99f37d63b0a8a302589d6632c7463cc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_terrain_height_1aa99f37d63b0a8a302589d6632c7463cc" kindref="member">OnTriggerStay2D</ref>(Collider2D<sp/>collision)</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>walker<sp/>=<sp/>collision.gameObject.GetComponent&lt;<ref refid="interface_i_terrain_walker" kindref="compound">ITerrainWalker</ref>&gt;();</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>walkerPos<sp/>=<sp/>walker.Position;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_terrain_height_1aed652029ea7413b77862a46fba0eb8df" kindref="member">hit</ref><sp/>=<sp/>Physics2D.Linecast(<ref refid="class_terrain_height_1ab2c2abd47752e98f627f05d02d0330cb" kindref="member">centerPos</ref>,<sp/>walkerPos,<sp/><ref refid="class_terrain_height_1a334483f4ecfbc9c398843f3355b28583" kindref="member">rHitLayer</ref>);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_terrain_height_1aed652029ea7413b77862a46fba0eb8df" kindref="member">hit</ref>)</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>a<sp/>=<sp/>-centerPos.y<sp/>+<sp/>walkerPos.y;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>b<sp/>=<sp/>-centerPos.x<sp/>+<sp/>walkerPos.x;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>c<sp/>=<sp/>Vector2.Distance(<ref refid="class_terrain_height_1ab2c2abd47752e98f627f05d02d0330cb" kindref="member">centerPos</ref>,<sp/>walkerPos);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>sin<sp/>=<sp/>a<sp/>/<sp/>c;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>cos<sp/>=<sp/>b<sp/>/<sp/>c;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Vector2<sp/>p<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Vector2();</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p.x<sp/>=<sp/><ref refid="class_terrain_height_1ae6aa02375f0b05bef6df1bd3b89ec7d4" kindref="member">distance</ref><sp/>*<sp/>cos<sp/>+<sp/>centerPos.x;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p.y<sp/>=<sp/><ref refid="class_terrain_height_1ae6aa02375f0b05bef6df1bd3b89ec7d4" kindref="member">distance</ref><sp/>*<sp/>sin<sp/>+<sp/>centerPos.y;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_terrain_height_1a98b699d7c9d821c524a5906844928fb4" kindref="member">hit2</ref><sp/>=<sp/>Physics2D.Linecast(p,<sp/><ref refid="class_terrain_height_1ab2c2abd47752e98f627f05d02d0330cb" kindref="member">centerPos</ref>,<sp/><ref refid="class_terrain_height_1a334483f4ecfbc9c398843f3355b28583" kindref="member">rHitLayer</ref>);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>distBetwenBorders<sp/>=<sp/>Vector2.SqrMagnitude(hit.point<sp/>-<sp/>hit2.point);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>distToWalkerFromInnerBorder<sp/>=<sp/>Vector2.SqrMagnitude(hit.point<sp/>-<sp/>walkerPos);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>k<sp/>=<sp/>distToWalkerFromInnerBorder<sp/>/<sp/>distBetwenBorders;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_terrain_height_1a6d9c45bb81a65ab846ed0b8358151be4" kindref="member">CalculateSize</ref>(walker,<sp/>k);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Debug.DrawLine(<ref refid="class_terrain_height_1ab2c2abd47752e98f627f05d02d0330cb" kindref="member">centerPos</ref>,<sp/>walker.Position,<sp/>Color.gray);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="class_terrain_height_1a6d9c45bb81a65ab846ed0b8358151be4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_terrain_height_1a6d9c45bb81a65ab846ed0b8358151be4" kindref="member">CalculateSize</ref>(<ref refid="interface_i_terrain_walker" kindref="compound">ITerrainWalker</ref><sp/>walker,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>distanceKoeficient)</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>addScale<sp/>=<sp/>Mathf.Lerp(<ref refid="class_terrain_height_1ac2b3a3720a62454c21d9d91c26ece28b" kindref="member">innerAddWalkerSizeInPercent</ref>,<sp/><ref refid="class_terrain_height_1a6fd76d59c903307996808da7a550d184" kindref="member">outterAddWalkerSizeInPercent</ref>,<sp/>distanceKoeficient);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>walker.Scale<sp/>=<sp/>1<sp/>+<sp/>addScale;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="class_terrain_height_1aae5623771d6da2d21b3a1bd4bea56e8c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_terrain_height_1aae5623771d6da2d21b3a1bd4bea56e8c" kindref="member">OnDrawGizmos</ref>()</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>outterField<sp/>=<sp/>GetComponent&lt;PolygonCollider2D&gt;();</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Color<sp/>color<sp/>=<sp/>Color.blue;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cnt<sp/>=<sp/>outterField.points.Length<sp/>-<sp/>1;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>cnt;<sp/>i++)</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Debug.DrawLine(transform.TransformPoint(outterField.points[i]),<sp/>transform.TransformPoint(outterField.points[i<sp/>+<sp/>1]),<sp/>color);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Debug.DrawLine(transform.TransformPoint(outterField.points[0]),<sp/>transform.TransformPoint(outterField.points[outterField.points.Length<sp/>-<sp/>1]),<sp/>color);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Gizmos.color<sp/>=<sp/>Color.blue;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Gizmos.DrawSphere(center.position,<sp/>0.5f);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Gizmos.DrawSphere(hit.point,<sp/>0.3f);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Gizmos.DrawSphere(hit2.point,<sp/>0.3f);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Gizmos.color<sp/>=<sp/>Color.gray;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Gizmos.DrawWireSphere(center.position,<sp/><ref refid="class_terrain_height_1ae6aa02375f0b05bef6df1bd3b89ec7d4" kindref="member">distance</ref>);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="91"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/TerrainHeight.cs"/>
+  </compounddef>
+</doxygen>

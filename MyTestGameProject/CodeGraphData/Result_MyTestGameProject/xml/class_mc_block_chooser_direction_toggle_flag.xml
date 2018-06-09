@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_mc_block_chooser_direction_toggle_flag" kind="class" prot="public">
+    <compoundname>McBlockChooserDirectionToggleFlag</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_mc_block_chooser_direction_toggle_flag_1acfacf2704705ddce025e022626a626b0" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool McBlockChooserDirectionToggleFlag.isSelected</definition>
+        <argsstring></argsstring>
+        <name>isSelected</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McBlockChooserDirectionToggleFlag.cs" line="7" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McBlockChooserDirectionToggleFlag.cs" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_mc_block_chooser_direction_toggle_flag_1ad96669e58426d25f61e930846d12da0e" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>bool</type>
+        <definition>bool McBlockChooserDirectionToggleFlag.IsSelected</definition>
+        <argsstring></argsstring>
+        <name>IsSelected</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McBlockChooserDirectionToggleFlag.cs" line="9" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McBlockChooserDirectionToggleFlag.cs" bodystart="9" bodyend="-1"/>
+        <referencedby refid="class_mc_block_entry_chooser_1a2ccd67b1f0bdd2e6e40b8d5f8e68fc81" compoundref="_mc_block_entry_chooser_8cs" startline="68" endline="122">McBlockEntryChooser.OnDrag</referencedby>
+        <referencedby refid="class_mc_block_entry_chooser_1a275489cf17b592763be1d0575e804aa3" compoundref="_mc_block_entry_chooser_8cs" startline="147" endline="184">McBlockEntryChooser.OnPointerUp</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="584">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="583">
+        <label>McBlockChooserDirectionToggleFlag</label>
+        <link refid="class_mc_block_chooser_direction_toggle_flag"/>
+        <childnode refid="584" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="586">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="585">
+        <label>McBlockChooserDirectionToggleFlag</label>
+        <link refid="class_mc_block_chooser_direction_toggle_flag"/>
+        <childnode refid="586" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McBlockChooserDirectionToggleFlag.cs" line="6" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McBlockChooserDirectionToggleFlag.cs" bodystart="5" bodyend="10"/>
+    <listofallmembers>
+      <member refid="class_mc_block_chooser_direction_toggle_flag_1acfacf2704705ddce025e022626a626b0" prot="private" virt="non-virtual"><scope>McBlockChooserDirectionToggleFlag</scope><name>isSelected</name></member>
+      <member refid="class_mc_block_chooser_direction_toggle_flag_1ad96669e58426d25f61e930846d12da0e" prot="public" virt="non-virtual"><scope>McBlockChooserDirectionToggleFlag</scope><name>IsSelected</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

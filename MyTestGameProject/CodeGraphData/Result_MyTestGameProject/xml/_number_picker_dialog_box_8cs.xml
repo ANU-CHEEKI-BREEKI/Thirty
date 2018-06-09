@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_number_picker_dialog_box_8cs" kind="file">
+    <compoundname>NumberPickerDialogBox.cs</compoundname>
+    <innerclass refid="class_number_picker_dialog_box" prot="public">NumberPickerDialogBox</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Collections;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Collections.Generic;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Text;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>TMPro;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>UnityEngine;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>UnityEngine.UI;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="class_number_picker_dialog_box" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_number_picker_dialog_box" kindref="compound">NumberPickerDialogBox</ref><sp/>:<sp/>MonoBehaviour</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="11" refid="class_number_picker_dialog_box_1a26cf8446aecb94c366f1c912a5773d0a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[SerializeField]<sp/>TextMeshProUGUI<sp/><ref refid="class_number_picker_dialog_box_1a26cf8446aecb94c366f1c912a5773d0a" kindref="member">title</ref>;</highlight></codeline>
+<codeline lineno="12" refid="class_number_picker_dialog_box_1a05661b465af7d0711605486caf8b402a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[SerializeField]<sp/>TextMeshProUGUI<sp/><ref refid="class_number_picker_dialog_box_1a05661b465af7d0711605486caf8b402a" kindref="member">message</ref>;</highlight></codeline>
+<codeline lineno="13" refid="class_number_picker_dialog_box_1a1ca2236fa00bea580628484b02389cd7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[SerializeField]<sp/>TMP_InputField<sp/><ref refid="class_number_picker_dialog_box_1a1ca2236fa00bea580628484b02389cd7" kindref="member">inField</ref>;</highlight></codeline>
+<codeline lineno="14" refid="class_number_picker_dialog_box_1abe12dd71c29b6c6060d5bc054e0c45c1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[SerializeField]<sp/>Button<sp/><ref refid="class_number_picker_dialog_box_1abe12dd71c29b6c6060d5bc054e0c45c1" kindref="member">ok</ref>;</highlight></codeline>
+<codeline lineno="15" refid="class_number_picker_dialog_box_1ac652028464f658bd6ac33a94d084eee1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[SerializeField]<sp/>Button<sp/><ref refid="class_number_picker_dialog_box_1ac652028464f658bd6ac33a94d084eee1" kindref="member">cancel</ref>;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="class_number_picker_dialog_box_1a8d71cbcbabbae8a3debeda6999c0d69b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Action&lt;string&gt;<sp/><ref refid="class_number_picker_dialog_box_1a8d71cbcbabbae8a3debeda6999c0d69b" kindref="member">onClickOk</ref>;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="class_number_picker_dialog_box_1aa5fb5b20020f0f1165da521304049883" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_number_picker_dialog_box" kindref="compound">NumberPickerDialogBox</ref><sp/><ref refid="class_number_picker_dialog_box_1aa5fb5b20020f0f1165da521304049883" kindref="member">Instance</ref><sp/>{<sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">;<sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>set;<sp/>}</highlight></codeline>
+<codeline lineno="20" refid="class_number_picker_dialog_box_1acc46a525a303fa338cb2b2fd3c740e67" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>StringBuilder<sp/><ref refid="class_number_picker_dialog_box_1acc46a525a303fa338cb2b2fd3c740e67" kindref="member">b</ref>;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="class_number_picker_dialog_box_1af24bbe9e9075481773629f776b78e2b5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>CanvasGroup<sp/><ref refid="class_number_picker_dialog_box_1af24bbe9e9075481773629f776b78e2b5" kindref="member">canvas</ref>;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="class_number_picker_dialog_box_1a1441e5dcdbc92b13b6778e6984ba8ae7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_number_picker_dialog_box_1a1441e5dcdbc92b13b6778e6984ba8ae7" kindref="member">Awake</ref>()</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_number_picker_dialog_box_1aa5fb5b20020f0f1165da521304049883" kindref="member">Instance</ref><sp/>=<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_number_picker_dialog_box_1af24bbe9e9075481773629f776b78e2b5" kindref="member">canvas</ref><sp/>=<sp/>GetComponent&lt;CanvasGroup&gt;();</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_number_picker_dialog_box_1acc46a525a303fa338cb2b2fd3c740e67" kindref="member">b</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>StringBuilder();</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="class_number_picker_dialog_box_1adefdf8ee084cd4973bc5214882c70e3e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_number_picker_dialog_box_1adefdf8ee084cd4973bc5214882c70e3e" kindref="member">Start</ref>()</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ok.onClick.AddListener(<ref refid="class_number_picker_dialog_box_1a22a265985137b1813cc81aa6d3659684" kindref="member">OnClickOk</ref>);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cancel.onClick.AddListener(<ref refid="class_number_picker_dialog_box_1a39cbcaaa5e10b1d46cda4ebef39de0c3" kindref="member">OnClickCancel</ref>);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_number_picker_dialog_box_1a03817790e40417f4b8033f4d69d09811" kindref="member">Hide</ref>();</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="38" refid="class_number_picker_dialog_box_1a8fe4d97ecfa8dd84d99b087ef39c7a99" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_number_picker_dialog_box_1a8fe4d97ecfa8dd84d99b087ef39c7a99" kindref="member">Show</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="class_number_picker_dialog_box_1a26cf8446aecb94c366f1c912a5773d0a" kindref="member">title</ref>,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="class_number_picker_dialog_box_1a05661b465af7d0711605486caf8b402a" kindref="member">message</ref>,<sp/>Action&lt;string&gt;<sp/><ref refid="class_number_picker_dialog_box_1a8d71cbcbabbae8a3debeda6999c0d69b" kindref="member">onClickOk</ref>,<sp/>InputField.ContentType<sp/>type)</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.title.text<sp/>=<sp/><ref refid="class_number_picker_dialog_box_1a26cf8446aecb94c366f1c912a5773d0a" kindref="member">title</ref>;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.message.text<sp/>=<sp/><ref refid="class_number_picker_dialog_box_1a05661b465af7d0711605486caf8b402a" kindref="member">message</ref>;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.onClickOk<sp/>=<sp/><ref refid="class_number_picker_dialog_box_1a8d71cbcbabbae8a3debeda6999c0d69b" kindref="member">onClickOk</ref>;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>inField.contentType<sp/>=<sp/>(TMP_InputField.ContentType)type;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>canvas.blocksRaycasts<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>canvas.alpha<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="class_number_picker_dialog_box_1a03817790e40417f4b8033f4d69d09811" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_number_picker_dialog_box_1a03817790e40417f4b8033f4d69d09811" kindref="member">Hide</ref>()</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>inField.text<sp/>=<sp/>string.Empty;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>canvas.blocksRaycasts<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>canvas.alpha<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="class_number_picker_dialog_box_1a22a265985137b1813cc81aa6d3659684" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_number_picker_dialog_box_1a22a265985137b1813cc81aa6d3659684" kindref="member">OnClickOk</ref>()</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_number_picker_dialog_box_1a8d71cbcbabbae8a3debeda6999c0d69b" kindref="member">onClickOk</ref><sp/>!=<sp/>null)</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_number_picker_dialog_box_1a8d71cbcbabbae8a3debeda6999c0d69b" kindref="member">onClickOk</ref>(<ref refid="class_number_picker_dialog_box_1a1ca2236fa00bea580628484b02389cd7" kindref="member">inField</ref>.text);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_number_picker_dialog_box_1a03817790e40417f4b8033f4d69d09811" kindref="member">Hide</ref>();</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="class_number_picker_dialog_box_1a39cbcaaa5e10b1d46cda4ebef39de0c3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_number_picker_dialog_box_1a39cbcaaa5e10b1d46cda4ebef39de0c3" kindref="member">OnClickCancel</ref>()</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_number_picker_dialog_box_1a03817790e40417f4b8033f4d69d09811" kindref="member">Hide</ref>();</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/NumberPickerDialogBox.cs"/>
+  </compounddef>
+</doxygen>

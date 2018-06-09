@@ -1,0 +1,692 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_dialog_box" kind="class" prot="public">
+    <compoundname>DialogBox</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+    <basecompoundref refid="interface_i_dialog_box" prot="public" virt="non-virtual">IDialogBox</basecompoundref>
+    <innerclass refid="class_dialog_box_1_1_button_data" prot="private">DialogBox::ButtonData</innerclass>
+    <innerclass refid="class_dialog_box_1_1_dialog_data" prot="private">DialogBox::DialogData</innerclass>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_dialog_box_1ae66195d0d261a291ddb7840deefb6099" prot="private" static="no" mutable="no">
+        <type>GameObject</type>
+        <definition>GameObject DialogBox.originalButton</definition>
+        <argsstring></argsstring>
+        <name>originalButton</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" line="42" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" bodystart="42" bodyend="-1"/>
+        <referencedby refid="class_dialog_box_1afa16758c02722fdd335091e0f5f58a54" compoundref="_dialog_box_8cs" startline="107" endline="207">Show</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_dialog_box_1a059b954beff234ef0626d2011de53487" prot="private" static="no" mutable="no">
+        <type>TextMeshProUGUI</type>
+        <definition>TextMeshProUGUI DialogBox.title</definition>
+        <argsstring></argsstring>
+        <name>title</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" line="44" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" bodystart="44" bodyend="-1"/>
+        <referencedby refid="class_dialog_box_1aa49804a1a1db3edf886e8c9d9b581327" compoundref="_dialog_box_8cs" startline="218" endline="222">SetTitle</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_dialog_box_1aa7300d78b04d7a49a14e6d33cb0977d9" prot="private" static="no" mutable="no">
+        <type>GameObject</type>
+        <definition>GameObject DialogBox.iconContent</definition>
+        <argsstring></argsstring>
+        <name>iconContent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" line="46" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_dialog_box_1aa2ae0ea7a4b7a99ed6f1ca0216c857ce" prot="private" static="no" mutable="no">
+        <type>Image</type>
+        <definition>Image DialogBox.icon</definition>
+        <argsstring></argsstring>
+        <name>icon</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" line="47" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_dialog_box_1a59cc51c2fa97691b22eaa6cf07e330ba" prot="private" static="no" mutable="no">
+        <type>GameObject</type>
+        <definition>GameObject DialogBox.scrolableTextContent</definition>
+        <argsstring></argsstring>
+        <name>scrolableTextContent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" line="49" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_dialog_box_1a3cdce01ed5e10d6920637eb5e01ef092" prot="private" static="no" mutable="no">
+        <type>TextMeshProUGUI</type>
+        <definition>TextMeshProUGUI DialogBox.scrolableText</definition>
+        <argsstring></argsstring>
+        <name>scrolableText</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" line="50" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_dialog_box_1a420438d87f2023cecd7841c47a5f6214" prot="private" static="no" mutable="no">
+        <type>GameObject</type>
+        <definition>GameObject DialogBox.unscrolableTextContent</definition>
+        <argsstring></argsstring>
+        <name>unscrolableTextContent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" line="52" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_dialog_box_1af3e9d5ee00157392071d6ccf07d6657b" prot="private" static="no" mutable="no">
+        <type>TextMeshProUGUI</type>
+        <definition>TextMeshProUGUI DialogBox.unscrolableText</definition>
+        <argsstring></argsstring>
+        <name>unscrolableText</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" line="53" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_dialog_box_1aa441cb3271a3eb1fb85da1329d8f5088" prot="private" static="no" mutable="no">
+        <type>Transform</type>
+        <definition>Transform DialogBox.buttonsPanel</definition>
+        <argsstring></argsstring>
+        <name>buttonsPanel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" line="55" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" bodystart="55" bodyend="-1"/>
+        <referencedby refid="class_dialog_box_1a4670255d15e889114e73509d961b0f50" compoundref="_dialog_box_8cs" startline="90" endline="100">Reset</referencedby>
+        <referencedby refid="class_dialog_box_1afa16758c02722fdd335091e0f5f58a54" compoundref="_dialog_box_8cs" startline="107" endline="207">Show</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_dialog_box_1ad82d65e6dcc1a503bc0ce4d9c86fc97d" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string DialogBox.defaultTitle</definition>
+        <argsstring></argsstring>
+        <name>defaultTitle</name>
+        <initializer>= &quot;Title&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" line="57" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" bodystart="57" bodyend="-1"/>
+        <referencedby refid="class_dialog_box_1a4670255d15e889114e73509d961b0f50" compoundref="_dialog_box_8cs" startline="90" endline="100">Reset</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_dialog_box_1a680a4daae84e214fe711fc8db9f1e0f3" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string DialogBox.defaultText</definition>
+        <argsstring></argsstring>
+        <name>defaultText</name>
+        <initializer>= &quot;Text&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" line="58" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" bodystart="58" bodyend="-1"/>
+        <referencedby refid="class_dialog_box_1a4670255d15e889114e73509d961b0f50" compoundref="_dialog_box_8cs" startline="90" endline="100">Reset</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_dialog_box_1ac6c7197a92dc0397ac928483927be56e" prot="private" static="no" mutable="no">
+        <type>Color</type>
+        <definition>Color DialogBox.defaultTitleColor</definition>
+        <argsstring></argsstring>
+        <name>defaultTitleColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" line="60" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" bodystart="60" bodyend="-1"/>
+        <referencedby refid="class_dialog_box_1afa16758c02722fdd335091e0f5f58a54" compoundref="_dialog_box_8cs" startline="107" endline="207">Show</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_dialog_box_1a7341499575888970b89e64c16835ce45" prot="private" static="no" mutable="no">
+        <type>Color</type>
+        <definition>Color DialogBox.defaultTextColor</definition>
+        <argsstring></argsstring>
+        <name>defaultTextColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" line="61" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" bodystart="61" bodyend="-1"/>
+        <referencedby refid="class_dialog_box_1afa16758c02722fdd335091e0f5f58a54" compoundref="_dialog_box_8cs" startline="107" endline="207">Show</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_dialog_box_1a5d22e8783cd9c361bdf4b34d9fe0a009" prot="private" static="no" mutable="no">
+        <type><ref refid="class_dialog_box_1_1_dialog_data" kindref="compound">DialogData</ref></type>
+        <definition>DialogData DialogBox.dialogData</definition>
+        <argsstring></argsstring>
+        <name>dialogData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" line="68" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" bodystart="68" bodyend="-1"/>
+        <referencedby refid="class_dialog_box_1a4f6da9356c9d58e5027eff19f62f94bc" compoundref="_dialog_box_8cs" startline="75" endline="88">Awake</referencedby>
+        <referencedby refid="class_dialog_box_1afa16758c02722fdd335091e0f5f58a54" compoundref="_dialog_box_8cs" startline="107" endline="207">Show</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_dialog_box_1adada61230e708d1b769caa1574c3d699" prot="private" static="no" mutable="no">
+        <type>Vector2</type>
+        <definition>Vector2 DialogBox.startPosition</definition>
+        <argsstring></argsstring>
+        <name>startPosition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" line="70" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" bodystart="70" bodyend="-1"/>
+        <referencedby refid="class_dialog_box_1a4f6da9356c9d58e5027eff19f62f94bc" compoundref="_dialog_box_8cs" startline="75" endline="88">Awake</referencedby>
+        <referencedby refid="class_dialog_box_1aa4779eb84cd66b3e1f2bf9ace65c57cf" compoundref="_dialog_box_8cs" startline="209" endline="216">Hide</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_dialog_box_1afa2616fd50bf180ec341f6292d1973af" prot="private" static="no" mutable="no">
+        <type>RectTransform</type>
+        <definition>RectTransform DialogBox.thisTansform</definition>
+        <argsstring></argsstring>
+        <name>thisTansform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" line="71" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" bodystart="71" bodyend="-1"/>
+        <referencedby refid="class_dialog_box_1a4f6da9356c9d58e5027eff19f62f94bc" compoundref="_dialog_box_8cs" startline="75" endline="88">Awake</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_dialog_box_1a551034072f152fbe9e89b6c0d88c846e" prot="private" static="no" mutable="no">
+        <type>CanvasGroup</type>
+        <definition>CanvasGroup DialogBox.cg</definition>
+        <argsstring></argsstring>
+        <name>cg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" line="72" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" bodystart="72" bodyend="-1"/>
+        <referencedby refid="class_dialog_box_1a4f6da9356c9d58e5027eff19f62f94bc" compoundref="_dialog_box_8cs" startline="75" endline="88">Awake</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_dialog_box_1a6d5e421b5b7b2748a85d8dbff4b9a1e2" prot="private" static="no" mutable="no">
+        <type>ContentSizeFitter</type>
+        <definition>ContentSizeFitter DialogBox.fitter</definition>
+        <argsstring></argsstring>
+        <name>fitter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" line="73" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" bodystart="73" bodyend="-1"/>
+        <referencedby refid="class_dialog_box_1a4f6da9356c9d58e5027eff19f62f94bc" compoundref="_dialog_box_8cs" startline="75" endline="88">Awake</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_dialog_box_1ad3b9b51e68ca37fdbaf9eb3d1a890125" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_dialog_box" kindref="compound">DialogBox</ref></type>
+        <definition>DialogBox DialogBox.Instance</definition>
+        <argsstring></argsstring>
+        <name>Instance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" line="63" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" bodystart="63" bodyend="-1"/>
+        <referencedby refid="class_dialog_box_1a4f6da9356c9d58e5027eff19f62f94bc" compoundref="_dialog_box_8cs" startline="75" endline="88">Awake</referencedby>
+        <referencedby refid="class_pause_toggle_1a4f3dbba318f1182edea54b8bdbf323a8" compoundref="_pause_toggle_8cs" startline="18" endline="33">PauseToggle.onValChanged</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_dialog_box_1a85ea50ea435cec0291e7262bb58c737b" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>bool</type>
+        <definition>bool DialogBox.Showned</definition>
+        <argsstring></argsstring>
+        <name>Showned</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" line="65" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" bodystart="65" bodyend="-1"/>
+        <referencedby refid="class_dialog_box_1aa4779eb84cd66b3e1f2bf9ace65c57cf" compoundref="_dialog_box_8cs" startline="209" endline="216">Hide</referencedby>
+        <referencedby refid="class_pause_toggle_1a4f3dbba318f1182edea54b8bdbf323a8" compoundref="_pause_toggle_8cs" startline="18" endline="33">PauseToggle.onValChanged</referencedby>
+        <referencedby refid="class_dialog_box_1afa16758c02722fdd335091e0f5f58a54" compoundref="_dialog_box_8cs" startline="107" endline="207">Show</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_dialog_box_1ac1edc6c0e2806402a0f4b8317a2816a3" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>object</type>
+        <definition>object DialogBox.Owner</definition>
+        <argsstring></argsstring>
+        <name>Owner</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" line="66" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" bodystart="66" bodyend="-1"/>
+        <referencedby refid="class_pause_toggle_1a4f3dbba318f1182edea54b8bdbf323a8" compoundref="_pause_toggle_8cs" startline="18" endline="33">PauseToggle.onValChanged</referencedby>
+        <referencedby refid="class_dialog_box_1afa16758c02722fdd335091e0f5f58a54" compoundref="_dialog_box_8cs" startline="107" endline="207">Show</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_dialog_box_1a4f6da9356c9d58e5027eff19f62f94bc" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void DialogBox.Awake</definition>
+        <argsstring>()</argsstring>
+        <name>Awake</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" line="75" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" bodystart="75" bodyend="88"/>
+        <references refid="class_dialog_box_1a551034072f152fbe9e89b6c0d88c846e" compoundref="_dialog_box_8cs" startline="72">cg</references>
+        <references refid="class_dialog_box_1a5d22e8783cd9c361bdf4b34d9fe0a009" compoundref="_dialog_box_8cs" startline="68">dialogData</references>
+        <references refid="class_dialog_box_1a6d5e421b5b7b2748a85d8dbff4b9a1e2" compoundref="_dialog_box_8cs" startline="73">fitter</references>
+        <references refid="class_dialog_box_1aa4779eb84cd66b3e1f2bf9ace65c57cf" compoundref="_dialog_box_8cs" startline="209" endline="216">Hide</references>
+        <references refid="class_dialog_box_1ad3b9b51e68ca37fdbaf9eb3d1a890125" compoundref="_dialog_box_8cs" startline="63">Instance</references>
+        <references refid="class_dialog_box_1adada61230e708d1b769caa1574c3d699" compoundref="_dialog_box_8cs" startline="70">startPosition</references>
+        <references refid="class_dialog_box_1afa2616fd50bf180ec341f6292d1973af" compoundref="_dialog_box_8cs" startline="71">thisTansform</references>
+      </memberdef>
+      <memberdef kind="function" id="class_dialog_box_1a4670255d15e889114e73509d961b0f50" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void DialogBox.Reset</definition>
+        <argsstring>()</argsstring>
+        <name>Reset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" line="90" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" bodystart="90" bodyend="100"/>
+        <references refid="class_dialog_box_1aa441cb3271a3eb1fb85da1329d8f5088" compoundref="_dialog_box_8cs" startline="55">buttonsPanel</references>
+        <references refid="class_dialog_box_1a680a4daae84e214fe711fc8db9f1e0f3" compoundref="_dialog_box_8cs" startline="58">defaultText</references>
+        <references refid="class_dialog_box_1ad82d65e6dcc1a503bc0ce4d9c86fc97d" compoundref="_dialog_box_8cs" startline="57">defaultTitle</references>
+        <referencedby refid="class_dialog_box_1afa16758c02722fdd335091e0f5f58a54" compoundref="_dialog_box_8cs" startline="107" endline="207">Show</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_dialog_box_1ae41e137bacfbf6d730e3fe4eef88ceb1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void DialogBox.Show</definition>
+        <argsstring>(object owner=null)</argsstring>
+        <name>Show</name>
+        <reimplements refid="interface_i_dialog_box_1a06d79f36881e480d6b8227635a4b8dac">Show</reimplements>
+        <param>
+          <type>object</type>
+          <declname>owner</declname>
+          <defval>null</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" line="102" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" bodystart="102" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dialog_box_1afa16758c02722fdd335091e0f5f58a54" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void DialogBox.Show</definition>
+        <argsstring>(Vector2 positionOnScreen, object owner=null)</argsstring>
+        <name>Show</name>
+        <reimplements refid="interface_i_dialog_box_1a8d77accf1c978f86dd217bd5cd0052f6">Show</reimplements>
+        <param>
+          <type>Vector2</type>
+          <declname>positionOnScreen</declname>
+        </param>
+        <param>
+          <type>object</type>
+          <declname>owner</declname>
+          <defval>null</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" line="107" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" bodystart="107" bodyend="207"/>
+        <references refid="class_dialog_box_1_1_dialog_data_1aa7a5c76cc811ccd4a03d8e7db7b23940" compoundref="_dialog_box_8cs" startline="25">DialogBox.DialogData.ButtonsData</references>
+        <references refid="class_dialog_box_1aa441cb3271a3eb1fb85da1329d8f5088" compoundref="_dialog_box_8cs" startline="55">buttonsPanel</references>
+        <references refid="class_dialog_box_1a7341499575888970b89e64c16835ce45" compoundref="_dialog_box_8cs" startline="61">defaultTextColor</references>
+        <references refid="class_dialog_box_1ac6c7197a92dc0397ac928483927be56e" compoundref="_dialog_box_8cs" startline="60">defaultTitleColor</references>
+        <references refid="class_dialog_box_1a5d22e8783cd9c361bdf4b34d9fe0a009" compoundref="_dialog_box_8cs" startline="68">dialogData</references>
+        <references refid="class_dialog_box_1_1_dialog_data_1ae8cc979f128013e77c4915d5f12f3036" compoundref="_dialog_box_8cs" startline="32">DialogBox.DialogData.Height</references>
+        <references refid="class_dialog_box_1_1_dialog_data_1a557a4b367328fc8218885b56bad8598b" compoundref="_dialog_box_8cs" startline="21">DialogBox.DialogData.Icon</references>
+        <references refid="class_dialog_box_1_1_dialog_data_1ae15afaf8c1cc7a4abea24d989339e342" compoundref="_dialog_box_8cs" startline="24">DialogBox.DialogData.IsTextScrolable</references>
+        <references refid="class_dialog_box_1ae66195d0d261a291ddb7840deefb6099" compoundref="_dialog_box_8cs" startline="42">originalButton</references>
+        <references refid="class_dialog_box_1ac1edc6c0e2806402a0f4b8317a2816a3" compoundref="_dialog_box_8cs" startline="66">Owner</references>
+        <references refid="class_dialog_box_1_1_dialog_data_1a70dc6482308874a42822ffc809449517" compoundref="_dialog_box_8cs" startline="29">DialogBox.DialogData.PrefButtonHeight</references>
+        <references refid="class_dialog_box_1a4670255d15e889114e73509d961b0f50" compoundref="_dialog_box_8cs" startline="90" endline="100">Reset</references>
+        <references refid="class_dialog_box_1a85ea50ea435cec0291e7262bb58c737b" compoundref="_dialog_box_8cs" startline="65">Showned</references>
+        <references refid="class_dialog_box_1_1_dialog_data_1af932569973f145204a83c77300b41a7c" compoundref="_dialog_box_8cs" startline="23">DialogBox.DialogData.Text</references>
+        <references refid="class_dialog_box_1_1_dialog_data_1acddfdf4aea87a756bd21826ab2f1c173" compoundref="_dialog_box_8cs" startline="28">DialogBox.DialogData.TextColor</references>
+        <references refid="class_dialog_box_1_1_dialog_data_1ac7499cfb320e9498acbfa8c6d09518a4" compoundref="_dialog_box_8cs" startline="22">DialogBox.DialogData.Title</references>
+        <references refid="class_dialog_box_1_1_dialog_data_1ac1a154ddeb9966bc6c46ea676dc2b6ac" compoundref="_dialog_box_8cs" startline="27">DialogBox.DialogData.TitleColor</references>
+        <references refid="class_dialog_box_1_1_dialog_data_1ac7fab6b3609bc73b08925b8acb484a58" compoundref="_dialog_box_8cs" startline="31">DialogBox.DialogData.Wifth</references>
+      </memberdef>
+      <memberdef kind="function" id="class_dialog_box_1aa4779eb84cd66b3e1f2bf9ace65c57cf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void DialogBox.Hide</definition>
+        <argsstring>()</argsstring>
+        <name>Hide</name>
+        <reimplements refid="interface_i_dialog_box_1a97429aaf6425e00f9ec10861f1f9b820">Hide</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" line="209" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" bodystart="209" bodyend="216"/>
+        <references refid="class_dialog_box_1a85ea50ea435cec0291e7262bb58c737b" compoundref="_dialog_box_8cs" startline="65">Showned</references>
+        <references refid="class_dialog_box_1adada61230e708d1b769caa1574c3d699" compoundref="_dialog_box_8cs" startline="70">startPosition</references>
+        <referencedby refid="class_dialog_box_1a7497964e0713f55f807c91aada4f5787" compoundref="_dialog_box_8cs" startline="237" endline="241">AddCancelButton</referencedby>
+        <referencedby refid="class_dialog_box_1a4f6da9356c9d58e5027eff19f62f94bc" compoundref="_dialog_box_8cs" startline="75" endline="88">Awake</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_dialog_box_1aa49804a1a1db3edf886e8c9d9b581327" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="interface_i_dialog_box" kindref="compound">IDialogBox</ref></type>
+        <definition>IDialogBox DialogBox.SetTitle</definition>
+        <argsstring>(string title)</argsstring>
+        <name>SetTitle</name>
+        <reimplements refid="interface_i_dialog_box_1a667d4b650a3dd0cea95b7c4ef6e28df1">SetTitle</reimplements>
+        <param>
+          <type>string</type>
+          <declname>title</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" line="218" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" bodystart="218" bodyend="222"/>
+        <references refid="class_dialog_box_1a059b954beff234ef0626d2011de53487" compoundref="_dialog_box_8cs" startline="44">title</references>
+      </memberdef>
+      <memberdef kind="function" id="class_dialog_box_1a39c10515037ff9a0cc2ed6367b8411c3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="interface_i_dialog_box" kindref="compound">IDialogBox</ref></type>
+        <definition>IDialogBox DialogBox.SetText</definition>
+        <argsstring>(string text, bool isScrolable=false)</argsstring>
+        <name>SetText</name>
+        <reimplements refid="interface_i_dialog_box_1a6df9b0afc6f1755d5062926331448e19">SetText</reimplements>
+        <param>
+          <type>string</type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>isScrolable</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" line="224" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" bodystart="224" bodyend="229"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dialog_box_1adcd9ed3f78937548ca638e50c11a29e4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="interface_i_dialog_box" kindref="compound">IDialogBox</ref></type>
+        <definition>IDialogBox DialogBox.AddButton</definition>
+        <argsstring>(string text, Action action)</argsstring>
+        <name>AddButton</name>
+        <reimplements refid="interface_i_dialog_box_1a2eb55f02ddeac3afb70844ca81036f61">AddButton</reimplements>
+        <param>
+          <type>string</type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type>Action</type>
+          <declname>action</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" line="231" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" bodystart="231" bodyend="235"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dialog_box_1a7497964e0713f55f807c91aada4f5787" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="interface_i_dialog_box" kindref="compound">IDialogBox</ref></type>
+        <definition>IDialogBox DialogBox.AddCancelButton</definition>
+        <argsstring>(string text)</argsstring>
+        <name>AddCancelButton</name>
+        <reimplements refid="interface_i_dialog_box_1a7ed31b71fc99f57605077e7118a2ca10">AddCancelButton</reimplements>
+        <param>
+          <type>string</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" line="237" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" bodystart="237" bodyend="241"/>
+        <references refid="class_dialog_box_1aa4779eb84cd66b3e1f2bf9ace65c57cf" compoundref="_dialog_box_8cs" startline="209" endline="216">Hide</references>
+      </memberdef>
+      <memberdef kind="function" id="class_dialog_box_1a2e5ec7dbe7b15bb60f4b1b70ec3956f7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="interface_i_dialog_box" kindref="compound">IDialogBox</ref></type>
+        <definition>IDialogBox DialogBox.SetIcon</definition>
+        <argsstring>(Sprite sprite)</argsstring>
+        <name>SetIcon</name>
+        <reimplements refid="interface_i_dialog_box_1a05992146877dcaa42d7ec62cd01f126c">SetIcon</reimplements>
+        <param>
+          <type>Sprite</type>
+          <declname>sprite</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" line="243" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" bodystart="243" bodyend="247"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dialog_box_1afd696774686a2be50cadd5b2f183e295" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="interface_i_dialog_box" kindref="compound">IDialogBox</ref></type>
+        <definition>IDialogBox DialogBox.SetTitleColor</definition>
+        <argsstring>(Color color)</argsstring>
+        <name>SetTitleColor</name>
+        <reimplements refid="interface_i_dialog_box_1aec7035bdd09bab599b54795a6f7a66cb">SetTitleColor</reimplements>
+        <param>
+          <type>Color</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" line="249" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" bodystart="249" bodyend="253"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dialog_box_1a8f417e408ae0b5f1d9890fb05bd556d4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="interface_i_dialog_box" kindref="compound">IDialogBox</ref></type>
+        <definition>IDialogBox DialogBox.SetTextColor</definition>
+        <argsstring>(Color color)</argsstring>
+        <name>SetTextColor</name>
+        <reimplements refid="interface_i_dialog_box_1aa81d21a708f798f103c29435696f1601">SetTextColor</reimplements>
+        <param>
+          <type>Color</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" line="255" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" bodystart="255" bodyend="259"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dialog_box_1a55ca09b60fd3ec78be65e03ca928753d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="interface_i_dialog_box" kindref="compound">IDialogBox</ref></type>
+        <definition>IDialogBox DialogBox.SetPrefButtonHeight</definition>
+        <argsstring>(float prefHeight)</argsstring>
+        <name>SetPrefButtonHeight</name>
+        <reimplements refid="interface_i_dialog_box_1a2aae35e079164321ff114341cf4c3471">SetPrefButtonHeight</reimplements>
+        <param>
+          <type>float</type>
+          <declname>prefHeight</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" line="261" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" bodystart="261" bodyend="265"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dialog_box_1a006faa5886bb6c01682d4d7d05305364" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="interface_i_dialog_box" kindref="compound">IDialogBox</ref></type>
+        <definition>IDialogBox DialogBox.SetSize</definition>
+        <argsstring>(float?width=null, float?height=null)</argsstring>
+        <name>SetSize</name>
+        <reimplements refid="interface_i_dialog_box_1a52652db287e78af229511a0aa8a9e134">SetSize</reimplements>
+        <param>
+          <type>float?</type>
+          <declname>width</declname>
+          <defval>null</defval>
+        </param>
+        <param>
+          <type>float?</type>
+          <declname>height</declname>
+          <defval>null</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" line="267" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" bodystart="267" bodyend="272"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="168">
+        <label>IDialogBox</label>
+        <link refid="interface_i_dialog_box"/>
+      </node>
+      <node id="167">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="166">
+        <label>DialogBox</label>
+        <link refid="class_dialog_box"/>
+        <childnode refid="167" relation="public-inheritance">
+        </childnode>
+        <childnode refid="168" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="172">
+        <label>DialogBox.DialogData</label>
+        <link refid="class_dialog_box_1_1_dialog_data"/>
+      </node>
+      <node id="171">
+        <label>IDialogBox</label>
+        <link refid="interface_i_dialog_box"/>
+      </node>
+      <node id="170">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="169">
+        <label>DialogBox</label>
+        <link refid="class_dialog_box"/>
+        <childnode refid="170" relation="public-inheritance">
+        </childnode>
+        <childnode refid="171" relation="public-inheritance">
+        </childnode>
+        <childnode refid="172" relation="usage">
+          <edgelabel>dialogData</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" line="10" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/DialogBox.cs" bodystart="9" bodyend="273"/>
+    <listofallmembers>
+      <member refid="class_dialog_box_1adcd9ed3f78937548ca638e50c11a29e4" prot="public" virt="non-virtual"><scope>DialogBox</scope><name>AddButton</name></member>
+      <member refid="class_dialog_box_1a7497964e0713f55f807c91aada4f5787" prot="public" virt="non-virtual"><scope>DialogBox</scope><name>AddCancelButton</name></member>
+      <member refid="class_dialog_box_1a4f6da9356c9d58e5027eff19f62f94bc" prot="private" virt="non-virtual"><scope>DialogBox</scope><name>Awake</name></member>
+      <member refid="class_dialog_box_1aa441cb3271a3eb1fb85da1329d8f5088" prot="private" virt="non-virtual"><scope>DialogBox</scope><name>buttonsPanel</name></member>
+      <member refid="class_dialog_box_1a551034072f152fbe9e89b6c0d88c846e" prot="private" virt="non-virtual"><scope>DialogBox</scope><name>cg</name></member>
+      <member refid="class_dialog_box_1a680a4daae84e214fe711fc8db9f1e0f3" prot="private" virt="non-virtual"><scope>DialogBox</scope><name>defaultText</name></member>
+      <member refid="class_dialog_box_1a7341499575888970b89e64c16835ce45" prot="private" virt="non-virtual"><scope>DialogBox</scope><name>defaultTextColor</name></member>
+      <member refid="class_dialog_box_1ad82d65e6dcc1a503bc0ce4d9c86fc97d" prot="private" virt="non-virtual"><scope>DialogBox</scope><name>defaultTitle</name></member>
+      <member refid="class_dialog_box_1ac6c7197a92dc0397ac928483927be56e" prot="private" virt="non-virtual"><scope>DialogBox</scope><name>defaultTitleColor</name></member>
+      <member refid="class_dialog_box_1a5d22e8783cd9c361bdf4b34d9fe0a009" prot="private" virt="non-virtual"><scope>DialogBox</scope><name>dialogData</name></member>
+      <member refid="class_dialog_box_1a6d5e421b5b7b2748a85d8dbff4b9a1e2" prot="private" virt="non-virtual"><scope>DialogBox</scope><name>fitter</name></member>
+      <member refid="class_dialog_box_1aa4779eb84cd66b3e1f2bf9ace65c57cf" prot="public" virt="non-virtual"><scope>DialogBox</scope><name>Hide</name></member>
+      <member refid="class_dialog_box_1aa2ae0ea7a4b7a99ed6f1ca0216c857ce" prot="private" virt="non-virtual"><scope>DialogBox</scope><name>icon</name></member>
+      <member refid="class_dialog_box_1aa7300d78b04d7a49a14e6d33cb0977d9" prot="private" virt="non-virtual"><scope>DialogBox</scope><name>iconContent</name></member>
+      <member refid="class_dialog_box_1ad3b9b51e68ca37fdbaf9eb3d1a890125" prot="public" virt="non-virtual"><scope>DialogBox</scope><name>Instance</name></member>
+      <member refid="class_dialog_box_1ae66195d0d261a291ddb7840deefb6099" prot="private" virt="non-virtual"><scope>DialogBox</scope><name>originalButton</name></member>
+      <member refid="class_dialog_box_1ac1edc6c0e2806402a0f4b8317a2816a3" prot="public" virt="non-virtual"><scope>DialogBox</scope><name>Owner</name></member>
+      <member refid="class_dialog_box_1a4670255d15e889114e73509d961b0f50" prot="private" virt="non-virtual"><scope>DialogBox</scope><name>Reset</name></member>
+      <member refid="class_dialog_box_1a3cdce01ed5e10d6920637eb5e01ef092" prot="private" virt="non-virtual"><scope>DialogBox</scope><name>scrolableText</name></member>
+      <member refid="class_dialog_box_1a59cc51c2fa97691b22eaa6cf07e330ba" prot="private" virt="non-virtual"><scope>DialogBox</scope><name>scrolableTextContent</name></member>
+      <member refid="class_dialog_box_1a2e5ec7dbe7b15bb60f4b1b70ec3956f7" prot="public" virt="non-virtual"><scope>DialogBox</scope><name>SetIcon</name></member>
+      <member refid="class_dialog_box_1a55ca09b60fd3ec78be65e03ca928753d" prot="public" virt="non-virtual"><scope>DialogBox</scope><name>SetPrefButtonHeight</name></member>
+      <member refid="class_dialog_box_1a006faa5886bb6c01682d4d7d05305364" prot="public" virt="non-virtual"><scope>DialogBox</scope><name>SetSize</name></member>
+      <member refid="class_dialog_box_1a39c10515037ff9a0cc2ed6367b8411c3" prot="public" virt="non-virtual"><scope>DialogBox</scope><name>SetText</name></member>
+      <member refid="class_dialog_box_1a8f417e408ae0b5f1d9890fb05bd556d4" prot="public" virt="non-virtual"><scope>DialogBox</scope><name>SetTextColor</name></member>
+      <member refid="class_dialog_box_1aa49804a1a1db3edf886e8c9d9b581327" prot="public" virt="non-virtual"><scope>DialogBox</scope><name>SetTitle</name></member>
+      <member refid="class_dialog_box_1afd696774686a2be50cadd5b2f183e295" prot="public" virt="non-virtual"><scope>DialogBox</scope><name>SetTitleColor</name></member>
+      <member refid="class_dialog_box_1ae41e137bacfbf6d730e3fe4eef88ceb1" prot="public" virt="non-virtual"><scope>DialogBox</scope><name>Show</name></member>
+      <member refid="class_dialog_box_1afa16758c02722fdd335091e0f5f58a54" prot="public" virt="non-virtual"><scope>DialogBox</scope><name>Show</name></member>
+      <member refid="class_dialog_box_1a85ea50ea435cec0291e7262bb58c737b" prot="public" virt="non-virtual"><scope>DialogBox</scope><name>Showned</name></member>
+      <member refid="class_dialog_box_1adada61230e708d1b769caa1574c3d699" prot="private" virt="non-virtual"><scope>DialogBox</scope><name>startPosition</name></member>
+      <member refid="class_dialog_box_1afa2616fd50bf180ec341f6292d1973af" prot="private" virt="non-virtual"><scope>DialogBox</scope><name>thisTansform</name></member>
+      <member refid="class_dialog_box_1a059b954beff234ef0626d2011de53487" prot="private" virt="non-virtual"><scope>DialogBox</scope><name>title</name></member>
+      <member refid="class_dialog_box_1af3e9d5ee00157392071d6ccf07d6657b" prot="private" virt="non-virtual"><scope>DialogBox</scope><name>unscrolableText</name></member>
+      <member refid="class_dialog_box_1a420438d87f2023cecd7841c47a5f6214" prot="private" virt="non-virtual"><scope>DialogBox</scope><name>unscrolableTextContent</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

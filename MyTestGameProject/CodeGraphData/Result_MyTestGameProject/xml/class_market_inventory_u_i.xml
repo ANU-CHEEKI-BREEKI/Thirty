@@ -1,0 +1,395 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_market_inventory_u_i" kind="class" prot="public">
+    <compoundname>MarketInventoryUI</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_market_inventory_u_i_1ad3bf9f4a3564aab4ab739495ce8f87cb" prot="private" static="no" mutable="no">
+        <type>GameObject</type>
+        <definition>GameObject MarketInventoryUI.inventoryItemOriginal</definition>
+        <argsstring></argsstring>
+        <name>inventoryItemOriginal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/MarketInventoryUI.cs" line="9" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/MarketInventoryUI.cs" bodystart="9" bodyend="-1"/>
+        <referencedby refid="class_market_inventory_u_i_1ac299b6234d825007f45f52731e74ea2e" compoundref="_market_inventory_u_i_8cs" startline="120" endline="133">SetImage</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_market_inventory_u_i_1ae0a44e9f4cd8d7bec5b0b062c17d0180" prot="private" static="no" mutable="no">
+        <type>Transform</type>
+        <definition>Transform MarketInventoryUI.itemsContainer</definition>
+        <argsstring></argsstring>
+        <name>itemsContainer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/MarketInventoryUI.cs" line="12" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/MarketInventoryUI.cs" bodystart="12" bodyend="-1"/>
+        <referencedby refid="class_market_inventory_u_i_1a4feeddb98cc967d08b2a81f63755576e" compoundref="_market_inventory_u_i_8cs" startline="30" endline="41">Awake</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_market_inventory_u_i_1afe86f0df59624ff8cf58155aa53b3839" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MarketInventoryUI.autoFillMarket</definition>
+        <argsstring></argsstring>
+        <name>autoFillMarket</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/MarketInventoryUI.cs" line="15" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/MarketInventoryUI.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_market_inventory_u_i_1a903c98f031dab6339bedba39094cba89" prot="private" static="no" mutable="no">
+        <type><ref refid="class_equipment" kindref="compound">Equipment</ref>[]</type>
+        <definition>Equipment [] MarketInventoryUI.originalEquipment</definition>
+        <argsstring></argsstring>
+        <name>originalEquipment</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/MarketInventoryUI.cs" line="16" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/MarketInventoryUI.cs" bodystart="16" bodyend="-1"/>
+        <referencedby refid="class_market_inventory_u_i_1a586762e21dfe5168dd066839b4067463" compoundref="_market_inventory_u_i_8cs" startline="135" endline="160">AutiFill</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_market_inventory_u_i_1a19e027f80e3a74cb9a20e5e8c257c40c" prot="private" static="no" mutable="no">
+        <type>AnimationCurve</type>
+        <definition>AnimationCurve MarketInventoryUI.dependanceOfGameLevel</definition>
+        <argsstring></argsstring>
+        <name>dependanceOfGameLevel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/MarketInventoryUI.cs" line="18" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/MarketInventoryUI.cs" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_market_inventory_u_i_1abea10707b3919d4a2909adc49f1cf8f6" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int MarketInventoryUI.minLevel</definition>
+        <argsstring></argsstring>
+        <name>minLevel</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/MarketInventoryUI.cs" line="19" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/MarketInventoryUI.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_market_inventory_u_i_1af1fa86f203ee64579fe878b7e20dc585" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int MarketInventoryUI.maxLevel</definition>
+        <argsstring></argsstring>
+        <name>maxLevel</name>
+        <initializer>= 20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/MarketInventoryUI.cs" line="20" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/MarketInventoryUI.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_market_inventory_u_i_1aa9a8abf05b264e7c60d4dab8d2789daf" prot="private" static="no" mutable="no">
+        <type>List&lt; Transform &gt;</type>
+        <definition>List&lt;Transform&gt; MarketInventoryUI.items</definition>
+        <argsstring></argsstring>
+        <name>items</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/MarketInventoryUI.cs" line="22" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/MarketInventoryUI.cs" bodystart="22" bodyend="-1"/>
+        <referencedby refid="class_market_inventory_u_i_1a64d836292cf8f246f89a7f242d7d2d94" compoundref="_market_inventory_u_i_8cs" startline="49" endline="72">AddToInventory</referencedby>
+        <referencedby refid="class_market_inventory_u_i_1a4feeddb98cc967d08b2a81f63755576e" compoundref="_market_inventory_u_i_8cs" startline="30" endline="41">Awake</referencedby>
+        <referencedby refid="class_market_inventory_u_i_1a302e86a0d160fe76dfe434a7515b5c35" compoundref="_market_inventory_u_i_8cs" startline="98" endline="118">RefreshUI</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_market_inventory_u_i_1a1375825ccab0850a70828f9cbfe3e5f2" prot="private" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_equipment_stack" kindref="compound">EquipmentStack</ref> &gt;</type>
+        <definition>List&lt;EquipmentStack&gt; MarketInventoryUI.inventory</definition>
+        <argsstring></argsstring>
+        <name>inventory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/MarketInventoryUI.cs" line="24" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/MarketInventoryUI.cs" bodystart="24" bodyend="-1"/>
+        <referencedby refid="class_market_inventory_u_i_1a64d836292cf8f246f89a7f242d7d2d94" compoundref="_market_inventory_u_i_8cs" startline="49" endline="72">AddToInventory</referencedby>
+        <referencedby refid="class_market_inventory_u_i_1a4feeddb98cc967d08b2a81f63755576e" compoundref="_market_inventory_u_i_8cs" startline="30" endline="41">Awake</referencedby>
+        <referencedby refid="class_market_inventory_u_i_1a302e86a0d160fe76dfe434a7515b5c35" compoundref="_market_inventory_u_i_8cs" startline="98" endline="118">RefreshUI</referencedby>
+        <referencedby refid="class_market_inventory_u_i_1a32525d089b9e3bbe01e69c97f3f4bd99" compoundref="_market_inventory_u_i_8cs" startline="74" endline="96">RemoveFtomInventory</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_market_inventory_u_i_1a717985db70aaa729532ad675a3ef9982" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>bool</type>
+        <definition>bool MarketInventoryUI.Fill</definition>
+        <argsstring></argsstring>
+        <name>Fill</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/MarketInventoryUI.cs" line="26" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/MarketInventoryUI.cs" bodystart="26" bodyend="-1"/>
+        <referencedby refid="class_drop_to_equipment_market_1af9e870c0b5ae52ac88b77dcf433c3409" compoundref="_drop_to_equipment_market_8cs" startline="28" endline="44">DropToEquipmentMarket.AddToThisInventory</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_market_inventory_u_i_1ad9973a305d4f6ba6990e20204047d7ea" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_market_inventory_u_i" kindref="compound">MarketInventoryUI</ref></type>
+        <definition>MarketInventoryUI MarketInventoryUI.Instance</definition>
+        <argsstring></argsstring>
+        <name>Instance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/MarketInventoryUI.cs" line="28" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/MarketInventoryUI.cs" bodystart="28" bodyend="-1"/>
+        <referencedby refid="class_drop_to_equipment_market_1af9e870c0b5ae52ac88b77dcf433c3409" compoundref="_drop_to_equipment_market_8cs" startline="28" endline="44">DropToEquipmentMarket.AddToThisInventory</referencedby>
+        <referencedby refid="class_market_inventory_u_i_1a4feeddb98cc967d08b2a81f63755576e" compoundref="_market_inventory_u_i_8cs" startline="30" endline="41">Awake</referencedby>
+        <referencedby refid="class_a_drop_to_me_1aa823b910877eb709c120b6e082063ac0" compoundref="_a_drop_to_me_8cs" startline="37" endline="53">ADropToMe.RefreshUI</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_market_inventory_u_i_1a4feeddb98cc967d08b2a81f63755576e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MarketInventoryUI.Awake</definition>
+        <argsstring>()</argsstring>
+        <name>Awake</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/MarketInventoryUI.cs" line="30" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/MarketInventoryUI.cs" bodystart="30" bodyend="41"/>
+        <references refid="class_market_inventory_u_i_1ad9973a305d4f6ba6990e20204047d7ea" compoundref="_market_inventory_u_i_8cs" startline="28">Instance</references>
+        <references refid="class_market_inventory_u_i_1a1375825ccab0850a70828f9cbfe3e5f2" compoundref="_market_inventory_u_i_8cs" startline="24">inventory</references>
+        <references refid="class_market_inventory_u_i_1aa9a8abf05b264e7c60d4dab8d2789daf" compoundref="_market_inventory_u_i_8cs" startline="22">items</references>
+        <references refid="class_market_inventory_u_i_1ae0a44e9f4cd8d7bec5b0b062c17d0180" compoundref="_market_inventory_u_i_8cs" startline="12">itemsContainer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_market_inventory_u_i_1a4370553c3db78f4eeb5cbb18f9690493" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MarketInventoryUI.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/MarketInventoryUI.cs" line="43" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/MarketInventoryUI.cs" bodystart="43" bodyend="47"/>
+        <references refid="class_market_inventory_u_i_1a586762e21dfe5168dd066839b4067463" compoundref="_market_inventory_u_i_8cs" startline="135" endline="160">AutiFill</references>
+        <references refid="class_market_inventory_u_i_1a302e86a0d160fe76dfe434a7515b5c35" compoundref="_market_inventory_u_i_8cs" startline="98" endline="118">RefreshUI</references>
+      </memberdef>
+      <memberdef kind="function" id="class_market_inventory_u_i_1a586762e21dfe5168dd066839b4067463" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MarketInventoryUI.AutiFill</definition>
+        <argsstring>()</argsstring>
+        <name>AutiFill</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/MarketInventoryUI.cs" line="135" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/MarketInventoryUI.cs" bodystart="135" bodyend="160"/>
+        <references refid="class_market_inventory_u_i_1a64d836292cf8f246f89a7f242d7d2d94" compoundref="_market_inventory_u_i_8cs" startline="49" endline="72">AddToInventory</references>
+        <references refid="class_item_1ab5454b792ec8183e499e187313654aa5" compoundref="_item_8cs" startline="28">Item.MainPropertie</references>
+        <references refid="class_market_inventory_u_i_1a903c98f031dab6339bedba39094cba89" compoundref="_market_inventory_u_i_8cs" startline="16">originalEquipment</references>
+        <referencedby refid="class_market_inventory_u_i_1a4370553c3db78f4eeb5cbb18f9690493" compoundref="_market_inventory_u_i_8cs" startline="43" endline="47">Start</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_market_inventory_u_i_1a64d836292cf8f246f89a7f242d7d2d94" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MarketInventoryUI.AddToInventory</definition>
+        <argsstring>(EquipmentStack stack)</argsstring>
+        <name>AddToInventory</name>
+        <param>
+          <type><ref refid="class_equipment_stack" kindref="compound">EquipmentStack</ref></type>
+          <declname>stack</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/MarketInventoryUI.cs" line="49" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/MarketInventoryUI.cs" bodystart="49" bodyend="72"/>
+        <references refid="class_market_inventory_u_i_1a1375825ccab0850a70828f9cbfe3e5f2" compoundref="_market_inventory_u_i_8cs" startline="24">inventory</references>
+        <references refid="class_market_inventory_u_i_1aa9a8abf05b264e7c60d4dab8d2789daf" compoundref="_market_inventory_u_i_8cs" startline="22">items</references>
+        <referencedby refid="class_market_inventory_u_i_1a586762e21dfe5168dd066839b4067463" compoundref="_market_inventory_u_i_8cs" startline="135" endline="160">AutiFill</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_market_inventory_u_i_1a32525d089b9e3bbe01e69c97f3f4bd99" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MarketInventoryUI.RemoveFtomInventory</definition>
+        <argsstring>(EquipmentStack stack)</argsstring>
+        <name>RemoveFtomInventory</name>
+        <param>
+          <type><ref refid="class_equipment_stack" kindref="compound">EquipmentStack</ref></type>
+          <declname>stack</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/MarketInventoryUI.cs" line="74" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/MarketInventoryUI.cs" bodystart="74" bodyend="96"/>
+        <references refid="class_market_inventory_u_i_1a1375825ccab0850a70828f9cbfe3e5f2" compoundref="_market_inventory_u_i_8cs" startline="24">inventory</references>
+      </memberdef>
+      <memberdef kind="function" id="class_market_inventory_u_i_1a302e86a0d160fe76dfe434a7515b5c35" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MarketInventoryUI.RefreshUI</definition>
+        <argsstring>()</argsstring>
+        <name>RefreshUI</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/MarketInventoryUI.cs" line="98" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/MarketInventoryUI.cs" bodystart="98" bodyend="118"/>
+        <references refid="class_market_inventory_u_i_1a1375825ccab0850a70828f9cbfe3e5f2" compoundref="_market_inventory_u_i_8cs" startline="24">inventory</references>
+        <references refid="class_market_inventory_u_i_1aa9a8abf05b264e7c60d4dab8d2789daf" compoundref="_market_inventory_u_i_8cs" startline="22">items</references>
+        <references refid="class_market_inventory_u_i_1ac299b6234d825007f45f52731e74ea2e" compoundref="_market_inventory_u_i_8cs" startline="120" endline="133">SetImage</references>
+        <referencedby refid="class_market_inventory_u_i_1a4370553c3db78f4eeb5cbb18f9690493" compoundref="_market_inventory_u_i_8cs" startline="43" endline="47">Start</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_market_inventory_u_i_1ac299b6234d825007f45f52731e74ea2e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MarketInventoryUI.SetImage</definition>
+        <argsstring>(Transform cell, EquipmentStack stack, bool canDrag)</argsstring>
+        <name>SetImage</name>
+        <param>
+          <type>Transform</type>
+          <declname>cell</declname>
+        </param>
+        <param>
+          <type><ref refid="class_equipment_stack" kindref="compound">EquipmentStack</ref></type>
+          <declname>stack</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>canDrag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/MarketInventoryUI.cs" line="120" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/MarketInventoryUI.cs" bodystart="120" bodyend="133"/>
+        <references refid="class_market_inventory_u_i_1ad3bf9f4a3564aab4ab739495ce8f87cb" compoundref="_market_inventory_u_i_8cs" startline="9">inventoryItemOriginal</references>
+        <referencedby refid="class_market_inventory_u_i_1a302e86a0d160fe76dfe434a7515b5c35" compoundref="_market_inventory_u_i_8cs" startline="98" endline="118">RefreshUI</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="573">
+        <label>MarketInventoryUI</label>
+        <link refid="class_market_inventory_u_i"/>
+        <childnode refid="574" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="574">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="577">
+        <label>Equipment</label>
+        <link refid="class_equipment"/>
+        <childnode refid="578" relation="public-inheritance">
+        </childnode>
+        <childnode refid="580" relation="usage">
+          <edgelabel>stats</edgelabel>
+        </childnode>
+      </node>
+      <node id="579">
+        <label>Item.MainProperties</label>
+        <link refid="struct_item_1_1_main_properties"/>
+      </node>
+      <node id="582">
+        <label>Damage</label>
+        <link refid="struct_damage"/>
+      </node>
+      <node id="581">
+        <label>IDescriptionable</label>
+        <link refid="interface_i_descriptionable"/>
+      </node>
+      <node id="575">
+        <label>MarketInventoryUI</label>
+        <link refid="class_market_inventory_u_i"/>
+        <childnode refid="576" relation="public-inheritance">
+        </childnode>
+        <childnode refid="577" relation="usage">
+          <edgelabel>originalEquipment</edgelabel>
+        </childnode>
+      </node>
+      <node id="578">
+        <label>Item</label>
+        <link refid="class_item"/>
+        <childnode refid="576" relation="public-inheritance">
+        </childnode>
+        <childnode refid="579" relation="usage">
+          <edgelabel>mainProperties</edgelabel>
+        </childnode>
+      </node>
+      <node id="580">
+        <label>EquipmentStats</label>
+        <link refid="struct_equipment_stats"/>
+        <childnode refid="581" relation="public-inheritance">
+        </childnode>
+        <childnode refid="582" relation="usage">
+          <edgelabel>damage</edgelabel>
+        </childnode>
+      </node>
+      <node id="576">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/MarketInventoryUI.cs" line="8" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/MarketInventoryUI.cs" bodystart="7" bodyend="161"/>
+    <listofallmembers>
+      <member refid="class_market_inventory_u_i_1a64d836292cf8f246f89a7f242d7d2d94" prot="public" virt="non-virtual"><scope>MarketInventoryUI</scope><name>AddToInventory</name></member>
+      <member refid="class_market_inventory_u_i_1a586762e21dfe5168dd066839b4067463" prot="private" virt="non-virtual"><scope>MarketInventoryUI</scope><name>AutiFill</name></member>
+      <member refid="class_market_inventory_u_i_1afe86f0df59624ff8cf58155aa53b3839" prot="private" virt="non-virtual"><scope>MarketInventoryUI</scope><name>autoFillMarket</name></member>
+      <member refid="class_market_inventory_u_i_1a4feeddb98cc967d08b2a81f63755576e" prot="private" virt="non-virtual"><scope>MarketInventoryUI</scope><name>Awake</name></member>
+      <member refid="class_market_inventory_u_i_1a19e027f80e3a74cb9a20e5e8c257c40c" prot="private" virt="non-virtual"><scope>MarketInventoryUI</scope><name>dependanceOfGameLevel</name></member>
+      <member refid="class_market_inventory_u_i_1a717985db70aaa729532ad675a3ef9982" prot="public" virt="non-virtual"><scope>MarketInventoryUI</scope><name>Fill</name></member>
+      <member refid="class_market_inventory_u_i_1ad9973a305d4f6ba6990e20204047d7ea" prot="public" virt="non-virtual"><scope>MarketInventoryUI</scope><name>Instance</name></member>
+      <member refid="class_market_inventory_u_i_1a1375825ccab0850a70828f9cbfe3e5f2" prot="private" virt="non-virtual"><scope>MarketInventoryUI</scope><name>inventory</name></member>
+      <member refid="class_market_inventory_u_i_1ad3bf9f4a3564aab4ab739495ce8f87cb" prot="private" virt="non-virtual"><scope>MarketInventoryUI</scope><name>inventoryItemOriginal</name></member>
+      <member refid="class_market_inventory_u_i_1aa9a8abf05b264e7c60d4dab8d2789daf" prot="private" virt="non-virtual"><scope>MarketInventoryUI</scope><name>items</name></member>
+      <member refid="class_market_inventory_u_i_1ae0a44e9f4cd8d7bec5b0b062c17d0180" prot="private" virt="non-virtual"><scope>MarketInventoryUI</scope><name>itemsContainer</name></member>
+      <member refid="class_market_inventory_u_i_1af1fa86f203ee64579fe878b7e20dc585" prot="private" virt="non-virtual"><scope>MarketInventoryUI</scope><name>maxLevel</name></member>
+      <member refid="class_market_inventory_u_i_1abea10707b3919d4a2909adc49f1cf8f6" prot="private" virt="non-virtual"><scope>MarketInventoryUI</scope><name>minLevel</name></member>
+      <member refid="class_market_inventory_u_i_1a903c98f031dab6339bedba39094cba89" prot="private" virt="non-virtual"><scope>MarketInventoryUI</scope><name>originalEquipment</name></member>
+      <member refid="class_market_inventory_u_i_1a302e86a0d160fe76dfe434a7515b5c35" prot="public" virt="non-virtual"><scope>MarketInventoryUI</scope><name>RefreshUI</name></member>
+      <member refid="class_market_inventory_u_i_1a32525d089b9e3bbe01e69c97f3f4bd99" prot="public" virt="non-virtual"><scope>MarketInventoryUI</scope><name>RemoveFtomInventory</name></member>
+      <member refid="class_market_inventory_u_i_1ac299b6234d825007f45f52731e74ea2e" prot="public" virt="non-virtual"><scope>MarketInventoryUI</scope><name>SetImage</name></member>
+      <member refid="class_market_inventory_u_i_1a4370553c3db78f4eeb5cbb18f9690493" prot="private" virt="non-virtual"><scope>MarketInventoryUI</scope><name>Start</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

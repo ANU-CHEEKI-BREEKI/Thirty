@@ -1,0 +1,252 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_confirm_panel" kind="class" prot="public">
+    <compoundname>ConfirmPanel</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_confirm_panel_1a660dee471787026cb8a0d7b79a8616eb" prot="private" static="no" mutable="no">
+        <type>Text</type>
+        <definition>Text ConfirmPanel.header</definition>
+        <argsstring></argsstring>
+        <name>header</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/ConfirmPanel.cs" line="10" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/ConfirmPanel.cs" bodystart="10" bodyend="-1"/>
+        <referencedby refid="class_confirm_panel_1ad4290801a5b44091bf3bb604cffb40a1" compoundref="_confirm_panel_8cs" startline="49" endline="58">Show</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_confirm_panel_1a8aa0331cf809e03941139d27d75dca91" prot="private" static="no" mutable="no">
+        <type>Text</type>
+        <definition>Text ConfirmPanel.info</definition>
+        <argsstring></argsstring>
+        <name>info</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/ConfirmPanel.cs" line="11" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/ConfirmPanel.cs" bodystart="11" bodyend="-1"/>
+        <referencedby refid="class_confirm_panel_1ad4290801a5b44091bf3bb604cffb40a1" compoundref="_confirm_panel_8cs" startline="49" endline="58">Show</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_confirm_panel_1a4c3c307bb191f8e13cdcd9d0862f1c97" prot="private" static="no" mutable="no">
+        <type>Button</type>
+        <definition>Button ConfirmPanel.buttonYes</definition>
+        <argsstring></argsstring>
+        <name>buttonYes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/ConfirmPanel.cs" line="13" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/ConfirmPanel.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_confirm_panel_1a719e3ed091ae42c41c817247dd1a753a" prot="private" static="no" mutable="no">
+        <type>Button</type>
+        <definition>Button ConfirmPanel.buttonNo</definition>
+        <argsstring></argsstring>
+        <name>buttonNo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/ConfirmPanel.cs" line="14" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/ConfirmPanel.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_confirm_panel_1a13b601d990220b80f9c7585df21b913c" prot="private" static="no" mutable="no">
+        <type>CanvasGroup</type>
+        <definition>CanvasGroup ConfirmPanel.cg</definition>
+        <argsstring></argsstring>
+        <name>cg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/ConfirmPanel.cs" line="18" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/ConfirmPanel.cs" bodystart="18" bodyend="-1"/>
+        <referencedby refid="class_confirm_panel_1a61f5ac78f853fd6ea58b2d72c2827a34" compoundref="_confirm_panel_8cs" startline="21" endline="34">Awake</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_confirm_panel_1a8b5908b3675a644aab1bc4b97e065d12" prot="private" static="no" mutable="no">
+        <type>Action</type>
+        <definition>Action ConfirmPanel.OnYes</definition>
+        <argsstring></argsstring>
+        <name>OnYes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/ConfirmPanel.cs" line="19" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/ConfirmPanel.cs" bodystart="19" bodyend="-1"/>
+        <referencedby refid="class_confirm_panel_1a01f2d2069b4b437545a4baecabe2cd55" compoundref="_confirm_panel_8cs" startline="36" endline="42">OnPresYes</referencedby>
+        <referencedby refid="class_confirm_panel_1ad4290801a5b44091bf3bb604cffb40a1" compoundref="_confirm_panel_8cs" startline="49" endline="58">Show</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_confirm_panel_1ab13a0afe451de337854a0c343ea4e3c1" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_confirm_panel" kindref="compound">ConfirmPanel</ref></type>
+        <definition>ConfirmPanel ConfirmPanel.Instance</definition>
+        <argsstring></argsstring>
+        <name>Instance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/ConfirmPanel.cs" line="16" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/ConfirmPanel.cs" bodystart="16" bodyend="-1"/>
+        <referencedby refid="class_confirm_panel_1a61f5ac78f853fd6ea58b2d72c2827a34" compoundref="_confirm_panel_8cs" startline="21" endline="34">Awake</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_confirm_panel_1a61f5ac78f853fd6ea58b2d72c2827a34" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ConfirmPanel.Awake</definition>
+        <argsstring>()</argsstring>
+        <name>Awake</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/ConfirmPanel.cs" line="21" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/ConfirmPanel.cs" bodystart="21" bodyend="34"/>
+        <references refid="class_confirm_panel_1a13b601d990220b80f9c7585df21b913c" compoundref="_confirm_panel_8cs" startline="18">cg</references>
+        <references refid="class_confirm_panel_1ab13a0afe451de337854a0c343ea4e3c1" compoundref="_confirm_panel_8cs" startline="16">Instance</references>
+        <references refid="class_confirm_panel_1a6a1607068884e0ba696713fae44c30d9" compoundref="_confirm_panel_8cs" startline="44" endline="47">OnPresNo</references>
+        <references refid="class_confirm_panel_1a01f2d2069b4b437545a4baecabe2cd55" compoundref="_confirm_panel_8cs" startline="36" endline="42">OnPresYes</references>
+      </memberdef>
+      <memberdef kind="function" id="class_confirm_panel_1a01f2d2069b4b437545a4baecabe2cd55" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ConfirmPanel.OnPresYes</definition>
+        <argsstring>()</argsstring>
+        <name>OnPresYes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/ConfirmPanel.cs" line="36" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/ConfirmPanel.cs" bodystart="36" bodyend="42"/>
+        <references refid="class_confirm_panel_1aae667ece9021632d1dd9383bc5cc9cbc" compoundref="_confirm_panel_8cs" startline="60" endline="64">Hide</references>
+        <references refid="class_confirm_panel_1a8b5908b3675a644aab1bc4b97e065d12" compoundref="_confirm_panel_8cs" startline="19">OnYes</references>
+        <referencedby refid="class_confirm_panel_1a61f5ac78f853fd6ea58b2d72c2827a34" compoundref="_confirm_panel_8cs" startline="21" endline="34">Awake</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_confirm_panel_1a6a1607068884e0ba696713fae44c30d9" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ConfirmPanel.OnPresNo</definition>
+        <argsstring>()</argsstring>
+        <name>OnPresNo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/ConfirmPanel.cs" line="44" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/ConfirmPanel.cs" bodystart="44" bodyend="47"/>
+        <references refid="class_confirm_panel_1aae667ece9021632d1dd9383bc5cc9cbc" compoundref="_confirm_panel_8cs" startline="60" endline="64">Hide</references>
+        <referencedby refid="class_confirm_panel_1a61f5ac78f853fd6ea58b2d72c2827a34" compoundref="_confirm_panel_8cs" startline="21" endline="34">Awake</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_confirm_panel_1ad4290801a5b44091bf3bb604cffb40a1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ConfirmPanel.Show</definition>
+        <argsstring>(string header, string info, Action onPressYes=null)</argsstring>
+        <name>Show</name>
+        <param>
+          <type>string</type>
+          <declname>header</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>info</declname>
+        </param>
+        <param>
+          <type>Action</type>
+          <declname>onPressYes</declname>
+          <defval>null</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/ConfirmPanel.cs" line="49" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/ConfirmPanel.cs" bodystart="49" bodyend="58"/>
+        <references refid="class_confirm_panel_1a660dee471787026cb8a0d7b79a8616eb" compoundref="_confirm_panel_8cs" startline="10">header</references>
+        <references refid="class_confirm_panel_1a8aa0331cf809e03941139d27d75dca91" compoundref="_confirm_panel_8cs" startline="11">info</references>
+        <references refid="class_confirm_panel_1a8b5908b3675a644aab1bc4b97e065d12" compoundref="_confirm_panel_8cs" startline="19">OnYes</references>
+      </memberdef>
+      <memberdef kind="function" id="class_confirm_panel_1aae667ece9021632d1dd9383bc5cc9cbc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ConfirmPanel.Hide</definition>
+        <argsstring>()</argsstring>
+        <name>Hide</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/ConfirmPanel.cs" line="60" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/ConfirmPanel.cs" bodystart="60" bodyend="64"/>
+        <referencedby refid="class_confirm_panel_1a6a1607068884e0ba696713fae44c30d9" compoundref="_confirm_panel_8cs" startline="44" endline="47">OnPresNo</referencedby>
+        <referencedby refid="class_confirm_panel_1a01f2d2069b4b437545a4baecabe2cd55" compoundref="_confirm_panel_8cs" startline="36" endline="42">OnPresYes</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="133">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="132">
+        <label>ConfirmPanel</label>
+        <link refid="class_confirm_panel"/>
+        <childnode refid="133" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="136">
+        <label>Text</label>
+      </node>
+      <node id="135">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="134">
+        <label>ConfirmPanel</label>
+        <link refid="class_confirm_panel"/>
+        <childnode refid="135" relation="public-inheritance">
+        </childnode>
+        <childnode refid="136" relation="usage">
+          <edgelabel>header</edgelabel>
+          <edgelabel>info</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/ConfirmPanel.cs" line="9" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/ConfirmPanel.cs" bodystart="8" bodyend="65"/>
+    <listofallmembers>
+      <member refid="class_confirm_panel_1a61f5ac78f853fd6ea58b2d72c2827a34" prot="private" virt="non-virtual"><scope>ConfirmPanel</scope><name>Awake</name></member>
+      <member refid="class_confirm_panel_1a719e3ed091ae42c41c817247dd1a753a" prot="private" virt="non-virtual"><scope>ConfirmPanel</scope><name>buttonNo</name></member>
+      <member refid="class_confirm_panel_1a4c3c307bb191f8e13cdcd9d0862f1c97" prot="private" virt="non-virtual"><scope>ConfirmPanel</scope><name>buttonYes</name></member>
+      <member refid="class_confirm_panel_1a13b601d990220b80f9c7585df21b913c" prot="private" virt="non-virtual"><scope>ConfirmPanel</scope><name>cg</name></member>
+      <member refid="class_confirm_panel_1a660dee471787026cb8a0d7b79a8616eb" prot="private" virt="non-virtual"><scope>ConfirmPanel</scope><name>header</name></member>
+      <member refid="class_confirm_panel_1aae667ece9021632d1dd9383bc5cc9cbc" prot="public" virt="non-virtual"><scope>ConfirmPanel</scope><name>Hide</name></member>
+      <member refid="class_confirm_panel_1a8aa0331cf809e03941139d27d75dca91" prot="private" virt="non-virtual"><scope>ConfirmPanel</scope><name>info</name></member>
+      <member refid="class_confirm_panel_1ab13a0afe451de337854a0c343ea4e3c1" prot="public" virt="non-virtual"><scope>ConfirmPanel</scope><name>Instance</name></member>
+      <member refid="class_confirm_panel_1a6a1607068884e0ba696713fae44c30d9" prot="private" virt="non-virtual"><scope>ConfirmPanel</scope><name>OnPresNo</name></member>
+      <member refid="class_confirm_panel_1a01f2d2069b4b437545a4baecabe2cd55" prot="private" virt="non-virtual"><scope>ConfirmPanel</scope><name>OnPresYes</name></member>
+      <member refid="class_confirm_panel_1a8b5908b3675a644aab1bc4b97e065d12" prot="private" virt="non-virtual"><scope>ConfirmPanel</scope><name>OnYes</name></member>
+      <member refid="class_confirm_panel_1ad4290801a5b44091bf3bb604cffb40a1" prot="public" virt="non-virtual"><scope>ConfirmPanel</scope><name>Show</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

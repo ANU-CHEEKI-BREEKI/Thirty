@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_to_mainmenu" kind="class" prot="public">
+    <compoundname>ToMainmenu</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_to_mainmenu_1a0eb0976c3bbeb424e8c77fc7ef041aa2" prot="private" static="no" mutable="no">
+        <type>Button</type>
+        <definition>Button ToMainmenu.btn</definition>
+        <argsstring></argsstring>
+        <name>btn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/ScenesButtons/ToMainmenu.cs" line="9" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/ScenesButtons/ToMainmenu.cs" bodystart="9" bodyend="-1"/>
+        <referencedby refid="class_to_mainmenu_1a26b4b5603c3d784d429b6f19795216b1" compoundref="_to_mainmenu_8cs" startline="12" endline="16">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_to_mainmenu_1ade6a4bb6795cb16cc26867bbb1cad47c" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ToMainmenu.needConfirm</definition>
+        <argsstring></argsstring>
+        <name>needConfirm</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/ScenesButtons/ToMainmenu.cs" line="10" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/ScenesButtons/ToMainmenu.cs" bodystart="10" bodyend="-1"/>
+        <referencedby refid="class_to_mainmenu_1a41287b6fcace8103c40c1f6ac8a9568e" compoundref="_to_mainmenu_8cs" startline="18" endline="39">OnClick</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_to_mainmenu_1a26b4b5603c3d784d429b6f19795216b1" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ToMainmenu.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/ScenesButtons/ToMainmenu.cs" line="12" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/ScenesButtons/ToMainmenu.cs" bodystart="12" bodyend="16"/>
+        <references refid="class_to_mainmenu_1a0eb0976c3bbeb424e8c77fc7ef041aa2" compoundref="_to_mainmenu_8cs" startline="9">btn</references>
+        <references refid="class_to_mainmenu_1a41287b6fcace8103c40c1f6ac8a9568e" compoundref="_to_mainmenu_8cs" startline="18" endline="39">OnClick</references>
+      </memberdef>
+      <memberdef kind="function" id="class_to_mainmenu_1a41287b6fcace8103c40c1f6ac8a9568e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ToMainmenu.OnClick</definition>
+        <argsstring>()</argsstring>
+        <name>OnClick</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/ScenesButtons/ToMainmenu.cs" line="18" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/ScenesButtons/ToMainmenu.cs" bodystart="18" bodyend="39"/>
+        <references refid="class_to_mainmenu_1af2ccd564120d011f51a6b1aa8c2d6d0d" compoundref="_to_mainmenu_8cs" startline="41" endline="52">FadeOn</references>
+        <references refid="class_localization_1a594bbc0bac471f7530adaf5d015fde86" compoundref="_localization_8cs" startline="133">Localization.goToMainMenu_header</references>
+        <references refid="class_localization_1a513099057300b5d0ee3efdb250dce78d" compoundref="_localization_8cs" startline="134">Localization.goToMainMenu_info</references>
+        <references refid="class_to_mainmenu_1ade6a4bb6795cb16cc26867bbb1cad47c" compoundref="_to_mainmenu_8cs" startline="10">needConfirm</references>
+        <references refid="class_localization_1ac2c2d7d31806621e942e9e912b158918" compoundref="_localization_8cs" startline="69">Localization.no</references>
+        <references refid="class_localization_1afb5e9f6c92e24963a0c6aba4e324ef06" compoundref="_localization_8cs" startline="68">Localization.yes</references>
+        <referencedby refid="class_to_mainmenu_1a26b4b5603c3d784d429b6f19795216b1" compoundref="_to_mainmenu_8cs" startline="12" endline="16">Start</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_to_mainmenu_1af2ccd564120d011f51a6b1aa8c2d6d0d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ToMainmenu.FadeOn</definition>
+        <argsstring>()</argsstring>
+        <name>FadeOn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/ScenesButtons/ToMainmenu.cs" line="41" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/ScenesButtons/ToMainmenu.cs" bodystart="41" bodyend="52"/>
+        <references refid="class_game_manager_1a9a7aa34c324c433dd80fa0d7d1bf37e8" compoundref="_game_manager_8cs" startline="10">GameManager.GamePaused</references>
+        <references refid="class_game_manager_1ad3e717f4fb0f378b969f4457de81f23e" compoundref="_game_manager_8cs" startline="7">GameManager.Instance</references>
+        <referencedby refid="class_to_mainmenu_1a41287b6fcace8103c40c1f6ac8a9568e" compoundref="_to_mainmenu_8cs" startline="18" endline="39">OnClick</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1179">
+        <label>ToMainmenu</label>
+        <link refid="class_to_mainmenu"/>
+        <childnode refid="1180" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1180">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1181">
+        <label>ToMainmenu</label>
+        <link refid="class_to_mainmenu"/>
+        <childnode refid="1182" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1182">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/ScenesButtons/ToMainmenu.cs" line="8" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/ScenesButtons/ToMainmenu.cs" bodystart="7" bodyend="53"/>
+    <listofallmembers>
+      <member refid="class_to_mainmenu_1a0eb0976c3bbeb424e8c77fc7ef041aa2" prot="private" virt="non-virtual"><scope>ToMainmenu</scope><name>btn</name></member>
+      <member refid="class_to_mainmenu_1af2ccd564120d011f51a6b1aa8c2d6d0d" prot="private" virt="non-virtual"><scope>ToMainmenu</scope><name>FadeOn</name></member>
+      <member refid="class_to_mainmenu_1ade6a4bb6795cb16cc26867bbb1cad47c" prot="private" virt="non-virtual"><scope>ToMainmenu</scope><name>needConfirm</name></member>
+      <member refid="class_to_mainmenu_1a41287b6fcace8103c40c1f6ac8a9568e" prot="private" virt="non-virtual"><scope>ToMainmenu</scope><name>OnClick</name></member>
+      <member refid="class_to_mainmenu_1a26b4b5603c3d784d429b6f19795216b1" prot="private" virt="non-virtual"><scope>ToMainmenu</scope><name>Start</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

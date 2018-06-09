@@ -1,0 +1,159 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_show_ally_units_hp" kind="class" prot="public">
+    <compoundname>ShowAllyUnitsHp</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">IPointerDownHandler</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">IPointerUpHandler</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_show_ally_units_hp_1a94557ec6e1c38522d88958f7ec25e9ee" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ShowAllyUnitsHp.duration</definition>
+        <argsstring></argsstring>
+        <name>duration</name>
+        <initializer>= 1.5f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/ShowAllyUnitsHp.cs" line="9" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/ShowAllyUnitsHp.cs" bodystart="9" bodyend="-1"/>
+        <referencedby refid="class_show_ally_units_hp_1a8ab2c5326df22a357e251c3138c394a4" compoundref="_show_ally_units_hp_8cs" startline="23" endline="27">OnPointerUp</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_show_ally_units_hp_1a1e051266575fee7c9359d2b7960e0692" prot="private" static="no" mutable="no">
+        <type>Coroutine</type>
+        <definition>Coroutine ShowAllyUnitsHp.lasCocoutine</definition>
+        <argsstring></argsstring>
+        <name>lasCocoutine</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/ShowAllyUnitsHp.cs" line="10" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/ShowAllyUnitsHp.cs" bodystart="10" bodyend="-1"/>
+        <referencedby refid="class_show_ally_units_hp_1af3d88bf576969bda4d7e0c20739313bf" compoundref="_show_ally_units_hp_8cs" startline="12" endline="21">OnPointerDown</referencedby>
+        <referencedby refid="class_show_ally_units_hp_1a8ab2c5326df22a357e251c3138c394a4" compoundref="_show_ally_units_hp_8cs" startline="23" endline="27">OnPointerUp</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_show_ally_units_hp_1af3d88bf576969bda4d7e0c20739313bf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ShowAllyUnitsHp.OnPointerDown</definition>
+        <argsstring>(PointerEventData eventData)</argsstring>
+        <name>OnPointerDown</name>
+        <param>
+          <type>PointerEventData</type>
+          <declname>eventData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/ShowAllyUnitsHp.cs" line="12" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/ShowAllyUnitsHp.cs" bodystart="12" bodyend="21"/>
+        <references refid="class_squad_1a67533dd4d7786030e65c7548c751c407" compoundref="_squad_8cs" startline="212">Squad.DrawUnitHp</references>
+        <references refid="class_show_ally_units_hp_1a1e051266575fee7c9359d2b7960e0692" compoundref="_show_ally_units_hp_8cs" startline="10">lasCocoutine</references>
+        <references refid="class_squad_1a781a32dd5c6fadbe0a9e04f142ddc9da" compoundref="_squad_8cs" startline="10">Squad.playerSquadInstance</references>
+      </memberdef>
+      <memberdef kind="function" id="class_show_ally_units_hp_1a8ab2c5326df22a357e251c3138c394a4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ShowAllyUnitsHp.OnPointerUp</definition>
+        <argsstring>(PointerEventData eventData)</argsstring>
+        <name>OnPointerUp</name>
+        <param>
+          <type>PointerEventData</type>
+          <declname>eventData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/ShowAllyUnitsHp.cs" line="23" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/ShowAllyUnitsHp.cs" bodystart="23" bodyend="27"/>
+        <references refid="class_show_ally_units_hp_1a94557ec6e1c38522d88958f7ec25e9ee" compoundref="_show_ally_units_hp_8cs" startline="9">duration</references>
+        <references refid="class_show_ally_units_hp_1a1e051266575fee7c9359d2b7960e0692" compoundref="_show_ally_units_hp_8cs" startline="10">lasCocoutine</references>
+        <references refid="class_squad_1a781a32dd5c6fadbe0a9e04f142ddc9da" compoundref="_squad_8cs" startline="10">Squad.playerSquadInstance</references>
+        <references refid="class_show_ally_units_hp_1abb259f1e3f6e28a9bef4d569c8e26561" compoundref="_show_ally_units_hp_8cs" startline="29" endline="35">StopDrawing</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_show_ally_units_hp_1abb259f1e3f6e28a9bef4d569c8e26561" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerator</type>
+        <definition>IEnumerator ShowAllyUnitsHp.StopDrawing</definition>
+        <argsstring>(float duration)</argsstring>
+        <name>StopDrawing</name>
+        <param>
+          <type>float</type>
+          <declname>duration</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/ShowAllyUnitsHp.cs" line="29" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/ShowAllyUnitsHp.cs" bodystart="29" bodyend="35"/>
+        <references refid="class_squad_1a781a32dd5c6fadbe0a9e04f142ddc9da" compoundref="_squad_8cs" startline="10">Squad.playerSquadInstance</references>
+        <referencedby refid="class_show_ally_units_hp_1a8ab2c5326df22a357e251c3138c394a4" compoundref="_show_ally_units_hp_8cs" startline="23" endline="27">OnPointerUp</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="862">
+        <label>IPointerDownHandler</label>
+      </node>
+      <node id="861">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="860">
+        <label>ShowAllyUnitsHp</label>
+        <link refid="class_show_ally_units_hp"/>
+        <childnode refid="861" relation="public-inheritance">
+        </childnode>
+        <childnode refid="862" relation="public-inheritance">
+        </childnode>
+        <childnode refid="863" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="863">
+        <label>IPointerUpHandler</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="866">
+        <label>IPointerDownHandler</label>
+      </node>
+      <node id="865">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="864">
+        <label>ShowAllyUnitsHp</label>
+        <link refid="class_show_ally_units_hp"/>
+        <childnode refid="865" relation="public-inheritance">
+        </childnode>
+        <childnode refid="866" relation="public-inheritance">
+        </childnode>
+        <childnode refid="867" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="867">
+        <label>IPointerUpHandler</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/ShowAllyUnitsHp.cs" line="8" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/ShowAllyUnitsHp.cs" bodystart="7" bodyend="36"/>
+    <listofallmembers>
+      <member refid="class_show_ally_units_hp_1a94557ec6e1c38522d88958f7ec25e9ee" prot="private" virt="non-virtual"><scope>ShowAllyUnitsHp</scope><name>duration</name></member>
+      <member refid="class_show_ally_units_hp_1a1e051266575fee7c9359d2b7960e0692" prot="private" virt="non-virtual"><scope>ShowAllyUnitsHp</scope><name>lasCocoutine</name></member>
+      <member refid="class_show_ally_units_hp_1af3d88bf576969bda4d7e0c20739313bf" prot="public" virt="non-virtual"><scope>ShowAllyUnitsHp</scope><name>OnPointerDown</name></member>
+      <member refid="class_show_ally_units_hp_1a8ab2c5326df22a357e251c3138c394a4" prot="public" virt="non-virtual"><scope>ShowAllyUnitsHp</scope><name>OnPointerUp</name></member>
+      <member refid="class_show_ally_units_hp_1abb259f1e3f6e28a9bef4d569c8e26561" prot="private" virt="non-virtual"><scope>ShowAllyUnitsHp</scope><name>StopDrawing</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

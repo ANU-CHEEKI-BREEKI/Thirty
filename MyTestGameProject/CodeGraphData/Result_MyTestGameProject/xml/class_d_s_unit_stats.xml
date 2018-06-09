@@ -1,0 +1,261 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_d_s_unit_stats" kind="class" prot="public">
+    <compoundname>DSUnitStats</compoundname>
+    <basecompoundref refid="interface_i_savable" prot="public" virt="non-virtual">ISavable</basecompoundref>
+    <innerclass refid="class_d_s_unit_stats_1_1_stat" prot="public">DSUnitStats::Stat</innerclass>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_d_s_unit_stats_1a390c32dc6d25d1acf1b931a4044470bb" prot="private" static="no" mutable="no">
+        <type><ref refid="class_d_s_unit_stats_1_1_stat" kindref="compound">Stat</ref></type>
+        <definition>Stat DSUnitStats.health</definition>
+        <argsstring></argsstring>
+        <name>health</name>
+        <initializer>= new <ref refid="class_d_s_unit_stats_1_1_stat" kindref="compound">Stat</ref>(50, 200, 50)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSUnitStats.cs" line="7" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSUnitStats.cs" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_d_s_unit_stats_1a07bb44e9ebb0cf1f27e50c45147d6b96" prot="private" static="no" mutable="no">
+        <type><ref refid="class_d_s_unit_stats_1_1_stat" kindref="compound">Stat</ref></type>
+        <definition>Stat DSUnitStats.attack</definition>
+        <argsstring></argsstring>
+        <name>attack</name>
+        <initializer>= new <ref refid="class_d_s_unit_stats_1_1_stat" kindref="compound">Stat</ref>(0.2f, 0.7f, 0.2f)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSUnitStats.cs" line="10" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSUnitStats.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_d_s_unit_stats_1ab410860e3f2f45570fe9b4c66b1c2840" prot="private" static="no" mutable="no">
+        <type><ref refid="class_d_s_unit_stats_1_1_stat" kindref="compound">Stat</ref></type>
+        <definition>Stat DSUnitStats.defence</definition>
+        <argsstring></argsstring>
+        <name>defence</name>
+        <initializer>= new <ref refid="class_d_s_unit_stats_1_1_stat" kindref="compound">Stat</ref>(0.2f, 0.7f, 0.2f)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSUnitStats.cs" line="13" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSUnitStats.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_d_s_unit_stats_1ac2acf3be730d01c78435cb540d252657" prot="private" static="no" mutable="no">
+        <type><ref refid="class_d_s_unit_stats_1_1_stat" kindref="compound">Stat</ref></type>
+        <definition>Stat DSUnitStats.speed</definition>
+        <argsstring></argsstring>
+        <name>speed</name>
+        <initializer>= new <ref refid="class_d_s_unit_stats_1_1_stat" kindref="compound">Stat</ref>(35, 50, 35)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSUnitStats.cs" line="16" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSUnitStats.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_d_s_unit_stats_1ab01ecc59b9ce5908a577852f5d10e327" prot="private" static="no" mutable="no">
+        <type><ref refid="class_d_s_unit_stats_1_1_stat" kindref="compound">Stat</ref></type>
+        <definition>Stat DSUnitStats.aceleration</definition>
+        <argsstring></argsstring>
+        <name>aceleration</name>
+        <initializer>= new <ref refid="class_d_s_unit_stats_1_1_stat" kindref="compound">Stat</ref>(35, 60, 35)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSUnitStats.cs" line="19" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSUnitStats.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_d_s_unit_stats_1a1c6a72f8c3967e6ea510a6ce1cb6baf1" prot="private" static="no" mutable="no">
+        <type><ref refid="class_d_s_unit_stats_1_1_stat" kindref="compound">Stat</ref></type>
+        <definition>Stat DSUnitStats.rotationSpeed</definition>
+        <argsstring></argsstring>
+        <name>rotationSpeed</name>
+        <initializer>= new <ref refid="class_d_s_unit_stats_1_1_stat" kindref="compound">Stat</ref>(360, 460,360)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSUnitStats.cs" line="22" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSUnitStats.cs" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_d_s_unit_stats_1a1c7d29ad5253fd41df3ee4f1955014dd" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type><ref refid="class_d_s_unit_stats_1_1_stat" kindref="compound">Stat</ref></type>
+        <definition>Stat DSUnitStats.Health</definition>
+        <argsstring></argsstring>
+        <name>Health</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSUnitStats.cs" line="8" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSUnitStats.cs" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_d_s_unit_stats_1ac6250b8d0e95e131316410e1384fd082" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type><ref refid="class_d_s_unit_stats_1_1_stat" kindref="compound">Stat</ref></type>
+        <definition>Stat DSUnitStats.Attack</definition>
+        <argsstring></argsstring>
+        <name>Attack</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSUnitStats.cs" line="11" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSUnitStats.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_d_s_unit_stats_1aa002986cf507f4d07d35b8e6ae57cb14" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type><ref refid="class_d_s_unit_stats_1_1_stat" kindref="compound">Stat</ref></type>
+        <definition>Stat DSUnitStats.Defence</definition>
+        <argsstring></argsstring>
+        <name>Defence</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSUnitStats.cs" line="14" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSUnitStats.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_d_s_unit_stats_1a39baa827eac17f0ac96482540906c78c" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type><ref refid="class_d_s_unit_stats_1_1_stat" kindref="compound">Stat</ref></type>
+        <definition>Stat DSUnitStats.Speed</definition>
+        <argsstring></argsstring>
+        <name>Speed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSUnitStats.cs" line="17" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSUnitStats.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_d_s_unit_stats_1ad806e4340125a16325e2a3ed3c810e18" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type><ref refid="class_d_s_unit_stats_1_1_stat" kindref="compound">Stat</ref></type>
+        <definition>Stat DSUnitStats.Aceleration</definition>
+        <argsstring></argsstring>
+        <name>Aceleration</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSUnitStats.cs" line="20" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSUnitStats.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_d_s_unit_stats_1a0233d698ceb11592a456dce7b2bb124b" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type><ref refid="class_d_s_unit_stats_1_1_stat" kindref="compound">Stat</ref></type>
+        <definition>Stat DSUnitStats.RotationSpeed</definition>
+        <argsstring></argsstring>
+        <name>RotationSpeed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSUnitStats.cs" line="23" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSUnitStats.cs" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_d_s_unit_stats_1a6477a603d8005708b1a20352e84792af" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void DSUnitStats.Save</definition>
+        <argsstring>()</argsstring>
+        <name>Save</name>
+        <reimplements refid="interface_i_savable_1a6f524db1edec7552b99f40de1bf013f4">Save</reimplements>
+        <briefdescription>
+<para>Сохранить данные в хранилище </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSUnitStats.cs" line="77" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSUnitStats.cs" bodystart="77" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="class_d_s_unit_stats_1a08d3412ff0d50ec139f6de20395f6edb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void DSUnitStats.Load</definition>
+        <argsstring>()</argsstring>
+        <name>Load</name>
+        <reimplements refid="interface_i_savable_1ad4c1956e2936ff33be4709453ad21190">Load</reimplements>
+        <briefdescription>
+<para>Загрузить данные из хранилища </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSUnitStats.cs" line="82" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSUnitStats.cs" bodystart="82" bodyend="89"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="299">
+        <label>DSUnitStats</label>
+        <link refid="class_d_s_unit_stats"/>
+        <childnode refid="300" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="300">
+        <label>ISavable</label>
+        <link refid="interface_i_savable"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="301">
+        <label>DSUnitStats</label>
+        <link refid="class_d_s_unit_stats"/>
+        <childnode refid="302" relation="public-inheritance">
+        </childnode>
+        <childnode refid="303" relation="usage">
+          <edgelabel>speed</edgelabel>
+          <edgelabel>aceleration</edgelabel>
+          <edgelabel>attack</edgelabel>
+          <edgelabel>defence</edgelabel>
+          <edgelabel>health</edgelabel>
+          <edgelabel>rotationSpeed</edgelabel>
+        </childnode>
+      </node>
+      <node id="302">
+        <label>ISavable</label>
+        <link refid="interface_i_savable"/>
+      </node>
+      <node id="303">
+        <label>DSUnitStats.Stat</label>
+        <link refid="class_d_s_unit_stats_1_1_stat"/>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSUnitStats.cs" line="6" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSUnitStats.cs" bodystart="5" bodyend="90"/>
+    <listofallmembers>
+      <member refid="class_d_s_unit_stats_1ab01ecc59b9ce5908a577852f5d10e327" prot="private" virt="non-virtual"><scope>DSUnitStats</scope><name>aceleration</name></member>
+      <member refid="class_d_s_unit_stats_1ad806e4340125a16325e2a3ed3c810e18" prot="public" virt="non-virtual"><scope>DSUnitStats</scope><name>Aceleration</name></member>
+      <member refid="class_d_s_unit_stats_1ac6250b8d0e95e131316410e1384fd082" prot="public" virt="non-virtual"><scope>DSUnitStats</scope><name>Attack</name></member>
+      <member refid="class_d_s_unit_stats_1a07bb44e9ebb0cf1f27e50c45147d6b96" prot="private" virt="non-virtual"><scope>DSUnitStats</scope><name>attack</name></member>
+      <member refid="class_d_s_unit_stats_1ab410860e3f2f45570fe9b4c66b1c2840" prot="private" virt="non-virtual"><scope>DSUnitStats</scope><name>defence</name></member>
+      <member refid="class_d_s_unit_stats_1aa002986cf507f4d07d35b8e6ae57cb14" prot="public" virt="non-virtual"><scope>DSUnitStats</scope><name>Defence</name></member>
+      <member refid="class_d_s_unit_stats_1a1c7d29ad5253fd41df3ee4f1955014dd" prot="public" virt="non-virtual"><scope>DSUnitStats</scope><name>Health</name></member>
+      <member refid="class_d_s_unit_stats_1a390c32dc6d25d1acf1b931a4044470bb" prot="private" virt="non-virtual"><scope>DSUnitStats</scope><name>health</name></member>
+      <member refid="class_d_s_unit_stats_1a08d3412ff0d50ec139f6de20395f6edb" prot="public" virt="non-virtual"><scope>DSUnitStats</scope><name>Load</name></member>
+      <member refid="class_d_s_unit_stats_1a1c6a72f8c3967e6ea510a6ce1cb6baf1" prot="private" virt="non-virtual"><scope>DSUnitStats</scope><name>rotationSpeed</name></member>
+      <member refid="class_d_s_unit_stats_1a0233d698ceb11592a456dce7b2bb124b" prot="public" virt="non-virtual"><scope>DSUnitStats</scope><name>RotationSpeed</name></member>
+      <member refid="class_d_s_unit_stats_1a6477a603d8005708b1a20352e84792af" prot="public" virt="non-virtual"><scope>DSUnitStats</scope><name>Save</name></member>
+      <member refid="class_d_s_unit_stats_1ac2acf3be730d01c78435cb540d252657" prot="private" virt="non-virtual"><scope>DSUnitStats</scope><name>speed</name></member>
+      <member refid="class_d_s_unit_stats_1a39baa827eac17f0ac96482540906c78c" prot="public" virt="non-virtual"><scope>DSUnitStats</scope><name>Speed</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

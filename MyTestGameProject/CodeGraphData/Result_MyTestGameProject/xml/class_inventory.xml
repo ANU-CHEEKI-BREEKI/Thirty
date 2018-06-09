@@ -1,0 +1,443 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_inventory" kind="class" prot="public">
+    <compoundname>Inventory</compoundname>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_inventory_1a152114ca2b2ee6dfb8139a200c62746a" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_squad" kindref="compound">Squad</ref></type>
+        <definition>Squad Inventory.Squad</definition>
+        <argsstring></argsstring>
+        <name>Squad</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Inventory.cs" line="9" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Inventory.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_inventory_1adb6c5699d2bb0776b73e21d33ff3901d" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>int</type>
+        <definition>int Inventory.Length</definition>
+        <argsstring></argsstring>
+        <name>Length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Inventory.cs" line="33" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Inventory.cs" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_inventory_1a9fd46393a3045d9798b8cc8b9bc78d05" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_equipment" kindref="compound">Equipment</ref></type>
+        <definition>Equipment Inventory.Helmet</definition>
+        <argsstring></argsstring>
+        <name>Helmet</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Inventory.cs" line="35" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Inventory.cs" bodystart="36" bodyend="-1"/>
+        <referencedby refid="class_unit_1a95a18047de7c98c3a6256788b178880d" compoundref="_unit_8cs" startline="798" endline="825">Unit.CheckEquipment</referencedby>
+        <referencedby refid="class_squad_inventory_u_i_1a1c33efc57d748213dac793c00997c015" compoundref="_squad_inventory_u_i_8cs" startline="61" endline="108">SquadInventoryUI.RefreshUI</referencedby>
+        <referencedby refid="class_unit_1aa1a39b5e6d44e1b7a3ff80c484d2729d" compoundref="_unit_8cs" startline="488" endline="494">Unit.SetEquipment</referencedby>
+        <referencedby refid="class_squad_spawner_1a386c5a7c6effe5a297da9b531c9804e0" compoundref="_squad_spawner_8cs" startline="35" endline="76">SquadSpawner.Start</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_inventory_1aa1cf6e7ace4e2897220ff4f8896fca53" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_equipment" kindref="compound">Equipment</ref></type>
+        <definition>Equipment Inventory.Body</definition>
+        <argsstring></argsstring>
+        <name>Body</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Inventory.cs" line="47" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Inventory.cs" bodystart="48" bodyend="-1"/>
+        <referencedby refid="class_unit_1a95a18047de7c98c3a6256788b178880d" compoundref="_unit_8cs" startline="798" endline="825">Unit.CheckEquipment</referencedby>
+        <referencedby refid="class_squad_inventory_u_i_1a1c33efc57d748213dac793c00997c015" compoundref="_squad_inventory_u_i_8cs" startline="61" endline="108">SquadInventoryUI.RefreshUI</referencedby>
+        <referencedby refid="class_unit_1aa1a39b5e6d44e1b7a3ff80c484d2729d" compoundref="_unit_8cs" startline="488" endline="494">Unit.SetEquipment</referencedby>
+        <referencedby refid="class_squad_spawner_1a386c5a7c6effe5a297da9b531c9804e0" compoundref="_squad_spawner_8cs" startline="35" endline="76">SquadSpawner.Start</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_inventory_1a4280a990d639f958ff4c0e7249697a1f" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_equipment" kindref="compound">Equipment</ref></type>
+        <definition>Equipment Inventory.Shield</definition>
+        <argsstring></argsstring>
+        <name>Shield</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Inventory.cs" line="59" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Inventory.cs" bodystart="60" bodyend="-1"/>
+        <referencedby refid="class_drop_to_equipment_1a0bc83af63ecd40bb3c2be8355c878a7f" compoundref="_drop_to_equipment_8cs" startline="46" endline="84">DropToEquipment.AddToThisInventory</referencedby>
+        <referencedby refid="class_unit_1a95a18047de7c98c3a6256788b178880d" compoundref="_unit_8cs" startline="798" endline="825">Unit.CheckEquipment</referencedby>
+        <referencedby refid="class_squad_inventory_u_i_1a1c33efc57d748213dac793c00997c015" compoundref="_squad_inventory_u_i_8cs" startline="61" endline="108">SquadInventoryUI.RefreshUI</referencedby>
+        <referencedby refid="class_unit_1aa1a39b5e6d44e1b7a3ff80c484d2729d" compoundref="_unit_8cs" startline="488" endline="494">Unit.SetEquipment</referencedby>
+        <referencedby refid="class_squad_1a682baf77f537896bdf4ea37f354ab115" compoundref="_squad_8cs" startline="349" endline="371">Squad.SetProp</referencedby>
+        <referencedby refid="class_squad_spawner_1a386c5a7c6effe5a297da9b531c9804e0" compoundref="_squad_spawner_8cs" startline="35" endline="76">SquadSpawner.Start</referencedby>
+        <referencedby refid="class_unit_1a81ef87020279968371316b61ae6b408c" compoundref="_unit_8cs" startline="901" endline="946">Unit.TakeHitFromArrow</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_inventory_1aada92657ba049bb0a3856e157b4e0e22" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_equipment" kindref="compound">Equipment</ref></type>
+        <definition>Equipment Inventory.Weapon</definition>
+        <argsstring></argsstring>
+        <name>Weapon</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Inventory.cs" line="71" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Inventory.cs" bodystart="72" bodyend="-1"/>
+        <referencedby refid="class_drop_to_equipment_1a0bc83af63ecd40bb3c2be8355c878a7f" compoundref="_drop_to_equipment_8cs" startline="46" endline="84">DropToEquipment.AddToThisInventory</referencedby>
+        <referencedby refid="class_unit_1a95a18047de7c98c3a6256788b178880d" compoundref="_unit_8cs" startline="798" endline="825">Unit.CheckEquipment</referencedby>
+        <referencedby refid="class_squad_inventory_u_i_1a1c33efc57d748213dac793c00997c015" compoundref="_squad_inventory_u_i_8cs" startline="61" endline="108">SquadInventoryUI.RefreshUI</referencedby>
+        <referencedby refid="class_unit_1aa1a39b5e6d44e1b7a3ff80c484d2729d" compoundref="_unit_8cs" startline="488" endline="494">Unit.SetEquipment</referencedby>
+        <referencedby refid="class_squad_1a682baf77f537896bdf4ea37f354ab115" compoundref="_squad_8cs" startline="349" endline="371">Squad.SetProp</referencedby>
+        <referencedby refid="class_squad_spawner_1a386c5a7c6effe5a297da9b531c9804e0" compoundref="_squad_spawner_8cs" startline="35" endline="76">SquadSpawner.Start</referencedby>
+        <referencedby refid="class_squad_1ac63b45f46fca96eeffd568a4dba416f1" compoundref="_squad_8cs" startline="257" endline="301">Squad.Start</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_inventory_1adb527ef55fcd58f861ef32447ecbe912" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_skill_stack" kindref="compound">SkillStack</ref></type>
+        <definition>SkillStack Inventory.FirstSkill</definition>
+        <argsstring></argsstring>
+        <name>FirstSkill</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Inventory.cs" line="84" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Inventory.cs" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_inventory_1aa7f690b863a4809625004ed8faffa491" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_skill_stack" kindref="compound">SkillStack</ref></type>
+        <definition>SkillStack Inventory.SecondSkill</definition>
+        <argsstring></argsstring>
+        <name>SecondSkill</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Inventory.cs" line="85" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Inventory.cs" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_inventory_1aa92394ea34277426f9341d03b809f11a" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_equipment_stack" kindref="compound">EquipmentStack</ref></type>
+        <definition>EquipmentStack Inventory.this[int index]</definition>
+        <argsstring></argsstring>
+        <name>this[int index]</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Inventory.cs" line="92" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Inventory.cs" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="event">
+      <memberdef kind="event" id="class_inventory_1ab287b3d512c4b6eff23031c6ad9b21ce" prot="public" static="no" add="no" remove="no" raise="no">
+        <type>Action&lt; <ref refid="class_equipment" kindref="compound">Equipment</ref> &gt;</type>
+        <definition>Action&lt;Equipment&gt; Inventory.OnEquipmentChanged</definition>
+        <argsstring></argsstring>
+        <name>OnEquipmentChanged</name>
+        <briefdescription>
+<para>arg is a new equipment </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Inventory.cs" line="13" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Inventory.cs" bodystart="13" bodyend="-1"/>
+        <referencedby refid="class_inventory_1ad71e973c5a9e815a46f3e51dd0d7fbfc" compoundref="_inventory_8cs" startline="87" endline="90">EquipmentChanged</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_inventory_1a99bdc66c529961b0b2c2d5a6c394785b" prot="private" static="no" mutable="no">
+        <type><ref refid="class_equipment" kindref="compound">Equipment</ref></type>
+        <definition>Equipment Inventory.helmet</definition>
+        <argsstring></argsstring>
+        <name>helmet</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Inventory.cs" line="15" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Inventory.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_inventory_1a539a81712f7d90a1f30cfcb696ddb539" prot="private" static="no" mutable="no">
+        <type><ref refid="class_equipment" kindref="compound">Equipment</ref></type>
+        <definition>Equipment Inventory.body</definition>
+        <argsstring></argsstring>
+        <name>body</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Inventory.cs" line="16" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Inventory.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_inventory_1ad3728adbd49a4fb652e05d6b1293dd83" prot="private" static="no" mutable="no">
+        <type><ref refid="class_equipment" kindref="compound">Equipment</ref></type>
+        <definition>Equipment Inventory.shield</definition>
+        <argsstring></argsstring>
+        <name>shield</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Inventory.cs" line="17" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Inventory.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_inventory_1afb91a4230323acb8accf95b38845575d" prot="private" static="no" mutable="no">
+        <type><ref refid="class_equipment" kindref="compound">Equipment</ref></type>
+        <definition>Equipment Inventory.weapon</definition>
+        <argsstring></argsstring>
+        <name>weapon</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Inventory.cs" line="18" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Inventory.cs" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_inventory_1a42d5352cde7ac6df90bb44590ff860b6" prot="private" static="no" mutable="no">
+        <type><ref refid="class_skill_stack" kindref="compound">SkillStack</ref></type>
+        <definition>SkillStack Inventory.firstSkill</definition>
+        <argsstring></argsstring>
+        <name>firstSkill</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Inventory.cs" line="19" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Inventory.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_inventory_1a504dc2b47cbd3b36036d3fcf3804738a" prot="private" static="no" mutable="no">
+        <type><ref refid="class_skill_stack" kindref="compound">SkillStack</ref></type>
+        <definition>SkillStack Inventory.secondSkill</definition>
+        <argsstring></argsstring>
+        <name>secondSkill</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Inventory.cs" line="20" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Inventory.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_inventory_1aa9e6f9fe247c21506cb2126b56d65cfe" prot="private" static="no" mutable="no">
+        <type><ref refid="class_equipment" kindref="compound">Equipment</ref></type>
+        <definition>Equipment Inventory.helmetNone</definition>
+        <argsstring></argsstring>
+        <name>helmetNone</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Inventory.cs" line="23" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Inventory.cs" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_inventory_1af72ec149236d4d9cc3d57676574e6975" prot="private" static="no" mutable="no">
+        <type><ref refid="class_equipment" kindref="compound">Equipment</ref></type>
+        <definition>Equipment Inventory.bodyNone</definition>
+        <argsstring></argsstring>
+        <name>bodyNone</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Inventory.cs" line="26" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Inventory.cs" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_inventory_1aa6f3b6ca6b0d0abeebcb25d8cbc9e2c2" prot="private" static="no" mutable="no">
+        <type><ref refid="class_equipment" kindref="compound">Equipment</ref></type>
+        <definition>Equipment Inventory.shieldNone</definition>
+        <argsstring></argsstring>
+        <name>shieldNone</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Inventory.cs" line="29" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Inventory.cs" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_inventory_1a21b986febf63e4926c26c018541bfe9e" prot="private" static="no" mutable="no">
+        <type><ref refid="class_equipment_stack" kindref="compound">EquipmentStack</ref>[]</type>
+        <definition>EquipmentStack [] Inventory.inventory</definition>
+        <argsstring></argsstring>
+        <name>inventory</name>
+        <initializer>= new <ref refid="class_equipment_stack" kindref="compound">EquipmentStack</ref>[3]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Inventory.cs" line="32" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Inventory.cs" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_inventory_1ad71e973c5a9e815a46f3e51dd0d7fbfc" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Inventory.EquipmentChanged</definition>
+        <argsstring>(Equipment eq)</argsstring>
+        <name>EquipmentChanged</name>
+        <param>
+          <type><ref refid="class_equipment" kindref="compound">Equipment</ref></type>
+          <declname>eq</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Inventory.cs" line="87" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Inventory.cs" bodystart="87" bodyend="90"/>
+        <references refid="class_inventory_1ab287b3d512c4b6eff23031c6ad9b21ce" compoundref="_inventory_8cs" startline="13">OnEquipmentChanged</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="514">
+        <label>Equipment</label>
+        <link refid="class_equipment"/>
+        <childnode refid="511" relation="public-inheritance">
+        </childnode>
+        <childnode refid="515" relation="usage">
+          <edgelabel>stats</edgelabel>
+        </childnode>
+      </node>
+      <node id="513">
+        <label>Item.MainProperties</label>
+        <link refid="struct_item_1_1_main_properties"/>
+      </node>
+      <node id="516">
+        <label>Damage</label>
+        <link refid="struct_damage"/>
+      </node>
+      <node id="509">
+        <label>IDescriptionable</label>
+        <link refid="interface_i_descriptionable"/>
+      </node>
+      <node id="511">
+        <label>Item</label>
+        <link refid="class_item"/>
+        <childnode refid="512" relation="public-inheritance">
+        </childnode>
+        <childnode refid="513" relation="usage">
+          <edgelabel>mainProperties</edgelabel>
+        </childnode>
+      </node>
+      <node id="507">
+        <label>SkillStack</label>
+        <link refid="class_skill_stack"/>
+        <childnode refid="508" relation="public-inheritance">
+        </childnode>
+        <childnode refid="509" relation="public-inheritance">
+        </childnode>
+        <childnode refid="510" relation="usage">
+          <edgelabel>skill</edgelabel>
+        </childnode>
+      </node>
+      <node id="515">
+        <label>EquipmentStats</label>
+        <link refid="struct_equipment_stats"/>
+        <childnode refid="509" relation="public-inheritance">
+        </childnode>
+        <childnode refid="516" relation="usage">
+          <edgelabel>damage</edgelabel>
+        </childnode>
+      </node>
+      <node id="508">
+        <label>AStack</label>
+        <link refid="class_a_stack"/>
+      </node>
+      <node id="512">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="510">
+        <label>Skill</label>
+        <link refid="class_skill"/>
+        <childnode refid="511" relation="public-inheritance">
+        </childnode>
+        <childnode refid="509" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="517">
+        <label>EquipmentStack</label>
+        <link refid="class_equipment_stack"/>
+        <childnode refid="508" relation="public-inheritance">
+        </childnode>
+        <childnode refid="511" relation="usage">
+          <edgelabel>equipmentMainProperties</edgelabel>
+        </childnode>
+        <childnode refid="515" relation="usage">
+          <edgelabel>equipmentStats</edgelabel>
+        </childnode>
+      </node>
+      <node id="506">
+        <label>Inventory</label>
+        <link refid="class_inventory"/>
+        <childnode refid="507" relation="usage">
+          <edgelabel>firstSkill</edgelabel>
+          <edgelabel>secondSkill</edgelabel>
+        </childnode>
+        <childnode refid="514" relation="usage">
+          <edgelabel>body</edgelabel>
+          <edgelabel>shieldNone</edgelabel>
+          <edgelabel>helmetNone</edgelabel>
+          <edgelabel>shield</edgelabel>
+          <edgelabel>weapon</edgelabel>
+          <edgelabel>helmet</edgelabel>
+          <edgelabel>bodyNone</edgelabel>
+        </childnode>
+        <childnode refid="517" relation="usage">
+          <edgelabel>inventory</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Inventory.cs" line="8" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Inventory.cs" bodystart="7" bodyend="104"/>
+    <listofallmembers>
+      <member refid="class_inventory_1a539a81712f7d90a1f30cfcb696ddb539" prot="private" virt="non-virtual"><scope>Inventory</scope><name>body</name></member>
+      <member refid="class_inventory_1aa1cf6e7ace4e2897220ff4f8896fca53" prot="public" virt="non-virtual"><scope>Inventory</scope><name>Body</name></member>
+      <member refid="class_inventory_1af72ec149236d4d9cc3d57676574e6975" prot="private" virt="non-virtual"><scope>Inventory</scope><name>bodyNone</name></member>
+      <member refid="class_inventory_1ad71e973c5a9e815a46f3e51dd0d7fbfc" prot="private" virt="non-virtual"><scope>Inventory</scope><name>EquipmentChanged</name></member>
+      <member refid="class_inventory_1adb527ef55fcd58f861ef32447ecbe912" prot="public" virt="non-virtual"><scope>Inventory</scope><name>FirstSkill</name></member>
+      <member refid="class_inventory_1a42d5352cde7ac6df90bb44590ff860b6" prot="private" virt="non-virtual"><scope>Inventory</scope><name>firstSkill</name></member>
+      <member refid="class_inventory_1a99bdc66c529961b0b2c2d5a6c394785b" prot="private" virt="non-virtual"><scope>Inventory</scope><name>helmet</name></member>
+      <member refid="class_inventory_1a9fd46393a3045d9798b8cc8b9bc78d05" prot="public" virt="non-virtual"><scope>Inventory</scope><name>Helmet</name></member>
+      <member refid="class_inventory_1aa9e6f9fe247c21506cb2126b56d65cfe" prot="private" virt="non-virtual"><scope>Inventory</scope><name>helmetNone</name></member>
+      <member refid="class_inventory_1a21b986febf63e4926c26c018541bfe9e" prot="private" virt="non-virtual"><scope>Inventory</scope><name>inventory</name></member>
+      <member refid="class_inventory_1adb6c5699d2bb0776b73e21d33ff3901d" prot="public" virt="non-virtual"><scope>Inventory</scope><name>Length</name></member>
+      <member refid="class_inventory_1ab287b3d512c4b6eff23031c6ad9b21ce" prot="public" virt="non-virtual"><scope>Inventory</scope><name>OnEquipmentChanged</name></member>
+      <member refid="class_inventory_1aa7f690b863a4809625004ed8faffa491" prot="public" virt="non-virtual"><scope>Inventory</scope><name>SecondSkill</name></member>
+      <member refid="class_inventory_1a504dc2b47cbd3b36036d3fcf3804738a" prot="private" virt="non-virtual"><scope>Inventory</scope><name>secondSkill</name></member>
+      <member refid="class_inventory_1a4280a990d639f958ff4c0e7249697a1f" prot="public" virt="non-virtual"><scope>Inventory</scope><name>Shield</name></member>
+      <member refid="class_inventory_1ad3728adbd49a4fb652e05d6b1293dd83" prot="private" virt="non-virtual"><scope>Inventory</scope><name>shield</name></member>
+      <member refid="class_inventory_1aa6f3b6ca6b0d0abeebcb25d8cbc9e2c2" prot="private" virt="non-virtual"><scope>Inventory</scope><name>shieldNone</name></member>
+      <member refid="class_inventory_1a152114ca2b2ee6dfb8139a200c62746a" prot="public" virt="non-virtual"><scope>Inventory</scope><name>Squad</name></member>
+      <member refid="class_inventory_1aa92394ea34277426f9341d03b809f11a" prot="public" virt="non-virtual"><scope>Inventory</scope><name>this[int index]</name></member>
+      <member refid="class_inventory_1afb91a4230323acb8accf95b38845575d" prot="private" virt="non-virtual"><scope>Inventory</scope><name>weapon</name></member>
+      <member refid="class_inventory_1aada92657ba049bb0a3856e157b4e0e22" prot="public" virt="non-virtual"><scope>Inventory</scope><name>Weapon</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

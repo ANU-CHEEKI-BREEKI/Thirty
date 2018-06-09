@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_common_settings" kind="class" prot="public">
+    <compoundname>CommonSettings</compoundname>
+    <basecompoundref refid="interface_i_savable" prot="public" virt="non-virtual">ISavable</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_common_settings_1ae773476344ee1b6e73e021647b1df768" prot="public" static="no" mutable="no">
+        <type>SystemLanguage</type>
+        <definition>SystemLanguage CommonSettings.Language</definition>
+        <argsstring></argsstring>
+        <name>Language</name>
+        <initializer>= SystemLanguage.Russian</initializer>
+        <briefdescription>
+<para>Язык локализации </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/CommonSettings.cs" line="10" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/CommonSettings.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_common_settings_1aa1cea5f470d046465e80cfaab5941089" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CommonSettings.Save</definition>
+        <argsstring>()</argsstring>
+        <name>Save</name>
+        <reimplements refid="interface_i_savable_1a6f524db1edec7552b99f40de1bf013f4">Save</reimplements>
+        <briefdescription>
+<para>Сохранить данные в хранилище </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/CommonSettings.cs" line="12" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/CommonSettings.cs" bodystart="12" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_common_settings_1a83021b8c4e9132ceb31d3384088321c1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CommonSettings.Load</definition>
+        <argsstring>()</argsstring>
+        <name>Load</name>
+        <reimplements refid="interface_i_savable_1ad4c1956e2936ff33be4709453ad21190">Load</reimplements>
+        <briefdescription>
+<para>Загрузить данные из хранилища </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/CommonSettings.cs" line="17" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/CommonSettings.cs" bodystart="17" bodyend="24"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="129">
+        <label>ISavable</label>
+        <link refid="interface_i_savable"/>
+      </node>
+      <node id="128">
+        <label>CommonSettings</label>
+        <link refid="class_common_settings"/>
+        <childnode refid="129" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="131">
+        <label>ISavable</label>
+        <link refid="interface_i_savable"/>
+      </node>
+      <node id="130">
+        <label>CommonSettings</label>
+        <link refid="class_common_settings"/>
+        <childnode refid="131" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/CommonSettings.cs" line="6" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/CommonSettings.cs" bodystart="5" bodyend="25"/>
+    <listofallmembers>
+      <member refid="class_common_settings_1ae773476344ee1b6e73e021647b1df768" prot="public" virt="non-virtual"><scope>CommonSettings</scope><name>Language</name></member>
+      <member refid="class_common_settings_1a83021b8c4e9132ceb31d3384088321c1" prot="public" virt="non-virtual"><scope>CommonSettings</scope><name>Load</name></member>
+      <member refid="class_common_settings_1aa1cea5f470d046465e80cfaab5941089" prot="public" virt="non-virtual"><scope>CommonSettings</scope><name>Save</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

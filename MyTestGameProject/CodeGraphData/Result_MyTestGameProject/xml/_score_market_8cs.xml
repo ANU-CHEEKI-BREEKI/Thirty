@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_score_market_8cs" kind="file">
+    <compoundname>ScoreMarket.cs</compoundname>
+    <innerclass refid="class_score_market" prot="public">ScoreMarket</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Collections;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Collections.Generic;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>UnityEngine;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal">[RequireComponent(typeof(<ref refid="class_number_converter" kindref="compound">NumberConverter</ref>))]</highlight></codeline>
+<codeline lineno="6" refid="class_score_market" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_score_market" kindref="compound">ScoreMarket</ref><sp/>:<sp/>MonoBehaviour</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8" refid="class_score_market_1abf37cba1d0e78a0378540d016f134a27" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="class_score_market_1abf37cba1d0e78a0378540d016f134a27" kindref="member">ConvertType</ref><sp/>{<sp/><ref refid="class_score_market_1abf37cba1d0e78a0378540d016f134a27a0efc7a9b83f3cfe984a3b046f0269ccc" kindref="member">SILVER</ref>,<sp/><ref refid="class_score_market_1abf37cba1d0e78a0378540d016f134a27a6cf2e6f0e86af75f96dd98519eedb29e" kindref="member">EXPIRIENCE</ref><sp/>}</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="class_score_market_1a0910b96f7c1ea6798e37f3b88b5dfe55" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[SerializeField]<sp/><ref refid="class_score_market_1abf37cba1d0e78a0378540d016f134a27" kindref="member">ConvertType</ref><sp/><ref refid="class_score_market_1a0910b96f7c1ea6798e37f3b88b5dfe55" kindref="member">convertFor</ref>;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="class_score_market_1a151be3f45cad8173d38ac593235975a1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_number_converter" kindref="compound">NumberConverter</ref><sp/><ref refid="class_score_market_1a151be3f45cad8173d38ac593235975a1" kindref="member">converter</ref>;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="class_score_market_1a4b456bfef3f2647c7c4cde72c0b6d8d9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_score_market_1a4b456bfef3f2647c7c4cde72c0b6d8d9" kindref="member">Start</ref>()</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_score_market_1a151be3f45cad8173d38ac593235975a1" kindref="member">converter</ref><sp/>=<sp/>GetComponent&lt;NumberConverter&gt;();</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>converter.OnCliclOk<sp/>+=<sp/><ref refid="class_score_market_1a4b2af555d8ca31fe3c208cceaaad8b75" kindref="member">Converter_OnCliclOk</ref>;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GameManager.Instance.PlayerProgress.score.gold.OnValueChanged<sp/>+=<sp/><ref refid="class_score_market_1ae998d27a994ac3afe59d4ca345654f36" kindref="member">Gold_OnValueChanged</ref>;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>converter.SetMaxValues(0,<sp/>GameManager.Instance.PlayerProgress.score.gold.Value);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="class_score_market_1a4359f0448f9e903daa3125eef9d619c6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_score_market_1a4359f0448f9e903daa3125eef9d619c6" kindref="member">OnDestroy</ref>()</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GameManager.Instance.PlayerProgress.score.gold.OnValueChanged<sp/>-=<sp/><ref refid="class_score_market_1ae998d27a994ac3afe59d4ca345654f36" kindref="member">Gold_OnValueChanged</ref>;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_score_market_1a151be3f45cad8173d38ac593235975a1" kindref="member">converter</ref><sp/>!=<sp/>null)</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>converter.OnCliclOk<sp/>-=<sp/><ref refid="class_score_market_1a4b2af555d8ca31fe3c208cceaaad8b75" kindref="member">Converter_OnCliclOk</ref>;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="class_score_market_1ae998d27a994ac3afe59d4ca345654f36" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_score_market_1ae998d27a994ac3afe59d4ca345654f36" kindref="member">Gold_OnValueChanged</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>oldVal,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>newVal,<sp/><ref refid="class_d_s_player_score" kindref="compound">DSPlayerScore</ref>.Score<sp/>sender)</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>converter.SetMaxValues(0,<sp/>newVal);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="class_score_market_1a4b2af555d8ca31fe3c208cceaaad8b75" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_score_market_1a4b2af555d8ca31fe3c208cceaaad8b75" kindref="member">Converter_OnCliclOk</ref>()</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>inputValue<sp/>=<sp/>converter.InputValue;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>outputValue<sp/>=<sp/>converter.OutputValue;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(<ref refid="class_score_market_1a0910b96f7c1ea6798e37f3b88b5dfe55" kindref="member">convertFor</ref>)</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>ConvertType.SILVER:</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GameManager.Instance.PlayerProgress.score.silver.Value<sp/>+=<sp/>outputValue;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>ConvertType.EXPIRIENCE:</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GameManager.Instance.PlayerProgress.score.expirience.Value<sp/>+=<sp/>outputValue;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GameManager.Instance.PlayerProgress.score.gold.Value<sp/>-=<sp/>inputValue;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GameManager.Instance.PlayerProgress.score.Save();</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/ScoreMarket.cs"/>
+  </compounddef>
+</doxygen>

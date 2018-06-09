@@ -1,0 +1,611 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_mc_block_entry_chooser" kind="class" prot="public">
+    <compoundname>McBlockEntryChooser</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">IDragHandler</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">IPointerDownHandler</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">IPointerUpHandler</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">IPointerClickHandler</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_mc_block_entry_chooser_1a9c808792b32c9eadbbacc841bfa5919d" prot="private" static="no" mutable="no">
+        <type><ref refid="struct_map_block_1a6bdb8970fb09cd0570ed7036457f96a3" kindref="member">MapBlock.Direction</ref></type>
+        <definition>MapBlock.Direction McBlockEntryChooser.entryDirection</definition>
+        <argsstring></argsstring>
+        <name>entryDirection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McBlockEntryChooser.cs" line="15" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McBlockEntryChooser.cs" bodystart="15" bodyend="-1"/>
+        <referencedby refid="class_mc_block_entry_chooser_1aa6eb31988a141a82d9fbdf7d1f8679f1" compoundref="_mc_block_entry_chooser_8cs" startline="186" endline="196">AddEntrance</referencedby>
+        <referencedby refid="class_mc_block_entry_chooser_1a275489cf17b592763be1d0575e804aa3" compoundref="_mc_block_entry_chooser_8cs" startline="147" endline="184">OnPointerUp</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_mc_block_entry_chooser_1a5e7f1f65cd0c315a731e0432b5f0d865" prot="private" static="no" mutable="no">
+        <type>Toggle</type>
+        <definition>Toggle McBlockEntryChooser.left</definition>
+        <argsstring></argsstring>
+        <name>left</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McBlockEntryChooser.cs" line="17" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McBlockEntryChooser.cs" bodystart="17" bodyend="-1"/>
+        <referencedby refid="class_mc_block_entry_chooser_1a275489cf17b592763be1d0575e804aa3" compoundref="_mc_block_entry_chooser_8cs" startline="147" endline="184">OnPointerUp</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_mc_block_entry_chooser_1ab8e2ca89cea4f6dbdc1b5ffe7fc78fc3" prot="private" static="no" mutable="no">
+        <type>Toggle</type>
+        <definition>Toggle McBlockEntryChooser.right</definition>
+        <argsstring></argsstring>
+        <name>right</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McBlockEntryChooser.cs" line="17" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McBlockEntryChooser.cs" bodystart="17" bodyend="-1"/>
+        <referencedby refid="class_mc_block_entry_chooser_1a275489cf17b592763be1d0575e804aa3" compoundref="_mc_block_entry_chooser_8cs" startline="147" endline="184">OnPointerUp</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_mc_block_entry_chooser_1a969c61c8ababef32dbe65ada51e2d890" prot="private" static="no" mutable="no">
+        <type>Toggle</type>
+        <definition>Toggle McBlockEntryChooser.top</definition>
+        <argsstring></argsstring>
+        <name>top</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McBlockEntryChooser.cs" line="17" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McBlockEntryChooser.cs" bodystart="17" bodyend="-1"/>
+        <referencedby refid="class_mc_block_entry_chooser_1a275489cf17b592763be1d0575e804aa3" compoundref="_mc_block_entry_chooser_8cs" startline="147" endline="184">OnPointerUp</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_mc_block_entry_chooser_1aa43572df2bd98f46c1950b113ae42799" prot="private" static="no" mutable="no">
+        <type>Toggle</type>
+        <definition>Toggle McBlockEntryChooser.bottom</definition>
+        <argsstring></argsstring>
+        <name>bottom</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McBlockEntryChooser.cs" line="17" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McBlockEntryChooser.cs" bodystart="17" bodyend="-1"/>
+        <referencedby refid="class_mc_block_entry_chooser_1a275489cf17b592763be1d0575e804aa3" compoundref="_mc_block_entry_chooser_8cs" startline="147" endline="184">OnPointerUp</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_mc_block_entry_chooser_1af66ee8a0db34d3f13fe9b3daa06a2384" prot="private" static="no" mutable="no">
+        <type><ref refid="class_mc_block_chooser_direction_toggle_flag" kindref="compound">McBlockChooserDirectionToggleFlag</ref></type>
+        <definition>McBlockChooserDirectionToggleFlag McBlockEntryChooser.leftFlag</definition>
+        <argsstring></argsstring>
+        <name>leftFlag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McBlockEntryChooser.cs" line="18" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McBlockEntryChooser.cs" bodystart="18" bodyend="-1"/>
+        <referencedby refid="class_mc_block_entry_chooser_1ab9a36b0fd25372f83ecdc4db6b63787e" compoundref="_mc_block_entry_chooser_8cs" startline="132" endline="145">GetFlags</referencedby>
+        <referencedby refid="class_mc_block_entry_chooser_1a2ccd67b1f0bdd2e6e40b8d5f8e68fc81" compoundref="_mc_block_entry_chooser_8cs" startline="68" endline="122">OnDrag</referencedby>
+        <referencedby refid="class_mc_block_entry_chooser_1a275489cf17b592763be1d0575e804aa3" compoundref="_mc_block_entry_chooser_8cs" startline="147" endline="184">OnPointerUp</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_mc_block_entry_chooser_1aa0656f96ac03e2f7b431ac9cdab9a602" prot="private" static="no" mutable="no">
+        <type><ref refid="class_mc_block_chooser_direction_toggle_flag" kindref="compound">McBlockChooserDirectionToggleFlag</ref></type>
+        <definition>McBlockChooserDirectionToggleFlag McBlockEntryChooser.rightFlag</definition>
+        <argsstring></argsstring>
+        <name>rightFlag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McBlockEntryChooser.cs" line="18" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McBlockEntryChooser.cs" bodystart="18" bodyend="-1"/>
+        <referencedby refid="class_mc_block_entry_chooser_1ab9a36b0fd25372f83ecdc4db6b63787e" compoundref="_mc_block_entry_chooser_8cs" startline="132" endline="145">GetFlags</referencedby>
+        <referencedby refid="class_mc_block_entry_chooser_1a2ccd67b1f0bdd2e6e40b8d5f8e68fc81" compoundref="_mc_block_entry_chooser_8cs" startline="68" endline="122">OnDrag</referencedby>
+        <referencedby refid="class_mc_block_entry_chooser_1a275489cf17b592763be1d0575e804aa3" compoundref="_mc_block_entry_chooser_8cs" startline="147" endline="184">OnPointerUp</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_mc_block_entry_chooser_1a6efd92312b127d72c9424563695fdb90" prot="private" static="no" mutable="no">
+        <type><ref refid="class_mc_block_chooser_direction_toggle_flag" kindref="compound">McBlockChooserDirectionToggleFlag</ref></type>
+        <definition>McBlockChooserDirectionToggleFlag McBlockEntryChooser.topFlag</definition>
+        <argsstring></argsstring>
+        <name>topFlag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McBlockEntryChooser.cs" line="18" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McBlockEntryChooser.cs" bodystart="18" bodyend="-1"/>
+        <referencedby refid="class_mc_block_entry_chooser_1ab9a36b0fd25372f83ecdc4db6b63787e" compoundref="_mc_block_entry_chooser_8cs" startline="132" endline="145">GetFlags</referencedby>
+        <referencedby refid="class_mc_block_entry_chooser_1a2ccd67b1f0bdd2e6e40b8d5f8e68fc81" compoundref="_mc_block_entry_chooser_8cs" startline="68" endline="122">OnDrag</referencedby>
+        <referencedby refid="class_mc_block_entry_chooser_1a275489cf17b592763be1d0575e804aa3" compoundref="_mc_block_entry_chooser_8cs" startline="147" endline="184">OnPointerUp</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_mc_block_entry_chooser_1ac05132de7d4f9d6fca09d85c624dc231" prot="private" static="no" mutable="no">
+        <type><ref refid="class_mc_block_chooser_direction_toggle_flag" kindref="compound">McBlockChooserDirectionToggleFlag</ref></type>
+        <definition>McBlockChooserDirectionToggleFlag McBlockEntryChooser.bottomFlag</definition>
+        <argsstring></argsstring>
+        <name>bottomFlag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McBlockEntryChooser.cs" line="18" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McBlockEntryChooser.cs" bodystart="18" bodyend="-1"/>
+        <referencedby refid="class_mc_block_entry_chooser_1ab9a36b0fd25372f83ecdc4db6b63787e" compoundref="_mc_block_entry_chooser_8cs" startline="132" endline="145">GetFlags</referencedby>
+        <referencedby refid="class_mc_block_entry_chooser_1a2ccd67b1f0bdd2e6e40b8d5f8e68fc81" compoundref="_mc_block_entry_chooser_8cs" startline="68" endline="122">OnDrag</referencedby>
+        <referencedby refid="class_mc_block_entry_chooser_1a275489cf17b592763be1d0575e804aa3" compoundref="_mc_block_entry_chooser_8cs" startline="147" endline="184">OnPointerUp</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_mc_block_entry_chooser_1ae47d867505425bb09eecfa01c1019cba" prot="private" static="no" mutable="no">
+        <type><ref refid="class_mc_file_manager" kindref="compound">McFileManager</ref></type>
+        <definition>McFileManager McBlockEntryChooser.fileManager</definition>
+        <argsstring></argsstring>
+        <name>fileManager</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McBlockEntryChooser.cs" line="20" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McBlockEntryChooser.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mc_block_entry_chooser_1a7b6b8ff013f3bbdb08bed35b3d3e26ce" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float McBlockEntryChooser.dragDistanseX</definition>
+        <argsstring></argsstring>
+        <name>dragDistanseX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McBlockEntryChooser.cs" line="22" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McBlockEntryChooser.cs" bodystart="22" bodyend="-1"/>
+        <referencedby refid="class_mc_block_entry_chooser_1a2ccd67b1f0bdd2e6e40b8d5f8e68fc81" compoundref="_mc_block_entry_chooser_8cs" startline="68" endline="122">OnDrag</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_mc_block_entry_chooser_1a7e7f89a53243008cbb530133fa4c6a2f" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float McBlockEntryChooser.dragDistanseY</definition>
+        <argsstring></argsstring>
+        <name>dragDistanseY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McBlockEntryChooser.cs" line="22" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McBlockEntryChooser.cs" bodystart="22" bodyend="-1"/>
+        <referencedby refid="class_mc_block_entry_chooser_1a2ccd67b1f0bdd2e6e40b8d5f8e68fc81" compoundref="_mc_block_entry_chooser_8cs" startline="68" endline="122">OnDrag</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_mc_block_entry_chooser_1a665927088f43aaf173f9598720f5412d" prot="private" static="no" mutable="no">
+        <type>Vector2</type>
+        <definition>Vector2 McBlockEntryChooser.mouseDownPosition</definition>
+        <argsstring></argsstring>
+        <name>mouseDownPosition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McBlockEntryChooser.cs" line="23" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McBlockEntryChooser.cs" bodystart="23" bodyend="-1"/>
+        <referencedby refid="class_mc_block_entry_chooser_1a55c55b11062793d37339fae309da8014" compoundref="_mc_block_entry_chooser_8cs" startline="124" endline="130">OnPointerDown</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_mc_block_entry_chooser_1acd8aee32d40b345507f7eb8e3e43d2bf" prot="private" static="yes" mutable="no">
+        <type>List&lt; <ref refid="struct_map_block_1a6bdb8970fb09cd0570ed7036457f96a3" kindref="member">MapBlock.Direction</ref> &gt;</type>
+        <definition>List&lt;MapBlock.Direction&gt; McBlockEntryChooser.blockEntrance</definition>
+        <argsstring></argsstring>
+        <name>blockEntrance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McBlockEntryChooser.cs" line="25" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McBlockEntryChooser.cs" bodystart="25" bodyend="-1"/>
+        <referencedby refid="class_mc_block_entry_chooser_1a9bd2dac20f1be995bc56186b1f918f75" compoundref="_mc_block_entry_chooser_8cs" startline="36" endline="41">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_mc_block_entry_chooser_1a67a1e648d7e295fc83a0dfebdec6ea1f" prot="private" static="yes" mutable="no">
+        <type><ref refid="class_mc_block_entry_chooser" kindref="compound">McBlockEntryChooser</ref>[]</type>
+        <definition>McBlockEntryChooser [] McBlockEntryChooser.brothersToggles</definition>
+        <argsstring></argsstring>
+        <name>brothersToggles</name>
+        <initializer>= null</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McBlockEntryChooser.cs" line="34" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McBlockEntryChooser.cs" bodystart="34" bodyend="-1"/>
+        <referencedby refid="class_mc_block_entry_chooser_1a55c55b11062793d37339fae309da8014" compoundref="_mc_block_entry_chooser_8cs" startline="124" endline="130">OnPointerDown</referencedby>
+        <referencedby refid="class_mc_block_entry_chooser_1a950d9c4f3ca707b68ffb5fd2a4ecec4d" compoundref="_mc_block_entry_chooser_8cs" startline="198" endline="209">RemoveEntrance</referencedby>
+        <referencedby refid="class_mc_block_entry_chooser_1a205d1ebb13dc6d068636676abc1e6237" compoundref="_mc_block_entry_chooser_8cs" startline="43" endline="66">Show</referencedby>
+        <referencedby refid="class_mc_block_entry_chooser_1a9bd2dac20f1be995bc56186b1f918f75" compoundref="_mc_block_entry_chooser_8cs" startline="36" endline="41">Start</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_mc_block_entry_chooser_1aa648a467a4db0500a1e77ce9aaeb6b6f" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="no">
+        <type>List&lt; <ref refid="struct_map_block_1a6bdb8970fb09cd0570ed7036457f96a3" kindref="member">MapBlock.Direction</ref> &gt;</type>
+        <definition>List&lt;MapBlock.Direction&gt; McBlockEntryChooser.BlockEntrance</definition>
+        <argsstring></argsstring>
+        <name>BlockEntrance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McBlockEntryChooser.cs" line="26" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McBlockEntryChooser.cs" bodystart="27" bodyend="-1"/>
+        <referencedby refid="class_mc_file_manager_1a19e2058681c7bd14aa2ffead30755186" compoundref="_mc_file_manager_8cs" startline="78" endline="95">McFileManager.GeneradeFileName</referencedby>
+        <referencedby refid="class_mc_file_manager_1a55f9c081c604f45babc0dc174a59070d" compoundref="_mc_file_manager_8cs" startline="104" endline="125">McFileManager.OnOkButtonClick</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_mc_block_entry_chooser_1a9bd2dac20f1be995bc56186b1f918f75" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void McBlockEntryChooser.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McBlockEntryChooser.cs" line="36" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McBlockEntryChooser.cs" bodystart="36" bodyend="41"/>
+        <references refid="class_mc_block_entry_chooser_1acd8aee32d40b345507f7eb8e3e43d2bf" compoundref="_mc_block_entry_chooser_8cs" startline="25">blockEntrance</references>
+        <references refid="class_mc_block_entry_chooser_1a67a1e648d7e295fc83a0dfebdec6ea1f" compoundref="_mc_block_entry_chooser_8cs" startline="34">brothersToggles</references>
+      </memberdef>
+      <memberdef kind="function" id="class_mc_block_entry_chooser_1aa6eb31988a141a82d9fbdf7d1f8679f1" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void McBlockEntryChooser.AddEntrance</definition>
+        <argsstring>()</argsstring>
+        <name>AddEntrance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McBlockEntryChooser.cs" line="186" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McBlockEntryChooser.cs" bodystart="186" bodyend="196"/>
+        <references refid="class_mc_block_entry_chooser_1a9c808792b32c9eadbbacc841bfa5919d" compoundref="_mc_block_entry_chooser_8cs" startline="15">entryDirection</references>
+        <referencedby refid="class_mc_block_entry_chooser_1a275489cf17b592763be1d0575e804aa3" compoundref="_mc_block_entry_chooser_8cs" startline="147" endline="184">OnPointerUp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_mc_block_entry_chooser_1a950d9c4f3ca707b68ffb5fd2a4ecec4d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void McBlockEntryChooser.RemoveEntrance</definition>
+        <argsstring>()</argsstring>
+        <name>RemoveEntrance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McBlockEntryChooser.cs" line="198" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McBlockEntryChooser.cs" bodystart="198" bodyend="209"/>
+        <references refid="class_mc_block_entry_chooser_1a67a1e648d7e295fc83a0dfebdec6ea1f" compoundref="_mc_block_entry_chooser_8cs" startline="34">brothersToggles</references>
+        <referencedby refid="class_mc_block_entry_chooser_1afdfa93b303caff1bfa5b3e56d3ce8ac4" compoundref="_mc_block_entry_chooser_8cs" startline="211" endline="215">OnPointerClick</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_mc_block_entry_chooser_1a205d1ebb13dc6d068636676abc1e6237" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void McBlockEntryChooser.Show</definition>
+        <argsstring>(McToggleTypeOfBlock.TypeOfBlock typeofBlock)</argsstring>
+        <name>Show</name>
+        <param>
+          <type><ref refid="class_mc_toggle_type_of_block_1a2a2085289933f5f1d2e6a73cbd7bec57" kindref="member">McToggleTypeOfBlock.TypeOfBlock</ref></type>
+          <declname>typeofBlock</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McBlockEntryChooser.cs" line="43" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McBlockEntryChooser.cs" bodystart="43" bodyend="66"/>
+        <references refid="class_mc_block_entry_chooser_1a67a1e648d7e295fc83a0dfebdec6ea1f" compoundref="_mc_block_entry_chooser_8cs" startline="34">brothersToggles</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_mc_block_entry_chooser_1a2ccd67b1f0bdd2e6e40b8d5f8e68fc81" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void McBlockEntryChooser.OnDrag</definition>
+        <argsstring>(PointerEventData eventData)</argsstring>
+        <name>OnDrag</name>
+        <param>
+          <type>PointerEventData</type>
+          <declname>eventData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McBlockEntryChooser.cs" line="68" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McBlockEntryChooser.cs" bodystart="68" bodyend="122"/>
+        <references refid="class_mc_block_entry_chooser_1ac05132de7d4f9d6fca09d85c624dc231" compoundref="_mc_block_entry_chooser_8cs" startline="18">bottomFlag</references>
+        <references refid="class_mc_block_entry_chooser_1a7b6b8ff013f3bbdb08bed35b3d3e26ce" compoundref="_mc_block_entry_chooser_8cs" startline="22">dragDistanseX</references>
+        <references refid="class_mc_block_entry_chooser_1a7e7f89a53243008cbb530133fa4c6a2f" compoundref="_mc_block_entry_chooser_8cs" startline="22">dragDistanseY</references>
+        <references refid="class_mc_block_chooser_direction_toggle_flag_1ad96669e58426d25f61e930846d12da0e" compoundref="_mc_block_chooser_direction_toggle_flag_8cs" startline="9">McBlockChooserDirectionToggleFlag.IsSelected</references>
+        <references refid="class_mc_block_entry_chooser_1af66ee8a0db34d3f13fe9b3daa06a2384" compoundref="_mc_block_entry_chooser_8cs" startline="18">leftFlag</references>
+        <references refid="class_mc_block_entry_chooser_1aa0656f96ac03e2f7b431ac9cdab9a602" compoundref="_mc_block_entry_chooser_8cs" startline="18">rightFlag</references>
+        <references refid="class_mc_block_entry_chooser_1a6efd92312b127d72c9424563695fdb90" compoundref="_mc_block_entry_chooser_8cs" startline="18">topFlag</references>
+      </memberdef>
+      <memberdef kind="function" id="class_mc_block_entry_chooser_1a55c55b11062793d37339fae309da8014" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void McBlockEntryChooser.OnPointerDown</definition>
+        <argsstring>(PointerEventData eventData)</argsstring>
+        <name>OnPointerDown</name>
+        <param>
+          <type>PointerEventData</type>
+          <declname>eventData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McBlockEntryChooser.cs" line="124" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McBlockEntryChooser.cs" bodystart="124" bodyend="130"/>
+        <references refid="class_mc_block_entry_chooser_1a67a1e648d7e295fc83a0dfebdec6ea1f" compoundref="_mc_block_entry_chooser_8cs" startline="34">brothersToggles</references>
+        <references refid="class_mc_block_entry_chooser_1a665927088f43aaf173f9598720f5412d" compoundref="_mc_block_entry_chooser_8cs" startline="23">mouseDownPosition</references>
+      </memberdef>
+      <memberdef kind="function" id="class_mc_block_entry_chooser_1ab9a36b0fd25372f83ecdc4db6b63787e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void McBlockEntryChooser.GetFlags</definition>
+        <argsstring>()</argsstring>
+        <name>GetFlags</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McBlockEntryChooser.cs" line="132" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McBlockEntryChooser.cs" bodystart="132" bodyend="145"/>
+        <references refid="class_mc_block_entry_chooser_1ac05132de7d4f9d6fca09d85c624dc231" compoundref="_mc_block_entry_chooser_8cs" startline="18">bottomFlag</references>
+        <references refid="class_mc_block_entry_chooser_1af66ee8a0db34d3f13fe9b3daa06a2384" compoundref="_mc_block_entry_chooser_8cs" startline="18">leftFlag</references>
+        <references refid="class_mc_block_entry_chooser_1aa0656f96ac03e2f7b431ac9cdab9a602" compoundref="_mc_block_entry_chooser_8cs" startline="18">rightFlag</references>
+        <references refid="class_mc_block_entry_chooser_1a6efd92312b127d72c9424563695fdb90" compoundref="_mc_block_entry_chooser_8cs" startline="18">topFlag</references>
+      </memberdef>
+      <memberdef kind="function" id="class_mc_block_entry_chooser_1a275489cf17b592763be1d0575e804aa3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void McBlockEntryChooser.OnPointerUp</definition>
+        <argsstring>(PointerEventData eventData)</argsstring>
+        <name>OnPointerUp</name>
+        <param>
+          <type>PointerEventData</type>
+          <declname>eventData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McBlockEntryChooser.cs" line="147" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McBlockEntryChooser.cs" bodystart="147" bodyend="184"/>
+        <references refid="class_mc_block_entry_chooser_1aa6eb31988a141a82d9fbdf7d1f8679f1" compoundref="_mc_block_entry_chooser_8cs" startline="186" endline="196">AddEntrance</references>
+        <references refid="class_mc_block_entry_chooser_1aa43572df2bd98f46c1950b113ae42799" compoundref="_mc_block_entry_chooser_8cs" startline="17">bottom</references>
+        <references refid="class_mc_block_entry_chooser_1ac05132de7d4f9d6fca09d85c624dc231" compoundref="_mc_block_entry_chooser_8cs" startline="18">bottomFlag</references>
+        <references refid="class_mc_block_entry_chooser_1a9c808792b32c9eadbbacc841bfa5919d" compoundref="_mc_block_entry_chooser_8cs" startline="15">entryDirection</references>
+        <references refid="class_mc_block_chooser_direction_toggle_flag_1ad96669e58426d25f61e930846d12da0e" compoundref="_mc_block_chooser_direction_toggle_flag_8cs" startline="9">McBlockChooserDirectionToggleFlag.IsSelected</references>
+        <references refid="class_mc_block_entry_chooser_1a5e7f1f65cd0c315a731e0432b5f0d865" compoundref="_mc_block_entry_chooser_8cs" startline="17">left</references>
+        <references refid="class_mc_block_entry_chooser_1af66ee8a0db34d3f13fe9b3daa06a2384" compoundref="_mc_block_entry_chooser_8cs" startline="18">leftFlag</references>
+        <references refid="class_mc_block_entry_chooser_1ab8e2ca89cea4f6dbdc1b5ffe7fc78fc3" compoundref="_mc_block_entry_chooser_8cs" startline="17">right</references>
+        <references refid="class_mc_block_entry_chooser_1aa0656f96ac03e2f7b431ac9cdab9a602" compoundref="_mc_block_entry_chooser_8cs" startline="18">rightFlag</references>
+        <references refid="class_mc_block_entry_chooser_1a969c61c8ababef32dbe65ada51e2d890" compoundref="_mc_block_entry_chooser_8cs" startline="17">top</references>
+        <references refid="class_mc_block_entry_chooser_1a6efd92312b127d72c9424563695fdb90" compoundref="_mc_block_entry_chooser_8cs" startline="18">topFlag</references>
+      </memberdef>
+      <memberdef kind="function" id="class_mc_block_entry_chooser_1afdfa93b303caff1bfa5b3e56d3ce8ac4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void McBlockEntryChooser.OnPointerClick</definition>
+        <argsstring>(PointerEventData eventData)</argsstring>
+        <name>OnPointerClick</name>
+        <param>
+          <type>PointerEventData</type>
+          <declname>eventData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McBlockEntryChooser.cs" line="211" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McBlockEntryChooser.cs" bodystart="211" bodyend="215"/>
+        <references refid="class_mc_block_entry_chooser_1a950d9c4f3ca707b68ffb5fd2a4ecec4d" compoundref="_mc_block_entry_chooser_8cs" startline="198" endline="209">RemoveEntrance</references>
+      </memberdef>
+      <memberdef kind="function" id="class_mc_block_entry_chooser_1a58095cbe9928f8a6b20c1f9a211c544e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void McBlockEntryChooser.DeselectAllDirections</definition>
+        <argsstring>()</argsstring>
+        <name>DeselectAllDirections</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McBlockEntryChooser.cs" line="217" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McBlockEntryChooser.cs" bodystart="217" bodyend="230"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="590">
+        <label>IPointerDownHandler</label>
+      </node>
+      <node id="587">
+        <label>McBlockEntryChooser</label>
+        <link refid="class_mc_block_entry_chooser"/>
+        <childnode refid="588" relation="public-inheritance">
+        </childnode>
+        <childnode refid="589" relation="public-inheritance">
+        </childnode>
+        <childnode refid="590" relation="public-inheritance">
+        </childnode>
+        <childnode refid="591" relation="public-inheritance">
+        </childnode>
+        <childnode refid="592" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="592">
+        <label>IPointerClickHandler</label>
+      </node>
+      <node id="588">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="589">
+        <label>IDragHandler</label>
+      </node>
+      <node id="591">
+        <label>IPointerUpHandler</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="599">
+        <label>McFileManager</label>
+        <link refid="class_mc_file_manager"/>
+        <childnode refid="594" relation="public-inheritance">
+        </childnode>
+        <childnode refid="600" relation="usage">
+          <edgelabel>gridConstructController</edgelabel>
+        </childnode>
+        <childnode refid="602" relation="usage">
+          <edgelabel>mapBlocks</edgelabel>
+        </childnode>
+        <childnode refid="603" relation="usage">
+          <edgelabel>dialogPanel</edgelabel>
+        </childnode>
+      </node>
+      <node id="603">
+        <label>McHider</label>
+        <link refid="class_mc_hider"/>
+        <childnode refid="594" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="601">
+        <label>McGrid</label>
+        <link refid="class_mc_grid"/>
+        <childnode refid="594" relation="public-inheritance">
+        </childnode>
+        <childnode refid="600" relation="usage">
+          <edgelabel>controller</edgelabel>
+        </childnode>
+        <childnode refid="602" relation="usage">
+          <edgelabel>inputedMapBlock</edgelabel>
+        </childnode>
+      </node>
+      <node id="602">
+        <label>MapBlock</label>
+        <link refid="struct_map_block"/>
+      </node>
+      <node id="600">
+        <label>McGridConstructController</label>
+        <link refid="class_mc_grid_construct_controller"/>
+        <childnode refid="594" relation="public-inheritance">
+        </childnode>
+        <childnode refid="595" relation="public-inheritance">
+        </childnode>
+        <childnode refid="596" relation="public-inheritance">
+        </childnode>
+        <childnode refid="599" relation="usage">
+          <edgelabel>fileManager</edgelabel>
+        </childnode>
+        <childnode refid="601" relation="usage">
+          <edgelabel>grid</edgelabel>
+        </childnode>
+      </node>
+      <node id="596">
+        <label>IPointerDownHandler</label>
+      </node>
+      <node id="593">
+        <label>McBlockEntryChooser</label>
+        <link refid="class_mc_block_entry_chooser"/>
+        <childnode refid="594" relation="public-inheritance">
+        </childnode>
+        <childnode refid="595" relation="public-inheritance">
+        </childnode>
+        <childnode refid="596" relation="public-inheritance">
+        </childnode>
+        <childnode refid="597" relation="public-inheritance">
+        </childnode>
+        <childnode refid="598" relation="public-inheritance">
+        </childnode>
+        <childnode refid="599" relation="usage">
+          <edgelabel>fileManager</edgelabel>
+        </childnode>
+        <childnode refid="604" relation="usage">
+          <edgelabel>leftFlag</edgelabel>
+          <edgelabel>rightFlag</edgelabel>
+          <edgelabel>bottomFlag</edgelabel>
+          <edgelabel>topFlag</edgelabel>
+        </childnode>
+        <childnode refid="593" relation="usage">
+          <edgelabel>brothersToggles</edgelabel>
+        </childnode>
+        <childnode refid="602" relation="usage">
+          <edgelabel>entryDirection</edgelabel>
+        </childnode>
+      </node>
+      <node id="598">
+        <label>IPointerClickHandler</label>
+      </node>
+      <node id="594">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="604">
+        <label>McBlockChooserDirectionToggleFlag</label>
+        <link refid="class_mc_block_chooser_direction_toggle_flag"/>
+        <childnode refid="594" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="595">
+        <label>IDragHandler</label>
+      </node>
+      <node id="597">
+        <label>IPointerUpHandler</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McBlockEntryChooser.cs" line="14" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McBlockEntryChooser.cs" bodystart="8" bodyend="231"/>
+    <listofallmembers>
+      <member refid="class_mc_block_entry_chooser_1aa6eb31988a141a82d9fbdf7d1f8679f1" prot="private" virt="non-virtual"><scope>McBlockEntryChooser</scope><name>AddEntrance</name></member>
+      <member refid="class_mc_block_entry_chooser_1acd8aee32d40b345507f7eb8e3e43d2bf" prot="private" virt="non-virtual"><scope>McBlockEntryChooser</scope><name>blockEntrance</name></member>
+      <member refid="class_mc_block_entry_chooser_1aa648a467a4db0500a1e77ce9aaeb6b6f" prot="public" virt="non-virtual"><scope>McBlockEntryChooser</scope><name>BlockEntrance</name></member>
+      <member refid="class_mc_block_entry_chooser_1aa43572df2bd98f46c1950b113ae42799" prot="private" virt="non-virtual"><scope>McBlockEntryChooser</scope><name>bottom</name></member>
+      <member refid="class_mc_block_entry_chooser_1ac05132de7d4f9d6fca09d85c624dc231" prot="private" virt="non-virtual"><scope>McBlockEntryChooser</scope><name>bottomFlag</name></member>
+      <member refid="class_mc_block_entry_chooser_1a67a1e648d7e295fc83a0dfebdec6ea1f" prot="private" virt="non-virtual"><scope>McBlockEntryChooser</scope><name>brothersToggles</name></member>
+      <member refid="class_mc_block_entry_chooser_1a58095cbe9928f8a6b20c1f9a211c544e" prot="public" virt="non-virtual"><scope>McBlockEntryChooser</scope><name>DeselectAllDirections</name></member>
+      <member refid="class_mc_block_entry_chooser_1a7b6b8ff013f3bbdb08bed35b3d3e26ce" prot="private" virt="non-virtual"><scope>McBlockEntryChooser</scope><name>dragDistanseX</name></member>
+      <member refid="class_mc_block_entry_chooser_1a7e7f89a53243008cbb530133fa4c6a2f" prot="private" virt="non-virtual"><scope>McBlockEntryChooser</scope><name>dragDistanseY</name></member>
+      <member refid="class_mc_block_entry_chooser_1a9c808792b32c9eadbbacc841bfa5919d" prot="private" virt="non-virtual"><scope>McBlockEntryChooser</scope><name>entryDirection</name></member>
+      <member refid="class_mc_block_entry_chooser_1ae47d867505425bb09eecfa01c1019cba" prot="private" virt="non-virtual"><scope>McBlockEntryChooser</scope><name>fileManager</name></member>
+      <member refid="class_mc_block_entry_chooser_1ab9a36b0fd25372f83ecdc4db6b63787e" prot="public" virt="non-virtual"><scope>McBlockEntryChooser</scope><name>GetFlags</name></member>
+      <member refid="class_mc_block_entry_chooser_1a5e7f1f65cd0c315a731e0432b5f0d865" prot="private" virt="non-virtual"><scope>McBlockEntryChooser</scope><name>left</name></member>
+      <member refid="class_mc_block_entry_chooser_1af66ee8a0db34d3f13fe9b3daa06a2384" prot="private" virt="non-virtual"><scope>McBlockEntryChooser</scope><name>leftFlag</name></member>
+      <member refid="class_mc_block_entry_chooser_1a665927088f43aaf173f9598720f5412d" prot="private" virt="non-virtual"><scope>McBlockEntryChooser</scope><name>mouseDownPosition</name></member>
+      <member refid="class_mc_block_entry_chooser_1a2ccd67b1f0bdd2e6e40b8d5f8e68fc81" prot="public" virt="non-virtual"><scope>McBlockEntryChooser</scope><name>OnDrag</name></member>
+      <member refid="class_mc_block_entry_chooser_1afdfa93b303caff1bfa5b3e56d3ce8ac4" prot="public" virt="non-virtual"><scope>McBlockEntryChooser</scope><name>OnPointerClick</name></member>
+      <member refid="class_mc_block_entry_chooser_1a55c55b11062793d37339fae309da8014" prot="public" virt="non-virtual"><scope>McBlockEntryChooser</scope><name>OnPointerDown</name></member>
+      <member refid="class_mc_block_entry_chooser_1a275489cf17b592763be1d0575e804aa3" prot="public" virt="non-virtual"><scope>McBlockEntryChooser</scope><name>OnPointerUp</name></member>
+      <member refid="class_mc_block_entry_chooser_1a950d9c4f3ca707b68ffb5fd2a4ecec4d" prot="private" virt="non-virtual"><scope>McBlockEntryChooser</scope><name>RemoveEntrance</name></member>
+      <member refid="class_mc_block_entry_chooser_1ab8e2ca89cea4f6dbdc1b5ffe7fc78fc3" prot="private" virt="non-virtual"><scope>McBlockEntryChooser</scope><name>right</name></member>
+      <member refid="class_mc_block_entry_chooser_1aa0656f96ac03e2f7b431ac9cdab9a602" prot="private" virt="non-virtual"><scope>McBlockEntryChooser</scope><name>rightFlag</name></member>
+      <member refid="class_mc_block_entry_chooser_1a205d1ebb13dc6d068636676abc1e6237" prot="public" virt="non-virtual"><scope>McBlockEntryChooser</scope><name>Show</name></member>
+      <member refid="class_mc_block_entry_chooser_1a9bd2dac20f1be995bc56186b1f918f75" prot="private" virt="non-virtual"><scope>McBlockEntryChooser</scope><name>Start</name></member>
+      <member refid="class_mc_block_entry_chooser_1a969c61c8ababef32dbe65ada51e2d890" prot="private" virt="non-virtual"><scope>McBlockEntryChooser</scope><name>top</name></member>
+      <member refid="class_mc_block_entry_chooser_1a6efd92312b127d72c9424563695fdb90" prot="private" virt="non-virtual"><scope>McBlockEntryChooser</scope><name>topFlag</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

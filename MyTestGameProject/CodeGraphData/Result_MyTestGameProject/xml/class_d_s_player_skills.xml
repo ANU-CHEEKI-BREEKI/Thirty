@@ -1,0 +1,162 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_d_s_player_skills" kind="class" prot="public">
+    <compoundname>DSPlayerSkills</compoundname>
+    <basecompoundref refid="interface_i_savable" prot="public" virt="non-virtual">ISavable</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_d_s_player_skills_1a65dcbe06fb99ba1bfae336fe52ff1db8" prot="public" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_d_s_player_skill" kindref="compound">DSPlayerSkill</ref> &gt;</type>
+        <definition>List&lt;DSPlayerSkill&gt; DSPlayerSkills.skills</definition>
+        <argsstring></argsstring>
+        <name>skills</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSPlayerSkills.cs" line="8" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSPlayerSkills.cs" bodystart="8" bodyend="-1"/>
+        <referencedby refid="class_d_s_player_skills_1a8d902ecf97e8c7fb92ded65231a50e36" compoundref="_d_s_player_skills_8cs" startline="12" endline="17">DSPlayerSkills</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_d_s_player_skills_1a79ce8011ab527821edbcd5a091eca5b9" prot="public" static="no" mutable="no">
+        <type><ref refid="class_skill" kindref="compound">Skill</ref></type>
+        <definition>Skill DSPlayerSkills.firstSkill</definition>
+        <argsstring></argsstring>
+        <name>firstSkill</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSPlayerSkills.cs" line="9" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSPlayerSkills.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_d_s_player_skills_1acbc5b76bf95505de1a43c50044773be2" prot="public" static="no" mutable="no">
+        <type><ref refid="class_skill" kindref="compound">Skill</ref></type>
+        <definition>Skill DSPlayerSkills.secondSkill</definition>
+        <argsstring></argsstring>
+        <name>secondSkill</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSPlayerSkills.cs" line="10" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSPlayerSkills.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_d_s_player_skills_1a8d902ecf97e8c7fb92ded65231a50e36" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>DSPlayerSkills.DSPlayerSkills</definition>
+        <argsstring>()</argsstring>
+        <name>DSPlayerSkills</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSPlayerSkills.cs" line="12" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSPlayerSkills.cs" bodystart="12" bodyend="17"/>
+        <references refid="class_d_s_player_skills_1a65dcbe06fb99ba1bfae336fe52ff1db8" compoundref="_d_s_player_skills_8cs" startline="8">skills</references>
+      </memberdef>
+      <memberdef kind="function" id="class_d_s_player_skills_1a86df032cd30b8c2d40b87f424fb9aa25" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void DSPlayerSkills.Save</definition>
+        <argsstring>()</argsstring>
+        <name>Save</name>
+        <reimplements refid="interface_i_savable_1a6f524db1edec7552b99f40de1bf013f4">Save</reimplements>
+        <briefdescription>
+<para>Сохранить данные в хранилище </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSPlayerSkills.cs" line="19" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSPlayerSkills.cs" bodystart="19" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_d_s_player_skills_1a5b404a1a116697a3675538a74bbf55a1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void DSPlayerSkills.Load</definition>
+        <argsstring>()</argsstring>
+        <name>Load</name>
+        <reimplements refid="interface_i_savable_1ad4c1956e2936ff33be4709453ad21190">Load</reimplements>
+        <briefdescription>
+<para>Загрузить данные из хранилища </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSPlayerSkills.cs" line="24" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSPlayerSkills.cs" bodystart="24" bodyend="31"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="291">
+        <label>ISavable</label>
+        <link refid="interface_i_savable"/>
+      </node>
+      <node id="290">
+        <label>DSPlayerSkills</label>
+        <link refid="class_d_s_player_skills"/>
+        <childnode refid="291" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="293">
+        <label>ISavable</label>
+        <link refid="interface_i_savable"/>
+      </node>
+      <node id="297">
+        <label>Item.MainProperties</label>
+        <link refid="struct_item_1_1_main_properties"/>
+      </node>
+      <node id="298">
+        <label>IDescriptionable</label>
+        <link refid="interface_i_descriptionable"/>
+      </node>
+      <node id="295">
+        <label>Item</label>
+        <link refid="class_item"/>
+        <childnode refid="296" relation="public-inheritance">
+        </childnode>
+        <childnode refid="297" relation="usage">
+          <edgelabel>mainProperties</edgelabel>
+        </childnode>
+      </node>
+      <node id="296">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="294">
+        <label>Skill</label>
+        <link refid="class_skill"/>
+        <childnode refid="295" relation="public-inheritance">
+        </childnode>
+        <childnode refid="298" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="292">
+        <label>DSPlayerSkills</label>
+        <link refid="class_d_s_player_skills"/>
+        <childnode refid="293" relation="public-inheritance">
+        </childnode>
+        <childnode refid="294" relation="usage">
+          <edgelabel>firstSkill</edgelabel>
+          <edgelabel>secondSkill</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSPlayerSkills.cs" line="7" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSPlayerSkills.cs" bodystart="6" bodyend="32"/>
+    <listofallmembers>
+      <member refid="class_d_s_player_skills_1a8d902ecf97e8c7fb92ded65231a50e36" prot="public" virt="non-virtual"><scope>DSPlayerSkills</scope><name>DSPlayerSkills</name></member>
+      <member refid="class_d_s_player_skills_1a79ce8011ab527821edbcd5a091eca5b9" prot="public" virt="non-virtual"><scope>DSPlayerSkills</scope><name>firstSkill</name></member>
+      <member refid="class_d_s_player_skills_1a5b404a1a116697a3675538a74bbf55a1" prot="public" virt="non-virtual"><scope>DSPlayerSkills</scope><name>Load</name></member>
+      <member refid="class_d_s_player_skills_1a86df032cd30b8c2d40b87f424fb9aa25" prot="public" virt="non-virtual"><scope>DSPlayerSkills</scope><name>Save</name></member>
+      <member refid="class_d_s_player_skills_1acbc5b76bf95505de1a43c50044773be2" prot="public" virt="non-virtual"><scope>DSPlayerSkills</scope><name>secondSkill</name></member>
+      <member refid="class_d_s_player_skills_1a65dcbe06fb99ba1bfae336fe52ff1db8" prot="public" virt="non-virtual"><scope>DSPlayerSkills</scope><name>skills</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

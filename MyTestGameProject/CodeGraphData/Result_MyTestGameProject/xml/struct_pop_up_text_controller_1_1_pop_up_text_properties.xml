@@ -1,0 +1,204 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="struct_pop_up_text_controller_1_1_pop_up_text_properties" kind="struct" prot="private">
+    <compoundname>PopUpTextController::PopUpTextProperties</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_pop_up_text_controller_1_1_pop_up_text_properties_1a28f49bd87a3c97e8d7ff0949d451a536" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string PopUpTextController.PopUpTextProperties.Text</definition>
+        <argsstring></argsstring>
+        <name>Text</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PopUpTextController.cs" line="133" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PopUpTextController.cs" bodystart="133" bodyend="-1"/>
+        <referencedby refid="struct_pop_up_text_controller_1_1_pop_up_text_properties_1a35f741d50657c3657052c29ef8ef626e" compoundref="_pop_up_text_controller_8cs" startline="150" endline="160">PopUpTextController.PopUpTextProperties.PopUpTextProperties</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_pop_up_text_controller_1_1_pop_up_text_properties_1acb72d7962c5e5ff883962bec8bace9f7" prot="public" static="no" mutable="no">
+        <type>Vector2</type>
+        <definition>Vector2 PopUpTextController.PopUpTextProperties.Position</definition>
+        <argsstring></argsstring>
+        <name>Position</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PopUpTextController.cs" line="134" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PopUpTextController.cs" bodystart="134" bodyend="-1"/>
+        <referencedby refid="struct_pop_up_text_controller_1_1_pop_up_text_properties_1a35f741d50657c3657052c29ef8ef626e" compoundref="_pop_up_text_controller_8cs" startline="150" endline="160">PopUpTextController.PopUpTextProperties.PopUpTextProperties</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_pop_up_text_controller_1_1_pop_up_text_properties_1a0d77de5b89824c440b3db9c1204b4289" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float PopUpTextController.PopUpTextProperties.RemainingLifetime</definition>
+        <argsstring></argsstring>
+        <name>RemainingLifetime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PopUpTextController.cs" line="142" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PopUpTextController.cs" bodystart="142" bodyend="-1"/>
+        <referencedby refid="struct_pop_up_text_controller_1_1_pop_up_text_properties_1a35f741d50657c3657052c29ef8ef626e" compoundref="_pop_up_text_controller_8cs" startline="150" endline="160">PopUpTextController.PopUpTextProperties.PopUpTextProperties</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_pop_up_text_controller_1_1_pop_up_text_properties_1a73c29ce28466b29485c984194194838c" prot="public" static="no" mutable="no">
+        <type>Vector2</type>
+        <definition>Vector2 PopUpTextController.PopUpTextProperties.Speed</definition>
+        <argsstring></argsstring>
+        <name>Speed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PopUpTextController.cs" line="143" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PopUpTextController.cs" bodystart="143" bodyend="-1"/>
+        <referencedby refid="struct_pop_up_text_controller_1_1_pop_up_text_properties_1a35f741d50657c3657052c29ef8ef626e" compoundref="_pop_up_text_controller_8cs" startline="150" endline="160">PopUpTextController.PopUpTextProperties.PopUpTextProperties</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_pop_up_text_controller_1_1_pop_up_text_properties_1a9537c20e4882256a84553e151a34a858" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_pop_up_text_controller_1_1_pop_up_text_properties_1a2cfe8b9563299d32383146cf79868043" kindref="member">Color</ref></type>
+        <definition>Color PopUpTextController.PopUpTextProperties.startColor</definition>
+        <argsstring></argsstring>
+        <name>startColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PopUpTextController.cs" line="145" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PopUpTextController.cs" bodystart="145" bodyend="-1"/>
+        <referencedby refid="struct_pop_up_text_controller_1_1_pop_up_text_properties_1a35f741d50657c3657052c29ef8ef626e" compoundref="_pop_up_text_controller_8cs" startline="150" endline="160">PopUpTextController.PopUpTextProperties.PopUpTextProperties</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_pop_up_text_controller_1_1_pop_up_text_properties_1a3180904a80be4f20a7f8832a53ad8000" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_pop_up_text_controller_1_1_pop_up_text_properties_1a2cfe8b9563299d32383146cf79868043" kindref="member">Color</ref></type>
+        <definition>Color PopUpTextController.PopUpTextProperties.endColor</definition>
+        <argsstring></argsstring>
+        <name>endColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PopUpTextController.cs" line="146" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PopUpTextController.cs" bodystart="146" bodyend="-1"/>
+        <referencedby refid="struct_pop_up_text_controller_1_1_pop_up_text_properties_1a35f741d50657c3657052c29ef8ef626e" compoundref="_pop_up_text_controller_8cs" startline="150" endline="160">PopUpTextController.PopUpTextProperties.PopUpTextProperties</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_pop_up_text_controller_1_1_pop_up_text_properties_1a91cfd2fb847410c78fae1cb68b36c4e6" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float PopUpTextController.PopUpTextProperties.lifetime</definition>
+        <argsstring></argsstring>
+        <name>lifetime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PopUpTextController.cs" line="147" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PopUpTextController.cs" bodystart="147" bodyend="-1"/>
+        <referencedby refid="struct_pop_up_text_controller_1_1_pop_up_text_properties_1a35f741d50657c3657052c29ef8ef626e" compoundref="_pop_up_text_controller_8cs" startline="150" endline="160">PopUpTextController.PopUpTextProperties.PopUpTextProperties</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_pop_up_text_controller_1_1_pop_up_text_properties_1af2ca584621f94b856fdeb83a1976bd66" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float PopUpTextController.PopUpTextProperties.FontSize</definition>
+        <argsstring></argsstring>
+        <name>FontSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PopUpTextController.cs" line="148" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PopUpTextController.cs" bodystart="148" bodyend="-1"/>
+        <referencedby refid="struct_pop_up_text_controller_1_1_pop_up_text_properties_1a35f741d50657c3657052c29ef8ef626e" compoundref="_pop_up_text_controller_8cs" startline="150" endline="160">PopUpTextController.PopUpTextProperties.PopUpTextProperties</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="struct_pop_up_text_controller_1_1_pop_up_text_properties_1a2cfe8b9563299d32383146cf79868043" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>Color</type>
+        <definition>Color PopUpTextController.PopUpTextProperties.Color</definition>
+        <argsstring></argsstring>
+        <name>Color</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PopUpTextController.cs" line="135" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PopUpTextController.cs" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_pop_up_text_controller_1_1_pop_up_text_properties_1a35f741d50657c3657052c29ef8ef626e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PopUpTextController.PopUpTextProperties.PopUpTextProperties</definition>
+        <argsstring>(string text, Vector2 screenPosition, float lifetime, Vector2 floatSpeed, Color startColor, Color endColor, float?fontSize)</argsstring>
+        <name>PopUpTextProperties</name>
+        <param>
+          <type>string</type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type>Vector2</type>
+          <declname>screenPosition</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>lifetime</declname>
+        </param>
+        <param>
+          <type>Vector2</type>
+          <declname>floatSpeed</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_pop_up_text_controller_1_1_pop_up_text_properties_1a2cfe8b9563299d32383146cf79868043" kindref="member">Color</ref></type>
+          <declname>startColor</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_pop_up_text_controller_1_1_pop_up_text_properties_1a2cfe8b9563299d32383146cf79868043" kindref="member">Color</ref></type>
+          <declname>endColor</declname>
+        </param>
+        <param>
+          <type>float?</type>
+          <declname>fontSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PopUpTextController.cs" line="150" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PopUpTextController.cs" bodystart="150" bodyend="160"/>
+        <references refid="struct_pop_up_text_controller_1_1_pop_up_text_properties_1a3180904a80be4f20a7f8832a53ad8000" compoundref="_pop_up_text_controller_8cs" startline="146">PopUpTextController.PopUpTextProperties.endColor</references>
+        <references refid="class_pop_up_text_controller_1afbf9bd4bdb30d908667ccc093a285b4c" compoundref="_pop_up_text_controller_8cs" startline="12">PopUpTextController.floatSpeed</references>
+        <references refid="struct_pop_up_text_controller_1_1_pop_up_text_properties_1af2ca584621f94b856fdeb83a1976bd66" compoundref="_pop_up_text_controller_8cs" startline="148">PopUpTextController.PopUpTextProperties.FontSize</references>
+        <references refid="struct_pop_up_text_controller_1_1_pop_up_text_properties_1a91cfd2fb847410c78fae1cb68b36c4e6" compoundref="_pop_up_text_controller_8cs" startline="147">PopUpTextController.PopUpTextProperties.lifetime</references>
+        <references refid="struct_pop_up_text_controller_1_1_pop_up_text_properties_1acb72d7962c5e5ff883962bec8bace9f7" compoundref="_pop_up_text_controller_8cs" startline="134">PopUpTextController.PopUpTextProperties.Position</references>
+        <references refid="struct_pop_up_text_controller_1_1_pop_up_text_properties_1a0d77de5b89824c440b3db9c1204b4289" compoundref="_pop_up_text_controller_8cs" startline="142">PopUpTextController.PopUpTextProperties.RemainingLifetime</references>
+        <references refid="struct_pop_up_text_controller_1_1_pop_up_text_properties_1a73c29ce28466b29485c984194194838c" compoundref="_pop_up_text_controller_8cs" startline="143">PopUpTextController.PopUpTextProperties.Speed</references>
+        <references refid="struct_pop_up_text_controller_1_1_pop_up_text_properties_1a9537c20e4882256a84553e151a34a858" compoundref="_pop_up_text_controller_8cs" startline="145">PopUpTextController.PopUpTextProperties.startColor</references>
+        <references refid="struct_pop_up_text_controller_1_1_pop_up_text_properties_1a28f49bd87a3c97e8d7ff0949d451a536" compoundref="_pop_up_text_controller_8cs" startline="133">PopUpTextController.PopUpTextProperties.Text</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PopUpTextController.cs" line="132" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/PopUpTextController.cs" bodystart="131" bodyend="162"/>
+    <listofallmembers>
+      <member refid="struct_pop_up_text_controller_1_1_pop_up_text_properties_1a2cfe8b9563299d32383146cf79868043" prot="public" virt="non-virtual"><scope>PopUpTextController::PopUpTextProperties</scope><name>Color</name></member>
+      <member refid="struct_pop_up_text_controller_1_1_pop_up_text_properties_1a3180904a80be4f20a7f8832a53ad8000" prot="public" virt="non-virtual"><scope>PopUpTextController::PopUpTextProperties</scope><name>endColor</name></member>
+      <member refid="struct_pop_up_text_controller_1_1_pop_up_text_properties_1af2ca584621f94b856fdeb83a1976bd66" prot="public" virt="non-virtual"><scope>PopUpTextController::PopUpTextProperties</scope><name>FontSize</name></member>
+      <member refid="struct_pop_up_text_controller_1_1_pop_up_text_properties_1a91cfd2fb847410c78fae1cb68b36c4e6" prot="public" virt="non-virtual"><scope>PopUpTextController::PopUpTextProperties</scope><name>lifetime</name></member>
+      <member refid="struct_pop_up_text_controller_1_1_pop_up_text_properties_1a35f741d50657c3657052c29ef8ef626e" prot="public" virt="non-virtual"><scope>PopUpTextController::PopUpTextProperties</scope><name>PopUpTextProperties</name></member>
+      <member refid="struct_pop_up_text_controller_1_1_pop_up_text_properties_1acb72d7962c5e5ff883962bec8bace9f7" prot="public" virt="non-virtual"><scope>PopUpTextController::PopUpTextProperties</scope><name>Position</name></member>
+      <member refid="struct_pop_up_text_controller_1_1_pop_up_text_properties_1a0d77de5b89824c440b3db9c1204b4289" prot="public" virt="non-virtual"><scope>PopUpTextController::PopUpTextProperties</scope><name>RemainingLifetime</name></member>
+      <member refid="struct_pop_up_text_controller_1_1_pop_up_text_properties_1a73c29ce28466b29485c984194194838c" prot="public" virt="non-virtual"><scope>PopUpTextController::PopUpTextProperties</scope><name>Speed</name></member>
+      <member refid="struct_pop_up_text_controller_1_1_pop_up_text_properties_1a9537c20e4882256a84553e151a34a858" prot="public" virt="non-virtual"><scope>PopUpTextController::PopUpTextProperties</scope><name>startColor</name></member>
+      <member refid="struct_pop_up_text_controller_1_1_pop_up_text_properties_1a28f49bd87a3c97e8d7ff0949d451a536" prot="public" virt="non-virtual"><scope>PopUpTextController::PopUpTextProperties</scope><name>Text</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

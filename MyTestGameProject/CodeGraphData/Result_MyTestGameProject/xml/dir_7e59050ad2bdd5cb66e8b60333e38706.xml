@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_7e59050ad2bdd5cb66e8b60333e38706" kind="dir">
+    <compoundname>D:/development/unity/mytestgame/MyTestGameProject</compoundname>
+    <innerdir refid="dir_77b9ccd7034a1ba4b2e2cdc90e12dd39">D:/development/unity/mytestgame/MyTestGameProject/Assets</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/"/>
+  </compounddef>
+</doxygen>

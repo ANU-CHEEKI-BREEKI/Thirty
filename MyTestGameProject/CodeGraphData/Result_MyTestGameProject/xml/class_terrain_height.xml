@@ -1,0 +1,260 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_terrain_height" kind="class" prot="public">
+    <compoundname>TerrainHeight</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_terrain_height_1a6fd76d59c903307996808da7a550d184" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float TerrainHeight.outterAddWalkerSizeInPercent</definition>
+        <argsstring></argsstring>
+        <name>outterAddWalkerSizeInPercent</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/TerrainHeight.cs" line="8" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/TerrainHeight.cs" bodystart="8" bodyend="-1"/>
+        <referencedby refid="class_terrain_height_1a6d9c45bb81a65ab846ed0b8358151be4" compoundref="_terrain_height_8cs" startline="66" endline="70">CalculateSize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_terrain_height_1ac2b3a3720a62454c21d9d91c26ece28b" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float TerrainHeight.innerAddWalkerSizeInPercent</definition>
+        <argsstring></argsstring>
+        <name>innerAddWalkerSizeInPercent</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/TerrainHeight.cs" line="9" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/TerrainHeight.cs" bodystart="9" bodyend="-1"/>
+        <referencedby refid="class_terrain_height_1a6d9c45bb81a65ab846ed0b8358151be4" compoundref="_terrain_height_8cs" startline="66" endline="70">CalculateSize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_terrain_height_1a23a2125a5650d430c26ac7d02ce2fa0f" prot="private" static="no" mutable="no">
+        <type>Transform</type>
+        <definition>Transform TerrainHeight.center</definition>
+        <argsstring></argsstring>
+        <name>center</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/TerrainHeight.cs" line="11" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/TerrainHeight.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_terrain_height_1ae6aa02375f0b05bef6df1bd3b89ec7d4" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float TerrainHeight.distance</definition>
+        <argsstring></argsstring>
+        <name>distance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/TerrainHeight.cs" line="12" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/TerrainHeight.cs" bodystart="12" bodyend="-1"/>
+        <referencedby refid="class_terrain_height_1aae5623771d6da2d21b3a1bd4bea56e8c" compoundref="_terrain_height_8cs" startline="72" endline="90">OnDrawGizmos</referencedby>
+        <referencedby refid="class_terrain_height_1aa99f37d63b0a8a302589d6632c7463cc" compoundref="_terrain_height_8cs" startline="36" endline="64">OnTriggerStay2D</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_terrain_height_1ab2c2abd47752e98f627f05d02d0330cb" prot="private" static="no" mutable="no">
+        <type>Vector2</type>
+        <definition>Vector2 TerrainHeight.centerPos</definition>
+        <argsstring></argsstring>
+        <name>centerPos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/TerrainHeight.cs" line="13" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/TerrainHeight.cs" bodystart="13" bodyend="-1"/>
+        <referencedby refid="class_terrain_height_1aa99f37d63b0a8a302589d6632c7463cc" compoundref="_terrain_height_8cs" startline="36" endline="64">OnTriggerStay2D</referencedby>
+        <referencedby refid="class_terrain_height_1a27126dfbbb4253500480aa5cb16fcdeb" compoundref="_terrain_height_8cs" startline="20" endline="34">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_terrain_height_1a334483f4ecfbc9c398843f3355b28583" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int TerrainHeight.rHitLayer</definition>
+        <argsstring></argsstring>
+        <name>rHitLayer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/TerrainHeight.cs" line="15" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/TerrainHeight.cs" bodystart="15" bodyend="-1"/>
+        <referencedby refid="class_terrain_height_1aa99f37d63b0a8a302589d6632c7463cc" compoundref="_terrain_height_8cs" startline="36" endline="64">OnTriggerStay2D</referencedby>
+        <referencedby refid="class_terrain_height_1a27126dfbbb4253500480aa5cb16fcdeb" compoundref="_terrain_height_8cs" startline="20" endline="34">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_terrain_height_1ac89942881814d21292e44dfd0ea90d28" prot="private" static="no" mutable="no">
+        <type>ContactFilter2D</type>
+        <definition>ContactFilter2D TerrainHeight.rHitFilter</definition>
+        <argsstring></argsstring>
+        <name>rHitFilter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/TerrainHeight.cs" line="16" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/TerrainHeight.cs" bodystart="16" bodyend="-1"/>
+        <referencedby refid="class_terrain_height_1a27126dfbbb4253500480aa5cb16fcdeb" compoundref="_terrain_height_8cs" startline="20" endline="34">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_terrain_height_1aed652029ea7413b77862a46fba0eb8df" prot="private" static="no" mutable="no">
+        <type>RaycastHit2D</type>
+        <definition>RaycastHit2D TerrainHeight.hit</definition>
+        <argsstring></argsstring>
+        <name>hit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/TerrainHeight.cs" line="18" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/TerrainHeight.cs" bodystart="18" bodyend="-1"/>
+        <referencedby refid="class_terrain_height_1aa99f37d63b0a8a302589d6632c7463cc" compoundref="_terrain_height_8cs" startline="36" endline="64">OnTriggerStay2D</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_terrain_height_1a98b699d7c9d821c524a5906844928fb4" prot="private" static="no" mutable="no">
+        <type>RaycastHit2D</type>
+        <definition>RaycastHit2D TerrainHeight.hit2</definition>
+        <argsstring></argsstring>
+        <name>hit2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/TerrainHeight.cs" line="18" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/TerrainHeight.cs" bodystart="18" bodyend="-1"/>
+        <referencedby refid="class_terrain_height_1aa99f37d63b0a8a302589d6632c7463cc" compoundref="_terrain_height_8cs" startline="36" endline="64">OnTriggerStay2D</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_terrain_height_1a27126dfbbb4253500480aa5cb16fcdeb" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void TerrainHeight.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/TerrainHeight.cs" line="20" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/TerrainHeight.cs" bodystart="20" bodyend="34"/>
+        <references refid="class_terrain_height_1ab2c2abd47752e98f627f05d02d0330cb" compoundref="_terrain_height_8cs" startline="13">centerPos</references>
+        <references refid="class_terrain_height_1ac89942881814d21292e44dfd0ea90d28" compoundref="_terrain_height_8cs" startline="16">rHitFilter</references>
+        <references refid="class_terrain_height_1a334483f4ecfbc9c398843f3355b28583" compoundref="_terrain_height_8cs" startline="15">rHitLayer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_terrain_height_1aa99f37d63b0a8a302589d6632c7463cc" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void TerrainHeight.OnTriggerStay2D</definition>
+        <argsstring>(Collider2D collision)</argsstring>
+        <name>OnTriggerStay2D</name>
+        <param>
+          <type>Collider2D</type>
+          <declname>collision</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/TerrainHeight.cs" line="36" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/TerrainHeight.cs" bodystart="36" bodyend="64"/>
+        <references refid="class_terrain_height_1a6d9c45bb81a65ab846ed0b8358151be4" compoundref="_terrain_height_8cs" startline="66" endline="70">CalculateSize</references>
+        <references refid="class_terrain_height_1ab2c2abd47752e98f627f05d02d0330cb" compoundref="_terrain_height_8cs" startline="13">centerPos</references>
+        <references refid="class_terrain_height_1ae6aa02375f0b05bef6df1bd3b89ec7d4" compoundref="_terrain_height_8cs" startline="12">distance</references>
+        <references refid="class_terrain_height_1aed652029ea7413b77862a46fba0eb8df" compoundref="_terrain_height_8cs" startline="18">hit</references>
+        <references refid="class_terrain_height_1a98b699d7c9d821c524a5906844928fb4" compoundref="_terrain_height_8cs" startline="18">hit2</references>
+        <references refid="class_terrain_height_1a334483f4ecfbc9c398843f3355b28583" compoundref="_terrain_height_8cs" startline="15">rHitLayer</references>
+      </memberdef>
+      <memberdef kind="function" id="class_terrain_height_1a6d9c45bb81a65ab846ed0b8358151be4" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void TerrainHeight.CalculateSize</definition>
+        <argsstring>(ITerrainWalker walker, float distanceKoeficient)</argsstring>
+        <name>CalculateSize</name>
+        <param>
+          <type><ref refid="interface_i_terrain_walker" kindref="compound">ITerrainWalker</ref></type>
+          <declname>walker</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>distanceKoeficient</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/TerrainHeight.cs" line="66" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/TerrainHeight.cs" bodystart="66" bodyend="70"/>
+        <references refid="class_terrain_height_1ac2b3a3720a62454c21d9d91c26ece28b" compoundref="_terrain_height_8cs" startline="9">innerAddWalkerSizeInPercent</references>
+        <references refid="class_terrain_height_1a6fd76d59c903307996808da7a550d184" compoundref="_terrain_height_8cs" startline="8">outterAddWalkerSizeInPercent</references>
+        <referencedby refid="class_terrain_height_1aa99f37d63b0a8a302589d6632c7463cc" compoundref="_terrain_height_8cs" startline="36" endline="64">OnTriggerStay2D</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_terrain_height_1aae5623771d6da2d21b3a1bd4bea56e8c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void TerrainHeight.OnDrawGizmos</definition>
+        <argsstring>()</argsstring>
+        <name>OnDrawGizmos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/TerrainHeight.cs" line="72" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/TerrainHeight.cs" bodystart="72" bodyend="90"/>
+        <references refid="class_terrain_height_1ae6aa02375f0b05bef6df1bd3b89ec7d4" compoundref="_terrain_height_8cs" startline="12">distance</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1141">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1140">
+        <label>TerrainHeight</label>
+        <link refid="class_terrain_height"/>
+        <childnode refid="1141" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1143">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1142">
+        <label>TerrainHeight</label>
+        <link refid="class_terrain_height"/>
+        <childnode refid="1143" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/TerrainHeight.cs" line="7" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/TerrainHeight.cs" bodystart="6" bodyend="91"/>
+    <listofallmembers>
+      <member refid="class_terrain_height_1a6d9c45bb81a65ab846ed0b8358151be4" prot="private" virt="non-virtual"><scope>TerrainHeight</scope><name>CalculateSize</name></member>
+      <member refid="class_terrain_height_1a23a2125a5650d430c26ac7d02ce2fa0f" prot="private" virt="non-virtual"><scope>TerrainHeight</scope><name>center</name></member>
+      <member refid="class_terrain_height_1ab2c2abd47752e98f627f05d02d0330cb" prot="private" virt="non-virtual"><scope>TerrainHeight</scope><name>centerPos</name></member>
+      <member refid="class_terrain_height_1ae6aa02375f0b05bef6df1bd3b89ec7d4" prot="private" virt="non-virtual"><scope>TerrainHeight</scope><name>distance</name></member>
+      <member refid="class_terrain_height_1aed652029ea7413b77862a46fba0eb8df" prot="private" virt="non-virtual"><scope>TerrainHeight</scope><name>hit</name></member>
+      <member refid="class_terrain_height_1a98b699d7c9d821c524a5906844928fb4" prot="private" virt="non-virtual"><scope>TerrainHeight</scope><name>hit2</name></member>
+      <member refid="class_terrain_height_1ac2b3a3720a62454c21d9d91c26ece28b" prot="private" virt="non-virtual"><scope>TerrainHeight</scope><name>innerAddWalkerSizeInPercent</name></member>
+      <member refid="class_terrain_height_1aae5623771d6da2d21b3a1bd4bea56e8c" prot="private" virt="non-virtual"><scope>TerrainHeight</scope><name>OnDrawGizmos</name></member>
+      <member refid="class_terrain_height_1aa99f37d63b0a8a302589d6632c7463cc" prot="private" virt="non-virtual"><scope>TerrainHeight</scope><name>OnTriggerStay2D</name></member>
+      <member refid="class_terrain_height_1a6fd76d59c903307996808da7a550d184" prot="private" virt="non-virtual"><scope>TerrainHeight</scope><name>outterAddWalkerSizeInPercent</name></member>
+      <member refid="class_terrain_height_1ac89942881814d21292e44dfd0ea90d28" prot="private" virt="non-virtual"><scope>TerrainHeight</scope><name>rHitFilter</name></member>
+      <member refid="class_terrain_height_1a334483f4ecfbc9c398843f3355b28583" prot="private" virt="non-virtual"><scope>TerrainHeight</scope><name>rHitLayer</name></member>
+      <member refid="class_terrain_height_1a27126dfbbb4253500480aa5cb16fcdeb" prot="private" virt="non-virtual"><scope>TerrainHeight</scope><name>Start</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

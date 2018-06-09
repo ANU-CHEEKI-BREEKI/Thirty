@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_b306f2ec1b0b852aba3aa7f360c18304" kind="dir">
+    <compoundname>D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/CW</compoundname>
+    <innerfile refid="_client_8cs">Client.cs</innerfile>
+    <innerfile refid="_coure_work_connect_to_server_8cs">CoureWorkConnectToServer.cs</innerfile>
+    <innerfile refid="_c_w___saving_manager_8cs">CW_SavingManager.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/CW/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_toast_8cs" kind="file">
+    <compoundname>Toast.cs</compoundname>
+    <innerclass refid="class_toast" prot="public">Toast</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Collections;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Collections.Generic;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>TMPro;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>UnityEngine;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>UnityEngine.EventSystems;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>UnityEngine.UI;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal">[RequireComponent(typeof(CanvasGroup))]</highlight></codeline>
+<codeline lineno="10" refid="class_toast" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_toast" kindref="compound">Toast</ref><sp/>:<sp/>MonoBehaviour,<sp/>IPointerClickHandler</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12" refid="class_toast_1a204330673810365a1bbb6cf2eade1bd5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="class_toast_1a204330673810365a1bbb6cf2eade1bd5" kindref="member">ToastLifetime</ref><sp/>{<sp/><ref refid="class_toast_1a204330673810365a1bbb6cf2eade1bd5adca6e617f6fb54033deb311e7e7c93cc" kindref="member">FAST</ref><sp/>=<sp/>1,<sp/><ref refid="class_toast_1a204330673810365a1bbb6cf2eade1bd5ac87f3be66ffc3c0d4249f1c2cc5f3cce" kindref="member">MEDIUM</ref><sp/>=<sp/>2,<sp/><ref refid="class_toast_1a204330673810365a1bbb6cf2eade1bd5a0e3066cbbd284dce8b76e7c4620d6d75" kindref="member">SLOW</ref><sp/>=<sp/>3<sp/>}</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="class_toast_1abb2ba67bfd809beafb78e8e7182d5183" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="class_toast" kindref="compound">Toast</ref><sp/><ref refid="class_toast_1abb2ba67bfd809beafb78e8e7182d5183" kindref="member">Instance</ref><sp/>{<sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">;<sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>set;<sp/>}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="class_toast_1a843dd7c8d6c8764ae1de901ab40708a0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[SerializeField]<sp/>TextMeshProUGUI<sp/><ref refid="class_toast_1a843dd7c8d6c8764ae1de901ab40708a0" kindref="member">text</ref>;</highlight></codeline>
+<codeline lineno="17" refid="class_toast_1aa3bbd75ad28e34b5eec5fa054922edcf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[SerializeField]<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_toast_1aa3bbd75ad28e34b5eec5fa054922edcf" kindref="member">floatDuration</ref><sp/>=<sp/>0.2f;</highlight></codeline>
+<codeline lineno="18" refid="class_toast_1adc5104838593032d1975212a32994a98" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[SerializeField]<sp/>Vector2<sp/><ref refid="class_toast_1adc5104838593032d1975212a32994a98" kindref="member">floatShiftInPercent</ref>;</highlight></codeline>
+<codeline lineno="19" refid="class_toast_1a7e0b07d99b32560f8e8c52a85c8f9ccd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[SerializeField]<sp/>[Range(0,<sp/>1)]<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_toast_1a7e0b07d99b32560f8e8c52a85c8f9ccd" kindref="member">startAlpha</ref><sp/>=<sp/>0.5f;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="class_toast_1a233aa004bcd02d01a091a7527c663456" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>CanvasGroup<sp/><ref refid="class_toast_1a233aa004bcd02d01a091a7527c663456" kindref="member">cg</ref>;</highlight></codeline>
+<codeline lineno="22" refid="class_toast_1a65c590970936f071568a9ddf287fe811" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>RectTransform<sp/><ref refid="class_toast_1a65c590970936f071568a9ddf287fe811" kindref="member">transform</ref>;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="class_toast_1a68503a4bdb06b29e1dfd99b1a3b2e96f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Coroutine<sp/><ref refid="class_toast_1a68503a4bdb06b29e1dfd99b1a3b2e96f" kindref="member">lastCoroutine</ref>;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="class_toast_1a8e50e56529b1b096a9eaf19dfd001981" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_toast_1a8e50e56529b1b096a9eaf19dfd001981" kindref="member">Awake</ref>()</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_toast_1abb2ba67bfd809beafb78e8e7182d5183" kindref="member">Instance</ref><sp/>=<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_toast_1a233aa004bcd02d01a091a7527c663456" kindref="member">cg</ref><sp/>=<sp/>GetComponent&lt;CanvasGroup&gt;();</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_toast_1a65c590970936f071568a9ddf287fe811" kindref="member">transform</ref><sp/>=<sp/>base.transform<sp/>as<sp/>RectTransform;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_toast_1af70432b2d13f76fb1e6e1c39239afa4c" kindref="member">Hide</ref>();</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="class_toast_1a6dc697b4689abda7eeefefefd5131bc7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_toast_1a6dc697b4689abda7eeefefefd5131bc7" kindref="member">Show</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>message,<sp/><ref refid="class_toast_1a204330673810365a1bbb6cf2eade1bd5" kindref="member">ToastLifetime</ref><sp/>lifetime<sp/>=<sp/><ref refid="class_toast_1a204330673810365a1bbb6cf2eade1bd5" kindref="member">ToastLifetime</ref>.MEDIUM)</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_toast_1af70432b2d13f76fb1e6e1c39239afa4c" kindref="member">Hide</ref>();</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>text.text<sp/>=<sp/>message;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gameObject.SetActive(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GameManager.Instance.StartCoroutine(<ref refid="class_toast_1ac731791ae0c0a1df9b870702ada0dcc7" kindref="member">WaitForRebuildPanel</ref>());</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_toast_1a68503a4bdb06b29e1dfd99b1a3b2e96f" kindref="member">lastCoroutine</ref><sp/>=<sp/>StartCoroutine(<ref refid="class_toast_1ac2acb1d55cc0e7cf8a12578fcd697f14" kindref="member">Float</ref>(<ref refid="class_toast_1aa3bbd75ad28e34b5eec5fa054922edcf" kindref="member">floatDuration</ref>,<sp/>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">)lifetime,<sp/><ref refid="class_toast_1adc5104838593032d1975212a32994a98" kindref="member">floatShiftInPercent</ref>,<sp/><ref refid="class_toast_1a7e0b07d99b32560f8e8c52a85c8f9ccd" kindref="member">startAlpha</ref>));</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="class_toast_1af70432b2d13f76fb1e6e1c39239afa4c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_toast_1af70432b2d13f76fb1e6e1c39239afa4c" kindref="member">Hide</ref>()</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_toast_1a68503a4bdb06b29e1dfd99b1a3b2e96f" kindref="member">lastCoroutine</ref><sp/>!=<sp/>null)</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>StopCoroutine(<ref refid="class_toast_1a68503a4bdb06b29e1dfd99b1a3b2e96f" kindref="member">lastCoroutine</ref>);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gameObject.SetActive(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="class_toast_1ac731791ae0c0a1df9b870702ada0dcc7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>IEnumerator<sp/><ref refid="class_toast_1ac731791ae0c0a1df9b870702ada0dcc7" kindref="member">WaitForRebuildPanel</ref>()</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>active<sp/>=<sp/>gameObject.activeSelf;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gameObject.SetActive(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LayoutRebuilder.ForceRebuildLayoutImmediate(<ref refid="class_toast_1a65c590970936f071568a9ddf287fe811" kindref="member">transform</ref>);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gameObject.SetActive(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gameObject.SetActive(active);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>yield<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>WaitForEndOfFrame();</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="class_toast_1ac2acb1d55cc0e7cf8a12578fcd697f14" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>IEnumerator<sp/><ref refid="class_toast_1ac2acb1d55cc0e7cf8a12578fcd697f14" kindref="member">Float</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_toast_1aa3bbd75ad28e34b5eec5fa054922edcf" kindref="member">floatDuration</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>lifetime,<sp/>Vector2<sp/><ref refid="class_toast_1adc5104838593032d1975212a32994a98" kindref="member">floatShiftInPercent</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_toast_1a7e0b07d99b32560f8e8c52a85c8f9ccd" kindref="member">startAlpha</ref>)</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>transform.anchoredPosition<sp/>=<sp/>Vector2.zero;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cg.alpha<sp/>=<sp/><ref refid="class_toast_1a7e0b07d99b32560f8e8c52a85c8f9ccd" kindref="member">startAlpha</ref>;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Vector2<sp/>shift<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Vector2(floatShiftInPercent.x<sp/>*<sp/>Camera.main.pixelWidth,<sp/>floatShiftInPercent.y<sp/>*<sp/>Camera.main.pixelHeight);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>deltaAlpha<sp/>=<sp/>1<sp/>-<sp/><ref refid="class_toast_1a7e0b07d99b32560f8e8c52a85c8f9ccd" kindref="member">startAlpha</ref>;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>duration<sp/>=<sp/><ref refid="class_toast_1aa3bbd75ad28e34b5eec5fa054922edcf" kindref="member">floatDuration</ref>;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>delta;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(floatDuration<sp/>&gt;<sp/>0<sp/>||<sp/>lifetime<sp/>&gt;<sp/>0)</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>delta<sp/>=<sp/>Time.deltaTime;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>floatDuration<sp/>-=<sp/>delta;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lifetime<sp/>-=<sp/>delta;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(floatDuration<sp/>&gt;<sp/>0)</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>transform.anchoredPosition<sp/>+=<sp/>shift<sp/>*<sp/>delta<sp/>/<sp/>duration;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cg.alpha<sp/>+=<sp/>deltaAlpha<sp/>*<sp/>delta;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>transform.anchoredPosition<sp/>=<sp/>shift;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cg.alpha<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(lifetime<sp/>&lt;<sp/>0)</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>yield<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>null;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_toast_1af70432b2d13f76fb1e6e1c39239afa4c" kindref="member">Hide</ref>();</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101" refid="class_toast_1a12acba0f372cb135f5d6da9da33e8d03" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_toast_1a12acba0f372cb135f5d6da9da33e8d03" kindref="member">OnPointerClick</ref>(PointerEventData<sp/>eventData)</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_toast_1af70432b2d13f76fb1e6e1c39239afa4c" kindref="member">Hide</ref>();</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="105"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Toast.cs"/>
+  </compounddef>
+</doxygen>

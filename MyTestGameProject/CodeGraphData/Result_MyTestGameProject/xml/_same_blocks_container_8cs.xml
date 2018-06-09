@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_same_blocks_container_8cs" kind="file">
+    <compoundname>SameBlocksContainer.cs</compoundname>
+    <innerclass refid="class_same_blocks_container" prot="public">SameBlocksContainer</innerclass>
+    <innerclass refid="class_same_blocks_container_1_1_block" prot="public">SameBlocksContainer::Block</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Collections;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Collections.Generic;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>UnityEngine;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="class_same_blocks_container" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_same_blocks_container" kindref="compound">SameBlocksContainer</ref></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="11" refid="class_same_blocks_container_1aa8500104d804bc03fe1c7a87ae6794fe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="class_same_blocks_container_1aa8500104d804bc03fe1c7a87ae6794fe" kindref="member">Name</ref>;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="class_same_blocks_container_1ab683dc456d27f7ccbbc69dc10cf7d46b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>List&lt;Block&gt;<sp/><ref refid="class_same_blocks_container_1ab683dc456d27f7ccbbc69dc10cf7d46b" kindref="member">SameBlocks</ref>;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="class_same_blocks_container_1a6591920286617d08e807ee80ca3497ad" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>List&lt;Block&gt;[]<sp/><ref refid="class_same_blocks_container_1a6591920286617d08e807ee80ca3497ad" kindref="member">ExitBlocks</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>List&lt;Block&gt;[Enum.GetValues(typeof(<ref refid="struct_map_block" kindref="compound">MapBlock</ref>.<ref refid="struct_map_block_1a6bdb8970fb09cd0570ed7036457f96a3" kindref="member">Direction</ref>)).Length];</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="24" refid="class_same_blocks_container_1_1_block" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_same_blocks_container_1_1_block" kindref="compound">Block</ref></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="29" refid="class_same_blocks_container_1_1_block_1a3e2bd9fbe793db978b5e6253fb65842d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="class_same_blocks_container_1_1_block_1a3e2bd9fbe793db978b5e6253fb65842d" kindref="member">Name</ref>;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="class_same_blocks_container_1_1_block_1a57395ecb47bb8710166516a423520723" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="struct_map_block" kindref="compound">MapBlock</ref><sp/><ref refid="class_same_blocks_container_1_1_block_1a57395ecb47bb8710166516a423520723" kindref="member">block</ref>;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/SameBlocksContainer.cs"/>
+  </compounddef>
+</doxygen>

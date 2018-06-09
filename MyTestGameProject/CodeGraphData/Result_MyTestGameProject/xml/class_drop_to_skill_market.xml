@@ -1,0 +1,170 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_drop_to_skill_market" kind="class" prot="public">
+    <compoundname>DropToSkillMarket</compoundname>
+    <basecompoundref refid="class_a_drop_to_me" prot="public" virt="non-virtual">ADropToMe</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_drop_to_skill_market_1a56c02a147a710c8f5bc9a6e6b43a6c5e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override bool</type>
+        <definition>override bool DropToSkillMarket.AddToThisInventory</definition>
+        <argsstring>(AStack aStack)</argsstring>
+        <name>AddToThisInventory</name>
+        <reimplements refid="class_a_drop_to_me_1a61dd1651d009bf4816d5705b10a01c2f">AddToThisInventory</reimplements>
+        <param>
+          <type><ref refid="class_a_stack" kindref="compound">AStack</ref></type>
+          <declname>aStack</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stack</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true если добавление произошло удачно</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/DropToSkillMarket.cs" line="9" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/DropToSkillMarket.cs" bodystart="9" bodyend="12"/>
+        <referencedby refid="class_drop_to_skill_market_1a0a1708ed8b9c2a967ec983ba27e5de22" compoundref="_drop_to_skill_market_8cs" startline="19" endline="32">OnDrop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_drop_to_skill_market_1ad8f0f5e4c060752b3412eefa98c8f426" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override bool</type>
+        <definition>override bool DropToSkillMarket.CanGetFromThisIventory</definition>
+        <argsstring>(AStack aStack)</argsstring>
+        <name>CanGetFromThisIventory</name>
+        <reimplements refid="class_a_drop_to_me_1a54510994ccc4bd8f7dbdaa78a36d40a9">CanGetFromThisIventory</reimplements>
+        <param>
+          <type><ref refid="class_a_stack" kindref="compound">AStack</ref></type>
+          <declname>aStack</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stack</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true если можно добавлять</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/DropToSkillMarket.cs" line="14" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/DropToSkillMarket.cs" bodystart="14" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_drop_to_skill_market_1a0a1708ed8b9c2a967ec983ba27e5de22" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void DropToSkillMarket.OnDrop</definition>
+        <argsstring>(PointerEventData eventData)</argsstring>
+        <name>OnDrop</name>
+        <reimplements refid="class_a_drop_to_me_1a7969b529009a8693922cb6fa4b162fcf">OnDrop</reimplements>
+        <param>
+          <type>PointerEventData</type>
+          <declname>eventData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/DropToSkillMarket.cs" line="19" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/DropToSkillMarket.cs" bodystart="19" bodyend="32"/>
+        <references refid="class_drop_to_skill_market_1a56c02a147a710c8f5bc9a6e6b43a6c5e" compoundref="_drop_to_skill_market_8cs" startline="9" endline="12">AddToThisInventory</references>
+        <references refid="class_drag_1abc72e7d1bdad6b2267f5b539e2bc1fda" compoundref="_drag_8cs" startline="14">Drag.CanDrag</references>
+        <references refid="class_a_drop_to_me_1aa823b910877eb709c120b6e082063ac0" compoundref="_a_drop_to_me_8cs" startline="37" endline="53">ADropToMe.RefreshUI</references>
+        <references refid="class_drag_skill_1a900237e2a748d6e9224a2f9361a5b85d" compoundref="_drag_skill_8cs" startline="10">DragSkill.SkillStack</references>
+      </memberdef>
+      <memberdef kind="function" id="class_drop_to_skill_market_1a18f493d740ca2445f04b7533978d81c1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override bool</type>
+        <definition>override bool DropToSkillMarket.RemoveFromThisInventory</definition>
+        <argsstring>(AStack aStack)</argsstring>
+        <name>RemoveFromThisInventory</name>
+        <reimplements refid="class_a_drop_to_me_1a00ce4c22d728d9b610cc4309dec60dc7">RemoveFromThisInventory</reimplements>
+        <param>
+          <type><ref refid="class_a_stack" kindref="compound">AStack</ref></type>
+          <declname>aStack</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stack</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true если удаление произошло удачно</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/DropToSkillMarket.cs" line="34" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/DropToSkillMarket.cs" bodystart="34" bodyend="37"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="276">
+        <label>ADropToMe</label>
+        <link refid="class_a_drop_to_me"/>
+        <childnode refid="277" relation="public-inheritance">
+        </childnode>
+        <childnode refid="278" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="277">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="278">
+        <label>IDropHandler</label>
+      </node>
+      <node id="275">
+        <label>DropToSkillMarket</label>
+        <link refid="class_drop_to_skill_market"/>
+        <childnode refid="276" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="280">
+        <label>ADropToMe</label>
+        <link refid="class_a_drop_to_me"/>
+        <childnode refid="281" relation="public-inheritance">
+        </childnode>
+        <childnode refid="282" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="281">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="282">
+        <label>IDropHandler</label>
+      </node>
+      <node id="279">
+        <label>DropToSkillMarket</label>
+        <link refid="class_drop_to_skill_market"/>
+        <childnode refid="280" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/DropToSkillMarket.cs" line="8" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/DropToSkillMarket.cs" bodystart="7" bodyend="38"/>
+    <listofallmembers>
+      <member refid="class_drop_to_skill_market_1a56c02a147a710c8f5bc9a6e6b43a6c5e" prot="public" virt="virtual"><scope>DropToSkillMarket</scope><name>AddToThisInventory</name></member>
+      <member refid="class_drop_to_skill_market_1ad8f0f5e4c060752b3412eefa98c8f426" prot="public" virt="virtual"><scope>DropToSkillMarket</scope><name>CanGetFromThisIventory</name></member>
+      <member refid="class_drop_to_skill_market_1a0a1708ed8b9c2a967ec983ba27e5de22" prot="public" virt="virtual"><scope>DropToSkillMarket</scope><name>OnDrop</name></member>
+      <member refid="class_a_drop_to_me_1aa823b910877eb709c120b6e082063ac0" prot="public" virt="non-virtual"><scope>DropToSkillMarket</scope><name>RefreshUI</name></member>
+      <member refid="class_drop_to_skill_market_1a18f493d740ca2445f04b7533978d81c1" prot="public" virt="virtual"><scope>DropToSkillMarket</scope><name>RemoveFromThisInventory</name></member>
+      <member refid="class_a_drop_to_me_1ab52ef47bd3496981b5ac94eb4dc3ab73" prot="protected" virt="non-virtual"><scope>DropToSkillMarket</scope><name>transform</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

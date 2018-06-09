@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="struct_unity_engine_1_1_tilemaps_1_1_grid_information_1_1_grid_information_value" kind="struct" prot="package">
+    <compoundname>UnityEngine::Tilemaps::GridInformation::GridInformationValue</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_unity_engine_1_1_tilemaps_1_1_grid_information_1_1_grid_information_value_1a9b2e145284f8511209cccf392b137c7b" prot="public" static="no" mutable="no">
+        <type><ref refid="namespace_unity_engine_1_1_tilemaps_1a8410807eeae7d80388b1b8e0f9cb9681" kindref="member">GridInformationType</ref></type>
+        <definition>GridInformationType UnityEngine.Tilemaps.GridInformation.GridInformationValue.type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/GridInformation/Scripts/GridInformation.cs" line="25" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/GridInformation/Scripts/GridInformation.cs" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unity_engine_1_1_tilemaps_1_1_grid_information_1_1_grid_information_value_1aaf825dae8dbf4dd3e833991527b604eb" prot="public" static="no" mutable="no">
+        <type>object</type>
+        <definition>object UnityEngine.Tilemaps.GridInformation.GridInformationValue.data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/GridInformation/Scripts/GridInformation.cs" line="26" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/GridInformation/Scripts/GridInformation.cs" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/GridInformation/Scripts/GridInformation.cs" line="24" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/GridInformation/Scripts/GridInformation.cs" bodystart="23" bodyend="27"/>
+    <listofallmembers>
+      <member refid="struct_unity_engine_1_1_tilemaps_1_1_grid_information_1_1_grid_information_value_1aaf825dae8dbf4dd3e833991527b604eb" prot="public" virt="non-virtual"><scope>UnityEngine::Tilemaps::GridInformation::GridInformationValue</scope><name>data</name></member>
+      <member refid="struct_unity_engine_1_1_tilemaps_1_1_grid_information_1_1_grid_information_value_1a9b2e145284f8511209cccf392b137c7b" prot="public" virt="non-virtual"><scope>UnityEngine::Tilemaps::GridInformation::GridInformationValue</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

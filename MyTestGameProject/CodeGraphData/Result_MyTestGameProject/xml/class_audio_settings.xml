@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_audio_settings" kind="class" prot="public">
+    <compoundname>AudioSettings</compoundname>
+    <basecompoundref refid="interface_i_savable" prot="public" virt="non-virtual">ISavable</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_audio_settings_1adea407ab6da2ab2a4b0ea5c1dd3284cb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AudioSettings.Save</definition>
+        <argsstring>()</argsstring>
+        <name>Save</name>
+        <reimplements refid="interface_i_savable_1a6f524db1edec7552b99f40de1bf013f4">Save</reimplements>
+        <briefdescription>
+<para>Сохранить данные в хранилище </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/AudioSettings.cs" line="6" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/AudioSettings.cs" bodystart="6" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_audio_settings_1a718f10d86ed37ee471a747a8c87fc018" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AudioSettings.Load</definition>
+        <argsstring>()</argsstring>
+        <name>Load</name>
+        <reimplements refid="interface_i_savable_1ad4c1956e2936ff33be4709453ad21190">Load</reimplements>
+        <briefdescription>
+<para>Загрузить данные из хранилища </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/AudioSettings.cs" line="11" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/AudioSettings.cs" bodystart="11" bodyend="18"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="75">
+        <label>ISavable</label>
+        <link refid="interface_i_savable"/>
+      </node>
+      <node id="74">
+        <label>AudioSettings</label>
+        <link refid="class_audio_settings"/>
+        <childnode refid="75" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="77">
+        <label>ISavable</label>
+        <link refid="interface_i_savable"/>
+      </node>
+      <node id="76">
+        <label>AudioSettings</label>
+        <link refid="class_audio_settings"/>
+        <childnode refid="77" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/AudioSettings.cs" line="5" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/AudioSettings.cs" bodystart="4" bodyend="19"/>
+    <listofallmembers>
+      <member refid="class_audio_settings_1a718f10d86ed37ee471a747a8c87fc018" prot="public" virt="non-virtual"><scope>AudioSettings</scope><name>Load</name></member>
+      <member refid="class_audio_settings_1adea407ab6da2ab2a4b0ea5c1dd3284cb" prot="public" virt="non-virtual"><scope>AudioSettings</scope><name>Save</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

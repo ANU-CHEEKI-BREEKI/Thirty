@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_mc_exit_direction_chooser" kind="class" prot="public">
+    <compoundname>McExitDirectionChooser</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_mc_exit_direction_chooser_1aa69a783b5c7bc5c2693939699362f8a7" prot="public" static="yes" mutable="no">
+        <type><ref refid="struct_map_block_1a6bdb8970fb09cd0570ed7036457f96a3" kindref="member">MapBlock.Direction</ref></type>
+        <definition>MapBlock.Direction McExitDirectionChooser.exit</definition>
+        <argsstring></argsstring>
+        <name>exit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McExitDirectionChooser.cs" line="8" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McExitDirectionChooser.cs" bodystart="8" bodyend="-1"/>
+        <referencedby refid="class_mc_file_manager_1a19e2058681c7bd14aa2ffead30755186" compoundref="_mc_file_manager_8cs" startline="78" endline="95">McFileManager.GeneradeFileName</referencedby>
+        <referencedby refid="class_mc_file_manager_1a55f9c081c604f45babc0dc174a59070d" compoundref="_mc_file_manager_8cs" startline="104" endline="125">McFileManager.OnOkButtonClick</referencedby>
+        <referencedby refid="class_mc_exit_direction_chooser_1aff598f44f0956d49db2cc73c820242bd" compoundref="_mc_exit_direction_chooser_8cs" startline="18" endline="30">OnValChanged</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_mc_exit_direction_chooser_1ae38420170a1773cccc4c27a878898782" prot="public" static="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool McExitDirectionChooser.hasExit</definition>
+        <argsstring></argsstring>
+        <name>hasExit</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McExitDirectionChooser.cs" line="9" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McExitDirectionChooser.cs" bodystart="9" bodyend="-1"/>
+        <referencedby refid="class_mc_file_manager_1a19e2058681c7bd14aa2ffead30755186" compoundref="_mc_file_manager_8cs" startline="78" endline="95">McFileManager.GeneradeFileName</referencedby>
+        <referencedby refid="class_mc_file_manager_1a55f9c081c604f45babc0dc174a59070d" compoundref="_mc_file_manager_8cs" startline="104" endline="125">McFileManager.OnOkButtonClick</referencedby>
+        <referencedby refid="class_mc_exit_direction_chooser_1aff598f44f0956d49db2cc73c820242bd" compoundref="_mc_exit_direction_chooser_8cs" startline="18" endline="30">OnValChanged</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_mc_exit_direction_chooser_1a8eea3274c70c1127b2f67707725c9591" prot="private" static="no" mutable="no">
+        <type><ref refid="struct_map_block_1a6bdb8970fb09cd0570ed7036457f96a3" kindref="member">MapBlock.Direction</ref></type>
+        <definition>MapBlock.Direction McExitDirectionChooser.direction</definition>
+        <argsstring></argsstring>
+        <name>direction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McExitDirectionChooser.cs" line="11" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McExitDirectionChooser.cs" bodystart="11" bodyend="-1"/>
+        <referencedby refid="class_mc_exit_direction_chooser_1aff598f44f0956d49db2cc73c820242bd" compoundref="_mc_exit_direction_chooser_8cs" startline="18" endline="30">OnValChanged</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_mc_exit_direction_chooser_1a98bfed364dc7b870a588439f133db5d8" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void McExitDirectionChooser.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McExitDirectionChooser.cs" line="13" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McExitDirectionChooser.cs" bodystart="13" bodyend="16"/>
+        <references refid="class_mc_exit_direction_chooser_1aff598f44f0956d49db2cc73c820242bd" compoundref="_mc_exit_direction_chooser_8cs" startline="18" endline="30">OnValChanged</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_mc_exit_direction_chooser_1aff598f44f0956d49db2cc73c820242bd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void McExitDirectionChooser.OnValChanged</definition>
+        <argsstring>(bool newValue)</argsstring>
+        <name>OnValChanged</name>
+        <param>
+          <type>bool</type>
+          <declname>newValue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McExitDirectionChooser.cs" line="18" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McExitDirectionChooser.cs" bodystart="18" bodyend="30"/>
+        <references refid="class_mc_exit_direction_chooser_1a8eea3274c70c1127b2f67707725c9591" compoundref="_mc_exit_direction_chooser_8cs" startline="11">direction</references>
+        <references refid="class_mc_exit_direction_chooser_1aa69a783b5c7bc5c2693939699362f8a7" compoundref="_mc_exit_direction_chooser_8cs" startline="8">exit</references>
+        <references refid="class_mc_exit_direction_chooser_1ae38420170a1773cccc4c27a878898782" compoundref="_mc_exit_direction_chooser_8cs" startline="9">hasExit</references>
+        <referencedby refid="class_mc_exit_direction_chooser_1a98bfed364dc7b870a588439f133db5d8" compoundref="_mc_exit_direction_chooser_8cs" startline="13" endline="16">Start</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="622">
+        <label>McExitDirectionChooser</label>
+        <link refid="class_mc_exit_direction_chooser"/>
+        <childnode refid="623" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="623">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="624">
+        <label>McExitDirectionChooser</label>
+        <link refid="class_mc_exit_direction_chooser"/>
+        <childnode refid="625" relation="public-inheritance">
+        </childnode>
+        <childnode refid="626" relation="usage">
+          <edgelabel>direction</edgelabel>
+          <edgelabel>exit</edgelabel>
+        </childnode>
+      </node>
+      <node id="626">
+        <label>MapBlock</label>
+        <link refid="struct_map_block"/>
+      </node>
+      <node id="625">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McExitDirectionChooser.cs" line="7" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McExitDirectionChooser.cs" bodystart="6" bodyend="32"/>
+    <listofallmembers>
+      <member refid="class_mc_exit_direction_chooser_1a8eea3274c70c1127b2f67707725c9591" prot="private" virt="non-virtual"><scope>McExitDirectionChooser</scope><name>direction</name></member>
+      <member refid="class_mc_exit_direction_chooser_1aa69a783b5c7bc5c2693939699362f8a7" prot="public" virt="non-virtual"><scope>McExitDirectionChooser</scope><name>exit</name></member>
+      <member refid="class_mc_exit_direction_chooser_1ae38420170a1773cccc4c27a878898782" prot="public" virt="non-virtual"><scope>McExitDirectionChooser</scope><name>hasExit</name></member>
+      <member refid="class_mc_exit_direction_chooser_1aff598f44f0956d49db2cc73c820242bd" prot="public" virt="non-virtual"><scope>McExitDirectionChooser</scope><name>OnValChanged</name></member>
+      <member refid="class_mc_exit_direction_chooser_1a98bfed364dc7b870a588439f133db5d8" prot="private" virt="non-virtual"><scope>McExitDirectionChooser</scope><name>Start</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

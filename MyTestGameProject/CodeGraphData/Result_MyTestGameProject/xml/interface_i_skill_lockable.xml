@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="interface_i_skill_lockable" kind="interface" prot="public">
+    <compoundname>ISkillLockable</compoundname>
+    <derivedcompoundref refid="struct_skill_arrows_valley_1_1_arrow_walley_stats" prot="public" virt="non-virtual">SkillArrowsValley.ArrowWalleyStats</derivedcompoundref>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="interface_i_skill_lockable_1a815c22e5bff500f81186484f056da54f" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>bool</type>
+        <definition>bool ISkillLockable.Unlocked</definition>
+        <argsstring></argsstring>
+        <name>Unlocked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/ISkillLockable.cs" line="7" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/ISkillLockable.cs" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="536">
+        <label>SkillArrowsValley.ArrowWalleyStats</label>
+        <link refid="struct_skill_arrows_valley_1_1_arrow_walley_stats"/>
+        <childnode refid="535" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="535">
+        <label>ISkillLockable</label>
+        <link refid="interface_i_skill_lockable"/>
+      </node>
+    </inheritancegraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/ISkillLockable.cs" line="6" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/ISkillLockable.cs" bodystart="5" bodyend="8"/>
+    <listofallmembers>
+      <member refid="interface_i_skill_lockable_1a815c22e5bff500f81186484f056da54f" prot="public" virt="non-virtual"><scope>ISkillLockable</scope><name>Unlocked</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

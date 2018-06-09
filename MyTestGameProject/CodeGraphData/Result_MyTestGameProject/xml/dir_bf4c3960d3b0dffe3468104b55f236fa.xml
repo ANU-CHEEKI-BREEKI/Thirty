@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_bf4c3960d3b0dffe3468104b55f236fa" kind="dir">
+    <compoundname>D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/GridInformation/Scripts</compoundname>
+    <innerfile refid="_grid_information_8cs">GridInformation.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/GridInformation/Scripts/"/>
+  </compounddef>
+</doxygen>

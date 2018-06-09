@@ -1,0 +1,634 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="struct_unit_stats" kind="struct" prot="public">
+    <compoundname>UnitStats</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_unit_stats_1a4e318bed07ddee30597551b4a87c4ece" prot="public" static="no" mutable="no">
+        <type>const float</type>
+        <definition>const float UnitStats.MAX_ATTACK</definition>
+        <argsstring></argsstring>
+        <name>MAX_ATTACK</name>
+        <initializer>= 0.9f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/UnitStats.cs" line="9" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/UnitStats.cs" bodystart="9" bodyend="-1"/>
+        <referencedby refid="struct_unit_stats_1a6980f24167779f11bb3fcdbdddde1d4a" compoundref="_unit_stats_8cs" startline="69" endline="159">CalcStats</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unit_stats_1afc20c87508348c8265ad31ac0f488b5b" prot="public" static="no" mutable="no">
+        <type>const float</type>
+        <definition>const float UnitStats.MAX_DEFENCE</definition>
+        <argsstring></argsstring>
+        <name>MAX_DEFENCE</name>
+        <initializer>= 0.9f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/UnitStats.cs" line="10" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/UnitStats.cs" bodystart="10" bodyend="-1"/>
+        <referencedby refid="struct_unit_stats_1a6980f24167779f11bb3fcdbdddde1d4a" compoundref="_unit_stats_8cs" startline="69" endline="159">CalcStats</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unit_stats_1a63198fa395dbe4194a6c5c6608fc70d9" prot="public" static="no" mutable="no">
+        <type>const float</type>
+        <definition>const float UnitStats.MAX_MISSILE_BLOCK</definition>
+        <argsstring></argsstring>
+        <name>MAX_MISSILE_BLOCK</name>
+        <initializer>= 0.95f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/UnitStats.cs" line="11" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/UnitStats.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unit_stats_1a3db4f2911ed5b17717ece226f2a2d5a4" prot="public" static="no" mutable="no">
+        <type>const float</type>
+        <definition>const float UnitStats.NORMAL_EQUIPED_MASS</definition>
+        <argsstring></argsstring>
+        <name>NORMAL_EQUIPED_MASS</name>
+        <initializer>= 75</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/UnitStats.cs" line="13" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/UnitStats.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unit_stats_1a06e309948a4adbdd273a7533a2f87d69" prot="public" static="no" mutable="no">
+        <type>const float</type>
+        <definition>const float UnitStats.NORMAL_NUDE_MASS</definition>
+        <argsstring></argsstring>
+        <name>NORMAL_NUDE_MASS</name>
+        <initializer>= 60</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/UnitStats.cs" line="14" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/UnitStats.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unit_stats_1aadeca04898cc0dd4ba6c45795a4c70f3" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float UnitStats.health</definition>
+        <argsstring></argsstring>
+        <name>health</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/UnitStats.cs" line="16" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/UnitStats.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unit_stats_1ae2f091aecb369ebe79ea636073887537" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float UnitStats.mass</definition>
+        <argsstring></argsstring>
+        <name>mass</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/UnitStats.cs" line="19" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/UnitStats.cs" bodystart="19" bodyend="-1"/>
+        <referencedby refid="struct_unit_stats_1a6980f24167779f11bb3fcdbdddde1d4a" compoundref="_unit_stats_8cs" startline="69" endline="159">CalcStats</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unit_stats_1ac25ec0f7dcf905a13db1150993fa1c9b" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float UnitStats.armour</definition>
+        <argsstring></argsstring>
+        <name>armour</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/UnitStats.cs" line="22" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/UnitStats.cs" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unit_stats_1a352b41b981f0a8f8d7872df923bf4b4e" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_damage" kindref="compound">Damage</ref></type>
+        <definition>Damage UnitStats.damage</definition>
+        <argsstring></argsstring>
+        <name>damage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/UnitStats.cs" line="25" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/UnitStats.cs" bodystart="25" bodyend="-1"/>
+        <referencedby refid="struct_unit_stats_1a6980f24167779f11bb3fcdbdddde1d4a" compoundref="_unit_stats_8cs" startline="69" endline="159">CalcStats</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unit_stats_1af22d19e181e3af3de92965afee824ab4" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float UnitStats.attack</definition>
+        <argsstring></argsstring>
+        <name>attack</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/UnitStats.cs" line="29" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/UnitStats.cs" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unit_stats_1a1b3a3c1080348fdebd38fad0f4617ff2" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float UnitStats.defence</definition>
+        <argsstring></argsstring>
+        <name>defence</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/UnitStats.cs" line="32" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/UnitStats.cs" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unit_stats_1aa2b4c548f409dfb9f5771df1ca4e8e34" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float UnitStats.defenceHalfSector</definition>
+        <argsstring></argsstring>
+        <name>defenceHalfSector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/UnitStats.cs" line="36" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/UnitStats.cs" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unit_stats_1a9505ebbf1dffb5e0f5b4182dc18c5731" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float UnitStats.defenceGoingThrough</definition>
+        <argsstring></argsstring>
+        <name>defenceGoingThrough</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/UnitStats.cs" line="39" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/UnitStats.cs" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unit_stats_1a76f03ebd008fbceefcbd07bfe511394f" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float UnitStats.missileBlock</definition>
+        <argsstring></argsstring>
+        <name>missileBlock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/UnitStats.cs" line="42" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/UnitStats.cs" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unit_stats_1ad2f69af8f1dab78be90a42a48b4df454" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float UnitStats.attackDistance</definition>
+        <argsstring></argsstring>
+        <name>attackDistance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/UnitStats.cs" line="46" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/UnitStats.cs" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unit_stats_1aa4f5e18b52e8d3f2c46bcef37e5a5c0c" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float UnitStats.speed</definition>
+        <argsstring></argsstring>
+        <name>speed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/UnitStats.cs" line="50" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/UnitStats.cs" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unit_stats_1a6c8ec3a8c7028dc64fbc005ac5db65e2" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float UnitStats.acceleretion</definition>
+        <argsstring></argsstring>
+        <name>acceleretion</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/UnitStats.cs" line="53" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/UnitStats.cs" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unit_stats_1a850adbf77924dfb8d11b86b0c2b45687" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float UnitStats.rotationSpeed</definition>
+        <argsstring></argsstring>
+        <name>rotationSpeed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/UnitStats.cs" line="56" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/UnitStats.cs" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unit_stats_1a7fc5046dc5b01a09ebe424b797d3dee8" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float UnitStats.chargeImpact</definition>
+        <argsstring></argsstring>
+        <name>chargeImpact</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/UnitStats.cs" line="60" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/UnitStats.cs" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unit_stats_1adc8dd5efe5770994d6505cbfb8bf67a0" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float UnitStats.chargeDeflect</definition>
+        <argsstring></argsstring>
+        <name>chargeDeflect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/UnitStats.cs" line="63" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/UnitStats.cs" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unit_stats_1a1021c49184c4c4012b0495b558ddfff0" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float UnitStats.unitChargeAddDamage</definition>
+        <argsstring></argsstring>
+        <name>unitChargeAddDamage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/UnitStats.cs" line="66" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/UnitStats.cs" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="struct_unit_stats_1ab53484f4715c9dbe92dbdc920dbd755f" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>float</type>
+        <definition>float UnitStats.Health</definition>
+        <argsstring></argsstring>
+        <name>Health</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/UnitStats.cs" line="17" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/UnitStats.cs" bodystart="17" bodyend="-1"/>
+        <referencedby refid="class_stats_panel_u_i_1addec74faa8300e212a7e2500b18d5fd7" compoundref="_stats_panel_u_i_8cs" startline="62" endline="120">StatsPanelUI.OnEquipmentChanged</referencedby>
+        <referencedby refid="class_hospital_room_1a0a29986bed0b4100bcefa68633e59772" compoundref="_hospital_room_8cs" startline="123" endline="143">HospitalRoom.ResetConverter</referencedby>
+        <referencedby refid="class_unit_1a51874529e33dc390ecf6ff810ff9a042" compoundref="_unit_8cs" startline="392" endline="403">Unit.Squad_OnUnitStatsChanged</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="struct_unit_stats_1aab147cde6d7c7f556eb5895aa8d5d23d" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>float</type>
+        <definition>float UnitStats.Mass</definition>
+        <argsstring></argsstring>
+        <name>Mass</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/UnitStats.cs" line="20" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/UnitStats.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="struct_unit_stats_1a17ccd0ee79d684de9a8b5f6fd211db43" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>float</type>
+        <definition>float UnitStats.Armour</definition>
+        <argsstring></argsstring>
+        <name>Armour</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/UnitStats.cs" line="23" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/UnitStats.cs" bodystart="23" bodyend="-1"/>
+        <referencedby refid="class_unit_1a81ef87020279968371316b61ae6b408c" compoundref="_unit_8cs" startline="901" endline="946">Unit.TakeHitFromArrow</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="struct_unit_stats_1a92c336291a7a1dec8f1291fdca796bdc" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type><ref refid="struct_damage" kindref="compound">Damage</ref></type>
+        <definition>Damage UnitStats.Damage</definition>
+        <argsstring></argsstring>
+        <name>Damage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/UnitStats.cs" line="26" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/UnitStats.cs" bodystart="26" bodyend="-1"/>
+        <referencedby refid="struct_unit_stats_1a6980f24167779f11bb3fcdbdddde1d4a" compoundref="_unit_stats_8cs" startline="69" endline="159">CalcStats</referencedby>
+        <referencedby refid="class_unit_1aef944e12d8ee536f06a044aee4845ba2" compoundref="_unit_8cs" startline="1279" endline="1336">Unit.OnChargeHit</referencedby>
+        <referencedby refid="class_unit_1a6122214b77883efe36237c9f25aaab5b" compoundref="_unit_8cs" startline="862" endline="899">Unit.TakeHitFromUnit</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="struct_unit_stats_1a71142dd4e1516afdef7e4011feacbf1c" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>float</type>
+        <definition>float UnitStats.Attack</definition>
+        <argsstring></argsstring>
+        <name>Attack</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/UnitStats.cs" line="30" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/UnitStats.cs" bodystart="30" bodyend="-1"/>
+        <referencedby refid="class_stats_panel_u_i_1addec74faa8300e212a7e2500b18d5fd7" compoundref="_stats_panel_u_i_8cs" startline="62" endline="120">StatsPanelUI.OnEquipmentChanged</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="struct_unit_stats_1acca72d8186dcec880688920c58e0813c" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>float</type>
+        <definition>float UnitStats.Defence</definition>
+        <argsstring></argsstring>
+        <name>Defence</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/UnitStats.cs" line="33" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/UnitStats.cs" bodystart="33" bodyend="-1"/>
+        <referencedby refid="class_stats_panel_u_i_1addec74faa8300e212a7e2500b18d5fd7" compoundref="_stats_panel_u_i_8cs" startline="62" endline="120">StatsPanelUI.OnEquipmentChanged</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="struct_unit_stats_1a80ff4cc801aa72f11a0710f54bffeb12" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>float</type>
+        <definition>float UnitStats.DefenceHalfSector</definition>
+        <argsstring></argsstring>
+        <name>DefenceHalfSector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/UnitStats.cs" line="37" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/UnitStats.cs" bodystart="37" bodyend="-1"/>
+        <referencedby refid="class_unit_1a81ef87020279968371316b61ae6b408c" compoundref="_unit_8cs" startline="901" endline="946">Unit.TakeHitFromArrow</referencedby>
+        <referencedby refid="class_unit_1a6122214b77883efe36237c9f25aaab5b" compoundref="_unit_8cs" startline="862" endline="899">Unit.TakeHitFromUnit</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="struct_unit_stats_1adcc958e2e57d760eb4c070e201472c10" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>float</type>
+        <definition>float UnitStats.DefenceGoingThrought</definition>
+        <argsstring></argsstring>
+        <name>DefenceGoingThrought</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/UnitStats.cs" line="40" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/UnitStats.cs" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="struct_unit_stats_1a4d4b420d724303bdc94c881ee801f729" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>float</type>
+        <definition>float UnitStats.MissileBlock</definition>
+        <argsstring></argsstring>
+        <name>MissileBlock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/UnitStats.cs" line="43" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/UnitStats.cs" bodystart="43" bodyend="-1"/>
+        <referencedby refid="class_unit_1a81ef87020279968371316b61ae6b408c" compoundref="_unit_8cs" startline="901" endline="946">Unit.TakeHitFromArrow</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="struct_unit_stats_1a10a59fae5a22c67e0b9c0ab3fe3ffc41" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>float</type>
+        <definition>float UnitStats.AttackDistance</definition>
+        <argsstring></argsstring>
+        <name>AttackDistance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/UnitStats.cs" line="47" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/UnitStats.cs" bodystart="47" bodyend="-1"/>
+        <referencedby refid="class_unit_1a5249bde8d5dfe29dfdfe6e93caa4d005" compoundref="_unit_8cs" startline="670" endline="708">Unit.FindTarget</referencedby>
+        <referencedby refid="class_unit_1a23be3a8485a5edfb36d928214531d070" compoundref="_unit_8cs" startline="585" endline="590">Unit.SetDistanceLineForAttack</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="struct_unit_stats_1a3ae741eba64620c23193afb733961547" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>float</type>
+        <definition>float UnitStats.Speed</definition>
+        <argsstring></argsstring>
+        <name>Speed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/UnitStats.cs" line="51" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/UnitStats.cs" bodystart="51" bodyend="-1"/>
+        <referencedby refid="class_unit_1a2046212facf95c83ea45911592f98f06" compoundref="_unit_8cs" startline="844" endline="860">Unit.FixedUpdate</referencedby>
+        <referencedby refid="class_stats_panel_u_i_1addec74faa8300e212a7e2500b18d5fd7" compoundref="_stats_panel_u_i_8cs" startline="62" endline="120">StatsPanelUI.OnEquipmentChanged</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="struct_unit_stats_1a2150f90730fb605033946c683126eca6" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>float</type>
+        <definition>float UnitStats.Acceleretion</definition>
+        <argsstring></argsstring>
+        <name>Acceleretion</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/UnitStats.cs" line="54" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/UnitStats.cs" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="struct_unit_stats_1a7847ec1951d4e2ebbcc7951a4758f29b" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>float</type>
+        <definition>float UnitStats.RotationSpeed</definition>
+        <argsstring></argsstring>
+        <name>RotationSpeed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/UnitStats.cs" line="57" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/UnitStats.cs" bodystart="57" bodyend="-1"/>
+        <referencedby refid="class_stats_panel_u_i_1addec74faa8300e212a7e2500b18d5fd7" compoundref="_stats_panel_u_i_8cs" startline="62" endline="120">StatsPanelUI.OnEquipmentChanged</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="struct_unit_stats_1a01d2d13bf3d8da51c7dbb32bb0d41acb" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>float</type>
+        <definition>float UnitStats.ChargeImpact</definition>
+        <argsstring></argsstring>
+        <name>ChargeImpact</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/UnitStats.cs" line="61" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/UnitStats.cs" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="struct_unit_stats_1a9c4a612a18b2c413f2ce4ec50f19c569" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>float</type>
+        <definition>float UnitStats.ChargeDeflect</definition>
+        <argsstring></argsstring>
+        <name>ChargeDeflect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/UnitStats.cs" line="64" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/UnitStats.cs" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="struct_unit_stats_1aa0c359f3d41742af4fdc18be930a4367" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>float</type>
+        <definition>float UnitStats.UnitChargeAddDamage</definition>
+        <argsstring></argsstring>
+        <name>UnitChargeAddDamage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/UnitStats.cs" line="67" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/UnitStats.cs" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="struct_unit_stats_1a6980f24167779f11bb3fcdbdddde1d4a" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_unit_stats" kindref="compound">UnitStats</ref></type>
+        <definition>static UnitStats UnitStats.CalcStats</definition>
+        <argsstring>(UnitStats baseStats, EquipmentStats[] equipmentStats, FormationStats formationStats)</argsstring>
+        <name>CalcStats</name>
+        <param>
+          <type><ref refid="struct_unit_stats" kindref="compound">UnitStats</ref></type>
+          <declname>baseStats</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_equipment_stats" kindref="compound">EquipmentStats</ref>[]</type>
+          <declname>equipmentStats</declname>
+        </param>
+        <param>
+          <type><ref refid="class_formation_stats" kindref="compound">FormationStats</ref></type>
+          <declname>formationStats</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/UnitStats.cs" line="69" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/UnitStats.cs" bodystart="69" bodyend="159"/>
+        <references refid="struct_damage_1a540de67f1528f23cc0c61d1bcc3f6143" compoundref="_damage_8cs" startline="11">Damage.ArmourDamage</references>
+        <references refid="struct_damage_1a4aef310a83e4573dc2aeb2684ba5ee99" compoundref="_damage_8cs" startline="8">Damage.BaseDamage</references>
+        <references refid="struct_unit_stats_1a352b41b981f0a8f8d7872df923bf4b4e" compoundref="_unit_stats_8cs" startline="25">damage</references>
+        <references refid="struct_unit_stats_1a92c336291a7a1dec8f1291fdca796bdc" compoundref="_unit_stats_8cs" startline="26">Damage</references>
+        <references refid="class_formation_stats_1afd3477128f780bbacf5697ea98f2c254" compoundref="_formation_stats_8cs" startline="10">FormationStats.FORMATION</references>
+        <references refid="struct_unit_stats_1ae2f091aecb369ebe79ea636073887537" compoundref="_unit_stats_8cs" startline="19">mass</references>
+        <references refid="struct_equipment_stats_1a9d4615bd2815efb4cb3559624a7a5c7f" compoundref="_equipment_stats_8cs" startline="41">EquipmentStats.Mass</references>
+        <references refid="struct_unit_stats_1a4e318bed07ddee30597551b4a87c4ece" compoundref="_unit_stats_8cs" startline="9">MAX_ATTACK</references>
+        <references refid="struct_unit_stats_1afc20c87508348c8265ad31ac0f488b5b" compoundref="_unit_stats_8cs" startline="10">MAX_DEFENCE</references>
+        <references refid="class_formation_stats_1ae8169d7f7ed2633e0b0e5bfa774e5ae9" compoundref="_formation_stats_8cs" startline="18">FormationStats.UNIT_ADDITIONAL_DAMAGE</references>
+      </memberdef>
+      <memberdef kind="function" id="struct_unit_stats_1a71f3af79246232ba73e92d1f0e31d660" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_unit_stats" kindref="compound">UnitStats</ref></type>
+        <definition>static UnitStats UnitStats.ModifyStats</definition>
+        <argsstring>(UnitStats baseStats, DSUnitStats modifier)</argsstring>
+        <name>ModifyStats</name>
+        <param>
+          <type><ref refid="struct_unit_stats" kindref="compound">UnitStats</ref></type>
+          <declname>baseStats</declname>
+        </param>
+        <param>
+          <type><ref refid="class_d_s_unit_stats" kindref="compound">DSUnitStats</ref></type>
+          <declname>modifier</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/UnitStats.cs" line="161" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/UnitStats.cs" bodystart="161" bodyend="171"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1263">
+        <label>Damage</label>
+        <link refid="struct_damage"/>
+      </node>
+      <node id="1262">
+        <label>UnitStats</label>
+        <link refid="struct_unit_stats"/>
+        <childnode refid="1263" relation="usage">
+          <edgelabel>damage</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/UnitStats.cs" line="8" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/UnitStats.cs" bodystart="7" bodyend="172"/>
+    <listofallmembers>
+      <member refid="struct_unit_stats_1a6c8ec3a8c7028dc64fbc005ac5db65e2" prot="public" virt="non-virtual"><scope>UnitStats</scope><name>acceleretion</name></member>
+      <member refid="struct_unit_stats_1a2150f90730fb605033946c683126eca6" prot="public" virt="non-virtual"><scope>UnitStats</scope><name>Acceleretion</name></member>
+      <member refid="struct_unit_stats_1a17ccd0ee79d684de9a8b5f6fd211db43" prot="public" virt="non-virtual"><scope>UnitStats</scope><name>Armour</name></member>
+      <member refid="struct_unit_stats_1ac25ec0f7dcf905a13db1150993fa1c9b" prot="public" virt="non-virtual"><scope>UnitStats</scope><name>armour</name></member>
+      <member refid="struct_unit_stats_1af22d19e181e3af3de92965afee824ab4" prot="public" virt="non-virtual"><scope>UnitStats</scope><name>attack</name></member>
+      <member refid="struct_unit_stats_1a71142dd4e1516afdef7e4011feacbf1c" prot="public" virt="non-virtual"><scope>UnitStats</scope><name>Attack</name></member>
+      <member refid="struct_unit_stats_1ad2f69af8f1dab78be90a42a48b4df454" prot="public" virt="non-virtual"><scope>UnitStats</scope><name>attackDistance</name></member>
+      <member refid="struct_unit_stats_1a10a59fae5a22c67e0b9c0ab3fe3ffc41" prot="public" virt="non-virtual"><scope>UnitStats</scope><name>AttackDistance</name></member>
+      <member refid="struct_unit_stats_1a6980f24167779f11bb3fcdbdddde1d4a" prot="public" virt="non-virtual"><scope>UnitStats</scope><name>CalcStats</name></member>
+      <member refid="struct_unit_stats_1a9c4a612a18b2c413f2ce4ec50f19c569" prot="public" virt="non-virtual"><scope>UnitStats</scope><name>ChargeDeflect</name></member>
+      <member refid="struct_unit_stats_1adc8dd5efe5770994d6505cbfb8bf67a0" prot="public" virt="non-virtual"><scope>UnitStats</scope><name>chargeDeflect</name></member>
+      <member refid="struct_unit_stats_1a7fc5046dc5b01a09ebe424b797d3dee8" prot="public" virt="non-virtual"><scope>UnitStats</scope><name>chargeImpact</name></member>
+      <member refid="struct_unit_stats_1a01d2d13bf3d8da51c7dbb32bb0d41acb" prot="public" virt="non-virtual"><scope>UnitStats</scope><name>ChargeImpact</name></member>
+      <member refid="struct_unit_stats_1a92c336291a7a1dec8f1291fdca796bdc" prot="public" virt="non-virtual"><scope>UnitStats</scope><name>Damage</name></member>
+      <member refid="struct_unit_stats_1a352b41b981f0a8f8d7872df923bf4b4e" prot="public" virt="non-virtual"><scope>UnitStats</scope><name>damage</name></member>
+      <member refid="struct_unit_stats_1a1b3a3c1080348fdebd38fad0f4617ff2" prot="public" virt="non-virtual"><scope>UnitStats</scope><name>defence</name></member>
+      <member refid="struct_unit_stats_1acca72d8186dcec880688920c58e0813c" prot="public" virt="non-virtual"><scope>UnitStats</scope><name>Defence</name></member>
+      <member refid="struct_unit_stats_1a9505ebbf1dffb5e0f5b4182dc18c5731" prot="public" virt="non-virtual"><scope>UnitStats</scope><name>defenceGoingThrough</name></member>
+      <member refid="struct_unit_stats_1adcc958e2e57d760eb4c070e201472c10" prot="public" virt="non-virtual"><scope>UnitStats</scope><name>DefenceGoingThrought</name></member>
+      <member refid="struct_unit_stats_1aa2b4c548f409dfb9f5771df1ca4e8e34" prot="public" virt="non-virtual"><scope>UnitStats</scope><name>defenceHalfSector</name></member>
+      <member refid="struct_unit_stats_1a80ff4cc801aa72f11a0710f54bffeb12" prot="public" virt="non-virtual"><scope>UnitStats</scope><name>DefenceHalfSector</name></member>
+      <member refid="struct_unit_stats_1aadeca04898cc0dd4ba6c45795a4c70f3" prot="public" virt="non-virtual"><scope>UnitStats</scope><name>health</name></member>
+      <member refid="struct_unit_stats_1ab53484f4715c9dbe92dbdc920dbd755f" prot="public" virt="non-virtual"><scope>UnitStats</scope><name>Health</name></member>
+      <member refid="struct_unit_stats_1ae2f091aecb369ebe79ea636073887537" prot="public" virt="non-virtual"><scope>UnitStats</scope><name>mass</name></member>
+      <member refid="struct_unit_stats_1aab147cde6d7c7f556eb5895aa8d5d23d" prot="public" virt="non-virtual"><scope>UnitStats</scope><name>Mass</name></member>
+      <member refid="struct_unit_stats_1a4e318bed07ddee30597551b4a87c4ece" prot="public" virt="non-virtual"><scope>UnitStats</scope><name>MAX_ATTACK</name></member>
+      <member refid="struct_unit_stats_1afc20c87508348c8265ad31ac0f488b5b" prot="public" virt="non-virtual"><scope>UnitStats</scope><name>MAX_DEFENCE</name></member>
+      <member refid="struct_unit_stats_1a63198fa395dbe4194a6c5c6608fc70d9" prot="public" virt="non-virtual"><scope>UnitStats</scope><name>MAX_MISSILE_BLOCK</name></member>
+      <member refid="struct_unit_stats_1a76f03ebd008fbceefcbd07bfe511394f" prot="public" virt="non-virtual"><scope>UnitStats</scope><name>missileBlock</name></member>
+      <member refid="struct_unit_stats_1a4d4b420d724303bdc94c881ee801f729" prot="public" virt="non-virtual"><scope>UnitStats</scope><name>MissileBlock</name></member>
+      <member refid="struct_unit_stats_1a71f3af79246232ba73e92d1f0e31d660" prot="public" virt="non-virtual"><scope>UnitStats</scope><name>ModifyStats</name></member>
+      <member refid="struct_unit_stats_1a3db4f2911ed5b17717ece226f2a2d5a4" prot="public" virt="non-virtual"><scope>UnitStats</scope><name>NORMAL_EQUIPED_MASS</name></member>
+      <member refid="struct_unit_stats_1a06e309948a4adbdd273a7533a2f87d69" prot="public" virt="non-virtual"><scope>UnitStats</scope><name>NORMAL_NUDE_MASS</name></member>
+      <member refid="struct_unit_stats_1a7847ec1951d4e2ebbcc7951a4758f29b" prot="public" virt="non-virtual"><scope>UnitStats</scope><name>RotationSpeed</name></member>
+      <member refid="struct_unit_stats_1a850adbf77924dfb8d11b86b0c2b45687" prot="public" virt="non-virtual"><scope>UnitStats</scope><name>rotationSpeed</name></member>
+      <member refid="struct_unit_stats_1a3ae741eba64620c23193afb733961547" prot="public" virt="non-virtual"><scope>UnitStats</scope><name>Speed</name></member>
+      <member refid="struct_unit_stats_1aa4f5e18b52e8d3f2c46bcef37e5a5c0c" prot="public" virt="non-virtual"><scope>UnitStats</scope><name>speed</name></member>
+      <member refid="struct_unit_stats_1aa0c359f3d41742af4fdc18be930a4367" prot="public" virt="non-virtual"><scope>UnitStats</scope><name>UnitChargeAddDamage</name></member>
+      <member refid="struct_unit_stats_1a1021c49184c4c4012b0495b558ddfff0" prot="public" virt="non-virtual"><scope>UnitStats</scope><name>unitChargeAddDamage</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

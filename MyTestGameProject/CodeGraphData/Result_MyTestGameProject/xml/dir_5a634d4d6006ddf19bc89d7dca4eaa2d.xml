@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_5a634d4d6006ddf19bc89d7dca4eaa2d" kind="dir">
+    <compoundname>D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene</compoundname>
+    <innerdir refid="dir_cdc2a4f12aa98d347354ce413c057a7c">D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers</innerdir>
+    <innerdir refid="dir_1eebb3c04985164ce39e511f9e386baa">D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item</innerdir>
+    <innerdir refid="dir_45708955072536b94f603ec678839c32">D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour</innerdir>
+    <innerdir refid="dir_545608d4c7f032652141cedc7da47b5f">D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/ScriptableObjects</innerdir>
+    <innerdir refid="dir_9d3270666da642f2cd77ee5eccc191a3">D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI</innerdir>
+    <innerdir refid="dir_a0c3b4e157fdbffcd8f697a952aeda2d">D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit</innerdir>
+    <innerfile refid="_arrows_valley_8cs">ArrowsValley.cs</innerfile>
+    <innerfile refid="_break_on_collision_8cs">BreakOnCollision.cs</innerfile>
+    <innerfile refid="_center_unit_selection_8cs">CenterUnitSelection.cs</innerfile>
+    <innerfile refid="_debug_tools_8cs">DebugTools.cs</innerfile>
+    <innerfile refid="_destroy_on_awake_8cs">DestroyOnAwake.cs</innerfile>
+    <innerfile refid="_dropped_item_8cs">DroppedItem.cs</innerfile>
+    <innerfile refid="_durabilityable_8cs">Durabilityable.cs</innerfile>
+    <innerfile refid="_exit_8cs">Exit.cs</innerfile>
+    <innerfile refid="_fade_screen_8cs">FadeScreen.cs</innerfile>
+    <innerfile refid="_formation_button_8cs">FormationButton.cs</innerfile>
+    <innerfile refid="_game_manager_8cs">GameManager.cs</innerfile>
+    <innerfile refid="_ground_8cs">Ground.cs</innerfile>
+    <innerfile refid="_ground_block_8cs">GroundBlock.cs</innerfile>
+    <innerfile refid="_health_bar_8cs">HealthBar.cs</innerfile>
+    <innerfile refid="_i_skill_radiusable_8cs">ISkillRadiusable.cs</innerfile>
+    <innerfile refid="_localization_by_editor_8cs">LocalizationByEditor.cs</innerfile>
+    <innerfile refid="_minimap_camera_8cs">MinimapCamera.cs</innerfile>
+    <innerfile refid="_progress_circle_8cs">ProgressCircle.cs</innerfile>
+    <innerfile refid="_show_ally_units_hp_8cs">ShowAllyUnitsHp.cs</innerfile>
+    <innerfile refid="_sprite_outline_8cs">SpriteOutline.cs</innerfile>
+    <innerfile refid="_stakes_8cs">Stakes.cs</innerfile>
+    <innerfile refid="_terrain_height_8cs">TerrainHeight.cs</innerfile>
+    <innerfile refid="_terrain_walker_8cs">TerrainWalker.cs</innerfile>
+    <innerfile refid="_unit_outline_8cs">UnitOutline.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/"/>
+  </compounddef>
+</doxygen>

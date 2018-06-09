@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_dropped_item" kind="class" prot="public">
+    <compoundname>DroppedItem</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_dropped_item_1a25e2e7c5359d5c6e4d4fc46bb4543665" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_equipment_stack" kindref="compound">EquipmentStack</ref></type>
+        <definition>EquipmentStack DroppedItem.Stack</definition>
+        <argsstring></argsstring>
+        <name>Stack</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/DroppedItem.cs" line="7" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/DroppedItem.cs" bodystart="7" bodyend="-1"/>
+        <referencedby refid="class_envirinmant_inventory_u_i_1acb48239b76b5bcb5afd8201cfaed20c4" compoundref="_envirinmant_inventory_u_i_8cs" startline="215" endline="239">EnvirinmantInventoryUI.FindItems</referencedby>
+        <referencedby refid="class_envirinmant_inventory_u_i_1a9bf125b3eecfde16b932c6f8fbc414e3" compoundref="_envirinmant_inventory_u_i_8cs" startline="188" endline="213">EnvirinmantInventoryUI.PickUpEquipment</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="223">
+        <label>DroppedItem</label>
+        <link refid="class_dropped_item"/>
+        <childnode refid="224" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="224">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="225">
+        <label>DroppedItem</label>
+        <link refid="class_dropped_item"/>
+        <childnode refid="226" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="226">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/DroppedItem.cs" line="6" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/DroppedItem.cs" bodystart="5" bodyend="8"/>
+    <listofallmembers>
+      <member refid="class_dropped_item_1a25e2e7c5359d5c6e4d4fc46bb4543665" prot="public" virt="non-virtual"><scope>DroppedItem</scope><name>Stack</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

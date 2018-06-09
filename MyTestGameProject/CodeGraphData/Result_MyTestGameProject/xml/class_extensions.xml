@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_extensions" kind="class" prot="public">
+    <compoundname>Extensions</compoundname>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_extensions_1ae16f98ca2a3aab2b5293a46035470444" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>static string Extensions.GetNameLocalise</definition>
+        <argsstring>(this EquipmentStats.Durability durability)</argsstring>
+        <name>GetNameLocalise</name>
+        <param>
+          <type>this <ref refid="struct_equipment_stats_1adb97d89712a349151f7c761bdcff561b" kindref="member">EquipmentStats.Durability</ref></type>
+          <declname>durability</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Extensions.cs" line="11" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Extensions.cs" bodystart="11" bodyend="30"/>
+        <references refid="class_localization_1a37b116dfb691db34de4ee4b16e8dd0b4" compoundref="_localization_8cs" startline="144">Localization.durability_damaged</references>
+        <references refid="class_localization_1a7528469ba135013de8f27130a2dec3c3" compoundref="_localization_8cs" startline="142">Localization.durability_new</references>
+        <references refid="class_localization_1ac7c4ad61e6373d55801d715a02dab291" compoundref="_localization_8cs" startline="143">Localization.durability_worn</references>
+      </memberdef>
+      <memberdef kind="function" id="class_extensions_1ae5b9e63c6029cbbc1581b2285c2bb10f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Color</type>
+        <definition>static Color Extensions.GetColor</definition>
+        <argsstring>(this EquipmentStats.Durability durability)</argsstring>
+        <name>GetColor</name>
+        <param>
+          <type>this <ref refid="struct_equipment_stats_1adb97d89712a349151f7c761bdcff561b" kindref="member">EquipmentStats.Durability</ref></type>
+          <declname>durability</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Extensions.cs" line="32" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Extensions.cs" bodystart="32" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="class_extensions_1aaa9f92ddf1881238057a72e7f5028540" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>static string Extensions.GetNameLocalise</definition>
+        <argsstring>(this HospitalRoom.HealTarget healTarget)</argsstring>
+        <name>GetNameLocalise</name>
+        <param>
+          <type>this <ref refid="class_hospital_room_1acf232efbec254f916a435a2e7e545a3b" kindref="member">HospitalRoom.HealTarget</ref></type>
+          <declname>healTarget</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Extensions.cs" line="54" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Extensions.cs" bodystart="54" bodyend="70"/>
+        <references refid="class_localization_1aa9891068a3c0c95c37eb0a401ba670db" compoundref="_localization_8cs" startline="26">Localization.error</references>
+        <references refid="class_localization_1ae24be414df150e3eda7729bbe78ffcc6" compoundref="_localization_8cs" startline="23">Localization.healtarget_strongest</references>
+        <references refid="class_localization_1acf9b009b7d626cf4fb9db654978c617f" compoundref="_localization_8cs" startline="22">Localization.healtarget_weakest</references>
+      </memberdef>
+      <memberdef kind="function" id="class_extensions_1a994e16b57d8b851b941463015254ae3b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>static string Extensions.GetNameLocalise</definition>
+        <argsstring>(this Description.Currency currency)</argsstring>
+        <name>GetNameLocalise</name>
+        <param>
+          <type>this <ref refid="struct_description_1a5744ce90a0795b8206e1e5f113db5820" kindref="member">Description.Currency</ref></type>
+          <declname>currency</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Extensions.cs" line="76" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Extensions.cs" bodystart="76" bodyend="95"/>
+        <references refid="class_localization_1aa9891068a3c0c95c37eb0a401ba670db" compoundref="_localization_8cs" startline="26">Localization.error</references>
+        <references refid="class_localization_1af56b0f89f900c8e6625a024b607dd6be" compoundref="_localization_8cs" startline="76">Localization.expirience</references>
+        <references refid="class_localization_1a7347f1d64ca792be11072f7f41b04c16" compoundref="_localization_8cs" startline="74">Localization.gold</references>
+        <references refid="class_localization_1a0703f3a10ad686b7e0f17143c4ad3537" compoundref="_localization_8cs" startline="75">Localization.silver</references>
+      </memberdef>
+      <memberdef kind="function" id="class_extensions_1af9694514edf3ca9b79e788b21a991a41" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>object</type>
+        <definition>static object Extensions.IncreaseNumberField</definition>
+        <argsstring>(this object obj, float val, string[] pathFieldNames, int startIndex=0, BindingFlags flags=BindingFlags.Instance|BindingFlags.Public|BindingFlags.NonPublic)</argsstring>
+        <name>IncreaseNumberField</name>
+        <param>
+          <type>this object</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>val</declname>
+        </param>
+        <param>
+          <type>string[]</type>
+          <declname>pathFieldNames</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>startIndex</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>BindingFlags</type>
+          <declname>flags</declname>
+          <defval>BindingFlags.Instance|BindingFlags.Public|BindingFlags.NonPublic</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Extensions.cs" line="99" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Extensions.cs" bodystart="99" bodyend="118"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Extensions.cs" line="8" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Extensions.cs" bodystart="7" bodyend="119"/>
+    <listofallmembers>
+      <member refid="class_extensions_1ae5b9e63c6029cbbc1581b2285c2bb10f" prot="public" virt="non-virtual"><scope>Extensions</scope><name>GetColor</name></member>
+      <member refid="class_extensions_1ae16f98ca2a3aab2b5293a46035470444" prot="public" virt="non-virtual"><scope>Extensions</scope><name>GetNameLocalise</name></member>
+      <member refid="class_extensions_1aaa9f92ddf1881238057a72e7f5028540" prot="public" virt="non-virtual"><scope>Extensions</scope><name>GetNameLocalise</name></member>
+      <member refid="class_extensions_1a994e16b57d8b851b941463015254ae3b" prot="public" virt="non-virtual"><scope>Extensions</scope><name>GetNameLocalise</name></member>
+      <member refid="class_extensions_1af9694514edf3ca9b79e788b21a991a41" prot="public" virt="non-virtual"><scope>Extensions</scope><name>IncreaseNumberField</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

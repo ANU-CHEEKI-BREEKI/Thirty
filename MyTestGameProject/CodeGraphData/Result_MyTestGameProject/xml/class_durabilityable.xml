@@ -1,0 +1,299 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_durabilityable" kind="class" prot="public">
+    <compoundname>Durabilityable</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_durabilityable_1a6b9607a37447338fd63e940d8bd5a27f" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Durabilityable.brokenRotationRange</definition>
+        <argsstring></argsstring>
+        <name>brokenRotationRange</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>Случайный разброс поворота при уничтожении </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Durabilityable.cs" line="12" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Durabilityable.cs" bodystart="12" bodyend="-1"/>
+        <referencedby refid="class_durabilityable_1a75c1ddd15b0371d46c6bd0c1c5201903" compoundref="_durabilityable_8cs" startline="77" endline="85">BreakDown</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_durabilityable_1a4d2ec7b4413d8ee7f97fedb5820076c3" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Durabilityable.brokenRrotation</definition>
+        <argsstring></argsstring>
+        <name>brokenRrotation</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>Поворот при уничтожении </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Durabilityable.cs" line="16" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Durabilityable.cs" bodystart="16" bodyend="-1"/>
+        <referencedby refid="class_durabilityable_1a75c1ddd15b0371d46c6bd0c1c5201903" compoundref="_durabilityable_8cs" startline="77" endline="85">BreakDown</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_durabilityable_1acd80dddba3634a29fe9274320544832f" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Durabilityable.maximumDurability</definition>
+        <argsstring></argsstring>
+        <name>maximumDurability</name>
+        <initializer>= 100</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Durabilityable.cs" line="18" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Durabilityable.cs" bodystart="18" bodyend="-1"/>
+        <referencedby refid="class_durabilityable_1af2edcdf37a1bf2c7a76a1511d119bb46" compoundref="_durabilityable_8cs" startline="87" endline="101">SetSprite</referencedby>
+        <referencedby refid="class_durabilityable_1a2a9dc4692a4a6f2083f4473d82742c58" compoundref="_durabilityable_8cs" startline="36" endline="49">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_durabilityable_1ae760b3cac8b0690ce73414af0e063ee9" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Durabilityable.durability</definition>
+        <argsstring></argsstring>
+        <name>durability</name>
+        <initializer>= 100</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Durabilityable.cs" line="20" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Durabilityable.cs" bodystart="20" bodyend="-1"/>
+        <referencedby refid="class_durabilityable_1a75c1ddd15b0371d46c6bd0c1c5201903" compoundref="_durabilityable_8cs" startline="77" endline="85">BreakDown</referencedby>
+        <referencedby refid="class_durabilityable_1af2edcdf37a1bf2c7a76a1511d119bb46" compoundref="_durabilityable_8cs" startline="87" endline="101">SetSprite</referencedby>
+        <referencedby refid="class_durabilityable_1a2a9dc4692a4a6f2083f4473d82742c58" compoundref="_durabilityable_8cs" startline="36" endline="49">Start</referencedby>
+        <referencedby refid="class_durabilityable_1a756c4d812546f1f7752f365294b70ffa" compoundref="_durabilityable_8cs" startline="57" endline="75">TakeDamage</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_durabilityable_1a9e8a6a57ec1886b111a2df630541dba5" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Durabilityable.resistance</definition>
+        <argsstring></argsstring>
+        <name>resistance</name>
+        <briefdescription>
+<para>Сопротивление этого объекта к урону </para>        </briefdescription>
+        <detaileddescription>
+<para>0 - урон проходит полностью, 1 - урон блокируется.</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Durabilityable.cs" line="26" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Durabilityable.cs" bodystart="26" bodyend="-1"/>
+        <referencedby refid="class_durabilityable_1a756c4d812546f1f7752f365294b70ffa" compoundref="_durabilityable_8cs" startline="57" endline="75">TakeDamage</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_durabilityable_1a6aa2d7fabd25121b65b0e2a9195952cf" prot="private" static="no" mutable="no">
+        <type>Sprite[]</type>
+        <definition>Sprite [] Durabilityable.durabilitySprites</definition>
+        <argsstring></argsstring>
+        <name>durabilitySprites</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Durabilityable.cs" line="28" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Durabilityable.cs" bodystart="28" bodyend="-1"/>
+        <referencedby refid="class_durabilityable_1af2edcdf37a1bf2c7a76a1511d119bb46" compoundref="_durabilityable_8cs" startline="87" endline="101">SetSprite</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_durabilityable_1ab1a21d6661f4504e0c0a09218029ed6f" prot="private" static="no" mutable="no">
+        <type>Sprite</type>
+        <definition>Sprite Durabilityable.brokenSprite</definition>
+        <argsstring></argsstring>
+        <name>brokenSprite</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Durabilityable.cs" line="29" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Durabilityable.cs" bodystart="29" bodyend="-1"/>
+        <referencedby refid="class_durabilityable_1af2edcdf37a1bf2c7a76a1511d119bb46" compoundref="_durabilityable_8cs" startline="87" endline="101">SetSprite</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_durabilityable_1a6a83c2d1e59483cb426161c14b1b2453" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Durabilityable.spritesCount</definition>
+        <argsstring></argsstring>
+        <name>spritesCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Durabilityable.cs" line="31" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Durabilityable.cs" bodystart="31" bodyend="-1"/>
+        <referencedby refid="class_durabilityable_1af2edcdf37a1bf2c7a76a1511d119bb46" compoundref="_durabilityable_8cs" startline="87" endline="101">SetSprite</referencedby>
+        <referencedby refid="class_durabilityable_1a2a9dc4692a4a6f2083f4473d82742c58" compoundref="_durabilityable_8cs" startline="36" endline="49">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_durabilityable_1a0fbd4f296e503c551f8ceff561d82b2d" prot="private" static="no" mutable="no">
+        <type>SpriteRenderer</type>
+        <definition>SpriteRenderer Durabilityable.renderer</definition>
+        <argsstring></argsstring>
+        <name>renderer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Durabilityable.cs" line="33" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Durabilityable.cs" bodystart="33" bodyend="-1"/>
+        <referencedby refid="class_durabilityable_1a2a9dc4692a4a6f2083f4473d82742c58" compoundref="_durabilityable_8cs" startline="36" endline="49">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_durabilityable_1aaa0fad5a69d90aef27db84a87f534c01" prot="private" static="no" mutable="no">
+        <type>Transform</type>
+        <definition>Transform Durabilityable.thisTransform</definition>
+        <argsstring></argsstring>
+        <name>thisTransform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Durabilityable.cs" line="34" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Durabilityable.cs" bodystart="34" bodyend="-1"/>
+        <referencedby refid="class_durabilityable_1a2a9dc4692a4a6f2083f4473d82742c58" compoundref="_durabilityable_8cs" startline="36" endline="49">Start</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_durabilityable_1a2a9dc4692a4a6f2083f4473d82742c58" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Durabilityable.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Durabilityable.cs" line="36" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Durabilityable.cs" bodystart="36" bodyend="49"/>
+        <references refid="class_durabilityable_1ae760b3cac8b0690ce73414af0e063ee9" compoundref="_durabilityable_8cs" startline="20">durability</references>
+        <references refid="class_durabilityable_1acd80dddba3634a29fe9274320544832f" compoundref="_durabilityable_8cs" startline="18">maximumDurability</references>
+        <references refid="class_durabilityable_1a0fbd4f296e503c551f8ceff561d82b2d" compoundref="_durabilityable_8cs" startline="33">renderer</references>
+        <references refid="class_durabilityable_1af2edcdf37a1bf2c7a76a1511d119bb46" compoundref="_durabilityable_8cs" startline="87" endline="101">SetSprite</references>
+        <references refid="class_durabilityable_1a6a83c2d1e59483cb426161c14b1b2453" compoundref="_durabilityable_8cs" startline="31">spritesCount</references>
+        <references refid="class_durabilityable_1aaa0fad5a69d90aef27db84a87f534c01" compoundref="_durabilityable_8cs" startline="34">thisTransform</references>
+      </memberdef>
+      <memberdef kind="function" id="class_durabilityable_1af2edcdf37a1bf2c7a76a1511d119bb46" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Durabilityable.SetSprite</definition>
+        <argsstring>(bool broken=false)</argsstring>
+        <name>SetSprite</name>
+        <param>
+          <type>bool</type>
+          <declname>broken</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Durabilityable.cs" line="87" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Durabilityable.cs" bodystart="87" bodyend="101"/>
+        <references refid="class_durabilityable_1ab1a21d6661f4504e0c0a09218029ed6f" compoundref="_durabilityable_8cs" startline="29">brokenSprite</references>
+        <references refid="class_durabilityable_1ae760b3cac8b0690ce73414af0e063ee9" compoundref="_durabilityable_8cs" startline="20">durability</references>
+        <references refid="class_durabilityable_1a6aa2d7fabd25121b65b0e2a9195952cf" compoundref="_durabilityable_8cs" startline="28">durabilitySprites</references>
+        <references refid="class_durabilityable_1acd80dddba3634a29fe9274320544832f" compoundref="_durabilityable_8cs" startline="18">maximumDurability</references>
+        <references refid="class_durabilityable_1a6a83c2d1e59483cb426161c14b1b2453" compoundref="_durabilityable_8cs" startline="31">spritesCount</references>
+        <referencedby refid="class_durabilityable_1a75c1ddd15b0371d46c6bd0c1c5201903" compoundref="_durabilityable_8cs" startline="77" endline="85">BreakDown</referencedby>
+        <referencedby refid="class_durabilityable_1a2a9dc4692a4a6f2083f4473d82742c58" compoundref="_durabilityable_8cs" startline="36" endline="49">Start</referencedby>
+        <referencedby refid="class_durabilityable_1a756c4d812546f1f7752f365294b70ffa" compoundref="_durabilityable_8cs" startline="57" endline="75">TakeDamage</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_durabilityable_1a756c4d812546f1f7752f365294b70ffa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Durabilityable.TakeDamage</definition>
+        <argsstring>(float damage)</argsstring>
+        <name>TakeDamage</name>
+        <param>
+          <type>float</type>
+          <declname>damage</declname>
+        </param>
+        <briefdescription>
+<para>Нанести урон по этому разрушаемому объекту. </para>        </briefdescription>
+        <detaileddescription>
+<para>Урон будет нанесен с учетом сопротивления к урону этого объекта.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>damage</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Если объект был уничтожен, возвратится true.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Durabilityable.cs" line="57" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Durabilityable.cs" bodystart="57" bodyend="75"/>
+        <references refid="class_durabilityable_1a75c1ddd15b0371d46c6bd0c1c5201903" compoundref="_durabilityable_8cs" startline="77" endline="85">BreakDown</references>
+        <references refid="class_durabilityable_1ae760b3cac8b0690ce73414af0e063ee9" compoundref="_durabilityable_8cs" startline="20">durability</references>
+        <references refid="class_durabilityable_1a9e8a6a57ec1886b111a2df630541dba5" compoundref="_durabilityable_8cs" startline="26">resistance</references>
+        <references refid="class_durabilityable_1af2edcdf37a1bf2c7a76a1511d119bb46" compoundref="_durabilityable_8cs" startline="87" endline="101">SetSprite</references>
+        <referencedby refid="class_stakes_1af4a3a993f1e2ab68c130f909d122480b" compoundref="_stakes_8cs" startline="65" endline="82">Stakes.HitUnit</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_durabilityable_1a75c1ddd15b0371d46c6bd0c1c5201903" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Durabilityable.BreakDown</definition>
+        <argsstring>()</argsstring>
+        <name>BreakDown</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Durabilityable.cs" line="77" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Durabilityable.cs" bodystart="77" bodyend="85"/>
+        <references refid="class_durabilityable_1a6b9607a37447338fd63e940d8bd5a27f" compoundref="_durabilityable_8cs" startline="12">brokenRotationRange</references>
+        <references refid="class_durabilityable_1a4d2ec7b4413d8ee7f97fedb5820076c3" compoundref="_durabilityable_8cs" startline="16">brokenRrotation</references>
+        <references refid="class_durabilityable_1ae760b3cac8b0690ce73414af0e063ee9" compoundref="_durabilityable_8cs" startline="20">durability</references>
+        <references refid="class_durabilityable_1af2edcdf37a1bf2c7a76a1511d119bb46" compoundref="_durabilityable_8cs" startline="87" endline="101">SetSprite</references>
+        <referencedby refid="class_durabilityable_1a756c4d812546f1f7752f365294b70ffa" compoundref="_durabilityable_8cs" startline="57" endline="75">TakeDamage</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="304">
+        <label>Durabilityable</label>
+        <link refid="class_durabilityable"/>
+        <childnode refid="305" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="305">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="306">
+        <label>Durabilityable</label>
+        <link refid="class_durabilityable"/>
+        <childnode refid="307" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="307">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Durabilityable.cs" line="8" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Durabilityable.cs" bodystart="7" bodyend="102"/>
+    <listofallmembers>
+      <member refid="class_durabilityable_1a75c1ddd15b0371d46c6bd0c1c5201903" prot="public" virt="non-virtual"><scope>Durabilityable</scope><name>BreakDown</name></member>
+      <member refid="class_durabilityable_1a6b9607a37447338fd63e940d8bd5a27f" prot="private" virt="non-virtual"><scope>Durabilityable</scope><name>brokenRotationRange</name></member>
+      <member refid="class_durabilityable_1a4d2ec7b4413d8ee7f97fedb5820076c3" prot="private" virt="non-virtual"><scope>Durabilityable</scope><name>brokenRrotation</name></member>
+      <member refid="class_durabilityable_1ab1a21d6661f4504e0c0a09218029ed6f" prot="private" virt="non-virtual"><scope>Durabilityable</scope><name>brokenSprite</name></member>
+      <member refid="class_durabilityable_1ae760b3cac8b0690ce73414af0e063ee9" prot="private" virt="non-virtual"><scope>Durabilityable</scope><name>durability</name></member>
+      <member refid="class_durabilityable_1a6aa2d7fabd25121b65b0e2a9195952cf" prot="private" virt="non-virtual"><scope>Durabilityable</scope><name>durabilitySprites</name></member>
+      <member refid="class_durabilityable_1acd80dddba3634a29fe9274320544832f" prot="private" virt="non-virtual"><scope>Durabilityable</scope><name>maximumDurability</name></member>
+      <member refid="class_durabilityable_1a0fbd4f296e503c551f8ceff561d82b2d" prot="private" virt="non-virtual"><scope>Durabilityable</scope><name>renderer</name></member>
+      <member refid="class_durabilityable_1a9e8a6a57ec1886b111a2df630541dba5" prot="private" virt="non-virtual"><scope>Durabilityable</scope><name>resistance</name></member>
+      <member refid="class_durabilityable_1af2edcdf37a1bf2c7a76a1511d119bb46" prot="private" virt="non-virtual"><scope>Durabilityable</scope><name>SetSprite</name></member>
+      <member refid="class_durabilityable_1a6a83c2d1e59483cb426161c14b1b2453" prot="private" virt="non-virtual"><scope>Durabilityable</scope><name>spritesCount</name></member>
+      <member refid="class_durabilityable_1a2a9dc4692a4a6f2083f4473d82742c58" prot="private" virt="non-virtual"><scope>Durabilityable</scope><name>Start</name></member>
+      <member refid="class_durabilityable_1a756c4d812546f1f7752f365294b70ffa" prot="public" virt="non-virtual"><scope>Durabilityable</scope><name>TakeDamage</name></member>
+      <member refid="class_durabilityable_1aaa0fad5a69d90aef27db84a87f534c01" prot="private" virt="non-virtual"><scope>Durabilityable</scope><name>thisTransform</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

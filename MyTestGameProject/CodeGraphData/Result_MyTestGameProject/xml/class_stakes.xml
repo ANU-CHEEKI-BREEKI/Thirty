@@ -1,0 +1,263 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_stakes" kind="class" prot="public">
+    <compoundname>Stakes</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_stakes_1a70b1327cd0a601beb599cf26ee018e60" prot="private" static="no" mutable="no">
+        <type><ref refid="struct_damage" kindref="compound">Damage</ref></type>
+        <definition>Damage Stakes.damage</definition>
+        <argsstring></argsstring>
+        <name>damage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Stakes.cs" line="8" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Stakes.cs" bodystart="8" bodyend="-1"/>
+        <referencedby refid="class_stakes_1af4a3a993f1e2ab68c130f909d122480b" compoundref="_stakes_8cs" startline="65" endline="82">HitUnit</referencedby>
+        <referencedby refid="class_stakes_1a0d91ee0a2b21b01222f11f605ec77950" compoundref="_stakes_8cs" startline="45" endline="53">OnCollisionEnter2D</referencedby>
+        <referencedby refid="class_stakes_1af68dc8b21916caaa6c90d2cca28bd6a7" compoundref="_stakes_8cs" startline="55" endline="63">OnCollisionStay2D</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_stakes_1a2e1b26fb2cd50295a72697e25df7447d" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Stakes.damagingTickRate</definition>
+        <argsstring></argsstring>
+        <name>damagingTickRate</name>
+        <initializer>= 1.5f</initializer>
+        <briefdescription>
+<para>время между активациями нанесения урона по стоящим юнитам </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Stakes.cs" line="12" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Stakes.cs" bodystart="12" bodyend="-1"/>
+        <referencedby refid="class_stakes_1a6032d5f308e7a96f21310f793bff8e8a" compoundref="_stakes_8cs" startline="23" endline="32">Start</referencedby>
+        <referencedby refid="class_stakes_1a3e318a7a59c0c4ad594e494a89f6c6dd" compoundref="_stakes_8cs" startline="34" endline="43">SwitchDamaging</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_stakes_1a0994233504a1ff1ebe1269032a90ce18" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Stakes.damagingDuration</definition>
+        <argsstring></argsstring>
+        <name>damagingDuration</name>
+        <initializer>= 0.2f</initializer>
+        <briefdescription>
+<para>время продолжительности нанесения урона по стоящим юнитам </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Stakes.cs" line="16" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Stakes.cs" bodystart="16" bodyend="-1"/>
+        <referencedby refid="class_stakes_1a6032d5f308e7a96f21310f793bff8e8a" compoundref="_stakes_8cs" startline="23" endline="32">Start</referencedby>
+        <referencedby refid="class_stakes_1a3e318a7a59c0c4ad594e494a89f6c6dd" compoundref="_stakes_8cs" startline="34" endline="43">SwitchDamaging</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_stakes_1afa074d8e413769d968404e730efc8b45" prot="private" static="no" mutable="no">
+        <type><ref refid="class_durabilityable" kindref="compound">Durabilityable</ref></type>
+        <definition>Durabilityable Stakes.durabilityble</definition>
+        <argsstring></argsstring>
+        <name>durabilityble</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Stakes.cs" line="18" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Stakes.cs" bodystart="18" bodyend="-1"/>
+        <referencedby refid="class_stakes_1af4a3a993f1e2ab68c130f909d122480b" compoundref="_stakes_8cs" startline="65" endline="82">HitUnit</referencedby>
+        <referencedby refid="class_stakes_1a6032d5f308e7a96f21310f793bff8e8a" compoundref="_stakes_8cs" startline="23" endline="32">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_stakes_1a99d06676f856425860b46aab63705540" prot="private" static="no" mutable="no">
+        <type>Collider2D[]</type>
+        <definition>Collider2D [] Stakes.colliders</definition>
+        <argsstring></argsstring>
+        <name>colliders</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Stakes.cs" line="19" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Stakes.cs" bodystart="19" bodyend="-1"/>
+        <referencedby refid="class_stakes_1af4a3a993f1e2ab68c130f909d122480b" compoundref="_stakes_8cs" startline="65" endline="82">HitUnit</referencedby>
+        <referencedby refid="class_stakes_1a6032d5f308e7a96f21310f793bff8e8a" compoundref="_stakes_8cs" startline="23" endline="32">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_stakes_1acde547bbf6eb06197418d6f649f57a76" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Stakes.canDamage</definition>
+        <argsstring></argsstring>
+        <name>canDamage</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Stakes.cs" line="21" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Stakes.cs" bodystart="21" bodyend="-1"/>
+        <referencedby refid="class_stakes_1af68dc8b21916caaa6c90d2cca28bd6a7" compoundref="_stakes_8cs" startline="55" endline="63">OnCollisionStay2D</referencedby>
+        <referencedby refid="class_stakes_1a3e318a7a59c0c4ad594e494a89f6c6dd" compoundref="_stakes_8cs" startline="34" endline="43">SwitchDamaging</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_stakes_1a6032d5f308e7a96f21310f793bff8e8a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Stakes.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Stakes.cs" line="23" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Stakes.cs" bodystart="23" bodyend="32"/>
+        <references refid="class_stakes_1a99d06676f856425860b46aab63705540" compoundref="_stakes_8cs" startline="19">colliders</references>
+        <references refid="class_stakes_1a0994233504a1ff1ebe1269032a90ce18" compoundref="_stakes_8cs" startline="16">damagingDuration</references>
+        <references refid="class_stakes_1a2e1b26fb2cd50295a72697e25df7447d" compoundref="_stakes_8cs" startline="12">damagingTickRate</references>
+        <references refid="class_stakes_1afa074d8e413769d968404e730efc8b45" compoundref="_stakes_8cs" startline="18">durabilityble</references>
+        <references refid="class_stakes_1a3e318a7a59c0c4ad594e494a89f6c6dd" compoundref="_stakes_8cs" startline="34" endline="43">SwitchDamaging</references>
+      </memberdef>
+      <memberdef kind="function" id="class_stakes_1a3e318a7a59c0c4ad594e494a89f6c6dd" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerator</type>
+        <definition>IEnumerator Stakes.SwitchDamaging</definition>
+        <argsstring>()</argsstring>
+        <name>SwitchDamaging</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Stakes.cs" line="34" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Stakes.cs" bodystart="34" bodyend="43"/>
+        <references refid="class_stakes_1acde547bbf6eb06197418d6f649f57a76" compoundref="_stakes_8cs" startline="21">canDamage</references>
+        <references refid="class_stakes_1a0994233504a1ff1ebe1269032a90ce18" compoundref="_stakes_8cs" startline="16">damagingDuration</references>
+        <references refid="class_stakes_1a2e1b26fb2cd50295a72697e25df7447d" compoundref="_stakes_8cs" startline="12">damagingTickRate</references>
+        <referencedby refid="class_stakes_1a6032d5f308e7a96f21310f793bff8e8a" compoundref="_stakes_8cs" startline="23" endline="32">Start</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_stakes_1a0d91ee0a2b21b01222f11f605ec77950" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Stakes.OnCollisionEnter2D</definition>
+        <argsstring>(Collision2D collision)</argsstring>
+        <name>OnCollisionEnter2D</name>
+        <param>
+          <type>Collision2D</type>
+          <declname>collision</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Stakes.cs" line="45" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Stakes.cs" bodystart="45" bodyend="53"/>
+        <references refid="class_stakes_1a70b1327cd0a601beb599cf26ee018e60" compoundref="_stakes_8cs" startline="8">damage</references>
+        <references refid="class_stakes_1af4a3a993f1e2ab68c130f909d122480b" compoundref="_stakes_8cs" startline="65" endline="82">HitUnit</references>
+      </memberdef>
+      <memberdef kind="function" id="class_stakes_1af68dc8b21916caaa6c90d2cca28bd6a7" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Stakes.OnCollisionStay2D</definition>
+        <argsstring>(Collision2D collision)</argsstring>
+        <name>OnCollisionStay2D</name>
+        <param>
+          <type>Collision2D</type>
+          <declname>collision</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Stakes.cs" line="55" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Stakes.cs" bodystart="55" bodyend="63"/>
+        <references refid="class_stakes_1acde547bbf6eb06197418d6f649f57a76" compoundref="_stakes_8cs" startline="21">canDamage</references>
+        <references refid="class_stakes_1a70b1327cd0a601beb599cf26ee018e60" compoundref="_stakes_8cs" startline="8">damage</references>
+        <references refid="class_stakes_1af4a3a993f1e2ab68c130f909d122480b" compoundref="_stakes_8cs" startline="65" endline="82">HitUnit</references>
+      </memberdef>
+      <memberdef kind="function" id="class_stakes_1af4a3a993f1e2ab68c130f909d122480b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Stakes.HitUnit</definition>
+        <argsstring>(Unit unit, Damage damage)</argsstring>
+        <name>HitUnit</name>
+        <param>
+          <type><ref refid="class_unit" kindref="compound">Unit</ref></type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_damage" kindref="compound">Damage</ref></type>
+          <declname>damage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Stakes.cs" line="65" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Stakes.cs" bodystart="65" bodyend="82"/>
+        <references refid="struct_damage_1a4aef310a83e4573dc2aeb2684ba5ee99" compoundref="_damage_8cs" startline="8">Damage.BaseDamage</references>
+        <references refid="class_stakes_1a99d06676f856425860b46aab63705540" compoundref="_stakes_8cs" startline="19">colliders</references>
+        <references refid="class_stakes_1a70b1327cd0a601beb599cf26ee018e60" compoundref="_stakes_8cs" startline="8">damage</references>
+        <references refid="class_stakes_1afa074d8e413769d968404e730efc8b45" compoundref="_stakes_8cs" startline="18">durabilityble</references>
+        <references refid="class_durabilityable_1a756c4d812546f1f7752f365294b70ffa" compoundref="_durabilityable_8cs" startline="57" endline="75">Durabilityable.TakeDamage</references>
+        <referencedby refid="class_stakes_1a0d91ee0a2b21b01222f11f605ec77950" compoundref="_stakes_8cs" startline="45" endline="53">OnCollisionEnter2D</referencedby>
+        <referencedby refid="class_stakes_1af68dc8b21916caaa6c90d2cca28bd6a7" compoundref="_stakes_8cs" startline="55" endline="63">OnCollisionStay2D</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1115">
+        <label>Stakes</label>
+        <link refid="class_stakes"/>
+        <childnode refid="1116" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1116">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1120">
+        <label>Damage</label>
+        <link refid="struct_damage"/>
+      </node>
+      <node id="1119">
+        <label>Durabilityable</label>
+        <link refid="class_durabilityable"/>
+        <childnode refid="1118" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1117">
+        <label>Stakes</label>
+        <link refid="class_stakes"/>
+        <childnode refid="1118" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1119" relation="usage">
+          <edgelabel>durabilityble</edgelabel>
+        </childnode>
+        <childnode refid="1120" relation="usage">
+          <edgelabel>damage</edgelabel>
+        </childnode>
+      </node>
+      <node id="1118">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Stakes.cs" line="7" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Stakes.cs" bodystart="6" bodyend="83"/>
+    <listofallmembers>
+      <member refid="class_stakes_1acde547bbf6eb06197418d6f649f57a76" prot="private" virt="non-virtual"><scope>Stakes</scope><name>canDamage</name></member>
+      <member refid="class_stakes_1a99d06676f856425860b46aab63705540" prot="private" virt="non-virtual"><scope>Stakes</scope><name>colliders</name></member>
+      <member refid="class_stakes_1a70b1327cd0a601beb599cf26ee018e60" prot="private" virt="non-virtual"><scope>Stakes</scope><name>damage</name></member>
+      <member refid="class_stakes_1a0994233504a1ff1ebe1269032a90ce18" prot="private" virt="non-virtual"><scope>Stakes</scope><name>damagingDuration</name></member>
+      <member refid="class_stakes_1a2e1b26fb2cd50295a72697e25df7447d" prot="private" virt="non-virtual"><scope>Stakes</scope><name>damagingTickRate</name></member>
+      <member refid="class_stakes_1afa074d8e413769d968404e730efc8b45" prot="private" virt="non-virtual"><scope>Stakes</scope><name>durabilityble</name></member>
+      <member refid="class_stakes_1af4a3a993f1e2ab68c130f909d122480b" prot="private" virt="non-virtual"><scope>Stakes</scope><name>HitUnit</name></member>
+      <member refid="class_stakes_1a0d91ee0a2b21b01222f11f605ec77950" prot="private" virt="non-virtual"><scope>Stakes</scope><name>OnCollisionEnter2D</name></member>
+      <member refid="class_stakes_1af68dc8b21916caaa6c90d2cca28bd6a7" prot="private" virt="non-virtual"><scope>Stakes</scope><name>OnCollisionStay2D</name></member>
+      <member refid="class_stakes_1a6032d5f308e7a96f21310f793bff8e8a" prot="private" virt="non-virtual"><scope>Stakes</scope><name>Start</name></member>
+      <member refid="class_stakes_1a3e318a7a59c0c4ad594e494a89f6c6dd" prot="private" virt="non-virtual"><scope>Stakes</scope><name>SwitchDamaging</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

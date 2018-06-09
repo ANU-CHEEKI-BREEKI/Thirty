@@ -1,0 +1,355 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_mc_toggle_type_of_block" kind="class" prot="public">
+    <compoundname>McToggleTypeOfBlock</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">IPointerClickHandler</basecompoundref>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="class_mc_toggle_type_of_block_1a2a2085289933f5f1d2e6a73cbd7bec57" prot="public" static="no">
+        <name>TypeOfBlock</name>
+        <enumvalue id="class_mc_toggle_type_of_block_1a2a2085289933f5f1d2e6a73cbd7bec57a40679521b5da0954b705341a2859f782" prot="public">
+          <name>DOT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_mc_toggle_type_of_block_1a2a2085289933f5f1d2e6a73cbd7bec57a1ebf63b95738c30a1b71c7949e32871f" prot="public">
+          <name>VPLANE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_mc_toggle_type_of_block_1a2a2085289933f5f1d2e6a73cbd7bec57a8aca6e56e3beffd3add5f11c7a64f155" prot="public">
+          <name>HPLANE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_mc_toggle_type_of_block_1a2a2085289933f5f1d2e6a73cbd7bec57a12dec4e1f7ec620651b2b95c440ffac0" prot="public">
+          <name>SQUARE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McToggleTypeOfBlock.cs" line="59" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McToggleTypeOfBlock.cs" bodystart="59" bodyend="59"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_mc_toggle_type_of_block_1a4f48536a1a5efd66bc52306fb7df6fd8" prot="private" static="no" mutable="no">
+        <type>Toggle[]</type>
+        <definition>Toggle [] McToggleTypeOfBlock.otherToggles</definition>
+        <argsstring></argsstring>
+        <name>otherToggles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McToggleTypeOfBlock.cs" line="12" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McToggleTypeOfBlock.cs" bodystart="12" bodyend="-1"/>
+        <referencedby refid="class_mc_toggle_type_of_block_1a5de43df007d9ad0e75a9ca935acbbd8d" compoundref="_mc_toggle_type_of_block_8cs" startline="67" endline="83">OnPointerClick</referencedby>
+        <referencedby refid="class_mc_toggle_type_of_block_1a15a92daba2902dc669b89961252f3458" compoundref="_mc_toggle_type_of_block_8cs" startline="61" endline="65">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_mc_toggle_type_of_block_1a65a78f35bece89b06fe57ed8c7beb772" prot="private" static="no" mutable="no">
+        <type>Toggle</type>
+        <definition>Toggle McToggleTypeOfBlock.thisToggle</definition>
+        <argsstring></argsstring>
+        <name>thisToggle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McToggleTypeOfBlock.cs" line="13" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McToggleTypeOfBlock.cs" bodystart="13" bodyend="-1"/>
+        <referencedby refid="class_mc_toggle_type_of_block_1a5de43df007d9ad0e75a9ca935acbbd8d" compoundref="_mc_toggle_type_of_block_8cs" startline="67" endline="83">OnPointerClick</referencedby>
+        <referencedby refid="class_mc_toggle_type_of_block_1a15a92daba2902dc669b89961252f3458" compoundref="_mc_toggle_type_of_block_8cs" startline="61" endline="65">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_mc_toggle_type_of_block_1a61af2577a5c1820aceda152be09718f7" prot="private" static="no" mutable="no">
+        <type><ref refid="class_mc_toggle_type_of_block_1a2a2085289933f5f1d2e6a73cbd7bec57" kindref="member">TypeOfBlock</ref></type>
+        <definition>TypeOfBlock McToggleTypeOfBlock.type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McToggleTypeOfBlock.cs" line="50" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McToggleTypeOfBlock.cs" bodystart="50" bodyend="-1"/>
+        <referencedby refid="class_mc_toggle_type_of_block_1a4918a670597f2df016e8bfdab474e7c6" compoundref="_mc_toggle_type_of_block_8cs" startline="85" endline="106">SetSize</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_mc_toggle_type_of_block_1ab0ade3338a24468a90b52b422178736a" prot="private" static="yes" mutable="no">
+        <type>Toggle</type>
+        <definition>Toggle McToggleTypeOfBlock.lastPressedToggle</definition>
+        <argsstring></argsstring>
+        <name>lastPressedToggle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McToggleTypeOfBlock.cs" line="14" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McToggleTypeOfBlock.cs" bodystart="14" bodyend="-1"/>
+        <referencedby refid="class_mc_toggle_type_of_block_1a5de43df007d9ad0e75a9ca935acbbd8d" compoundref="_mc_toggle_type_of_block_8cs" startline="67" endline="83">OnPointerClick</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_mc_toggle_type_of_block_1a7ace95b46ea37b61fd7b1ea47cdde717" prot="private" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int McToggleTypeOfBlock.height</definition>
+        <argsstring></argsstring>
+        <name>height</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McToggleTypeOfBlock.cs" line="23" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McToggleTypeOfBlock.cs" bodystart="23" bodyend="-1"/>
+        <referencedby refid="class_mc_toggle_type_of_block_1a4918a670597f2df016e8bfdab474e7c6" compoundref="_mc_toggle_type_of_block_8cs" startline="85" endline="106">SetSize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_mc_toggle_type_of_block_1af9cc745ec04047977d2b936d187b7fae" prot="private" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int McToggleTypeOfBlock.width</definition>
+        <argsstring></argsstring>
+        <name>width</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McToggleTypeOfBlock.cs" line="32" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McToggleTypeOfBlock.cs" bodystart="32" bodyend="-1"/>
+        <referencedby refid="class_mc_toggle_type_of_block_1a4918a670597f2df016e8bfdab474e7c6" compoundref="_mc_toggle_type_of_block_8cs" startline="85" endline="106">SetSize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_mc_toggle_type_of_block_1a927c1ab614a3b04a1469186f2933c0f0" prot="private" static="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool McToggleTypeOfBlock.blocksSelected</definition>
+        <argsstring></argsstring>
+        <name>blocksSelected</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McToggleTypeOfBlock.cs" line="41" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McToggleTypeOfBlock.cs" bodystart="41" bodyend="-1"/>
+        <referencedby refid="class_mc_toggle_type_of_block_1a485cfe74ab8b7a6ba84779fd9686d887" compoundref="_mc_toggle_type_of_block_8cs" startline="108" endline="112">DeselectAll</referencedby>
+        <referencedby refid="class_mc_toggle_type_of_block_1a5de43df007d9ad0e75a9ca935acbbd8d" compoundref="_mc_toggle_type_of_block_8cs" startline="67" endline="83">OnPointerClick</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_mc_toggle_type_of_block_1a1f3a0a707b655f6979cd5d037fc8e0b6" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="no">
+        <type>Toggle</type>
+        <definition>Toggle McToggleTypeOfBlock.LastPressedToggle</definition>
+        <argsstring></argsstring>
+        <name>LastPressedToggle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McToggleTypeOfBlock.cs" line="15" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McToggleTypeOfBlock.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_mc_toggle_type_of_block_1abfbaff764b1dc7b2015f3dad99c299ab" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="no">
+        <type>int</type>
+        <definition>int McToggleTypeOfBlock.Height</definition>
+        <argsstring></argsstring>
+        <name>Height</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McToggleTypeOfBlock.cs" line="24" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McToggleTypeOfBlock.cs" bodystart="25" bodyend="-1"/>
+        <referencedby refid="class_mc_grid_1a1355b61cc25821c23732f1b46fc0c1e8" compoundref="_mc_grid_8cs" startline="91" endline="140">McGrid.DrawGrid</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_mc_toggle_type_of_block_1a574dd949c59ca3e026b130dd6a302e7e" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="no">
+        <type>int</type>
+        <definition>int McToggleTypeOfBlock.Width</definition>
+        <argsstring></argsstring>
+        <name>Width</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McToggleTypeOfBlock.cs" line="33" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McToggleTypeOfBlock.cs" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_mc_toggle_type_of_block_1ad2e5a070547daee60336765bcf9208ec" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="no">
+        <type>bool</type>
+        <definition>bool McToggleTypeOfBlock.BlocksSelected</definition>
+        <argsstring></argsstring>
+        <name>BlocksSelected</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McToggleTypeOfBlock.cs" line="42" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McToggleTypeOfBlock.cs" bodystart="43" bodyend="-1"/>
+        <referencedby refid="class_mc_grid_construct_controller_1a11fcc115a1d45bf646c507c0e2179aba" compoundref="_mc_grid_construct_controller_8cs" startline="89" endline="103">McGridConstructController.DrawGrid</referencedby>
+        <referencedby refid="class_mc_grid_1a1355b61cc25821c23732f1b46fc0c1e8" compoundref="_mc_grid_8cs" startline="91" endline="140">McGrid.DrawGrid</referencedby>
+        <referencedby refid="class_mc_grid_construct_controller_1a510e5cc6b3f8ac75c52e1380abd03eef" compoundref="_mc_grid_construct_controller_8cs" startline="42" endline="49">McGridConstructController.OnDrag</referencedby>
+        <referencedby refid="class_mc_grid_construct_controller_1abd877ad2beab54a368ae70399b7a0cdb" compoundref="_mc_grid_construct_controller_8cs" startline="51" endline="87">McGridConstructController.OnPointerDown</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_mc_toggle_type_of_block_1a71f7dfab6f0aa9eece87704693e03e42" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type><ref refid="class_mc_toggle_type_of_block_1a2a2085289933f5f1d2e6a73cbd7bec57" kindref="member">TypeOfBlock</ref></type>
+        <definition>TypeOfBlock McToggleTypeOfBlock.Type</definition>
+        <argsstring></argsstring>
+        <name>Type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McToggleTypeOfBlock.cs" line="51" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McToggleTypeOfBlock.cs" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_mc_toggle_type_of_block_1a15a92daba2902dc669b89961252f3458" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void McToggleTypeOfBlock.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McToggleTypeOfBlock.cs" line="61" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McToggleTypeOfBlock.cs" bodystart="61" bodyend="65"/>
+        <references refid="class_mc_toggle_type_of_block_1a4f48536a1a5efd66bc52306fb7df6fd8" compoundref="_mc_toggle_type_of_block_8cs" startline="12">otherToggles</references>
+        <references refid="class_mc_toggle_type_of_block_1a65a78f35bece89b06fe57ed8c7beb772" compoundref="_mc_toggle_type_of_block_8cs" startline="13">thisToggle</references>
+      </memberdef>
+      <memberdef kind="function" id="class_mc_toggle_type_of_block_1a4918a670597f2df016e8bfdab474e7c6" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void McToggleTypeOfBlock.SetSize</definition>
+        <argsstring>()</argsstring>
+        <name>SetSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McToggleTypeOfBlock.cs" line="85" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McToggleTypeOfBlock.cs" bodystart="85" bodyend="106"/>
+        <references refid="class_mc_toggle_type_of_block_1a7ace95b46ea37b61fd7b1ea47cdde717" compoundref="_mc_toggle_type_of_block_8cs" startline="23">height</references>
+        <references refid="class_mc_toggle_type_of_block_1a61af2577a5c1820aceda152be09718f7" compoundref="_mc_toggle_type_of_block_8cs" startline="50">type</references>
+        <references refid="class_mc_toggle_type_of_block_1af9cc745ec04047977d2b936d187b7fae" compoundref="_mc_toggle_type_of_block_8cs" startline="32">width</references>
+        <referencedby refid="class_mc_toggle_type_of_block_1a5de43df007d9ad0e75a9ca935acbbd8d" compoundref="_mc_toggle_type_of_block_8cs" startline="67" endline="83">OnPointerClick</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_mc_toggle_type_of_block_1a5de43df007d9ad0e75a9ca935acbbd8d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void McToggleTypeOfBlock.OnPointerClick</definition>
+        <argsstring>(PointerEventData eventData)</argsstring>
+        <name>OnPointerClick</name>
+        <param>
+          <type>PointerEventData</type>
+          <declname>eventData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McToggleTypeOfBlock.cs" line="67" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McToggleTypeOfBlock.cs" bodystart="67" bodyend="83"/>
+        <references refid="class_mc_toggle_type_of_block_1a927c1ab614a3b04a1469186f2933c0f0" compoundref="_mc_toggle_type_of_block_8cs" startline="41">blocksSelected</references>
+        <references refid="class_mc_toggle_type_of_block_1ab0ade3338a24468a90b52b422178736a" compoundref="_mc_toggle_type_of_block_8cs" startline="14">lastPressedToggle</references>
+        <references refid="class_mc_toggle_type_of_block_1a4f48536a1a5efd66bc52306fb7df6fd8" compoundref="_mc_toggle_type_of_block_8cs" startline="12">otherToggles</references>
+        <references refid="class_mc_toggle_type_of_block_1a4918a670597f2df016e8bfdab474e7c6" compoundref="_mc_toggle_type_of_block_8cs" startline="85" endline="106">SetSize</references>
+        <references refid="class_mc_toggle_type_of_block_1a65a78f35bece89b06fe57ed8c7beb772" compoundref="_mc_toggle_type_of_block_8cs" startline="13">thisToggle</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_mc_toggle_type_of_block_1a485cfe74ab8b7a6ba84779fd9686d887" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void McToggleTypeOfBlock.DeselectAll</definition>
+        <argsstring>()</argsstring>
+        <name>DeselectAll</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McToggleTypeOfBlock.cs" line="108" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McToggleTypeOfBlock.cs" bodystart="108" bodyend="112"/>
+        <references refid="class_mc_toggle_type_of_block_1a927c1ab614a3b04a1469186f2933c0f0" compoundref="_mc_toggle_type_of_block_8cs" startline="41">blocksSelected</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="676">
+        <label>IPointerClickHandler</label>
+      </node>
+      <node id="675">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="674">
+        <label>McToggleTypeOfBlock</label>
+        <link refid="class_mc_toggle_type_of_block"/>
+        <childnode refid="675" relation="public-inheritance">
+        </childnode>
+        <childnode refid="676" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="679">
+        <label>IPointerClickHandler</label>
+      </node>
+      <node id="678">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="677">
+        <label>McToggleTypeOfBlock</label>
+        <link refid="class_mc_toggle_type_of_block"/>
+        <childnode refid="678" relation="public-inheritance">
+        </childnode>
+        <childnode refid="679" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McToggleTypeOfBlock.cs" line="11" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McToggleTypeOfBlock.cs" bodystart="8" bodyend="113"/>
+    <listofallmembers>
+      <member refid="class_mc_toggle_type_of_block_1a927c1ab614a3b04a1469186f2933c0f0" prot="private" virt="non-virtual"><scope>McToggleTypeOfBlock</scope><name>blocksSelected</name></member>
+      <member refid="class_mc_toggle_type_of_block_1ad2e5a070547daee60336765bcf9208ec" prot="public" virt="non-virtual"><scope>McToggleTypeOfBlock</scope><name>BlocksSelected</name></member>
+      <member refid="class_mc_toggle_type_of_block_1a485cfe74ab8b7a6ba84779fd9686d887" prot="public" virt="non-virtual"><scope>McToggleTypeOfBlock</scope><name>DeselectAll</name></member>
+      <member refid="class_mc_toggle_type_of_block_1a7ace95b46ea37b61fd7b1ea47cdde717" prot="private" virt="non-virtual"><scope>McToggleTypeOfBlock</scope><name>height</name></member>
+      <member refid="class_mc_toggle_type_of_block_1abfbaff764b1dc7b2015f3dad99c299ab" prot="public" virt="non-virtual"><scope>McToggleTypeOfBlock</scope><name>Height</name></member>
+      <member refid="class_mc_toggle_type_of_block_1a1f3a0a707b655f6979cd5d037fc8e0b6" prot="public" virt="non-virtual"><scope>McToggleTypeOfBlock</scope><name>LastPressedToggle</name></member>
+      <member refid="class_mc_toggle_type_of_block_1ab0ade3338a24468a90b52b422178736a" prot="private" virt="non-virtual"><scope>McToggleTypeOfBlock</scope><name>lastPressedToggle</name></member>
+      <member refid="class_mc_toggle_type_of_block_1a5de43df007d9ad0e75a9ca935acbbd8d" prot="public" virt="non-virtual"><scope>McToggleTypeOfBlock</scope><name>OnPointerClick</name></member>
+      <member refid="class_mc_toggle_type_of_block_1a4f48536a1a5efd66bc52306fb7df6fd8" prot="private" virt="non-virtual"><scope>McToggleTypeOfBlock</scope><name>otherToggles</name></member>
+      <member refid="class_mc_toggle_type_of_block_1a4918a670597f2df016e8bfdab474e7c6" prot="private" virt="non-virtual"><scope>McToggleTypeOfBlock</scope><name>SetSize</name></member>
+      <member refid="class_mc_toggle_type_of_block_1a15a92daba2902dc669b89961252f3458" prot="private" virt="non-virtual"><scope>McToggleTypeOfBlock</scope><name>Start</name></member>
+      <member refid="class_mc_toggle_type_of_block_1a65a78f35bece89b06fe57ed8c7beb772" prot="private" virt="non-virtual"><scope>McToggleTypeOfBlock</scope><name>thisToggle</name></member>
+      <member refid="class_mc_toggle_type_of_block_1a71f7dfab6f0aa9eece87704693e03e42" prot="public" virt="non-virtual"><scope>McToggleTypeOfBlock</scope><name>Type</name></member>
+      <member refid="class_mc_toggle_type_of_block_1a61af2577a5c1820aceda152be09718f7" prot="private" virt="non-virtual"><scope>McToggleTypeOfBlock</scope><name>type</name></member>
+      <member refid="class_mc_toggle_type_of_block_1a2a2085289933f5f1d2e6a73cbd7bec57" prot="public" virt="non-virtual"><scope>McToggleTypeOfBlock</scope><name>TypeOfBlock</name></member>
+      <member refid="class_mc_toggle_type_of_block_1a574dd949c59ca3e026b130dd6a302e7e" prot="public" virt="non-virtual"><scope>McToggleTypeOfBlock</scope><name>Width</name></member>
+      <member refid="class_mc_toggle_type_of_block_1af9cc745ec04047977d2b936d187b7fae" prot="private" virt="non-virtual"><scope>McToggleTypeOfBlock</scope><name>width</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

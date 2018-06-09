@@ -1,0 +1,176 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_drop_to_ground" kind="class" prot="public">
+    <compoundname>DropToGround</compoundname>
+    <basecompoundref refid="class_a_drop_to_me" prot="public" virt="non-virtual">ADropToMe</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_drop_to_ground_1a91a5ee1b7fdb866f90a2d7156184cc2a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void DropToGround.OnDrop</definition>
+        <argsstring>(PointerEventData eventData)</argsstring>
+        <name>OnDrop</name>
+        <reimplements refid="class_a_drop_to_me_1a7969b529009a8693922cb6fa4b162fcf">OnDrop</reimplements>
+        <param>
+          <type>PointerEventData</type>
+          <declname>eventData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/DropToGround.cs" line="5" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/DropToGround.cs" bodystart="5" bodyend="26"/>
+        <references refid="class_drop_to_ground_1acd40eb31f5bafd44f2ee71a975be8191" compoundref="_drop_to_ground_8cs" startline="28" endline="39">AddToThisInventory</references>
+        <references refid="class_drag_1abc72e7d1bdad6b2267f5b539e2bc1fda" compoundref="_drag_8cs" startline="14">Drag.CanDrag</references>
+        <references refid="class_a_drop_to_me_1a54510994ccc4bd8f7dbdaa78a36d40a9">ADropToMe.CanGetFromThisIventory</references>
+        <references refid="class_equipment_stack_1aea353e00a5c0c6e964fcfe01db42d12b" compoundref="_equipment_stack_8cs" startline="16">EquipmentStack.Count</references>
+        <references refid="class_equipment_stack_1a7c41008f3dc56ac19774468efd798d48" compoundref="_equipment_stack_8cs" startline="10">EquipmentStack.EquipmentMainProperties</references>
+        <references refid="class_equipment_stack_1afd0cfe57cae1b79a1e63aa64caaebe9e" compoundref="_equipment_stack_8cs" startline="13">EquipmentStack.EquipmentStats</references>
+        <references refid="class_drag_equipment_1a259c84b153659538e0f63e8a80c02ce4" compoundref="_drag_equipment_8cs" startline="9">DragEquipment.EquipStack</references>
+        <references refid="class_a_drop_to_me_1aa823b910877eb709c120b6e082063ac0" compoundref="_a_drop_to_me_8cs" startline="37" endline="53">ADropToMe.RefreshUI</references>
+        <references refid="class_a_drop_to_me_1a00ce4c22d728d9b610cc4309dec60dc7">ADropToMe.RemoveFromThisInventory</references>
+      </memberdef>
+      <memberdef kind="function" id="class_drop_to_ground_1acd40eb31f5bafd44f2ee71a975be8191" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override bool</type>
+        <definition>override bool DropToGround.AddToThisInventory</definition>
+        <argsstring>(AStack aStack)</argsstring>
+        <name>AddToThisInventory</name>
+        <reimplements refid="class_a_drop_to_me_1a61dd1651d009bf4816d5705b10a01c2f">AddToThisInventory</reimplements>
+        <param>
+          <type><ref refid="class_a_stack" kindref="compound">AStack</ref></type>
+          <declname>aStack</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stack</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true если добавление произошло удачно</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/DropToGround.cs" line="28" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/DropToGround.cs" bodystart="28" bodyend="39"/>
+        <references refid="class_equipment_stack_1aea353e00a5c0c6e964fcfe01db42d12b" compoundref="_equipment_stack_8cs" startline="16">EquipmentStack.Count</references>
+        <referencedby refid="class_drop_to_ground_1a91a5ee1b7fdb866f90a2d7156184cc2a" compoundref="_drop_to_ground_8cs" startline="5" endline="26">OnDrop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_drop_to_ground_1aa3a70eb419de3cb9fdc8a279fdec4a35" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override bool</type>
+        <definition>override bool DropToGround.RemoveFromThisInventory</definition>
+        <argsstring>(AStack aStack)</argsstring>
+        <name>RemoveFromThisInventory</name>
+        <reimplements refid="class_a_drop_to_me_1a00ce4c22d728d9b610cc4309dec60dc7">RemoveFromThisInventory</reimplements>
+        <param>
+          <type><ref refid="class_a_stack" kindref="compound">AStack</ref></type>
+          <declname>aStack</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stack</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true если удаление произошло удачно</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/DropToGround.cs" line="41" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/DropToGround.cs" bodystart="41" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="class_drop_to_ground_1a973fb807352f633134b47515e9e83803" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override bool</type>
+        <definition>override bool DropToGround.CanGetFromThisIventory</definition>
+        <argsstring>(AStack aStack)</argsstring>
+        <name>CanGetFromThisIventory</name>
+        <reimplements refid="class_a_drop_to_me_1a54510994ccc4bd8f7dbdaa78a36d40a9">CanGetFromThisIventory</reimplements>
+        <param>
+          <type><ref refid="class_a_stack" kindref="compound">AStack</ref></type>
+          <declname>aStack</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stack</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true если можно добавлять</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/DropToGround.cs" line="50" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/DropToGround.cs" bodystart="50" bodyend="53"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="252">
+        <label>ADropToMe</label>
+        <link refid="class_a_drop_to_me"/>
+        <childnode refid="253" relation="public-inheritance">
+        </childnode>
+        <childnode refid="254" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="251">
+        <label>DropToGround</label>
+        <link refid="class_drop_to_ground"/>
+        <childnode refid="252" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="253">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="254">
+        <label>IDropHandler</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="256">
+        <label>ADropToMe</label>
+        <link refid="class_a_drop_to_me"/>
+        <childnode refid="257" relation="public-inheritance">
+        </childnode>
+        <childnode refid="258" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="255">
+        <label>DropToGround</label>
+        <link refid="class_drop_to_ground"/>
+        <childnode refid="256" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="257">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="258">
+        <label>IDropHandler</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/DropToGround.cs" line="4" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/DropToGround.cs" bodystart="3" bodyend="54"/>
+    <listofallmembers>
+      <member refid="class_drop_to_ground_1acd40eb31f5bafd44f2ee71a975be8191" prot="public" virt="virtual"><scope>DropToGround</scope><name>AddToThisInventory</name></member>
+      <member refid="class_drop_to_ground_1a973fb807352f633134b47515e9e83803" prot="public" virt="virtual"><scope>DropToGround</scope><name>CanGetFromThisIventory</name></member>
+      <member refid="class_drop_to_ground_1a91a5ee1b7fdb866f90a2d7156184cc2a" prot="public" virt="virtual"><scope>DropToGround</scope><name>OnDrop</name></member>
+      <member refid="class_a_drop_to_me_1aa823b910877eb709c120b6e082063ac0" prot="public" virt="non-virtual"><scope>DropToGround</scope><name>RefreshUI</name></member>
+      <member refid="class_drop_to_ground_1aa3a70eb419de3cb9fdc8a279fdec4a35" prot="public" virt="virtual"><scope>DropToGround</scope><name>RemoveFromThisInventory</name></member>
+      <member refid="class_a_drop_to_me_1ab52ef47bd3496981b5ac94eb4dc3ab73" prot="protected" virt="non-virtual"><scope>DropToGround</scope><name>transform</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

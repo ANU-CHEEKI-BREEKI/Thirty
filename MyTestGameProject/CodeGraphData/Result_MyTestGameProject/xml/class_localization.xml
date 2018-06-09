@@ -1,0 +1,1971 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_localization" kind="class" prot="public">
+    <compoundname>Localization</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_localization_1ad32b180c6614b588174bb528d686ee03" prot="private" static="no" mutable="no">
+        <type>const string</type>
+        <definition>const string Localization.PATH_TO_LOCALIZATION_FILES</definition>
+        <argsstring></argsstring>
+        <name>PATH_TO_LOCALIZATION_FILES</name>
+        <initializer>= @&quot;TextAssets\Localization\&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="9" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="9" bodyend="-1"/>
+        <referencedby refid="class_localization_1abd3442c8cb7383c4d5bfcedbeec1d4c7" compoundref="_localization_8cs" startline="186" endline="219">ReloadStrings</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_localization_1ab1403f8a3202217f377b13e817c6b676" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>SystemLanguage</type>
+        <definition>SystemLanguage Localization.CurrentLanguage</definition>
+        <argsstring></argsstring>
+        <name>CurrentLanguage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="10" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="10" bodyend="-1"/>
+        <referencedby refid="class_localization_1afaeb291b0d00fbd9c087db75277c5087" compoundref="_localization_8cs" startline="166" endline="178">SetLanguage</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1a5eff8cd530baab1621254e09883e65fb" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.current_languade</definition>
+        <argsstring></argsstring>
+        <name>current_languade</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="14" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1a7123777502c0e0f9a4651b8195fa5c21" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.downloading</definition>
+        <argsstring></argsstring>
+        <name>downloading</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="16" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1ab508d503222835883e6da379a2cab3c9" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.play_game</definition>
+        <argsstring></argsstring>
+        <name>play_game</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="18" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1ad2c928f96da993acf042e26cecab2ecc" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.settings</definition>
+        <argsstring></argsstring>
+        <name>settings</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="19" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1a553327b51e6eb38ac7a46d85f8c6db5e" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.squad</definition>
+        <argsstring></argsstring>
+        <name>squad</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="20" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1acf9b009b7d626cf4fb9db654978c617f" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.healtarget_weakest</definition>
+        <argsstring></argsstring>
+        <name>healtarget_weakest</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="22" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="22" bodyend="-1"/>
+        <referencedby refid="class_extensions_1aaa9f92ddf1881238057a72e7f5028540" compoundref="_extensions_8cs" startline="54" endline="70">Extensions.GetNameLocalise</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1ae24be414df150e3eda7729bbe78ffcc6" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.healtarget_strongest</definition>
+        <argsstring></argsstring>
+        <name>healtarget_strongest</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="23" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="23" bodyend="-1"/>
+        <referencedby refid="class_extensions_1aaa9f92ddf1881238057a72e7f5028540" compoundref="_extensions_8cs" startline="54" endline="70">Extensions.GetNameLocalise</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1ae0ff928e49436ea3aeb8b5490f84f299" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.healtarget_all</definition>
+        <argsstring></argsstring>
+        <name>healtarget_all</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="24" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1aa9891068a3c0c95c37eb0a401ba670db" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.error</definition>
+        <argsstring></argsstring>
+        <name>error</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="26" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="26" bodyend="-1"/>
+        <referencedby refid="class_extensions_1aaa9f92ddf1881238057a72e7f5028540" compoundref="_extensions_8cs" startline="54" endline="70">Extensions.GetNameLocalise</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1a84191126dcefb7da3fe5a1e58776f1c6" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.formation_ranks_name</definition>
+        <argsstring></argsstring>
+        <name>formation_ranks_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="28" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1a9898ca109d073a17e2df1f7fe56501e8" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.formation_ranks_description</definition>
+        <argsstring></argsstring>
+        <name>formation_ranks_description</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="29" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1aad6659987bf8eb5be33ef50a9c6be383" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.formation_phalanx_name</definition>
+        <argsstring></argsstring>
+        <name>formation_phalanx_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="30" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1a062adf15b35163d8edf7b6cf82dcbcb9" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.formation_phalanx_description</definition>
+        <argsstring></argsstring>
+        <name>formation_phalanx_description</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="31" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1a6622a96a6efdb915498fc0366f5c21d7" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.formation_shields_name</definition>
+        <argsstring></argsstring>
+        <name>formation_shields_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="32" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1aa5211397c156e53e2a6c093fead992df" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.formation_shields_description</definition>
+        <argsstring></argsstring>
+        <name>formation_shields_description</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="33" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1a7718eb3164ff39115eb2f3fcf8ad5cbc" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.condition_inFight_name</definition>
+        <argsstring></argsstring>
+        <name>condition_inFight_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="35" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1a9a754648b81e446276949e5e3d4ec973" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.condition_inFight_description</definition>
+        <argsstring></argsstring>
+        <name>condition_inFight_description</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="36" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1af746b56fb22f5872e7d3dceea0e65098" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.health</definition>
+        <argsstring></argsstring>
+        <name>health</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="38" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="38" bodyend="-1"/>
+        <referencedby refid="class_stats_panel_u_i_1addec74faa8300e212a7e2500b18d5fd7" compoundref="_stats_panel_u_i_8cs" startline="62" endline="120">StatsPanelUI.OnEquipmentChanged</referencedby>
+        <referencedby refid="class_stats_upgrade_1a3e8a38cc0c42bf13b3dfe61e6b0f5258" compoundref="_stats_upgrade_8cs" startline="49" endline="118">StatsUpgrade.SetValues</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1adf82c08ef13539dc527390839489029e" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.squadHealth</definition>
+        <argsstring></argsstring>
+        <name>squadHealth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="39" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1a1705af76ee97c6053422a9e2fa58ab1b" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.armour</definition>
+        <argsstring></argsstring>
+        <name>armour</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="40" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="40" bodyend="-1"/>
+        <referencedby refid="struct_equipment_stats_1aa5808678f48da4fbb5d2b4f1d162a781" compoundref="_equipment_stats_8cs" startline="92" endline="314">EquipmentStats.GetDescription</referencedby>
+        <referencedby refid="class_stats_panel_u_i_1addec74faa8300e212a7e2500b18d5fd7" compoundref="_stats_panel_u_i_8cs" startline="62" endline="120">StatsPanelUI.OnEquipmentChanged</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1a69e3dec51c793b9e3076ccdf872fd90e" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.baseDamage</definition>
+        <argsstring></argsstring>
+        <name>baseDamage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="41" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="41" bodyend="-1"/>
+        <referencedby refid="struct_skill_arrows_valley_1_1_arrow_walley_stats_1aa41c15eb6177138bc53a22c3863d9387" compoundref="_skill_arrows_valley_8cs" startline="21" endline="37">SkillArrowsValley.ArrowWalleyStats.GetDescription</referencedby>
+        <referencedby refid="struct_equipment_stats_1aa5808678f48da4fbb5d2b4f1d162a781" compoundref="_equipment_stats_8cs" startline="92" endline="314">EquipmentStats.GetDescription</referencedby>
+        <referencedby refid="class_formation_stats_1a9f376a5914a4478dd43d24957d660303" compoundref="_formation_stats_8cs" startline="53" endline="189">FormationStats.GetModifiers</referencedby>
+        <referencedby refid="class_stats_panel_u_i_1addec74faa8300e212a7e2500b18d5fd7" compoundref="_stats_panel_u_i_8cs" startline="62" endline="120">StatsPanelUI.OnEquipmentChanged</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1ab212481a364e4ab6e9f7ace911480a55" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.armourDamage</definition>
+        <argsstring></argsstring>
+        <name>armourDamage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="42" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="42" bodyend="-1"/>
+        <referencedby refid="struct_skill_arrows_valley_1_1_arrow_walley_stats_1aa41c15eb6177138bc53a22c3863d9387" compoundref="_skill_arrows_valley_8cs" startline="21" endline="37">SkillArrowsValley.ArrowWalleyStats.GetDescription</referencedby>
+        <referencedby refid="struct_equipment_stats_1aa5808678f48da4fbb5d2b4f1d162a781" compoundref="_equipment_stats_8cs" startline="92" endline="314">EquipmentStats.GetDescription</referencedby>
+        <referencedby refid="class_stats_panel_u_i_1addec74faa8300e212a7e2500b18d5fd7" compoundref="_stats_panel_u_i_8cs" startline="62" endline="120">StatsPanelUI.OnEquipmentChanged</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1abe988043268bf1df9b043b4c6132eac4" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.attack</definition>
+        <argsstring></argsstring>
+        <name>attack</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="43" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="43" bodyend="-1"/>
+        <referencedby refid="struct_equipment_stats_1aa5808678f48da4fbb5d2b4f1d162a781" compoundref="_equipment_stats_8cs" startline="92" endline="314">EquipmentStats.GetDescription</referencedby>
+        <referencedby refid="class_formation_stats_1a9f376a5914a4478dd43d24957d660303" compoundref="_formation_stats_8cs" startline="53" endline="189">FormationStats.GetModifiers</referencedby>
+        <referencedby refid="class_stats_panel_u_i_1addec74faa8300e212a7e2500b18d5fd7" compoundref="_stats_panel_u_i_8cs" startline="62" endline="120">StatsPanelUI.OnEquipmentChanged</referencedby>
+        <referencedby refid="class_stats_upgrade_1a3e8a38cc0c42bf13b3dfe61e6b0f5258" compoundref="_stats_upgrade_8cs" startline="49" endline="118">StatsUpgrade.SetValues</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1aaf52bb22da36d2eaf241712e760b03db" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.defence</definition>
+        <argsstring></argsstring>
+        <name>defence</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="44" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="44" bodyend="-1"/>
+        <referencedby refid="struct_equipment_stats_1aa5808678f48da4fbb5d2b4f1d162a781" compoundref="_equipment_stats_8cs" startline="92" endline="314">EquipmentStats.GetDescription</referencedby>
+        <referencedby refid="class_formation_stats_1a9f376a5914a4478dd43d24957d660303" compoundref="_formation_stats_8cs" startline="53" endline="189">FormationStats.GetModifiers</referencedby>
+        <referencedby refid="class_stats_panel_u_i_1addec74faa8300e212a7e2500b18d5fd7" compoundref="_stats_panel_u_i_8cs" startline="62" endline="120">StatsPanelUI.OnEquipmentChanged</referencedby>
+        <referencedby refid="class_stats_upgrade_1a3e8a38cc0c42bf13b3dfe61e6b0f5258" compoundref="_stats_upgrade_8cs" startline="49" endline="118">StatsUpgrade.SetValues</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1ab7fe60ef20445d912f2fc2b92141e9eb" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.defenceHalfSector</definition>
+        <argsstring></argsstring>
+        <name>defenceHalfSector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="45" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="45" bodyend="-1"/>
+        <referencedby refid="struct_equipment_stats_1aa5808678f48da4fbb5d2b4f1d162a781" compoundref="_equipment_stats_8cs" startline="92" endline="314">EquipmentStats.GetDescription</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1a97de6c8c625d72e0d039d828ad9a87a3" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.missileBlock</definition>
+        <argsstring></argsstring>
+        <name>missileBlock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="46" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="46" bodyend="-1"/>
+        <referencedby refid="struct_equipment_stats_1aa5808678f48da4fbb5d2b4f1d162a781" compoundref="_equipment_stats_8cs" startline="92" endline="314">EquipmentStats.GetDescription</referencedby>
+        <referencedby refid="class_stats_panel_u_i_1addec74faa8300e212a7e2500b18d5fd7" compoundref="_stats_panel_u_i_8cs" startline="62" endline="120">StatsPanelUI.OnEquipmentChanged</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1a349de7b4318325f7659f950c65cd1be8" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.attackDistance</definition>
+        <argsstring></argsstring>
+        <name>attackDistance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="47" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="47" bodyend="-1"/>
+        <referencedby refid="struct_equipment_stats_1aa5808678f48da4fbb5d2b4f1d162a781" compoundref="_equipment_stats_8cs" startline="92" endline="314">EquipmentStats.GetDescription</referencedby>
+        <referencedby refid="class_stats_panel_u_i_1addec74faa8300e212a7e2500b18d5fd7" compoundref="_stats_panel_u_i_8cs" startline="62" endline="120">StatsPanelUI.OnEquipmentChanged</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1ad8453dce5e4c888a9e54160258499dcd" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.speed</definition>
+        <argsstring></argsstring>
+        <name>speed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="48" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="48" bodyend="-1"/>
+        <referencedby refid="struct_equipment_stats_1aa5808678f48da4fbb5d2b4f1d162a781" compoundref="_equipment_stats_8cs" startline="92" endline="314">EquipmentStats.GetDescription</referencedby>
+        <referencedby refid="class_formation_stats_1a9f376a5914a4478dd43d24957d660303" compoundref="_formation_stats_8cs" startline="53" endline="189">FormationStats.GetModifiers</referencedby>
+        <referencedby refid="class_stats_panel_u_i_1addec74faa8300e212a7e2500b18d5fd7" compoundref="_stats_panel_u_i_8cs" startline="62" endline="120">StatsPanelUI.OnEquipmentChanged</referencedby>
+        <referencedby refid="class_stats_upgrade_1a3e8a38cc0c42bf13b3dfe61e6b0f5258" compoundref="_stats_upgrade_8cs" startline="49" endline="118">StatsUpgrade.SetValues</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1a367976a56911cc65fb3e24786623feb2" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.acceleration</definition>
+        <argsstring></argsstring>
+        <name>acceleration</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="49" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="49" bodyend="-1"/>
+        <referencedby refid="struct_equipment_stats_1aa5808678f48da4fbb5d2b4f1d162a781" compoundref="_equipment_stats_8cs" startline="92" endline="314">EquipmentStats.GetDescription</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1a5fafeb8a861de28ae27422531c1d7c05" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.rotationSpeed</definition>
+        <argsstring></argsstring>
+        <name>rotationSpeed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="50" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="50" bodyend="-1"/>
+        <referencedby refid="struct_equipment_stats_1aa5808678f48da4fbb5d2b4f1d162a781" compoundref="_equipment_stats_8cs" startline="92" endline="314">EquipmentStats.GetDescription</referencedby>
+        <referencedby refid="class_formation_stats_1a9f376a5914a4478dd43d24957d660303" compoundref="_formation_stats_8cs" startline="53" endline="189">FormationStats.GetModifiers</referencedby>
+        <referencedby refid="class_stats_panel_u_i_1addec74faa8300e212a7e2500b18d5fd7" compoundref="_stats_panel_u_i_8cs" startline="62" endline="120">StatsPanelUI.OnEquipmentChanged</referencedby>
+        <referencedby refid="class_stats_upgrade_1a3e8a38cc0c42bf13b3dfe61e6b0f5258" compoundref="_stats_upgrade_8cs" startline="49" endline="118">StatsUpgrade.SetValues</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1ac322f19cb25d9885aff9969a68bfb047" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.chargeImpact</definition>
+        <argsstring></argsstring>
+        <name>chargeImpact</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="51" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="51" bodyend="-1"/>
+        <referencedby refid="struct_equipment_stats_1aa5808678f48da4fbb5d2b4f1d162a781" compoundref="_equipment_stats_8cs" startline="92" endline="314">EquipmentStats.GetDescription</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1a808401e5480d014fbfc1c56c5024f321" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.chargeDeflect</definition>
+        <argsstring></argsstring>
+        <name>chargeDeflect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="52" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="52" bodyend="-1"/>
+        <referencedby refid="struct_equipment_stats_1aa5808678f48da4fbb5d2b4f1d162a781" compoundref="_equipment_stats_8cs" startline="92" endline="314">EquipmentStats.GetDescription</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1adad3fcaf350073d7e61cce7639f981f2" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.chargeDamage</definition>
+        <argsstring></argsstring>
+        <name>chargeDamage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="53" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="53" bodyend="-1"/>
+        <referencedby refid="struct_equipment_stats_1aa5808678f48da4fbb5d2b4f1d162a781" compoundref="_equipment_stats_8cs" startline="92" endline="314">EquipmentStats.GetDescription</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1ae1201a67c56e0c1b44490f63148df938" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.arrowWalley_radius</definition>
+        <argsstring></argsstring>
+        <name>arrowWalley_radius</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="55" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="55" bodyend="-1"/>
+        <referencedby refid="struct_skill_arrows_valley_1_1_arrow_walley_stats_1aa41c15eb6177138bc53a22c3863d9387" compoundref="_skill_arrows_valley_8cs" startline="21" endline="37">SkillArrowsValley.ArrowWalleyStats.GetDescription</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1a09b4e2dd2c8f1f283f02622a64fa1447" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.arrowWalley_arrowscount</definition>
+        <argsstring></argsstring>
+        <name>arrowWalley_arrowscount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="56" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="56" bodyend="-1"/>
+        <referencedby refid="struct_skill_arrows_valley_1_1_arrow_walley_stats_1aa41c15eb6177138bc53a22c3863d9387" compoundref="_skill_arrows_valley_8cs" startline="21" endline="37">SkillArrowsValley.ArrowWalleyStats.GetDescription</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1af79ed39182d42c9cf1be8f61a3432c96" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.cooldown</definition>
+        <argsstring></argsstring>
+        <name>cooldown</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="57" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="57" bodyend="-1"/>
+        <referencedby refid="struct_skill_arrows_valley_1_1_arrow_walley_stats_1aa41c15eb6177138bc53a22c3863d9387" compoundref="_skill_arrows_valley_8cs" startline="21" endline="37">SkillArrowsValley.ArrowWalleyStats.GetDescription</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1a32183a33f75fb40feb1b005c32dbe011" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.cost</definition>
+        <argsstring></argsstring>
+        <name>cost</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="60" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1a686f21e823c9af4a6cafc9dfeabd2efe" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.mass</definition>
+        <argsstring></argsstring>
+        <name>mass</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="61" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="61" bodyend="-1"/>
+        <referencedby refid="struct_equipment_stats_1aa5808678f48da4fbb5d2b4f1d162a781" compoundref="_equipment_stats_8cs" startline="92" endline="314">EquipmentStats.GetDescription</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1a0801662a5c7bc0c7869e4a25029b0b4e" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.weaponConstraint_cantReformPhalanx</definition>
+        <argsstring></argsstring>
+        <name>weaponConstraint_cantReformPhalanx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="62" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="62" bodyend="-1"/>
+        <referencedby refid="struct_equipment_stats_1aa5808678f48da4fbb5d2b4f1d162a781" compoundref="_equipment_stats_8cs" startline="92" endline="314">EquipmentStats.GetDescription</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1a41a7196805a831279ad300adaa77362e" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.weaponConstraint_cantReformPhalanxInFight</definition>
+        <argsstring></argsstring>
+        <name>weaponConstraint_cantReformPhalanxInFight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="63" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="63" bodyend="-1"/>
+        <referencedby refid="struct_equipment_stats_1aa5808678f48da4fbb5d2b4f1d162a781" compoundref="_equipment_stats_8cs" startline="92" endline="314">EquipmentStats.GetDescription</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1a3faadbf1de9323fd3b02efaea261de2b" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.weaponConstraint_cantUseShield</definition>
+        <argsstring></argsstring>
+        <name>weaponConstraint_cantUseShield</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="64" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="64" bodyend="-1"/>
+        <referencedby refid="struct_equipment_stats_1aa5808678f48da4fbb5d2b4f1d162a781" compoundref="_equipment_stats_8cs" startline="92" endline="314">EquipmentStats.GetDescription</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1afa0991a6010e7dddce2e06388928491e" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.attention</definition>
+        <argsstring></argsstring>
+        <name>attention</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="66" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="66" bodyend="-1"/>
+        <referencedby refid="struct_equipment_stats_1aa5808678f48da4fbb5d2b4f1d162a781" compoundref="_equipment_stats_8cs" startline="92" endline="314">EquipmentStats.GetDescription</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1afb5e9f6c92e24963a0c6aba4e324ef06" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.yes</definition>
+        <argsstring></argsstring>
+        <name>yes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="68" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="68" bodyend="-1"/>
+        <referencedby refid="class_to_mainmenu_1a41287b6fcace8103c40c1f6ac8a9568e" compoundref="_to_mainmenu_8cs" startline="18" endline="39">ToMainmenu.OnClick</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1ac2c2d7d31806621e942e9e912b158918" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.no</definition>
+        <argsstring></argsstring>
+        <name>no</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="69" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="69" bodyend="-1"/>
+        <referencedby refid="class_to_mainmenu_1a41287b6fcace8103c40c1f6ac8a9568e" compoundref="_to_mainmenu_8cs" startline="18" endline="39">ToMainmenu.OnClick</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1ade727280b475358325869948e6cdee03" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.ok</definition>
+        <argsstring></argsstring>
+        <name>ok</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="70" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1a55633df40f79b1840331cda0a064ad03" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.cancel</definition>
+        <argsstring></argsstring>
+        <name>cancel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="71" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="71" bodyend="-1"/>
+        <referencedby refid="class_skill_upgrade_button_1afb8312a7d206af7a57b0a06c28e13b13" compoundref="_skill_upgrade_button_8cs" startline="79" endline="104">SkillUpgradeButton.Initiate</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1a22a0cd2282456808499a02afefcdf1e2" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.upgrade</definition>
+        <argsstring></argsstring>
+        <name>upgrade</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="72" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="72" bodyend="-1"/>
+        <referencedby refid="class_skill_upgrade_button_1afb8312a7d206af7a57b0a06c28e13b13" compoundref="_skill_upgrade_button_8cs" startline="79" endline="104">SkillUpgradeButton.Initiate</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1a7347f1d64ca792be11072f7f41b04c16" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.gold</definition>
+        <argsstring></argsstring>
+        <name>gold</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="74" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="74" bodyend="-1"/>
+        <referencedby refid="class_extensions_1a994e16b57d8b851b941463015254ae3b" compoundref="_extensions_8cs" startline="76" endline="95">Extensions.GetNameLocalise</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1a0703f3a10ad686b7e0f17143c4ad3537" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.silver</definition>
+        <argsstring></argsstring>
+        <name>silver</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="75" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="75" bodyend="-1"/>
+        <referencedby refid="class_extensions_1a994e16b57d8b851b941463015254ae3b" compoundref="_extensions_8cs" startline="76" endline="95">Extensions.GetNameLocalise</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1af56b0f89f900c8e6625a024b607dd6be" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.expirience</definition>
+        <argsstring></argsstring>
+        <name>expirience</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="76" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="76" bodyend="-1"/>
+        <referencedby refid="class_extensions_1a994e16b57d8b851b941463015254ae3b" compoundref="_extensions_8cs" startline="76" endline="95">Extensions.GetNameLocalise</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1ac3febaa989c26dac191ba992b4edf7fc" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="78" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="78" bodyend="-1"/>
+        <referencedby refid="class_localization_1a9898617e4dd2c6ce6a1ff3386cfafcdd" compoundref="_localization_8cs" startline="241" endline="249">GetString</referencedby>
+        <referencedby refid="class_localization_1abd3442c8cb7383c4d5bfcedbeec1d4c7" compoundref="_localization_8cs" startline="186" endline="219">ReloadStrings</referencedby>
+        <referencedby refid="class_localization_1a8f72875deb87e94d9c32aa3ba05adad0" compoundref="_localization_8cs" startline="226" endline="234">SetString</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1ab85aac0f096814fbc054f9d0effc1c73" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.description</definition>
+        <argsstring></argsstring>
+        <name>description</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="79" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1ad56884b81ba737402f446d2468a53a4e" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.equipment</definition>
+        <argsstring></argsstring>
+        <name>equipment</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="80" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1a0d6d5a399558a5b0ed542ba0dd3cf987" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.inventory</definition>
+        <argsstring></argsstring>
+        <name>inventory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="81" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1a3ab547230d90f4b9b14ef2fb600ccaf3" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.equipment_body_chainmail_name</definition>
+        <argsstring></argsstring>
+        <name>equipment_body_chainmail_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="83" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1ae3ae7035bf691f87dcee78dae75024f3" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.equipment_body_chainmail_description</definition>
+        <argsstring></argsstring>
+        <name>equipment_body_chainmail_description</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="84" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1a0a61c229945f943ed8147aeff19bcc34" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.equipment_body_linotorax_name</definition>
+        <argsstring></argsstring>
+        <name>equipment_body_linotorax_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="85" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1a8ab844d722e12f72574839abf2cf9a2e" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.equipment_body_linotorax_description</definition>
+        <argsstring></argsstring>
+        <name>equipment_body_linotorax_description</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="86" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1a41d73edbdb5d449492bc19a491869155" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.equipment_body_none_name</definition>
+        <argsstring></argsstring>
+        <name>equipment_body_none_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="87" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1ad167bce61cb1f24f1a8153c801eb94cd" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.equipment_body_none_description</definition>
+        <argsstring></argsstring>
+        <name>equipment_body_none_description</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="88" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1a7ae8aee75d7d543d2069cb582f0f438a" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.equipment_helmet_corinthian_close_name</definition>
+        <argsstring></argsstring>
+        <name>equipment_helmet_corinthian_close_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="89" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1a70f732132124490f2a8725c1d1cc7889" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.equipment_helmet_corinthian_close_description</definition>
+        <argsstring></argsstring>
+        <name>equipment_helmet_corinthian_close_description</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="90" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1a13af9e079796a032929d1924a30ef96b" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.equipment_helmet_corinthian_open_name</definition>
+        <argsstring></argsstring>
+        <name>equipment_helmet_corinthian_open_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="91" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1a7a60f00171d3761833c92e6e4dd94ffd" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.equipment_helmet_corinthian_open_description</definition>
+        <argsstring></argsstring>
+        <name>equipment_helmet_corinthian_open_description</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="92" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1a5693269744f315f4d55e4736a4bff936" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.equipment_helmet_none_name</definition>
+        <argsstring></argsstring>
+        <name>equipment_helmet_none_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="93" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1a9c7a9708504fcdabbeadb2732d052715" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.equipment_helmet_none_description</definition>
+        <argsstring></argsstring>
+        <name>equipment_helmet_none_description</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="94" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1a358c8e48617fdd138ecb25628acf87b9" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.equipment_shield_hoplon_name</definition>
+        <argsstring></argsstring>
+        <name>equipment_shield_hoplon_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="95" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1ab8955dddc475043e2e0654373f06c478" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.equipment_shield_hoplon_description</definition>
+        <argsstring></argsstring>
+        <name>equipment_shield_hoplon_description</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="96" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1a2d06b86c67aedb10fc0e51f468b23905" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.equipment_shield_small_name</definition>
+        <argsstring></argsstring>
+        <name>equipment_shield_small_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="97" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1a2d3d8c5868f4ebed93badcf8b853b348" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.equipment_shield_small_description</definition>
+        <argsstring></argsstring>
+        <name>equipment_shield_small_description</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="98" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1a67464f04cbc3a7cacca54ba613626a7e" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.equipment_shield_none_name</definition>
+        <argsstring></argsstring>
+        <name>equipment_shield_none_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="99" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1a0494329917e119f2c03ef40546b7e94e" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.equipment_shield_none_description</definition>
+        <argsstring></argsstring>
+        <name>equipment_shield_none_description</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="100" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1a119229cf0a2930f611b3ca11479b298f" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.equipment_weapon_spear_name</definition>
+        <argsstring></argsstring>
+        <name>equipment_weapon_spear_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="101" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1a02d16667946a827d1e5c4894b13dff72" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.equipment_weapon_spear_description</definition>
+        <argsstring></argsstring>
+        <name>equipment_weapon_spear_description</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="102" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1a2ed5f07eca0b56a4495a5a512294b79b" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.equipment_weapon_falcata_name</definition>
+        <argsstring></argsstring>
+        <name>equipment_weapon_falcata_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="103" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1a56e5ef69a0c986f0406fc851a0074c16" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.equipment_weapon_falcata_description</definition>
+        <argsstring></argsstring>
+        <name>equipment_weapon_falcata_description</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="104" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1a1144c29f3f9a2e4f7db83c04666df635" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.equipment_weapon_pike_name</definition>
+        <argsstring></argsstring>
+        <name>equipment_weapon_pike_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="105" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1ad5cd21618d396103b1e5ba18d07fec07" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.equipment_weapon_pike_description</definition>
+        <argsstring></argsstring>
+        <name>equipment_weapon_pike_description</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="106" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1afce18631f7cb53f641cc2d7ea30d9f9f" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.skill_arrowWalley_name</definition>
+        <argsstring></argsstring>
+        <name>skill_arrowWalley_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="108" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1aaf01849b2089f97d9d41e938776823df" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.skill_arrowWalley_description</definition>
+        <argsstring></argsstring>
+        <name>skill_arrowWalley_description</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="109" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1a32bacec4ca0cdcb9f61d5aaaeacd8fb8" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.skill_charge_name</definition>
+        <argsstring></argsstring>
+        <name>skill_charge_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="110" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1ad7b97c0bd1c5cb73aa631eead033d2e2" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.skill_charge_description</definition>
+        <argsstring></argsstring>
+        <name>skill_charge_description</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="111" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1a37b314bfffed5078f56fb50f4d7956cd" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.skill_upgrade_arrowWalley_startunlock_name</definition>
+        <argsstring></argsstring>
+        <name>skill_upgrade_arrowWalley_startunlock_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="113" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1a1e08865c578358362f7cad418ec49789" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.skill_upgrade_arrowWalley_startunlock_description</definition>
+        <argsstring></argsstring>
+        <name>skill_upgrade_arrowWalley_startunlock_description</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="114" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1a3e06f2c23f20bee034cd69b7a7aabb26" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.skill_upgrade_arrowWalley_basedamage_largebow_name</definition>
+        <argsstring></argsstring>
+        <name>skill_upgrade_arrowWalley_basedamage_largebow_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="115" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1a295e2886daa40ae14241f49911f167d5" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.skill_upgrade_arrowWalley_basedamage_largebow_description</definition>
+        <argsstring></argsstring>
+        <name>skill_upgrade_arrowWalley_basedamage_largebow_description</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="116" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1a9d05a117fd55c2a16dd61b04dcf0e9a2" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.skill_upgrade_arrowWalley_basedamage_weightarrows_name</definition>
+        <argsstring></argsstring>
+        <name>skill_upgrade_arrowWalley_basedamage_weightarrows_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="117" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1a75a5c36c357e38d9e70b3521c2dcb8b6" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.skill_upgrade_arrowWalley_basedamage_weightarrows_description</definition>
+        <argsstring></argsstring>
+        <name>skill_upgrade_arrowWalley_basedamage_weightarrows_description</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="118" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1aaedc4253e41f610c13a2724cdf314dc0" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.skill_upgrade_arrowWalley_armourdamage_sharparrows_name</definition>
+        <argsstring></argsstring>
+        <name>skill_upgrade_arrowWalley_armourdamage_sharparrows_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="119" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1a81a54ecdb4b035b6f433022c538718b3" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.skill_upgrade_arrowWalley_armourdamage_sharparrows_description</definition>
+        <argsstring></argsstring>
+        <name>skill_upgrade_arrowWalley_armourdamage_sharparrows_description</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="120" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1ac6291ead28e0ce9c9149eb8713969c60" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.skill_upgrade_arrowWalley_armourdamage_temperedarrows_name</definition>
+        <argsstring></argsstring>
+        <name>skill_upgrade_arrowWalley_armourdamage_temperedarrows_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="121" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1a456ab324b07c48b08029de26d237177c" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.skill_upgrade_arrowWalley_armourdamage_temperedarrows_description</definition>
+        <argsstring></argsstring>
+        <name>skill_upgrade_arrowWalley_armourdamage_temperedarrows_description</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="122" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1a5a55b9d3baafc25c5e6e877aa4af13ab" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.skill_upgrade_arrowWalley_arrowscount_name</definition>
+        <argsstring></argsstring>
+        <name>skill_upgrade_arrowWalley_arrowscount_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="123" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1a7c034cf7c4fd1dbf7f1b4de981c79f81" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.skill_upgrade_arrowWalley_arrowscount_description</definition>
+        <argsstring></argsstring>
+        <name>skill_upgrade_arrowWalley_arrowscount_description</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="124" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1aaec4d426d1fd0c5336584ace3bacc507" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.skill_upgrade_arrowWalley_radius_name</definition>
+        <argsstring></argsstring>
+        <name>skill_upgrade_arrowWalley_radius_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="125" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1a178c67750b6fcf219e400e865067d3d8" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.skill_upgrade_arrowWalley_radius_description</definition>
+        <argsstring></argsstring>
+        <name>skill_upgrade_arrowWalley_radius_description</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="126" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1a2f8e83eb93fa1ea81ef95268bfa91e1e" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.skill_upgrade_arrowWalley_radius_minus_name</definition>
+        <argsstring></argsstring>
+        <name>skill_upgrade_arrowWalley_radius_minus_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="127" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1a9690ad1e9dd2c05439df9411f4121650" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.skill_upgrade_arrowWalley_radius_minus_description</definition>
+        <argsstring></argsstring>
+        <name>skill_upgrade_arrowWalley_radius_minus_description</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="128" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1a7009a2d762e037abe18819c12e692ad7" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.skill_upgrade_arrowWalley_cooldown_name</definition>
+        <argsstring></argsstring>
+        <name>skill_upgrade_arrowWalley_cooldown_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="129" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1a6047cbd83873374b5b45f5748da0113f" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.skill_upgrade_arrowWalley_cooldown_description</definition>
+        <argsstring></argsstring>
+        <name>skill_upgrade_arrowWalley_cooldown_description</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="130" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1af5a8ca5aa3527f4442d403ef089f21b7" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.toMainMenu</definition>
+        <argsstring></argsstring>
+        <name>toMainMenu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="132" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1a594bbc0bac471f7530adaf5d015fde86" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.goToMainMenu_header</definition>
+        <argsstring></argsstring>
+        <name>goToMainMenu_header</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="133" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="133" bodyend="-1"/>
+        <referencedby refid="class_to_mainmenu_1a41287b6fcace8103c40c1f6ac8a9568e" compoundref="_to_mainmenu_8cs" startline="18" endline="39">ToMainmenu.OnClick</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1a513099057300b5d0ee3efdb250dce78d" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.goToMainMenu_info</definition>
+        <argsstring></argsstring>
+        <name>goToMainMenu_info</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="134" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="134" bodyend="-1"/>
+        <referencedby refid="class_to_mainmenu_1a41287b6fcace8103c40c1f6ac8a9568e" compoundref="_to_mainmenu_8cs" startline="18" endline="39">ToMainmenu.OnClick</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1a27f42b449df4ba92dd94892b3b0a2064" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.resetSettings_header</definition>
+        <argsstring></argsstring>
+        <name>resetSettings_header</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="135" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1a070cd011a781ed491ee5fb40c43f7331" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.resetSettings_info</definition>
+        <argsstring></argsstring>
+        <name>resetSettings_info</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="136" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1aa59e738e89e173c55274f11e312719e3" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.currentValue</definition>
+        <argsstring></argsstring>
+        <name>currentValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="138" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="138" bodyend="-1"/>
+        <referencedby refid="class_formation_stats_1a9f376a5914a4478dd43d24957d660303" compoundref="_formation_stats_8cs" startline="53" endline="189">FormationStats.GetModifiers</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1a9449a540b252c5c55e8166d3fd1238aa" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.baseValue</definition>
+        <argsstring></argsstring>
+        <name>baseValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="139" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="139" bodyend="-1"/>
+        <referencedby refid="struct_equipment_stats_1aa5808678f48da4fbb5d2b4f1d162a781" compoundref="_equipment_stats_8cs" startline="92" endline="314">EquipmentStats.GetDescription</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1adb900308c099330bd75f6f533cf8f98a" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.currentValue_baseValue</definition>
+        <argsstring></argsstring>
+        <name>currentValue_baseValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="140" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1a7528469ba135013de8f27130a2dec3c3" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.durability_new</definition>
+        <argsstring></argsstring>
+        <name>durability_new</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="142" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="142" bodyend="-1"/>
+        <referencedby refid="class_extensions_1ae16f98ca2a3aab2b5293a46035470444" compoundref="_extensions_8cs" startline="11" endline="30">Extensions.GetNameLocalise</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1ac7c4ad61e6373d55801d715a02dab291" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.durability_worn</definition>
+        <argsstring></argsstring>
+        <name>durability_worn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="143" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="143" bodyend="-1"/>
+        <referencedby refid="class_extensions_1ae16f98ca2a3aab2b5293a46035470444" compoundref="_extensions_8cs" startline="11" endline="30">Extensions.GetNameLocalise</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1a37b116dfb691db34de4ee4b16e8dd0b4" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.durability_damaged</definition>
+        <argsstring></argsstring>
+        <name>durability_damaged</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="144" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="144" bodyend="-1"/>
+        <referencedby refid="class_extensions_1ae16f98ca2a3aab2b5293a46035470444" compoundref="_extensions_8cs" startline="11" endline="30">Extensions.GetNameLocalise</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1aa3c24f3b86b47d2a02afa5c6f2fb9579" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.toast_cant_use_with_shield</definition>
+        <argsstring></argsstring>
+        <name>toast_cant_use_with_shield</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="146" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="146" bodyend="-1"/>
+        <referencedby refid="class_drop_to_equipment_1a0bc83af63ecd40bb3c2be8355c878a7f" compoundref="_drop_to_equipment_8cs" startline="46" endline="84">DropToEquipment.AddToThisInventory</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1a90a170aaa9233e318df03d2c3c47eaac" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.toast_cant_use_with_current_weapon</definition>
+        <argsstring></argsstring>
+        <name>toast_cant_use_with_current_weapon</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="147" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="147" bodyend="-1"/>
+        <referencedby refid="class_drop_to_equipment_1a0bc83af63ecd40bb3c2be8355c878a7f" compoundref="_drop_to_equipment_8cs" startline="46" endline="84">DropToEquipment.AddToThisInventory</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1a589f3e4a6f9c6a886e750c18d92d0a54" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.toast_not_enough_gold</definition>
+        <argsstring></argsstring>
+        <name>toast_not_enough_gold</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="148" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1a9a7a4f51090316cd2adba2976a4f74c2" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.toast_not_enough_silver</definition>
+        <argsstring></argsstring>
+        <name>toast_not_enough_silver</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="149" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="149" bodyend="-1"/>
+        <referencedby refid="class_drop_to_equipment_market_1a60ed19a062359f3ec6c2e0d920e8686b" compoundref="_drop_to_equipment_market_8cs" startline="61" endline="75">DropToEquipmentMarket.CanGetFromThisIventory</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1a3073ed76eae3d6b84aaca68fdcc8d8d9" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.toast_not_enough_expirience</definition>
+        <argsstring></argsstring>
+        <name>toast_not_enough_expirience</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="150" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="150" bodyend="-1"/>
+        <referencedby refid="class_stats_upgrade_1ab4ae84b87abf69440f15605d7b6e70e8" compoundref="_stats_upgrade_8cs" startline="120" endline="146">StatsUpgrade.OnClick</referencedby>
+        <referencedby refid="class_skill_upgrade_button_1aa4c1683f4f496c4a4d6e70c2cbea4215" compoundref="_skill_upgrade_button_8cs" startline="161" endline="182">SkillUpgradeButton.Upgrade</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1aa3993a69313e329f00e1275d9f4c9b2b" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.toast_not_enough_equipment_count</definition>
+        <argsstring></argsstring>
+        <name>toast_not_enough_equipment_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="151" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="151" bodyend="-1"/>
+        <referencedby refid="class_drop_to_equipment_1ae3d4d93b720430bbd8a03ecd83bac01b" compoundref="_drop_to_equipment_8cs" startline="7" endline="44">DropToEquipment.OnDrop</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1a70d9547d8114b1ce71d2df717e1b881e" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.toast_stat_max_upgrade</definition>
+        <argsstring></argsstring>
+        <name>toast_stat_max_upgrade</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="152" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="152" bodyend="-1"/>
+        <referencedby refid="class_stats_upgrade_1ab4ae84b87abf69440f15605d7b6e70e8" compoundref="_stats_upgrade_8cs" startline="120" endline="146">StatsUpgrade.OnClick</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1a807c845440a15261147d129f58902ea7" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.toast_cant_drop_weapon</definition>
+        <argsstring></argsstring>
+        <name>toast_cant_drop_weapon</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="153" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="153" bodyend="-1"/>
+        <referencedby refid="class_drag_equipment_1a73db69b6e53ca46b849e46eb3a8cb398" compoundref="_drag_equipment_8cs" startline="11" endline="17">DragEquipment.OnCantDrag</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1aefe701465676d3f06f8cdfe268971b24" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.toast_cant_drop</definition>
+        <argsstring></argsstring>
+        <name>toast_cant_drop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="154" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="154" bodyend="-1"/>
+        <referencedby refid="class_drag_1ae357e9a731b2eaa2438f98e350914bb4" compoundref="_drag_8cs" startline="59" endline="62">Drag.OnCantDrag</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1a902391e441313e874da3dae52744154d" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.you_died</definition>
+        <argsstring></argsstring>
+        <name>you_died</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="156" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_localization_1a2c1ee42209e9426ce4fb03ae05ac9bf0" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string Localization.tip_death_try_bay_equip_and_train_squad</definition>
+        <argsstring></argsstring>
+        <name>tip_death_try_bay_equip_and_train_squad</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="157" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_localization_1afaeb291b0d00fbd9c087db75277c5087" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Localization.SetLanguage</definition>
+        <argsstring>(SystemLanguage language)</argsstring>
+        <name>SetLanguage</name>
+        <param>
+          <type>SystemLanguage</type>
+          <declname>language</declname>
+        </param>
+        <briefdescription>
+<para>Уставнавливает новый язык локализации, если для него есть определение. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>language</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Новый язык локализации</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Если язык локализации был изменен, возвратится true, иначе - false</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="166" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="166" bodyend="178"/>
+        <references refid="class_localization_1ab1403f8a3202217f377b13e817c6b676" compoundref="_localization_8cs" startline="10">CurrentLanguage</references>
+        <references refid="class_localization_1abd3442c8cb7383c4d5bfcedbeec1d4c7" compoundref="_localization_8cs" startline="186" endline="219">ReloadStrings</references>
+      </memberdef>
+      <memberdef kind="function" id="class_localization_1a9898617e4dd2c6ce6a1ff3386cfafcdd" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>static string Localization.GetString</definition>
+        <argsstring>(string name)</argsstring>
+        <name>GetString</name>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Получает значение строкового ресурса по его имени </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Имя строкового ресурса</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Значение строкового ресурса</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="241" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="241" bodyend="249"/>
+        <references refid="class_localization_1ac3febaa989c26dac191ba992b4edf7fc" compoundref="_localization_8cs" startline="78">name</references>
+        <referencedby refid="class_squad_property_indicator_1af62c0fe843fc1a0167fb402d3944f05c" compoundref="_squad_property_indicator_8cs" startline="39" endline="67">SquadPropertyIndicator.GetDescription</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_localization_1abd3442c8cb7383c4d5bfcedbeec1d4c7" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Localization.ReloadStrings</definition>
+        <argsstring>(SystemLanguage language, out SystemLanguage newLanguage)</argsstring>
+        <name>ReloadStrings</name>
+        <param>
+          <type>SystemLanguage</type>
+          <declname>language</declname>
+        </param>
+        <param>
+          <type>out SystemLanguage</type>
+          <declname>newLanguage</declname>
+        </param>
+        <briefdescription>
+<para>Находит в соответствующем файле локализации нужные строки и устанавливает их значения соответствующим полям. </para>        </briefdescription>
+        <detaileddescription>
+<para>Так как не все языки поддерживаются, то загружен будет либо указанный язык, либо язык по умолчанию (английский)</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>language</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Язык локализации для загрузки</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>newLanguage</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Сюда будет занесено значение загруженого языка локализации</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="186" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="186" bodyend="219"/>
+        <references refid="class_localization_1ac3febaa989c26dac191ba992b4edf7fc" compoundref="_localization_8cs" startline="78">name</references>
+        <references refid="class_localization_1ad32b180c6614b588174bb528d686ee03" compoundref="_localization_8cs" startline="9">PATH_TO_LOCALIZATION_FILES</references>
+        <references refid="class_localization_1a8f72875deb87e94d9c32aa3ba05adad0" compoundref="_localization_8cs" startline="226" endline="234">SetString</references>
+        <referencedby refid="class_localization_1afaeb291b0d00fbd9c087db75277c5087" compoundref="_localization_8cs" startline="166" endline="178">SetLanguage</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_localization_1a8f72875deb87e94d9c32aa3ba05adad0" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Localization.SetString</definition>
+        <argsstring>(string name, string value)</argsstring>
+        <name>SetString</name>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Устанавливает значение строкового ресурса по его имени </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Имя строкового ресурса</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Новое значение строкового ресурса</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="226" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="226" bodyend="234"/>
+        <references refid="class_localization_1ac3febaa989c26dac191ba992b4edf7fc" compoundref="_localization_8cs" startline="78">name</references>
+        <referencedby refid="class_localization_1abd3442c8cb7383c4d5bfcedbeec1d4c7" compoundref="_localization_8cs" startline="186" endline="219">ReloadStrings</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" line="8" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Localization.cs" bodystart="7" bodyend="250"/>
+    <listofallmembers>
+      <member refid="class_localization_1a367976a56911cc65fb3e24786623feb2" prot="public" virt="non-virtual"><scope>Localization</scope><name>acceleration</name></member>
+      <member refid="class_localization_1a1705af76ee97c6053422a9e2fa58ab1b" prot="public" virt="non-virtual"><scope>Localization</scope><name>armour</name></member>
+      <member refid="class_localization_1ab212481a364e4ab6e9f7ace911480a55" prot="public" virt="non-virtual"><scope>Localization</scope><name>armourDamage</name></member>
+      <member refid="class_localization_1a09b4e2dd2c8f1f283f02622a64fa1447" prot="public" virt="non-virtual"><scope>Localization</scope><name>arrowWalley_arrowscount</name></member>
+      <member refid="class_localization_1ae1201a67c56e0c1b44490f63148df938" prot="public" virt="non-virtual"><scope>Localization</scope><name>arrowWalley_radius</name></member>
+      <member refid="class_localization_1abe988043268bf1df9b043b4c6132eac4" prot="public" virt="non-virtual"><scope>Localization</scope><name>attack</name></member>
+      <member refid="class_localization_1a349de7b4318325f7659f950c65cd1be8" prot="public" virt="non-virtual"><scope>Localization</scope><name>attackDistance</name></member>
+      <member refid="class_localization_1afa0991a6010e7dddce2e06388928491e" prot="public" virt="non-virtual"><scope>Localization</scope><name>attention</name></member>
+      <member refid="class_localization_1a69e3dec51c793b9e3076ccdf872fd90e" prot="public" virt="non-virtual"><scope>Localization</scope><name>baseDamage</name></member>
+      <member refid="class_localization_1a9449a540b252c5c55e8166d3fd1238aa" prot="public" virt="non-virtual"><scope>Localization</scope><name>baseValue</name></member>
+      <member refid="class_localization_1a55633df40f79b1840331cda0a064ad03" prot="public" virt="non-virtual"><scope>Localization</scope><name>cancel</name></member>
+      <member refid="class_localization_1adad3fcaf350073d7e61cce7639f981f2" prot="public" virt="non-virtual"><scope>Localization</scope><name>chargeDamage</name></member>
+      <member refid="class_localization_1a808401e5480d014fbfc1c56c5024f321" prot="public" virt="non-virtual"><scope>Localization</scope><name>chargeDeflect</name></member>
+      <member refid="class_localization_1ac322f19cb25d9885aff9969a68bfb047" prot="public" virt="non-virtual"><scope>Localization</scope><name>chargeImpact</name></member>
+      <member refid="class_localization_1a9a754648b81e446276949e5e3d4ec973" prot="public" virt="non-virtual"><scope>Localization</scope><name>condition_inFight_description</name></member>
+      <member refid="class_localization_1a7718eb3164ff39115eb2f3fcf8ad5cbc" prot="public" virt="non-virtual"><scope>Localization</scope><name>condition_inFight_name</name></member>
+      <member refid="class_localization_1af79ed39182d42c9cf1be8f61a3432c96" prot="public" virt="non-virtual"><scope>Localization</scope><name>cooldown</name></member>
+      <member refid="class_localization_1a32183a33f75fb40feb1b005c32dbe011" prot="public" virt="non-virtual"><scope>Localization</scope><name>cost</name></member>
+      <member refid="class_localization_1a5eff8cd530baab1621254e09883e65fb" prot="public" virt="non-virtual"><scope>Localization</scope><name>current_languade</name></member>
+      <member refid="class_localization_1ab1403f8a3202217f377b13e817c6b676" prot="public" virt="non-virtual"><scope>Localization</scope><name>CurrentLanguage</name></member>
+      <member refid="class_localization_1aa59e738e89e173c55274f11e312719e3" prot="public" virt="non-virtual"><scope>Localization</scope><name>currentValue</name></member>
+      <member refid="class_localization_1adb900308c099330bd75f6f533cf8f98a" prot="public" virt="non-virtual"><scope>Localization</scope><name>currentValue_baseValue</name></member>
+      <member refid="class_localization_1aaf52bb22da36d2eaf241712e760b03db" prot="public" virt="non-virtual"><scope>Localization</scope><name>defence</name></member>
+      <member refid="class_localization_1ab7fe60ef20445d912f2fc2b92141e9eb" prot="public" virt="non-virtual"><scope>Localization</scope><name>defenceHalfSector</name></member>
+      <member refid="class_localization_1ab85aac0f096814fbc054f9d0effc1c73" prot="public" virt="non-virtual"><scope>Localization</scope><name>description</name></member>
+      <member refid="class_localization_1a7123777502c0e0f9a4651b8195fa5c21" prot="public" virt="non-virtual"><scope>Localization</scope><name>downloading</name></member>
+      <member refid="class_localization_1a37b116dfb691db34de4ee4b16e8dd0b4" prot="public" virt="non-virtual"><scope>Localization</scope><name>durability_damaged</name></member>
+      <member refid="class_localization_1a7528469ba135013de8f27130a2dec3c3" prot="public" virt="non-virtual"><scope>Localization</scope><name>durability_new</name></member>
+      <member refid="class_localization_1ac7c4ad61e6373d55801d715a02dab291" prot="public" virt="non-virtual"><scope>Localization</scope><name>durability_worn</name></member>
+      <member refid="class_localization_1ad56884b81ba737402f446d2468a53a4e" prot="public" virt="non-virtual"><scope>Localization</scope><name>equipment</name></member>
+      <member refid="class_localization_1ae3ae7035bf691f87dcee78dae75024f3" prot="public" virt="non-virtual"><scope>Localization</scope><name>equipment_body_chainmail_description</name></member>
+      <member refid="class_localization_1a3ab547230d90f4b9b14ef2fb600ccaf3" prot="public" virt="non-virtual"><scope>Localization</scope><name>equipment_body_chainmail_name</name></member>
+      <member refid="class_localization_1a8ab844d722e12f72574839abf2cf9a2e" prot="public" virt="non-virtual"><scope>Localization</scope><name>equipment_body_linotorax_description</name></member>
+      <member refid="class_localization_1a0a61c229945f943ed8147aeff19bcc34" prot="public" virt="non-virtual"><scope>Localization</scope><name>equipment_body_linotorax_name</name></member>
+      <member refid="class_localization_1ad167bce61cb1f24f1a8153c801eb94cd" prot="public" virt="non-virtual"><scope>Localization</scope><name>equipment_body_none_description</name></member>
+      <member refid="class_localization_1a41d73edbdb5d449492bc19a491869155" prot="public" virt="non-virtual"><scope>Localization</scope><name>equipment_body_none_name</name></member>
+      <member refid="class_localization_1a70f732132124490f2a8725c1d1cc7889" prot="public" virt="non-virtual"><scope>Localization</scope><name>equipment_helmet_corinthian_close_description</name></member>
+      <member refid="class_localization_1a7ae8aee75d7d543d2069cb582f0f438a" prot="public" virt="non-virtual"><scope>Localization</scope><name>equipment_helmet_corinthian_close_name</name></member>
+      <member refid="class_localization_1a7a60f00171d3761833c92e6e4dd94ffd" prot="public" virt="non-virtual"><scope>Localization</scope><name>equipment_helmet_corinthian_open_description</name></member>
+      <member refid="class_localization_1a13af9e079796a032929d1924a30ef96b" prot="public" virt="non-virtual"><scope>Localization</scope><name>equipment_helmet_corinthian_open_name</name></member>
+      <member refid="class_localization_1a9c7a9708504fcdabbeadb2732d052715" prot="public" virt="non-virtual"><scope>Localization</scope><name>equipment_helmet_none_description</name></member>
+      <member refid="class_localization_1a5693269744f315f4d55e4736a4bff936" prot="public" virt="non-virtual"><scope>Localization</scope><name>equipment_helmet_none_name</name></member>
+      <member refid="class_localization_1ab8955dddc475043e2e0654373f06c478" prot="public" virt="non-virtual"><scope>Localization</scope><name>equipment_shield_hoplon_description</name></member>
+      <member refid="class_localization_1a358c8e48617fdd138ecb25628acf87b9" prot="public" virt="non-virtual"><scope>Localization</scope><name>equipment_shield_hoplon_name</name></member>
+      <member refid="class_localization_1a0494329917e119f2c03ef40546b7e94e" prot="public" virt="non-virtual"><scope>Localization</scope><name>equipment_shield_none_description</name></member>
+      <member refid="class_localization_1a67464f04cbc3a7cacca54ba613626a7e" prot="public" virt="non-virtual"><scope>Localization</scope><name>equipment_shield_none_name</name></member>
+      <member refid="class_localization_1a2d3d8c5868f4ebed93badcf8b853b348" prot="public" virt="non-virtual"><scope>Localization</scope><name>equipment_shield_small_description</name></member>
+      <member refid="class_localization_1a2d06b86c67aedb10fc0e51f468b23905" prot="public" virt="non-virtual"><scope>Localization</scope><name>equipment_shield_small_name</name></member>
+      <member refid="class_localization_1a56e5ef69a0c986f0406fc851a0074c16" prot="public" virt="non-virtual"><scope>Localization</scope><name>equipment_weapon_falcata_description</name></member>
+      <member refid="class_localization_1a2ed5f07eca0b56a4495a5a512294b79b" prot="public" virt="non-virtual"><scope>Localization</scope><name>equipment_weapon_falcata_name</name></member>
+      <member refid="class_localization_1ad5cd21618d396103b1e5ba18d07fec07" prot="public" virt="non-virtual"><scope>Localization</scope><name>equipment_weapon_pike_description</name></member>
+      <member refid="class_localization_1a1144c29f3f9a2e4f7db83c04666df635" prot="public" virt="non-virtual"><scope>Localization</scope><name>equipment_weapon_pike_name</name></member>
+      <member refid="class_localization_1a02d16667946a827d1e5c4894b13dff72" prot="public" virt="non-virtual"><scope>Localization</scope><name>equipment_weapon_spear_description</name></member>
+      <member refid="class_localization_1a119229cf0a2930f611b3ca11479b298f" prot="public" virt="non-virtual"><scope>Localization</scope><name>equipment_weapon_spear_name</name></member>
+      <member refid="class_localization_1aa9891068a3c0c95c37eb0a401ba670db" prot="public" virt="non-virtual"><scope>Localization</scope><name>error</name></member>
+      <member refid="class_localization_1af56b0f89f900c8e6625a024b607dd6be" prot="public" virt="non-virtual"><scope>Localization</scope><name>expirience</name></member>
+      <member refid="class_localization_1a062adf15b35163d8edf7b6cf82dcbcb9" prot="public" virt="non-virtual"><scope>Localization</scope><name>formation_phalanx_description</name></member>
+      <member refid="class_localization_1aad6659987bf8eb5be33ef50a9c6be383" prot="public" virt="non-virtual"><scope>Localization</scope><name>formation_phalanx_name</name></member>
+      <member refid="class_localization_1a9898ca109d073a17e2df1f7fe56501e8" prot="public" virt="non-virtual"><scope>Localization</scope><name>formation_ranks_description</name></member>
+      <member refid="class_localization_1a84191126dcefb7da3fe5a1e58776f1c6" prot="public" virt="non-virtual"><scope>Localization</scope><name>formation_ranks_name</name></member>
+      <member refid="class_localization_1aa5211397c156e53e2a6c093fead992df" prot="public" virt="non-virtual"><scope>Localization</scope><name>formation_shields_description</name></member>
+      <member refid="class_localization_1a6622a96a6efdb915498fc0366f5c21d7" prot="public" virt="non-virtual"><scope>Localization</scope><name>formation_shields_name</name></member>
+      <member refid="class_localization_1a9898617e4dd2c6ce6a1ff3386cfafcdd" prot="public" virt="non-virtual"><scope>Localization</scope><name>GetString</name></member>
+      <member refid="class_localization_1a7347f1d64ca792be11072f7f41b04c16" prot="public" virt="non-virtual"><scope>Localization</scope><name>gold</name></member>
+      <member refid="class_localization_1a594bbc0bac471f7530adaf5d015fde86" prot="public" virt="non-virtual"><scope>Localization</scope><name>goToMainMenu_header</name></member>
+      <member refid="class_localization_1a513099057300b5d0ee3efdb250dce78d" prot="public" virt="non-virtual"><scope>Localization</scope><name>goToMainMenu_info</name></member>
+      <member refid="class_localization_1ae0ff928e49436ea3aeb8b5490f84f299" prot="public" virt="non-virtual"><scope>Localization</scope><name>healtarget_all</name></member>
+      <member refid="class_localization_1ae24be414df150e3eda7729bbe78ffcc6" prot="public" virt="non-virtual"><scope>Localization</scope><name>healtarget_strongest</name></member>
+      <member refid="class_localization_1acf9b009b7d626cf4fb9db654978c617f" prot="public" virt="non-virtual"><scope>Localization</scope><name>healtarget_weakest</name></member>
+      <member refid="class_localization_1af746b56fb22f5872e7d3dceea0e65098" prot="public" virt="non-virtual"><scope>Localization</scope><name>health</name></member>
+      <member refid="class_localization_1a0d6d5a399558a5b0ed542ba0dd3cf987" prot="public" virt="non-virtual"><scope>Localization</scope><name>inventory</name></member>
+      <member refid="class_localization_1a686f21e823c9af4a6cafc9dfeabd2efe" prot="public" virt="non-virtual"><scope>Localization</scope><name>mass</name></member>
+      <member refid="class_localization_1a97de6c8c625d72e0d039d828ad9a87a3" prot="public" virt="non-virtual"><scope>Localization</scope><name>missileBlock</name></member>
+      <member refid="class_localization_1ac3febaa989c26dac191ba992b4edf7fc" prot="public" virt="non-virtual"><scope>Localization</scope><name>name</name></member>
+      <member refid="class_localization_1ac2c2d7d31806621e942e9e912b158918" prot="public" virt="non-virtual"><scope>Localization</scope><name>no</name></member>
+      <member refid="class_localization_1ade727280b475358325869948e6cdee03" prot="public" virt="non-virtual"><scope>Localization</scope><name>ok</name></member>
+      <member refid="class_localization_1ad32b180c6614b588174bb528d686ee03" prot="private" virt="non-virtual"><scope>Localization</scope><name>PATH_TO_LOCALIZATION_FILES</name></member>
+      <member refid="class_localization_1ab508d503222835883e6da379a2cab3c9" prot="public" virt="non-virtual"><scope>Localization</scope><name>play_game</name></member>
+      <member refid="class_localization_1abd3442c8cb7383c4d5bfcedbeec1d4c7" prot="private" virt="non-virtual"><scope>Localization</scope><name>ReloadStrings</name></member>
+      <member refid="class_localization_1a27f42b449df4ba92dd94892b3b0a2064" prot="public" virt="non-virtual"><scope>Localization</scope><name>resetSettings_header</name></member>
+      <member refid="class_localization_1a070cd011a781ed491ee5fb40c43f7331" prot="public" virt="non-virtual"><scope>Localization</scope><name>resetSettings_info</name></member>
+      <member refid="class_localization_1a5fafeb8a861de28ae27422531c1d7c05" prot="public" virt="non-virtual"><scope>Localization</scope><name>rotationSpeed</name></member>
+      <member refid="class_localization_1afaeb291b0d00fbd9c087db75277c5087" prot="public" virt="non-virtual"><scope>Localization</scope><name>SetLanguage</name></member>
+      <member refid="class_localization_1a8f72875deb87e94d9c32aa3ba05adad0" prot="private" virt="non-virtual"><scope>Localization</scope><name>SetString</name></member>
+      <member refid="class_localization_1ad2c928f96da993acf042e26cecab2ecc" prot="public" virt="non-virtual"><scope>Localization</scope><name>settings</name></member>
+      <member refid="class_localization_1a0703f3a10ad686b7e0f17143c4ad3537" prot="public" virt="non-virtual"><scope>Localization</scope><name>silver</name></member>
+      <member refid="class_localization_1aaf01849b2089f97d9d41e938776823df" prot="public" virt="non-virtual"><scope>Localization</scope><name>skill_arrowWalley_description</name></member>
+      <member refid="class_localization_1afce18631f7cb53f641cc2d7ea30d9f9f" prot="public" virt="non-virtual"><scope>Localization</scope><name>skill_arrowWalley_name</name></member>
+      <member refid="class_localization_1ad7b97c0bd1c5cb73aa631eead033d2e2" prot="public" virt="non-virtual"><scope>Localization</scope><name>skill_charge_description</name></member>
+      <member refid="class_localization_1a32bacec4ca0cdcb9f61d5aaaeacd8fb8" prot="public" virt="non-virtual"><scope>Localization</scope><name>skill_charge_name</name></member>
+      <member refid="class_localization_1a81a54ecdb4b035b6f433022c538718b3" prot="public" virt="non-virtual"><scope>Localization</scope><name>skill_upgrade_arrowWalley_armourdamage_sharparrows_description</name></member>
+      <member refid="class_localization_1aaedc4253e41f610c13a2724cdf314dc0" prot="public" virt="non-virtual"><scope>Localization</scope><name>skill_upgrade_arrowWalley_armourdamage_sharparrows_name</name></member>
+      <member refid="class_localization_1a456ab324b07c48b08029de26d237177c" prot="public" virt="non-virtual"><scope>Localization</scope><name>skill_upgrade_arrowWalley_armourdamage_temperedarrows_description</name></member>
+      <member refid="class_localization_1ac6291ead28e0ce9c9149eb8713969c60" prot="public" virt="non-virtual"><scope>Localization</scope><name>skill_upgrade_arrowWalley_armourdamage_temperedarrows_name</name></member>
+      <member refid="class_localization_1a7c034cf7c4fd1dbf7f1b4de981c79f81" prot="public" virt="non-virtual"><scope>Localization</scope><name>skill_upgrade_arrowWalley_arrowscount_description</name></member>
+      <member refid="class_localization_1a5a55b9d3baafc25c5e6e877aa4af13ab" prot="public" virt="non-virtual"><scope>Localization</scope><name>skill_upgrade_arrowWalley_arrowscount_name</name></member>
+      <member refid="class_localization_1a295e2886daa40ae14241f49911f167d5" prot="public" virt="non-virtual"><scope>Localization</scope><name>skill_upgrade_arrowWalley_basedamage_largebow_description</name></member>
+      <member refid="class_localization_1a3e06f2c23f20bee034cd69b7a7aabb26" prot="public" virt="non-virtual"><scope>Localization</scope><name>skill_upgrade_arrowWalley_basedamage_largebow_name</name></member>
+      <member refid="class_localization_1a75a5c36c357e38d9e70b3521c2dcb8b6" prot="public" virt="non-virtual"><scope>Localization</scope><name>skill_upgrade_arrowWalley_basedamage_weightarrows_description</name></member>
+      <member refid="class_localization_1a9d05a117fd55c2a16dd61b04dcf0e9a2" prot="public" virt="non-virtual"><scope>Localization</scope><name>skill_upgrade_arrowWalley_basedamage_weightarrows_name</name></member>
+      <member refid="class_localization_1a6047cbd83873374b5b45f5748da0113f" prot="public" virt="non-virtual"><scope>Localization</scope><name>skill_upgrade_arrowWalley_cooldown_description</name></member>
+      <member refid="class_localization_1a7009a2d762e037abe18819c12e692ad7" prot="public" virt="non-virtual"><scope>Localization</scope><name>skill_upgrade_arrowWalley_cooldown_name</name></member>
+      <member refid="class_localization_1a178c67750b6fcf219e400e865067d3d8" prot="public" virt="non-virtual"><scope>Localization</scope><name>skill_upgrade_arrowWalley_radius_description</name></member>
+      <member refid="class_localization_1a9690ad1e9dd2c05439df9411f4121650" prot="public" virt="non-virtual"><scope>Localization</scope><name>skill_upgrade_arrowWalley_radius_minus_description</name></member>
+      <member refid="class_localization_1a2f8e83eb93fa1ea81ef95268bfa91e1e" prot="public" virt="non-virtual"><scope>Localization</scope><name>skill_upgrade_arrowWalley_radius_minus_name</name></member>
+      <member refid="class_localization_1aaec4d426d1fd0c5336584ace3bacc507" prot="public" virt="non-virtual"><scope>Localization</scope><name>skill_upgrade_arrowWalley_radius_name</name></member>
+      <member refid="class_localization_1a1e08865c578358362f7cad418ec49789" prot="public" virt="non-virtual"><scope>Localization</scope><name>skill_upgrade_arrowWalley_startunlock_description</name></member>
+      <member refid="class_localization_1a37b314bfffed5078f56fb50f4d7956cd" prot="public" virt="non-virtual"><scope>Localization</scope><name>skill_upgrade_arrowWalley_startunlock_name</name></member>
+      <member refid="class_localization_1ad8453dce5e4c888a9e54160258499dcd" prot="public" virt="non-virtual"><scope>Localization</scope><name>speed</name></member>
+      <member refid="class_localization_1a553327b51e6eb38ac7a46d85f8c6db5e" prot="public" virt="non-virtual"><scope>Localization</scope><name>squad</name></member>
+      <member refid="class_localization_1adf82c08ef13539dc527390839489029e" prot="public" virt="non-virtual"><scope>Localization</scope><name>squadHealth</name></member>
+      <member refid="class_localization_1a2c1ee42209e9426ce4fb03ae05ac9bf0" prot="public" virt="non-virtual"><scope>Localization</scope><name>tip_death_try_bay_equip_and_train_squad</name></member>
+      <member refid="class_localization_1aefe701465676d3f06f8cdfe268971b24" prot="public" virt="non-virtual"><scope>Localization</scope><name>toast_cant_drop</name></member>
+      <member refid="class_localization_1a807c845440a15261147d129f58902ea7" prot="public" virt="non-virtual"><scope>Localization</scope><name>toast_cant_drop_weapon</name></member>
+      <member refid="class_localization_1a90a170aaa9233e318df03d2c3c47eaac" prot="public" virt="non-virtual"><scope>Localization</scope><name>toast_cant_use_with_current_weapon</name></member>
+      <member refid="class_localization_1aa3c24f3b86b47d2a02afa5c6f2fb9579" prot="public" virt="non-virtual"><scope>Localization</scope><name>toast_cant_use_with_shield</name></member>
+      <member refid="class_localization_1aa3993a69313e329f00e1275d9f4c9b2b" prot="public" virt="non-virtual"><scope>Localization</scope><name>toast_not_enough_equipment_count</name></member>
+      <member refid="class_localization_1a3073ed76eae3d6b84aaca68fdcc8d8d9" prot="public" virt="non-virtual"><scope>Localization</scope><name>toast_not_enough_expirience</name></member>
+      <member refid="class_localization_1a589f3e4a6f9c6a886e750c18d92d0a54" prot="public" virt="non-virtual"><scope>Localization</scope><name>toast_not_enough_gold</name></member>
+      <member refid="class_localization_1a9a7a4f51090316cd2adba2976a4f74c2" prot="public" virt="non-virtual"><scope>Localization</scope><name>toast_not_enough_silver</name></member>
+      <member refid="class_localization_1a70d9547d8114b1ce71d2df717e1b881e" prot="public" virt="non-virtual"><scope>Localization</scope><name>toast_stat_max_upgrade</name></member>
+      <member refid="class_localization_1af5a8ca5aa3527f4442d403ef089f21b7" prot="public" virt="non-virtual"><scope>Localization</scope><name>toMainMenu</name></member>
+      <member refid="class_localization_1a22a0cd2282456808499a02afefcdf1e2" prot="public" virt="non-virtual"><scope>Localization</scope><name>upgrade</name></member>
+      <member refid="class_localization_1a0801662a5c7bc0c7869e4a25029b0b4e" prot="public" virt="non-virtual"><scope>Localization</scope><name>weaponConstraint_cantReformPhalanx</name></member>
+      <member refid="class_localization_1a41a7196805a831279ad300adaa77362e" prot="public" virt="non-virtual"><scope>Localization</scope><name>weaponConstraint_cantReformPhalanxInFight</name></member>
+      <member refid="class_localization_1a3faadbf1de9323fd3b02efaea261de2b" prot="public" virt="non-virtual"><scope>Localization</scope><name>weaponConstraint_cantUseShield</name></member>
+      <member refid="class_localization_1afb5e9f6c92e24963a0c6aba4e324ef06" prot="public" virt="non-virtual"><scope>Localization</scope><name>yes</name></member>
+      <member refid="class_localization_1a902391e441313e874da3dae52744154d" prot="public" virt="non-virtual"><scope>Localization</scope><name>you_died</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

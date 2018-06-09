@@ -1,0 +1,347 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_number_converter" kind="class" prot="public">
+    <compoundname>NumberConverter</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="private-type">
+      <memberdef kind="enum" id="class_number_converter_1a096084d92bfd2755dc652622e74e9ce7" prot="private" static="no">
+        <name>ConvertType</name>
+        <enumvalue id="class_number_converter_1a096084d92bfd2755dc652622e74e9ce7a0efc7a9b83f3cfe984a3b046f0269ccc" prot="public">
+          <name>SILVER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_number_converter_1a096084d92bfd2755dc652622e74e9ce7a6cf2e6f0e86af75f96dd98519eedb29e" prot="public">
+          <name>EXPIRIENCE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/NumberConverter.cs" line="10" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/NumberConverter.cs" bodystart="10" bodyend="10"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_number_converter_1a5ad79bb4505281df6e6806e2d02cd7b3" prot="private" static="no" mutable="no">
+        <type>const string</type>
+        <definition>const string NumberConverter.format</definition>
+        <argsstring></argsstring>
+        <name>format</name>
+        <initializer>= &quot;# ### ### ### ##0&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/NumberConverter.cs" line="12" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/NumberConverter.cs" bodystart="12" bodyend="-1"/>
+        <referencedby refid="class_number_converter_1ae683e737a2ca2c5c5ddb36eb9af4b3c2" compoundref="_number_converter_8cs" startline="70" endline="75">OnSliderValChanged</referencedby>
+        <referencedby refid="class_number_converter_1a0a0dd73b51c94504eafd7b4390019276" compoundref="_number_converter_8cs" startline="82" endline="90">SetMaxValues</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_number_converter_1af6633b8995bfdd58d5552275e09152df" prot="private" static="no" mutable="no">
+        <type>TextMeshProUGUI</type>
+        <definition>TextMeshProUGUI NumberConverter.textValueConfertFrom</definition>
+        <argsstring></argsstring>
+        <name>textValueConfertFrom</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/NumberConverter.cs" line="15" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/NumberConverter.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_number_converter_1a643a654575bece69f1bebe045eba4827" prot="private" static="no" mutable="no">
+        <type>TextMeshProUGUI</type>
+        <definition>TextMeshProUGUI NumberConverter.textValueConvertTo</definition>
+        <argsstring></argsstring>
+        <name>textValueConvertTo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/NumberConverter.cs" line="16" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/NumberConverter.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_number_converter_1a44256ebbd5421f9f783ecd09d456684a" prot="private" static="no" mutable="no">
+        <type>TextMeshProUGUI</type>
+        <definition>TextMeshProUGUI NumberConverter.textCurrentValueSelected</definition>
+        <argsstring></argsstring>
+        <name>textCurrentValueSelected</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/NumberConverter.cs" line="17" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/NumberConverter.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_number_converter_1a9b849bca362f76befdff103040ddeadf" prot="private" static="no" mutable="no">
+        <type>TextMeshProUGUI</type>
+        <definition>TextMeshProUGUI NumberConverter.textCurrentValueConvertedSelected</definition>
+        <argsstring></argsstring>
+        <name>textCurrentValueConvertedSelected</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/NumberConverter.cs" line="18" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/NumberConverter.cs" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_number_converter_1a8671ec52242b6e4a58059aea67445e68" prot="private" static="no" mutable="no">
+        <type>Slider</type>
+        <definition>Slider NumberConverter.slider</definition>
+        <argsstring></argsstring>
+        <name>slider</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/NumberConverter.cs" line="19" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/NumberConverter.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_number_converter_1afc5764b8196acc86693d12a9cd39dad5" prot="private" static="no" mutable="no">
+        <type>Button</type>
+        <definition>Button NumberConverter.btnOk</definition>
+        <argsstring></argsstring>
+        <name>btnOk</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/NumberConverter.cs" line="20" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/NumberConverter.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_number_converter_1a09caa3d6aab796612d3a74cc3cf7d3d9" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int NumberConverter.valueConvertTo</definition>
+        <argsstring></argsstring>
+        <name>valueConvertTo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/NumberConverter.cs" line="23" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/NumberConverter.cs" bodystart="23" bodyend="-1"/>
+        <referencedby refid="class_number_converter_1a30066483a46ecafc41f5764e44adf603" compoundref="_number_converter_8cs" startline="77" endline="80">Convert</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_number_converter_1a8a3f21f428be948e3537408d71b7a489" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float NumberConverter.convertedValue</definition>
+        <argsstring></argsstring>
+        <name>convertedValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/NumberConverter.cs" line="25" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/NumberConverter.cs" bodystart="25" bodyend="-1"/>
+        <referencedby refid="class_number_converter_1ae683e737a2ca2c5c5ddb36eb9af4b3c2" compoundref="_number_converter_8cs" startline="70" endline="75">OnSliderValChanged</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="event">
+      <memberdef kind="event" id="class_number_converter_1ac2cf8bc2bdff7ff86df8bd2b94c88578" prot="public" static="no" add="no" remove="no" raise="no">
+        <type>Action</type>
+        <definition>Action NumberConverter.OnCliclOk</definition>
+        <argsstring></argsstring>
+        <name>OnCliclOk</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/NumberConverter.cs" line="27" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/NumberConverter.cs" bodystart="27" bodyend="-1"/>
+        <referencedby refid="class_number_converter_1a98c4397bfc6103ad0ab2531bc8178c36" compoundref="_number_converter_8cs" startline="64" endline="68">OnApply</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_number_converter_1a10d42400dbcc8d4e8b3cdae66151a9c6" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>float</type>
+        <definition>float NumberConverter.InputValue</definition>
+        <argsstring></argsstring>
+        <name>InputValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/NumberConverter.cs" line="28" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/NumberConverter.cs" bodystart="29" bodyend="-1"/>
+        <referencedby refid="class_hospital_room_1a0a29986bed0b4100bcefa68633e59772" compoundref="_hospital_room_8cs" startline="123" endline="143">HospitalRoom.ResetConverter</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_number_converter_1a7f62c59742dccce4582534a3d0fdfa24" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>float</type>
+        <definition>float NumberConverter.OutputValue</definition>
+        <argsstring></argsstring>
+        <name>OutputValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/NumberConverter.cs" line="40" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/NumberConverter.cs" bodystart="41" bodyend="-1"/>
+        <referencedby refid="class_hospital_room_1a35233675ee099c6fc1f68b230a797467" compoundref="_hospital_room_8cs" startline="60" endline="121">HospitalRoom.Converter_OnCliclOk</referencedby>
+        <referencedby refid="class_hospital_room_1a0a29986bed0b4100bcefa68633e59772" compoundref="_hospital_room_8cs" startline="123" endline="143">HospitalRoom.ResetConverter</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_number_converter_1a5a6b0ebf94ad5e7373c1015bf9afcaa8" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void NumberConverter.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/NumberConverter.cs" line="55" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/NumberConverter.cs" bodystart="55" bodyend="62"/>
+        <references refid="class_number_converter_1a98c4397bfc6103ad0ab2531bc8178c36" compoundref="_number_converter_8cs" startline="64" endline="68">OnApply</references>
+        <references refid="class_number_converter_1ae683e737a2ca2c5c5ddb36eb9af4b3c2" compoundref="_number_converter_8cs" startline="70" endline="75">OnSliderValChanged</references>
+      </memberdef>
+      <memberdef kind="function" id="class_number_converter_1a98c4397bfc6103ad0ab2531bc8178c36" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void NumberConverter.OnApply</definition>
+        <argsstring>()</argsstring>
+        <name>OnApply</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/NumberConverter.cs" line="64" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/NumberConverter.cs" bodystart="64" bodyend="68"/>
+        <references refid="class_number_converter_1ac2cf8bc2bdff7ff86df8bd2b94c88578" compoundref="_number_converter_8cs" startline="27">OnCliclOk</references>
+        <referencedby refid="class_number_converter_1a5a6b0ebf94ad5e7373c1015bf9afcaa8" compoundref="_number_converter_8cs" startline="55" endline="62">Start</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_number_converter_1ae683e737a2ca2c5c5ddb36eb9af4b3c2" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void NumberConverter.OnSliderValChanged</definition>
+        <argsstring>(float val)</argsstring>
+        <name>OnSliderValChanged</name>
+        <param>
+          <type>float</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/NumberConverter.cs" line="70" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/NumberConverter.cs" bodystart="70" bodyend="75"/>
+        <references refid="class_number_converter_1a30066483a46ecafc41f5764e44adf603" compoundref="_number_converter_8cs" startline="77" endline="80">Convert</references>
+        <references refid="class_number_converter_1a8a3f21f428be948e3537408d71b7a489" compoundref="_number_converter_8cs" startline="25">convertedValue</references>
+        <references refid="class_number_converter_1a5ad79bb4505281df6e6806e2d02cd7b3" compoundref="_number_converter_8cs" startline="12">format</references>
+        <referencedby refid="class_number_converter_1a5a6b0ebf94ad5e7373c1015bf9afcaa8" compoundref="_number_converter_8cs" startline="55" endline="62">Start</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_number_converter_1a30066483a46ecafc41f5764e44adf603" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float NumberConverter.Convert</definition>
+        <argsstring>(float val)</argsstring>
+        <name>Convert</name>
+        <param>
+          <type>float</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/NumberConverter.cs" line="77" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/NumberConverter.cs" bodystart="77" bodyend="80"/>
+        <references refid="class_number_converter_1a09caa3d6aab796612d3a74cc3cf7d3d9" compoundref="_number_converter_8cs" startline="23">valueConvertTo</references>
+        <referencedby refid="class_number_converter_1ae683e737a2ca2c5c5ddb36eb9af4b3c2" compoundref="_number_converter_8cs" startline="70" endline="75">OnSliderValChanged</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_number_converter_1a0a0dd73b51c94504eafd7b4390019276" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void NumberConverter.SetMaxValues</definition>
+        <argsstring>(float minValue, float maxValue)</argsstring>
+        <name>SetMaxValues</name>
+        <param>
+          <type>float</type>
+          <declname>minValue</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>maxValue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/NumberConverter.cs" line="82" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/NumberConverter.cs" bodystart="82" bodyend="90"/>
+        <references refid="class_number_converter_1a5ad79bb4505281df6e6806e2d02cd7b3" compoundref="_number_converter_8cs" startline="12">format</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="708">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="707">
+        <label>NumberConverter</label>
+        <link refid="class_number_converter"/>
+        <childnode refid="708" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="710">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="709">
+        <label>NumberConverter</label>
+        <link refid="class_number_converter"/>
+        <childnode refid="710" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/NumberConverter.cs" line="9" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/NumberConverter.cs" bodystart="8" bodyend="91"/>
+    <listofallmembers>
+      <member refid="class_number_converter_1afc5764b8196acc86693d12a9cd39dad5" prot="private" virt="non-virtual"><scope>NumberConverter</scope><name>btnOk</name></member>
+      <member refid="class_number_converter_1a30066483a46ecafc41f5764e44adf603" prot="private" virt="non-virtual"><scope>NumberConverter</scope><name>Convert</name></member>
+      <member refid="class_number_converter_1a8a3f21f428be948e3537408d71b7a489" prot="private" virt="non-virtual"><scope>NumberConverter</scope><name>convertedValue</name></member>
+      <member refid="class_number_converter_1a096084d92bfd2755dc652622e74e9ce7" prot="private" virt="non-virtual"><scope>NumberConverter</scope><name>ConvertType</name></member>
+      <member refid="class_number_converter_1a5ad79bb4505281df6e6806e2d02cd7b3" prot="private" virt="non-virtual"><scope>NumberConverter</scope><name>format</name></member>
+      <member refid="class_number_converter_1a10d42400dbcc8d4e8b3cdae66151a9c6" prot="public" virt="non-virtual"><scope>NumberConverter</scope><name>InputValue</name></member>
+      <member refid="class_number_converter_1a98c4397bfc6103ad0ab2531bc8178c36" prot="private" virt="non-virtual"><scope>NumberConverter</scope><name>OnApply</name></member>
+      <member refid="class_number_converter_1ac2cf8bc2bdff7ff86df8bd2b94c88578" prot="public" virt="non-virtual"><scope>NumberConverter</scope><name>OnCliclOk</name></member>
+      <member refid="class_number_converter_1ae683e737a2ca2c5c5ddb36eb9af4b3c2" prot="private" virt="non-virtual"><scope>NumberConverter</scope><name>OnSliderValChanged</name></member>
+      <member refid="class_number_converter_1a7f62c59742dccce4582534a3d0fdfa24" prot="public" virt="non-virtual"><scope>NumberConverter</scope><name>OutputValue</name></member>
+      <member refid="class_number_converter_1a0a0dd73b51c94504eafd7b4390019276" prot="public" virt="non-virtual"><scope>NumberConverter</scope><name>SetMaxValues</name></member>
+      <member refid="class_number_converter_1a8671ec52242b6e4a58059aea67445e68" prot="private" virt="non-virtual"><scope>NumberConverter</scope><name>slider</name></member>
+      <member refid="class_number_converter_1a5a6b0ebf94ad5e7373c1015bf9afcaa8" prot="private" virt="non-virtual"><scope>NumberConverter</scope><name>Start</name></member>
+      <member refid="class_number_converter_1a9b849bca362f76befdff103040ddeadf" prot="private" virt="non-virtual"><scope>NumberConverter</scope><name>textCurrentValueConvertedSelected</name></member>
+      <member refid="class_number_converter_1a44256ebbd5421f9f783ecd09d456684a" prot="private" virt="non-virtual"><scope>NumberConverter</scope><name>textCurrentValueSelected</name></member>
+      <member refid="class_number_converter_1af6633b8995bfdd58d5552275e09152df" prot="private" virt="non-virtual"><scope>NumberConverter</scope><name>textValueConfertFrom</name></member>
+      <member refid="class_number_converter_1a643a654575bece69f1bebe045eba4827" prot="private" virt="non-virtual"><scope>NumberConverter</scope><name>textValueConvertTo</name></member>
+      <member refid="class_number_converter_1a09caa3d6aab796612d3a74cc3cf7d3d9" prot="private" virt="non-virtual"><scope>NumberConverter</scope><name>valueConvertTo</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

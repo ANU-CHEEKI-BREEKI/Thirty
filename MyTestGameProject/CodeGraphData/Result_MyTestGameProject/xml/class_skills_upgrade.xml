@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_skills_upgrade" kind="class" prot="public">
+    <compoundname>SkillsUpgrade</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_skills_upgrade_1a8a1c1776c5f3f21f4418f183999f5163" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SkillsUpgrade.skillId</definition>
+        <argsstring></argsstring>
+        <name>skillId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillsUpgrade.cs" line="7" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillsUpgrade.cs" bodystart="7" bodyend="-1"/>
+        <referencedby refid="class_skills_upgrade_1a3ae7767b02080d847d0f24f5e63f3dd1" compoundref="_skills_upgrade_8cs" startline="12" endline="41">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_skills_upgrade_1a761eb2746733e6ff726897e87d3d3b00" prot="private" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_d_s_player_skill_1_1_skill_upgrade" kindref="compound">DSPlayerSkill.SkillUpgrade</ref> &gt;</type>
+        <definition>List&lt;DSPlayerSkill.SkillUpgrade&gt; SkillsUpgrade.upgrades</definition>
+        <argsstring></argsstring>
+        <name>upgrades</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillsUpgrade.cs" line="9" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillsUpgrade.cs" bodystart="9" bodyend="-1"/>
+        <referencedby refid="class_skills_upgrade_1a3ae7767b02080d847d0f24f5e63f3dd1" compoundref="_skills_upgrade_8cs" startline="12" endline="41">Start</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_skills_upgrade_1a26abbfacd4195a971a60dd5e711f67c3" prot="public" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_skill_upgrade_button" kindref="compound">SkillUpgradeButton</ref> &gt;</type>
+        <definition>List&lt;SkillUpgradeButton&gt; SkillsUpgrade.buttons</definition>
+        <argsstring></argsstring>
+        <name>buttons</name>
+        <initializer>= new List&lt;<ref refid="class_skill_upgrade_button" kindref="compound">SkillUpgradeButton</ref>&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillsUpgrade.cs" line="10" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillsUpgrade.cs" bodystart="10" bodyend="-1"/>
+        <referencedby refid="class_skills_upgrade_1a3ae7767b02080d847d0f24f5e63f3dd1" compoundref="_skills_upgrade_8cs" startline="12" endline="41">Start</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_skills_upgrade_1a3ae7767b02080d847d0f24f5e63f3dd1" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SkillsUpgrade.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillsUpgrade.cs" line="12" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillsUpgrade.cs" bodystart="12" bodyend="41"/>
+        <references refid="class_skills_upgrade_1a26abbfacd4195a971a60dd5e711f67c3" compoundref="_skills_upgrade_8cs" startline="10">buttons</references>
+        <references refid="class_skills_upgrade_1a8a1c1776c5f3f21f4418f183999f5163" compoundref="_skills_upgrade_8cs" startline="7">skillId</references>
+        <references refid="class_skills_upgrade_1a761eb2746733e6ff726897e87d3d3b00" compoundref="_skills_upgrade_8cs" startline="9">upgrades</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="988">
+        <label>SkillsUpgrade</label>
+        <link refid="class_skills_upgrade"/>
+        <childnode refid="989" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="989">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="990">
+        <label>SkillsUpgrade</label>
+        <link refid="class_skills_upgrade"/>
+        <childnode refid="991" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="991">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillsUpgrade.cs" line="6" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillsUpgrade.cs" bodystart="5" bodyend="43"/>
+    <listofallmembers>
+      <member refid="class_skills_upgrade_1a26abbfacd4195a971a60dd5e711f67c3" prot="public" virt="non-virtual"><scope>SkillsUpgrade</scope><name>buttons</name></member>
+      <member refid="class_skills_upgrade_1a8a1c1776c5f3f21f4418f183999f5163" prot="private" virt="non-virtual"><scope>SkillsUpgrade</scope><name>skillId</name></member>
+      <member refid="class_skills_upgrade_1a3ae7767b02080d847d0f24f5e63f3dd1" prot="private" virt="non-virtual"><scope>SkillsUpgrade</scope><name>Start</name></member>
+      <member refid="class_skills_upgrade_1a761eb2746733e6ff726897e87d3d3b00" prot="private" virt="non-virtual"><scope>SkillsUpgrade</scope><name>upgrades</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

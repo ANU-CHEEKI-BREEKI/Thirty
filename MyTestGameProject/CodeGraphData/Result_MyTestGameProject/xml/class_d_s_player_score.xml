@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_d_s_player_score" kind="class" prot="public">
+    <compoundname>DSPlayerScore</compoundname>
+    <basecompoundref refid="interface_i_savable" prot="public" virt="non-virtual">ISavable</basecompoundref>
+    <innerclass refid="class_d_s_player_score_1_1_score" prot="public">DSPlayerScore::Score</innerclass>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_d_s_player_score_1a4502f5363f2fb5db9940ec117dd2ab19" prot="public" static="no" mutable="no">
+        <type><ref refid="class_d_s_player_score_1_1_score" kindref="compound">Score</ref></type>
+        <definition>Score DSPlayerScore.gold</definition>
+        <argsstring></argsstring>
+        <name>gold</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSPlayerScore.cs" line="7" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSPlayerScore.cs" bodystart="7" bodyend="-1"/>
+        <referencedby refid="class_call_converter_number_picker_1a5936c56affe137d478776a297ab8d8ae" compoundref="_call_converter_number_picker_8cs" startline="15" endline="70">CallConverterNumberPicker.OnPointerClick</referencedby>
+        <referencedby refid="class_score_panel_1a723d01e7fe73b1e2931ed2df73f9ecef" compoundref="_score_panel_8cs" startline="41" endline="104">ScorePanel.RefreshByEvent</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_d_s_player_score_1a985612b8c0d9d8b5492a6dc015a25894" prot="public" static="no" mutable="no">
+        <type><ref refid="class_d_s_player_score_1_1_score" kindref="compound">Score</ref></type>
+        <definition>Score DSPlayerScore.silver</definition>
+        <argsstring></argsstring>
+        <name>silver</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSPlayerScore.cs" line="8" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSPlayerScore.cs" bodystart="8" bodyend="-1"/>
+        <referencedby refid="class_drop_to_equipment_market_1a60ed19a062359f3ec6c2e0d920e8686b" compoundref="_drop_to_equipment_market_8cs" startline="61" endline="75">DropToEquipmentMarket.CanGetFromThisIventory</referencedby>
+        <referencedby refid="class_score_panel_1a723d01e7fe73b1e2931ed2df73f9ecef" compoundref="_score_panel_8cs" startline="41" endline="104">ScorePanel.RefreshByEvent</referencedby>
+        <referencedby refid="class_hospital_room_1a0a29986bed0b4100bcefa68633e59772" compoundref="_hospital_room_8cs" startline="123" endline="143">HospitalRoom.ResetConverter</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_d_s_player_score_1ab4b93d26c52c3af7ea722f609f859a28" prot="public" static="no" mutable="no">
+        <type><ref refid="class_d_s_player_score_1_1_score" kindref="compound">Score</ref></type>
+        <definition>Score DSPlayerScore.expirience</definition>
+        <argsstring></argsstring>
+        <name>expirience</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSPlayerScore.cs" line="9" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSPlayerScore.cs" bodystart="9" bodyend="-1"/>
+        <referencedby refid="class_stats_upgrade_1ab4ae84b87abf69440f15605d7b6e70e8" compoundref="_stats_upgrade_8cs" startline="120" endline="146">StatsUpgrade.OnClick</referencedby>
+        <referencedby refid="class_score_panel_1a723d01e7fe73b1e2931ed2df73f9ecef" compoundref="_score_panel_8cs" startline="41" endline="104">ScorePanel.RefreshByEvent</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_d_s_player_score_1ada319703b1724b77280c17b32034f91d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void DSPlayerScore.Save</definition>
+        <argsstring>()</argsstring>
+        <name>Save</name>
+        <reimplements refid="interface_i_savable_1a6f524db1edec7552b99f40de1bf013f4">Save</reimplements>
+        <briefdescription>
+<para>Сохранить данные в хранилище </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSPlayerScore.cs" line="11" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSPlayerScore.cs" bodystart="11" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_d_s_player_score_1abe7248f2812a070166904eaababc2f11" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void DSPlayerScore.Load</definition>
+        <argsstring>()</argsstring>
+        <name>Load</name>
+        <reimplements refid="interface_i_savable_1ad4c1956e2936ff33be4709453ad21190">Load</reimplements>
+        <briefdescription>
+<para>Загрузить данные из хранилища </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSPlayerScore.cs" line="16" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSPlayerScore.cs" bodystart="16" bodyend="23"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="284">
+        <label>ISavable</label>
+        <link refid="interface_i_savable"/>
+      </node>
+      <node id="283">
+        <label>DSPlayerScore</label>
+        <link refid="class_d_s_player_score"/>
+        <childnode refid="284" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="286">
+        <label>ISavable</label>
+        <link refid="interface_i_savable"/>
+      </node>
+      <node id="287">
+        <label>DSPlayerScore.Score</label>
+        <link refid="class_d_s_player_score_1_1_score"/>
+      </node>
+      <node id="285">
+        <label>DSPlayerScore</label>
+        <link refid="class_d_s_player_score"/>
+        <childnode refid="286" relation="public-inheritance">
+        </childnode>
+        <childnode refid="287" relation="usage">
+          <edgelabel>gold</edgelabel>
+          <edgelabel>expirience</edgelabel>
+          <edgelabel>silver</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSPlayerScore.cs" line="6" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSPlayerScore.cs" bodystart="5" bodyend="43"/>
+    <listofallmembers>
+      <member refid="class_d_s_player_score_1ab4b93d26c52c3af7ea722f609f859a28" prot="public" virt="non-virtual"><scope>DSPlayerScore</scope><name>expirience</name></member>
+      <member refid="class_d_s_player_score_1a4502f5363f2fb5db9940ec117dd2ab19" prot="public" virt="non-virtual"><scope>DSPlayerScore</scope><name>gold</name></member>
+      <member refid="class_d_s_player_score_1abe7248f2812a070166904eaababc2f11" prot="public" virt="non-virtual"><scope>DSPlayerScore</scope><name>Load</name></member>
+      <member refid="class_d_s_player_score_1ada319703b1724b77280c17b32034f91d" prot="public" virt="non-virtual"><scope>DSPlayerScore</scope><name>Save</name></member>
+      <member refid="class_d_s_player_score_1a985612b8c0d9d8b5492a6dc015a25894" prot="public" virt="non-virtual"><scope>DSPlayerScore</scope><name>silver</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

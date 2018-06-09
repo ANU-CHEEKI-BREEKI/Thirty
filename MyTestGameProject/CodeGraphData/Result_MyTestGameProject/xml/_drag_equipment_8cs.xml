@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_drag_equipment_8cs" kind="file">
+    <compoundname>DragEquipment.cs</compoundname>
+    <innerclass refid="class_drag_equipment" prot="public">DragEquipment</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Collections;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Collections.Generic;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>UnityEngine;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>UnityEngine.EventSystems;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="class_drag_equipment" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_drag_equipment" kindref="compound">DragEquipment</ref><sp/>:<sp/><ref refid="class_drag" kindref="compound">Drag</ref></highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="9" refid="class_drag_equipment_1a259c84b153659538e0f63e8a80c02ce4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_equipment_stack" kindref="compound">EquipmentStack</ref><sp/><ref refid="class_drag_equipment_1a259c84b153659538e0f63e8a80c02ce4" kindref="member">EquipStack</ref><sp/>{<sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">;<sp/>set;<sp/>}</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="class_drag_equipment_1a73db69b6e53ca46b849e46eb3a8cb398" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_drag_equipment_1a73db69b6e53ca46b849e46eb3a8cb398" kindref="member">OnCantDrag</ref>()</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_drag_equipment_1a259c84b153659538e0f63e8a80c02ce4" kindref="member">EquipStack</ref>.<ref refid="class_equipment_stack_1afd0cfe57cae1b79a1e63aa64caaebe9e" kindref="member">EquipmentStats</ref>.<ref refid="struct_equipment_stats_1aeb10a54b818a9a8c9c1aec28a00da3ca" kindref="member">Type</ref><sp/>==<sp/><ref refid="struct_equipment_stats" kindref="compound">EquipmentStats</ref>.<ref refid="struct_equipment_stats_1a935e37e1984e51d33f41ef211c5d3a62" kindref="member">TypeOfEquipment</ref>.WEAPON)</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Toast.Instance.Show(<ref refid="class_localization_1a807c845440a15261147d129f58902ea7" kindref="member">Localization.toast_cant_drop_weapon</ref>);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>base.OnCantDrag();</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="class_drag_equipment_1a6dad6b2a4327de1e39c816378a99f891" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_drag_equipment_1a6dad6b2a4327de1e39c816378a99f891" kindref="member">OnPointerClick</ref>(PointerEventData<sp/>eventData)</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_description" kindref="compound">Description</ref><sp/>desc<sp/>=<sp/>EquipStack.EquipmentStats.GetDescription();</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>desc.Icon<sp/>=<sp/>EquipStack.EquipmentMainProperties.Icon;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>desc.Name<sp/>=<sp/>Localization.GetString(EquipStack.EquipmentMainProperties.StringResourceName);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>desc.Desc<sp/>=<sp/>Localization.GetString(EquipStack.EquipmentMainProperties.StringResourceDescription);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TipsPanel.Instance.Show(desc,<sp/>thisTransform.position);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/DragEquipment.cs"/>
+  </compounddef>
+</doxygen>

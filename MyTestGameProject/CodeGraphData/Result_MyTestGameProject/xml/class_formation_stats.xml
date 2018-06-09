@@ -1,0 +1,316 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_formation_stats" kind="class" prot="public">
+    <compoundname>FormationStats</compoundname>
+    <derivedcompoundref refid="class_formation_stats_1_1_phalanx" prot="public" virt="non-virtual">FormationStats.Phalanx</derivedcompoundref>
+    <derivedcompoundref refid="class_formation_stats_1_1_ranks" prot="public" virt="non-virtual">FormationStats.Ranks</derivedcompoundref>
+    <derivedcompoundref refid="class_formation_stats_1_1_rised_shields" prot="public" virt="non-virtual">FormationStats.RisedShields</derivedcompoundref>
+    <innerclass refid="class_formation_stats_1_1_phalanx" prot="public">FormationStats::Phalanx</innerclass>
+    <innerclass refid="class_formation_stats_1_1_ranks" prot="public">FormationStats::Ranks</innerclass>
+    <innerclass refid="class_formation_stats_1_1_rised_shields" prot="public">FormationStats::RisedShields</innerclass>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="class_formation_stats_1ab336466e6a234574db24f2ec914e1dd4" prot="public" static="no">
+        <name>Formations</name>
+        <enumvalue id="class_formation_stats_1ab336466e6a234574db24f2ec914e1dd4acec3572bbb7f69ff61fc1a1f55762c76" prot="public">
+          <name>RANKS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_formation_stats_1ab336466e6a234574db24f2ec914e1dd4aac1fd446cf61785d5d5c8946167f0665" prot="public">
+          <name>PHALANX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_formation_stats_1ab336466e6a234574db24f2ec914e1dd4a68377d2819f7890ee67735f2b4f83709" prot="public">
+          <name>RISEDSHIELDS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/FormationStats.cs" line="8" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/FormationStats.cs" bodystart="8" bodyend="8"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_formation_stats_1afd3477128f780bbacf5697ea98f2c254" prot="public" static="no" mutable="no">
+        <type>readonly <ref refid="class_formation_stats_1ab336466e6a234574db24f2ec914e1dd4" kindref="member">Formations</ref></type>
+        <definition>readonly Formations FormationStats.FORMATION</definition>
+        <argsstring></argsstring>
+        <name>FORMATION</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/FormationStats.cs" line="10" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/FormationStats.cs" bodystart="10" bodyend="-1"/>
+        <referencedby refid="struct_unit_stats_1a6980f24167779f11bb3fcdbdddde1d4a" compoundref="_unit_stats_8cs" startline="69" endline="159">UnitStats.CalcStats</referencedby>
+        <referencedby refid="class_formation_stats_1aec6c923cc572c85fba1588f0795d6fbd" compoundref="_formation_stats_8cs" startline="25" endline="51">FormationStats</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_formation_stats_1a6dd171ee5db9d9bdd16669b7b05d7925" prot="public" static="no" mutable="no">
+        <type>readonly float</type>
+        <definition>readonly float FormationStats.SQUAD_ADDITIONAL_SPEED</definition>
+        <argsstring></argsstring>
+        <name>SQUAD_ADDITIONAL_SPEED</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/FormationStats.cs" line="12" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/FormationStats.cs" bodystart="12" bodyend="-1"/>
+        <referencedby refid="class_formation_stats_1aec6c923cc572c85fba1588f0795d6fbd" compoundref="_formation_stats_8cs" startline="25" endline="51">FormationStats</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_formation_stats_1ad92393263b6465096c561a2f03cd8c8d" prot="public" static="no" mutable="no">
+        <type>readonly float</type>
+        <definition>readonly float FormationStats.SQUAD_ADDITIONAL_ROTATION_SPEED</definition>
+        <argsstring></argsstring>
+        <name>SQUAD_ADDITIONAL_ROTATION_SPEED</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/FormationStats.cs" line="13" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/FormationStats.cs" bodystart="13" bodyend="-1"/>
+        <referencedby refid="class_formation_stats_1aec6c923cc572c85fba1588f0795d6fbd" compoundref="_formation_stats_8cs" startline="25" endline="51">FormationStats</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_formation_stats_1a432994c885091b97aaef232cc64e5b4e" prot="public" static="no" mutable="no">
+        <type>readonly float</type>
+        <definition>readonly float FormationStats.UNIT_ADDITIONAL_SPEED</definition>
+        <argsstring></argsstring>
+        <name>UNIT_ADDITIONAL_SPEED</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/FormationStats.cs" line="15" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/FormationStats.cs" bodystart="15" bodyend="-1"/>
+        <referencedby refid="class_formation_stats_1aec6c923cc572c85fba1588f0795d6fbd" compoundref="_formation_stats_8cs" startline="25" endline="51">FormationStats</referencedby>
+        <referencedby refid="class_formation_stats_1a9f376a5914a4478dd43d24957d660303" compoundref="_formation_stats_8cs" startline="53" endline="189">GetModifiers</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_formation_stats_1a492a6a7f3b742e30c9f95c1942207c9e" prot="public" static="no" mutable="no">
+        <type>readonly float</type>
+        <definition>readonly float FormationStats.UNIT_ADDITIONAL_ROTATION_SPEED</definition>
+        <argsstring></argsstring>
+        <name>UNIT_ADDITIONAL_ROTATION_SPEED</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/FormationStats.cs" line="16" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/FormationStats.cs" bodystart="16" bodyend="-1"/>
+        <referencedby refid="class_formation_stats_1aec6c923cc572c85fba1588f0795d6fbd" compoundref="_formation_stats_8cs" startline="25" endline="51">FormationStats</referencedby>
+        <referencedby refid="class_formation_stats_1a9f376a5914a4478dd43d24957d660303" compoundref="_formation_stats_8cs" startline="53" endline="189">GetModifiers</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_formation_stats_1ae8169d7f7ed2633e0b0e5bfa774e5ae9" prot="public" static="no" mutable="no">
+        <type>readonly float</type>
+        <definition>readonly float FormationStats.UNIT_ADDITIONAL_DAMAGE</definition>
+        <argsstring></argsstring>
+        <name>UNIT_ADDITIONAL_DAMAGE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/FormationStats.cs" line="18" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/FormationStats.cs" bodystart="18" bodyend="-1"/>
+        <referencedby refid="struct_unit_stats_1a6980f24167779f11bb3fcdbdddde1d4a" compoundref="_unit_stats_8cs" startline="69" endline="159">UnitStats.CalcStats</referencedby>
+        <referencedby refid="class_formation_stats_1aec6c923cc572c85fba1588f0795d6fbd" compoundref="_formation_stats_8cs" startline="25" endline="51">FormationStats</referencedby>
+        <referencedby refid="class_formation_stats_1a9f376a5914a4478dd43d24957d660303" compoundref="_formation_stats_8cs" startline="53" endline="189">GetModifiers</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_formation_stats_1a56ffbcaf263e583ec848e7de0c0d424e" prot="public" static="no" mutable="no">
+        <type>readonly float</type>
+        <definition>readonly float FormationStats.UNIT_ADDITIONAL_ATTACK</definition>
+        <argsstring></argsstring>
+        <name>UNIT_ADDITIONAL_ATTACK</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/FormationStats.cs" line="20" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/FormationStats.cs" bodystart="20" bodyend="-1"/>
+        <referencedby refid="class_formation_stats_1aec6c923cc572c85fba1588f0795d6fbd" compoundref="_formation_stats_8cs" startline="25" endline="51">FormationStats</referencedby>
+        <referencedby refid="class_formation_stats_1a9f376a5914a4478dd43d24957d660303" compoundref="_formation_stats_8cs" startline="53" endline="189">GetModifiers</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_formation_stats_1a6d2e3525cdae63f81b6b76a92f225adc" prot="public" static="no" mutable="no">
+        <type>readonly float</type>
+        <definition>readonly float FormationStats.UNIT_ADDITIONAL_DEFENCE</definition>
+        <argsstring></argsstring>
+        <name>UNIT_ADDITIONAL_DEFENCE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/FormationStats.cs" line="21" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/FormationStats.cs" bodystart="21" bodyend="-1"/>
+        <referencedby refid="class_formation_stats_1aec6c923cc572c85fba1588f0795d6fbd" compoundref="_formation_stats_8cs" startline="25" endline="51">FormationStats</referencedby>
+        <referencedby refid="class_formation_stats_1a9f376a5914a4478dd43d24957d660303" compoundref="_formation_stats_8cs" startline="53" endline="189">GetModifiers</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_formation_stats_1a7fdb17ed2e6e240c37b05d0720289c78" prot="public" static="no" mutable="no">
+        <type>readonly float</type>
+        <definition>readonly float FormationStats.UNIT_ADDITIONAL_DEFENCE_SECTOR</definition>
+        <argsstring></argsstring>
+        <name>UNIT_ADDITIONAL_DEFENCE_SECTOR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/FormationStats.cs" line="23" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/FormationStats.cs" bodystart="23" bodyend="-1"/>
+        <referencedby refid="class_formation_stats_1aec6c923cc572c85fba1588f0795d6fbd" compoundref="_formation_stats_8cs" startline="25" endline="51">FormationStats</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_formation_stats_1aec6c923cc572c85fba1588f0795d6fbd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>FormationStats.FormationStats</definition>
+        <argsstring>(float SQUAD_ADDITIONAL_SPEED=0, float SQUAD_ADDITIONAL_ROTATION_SPEED=0, float UNIT_ADDITIONAL_SPEED=0, float UNIT_ADDITIONAL_ROTATION_SPEED=0, float UNIT_ADDITIONAL_DAMAGE=0, float UNIT_ADDITIONAL_ATTACK=0, float UNIT_ADDITIONAL_DEFENCE=0, float UNIT_ADDITIONAL_DEFENCE_SECTOR=0, Formations FORMATION=Formations.RANKS)</argsstring>
+        <name>FormationStats</name>
+        <param>
+          <type>float</type>
+          <declname>SQUAD_ADDITIONAL_SPEED</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>SQUAD_ADDITIONAL_ROTATION_SPEED</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>UNIT_ADDITIONAL_SPEED</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>UNIT_ADDITIONAL_ROTATION_SPEED</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>UNIT_ADDITIONAL_DAMAGE</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>UNIT_ADDITIONAL_ATTACK</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>UNIT_ADDITIONAL_DEFENCE</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>UNIT_ADDITIONAL_DEFENCE_SECTOR</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type><ref refid="class_formation_stats_1ab336466e6a234574db24f2ec914e1dd4" kindref="member">Formations</ref></type>
+          <declname>FORMATION</declname>
+          <defval>Formations.RANKS</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/FormationStats.cs" line="25" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/FormationStats.cs" bodystart="25" bodyend="51"/>
+        <references refid="class_formation_stats_1afd3477128f780bbacf5697ea98f2c254" compoundref="_formation_stats_8cs" startline="10">FORMATION</references>
+        <references refid="class_formation_stats_1ad92393263b6465096c561a2f03cd8c8d" compoundref="_formation_stats_8cs" startline="13">SQUAD_ADDITIONAL_ROTATION_SPEED</references>
+        <references refid="class_formation_stats_1a6dd171ee5db9d9bdd16669b7b05d7925" compoundref="_formation_stats_8cs" startline="12">SQUAD_ADDITIONAL_SPEED</references>
+        <references refid="class_formation_stats_1a56ffbcaf263e583ec848e7de0c0d424e" compoundref="_formation_stats_8cs" startline="20">UNIT_ADDITIONAL_ATTACK</references>
+        <references refid="class_formation_stats_1ae8169d7f7ed2633e0b0e5bfa774e5ae9" compoundref="_formation_stats_8cs" startline="18">UNIT_ADDITIONAL_DAMAGE</references>
+        <references refid="class_formation_stats_1a6d2e3525cdae63f81b6b76a92f225adc" compoundref="_formation_stats_8cs" startline="21">UNIT_ADDITIONAL_DEFENCE</references>
+        <references refid="class_formation_stats_1a7fdb17ed2e6e240c37b05d0720289c78" compoundref="_formation_stats_8cs" startline="23">UNIT_ADDITIONAL_DEFENCE_SECTOR</references>
+        <references refid="class_formation_stats_1a492a6a7f3b742e30c9f95c1942207c9e" compoundref="_formation_stats_8cs" startline="16">UNIT_ADDITIONAL_ROTATION_SPEED</references>
+        <references refid="class_formation_stats_1a432994c885091b97aaef232cc64e5b4e" compoundref="_formation_stats_8cs" startline="15">UNIT_ADDITIONAL_SPEED</references>
+      </memberdef>
+      <memberdef kind="function" id="class_formation_stats_1a9f376a5914a4478dd43d24957d660303" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_description_item" kindref="compound">DescriptionItem</ref>[]</type>
+        <definition>DescriptionItem [] FormationStats.GetModifiers</definition>
+        <argsstring>()</argsstring>
+        <name>GetModifiers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/FormationStats.cs" line="53" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/FormationStats.cs" bodystart="53" bodyend="189"/>
+        <references refid="class_localization_1abe988043268bf1df9b043b4c6132eac4" compoundref="_localization_8cs" startline="43">Localization.attack</references>
+        <references refid="class_localization_1a69e3dec51c793b9e3076ccdf872fd90e" compoundref="_localization_8cs" startline="41">Localization.baseDamage</references>
+        <references refid="class_localization_1aa59e738e89e173c55274f11e312719e3" compoundref="_localization_8cs" startline="138">Localization.currentValue</references>
+        <references refid="class_localization_1aaf52bb22da36d2eaf241712e760b03db" compoundref="_localization_8cs" startline="44">Localization.defence</references>
+        <references refid="class_localization_1a5fafeb8a861de28ae27422531c1d7c05" compoundref="_localization_8cs" startline="50">Localization.rotationSpeed</references>
+        <references refid="class_localization_1ad8453dce5e4c888a9e54160258499dcd" compoundref="_localization_8cs" startline="48">Localization.speed</references>
+        <references refid="class_formation_stats_1a56ffbcaf263e583ec848e7de0c0d424e" compoundref="_formation_stats_8cs" startline="20">UNIT_ADDITIONAL_ATTACK</references>
+        <references refid="class_formation_stats_1ae8169d7f7ed2633e0b0e5bfa774e5ae9" compoundref="_formation_stats_8cs" startline="18">UNIT_ADDITIONAL_DAMAGE</references>
+        <references refid="class_formation_stats_1a6d2e3525cdae63f81b6b76a92f225adc" compoundref="_formation_stats_8cs" startline="21">UNIT_ADDITIONAL_DEFENCE</references>
+        <references refid="class_formation_stats_1a492a6a7f3b742e30c9f95c1942207c9e" compoundref="_formation_stats_8cs" startline="16">UNIT_ADDITIONAL_ROTATION_SPEED</references>
+        <references refid="class_formation_stats_1a432994c885091b97aaef232cc64e5b4e" compoundref="_formation_stats_8cs" startline="15">UNIT_ADDITIONAL_SPEED</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="391">
+        <label>FormationStats.Ranks</label>
+        <link refid="class_formation_stats_1_1_ranks"/>
+        <childnode refid="389" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="390">
+        <label>FormationStats.Phalanx</label>
+        <link refid="class_formation_stats_1_1_phalanx"/>
+        <childnode refid="389" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="392">
+        <label>FormationStats.RisedShields</label>
+        <link refid="class_formation_stats_1_1_rised_shields"/>
+        <childnode refid="389" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="389">
+        <label>FormationStats</label>
+        <link refid="class_formation_stats"/>
+      </node>
+    </inheritancegraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/FormationStats.cs" line="7" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/FormationStats.cs" bodystart="6" bodyend="219"/>
+    <listofallmembers>
+      <member refid="class_formation_stats_1afd3477128f780bbacf5697ea98f2c254" prot="public" virt="non-virtual"><scope>FormationStats</scope><name>FORMATION</name></member>
+      <member refid="class_formation_stats_1ab336466e6a234574db24f2ec914e1dd4" prot="public" virt="non-virtual"><scope>FormationStats</scope><name>Formations</name></member>
+      <member refid="class_formation_stats_1aec6c923cc572c85fba1588f0795d6fbd" prot="public" virt="non-virtual"><scope>FormationStats</scope><name>FormationStats</name></member>
+      <member refid="class_formation_stats_1a9f376a5914a4478dd43d24957d660303" prot="public" virt="non-virtual"><scope>FormationStats</scope><name>GetModifiers</name></member>
+      <member refid="class_formation_stats_1ad92393263b6465096c561a2f03cd8c8d" prot="public" virt="non-virtual"><scope>FormationStats</scope><name>SQUAD_ADDITIONAL_ROTATION_SPEED</name></member>
+      <member refid="class_formation_stats_1a6dd171ee5db9d9bdd16669b7b05d7925" prot="public" virt="non-virtual"><scope>FormationStats</scope><name>SQUAD_ADDITIONAL_SPEED</name></member>
+      <member refid="class_formation_stats_1a56ffbcaf263e583ec848e7de0c0d424e" prot="public" virt="non-virtual"><scope>FormationStats</scope><name>UNIT_ADDITIONAL_ATTACK</name></member>
+      <member refid="class_formation_stats_1ae8169d7f7ed2633e0b0e5bfa774e5ae9" prot="public" virt="non-virtual"><scope>FormationStats</scope><name>UNIT_ADDITIONAL_DAMAGE</name></member>
+      <member refid="class_formation_stats_1a6d2e3525cdae63f81b6b76a92f225adc" prot="public" virt="non-virtual"><scope>FormationStats</scope><name>UNIT_ADDITIONAL_DEFENCE</name></member>
+      <member refid="class_formation_stats_1a7fdb17ed2e6e240c37b05d0720289c78" prot="public" virt="non-virtual"><scope>FormationStats</scope><name>UNIT_ADDITIONAL_DEFENCE_SECTOR</name></member>
+      <member refid="class_formation_stats_1a492a6a7f3b742e30c9f95c1942207c9e" prot="public" virt="non-virtual"><scope>FormationStats</scope><name>UNIT_ADDITIONAL_ROTATION_SPEED</name></member>
+      <member refid="class_formation_stats_1a432994c885091b97aaef232cc64e5b4e" prot="public" virt="non-virtual"><scope>FormationStats</scope><name>UNIT_ADDITIONAL_SPEED</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

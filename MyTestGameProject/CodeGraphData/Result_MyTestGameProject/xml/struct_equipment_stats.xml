@@ -1,0 +1,862 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="struct_equipment_stats" kind="struct" prot="public">
+    <compoundname>EquipmentStats</compoundname>
+    <basecompoundref refid="interface_i_descriptionable" prot="public" virt="non-virtual">IDescriptionable</basecompoundref>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="struct_equipment_stats_1a935e37e1984e51d33f41ef211c5d3a62" prot="public" static="no">
+        <name>TypeOfEquipment</name>
+        <enumvalue id="struct_equipment_stats_1a935e37e1984e51d33f41ef211c5d3a62ae15e216fc1c639f787b1231ecdfa1bf8" prot="public">
+          <name>HEAD</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_equipment_stats_1a935e37e1984e51d33f41ef211c5d3a62a786329b34bbe53ab40a54a19cd597f2d" prot="public">
+          <name>BODY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_equipment_stats_1a935e37e1984e51d33f41ef211c5d3a62afa210a33410373b3274f91cd1f289fb1" prot="public">
+          <name>SHIELD</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_equipment_stats_1a935e37e1984e51d33f41ef211c5d3a62a192633948703cf46924846d15ea7b5c1" prot="public">
+          <name>WEAPON</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" line="9" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" bodystart="9" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="enum" id="struct_equipment_stats_1adb97d89712a349151f7c761bdcff561b" prot="public" static="no">
+        <name>Durability</name>
+        <enumvalue id="struct_equipment_stats_1adb97d89712a349151f7c761bdcff561ba3cf53b7601ee463412beea23294bd347" prot="public">
+          <name>DAMAGED</name>
+          <initializer>= 30</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_equipment_stats_1adb97d89712a349151f7c761bdcff561ba58019204e811ecbd32061732bf9fbd69" prot="public">
+          <name>WORN</name>
+          <initializer>= 70</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="struct_equipment_stats_1adb97d89712a349151f7c761bdcff561ba24d459a81449d7210c8f9a86c2913034" prot="public">
+          <name>NEW</name>
+          <initializer>= 100</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" line="10" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" bodystart="10" bodyend="10"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_equipment_stats_1aa8b9b5b1e936a27d585605f7ccb64915" prot="public" static="no" mutable="no">
+        <type>const float</type>
+        <definition>const float EquipmentStats.percentKoef</definition>
+        <argsstring></argsstring>
+        <name>percentKoef</name>
+        <initializer>= 0.01f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" line="12" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_equipment_stats_1ad9e07adc14c2f8014e12f5c9d1af0932" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_equipment_stats_1a935e37e1984e51d33f41ef211c5d3a62" kindref="member">TypeOfEquipment</ref></type>
+        <definition>TypeOfEquipment EquipmentStats.type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" line="15" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_equipment_stats_1a892bff7cb50dfddca3c7e4b874ab006d" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int EquipmentStats.id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" line="18" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_equipment_stats_1afc1e18463c25c799fe3d8c6c821c71bb" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool EquipmentStats.empty</definition>
+        <argsstring></argsstring>
+        <name>empty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" line="21" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_equipment_stats_1a98d1982271bf54cf3bc8818185098400" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool EquipmentStats.canReformToFhalanx</definition>
+        <argsstring></argsstring>
+        <name>canReformToFhalanx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" line="24" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" bodystart="24" bodyend="-1"/>
+        <referencedby refid="struct_equipment_stats_1aa5808678f48da4fbb5d2b4f1d162a781" compoundref="_equipment_stats_8cs" startline="92" endline="314">GetDescription</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_equipment_stats_1a70d33232cf893854e31dae5221939867" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool EquipmentStats.canReformToPhalanxInFight</definition>
+        <argsstring></argsstring>
+        <name>canReformToPhalanxInFight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" line="27" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" bodystart="27" bodyend="-1"/>
+        <referencedby refid="struct_equipment_stats_1aa5808678f48da4fbb5d2b4f1d162a781" compoundref="_equipment_stats_8cs" startline="92" endline="314">GetDescription</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_equipment_stats_1a58b9f92720c7325030f6b0cb428f18f6" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool EquipmentStats.canUseWithShield</definition>
+        <argsstring></argsstring>
+        <name>canUseWithShield</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" line="30" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" bodystart="30" bodyend="-1"/>
+        <referencedby refid="struct_equipment_stats_1aa5808678f48da4fbb5d2b4f1d162a781" compoundref="_equipment_stats_8cs" startline="92" endline="314">GetDescription</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_equipment_stats_1a5f6c1066f1a26a7db0e32618a0468f2e" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_equipment_stats_1adb97d89712a349151f7c761bdcff561b" kindref="member">Durability</ref></type>
+        <definition>Durability EquipmentStats.durability</definition>
+        <argsstring></argsstring>
+        <name>durability</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" line="34" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_equipment_stats_1a2a246404affed9dabf920041f110532e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int EquipmentStats.mass</definition>
+        <argsstring></argsstring>
+        <name>mass</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" line="40" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_equipment_stats_1a49208e8da4491b4019d09fc9ff52709d" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float EquipmentStats.attackDistance</definition>
+        <argsstring></argsstring>
+        <name>attackDistance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" line="43" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_equipment_stats_1a89570c6ae4a7fca4156670988331da1f" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float EquipmentStats.addAttack</definition>
+        <argsstring></argsstring>
+        <name>addAttack</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" line="47" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_equipment_stats_1af7a355893b3dab624432d3627bec4206" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float EquipmentStats.addDefence</definition>
+        <argsstring></argsstring>
+        <name>addDefence</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" line="50" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_equipment_stats_1a91db10a1d7fdbdf056fef032a0bd0981" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float EquipmentStats.addDefenceHalfSector</definition>
+        <argsstring></argsstring>
+        <name>addDefenceHalfSector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" line="53" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_equipment_stats_1a7583f57a80051f9ad3cf34508e905684" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float EquipmentStats.addSpeed</definition>
+        <argsstring></argsstring>
+        <name>addSpeed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" line="56" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_equipment_stats_1a3e4556b80cad6ba442eb2df360784f4d" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float EquipmentStats.addAcceleretion</definition>
+        <argsstring></argsstring>
+        <name>addAcceleretion</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" line="59" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_equipment_stats_1a51e1077fd6e12246f94b4ce9031424a8" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float EquipmentStats.addRotationSpeed</definition>
+        <argsstring></argsstring>
+        <name>addRotationSpeed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" line="62" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_equipment_stats_1a688b998459f81b6ef3c7d561e0a5276d" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float EquipmentStats.addChargeImpact</definition>
+        <argsstring></argsstring>
+        <name>addChargeImpact</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" line="65" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_equipment_stats_1ab42e952e8bd52c11a0a865b6969bbae8" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float EquipmentStats.addChargeDeflect</definition>
+        <argsstring></argsstring>
+        <name>addChargeDeflect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" line="68" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_equipment_stats_1a4027a5c4f129c9d2f9a3132c521fbe5f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int EquipmentStats.cost</definition>
+        <argsstring></argsstring>
+        <name>cost</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" line="75" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_equipment_stats_1aea614f85f348f802878fe0bdde9b80ae" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float EquipmentStats.armour</definition>
+        <argsstring></argsstring>
+        <name>armour</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" line="78" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_equipment_stats_1a8d24060fedd48f4d794119436d3779c4" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_damage" kindref="compound">Damage</ref></type>
+        <definition>Damage EquipmentStats.damage</definition>
+        <argsstring></argsstring>
+        <name>damage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" line="81" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_equipment_stats_1aabdbf321999b7fb929385cc10c6f0978" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float EquipmentStats.missileBlock</definition>
+        <argsstring></argsstring>
+        <name>missileBlock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" line="84" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_equipment_stats_1a9daff4740f6bd22395867b695daea7c4" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float EquipmentStats.addChargeDamage</definition>
+        <argsstring></argsstring>
+        <name>addChargeDamage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" line="88" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="struct_equipment_stats_1aeb10a54b818a9a8c9c1aec28a00da3ca" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type><ref refid="struct_equipment_stats_1a935e37e1984e51d33f41ef211c5d3a62" kindref="member">TypeOfEquipment</ref></type>
+        <definition>TypeOfEquipment EquipmentStats.Type</definition>
+        <argsstring></argsstring>
+        <name>Type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" line="16" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" bodystart="16" bodyend="-1"/>
+        <referencedby refid="class_drag_equipment_1a73db69b6e53ca46b849e46eb3a8cb398" compoundref="_drag_equipment_8cs" startline="11" endline="17">DragEquipment.OnCantDrag</referencedby>
+        <referencedby refid="class_drop_to_equipment_1ae3d4d93b720430bbd8a03ecd83bac01b" compoundref="_drop_to_equipment_8cs" startline="7" endline="44">DropToEquipment.OnDrop</referencedby>
+        <referencedby refid="class_drop_to_inventory_1a0d4c04875df9f644d56798b13b0fe471" compoundref="_drop_to_inventory_8cs" startline="9" endline="54">DropToInventory.OnDrop</referencedby>
+        <referencedby refid="class_envirinmant_inventory_u_i_1a9bf125b3eecfde16b932c6f8fbc414e3" compoundref="_envirinmant_inventory_u_i_8cs" startline="188" endline="213">EnvirinmantInventoryUI.PickUpEquipment</referencedby>
+        <referencedby refid="class_equipment_stack_1a48314cadc8c8206c68b098062ee88422" compoundref="_equipment_stack_8cs" startline="43" endline="51">EquipmentStack.PushItems</referencedby>
+        <referencedby refid="class_drop_to_inventory_1aca372615bb6aa26b2c85a1bbdb05e3d2" compoundref="_drop_to_inventory_8cs" startline="73" endline="91">DropToInventory.RemoveFromThisInventory</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="struct_equipment_stats_1a40d92422bb84c73f61b6f3102da17dfb" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>int</type>
+        <definition>int EquipmentStats.Id</definition>
+        <argsstring></argsstring>
+        <name>Id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" line="19" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" bodystart="19" bodyend="-1"/>
+        <referencedby refid="class_unit_1a95a18047de7c98c3a6256788b178880d" compoundref="_unit_8cs" startline="798" endline="825">Unit.CheckEquipment</referencedby>
+        <referencedby refid="class_drop_to_equipment_1ae3d4d93b720430bbd8a03ecd83bac01b" compoundref="_drop_to_equipment_8cs" startline="7" endline="44">DropToEquipment.OnDrop</referencedby>
+        <referencedby refid="class_drop_to_inventory_1a0d4c04875df9f644d56798b13b0fe471" compoundref="_drop_to_inventory_8cs" startline="9" endline="54">DropToInventory.OnDrop</referencedby>
+        <referencedby refid="class_envirinmant_inventory_u_i_1a9bf125b3eecfde16b932c6f8fbc414e3" compoundref="_envirinmant_inventory_u_i_8cs" startline="188" endline="213">EnvirinmantInventoryUI.PickUpEquipment</referencedby>
+        <referencedby refid="class_equipment_stack_1a48314cadc8c8206c68b098062ee88422" compoundref="_equipment_stack_8cs" startline="43" endline="51">EquipmentStack.PushItems</referencedby>
+        <referencedby refid="class_drop_to_inventory_1aca372615bb6aa26b2c85a1bbdb05e3d2" compoundref="_drop_to_inventory_8cs" startline="73" endline="91">DropToInventory.RemoveFromThisInventory</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="struct_equipment_stats_1abd05f10096c1d46af0f13806b754118e" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>bool</type>
+        <definition>bool EquipmentStats.Empty</definition>
+        <argsstring></argsstring>
+        <name>Empty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" line="22" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" bodystart="22" bodyend="-1"/>
+        <referencedby refid="class_drop_to_equipment_1a0bc83af63ecd40bb3c2be8355c878a7f" compoundref="_drop_to_equipment_8cs" startline="46" endline="84">DropToEquipment.AddToThisInventory</referencedby>
+        <referencedby refid="class_unit_1a668a8b3411432237b13db3c5a9d768d6" compoundref="_unit_8cs" startline="312" endline="390">Unit.Death</referencedby>
+        <referencedby refid="struct_equipment_stats_1aa5808678f48da4fbb5d2b4f1d162a781" compoundref="_equipment_stats_8cs" startline="92" endline="314">GetDescription</referencedby>
+        <referencedby refid="class_drop_to_equipment_1ae3d4d93b720430bbd8a03ecd83bac01b" compoundref="_drop_to_equipment_8cs" startline="7" endline="44">DropToEquipment.OnDrop</referencedby>
+        <referencedby refid="class_squad_inventory_u_i_1a1c33efc57d748213dac793c00997c015" compoundref="_squad_inventory_u_i_8cs" startline="61" endline="108">SquadInventoryUI.RefreshUI</referencedby>
+        <referencedby refid="class_squad_1a682baf77f537896bdf4ea37f354ab115" compoundref="_squad_8cs" startline="349" endline="371">Squad.SetProp</referencedby>
+        <referencedby refid="class_unit_1a81ef87020279968371316b61ae6b408c" compoundref="_unit_8cs" startline="901" endline="946">Unit.TakeHitFromArrow</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="struct_equipment_stats_1a18798b5db90bb12a8c79ca987c028c3d" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>bool</type>
+        <definition>bool EquipmentStats.CanReformToPhalanx</definition>
+        <argsstring></argsstring>
+        <name>CanReformToPhalanx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" line="25" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" bodystart="25" bodyend="-1"/>
+        <referencedby refid="class_unit_1ac1b02baf91d8c2b7d784e469f04c71a5" compoundref="_unit_8cs" startline="496" endline="516">Unit.SetWeapon</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="struct_equipment_stats_1a3470ee48af6c71249a3436e052ecb22c" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>bool</type>
+        <definition>bool EquipmentStats.CanReformToPhalanxInFight</definition>
+        <argsstring></argsstring>
+        <name>CanReformToPhalanxInFight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" line="28" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" bodystart="28" bodyend="-1"/>
+        <referencedby refid="class_unit_1ac1b02baf91d8c2b7d784e469f04c71a5" compoundref="_unit_8cs" startline="496" endline="516">Unit.SetWeapon</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="struct_equipment_stats_1a4c2deb6509d0a0722248f5929f6af58c" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>bool</type>
+        <definition>bool EquipmentStats.CanUseWithShield</definition>
+        <argsstring></argsstring>
+        <name>CanUseWithShield</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" line="31" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" bodystart="31" bodyend="-1"/>
+        <referencedby refid="class_drop_to_equipment_1a0bc83af63ecd40bb3c2be8355c878a7f" compoundref="_drop_to_equipment_8cs" startline="46" endline="84">DropToEquipment.AddToThisInventory</referencedby>
+        <referencedby refid="class_squad_1a682baf77f537896bdf4ea37f354ab115" compoundref="_squad_8cs" startline="349" endline="371">Squad.SetProp</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="struct_equipment_stats_1a8dc2ea9210642e140167bb1030760f3e" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="struct_equipment_stats_1adb97d89712a349151f7c761bdcff561b" kindref="member">Durability</ref></type>
+        <definition>Durability EquipmentStats.ItemDurability</definition>
+        <argsstring></argsstring>
+        <name>ItemDurability</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" line="35" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" bodystart="35" bodyend="-1"/>
+        <referencedby refid="struct_equipment_stats_1aa5808678f48da4fbb5d2b4f1d162a781" compoundref="_equipment_stats_8cs" startline="92" endline="314">GetDescription</referencedby>
+        <referencedby refid="class_drop_to_equipment_1ae3d4d93b720430bbd8a03ecd83bac01b" compoundref="_drop_to_equipment_8cs" startline="7" endline="44">DropToEquipment.OnDrop</referencedby>
+        <referencedby refid="class_drop_to_inventory_1a0d4c04875df9f644d56798b13b0fe471" compoundref="_drop_to_inventory_8cs" startline="9" endline="54">DropToInventory.OnDrop</referencedby>
+        <referencedby refid="class_envirinmant_inventory_u_i_1a9bf125b3eecfde16b932c6f8fbc414e3" compoundref="_envirinmant_inventory_u_i_8cs" startline="188" endline="213">EnvirinmantInventoryUI.PickUpEquipment</referencedby>
+        <referencedby refid="class_equipment_stack_1a48314cadc8c8206c68b098062ee88422" compoundref="_equipment_stack_8cs" startline="43" endline="51">EquipmentStack.PushItems</referencedby>
+        <referencedby refid="class_drop_to_inventory_1aca372615bb6aa26b2c85a1bbdb05e3d2" compoundref="_drop_to_inventory_8cs" startline="73" endline="91">DropToInventory.RemoveFromThisInventory</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="struct_equipment_stats_1a9d4615bd2815efb4cb3559624a7a5c7f" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>int</type>
+        <definition>int EquipmentStats.Mass</definition>
+        <argsstring></argsstring>
+        <name>Mass</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" line="41" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" bodystart="41" bodyend="-1"/>
+        <referencedby refid="struct_unit_stats_1a6980f24167779f11bb3fcdbdddde1d4a" compoundref="_unit_stats_8cs" startline="69" endline="159">UnitStats.CalcStats</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="struct_equipment_stats_1a3609df9fe3cacadcc82ae7bfae83543d" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>float</type>
+        <definition>float EquipmentStats.AttackDistance</definition>
+        <argsstring></argsstring>
+        <name>AttackDistance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" line="44" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" bodystart="44" bodyend="-1"/>
+        <referencedby refid="struct_equipment_stats_1aa5808678f48da4fbb5d2b4f1d162a781" compoundref="_equipment_stats_8cs" startline="92" endline="314">GetDescription</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="struct_equipment_stats_1ab74add5227ef4230609a9538482ae60e" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>float</type>
+        <definition>float EquipmentStats.AddAttack</definition>
+        <argsstring></argsstring>
+        <name>AddAttack</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" line="48" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" bodystart="48" bodyend="-1"/>
+        <referencedby refid="struct_equipment_stats_1aa5808678f48da4fbb5d2b4f1d162a781" compoundref="_equipment_stats_8cs" startline="92" endline="314">GetDescription</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="struct_equipment_stats_1ab1c312d54a619cff5bde1efb50d68e60" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>float</type>
+        <definition>float EquipmentStats.AddDefence</definition>
+        <argsstring></argsstring>
+        <name>AddDefence</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" line="51" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" bodystart="51" bodyend="-1"/>
+        <referencedby refid="struct_equipment_stats_1aa5808678f48da4fbb5d2b4f1d162a781" compoundref="_equipment_stats_8cs" startline="92" endline="314">GetDescription</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="struct_equipment_stats_1abee94ba212773869fc9eac1b6ebe53ae" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>float</type>
+        <definition>float EquipmentStats.AddDefenceHalfSector</definition>
+        <argsstring></argsstring>
+        <name>AddDefenceHalfSector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" line="54" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" bodystart="54" bodyend="-1"/>
+        <referencedby refid="struct_equipment_stats_1aa5808678f48da4fbb5d2b4f1d162a781" compoundref="_equipment_stats_8cs" startline="92" endline="314">GetDescription</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="struct_equipment_stats_1a8abc72f664f9efc2516cc13f43371bfb" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>float</type>
+        <definition>float EquipmentStats.AddSpeed</definition>
+        <argsstring></argsstring>
+        <name>AddSpeed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" line="57" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" bodystart="57" bodyend="-1"/>
+        <referencedby refid="struct_equipment_stats_1aa5808678f48da4fbb5d2b4f1d162a781" compoundref="_equipment_stats_8cs" startline="92" endline="314">GetDescription</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="struct_equipment_stats_1a65e03d79f5e4ab47e02bcb821dbc6338" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>float</type>
+        <definition>float EquipmentStats.AddAcceleretion</definition>
+        <argsstring></argsstring>
+        <name>AddAcceleretion</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" line="60" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" bodystart="60" bodyend="-1"/>
+        <referencedby refid="struct_equipment_stats_1aa5808678f48da4fbb5d2b4f1d162a781" compoundref="_equipment_stats_8cs" startline="92" endline="314">GetDescription</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="struct_equipment_stats_1a6e3e3ab9b9df06b7d2908364b3a756c2" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>float</type>
+        <definition>float EquipmentStats.AddRotationSpeed</definition>
+        <argsstring></argsstring>
+        <name>AddRotationSpeed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" line="63" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" bodystart="63" bodyend="-1"/>
+        <referencedby refid="struct_equipment_stats_1aa5808678f48da4fbb5d2b4f1d162a781" compoundref="_equipment_stats_8cs" startline="92" endline="314">GetDescription</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="struct_equipment_stats_1ad1e98238e1c58aba61cac2d9a8a547ed" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>float</type>
+        <definition>float EquipmentStats.AddChargeImpact</definition>
+        <argsstring></argsstring>
+        <name>AddChargeImpact</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" line="66" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" bodystart="66" bodyend="-1"/>
+        <referencedby refid="struct_equipment_stats_1aa5808678f48da4fbb5d2b4f1d162a781" compoundref="_equipment_stats_8cs" startline="92" endline="314">GetDescription</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="struct_equipment_stats_1a4fd511df19bd4e17d13960dd79200a16" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>float</type>
+        <definition>float EquipmentStats.AddChargeDeflect</definition>
+        <argsstring></argsstring>
+        <name>AddChargeDeflect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" line="69" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" bodystart="69" bodyend="-1"/>
+        <referencedby refid="struct_equipment_stats_1aa5808678f48da4fbb5d2b4f1d162a781" compoundref="_equipment_stats_8cs" startline="92" endline="314">GetDescription</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="struct_equipment_stats_1a44333984bb0d1c82f174f3f5d5f72042" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>int</type>
+        <definition>int EquipmentStats.Cost</definition>
+        <argsstring></argsstring>
+        <name>Cost</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" line="76" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="struct_equipment_stats_1a37a5b6aaadac96669d0049cf88c2ac74" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>float</type>
+        <definition>float EquipmentStats.Armour</definition>
+        <argsstring></argsstring>
+        <name>Armour</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" line="79" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" bodystart="79" bodyend="-1"/>
+        <referencedby refid="struct_equipment_stats_1aa5808678f48da4fbb5d2b4f1d162a781" compoundref="_equipment_stats_8cs" startline="92" endline="314">GetDescription</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="struct_equipment_stats_1a9959ca6a62511189d51dc7971770b804" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type><ref refid="struct_damage" kindref="compound">Damage</ref></type>
+        <definition>Damage EquipmentStats.Damag</definition>
+        <argsstring></argsstring>
+        <name>Damag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" line="82" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" bodystart="82" bodyend="-1"/>
+        <referencedby refid="struct_equipment_stats_1aa5808678f48da4fbb5d2b4f1d162a781" compoundref="_equipment_stats_8cs" startline="92" endline="314">GetDescription</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="struct_equipment_stats_1ad575703314f9a19b32a9a37808ec66cf" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>float</type>
+        <definition>float EquipmentStats.MissileBlock</definition>
+        <argsstring></argsstring>
+        <name>MissileBlock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" line="85" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" bodystart="85" bodyend="-1"/>
+        <referencedby refid="struct_equipment_stats_1aa5808678f48da4fbb5d2b4f1d162a781" compoundref="_equipment_stats_8cs" startline="92" endline="314">GetDescription</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="struct_equipment_stats_1aadd5782f691595089269dce5c2f41624" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>float</type>
+        <definition>float EquipmentStats.AddChargeDamage</definition>
+        <argsstring></argsstring>
+        <name>AddChargeDamage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" line="89" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" bodystart="89" bodyend="-1"/>
+        <referencedby refid="struct_equipment_stats_1aa5808678f48da4fbb5d2b4f1d162a781" compoundref="_equipment_stats_8cs" startline="92" endline="314">GetDescription</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_equipment_stats_1aa5808678f48da4fbb5d2b4f1d162a781" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_description" kindref="compound">Description</ref></type>
+        <definition>Description EquipmentStats.GetDescription</definition>
+        <argsstring>()</argsstring>
+        <name>GetDescription</name>
+        <reimplements refid="interface_i_descriptionable_1a33be6e4687ad788d949f989aaadad45d">GetDescription</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" line="92" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" bodystart="92" bodyend="314"/>
+        <references refid="class_localization_1a367976a56911cc65fb3e24786623feb2" compoundref="_localization_8cs" startline="49">Localization.acceleration</references>
+        <references refid="struct_equipment_stats_1a65e03d79f5e4ab47e02bcb821dbc6338" compoundref="_equipment_stats_8cs" startline="60">AddAcceleretion</references>
+        <references refid="struct_equipment_stats_1ab74add5227ef4230609a9538482ae60e" compoundref="_equipment_stats_8cs" startline="48">AddAttack</references>
+        <references refid="struct_equipment_stats_1aadd5782f691595089269dce5c2f41624" compoundref="_equipment_stats_8cs" startline="89">AddChargeDamage</references>
+        <references refid="struct_equipment_stats_1a4fd511df19bd4e17d13960dd79200a16" compoundref="_equipment_stats_8cs" startline="69">AddChargeDeflect</references>
+        <references refid="struct_equipment_stats_1ad1e98238e1c58aba61cac2d9a8a547ed" compoundref="_equipment_stats_8cs" startline="66">AddChargeImpact</references>
+        <references refid="struct_equipment_stats_1ab1c312d54a619cff5bde1efb50d68e60" compoundref="_equipment_stats_8cs" startline="51">AddDefence</references>
+        <references refid="struct_equipment_stats_1abee94ba212773869fc9eac1b6ebe53ae" compoundref="_equipment_stats_8cs" startline="54">AddDefenceHalfSector</references>
+        <references refid="struct_equipment_stats_1a6e3e3ab9b9df06b7d2908364b3a756c2" compoundref="_equipment_stats_8cs" startline="63">AddRotationSpeed</references>
+        <references refid="struct_equipment_stats_1a8abc72f664f9efc2516cc13f43371bfb" compoundref="_equipment_stats_8cs" startline="57">AddSpeed</references>
+        <references refid="class_localization_1a1705af76ee97c6053422a9e2fa58ab1b" compoundref="_localization_8cs" startline="40">Localization.armour</references>
+        <references refid="struct_equipment_stats_1a37a5b6aaadac96669d0049cf88c2ac74" compoundref="_equipment_stats_8cs" startline="79">Armour</references>
+        <references refid="struct_damage_1a540de67f1528f23cc0c61d1bcc3f6143" compoundref="_damage_8cs" startline="11">Damage.ArmourDamage</references>
+        <references refid="class_localization_1ab212481a364e4ab6e9f7ace911480a55" compoundref="_localization_8cs" startline="42">Localization.armourDamage</references>
+        <references refid="class_localization_1abe988043268bf1df9b043b4c6132eac4" compoundref="_localization_8cs" startline="43">Localization.attack</references>
+        <references refid="struct_equipment_stats_1a3609df9fe3cacadcc82ae7bfae83543d" compoundref="_equipment_stats_8cs" startline="44">AttackDistance</references>
+        <references refid="class_localization_1a349de7b4318325f7659f950c65cd1be8" compoundref="_localization_8cs" startline="47">Localization.attackDistance</references>
+        <references refid="class_localization_1afa0991a6010e7dddce2e06388928491e" compoundref="_localization_8cs" startline="66">Localization.attention</references>
+        <references refid="struct_damage_1a4aef310a83e4573dc2aeb2684ba5ee99" compoundref="_damage_8cs" startline="8">Damage.BaseDamage</references>
+        <references refid="class_localization_1a69e3dec51c793b9e3076ccdf872fd90e" compoundref="_localization_8cs" startline="41">Localization.baseDamage</references>
+        <references refid="class_localization_1a9449a540b252c5c55e8166d3fd1238aa" compoundref="_localization_8cs" startline="139">Localization.baseValue</references>
+        <references refid="struct_equipment_stats_1a98d1982271bf54cf3bc8818185098400" compoundref="_equipment_stats_8cs" startline="24">canReformToFhalanx</references>
+        <references refid="struct_equipment_stats_1a70d33232cf893854e31dae5221939867" compoundref="_equipment_stats_8cs" startline="27">canReformToPhalanxInFight</references>
+        <references refid="struct_equipment_stats_1a58b9f92720c7325030f6b0cb428f18f6" compoundref="_equipment_stats_8cs" startline="30">canUseWithShield</references>
+        <references refid="class_localization_1adad3fcaf350073d7e61cce7639f981f2" compoundref="_localization_8cs" startline="53">Localization.chargeDamage</references>
+        <references refid="class_localization_1a808401e5480d014fbfc1c56c5024f321" compoundref="_localization_8cs" startline="52">Localization.chargeDeflect</references>
+        <references refid="class_localization_1ac322f19cb25d9885aff9969a68bfb047" compoundref="_localization_8cs" startline="51">Localization.chargeImpact</references>
+        <references refid="struct_equipment_stats_1a9959ca6a62511189d51dc7971770b804" compoundref="_equipment_stats_8cs" startline="82">Damag</references>
+        <references refid="class_localization_1aaf52bb22da36d2eaf241712e760b03db" compoundref="_localization_8cs" startline="44">Localization.defence</references>
+        <references refid="class_localization_1ab7fe60ef20445d912f2fc2b92141e9eb" compoundref="_localization_8cs" startline="45">Localization.defenceHalfSector</references>
+        <references refid="struct_equipment_stats_1abd05f10096c1d46af0f13806b754118e" compoundref="_equipment_stats_8cs" startline="22">Empty</references>
+        <references refid="class_string_formats_1ab8e8b55f89d499d469b9509e2398470b" compoundref="_string_formats_8cs" startline="9">StringFormats.floatNumber</references>
+        <references refid="class_string_formats_1a6f42e44b5d97ab658efac91637b1aae4" compoundref="_string_formats_8cs" startline="10">StringFormats.floatNumberPercent</references>
+        <references refid="class_string_formats_1a2d12b5f5de02f7a616c45a0ca3d358f6" compoundref="_string_formats_8cs" startline="12">StringFormats.floatSignNumberPercent</references>
+        <references refid="struct_equipment_stats_1a8dc2ea9210642e140167bb1030760f3e" compoundref="_equipment_stats_8cs" startline="35">ItemDurability</references>
+        <references refid="class_localization_1a686f21e823c9af4a6cafc9dfeabd2efe" compoundref="_localization_8cs" startline="61">Localization.mass</references>
+        <references refid="class_localization_1a97de6c8c625d72e0d039d828ad9a87a3" compoundref="_localization_8cs" startline="46">Localization.missileBlock</references>
+        <references refid="struct_equipment_stats_1ad575703314f9a19b32a9a37808ec66cf" compoundref="_equipment_stats_8cs" startline="85">MissileBlock</references>
+        <references refid="class_localization_1a5fafeb8a861de28ae27422531c1d7c05" compoundref="_localization_8cs" startline="50">Localization.rotationSpeed</references>
+        <references refid="class_localization_1ad8453dce5e4c888a9e54160258499dcd" compoundref="_localization_8cs" startline="48">Localization.speed</references>
+        <references refid="class_localization_1a0801662a5c7bc0c7869e4a25029b0b4e" compoundref="_localization_8cs" startline="62">Localization.weaponConstraint_cantReformPhalanx</references>
+        <references refid="class_localization_1a41a7196805a831279ad300adaa77362e" compoundref="_localization_8cs" startline="63">Localization.weaponConstraint_cantReformPhalanxInFight</references>
+        <references refid="class_localization_1a3faadbf1de9323fd3b02efaea261de2b" compoundref="_localization_8cs" startline="64">Localization.weaponConstraint_cantUseShield</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="333">
+        <label>IDescriptionable</label>
+        <link refid="interface_i_descriptionable"/>
+      </node>
+      <node id="332">
+        <label>EquipmentStats</label>
+        <link refid="struct_equipment_stats"/>
+        <childnode refid="333" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="336">
+        <label>Damage</label>
+        <link refid="struct_damage"/>
+      </node>
+      <node id="335">
+        <label>IDescriptionable</label>
+        <link refid="interface_i_descriptionable"/>
+      </node>
+      <node id="334">
+        <label>EquipmentStats</label>
+        <link refid="struct_equipment_stats"/>
+        <childnode refid="335" relation="public-inheritance">
+        </childnode>
+        <childnode refid="336" relation="usage">
+          <edgelabel>damage</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" line="8" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/EquipmentStats.cs" bodystart="7" bodyend="315"/>
+    <listofallmembers>
+      <member refid="struct_equipment_stats_1a3e4556b80cad6ba442eb2df360784f4d" prot="public" virt="non-virtual"><scope>EquipmentStats</scope><name>addAcceleretion</name></member>
+      <member refid="struct_equipment_stats_1a65e03d79f5e4ab47e02bcb821dbc6338" prot="public" virt="non-virtual"><scope>EquipmentStats</scope><name>AddAcceleretion</name></member>
+      <member refid="struct_equipment_stats_1ab74add5227ef4230609a9538482ae60e" prot="public" virt="non-virtual"><scope>EquipmentStats</scope><name>AddAttack</name></member>
+      <member refid="struct_equipment_stats_1a89570c6ae4a7fca4156670988331da1f" prot="public" virt="non-virtual"><scope>EquipmentStats</scope><name>addAttack</name></member>
+      <member refid="struct_equipment_stats_1a9daff4740f6bd22395867b695daea7c4" prot="public" virt="non-virtual"><scope>EquipmentStats</scope><name>addChargeDamage</name></member>
+      <member refid="struct_equipment_stats_1aadd5782f691595089269dce5c2f41624" prot="public" virt="non-virtual"><scope>EquipmentStats</scope><name>AddChargeDamage</name></member>
+      <member refid="struct_equipment_stats_1ab42e952e8bd52c11a0a865b6969bbae8" prot="public" virt="non-virtual"><scope>EquipmentStats</scope><name>addChargeDeflect</name></member>
+      <member refid="struct_equipment_stats_1a4fd511df19bd4e17d13960dd79200a16" prot="public" virt="non-virtual"><scope>EquipmentStats</scope><name>AddChargeDeflect</name></member>
+      <member refid="struct_equipment_stats_1ad1e98238e1c58aba61cac2d9a8a547ed" prot="public" virt="non-virtual"><scope>EquipmentStats</scope><name>AddChargeImpact</name></member>
+      <member refid="struct_equipment_stats_1a688b998459f81b6ef3c7d561e0a5276d" prot="public" virt="non-virtual"><scope>EquipmentStats</scope><name>addChargeImpact</name></member>
+      <member refid="struct_equipment_stats_1ab1c312d54a619cff5bde1efb50d68e60" prot="public" virt="non-virtual"><scope>EquipmentStats</scope><name>AddDefence</name></member>
+      <member refid="struct_equipment_stats_1af7a355893b3dab624432d3627bec4206" prot="public" virt="non-virtual"><scope>EquipmentStats</scope><name>addDefence</name></member>
+      <member refid="struct_equipment_stats_1a91db10a1d7fdbdf056fef032a0bd0981" prot="public" virt="non-virtual"><scope>EquipmentStats</scope><name>addDefenceHalfSector</name></member>
+      <member refid="struct_equipment_stats_1abee94ba212773869fc9eac1b6ebe53ae" prot="public" virt="non-virtual"><scope>EquipmentStats</scope><name>AddDefenceHalfSector</name></member>
+      <member refid="struct_equipment_stats_1a51e1077fd6e12246f94b4ce9031424a8" prot="public" virt="non-virtual"><scope>EquipmentStats</scope><name>addRotationSpeed</name></member>
+      <member refid="struct_equipment_stats_1a6e3e3ab9b9df06b7d2908364b3a756c2" prot="public" virt="non-virtual"><scope>EquipmentStats</scope><name>AddRotationSpeed</name></member>
+      <member refid="struct_equipment_stats_1a8abc72f664f9efc2516cc13f43371bfb" prot="public" virt="non-virtual"><scope>EquipmentStats</scope><name>AddSpeed</name></member>
+      <member refid="struct_equipment_stats_1a7583f57a80051f9ad3cf34508e905684" prot="public" virt="non-virtual"><scope>EquipmentStats</scope><name>addSpeed</name></member>
+      <member refid="struct_equipment_stats_1a37a5b6aaadac96669d0049cf88c2ac74" prot="public" virt="non-virtual"><scope>EquipmentStats</scope><name>Armour</name></member>
+      <member refid="struct_equipment_stats_1aea614f85f348f802878fe0bdde9b80ae" prot="public" virt="non-virtual"><scope>EquipmentStats</scope><name>armour</name></member>
+      <member refid="struct_equipment_stats_1a49208e8da4491b4019d09fc9ff52709d" prot="public" virt="non-virtual"><scope>EquipmentStats</scope><name>attackDistance</name></member>
+      <member refid="struct_equipment_stats_1a3609df9fe3cacadcc82ae7bfae83543d" prot="public" virt="non-virtual"><scope>EquipmentStats</scope><name>AttackDistance</name></member>
+      <member refid="struct_equipment_stats_1a98d1982271bf54cf3bc8818185098400" prot="public" virt="non-virtual"><scope>EquipmentStats</scope><name>canReformToFhalanx</name></member>
+      <member refid="struct_equipment_stats_1a18798b5db90bb12a8c79ca987c028c3d" prot="public" virt="non-virtual"><scope>EquipmentStats</scope><name>CanReformToPhalanx</name></member>
+      <member refid="struct_equipment_stats_1a70d33232cf893854e31dae5221939867" prot="public" virt="non-virtual"><scope>EquipmentStats</scope><name>canReformToPhalanxInFight</name></member>
+      <member refid="struct_equipment_stats_1a3470ee48af6c71249a3436e052ecb22c" prot="public" virt="non-virtual"><scope>EquipmentStats</scope><name>CanReformToPhalanxInFight</name></member>
+      <member refid="struct_equipment_stats_1a58b9f92720c7325030f6b0cb428f18f6" prot="public" virt="non-virtual"><scope>EquipmentStats</scope><name>canUseWithShield</name></member>
+      <member refid="struct_equipment_stats_1a4c2deb6509d0a0722248f5929f6af58c" prot="public" virt="non-virtual"><scope>EquipmentStats</scope><name>CanUseWithShield</name></member>
+      <member refid="struct_equipment_stats_1a4027a5c4f129c9d2f9a3132c521fbe5f" prot="public" virt="non-virtual"><scope>EquipmentStats</scope><name>cost</name></member>
+      <member refid="struct_equipment_stats_1a44333984bb0d1c82f174f3f5d5f72042" prot="public" virt="non-virtual"><scope>EquipmentStats</scope><name>Cost</name></member>
+      <member refid="struct_equipment_stats_1a9959ca6a62511189d51dc7971770b804" prot="public" virt="non-virtual"><scope>EquipmentStats</scope><name>Damag</name></member>
+      <member refid="struct_equipment_stats_1a8d24060fedd48f4d794119436d3779c4" prot="public" virt="non-virtual"><scope>EquipmentStats</scope><name>damage</name></member>
+      <member refid="struct_equipment_stats_1a5f6c1066f1a26a7db0e32618a0468f2e" prot="public" virt="non-virtual"><scope>EquipmentStats</scope><name>durability</name></member>
+      <member refid="struct_equipment_stats_1adb97d89712a349151f7c761bdcff561b" prot="public" virt="non-virtual"><scope>EquipmentStats</scope><name>Durability</name></member>
+      <member refid="struct_equipment_stats_1abd05f10096c1d46af0f13806b754118e" prot="public" virt="non-virtual"><scope>EquipmentStats</scope><name>Empty</name></member>
+      <member refid="struct_equipment_stats_1afc1e18463c25c799fe3d8c6c821c71bb" prot="public" virt="non-virtual"><scope>EquipmentStats</scope><name>empty</name></member>
+      <member refid="struct_equipment_stats_1aa5808678f48da4fbb5d2b4f1d162a781" prot="public" virt="non-virtual"><scope>EquipmentStats</scope><name>GetDescription</name></member>
+      <member refid="struct_equipment_stats_1a40d92422bb84c73f61b6f3102da17dfb" prot="public" virt="non-virtual"><scope>EquipmentStats</scope><name>Id</name></member>
+      <member refid="struct_equipment_stats_1a892bff7cb50dfddca3c7e4b874ab006d" prot="public" virt="non-virtual"><scope>EquipmentStats</scope><name>id</name></member>
+      <member refid="struct_equipment_stats_1a8dc2ea9210642e140167bb1030760f3e" prot="public" virt="non-virtual"><scope>EquipmentStats</scope><name>ItemDurability</name></member>
+      <member refid="struct_equipment_stats_1a2a246404affed9dabf920041f110532e" prot="public" virt="non-virtual"><scope>EquipmentStats</scope><name>mass</name></member>
+      <member refid="struct_equipment_stats_1a9d4615bd2815efb4cb3559624a7a5c7f" prot="public" virt="non-virtual"><scope>EquipmentStats</scope><name>Mass</name></member>
+      <member refid="struct_equipment_stats_1ad575703314f9a19b32a9a37808ec66cf" prot="public" virt="non-virtual"><scope>EquipmentStats</scope><name>MissileBlock</name></member>
+      <member refid="struct_equipment_stats_1aabdbf321999b7fb929385cc10c6f0978" prot="public" virt="non-virtual"><scope>EquipmentStats</scope><name>missileBlock</name></member>
+      <member refid="struct_equipment_stats_1aa8b9b5b1e936a27d585605f7ccb64915" prot="public" virt="non-virtual"><scope>EquipmentStats</scope><name>percentKoef</name></member>
+      <member refid="struct_equipment_stats_1ad9e07adc14c2f8014e12f5c9d1af0932" prot="public" virt="non-virtual"><scope>EquipmentStats</scope><name>type</name></member>
+      <member refid="struct_equipment_stats_1aeb10a54b818a9a8c9c1aec28a00da3ca" prot="public" virt="non-virtual"><scope>EquipmentStats</scope><name>Type</name></member>
+      <member refid="struct_equipment_stats_1a935e37e1984e51d33f41ef211c5d3a62" prot="public" virt="non-virtual"><scope>EquipmentStats</scope><name>TypeOfEquipment</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

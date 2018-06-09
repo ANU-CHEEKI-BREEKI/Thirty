@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="struct_damage" kind="struct" prot="public">
+    <compoundname>Damage</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_damage_1a72f0fd3f9a4b874fb4c1520563577085" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Damage.baseDamage</definition>
+        <argsstring></argsstring>
+        <name>baseDamage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Damage.cs" line="7" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Damage.cs" bodystart="7" bodyend="-1"/>
+        <referencedby refid="struct_damage_1a27ec91e23751d9b7bdf2e42381b752e5" compoundref="_damage_8cs" startline="13" endline="17">Damage</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_damage_1ae106a585a19bf7abaa532aade4d89d76" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Damage.armourDamage</definition>
+        <argsstring></argsstring>
+        <name>armourDamage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Damage.cs" line="10" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Damage.cs" bodystart="10" bodyend="-1"/>
+        <referencedby refid="struct_damage_1a27ec91e23751d9b7bdf2e42381b752e5" compoundref="_damage_8cs" startline="13" endline="17">Damage</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="struct_damage_1a4aef310a83e4573dc2aeb2684ba5ee99" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>float</type>
+        <definition>float Damage.BaseDamage</definition>
+        <argsstring></argsstring>
+        <name>BaseDamage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Damage.cs" line="8" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Damage.cs" bodystart="8" bodyend="-1"/>
+        <referencedby refid="struct_unit_stats_1a6980f24167779f11bb3fcdbdddde1d4a" compoundref="_unit_stats_8cs" startline="69" endline="159">UnitStats.CalcStats</referencedby>
+        <referencedby refid="struct_equipment_stats_1aa5808678f48da4fbb5d2b4f1d162a781" compoundref="_equipment_stats_8cs" startline="92" endline="314">EquipmentStats.GetDescription</referencedby>
+        <referencedby refid="class_stakes_1af4a3a993f1e2ab68c130f909d122480b" compoundref="_stakes_8cs" startline="65" endline="82">Stakes.HitUnit</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="struct_damage_1a540de67f1528f23cc0c61d1bcc3f6143" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>float</type>
+        <definition>float Damage.ArmourDamage</definition>
+        <argsstring></argsstring>
+        <name>ArmourDamage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Damage.cs" line="11" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Damage.cs" bodystart="11" bodyend="-1"/>
+        <referencedby refid="struct_unit_stats_1a6980f24167779f11bb3fcdbdddde1d4a" compoundref="_unit_stats_8cs" startline="69" endline="159">UnitStats.CalcStats</referencedby>
+        <referencedby refid="struct_equipment_stats_1aa5808678f48da4fbb5d2b4f1d162a781" compoundref="_equipment_stats_8cs" startline="92" endline="314">EquipmentStats.GetDescription</referencedby>
+        <referencedby refid="class_unit_1aef944e12d8ee536f06a044aee4845ba2" compoundref="_unit_8cs" startline="1279" endline="1336">Unit.OnChargeHit</referencedby>
+        <referencedby refid="class_unit_1a745b729665521cee8b7288e52ecba6e3" compoundref="_unit_8cs" startline="953" endline="961">Unit.TakeHit</referencedby>
+        <referencedby refid="class_unit_1a81ef87020279968371316b61ae6b408c" compoundref="_unit_8cs" startline="901" endline="946">Unit.TakeHitFromArrow</referencedby>
+        <referencedby refid="class_unit_1a6122214b77883efe36237c9f25aaab5b" compoundref="_unit_8cs" startline="862" endline="899">Unit.TakeHitFromUnit</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_damage_1a27ec91e23751d9b7bdf2e42381b752e5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Damage.Damage</definition>
+        <argsstring>(float baseDmg, float armourDmg)</argsstring>
+        <name>Damage</name>
+        <param>
+          <type>float</type>
+          <declname>baseDmg</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>armourDmg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Damage.cs" line="13" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Damage.cs" bodystart="13" bodyend="17"/>
+        <references refid="struct_damage_1ae106a585a19bf7abaa532aade4d89d76" compoundref="_damage_8cs" startline="10">armourDamage</references>
+        <references refid="struct_damage_1a72f0fd3f9a4b874fb4c1520563577085" compoundref="_damage_8cs" startline="7">baseDamage</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Damage.cs" line="6" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/Damage.cs" bodystart="5" bodyend="18"/>
+    <listofallmembers>
+      <member refid="struct_damage_1ae106a585a19bf7abaa532aade4d89d76" prot="public" virt="non-virtual"><scope>Damage</scope><name>armourDamage</name></member>
+      <member refid="struct_damage_1a540de67f1528f23cc0c61d1bcc3f6143" prot="public" virt="non-virtual"><scope>Damage</scope><name>ArmourDamage</name></member>
+      <member refid="struct_damage_1a4aef310a83e4573dc2aeb2684ba5ee99" prot="public" virt="non-virtual"><scope>Damage</scope><name>BaseDamage</name></member>
+      <member refid="struct_damage_1a72f0fd3f9a4b874fb4c1520563577085" prot="public" virt="non-virtual"><scope>Damage</scope><name>baseDamage</name></member>
+      <member refid="struct_damage_1a27ec91e23751d9b7bdf2e42381b752e5" prot="public" virt="non-virtual"><scope>Damage</scope><name>Damage</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

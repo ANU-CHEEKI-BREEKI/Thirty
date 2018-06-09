@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_059d937e355cf2678f4d0a00cb312cb1" kind="dir">
+    <compoundname>D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory</compoundname>
+    <innerfile refid="_a_drop_to_me_8cs">ADropToMe.cs</innerfile>
+    <innerfile refid="_drag_8cs">Drag.cs</innerfile>
+    <innerfile refid="_drag_equipment_8cs">DragEquipment.cs</innerfile>
+    <innerfile refid="_drag_skill_8cs">DragSkill.cs</innerfile>
+    <innerfile refid="_drop_to_consumable_market_8cs">DropToConsumableMarket.cs</innerfile>
+    <innerfile refid="_drop_to_equipment_8cs">DropToEquipment.cs</innerfile>
+    <innerfile refid="_drop_to_equipment_market_8cs">DropToEquipmentMarket.cs</innerfile>
+    <innerfile refid="_drop_to_ground_8cs">DropToGround.cs</innerfile>
+    <innerfile refid="_drop_to_inventory_8cs">DropToInventory.cs</innerfile>
+    <innerfile refid="_drop_to_skill_8cs">DropToSkill.cs</innerfile>
+    <innerfile refid="_drop_to_skill_market_8cs">DropToSkillMarket.cs</innerfile>
+    <innerfile refid="_envirinmant_inventory_u_i_8cs">EnvirinmantInventoryUI.cs</innerfile>
+    <innerfile refid="_grid_layout_cell_width_8cs">GridLayoutCellWidth.cs</innerfile>
+    <innerfile refid="_hide_tips_panel_8cs">HideTipsPanel.cs</innerfile>
+    <innerfile refid="_market_inventory_u_i_8cs">MarketInventoryUI.cs</innerfile>
+    <innerfile refid="_skill_market_inventory_u_i_8cs">SkillMarketInventoryUI.cs</innerfile>
+    <innerfile refid="_squad_inventory_u_i_8cs">SquadInventoryUI.cs</innerfile>
+    <innerfile refid="_squad_skills_inventory_u_i_8cs">SquadSkillsInventoryUI.cs</innerfile>
+    <innerfile refid="_stats_block_8cs">StatsBlock.cs</innerfile>
+    <innerfile refid="_stats_panel_u_i_8cs">StatsPanelUI.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="interface_i_terrain_walker" kind="interface" prot="public">
+    <compoundname>ITerrainWalker</compoundname>
+    <derivedcompoundref refid="class_terrain_walker" prot="public" virt="non-virtual">TerrainWalker</derivedcompoundref>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="interface_i_terrain_walker_1a14fb839088748dcd0e32c8dc7895b540" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>float</type>
+        <definition>float ITerrainWalker.Scale</definition>
+        <argsstring></argsstring>
+        <name>Scale</name>
+        <briefdescription>
+<para>Size of gameobject in %/100 </para>        </briefdescription>
+        <detaileddescription>
+<para>1 - это нормальный размер (100%)</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/ITerrainWalker.cs" line="11" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/ITerrainWalker.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_i_terrain_walker_1a5e726dab2001d66972f54d2da7bfa7c1" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>Vector2</type>
+        <definition>Vector2 ITerrainWalker.Position</definition>
+        <argsstring></argsstring>
+        <name>Position</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/ITerrainWalker.cs" line="13" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/ITerrainWalker.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="553">
+        <label>TerrainWalker</label>
+        <link refid="class_terrain_walker"/>
+        <childnode refid="552" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="552">
+        <label>ITerrainWalker</label>
+        <link refid="interface_i_terrain_walker"/>
+      </node>
+    </inheritancegraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/ITerrainWalker.cs" line="6" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/ITerrainWalker.cs" bodystart="5" bodyend="14"/>
+    <listofallmembers>
+      <member refid="interface_i_terrain_walker_1a5e726dab2001d66972f54d2da7bfa7c1" prot="public" virt="non-virtual"><scope>ITerrainWalker</scope><name>Position</name></member>
+      <member refid="interface_i_terrain_walker_1a14fb839088748dcd0e32c8dc7895b540" prot="public" virt="non-virtual"><scope>ITerrainWalker</scope><name>Scale</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

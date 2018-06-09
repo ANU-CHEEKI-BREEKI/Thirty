@@ -1,0 +1,224 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_drop_to_inventory" kind="class" prot="public">
+    <compoundname>DropToInventory</compoundname>
+    <basecompoundref refid="class_a_drop_to_me" prot="public" virt="non-virtual">ADropToMe</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_drop_to_inventory_1abd2e7017149f1bda4fbc84547e679da9" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int DropToInventory.cellIndex</definition>
+        <argsstring></argsstring>
+        <name>cellIndex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/DropToInventory.cs" line="6" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/DropToInventory.cs" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_drop_to_inventory_1ab55d1c9f2b1baa0927ef6e1d1ded7b55" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>int</type>
+        <definition>int DropToInventory.CellIndex</definition>
+        <argsstring></argsstring>
+        <name>CellIndex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/DropToInventory.cs" line="7" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/DropToInventory.cs" bodystart="7" bodyend="-1"/>
+        <referencedby refid="class_drop_to_inventory_1a3eee684dd1a719784a7814bf8a4b6704" compoundref="_drop_to_inventory_8cs" startline="56" endline="71">AddToThisInventory</referencedby>
+        <referencedby refid="class_drop_to_inventory_1aca372615bb6aa26b2c85a1bbdb05e3d2" compoundref="_drop_to_inventory_8cs" startline="73" endline="91">RemoveFromThisInventory</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_drop_to_inventory_1a0d4c04875df9f644d56798b13b0fe471" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void DropToInventory.OnDrop</definition>
+        <argsstring>(PointerEventData eventData)</argsstring>
+        <name>OnDrop</name>
+        <reimplements refid="class_a_drop_to_me_1a7969b529009a8693922cb6fa4b162fcf">OnDrop</reimplements>
+        <param>
+          <type>PointerEventData</type>
+          <declname>eventData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/DropToInventory.cs" line="9" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/DropToInventory.cs" bodystart="9" bodyend="54"/>
+        <references refid="class_drop_to_inventory_1a3eee684dd1a719784a7814bf8a4b6704" compoundref="_drop_to_inventory_8cs" startline="56" endline="71">AddToThisInventory</references>
+        <references refid="class_drag_1abc72e7d1bdad6b2267f5b539e2bc1fda" compoundref="_drag_8cs" startline="14">Drag.CanDrag</references>
+        <references refid="class_equipment_stack_1a7c41008f3dc56ac19774468efd798d48" compoundref="_equipment_stack_8cs" startline="10">EquipmentStack.EquipmentMainProperties</references>
+        <references refid="class_equipment_stack_1afd0cfe57cae1b79a1e63aa64caaebe9e" compoundref="_equipment_stack_8cs" startline="13">EquipmentStack.EquipmentStats</references>
+        <references refid="class_drag_equipment_1a259c84b153659538e0f63e8a80c02ce4" compoundref="_drag_equipment_8cs" startline="9">DragEquipment.EquipStack</references>
+        <references refid="struct_equipment_stats_1a40d92422bb84c73f61b6f3102da17dfb" compoundref="_equipment_stats_8cs" startline="19">EquipmentStats.Id</references>
+        <references refid="struct_equipment_stats_1a8dc2ea9210642e140167bb1030760f3e" compoundref="_equipment_stats_8cs" startline="35">EquipmentStats.ItemDurability</references>
+        <references refid="class_a_drop_to_me_1aa823b910877eb709c120b6e082063ac0" compoundref="_a_drop_to_me_8cs" startline="37" endline="53">ADropToMe.RefreshUI</references>
+        <references refid="class_a_drop_to_me_1ab52ef47bd3496981b5ac94eb4dc3ab73" compoundref="_a_drop_to_me_8cs" startline="7">ADropToMe.transform</references>
+        <references refid="struct_equipment_stats_1aeb10a54b818a9a8c9c1aec28a00da3ca" compoundref="_equipment_stats_8cs" startline="16">EquipmentStats.Type</references>
+      </memberdef>
+      <memberdef kind="function" id="class_drop_to_inventory_1a3eee684dd1a719784a7814bf8a4b6704" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override bool</type>
+        <definition>override bool DropToInventory.AddToThisInventory</definition>
+        <argsstring>(AStack aStack)</argsstring>
+        <name>AddToThisInventory</name>
+        <reimplements refid="class_a_drop_to_me_1a61dd1651d009bf4816d5705b10a01c2f">AddToThisInventory</reimplements>
+        <param>
+          <type><ref refid="class_a_stack" kindref="compound">AStack</ref></type>
+          <declname>aStack</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stack</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true если добавление произошло удачно</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/DropToInventory.cs" line="56" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/DropToInventory.cs" bodystart="56" bodyend="71"/>
+        <references refid="class_drop_to_inventory_1ab55d1c9f2b1baa0927ef6e1d1ded7b55" compoundref="_drop_to_inventory_8cs" startline="7">CellIndex</references>
+        <references refid="class_equipment_stack_1aea353e00a5c0c6e964fcfe01db42d12b" compoundref="_equipment_stack_8cs" startline="16">EquipmentStack.Count</references>
+        <references refid="class_equipment_stack_1a7c41008f3dc56ac19774468efd798d48" compoundref="_equipment_stack_8cs" startline="10">EquipmentStack.EquipmentMainProperties</references>
+        <references refid="class_equipment_stack_1afd0cfe57cae1b79a1e63aa64caaebe9e" compoundref="_equipment_stack_8cs" startline="13">EquipmentStack.EquipmentStats</references>
+        <references refid="class_squad_1a000c2e8cc307d9629751785b96b53ce5" compoundref="_squad_8cs" startline="106">Squad.Inventory</references>
+        <references refid="class_squad_1a781a32dd5c6fadbe0a9e04f142ddc9da" compoundref="_squad_8cs" startline="10">Squad.playerSquadInstance</references>
+        <referencedby refid="class_drop_to_inventory_1a0d4c04875df9f644d56798b13b0fe471" compoundref="_drop_to_inventory_8cs" startline="9" endline="54">OnDrop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_drop_to_inventory_1aca372615bb6aa26b2c85a1bbdb05e3d2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override bool</type>
+        <definition>override bool DropToInventory.RemoveFromThisInventory</definition>
+        <argsstring>(AStack aStack)</argsstring>
+        <name>RemoveFromThisInventory</name>
+        <reimplements refid="class_a_drop_to_me_1a00ce4c22d728d9b610cc4309dec60dc7">RemoveFromThisInventory</reimplements>
+        <param>
+          <type><ref refid="class_a_stack" kindref="compound">AStack</ref></type>
+          <declname>aStack</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stack</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true если удаление произошло удачно</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/DropToInventory.cs" line="73" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/DropToInventory.cs" bodystart="73" bodyend="91"/>
+        <references refid="class_drop_to_inventory_1ab55d1c9f2b1baa0927ef6e1d1ded7b55" compoundref="_drop_to_inventory_8cs" startline="7">CellIndex</references>
+        <references refid="class_equipment_stack_1aea353e00a5c0c6e964fcfe01db42d12b" compoundref="_equipment_stack_8cs" startline="16">EquipmentStack.Count</references>
+        <references refid="class_equipment_stack_1afd0cfe57cae1b79a1e63aa64caaebe9e" compoundref="_equipment_stack_8cs" startline="13">EquipmentStack.EquipmentStats</references>
+        <references refid="struct_equipment_stats_1a40d92422bb84c73f61b6f3102da17dfb" compoundref="_equipment_stats_8cs" startline="19">EquipmentStats.Id</references>
+        <references refid="class_squad_1a000c2e8cc307d9629751785b96b53ce5" compoundref="_squad_8cs" startline="106">Squad.Inventory</references>
+        <references refid="struct_equipment_stats_1a8dc2ea9210642e140167bb1030760f3e" compoundref="_equipment_stats_8cs" startline="35">EquipmentStats.ItemDurability</references>
+        <references refid="class_squad_1a781a32dd5c6fadbe0a9e04f142ddc9da" compoundref="_squad_8cs" startline="10">Squad.playerSquadInstance</references>
+        <references refid="struct_equipment_stats_1aeb10a54b818a9a8c9c1aec28a00da3ca" compoundref="_equipment_stats_8cs" startline="16">EquipmentStats.Type</references>
+      </memberdef>
+      <memberdef kind="function" id="class_drop_to_inventory_1a2a5cf20c927a03ccdc9b0bcdd34869d1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override bool</type>
+        <definition>override bool DropToInventory.CanGetFromThisIventory</definition>
+        <argsstring>(AStack aStack)</argsstring>
+        <name>CanGetFromThisIventory</name>
+        <reimplements refid="class_a_drop_to_me_1a54510994ccc4bd8f7dbdaa78a36d40a9">CanGetFromThisIventory</reimplements>
+        <param>
+          <type><ref refid="class_a_stack" kindref="compound">AStack</ref></type>
+          <declname>aStack</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>stack</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true если можно добавлять</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/DropToInventory.cs" line="93" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/DropToInventory.cs" bodystart="93" bodyend="96"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="260">
+        <label>ADropToMe</label>
+        <link refid="class_a_drop_to_me"/>
+        <childnode refid="261" relation="public-inheritance">
+        </childnode>
+        <childnode refid="262" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="259">
+        <label>DropToInventory</label>
+        <link refid="class_drop_to_inventory"/>
+        <childnode refid="260" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="261">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="262">
+        <label>IDropHandler</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="264">
+        <label>ADropToMe</label>
+        <link refid="class_a_drop_to_me"/>
+        <childnode refid="265" relation="public-inheritance">
+        </childnode>
+        <childnode refid="266" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="263">
+        <label>DropToInventory</label>
+        <link refid="class_drop_to_inventory"/>
+        <childnode refid="264" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="265">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="266">
+        <label>IDropHandler</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/DropToInventory.cs" line="5" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/DropToInventory.cs" bodystart="4" bodyend="97"/>
+    <listofallmembers>
+      <member refid="class_drop_to_inventory_1a3eee684dd1a719784a7814bf8a4b6704" prot="public" virt="virtual"><scope>DropToInventory</scope><name>AddToThisInventory</name></member>
+      <member refid="class_drop_to_inventory_1a2a5cf20c927a03ccdc9b0bcdd34869d1" prot="public" virt="virtual"><scope>DropToInventory</scope><name>CanGetFromThisIventory</name></member>
+      <member refid="class_drop_to_inventory_1abd2e7017149f1bda4fbc84547e679da9" prot="public" virt="non-virtual"><scope>DropToInventory</scope><name>cellIndex</name></member>
+      <member refid="class_drop_to_inventory_1ab55d1c9f2b1baa0927ef6e1d1ded7b55" prot="public" virt="non-virtual"><scope>DropToInventory</scope><name>CellIndex</name></member>
+      <member refid="class_drop_to_inventory_1a0d4c04875df9f644d56798b13b0fe471" prot="public" virt="virtual"><scope>DropToInventory</scope><name>OnDrop</name></member>
+      <member refid="class_a_drop_to_me_1aa823b910877eb709c120b6e082063ac0" prot="public" virt="non-virtual"><scope>DropToInventory</scope><name>RefreshUI</name></member>
+      <member refid="class_drop_to_inventory_1aca372615bb6aa26b2c85a1bbdb05e3d2" prot="public" virt="virtual"><scope>DropToInventory</scope><name>RemoveFromThisInventory</name></member>
+      <member refid="class_a_drop_to_me_1ab52ef47bd3496981b5ac94eb4dc3ab73" prot="protected" virt="non-virtual"><scope>DropToInventory</scope><name>transform</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

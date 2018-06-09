@@ -1,0 +1,186 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_score_market" kind="class" prot="public">
+    <compoundname>ScoreMarket</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="private-type">
+      <memberdef kind="enum" id="class_score_market_1abf37cba1d0e78a0378540d016f134a27" prot="private" static="no">
+        <name>ConvertType</name>
+        <enumvalue id="class_score_market_1abf37cba1d0e78a0378540d016f134a27a0efc7a9b83f3cfe984a3b046f0269ccc" prot="public">
+          <name>SILVER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_score_market_1abf37cba1d0e78a0378540d016f134a27a6cf2e6f0e86af75f96dd98519eedb29e" prot="public">
+          <name>EXPIRIENCE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/ScoreMarket.cs" line="8" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/ScoreMarket.cs" bodystart="8" bodyend="8"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_score_market_1a0910b96f7c1ea6798e37f3b88b5dfe55" prot="private" static="no" mutable="no">
+        <type><ref refid="class_score_market_1abf37cba1d0e78a0378540d016f134a27" kindref="member">ConvertType</ref></type>
+        <definition>ConvertType ScoreMarket.convertFor</definition>
+        <argsstring></argsstring>
+        <name>convertFor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/ScoreMarket.cs" line="10" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/ScoreMarket.cs" bodystart="10" bodyend="-1"/>
+        <referencedby refid="class_score_market_1a4b2af555d8ca31fe3c208cceaaad8b75" compoundref="_score_market_8cs" startline="34" endline="50">Converter_OnCliclOk</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_score_market_1a151be3f45cad8173d38ac593235975a1" prot="private" static="no" mutable="no">
+        <type><ref refid="class_number_converter" kindref="compound">NumberConverter</ref></type>
+        <definition>NumberConverter ScoreMarket.converter</definition>
+        <argsstring></argsstring>
+        <name>converter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/ScoreMarket.cs" line="12" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/ScoreMarket.cs" bodystart="12" bodyend="-1"/>
+        <referencedby refid="class_score_market_1a4359f0448f9e903daa3125eef9d619c6" compoundref="_score_market_8cs" startline="22" endline="27">OnDestroy</referencedby>
+        <referencedby refid="class_score_market_1a4b456bfef3f2647c7c4cde72c0b6d8d9" compoundref="_score_market_8cs" startline="14" endline="20">Start</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_score_market_1a4b456bfef3f2647c7c4cde72c0b6d8d9" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ScoreMarket.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/ScoreMarket.cs" line="14" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/ScoreMarket.cs" bodystart="14" bodyend="20"/>
+        <references refid="class_score_market_1a151be3f45cad8173d38ac593235975a1" compoundref="_score_market_8cs" startline="12">converter</references>
+        <references refid="class_score_market_1a4b2af555d8ca31fe3c208cceaaad8b75" compoundref="_score_market_8cs" startline="34" endline="50">Converter_OnCliclOk</references>
+        <references refid="class_score_market_1ae998d27a994ac3afe59d4ca345654f36" compoundref="_score_market_8cs" startline="29" endline="32">Gold_OnValueChanged</references>
+      </memberdef>
+      <memberdef kind="function" id="class_score_market_1a4359f0448f9e903daa3125eef9d619c6" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ScoreMarket.OnDestroy</definition>
+        <argsstring>()</argsstring>
+        <name>OnDestroy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/ScoreMarket.cs" line="22" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/ScoreMarket.cs" bodystart="22" bodyend="27"/>
+        <references refid="class_score_market_1a151be3f45cad8173d38ac593235975a1" compoundref="_score_market_8cs" startline="12">converter</references>
+        <references refid="class_score_market_1a4b2af555d8ca31fe3c208cceaaad8b75" compoundref="_score_market_8cs" startline="34" endline="50">Converter_OnCliclOk</references>
+        <references refid="class_score_market_1ae998d27a994ac3afe59d4ca345654f36" compoundref="_score_market_8cs" startline="29" endline="32">Gold_OnValueChanged</references>
+      </memberdef>
+      <memberdef kind="function" id="class_score_market_1ae998d27a994ac3afe59d4ca345654f36" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ScoreMarket.Gold_OnValueChanged</definition>
+        <argsstring>(float oldVal, float newVal, DSPlayerScore.Score sender)</argsstring>
+        <name>Gold_OnValueChanged</name>
+        <param>
+          <type>float</type>
+          <declname>oldVal</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>newVal</declname>
+        </param>
+        <param>
+          <type><ref refid="class_d_s_player_score_1_1_score" kindref="compound">DSPlayerScore.Score</ref></type>
+          <declname>sender</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/ScoreMarket.cs" line="29" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/ScoreMarket.cs" bodystart="29" bodyend="32"/>
+        <referencedby refid="class_score_market_1a4359f0448f9e903daa3125eef9d619c6" compoundref="_score_market_8cs" startline="22" endline="27">OnDestroy</referencedby>
+        <referencedby refid="class_score_market_1a4b456bfef3f2647c7c4cde72c0b6d8d9" compoundref="_score_market_8cs" startline="14" endline="20">Start</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_score_market_1a4b2af555d8ca31fe3c208cceaaad8b75" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ScoreMarket.Converter_OnCliclOk</definition>
+        <argsstring>()</argsstring>
+        <name>Converter_OnCliclOk</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/ScoreMarket.cs" line="34" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/ScoreMarket.cs" bodystart="34" bodyend="50"/>
+        <references refid="class_score_market_1a0910b96f7c1ea6798e37f3b88b5dfe55" compoundref="_score_market_8cs" startline="10">convertFor</references>
+        <referencedby refid="class_score_market_1a4359f0448f9e903daa3125eef9d619c6" compoundref="_score_market_8cs" startline="22" endline="27">OnDestroy</referencedby>
+        <referencedby refid="class_score_market_1a4b456bfef3f2647c7c4cde72c0b6d8d9" compoundref="_score_market_8cs" startline="14" endline="20">Start</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="833">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="832">
+        <label>ScoreMarket</label>
+        <link refid="class_score_market"/>
+        <childnode refid="833" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="835">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="836">
+        <label>NumberConverter</label>
+        <link refid="class_number_converter"/>
+        <childnode refid="835" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="834">
+        <label>ScoreMarket</label>
+        <link refid="class_score_market"/>
+        <childnode refid="835" relation="public-inheritance">
+        </childnode>
+        <childnode refid="836" relation="usage">
+          <edgelabel>converter</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/ScoreMarket.cs" line="7" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/ScoreMarket.cs" bodystart="6" bodyend="51"/>
+    <listofallmembers>
+      <member refid="class_score_market_1a151be3f45cad8173d38ac593235975a1" prot="private" virt="non-virtual"><scope>ScoreMarket</scope><name>converter</name></member>
+      <member refid="class_score_market_1a4b2af555d8ca31fe3c208cceaaad8b75" prot="private" virt="non-virtual"><scope>ScoreMarket</scope><name>Converter_OnCliclOk</name></member>
+      <member refid="class_score_market_1a0910b96f7c1ea6798e37f3b88b5dfe55" prot="private" virt="non-virtual"><scope>ScoreMarket</scope><name>convertFor</name></member>
+      <member refid="class_score_market_1abf37cba1d0e78a0378540d016f134a27" prot="private" virt="non-virtual"><scope>ScoreMarket</scope><name>ConvertType</name></member>
+      <member refid="class_score_market_1ae998d27a994ac3afe59d4ca345654f36" prot="private" virt="non-virtual"><scope>ScoreMarket</scope><name>Gold_OnValueChanged</name></member>
+      <member refid="class_score_market_1a4359f0448f9e903daa3125eef9d619c6" prot="private" virt="non-virtual"><scope>ScoreMarket</scope><name>OnDestroy</name></member>
+      <member refid="class_score_market_1a4b456bfef3f2647c7c4cde72c0b6d8d9" prot="private" virt="non-virtual"><scope>ScoreMarket</scope><name>Start</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

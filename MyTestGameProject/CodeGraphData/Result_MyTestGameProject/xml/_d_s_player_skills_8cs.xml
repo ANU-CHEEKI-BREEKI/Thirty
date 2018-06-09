@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_d_s_player_skills_8cs" kind="file">
+    <compoundname>DSPlayerSkills.cs</compoundname>
+    <innerclass refid="class_d_s_player_skills" prot="public">DSPlayerSkills</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Collections.Generic;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>UnityEngine;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal">[Serializable]</highlight></codeline>
+<codeline lineno="6" refid="class_d_s_player_skills" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_d_s_player_skills" kindref="compound">DSPlayerSkills</ref><sp/>:<sp/><ref refid="interface_i_savable" kindref="compound">ISavable</ref></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8" refid="class_d_s_player_skills_1a65dcbe06fb99ba1bfae336fe52ff1db8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>List&lt;DSPlayerSkill&gt;<sp/><ref refid="class_d_s_player_skills_1a65dcbe06fb99ba1bfae336fe52ff1db8" kindref="member">skills</ref>;</highlight></codeline>
+<codeline lineno="9" refid="class_d_s_player_skills_1a79ce8011ab527821edbcd5a091eca5b9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_skill" kindref="compound">Skill</ref><sp/><ref refid="class_d_s_player_skills_1a79ce8011ab527821edbcd5a091eca5b9" kindref="member">firstSkill</ref>;</highlight></codeline>
+<codeline lineno="10" refid="class_d_s_player_skills_1acbc5b76bf95505de1a43c50044773be2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_skill" kindref="compound">Skill</ref><sp/><ref refid="class_d_s_player_skills_1acbc5b76bf95505de1a43c50044773be2" kindref="member">secondSkill</ref>;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="class_d_s_player_skills_1a8d902ecf97e8c7fb92ded65231a50e36" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_d_s_player_skills_1a8d902ecf97e8c7fb92ded65231a50e36" kindref="member">DSPlayerSkills</ref>()</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_d_s_player_skills_1a65dcbe06fb99ba1bfae336fe52ff1db8" kindref="member">skills</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>List&lt;DSPlayerSkill&gt;();</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>skills.Add(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_d_s_player_skill" kindref="compound">DSPlayerSkill</ref>(1));</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>skills.Add(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_d_s_player_skill" kindref="compound">DSPlayerSkill</ref>(2));</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="class_d_s_player_skills_1a86df032cd30b8c2d40b87f424fb9aa25" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_d_s_player_skills_1a86df032cd30b8c2d40b87f424fb9aa25" kindref="member">Save</ref>()</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GameManager.Instance.SavingManager.SaveData&lt;<ref refid="class_d_s_player_skills" kindref="compound">DSPlayerSkills</ref>&gt;(this.GetType().Name,<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="class_d_s_player_skills_1a5b404a1a116697a3675538a74bbf55a1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_d_s_player_skills_1a5b404a1a116697a3675538a74bbf55a1" kindref="member">Load</ref>()</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>System.Reflection.BindingFlags<sp/>flags<sp/>=<sp/>System.Reflection.BindingFlags.Instance<sp/>|<sp/>System.Reflection.BindingFlags.Public<sp/>|<sp/>System.Reflection.BindingFlags.NonPublic;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>g<sp/>=<sp/>GameManager.Instance.SavingManager.LoadData&lt;<ref refid="class_d_s_player_skills" kindref="compound">DSPlayerSkills</ref>&gt;(this.GetType().Name);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>fields<sp/>=<sp/>this.GetType().GetFields(flags);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">foreach</highlight><highlight class="normal"><sp/>(var<sp/>f<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>fields)</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>f.SetValue(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>f.GetValue(g));</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/DSPlayerSkills.cs"/>
+  </compounddef>
+</doxygen>

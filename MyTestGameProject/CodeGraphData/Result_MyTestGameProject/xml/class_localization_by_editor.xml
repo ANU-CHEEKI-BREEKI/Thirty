@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_localization_by_editor" kind="class" prot="public">
+    <compoundname>LocalizationByEditor</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_localization_by_editor_1af8d8ba948bfc5dbc32704d5036fb89d0" prot="private" static="no" mutable="no">
+        <type>Text</type>
+        <definition>Text LocalizationByEditor.text</definition>
+        <argsstring></argsstring>
+        <name>text</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/LocalizationByEditor.cs" line="8" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/LocalizationByEditor.cs" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_localization_by_editor_1af662bc0d5da72d4239b01e6a05cac6c8" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string LocalizationByEditor.stringResourceName</definition>
+        <argsstring></argsstring>
+        <name>stringResourceName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/LocalizationByEditor.cs" line="9" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/LocalizationByEditor.cs" bodystart="9" bodyend="-1"/>
+        <referencedby refid="class_localization_by_editor_1a9f61a94f546e6a1fc7fcaa44d8a34f1c" compoundref="_localization_by_editor_8cs" startline="16" endline="19">ReloadText</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_localization_by_editor_1ab6f0847c302974723f0a1aa678bc09d5" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void LocalizationByEditor.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/LocalizationByEditor.cs" line="11" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/LocalizationByEditor.cs" bodystart="11" bodyend="14"/>
+        <references refid="class_localization_by_editor_1a9f61a94f546e6a1fc7fcaa44d8a34f1c" compoundref="_localization_by_editor_8cs" startline="16" endline="19">ReloadText</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_localization_by_editor_1a9f61a94f546e6a1fc7fcaa44d8a34f1c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void LocalizationByEditor.ReloadText</definition>
+        <argsstring>()</argsstring>
+        <name>ReloadText</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/LocalizationByEditor.cs" line="16" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/LocalizationByEditor.cs" bodystart="16" bodyend="19"/>
+        <references refid="class_localization_by_editor_1af662bc0d5da72d4239b01e6a05cac6c8" compoundref="_localization_by_editor_8cs" startline="9">stringResourceName</references>
+        <referencedby refid="class_localization_by_editor_1ab6f0847c302974723f0a1aa678bc09d5" compoundref="_localization_by_editor_8cs" startline="11" endline="14">Start</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="560">
+        <label>LocalizationByEditor</label>
+        <link refid="class_localization_by_editor"/>
+        <childnode refid="561" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="561">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="562">
+        <label>LocalizationByEditor</label>
+        <link refid="class_localization_by_editor"/>
+        <childnode refid="563" relation="public-inheritance">
+        </childnode>
+        <childnode refid="564" relation="usage">
+          <edgelabel>text</edgelabel>
+        </childnode>
+      </node>
+      <node id="564">
+        <label>Text</label>
+      </node>
+      <node id="563">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/LocalizationByEditor.cs" line="7" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/LocalizationByEditor.cs" bodystart="6" bodyend="20"/>
+    <listofallmembers>
+      <member refid="class_localization_by_editor_1a9f61a94f546e6a1fc7fcaa44d8a34f1c" prot="public" virt="non-virtual"><scope>LocalizationByEditor</scope><name>ReloadText</name></member>
+      <member refid="class_localization_by_editor_1ab6f0847c302974723f0a1aa678bc09d5" prot="private" virt="non-virtual"><scope>LocalizationByEditor</scope><name>Start</name></member>
+      <member refid="class_localization_by_editor_1af662bc0d5da72d4239b01e6a05cac6c8" prot="private" virt="non-virtual"><scope>LocalizationByEditor</scope><name>stringResourceName</name></member>
+      <member refid="class_localization_by_editor_1af8d8ba948bfc5dbc32704d5036fb89d0" prot="private" virt="non-virtual"><scope>LocalizationByEditor</scope><name>text</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

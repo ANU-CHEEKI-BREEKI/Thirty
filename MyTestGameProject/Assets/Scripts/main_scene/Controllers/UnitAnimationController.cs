@@ -1,0 +1,305 @@
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+[RequireComponent(typeof(Unit))]
+public class UnitAnimationController : MonoBehaviour
+{
+    [SerializeField] UnitOutline underlayerOutline;
+
+    new SpriteRenderer[] renderer = new SpriteRenderer[6];
+    new UnitAnimation[] animation = new UnitAnimation[6];
+    SpriteOutline[] outline = new SpriteOutline[6];
+
+    enum EquipmentIndex { SHIELD, HELMET, WEAPON, BODY, ARMS, LEGS }
+
+    Squad squad;
+    Unit unit;
+
+    FormationStats.Formations formation;
+    bool hit;
+    bool run;
+    bool inFight;
+    bool charging;
+
+    public FormationStats.Formations Formation
+    {
+        get { return formation; }
+        set { formation = value; SetAnimationStates(); }
+    }
+    public bool Run
+    {
+        get { return run; }
+        set { run = value; SetAnimationStates(); }
+    }
+    public bool InFight
+    {
+        get { return inFight; }
+        set { inFight = value; SetAnimationStates(); }
+    }
+    public bool Charging
+    {
+        get { return charging; }
+        set { charging = value; SetAnimationStates(); }
+    }
+
+    private void Awake()
+    {
+        unit = GetComponent<Unit>();
+
+        unit.OnArmsChanged += Unit_OnArmsChanged;
+        unit.OnBodyChanged += Unit_OnBodyChanged;
+        unit.OnHelmetChanged += Unit_OnHelmetChanged;
+        unit.OnLegsChanged += Unit_OnLegsChanged;
+        unit.OnShieldChanged += Unit_OnShieldChanged;
+        unit.OnWeaponChanged += Unit_OnWeaponChanged;
+        unit.OnChargingValueChanged += Unit_OnChargingValueChanged;
+
+        unit.OnUnitDeath += Death;
+
+        unit.OnRunValueChanged += Unit_OnRunValueChanged;
+        unit.AfterInitiate += Unit_AfterInitiate;
+
+        Unit_OnArmsChanged(unit.Arms);
+        Unit_OnLegsChanged(unit.Legs);
+    }
+
+    void Unit_AfterInitiate()
+    {
+        squad = unit.squad;
+        if (squad != null)
+        {
+            squad.OnInFightFlagChanged += Squad_OnInFightFlagChanged;
+            squad.OnFormationChanged += Squad_OnFormationChanged;
+        }
+    }
+
+    void Unit_OnChargingValueChanged(bool value)
+    {
+        Charging = value;
+    }
+
+    void Squad_OnFormationChanged(FormationStats.Formations value)
+    {
+        Formation = value;
+    }
+    void Squad_OnInFightFlagChanged(bool value)
+    {
+        InFight = value;
+    }
+
+    void Unit_OnRunValueChanged(bool value)
+    {
+        Run = value;
+    }
+    void Unit_OnWeaponChanged(GameObject obj)
+    {
+        SetNewEquipment(EquipmentIndex.WEAPON, obj);
+    }
+    void Unit_OnShieldChanged(GameObject obj)
+    {
+        SetNewEquipment(EquipmentIndex.SHIELD, obj);
+    }
+    void Unit_OnLegsChanged(GameObject obj)
+    {
+        SetNewEquipment(EquipmentIndex.LEGS, obj);
+    }
+    void Unit_OnHelmetChanged(GameObject obj)
+    {
+        SetNewEquipment(EquipmentIndex.HELMET, obj);
+    }
+    void Unit_OnBodyChanged(GameObject obj)
+    {
+        SetNewEquipment(EquipmentIndex.BODY, obj);
+    }
+    void Unit_OnArmsChanged(GameObject obj)
+    {
+        SetNewEquipment(EquipmentIndex.ARMS, obj);
+    }
+
+    void SetNewEquipment(EquipmentIndex index, GameObject equipment)
+    {
+        renderer[(int)index] = equipment.GetComponent<SpriteRenderer>();
+        animation[(int)index] = equipment.GetComponent<UnitAnimation>();
+        outline[(int)index] = equipment.GetComponent<SpriteOutline>();
+
+        SetAnimationStates();
+    }
+
+    void OnDestroy()
+    {
+        unit.OnArmsChanged -= Unit_OnArmsChanged;
+        unit.OnBodyChanged -= Unit_OnBodyChanged;
+        unit.OnHelmetChanged -= Unit_OnHelmetChanged;
+        unit.OnLegsChanged -= Unit_OnLegsChanged;
+        unit.OnShieldChanged -= Unit_OnShieldChanged;
+        unit.OnWeaponChanged -= Unit_OnWeaponChanged;
+        unit.OnChargingValueChanged -= Unit_OnChargingValueChanged;
+
+        unit.OnRunValueChanged -= Unit_OnRunValueChanged;
+        unit.AfterInitiate -= Unit_AfterInitiate;
+
+        unit.OnUnitDeath -= Death;
+
+        if (squad != null)
+        {
+            squad.OnInFightFlagChanged -= Squad_OnInFightFlagChanged;
+            squad.OnFormationChanged -= Squad_OnFormationChanged;
+        }
+    }
+
+    void Death()
+    {
+        var t = UnityEngine.Random.Range(0, 2);
+        
+        for (int i = 0; i < 6; i++)
+        {
+            if (animation[i] != null && renderer[i] != null)
+            {
+                if (t == 0)
+                    renderer[i].sprite = animation[i].Death_1;
+                else
+                    renderer[i].sprite = animation[i].Death_2;
+                
+                renderer[i].sortingLayerName = "Item";
+                Outline(i, false);
+
+                Destroy(outline[i]);
+                if (underlayerOutline != null)
+                    Destroy(underlayerOutline.gameObject);
+                Destroy(animation[i]);                
+                animation[i] = null;//костыль для решения плавающего бага, когда после смерти юнита
+                //ему ставились спрайты сражения
+                Destroy(renderer[i].transform.GetComponent<Item>());
+            }
+        }
+
+        Destroy(unit.Shadow);
+
+        Destroy(this);
+    }
+
+    void SetAnimationStates()
+    {
+        switch (formation)
+        {
+            case global::FormationStats.Formations.RANKS:
+                {
+                    if (charging)
+                    {
+                        for (int i = 0; i < 6; i++)
+                        {
+                            if (animation[i] != null && renderer[i].sprite != animation[i].Rnk_fight)
+                            {
+                                renderer[i].sprite = animation[i].Rnk_fight;
+                                Outline(i);
+                            }
+                        }
+                    }
+                    else
+                    {
+                        if (run)
+                        {
+                            for (int i = 0; i < 6; i++)
+                            {
+                                if (animation[i] != null && renderer[i].sprite != animation[i].Rnk_run)
+                                {
+                                    renderer[i].sprite = animation[i].Rnk_run;
+                                    Outline(i);
+                                }
+                            }
+                        }
+                        else
+                        {
+                            if (inFight)
+                            {
+                                for (int i = 0; i < 6; i++)
+                                {
+                                    if (animation[i] != null && renderer[i].sprite != animation[i].Rnk_fight)
+                                    {
+                                        renderer[i].sprite = animation[i].Rnk_fight;
+                                        Outline(i);
+                                    }
+                                }
+                            }
+                            else
+                            {
+                                for (int i = 0; i < 6; i++)
+                                {
+                                    if (animation[i] != null && renderer[i].sprite != animation[i].Rnk_idle)
+                                    {
+                                        renderer[i].sprite = animation[i].Rnk_idle;
+                                        Outline(i);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    break;
+                }
+            case global::FormationStats.Formations.PHALANX:
+                {
+                    if (run)
+                    {
+                        for (int i = 0; i < 6; i++)
+                        {
+                            if (animation[i] != null && renderer[i].sprite != animation[i].Phx_run)
+                            {
+                                renderer[i].sprite = animation[i].Phx_run;
+                                Outline(i);
+                            }
+                        }
+                    }
+                    else
+                    {
+                        for (int i = 0; i < 6; i++)
+                        {
+                            if (animation[i] != null && renderer[i].sprite != animation[i].Phx_idle)
+                            {
+                                renderer[i].sprite = animation[i].Phx_idle;
+                                Outline(i);
+                            }
+                        }
+                    }
+                    break;
+                }
+            case global::FormationStats.Formations.RISEDSHIELDS:
+                {
+                    if (run)
+                    {
+                        for (int i = 0; i < 6; i++)
+                        {
+                            if (animation[i] != null && renderer[i].sprite != animation[i].Shl_run)
+                            {
+                                renderer[i].sprite = animation[i].Shl_run;
+                                Outline(i);
+                            }
+                        }
+                    }
+                    else
+                    {
+                        for (int i = 0; i < 6; i++)
+                        {
+                            if (animation[i] != null && renderer[i].sprite != animation[i].Shl_idle)
+                            {
+                                renderer[i].sprite = animation[i].Shl_idle;
+                                Outline(i);
+                            }
+                        }
+                    }
+                    break;
+                }
+        }
+    }
+
+    void Outline(int itemIndex, bool anable = true)
+    {
+        if (outline[itemIndex] != null)
+            outline[itemIndex].ActivateOutline(anable);
+
+        if(underlayerOutline != null)
+            underlayerOutline.ActivateOutline();
+    }
+
+}

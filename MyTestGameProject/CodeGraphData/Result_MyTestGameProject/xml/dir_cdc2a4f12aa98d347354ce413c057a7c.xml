@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_cdc2a4f12aa98d347354ce413c057a7c" kind="dir">
+    <compoundname>D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers</compoundname>
+    <innerfile refid="_ai_squad_controller_8cs">AiSquadController.cs</innerfile>
+    <innerfile refid="_camera_controller_8cs">CameraController.cs</innerfile>
+    <innerfile refid="_player_squad_controller_8cs">PlayerSquadController.cs</innerfile>
+    <innerfile refid="_player_squad_path_finder_controller_8cs">PlayerSquadPathFinderController.cs</innerfile>
+    <innerfile refid="_pop_up_text_controller_8cs">PopUpTextController.cs</innerfile>
+    <innerfile refid="_unit_animation_8cs">UnitAnimation.cs</innerfile>
+    <innerfile refid="_unit_animation_controller_8cs">UnitAnimationController.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/"/>
+  </compounddef>
+</doxygen>

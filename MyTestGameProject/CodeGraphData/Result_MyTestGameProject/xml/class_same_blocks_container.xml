@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_same_blocks_container" kind="class" prot="public">
+    <compoundname>SameBlocksContainer</compoundname>
+    <innerclass refid="class_same_blocks_container_1_1_block" prot="public">SameBlocksContainer::Block</innerclass>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_same_blocks_container_1aa8500104d804bc03fe1c7a87ae6794fe" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string SameBlocksContainer.Name</definition>
+        <argsstring></argsstring>
+        <name>Name</name>
+        <briefdescription>
+<para>имя типа блока (его выходы ) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/SameBlocksContainer.cs" line="11" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/SameBlocksContainer.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_same_blocks_container_1ab683dc456d27f7ccbbc69dc10cf7d46b" prot="public" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_same_blocks_container_1_1_block" kindref="compound">Block</ref> &gt;</type>
+        <definition>List&lt;Block&gt; SameBlocksContainer.SameBlocks</definition>
+        <argsstring></argsstring>
+        <name>SameBlocks</name>
+        <briefdescription>
+<para>вче блоки одного типа </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/SameBlocksContainer.cs" line="16" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/SameBlocksContainer.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_same_blocks_container_1a6591920286617d08e807ee80ca3497ad" prot="public" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_same_blocks_container_1_1_block" kindref="compound">Block</ref> &gt;[]</type>
+        <definition>List&lt;Block&gt; [] SameBlocksContainer.ExitBlocks</definition>
+        <argsstring></argsstring>
+        <name>ExitBlocks</name>
+        <initializer>= new List&lt;<ref refid="class_same_blocks_container_1_1_block" kindref="compound">Block</ref>&gt;[Enum.GetValues(typeof(<ref refid="struct_map_block_1a6bdb8970fb09cd0570ed7036457f96a3" kindref="member">MapBlock.Direction</ref>)).Length]</initializer>
+        <briefdescription>
+<para>блоки этого же типа, но с выходом в массиве будут блоки сгруппированы в списки по направлению выхода. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/SameBlocksContainer.cs" line="22" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/SameBlocksContainer.cs" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/SameBlocksContainer.cs" line="7" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/SameBlocksContainer.cs" bodystart="6" bodyend="36"/>
+    <listofallmembers>
+      <member refid="class_same_blocks_container_1a6591920286617d08e807ee80ca3497ad" prot="public" virt="non-virtual"><scope>SameBlocksContainer</scope><name>ExitBlocks</name></member>
+      <member refid="class_same_blocks_container_1aa8500104d804bc03fe1c7a87ae6794fe" prot="public" virt="non-virtual"><scope>SameBlocksContainer</scope><name>Name</name></member>
+      <member refid="class_same_blocks_container_1ab683dc456d27f7ccbbc69dc10cf7d46b" prot="public" virt="non-virtual"><scope>SameBlocksContainer</scope><name>SameBlocks</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

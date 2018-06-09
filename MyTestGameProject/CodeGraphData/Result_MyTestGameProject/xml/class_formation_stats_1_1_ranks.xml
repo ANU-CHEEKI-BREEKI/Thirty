@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_formation_stats_1_1_ranks" kind="class" prot="public">
+    <compoundname>FormationStats::Ranks</compoundname>
+    <basecompoundref refid="class_formation_stats" prot="public" virt="non-virtual">FormationStats</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_formation_stats_1_1_ranks_1ae78c5af8aaebdb28f4ab02d4a8aa6dd2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>FormationStats.Ranks.Ranks</definition>
+        <argsstring>()</argsstring>
+        <name>Ranks</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/FormationStats.cs" line="193" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/FormationStats.cs" bodystart="193" bodyend="193"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="812">
+        <label>FormationStats.Ranks</label>
+        <link refid="class_formation_stats_1_1_ranks"/>
+        <childnode refid="813" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="813">
+        <label>FormationStats</label>
+        <link refid="class_formation_stats"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="814">
+        <label>FormationStats.Ranks</label>
+        <link refid="class_formation_stats_1_1_ranks"/>
+        <childnode refid="815" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="815">
+        <label>FormationStats</label>
+        <link refid="class_formation_stats"/>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/FormationStats.cs" line="192" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/FormationStats.cs" bodystart="191" bodyend="194"/>
+    <listofallmembers>
+      <member refid="class_formation_stats_1afd3477128f780bbacf5697ea98f2c254" prot="public" virt="non-virtual"><scope>FormationStats::Ranks</scope><name>FORMATION</name></member>
+      <member refid="class_formation_stats_1ab336466e6a234574db24f2ec914e1dd4" prot="public" virt="non-virtual"><scope>FormationStats::Ranks</scope><name>Formations</name></member>
+      <member refid="class_formation_stats_1aec6c923cc572c85fba1588f0795d6fbd" prot="public" virt="non-virtual"><scope>FormationStats::Ranks</scope><name>FormationStats</name></member>
+      <member refid="class_formation_stats_1a9f376a5914a4478dd43d24957d660303" prot="public" virt="non-virtual"><scope>FormationStats::Ranks</scope><name>GetModifiers</name></member>
+      <member refid="class_formation_stats_1_1_ranks_1ae78c5af8aaebdb28f4ab02d4a8aa6dd2" prot="public" virt="non-virtual"><scope>FormationStats::Ranks</scope><name>Ranks</name></member>
+      <member refid="class_formation_stats_1ad92393263b6465096c561a2f03cd8c8d" prot="public" virt="non-virtual"><scope>FormationStats::Ranks</scope><name>SQUAD_ADDITIONAL_ROTATION_SPEED</name></member>
+      <member refid="class_formation_stats_1a6dd171ee5db9d9bdd16669b7b05d7925" prot="public" virt="non-virtual"><scope>FormationStats::Ranks</scope><name>SQUAD_ADDITIONAL_SPEED</name></member>
+      <member refid="class_formation_stats_1a56ffbcaf263e583ec848e7de0c0d424e" prot="public" virt="non-virtual"><scope>FormationStats::Ranks</scope><name>UNIT_ADDITIONAL_ATTACK</name></member>
+      <member refid="class_formation_stats_1ae8169d7f7ed2633e0b0e5bfa774e5ae9" prot="public" virt="non-virtual"><scope>FormationStats::Ranks</scope><name>UNIT_ADDITIONAL_DAMAGE</name></member>
+      <member refid="class_formation_stats_1a6d2e3525cdae63f81b6b76a92f225adc" prot="public" virt="non-virtual"><scope>FormationStats::Ranks</scope><name>UNIT_ADDITIONAL_DEFENCE</name></member>
+      <member refid="class_formation_stats_1a7fdb17ed2e6e240c37b05d0720289c78" prot="public" virt="non-virtual"><scope>FormationStats::Ranks</scope><name>UNIT_ADDITIONAL_DEFENCE_SECTOR</name></member>
+      <member refid="class_formation_stats_1a492a6a7f3b742e30c9f95c1942207c9e" prot="public" virt="non-virtual"><scope>FormationStats::Ranks</scope><name>UNIT_ADDITIONAL_ROTATION_SPEED</name></member>
+      <member refid="class_formation_stats_1a432994c885091b97aaef232cc64e5b4e" prot="public" virt="non-virtual"><scope>FormationStats::Ranks</scope><name>UNIT_ADDITIONAL_SPEED</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

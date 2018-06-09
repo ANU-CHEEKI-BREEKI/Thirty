@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_9d3270666da642f2cd77ee5eccc191a3" kind="dir">
+    <compoundname>D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI</compoundname>
+    <innerdir refid="dir_059d937e355cf2678f4d0a00cb312cb1">D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory</innerdir>
+    <innerdir refid="dir_9be114effdf95c1298898054ea8b16bd">D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene</innerdir>
+    <innerdir refid="dir_17b5b17fde101ea1f23f954061d0fc6f">D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/ScenesButtons</innerdir>
+    <innerfile refid="_confirm_panel_8cs">ConfirmPanel.cs</innerfile>
+    <innerfile refid="_death_screen_8cs">DeathScreen.cs</innerfile>
+    <innerfile refid="_dialog_box_8cs">DialogBox.cs</innerfile>
+    <innerfile refid="_i_dialog_box_8cs">IDialogBox.cs</innerfile>
+    <innerfile refid="_main_menu_8cs">MainMenu.cs</innerfile>
+    <innerfile refid="_number_picker_dialog_box_8cs">NumberPickerDialogBox.cs</innerfile>
+    <innerfile refid="_pause_toggle_8cs">PauseToggle.cs</innerfile>
+    <innerfile refid="_reset_position_on_awake_8cs">ResetPositionOnAwake.cs</innerfile>
+    <innerfile refid="_set_active_on_awake_8cs">SetActiveOnAwake.cs</innerfile>
+    <innerfile refid="_settings_audio_section_8cs">SettingsAudioSection.cs</innerfile>
+    <innerfile refid="_settings_graphix_section_8cs">SettingsGraphixSection.cs</innerfile>
+    <innerfile refid="_show_settings_section_8cs">ShowSettingsSection.cs</innerfile>
+    <innerfile refid="_skill_button_8cs">SkillButton.cs</innerfile>
+    <innerfile refid="_squad_cerrent_prop_8cs">SquadCerrentProp.cs</innerfile>
+    <innerfile refid="_squad_property_indicator_8cs">SquadPropertyIndicator.cs</innerfile>
+    <innerfile refid="_tips_panel_8cs">TipsPanel.cs</innerfile>
+    <innerfile refid="_toast_8cs">Toast.cs</innerfile>
+    <innerfile refid="_ui_events_8cs">UiEvents.cs</innerfile>
+    <innerfile refid="_u_i_line_connector_8cs">UILineConnector.cs</innerfile>
+    <innerfile refid="_u_i_line_renderer_8cs">UILineRenderer.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/"/>
+  </compounddef>
+</doxygen>

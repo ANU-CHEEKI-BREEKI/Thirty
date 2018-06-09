@@ -1,0 +1,211 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_score_panel" kind="class" prot="public">
+    <compoundname>ScorePanel</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_score_panel_1affc3cc07e182ae4011fd7d449a7dbc94" prot="private" static="no" mutable="no">
+        <type>TextMeshProUGUI</type>
+        <definition>TextMeshProUGUI ScorePanel.gold</definition>
+        <argsstring></argsstring>
+        <name>gold</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/ScorePanel.cs" line="10" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/ScorePanel.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_score_panel_1a70cb5677214baa88cd5bf0e249cdd224" prot="private" static="no" mutable="no">
+        <type>TextMeshProUGUI</type>
+        <definition>TextMeshProUGUI ScorePanel.silver</definition>
+        <argsstring></argsstring>
+        <name>silver</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/ScorePanel.cs" line="11" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/ScorePanel.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_score_panel_1a33f96701ed5d662dd2e0a5767dc0f91c" prot="private" static="no" mutable="no">
+        <type>TextMeshProUGUI</type>
+        <definition>TextMeshProUGUI ScorePanel.expirience</definition>
+        <argsstring></argsstring>
+        <name>expirience</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/ScorePanel.cs" line="12" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/ScorePanel.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_score_panel_1af830a43ceec520514b54f26a6fec31d4" prot="private" static="no" mutable="no">
+        <type>RectTransform</type>
+        <definition>RectTransform ScorePanel.rTransform</definition>
+        <argsstring></argsstring>
+        <name>rTransform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/ScorePanel.cs" line="14" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/ScorePanel.cs" bodystart="14" bodyend="-1"/>
+        <referencedby refid="class_score_panel_1a0a2ea4a939baa64d95effa563247ac8b" compoundref="_score_panel_8cs" startline="18" endline="23">Awake</referencedby>
+        <referencedby refid="class_score_panel_1a723d01e7fe73b1e2931ed2df73f9ecef" compoundref="_score_panel_8cs" startline="41" endline="104">RefreshByEvent</referencedby>
+        <referencedby refid="class_score_panel_1a33acdef101e84d1595be050d8b8ebe3b" compoundref="_score_panel_8cs" startline="106" endline="116">WaitForeRebuildPanel</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_score_panel_1a689129f43bd0b7ee88e1956797bd7dbf" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_score_panel" kindref="compound">ScorePanel</ref></type>
+        <definition>ScorePanel ScorePanel.Instance</definition>
+        <argsstring></argsstring>
+        <name>Instance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/ScorePanel.cs" line="16" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/ScorePanel.cs" bodystart="16" bodyend="-1"/>
+        <referencedby refid="class_score_panel_1a0a2ea4a939baa64d95effa563247ac8b" compoundref="_score_panel_8cs" startline="18" endline="23">Awake</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_score_panel_1a0a2ea4a939baa64d95effa563247ac8b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ScorePanel.Awake</definition>
+        <argsstring>()</argsstring>
+        <name>Awake</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/ScorePanel.cs" line="18" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/ScorePanel.cs" bodystart="18" bodyend="23"/>
+        <references refid="class_score_panel_1a689129f43bd0b7ee88e1956797bd7dbf" compoundref="_score_panel_8cs" startline="16">Instance</references>
+        <references refid="class_score_panel_1af830a43ceec520514b54f26a6fec31d4" compoundref="_score_panel_8cs" startline="14">rTransform</references>
+      </memberdef>
+      <memberdef kind="function" id="class_score_panel_1a30c67d3ee90fa6732e794dc1f484e430" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ScorePanel.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/ScorePanel.cs" line="25" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/ScorePanel.cs" bodystart="25" bodyend="32"/>
+        <references refid="class_score_panel_1a723d01e7fe73b1e2931ed2df73f9ecef" compoundref="_score_panel_8cs" startline="41" endline="104">RefreshByEvent</references>
+      </memberdef>
+      <memberdef kind="function" id="class_score_panel_1ae1ed2ab94fd4a076af7ee2e3c814f76b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ScorePanel.OnDestroy</definition>
+        <argsstring>()</argsstring>
+        <name>OnDestroy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/ScorePanel.cs" line="34" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/ScorePanel.cs" bodystart="34" bodyend="39"/>
+        <references refid="class_score_panel_1a723d01e7fe73b1e2931ed2df73f9ecef" compoundref="_score_panel_8cs" startline="41" endline="104">RefreshByEvent</references>
+      </memberdef>
+      <memberdef kind="function" id="class_score_panel_1a723d01e7fe73b1e2931ed2df73f9ecef" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ScorePanel.RefreshByEvent</definition>
+        <argsstring>(float oldValue, float newValue, DSPlayerScore.Score score)</argsstring>
+        <name>RefreshByEvent</name>
+        <param>
+          <type>float</type>
+          <declname>oldValue</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>newValue</declname>
+        </param>
+        <param>
+          <type><ref refid="class_d_s_player_score_1_1_score" kindref="compound">DSPlayerScore.Score</ref></type>
+          <declname>score</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/ScorePanel.cs" line="41" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/ScorePanel.cs" bodystart="41" bodyend="104"/>
+        <references refid="class_d_s_player_score_1ab4b93d26c52c3af7ea722f609f859a28" compoundref="_d_s_player_score_8cs" startline="9">DSPlayerScore.expirience</references>
+        <references refid="class_d_s_player_score_1a4502f5363f2fb5db9940ec117dd2ab19" compoundref="_d_s_player_score_8cs" startline="7">DSPlayerScore.gold</references>
+        <references refid="class_string_formats_1a96409259c22f35583f98794987ad0441" compoundref="_string_formats_8cs" startline="18">StringFormats.intSeparatorNumber</references>
+        <references refid="class_string_formats_1a8a568c4aa83d93614f4742bb39127c62" compoundref="_string_formats_8cs" startline="20">StringFormats.nfi</references>
+        <references refid="class_score_panel_1af830a43ceec520514b54f26a6fec31d4" compoundref="_score_panel_8cs" startline="14">rTransform</references>
+        <references refid="class_d_s_player_score_1a985612b8c0d9d8b5492a6dc015a25894" compoundref="_d_s_player_score_8cs" startline="8">DSPlayerScore.silver</references>
+        <referencedby refid="class_score_panel_1ae1ed2ab94fd4a076af7ee2e3c814f76b" compoundref="_score_panel_8cs" startline="34" endline="39">OnDestroy</referencedby>
+        <referencedby refid="class_score_panel_1a30c67d3ee90fa6732e794dc1f484e430" compoundref="_score_panel_8cs" startline="25" endline="32">Start</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_score_panel_1a33acdef101e84d1595be050d8b8ebe3b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerator</type>
+        <definition>IEnumerator ScorePanel.WaitForeRebuildPanel</definition>
+        <argsstring>()</argsstring>
+        <name>WaitForeRebuildPanel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/ScorePanel.cs" line="106" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/ScorePanel.cs" bodystart="106" bodyend="116"/>
+        <references refid="class_score_panel_1af830a43ceec520514b54f26a6fec31d4" compoundref="_score_panel_8cs" startline="14">rTransform</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="837">
+        <label>ScorePanel</label>
+        <link refid="class_score_panel"/>
+        <childnode refid="838" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="838">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="839">
+        <label>ScorePanel</label>
+        <link refid="class_score_panel"/>
+        <childnode refid="840" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="840">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/ScorePanel.cs" line="9" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/ScorePanel.cs" bodystart="8" bodyend="117"/>
+    <listofallmembers>
+      <member refid="class_score_panel_1a0a2ea4a939baa64d95effa563247ac8b" prot="private" virt="non-virtual"><scope>ScorePanel</scope><name>Awake</name></member>
+      <member refid="class_score_panel_1a33f96701ed5d662dd2e0a5767dc0f91c" prot="private" virt="non-virtual"><scope>ScorePanel</scope><name>expirience</name></member>
+      <member refid="class_score_panel_1affc3cc07e182ae4011fd7d449a7dbc94" prot="private" virt="non-virtual"><scope>ScorePanel</scope><name>gold</name></member>
+      <member refid="class_score_panel_1a689129f43bd0b7ee88e1956797bd7dbf" prot="public" virt="non-virtual"><scope>ScorePanel</scope><name>Instance</name></member>
+      <member refid="class_score_panel_1ae1ed2ab94fd4a076af7ee2e3c814f76b" prot="private" virt="non-virtual"><scope>ScorePanel</scope><name>OnDestroy</name></member>
+      <member refid="class_score_panel_1a723d01e7fe73b1e2931ed2df73f9ecef" prot="private" virt="non-virtual"><scope>ScorePanel</scope><name>RefreshByEvent</name></member>
+      <member refid="class_score_panel_1af830a43ceec520514b54f26a6fec31d4" prot="private" virt="non-virtual"><scope>ScorePanel</scope><name>rTransform</name></member>
+      <member refid="class_score_panel_1a70cb5677214baa88cd5bf0e249cdd224" prot="private" virt="non-virtual"><scope>ScorePanel</scope><name>silver</name></member>
+      <member refid="class_score_panel_1a30c67d3ee90fa6732e794dc1f484e430" prot="private" virt="non-virtual"><scope>ScorePanel</scope><name>Start</name></member>
+      <member refid="class_score_panel_1a33acdef101e84d1595be050d8b8ebe3b" prot="private" virt="non-virtual"><scope>ScorePanel</scope><name>WaitForeRebuildPanel</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

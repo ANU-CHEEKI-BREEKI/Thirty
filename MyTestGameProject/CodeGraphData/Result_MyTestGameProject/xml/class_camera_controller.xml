@@ -1,0 +1,370 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_camera_controller" kind="class" prot="public">
+    <compoundname>CameraController</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_camera_controller_1a922b61d2fe82ca65e9890b887b6e406f" prot="private" static="no" mutable="no">
+        <type><ref refid="class_squad" kindref="compound">Squad</ref></type>
+        <definition>Squad CameraController.squadForFollow</definition>
+        <argsstring></argsstring>
+        <name>squadForFollow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/CameraController.cs" line="7" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/CameraController.cs" bodystart="7" bodyend="-1"/>
+        <referencedby refid="class_camera_controller_1ad4a238c6f7db3ee003302a245d860860" compoundref="_camera_controller_8cs" startline="22" endline="28">Start</referencedby>
+        <referencedby refid="class_camera_controller_1a7c4f486f4bcbd1d54a346fdce9707bd5" compoundref="_camera_controller_8cs" startline="30" endline="49">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_camera_controller_1a4f640c5b4ca7a9047262f68cea74b996" prot="private" static="no" mutable="no">
+        <type>Transform</type>
+        <definition>Transform CameraController.thisTransform</definition>
+        <argsstring></argsstring>
+        <name>thisTransform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/CameraController.cs" line="9" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/CameraController.cs" bodystart="9" bodyend="-1"/>
+        <referencedby refid="class_camera_controller_1ad4a238c6f7db3ee003302a245d860860" compoundref="_camera_controller_8cs" startline="22" endline="28">Start</referencedby>
+        <referencedby refid="class_camera_controller_1a7c4f486f4bcbd1d54a346fdce9707bd5" compoundref="_camera_controller_8cs" startline="30" endline="49">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_camera_controller_1ab019249f505cf46cac870a057ff96415" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float CameraController.defaultCameraSize</definition>
+        <argsstring></argsstring>
+        <name>defaultCameraSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/CameraController.cs" line="11" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/CameraController.cs" bodystart="11" bodyend="-1"/>
+        <referencedby refid="class_camera_controller_1ad79dac56c7bfc8cf179e29bb781776ee" compoundref="_camera_controller_8cs" startline="51" endline="54">OnScrolbarValueChanged</referencedby>
+        <referencedby refid="class_camera_controller_1ad4a238c6f7db3ee003302a245d860860" compoundref="_camera_controller_8cs" startline="22" endline="28">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_camera_controller_1af069f60b026c101acaa824ea86f64713" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float CameraController.aceleration</definition>
+        <argsstring></argsstring>
+        <name>aceleration</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/CameraController.cs" line="13" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/CameraController.cs" bodystart="13" bodyend="-1"/>
+        <referencedby refid="class_camera_controller_1a7c4f486f4bcbd1d54a346fdce9707bd5" compoundref="_camera_controller_8cs" startline="30" endline="49">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_camera_controller_1a936c9c5cd167f41544272916b100c102" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float CameraController.acurasy</definition>
+        <argsstring></argsstring>
+        <name>acurasy</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/CameraController.cs" line="14" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/CameraController.cs" bodystart="14" bodyend="-1"/>
+        <referencedby refid="class_camera_controller_1a7c4f486f4bcbd1d54a346fdce9707bd5" compoundref="_camera_controller_8cs" startline="30" endline="49">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_camera_controller_1acafb62cf49f688a7778044dcfeec7190" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float CameraController.maxSpeed</definition>
+        <argsstring></argsstring>
+        <name>maxSpeed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/CameraController.cs" line="16" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/CameraController.cs" bodystart="16" bodyend="-1"/>
+        <referencedby refid="class_camera_controller_1a7c4f486f4bcbd1d54a346fdce9707bd5" compoundref="_camera_controller_8cs" startline="30" endline="49">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_camera_controller_1a25af92b0e086aed1bd02a99d674411d0" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float CameraController.currentSpeed</definition>
+        <argsstring></argsstring>
+        <name>currentSpeed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/CameraController.cs" line="20" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/CameraController.cs" bodystart="20" bodyend="-1"/>
+        <referencedby refid="class_camera_controller_1a7c4f486f4bcbd1d54a346fdce9707bd5" compoundref="_camera_controller_8cs" startline="30" endline="49">Update</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_camera_controller_1ad4a238c6f7db3ee003302a245d860860" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CameraController.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/CameraController.cs" line="22" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/CameraController.cs" bodystart="22" bodyend="28"/>
+        <references refid="class_camera_controller_1ab019249f505cf46cac870a057ff96415" compoundref="_camera_controller_8cs" startline="11">defaultCameraSize</references>
+        <references refid="class_camera_controller_1a922b61d2fe82ca65e9890b887b6e406f" compoundref="_camera_controller_8cs" startline="7">squadForFollow</references>
+        <references refid="class_camera_controller_1a4f640c5b4ca7a9047262f68cea74b996" compoundref="_camera_controller_8cs" startline="9">thisTransform</references>
+      </memberdef>
+      <memberdef kind="function" id="class_camera_controller_1a7c4f486f4bcbd1d54a346fdce9707bd5" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CameraController.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/CameraController.cs" line="30" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/CameraController.cs" bodystart="30" bodyend="49"/>
+        <references refid="class_camera_controller_1af069f60b026c101acaa824ea86f64713" compoundref="_camera_controller_8cs" startline="13">aceleration</references>
+        <references refid="class_camera_controller_1a936c9c5cd167f41544272916b100c102" compoundref="_camera_controller_8cs" startline="14">acurasy</references>
+        <references refid="class_squad_1a2d34961b1e379d63c8f74f30583b299c" compoundref="_squad_8cs" startline="143">Squad.CenterSquad</references>
+        <references refid="class_camera_controller_1a25af92b0e086aed1bd02a99d674411d0" compoundref="_camera_controller_8cs" startline="20">currentSpeed</references>
+        <references refid="class_camera_controller_1acafb62cf49f688a7778044dcfeec7190" compoundref="_camera_controller_8cs" startline="16">maxSpeed</references>
+        <references refid="class_camera_controller_1a922b61d2fe82ca65e9890b887b6e406f" compoundref="_camera_controller_8cs" startline="7">squadForFollow</references>
+        <references refid="class_camera_controller_1a4f640c5b4ca7a9047262f68cea74b996" compoundref="_camera_controller_8cs" startline="9">thisTransform</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_camera_controller_1ad79dac56c7bfc8cf179e29bb781776ee" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CameraController.OnScrolbarValueChanged</definition>
+        <argsstring>(float newValue)</argsstring>
+        <name>OnScrolbarValueChanged</name>
+        <param>
+          <type>float</type>
+          <declname>newValue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/CameraController.cs" line="51" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/CameraController.cs" bodystart="51" bodyend="54"/>
+        <references refid="class_camera_controller_1ab019249f505cf46cac870a057ff96415" compoundref="_camera_controller_8cs" startline="11">defaultCameraSize</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="100">
+        <label>CameraController</label>
+        <link refid="class_camera_controller"/>
+        <childnode refid="101" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="101">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="104">
+        <label>Squad</label>
+        <link refid="class_squad"/>
+        <childnode refid="103" relation="public-inheritance">
+        </childnode>
+        <childnode refid="105" relation="usage">
+          <edgelabel>currentFormationModifyers</edgelabel>
+          <edgelabel>formation</edgelabel>
+        </childnode>
+        <childnode refid="106" relation="usage">
+          <edgelabel>unitOriginal</edgelabel>
+        </childnode>
+        <childnode refid="104" relation="usage">
+          <edgelabel>playerSquadInstance</edgelabel>
+        </childnode>
+        <childnode refid="115" relation="usage">
+          <edgelabel>inventory</edgelabel>
+        </childnode>
+        <childnode refid="114" relation="usage">
+          <edgelabel>unitStats</edgelabel>
+        </childnode>
+      </node>
+      <node id="107">
+        <label>Equipment</label>
+        <link refid="class_equipment"/>
+        <childnode refid="108" relation="public-inheritance">
+        </childnode>
+        <childnode refid="110" relation="usage">
+          <edgelabel>stats</edgelabel>
+        </childnode>
+      </node>
+      <node id="113">
+        <label>UnitPosition</label>
+        <link refid="class_unit_position"/>
+        <childnode refid="103" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="109">
+        <label>Item.MainProperties</label>
+        <link refid="struct_item_1_1_main_properties"/>
+      </node>
+      <node id="112">
+        <label>Damage</label>
+        <link refid="struct_damage"/>
+      </node>
+      <node id="111">
+        <label>IDescriptionable</label>
+        <link refid="interface_i_descriptionable"/>
+      </node>
+      <node id="102">
+        <label>CameraController</label>
+        <link refid="class_camera_controller"/>
+        <childnode refid="103" relation="public-inheritance">
+        </childnode>
+        <childnode refid="104" relation="usage">
+          <edgelabel>squadForFollow</edgelabel>
+        </childnode>
+      </node>
+      <node id="108">
+        <label>Item</label>
+        <link refid="class_item"/>
+        <childnode refid="103" relation="public-inheritance">
+        </childnode>
+        <childnode refid="109" relation="usage">
+          <edgelabel>mainProperties</edgelabel>
+        </childnode>
+      </node>
+      <node id="116">
+        <label>SkillStack</label>
+        <link refid="class_skill_stack"/>
+        <childnode refid="117" relation="public-inheritance">
+        </childnode>
+        <childnode refid="111" relation="public-inheritance">
+        </childnode>
+        <childnode refid="118" relation="usage">
+          <edgelabel>skill</edgelabel>
+        </childnode>
+      </node>
+      <node id="110">
+        <label>EquipmentStats</label>
+        <link refid="struct_equipment_stats"/>
+        <childnode refid="111" relation="public-inheritance">
+        </childnode>
+        <childnode refid="112" relation="usage">
+          <edgelabel>damage</edgelabel>
+        </childnode>
+      </node>
+      <node id="117">
+        <label>AStack</label>
+        <link refid="class_a_stack"/>
+      </node>
+      <node id="114">
+        <label>UnitStats</label>
+        <link refid="struct_unit_stats"/>
+        <childnode refid="112" relation="usage">
+          <edgelabel>damage</edgelabel>
+        </childnode>
+      </node>
+      <node id="103">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="106">
+        <label>Unit</label>
+        <link refid="class_unit"/>
+        <childnode refid="103" relation="public-inheritance">
+        </childnode>
+        <childnode refid="106" relation="usage">
+          <edgelabel>target</edgelabel>
+        </childnode>
+        <childnode refid="104" relation="usage">
+          <edgelabel>squad</edgelabel>
+        </childnode>
+        <childnode refid="107" relation="usage">
+          <edgelabel>body</edgelabel>
+          <edgelabel>shield</edgelabel>
+          <edgelabel>weapon</edgelabel>
+          <edgelabel>helmet</edgelabel>
+        </childnode>
+        <childnode refid="113" relation="usage">
+          <edgelabel>TargetMovePositionObject</edgelabel>
+          <edgelabel>unitPosOriginal</edgelabel>
+        </childnode>
+        <childnode refid="114" relation="usage">
+          <edgelabel>stats</edgelabel>
+        </childnode>
+      </node>
+      <node id="118">
+        <label>Skill</label>
+        <link refid="class_skill"/>
+        <childnode refid="108" relation="public-inheritance">
+        </childnode>
+        <childnode refid="111" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="119">
+        <label>EquipmentStack</label>
+        <link refid="class_equipment_stack"/>
+        <childnode refid="117" relation="public-inheritance">
+        </childnode>
+        <childnode refid="108" relation="usage">
+          <edgelabel>equipmentMainProperties</edgelabel>
+        </childnode>
+        <childnode refid="110" relation="usage">
+          <edgelabel>equipmentStats</edgelabel>
+        </childnode>
+      </node>
+      <node id="105">
+        <label>FormationStats</label>
+        <link refid="class_formation_stats"/>
+      </node>
+      <node id="115">
+        <label>Inventory</label>
+        <link refid="class_inventory"/>
+        <childnode refid="116" relation="usage">
+          <edgelabel>firstSkill</edgelabel>
+          <edgelabel>secondSkill</edgelabel>
+        </childnode>
+        <childnode refid="107" relation="usage">
+          <edgelabel>body</edgelabel>
+          <edgelabel>shieldNone</edgelabel>
+          <edgelabel>helmetNone</edgelabel>
+          <edgelabel>shield</edgelabel>
+          <edgelabel>weapon</edgelabel>
+          <edgelabel>helmet</edgelabel>
+          <edgelabel>bodyNone</edgelabel>
+        </childnode>
+        <childnode refid="119" relation="usage">
+          <edgelabel>inventory</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/CameraController.cs" line="5" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/CameraController.cs" bodystart="4" bodyend="55"/>
+    <listofallmembers>
+      <member refid="class_camera_controller_1af069f60b026c101acaa824ea86f64713" prot="private" virt="non-virtual"><scope>CameraController</scope><name>aceleration</name></member>
+      <member refid="class_camera_controller_1a936c9c5cd167f41544272916b100c102" prot="private" virt="non-virtual"><scope>CameraController</scope><name>acurasy</name></member>
+      <member refid="class_camera_controller_1a25af92b0e086aed1bd02a99d674411d0" prot="private" virt="non-virtual"><scope>CameraController</scope><name>currentSpeed</name></member>
+      <member refid="class_camera_controller_1ab019249f505cf46cac870a057ff96415" prot="private" virt="non-virtual"><scope>CameraController</scope><name>defaultCameraSize</name></member>
+      <member refid="class_camera_controller_1acafb62cf49f688a7778044dcfeec7190" prot="private" virt="non-virtual"><scope>CameraController</scope><name>maxSpeed</name></member>
+      <member refid="class_camera_controller_1ad79dac56c7bfc8cf179e29bb781776ee" prot="public" virt="non-virtual"><scope>CameraController</scope><name>OnScrolbarValueChanged</name></member>
+      <member refid="class_camera_controller_1a922b61d2fe82ca65e9890b887b6e406f" prot="private" virt="non-virtual"><scope>CameraController</scope><name>squadForFollow</name></member>
+      <member refid="class_camera_controller_1ad4a238c6f7db3ee003302a245d860860" prot="private" virt="non-virtual"><scope>CameraController</scope><name>Start</name></member>
+      <member refid="class_camera_controller_1a4f640c5b4ca7a9047262f68cea74b996" prot="private" virt="non-virtual"><scope>CameraController</scope><name>thisTransform</name></member>
+      <member refid="class_camera_controller_1a7c4f486f4bcbd1d54a346fdce9707bd5" prot="private" virt="non-virtual"><scope>CameraController</scope><name>Update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

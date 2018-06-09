@@ -1,0 +1,340 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_fade_screen" kind="class" prot="public">
+    <compoundname>FadeScreen</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_fade_screen_1a2989480435445cffe03c0327cb76e06c" prot="private" static="no" mutable="no">
+        <type>CanvasGroup</type>
+        <definition>CanvasGroup FadeScreen.cg</definition>
+        <argsstring></argsstring>
+        <name>cg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/FadeScreen.cs" line="9" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/FadeScreen.cs" bodystart="9" bodyend="-1"/>
+        <referencedby refid="class_fade_screen_1aa3eb24bfe530ffaaa1d04c48507c3e90" compoundref="_fade_screen_8cs" startline="15" endline="21">Awake</referencedby>
+        <referencedby refid="class_fade_screen_1a8202a9b3e671b7568c8e5c97bd990a10" compoundref="_fade_screen_8cs" startline="68" endline="71">FadeOff</referencedby>
+        <referencedby refid="class_fade_screen_1a59c19d9a5cbbfd282e39319e685ef66f" compoundref="_fade_screen_8cs" startline="73" endline="76">FadeOn</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_fade_screen_1a6da10391f6f04be49004372b34cec219" prot="private" static="no" mutable="no">
+        <type>Action</type>
+        <definition>Action FadeScreen.OnFadeOn</definition>
+        <argsstring></argsstring>
+        <name>OnFadeOn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/FadeScreen.cs" line="11" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/FadeScreen.cs" bodystart="11" bodyend="-1"/>
+        <referencedby refid="class_fade_screen_1a4b993bcd7608621284da7c0c55799b31" compoundref="_fade_screen_8cs" startline="40" endline="66">Fade</referencedby>
+        <referencedby refid="class_fade_screen_1a3ddcd8dab09126f568779ecaecece9c6" compoundref="_fade_screen_8cs" startline="86" endline="89">FadeOn</referencedby>
+        <referencedby refid="class_fade_screen_1a476e5d65b86199f762041f1249bb6550" compoundref="_fade_screen_8cs" startline="91" endline="117">StaticFade</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="event">
+      <memberdef kind="event" id="class_fade_screen_1aabe03311943766f093e69bd9bf60af69" prot="public" static="no" add="no" remove="no" raise="no">
+        <type>Action</type>
+        <definition>Action FadeScreen.OnFadeOff</definition>
+        <argsstring></argsstring>
+        <name>OnFadeOff</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/FadeScreen.cs" line="11" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/FadeScreen.cs" bodystart="11" bodyend="-1"/>
+        <referencedby refid="class_fade_screen_1a4b993bcd7608621284da7c0c55799b31" compoundref="_fade_screen_8cs" startline="40" endline="66">Fade</referencedby>
+        <referencedby refid="class_fade_screen_1aad3e77ac97e7e1db9ca0124172751109" compoundref="_fade_screen_8cs" startline="81" endline="84">FadeOff</referencedby>
+        <referencedby refid="class_fade_screen_1a476e5d65b86199f762041f1249bb6550" compoundref="_fade_screen_8cs" startline="91" endline="117">StaticFade</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_fade_screen_1a218398c0daa7833b790981ec947e501b" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_fade_screen" kindref="compound">FadeScreen</ref></type>
+        <definition>FadeScreen FadeScreen.Instance</definition>
+        <argsstring></argsstring>
+        <name>Instance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/FadeScreen.cs" line="13" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/FadeScreen.cs" bodystart="13" bodyend="-1"/>
+        <referencedby refid="class_fade_screen_1aa3eb24bfe530ffaaa1d04c48507c3e90" compoundref="_fade_screen_8cs" startline="15" endline="21">Awake</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_fade_screen_1aa3eb24bfe530ffaaa1d04c48507c3e90" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void FadeScreen.Awake</definition>
+        <argsstring>()</argsstring>
+        <name>Awake</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/FadeScreen.cs" line="15" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/FadeScreen.cs" bodystart="15" bodyend="21"/>
+        <references refid="class_fade_screen_1a2989480435445cffe03c0327cb76e06c" compoundref="_fade_screen_8cs" startline="9">cg</references>
+        <references refid="class_fade_screen_1a218398c0daa7833b790981ec947e501b" compoundref="_fade_screen_8cs" startline="13">Instance</references>
+      </memberdef>
+      <memberdef kind="function" id="class_fade_screen_1a9e7df8b6838be99625079e3d2e0287bf" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void FadeScreen.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/FadeScreen.cs" line="23" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/FadeScreen.cs" bodystart="23" bodyend="33"/>
+        <references refid="class_fade_screen_1ae4b1067a94249dc61986c6316707e409" compoundref="_fade_screen_8cs" startline="35" endline="38">FadeWhenStart</references>
+      </memberdef>
+      <memberdef kind="function" id="class_fade_screen_1ae4b1067a94249dc61986c6316707e409" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void FadeScreen.FadeWhenStart</definition>
+        <argsstring>()</argsstring>
+        <name>FadeWhenStart</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/FadeScreen.cs" line="35" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/FadeScreen.cs" bodystart="35" bodyend="38"/>
+        <references refid="class_fade_screen_1a8202a9b3e671b7568c8e5c97bd990a10" compoundref="_fade_screen_8cs" startline="68" endline="71">FadeOff</references>
+        <referencedby refid="class_fade_screen_1a9e7df8b6838be99625079e3d2e0287bf" compoundref="_fade_screen_8cs" startline="23" endline="33">Start</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_fade_screen_1a4b993bcd7608621284da7c0c55799b31" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerator</type>
+        <definition>IEnumerator FadeScreen.Fade</definition>
+        <argsstring>(float duration, bool fade, CanvasGroup cg)</argsstring>
+        <name>Fade</name>
+        <param>
+          <type>float</type>
+          <declname>duration</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>fade</declname>
+        </param>
+        <param>
+          <type>CanvasGroup</type>
+          <declname>cg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/FadeScreen.cs" line="40" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/FadeScreen.cs" bodystart="40" bodyend="66"/>
+        <references refid="class_fade_screen_1aabe03311943766f093e69bd9bf60af69" compoundref="_fade_screen_8cs" startline="11">OnFadeOff</references>
+        <references refid="class_fade_screen_1a6da10391f6f04be49004372b34cec219" compoundref="_fade_screen_8cs" startline="11">OnFadeOn</references>
+        <referencedby refid="class_fade_screen_1a8202a9b3e671b7568c8e5c97bd990a10" compoundref="_fade_screen_8cs" startline="68" endline="71">FadeOff</referencedby>
+        <referencedby refid="class_fade_screen_1a59c19d9a5cbbfd282e39319e685ef66f" compoundref="_fade_screen_8cs" startline="73" endline="76">FadeOn</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_fade_screen_1a8202a9b3e671b7568c8e5c97bd990a10" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void FadeScreen.FadeOff</definition>
+        <argsstring>(float duration)</argsstring>
+        <name>FadeOff</name>
+        <param>
+          <type>float</type>
+          <declname>duration</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/FadeScreen.cs" line="68" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/FadeScreen.cs" bodystart="68" bodyend="71"/>
+        <references refid="class_fade_screen_1a2989480435445cffe03c0327cb76e06c" compoundref="_fade_screen_8cs" startline="9">cg</references>
+        <references refid="class_fade_screen_1a4b993bcd7608621284da7c0c55799b31" compoundref="_fade_screen_8cs" startline="40" endline="66">Fade</references>
+        <referencedby refid="class_fade_screen_1ae4b1067a94249dc61986c6316707e409" compoundref="_fade_screen_8cs" startline="35" endline="38">FadeWhenStart</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_fade_screen_1a59c19d9a5cbbfd282e39319e685ef66f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void FadeScreen.FadeOn</definition>
+        <argsstring>(float duration)</argsstring>
+        <name>FadeOn</name>
+        <param>
+          <type>float</type>
+          <declname>duration</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/FadeScreen.cs" line="73" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/FadeScreen.cs" bodystart="73" bodyend="76"/>
+        <references refid="class_fade_screen_1a2989480435445cffe03c0327cb76e06c" compoundref="_fade_screen_8cs" startline="9">cg</references>
+        <references refid="class_fade_screen_1a4b993bcd7608621284da7c0c55799b31" compoundref="_fade_screen_8cs" startline="40" endline="66">Fade</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_fade_screen_1aad3e77ac97e7e1db9ca0124172751109" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void FadeScreen.FadeOff</definition>
+        <argsstring>(CanvasGroup cg, float duration, MonoBehaviour owner, Action OnFadeOff=null)</argsstring>
+        <name>FadeOff</name>
+        <param>
+          <type>CanvasGroup</type>
+          <declname>cg</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>duration</declname>
+        </param>
+        <param>
+          <type>MonoBehaviour</type>
+          <declname>owner</declname>
+        </param>
+        <param>
+          <type>Action</type>
+          <declname>OnFadeOff</declname>
+          <defval>null</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/FadeScreen.cs" line="81" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/FadeScreen.cs" bodystart="81" bodyend="84"/>
+        <references refid="class_fade_screen_1aabe03311943766f093e69bd9bf60af69" compoundref="_fade_screen_8cs" startline="11">OnFadeOff</references>
+        <references refid="class_fade_screen_1a476e5d65b86199f762041f1249bb6550" compoundref="_fade_screen_8cs" startline="91" endline="117">StaticFade</references>
+      </memberdef>
+      <memberdef kind="function" id="class_fade_screen_1a3ddcd8dab09126f568779ecaecece9c6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void FadeScreen.FadeOn</definition>
+        <argsstring>(CanvasGroup cg, float duration, MonoBehaviour owner, Action OnFadeOn=null)</argsstring>
+        <name>FadeOn</name>
+        <param>
+          <type>CanvasGroup</type>
+          <declname>cg</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>duration</declname>
+        </param>
+        <param>
+          <type>MonoBehaviour</type>
+          <declname>owner</declname>
+        </param>
+        <param>
+          <type>Action</type>
+          <declname>OnFadeOn</declname>
+          <defval>null</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/FadeScreen.cs" line="86" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/FadeScreen.cs" bodystart="86" bodyend="89"/>
+        <references refid="class_fade_screen_1a6da10391f6f04be49004372b34cec219" compoundref="_fade_screen_8cs" startline="11">OnFadeOn</references>
+        <references refid="class_fade_screen_1a476e5d65b86199f762041f1249bb6550" compoundref="_fade_screen_8cs" startline="91" endline="117">StaticFade</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_fade_screen_1a476e5d65b86199f762041f1249bb6550" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerator</type>
+        <definition>static IEnumerator FadeScreen.StaticFade</definition>
+        <argsstring>(float duration, bool fade, CanvasGroup cg, Action OnFadeOn=null, Action OnFadeOff=null)</argsstring>
+        <name>StaticFade</name>
+        <param>
+          <type>float</type>
+          <declname>duration</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>fade</declname>
+        </param>
+        <param>
+          <type>CanvasGroup</type>
+          <declname>cg</declname>
+        </param>
+        <param>
+          <type>Action</type>
+          <declname>OnFadeOn</declname>
+          <defval>null</defval>
+        </param>
+        <param>
+          <type>Action</type>
+          <declname>OnFadeOff</declname>
+          <defval>null</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/FadeScreen.cs" line="91" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/FadeScreen.cs" bodystart="91" bodyend="117"/>
+        <references refid="class_fade_screen_1aabe03311943766f093e69bd9bf60af69" compoundref="_fade_screen_8cs" startline="11">OnFadeOff</references>
+        <references refid="class_fade_screen_1a6da10391f6f04be49004372b34cec219" compoundref="_fade_screen_8cs" startline="11">OnFadeOn</references>
+        <referencedby refid="class_fade_screen_1aad3e77ac97e7e1db9ca0124172751109" compoundref="_fade_screen_8cs" startline="81" endline="84">FadeOff</referencedby>
+        <referencedby refid="class_fade_screen_1a3ddcd8dab09126f568779ecaecece9c6" compoundref="_fade_screen_8cs" startline="86" endline="89">FadeOn</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="359">
+        <label>FadeScreen</label>
+        <link refid="class_fade_screen"/>
+        <childnode refid="360" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="360">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="361">
+        <label>FadeScreen</label>
+        <link refid="class_fade_screen"/>
+        <childnode refid="362" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="362">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/FadeScreen.cs" line="8" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/FadeScreen.cs" bodystart="7" bodyend="118"/>
+    <listofallmembers>
+      <member refid="class_fade_screen_1aa3eb24bfe530ffaaa1d04c48507c3e90" prot="private" virt="non-virtual"><scope>FadeScreen</scope><name>Awake</name></member>
+      <member refid="class_fade_screen_1a2989480435445cffe03c0327cb76e06c" prot="private" virt="non-virtual"><scope>FadeScreen</scope><name>cg</name></member>
+      <member refid="class_fade_screen_1a4b993bcd7608621284da7c0c55799b31" prot="private" virt="non-virtual"><scope>FadeScreen</scope><name>Fade</name></member>
+      <member refid="class_fade_screen_1a8202a9b3e671b7568c8e5c97bd990a10" prot="public" virt="non-virtual"><scope>FadeScreen</scope><name>FadeOff</name></member>
+      <member refid="class_fade_screen_1aad3e77ac97e7e1db9ca0124172751109" prot="public" virt="non-virtual"><scope>FadeScreen</scope><name>FadeOff</name></member>
+      <member refid="class_fade_screen_1a59c19d9a5cbbfd282e39319e685ef66f" prot="public" virt="non-virtual"><scope>FadeScreen</scope><name>FadeOn</name></member>
+      <member refid="class_fade_screen_1a3ddcd8dab09126f568779ecaecece9c6" prot="public" virt="non-virtual"><scope>FadeScreen</scope><name>FadeOn</name></member>
+      <member refid="class_fade_screen_1ae4b1067a94249dc61986c6316707e409" prot="private" virt="non-virtual"><scope>FadeScreen</scope><name>FadeWhenStart</name></member>
+      <member refid="class_fade_screen_1a218398c0daa7833b790981ec947e501b" prot="public" virt="non-virtual"><scope>FadeScreen</scope><name>Instance</name></member>
+      <member refid="class_fade_screen_1aabe03311943766f093e69bd9bf60af69" prot="public" virt="non-virtual"><scope>FadeScreen</scope><name>OnFadeOff</name></member>
+      <member refid="class_fade_screen_1a6da10391f6f04be49004372b34cec219" prot="private" virt="non-virtual"><scope>FadeScreen</scope><name>OnFadeOn</name></member>
+      <member refid="class_fade_screen_1a9e7df8b6838be99625079e3d2e0287bf" prot="private" virt="non-virtual"><scope>FadeScreen</scope><name>Start</name></member>
+      <member refid="class_fade_screen_1a476e5d65b86199f762041f1249bb6550" prot="private" virt="non-virtual"><scope>FadeScreen</scope><name>StaticFade</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

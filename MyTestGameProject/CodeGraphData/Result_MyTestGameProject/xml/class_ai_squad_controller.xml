@@ -1,0 +1,1008 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_ai_squad_controller" kind="class" prot="public">
+    <compoundname>AiSquadController</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="class_ai_squad_controller_1a7cdd0c2c427799902c544d12cc68d644" prot="public" static="no">
+        <name>AiSquadBehaviour</name>
+        <enumvalue id="class_ai_squad_controller_1a7cdd0c2c427799902c544d12cc68d644a65667246deb08637a4c79de3d31ca0dd" prot="public">
+          <name>HOLD_POSITION</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_ai_squad_controller_1a7cdd0c2c427799902c544d12cc68d644ac6ddd0f72ff2fd344693b9ca8d483871" prot="public">
+          <name>ATTACK</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_ai_squad_controller_1a7cdd0c2c427799902c544d12cc68d644a95865673c8870cd531ef8333dd7399a2" prot="public">
+          <name>DEFEND</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/AiSquadController.cs" line="313" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/AiSquadController.cs" bodystart="313" bodyend="313"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_ai_squad_controller_1a1b7ab06a6b41029535bc39fcc23dff9b" prot="private" static="no" mutable="no">
+        <type>LayerMask</type>
+        <definition>LayerMask AiSquadController.directFindPathLayers</definition>
+        <argsstring></argsstring>
+        <name>directFindPathLayers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/AiSquadController.cs" line="10" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/AiSquadController.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ai_squad_controller_1ae29a89f7db281679ff4f8b7600b3c1d0" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float AiSquadController.distToResetStartPosBeforeFindPath</definition>
+        <argsstring></argsstring>
+        <name>distToResetStartPosBeforeFindPath</name>
+        <initializer>= 5f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/AiSquadController.cs" line="20" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/AiSquadController.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ai_squad_controller_1a0718e9851b794bff49091fdb9d780cde" prot="private" static="no" mutable="no">
+        <type><ref refid="class_ground" kindref="compound">Ground</ref></type>
+        <definition>Ground AiSquadController.ground</definition>
+        <argsstring></argsstring>
+        <name>ground</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/AiSquadController.cs" line="22" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/AiSquadController.cs" bodystart="22" bodyend="-1"/>
+        <referencedby refid="class_ai_squad_controller_1a884586ff08b60c2ee405902e8313abdc" compoundref="_ai_squad_controller_8cs" startline="181" endline="223">GoTo</referencedby>
+        <referencedby refid="class_ai_squad_controller_1a5ff5d163282013eadffe75704fa6105e" compoundref="_ai_squad_controller_8cs" startline="50" endline="66">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ai_squad_controller_1a637fe3ee8546b391c5d4cc34e32984ba" prot="private" static="no" mutable="no">
+        <type><ref refid="class_squad" kindref="compound">Squad</ref></type>
+        <definition>Squad AiSquadController.squad</definition>
+        <argsstring></argsstring>
+        <name>squad</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/AiSquadController.cs" line="24" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/AiSquadController.cs" bodystart="24" bodyend="-1"/>
+        <referencedby refid="class_ai_squad_controller_1a884586ff08b60c2ee405902e8313abdc" compoundref="_ai_squad_controller_8cs" startline="181" endline="223">GoTo</referencedby>
+        <referencedby refid="class_ai_squad_controller_1ae83186c41d8b838220a3ac080b781032" compoundref="_ai_squad_controller_8cs" startline="293" endline="311">OnDrawGizmos</referencedby>
+        <referencedby refid="class_ai_squad_controller_1a8d28b137b8c210252caa465b00bc4c84" compoundref="_ai_squad_controller_8cs" startline="170" endline="179">SetActiveSquad</referencedby>
+        <referencedby refid="class_ai_squad_controller_1aeef156bef0b33c8a69c090d4e61375a2" compoundref="_ai_squad_controller_8cs" startline="225" endline="249">SetStartPosition</referencedby>
+        <referencedby refid="class_ai_squad_controller_1a805ebf99b7ed211f9161f0654815a9c6" compoundref="_ai_squad_controller_8cs" startline="120" endline="149">SquadAttack</referencedby>
+        <referencedby refid="class_ai_squad_controller_1a0c53156686c18aa2b8d8c773908c225e" compoundref="_ai_squad_controller_8cs" startline="151" endline="168">SquadBehaviour</referencedby>
+        <referencedby refid="class_ai_squad_controller_1a5ff5d163282013eadffe75704fa6105e" compoundref="_ai_squad_controller_8cs" startline="50" endline="66">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ai_squad_controller_1a87802833e018085dc0f1004e12005cb6" prot="private" static="no" mutable="no">
+        <type><ref refid="class_squad" kindref="compound">Squad</ref></type>
+        <definition>Squad AiSquadController.playerSquad</definition>
+        <argsstring></argsstring>
+        <name>playerSquad</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/AiSquadController.cs" line="25" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/AiSquadController.cs" bodystart="25" bodyend="-1"/>
+        <referencedby refid="class_ai_squad_controller_1af57ee75629d824fdd616b8ffefc021b6" compoundref="_ai_squad_controller_8cs" startline="93" endline="102">Attack</referencedby>
+        <referencedby refid="class_ai_squad_controller_1a9de0a48c0b49092ceed66c1b6f1627f1" compoundref="_ai_squad_controller_8cs" startline="78" endline="91">SlowUpdate</referencedby>
+        <referencedby refid="class_ai_squad_controller_1a5ff5d163282013eadffe75704fa6105e" compoundref="_ai_squad_controller_8cs" startline="50" endline="66">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ai_squad_controller_1ab8b44aeeb1a5bdc56ec67f0b3e7a1141" prot="private" static="no" mutable="no">
+        <type>GameObject</type>
+        <definition>GameObject AiSquadController.squadPositions</definition>
+        <argsstring></argsstring>
+        <name>squadPositions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/AiSquadController.cs" line="27" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/AiSquadController.cs" bodystart="27" bodyend="-1"/>
+        <referencedby refid="class_ai_squad_controller_1a5ff5d163282013eadffe75704fa6105e" compoundref="_ai_squad_controller_8cs" startline="50" endline="66">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ai_squad_controller_1a39bf1a2948bc6b85f90d8094c9d7e08f" prot="private" static="no" mutable="no">
+        <type>GameObject</type>
+        <definition>GameObject AiSquadController.squadUnits</definition>
+        <argsstring></argsstring>
+        <name>squadUnits</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/AiSquadController.cs" line="28" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/AiSquadController.cs" bodystart="28" bodyend="-1"/>
+        <referencedby refid="class_ai_squad_controller_1a5ff5d163282013eadffe75704fa6105e" compoundref="_ai_squad_controller_8cs" startline="50" endline="66">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ai_squad_controller_1acc827500ed3c0f648abf2d8179292c29" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float AiSquadController.distanceToPlayer</definition>
+        <argsstring></argsstring>
+        <name>distanceToPlayer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/AiSquadController.cs" line="30" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/AiSquadController.cs" bodystart="30" bodyend="-1"/>
+        <referencedby refid="class_ai_squad_controller_1af3a22efc533045134b4cb8ceb3974b7b" compoundref="_ai_squad_controller_8cs" startline="104" endline="110">ActivateSquad</referencedby>
+        <referencedby refid="class_ai_squad_controller_1abd38523939bdc5739ec404e2d49294d3" compoundref="_ai_squad_controller_8cs" startline="270" endline="274">BehaviorOnAttack</referencedby>
+        <referencedby refid="class_ai_squad_controller_1a880be1ed801aeecb5d4ea04fffb42a53" compoundref="_ai_squad_controller_8cs" startline="112" endline="118">CalcDistances</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ai_squad_controller_1aa862551c17263207a307d1b63106e959" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float AiSquadController.distanceToStartPosition</definition>
+        <argsstring></argsstring>
+        <name>distanceToStartPosition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/AiSquadController.cs" line="31" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/AiSquadController.cs" bodystart="31" bodyend="-1"/>
+        <referencedby refid="class_ai_squad_controller_1ad0be4ed0b0de2e971f3efd830db2b6ac" compoundref="_ai_squad_controller_8cs" startline="276" endline="291">BehaviorOnDefend</referencedby>
+        <referencedby refid="class_ai_squad_controller_1a880be1ed801aeecb5d4ea04fffb42a53" compoundref="_ai_squad_controller_8cs" startline="112" endline="118">CalcDistances</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ai_squad_controller_1a4f4ff5414bbb6284b015e4204744972a" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float AiSquadController.distPlayerSquadToStartPos</definition>
+        <argsstring></argsstring>
+        <name>distPlayerSquadToStartPos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/AiSquadController.cs" line="32" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/AiSquadController.cs" bodystart="32" bodyend="-1"/>
+        <referencedby refid="class_ai_squad_controller_1ad0be4ed0b0de2e971f3efd830db2b6ac" compoundref="_ai_squad_controller_8cs" startline="276" endline="291">BehaviorOnDefend</referencedby>
+        <referencedby refid="class_ai_squad_controller_1a880be1ed801aeecb5d4ea04fffb42a53" compoundref="_ai_squad_controller_8cs" startline="112" endline="118">CalcDistances</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ai_squad_controller_1a11950912c7a448ce96a74d978713b805" prot="private" static="no" mutable="no">
+        <type>Vector3</type>
+        <definition>Vector3 AiSquadController.startPosition</definition>
+        <argsstring></argsstring>
+        <name>startPosition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/AiSquadController.cs" line="35" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/AiSquadController.cs" bodystart="35" bodyend="-1"/>
+        <referencedby refid="class_ai_squad_controller_1a880be1ed801aeecb5d4ea04fffb42a53" compoundref="_ai_squad_controller_8cs" startline="112" endline="118">CalcDistances</referencedby>
+        <referencedby refid="class_ai_squad_controller_1ae83186c41d8b838220a3ac080b781032" compoundref="_ai_squad_controller_8cs" startline="293" endline="311">OnDrawGizmos</referencedby>
+        <referencedby refid="class_ai_squad_controller_1a805ebf99b7ed211f9161f0654815a9c6" compoundref="_ai_squad_controller_8cs" startline="120" endline="149">SquadAttack</referencedby>
+        <referencedby refid="class_ai_squad_controller_1a5ff5d163282013eadffe75704fa6105e" compoundref="_ai_squad_controller_8cs" startline="50" endline="66">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ai_squad_controller_1a360dfd51fec969ca92118e497bd39bc2" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool AiSquadController.attackPlayer</definition>
+        <argsstring></argsstring>
+        <name>attackPlayer</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/AiSquadController.cs" line="37" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/AiSquadController.cs" bodystart="37" bodyend="-1"/>
+        <referencedby refid="class_ai_squad_controller_1abd38523939bdc5739ec404e2d49294d3" compoundref="_ai_squad_controller_8cs" startline="270" endline="274">BehaviorOnAttack</referencedby>
+        <referencedby refid="class_ai_squad_controller_1ad0be4ed0b0de2e971f3efd830db2b6ac" compoundref="_ai_squad_controller_8cs" startline="276" endline="291">BehaviorOnDefend</referencedby>
+        <referencedby refid="class_ai_squad_controller_1a805ebf99b7ed211f9161f0654815a9c6" compoundref="_ai_squad_controller_8cs" startline="120" endline="149">SquadAttack</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ai_squad_controller_1aaebbf06a67d2a314f54829459ba09a1e" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool AiSquadController.pathfindingIsRunning</definition>
+        <argsstring></argsstring>
+        <name>pathfindingIsRunning</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/AiSquadController.cs" line="39" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/AiSquadController.cs" bodystart="39" bodyend="-1"/>
+        <referencedby refid="class_ai_squad_controller_1ae39f06c85f8ec06184d765876aa53f83" compoundref="_ai_squad_controller_8cs" startline="251" endline="263">FindPath</referencedby>
+        <referencedby refid="class_ai_squad_controller_1a884586ff08b60c2ee405902e8313abdc" compoundref="_ai_squad_controller_8cs" startline="181" endline="223">GoTo</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ai_squad_controller_1a0fd27237327e853ce627a0a60c9fc539" prot="private" static="no" mutable="no">
+        <type>List&lt; Vector3 &gt;</type>
+        <definition>List&lt;Vector3&gt; AiSquadController.path</definition>
+        <argsstring></argsstring>
+        <name>path</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/AiSquadController.cs" line="41" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/AiSquadController.cs" bodystart="41" bodyend="-1"/>
+        <referencedby refid="class_ai_squad_controller_1ae39f06c85f8ec06184d765876aa53f83" compoundref="_ai_squad_controller_8cs" startline="251" endline="263">FindPath</referencedby>
+        <referencedby refid="class_ai_squad_controller_1a884586ff08b60c2ee405902e8313abdc" compoundref="_ai_squad_controller_8cs" startline="181" endline="223">GoTo</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ai_squad_controller_1ad43e86f67e1b2c9a0d9767e649ead527" prot="private" static="no" mutable="no">
+        <type>Vector2</type>
+        <definition>Vector2 AiSquadController.startFindPath</definition>
+        <argsstring></argsstring>
+        <name>startFindPath</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/AiSquadController.cs" line="42" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/AiSquadController.cs" bodystart="42" bodyend="-1"/>
+        <referencedby refid="class_ai_squad_controller_1ae39f06c85f8ec06184d765876aa53f83" compoundref="_ai_squad_controller_8cs" startline="251" endline="263">FindPath</referencedby>
+        <referencedby refid="class_ai_squad_controller_1a884586ff08b60c2ee405902e8313abdc" compoundref="_ai_squad_controller_8cs" startline="181" endline="223">GoTo</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ai_squad_controller_1aaabd0c2fd8aaaf2ab2d76b1aa05ce85a" prot="private" static="no" mutable="no">
+        <type>Vector2</type>
+        <definition>Vector2 AiSquadController.endFindPath</definition>
+        <argsstring></argsstring>
+        <name>endFindPath</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/AiSquadController.cs" line="43" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/AiSquadController.cs" bodystart="43" bodyend="-1"/>
+        <referencedby refid="class_ai_squad_controller_1ae39f06c85f8ec06184d765876aa53f83" compoundref="_ai_squad_controller_8cs" startline="251" endline="263">FindPath</referencedby>
+        <referencedby refid="class_ai_squad_controller_1a884586ff08b60c2ee405902e8313abdc" compoundref="_ai_squad_controller_8cs" startline="181" endline="223">GoTo</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ai_squad_controller_1a11fad6d7d8011ef70dbb1abbc8efd8ba" prot="private" static="no" mutable="no">
+        <type>Vector2</type>
+        <definition>Vector2 AiSquadController.movePosition</definition>
+        <argsstring></argsstring>
+        <name>movePosition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/AiSquadController.cs" line="45" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/AiSquadController.cs" bodystart="45" bodyend="-1"/>
+        <referencedby refid="class_ai_squad_controller_1ae39f06c85f8ec06184d765876aa53f83" compoundref="_ai_squad_controller_8cs" startline="251" endline="263">FindPath</referencedby>
+        <referencedby refid="class_ai_squad_controller_1a884586ff08b60c2ee405902e8313abdc" compoundref="_ai_squad_controller_8cs" startline="181" endline="223">GoTo</referencedby>
+        <referencedby refid="class_ai_squad_controller_1aeef156bef0b33c8a69c090d4e61375a2" compoundref="_ai_squad_controller_8cs" startline="225" endline="249">SetStartPosition</referencedby>
+        <referencedby refid="class_ai_squad_controller_1a805ebf99b7ed211f9161f0654815a9c6" compoundref="_ai_squad_controller_8cs" startline="120" endline="149">SquadAttack</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ai_squad_controller_1a5630f64d5896eae1ee07bf36fa385bd5" prot="private" static="no" mutable="no">
+        <type>Quaternion</type>
+        <definition>Quaternion AiSquadController.lookRotation</definition>
+        <argsstring></argsstring>
+        <name>lookRotation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/AiSquadController.cs" line="46" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/AiSquadController.cs" bodystart="46" bodyend="-1"/>
+        <referencedby refid="class_ai_squad_controller_1ae39f06c85f8ec06184d765876aa53f83" compoundref="_ai_squad_controller_8cs" startline="251" endline="263">FindPath</referencedby>
+        <referencedby refid="class_ai_squad_controller_1a884586ff08b60c2ee405902e8313abdc" compoundref="_ai_squad_controller_8cs" startline="181" endline="223">GoTo</referencedby>
+        <referencedby refid="class_ai_squad_controller_1a805ebf99b7ed211f9161f0654815a9c6" compoundref="_ai_squad_controller_8cs" startline="120" endline="149">SquadAttack</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ai_squad_controller_1a07a202d438d94d8235afbc973a582d97" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool AiSquadController.canGo</definition>
+        <argsstring></argsstring>
+        <name>canGo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/AiSquadController.cs" line="48" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/AiSquadController.cs" bodystart="48" bodyend="-1"/>
+        <referencedby refid="class_ai_squad_controller_1a884586ff08b60c2ee405902e8313abdc" compoundref="_ai_squad_controller_8cs" startline="181" endline="223">GoTo</referencedby>
+        <referencedby refid="class_ai_squad_controller_1a805ebf99b7ed211f9161f0654815a9c6" compoundref="_ai_squad_controller_8cs" startline="120" endline="149">SquadAttack</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_ai_squad_controller_1a5b08b4c3c6ad615b3d125bcfc37b6837" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float AiSquadController.slowApdateDeltaTime</definition>
+        <argsstring></argsstring>
+        <name>slowApdateDeltaTime</name>
+        <initializer>= 0.2f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/AiSquadController.cs" line="12" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/AiSquadController.cs" bodystart="12" bodyend="-1"/>
+        <referencedby refid="class_ai_squad_controller_1a9de0a48c0b49092ceed66c1b6f1627f1" compoundref="_ai_squad_controller_8cs" startline="78" endline="91">SlowUpdate</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ai_squad_controller_1ab2e3274509333057ede152dbfec82fc1" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float AiSquadController.attackDeltaTime</definition>
+        <argsstring></argsstring>
+        <name>attackDeltaTime</name>
+        <initializer>= 1f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/AiSquadController.cs" line="13" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/AiSquadController.cs" bodystart="13" bodyend="-1"/>
+        <referencedby refid="class_ai_squad_controller_1af57ee75629d824fdd616b8ffefc021b6" compoundref="_ai_squad_controller_8cs" startline="93" endline="102">Attack</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ai_squad_controller_1ab2f57aa8ee19430d65d8edd02b7abf05" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float AiSquadController.distanceToActivateSquad</definition>
+        <argsstring></argsstring>
+        <name>distanceToActivateSquad</name>
+        <initializer>= 50</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/AiSquadController.cs" line="14" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/AiSquadController.cs" bodystart="14" bodyend="-1"/>
+        <referencedby refid="class_ai_squad_controller_1af3a22efc533045134b4cb8ceb3974b7b" compoundref="_ai_squad_controller_8cs" startline="104" endline="110">ActivateSquad</referencedby>
+        <referencedby refid="class_ai_squad_controller_1ae83186c41d8b838220a3ac080b781032" compoundref="_ai_squad_controller_8cs" startline="293" endline="311">OnDrawGizmos</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ai_squad_controller_1a83ebc6874bc3a633db4e9ccbfb75237c" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float AiSquadController.radiusOfDefendArea</definition>
+        <argsstring></argsstring>
+        <name>radiusOfDefendArea</name>
+        <initializer>= 15</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/AiSquadController.cs" line="15" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/AiSquadController.cs" bodystart="15" bodyend="-1"/>
+        <referencedby refid="class_ai_squad_controller_1ad0be4ed0b0de2e971f3efd830db2b6ac" compoundref="_ai_squad_controller_8cs" startline="276" endline="291">BehaviorOnDefend</referencedby>
+        <referencedby refid="class_ai_squad_controller_1ae83186c41d8b838220a3ac080b781032" compoundref="_ai_squad_controller_8cs" startline="293" endline="311">OnDrawGizmos</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ai_squad_controller_1a9edc02924d2e6fb000dee67567c9d0cb" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float AiSquadController.radiusOfAttackArea</definition>
+        <argsstring></argsstring>
+        <name>radiusOfAttackArea</name>
+        <initializer>= 30</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/AiSquadController.cs" line="16" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/AiSquadController.cs" bodystart="16" bodyend="-1"/>
+        <referencedby refid="class_ai_squad_controller_1abd38523939bdc5739ec404e2d49294d3" compoundref="_ai_squad_controller_8cs" startline="270" endline="274">BehaviorOnAttack</referencedby>
+        <referencedby refid="class_ai_squad_controller_1ad0be4ed0b0de2e971f3efd830db2b6ac" compoundref="_ai_squad_controller_8cs" startline="276" endline="291">BehaviorOnDefend</referencedby>
+        <referencedby refid="class_ai_squad_controller_1ae83186c41d8b838220a3ac080b781032" compoundref="_ai_squad_controller_8cs" startline="293" endline="311">OnDrawGizmos</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ai_squad_controller_1a0124f85fd9c0308277c4650d7e609420" prot="public" static="no" mutable="no">
+        <type><ref refid="class_ai_squad_controller_1a7cdd0c2c427799902c544d12cc68d644" kindref="member">AiSquadBehaviour</ref></type>
+        <definition>AiSquadBehaviour AiSquadController.mode</definition>
+        <argsstring></argsstring>
+        <name>mode</name>
+        <initializer>= AiSquadBehaviour.DEFEND</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/AiSquadController.cs" line="17" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/AiSquadController.cs" bodystart="17" bodyend="-1"/>
+        <referencedby refid="class_ai_squad_controller_1a0c53156686c18aa2b8d8c773908c225e" compoundref="_ai_squad_controller_8cs" startline="151" endline="168">SquadBehaviour</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_ai_squad_controller_1a5ff5d163282013eadffe75704fa6105e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AiSquadController.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/AiSquadController.cs" line="50" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/AiSquadController.cs" bodystart="50" bodyend="66"/>
+        <references refid="class_ai_squad_controller_1af57ee75629d824fdd616b8ffefc021b6" compoundref="_ai_squad_controller_8cs" startline="93" endline="102">Attack</references>
+        <references refid="class_ai_squad_controller_1a0718e9851b794bff49091fdb9d780cde" compoundref="_ai_squad_controller_8cs" startline="22">ground</references>
+        <references refid="class_ai_squad_controller_1a87802833e018085dc0f1004e12005cb6" compoundref="_ai_squad_controller_8cs" startline="25">playerSquad</references>
+        <references refid="class_ai_squad_controller_1a9de0a48c0b49092ceed66c1b6f1627f1" compoundref="_ai_squad_controller_8cs" startline="78" endline="91">SlowUpdate</references>
+        <references refid="class_ai_squad_controller_1a637fe3ee8546b391c5d4cc34e32984ba" compoundref="_ai_squad_controller_8cs" startline="24">squad</references>
+        <references refid="class_ai_squad_controller_1a0e6017ec71b53317ec060d7de533ab09" compoundref="_ai_squad_controller_8cs" startline="68" endline="71">Squad_OnSquadDestroy</references>
+        <references refid="class_ai_squad_controller_1ab8b44aeeb1a5bdc56ec67f0b3e7a1141" compoundref="_ai_squad_controller_8cs" startline="27">squadPositions</references>
+        <references refid="class_ai_squad_controller_1a39bf1a2948bc6b85f90d8094c9d7e08f" compoundref="_ai_squad_controller_8cs" startline="28">squadUnits</references>
+        <references refid="class_ai_squad_controller_1a11950912c7a448ce96a74d978713b805" compoundref="_ai_squad_controller_8cs" startline="35">startPosition</references>
+      </memberdef>
+      <memberdef kind="function" id="class_ai_squad_controller_1a0e6017ec71b53317ec060d7de533ab09" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AiSquadController.Squad_OnSquadDestroy</definition>
+        <argsstring>()</argsstring>
+        <name>Squad_OnSquadDestroy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/AiSquadController.cs" line="68" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/AiSquadController.cs" bodystart="68" bodyend="71"/>
+        <referencedby refid="class_ai_squad_controller_1a7a81aa7abd65c61554d5d29184f91783" compoundref="_ai_squad_controller_8cs" startline="73" endline="76">OnDestroy</referencedby>
+        <referencedby refid="class_ai_squad_controller_1a5ff5d163282013eadffe75704fa6105e" compoundref="_ai_squad_controller_8cs" startline="50" endline="66">Start</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_ai_squad_controller_1a7a81aa7abd65c61554d5d29184f91783" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AiSquadController.OnDestroy</definition>
+        <argsstring>()</argsstring>
+        <name>OnDestroy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/AiSquadController.cs" line="73" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/AiSquadController.cs" bodystart="73" bodyend="76"/>
+        <references refid="class_ai_squad_controller_1a0e6017ec71b53317ec060d7de533ab09" compoundref="_ai_squad_controller_8cs" startline="68" endline="71">Squad_OnSquadDestroy</references>
+      </memberdef>
+      <memberdef kind="function" id="class_ai_squad_controller_1a9de0a48c0b49092ceed66c1b6f1627f1" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerator</type>
+        <definition>IEnumerator AiSquadController.SlowUpdate</definition>
+        <argsstring>()</argsstring>
+        <name>SlowUpdate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/AiSquadController.cs" line="78" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/AiSquadController.cs" bodystart="78" bodyend="91"/>
+        <references refid="class_ai_squad_controller_1af3a22efc533045134b4cb8ceb3974b7b" compoundref="_ai_squad_controller_8cs" startline="104" endline="110">ActivateSquad</references>
+        <references refid="class_ai_squad_controller_1a880be1ed801aeecb5d4ea04fffb42a53" compoundref="_ai_squad_controller_8cs" startline="112" endline="118">CalcDistances</references>
+        <references refid="class_ai_squad_controller_1a87802833e018085dc0f1004e12005cb6" compoundref="_ai_squad_controller_8cs" startline="25">playerSquad</references>
+        <references refid="class_ai_squad_controller_1a5b08b4c3c6ad615b3d125bcfc37b6837" compoundref="_ai_squad_controller_8cs" startline="12">slowApdateDeltaTime</references>
+        <references refid="class_ai_squad_controller_1a0c53156686c18aa2b8d8c773908c225e" compoundref="_ai_squad_controller_8cs" startline="151" endline="168">SquadBehaviour</references>
+        <referencedby refid="class_ai_squad_controller_1a5ff5d163282013eadffe75704fa6105e" compoundref="_ai_squad_controller_8cs" startline="50" endline="66">Start</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_ai_squad_controller_1af57ee75629d824fdd616b8ffefc021b6" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerator</type>
+        <definition>IEnumerator AiSquadController.Attack</definition>
+        <argsstring>()</argsstring>
+        <name>Attack</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/AiSquadController.cs" line="93" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/AiSquadController.cs" bodystart="93" bodyend="102"/>
+        <references refid="class_ai_squad_controller_1ab2e3274509333057ede152dbfec82fc1" compoundref="_ai_squad_controller_8cs" startline="13">attackDeltaTime</references>
+        <references refid="class_ai_squad_controller_1a87802833e018085dc0f1004e12005cb6" compoundref="_ai_squad_controller_8cs" startline="25">playerSquad</references>
+        <references refid="class_ai_squad_controller_1a805ebf99b7ed211f9161f0654815a9c6" compoundref="_ai_squad_controller_8cs" startline="120" endline="149">SquadAttack</references>
+        <referencedby refid="class_ai_squad_controller_1a5ff5d163282013eadffe75704fa6105e" compoundref="_ai_squad_controller_8cs" startline="50" endline="66">Start</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_ai_squad_controller_1af3a22efc533045134b4cb8ceb3974b7b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AiSquadController.ActivateSquad</definition>
+        <argsstring>()</argsstring>
+        <name>ActivateSquad</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/AiSquadController.cs" line="104" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/AiSquadController.cs" bodystart="104" bodyend="110"/>
+        <references refid="class_ai_squad_controller_1ab2f57aa8ee19430d65d8edd02b7abf05" compoundref="_ai_squad_controller_8cs" startline="14">distanceToActivateSquad</references>
+        <references refid="class_ai_squad_controller_1acc827500ed3c0f648abf2d8179292c29" compoundref="_ai_squad_controller_8cs" startline="30">distanceToPlayer</references>
+        <references refid="class_ai_squad_controller_1a8d28b137b8c210252caa465b00bc4c84" compoundref="_ai_squad_controller_8cs" startline="170" endline="179">SetActiveSquad</references>
+        <referencedby refid="class_ai_squad_controller_1a9de0a48c0b49092ceed66c1b6f1627f1" compoundref="_ai_squad_controller_8cs" startline="78" endline="91">SlowUpdate</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_ai_squad_controller_1a880be1ed801aeecb5d4ea04fffb42a53" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AiSquadController.CalcDistances</definition>
+        <argsstring>()</argsstring>
+        <name>CalcDistances</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/AiSquadController.cs" line="112" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/AiSquadController.cs" bodystart="112" bodyend="118"/>
+        <references refid="class_ai_squad_controller_1acc827500ed3c0f648abf2d8179292c29" compoundref="_ai_squad_controller_8cs" startline="30">distanceToPlayer</references>
+        <references refid="class_ai_squad_controller_1aa862551c17263207a307d1b63106e959" compoundref="_ai_squad_controller_8cs" startline="31">distanceToStartPosition</references>
+        <references refid="class_ai_squad_controller_1a4f4ff5414bbb6284b015e4204744972a" compoundref="_ai_squad_controller_8cs" startline="32">distPlayerSquadToStartPos</references>
+        <references refid="class_ai_squad_controller_1a11950912c7a448ce96a74d978713b805" compoundref="_ai_squad_controller_8cs" startline="35">startPosition</references>
+        <referencedby refid="class_ai_squad_controller_1a9de0a48c0b49092ceed66c1b6f1627f1" compoundref="_ai_squad_controller_8cs" startline="78" endline="91">SlowUpdate</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_ai_squad_controller_1a805ebf99b7ed211f9161f0654815a9c6" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AiSquadController.SquadAttack</definition>
+        <argsstring>()</argsstring>
+        <name>SquadAttack</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/AiSquadController.cs" line="120" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/AiSquadController.cs" bodystart="120" bodyend="149"/>
+        <references refid="class_ai_squad_controller_1a360dfd51fec969ca92118e497bd39bc2" compoundref="_ai_squad_controller_8cs" startline="37">attackPlayer</references>
+        <references refid="class_ai_squad_controller_1a07a202d438d94d8235afbc973a582d97" compoundref="_ai_squad_controller_8cs" startline="48">canGo</references>
+        <references refid="class_ai_squad_controller_1a884586ff08b60c2ee405902e8313abdc" compoundref="_ai_squad_controller_8cs" startline="181" endline="223">GoTo</references>
+        <references refid="class_ai_squad_controller_1a5630f64d5896eae1ee07bf36fa385bd5" compoundref="_ai_squad_controller_8cs" startline="46">lookRotation</references>
+        <references refid="class_ai_squad_controller_1a11fad6d7d8011ef70dbb1abbc8efd8ba" compoundref="_ai_squad_controller_8cs" startline="45">movePosition</references>
+        <references refid="class_squad_1a024d83821917a7c547e23ffcdf81caa4" compoundref="_squad_8cs" startline="208">Squad.PositionsTransform</references>
+        <references refid="class_ai_squad_controller_1a637fe3ee8546b391c5d4cc34e32984ba" compoundref="_ai_squad_controller_8cs" startline="24">squad</references>
+        <references refid="class_ai_squad_controller_1a11950912c7a448ce96a74d978713b805" compoundref="_ai_squad_controller_8cs" startline="35">startPosition</references>
+        <referencedby refid="class_ai_squad_controller_1af57ee75629d824fdd616b8ffefc021b6" compoundref="_ai_squad_controller_8cs" startline="93" endline="102">Attack</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_ai_squad_controller_1a0c53156686c18aa2b8d8c773908c225e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AiSquadController.SquadBehaviour</definition>
+        <argsstring>()</argsstring>
+        <name>SquadBehaviour</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/AiSquadController.cs" line="151" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/AiSquadController.cs" bodystart="151" bodyend="168"/>
+        <references refid="class_ai_squad_controller_1abd38523939bdc5739ec404e2d49294d3" compoundref="_ai_squad_controller_8cs" startline="270" endline="274">BehaviorOnAttack</references>
+        <references refid="class_ai_squad_controller_1ad0be4ed0b0de2e971f3efd830db2b6ac" compoundref="_ai_squad_controller_8cs" startline="276" endline="291">BehaviorOnDefend</references>
+        <references refid="class_ai_squad_controller_1a3e63e46e5a6d1aaf8891ae9f0ac8c1f0" compoundref="_ai_squad_controller_8cs" startline="265" endline="268">BehaviorOnHold</references>
+        <references refid="class_ai_squad_controller_1a0124f85fd9c0308277c4650d7e609420" compoundref="_ai_squad_controller_8cs" startline="17">mode</references>
+        <references refid="class_ai_squad_controller_1a637fe3ee8546b391c5d4cc34e32984ba" compoundref="_ai_squad_controller_8cs" startline="24">squad</references>
+        <referencedby refid="class_ai_squad_controller_1a9de0a48c0b49092ceed66c1b6f1627f1" compoundref="_ai_squad_controller_8cs" startline="78" endline="91">SlowUpdate</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_ai_squad_controller_1a8d28b137b8c210252caa465b00bc4c84" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AiSquadController.SetActiveSquad</definition>
+        <argsstring>(bool newValue)</argsstring>
+        <name>SetActiveSquad</name>
+        <param>
+          <type>bool</type>
+          <declname>newValue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/AiSquadController.cs" line="170" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/AiSquadController.cs" bodystart="170" bodyend="179"/>
+        <references refid="class_ai_squad_controller_1a637fe3ee8546b391c5d4cc34e32984ba" compoundref="_ai_squad_controller_8cs" startline="24">squad</references>
+        <referencedby refid="class_ai_squad_controller_1af3a22efc533045134b4cb8ceb3974b7b" compoundref="_ai_squad_controller_8cs" startline="104" endline="110">ActivateSquad</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_ai_squad_controller_1a884586ff08b60c2ee405902e8313abdc" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AiSquadController.GoTo</definition>
+        <argsstring>()</argsstring>
+        <name>GoTo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/AiSquadController.cs" line="181" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/AiSquadController.cs" bodystart="181" bodyend="223"/>
+        <references refid="struct_map_block_1a9e46c3698814e50f60550ebd48ab9cb2" compoundref="_map_block_8cs" startline="10">MapBlock.BLOCK_SCALE</references>
+        <references refid="class_ai_squad_controller_1a07a202d438d94d8235afbc973a582d97" compoundref="_ai_squad_controller_8cs" startline="48">canGo</references>
+        <references refid="class_ground_1a51db3f48d60129133133b200d30453de" compoundref="_ground_8cs" startline="18">Ground.ColCountOfBlocks</references>
+        <references refid="class_ai_squad_controller_1aaabd0c2fd8aaaf2ab2d76b1aa05ce85a" compoundref="_ai_squad_controller_8cs" startline="43">endFindPath</references>
+        <references refid="class_ai_squad_controller_1ae39f06c85f8ec06184d765876aa53f83" compoundref="_ai_squad_controller_8cs" startline="251" endline="263">FindPath</references>
+        <references refid="class_ground_1a13daf84b12b3105ca4a7a376ebf94018" compoundref="_ground_8cs" startline="41">Ground.Grid</references>
+        <references refid="class_ai_squad_controller_1a0718e9851b794bff49091fdb9d780cde" compoundref="_ai_squad_controller_8cs" startline="22">ground</references>
+        <references refid="class_ai_squad_controller_1a5630f64d5896eae1ee07bf36fa385bd5" compoundref="_ai_squad_controller_8cs" startline="46">lookRotation</references>
+        <references refid="class_ai_squad_controller_1a11fad6d7d8011ef70dbb1abbc8efd8ba" compoundref="_ai_squad_controller_8cs" startline="45">movePosition</references>
+        <references refid="class_ai_squad_controller_1a0fd27237327e853ce627a0a60c9fc539" compoundref="_ai_squad_controller_8cs" startline="41">path</references>
+        <references refid="class_ai_squad_controller_1aaebbf06a67d2a314f54829459ba09a1e" compoundref="_ai_squad_controller_8cs" startline="39">pathfindingIsRunning</references>
+        <references refid="class_squad_1a024d83821917a7c547e23ffcdf81caa4" compoundref="_squad_8cs" startline="208">Squad.PositionsTransform</references>
+        <references refid="class_ground_1a4587daf6f5efbee79a00724a7d906853" compoundref="_ground_8cs" startline="16">Ground.RowCountOfBlocks</references>
+        <references refid="class_ai_squad_controller_1aeef156bef0b33c8a69c090d4e61375a2" compoundref="_ai_squad_controller_8cs" startline="225" endline="249">SetStartPosition</references>
+        <references refid="class_ai_squad_controller_1a637fe3ee8546b391c5d4cc34e32984ba" compoundref="_ai_squad_controller_8cs" startline="24">squad</references>
+        <references refid="class_ai_squad_controller_1ad43e86f67e1b2c9a0d9767e649ead527" compoundref="_ai_squad_controller_8cs" startline="42">startFindPath</references>
+        <references refid="struct_map_block_1a8fb3e875d60f04656e388e30da38e6f7" compoundref="_map_block_8cs" startline="8">MapBlock.WORLD_BLOCK_SIZE</references>
+        <referencedby refid="class_ai_squad_controller_1a805ebf99b7ed211f9161f0654815a9c6" compoundref="_ai_squad_controller_8cs" startline="120" endline="149">SquadAttack</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_ai_squad_controller_1aeef156bef0b33c8a69c090d4e61375a2" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AiSquadController.SetStartPosition</definition>
+        <argsstring>()</argsstring>
+        <name>SetStartPosition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/AiSquadController.cs" line="225" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/AiSquadController.cs" bodystart="225" bodyend="249"/>
+        <references refid="class_squad_1a2daafef1aec88ff88eb32f4f514b1f3b" compoundref="_squad_8cs" startline="115">Squad.FlipRotation</references>
+        <references refid="class_ai_squad_controller_1a11fad6d7d8011ef70dbb1abbc8efd8ba" compoundref="_ai_squad_controller_8cs" startline="45">movePosition</references>
+        <references refid="class_squad_1a024d83821917a7c547e23ffcdf81caa4" compoundref="_squad_8cs" startline="208">Squad.PositionsTransform</references>
+        <references refid="class_ai_squad_controller_1a637fe3ee8546b391c5d4cc34e32984ba" compoundref="_ai_squad_controller_8cs" startline="24">squad</references>
+        <referencedby refid="class_ai_squad_controller_1a884586ff08b60c2ee405902e8313abdc" compoundref="_ai_squad_controller_8cs" startline="181" endline="223">GoTo</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_ai_squad_controller_1ae39f06c85f8ec06184d765876aa53f83" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AiSquadController.FindPath</definition>
+        <argsstring>(System.Object o)</argsstring>
+        <name>FindPath</name>
+        <param>
+          <type>System.Object</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/AiSquadController.cs" line="251" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/AiSquadController.cs" bodystart="251" bodyend="263"/>
+        <references refid="struct_map_block_1a9e46c3698814e50f60550ebd48ab9cb2" compoundref="_map_block_8cs" startline="10">MapBlock.BLOCK_SCALE</references>
+        <references refid="class_ai_squad_controller_1aaabd0c2fd8aaaf2ab2d76b1aa05ce85a" compoundref="_ai_squad_controller_8cs" startline="43">endFindPath</references>
+        <references refid="class_ai_squad_controller_1a5630f64d5896eae1ee07bf36fa385bd5" compoundref="_ai_squad_controller_8cs" startline="46">lookRotation</references>
+        <references refid="class_ai_squad_controller_1a11fad6d7d8011ef70dbb1abbc8efd8ba" compoundref="_ai_squad_controller_8cs" startline="45">movePosition</references>
+        <references refid="class_ai_squad_controller_1a0fd27237327e853ce627a0a60c9fc539" compoundref="_ai_squad_controller_8cs" startline="41">path</references>
+        <references refid="class_ai_squad_controller_1aaebbf06a67d2a314f54829459ba09a1e" compoundref="_ai_squad_controller_8cs" startline="39">pathfindingIsRunning</references>
+        <references refid="class_ai_squad_controller_1ad43e86f67e1b2c9a0d9767e649ead527" compoundref="_ai_squad_controller_8cs" startline="42">startFindPath</references>
+        <referencedby refid="class_ai_squad_controller_1a884586ff08b60c2ee405902e8313abdc" compoundref="_ai_squad_controller_8cs" startline="181" endline="223">GoTo</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_ai_squad_controller_1a3e63e46e5a6d1aaf8891ae9f0ac8c1f0" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AiSquadController.BehaviorOnHold</definition>
+        <argsstring>()</argsstring>
+        <name>BehaviorOnHold</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/AiSquadController.cs" line="265" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/AiSquadController.cs" bodystart="265" bodyend="268"/>
+        <referencedby refid="class_ai_squad_controller_1a0c53156686c18aa2b8d8c773908c225e" compoundref="_ai_squad_controller_8cs" startline="151" endline="168">SquadBehaviour</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_ai_squad_controller_1abd38523939bdc5739ec404e2d49294d3" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AiSquadController.BehaviorOnAttack</definition>
+        <argsstring>()</argsstring>
+        <name>BehaviorOnAttack</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/AiSquadController.cs" line="270" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/AiSquadController.cs" bodystart="270" bodyend="274"/>
+        <references refid="class_ai_squad_controller_1a360dfd51fec969ca92118e497bd39bc2" compoundref="_ai_squad_controller_8cs" startline="37">attackPlayer</references>
+        <references refid="class_ai_squad_controller_1acc827500ed3c0f648abf2d8179292c29" compoundref="_ai_squad_controller_8cs" startline="30">distanceToPlayer</references>
+        <references refid="class_ai_squad_controller_1a9edc02924d2e6fb000dee67567c9d0cb" compoundref="_ai_squad_controller_8cs" startline="16">radiusOfAttackArea</references>
+        <referencedby refid="class_ai_squad_controller_1a0c53156686c18aa2b8d8c773908c225e" compoundref="_ai_squad_controller_8cs" startline="151" endline="168">SquadBehaviour</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_ai_squad_controller_1ad0be4ed0b0de2e971f3efd830db2b6ac" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AiSquadController.BehaviorOnDefend</definition>
+        <argsstring>()</argsstring>
+        <name>BehaviorOnDefend</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/AiSquadController.cs" line="276" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/AiSquadController.cs" bodystart="276" bodyend="291"/>
+        <references refid="class_ai_squad_controller_1a360dfd51fec969ca92118e497bd39bc2" compoundref="_ai_squad_controller_8cs" startline="37">attackPlayer</references>
+        <references refid="class_ai_squad_controller_1aa862551c17263207a307d1b63106e959" compoundref="_ai_squad_controller_8cs" startline="31">distanceToStartPosition</references>
+        <references refid="class_ai_squad_controller_1a4f4ff5414bbb6284b015e4204744972a" compoundref="_ai_squad_controller_8cs" startline="32">distPlayerSquadToStartPos</references>
+        <references refid="class_ai_squad_controller_1a9edc02924d2e6fb000dee67567c9d0cb" compoundref="_ai_squad_controller_8cs" startline="16">radiusOfAttackArea</references>
+        <references refid="class_ai_squad_controller_1a83ebc6874bc3a633db4e9ccbfb75237c" compoundref="_ai_squad_controller_8cs" startline="15">radiusOfDefendArea</references>
+        <referencedby refid="class_ai_squad_controller_1a0c53156686c18aa2b8d8c773908c225e" compoundref="_ai_squad_controller_8cs" startline="151" endline="168">SquadBehaviour</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_ai_squad_controller_1ae83186c41d8b838220a3ac080b781032" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AiSquadController.OnDrawGizmos</definition>
+        <argsstring>()</argsstring>
+        <name>OnDrawGizmos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/AiSquadController.cs" line="293" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/AiSquadController.cs" bodystart="293" bodyend="311"/>
+        <references refid="class_ai_squad_controller_1ab2f57aa8ee19430d65d8edd02b7abf05" compoundref="_ai_squad_controller_8cs" startline="14">distanceToActivateSquad</references>
+        <references refid="class_ai_squad_controller_1a9edc02924d2e6fb000dee67567c9d0cb" compoundref="_ai_squad_controller_8cs" startline="16">radiusOfAttackArea</references>
+        <references refid="class_ai_squad_controller_1a83ebc6874bc3a633db4e9ccbfb75237c" compoundref="_ai_squad_controller_8cs" startline="15">radiusOfDefendArea</references>
+        <references refid="class_ai_squad_controller_1a637fe3ee8546b391c5d4cc34e32984ba" compoundref="_ai_squad_controller_8cs" startline="24">squad</references>
+        <references refid="class_ai_squad_controller_1a11950912c7a448ce96a74d978713b805" compoundref="_ai_squad_controller_8cs" startline="35">startPosition</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="13">
+        <label>AiSquadController</label>
+        <link refid="class_ai_squad_controller"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="17">
+        <label>Squad</label>
+        <link refid="class_squad"/>
+        <childnode refid="16" relation="public-inheritance">
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>currentFormationModifyers</edgelabel>
+          <edgelabel>formation</edgelabel>
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>unitOriginal</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>playerSquadInstance</edgelabel>
+        </childnode>
+        <childnode refid="28" relation="usage">
+          <edgelabel>inventory</edgelabel>
+        </childnode>
+        <childnode refid="27" relation="usage">
+          <edgelabel>unitStats</edgelabel>
+        </childnode>
+      </node>
+      <node id="20">
+        <label>Equipment</label>
+        <link refid="class_equipment"/>
+        <childnode refid="21" relation="public-inheritance">
+        </childnode>
+        <childnode refid="23" relation="usage">
+          <edgelabel>stats</edgelabel>
+        </childnode>
+      </node>
+      <node id="26">
+        <label>UnitPosition</label>
+        <link refid="class_unit_position"/>
+        <childnode refid="16" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>Item.MainProperties</label>
+        <link refid="struct_item_1_1_main_properties"/>
+      </node>
+      <node id="25">
+        <label>Damage</label>
+        <link refid="struct_damage"/>
+      </node>
+      <node id="24">
+        <label>IDescriptionable</label>
+        <link refid="interface_i_descriptionable"/>
+      </node>
+      <node id="15">
+        <label>AiSquadController</label>
+        <link refid="class_ai_squad_controller"/>
+        <childnode refid="16" relation="public-inheritance">
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>squad</edgelabel>
+          <edgelabel>playerSquad</edgelabel>
+        </childnode>
+        <childnode refid="33" relation="usage">
+          <edgelabel>ground</edgelabel>
+        </childnode>
+      </node>
+      <node id="33">
+        <label>Ground</label>
+        <link refid="class_ground"/>
+        <childnode refid="16" relation="public-inheritance">
+        </childnode>
+        <childnode refid="34" relation="usage">
+          <edgelabel>rnd</edgelabel>
+        </childnode>
+      </node>
+      <node id="21">
+        <label>Item</label>
+        <link refid="class_item"/>
+        <childnode refid="16" relation="public-inheritance">
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>mainProperties</edgelabel>
+        </childnode>
+      </node>
+      <node id="34">
+        <label>System</label>
+      </node>
+      <node id="29">
+        <label>SkillStack</label>
+        <link refid="class_skill_stack"/>
+        <childnode refid="30" relation="public-inheritance">
+        </childnode>
+        <childnode refid="24" relation="public-inheritance">
+        </childnode>
+        <childnode refid="31" relation="usage">
+          <edgelabel>skill</edgelabel>
+        </childnode>
+      </node>
+      <node id="23">
+        <label>EquipmentStats</label>
+        <link refid="struct_equipment_stats"/>
+        <childnode refid="24" relation="public-inheritance">
+        </childnode>
+        <childnode refid="25" relation="usage">
+          <edgelabel>damage</edgelabel>
+        </childnode>
+      </node>
+      <node id="30">
+        <label>AStack</label>
+        <link refid="class_a_stack"/>
+      </node>
+      <node id="27">
+        <label>UnitStats</label>
+        <link refid="struct_unit_stats"/>
+        <childnode refid="25" relation="usage">
+          <edgelabel>damage</edgelabel>
+        </childnode>
+      </node>
+      <node id="16">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="19">
+        <label>Unit</label>
+        <link refid="class_unit"/>
+        <childnode refid="16" relation="public-inheritance">
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>target</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>squad</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>body</edgelabel>
+          <edgelabel>shield</edgelabel>
+          <edgelabel>weapon</edgelabel>
+          <edgelabel>helmet</edgelabel>
+        </childnode>
+        <childnode refid="26" relation="usage">
+          <edgelabel>TargetMovePositionObject</edgelabel>
+          <edgelabel>unitPosOriginal</edgelabel>
+        </childnode>
+        <childnode refid="27" relation="usage">
+          <edgelabel>stats</edgelabel>
+        </childnode>
+      </node>
+      <node id="31">
+        <label>Skill</label>
+        <link refid="class_skill"/>
+        <childnode refid="21" relation="public-inheritance">
+        </childnode>
+        <childnode refid="24" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>EquipmentStack</label>
+        <link refid="class_equipment_stack"/>
+        <childnode refid="30" relation="public-inheritance">
+        </childnode>
+        <childnode refid="21" relation="usage">
+          <edgelabel>equipmentMainProperties</edgelabel>
+        </childnode>
+        <childnode refid="23" relation="usage">
+          <edgelabel>equipmentStats</edgelabel>
+        </childnode>
+      </node>
+      <node id="18">
+        <label>FormationStats</label>
+        <link refid="class_formation_stats"/>
+      </node>
+      <node id="28">
+        <label>Inventory</label>
+        <link refid="class_inventory"/>
+        <childnode refid="29" relation="usage">
+          <edgelabel>firstSkill</edgelabel>
+          <edgelabel>secondSkill</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>body</edgelabel>
+          <edgelabel>shieldNone</edgelabel>
+          <edgelabel>helmetNone</edgelabel>
+          <edgelabel>shield</edgelabel>
+          <edgelabel>weapon</edgelabel>
+          <edgelabel>helmet</edgelabel>
+          <edgelabel>bodyNone</edgelabel>
+        </childnode>
+        <childnode refid="32" relation="usage">
+          <edgelabel>inventory</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/AiSquadController.cs" line="8" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/AiSquadController.cs" bodystart="7" bodyend="314"/>
+    <listofallmembers>
+      <member refid="class_ai_squad_controller_1af3a22efc533045134b4cb8ceb3974b7b" prot="private" virt="non-virtual"><scope>AiSquadController</scope><name>ActivateSquad</name></member>
+      <member refid="class_ai_squad_controller_1a7cdd0c2c427799902c544d12cc68d644" prot="public" virt="non-virtual"><scope>AiSquadController</scope><name>AiSquadBehaviour</name></member>
+      <member refid="class_ai_squad_controller_1af57ee75629d824fdd616b8ffefc021b6" prot="private" virt="non-virtual"><scope>AiSquadController</scope><name>Attack</name></member>
+      <member refid="class_ai_squad_controller_1ab2e3274509333057ede152dbfec82fc1" prot="public" virt="non-virtual"><scope>AiSquadController</scope><name>attackDeltaTime</name></member>
+      <member refid="class_ai_squad_controller_1a360dfd51fec969ca92118e497bd39bc2" prot="private" virt="non-virtual"><scope>AiSquadController</scope><name>attackPlayer</name></member>
+      <member refid="class_ai_squad_controller_1abd38523939bdc5739ec404e2d49294d3" prot="private" virt="non-virtual"><scope>AiSquadController</scope><name>BehaviorOnAttack</name></member>
+      <member refid="class_ai_squad_controller_1ad0be4ed0b0de2e971f3efd830db2b6ac" prot="private" virt="non-virtual"><scope>AiSquadController</scope><name>BehaviorOnDefend</name></member>
+      <member refid="class_ai_squad_controller_1a3e63e46e5a6d1aaf8891ae9f0ac8c1f0" prot="private" virt="non-virtual"><scope>AiSquadController</scope><name>BehaviorOnHold</name></member>
+      <member refid="class_ai_squad_controller_1a880be1ed801aeecb5d4ea04fffb42a53" prot="private" virt="non-virtual"><scope>AiSquadController</scope><name>CalcDistances</name></member>
+      <member refid="class_ai_squad_controller_1a07a202d438d94d8235afbc973a582d97" prot="private" virt="non-virtual"><scope>AiSquadController</scope><name>canGo</name></member>
+      <member refid="class_ai_squad_controller_1a1b7ab06a6b41029535bc39fcc23dff9b" prot="private" virt="non-virtual"><scope>AiSquadController</scope><name>directFindPathLayers</name></member>
+      <member refid="class_ai_squad_controller_1ab2f57aa8ee19430d65d8edd02b7abf05" prot="public" virt="non-virtual"><scope>AiSquadController</scope><name>distanceToActivateSquad</name></member>
+      <member refid="class_ai_squad_controller_1acc827500ed3c0f648abf2d8179292c29" prot="private" virt="non-virtual"><scope>AiSquadController</scope><name>distanceToPlayer</name></member>
+      <member refid="class_ai_squad_controller_1aa862551c17263207a307d1b63106e959" prot="private" virt="non-virtual"><scope>AiSquadController</scope><name>distanceToStartPosition</name></member>
+      <member refid="class_ai_squad_controller_1a4f4ff5414bbb6284b015e4204744972a" prot="private" virt="non-virtual"><scope>AiSquadController</scope><name>distPlayerSquadToStartPos</name></member>
+      <member refid="class_ai_squad_controller_1ae29a89f7db281679ff4f8b7600b3c1d0" prot="private" virt="non-virtual"><scope>AiSquadController</scope><name>distToResetStartPosBeforeFindPath</name></member>
+      <member refid="class_ai_squad_controller_1aaabd0c2fd8aaaf2ab2d76b1aa05ce85a" prot="private" virt="non-virtual"><scope>AiSquadController</scope><name>endFindPath</name></member>
+      <member refid="class_ai_squad_controller_1ae39f06c85f8ec06184d765876aa53f83" prot="private" virt="non-virtual"><scope>AiSquadController</scope><name>FindPath</name></member>
+      <member refid="class_ai_squad_controller_1a884586ff08b60c2ee405902e8313abdc" prot="private" virt="non-virtual"><scope>AiSquadController</scope><name>GoTo</name></member>
+      <member refid="class_ai_squad_controller_1a0718e9851b794bff49091fdb9d780cde" prot="private" virt="non-virtual"><scope>AiSquadController</scope><name>ground</name></member>
+      <member refid="class_ai_squad_controller_1a5630f64d5896eae1ee07bf36fa385bd5" prot="private" virt="non-virtual"><scope>AiSquadController</scope><name>lookRotation</name></member>
+      <member refid="class_ai_squad_controller_1a0124f85fd9c0308277c4650d7e609420" prot="public" virt="non-virtual"><scope>AiSquadController</scope><name>mode</name></member>
+      <member refid="class_ai_squad_controller_1a11fad6d7d8011ef70dbb1abbc8efd8ba" prot="private" virt="non-virtual"><scope>AiSquadController</scope><name>movePosition</name></member>
+      <member refid="class_ai_squad_controller_1a7a81aa7abd65c61554d5d29184f91783" prot="private" virt="non-virtual"><scope>AiSquadController</scope><name>OnDestroy</name></member>
+      <member refid="class_ai_squad_controller_1ae83186c41d8b838220a3ac080b781032" prot="private" virt="non-virtual"><scope>AiSquadController</scope><name>OnDrawGizmos</name></member>
+      <member refid="class_ai_squad_controller_1a0fd27237327e853ce627a0a60c9fc539" prot="private" virt="non-virtual"><scope>AiSquadController</scope><name>path</name></member>
+      <member refid="class_ai_squad_controller_1aaebbf06a67d2a314f54829459ba09a1e" prot="private" virt="non-virtual"><scope>AiSquadController</scope><name>pathfindingIsRunning</name></member>
+      <member refid="class_ai_squad_controller_1a87802833e018085dc0f1004e12005cb6" prot="private" virt="non-virtual"><scope>AiSquadController</scope><name>playerSquad</name></member>
+      <member refid="class_ai_squad_controller_1a9edc02924d2e6fb000dee67567c9d0cb" prot="public" virt="non-virtual"><scope>AiSquadController</scope><name>radiusOfAttackArea</name></member>
+      <member refid="class_ai_squad_controller_1a83ebc6874bc3a633db4e9ccbfb75237c" prot="public" virt="non-virtual"><scope>AiSquadController</scope><name>radiusOfDefendArea</name></member>
+      <member refid="class_ai_squad_controller_1a8d28b137b8c210252caa465b00bc4c84" prot="private" virt="non-virtual"><scope>AiSquadController</scope><name>SetActiveSquad</name></member>
+      <member refid="class_ai_squad_controller_1aeef156bef0b33c8a69c090d4e61375a2" prot="private" virt="non-virtual"><scope>AiSquadController</scope><name>SetStartPosition</name></member>
+      <member refid="class_ai_squad_controller_1a5b08b4c3c6ad615b3d125bcfc37b6837" prot="public" virt="non-virtual"><scope>AiSquadController</scope><name>slowApdateDeltaTime</name></member>
+      <member refid="class_ai_squad_controller_1a9de0a48c0b49092ceed66c1b6f1627f1" prot="private" virt="non-virtual"><scope>AiSquadController</scope><name>SlowUpdate</name></member>
+      <member refid="class_ai_squad_controller_1a637fe3ee8546b391c5d4cc34e32984ba" prot="private" virt="non-virtual"><scope>AiSquadController</scope><name>squad</name></member>
+      <member refid="class_ai_squad_controller_1a0e6017ec71b53317ec060d7de533ab09" prot="private" virt="non-virtual"><scope>AiSquadController</scope><name>Squad_OnSquadDestroy</name></member>
+      <member refid="class_ai_squad_controller_1a805ebf99b7ed211f9161f0654815a9c6" prot="private" virt="non-virtual"><scope>AiSquadController</scope><name>SquadAttack</name></member>
+      <member refid="class_ai_squad_controller_1a0c53156686c18aa2b8d8c773908c225e" prot="private" virt="non-virtual"><scope>AiSquadController</scope><name>SquadBehaviour</name></member>
+      <member refid="class_ai_squad_controller_1ab8b44aeeb1a5bdc56ec67f0b3e7a1141" prot="private" virt="non-virtual"><scope>AiSquadController</scope><name>squadPositions</name></member>
+      <member refid="class_ai_squad_controller_1a39bf1a2948bc6b85f90d8094c9d7e08f" prot="private" virt="non-virtual"><scope>AiSquadController</scope><name>squadUnits</name></member>
+      <member refid="class_ai_squad_controller_1a5ff5d163282013eadffe75704fa6105e" prot="private" virt="non-virtual"><scope>AiSquadController</scope><name>Start</name></member>
+      <member refid="class_ai_squad_controller_1ad43e86f67e1b2c9a0d9767e649ead527" prot="private" virt="non-virtual"><scope>AiSquadController</scope><name>startFindPath</name></member>
+      <member refid="class_ai_squad_controller_1a11950912c7a448ce96a74d978713b805" prot="private" virt="non-virtual"><scope>AiSquadController</scope><name>startPosition</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

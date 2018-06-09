@@ -1,0 +1,1294 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_game_manager" kind="class" prot="public">
+    <compoundname>GameManager</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_game_manager_1ad3e717f4fb0f378b969f4457de81f23e" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_game_manager" kindref="compound">GameManager</ref></type>
+        <definition>GameManager GameManager.Instance</definition>
+        <argsstring></argsstring>
+        <name>Instance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" line="7" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" bodystart="7" bodyend="-1"/>
+        <referencedby refid="class_game_manager_1a2959177ee51ac31badbf8b1bc8f7f637" compoundref="_game_manager_8cs" startline="64" endline="97">Awake</referencedby>
+        <referencedby refid="class_drop_to_equipment_market_1a60ed19a062359f3ec6c2e0d920e8686b" compoundref="_drop_to_equipment_market_8cs" startline="61" endline="75">DropToEquipmentMarket.CanGetFromThisIventory</referencedby>
+        <referencedby refid="class_to_mainmenu_1af2ccd564120d011f51a6b1aa8c2d6d0d" compoundref="_to_mainmenu_8cs" startline="41" endline="52">ToMainmenu.FadeOn</referencedby>
+        <referencedby refid="class_ground_1a55d85ceb5d5737e22bf053a60654539b" compoundref="_ground_8cs" startline="297" endline="349">Ground.GetExitDirection</referencedby>
+        <referencedby refid="class_ground_1a7a98426f8b61f2fdddb4bcc8bea0c8f4" compoundref="_ground_8cs" startline="97" endline="148">Ground.LoadMapBlocks</referencedby>
+        <referencedby refid="class_coure_work_connect_to_server_1a80e9fd4e8d7dca16f340c81e5fd81d01" compoundref="_coure_work_connect_to_server_8cs" startline="18" endline="31">CoureWorkConnectToServer.OnClickOk</referencedby>
+        <referencedby refid="class_call_converter_number_picker_1a5936c56affe137d478776a297ab8d8ae" compoundref="_call_converter_number_picker_8cs" startline="15" endline="70">CallConverterNumberPicker.OnPointerClick</referencedby>
+        <referencedby refid="class_player_squad_path_finder_controller_1afbb6180e00693a141b33efa735ce442c" compoundref="_player_squad_path_finder_controller_8cs" startline="46" endline="69">PlayerSquadPathFinderController.OnPointerDown</referencedby>
+        <referencedby refid="class_player_squad_controller_1aec93b7ccc7f17d32adb4875b7831e5a2" compoundref="_player_squad_controller_8cs" startline="191" endline="214">PlayerSquadController.OnPointerDown</referencedby>
+        <referencedby refid="class_player_squad_path_finder_controller_1a16d7e9b844dc620e9f1ff5f7713b8c59" compoundref="_player_squad_path_finder_controller_8cs" startline="71" endline="147">PlayerSquadPathFinderController.OnPointerUp</referencedby>
+        <referencedby refid="class_player_squad_controller_1a14624c20b184262769b880804049fb0b" compoundref="_player_squad_controller_8cs" startline="216" endline="297">PlayerSquadController.OnPointerUp</referencedby>
+        <referencedby refid="class_hospital_room_1a0a29986bed0b4100bcefa68633e59772" compoundref="_hospital_room_8cs" startline="123" endline="143">HospitalRoom.ResetConverter</referencedby>
+        <referencedby refid="class_unit_1a03d76f15a5d46dda8d06eeae656bbb76" compoundref="_unit_8cs" startline="1031" endline="1057">Unit.ShowPopUpTakenDamageText</referencedby>
+        <referencedby refid="class_exit_1ae1a78adb937ee237c528ab0a1b03dc67" compoundref="_exit_8cs" startline="19" endline="38">Exit.Start</referencedby>
+        <referencedby refid="class_ground_1a67925fbb09e492d80017e6fc0d59cea4" compoundref="_ground_8cs" startline="68" endline="95">Ground.Start</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_game_manager_1a9a7aa34c324c433dd80fa0d7d1bf37e8" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>bool</type>
+        <definition>bool GameManager.GamePaused</definition>
+        <argsstring></argsstring>
+        <name>GamePaused</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" line="10" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" bodystart="10" bodyend="-1"/>
+        <referencedby refid="class_to_mainmenu_1af2ccd564120d011f51a6b1aa8c2d6d0d" compoundref="_to_mainmenu_8cs" startline="41" endline="52">ToMainmenu.FadeOn</referencedby>
+        <referencedby refid="class_player_squad_path_finder_controller_1afbb6180e00693a141b33efa735ce442c" compoundref="_player_squad_path_finder_controller_8cs" startline="46" endline="69">PlayerSquadPathFinderController.OnPointerDown</referencedby>
+        <referencedby refid="class_player_squad_controller_1aec93b7ccc7f17d32adb4875b7831e5a2" compoundref="_player_squad_controller_8cs" startline="191" endline="214">PlayerSquadController.OnPointerDown</referencedby>
+        <referencedby refid="class_player_squad_path_finder_controller_1a16d7e9b844dc620e9f1ff5f7713b8c59" compoundref="_player_squad_path_finder_controller_8cs" startline="71" endline="147">PlayerSquadPathFinderController.OnPointerUp</referencedby>
+        <referencedby refid="class_player_squad_controller_1a14624c20b184262769b880804049fb0b" compoundref="_player_squad_controller_8cs" startline="216" endline="297">PlayerSquadController.OnPointerUp</referencedby>
+        <referencedby refid="class_game_manager_1a7979fca811638424b6778a6c223a66ba" compoundref="_game_manager_8cs" startline="202" endline="206">Pause</referencedby>
+        <referencedby refid="class_game_manager_1a59e6dd8d370a45a4eecd4b1fee7da4b3" compoundref="_game_manager_8cs" startline="208" endline="212">Resume</referencedby>
+        <referencedby refid="class_game_manager_1a44c79b205dec16bfe650e21259860c5b" compoundref="_game_manager_8cs" startline="185" endline="192">Update</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_game_manager_1abdc418f4be1d760ab41c5b1f212dd85a" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type><ref refid="class_player_progress" kindref="compound">PlayerProgress</ref></type>
+        <definition>PlayerProgress GameManager.PlayerProgress</definition>
+        <argsstring></argsstring>
+        <name>PlayerProgress</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" line="17" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" bodystart="17" bodyend="-1"/>
+        <referencedby refid="class_drop_to_equipment_market_1a60ed19a062359f3ec6c2e0d920e8686b" compoundref="_drop_to_equipment_market_8cs" startline="61" endline="75">DropToEquipmentMarket.CanGetFromThisIventory</referencedby>
+        <referencedby refid="class_call_converter_number_picker_1a5936c56affe137d478776a297ab8d8ae" compoundref="_call_converter_number_picker_8cs" startline="15" endline="70">CallConverterNumberPicker.OnPointerClick</referencedby>
+        <referencedby refid="class_game_manager_1ae92cf58e021591e2eb6a0978ac8790f2" compoundref="_game_manager_8cs" startline="345" endline="349">ResetAllProgress</referencedby>
+        <referencedby refid="class_hospital_room_1a0a29986bed0b4100bcefa68633e59772" compoundref="_hospital_room_8cs" startline="123" endline="143">HospitalRoom.ResetConverter</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_game_manager_1ae648b8f0ba536cd87e04e9a5b3b217fd" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type><ref refid="class_settings" kindref="compound">Settings</ref></type>
+        <definition>Settings GameManager.Settings</definition>
+        <argsstring></argsstring>
+        <name>Settings</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" line="27" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" bodystart="27" bodyend="-1"/>
+        <referencedby refid="class_game_manager_1a70562c267a1053ac2a04d2c4406c3787" compoundref="_game_manager_8cs" startline="317" endline="321">ResetAllSettings</referencedby>
+        <referencedby refid="class_unit_1a03d76f15a5d46dda8d06eeae656bbb76" compoundref="_unit_8cs" startline="1031" endline="1057">Unit.ShowPopUpTakenDamageText</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_game_manager_1a8ec5bc3e62fc7fa4988c594a9cfbf16f" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>bool</type>
+        <definition>bool GameManager.ControlGroundSize</definition>
+        <argsstring></argsstring>
+        <name>ControlGroundSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" line="32" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" bodystart="32" bodyend="-1"/>
+        <referencedby refid="class_ground_1a67925fbb09e492d80017e6fc0d59cea4" compoundref="_ground_8cs" startline="68" endline="95">Ground.Start</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_game_manager_1a8403c552e0b427b09ca98a7938033dd2" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>int</type>
+        <definition>int GameManager.RowCount</definition>
+        <argsstring></argsstring>
+        <name>RowCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" line="34" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_game_manager_1a5020e2f78831c2f9157cacec5e7bda4d" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>int</type>
+        <definition>int GameManager.ColCount</definition>
+        <argsstring></argsstring>
+        <name>ColCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" line="36" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_game_manager_1aec05137fa74e41a55eb59e802d93da23" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>int</type>
+        <definition>int GameManager.Level</definition>
+        <argsstring></argsstring>
+        <name>Level</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" line="52" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_game_manager_1a47d34453d443efb94bef94db073b7a74" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type><ref refid="class_squad" kindref="compound">Squad</ref></type>
+        <definition>Squad GameManager.PlayerSquad</definition>
+        <argsstring></argsstring>
+        <name>PlayerSquad</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" line="55" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_game_manager_1acb4037f3e5b5c1bef5598db815f1e8d5" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="interface_i_saving_manager" kindref="compound">ISavingManager</ref></type>
+        <definition>ISavingManager GameManager.SavingManager</definition>
+        <argsstring></argsstring>
+        <name>SavingManager</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" line="57" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" bodystart="57" bodyend="-1"/>
+        <referencedby refid="class_coure_work_connect_to_server_1a80e9fd4e8d7dca16f340c81e5fd81d01" compoundref="_coure_work_connect_to_server_8cs" startline="18" endline="31">CoureWorkConnectToServer.OnClickOk</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_game_manager_1a0c303bb53633d1c8b38e2bf3314fec48" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool GameManager.gamePaused</definition>
+        <argsstring></argsstring>
+        <name>gamePaused</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" line="9" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_game_manager_1a4f3493ace1c01633d159d4265d1e9da2" prot="private" static="no" mutable="no">
+        <type><ref refid="class_player_progress" kindref="compound">PlayerProgress</ref></type>
+        <definition>PlayerProgress GameManager.playerProgress</definition>
+        <argsstring></argsstring>
+        <name>playerProgress</name>
+        <initializer>= new <ref refid="class_player_progress" kindref="compound">PlayerProgress</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" line="16" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" bodystart="16" bodyend="-1"/>
+        <referencedby refid="class_game_manager_1ae92cf58e021591e2eb6a0978ac8790f2" compoundref="_game_manager_8cs" startline="345" endline="349">ResetAllProgress</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_game_manager_1a50803bb4bae671bc7711fd1dcf4b76af" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float GameManager.timeScale</definition>
+        <argsstring></argsstring>
+        <name>timeScale</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" line="22" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" bodystart="22" bodyend="-1"/>
+        <referencedby refid="class_game_manager_1a59e6dd8d370a45a4eecd4b1fee7da4b3" compoundref="_game_manager_8cs" startline="208" endline="212">Resume</referencedby>
+        <referencedby refid="class_game_manager_1a44c79b205dec16bfe650e21259860c5b" compoundref="_game_manager_8cs" startline="185" endline="192">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_game_manager_1a93b6e2c6c6e540e4da634cba3d5715d0" prot="private" static="no" mutable="no">
+        <type><ref refid="class_settings" kindref="compound">Settings</ref></type>
+        <definition>Settings GameManager.settings</definition>
+        <argsstring></argsstring>
+        <name>settings</name>
+        <initializer>= new <ref refid="class_settings" kindref="compound">Settings</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" line="26" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" bodystart="26" bodyend="-1"/>
+        <referencedby refid="class_game_manager_1a70562c267a1053ac2a04d2c4406c3787" compoundref="_game_manager_8cs" startline="317" endline="321">ResetAllSettings</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_game_manager_1aabb214ef8243b3ff1d07d2de989b47e1" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool GameManager.controlGroundSize</definition>
+        <argsstring></argsstring>
+        <name>controlGroundSize</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" line="31" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_game_manager_1af40ffe81ca9d495b38bf3ee17374760e" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int GameManager.rows</definition>
+        <argsstring></argsstring>
+        <name>rows</name>
+        <initializer>= 2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" line="33" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" bodystart="33" bodyend="-1"/>
+        <referencedby refid="class_game_manager_1a6d40dbd30e56ff1762478ed66df7b9ec" compoundref="_game_manager_8cs" startline="259" endline="276">ReconfigureLevelSettings</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_game_manager_1abdb5e61a630bd113736227c9d350bf9b" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int GameManager.cols</definition>
+        <argsstring></argsstring>
+        <name>cols</name>
+        <initializer>= 2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" line="35" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" bodystart="35" bodyend="-1"/>
+        <referencedby refid="class_game_manager_1a6d40dbd30e56ff1762478ed66df7b9ec" compoundref="_game_manager_8cs" startline="259" endline="276">ReconfigureLevelSettings</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_game_manager_1a8d3ba176321d9edf8f6e02f3487eeefb" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float GameManager.defFixedDeltaTime</definition>
+        <argsstring></argsstring>
+        <name>defFixedDeltaTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" line="38" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" bodystart="38" bodyend="-1"/>
+        <referencedby refid="class_game_manager_1a2959177ee51ac31badbf8b1bc8f7f637" compoundref="_game_manager_8cs" startline="64" endline="97">Awake</referencedby>
+        <referencedby refid="class_game_manager_1a44c79b205dec16bfe650e21259860c5b" compoundref="_game_manager_8cs" startline="185" endline="192">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_game_manager_1a097c52937fbd398b11bd06bd8d126348" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int GameManager.level</definition>
+        <argsstring></argsstring>
+        <name>level</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" line="51" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" bodystart="51" bodyend="-1"/>
+        <referencedby refid="class_game_manager_1a2959177ee51ac31badbf8b1bc8f7f637" compoundref="_game_manager_8cs" startline="64" endline="97">Awake</referencedby>
+        <referencedby refid="class_game_manager_1acc5bf2b58e880874333d37213a346d6a" compoundref="_game_manager_8cs" startline="241" endline="257">LoadMainMenu</referencedby>
+        <referencedby refid="class_game_manager_1a957e850d0694cbb607a023480c2964d8" compoundref="_game_manager_8cs" startline="233" endline="239">LoadMarket</referencedby>
+        <referencedby refid="class_game_manager_1a4b9d57ca37d41b1e4e328e233938d38b" compoundref="_game_manager_8cs" startline="214" endline="231">LoadNextLevel</referencedby>
+        <referencedby refid="class_game_manager_1a5186f9551988478435e66f7bb71e8898" compoundref="_game_manager_8cs" startline="296" endline="314">OnGUI</referencedby>
+        <referencedby refid="class_game_manager_1a6d40dbd30e56ff1762478ed66df7b9ec" compoundref="_game_manager_8cs" startline="259" endline="276">ReconfigureLevelSettings</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_game_manager_1aa05b9589ee0fce96e2f7046674cfb493" prot="private" static="no" mutable="no">
+        <type><ref refid="class_squad" kindref="compound">Squad</ref></type>
+        <definition>Squad GameManager.squad</definition>
+        <argsstring></argsstring>
+        <name>squad</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" line="54" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" bodystart="54" bodyend="-1"/>
+        <referencedby refid="class_game_manager_1ad11968766e26ab5495ba1d686f3e286c" compoundref="_game_manager_8cs" startline="144" endline="183">InitPlayer</referencedby>
+        <referencedby refid="class_game_manager_1a5186f9551988478435e66f7bb71e8898" compoundref="_game_manager_8cs" startline="296" endline="314">OnGUI</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_game_manager_1a2ed1df0de696acd22ee017e4b98bc3cd" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float GameManager.timer</definition>
+        <argsstring></argsstring>
+        <name>timer</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" line="290" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" bodystart="290" bodyend="-1"/>
+        <referencedby refid="class_game_manager_1a5186f9551988478435e66f7bb71e8898" compoundref="_game_manager_8cs" startline="296" endline="314">OnGUI</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_game_manager_1ad77d77030645d624a6bb1e45563cbaa7" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string GameManager.fps</definition>
+        <argsstring></argsstring>
+        <name>fps</name>
+        <initializer>= string.Empty</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" line="291" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" bodystart="291" bodyend="-1"/>
+        <referencedby refid="class_game_manager_1a5186f9551988478435e66f7bb71e8898" compoundref="_game_manager_8cs" startline="296" endline="314">OnGUI</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_game_manager_1aa4629419854f3d76694016e6a78182af" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string GameManager.s1</definition>
+        <argsstring></argsstring>
+        <name>s1</name>
+        <initializer>= &quot;attakingUnitsCount:\t &quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" line="293" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" bodystart="293" bodyend="-1"/>
+        <referencedby refid="class_game_manager_1a5186f9551988478435e66f7bb71e8898" compoundref="_game_manager_8cs" startline="296" endline="314">OnGUI</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_game_manager_1a38aea40500846d256eaf1e216a28df7e" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string GameManager.s2</definition>
+        <argsstring></argsstring>
+        <name>s2</name>
+        <initializer>= &quot;targettedUnitsCount:\t &quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" line="294" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" bodystart="294" bodyend="-1"/>
+        <referencedby refid="class_game_manager_1a5186f9551988478435e66f7bb71e8898" compoundref="_game_manager_8cs" startline="296" endline="314">OnGUI</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_game_manager_1a13f8f61de86322000b1055506e9c43c6" prot="public" static="no" mutable="no">
+        <type><ref refid="class_mc_grid_construct_controller_1a3ec286f8508e9da3063af9701fe621f2" kindref="member">McGridConstructController.GroundType</ref></type>
+        <definition>McGridConstructController.GroundType GameManager.GroundType</definition>
+        <argsstring></argsstring>
+        <name>GroundType</name>
+        <initializer>= McGridConstructController.GroundType.GRASSLAND</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" line="12" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" bodystart="12" bodyend="-1"/>
+        <referencedby refid="class_ground_1a7a98426f8b61f2fdddb4bcc8bea0c8f4" compoundref="_ground_8cs" startline="97" endline="148">Ground.LoadMapBlocks</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_game_manager_1a4915f9a82f7dfe5f46638528f36255f8" prot="public" static="no" mutable="no">
+        <type>Vector2</type>
+        <definition>Vector2 GameManager.entranceBlockPosition</definition>
+        <argsstring></argsstring>
+        <name>entranceBlockPosition</name>
+        <initializer>= Vector2.zero</initializer>
+        <briefdescription>
+<para>начальная позиция игрока на крте </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" line="43" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" bodystart="43" bodyend="-1"/>
+        <referencedby refid="class_game_manager_1ad11968766e26ab5495ba1d686f3e286c" compoundref="_game_manager_8cs" startline="144" endline="183">InitPlayer</referencedby>
+        <referencedby refid="class_exit_1ae1a78adb937ee237c528ab0a1b03dc67" compoundref="_exit_8cs" startline="19" endline="38">Exit.Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_game_manager_1adbaaa9f8c9d56d4a55fa34dfe5b89bdf" prot="public" static="no" mutable="no">
+        <type>Vector2</type>
+        <definition>Vector2 GameManager.exitBlockPosition</definition>
+        <argsstring></argsstring>
+        <name>exitBlockPosition</name>
+        <initializer>= Vector2.zero</initializer>
+        <briefdescription>
+<para>позиция на карте для перехода на следующий уровень </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" line="47" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_game_manager_1a613a4908bd2dc7a26af7a6241882e8d1" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_map_block_1a6bdb8970fb09cd0570ed7036457f96a3" kindref="member">MapBlock.Direction</ref></type>
+        <definition>MapBlock.Direction GameManager.exitDirection</definition>
+        <argsstring></argsstring>
+        <name>exitDirection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" line="48" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" bodystart="48" bodyend="-1"/>
+        <referencedby refid="class_ground_1a55d85ceb5d5737e22bf053a60654539b" compoundref="_ground_8cs" startline="297" endline="349">Ground.GetExitDirection</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_game_manager_1a6f0324b11def1ffb99abb68acd0a1e14" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_map_block_1a6bdb8970fb09cd0570ed7036457f96a3" kindref="member">MapBlock.Direction</ref></type>
+        <definition>MapBlock.Direction GameManager.entranceDirection</definition>
+        <argsstring></argsstring>
+        <name>entranceDirection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" line="49" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="event">
+      <memberdef kind="event" id="class_game_manager_1ae60baae1f54e91cbb38fef74f3623309" prot="public" static="no" add="no" remove="no" raise="no">
+        <type>Action&lt; int, int &gt;</type>
+        <definition>Action&lt;int, int&gt; GameManager.BeforeLoadLevel</definition>
+        <argsstring></argsstring>
+        <name>BeforeLoadLevel</name>
+        <initializer>= new <ref refid="class_player_prefs_saving_manager" kindref="compound">PlayerPrefsSavingManager</ref>()</initializer>
+        <briefdescription>
+<para>первый агрумент - номер сцены, на которую будет совершен переход. второй агрумент - номер игрового уровня </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" line="62" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" bodystart="62" bodyend="-1"/>
+        <referencedby refid="class_game_manager_1a2959177ee51ac31badbf8b1bc8f7f637" compoundref="_game_manager_8cs" startline="64" endline="97">Awake</referencedby>
+        <referencedby refid="class_game_manager_1acc5bf2b58e880874333d37213a346d6a" compoundref="_game_manager_8cs" startline="241" endline="257">LoadMainMenu</referencedby>
+        <referencedby refid="class_game_manager_1a957e850d0694cbb607a023480c2964d8" compoundref="_game_manager_8cs" startline="233" endline="239">LoadMarket</referencedby>
+        <referencedby refid="class_game_manager_1a4b9d57ca37d41b1e4e328e233938d38b" compoundref="_game_manager_8cs" startline="214" endline="231">LoadNextLevel</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_game_manager_1a2959177ee51ac31badbf8b1bc8f7f637" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void GameManager.Awake</definition>
+        <argsstring>()</argsstring>
+        <name>Awake</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" line="64" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" bodystart="64" bodyend="97"/>
+        <references refid="class_game_manager_1ae60baae1f54e91cbb38fef74f3623309" compoundref="_game_manager_8cs" startline="62">BeforeLoadLevel</references>
+        <references refid="class_game_manager_1a8d3ba176321d9edf8f6e02f3487eeefb" compoundref="_game_manager_8cs" startline="38">defFixedDeltaTime</references>
+        <references refid="class_game_manager_1a9a9384393a27156a9b65c0a64146156a" compoundref="_game_manager_8cs" startline="99" endline="103">DownloadSaves</references>
+        <references refid="class_game_manager_1ad3e717f4fb0f378b969f4457de81f23e" compoundref="_game_manager_8cs" startline="7">Instance</references>
+        <references refid="class_game_manager_1a097c52937fbd398b11bd06bd8d126348" compoundref="_game_manager_8cs" startline="51">level</references>
+        <references refid="class_game_manager_1a9adab8e1369d72a75d5e30874a176f84" compoundref="_game_manager_8cs" startline="114" endline="127">OnUnhendeledException</references>
+        <references refid="class_game_manager_1a7979fca811638424b6778a6c223a66ba" compoundref="_game_manager_8cs" startline="202" endline="206">Pause</references>
+        <references refid="class_game_manager_1a06252d7ccb713792766d150e5d0e6ba1" compoundref="_game_manager_8cs" startline="108" endline="112">ResetPlayerNonmoneyScore</references>
+      </memberdef>
+      <memberdef kind="function" id="class_game_manager_1a9adab8e1369d72a75d5e30874a176f84" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void GameManager.OnUnhendeledException</definition>
+        <argsstring>(string condition, string stackTrace, LogType type)</argsstring>
+        <name>OnUnhendeledException</name>
+        <param>
+          <type>string</type>
+          <declname>condition</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>stackTrace</declname>
+        </param>
+        <param>
+          <type>LogType</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" line="114" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" bodystart="114" bodyend="127"/>
+        <referencedby refid="class_game_manager_1a2959177ee51ac31badbf8b1bc8f7f637" compoundref="_game_manager_8cs" startline="64" endline="97">Awake</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_game_manager_1acb47e8b4ccae77f734e20685b250e9cb" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void GameManager.OnApplicationQuit</definition>
+        <argsstring>()</argsstring>
+        <name>OnApplicationQuit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" line="129" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" bodystart="129" bodyend="136"/>
+        <references refid="class_game_manager_1a06252d7ccb713792766d150e5d0e6ba1" compoundref="_game_manager_8cs" startline="108" endline="112">ResetPlayerNonmoneyScore</references>
+      </memberdef>
+      <memberdef kind="function" id="class_game_manager_1a44c79b205dec16bfe650e21259860c5b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void GameManager.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" line="185" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" bodystart="185" bodyend="192"/>
+        <references refid="class_game_manager_1a8d3ba176321d9edf8f6e02f3487eeefb" compoundref="_game_manager_8cs" startline="38">defFixedDeltaTime</references>
+        <references refid="class_game_manager_1a9a7aa34c324c433dd80fa0d7d1bf37e8" compoundref="_game_manager_8cs" startline="10">GamePaused</references>
+        <references refid="class_game_manager_1a50803bb4bae671bc7711fd1dcf4b76af" compoundref="_game_manager_8cs" startline="22">timeScale</references>
+      </memberdef>
+      <memberdef kind="function" id="class_game_manager_1a6d40dbd30e56ff1762478ed66df7b9ec" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void GameManager.ReconfigureLevelSettings</definition>
+        <argsstring>()</argsstring>
+        <name>ReconfigureLevelSettings</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" line="259" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" bodystart="259" bodyend="276"/>
+        <references refid="class_game_manager_1abdb5e61a630bd113736227c9d350bf9b" compoundref="_game_manager_8cs" startline="35">cols</references>
+        <references refid="class_game_manager_1a097c52937fbd398b11bd06bd8d126348" compoundref="_game_manager_8cs" startline="51">level</references>
+        <references refid="class_game_manager_1af40ffe81ca9d495b38bf3ee17374760e" compoundref="_game_manager_8cs" startline="33">rows</references>
+        <referencedby refid="class_game_manager_1acc5bf2b58e880874333d37213a346d6a" compoundref="_game_manager_8cs" startline="241" endline="257">LoadMainMenu</referencedby>
+        <referencedby refid="class_game_manager_1a4b9d57ca37d41b1e4e328e233938d38b" compoundref="_game_manager_8cs" startline="214" endline="231">LoadNextLevel</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_game_manager_1ac701509ddad55853855b35572472e99b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void GameManager.OnApplicationPause</definition>
+        <argsstring>(bool pause)</argsstring>
+        <name>OnApplicationPause</name>
+        <param>
+          <type>bool</type>
+          <declname>pause</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" line="278" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" bodystart="278" bodyend="286"/>
+      </memberdef>
+      <memberdef kind="function" id="class_game_manager_1a5186f9551988478435e66f7bb71e8898" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void GameManager.OnGUI</definition>
+        <argsstring>()</argsstring>
+        <name>OnGUI</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" line="296" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" bodystart="296" bodyend="314"/>
+        <references refid="class_game_manager_1ad77d77030645d624a6bb1e45563cbaa7" compoundref="_game_manager_8cs" startline="291">fps</references>
+        <references refid="class_game_manager_1a097c52937fbd398b11bd06bd8d126348" compoundref="_game_manager_8cs" startline="51">level</references>
+        <references refid="class_game_manager_1aa4629419854f3d76694016e6a78182af" compoundref="_game_manager_8cs" startline="293">s1</references>
+        <references refid="class_game_manager_1a38aea40500846d256eaf1e216a28df7e" compoundref="_game_manager_8cs" startline="294">s2</references>
+        <references refid="class_game_manager_1aa05b9589ee0fce96e2f7046674cfb493" compoundref="_game_manager_8cs" startline="54">squad</references>
+        <references refid="class_game_manager_1a2ed1df0de696acd22ee017e4b98bc3cd" compoundref="_game_manager_8cs" startline="290">timer</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_game_manager_1a9a9384393a27156a9b65c0a64146156a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void GameManager.DownloadSaves</definition>
+        <argsstring>()</argsstring>
+        <name>DownloadSaves</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" line="99" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" bodystart="99" bodyend="103"/>
+        <referencedby refid="class_game_manager_1a2959177ee51ac31badbf8b1bc8f7f637" compoundref="_game_manager_8cs" startline="64" endline="97">Awake</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_game_manager_1a06252d7ccb713792766d150e5d0e6ba1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void GameManager.ResetPlayerNonmoneyScore</definition>
+        <argsstring>()</argsstring>
+        <name>ResetPlayerNonmoneyScore</name>
+        <briefdescription>
+<para>Золото сбрасывать НЕЛЬЗЯ !!! Это покупная валюта! </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" line="108" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" bodystart="108" bodyend="112"/>
+        <referencedby refid="class_game_manager_1a2959177ee51ac31badbf8b1bc8f7f637" compoundref="_game_manager_8cs" startline="64" endline="97">Awake</referencedby>
+        <referencedby refid="class_game_manager_1acb47e8b4ccae77f734e20685b250e9cb" compoundref="_game_manager_8cs" startline="129" endline="136">OnApplicationQuit</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_game_manager_1a4b1ddda55125c60271b3abe67b316c9c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void GameManager.WaitForLevelGenerated</definition>
+        <argsstring>()</argsstring>
+        <name>WaitForLevelGenerated</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" line="138" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" bodystart="138" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="class_game_manager_1ad11968766e26ab5495ba1d686f3e286c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void GameManager.InitPlayer</definition>
+        <argsstring>()</argsstring>
+        <name>InitPlayer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" line="144" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" bodystart="144" bodyend="183"/>
+        <references refid="struct_map_block_1a9e46c3698814e50f60550ebd48ab9cb2" compoundref="_map_block_8cs" startline="10">MapBlock.BLOCK_SCALE</references>
+        <references refid="class_game_manager_1a4915f9a82f7dfe5f46638528f36255f8" compoundref="_game_manager_8cs" startline="43">entranceBlockPosition</references>
+        <references refid="struct_map_block_1ae2a96207d757c40799df1eebf9796351" compoundref="_map_block_8cs" startline="23">MapBlock.Exit</references>
+        <references refid="class_squad_1a781a32dd5c6fadbe0a9e04f142ddc9da" compoundref="_squad_8cs" startline="10">Squad.playerSquadInstance</references>
+        <references refid="class_squad_1a024d83821917a7c547e23ffcdf81caa4" compoundref="_squad_8cs" startline="208">Squad.PositionsTransform</references>
+        <references refid="class_game_manager_1aa05b9589ee0fce96e2f7046674cfb493" compoundref="_game_manager_8cs" startline="54">squad</references>
+        <references refid="struct_map_block_1a8fb3e875d60f04656e388e30da38e6f7" compoundref="_map_block_8cs" startline="8">MapBlock.WORLD_BLOCK_SIZE</references>
+      </memberdef>
+      <memberdef kind="function" id="class_game_manager_1a68a1168e5ddfc3221c82cea1edb13b34" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void GameManager.SetPause</definition>
+        <argsstring>(bool pause)</argsstring>
+        <name>SetPause</name>
+        <param>
+          <type>bool</type>
+          <declname>pause</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" line="194" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" bodystart="194" bodyend="200"/>
+        <references refid="class_game_manager_1a7979fca811638424b6778a6c223a66ba" compoundref="_game_manager_8cs" startline="202" endline="206">Pause</references>
+        <references refid="class_game_manager_1a59e6dd8d370a45a4eecd4b1fee7da4b3" compoundref="_game_manager_8cs" startline="208" endline="212">Resume</references>
+      </memberdef>
+      <memberdef kind="function" id="class_game_manager_1a7979fca811638424b6778a6c223a66ba" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void GameManager.Pause</definition>
+        <argsstring>()</argsstring>
+        <name>Pause</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" line="202" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" bodystart="202" bodyend="206"/>
+        <references refid="class_game_manager_1a9a7aa34c324c433dd80fa0d7d1bf37e8" compoundref="_game_manager_8cs" startline="10">GamePaused</references>
+        <referencedby refid="class_game_manager_1a2959177ee51ac31badbf8b1bc8f7f637" compoundref="_game_manager_8cs" startline="64" endline="97">Awake</referencedby>
+        <referencedby refid="class_game_manager_1a68a1168e5ddfc3221c82cea1edb13b34" compoundref="_game_manager_8cs" startline="194" endline="200">SetPause</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_game_manager_1a59e6dd8d370a45a4eecd4b1fee7da4b3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void GameManager.Resume</definition>
+        <argsstring>()</argsstring>
+        <name>Resume</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" line="208" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" bodystart="208" bodyend="212"/>
+        <references refid="class_game_manager_1a9a7aa34c324c433dd80fa0d7d1bf37e8" compoundref="_game_manager_8cs" startline="10">GamePaused</references>
+        <references refid="class_game_manager_1a50803bb4bae671bc7711fd1dcf4b76af" compoundref="_game_manager_8cs" startline="22">timeScale</references>
+        <referencedby refid="class_game_manager_1a68a1168e5ddfc3221c82cea1edb13b34" compoundref="_game_manager_8cs" startline="194" endline="200">SetPause</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_game_manager_1a4b9d57ca37d41b1e4e328e233938d38b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void GameManager.LoadNextLevel</definition>
+        <argsstring>()</argsstring>
+        <name>LoadNextLevel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" line="214" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" bodystart="214" bodyend="231"/>
+        <references refid="class_game_manager_1ae60baae1f54e91cbb38fef74f3623309" compoundref="_game_manager_8cs" startline="62">BeforeLoadLevel</references>
+        <references refid="class_game_manager_1a097c52937fbd398b11bd06bd8d126348" compoundref="_game_manager_8cs" startline="51">level</references>
+        <references refid="class_game_manager_1a6d40dbd30e56ff1762478ed66df7b9ec" compoundref="_game_manager_8cs" startline="259" endline="276">ReconfigureLevelSettings</references>
+      </memberdef>
+      <memberdef kind="function" id="class_game_manager_1a957e850d0694cbb607a023480c2964d8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void GameManager.LoadMarket</definition>
+        <argsstring>()</argsstring>
+        <name>LoadMarket</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" line="233" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" bodystart="233" bodyend="239"/>
+        <references refid="class_game_manager_1ae60baae1f54e91cbb38fef74f3623309" compoundref="_game_manager_8cs" startline="62">BeforeLoadLevel</references>
+        <references refid="class_game_manager_1a097c52937fbd398b11bd06bd8d126348" compoundref="_game_manager_8cs" startline="51">level</references>
+      </memberdef>
+      <memberdef kind="function" id="class_game_manager_1acc5bf2b58e880874333d37213a346d6a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void GameManager.LoadMainMenu</definition>
+        <argsstring>()</argsstring>
+        <name>LoadMainMenu</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" line="241" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" bodystart="241" bodyend="257"/>
+        <references refid="class_game_manager_1ae60baae1f54e91cbb38fef74f3623309" compoundref="_game_manager_8cs" startline="62">BeforeLoadLevel</references>
+        <references refid="class_game_manager_1a097c52937fbd398b11bd06bd8d126348" compoundref="_game_manager_8cs" startline="51">level</references>
+        <references refid="class_squad_1a781a32dd5c6fadbe0a9e04f142ddc9da" compoundref="_squad_8cs" startline="10">Squad.playerSquadInstance</references>
+        <references refid="class_game_manager_1a6d40dbd30e56ff1762478ed66df7b9ec" compoundref="_game_manager_8cs" startline="259" endline="276">ReconfigureLevelSettings</references>
+      </memberdef>
+      <memberdef kind="function" id="class_game_manager_1a70562c267a1053ac2a04d2c4406c3787" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void GameManager.ResetAllSettings</definition>
+        <argsstring>()</argsstring>
+        <name>ResetAllSettings</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" line="317" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" bodystart="317" bodyend="321"/>
+        <references refid="class_game_manager_1a93b6e2c6c6e540e4da634cba3d5715d0" compoundref="_game_manager_8cs" startline="26">settings</references>
+        <references refid="class_game_manager_1ae648b8f0ba536cd87e04e9a5b3b217fd" compoundref="_game_manager_8cs" startline="27">Settings</references>
+      </memberdef>
+      <memberdef kind="function" id="class_game_manager_1a10af56b20a754b12244282fb654e371f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void GameManager.ResetAudioSettings</definition>
+        <argsstring>()</argsstring>
+        <name>ResetAudioSettings</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" line="324" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" bodystart="324" bodyend="328"/>
+      </memberdef>
+      <memberdef kind="function" id="class_game_manager_1a0cc661e55fd6cc7b433f4fc1395bade1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void GameManager.ResetCommonSettings</definition>
+        <argsstring>()</argsstring>
+        <name>ResetCommonSettings</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" line="331" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" bodystart="331" bodyend="335"/>
+      </memberdef>
+      <memberdef kind="function" id="class_game_manager_1a81b64ac9b1b61eb92cc6b65d3fc48de3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void GameManager.ResetGraphixSettings</definition>
+        <argsstring>()</argsstring>
+        <name>ResetGraphixSettings</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" line="338" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" bodystart="338" bodyend="342"/>
+      </memberdef>
+      <memberdef kind="function" id="class_game_manager_1ae92cf58e021591e2eb6a0978ac8790f2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void GameManager.ResetAllProgress</definition>
+        <argsstring>()</argsstring>
+        <name>ResetAllProgress</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" line="345" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" bodystart="345" bodyend="349"/>
+        <references refid="class_game_manager_1a4f3493ace1c01633d159d4265d1e9da2" compoundref="_game_manager_8cs" startline="16">playerProgress</references>
+        <references refid="class_game_manager_1abdc418f4be1d760ab41c5b1f212dd85a" compoundref="_game_manager_8cs" startline="17">PlayerProgress</references>
+      </memberdef>
+      <memberdef kind="function" id="class_game_manager_1a7f943e89a9e07120a33239190ac165df" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void GameManager.ResetScore</definition>
+        <argsstring>()</argsstring>
+        <name>ResetScore</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" line="352" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" bodystart="352" bodyend="356"/>
+      </memberdef>
+      <memberdef kind="function" id="class_game_manager_1af3e433a6a1993c00d981bc8c498749fd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void GameManager.ResetStats</definition>
+        <argsstring>()</argsstring>
+        <name>ResetStats</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" line="359" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" bodystart="359" bodyend="363"/>
+      </memberdef>
+      <memberdef kind="function" id="class_game_manager_1aaec021e09d35bad4c05c63f0d07cf5b4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void GameManager.ResetSkills</definition>
+        <argsstring>()</argsstring>
+        <name>ResetSkills</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" line="366" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" bodystart="366" bodyend="370"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="394">
+        <label>GameManager</label>
+        <link refid="class_game_manager"/>
+        <childnode refid="395" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="395">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="409">
+        <label>Squad</label>
+        <link refid="class_squad"/>
+        <childnode refid="397" relation="public-inheritance">
+        </childnode>
+        <childnode refid="410" relation="usage">
+          <edgelabel>currentFormationModifyers</edgelabel>
+          <edgelabel>formation</edgelabel>
+        </childnode>
+        <childnode refid="411" relation="usage">
+          <edgelabel>unitOriginal</edgelabel>
+        </childnode>
+        <childnode refid="409" relation="usage">
+          <edgelabel>playerSquadInstance</edgelabel>
+        </childnode>
+        <childnode refid="417" relation="usage">
+          <edgelabel>inventory</edgelabel>
+        </childnode>
+        <childnode refid="416" relation="usage">
+          <edgelabel>unitStats</edgelabel>
+        </childnode>
+      </node>
+      <node id="424">
+        <label>McFileManager</label>
+        <link refid="class_mc_file_manager"/>
+        <childnode refid="397" relation="public-inheritance">
+        </childnode>
+        <childnode refid="421" relation="usage">
+          <edgelabel>gridConstructController</edgelabel>
+        </childnode>
+        <childnode refid="425" relation="usage">
+          <edgelabel>mapBlocks</edgelabel>
+        </childnode>
+        <childnode refid="426" relation="usage">
+          <edgelabel>dialogPanel</edgelabel>
+        </childnode>
+      </node>
+      <node id="398">
+        <label>PlayerProgress</label>
+        <link refid="class_player_progress"/>
+        <childnode refid="399" relation="public-inheritance">
+        </childnode>
+        <childnode refid="400" relation="usage">
+          <edgelabel>skills</edgelabel>
+        </childnode>
+        <childnode refid="405" relation="usage">
+          <edgelabel>score</edgelabel>
+        </childnode>
+        <childnode refid="407" relation="usage">
+          <edgelabel>stats</edgelabel>
+        </childnode>
+      </node>
+      <node id="428">
+        <label>Settings</label>
+        <link refid="class_settings"/>
+        <childnode refid="399" relation="public-inheritance">
+        </childnode>
+        <childnode refid="429" relation="usage">
+          <edgelabel>audioSettings</edgelabel>
+        </childnode>
+        <childnode refid="430" relation="usage">
+          <edgelabel>commonSettings</edgelabel>
+        </childnode>
+        <childnode refid="431" relation="usage">
+          <edgelabel>graphixSettings</edgelabel>
+        </childnode>
+      </node>
+      <node id="407">
+        <label>DSUnitStats</label>
+        <link refid="class_d_s_unit_stats"/>
+        <childnode refid="399" relation="public-inheritance">
+        </childnode>
+        <childnode refid="408" relation="usage">
+          <edgelabel>speed</edgelabel>
+          <edgelabel>aceleration</edgelabel>
+          <edgelabel>attack</edgelabel>
+          <edgelabel>defence</edgelabel>
+          <edgelabel>health</edgelabel>
+          <edgelabel>rotationSpeed</edgelabel>
+        </childnode>
+      </node>
+      <node id="412">
+        <label>Equipment</label>
+        <link refid="class_equipment"/>
+        <childnode refid="402" relation="public-inheritance">
+        </childnode>
+        <childnode refid="413" relation="usage">
+          <edgelabel>stats</edgelabel>
+        </childnode>
+      </node>
+      <node id="426">
+        <label>McHider</label>
+        <link refid="class_mc_hider"/>
+        <childnode refid="397" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="415">
+        <label>UnitPosition</label>
+        <link refid="class_unit_position"/>
+        <childnode refid="397" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="399">
+        <label>ISavable</label>
+        <link refid="interface_i_savable"/>
+      </node>
+      <node id="429">
+        <label>AudioSettings</label>
+        <link refid="class_audio_settings"/>
+        <childnode refid="399" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="403">
+        <label>Item.MainProperties</label>
+        <link refid="struct_item_1_1_main_properties"/>
+      </node>
+      <node id="427">
+        <label>McGrid</label>
+        <link refid="class_mc_grid"/>
+        <childnode refid="397" relation="public-inheritance">
+        </childnode>
+        <childnode refid="421" relation="usage">
+          <edgelabel>controller</edgelabel>
+        </childnode>
+        <childnode refid="425" relation="usage">
+          <edgelabel>inputedMapBlock</edgelabel>
+        </childnode>
+      </node>
+      <node id="414">
+        <label>Damage</label>
+        <link refid="struct_damage"/>
+      </node>
+      <node id="404">
+        <label>IDescriptionable</label>
+        <link refid="interface_i_descriptionable"/>
+      </node>
+      <node id="425">
+        <label>MapBlock</label>
+        <link refid="struct_map_block"/>
+      </node>
+      <node id="408">
+        <label>DSUnitStats.Stat</label>
+        <link refid="class_d_s_unit_stats_1_1_stat"/>
+      </node>
+      <node id="421">
+        <label>McGridConstructController</label>
+        <link refid="class_mc_grid_construct_controller"/>
+        <childnode refid="397" relation="public-inheritance">
+        </childnode>
+        <childnode refid="422" relation="public-inheritance">
+        </childnode>
+        <childnode refid="423" relation="public-inheritance">
+        </childnode>
+        <childnode refid="424" relation="usage">
+          <edgelabel>fileManager</edgelabel>
+        </childnode>
+        <childnode refid="427" relation="usage">
+          <edgelabel>grid</edgelabel>
+        </childnode>
+      </node>
+      <node id="402">
+        <label>Item</label>
+        <link refid="class_item"/>
+        <childnode refid="397" relation="public-inheritance">
+        </childnode>
+        <childnode refid="403" relation="usage">
+          <edgelabel>mainProperties</edgelabel>
+        </childnode>
+      </node>
+      <node id="423">
+        <label>IPointerDownHandler</label>
+      </node>
+      <node id="406">
+        <label>DSPlayerScore.Score</label>
+        <link refid="class_d_s_player_score_1_1_score"/>
+      </node>
+      <node id="418">
+        <label>SkillStack</label>
+        <link refid="class_skill_stack"/>
+        <childnode refid="419" relation="public-inheritance">
+        </childnode>
+        <childnode refid="404" relation="public-inheritance">
+        </childnode>
+        <childnode refid="401" relation="usage">
+          <edgelabel>skill</edgelabel>
+        </childnode>
+      </node>
+      <node id="413">
+        <label>EquipmentStats</label>
+        <link refid="struct_equipment_stats"/>
+        <childnode refid="404" relation="public-inheritance">
+        </childnode>
+        <childnode refid="414" relation="usage">
+          <edgelabel>damage</edgelabel>
+        </childnode>
+      </node>
+      <node id="419">
+        <label>AStack</label>
+        <link refid="class_a_stack"/>
+      </node>
+      <node id="416">
+        <label>UnitStats</label>
+        <link refid="struct_unit_stats"/>
+        <childnode refid="414" relation="usage">
+          <edgelabel>damage</edgelabel>
+        </childnode>
+      </node>
+      <node id="431">
+        <label>GraphixSettings</label>
+        <link refid="class_graphix_settings"/>
+        <childnode refid="399" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="396">
+        <label>GameManager</label>
+        <link refid="class_game_manager"/>
+        <childnode refid="397" relation="public-inheritance">
+        </childnode>
+        <childnode refid="398" relation="usage">
+          <edgelabel>playerProgress</edgelabel>
+        </childnode>
+        <childnode refid="409" relation="usage">
+          <edgelabel>squad</edgelabel>
+        </childnode>
+        <childnode refid="421" relation="usage">
+          <edgelabel>GroundType</edgelabel>
+        </childnode>
+        <childnode refid="428" relation="usage">
+          <edgelabel>settings</edgelabel>
+        </childnode>
+        <childnode refid="425" relation="usage">
+          <edgelabel>exitDirection</edgelabel>
+          <edgelabel>entranceDirection</edgelabel>
+        </childnode>
+      </node>
+      <node id="397">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="411">
+        <label>Unit</label>
+        <link refid="class_unit"/>
+        <childnode refid="397" relation="public-inheritance">
+        </childnode>
+        <childnode refid="411" relation="usage">
+          <edgelabel>target</edgelabel>
+        </childnode>
+        <childnode refid="409" relation="usage">
+          <edgelabel>squad</edgelabel>
+        </childnode>
+        <childnode refid="412" relation="usage">
+          <edgelabel>body</edgelabel>
+          <edgelabel>shield</edgelabel>
+          <edgelabel>weapon</edgelabel>
+          <edgelabel>helmet</edgelabel>
+        </childnode>
+        <childnode refid="415" relation="usage">
+          <edgelabel>TargetMovePositionObject</edgelabel>
+          <edgelabel>unitPosOriginal</edgelabel>
+        </childnode>
+        <childnode refid="416" relation="usage">
+          <edgelabel>stats</edgelabel>
+        </childnode>
+      </node>
+      <node id="401">
+        <label>Skill</label>
+        <link refid="class_skill"/>
+        <childnode refid="402" relation="public-inheritance">
+        </childnode>
+        <childnode refid="404" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="420">
+        <label>EquipmentStack</label>
+        <link refid="class_equipment_stack"/>
+        <childnode refid="419" relation="public-inheritance">
+        </childnode>
+        <childnode refid="402" relation="usage">
+          <edgelabel>equipmentMainProperties</edgelabel>
+        </childnode>
+        <childnode refid="413" relation="usage">
+          <edgelabel>equipmentStats</edgelabel>
+        </childnode>
+      </node>
+      <node id="405">
+        <label>DSPlayerScore</label>
+        <link refid="class_d_s_player_score"/>
+        <childnode refid="399" relation="public-inheritance">
+        </childnode>
+        <childnode refid="406" relation="usage">
+          <edgelabel>gold</edgelabel>
+          <edgelabel>expirience</edgelabel>
+          <edgelabel>silver</edgelabel>
+        </childnode>
+      </node>
+      <node id="400">
+        <label>DSPlayerSkills</label>
+        <link refid="class_d_s_player_skills"/>
+        <childnode refid="399" relation="public-inheritance">
+        </childnode>
+        <childnode refid="401" relation="usage">
+          <edgelabel>firstSkill</edgelabel>
+          <edgelabel>secondSkill</edgelabel>
+        </childnode>
+      </node>
+      <node id="410">
+        <label>FormationStats</label>
+        <link refid="class_formation_stats"/>
+      </node>
+      <node id="430">
+        <label>CommonSettings</label>
+        <link refid="class_common_settings"/>
+        <childnode refid="399" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="417">
+        <label>Inventory</label>
+        <link refid="class_inventory"/>
+        <childnode refid="418" relation="usage">
+          <edgelabel>firstSkill</edgelabel>
+          <edgelabel>secondSkill</edgelabel>
+        </childnode>
+        <childnode refid="412" relation="usage">
+          <edgelabel>body</edgelabel>
+          <edgelabel>shieldNone</edgelabel>
+          <edgelabel>helmetNone</edgelabel>
+          <edgelabel>shield</edgelabel>
+          <edgelabel>weapon</edgelabel>
+          <edgelabel>helmet</edgelabel>
+          <edgelabel>bodyNone</edgelabel>
+        </childnode>
+        <childnode refid="420" relation="usage">
+          <edgelabel>inventory</edgelabel>
+        </childnode>
+      </node>
+      <node id="422">
+        <label>IDragHandler</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" line="6" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/GameManager.cs" bodystart="5" bodyend="371"/>
+    <listofallmembers>
+      <member refid="class_game_manager_1a2959177ee51ac31badbf8b1bc8f7f637" prot="private" virt="non-virtual"><scope>GameManager</scope><name>Awake</name></member>
+      <member refid="class_game_manager_1ae60baae1f54e91cbb38fef74f3623309" prot="public" virt="non-virtual"><scope>GameManager</scope><name>BeforeLoadLevel</name></member>
+      <member refid="class_game_manager_1a5020e2f78831c2f9157cacec5e7bda4d" prot="public" virt="non-virtual"><scope>GameManager</scope><name>ColCount</name></member>
+      <member refid="class_game_manager_1abdb5e61a630bd113736227c9d350bf9b" prot="private" virt="non-virtual"><scope>GameManager</scope><name>cols</name></member>
+      <member refid="class_game_manager_1a8ec5bc3e62fc7fa4988c594a9cfbf16f" prot="public" virt="non-virtual"><scope>GameManager</scope><name>ControlGroundSize</name></member>
+      <member refid="class_game_manager_1aabb214ef8243b3ff1d07d2de989b47e1" prot="private" virt="non-virtual"><scope>GameManager</scope><name>controlGroundSize</name></member>
+      <member refid="class_game_manager_1a8d3ba176321d9edf8f6e02f3487eeefb" prot="private" virt="non-virtual"><scope>GameManager</scope><name>defFixedDeltaTime</name></member>
+      <member refid="class_game_manager_1a9a9384393a27156a9b65c0a64146156a" prot="public" virt="non-virtual"><scope>GameManager</scope><name>DownloadSaves</name></member>
+      <member refid="class_game_manager_1a4915f9a82f7dfe5f46638528f36255f8" prot="public" virt="non-virtual"><scope>GameManager</scope><name>entranceBlockPosition</name></member>
+      <member refid="class_game_manager_1a6f0324b11def1ffb99abb68acd0a1e14" prot="public" virt="non-virtual"><scope>GameManager</scope><name>entranceDirection</name></member>
+      <member refid="class_game_manager_1adbaaa9f8c9d56d4a55fa34dfe5b89bdf" prot="public" virt="non-virtual"><scope>GameManager</scope><name>exitBlockPosition</name></member>
+      <member refid="class_game_manager_1a613a4908bd2dc7a26af7a6241882e8d1" prot="public" virt="non-virtual"><scope>GameManager</scope><name>exitDirection</name></member>
+      <member refid="class_game_manager_1ad77d77030645d624a6bb1e45563cbaa7" prot="private" virt="non-virtual"><scope>GameManager</scope><name>fps</name></member>
+      <member refid="class_game_manager_1a0c303bb53633d1c8b38e2bf3314fec48" prot="private" virt="non-virtual"><scope>GameManager</scope><name>gamePaused</name></member>
+      <member refid="class_game_manager_1a9a7aa34c324c433dd80fa0d7d1bf37e8" prot="public" virt="non-virtual"><scope>GameManager</scope><name>GamePaused</name></member>
+      <member refid="class_game_manager_1a13f8f61de86322000b1055506e9c43c6" prot="public" virt="non-virtual"><scope>GameManager</scope><name>GroundType</name></member>
+      <member refid="class_game_manager_1ad11968766e26ab5495ba1d686f3e286c" prot="public" virt="non-virtual"><scope>GameManager</scope><name>InitPlayer</name></member>
+      <member refid="class_game_manager_1ad3e717f4fb0f378b969f4457de81f23e" prot="public" virt="non-virtual"><scope>GameManager</scope><name>Instance</name></member>
+      <member refid="class_game_manager_1a097c52937fbd398b11bd06bd8d126348" prot="private" virt="non-virtual"><scope>GameManager</scope><name>level</name></member>
+      <member refid="class_game_manager_1aec05137fa74e41a55eb59e802d93da23" prot="public" virt="non-virtual"><scope>GameManager</scope><name>Level</name></member>
+      <member refid="class_game_manager_1acc5bf2b58e880874333d37213a346d6a" prot="public" virt="non-virtual"><scope>GameManager</scope><name>LoadMainMenu</name></member>
+      <member refid="class_game_manager_1a957e850d0694cbb607a023480c2964d8" prot="public" virt="non-virtual"><scope>GameManager</scope><name>LoadMarket</name></member>
+      <member refid="class_game_manager_1a4b9d57ca37d41b1e4e328e233938d38b" prot="public" virt="non-virtual"><scope>GameManager</scope><name>LoadNextLevel</name></member>
+      <member refid="class_game_manager_1ac701509ddad55853855b35572472e99b" prot="private" virt="non-virtual"><scope>GameManager</scope><name>OnApplicationPause</name></member>
+      <member refid="class_game_manager_1acb47e8b4ccae77f734e20685b250e9cb" prot="private" virt="non-virtual"><scope>GameManager</scope><name>OnApplicationQuit</name></member>
+      <member refid="class_game_manager_1a5186f9551988478435e66f7bb71e8898" prot="private" virt="non-virtual"><scope>GameManager</scope><name>OnGUI</name></member>
+      <member refid="class_game_manager_1a9adab8e1369d72a75d5e30874a176f84" prot="private" virt="non-virtual"><scope>GameManager</scope><name>OnUnhendeledException</name></member>
+      <member refid="class_game_manager_1a7979fca811638424b6778a6c223a66ba" prot="public" virt="non-virtual"><scope>GameManager</scope><name>Pause</name></member>
+      <member refid="class_game_manager_1a4f3493ace1c01633d159d4265d1e9da2" prot="private" virt="non-virtual"><scope>GameManager</scope><name>playerProgress</name></member>
+      <member refid="class_game_manager_1abdc418f4be1d760ab41c5b1f212dd85a" prot="public" virt="non-virtual"><scope>GameManager</scope><name>PlayerProgress</name></member>
+      <member refid="class_game_manager_1a47d34453d443efb94bef94db073b7a74" prot="public" virt="non-virtual"><scope>GameManager</scope><name>PlayerSquad</name></member>
+      <member refid="class_game_manager_1a6d40dbd30e56ff1762478ed66df7b9ec" prot="private" virt="non-virtual"><scope>GameManager</scope><name>ReconfigureLevelSettings</name></member>
+      <member refid="class_game_manager_1ae92cf58e021591e2eb6a0978ac8790f2" prot="public" virt="non-virtual"><scope>GameManager</scope><name>ResetAllProgress</name></member>
+      <member refid="class_game_manager_1a70562c267a1053ac2a04d2c4406c3787" prot="public" virt="non-virtual"><scope>GameManager</scope><name>ResetAllSettings</name></member>
+      <member refid="class_game_manager_1a10af56b20a754b12244282fb654e371f" prot="public" virt="non-virtual"><scope>GameManager</scope><name>ResetAudioSettings</name></member>
+      <member refid="class_game_manager_1a0cc661e55fd6cc7b433f4fc1395bade1" prot="public" virt="non-virtual"><scope>GameManager</scope><name>ResetCommonSettings</name></member>
+      <member refid="class_game_manager_1a81b64ac9b1b61eb92cc6b65d3fc48de3" prot="public" virt="non-virtual"><scope>GameManager</scope><name>ResetGraphixSettings</name></member>
+      <member refid="class_game_manager_1a06252d7ccb713792766d150e5d0e6ba1" prot="public" virt="non-virtual"><scope>GameManager</scope><name>ResetPlayerNonmoneyScore</name></member>
+      <member refid="class_game_manager_1a7f943e89a9e07120a33239190ac165df" prot="public" virt="non-virtual"><scope>GameManager</scope><name>ResetScore</name></member>
+      <member refid="class_game_manager_1aaec021e09d35bad4c05c63f0d07cf5b4" prot="public" virt="non-virtual"><scope>GameManager</scope><name>ResetSkills</name></member>
+      <member refid="class_game_manager_1af3e433a6a1993c00d981bc8c498749fd" prot="public" virt="non-virtual"><scope>GameManager</scope><name>ResetStats</name></member>
+      <member refid="class_game_manager_1a59e6dd8d370a45a4eecd4b1fee7da4b3" prot="public" virt="non-virtual"><scope>GameManager</scope><name>Resume</name></member>
+      <member refid="class_game_manager_1a8403c552e0b427b09ca98a7938033dd2" prot="public" virt="non-virtual"><scope>GameManager</scope><name>RowCount</name></member>
+      <member refid="class_game_manager_1af40ffe81ca9d495b38bf3ee17374760e" prot="private" virt="non-virtual"><scope>GameManager</scope><name>rows</name></member>
+      <member refid="class_game_manager_1aa4629419854f3d76694016e6a78182af" prot="private" virt="non-virtual"><scope>GameManager</scope><name>s1</name></member>
+      <member refid="class_game_manager_1a38aea40500846d256eaf1e216a28df7e" prot="private" virt="non-virtual"><scope>GameManager</scope><name>s2</name></member>
+      <member refid="class_game_manager_1acb4037f3e5b5c1bef5598db815f1e8d5" prot="public" virt="non-virtual"><scope>GameManager</scope><name>SavingManager</name></member>
+      <member refid="class_game_manager_1a68a1168e5ddfc3221c82cea1edb13b34" prot="public" virt="non-virtual"><scope>GameManager</scope><name>SetPause</name></member>
+      <member refid="class_game_manager_1ae648b8f0ba536cd87e04e9a5b3b217fd" prot="public" virt="non-virtual"><scope>GameManager</scope><name>Settings</name></member>
+      <member refid="class_game_manager_1a93b6e2c6c6e540e4da634cba3d5715d0" prot="private" virt="non-virtual"><scope>GameManager</scope><name>settings</name></member>
+      <member refid="class_game_manager_1aa05b9589ee0fce96e2f7046674cfb493" prot="private" virt="non-virtual"><scope>GameManager</scope><name>squad</name></member>
+      <member refid="class_game_manager_1a2ed1df0de696acd22ee017e4b98bc3cd" prot="private" virt="non-virtual"><scope>GameManager</scope><name>timer</name></member>
+      <member refid="class_game_manager_1a50803bb4bae671bc7711fd1dcf4b76af" prot="private" virt="non-virtual"><scope>GameManager</scope><name>timeScale</name></member>
+      <member refid="class_game_manager_1a44c79b205dec16bfe650e21259860c5b" prot="private" virt="non-virtual"><scope>GameManager</scope><name>Update</name></member>
+      <member refid="class_game_manager_1a4b1ddda55125c60271b3abe67b316c9c" prot="public" virt="non-virtual"><scope>GameManager</scope><name>WaitForLevelGenerated</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

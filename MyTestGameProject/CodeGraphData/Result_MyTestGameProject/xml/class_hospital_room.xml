@@ -1,0 +1,339 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_hospital_room" kind="class" prot="public">
+    <compoundname>HospitalRoom</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="class_hospital_room_1acf232efbec254f916a435a2e7e545a3b" prot="public" static="no">
+        <name>HealTarget</name>
+        <enumvalue id="class_hospital_room_1acf232efbec254f916a435a2e7e545a3baf63cb46bb3c51a3dd088da41de25b08d" prot="public">
+          <name>WEAKEST</name>
+          <initializer>= 33</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_hospital_room_1acf232efbec254f916a435a2e7e545a3ba3357bbd1406f2f5dce3a4911df7caf86" prot="public">
+          <name>STRONGEST</name>
+          <initializer>= 66</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/HospitalRoom.cs" line="10" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/HospitalRoom.cs" bodystart="10" bodyend="10"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_hospital_room_1aec00b9a2c0814a04ea271d3732072eca" prot="private" static="no" mutable="no">
+        <type><ref refid="class_number_converter" kindref="compound">NumberConverter</ref></type>
+        <definition>NumberConverter HospitalRoom.converter</definition>
+        <argsstring></argsstring>
+        <name>converter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/HospitalRoom.cs" line="12" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/HospitalRoom.cs" bodystart="12" bodyend="-1"/>
+        <referencedby refid="class_hospital_room_1a35233675ee099c6fc1f68b230a797467" compoundref="_hospital_room_8cs" startline="60" endline="121">Converter_OnCliclOk</referencedby>
+        <referencedby refid="class_hospital_room_1a0a29986bed0b4100bcefa68633e59772" compoundref="_hospital_room_8cs" startline="123" endline="143">ResetConverter</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_hospital_room_1ade79f5054fa43e55468aa415121253de" prot="private" static="no" mutable="no">
+        <type>Transform</type>
+        <definition>Transform HospitalRoom.containerUnitHealthIdicators</definition>
+        <argsstring></argsstring>
+        <name>containerUnitHealthIdicators</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/HospitalRoom.cs" line="14" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/HospitalRoom.cs" bodystart="14" bodyend="-1"/>
+        <referencedby refid="class_hospital_room_1a1dfbc5b15c25ad83d459ccce492ea849" compoundref="_hospital_room_8cs" startline="178" endline="205">AddNewLines</referencedby>
+        <referencedby refid="class_hospital_room_1a087c4b67256d17cf9b23c3e462af9ede" compoundref="_hospital_room_8cs" startline="207" endline="213">RemoveOldLines</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_hospital_room_1a83c5f11291b99cb7d55fb87dd072c038" prot="private" static="no" mutable="no">
+        <type>Transform</type>
+        <definition>Transform HospitalRoom.LineOriginalUnitHealthIndicator</definition>
+        <argsstring></argsstring>
+        <name>LineOriginalUnitHealthIndicator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/HospitalRoom.cs" line="15" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/HospitalRoom.cs" bodystart="15" bodyend="-1"/>
+        <referencedby refid="class_hospital_room_1a1dfbc5b15c25ad83d459ccce492ea849" compoundref="_hospital_room_8cs" startline="178" endline="205">AddNewLines</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_hospital_room_1ab52019154b0653ecc300585d3eb17ec3" prot="private" static="no" mutable="no">
+        <type>TMP_Dropdown</type>
+        <definition>TMP_Dropdown HospitalRoom.healTarget</definition>
+        <argsstring></argsstring>
+        <name>healTarget</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/HospitalRoom.cs" line="17" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/HospitalRoom.cs" bodystart="17" bodyend="-1"/>
+        <referencedby refid="class_hospital_room_1a35233675ee099c6fc1f68b230a797467" compoundref="_hospital_room_8cs" startline="60" endline="121">Converter_OnCliclOk</referencedby>
+        <referencedby refid="class_hospital_room_1a1fa011a3e460b6d772e1d6c8810691ee" compoundref="_hospital_room_8cs" startline="21" endline="34">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_hospital_room_1a7cc4382c2448924f9277d5e0be7b14cf" prot="private" static="no" mutable="no">
+        <type>CanvasGroup</type>
+        <definition>CanvasGroup HospitalRoom.healControl</definition>
+        <argsstring></argsstring>
+        <name>healControl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/HospitalRoom.cs" line="19" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/HospitalRoom.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_hospital_room_1a1fa011a3e460b6d772e1d6c8810691ee" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void HospitalRoom.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/HospitalRoom.cs" line="21" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/HospitalRoom.cs" bodystart="21" bodyend="34"/>
+        <references refid="class_hospital_room_1a35233675ee099c6fc1f68b230a797467" compoundref="_hospital_room_8cs" startline="60" endline="121">Converter_OnCliclOk</references>
+        <references refid="class_hospital_room_1ab52019154b0653ecc300585d3eb17ec3" compoundref="_hospital_room_8cs" startline="17">healTarget</references>
+      </memberdef>
+      <memberdef kind="function" id="class_hospital_room_1ae7a29701bfd6999de1dec6ec98335e4a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void HospitalRoom.OnEnable</definition>
+        <argsstring>()</argsstring>
+        <name>OnEnable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/HospitalRoom.cs" line="36" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/HospitalRoom.cs" bodystart="36" bodyend="53"/>
+        <references refid="class_hospital_room_1a1dfbc5b15c25ad83d459ccce492ea849" compoundref="_hospital_room_8cs" startline="178" endline="205">AddNewLines</references>
+        <references refid="class_squad_1a781a32dd5c6fadbe0a9e04f142ddc9da" compoundref="_squad_8cs" startline="10">Squad.playerSquadInstance</references>
+        <references refid="class_hospital_room_1a0a29986bed0b4100bcefa68633e59772" compoundref="_hospital_room_8cs" startline="123" endline="143">ResetConverter</references>
+      </memberdef>
+      <memberdef kind="function" id="class_hospital_room_1aa50f754cedc4f77ef22a2b89200e2154" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void HospitalRoom.OnDisable</definition>
+        <argsstring>()</argsstring>
+        <name>OnDisable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/HospitalRoom.cs" line="55" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/HospitalRoom.cs" bodystart="55" bodyend="58"/>
+        <references refid="class_hospital_room_1a087c4b67256d17cf9b23c3e462af9ede" compoundref="_hospital_room_8cs" startline="207" endline="213">RemoveOldLines</references>
+      </memberdef>
+      <memberdef kind="function" id="class_hospital_room_1a35233675ee099c6fc1f68b230a797467" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void HospitalRoom.Converter_OnCliclOk</definition>
+        <argsstring>()</argsstring>
+        <name>Converter_OnCliclOk</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/HospitalRoom.cs" line="60" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/HospitalRoom.cs" bodystart="60" bodyend="121"/>
+        <references refid="class_hospital_room_1aec00b9a2c0814a04ea271d3732072eca" compoundref="_hospital_room_8cs" startline="12">converter</references>
+        <references refid="class_hospital_room_1ab52019154b0653ecc300585d3eb17ec3" compoundref="_hospital_room_8cs" startline="17">healTarget</references>
+        <references refid="class_hospital_room_1a70dcbca0dbdffc260609a53be46d0907" compoundref="_hospital_room_8cs" startline="151" endline="176">HealUnits</references>
+        <references refid="class_number_converter_1a7f62c59742dccce4582534a3d0fdfa24" compoundref="_number_converter_8cs" startline="41">NumberConverter.OutputValue</references>
+        <references refid="class_hospital_room_1af99fe9027e1d97da3c8e868a66346c10" compoundref="_hospital_room_8cs" startline="215" endline="252">RereshLines</references>
+        <references refid="class_hospital_room_1a0a29986bed0b4100bcefa68633e59772" compoundref="_hospital_room_8cs" startline="123" endline="143">ResetConverter</references>
+        <referencedby refid="class_hospital_room_1a1fa011a3e460b6d772e1d6c8810691ee" compoundref="_hospital_room_8cs" startline="21" endline="34">Start</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_hospital_room_1a0a29986bed0b4100bcefa68633e59772" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool HospitalRoom.ResetConverter</definition>
+        <argsstring>()</argsstring>
+        <name>ResetConverter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/HospitalRoom.cs" line="123" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/HospitalRoom.cs" bodystart="123" bodyend="143"/>
+        <references refid="class_hospital_room_1aec00b9a2c0814a04ea271d3732072eca" compoundref="_hospital_room_8cs" startline="12">converter</references>
+        <references refid="struct_unit_stats_1ab53484f4715c9dbe92dbdc920dbd755f" compoundref="_unit_stats_8cs" startline="17">UnitStats.Health</references>
+        <references refid="class_number_converter_1a10d42400dbcc8d4e8b3cdae66151a9c6" compoundref="_number_converter_8cs" startline="29">NumberConverter.InputValue</references>
+        <references refid="class_game_manager_1ad3e717f4fb0f378b969f4457de81f23e" compoundref="_game_manager_8cs" startline="7">GameManager.Instance</references>
+        <references refid="class_number_converter_1a7f62c59742dccce4582534a3d0fdfa24" compoundref="_number_converter_8cs" startline="41">NumberConverter.OutputValue</references>
+        <references refid="class_game_manager_1abdc418f4be1d760ab41c5b1f212dd85a" compoundref="_game_manager_8cs" startline="17">GameManager.PlayerProgress</references>
+        <references refid="class_player_progress_1ac41622da7c01719336fc86a0a06385d6" compoundref="_player_progress_8cs" startline="7">PlayerProgress.score</references>
+        <references refid="class_d_s_player_score_1a985612b8c0d9d8b5492a6dc015a25894" compoundref="_d_s_player_score_8cs" startline="8">DSPlayerScore.silver</references>
+        <references refid="class_unit_1a45c42ced508cd035199cbfd52ebf62f0" compoundref="_unit_8cs" startline="62">Unit.Stats</references>
+        <references refid="class_d_s_player_score_1_1_score_1aa2c8486030b9e8277f4cc396d7ed667c" compoundref="_d_s_player_score_8cs" startline="38">DSPlayerScore.Score.Value</references>
+        <referencedby refid="class_hospital_room_1a35233675ee099c6fc1f68b230a797467" compoundref="_hospital_room_8cs" startline="60" endline="121">Converter_OnCliclOk</referencedby>
+        <referencedby refid="class_hospital_room_1ae7a29701bfd6999de1dec6ec98335e4a" compoundref="_hospital_room_8cs" startline="36" endline="53">OnEnable</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_hospital_room_1a70dcbca0dbdffc260609a53be46d0907" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float HospitalRoom.HealUnits</definition>
+        <argsstring>(List&lt; Unit &gt; units, float health)</argsstring>
+        <name>HealUnits</name>
+        <param>
+          <type>List&lt; <ref refid="class_unit" kindref="compound">Unit</ref> &gt;</type>
+          <declname>units</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>health</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>units</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>health</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>возвращает лишнее здоровье (которое никому больше не надо)</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/HospitalRoom.cs" line="151" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/HospitalRoom.cs" bodystart="151" bodyend="176"/>
+        <referencedby refid="class_hospital_room_1a35233675ee099c6fc1f68b230a797467" compoundref="_hospital_room_8cs" startline="60" endline="121">Converter_OnCliclOk</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_hospital_room_1a1dfbc5b15c25ad83d459ccce492ea849" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void HospitalRoom.AddNewLines</definition>
+        <argsstring>()</argsstring>
+        <name>AddNewLines</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/HospitalRoom.cs" line="178" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/HospitalRoom.cs" bodystart="178" bodyend="205"/>
+        <references refid="class_hospital_room_1ade79f5054fa43e55468aa415121253de" compoundref="_hospital_room_8cs" startline="14">containerUnitHealthIdicators</references>
+        <references refid="class_hospital_room_1a83c5f11291b99cb7d55fb87dd072c038" compoundref="_hospital_room_8cs" startline="15">LineOriginalUnitHealthIndicator</references>
+        <references refid="class_hospital_room_1af99fe9027e1d97da3c8e868a66346c10" compoundref="_hospital_room_8cs" startline="215" endline="252">RereshLines</references>
+        <referencedby refid="class_hospital_room_1ae7a29701bfd6999de1dec6ec98335e4a" compoundref="_hospital_room_8cs" startline="36" endline="53">OnEnable</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_hospital_room_1a087c4b67256d17cf9b23c3e462af9ede" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void HospitalRoom.RemoveOldLines</definition>
+        <argsstring>()</argsstring>
+        <name>RemoveOldLines</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/HospitalRoom.cs" line="207" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/HospitalRoom.cs" bodystart="207" bodyend="213"/>
+        <references refid="class_hospital_room_1ade79f5054fa43e55468aa415121253de" compoundref="_hospital_room_8cs" startline="14">containerUnitHealthIdicators</references>
+        <referencedby refid="class_hospital_room_1aa50f754cedc4f77ef22a2b89200e2154" compoundref="_hospital_room_8cs" startline="55" endline="58">OnDisable</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_hospital_room_1af99fe9027e1d97da3c8e868a66346c10" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void HospitalRoom.RereshLines</definition>
+        <argsstring>()</argsstring>
+        <name>RereshLines</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/HospitalRoom.cs" line="215" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/HospitalRoom.cs" bodystart="215" bodyend="252"/>
+        <referencedby refid="class_hospital_room_1a1dfbc5b15c25ad83d459ccce492ea849" compoundref="_hospital_room_8cs" startline="178" endline="205">AddNewLines</referencedby>
+        <referencedby refid="class_hospital_room_1a35233675ee099c6fc1f68b230a797467" compoundref="_hospital_room_8cs" startline="60" endline="121">Converter_OnCliclOk</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="487">
+        <label>HospitalRoom</label>
+        <link refid="class_hospital_room"/>
+        <childnode refid="488" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="488">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="489">
+        <label>HospitalRoom</label>
+        <link refid="class_hospital_room"/>
+        <childnode refid="490" relation="public-inheritance">
+        </childnode>
+        <childnode refid="491" relation="usage">
+          <edgelabel>converter</edgelabel>
+        </childnode>
+      </node>
+      <node id="490">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="491">
+        <label>NumberConverter</label>
+        <link refid="class_number_converter"/>
+        <childnode refid="490" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/HospitalRoom.cs" line="9" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/HospitalRoom.cs" bodystart="8" bodyend="253"/>
+    <listofallmembers>
+      <member refid="class_hospital_room_1a1dfbc5b15c25ad83d459ccce492ea849" prot="private" virt="non-virtual"><scope>HospitalRoom</scope><name>AddNewLines</name></member>
+      <member refid="class_hospital_room_1ade79f5054fa43e55468aa415121253de" prot="private" virt="non-virtual"><scope>HospitalRoom</scope><name>containerUnitHealthIdicators</name></member>
+      <member refid="class_hospital_room_1aec00b9a2c0814a04ea271d3732072eca" prot="private" virt="non-virtual"><scope>HospitalRoom</scope><name>converter</name></member>
+      <member refid="class_hospital_room_1a35233675ee099c6fc1f68b230a797467" prot="private" virt="non-virtual"><scope>HospitalRoom</scope><name>Converter_OnCliclOk</name></member>
+      <member refid="class_hospital_room_1a7cc4382c2448924f9277d5e0be7b14cf" prot="private" virt="non-virtual"><scope>HospitalRoom</scope><name>healControl</name></member>
+      <member refid="class_hospital_room_1acf232efbec254f916a435a2e7e545a3b" prot="public" virt="non-virtual"><scope>HospitalRoom</scope><name>HealTarget</name></member>
+      <member refid="class_hospital_room_1ab52019154b0653ecc300585d3eb17ec3" prot="private" virt="non-virtual"><scope>HospitalRoom</scope><name>healTarget</name></member>
+      <member refid="class_hospital_room_1a70dcbca0dbdffc260609a53be46d0907" prot="private" virt="non-virtual"><scope>HospitalRoom</scope><name>HealUnits</name></member>
+      <member refid="class_hospital_room_1a83c5f11291b99cb7d55fb87dd072c038" prot="private" virt="non-virtual"><scope>HospitalRoom</scope><name>LineOriginalUnitHealthIndicator</name></member>
+      <member refid="class_hospital_room_1aa50f754cedc4f77ef22a2b89200e2154" prot="private" virt="non-virtual"><scope>HospitalRoom</scope><name>OnDisable</name></member>
+      <member refid="class_hospital_room_1ae7a29701bfd6999de1dec6ec98335e4a" prot="private" virt="non-virtual"><scope>HospitalRoom</scope><name>OnEnable</name></member>
+      <member refid="class_hospital_room_1a087c4b67256d17cf9b23c3e462af9ede" prot="private" virt="non-virtual"><scope>HospitalRoom</scope><name>RemoveOldLines</name></member>
+      <member refid="class_hospital_room_1af99fe9027e1d97da3c8e868a66346c10" prot="private" virt="non-virtual"><scope>HospitalRoom</scope><name>RereshLines</name></member>
+      <member refid="class_hospital_room_1a0a29986bed0b4100bcefa68633e59772" prot="private" virt="non-virtual"><scope>HospitalRoom</scope><name>ResetConverter</name></member>
+      <member refid="class_hospital_room_1a1fa011a3e460b6d772e1d6c8810691ee" prot="private" virt="non-virtual"><scope>HospitalRoom</scope><name>Start</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

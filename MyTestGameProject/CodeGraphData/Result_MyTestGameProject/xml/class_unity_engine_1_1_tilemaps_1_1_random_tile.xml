@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_unity_engine_1_1_tilemaps_1_1_random_tile" kind="class" prot="public">
+    <compoundname>UnityEngine::Tilemaps::RandomTile</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Tile</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_unity_engine_1_1_tilemaps_1_1_random_tile_1ac59397fdade671368ba7ceb2871f067f" prot="public" static="no" mutable="no">
+        <type>Sprite[]</type>
+        <definition>Sprite [] UnityEngine.Tilemaps.RandomTile.m_Sprites</definition>
+        <argsstring></argsstring>
+        <name>m_Sprites</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Random Tile/Scripts/RandomTile.cs" line="17" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Random Tile/Scripts/RandomTile.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_unity_engine_1_1_tilemaps_1_1_random_tile_1a2e70420f9478a48d0ec57809bca0faaf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void UnityEngine.Tilemaps.RandomTile.GetTileData</definition>
+        <argsstring>(Vector3Int location, ITilemap tileMap, ref TileData tileData)</argsstring>
+        <name>GetTileData</name>
+        <param>
+          <type>Vector3Int</type>
+          <declname>location</declname>
+        </param>
+        <param>
+          <type>ITilemap</type>
+          <declname>tileMap</declname>
+        </param>
+        <param>
+          <type>ref TileData</type>
+          <declname>tileData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Random Tile/Scripts/RandomTile.cs" line="19" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Random Tile/Scripts/RandomTile.cs" bodystart="19" bodyend="33"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="809">
+        <label>Tile</label>
+      </node>
+      <node id="808">
+        <label>UnityEngine.Tilemaps.RandomTile</label>
+        <link refid="class_unity_engine_1_1_tilemaps_1_1_random_tile"/>
+        <childnode refid="809" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="811">
+        <label>Tile</label>
+      </node>
+      <node id="810">
+        <label>UnityEngine.Tilemaps.RandomTile</label>
+        <link refid="class_unity_engine_1_1_tilemaps_1_1_random_tile"/>
+        <childnode refid="811" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Random Tile/Scripts/RandomTile.cs" line="15" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Random Tile/Scripts/RandomTile.cs" bodystart="14" bodyend="47"/>
+    <listofallmembers>
+      <member refid="class_unity_engine_1_1_tilemaps_1_1_random_tile_1a2e70420f9478a48d0ec57809bca0faaf" prot="public" virt="non-virtual"><scope>UnityEngine::Tilemaps::RandomTile</scope><name>GetTileData</name></member>
+      <member refid="class_unity_engine_1_1_tilemaps_1_1_random_tile_1ac59397fdade671368ba7ceb2871f067f" prot="public" virt="non-virtual"><scope>UnityEngine::Tilemaps::RandomTile</scope><name>m_Sprites</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

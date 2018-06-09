@@ -1,0 +1,721 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_unity_engine_1_1_tilemaps_1_1_grid_information" kind="class" prot="public">
+    <compoundname>UnityEngine::Tilemaps::GridInformation</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">ISerializationCallbackReceiver</basecompoundref>
+    <innerclass refid="struct_unity_engine_1_1_tilemaps_1_1_grid_information_1_1_grid_information_key" prot="package">UnityEngine::Tilemaps::GridInformation::GridInformationKey</innerclass>
+    <innerclass refid="struct_unity_engine_1_1_tilemaps_1_1_grid_information_1_1_grid_information_value" prot="package">UnityEngine::Tilemaps::GridInformation::GridInformationValue</innerclass>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_unity_engine_1_1_tilemaps_1_1_grid_information_1a8038f56c4feabc94492db05b583bee84" prot="private" static="no" mutable="no">
+        <type>Dictionary&lt; <ref refid="struct_unity_engine_1_1_tilemaps_1_1_grid_information_1_1_grid_information_key" kindref="compound">GridInformationKey</ref>, <ref refid="struct_unity_engine_1_1_tilemaps_1_1_grid_information_1_1_grid_information_value" kindref="compound">GridInformationValue</ref> &gt;</type>
+        <definition>Dictionary&lt;GridInformationKey, GridInformationValue&gt; UnityEngine.Tilemaps.GridInformation.m_PositionProperties</definition>
+        <argsstring></argsstring>
+        <name>m_PositionProperties</name>
+        <initializer>= new Dictionary&lt;<ref refid="struct_unity_engine_1_1_tilemaps_1_1_grid_information_1_1_grid_information_key" kindref="compound">GridInformationKey</ref>, <ref refid="struct_unity_engine_1_1_tilemaps_1_1_grid_information_1_1_grid_information_value" kindref="compound">GridInformationValue</ref>&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/GridInformation/Scripts/GridInformation.cs" line="36" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/GridInformation/Scripts/GridInformation.cs" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_tilemaps_1_1_grid_information_1a527f09f0958a1216fce5e73f2ab9f53f" prot="private" static="no" mutable="no">
+        <type>List&lt; <ref refid="struct_unity_engine_1_1_tilemaps_1_1_grid_information_1_1_grid_information_key" kindref="compound">GridInformationKey</ref> &gt;</type>
+        <definition>List&lt;GridInformationKey&gt; UnityEngine.Tilemaps.GridInformation.m_PositionIntKeys</definition>
+        <argsstring></argsstring>
+        <name>m_PositionIntKeys</name>
+        <initializer>= new List&lt;<ref refid="struct_unity_engine_1_1_tilemaps_1_1_grid_information_1_1_grid_information_key" kindref="compound">GridInformationKey</ref>&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/GridInformation/Scripts/GridInformation.cs" line="44" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/GridInformation/Scripts/GridInformation.cs" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_tilemaps_1_1_grid_information_1a33f154657317cafe7d2d78c0eae4a429" prot="private" static="no" mutable="no">
+        <type>List&lt; int &gt;</type>
+        <definition>List&lt;int&gt; UnityEngine.Tilemaps.GridInformation.m_PositionIntValues</definition>
+        <argsstring></argsstring>
+        <name>m_PositionIntValues</name>
+        <initializer>= new List&lt;int&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/GridInformation/Scripts/GridInformation.cs" line="48" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/GridInformation/Scripts/GridInformation.cs" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_tilemaps_1_1_grid_information_1a6c48458fcf2be5cd9573dae360e6c661" prot="private" static="no" mutable="no">
+        <type>List&lt; <ref refid="struct_unity_engine_1_1_tilemaps_1_1_grid_information_1_1_grid_information_key" kindref="compound">GridInformationKey</ref> &gt;</type>
+        <definition>List&lt;GridInformationKey&gt; UnityEngine.Tilemaps.GridInformation.m_PositionStringKeys</definition>
+        <argsstring></argsstring>
+        <name>m_PositionStringKeys</name>
+        <initializer>= new List&lt;<ref refid="struct_unity_engine_1_1_tilemaps_1_1_grid_information_1_1_grid_information_key" kindref="compound">GridInformationKey</ref>&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/GridInformation/Scripts/GridInformation.cs" line="52" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/GridInformation/Scripts/GridInformation.cs" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_tilemaps_1_1_grid_information_1a7a9d97fe4f9522de4f4b9966e4d77cd0" prot="private" static="no" mutable="no">
+        <type>List&lt; <ref refid="namespace_unity_engine_1_1_tilemaps_1a8410807eeae7d80388b1b8e0f9cb9681a27118326006d3829667a400ad23d5d98" kindref="member">String</ref> &gt;</type>
+        <definition>List&lt;String&gt; UnityEngine.Tilemaps.GridInformation.m_PositionStringValues</definition>
+        <argsstring></argsstring>
+        <name>m_PositionStringValues</name>
+        <initializer>= new List&lt;<ref refid="namespace_unity_engine_1_1_tilemaps_1a8410807eeae7d80388b1b8e0f9cb9681a27118326006d3829667a400ad23d5d98" kindref="member">String</ref>&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/GridInformation/Scripts/GridInformation.cs" line="56" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/GridInformation/Scripts/GridInformation.cs" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_tilemaps_1_1_grid_information_1aec4c2e287c10ba18f2d04dea8fa5476e" prot="private" static="no" mutable="no">
+        <type>List&lt; <ref refid="struct_unity_engine_1_1_tilemaps_1_1_grid_information_1_1_grid_information_key" kindref="compound">GridInformationKey</ref> &gt;</type>
+        <definition>List&lt;GridInformationKey&gt; UnityEngine.Tilemaps.GridInformation.m_PositionFloatKeys</definition>
+        <argsstring></argsstring>
+        <name>m_PositionFloatKeys</name>
+        <initializer>= new List&lt;<ref refid="struct_unity_engine_1_1_tilemaps_1_1_grid_information_1_1_grid_information_key" kindref="compound">GridInformationKey</ref>&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/GridInformation/Scripts/GridInformation.cs" line="60" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/GridInformation/Scripts/GridInformation.cs" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_tilemaps_1_1_grid_information_1a5ff7a11da65dea358464544ad6ea34a0" prot="private" static="no" mutable="no">
+        <type>List&lt; float &gt;</type>
+        <definition>List&lt;float&gt; UnityEngine.Tilemaps.GridInformation.m_PositionFloatValues</definition>
+        <argsstring></argsstring>
+        <name>m_PositionFloatValues</name>
+        <initializer>= new List&lt;float&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/GridInformation/Scripts/GridInformation.cs" line="64" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/GridInformation/Scripts/GridInformation.cs" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_tilemaps_1_1_grid_information_1a7d26935c2670a210b6bf2e879a76ab39" prot="private" static="no" mutable="no">
+        <type>List&lt; <ref refid="struct_unity_engine_1_1_tilemaps_1_1_grid_information_1_1_grid_information_key" kindref="compound">GridInformationKey</ref> &gt;</type>
+        <definition>List&lt;GridInformationKey&gt; UnityEngine.Tilemaps.GridInformation.m_PositionDoubleKeys</definition>
+        <argsstring></argsstring>
+        <name>m_PositionDoubleKeys</name>
+        <initializer>= new List&lt;<ref refid="struct_unity_engine_1_1_tilemaps_1_1_grid_information_1_1_grid_information_key" kindref="compound">GridInformationKey</ref>&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/GridInformation/Scripts/GridInformation.cs" line="68" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/GridInformation/Scripts/GridInformation.cs" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_tilemaps_1_1_grid_information_1a4b1c9a55a36a88df031dbf4fad4cf02a" prot="private" static="no" mutable="no">
+        <type>List&lt; <ref refid="namespace_unity_engine_1_1_tilemaps_1a8410807eeae7d80388b1b8e0f9cb9681ad909d38d705ce75386dd86e611a82f5b" kindref="member">Double</ref> &gt;</type>
+        <definition>List&lt;Double&gt; UnityEngine.Tilemaps.GridInformation.m_PositionDoubleValues</definition>
+        <argsstring></argsstring>
+        <name>m_PositionDoubleValues</name>
+        <initializer>= new List&lt;<ref refid="namespace_unity_engine_1_1_tilemaps_1a8410807eeae7d80388b1b8e0f9cb9681ad909d38d705ce75386dd86e611a82f5b" kindref="member">Double</ref>&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/GridInformation/Scripts/GridInformation.cs" line="72" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/GridInformation/Scripts/GridInformation.cs" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_tilemaps_1_1_grid_information_1a8b88f9ea4a9f1589b48e00e93d2f4d8b" prot="private" static="no" mutable="no">
+        <type>List&lt; <ref refid="struct_unity_engine_1_1_tilemaps_1_1_grid_information_1_1_grid_information_key" kindref="compound">GridInformationKey</ref> &gt;</type>
+        <definition>List&lt;GridInformationKey&gt; UnityEngine.Tilemaps.GridInformation.m_PositionObjectKeys</definition>
+        <argsstring></argsstring>
+        <name>m_PositionObjectKeys</name>
+        <initializer>= new List&lt;<ref refid="struct_unity_engine_1_1_tilemaps_1_1_grid_information_1_1_grid_information_key" kindref="compound">GridInformationKey</ref>&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/GridInformation/Scripts/GridInformation.cs" line="76" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/GridInformation/Scripts/GridInformation.cs" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_tilemaps_1_1_grid_information_1a031384344c2652179eb0f3d03fb54390" prot="private" static="no" mutable="no">
+        <type>List&lt; Object &gt;</type>
+        <definition>List&lt;Object&gt; UnityEngine.Tilemaps.GridInformation.m_PositionObjectValues</definition>
+        <argsstring></argsstring>
+        <name>m_PositionObjectValues</name>
+        <initializer>= new List&lt;Object&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/GridInformation/Scripts/GridInformation.cs" line="80" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/GridInformation/Scripts/GridInformation.cs" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_tilemaps_1_1_grid_information_1af16509e8bd7f90c4045d72d0cf74d80a" prot="private" static="no" mutable="no">
+        <type>List&lt; <ref refid="struct_unity_engine_1_1_tilemaps_1_1_grid_information_1_1_grid_information_key" kindref="compound">GridInformationKey</ref> &gt;</type>
+        <definition>List&lt;GridInformationKey&gt; UnityEngine.Tilemaps.GridInformation.m_PositionColorKeys</definition>
+        <argsstring></argsstring>
+        <name>m_PositionColorKeys</name>
+        <initializer>= new List&lt;<ref refid="struct_unity_engine_1_1_tilemaps_1_1_grid_information_1_1_grid_information_key" kindref="compound">GridInformationKey</ref>&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/GridInformation/Scripts/GridInformation.cs" line="84" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/GridInformation/Scripts/GridInformation.cs" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_engine_1_1_tilemaps_1_1_grid_information_1ac50648b2d59af8849fa89558e32be533" prot="private" static="no" mutable="no">
+        <type>List&lt; <ref refid="namespace_unity_engine_1_1_tilemaps_1a8410807eeae7d80388b1b8e0f9cb9681acb5feb1b7314637725a2e73bdc9f7295" kindref="member">Color</ref> &gt;</type>
+        <definition>List&lt;Color&gt; UnityEngine.Tilemaps.GridInformation.m_PositionColorValues</definition>
+        <argsstring></argsstring>
+        <name>m_PositionColorValues</name>
+        <initializer>= new List&lt;<ref refid="namespace_unity_engine_1_1_tilemaps_1a8410807eeae7d80388b1b8e0f9cb9681acb5feb1b7314637725a2e73bdc9f7295" kindref="member">Color</ref>&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/GridInformation/Scripts/GridInformation.cs" line="88" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/GridInformation/Scripts/GridInformation.cs" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_unity_engine_1_1_tilemaps_1_1_grid_information_1a85f3ec8a6cd144b01329018d2a8e7f03" prot="package" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>Dictionary&lt; <ref refid="struct_unity_engine_1_1_tilemaps_1_1_grid_information_1_1_grid_information_key" kindref="compound">GridInformationKey</ref>, <ref refid="struct_unity_engine_1_1_tilemaps_1_1_grid_information_1_1_grid_information_value" kindref="compound">GridInformationValue</ref> &gt;</type>
+        <definition>Dictionary&lt;GridInformationKey, GridInformationValue&gt; UnityEngine.Tilemaps.GridInformation.PositionProperties</definition>
+        <argsstring></argsstring>
+        <name>PositionProperties</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/GridInformation/Scripts/GridInformation.cs" line="37" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/GridInformation/Scripts/GridInformation.cs" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_unity_engine_1_1_tilemaps_1_1_grid_information_1a61d4f89ccfe70c38eabf7e6d6edf9939" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void ISerializationCallbackReceiver.</type>
+        <definition>void ISerializationCallbackReceiver. UnityEngine.Tilemaps.GridInformation.OnBeforeSerialize</definition>
+        <argsstring>()</argsstring>
+        <name>OnBeforeSerialize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/GridInformation/Scripts/GridInformation.cs" line="90" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/GridInformation/Scripts/GridInformation.cs" bodystart="90" bodyend="139"/>
+        <references refid="namespace_unity_engine_1_1_tilemaps_1a8410807eeae7d80388b1b8e0f9cb9681acb5feb1b7314637725a2e73bdc9f7295">UnityEngine.Tilemaps.Color</references>
+        <references refid="namespace_unity_engine_1_1_tilemaps_1a8410807eeae7d80388b1b8e0f9cb9681a27118326006d3829667a400ad23d5d98">UnityEngine.Tilemaps.String</references>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_tilemaps_1_1_grid_information_1a64438bb0a200cf0382c7cbbccc33edb9" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void ISerializationCallbackReceiver.</type>
+        <definition>void ISerializationCallbackReceiver. UnityEngine.Tilemaps.GridInformation.OnAfterDeserialize</definition>
+        <argsstring>()</argsstring>
+        <name>OnAfterDeserialize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/GridInformation/Scripts/GridInformation.cs" line="141" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/GridInformation/Scripts/GridInformation.cs" bodystart="141" bodyend="186"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_tilemaps_1_1_grid_information_1a17d8dd126f4fd9e295b9dd34d5951351" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UnityEngine.Tilemaps.GridInformation.SetPositionProperty</definition>
+        <argsstring>(Vector3Int position, String name, GridInformationType dataType, System.Object positionProperty)</argsstring>
+        <name>SetPositionProperty</name>
+        <param>
+          <type>Vector3Int</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_unity_engine_1_1_tilemaps_1a8410807eeae7d80388b1b8e0f9cb9681a27118326006d3829667a400ad23d5d98" kindref="member">String</ref></type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_unity_engine_1_1_tilemaps_1a8410807eeae7d80388b1b8e0f9cb9681" kindref="member">GridInformationType</ref></type>
+          <declname>dataType</declname>
+        </param>
+        <param>
+          <type>System.Object</type>
+          <declname>positionProperty</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/GridInformation/Scripts/GridInformation.cs" line="223" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/GridInformation/Scripts/GridInformation.cs" bodystart="223" bodyend="240"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_unity_engine_1_1_tilemaps_1_1_grid_information_1ae2e808fef5a559b198503762d1f6c864" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UnityEngine.Tilemaps.GridInformation.SetPositionProperty&lt; T &gt;</definition>
+        <argsstring>(Vector3Int position, String name, T positionProperty)</argsstring>
+        <name>SetPositionProperty&lt; T &gt;</name>
+        <param>
+          <type>Vector3Int</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_unity_engine_1_1_tilemaps_1a8410807eeae7d80388b1b8e0f9cb9681a27118326006d3829667a400ad23d5d98" kindref="member">String</ref></type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>positionProperty</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/GridInformation/Scripts/GridInformation.cs" line="188" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/GridInformation/Scripts/GridInformation.cs" bodystart="188" bodyend="191"/>
+        <references refid="namespace_unity_engine_1_1_tilemaps_1a8410807eeae7d80388b1b8e0f9cb9681a27118326006d3829667a400ad23d5d98">UnityEngine.Tilemaps.String</references>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_tilemaps_1_1_grid_information_1ab30076ad1f26c343960db08a608d777c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UnityEngine.Tilemaps.GridInformation.SetPositionProperty</definition>
+        <argsstring>(Vector3Int position, String name, int positionProperty)</argsstring>
+        <name>SetPositionProperty</name>
+        <param>
+          <type>Vector3Int</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_unity_engine_1_1_tilemaps_1a8410807eeae7d80388b1b8e0f9cb9681a27118326006d3829667a400ad23d5d98" kindref="member">String</ref></type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>positionProperty</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/GridInformation/Scripts/GridInformation.cs" line="193" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/GridInformation/Scripts/GridInformation.cs" bodystart="193" bodyend="196"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_tilemaps_1_1_grid_information_1a73f7885eae39c1d86a1c43fd71661026" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UnityEngine.Tilemaps.GridInformation.SetPositionProperty</definition>
+        <argsstring>(Vector3Int position, String name, string positionProperty)</argsstring>
+        <name>SetPositionProperty</name>
+        <param>
+          <type>Vector3Int</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_unity_engine_1_1_tilemaps_1a8410807eeae7d80388b1b8e0f9cb9681a27118326006d3829667a400ad23d5d98" kindref="member">String</ref></type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>positionProperty</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/GridInformation/Scripts/GridInformation.cs" line="198" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/GridInformation/Scripts/GridInformation.cs" bodystart="198" bodyend="201"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_tilemaps_1_1_grid_information_1a33a6f6e9e328774bf49d0f4b96d02164" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UnityEngine.Tilemaps.GridInformation.SetPositionProperty</definition>
+        <argsstring>(Vector3Int position, String name, float positionProperty)</argsstring>
+        <name>SetPositionProperty</name>
+        <param>
+          <type>Vector3Int</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_unity_engine_1_1_tilemaps_1a8410807eeae7d80388b1b8e0f9cb9681a27118326006d3829667a400ad23d5d98" kindref="member">String</ref></type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>positionProperty</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/GridInformation/Scripts/GridInformation.cs" line="203" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/GridInformation/Scripts/GridInformation.cs" bodystart="203" bodyend="206"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_tilemaps_1_1_grid_information_1a1ff97a36d788dd45862ee365b6b578c4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UnityEngine.Tilemaps.GridInformation.SetPositionProperty</definition>
+        <argsstring>(Vector3Int position, String name, double positionProperty)</argsstring>
+        <name>SetPositionProperty</name>
+        <param>
+          <type>Vector3Int</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_unity_engine_1_1_tilemaps_1a8410807eeae7d80388b1b8e0f9cb9681a27118326006d3829667a400ad23d5d98" kindref="member">String</ref></type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>positionProperty</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/GridInformation/Scripts/GridInformation.cs" line="208" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/GridInformation/Scripts/GridInformation.cs" bodystart="208" bodyend="211"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_tilemaps_1_1_grid_information_1a27f3fcfd206df603b1a5838fbf0c5a81" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UnityEngine.Tilemaps.GridInformation.SetPositionProperty</definition>
+        <argsstring>(Vector3Int position, String name, UnityEngine.Object positionProperty)</argsstring>
+        <name>SetPositionProperty</name>
+        <param>
+          <type>Vector3Int</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_unity_engine_1_1_tilemaps_1a8410807eeae7d80388b1b8e0f9cb9681a27118326006d3829667a400ad23d5d98" kindref="member">String</ref></type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>UnityEngine.Object</type>
+          <declname>positionProperty</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/GridInformation/Scripts/GridInformation.cs" line="213" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/GridInformation/Scripts/GridInformation.cs" bodystart="213" bodyend="216"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_tilemaps_1_1_grid_information_1ab7a918deb9f2221f3f1d7a4a5796e563" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UnityEngine.Tilemaps.GridInformation.SetPositionProperty</definition>
+        <argsstring>(Vector3Int position, String name, Color positionProperty)</argsstring>
+        <name>SetPositionProperty</name>
+        <param>
+          <type>Vector3Int</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_unity_engine_1_1_tilemaps_1a8410807eeae7d80388b1b8e0f9cb9681a27118326006d3829667a400ad23d5d98" kindref="member">String</ref></type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_unity_engine_1_1_tilemaps_1a8410807eeae7d80388b1b8e0f9cb9681acb5feb1b7314637725a2e73bdc9f7295" kindref="member">Color</ref></type>
+          <declname>positionProperty</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/GridInformation/Scripts/GridInformation.cs" line="218" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/GridInformation/Scripts/GridInformation.cs" bodystart="218" bodyend="221"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_tilemaps_1_1_grid_information_1af78d80747ec9e72e47a82cb2ed7626d2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T UnityEngine.Tilemaps.GridInformation.GetPositionProperty&lt; T &gt;</definition>
+        <argsstring>(Vector3Int position, String name, T defaultValue)</argsstring>
+        <name>GetPositionProperty&lt; T &gt;</name>
+        <param>
+          <type>Vector3Int</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_unity_engine_1_1_tilemaps_1a8410807eeae7d80388b1b8e0f9cb9681a27118326006d3829667a400ad23d5d98" kindref="member">String</ref></type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>defaultValue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/GridInformation/Scripts/GridInformation.cs" line="242" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/GridInformation/Scripts/GridInformation.cs" bodystart="242" bodyend="256"/>
+        <references refid="namespace_unity_engine_1_1_tilemaps_1a8410807eeae7d80388b1b8e0f9cb9681a27118326006d3829667a400ad23d5d98">UnityEngine.Tilemaps.String</references>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_tilemaps_1_1_grid_information_1a15b875226e911e161f5a45a40663d5a1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int UnityEngine.Tilemaps.GridInformation.GetPositionProperty</definition>
+        <argsstring>(Vector3Int position, String name, int defaultValue)</argsstring>
+        <name>GetPositionProperty</name>
+        <param>
+          <type>Vector3Int</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_unity_engine_1_1_tilemaps_1a8410807eeae7d80388b1b8e0f9cb9681a27118326006d3829667a400ad23d5d98" kindref="member">String</ref></type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>defaultValue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/GridInformation/Scripts/GridInformation.cs" line="258" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/GridInformation/Scripts/GridInformation.cs" bodystart="258" bodyend="272"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_tilemaps_1_1_grid_information_1a8eb7d8d71cbd548361a6ec3c3a8df056" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>string UnityEngine.Tilemaps.GridInformation.GetPositionProperty</definition>
+        <argsstring>(Vector3Int position, String name, string defaultValue)</argsstring>
+        <name>GetPositionProperty</name>
+        <param>
+          <type>Vector3Int</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_unity_engine_1_1_tilemaps_1a8410807eeae7d80388b1b8e0f9cb9681a27118326006d3829667a400ad23d5d98" kindref="member">String</ref></type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>defaultValue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/GridInformation/Scripts/GridInformation.cs" line="274" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/GridInformation/Scripts/GridInformation.cs" bodystart="274" bodyend="288"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_tilemaps_1_1_grid_information_1a1fc40c0d856044ad6bf5f1108f5c7dd7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float UnityEngine.Tilemaps.GridInformation.GetPositionProperty</definition>
+        <argsstring>(Vector3Int position, String name, float defaultValue)</argsstring>
+        <name>GetPositionProperty</name>
+        <param>
+          <type>Vector3Int</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_unity_engine_1_1_tilemaps_1a8410807eeae7d80388b1b8e0f9cb9681a27118326006d3829667a400ad23d5d98" kindref="member">String</ref></type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>defaultValue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/GridInformation/Scripts/GridInformation.cs" line="290" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/GridInformation/Scripts/GridInformation.cs" bodystart="290" bodyend="304"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_tilemaps_1_1_grid_information_1a760fd6a2a5c4754577df1635f6d5ba0b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double UnityEngine.Tilemaps.GridInformation.GetPositionProperty</definition>
+        <argsstring>(Vector3Int position, String name, double defaultValue)</argsstring>
+        <name>GetPositionProperty</name>
+        <param>
+          <type>Vector3Int</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_unity_engine_1_1_tilemaps_1a8410807eeae7d80388b1b8e0f9cb9681a27118326006d3829667a400ad23d5d98" kindref="member">String</ref></type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>defaultValue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/GridInformation/Scripts/GridInformation.cs" line="306" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/GridInformation/Scripts/GridInformation.cs" bodystart="306" bodyend="320"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_tilemaps_1_1_grid_information_1a1843f7eeb254da08b52d83657d29fe78" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespace_unity_engine_1_1_tilemaps_1a8410807eeae7d80388b1b8e0f9cb9681acb5feb1b7314637725a2e73bdc9f7295" kindref="member">Color</ref></type>
+        <definition>Color UnityEngine.Tilemaps.GridInformation.GetPositionProperty</definition>
+        <argsstring>(Vector3Int position, String name, Color defaultValue)</argsstring>
+        <name>GetPositionProperty</name>
+        <param>
+          <type>Vector3Int</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_unity_engine_1_1_tilemaps_1a8410807eeae7d80388b1b8e0f9cb9681a27118326006d3829667a400ad23d5d98" kindref="member">String</ref></type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_unity_engine_1_1_tilemaps_1a8410807eeae7d80388b1b8e0f9cb9681acb5feb1b7314637725a2e73bdc9f7295" kindref="member">Color</ref></type>
+          <declname>defaultValue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/GridInformation/Scripts/GridInformation.cs" line="322" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/GridInformation/Scripts/GridInformation.cs" bodystart="322" bodyend="336"/>
+        <references refid="namespace_unity_engine_1_1_tilemaps_1a8410807eeae7d80388b1b8e0f9cb9681acb5feb1b7314637725a2e73bdc9f7295">UnityEngine.Tilemaps.Color</references>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_tilemaps_1_1_grid_information_1a5bf7306a29751354c80ebc69f215251c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UnityEngine.Tilemaps.GridInformation.ErasePositionProperty</definition>
+        <argsstring>(Vector3Int position, String name)</argsstring>
+        <name>ErasePositionProperty</name>
+        <param>
+          <type>Vector3Int</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_unity_engine_1_1_tilemaps_1a8410807eeae7d80388b1b8e0f9cb9681a27118326006d3829667a400ad23d5d98" kindref="member">String</ref></type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/GridInformation/Scripts/GridInformation.cs" line="338" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/GridInformation/Scripts/GridInformation.cs" bodystart="338" bodyend="344"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_tilemaps_1_1_grid_information_1a437fcf6f773eeab628c3e9642a214cc7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void UnityEngine.Tilemaps.GridInformation.Reset</definition>
+        <argsstring>()</argsstring>
+        <name>Reset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/GridInformation/Scripts/GridInformation.cs" line="346" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/GridInformation/Scripts/GridInformation.cs" bodystart="346" bodyend="349"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_tilemaps_1_1_grid_information_1a08fe6748eeb90ee68d1d5292f5e740e4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Vector3Int[]</type>
+        <definition>Vector3Int [] UnityEngine.Tilemaps.GridInformation.GetAllPositions</definition>
+        <argsstring>(string propertyName)</argsstring>
+        <name>GetAllPositions</name>
+        <param>
+          <type>string</type>
+          <declname>propertyName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/GridInformation/Scripts/GridInformation.cs" line="351" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/GridInformation/Scripts/GridInformation.cs" bodystart="351" bodyend="354"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="436">
+        <label>UnityEngine.Tilemaps.GridInformation</label>
+        <link refid="class_unity_engine_1_1_tilemaps_1_1_grid_information"/>
+        <childnode refid="437" relation="public-inheritance">
+        </childnode>
+        <childnode refid="438" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="438">
+        <label>ISerializationCallbackReceiver</label>
+      </node>
+      <node id="437">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="439">
+        <label>UnityEngine.Tilemaps.GridInformation</label>
+        <link refid="class_unity_engine_1_1_tilemaps_1_1_grid_information"/>
+        <childnode refid="440" relation="public-inheritance">
+        </childnode>
+        <childnode refid="441" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="441">
+        <label>ISerializationCallbackReceiver</label>
+      </node>
+      <node id="440">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/GridInformation/Scripts/GridInformation.cs" line="22" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/GridInformation/Scripts/GridInformation.cs" bodystart="21" bodyend="355"/>
+    <listofallmembers>
+      <member refid="class_unity_engine_1_1_tilemaps_1_1_grid_information_1a5bf7306a29751354c80ebc69f215251c" prot="public" virt="non-virtual"><scope>UnityEngine::Tilemaps::GridInformation</scope><name>ErasePositionProperty</name></member>
+      <member refid="class_unity_engine_1_1_tilemaps_1_1_grid_information_1a08fe6748eeb90ee68d1d5292f5e740e4" prot="public" virt="non-virtual"><scope>UnityEngine::Tilemaps::GridInformation</scope><name>GetAllPositions</name></member>
+      <member refid="class_unity_engine_1_1_tilemaps_1_1_grid_information_1a15b875226e911e161f5a45a40663d5a1" prot="public" virt="non-virtual"><scope>UnityEngine::Tilemaps::GridInformation</scope><name>GetPositionProperty</name></member>
+      <member refid="class_unity_engine_1_1_tilemaps_1_1_grid_information_1a8eb7d8d71cbd548361a6ec3c3a8df056" prot="public" virt="non-virtual"><scope>UnityEngine::Tilemaps::GridInformation</scope><name>GetPositionProperty</name></member>
+      <member refid="class_unity_engine_1_1_tilemaps_1_1_grid_information_1a1fc40c0d856044ad6bf5f1108f5c7dd7" prot="public" virt="non-virtual"><scope>UnityEngine::Tilemaps::GridInformation</scope><name>GetPositionProperty</name></member>
+      <member refid="class_unity_engine_1_1_tilemaps_1_1_grid_information_1a760fd6a2a5c4754577df1635f6d5ba0b" prot="public" virt="non-virtual"><scope>UnityEngine::Tilemaps::GridInformation</scope><name>GetPositionProperty</name></member>
+      <member refid="class_unity_engine_1_1_tilemaps_1_1_grid_information_1a1843f7eeb254da08b52d83657d29fe78" prot="public" virt="non-virtual"><scope>UnityEngine::Tilemaps::GridInformation</scope><name>GetPositionProperty</name></member>
+      <member refid="class_unity_engine_1_1_tilemaps_1_1_grid_information_1af78d80747ec9e72e47a82cb2ed7626d2" prot="public" virt="non-virtual"><scope>UnityEngine::Tilemaps::GridInformation</scope><name>GetPositionProperty&lt; T &gt;</name></member>
+      <member refid="class_unity_engine_1_1_tilemaps_1_1_grid_information_1af16509e8bd7f90c4045d72d0cf74d80a" prot="private" virt="non-virtual"><scope>UnityEngine::Tilemaps::GridInformation</scope><name>m_PositionColorKeys</name></member>
+      <member refid="class_unity_engine_1_1_tilemaps_1_1_grid_information_1ac50648b2d59af8849fa89558e32be533" prot="private" virt="non-virtual"><scope>UnityEngine::Tilemaps::GridInformation</scope><name>m_PositionColorValues</name></member>
+      <member refid="class_unity_engine_1_1_tilemaps_1_1_grid_information_1a7d26935c2670a210b6bf2e879a76ab39" prot="private" virt="non-virtual"><scope>UnityEngine::Tilemaps::GridInformation</scope><name>m_PositionDoubleKeys</name></member>
+      <member refid="class_unity_engine_1_1_tilemaps_1_1_grid_information_1a4b1c9a55a36a88df031dbf4fad4cf02a" prot="private" virt="non-virtual"><scope>UnityEngine::Tilemaps::GridInformation</scope><name>m_PositionDoubleValues</name></member>
+      <member refid="class_unity_engine_1_1_tilemaps_1_1_grid_information_1aec4c2e287c10ba18f2d04dea8fa5476e" prot="private" virt="non-virtual"><scope>UnityEngine::Tilemaps::GridInformation</scope><name>m_PositionFloatKeys</name></member>
+      <member refid="class_unity_engine_1_1_tilemaps_1_1_grid_information_1a5ff7a11da65dea358464544ad6ea34a0" prot="private" virt="non-virtual"><scope>UnityEngine::Tilemaps::GridInformation</scope><name>m_PositionFloatValues</name></member>
+      <member refid="class_unity_engine_1_1_tilemaps_1_1_grid_information_1a527f09f0958a1216fce5e73f2ab9f53f" prot="private" virt="non-virtual"><scope>UnityEngine::Tilemaps::GridInformation</scope><name>m_PositionIntKeys</name></member>
+      <member refid="class_unity_engine_1_1_tilemaps_1_1_grid_information_1a33f154657317cafe7d2d78c0eae4a429" prot="private" virt="non-virtual"><scope>UnityEngine::Tilemaps::GridInformation</scope><name>m_PositionIntValues</name></member>
+      <member refid="class_unity_engine_1_1_tilemaps_1_1_grid_information_1a8b88f9ea4a9f1589b48e00e93d2f4d8b" prot="private" virt="non-virtual"><scope>UnityEngine::Tilemaps::GridInformation</scope><name>m_PositionObjectKeys</name></member>
+      <member refid="class_unity_engine_1_1_tilemaps_1_1_grid_information_1a031384344c2652179eb0f3d03fb54390" prot="private" virt="non-virtual"><scope>UnityEngine::Tilemaps::GridInformation</scope><name>m_PositionObjectValues</name></member>
+      <member refid="class_unity_engine_1_1_tilemaps_1_1_grid_information_1a8038f56c4feabc94492db05b583bee84" prot="private" virt="non-virtual"><scope>UnityEngine::Tilemaps::GridInformation</scope><name>m_PositionProperties</name></member>
+      <member refid="class_unity_engine_1_1_tilemaps_1_1_grid_information_1a6c48458fcf2be5cd9573dae360e6c661" prot="private" virt="non-virtual"><scope>UnityEngine::Tilemaps::GridInformation</scope><name>m_PositionStringKeys</name></member>
+      <member refid="class_unity_engine_1_1_tilemaps_1_1_grid_information_1a7a9d97fe4f9522de4f4b9966e4d77cd0" prot="private" virt="non-virtual"><scope>UnityEngine::Tilemaps::GridInformation</scope><name>m_PositionStringValues</name></member>
+      <member refid="class_unity_engine_1_1_tilemaps_1_1_grid_information_1a64438bb0a200cf0382c7cbbccc33edb9" prot="private" virt="non-virtual"><scope>UnityEngine::Tilemaps::GridInformation</scope><name>OnAfterDeserialize</name></member>
+      <member refid="class_unity_engine_1_1_tilemaps_1_1_grid_information_1a61d4f89ccfe70c38eabf7e6d6edf9939" prot="private" virt="non-virtual"><scope>UnityEngine::Tilemaps::GridInformation</scope><name>OnBeforeSerialize</name></member>
+      <member refid="class_unity_engine_1_1_tilemaps_1_1_grid_information_1a85f3ec8a6cd144b01329018d2a8e7f03" prot="package" virt="non-virtual"><scope>UnityEngine::Tilemaps::GridInformation</scope><name>PositionProperties</name></member>
+      <member refid="class_unity_engine_1_1_tilemaps_1_1_grid_information_1a437fcf6f773eeab628c3e9642a214cc7" prot="public" virt="virtual"><scope>UnityEngine::Tilemaps::GridInformation</scope><name>Reset</name></member>
+      <member refid="class_unity_engine_1_1_tilemaps_1_1_grid_information_1ab30076ad1f26c343960db08a608d777c" prot="public" virt="non-virtual"><scope>UnityEngine::Tilemaps::GridInformation</scope><name>SetPositionProperty</name></member>
+      <member refid="class_unity_engine_1_1_tilemaps_1_1_grid_information_1a73f7885eae39c1d86a1c43fd71661026" prot="public" virt="non-virtual"><scope>UnityEngine::Tilemaps::GridInformation</scope><name>SetPositionProperty</name></member>
+      <member refid="class_unity_engine_1_1_tilemaps_1_1_grid_information_1a33a6f6e9e328774bf49d0f4b96d02164" prot="public" virt="non-virtual"><scope>UnityEngine::Tilemaps::GridInformation</scope><name>SetPositionProperty</name></member>
+      <member refid="class_unity_engine_1_1_tilemaps_1_1_grid_information_1a1ff97a36d788dd45862ee365b6b578c4" prot="public" virt="non-virtual"><scope>UnityEngine::Tilemaps::GridInformation</scope><name>SetPositionProperty</name></member>
+      <member refid="class_unity_engine_1_1_tilemaps_1_1_grid_information_1a27f3fcfd206df603b1a5838fbf0c5a81" prot="public" virt="non-virtual"><scope>UnityEngine::Tilemaps::GridInformation</scope><name>SetPositionProperty</name></member>
+      <member refid="class_unity_engine_1_1_tilemaps_1_1_grid_information_1ab7a918deb9f2221f3f1d7a4a5796e563" prot="public" virt="non-virtual"><scope>UnityEngine::Tilemaps::GridInformation</scope><name>SetPositionProperty</name></member>
+      <member refid="class_unity_engine_1_1_tilemaps_1_1_grid_information_1a17d8dd126f4fd9e295b9dd34d5951351" prot="private" virt="non-virtual"><scope>UnityEngine::Tilemaps::GridInformation</scope><name>SetPositionProperty</name></member>
+      <member refid="class_unity_engine_1_1_tilemaps_1_1_grid_information_1ae2e808fef5a559b198503762d1f6c864" prot="public" virt="non-virtual"><scope>UnityEngine::Tilemaps::GridInformation</scope><name>SetPositionProperty&lt; T &gt;</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

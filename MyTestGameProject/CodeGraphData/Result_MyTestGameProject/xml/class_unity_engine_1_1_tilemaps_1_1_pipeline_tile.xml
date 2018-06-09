@@ -1,0 +1,188 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_unity_engine_1_1_tilemaps_1_1_pipeline_tile" kind="class" prot="public">
+    <compoundname>UnityEngine::Tilemaps::PipelineTile</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">TileBase</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_unity_engine_1_1_tilemaps_1_1_pipeline_tile_1a2f477ef4cee986e932c4501fea6d7488" prot="public" static="no" mutable="no">
+        <type>Sprite[]</type>
+        <definition>Sprite [] UnityEngine.Tilemaps.PipelineTile.m_Sprites</definition>
+        <argsstring></argsstring>
+        <name>m_Sprites</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Pipeline Tile/Scripts/PipelineTile.cs" line="17" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Pipeline Tile/Scripts/PipelineTile.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_unity_engine_1_1_tilemaps_1_1_pipeline_tile_1ad2a99530fa0804a319be4cebcbfe7bc5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void UnityEngine.Tilemaps.PipelineTile.RefreshTile</definition>
+        <argsstring>(Vector3Int location, ITilemap tileMap)</argsstring>
+        <name>RefreshTile</name>
+        <param>
+          <type>Vector3Int</type>
+          <declname>location</declname>
+        </param>
+        <param>
+          <type>ITilemap</type>
+          <declname>tileMap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Pipeline Tile/Scripts/PipelineTile.cs" line="19" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Pipeline Tile/Scripts/PipelineTile.cs" bodystart="19" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_tilemaps_1_1_pipeline_tile_1a0dba54f34d8aa9a245dc69fbe7b781f0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void UnityEngine.Tilemaps.PipelineTile.GetTileData</definition>
+        <argsstring>(Vector3Int location, ITilemap tileMap, ref TileData tileData)</argsstring>
+        <name>GetTileData</name>
+        <param>
+          <type>Vector3Int</type>
+          <declname>location</declname>
+        </param>
+        <param>
+          <type>ITilemap</type>
+          <declname>tileMap</declname>
+        </param>
+        <param>
+          <type>ref TileData</type>
+          <declname>tileData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Pipeline Tile/Scripts/PipelineTile.cs" line="30" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Pipeline Tile/Scripts/PipelineTile.cs" bodystart="30" bodyend="33"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_unity_engine_1_1_tilemaps_1_1_pipeline_tile_1a5bc869c6e4bc10325d8764b597ea90ad" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityEngine.Tilemaps.PipelineTile.UpdateTile</definition>
+        <argsstring>(Vector3Int location, ITilemap tileMap, ref TileData tileData)</argsstring>
+        <name>UpdateTile</name>
+        <param>
+          <type>Vector3Int</type>
+          <declname>location</declname>
+        </param>
+        <param>
+          <type>ITilemap</type>
+          <declname>tileMap</declname>
+        </param>
+        <param>
+          <type>ref TileData</type>
+          <declname>tileData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Pipeline Tile/Scripts/PipelineTile.cs" line="35" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Pipeline Tile/Scripts/PipelineTile.cs" bodystart="35" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_tilemaps_1_1_pipeline_tile_1a0a204b1c538086e63d4fb17ae9ec33f7" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UnityEngine.Tilemaps.PipelineTile.TileValue</definition>
+        <argsstring>(ITilemap tileMap, Vector3Int position)</argsstring>
+        <name>TileValue</name>
+        <param>
+          <type>ITilemap</type>
+          <declname>tileMap</declname>
+        </param>
+        <param>
+          <type>Vector3Int</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Pipeline Tile/Scripts/PipelineTile.cs" line="55" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Pipeline Tile/Scripts/PipelineTile.cs" bodystart="55" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_tilemaps_1_1_pipeline_tile_1a2b5073026c9058141f60984db0bb8139" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int UnityEngine.Tilemaps.PipelineTile.GetIndex</definition>
+        <argsstring>(byte mask)</argsstring>
+        <name>GetIndex</name>
+        <param>
+          <type>byte</type>
+          <declname>mask</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Pipeline Tile/Scripts/PipelineTile.cs" line="61" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Pipeline Tile/Scripts/PipelineTile.cs" bodystart="61" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_tilemaps_1_1_pipeline_tile_1a9dfbc1f7a70ca40d4ac72e6ad994d808" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Matrix4x4</type>
+        <definition>Matrix4x4 UnityEngine.Tilemaps.PipelineTile.GetTransform</definition>
+        <argsstring>(byte mask)</argsstring>
+        <name>GetTransform</name>
+        <param>
+          <type>byte</type>
+          <declname>mask</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Pipeline Tile/Scripts/PipelineTile.cs" line="85" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Pipeline Tile/Scripts/PipelineTile.cs" bodystart="85" bodyend="103"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="723">
+        <label>UnityEngine.Tilemaps.PipelineTile</label>
+        <link refid="class_unity_engine_1_1_tilemaps_1_1_pipeline_tile"/>
+        <childnode refid="724" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="724">
+        <label>TileBase</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="725">
+        <label>UnityEngine.Tilemaps.PipelineTile</label>
+        <link refid="class_unity_engine_1_1_tilemaps_1_1_pipeline_tile"/>
+        <childnode refid="726" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="726">
+        <label>TileBase</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Pipeline Tile/Scripts/PipelineTile.cs" line="15" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Pipeline Tile/Scripts/PipelineTile.cs" bodystart="14" bodyend="117"/>
+    <listofallmembers>
+      <member refid="class_unity_engine_1_1_tilemaps_1_1_pipeline_tile_1a2b5073026c9058141f60984db0bb8139" prot="private" virt="non-virtual"><scope>UnityEngine::Tilemaps::PipelineTile</scope><name>GetIndex</name></member>
+      <member refid="class_unity_engine_1_1_tilemaps_1_1_pipeline_tile_1a0dba54f34d8aa9a245dc69fbe7b781f0" prot="public" virt="non-virtual"><scope>UnityEngine::Tilemaps::PipelineTile</scope><name>GetTileData</name></member>
+      <member refid="class_unity_engine_1_1_tilemaps_1_1_pipeline_tile_1a9dfbc1f7a70ca40d4ac72e6ad994d808" prot="private" virt="non-virtual"><scope>UnityEngine::Tilemaps::PipelineTile</scope><name>GetTransform</name></member>
+      <member refid="class_unity_engine_1_1_tilemaps_1_1_pipeline_tile_1a2f477ef4cee986e932c4501fea6d7488" prot="public" virt="non-virtual"><scope>UnityEngine::Tilemaps::PipelineTile</scope><name>m_Sprites</name></member>
+      <member refid="class_unity_engine_1_1_tilemaps_1_1_pipeline_tile_1ad2a99530fa0804a319be4cebcbfe7bc5" prot="public" virt="non-virtual"><scope>UnityEngine::Tilemaps::PipelineTile</scope><name>RefreshTile</name></member>
+      <member refid="class_unity_engine_1_1_tilemaps_1_1_pipeline_tile_1a0a204b1c538086e63d4fb17ae9ec33f7" prot="private" virt="non-virtual"><scope>UnityEngine::Tilemaps::PipelineTile</scope><name>TileValue</name></member>
+      <member refid="class_unity_engine_1_1_tilemaps_1_1_pipeline_tile_1a5bc869c6e4bc10325d8764b597ea90ad" prot="private" virt="non-virtual"><scope>UnityEngine::Tilemaps::PipelineTile</scope><name>UpdateTile</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

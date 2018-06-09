@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_coure_work_connect_to_server" kind="class" prot="public">
+    <compoundname>CoureWorkConnectToServer</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_coure_work_connect_to_server_1ad3aef4c151c2e11ba230ebe60b0daf2f" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string CoureWorkConnectToServer.ip</definition>
+        <argsstring></argsstring>
+        <name>ip</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/CW/CoureWorkConnectToServer.cs" line="5" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/CW/CoureWorkConnectToServer.cs" bodystart="5" bodyend="-1"/>
+        <referencedby refid="class_coure_work_connect_to_server_1a80e9fd4e8d7dca16f340c81e5fd81d01" compoundref="_coure_work_connect_to_server_8cs" startline="18" endline="31">OnClickOk</referencedby>
+        <referencedby refid="class_coure_work_connect_to_server_1acfbdb00a4e6dcdf976ddcc020cadd3c1" compoundref="_coure_work_connect_to_server_8cs" startline="8" endline="11">OnValIpChanged</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_coure_work_connect_to_server_1a030c50cefee6b19ce3f70893e0b3fae7" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string CoureWorkConnectToServer.name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/CW/CoureWorkConnectToServer.cs" line="6" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/CW/CoureWorkConnectToServer.cs" bodystart="6" bodyend="-1"/>
+        <referencedby refid="class_coure_work_connect_to_server_1a80e9fd4e8d7dca16f340c81e5fd81d01" compoundref="_coure_work_connect_to_server_8cs" startline="18" endline="31">OnClickOk</referencedby>
+        <referencedby refid="class_coure_work_connect_to_server_1a04983c1db16557b999ed555a58c36733" compoundref="_coure_work_connect_to_server_8cs" startline="13" endline="16">OnValNameChanged</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_coure_work_connect_to_server_1acfbdb00a4e6dcdf976ddcc020cadd3c1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CoureWorkConnectToServer.OnValIpChanged</definition>
+        <argsstring>(string str)</argsstring>
+        <name>OnValIpChanged</name>
+        <param>
+          <type>string</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/CW/CoureWorkConnectToServer.cs" line="8" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/CW/CoureWorkConnectToServer.cs" bodystart="8" bodyend="11"/>
+        <references refid="class_coure_work_connect_to_server_1ad3aef4c151c2e11ba230ebe60b0daf2f" compoundref="_coure_work_connect_to_server_8cs" startline="5">ip</references>
+      </memberdef>
+      <memberdef kind="function" id="class_coure_work_connect_to_server_1a04983c1db16557b999ed555a58c36733" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CoureWorkConnectToServer.OnValNameChanged</definition>
+        <argsstring>(string str)</argsstring>
+        <name>OnValNameChanged</name>
+        <param>
+          <type>string</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/CW/CoureWorkConnectToServer.cs" line="13" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/CW/CoureWorkConnectToServer.cs" bodystart="13" bodyend="16"/>
+        <references refid="class_coure_work_connect_to_server_1a030c50cefee6b19ce3f70893e0b3fae7" compoundref="_coure_work_connect_to_server_8cs" startline="6">name</references>
+      </memberdef>
+      <memberdef kind="function" id="class_coure_work_connect_to_server_1a80e9fd4e8d7dca16f340c81e5fd81d01" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CoureWorkConnectToServer.OnClickOk</definition>
+        <argsstring>()</argsstring>
+        <name>OnClickOk</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/CW/CoureWorkConnectToServer.cs" line="18" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/CW/CoureWorkConnectToServer.cs" bodystart="18" bodyend="31"/>
+        <references refid="class_game_manager_1ad3e717f4fb0f378b969f4457de81f23e" compoundref="_game_manager_8cs" startline="7">GameManager.Instance</references>
+        <references refid="class_coure_work_connect_to_server_1ad3aef4c151c2e11ba230ebe60b0daf2f" compoundref="_coure_work_connect_to_server_8cs" startline="5">ip</references>
+        <references refid="class_coure_work_connect_to_server_1a030c50cefee6b19ce3f70893e0b3fae7" compoundref="_coure_work_connect_to_server_8cs" startline="6">name</references>
+        <references refid="class_game_manager_1acb4037f3e5b5c1bef5598db815f1e8d5" compoundref="_game_manager_8cs" startline="57">GameManager.SavingManager</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="137">
+        <label>CoureWorkConnectToServer</label>
+        <link refid="class_coure_work_connect_to_server"/>
+        <childnode refid="138" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="138">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="139">
+        <label>CoureWorkConnectToServer</label>
+        <link refid="class_coure_work_connect_to_server"/>
+        <childnode refid="140" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="140">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/CW/CoureWorkConnectToServer.cs" line="4" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/CW/CoureWorkConnectToServer.cs" bodystart="3" bodyend="32"/>
+    <listofallmembers>
+      <member refid="class_coure_work_connect_to_server_1ad3aef4c151c2e11ba230ebe60b0daf2f" prot="private" virt="non-virtual"><scope>CoureWorkConnectToServer</scope><name>ip</name></member>
+      <member refid="class_coure_work_connect_to_server_1a030c50cefee6b19ce3f70893e0b3fae7" prot="private" virt="non-virtual"><scope>CoureWorkConnectToServer</scope><name>name</name></member>
+      <member refid="class_coure_work_connect_to_server_1a80e9fd4e8d7dca16f340c81e5fd81d01" prot="public" virt="non-virtual"><scope>CoureWorkConnectToServer</scope><name>OnClickOk</name></member>
+      <member refid="class_coure_work_connect_to_server_1acfbdb00a4e6dcdf976ddcc020cadd3c1" prot="public" virt="non-virtual"><scope>CoureWorkConnectToServer</scope><name>OnValIpChanged</name></member>
+      <member refid="class_coure_work_connect_to_server_1a04983c1db16557b999ed555a58c36733" prot="public" virt="non-virtual"><scope>CoureWorkConnectToServer</scope><name>OnValNameChanged</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

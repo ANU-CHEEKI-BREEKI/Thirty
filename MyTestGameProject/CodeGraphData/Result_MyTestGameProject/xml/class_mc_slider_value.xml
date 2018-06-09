@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_mc_slider_value" kind="class" prot="public">
+    <compoundname>McSliderValue</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_mc_slider_value_1a3952959072a8e37b394a80e2230b2480" prot="public" static="no" mutable="no">
+        <type>Text</type>
+        <definition>Text McSliderValue.text</definition>
+        <argsstring></argsstring>
+        <name>text</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McSliderValue.cs" line="8" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McSliderValue.cs" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mc_slider_value_1a125f61fb96d5e642dd9311786f277919" prot="public" static="no" mutable="no">
+        <type>Slider</type>
+        <definition>Slider McSliderValue.slider</definition>
+        <argsstring></argsstring>
+        <name>slider</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McSliderValue.cs" line="9" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McSliderValue.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_mc_slider_value_1a4933e54648c91c36217020296a435ace" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void McSliderValue.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McSliderValue.cs" line="11" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McSliderValue.cs" bodystart="11" bodyend="14"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_mc_slider_value_1ac35a35e79bff5e7f84aecf6c40ba4944" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void McSliderValue.OnSliderValueChanged</definition>
+        <argsstring>(float newValue)</argsstring>
+        <name>OnSliderValueChanged</name>
+        <param>
+          <type>float</type>
+          <declname>newValue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McSliderValue.cs" line="16" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McSliderValue.cs" bodystart="16" bodyend="19"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="663">
+        <label>McSliderValue</label>
+        <link refid="class_mc_slider_value"/>
+        <childnode refid="664" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="664">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="665">
+        <label>McSliderValue</label>
+        <link refid="class_mc_slider_value"/>
+        <childnode refid="666" relation="public-inheritance">
+        </childnode>
+        <childnode refid="667" relation="usage">
+          <edgelabel>text</edgelabel>
+        </childnode>
+      </node>
+      <node id="667">
+        <label>Text</label>
+      </node>
+      <node id="666">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McSliderValue.cs" line="6" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McSliderValue.cs" bodystart="6" bodyend="20"/>
+    <listofallmembers>
+      <member refid="class_mc_slider_value_1ac35a35e79bff5e7f84aecf6c40ba4944" prot="public" virt="non-virtual"><scope>McSliderValue</scope><name>OnSliderValueChanged</name></member>
+      <member refid="class_mc_slider_value_1a125f61fb96d5e642dd9311786f277919" prot="public" virt="non-virtual"><scope>McSliderValue</scope><name>slider</name></member>
+      <member refid="class_mc_slider_value_1a4933e54648c91c36217020296a435ace" prot="private" virt="non-virtual"><scope>McSliderValue</scope><name>Start</name></member>
+      <member refid="class_mc_slider_value_1a3952959072a8e37b394a80e2230b2480" prot="public" virt="non-virtual"><scope>McSliderValue</scope><name>text</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

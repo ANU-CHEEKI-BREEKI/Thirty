@@ -1,0 +1,461 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_stats_upgrade" kind="class" prot="public">
+    <compoundname>StatsUpgrade</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="private-type">
+      <memberdef kind="enum" id="class_stats_upgrade_1ade894462975b52914a6346a699ebe4ca" prot="private" static="no">
+        <name>StatName</name>
+        <enumvalue id="class_stats_upgrade_1ade894462975b52914a6346a699ebe4caa785a1e256fca0cd6be7b3dced4281845" prot="public">
+          <name>HEALTH</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_stats_upgrade_1ade894462975b52914a6346a699ebe4caac6ddd0f72ff2fd344693b9ca8d483871" prot="public">
+          <name>ATTACK</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_stats_upgrade_1ade894462975b52914a6346a699ebe4caa50e370241321f662b8e1684e99b278e6" prot="public">
+          <name>DEFENCE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_stats_upgrade_1ade894462975b52914a6346a699ebe4caa65a59338b99aee6a451e86b17b462b5a" prot="public">
+          <name>SPEED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_stats_upgrade_1ade894462975b52914a6346a699ebe4caad73a3cd2ea19c9d520874aa22288af4e" prot="public">
+          <name>ACELERATION</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_stats_upgrade_1ade894462975b52914a6346a699ebe4caa402d4eb2e84abfa8e266c7c996ff81ff" prot="public">
+          <name>ROTATION_SPEED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/StatsUpgrade.cs" line="11" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/StatsUpgrade.cs" bodystart="11" bodyend="11"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_stats_upgrade_1a13588791b8c4ea546b607d955e38bac7" prot="private" static="no" mutable="no">
+        <type>TextMeshProUGUI</type>
+        <definition>TextMeshProUGUI StatsUpgrade.name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/StatsUpgrade.cs" line="14" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/StatsUpgrade.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_stats_upgrade_1a3099b089a41cad05ba67265b58c39365" prot="private" static="no" mutable="no">
+        <type>TextMeshProUGUI</type>
+        <definition>TextMeshProUGUI StatsUpgrade.currentValue</definition>
+        <argsstring></argsstring>
+        <name>currentValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/StatsUpgrade.cs" line="15" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/StatsUpgrade.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_stats_upgrade_1ac37b3f37149efd6f22043daf243c0307" prot="private" static="no" mutable="no">
+        <type>TextMeshProUGUI</type>
+        <definition>TextMeshProUGUI StatsUpgrade.additionalValue</definition>
+        <argsstring></argsstring>
+        <name>additionalValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/StatsUpgrade.cs" line="16" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/StatsUpgrade.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_stats_upgrade_1a34b6e13b0b9eeb55387a8b9c4b48de4f" prot="private" static="no" mutable="no">
+        <type>TextMeshProUGUI</type>
+        <definition>TextMeshProUGUI StatsUpgrade.cost</definition>
+        <argsstring></argsstring>
+        <name>cost</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/StatsUpgrade.cs" line="17" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/StatsUpgrade.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_stats_upgrade_1a10278161b92b68384053d561d372a700" prot="private" static="no" mutable="no">
+        <type>Slider</type>
+        <definition>Slider StatsUpgrade.sliderToNextLevel</definition>
+        <argsstring></argsstring>
+        <name>sliderToNextLevel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/StatsUpgrade.cs" line="18" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/StatsUpgrade.cs" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_stats_upgrade_1acb9d22f99e414016d3d7dead220f9fd2" prot="private" static="no" mutable="no">
+        <type>Slider</type>
+        <definition>Slider StatsUpgrade.sliderToHightestLevel</definition>
+        <argsstring></argsstring>
+        <name>sliderToHightestLevel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/StatsUpgrade.cs" line="19" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/StatsUpgrade.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_stats_upgrade_1a6f4663b651bb3985af4dd1971855cd4c" prot="private" static="no" mutable="no">
+        <type><ref refid="class_stats_upgrade_1ade894462975b52914a6346a699ebe4ca" kindref="member">StatName</ref></type>
+        <definition>StatName StatsUpgrade.statName</definition>
+        <argsstring></argsstring>
+        <name>statName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/StatsUpgrade.cs" line="22" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/StatsUpgrade.cs" bodystart="22" bodyend="-1"/>
+        <referencedby refid="class_stats_upgrade_1a334edccf455f81a72fe9599d74bb64bb" compoundref="_stats_upgrade_8cs" startline="149" endline="180">ResetStat</referencedby>
+        <referencedby refid="class_stats_upgrade_1a3e8a38cc0c42bf13b3dfe61e6b0f5258" compoundref="_stats_upgrade_8cs" startline="49" endline="118">SetValues</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_stats_upgrade_1a6b82045131066142d2ca58c1e47be284" prot="private" static="no" mutable="no">
+        <type>AnimationCurve</type>
+        <definition>AnimationCurve StatsUpgrade.upgradeCost</definition>
+        <argsstring></argsstring>
+        <name>upgradeCost</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/StatsUpgrade.cs" line="23" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/StatsUpgrade.cs" bodystart="23" bodyend="-1"/>
+        <referencedby refid="class_stats_upgrade_1a3e8a38cc0c42bf13b3dfe61e6b0f5258" compoundref="_stats_upgrade_8cs" startline="49" endline="118">SetValues</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_stats_upgrade_1a816a393f14ae93e03af1a65a0a071021" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int StatsUpgrade.uprgadeLevelsCount</definition>
+        <argsstring></argsstring>
+        <name>uprgadeLevelsCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/StatsUpgrade.cs" line="25" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/StatsUpgrade.cs" bodystart="25" bodyend="-1"/>
+        <referencedby refid="class_stats_upgrade_1a3e8a38cc0c42bf13b3dfe61e6b0f5258" compoundref="_stats_upgrade_8cs" startline="49" endline="118">SetValues</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_stats_upgrade_1a3ce4a357783c110f5320752265dc85a4" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float StatsUpgrade.minCost</definition>
+        <argsstring></argsstring>
+        <name>minCost</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/StatsUpgrade.cs" line="27" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/StatsUpgrade.cs" bodystart="27" bodyend="-1"/>
+        <referencedby refid="class_stats_upgrade_1a3e8a38cc0c42bf13b3dfe61e6b0f5258" compoundref="_stats_upgrade_8cs" startline="49" endline="118">SetValues</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_stats_upgrade_1ab219d9841a3dc0a177f4e636b7df54dd" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float StatsUpgrade.maxCost</definition>
+        <argsstring></argsstring>
+        <name>maxCost</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/StatsUpgrade.cs" line="28" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/StatsUpgrade.cs" bodystart="28" bodyend="-1"/>
+        <referencedby refid="class_stats_upgrade_1a3e8a38cc0c42bf13b3dfe61e6b0f5258" compoundref="_stats_upgrade_8cs" startline="49" endline="118">SetValues</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_stats_upgrade_1ac1715015b247fb523d53b74caf18ec9d" prot="private" static="no" mutable="no">
+        <type>Button</type>
+        <definition>Button StatsUpgrade.btn</definition>
+        <argsstring></argsstring>
+        <name>btn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/StatsUpgrade.cs" line="30" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/StatsUpgrade.cs" bodystart="30" bodyend="-1"/>
+        <referencedby refid="class_stats_upgrade_1aa969f54012582f7fdb2318ea593ea3a0" compoundref="_stats_upgrade_8cs" startline="38" endline="42">Awake</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_stats_upgrade_1aaba255540bb3d0badf9e971e4abb00e9" prot="private" static="no" mutable="no">
+        <type><ref refid="class_d_s_unit_stats_1_1_stat" kindref="compound">DSUnitStats.Stat</ref></type>
+        <definition>DSUnitStats.Stat StatsUpgrade.stat</definition>
+        <argsstring></argsstring>
+        <name>stat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/StatsUpgrade.cs" line="32" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/StatsUpgrade.cs" bodystart="32" bodyend="-1"/>
+        <referencedby refid="class_stats_upgrade_1ab4ae84b87abf69440f15605d7b6e70e8" compoundref="_stats_upgrade_8cs" startline="120" endline="146">OnClick</referencedby>
+        <referencedby refid="class_stats_upgrade_1a3e8a38cc0c42bf13b3dfe61e6b0f5258" compoundref="_stats_upgrade_8cs" startline="49" endline="118">SetValues</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_stats_upgrade_1a1bfa36bfa0f2f0da0289130478eae15e" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float StatsUpgrade.nextLevelCost</definition>
+        <argsstring></argsstring>
+        <name>nextLevelCost</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/StatsUpgrade.cs" line="34" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/StatsUpgrade.cs" bodystart="34" bodyend="-1"/>
+        <referencedby refid="class_stats_upgrade_1ab4ae84b87abf69440f15605d7b6e70e8" compoundref="_stats_upgrade_8cs" startline="120" endline="146">OnClick</referencedby>
+        <referencedby refid="class_stats_upgrade_1a3e8a38cc0c42bf13b3dfe61e6b0f5258" compoundref="_stats_upgrade_8cs" startline="49" endline="118">SetValues</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_stats_upgrade_1a31725cc1852b0482380d247f334603d3" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float StatsUpgrade.nextLevelCostWhenProgressZero</definition>
+        <argsstring></argsstring>
+        <name>nextLevelCostWhenProgressZero</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/StatsUpgrade.cs" line="35" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/StatsUpgrade.cs" bodystart="35" bodyend="-1"/>
+        <referencedby refid="class_stats_upgrade_1ab4ae84b87abf69440f15605d7b6e70e8" compoundref="_stats_upgrade_8cs" startline="120" endline="146">OnClick</referencedby>
+        <referencedby refid="class_stats_upgrade_1a3e8a38cc0c42bf13b3dfe61e6b0f5258" compoundref="_stats_upgrade_8cs" startline="49" endline="118">SetValues</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_stats_upgrade_1a244efde2770c213b9f9db8d37cc6d985" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float StatsUpgrade.additionnalVal</definition>
+        <argsstring></argsstring>
+        <name>additionnalVal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/StatsUpgrade.cs" line="36" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/StatsUpgrade.cs" bodystart="36" bodyend="-1"/>
+        <referencedby refid="class_stats_upgrade_1ab4ae84b87abf69440f15605d7b6e70e8" compoundref="_stats_upgrade_8cs" startline="120" endline="146">OnClick</referencedby>
+        <referencedby refid="class_stats_upgrade_1a3e8a38cc0c42bf13b3dfe61e6b0f5258" compoundref="_stats_upgrade_8cs" startline="49" endline="118">SetValues</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_stats_upgrade_1aa969f54012582f7fdb2318ea593ea3a0" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void StatsUpgrade.Awake</definition>
+        <argsstring>()</argsstring>
+        <name>Awake</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/StatsUpgrade.cs" line="38" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/StatsUpgrade.cs" bodystart="38" bodyend="42"/>
+        <references refid="class_stats_upgrade_1ac1715015b247fb523d53b74caf18ec9d" compoundref="_stats_upgrade_8cs" startline="30">btn</references>
+        <references refid="class_stats_upgrade_1ab4ae84b87abf69440f15605d7b6e70e8" compoundref="_stats_upgrade_8cs" startline="120" endline="146">OnClick</references>
+      </memberdef>
+      <memberdef kind="function" id="class_stats_upgrade_1a3d116d8e666cfcb50665b0be9dbd10e8" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void StatsUpgrade.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/StatsUpgrade.cs" line="44" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/StatsUpgrade.cs" bodystart="44" bodyend="47"/>
+        <references refid="class_stats_upgrade_1a3e8a38cc0c42bf13b3dfe61e6b0f5258" compoundref="_stats_upgrade_8cs" startline="49" endline="118">SetValues</references>
+      </memberdef>
+      <memberdef kind="function" id="class_stats_upgrade_1a3e8a38cc0c42bf13b3dfe61e6b0f5258" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void StatsUpgrade.SetValues</definition>
+        <argsstring>()</argsstring>
+        <name>SetValues</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/StatsUpgrade.cs" line="49" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/StatsUpgrade.cs" bodystart="49" bodyend="118"/>
+        <references refid="class_stats_upgrade_1a244efde2770c213b9f9db8d37cc6d985" compoundref="_stats_upgrade_8cs" startline="36">additionnalVal</references>
+        <references refid="class_localization_1abe988043268bf1df9b043b4c6132eac4" compoundref="_localization_8cs" startline="43">Localization.attack</references>
+        <references refid="class_localization_1aaf52bb22da36d2eaf241712e760b03db" compoundref="_localization_8cs" startline="44">Localization.defence</references>
+        <references refid="class_localization_1af746b56fb22f5872e7d3dceea0e65098" compoundref="_localization_8cs" startline="38">Localization.health</references>
+        <references refid="class_stats_upgrade_1ab219d9841a3dc0a177f4e636b7df54dd" compoundref="_stats_upgrade_8cs" startline="28">maxCost</references>
+        <references refid="class_stats_upgrade_1a3ce4a357783c110f5320752265dc85a4" compoundref="_stats_upgrade_8cs" startline="27">minCost</references>
+        <references refid="class_stats_upgrade_1a1bfa36bfa0f2f0da0289130478eae15e" compoundref="_stats_upgrade_8cs" startline="34">nextLevelCost</references>
+        <references refid="class_stats_upgrade_1a31725cc1852b0482380d247f334603d3" compoundref="_stats_upgrade_8cs" startline="35">nextLevelCostWhenProgressZero</references>
+        <references refid="class_localization_1a5fafeb8a861de28ae27422531c1d7c05" compoundref="_localization_8cs" startline="50">Localization.rotationSpeed</references>
+        <references refid="class_localization_1ad8453dce5e4c888a9e54160258499dcd" compoundref="_localization_8cs" startline="48">Localization.speed</references>
+        <references refid="class_stats_upgrade_1aaba255540bb3d0badf9e971e4abb00e9" compoundref="_stats_upgrade_8cs" startline="32">stat</references>
+        <references refid="class_stats_upgrade_1a6f4663b651bb3985af4dd1971855cd4c" compoundref="_stats_upgrade_8cs" startline="22">statName</references>
+        <references refid="class_stats_upgrade_1a6b82045131066142d2ca58c1e47be284" compoundref="_stats_upgrade_8cs" startline="23">upgradeCost</references>
+        <references refid="class_stats_upgrade_1a816a393f14ae93e03af1a65a0a071021" compoundref="_stats_upgrade_8cs" startline="25">uprgadeLevelsCount</references>
+        <referencedby refid="class_stats_upgrade_1ab4ae84b87abf69440f15605d7b6e70e8" compoundref="_stats_upgrade_8cs" startline="120" endline="146">OnClick</referencedby>
+        <referencedby refid="class_stats_upgrade_1a334edccf455f81a72fe9599d74bb64bb" compoundref="_stats_upgrade_8cs" startline="149" endline="180">ResetStat</referencedby>
+        <referencedby refid="class_stats_upgrade_1a3d116d8e666cfcb50665b0be9dbd10e8" compoundref="_stats_upgrade_8cs" startline="44" endline="47">Start</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_stats_upgrade_1ab4ae84b87abf69440f15605d7b6e70e8" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void StatsUpgrade.OnClick</definition>
+        <argsstring>()</argsstring>
+        <name>OnClick</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/StatsUpgrade.cs" line="120" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/StatsUpgrade.cs" bodystart="120" bodyend="146"/>
+        <references refid="class_stats_upgrade_1a244efde2770c213b9f9db8d37cc6d985" compoundref="_stats_upgrade_8cs" startline="36">additionnalVal</references>
+        <references refid="class_d_s_player_score_1ab4b93d26c52c3af7ea722f609f859a28" compoundref="_d_s_player_score_8cs" startline="9">DSPlayerScore.expirience</references>
+        <references refid="class_stats_upgrade_1a1bfa36bfa0f2f0da0289130478eae15e" compoundref="_stats_upgrade_8cs" startline="34">nextLevelCost</references>
+        <references refid="class_stats_upgrade_1a31725cc1852b0482380d247f334603d3" compoundref="_stats_upgrade_8cs" startline="35">nextLevelCostWhenProgressZero</references>
+        <references refid="class_stats_upgrade_1a3e8a38cc0c42bf13b3dfe61e6b0f5258" compoundref="_stats_upgrade_8cs" startline="49" endline="118">SetValues</references>
+        <references refid="class_stats_upgrade_1aaba255540bb3d0badf9e971e4abb00e9" compoundref="_stats_upgrade_8cs" startline="32">stat</references>
+        <references refid="class_localization_1a3073ed76eae3d6b84aaca68fdcc8d8d9" compoundref="_localization_8cs" startline="150">Localization.toast_not_enough_expirience</references>
+        <references refid="class_localization_1a70d9547d8114b1ce71d2df717e1b881e" compoundref="_localization_8cs" startline="152">Localization.toast_stat_max_upgrade</references>
+        <references refid="class_d_s_player_score_1_1_score_1aa2c8486030b9e8277f4cc396d7ed667c" compoundref="_d_s_player_score_8cs" startline="38">DSPlayerScore.Score.Value</references>
+        <referencedby refid="class_stats_upgrade_1aa969f54012582f7fdb2318ea593ea3a0" compoundref="_stats_upgrade_8cs" startline="38" endline="42">Awake</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_stats_upgrade_1a334edccf455f81a72fe9599d74bb64bb" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void StatsUpgrade.ResetStat</definition>
+        <argsstring>()</argsstring>
+        <name>ResetStat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/StatsUpgrade.cs" line="149" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/StatsUpgrade.cs" bodystart="149" bodyend="180"/>
+        <references refid="class_stats_upgrade_1a3e8a38cc0c42bf13b3dfe61e6b0f5258" compoundref="_stats_upgrade_8cs" startline="49" endline="118">SetValues</references>
+        <references refid="class_stats_upgrade_1a6f4663b651bb3985af4dd1971855cd4c" compoundref="_stats_upgrade_8cs" startline="22">statName</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1131">
+        <label>StatsUpgrade</label>
+        <link refid="class_stats_upgrade"/>
+        <childnode refid="1132" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1132">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1135">
+        <label>DSUnitStats</label>
+        <link refid="class_d_s_unit_stats"/>
+        <childnode refid="1136" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1137" relation="usage">
+          <edgelabel>speed</edgelabel>
+          <edgelabel>aceleration</edgelabel>
+          <edgelabel>attack</edgelabel>
+          <edgelabel>defence</edgelabel>
+          <edgelabel>health</edgelabel>
+          <edgelabel>rotationSpeed</edgelabel>
+        </childnode>
+      </node>
+      <node id="1136">
+        <label>ISavable</label>
+        <link refid="interface_i_savable"/>
+      </node>
+      <node id="1137">
+        <label>DSUnitStats.Stat</label>
+        <link refid="class_d_s_unit_stats_1_1_stat"/>
+      </node>
+      <node id="1133">
+        <label>StatsUpgrade</label>
+        <link refid="class_stats_upgrade"/>
+        <childnode refid="1134" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1135" relation="usage">
+          <edgelabel>stat</edgelabel>
+        </childnode>
+      </node>
+      <node id="1134">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/StatsUpgrade.cs" line="10" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/StatsUpgrade.cs" bodystart="9" bodyend="181"/>
+    <listofallmembers>
+      <member refid="class_stats_upgrade_1ac37b3f37149efd6f22043daf243c0307" prot="private" virt="non-virtual"><scope>StatsUpgrade</scope><name>additionalValue</name></member>
+      <member refid="class_stats_upgrade_1a244efde2770c213b9f9db8d37cc6d985" prot="private" virt="non-virtual"><scope>StatsUpgrade</scope><name>additionnalVal</name></member>
+      <member refid="class_stats_upgrade_1aa969f54012582f7fdb2318ea593ea3a0" prot="private" virt="non-virtual"><scope>StatsUpgrade</scope><name>Awake</name></member>
+      <member refid="class_stats_upgrade_1ac1715015b247fb523d53b74caf18ec9d" prot="private" virt="non-virtual"><scope>StatsUpgrade</scope><name>btn</name></member>
+      <member refid="class_stats_upgrade_1a34b6e13b0b9eeb55387a8b9c4b48de4f" prot="private" virt="non-virtual"><scope>StatsUpgrade</scope><name>cost</name></member>
+      <member refid="class_stats_upgrade_1a3099b089a41cad05ba67265b58c39365" prot="private" virt="non-virtual"><scope>StatsUpgrade</scope><name>currentValue</name></member>
+      <member refid="class_stats_upgrade_1ab219d9841a3dc0a177f4e636b7df54dd" prot="private" virt="non-virtual"><scope>StatsUpgrade</scope><name>maxCost</name></member>
+      <member refid="class_stats_upgrade_1a3ce4a357783c110f5320752265dc85a4" prot="private" virt="non-virtual"><scope>StatsUpgrade</scope><name>minCost</name></member>
+      <member refid="class_stats_upgrade_1a13588791b8c4ea546b607d955e38bac7" prot="private" virt="non-virtual"><scope>StatsUpgrade</scope><name>name</name></member>
+      <member refid="class_stats_upgrade_1a1bfa36bfa0f2f0da0289130478eae15e" prot="private" virt="non-virtual"><scope>StatsUpgrade</scope><name>nextLevelCost</name></member>
+      <member refid="class_stats_upgrade_1a31725cc1852b0482380d247f334603d3" prot="private" virt="non-virtual"><scope>StatsUpgrade</scope><name>nextLevelCostWhenProgressZero</name></member>
+      <member refid="class_stats_upgrade_1ab4ae84b87abf69440f15605d7b6e70e8" prot="private" virt="non-virtual"><scope>StatsUpgrade</scope><name>OnClick</name></member>
+      <member refid="class_stats_upgrade_1a334edccf455f81a72fe9599d74bb64bb" prot="private" virt="non-virtual"><scope>StatsUpgrade</scope><name>ResetStat</name></member>
+      <member refid="class_stats_upgrade_1a3e8a38cc0c42bf13b3dfe61e6b0f5258" prot="private" virt="non-virtual"><scope>StatsUpgrade</scope><name>SetValues</name></member>
+      <member refid="class_stats_upgrade_1acb9d22f99e414016d3d7dead220f9fd2" prot="private" virt="non-virtual"><scope>StatsUpgrade</scope><name>sliderToHightestLevel</name></member>
+      <member refid="class_stats_upgrade_1a10278161b92b68384053d561d372a700" prot="private" virt="non-virtual"><scope>StatsUpgrade</scope><name>sliderToNextLevel</name></member>
+      <member refid="class_stats_upgrade_1a3d116d8e666cfcb50665b0be9dbd10e8" prot="private" virt="non-virtual"><scope>StatsUpgrade</scope><name>Start</name></member>
+      <member refid="class_stats_upgrade_1aaba255540bb3d0badf9e971e4abb00e9" prot="private" virt="non-virtual"><scope>StatsUpgrade</scope><name>stat</name></member>
+      <member refid="class_stats_upgrade_1ade894462975b52914a6346a699ebe4ca" prot="private" virt="non-virtual"><scope>StatsUpgrade</scope><name>StatName</name></member>
+      <member refid="class_stats_upgrade_1a6f4663b651bb3985af4dd1971855cd4c" prot="private" virt="non-virtual"><scope>StatsUpgrade</scope><name>statName</name></member>
+      <member refid="class_stats_upgrade_1a6b82045131066142d2ca58c1e47be284" prot="private" virt="non-virtual"><scope>StatsUpgrade</scope><name>upgradeCost</name></member>
+      <member refid="class_stats_upgrade_1a816a393f14ae93e03af1a65a0a071021" prot="private" virt="non-virtual"><scope>StatsUpgrade</scope><name>uprgadeLevelsCount</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

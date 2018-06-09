@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_05ca346bff0b0419965ba02e1ebce7fe" kind="dir">
+    <compoundname>D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles</compoundname>
+    <innerdir refid="dir_df0b694af9c53bbd4bf35c8aa014dd98">D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Animated Tile</innerdir>
+    <innerdir refid="dir_a1a9f52320aff4d98ab1a42fa5816d03">D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Pipeline Tile</innerdir>
+    <innerdir refid="dir_85830ed27dd06f6599a62397f1b6becd">D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Random Tile</innerdir>
+    <innerdir refid="dir_024530a71abbc7478a588fa7c8a5a414">D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Rule Tile</innerdir>
+    <innerdir refid="dir_233f909e45aeaed168f9767051f0f7af">D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Terrain Tile</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/"/>
+  </compounddef>
+</doxygen>

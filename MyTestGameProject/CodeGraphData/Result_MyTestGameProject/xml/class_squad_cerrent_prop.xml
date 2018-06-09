@@ -1,0 +1,417 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_squad_cerrent_prop" kind="class" prot="public">
+    <compoundname>SquadCerrentProp</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_squad_cerrent_prop_1ab3f1a41cdd9dbdad141d96a2babd5c8c" prot="private" static="no" mutable="no">
+        <type>CanvasGroup</type>
+        <definition>CanvasGroup SquadCerrentProp.inFight</definition>
+        <argsstring></argsstring>
+        <name>inFight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SquadCerrentProp.cs" line="8" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SquadCerrentProp.cs" bodystart="8" bodyend="-1"/>
+        <referencedby refid="class_squad_cerrent_prop_1a5886b6c735b5bf884eae4969efdd847b" compoundref="_squad_cerrent_prop_8cs" startline="73" endline="79">PlayerSquadInstance_OnInFightFlagChanged</referencedby>
+        <referencedby refid="class_squad_cerrent_prop_1adb36c58e0b969ec0d6cb8eff25358b73" compoundref="_squad_cerrent_prop_8cs" startline="15" endline="27">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_squad_cerrent_prop_1aac55675a4d401056ad446ff441298d03" prot="private" static="no" mutable="no">
+        <type>CanvasGroup</type>
+        <definition>CanvasGroup SquadCerrentProp.inRanks</definition>
+        <argsstring></argsstring>
+        <name>inRanks</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SquadCerrentProp.cs" line="9" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SquadCerrentProp.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_squad_cerrent_prop_1ac8c5c0c1927447eaf6cf6adc2fcc9886" prot="private" static="no" mutable="no">
+        <type>CanvasGroup</type>
+        <definition>CanvasGroup SquadCerrentProp.inPhalanx</definition>
+        <argsstring></argsstring>
+        <name>inPhalanx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SquadCerrentProp.cs" line="10" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SquadCerrentProp.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_squad_cerrent_prop_1a1f35158d3f04ec9f9c9caac5fa94c084" prot="private" static="no" mutable="no">
+        <type>CanvasGroup</type>
+        <definition>CanvasGroup SquadCerrentProp.inShields</definition>
+        <argsstring></argsstring>
+        <name>inShields</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SquadCerrentProp.cs" line="11" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SquadCerrentProp.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_squad_cerrent_prop_1a948d56a555952739ef6c2d9c932318ff" prot="private" static="no" mutable="no">
+        <type><ref refid="class_squad" kindref="compound">Squad</ref></type>
+        <definition>Squad SquadCerrentProp.squad</definition>
+        <argsstring></argsstring>
+        <name>squad</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SquadCerrentProp.cs" line="13" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SquadCerrentProp.cs" bodystart="13" bodyend="-1"/>
+        <referencedby refid="class_squad_cerrent_prop_1a7dee7f0272e00f6603fd832ca904c9c3" compoundref="_squad_cerrent_prop_8cs" startline="29" endline="36">OnDestroy</referencedby>
+        <referencedby refid="class_squad_cerrent_prop_1adb36c58e0b969ec0d6cb8eff25358b73" compoundref="_squad_cerrent_prop_8cs" startline="15" endline="27">Start</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_squad_cerrent_prop_1adb36c58e0b969ec0d6cb8eff25358b73" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SquadCerrentProp.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SquadCerrentProp.cs" line="15" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SquadCerrentProp.cs" bodystart="15" bodyend="27"/>
+        <references refid="class_squad_1a0e61b22b389bca6483cb8d01a88bba55" compoundref="_squad_8cs" startline="40">Squad.CurrentFormation</references>
+        <references refid="class_squad_cerrent_prop_1a21cb9f91d8f2ab1ef677867a6e207e79" compoundref="_squad_cerrent_prop_8cs" startline="87" endline="91">HideCG</references>
+        <references refid="class_squad_cerrent_prop_1ab3f1a41cdd9dbdad141d96a2babd5c8c" compoundref="_squad_cerrent_prop_8cs" startline="8">inFight</references>
+        <references refid="class_squad_1a781a32dd5c6fadbe0a9e04f142ddc9da" compoundref="_squad_8cs" startline="10">Squad.playerSquadInstance</references>
+        <references refid="class_squad_cerrent_prop_1abd78cdc029f656c0a3eb32a508227cae" compoundref="_squad_cerrent_prop_8cs" startline="38" endline="41">PlayerSquadInstance_OnFormationChanged</references>
+        <references refid="class_squad_cerrent_prop_1a5886b6c735b5bf884eae4969efdd847b" compoundref="_squad_cerrent_prop_8cs" startline="73" endline="79">PlayerSquadInstance_OnInFightFlagChanged</references>
+        <references refid="class_squad_cerrent_prop_1a7c4dfe4a0a936da7c238c90d2e79e1f9" compoundref="_squad_cerrent_prop_8cs" startline="43" endline="71">ShowFormationIco</references>
+        <references refid="class_squad_cerrent_prop_1a948d56a555952739ef6c2d9c932318ff" compoundref="_squad_cerrent_prop_8cs" startline="13">squad</references>
+      </memberdef>
+      <memberdef kind="function" id="class_squad_cerrent_prop_1a7dee7f0272e00f6603fd832ca904c9c3" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SquadCerrentProp.OnDestroy</definition>
+        <argsstring>()</argsstring>
+        <name>OnDestroy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SquadCerrentProp.cs" line="29" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SquadCerrentProp.cs" bodystart="29" bodyend="36"/>
+        <references refid="class_squad_cerrent_prop_1abd78cdc029f656c0a3eb32a508227cae" compoundref="_squad_cerrent_prop_8cs" startline="38" endline="41">PlayerSquadInstance_OnFormationChanged</references>
+        <references refid="class_squad_cerrent_prop_1a5886b6c735b5bf884eae4969efdd847b" compoundref="_squad_cerrent_prop_8cs" startline="73" endline="79">PlayerSquadInstance_OnInFightFlagChanged</references>
+        <references refid="class_squad_cerrent_prop_1a948d56a555952739ef6c2d9c932318ff" compoundref="_squad_cerrent_prop_8cs" startline="13">squad</references>
+      </memberdef>
+      <memberdef kind="function" id="class_squad_cerrent_prop_1abd78cdc029f656c0a3eb32a508227cae" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SquadCerrentProp.PlayerSquadInstance_OnFormationChanged</definition>
+        <argsstring>(FormationStats.Formations formation)</argsstring>
+        <name>PlayerSquadInstance_OnFormationChanged</name>
+        <param>
+          <type><ref refid="class_formation_stats_1ab336466e6a234574db24f2ec914e1dd4" kindref="member">FormationStats.Formations</ref></type>
+          <declname>formation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SquadCerrentProp.cs" line="38" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SquadCerrentProp.cs" bodystart="38" bodyend="41"/>
+        <references refid="class_squad_cerrent_prop_1a7c4dfe4a0a936da7c238c90d2e79e1f9" compoundref="_squad_cerrent_prop_8cs" startline="43" endline="71">ShowFormationIco</references>
+        <referencedby refid="class_squad_cerrent_prop_1a7dee7f0272e00f6603fd832ca904c9c3" compoundref="_squad_cerrent_prop_8cs" startline="29" endline="36">OnDestroy</referencedby>
+        <referencedby refid="class_squad_cerrent_prop_1adb36c58e0b969ec0d6cb8eff25358b73" compoundref="_squad_cerrent_prop_8cs" startline="15" endline="27">Start</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_squad_cerrent_prop_1a7c4dfe4a0a936da7c238c90d2e79e1f9" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SquadCerrentProp.ShowFormationIco</definition>
+        <argsstring>(FormationStats.Formations formation)</argsstring>
+        <name>ShowFormationIco</name>
+        <param>
+          <type><ref refid="class_formation_stats_1ab336466e6a234574db24f2ec914e1dd4" kindref="member">FormationStats.Formations</ref></type>
+          <declname>formation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SquadCerrentProp.cs" line="43" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SquadCerrentProp.cs" bodystart="43" bodyend="71"/>
+        <referencedby refid="class_squad_cerrent_prop_1abd78cdc029f656c0a3eb32a508227cae" compoundref="_squad_cerrent_prop_8cs" startline="38" endline="41">PlayerSquadInstance_OnFormationChanged</referencedby>
+        <referencedby refid="class_squad_cerrent_prop_1adb36c58e0b969ec0d6cb8eff25358b73" compoundref="_squad_cerrent_prop_8cs" startline="15" endline="27">Start</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_squad_cerrent_prop_1a5886b6c735b5bf884eae4969efdd847b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SquadCerrentProp.PlayerSquadInstance_OnInFightFlagChanged</definition>
+        <argsstring>(bool newValue)</argsstring>
+        <name>PlayerSquadInstance_OnInFightFlagChanged</name>
+        <param>
+          <type>bool</type>
+          <declname>newValue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SquadCerrentProp.cs" line="73" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SquadCerrentProp.cs" bodystart="73" bodyend="79"/>
+        <references refid="class_squad_cerrent_prop_1a21cb9f91d8f2ab1ef677867a6e207e79" compoundref="_squad_cerrent_prop_8cs" startline="87" endline="91">HideCG</references>
+        <references refid="class_squad_cerrent_prop_1ab3f1a41cdd9dbdad141d96a2babd5c8c" compoundref="_squad_cerrent_prop_8cs" startline="8">inFight</references>
+        <references refid="class_squad_cerrent_prop_1a9f95a87426a74467a2c0dc65712dac92" compoundref="_squad_cerrent_prop_8cs" startline="81" endline="85">ShowCG</references>
+        <referencedby refid="class_squad_cerrent_prop_1a7dee7f0272e00f6603fd832ca904c9c3" compoundref="_squad_cerrent_prop_8cs" startline="29" endline="36">OnDestroy</referencedby>
+        <referencedby refid="class_squad_cerrent_prop_1adb36c58e0b969ec0d6cb8eff25358b73" compoundref="_squad_cerrent_prop_8cs" startline="15" endline="27">Start</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_squad_cerrent_prop_1a9f95a87426a74467a2c0dc65712dac92" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SquadCerrentProp.ShowCG</definition>
+        <argsstring>(CanvasGroup cg)</argsstring>
+        <name>ShowCG</name>
+        <param>
+          <type>CanvasGroup</type>
+          <declname>cg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SquadCerrentProp.cs" line="81" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SquadCerrentProp.cs" bodystart="81" bodyend="85"/>
+        <referencedby refid="class_squad_cerrent_prop_1a5886b6c735b5bf884eae4969efdd847b" compoundref="_squad_cerrent_prop_8cs" startline="73" endline="79">PlayerSquadInstance_OnInFightFlagChanged</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_squad_cerrent_prop_1a21cb9f91d8f2ab1ef677867a6e207e79" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SquadCerrentProp.HideCG</definition>
+        <argsstring>(CanvasGroup cg)</argsstring>
+        <name>HideCG</name>
+        <param>
+          <type>CanvasGroup</type>
+          <declname>cg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SquadCerrentProp.cs" line="87" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SquadCerrentProp.cs" bodystart="87" bodyend="91"/>
+        <referencedby refid="class_squad_cerrent_prop_1a5886b6c735b5bf884eae4969efdd847b" compoundref="_squad_cerrent_prop_8cs" startline="73" endline="79">PlayerSquadInstance_OnInFightFlagChanged</referencedby>
+        <referencedby refid="class_squad_cerrent_prop_1adb36c58e0b969ec0d6cb8eff25358b73" compoundref="_squad_cerrent_prop_8cs" startline="15" endline="27">Start</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1034">
+        <label>SquadCerrentProp</label>
+        <link refid="class_squad_cerrent_prop"/>
+        <childnode refid="1035" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1035">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1038">
+        <label>Squad</label>
+        <link refid="class_squad"/>
+        <childnode refid="1037" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1039" relation="usage">
+          <edgelabel>currentFormationModifyers</edgelabel>
+          <edgelabel>formation</edgelabel>
+        </childnode>
+        <childnode refid="1040" relation="usage">
+          <edgelabel>unitOriginal</edgelabel>
+        </childnode>
+        <childnode refid="1038" relation="usage">
+          <edgelabel>playerSquadInstance</edgelabel>
+        </childnode>
+        <childnode refid="1049" relation="usage">
+          <edgelabel>inventory</edgelabel>
+        </childnode>
+        <childnode refid="1048" relation="usage">
+          <edgelabel>unitStats</edgelabel>
+        </childnode>
+      </node>
+      <node id="1041">
+        <label>Equipment</label>
+        <link refid="class_equipment"/>
+        <childnode refid="1042" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1044" relation="usage">
+          <edgelabel>stats</edgelabel>
+        </childnode>
+      </node>
+      <node id="1047">
+        <label>UnitPosition</label>
+        <link refid="class_unit_position"/>
+        <childnode refid="1037" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1043">
+        <label>Item.MainProperties</label>
+        <link refid="struct_item_1_1_main_properties"/>
+      </node>
+      <node id="1046">
+        <label>Damage</label>
+        <link refid="struct_damage"/>
+      </node>
+      <node id="1045">
+        <label>IDescriptionable</label>
+        <link refid="interface_i_descriptionable"/>
+      </node>
+      <node id="1042">
+        <label>Item</label>
+        <link refid="class_item"/>
+        <childnode refid="1037" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1043" relation="usage">
+          <edgelabel>mainProperties</edgelabel>
+        </childnode>
+      </node>
+      <node id="1050">
+        <label>SkillStack</label>
+        <link refid="class_skill_stack"/>
+        <childnode refid="1051" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1045" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1052" relation="usage">
+          <edgelabel>skill</edgelabel>
+        </childnode>
+      </node>
+      <node id="1044">
+        <label>EquipmentStats</label>
+        <link refid="struct_equipment_stats"/>
+        <childnode refid="1045" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1046" relation="usage">
+          <edgelabel>damage</edgelabel>
+        </childnode>
+      </node>
+      <node id="1051">
+        <label>AStack</label>
+        <link refid="class_a_stack"/>
+      </node>
+      <node id="1048">
+        <label>UnitStats</label>
+        <link refid="struct_unit_stats"/>
+        <childnode refid="1046" relation="usage">
+          <edgelabel>damage</edgelabel>
+        </childnode>
+      </node>
+      <node id="1036">
+        <label>SquadCerrentProp</label>
+        <link refid="class_squad_cerrent_prop"/>
+        <childnode refid="1037" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1038" relation="usage">
+          <edgelabel>squad</edgelabel>
+        </childnode>
+      </node>
+      <node id="1037">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1040">
+        <label>Unit</label>
+        <link refid="class_unit"/>
+        <childnode refid="1037" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1040" relation="usage">
+          <edgelabel>target</edgelabel>
+        </childnode>
+        <childnode refid="1038" relation="usage">
+          <edgelabel>squad</edgelabel>
+        </childnode>
+        <childnode refid="1041" relation="usage">
+          <edgelabel>body</edgelabel>
+          <edgelabel>shield</edgelabel>
+          <edgelabel>weapon</edgelabel>
+          <edgelabel>helmet</edgelabel>
+        </childnode>
+        <childnode refid="1047" relation="usage">
+          <edgelabel>TargetMovePositionObject</edgelabel>
+          <edgelabel>unitPosOriginal</edgelabel>
+        </childnode>
+        <childnode refid="1048" relation="usage">
+          <edgelabel>stats</edgelabel>
+        </childnode>
+      </node>
+      <node id="1052">
+        <label>Skill</label>
+        <link refid="class_skill"/>
+        <childnode refid="1042" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1045" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1053">
+        <label>EquipmentStack</label>
+        <link refid="class_equipment_stack"/>
+        <childnode refid="1051" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1042" relation="usage">
+          <edgelabel>equipmentMainProperties</edgelabel>
+        </childnode>
+        <childnode refid="1044" relation="usage">
+          <edgelabel>equipmentStats</edgelabel>
+        </childnode>
+      </node>
+      <node id="1039">
+        <label>FormationStats</label>
+        <link refid="class_formation_stats"/>
+      </node>
+      <node id="1049">
+        <label>Inventory</label>
+        <link refid="class_inventory"/>
+        <childnode refid="1050" relation="usage">
+          <edgelabel>firstSkill</edgelabel>
+          <edgelabel>secondSkill</edgelabel>
+        </childnode>
+        <childnode refid="1041" relation="usage">
+          <edgelabel>body</edgelabel>
+          <edgelabel>shieldNone</edgelabel>
+          <edgelabel>helmetNone</edgelabel>
+          <edgelabel>shield</edgelabel>
+          <edgelabel>weapon</edgelabel>
+          <edgelabel>helmet</edgelabel>
+          <edgelabel>bodyNone</edgelabel>
+        </childnode>
+        <childnode refid="1053" relation="usage">
+          <edgelabel>inventory</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SquadCerrentProp.cs" line="7" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SquadCerrentProp.cs" bodystart="6" bodyend="92"/>
+    <listofallmembers>
+      <member refid="class_squad_cerrent_prop_1a21cb9f91d8f2ab1ef677867a6e207e79" prot="private" virt="non-virtual"><scope>SquadCerrentProp</scope><name>HideCG</name></member>
+      <member refid="class_squad_cerrent_prop_1ab3f1a41cdd9dbdad141d96a2babd5c8c" prot="private" virt="non-virtual"><scope>SquadCerrentProp</scope><name>inFight</name></member>
+      <member refid="class_squad_cerrent_prop_1ac8c5c0c1927447eaf6cf6adc2fcc9886" prot="private" virt="non-virtual"><scope>SquadCerrentProp</scope><name>inPhalanx</name></member>
+      <member refid="class_squad_cerrent_prop_1aac55675a4d401056ad446ff441298d03" prot="private" virt="non-virtual"><scope>SquadCerrentProp</scope><name>inRanks</name></member>
+      <member refid="class_squad_cerrent_prop_1a1f35158d3f04ec9f9c9caac5fa94c084" prot="private" virt="non-virtual"><scope>SquadCerrentProp</scope><name>inShields</name></member>
+      <member refid="class_squad_cerrent_prop_1a7dee7f0272e00f6603fd832ca904c9c3" prot="private" virt="non-virtual"><scope>SquadCerrentProp</scope><name>OnDestroy</name></member>
+      <member refid="class_squad_cerrent_prop_1abd78cdc029f656c0a3eb32a508227cae" prot="private" virt="non-virtual"><scope>SquadCerrentProp</scope><name>PlayerSquadInstance_OnFormationChanged</name></member>
+      <member refid="class_squad_cerrent_prop_1a5886b6c735b5bf884eae4969efdd847b" prot="private" virt="non-virtual"><scope>SquadCerrentProp</scope><name>PlayerSquadInstance_OnInFightFlagChanged</name></member>
+      <member refid="class_squad_cerrent_prop_1a9f95a87426a74467a2c0dc65712dac92" prot="private" virt="non-virtual"><scope>SquadCerrentProp</scope><name>ShowCG</name></member>
+      <member refid="class_squad_cerrent_prop_1a7c4dfe4a0a936da7c238c90d2e79e1f9" prot="private" virt="non-virtual"><scope>SquadCerrentProp</scope><name>ShowFormationIco</name></member>
+      <member refid="class_squad_cerrent_prop_1a948d56a555952739ef6c2d9c932318ff" prot="private" virt="non-virtual"><scope>SquadCerrentProp</scope><name>squad</name></member>
+      <member refid="class_squad_cerrent_prop_1adb36c58e0b969ec0d6cb8eff25358b73" prot="private" virt="non-virtual"><scope>SquadCerrentProp</scope><name>Start</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

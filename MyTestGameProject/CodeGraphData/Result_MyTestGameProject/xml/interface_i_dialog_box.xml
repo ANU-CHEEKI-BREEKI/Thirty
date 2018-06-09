@@ -1,0 +1,273 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="interface_i_dialog_box" kind="interface" prot="public">
+    <compoundname>IDialogBox</compoundname>
+    <derivedcompoundref refid="class_dialog_box" prot="public" virt="non-virtual">DialogBox</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_i_dialog_box_1a06d79f36881e480d6b8227635a4b8dac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IDialogBox.Show</definition>
+        <argsstring>(object owner=null)</argsstring>
+        <name>Show</name>
+        <reimplementedby refid="class_dialog_box_1ae41e137bacfbf6d730e3fe4eef88ceb1">Show</reimplementedby>
+        <param>
+          <type>object</type>
+          <declname>owner</declname>
+          <defval>null</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/IDialogBox.cs" line="9" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_i_dialog_box_1a8d77accf1c978f86dd217bd5cd0052f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IDialogBox.Show</definition>
+        <argsstring>(Vector2 positionOnScreen, object owner=null)</argsstring>
+        <name>Show</name>
+        <reimplementedby refid="class_dialog_box_1afa16758c02722fdd335091e0f5f58a54">Show</reimplementedby>
+        <param>
+          <type>Vector2</type>
+          <declname>positionOnScreen</declname>
+        </param>
+        <param>
+          <type>object</type>
+          <declname>owner</declname>
+          <defval>null</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/IDialogBox.cs" line="10" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_i_dialog_box_1a97429aaf6425e00f9ec10861f1f9b820" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IDialogBox.Hide</definition>
+        <argsstring>()</argsstring>
+        <name>Hide</name>
+        <reimplementedby refid="class_dialog_box_1aa4779eb84cd66b3e1f2bf9ace65c57cf">Hide</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/IDialogBox.cs" line="11" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_i_dialog_box_1a52652db287e78af229511a0aa8a9e134" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_i_dialog_box" kindref="compound">IDialogBox</ref></type>
+        <definition>IDialogBox IDialogBox.SetSize</definition>
+        <argsstring>(float?width=null, float?height=null)</argsstring>
+        <name>SetSize</name>
+        <reimplementedby refid="class_dialog_box_1a006faa5886bb6c01682d4d7d05305364">SetSize</reimplementedby>
+        <param>
+          <type>float?</type>
+          <declname>width</declname>
+          <defval>null</defval>
+        </param>
+        <param>
+          <type>float?</type>
+          <declname>height</declname>
+          <defval>null</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/IDialogBox.cs" line="12" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_i_dialog_box_1a667d4b650a3dd0cea95b7c4ef6e28df1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_i_dialog_box" kindref="compound">IDialogBox</ref></type>
+        <definition>IDialogBox IDialogBox.SetTitle</definition>
+        <argsstring>(string title)</argsstring>
+        <name>SetTitle</name>
+        <reimplementedby refid="class_dialog_box_1aa49804a1a1db3edf886e8c9d9b581327">SetTitle</reimplementedby>
+        <param>
+          <type>string</type>
+          <declname>title</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/IDialogBox.cs" line="13" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_i_dialog_box_1aec7035bdd09bab599b54795a6f7a66cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_i_dialog_box" kindref="compound">IDialogBox</ref></type>
+        <definition>IDialogBox IDialogBox.SetTitleColor</definition>
+        <argsstring>(Color color)</argsstring>
+        <name>SetTitleColor</name>
+        <reimplementedby refid="class_dialog_box_1afd696774686a2be50cadd5b2f183e295">SetTitleColor</reimplementedby>
+        <param>
+          <type>Color</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/IDialogBox.cs" line="14" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_i_dialog_box_1a6df9b0afc6f1755d5062926331448e19" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_i_dialog_box" kindref="compound">IDialogBox</ref></type>
+        <definition>IDialogBox IDialogBox.SetText</definition>
+        <argsstring>(string text, bool isScrolable=false)</argsstring>
+        <name>SetText</name>
+        <reimplementedby refid="class_dialog_box_1a39c10515037ff9a0cc2ed6367b8411c3">SetText</reimplementedby>
+        <param>
+          <type>string</type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>isScrolable</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/IDialogBox.cs" line="15" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_i_dialog_box_1aa81d21a708f798f103c29435696f1601" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_i_dialog_box" kindref="compound">IDialogBox</ref></type>
+        <definition>IDialogBox IDialogBox.SetTextColor</definition>
+        <argsstring>(Color color)</argsstring>
+        <name>SetTextColor</name>
+        <reimplementedby refid="class_dialog_box_1a8f417e408ae0b5f1d9890fb05bd556d4">SetTextColor</reimplementedby>
+        <param>
+          <type>Color</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/IDialogBox.cs" line="16" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_i_dialog_box_1a2eb55f02ddeac3afb70844ca81036f61" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_i_dialog_box" kindref="compound">IDialogBox</ref></type>
+        <definition>IDialogBox IDialogBox.AddButton</definition>
+        <argsstring>(string text, Action action)</argsstring>
+        <name>AddButton</name>
+        <reimplementedby refid="class_dialog_box_1adcd9ed3f78937548ca638e50c11a29e4">AddButton</reimplementedby>
+        <param>
+          <type>string</type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type>Action</type>
+          <declname>action</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/IDialogBox.cs" line="17" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_i_dialog_box_1a7ed31b71fc99f57605077e7118a2ca10" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_i_dialog_box" kindref="compound">IDialogBox</ref></type>
+        <definition>IDialogBox IDialogBox.AddCancelButton</definition>
+        <argsstring>(string text)</argsstring>
+        <name>AddCancelButton</name>
+        <reimplementedby refid="class_dialog_box_1a7497964e0713f55f807c91aada4f5787">AddCancelButton</reimplementedby>
+        <param>
+          <type>string</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/IDialogBox.cs" line="18" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_i_dialog_box_1a2aae35e079164321ff114341cf4c3471" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_i_dialog_box" kindref="compound">IDialogBox</ref></type>
+        <definition>IDialogBox IDialogBox.SetPrefButtonHeight</definition>
+        <argsstring>(float prefHeight)</argsstring>
+        <name>SetPrefButtonHeight</name>
+        <reimplementedby refid="class_dialog_box_1a55ca09b60fd3ec78be65e03ca928753d">SetPrefButtonHeight</reimplementedby>
+        <param>
+          <type>float</type>
+          <declname>prefHeight</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/IDialogBox.cs" line="19" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_i_dialog_box_1a05992146877dcaa42d7ec62cd01f126c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="interface_i_dialog_box" kindref="compound">IDialogBox</ref></type>
+        <definition>IDialogBox IDialogBox.SetIcon</definition>
+        <argsstring>(Sprite sprite)</argsstring>
+        <name>SetIcon</name>
+        <reimplementedby refid="class_dialog_box_1a2e5ec7dbe7b15bb60f4b1b70ec3956f7">SetIcon</reimplementedby>
+        <param>
+          <type>Sprite</type>
+          <declname>sprite</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/IDialogBox.cs" line="20" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="502">
+        <label>IDialogBox</label>
+        <link refid="interface_i_dialog_box"/>
+      </node>
+      <node id="503">
+        <label>DialogBox</label>
+        <link refid="class_dialog_box"/>
+        <childnode refid="502" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/IDialogBox.cs" line="8" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/IDialogBox.cs" bodystart="7" bodyend="21"/>
+    <listofallmembers>
+      <member refid="interface_i_dialog_box_1a2eb55f02ddeac3afb70844ca81036f61" prot="public" virt="non-virtual"><scope>IDialogBox</scope><name>AddButton</name></member>
+      <member refid="interface_i_dialog_box_1a7ed31b71fc99f57605077e7118a2ca10" prot="public" virt="non-virtual"><scope>IDialogBox</scope><name>AddCancelButton</name></member>
+      <member refid="interface_i_dialog_box_1a97429aaf6425e00f9ec10861f1f9b820" prot="public" virt="non-virtual"><scope>IDialogBox</scope><name>Hide</name></member>
+      <member refid="interface_i_dialog_box_1a05992146877dcaa42d7ec62cd01f126c" prot="public" virt="non-virtual"><scope>IDialogBox</scope><name>SetIcon</name></member>
+      <member refid="interface_i_dialog_box_1a2aae35e079164321ff114341cf4c3471" prot="public" virt="non-virtual"><scope>IDialogBox</scope><name>SetPrefButtonHeight</name></member>
+      <member refid="interface_i_dialog_box_1a52652db287e78af229511a0aa8a9e134" prot="public" virt="non-virtual"><scope>IDialogBox</scope><name>SetSize</name></member>
+      <member refid="interface_i_dialog_box_1a6df9b0afc6f1755d5062926331448e19" prot="public" virt="non-virtual"><scope>IDialogBox</scope><name>SetText</name></member>
+      <member refid="interface_i_dialog_box_1aa81d21a708f798f103c29435696f1601" prot="public" virt="non-virtual"><scope>IDialogBox</scope><name>SetTextColor</name></member>
+      <member refid="interface_i_dialog_box_1a667d4b650a3dd0cea95b7c4ef6e28df1" prot="public" virt="non-virtual"><scope>IDialogBox</scope><name>SetTitle</name></member>
+      <member refid="interface_i_dialog_box_1aec7035bdd09bab599b54795a6f7a66cb" prot="public" virt="non-virtual"><scope>IDialogBox</scope><name>SetTitleColor</name></member>
+      <member refid="interface_i_dialog_box_1a06d79f36881e480d6b8227635a4b8dac" prot="public" virt="non-virtual"><scope>IDialogBox</scope><name>Show</name></member>
+      <member refid="interface_i_dialog_box_1a8d77accf1c978f86dd217bd5cd0052f6" prot="public" virt="non-virtual"><scope>IDialogBox</scope><name>Show</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

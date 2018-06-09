@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_skills_panel_scroll_and_height" kind="class" prot="public">
+    <compoundname>SkillsPanelScrollAndHeight</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_skills_panel_scroll_and_height_1a7da5dfeaf50330d06fb5b50bf5903808" prot="private" static="no" mutable="no">
+        <type>LayoutElement</type>
+        <definition>LayoutElement SkillsPanelScrollAndHeight.yel</definition>
+        <argsstring></argsstring>
+        <name>yel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillsPanelScrollAndHeight.cs" line="9" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillsPanelScrollAndHeight.cs" bodystart="9" bodyend="-1"/>
+        <referencedby refid="class_skills_panel_scroll_and_height_1ac8c32c3788043a574dcf16e82a4568ce" compoundref="_skills_panel_scroll_and_height_8cs" startline="13" endline="17">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_skills_panel_scroll_and_height_1a6adef907ce30748e344876ab7e6ece07" prot="private" static="no" mutable="no">
+        <type>new RectTransform</type>
+        <definition>new RectTransform SkillsPanelScrollAndHeight.transform</definition>
+        <argsstring></argsstring>
+        <name>transform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillsPanelScrollAndHeight.cs" line="10" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillsPanelScrollAndHeight.cs" bodystart="10" bodyend="-1"/>
+        <referencedby refid="class_skills_panel_scroll_and_height_1ac8c32c3788043a574dcf16e82a4568ce" compoundref="_skills_panel_scroll_and_height_8cs" startline="13" endline="17">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_skills_panel_scroll_and_height_1aa85b4cd867f9e727f7db1d08571931b1" prot="private" static="no" mutable="no">
+        <type>RectTransform</type>
+        <definition>RectTransform SkillsPanelScrollAndHeight.followTransform</definition>
+        <argsstring></argsstring>
+        <name>followTransform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillsPanelScrollAndHeight.cs" line="11" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillsPanelScrollAndHeight.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_skills_panel_scroll_and_height_1ac8c32c3788043a574dcf16e82a4568ce" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SkillsPanelScrollAndHeight.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillsPanelScrollAndHeight.cs" line="13" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillsPanelScrollAndHeight.cs" bodystart="13" bodyend="17"/>
+        <references refid="class_skills_panel_scroll_and_height_1a6adef907ce30748e344876ab7e6ece07" compoundref="_skills_panel_scroll_and_height_8cs" startline="10">transform</references>
+        <references refid="class_skills_panel_scroll_and_height_1a7da5dfeaf50330d06fb5b50bf5903808" compoundref="_skills_panel_scroll_and_height_8cs" startline="9">yel</references>
+      </memberdef>
+      <memberdef kind="function" id="class_skills_panel_scroll_and_height_1a9a628ef98d28e795f7191f58f04296d3" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SkillsPanelScrollAndHeight.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillsPanelScrollAndHeight.cs" line="19" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillsPanelScrollAndHeight.cs" bodystart="19" bodyend="25"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="974">
+        <label>SkillsPanelScrollAndHeight</label>
+        <link refid="class_skills_panel_scroll_and_height"/>
+        <childnode refid="975" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="975">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="976">
+        <label>SkillsPanelScrollAndHeight</label>
+        <link refid="class_skills_panel_scroll_and_height"/>
+        <childnode refid="977" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="977">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillsPanelScrollAndHeight.cs" line="8" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/SkillsPanelScrollAndHeight.cs" bodystart="7" bodyend="26"/>
+    <listofallmembers>
+      <member refid="class_skills_panel_scroll_and_height_1aa85b4cd867f9e727f7db1d08571931b1" prot="private" virt="non-virtual"><scope>SkillsPanelScrollAndHeight</scope><name>followTransform</name></member>
+      <member refid="class_skills_panel_scroll_and_height_1ac8c32c3788043a574dcf16e82a4568ce" prot="private" virt="non-virtual"><scope>SkillsPanelScrollAndHeight</scope><name>Start</name></member>
+      <member refid="class_skills_panel_scroll_and_height_1a6adef907ce30748e344876ab7e6ece07" prot="private" virt="non-virtual"><scope>SkillsPanelScrollAndHeight</scope><name>transform</name></member>
+      <member refid="class_skills_panel_scroll_and_height_1a9a628ef98d28e795f7191f58f04296d3" prot="private" virt="non-virtual"><scope>SkillsPanelScrollAndHeight</scope><name>Update</name></member>
+      <member refid="class_skills_panel_scroll_and_height_1a7da5dfeaf50330d06fb5b50bf5903808" prot="private" virt="non-virtual"><scope>SkillsPanelScrollAndHeight</scope><name>yel</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

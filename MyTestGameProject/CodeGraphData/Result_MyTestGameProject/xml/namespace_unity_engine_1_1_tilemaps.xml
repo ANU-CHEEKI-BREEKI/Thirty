@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="namespace_unity_engine_1_1_tilemaps" kind="namespace">
+    <compoundname>UnityEngine::Tilemaps</compoundname>
+    <innerclass refid="class_unity_engine_1_1_tilemaps_1_1_grid_information" prot="public">UnityEngine::Tilemaps::GridInformation</innerclass>
+    <innerclass refid="class_unity_engine_1_1_tilemaps_1_1_animated_tile" prot="public">UnityEngine::Tilemaps::AnimatedTile</innerclass>
+    <innerclass refid="class_unity_engine_1_1_tilemaps_1_1_pipeline_tile" prot="public">UnityEngine::Tilemaps::PipelineTile</innerclass>
+    <innerclass refid="class_unity_engine_1_1_tilemaps_1_1_random_tile" prot="public">UnityEngine::Tilemaps::RandomTile</innerclass>
+    <innerclass refid="class_unity_engine_1_1_tilemaps_1_1_terrain_tile" prot="public">UnityEngine::Tilemaps::TerrainTile</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespace_unity_engine_1_1_tilemaps_1a8410807eeae7d80388b1b8e0f9cb9681" prot="package" static="no">
+        <name>GridInformationType</name>
+        <enumvalue id="namespace_unity_engine_1_1_tilemaps_1a8410807eeae7d80388b1b8e0f9cb9681aa0faef0851b4294c06f2b94bb1cb2044" prot="public">
+          <name>Integer</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_tilemaps_1a8410807eeae7d80388b1b8e0f9cb9681a27118326006d3829667a400ad23d5d98" prot="public">
+          <name>String</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_tilemaps_1a8410807eeae7d80388b1b8e0f9cb9681a22ae0e2b89e5e3d477f988cc36d3272b" prot="public">
+          <name>Float</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_tilemaps_1a8410807eeae7d80388b1b8e0f9cb9681ad909d38d705ce75386dd86e611a82f5b" prot="public">
+          <name>Double</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_tilemaps_1a8410807eeae7d80388b1b8e0f9cb9681a6bab837d889431103c84967d1fedad21" prot="public">
+          <name>UnityObject</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_engine_1_1_tilemaps_1a8410807eeae7d80388b1b8e0f9cb9681acb5feb1b7314637725a2e73bdc9f7295" prot="public">
+          <name>Color</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/GridInformation/Scripts/GridInformation.cs" line="10" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/GridInformation/Scripts/GridInformation.cs" bodystart="9" bodyend="17"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/GridInformation/Scripts/GridInformation.cs" line="7" column="1"/>
+  </compounddef>
+</doxygen>

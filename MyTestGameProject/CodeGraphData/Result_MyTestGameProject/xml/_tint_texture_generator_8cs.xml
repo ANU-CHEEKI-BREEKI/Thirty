@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_tint_texture_generator_8cs" kind="file">
+    <compoundname>TintTextureGenerator.cs</compoundname>
+    <innerclass refid="class_tint_texture_generator" prot="public">TintTextureGenerator</innerclass>
+    <innernamespace refid="namespace_system_1_1_component_model">System::ComponentModel</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.ComponentModel;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>UnityEngine;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>UnityEngine.Tilemaps;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal">[ExecuteInEditMode]</highlight></codeline>
+<codeline lineno="5" refid="class_tint_texture_generator" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_tint_texture_generator" kindref="compound">TintTextureGenerator</ref><sp/>:<sp/>MonoBehaviour</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="7" refid="class_tint_texture_generator_1a0128285c557b53d9531b8fb3452c7df5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_tint_texture_generator_1a0128285c557b53d9531b8fb3452c7df5" kindref="member">k_TintMapSize</ref><sp/>=<sp/>256;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="class_tint_texture_generator_1a591797d34558b765f7e1b9a0422d5453" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_tint_texture_generator_1a591797d34558b765f7e1b9a0422d5453" kindref="member">Start</ref>()</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_tint_texture_generator_1ac5982fc605870d62460ed31f013bee82" kindref="member">Refresh</ref>(GetComponent&lt;Grid&gt;());</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="class_tint_texture_generator_1ad215d58aa9f43d295ff3702b242d2844" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>Texture2D<sp/><ref refid="class_tint_texture_generator_1ad215d58aa9f43d295ff3702b242d2844" kindref="member">m_TintTexture</ref>;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>Texture2D<sp/><ref refid="class_tint_texture_generator_1ae0d3a3717f7e9598f67a8945483be713" kindref="member">tintTexture</ref></highlight></codeline>
+<codeline lineno="16" refid="class_tint_texture_generator_1ae0d3a3717f7e9598f67a8945483be713" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_tint_texture_generator_1ad215d58aa9f43d295ff3702b242d2844" kindref="member">m_TintTexture</ref><sp/>==<sp/>null)</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_tint_texture_generator_1ad215d58aa9f43d295ff3702b242d2844" kindref="member">m_TintTexture</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Texture2D(<ref refid="class_tint_texture_generator_1a0128285c557b53d9531b8fb3452c7df5" kindref="member">k_TintMapSize</ref>,<sp/><ref refid="class_tint_texture_generator_1a0128285c557b53d9531b8fb3452c7df5" kindref="member">k_TintMapSize</ref>,<sp/>TextureFormat.ARGB32,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_TintTexture.hideFlags<sp/>=<sp/>HideFlags.HideAndDontSave;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_TintTexture.wrapMode<sp/>=<sp/>TextureWrapMode.Clamp;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_TintTexture.filterMode<sp/>=<sp/>FilterMode.Bilinear;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_tint_texture_generator_1a85bc3f10b7079c4971e7e3fcacf4723f" kindref="member">RefreshGlobalShaderValues</ref>();</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_tint_texture_generator_1ad215d58aa9f43d295ff3702b242d2844" kindref="member">m_TintTexture</ref>;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="class_tint_texture_generator_1ac5982fc605870d62460ed31f013bee82" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_tint_texture_generator_1ac5982fc605870d62460ed31f013bee82" kindref="member">Refresh</ref>(Grid<sp/>grid)</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(grid<sp/>==<sp/>null)</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>w<sp/>=<sp/>tintTexture.width;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>h<sp/>=<sp/>tintTexture.height;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y<sp/>=<sp/>0;<sp/>y<sp/>&lt;<sp/>h;<sp/>y++)</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x<sp/>=<sp/>0;<sp/>x<sp/>&lt;<sp/>w;<sp/>x++)</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Vector3Int<sp/>world<sp/>=<sp/><ref refid="class_tint_texture_generator_1a0498e0d53899482c848450d1c3dcd7b0" kindref="member">TextureToWorld</ref>(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Vector3Int(x,<sp/>y,<sp/>0));</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tintTexture.SetPixel(x,<sp/>y,<sp/><ref refid="class_tint_texture_generator_1ab5c498fe3256c15cec2fe7ebc68b8067" kindref="member">GetGridInformation</ref>(grid).GetPositionProperty(world,<sp/></highlight><highlight class="stringliteral">&quot;Tint&quot;</highlight><highlight class="normal">,<sp/>Color.white));</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tintTexture.Apply();</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="class_tint_texture_generator_1a9147825e59facfa42fe0d9a78fca000c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_tint_texture_generator_1a9147825e59facfa42fe0d9a78fca000c" kindref="member">Refresh</ref>(Grid<sp/>grid,<sp/>Vector3Int<sp/>position)</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(grid<sp/>==<sp/>null)</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_tint_texture_generator_1a85bc3f10b7079c4971e7e3fcacf4723f" kindref="member">RefreshGlobalShaderValues</ref>();</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Vector3Int<sp/>texPosition<sp/>=<sp/><ref refid="class_tint_texture_generator_1ab25f50c6e24850787e6ac243729170ee" kindref="member">WorldToTexture</ref>(position);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tintTexture.SetPixel(texPosition.x,<sp/>texPosition.y,<sp/><ref refid="class_tint_texture_generator_1ab5c498fe3256c15cec2fe7ebc68b8067" kindref="member">GetGridInformation</ref>(grid).GetPositionProperty(position,<sp/></highlight><highlight class="stringliteral">&quot;Tint&quot;</highlight><highlight class="normal">,<sp/>Color.white));</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tintTexture.Apply();</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="class_tint_texture_generator_1aaac9e6b9f6b86ae1efe06093ba959291" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="namespace_unity_engine_1_1_tilemaps_1a8410807eeae7d80388b1b8e0f9cb9681acb5feb1b7314637725a2e73bdc9f7295" kindref="member">Color</ref><sp/><ref refid="class_tint_texture_generator_1aaac9e6b9f6b86ae1efe06093ba959291" kindref="member">GetColor</ref>(Grid<sp/>grid,<sp/>Vector3Int<sp/>position)</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(grid<sp/>==<sp/>null)</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Color.white;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_tint_texture_generator_1ab5c498fe3256c15cec2fe7ebc68b8067" kindref="member">GetGridInformation</ref>(grid).GetPositionProperty(position,<sp/></highlight><highlight class="stringliteral">&quot;Tint&quot;</highlight><highlight class="normal">,<sp/>Color.white);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="class_tint_texture_generator_1a2feee8c66a00ecc891e0b954fd6b23c9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_tint_texture_generator_1a2feee8c66a00ecc891e0b954fd6b23c9" kindref="member">SetColor</ref>(Grid<sp/>grid,<sp/>Vector3Int<sp/>position,<sp/>Color<sp/>color)</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(grid<sp/>==<sp/>null)</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_tint_texture_generator_1ab5c498fe3256c15cec2fe7ebc68b8067" kindref="member">GetGridInformation</ref>(grid).SetPositionProperty(position,<sp/></highlight><highlight class="stringliteral">&quot;Tint&quot;</highlight><highlight class="normal">,<sp/>color);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_tint_texture_generator_1ac5982fc605870d62460ed31f013bee82" kindref="member">Refresh</ref>(grid,<sp/>position);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="77" refid="class_tint_texture_generator_1ab25f50c6e24850787e6ac243729170ee" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Vector3Int<sp/><ref refid="class_tint_texture_generator_1ab25f50c6e24850787e6ac243729170ee" kindref="member">WorldToTexture</ref>(Vector3Int<sp/>world)</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Vector3Int(world.x<sp/>+<sp/><ref refid="class_tint_texture_generator_1ae0d3a3717f7e9598f67a8945483be713" kindref="member">tintTexture</ref>.width<sp/>/<sp/>2,<sp/>world.y<sp/>+<sp/><ref refid="class_tint_texture_generator_1ae0d3a3717f7e9598f67a8945483be713" kindref="member">tintTexture</ref>.height<sp/>/<sp/>2,<sp/>0);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82" refid="class_tint_texture_generator_1a0498e0d53899482c848450d1c3dcd7b0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Vector3Int<sp/><ref refid="class_tint_texture_generator_1a0498e0d53899482c848450d1c3dcd7b0" kindref="member">TextureToWorld</ref>(Vector3Int<sp/>texpos)</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Vector3Int(texpos.x<sp/>-<sp/><ref refid="class_tint_texture_generator_1ae0d3a3717f7e9598f67a8945483be713" kindref="member">tintTexture</ref>.width<sp/>/<sp/>2,<sp/>texpos.y<sp/>-<sp/><ref refid="class_tint_texture_generator_1ae0d3a3717f7e9598f67a8945483be713" kindref="member">tintTexture</ref>.height<sp/>/<sp/>2,<sp/>0);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87" refid="class_tint_texture_generator_1ab5c498fe3256c15cec2fe7ebc68b8067" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_unity_engine_1_1_tilemaps_1_1_grid_information" kindref="compound">GridInformation</ref><sp/><ref refid="class_tint_texture_generator_1ab5c498fe3256c15cec2fe7ebc68b8067" kindref="member">GetGridInformation</ref>(Grid<sp/>grid)</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_unity_engine_1_1_tilemaps_1_1_grid_information" kindref="compound">GridInformation</ref><sp/>gridInformation<sp/>=<sp/>grid.GetComponent&lt;<ref refid="class_unity_engine_1_1_tilemaps_1_1_grid_information" kindref="compound">GridInformation</ref>&gt;();</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(gridInformation<sp/>==<sp/>null)</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gridInformation<sp/>=<sp/>grid.gameObject.AddComponent&lt;<ref refid="class_unity_engine_1_1_tilemaps_1_1_grid_information" kindref="compound">GridInformation</ref>&gt;();</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>gridInformation;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97" refid="class_tint_texture_generator_1a85bc3f10b7079c4971e7e3fcacf4723f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_tint_texture_generator_1a85bc3f10b7079c4971e7e3fcacf4723f" kindref="member">RefreshGlobalShaderValues</ref>()</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Shader.SetGlobalTexture(</highlight><highlight class="stringliteral">&quot;_TintMap&quot;</highlight><highlight class="normal">,<sp/><ref refid="class_tint_texture_generator_1ad215d58aa9f43d295ff3702b242d2844" kindref="member">m_TintTexture</ref>);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Shader.SetGlobalFloat(</highlight><highlight class="stringliteral">&quot;_TintMapSize&quot;</highlight><highlight class="normal">,<sp/><ref refid="class_tint_texture_generator_1a0128285c557b53d9531b8fb3452c7df5" kindref="member">k_TintMapSize</ref>);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Brushes/Tint Brush Smooth/Scripts/TintTextureGenerator.cs"/>
+  </compounddef>
+</doxygen>

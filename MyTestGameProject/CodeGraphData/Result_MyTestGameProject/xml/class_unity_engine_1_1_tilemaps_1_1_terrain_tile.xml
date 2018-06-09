@@ -1,0 +1,188 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_unity_engine_1_1_tilemaps_1_1_terrain_tile" kind="class" prot="public">
+    <compoundname>UnityEngine::Tilemaps::TerrainTile</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">TileBase</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_unity_engine_1_1_tilemaps_1_1_terrain_tile_1a20bc2f1c950e5e0b7ebc0d00c7b8998b" prot="public" static="no" mutable="no">
+        <type>Sprite[]</type>
+        <definition>Sprite [] UnityEngine.Tilemaps.TerrainTile.m_Sprites</definition>
+        <argsstring></argsstring>
+        <name>m_Sprites</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Terrain Tile/Scripts/TerrainTile.cs" line="18" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Terrain Tile/Scripts/TerrainTile.cs" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_unity_engine_1_1_tilemaps_1_1_terrain_tile_1a959847507d7eca448c3297a3cdcd328f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void UnityEngine.Tilemaps.TerrainTile.RefreshTile</definition>
+        <argsstring>(Vector3Int location, ITilemap tileMap)</argsstring>
+        <name>RefreshTile</name>
+        <param>
+          <type>Vector3Int</type>
+          <declname>location</declname>
+        </param>
+        <param>
+          <type>ITilemap</type>
+          <declname>tileMap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Terrain Tile/Scripts/TerrainTile.cs" line="20" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Terrain Tile/Scripts/TerrainTile.cs" bodystart="20" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_tilemaps_1_1_terrain_tile_1a77de11b9ed7b9824bc8f85bd5c77ad31" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void UnityEngine.Tilemaps.TerrainTile.GetTileData</definition>
+        <argsstring>(Vector3Int location, ITilemap tileMap, ref TileData tileData)</argsstring>
+        <name>GetTileData</name>
+        <param>
+          <type>Vector3Int</type>
+          <declname>location</declname>
+        </param>
+        <param>
+          <type>ITilemap</type>
+          <declname>tileMap</declname>
+        </param>
+        <param>
+          <type>ref TileData</type>
+          <declname>tileData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Terrain Tile/Scripts/TerrainTile.cs" line="31" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Terrain Tile/Scripts/TerrainTile.cs" bodystart="31" bodyend="34"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_unity_engine_1_1_tilemaps_1_1_terrain_tile_1a168dd36683ddd8a2ecb53670eca0d1b3" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnityEngine.Tilemaps.TerrainTile.UpdateTile</definition>
+        <argsstring>(Vector3Int location, ITilemap tileMap, ref TileData tileData)</argsstring>
+        <name>UpdateTile</name>
+        <param>
+          <type>Vector3Int</type>
+          <declname>location</declname>
+        </param>
+        <param>
+          <type>ITilemap</type>
+          <declname>tileMap</declname>
+        </param>
+        <param>
+          <type>ref TileData</type>
+          <declname>tileData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Terrain Tile/Scripts/TerrainTile.cs" line="36" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Terrain Tile/Scripts/TerrainTile.cs" bodystart="36" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_tilemaps_1_1_terrain_tile_1ae926525c096749be1e16cd191617382f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UnityEngine.Tilemaps.TerrainTile.TileValue</definition>
+        <argsstring>(ITilemap tileMap, Vector3Int position)</argsstring>
+        <name>TileValue</name>
+        <param>
+          <type>ITilemap</type>
+          <declname>tileMap</declname>
+        </param>
+        <param>
+          <type>Vector3Int</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Terrain Tile/Scripts/TerrainTile.cs" line="67" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Terrain Tile/Scripts/TerrainTile.cs" bodystart="67" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_tilemaps_1_1_terrain_tile_1ae753c4fd90926b4d885e41569f9ae559" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int UnityEngine.Tilemaps.TerrainTile.GetIndex</definition>
+        <argsstring>(byte mask)</argsstring>
+        <name>GetIndex</name>
+        <param>
+          <type>byte</type>
+          <declname>mask</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Terrain Tile/Scripts/TerrainTile.cs" line="73" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Terrain Tile/Scripts/TerrainTile.cs" bodystart="73" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_engine_1_1_tilemaps_1_1_terrain_tile_1aa11e4118fded446be9f43aa69d7c5afe" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Matrix4x4</type>
+        <definition>Matrix4x4 UnityEngine.Tilemaps.TerrainTile.GetTransform</definition>
+        <argsstring>(byte mask)</argsstring>
+        <name>GetTransform</name>
+        <param>
+          <type>byte</type>
+          <declname>mask</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Terrain Tile/Scripts/TerrainTile.cs" line="128" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Terrain Tile/Scripts/TerrainTile.cs" bodystart="128" bodyend="169"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1145">
+        <label>TileBase</label>
+      </node>
+      <node id="1144">
+        <label>UnityEngine.Tilemaps.TerrainTile</label>
+        <link refid="class_unity_engine_1_1_tilemaps_1_1_terrain_tile"/>
+        <childnode refid="1145" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1147">
+        <label>TileBase</label>
+      </node>
+      <node id="1146">
+        <label>UnityEngine.Tilemaps.TerrainTile</label>
+        <link refid="class_unity_engine_1_1_tilemaps_1_1_terrain_tile"/>
+        <childnode refid="1147" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Terrain Tile/Scripts/TerrainTile.cs" line="16" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles/Terrain Tile/Scripts/TerrainTile.cs" bodystart="15" bodyend="183"/>
+    <listofallmembers>
+      <member refid="class_unity_engine_1_1_tilemaps_1_1_terrain_tile_1ae753c4fd90926b4d885e41569f9ae559" prot="private" virt="non-virtual"><scope>UnityEngine::Tilemaps::TerrainTile</scope><name>GetIndex</name></member>
+      <member refid="class_unity_engine_1_1_tilemaps_1_1_terrain_tile_1a77de11b9ed7b9824bc8f85bd5c77ad31" prot="public" virt="non-virtual"><scope>UnityEngine::Tilemaps::TerrainTile</scope><name>GetTileData</name></member>
+      <member refid="class_unity_engine_1_1_tilemaps_1_1_terrain_tile_1aa11e4118fded446be9f43aa69d7c5afe" prot="private" virt="non-virtual"><scope>UnityEngine::Tilemaps::TerrainTile</scope><name>GetTransform</name></member>
+      <member refid="class_unity_engine_1_1_tilemaps_1_1_terrain_tile_1a20bc2f1c950e5e0b7ebc0d00c7b8998b" prot="public" virt="non-virtual"><scope>UnityEngine::Tilemaps::TerrainTile</scope><name>m_Sprites</name></member>
+      <member refid="class_unity_engine_1_1_tilemaps_1_1_terrain_tile_1a959847507d7eca448c3297a3cdcd328f" prot="public" virt="non-virtual"><scope>UnityEngine::Tilemaps::TerrainTile</scope><name>RefreshTile</name></member>
+      <member refid="class_unity_engine_1_1_tilemaps_1_1_terrain_tile_1ae926525c096749be1e16cd191617382f" prot="private" virt="non-virtual"><scope>UnityEngine::Tilemaps::TerrainTile</scope><name>TileValue</name></member>
+      <member refid="class_unity_engine_1_1_tilemaps_1_1_terrain_tile_1a168dd36683ddd8a2ecb53670eca0d1b3" prot="private" virt="non-virtual"><scope>UnityEngine::Tilemaps::TerrainTile</scope><name>UpdateTile</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,162 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_settings" kind="class" prot="public">
+    <compoundname>Settings</compoundname>
+    <basecompoundref refid="interface_i_savable" prot="public" virt="non-virtual">ISavable</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_settings_1aa2a99148bd27ecbd3cee7774b8e5e0e7" prot="public" static="no" mutable="no">
+        <type><ref refid="class_graphix_settings" kindref="compound">GraphixSettings</ref></type>
+        <definition>GraphixSettings Settings.graphixSettings</definition>
+        <argsstring></argsstring>
+        <name>graphixSettings</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/Settings.cs" line="6" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/Settings.cs" bodystart="6" bodyend="-1"/>
+        <referencedby refid="class_settings_1ac1ec7238edb3d1b896e22bd19915bdd8" compoundref="_settings_8cs" startline="10" endline="15">Settings</referencedby>
+        <referencedby refid="class_unit_1a03d76f15a5d46dda8d06eeae656bbb76" compoundref="_unit_8cs" startline="1031" endline="1057">Unit.ShowPopUpTakenDamageText</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_settings_1ae52aa0e061e8257cdb8ddab6021183c1" prot="public" static="no" mutable="no">
+        <type><ref refid="class_audio_settings" kindref="compound">AudioSettings</ref></type>
+        <definition>AudioSettings Settings.audioSettings</definition>
+        <argsstring></argsstring>
+        <name>audioSettings</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/Settings.cs" line="7" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/Settings.cs" bodystart="7" bodyend="-1"/>
+        <referencedby refid="class_settings_1ac1ec7238edb3d1b896e22bd19915bdd8" compoundref="_settings_8cs" startline="10" endline="15">Settings</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_settings_1a1914a020a4a12577de38e48c6fb33bd0" prot="public" static="no" mutable="no">
+        <type><ref refid="class_common_settings" kindref="compound">CommonSettings</ref></type>
+        <definition>CommonSettings Settings.commonSettings</definition>
+        <argsstring></argsstring>
+        <name>commonSettings</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/Settings.cs" line="8" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/Settings.cs" bodystart="8" bodyend="-1"/>
+        <referencedby refid="class_settings_1ac1ec7238edb3d1b896e22bd19915bdd8" compoundref="_settings_8cs" startline="10" endline="15">Settings</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_settings_1ac1ec7238edb3d1b896e22bd19915bdd8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Settings.Settings</definition>
+        <argsstring>()</argsstring>
+        <name>Settings</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/Settings.cs" line="10" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/Settings.cs" bodystart="10" bodyend="15"/>
+        <references refid="class_settings_1ae52aa0e061e8257cdb8ddab6021183c1" compoundref="_settings_8cs" startline="7">audioSettings</references>
+        <references refid="class_settings_1a1914a020a4a12577de38e48c6fb33bd0" compoundref="_settings_8cs" startline="8">commonSettings</references>
+        <references refid="class_settings_1aa2a99148bd27ecbd3cee7774b8e5e0e7" compoundref="_settings_8cs" startline="6">graphixSettings</references>
+      </memberdef>
+      <memberdef kind="function" id="class_settings_1ae5b00b8649c4e746625fcf3d9c761d84" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Settings.Save</definition>
+        <argsstring>()</argsstring>
+        <name>Save</name>
+        <reimplements refid="interface_i_savable_1a6f524db1edec7552b99f40de1bf013f4">Save</reimplements>
+        <briefdescription>
+<para>Сохранить данные в хранилище </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/Settings.cs" line="17" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/Settings.cs" bodystart="17" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_settings_1af64bfc78fd33803322b0e6181a805bd7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Settings.Load</definition>
+        <argsstring>()</argsstring>
+        <name>Load</name>
+        <reimplements refid="interface_i_savable_1ad4c1956e2936ff33be4709453ad21190">Load</reimplements>
+        <briefdescription>
+<para>Загрузить данные из хранилища </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/Settings.cs" line="24" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/Settings.cs" bodystart="24" bodyend="29"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="845">
+        <label>Settings</label>
+        <link refid="class_settings"/>
+        <childnode refid="846" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="846">
+        <label>ISavable</label>
+        <link refid="interface_i_savable"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="847">
+        <label>Settings</label>
+        <link refid="class_settings"/>
+        <childnode refid="848" relation="public-inheritance">
+        </childnode>
+        <childnode refid="849" relation="usage">
+          <edgelabel>audioSettings</edgelabel>
+        </childnode>
+        <childnode refid="850" relation="usage">
+          <edgelabel>commonSettings</edgelabel>
+        </childnode>
+        <childnode refid="851" relation="usage">
+          <edgelabel>graphixSettings</edgelabel>
+        </childnode>
+      </node>
+      <node id="848">
+        <label>ISavable</label>
+        <link refid="interface_i_savable"/>
+      </node>
+      <node id="849">
+        <label>AudioSettings</label>
+        <link refid="class_audio_settings"/>
+        <childnode refid="848" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="851">
+        <label>GraphixSettings</label>
+        <link refid="class_graphix_settings"/>
+        <childnode refid="848" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="850">
+        <label>CommonSettings</label>
+        <link refid="class_common_settings"/>
+        <childnode refid="848" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/Settings.cs" line="5" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/Settings.cs" bodystart="4" bodyend="30"/>
+    <listofallmembers>
+      <member refid="class_settings_1ae52aa0e061e8257cdb8ddab6021183c1" prot="public" virt="non-virtual"><scope>Settings</scope><name>audioSettings</name></member>
+      <member refid="class_settings_1a1914a020a4a12577de38e48c6fb33bd0" prot="public" virt="non-virtual"><scope>Settings</scope><name>commonSettings</name></member>
+      <member refid="class_settings_1aa2a99148bd27ecbd3cee7774b8e5e0e7" prot="public" virt="non-virtual"><scope>Settings</scope><name>graphixSettings</name></member>
+      <member refid="class_settings_1af64bfc78fd33803322b0e6181a805bd7" prot="public" virt="non-virtual"><scope>Settings</scope><name>Load</name></member>
+      <member refid="class_settings_1ae5b00b8649c4e746625fcf3d9c761d84" prot="public" virt="non-virtual"><scope>Settings</scope><name>Save</name></member>
+      <member refid="class_settings_1ac1ec7238edb3d1b896e22bd19915bdd8" prot="public" virt="non-virtual"><scope>Settings</scope><name>Settings</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

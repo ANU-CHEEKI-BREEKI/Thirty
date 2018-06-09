@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_a0c3b4e157fdbffcd8f697a952aeda2d" kind="dir">
+    <compoundname>D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit</compoundname>
+    <innerfile refid="_squad_8cs">Squad.cs</innerfile>
+    <innerfile refid="_squadless_unit_spawner_8cs">SquadlessUnitSpawner.cs</innerfile>
+    <innerfile refid="_squad_spawner_8cs">SquadSpawner.cs</innerfile>
+    <innerfile refid="_unit_8cs">Unit.cs</innerfile>
+    <innerfile refid="_unit_position_8cs">UnitPosition.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/"/>
+  </compounddef>
+</doxygen>

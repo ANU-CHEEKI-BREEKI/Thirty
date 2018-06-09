@@ -1,0 +1,292 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_unit_animation" kind="class" prot="public">
+    <compoundname>UnitAnimation</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_unit_animation_1a17ac494ffc7a396166761bd1ec4b9da6" prot="private" static="no" mutable="no">
+        <type>Sprite</type>
+        <definition>Sprite UnitAnimation.rnk_idle</definition>
+        <argsstring></argsstring>
+        <name>rnk_idle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimation.cs" line="8" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimation.cs" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unit_animation_1aa8b930ccfbe75c9419049767c89c6436" prot="private" static="no" mutable="no">
+        <type>Sprite</type>
+        <definition>Sprite UnitAnimation.rnk_run</definition>
+        <argsstring></argsstring>
+        <name>rnk_run</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimation.cs" line="9" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimation.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unit_animation_1ac034878f6e6b705c265e6f590f8ada9b" prot="private" static="no" mutable="no">
+        <type>Sprite</type>
+        <definition>Sprite UnitAnimation.rnk_fight</definition>
+        <argsstring></argsstring>
+        <name>rnk_fight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimation.cs" line="10" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimation.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unit_animation_1a5f7c9088052159f3300bc79d48faf140" prot="private" static="no" mutable="no">
+        <type>Sprite</type>
+        <definition>Sprite UnitAnimation.phx_idle</definition>
+        <argsstring></argsstring>
+        <name>phx_idle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimation.cs" line="13" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimation.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unit_animation_1ae7d7cf292b2954ef050978f247f520b0" prot="private" static="no" mutable="no">
+        <type>Sprite</type>
+        <definition>Sprite UnitAnimation.phx_run</definition>
+        <argsstring></argsstring>
+        <name>phx_run</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimation.cs" line="14" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimation.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unit_animation_1a5d534c6c55ecb00cd6fba1327228ab8d" prot="private" static="no" mutable="no">
+        <type>Sprite</type>
+        <definition>Sprite UnitAnimation.shl_idle</definition>
+        <argsstring></argsstring>
+        <name>shl_idle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimation.cs" line="17" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimation.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unit_animation_1afaf3150f485107f800f034b3b0cdb804" prot="private" static="no" mutable="no">
+        <type>Sprite</type>
+        <definition>Sprite UnitAnimation.shl_run</definition>
+        <argsstring></argsstring>
+        <name>shl_run</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimation.cs" line="18" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimation.cs" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unit_animation_1a59d8b4da7abcb271c2dcfebc2d861915" prot="private" static="no" mutable="no">
+        <type>Sprite</type>
+        <definition>Sprite UnitAnimation.death_1</definition>
+        <argsstring></argsstring>
+        <name>death_1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimation.cs" line="21" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimation.cs" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unit_animation_1a0a51c75702cda895a48420cdc9b2cb2e" prot="private" static="no" mutable="no">
+        <type>Sprite</type>
+        <definition>Sprite UnitAnimation.death_2</definition>
+        <argsstring></argsstring>
+        <name>death_2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimation.cs" line="22" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimation.cs" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_unit_animation_1a2c860dbfe696e324b279afcd882500e6" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>Sprite</type>
+        <definition>Sprite UnitAnimation.Rnk_idle</definition>
+        <argsstring></argsstring>
+        <name>Rnk_idle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimation.cs" line="24" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimation.cs" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_unit_animation_1a9754f94467af96d765c0c9a2afa59855" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>Sprite</type>
+        <definition>Sprite UnitAnimation.Rnk_run</definition>
+        <argsstring></argsstring>
+        <name>Rnk_run</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimation.cs" line="25" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimation.cs" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_unit_animation_1aa6a690ee20189bda10acc2067a293fab" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>Sprite</type>
+        <definition>Sprite UnitAnimation.Rnk_fight</definition>
+        <argsstring></argsstring>
+        <name>Rnk_fight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimation.cs" line="26" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimation.cs" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_unit_animation_1ab703e33118a8f3f2d291bc68503d4798" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>Sprite</type>
+        <definition>Sprite UnitAnimation.Phx_idle</definition>
+        <argsstring></argsstring>
+        <name>Phx_idle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimation.cs" line="28" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimation.cs" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_unit_animation_1a10f9d23363a89915a49c0842109ceed6" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>Sprite</type>
+        <definition>Sprite UnitAnimation.Phx_run</definition>
+        <argsstring></argsstring>
+        <name>Phx_run</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimation.cs" line="29" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimation.cs" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_unit_animation_1ab2b41797870aaa1171930b6843a265a3" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>Sprite</type>
+        <definition>Sprite UnitAnimation.Shl_idle</definition>
+        <argsstring></argsstring>
+        <name>Shl_idle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimation.cs" line="31" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimation.cs" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_unit_animation_1ae75ecad7b0939ee3da3a6c5cfde85372" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>Sprite</type>
+        <definition>Sprite UnitAnimation.Shl_run</definition>
+        <argsstring></argsstring>
+        <name>Shl_run</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimation.cs" line="32" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimation.cs" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_unit_animation_1af719259f60cd196ff7d13be57f26abd0" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>Sprite</type>
+        <definition>Sprite UnitAnimation.Death_1</definition>
+        <argsstring></argsstring>
+        <name>Death_1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimation.cs" line="34" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimation.cs" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_unit_animation_1a4c4f2c2408ab0934ff779129b429703d" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>Sprite</type>
+        <definition>Sprite UnitAnimation.Death_2</definition>
+        <argsstring></argsstring>
+        <name>Death_2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimation.cs" line="35" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimation.cs" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1226">
+        <label>UnitAnimation</label>
+        <link refid="class_unit_animation"/>
+        <childnode refid="1227" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1227">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1228">
+        <label>UnitAnimation</label>
+        <link refid="class_unit_animation"/>
+        <childnode refid="1229" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1229">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimation.cs" line="6" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Controllers/UnitAnimation.cs" bodystart="5" bodyend="36"/>
+    <listofallmembers>
+      <member refid="class_unit_animation_1a59d8b4da7abcb271c2dcfebc2d861915" prot="private" virt="non-virtual"><scope>UnitAnimation</scope><name>death_1</name></member>
+      <member refid="class_unit_animation_1af719259f60cd196ff7d13be57f26abd0" prot="public" virt="non-virtual"><scope>UnitAnimation</scope><name>Death_1</name></member>
+      <member refid="class_unit_animation_1a0a51c75702cda895a48420cdc9b2cb2e" prot="private" virt="non-virtual"><scope>UnitAnimation</scope><name>death_2</name></member>
+      <member refid="class_unit_animation_1a4c4f2c2408ab0934ff779129b429703d" prot="public" virt="non-virtual"><scope>UnitAnimation</scope><name>Death_2</name></member>
+      <member refid="class_unit_animation_1a5f7c9088052159f3300bc79d48faf140" prot="private" virt="non-virtual"><scope>UnitAnimation</scope><name>phx_idle</name></member>
+      <member refid="class_unit_animation_1ab703e33118a8f3f2d291bc68503d4798" prot="public" virt="non-virtual"><scope>UnitAnimation</scope><name>Phx_idle</name></member>
+      <member refid="class_unit_animation_1ae7d7cf292b2954ef050978f247f520b0" prot="private" virt="non-virtual"><scope>UnitAnimation</scope><name>phx_run</name></member>
+      <member refid="class_unit_animation_1a10f9d23363a89915a49c0842109ceed6" prot="public" virt="non-virtual"><scope>UnitAnimation</scope><name>Phx_run</name></member>
+      <member refid="class_unit_animation_1ac034878f6e6b705c265e6f590f8ada9b" prot="private" virt="non-virtual"><scope>UnitAnimation</scope><name>rnk_fight</name></member>
+      <member refid="class_unit_animation_1aa6a690ee20189bda10acc2067a293fab" prot="public" virt="non-virtual"><scope>UnitAnimation</scope><name>Rnk_fight</name></member>
+      <member refid="class_unit_animation_1a17ac494ffc7a396166761bd1ec4b9da6" prot="private" virt="non-virtual"><scope>UnitAnimation</scope><name>rnk_idle</name></member>
+      <member refid="class_unit_animation_1a2c860dbfe696e324b279afcd882500e6" prot="public" virt="non-virtual"><scope>UnitAnimation</scope><name>Rnk_idle</name></member>
+      <member refid="class_unit_animation_1aa8b930ccfbe75c9419049767c89c6436" prot="private" virt="non-virtual"><scope>UnitAnimation</scope><name>rnk_run</name></member>
+      <member refid="class_unit_animation_1a9754f94467af96d765c0c9a2afa59855" prot="public" virt="non-virtual"><scope>UnitAnimation</scope><name>Rnk_run</name></member>
+      <member refid="class_unit_animation_1ab2b41797870aaa1171930b6843a265a3" prot="public" virt="non-virtual"><scope>UnitAnimation</scope><name>Shl_idle</name></member>
+      <member refid="class_unit_animation_1a5d534c6c55ecb00cd6fba1327228ab8d" prot="private" virt="non-virtual"><scope>UnitAnimation</scope><name>shl_idle</name></member>
+      <member refid="class_unit_animation_1afaf3150f485107f800f034b3b0cdb804" prot="private" virt="non-virtual"><scope>UnitAnimation</scope><name>shl_run</name></member>
+      <member refid="class_unit_animation_1ae75ecad7b0939ee3da3a6c5cfde85372" prot="public" virt="non-virtual"><scope>UnitAnimation</scope><name>Shl_run</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

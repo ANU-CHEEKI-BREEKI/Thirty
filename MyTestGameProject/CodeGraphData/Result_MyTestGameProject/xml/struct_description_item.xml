@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="struct_description_item" kind="struct" prot="public">
+    <compoundname>DescriptionItem</compoundname>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="struct_description_item_1a66c69e84d8c37f6a4dfa84cd9f8121bd" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string DescriptionItem.Name</definition>
+        <argsstring></argsstring>
+        <name>Name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DescriptionItem.cs" line="7" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DescriptionItem.cs" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="struct_description_item_1a36ded7834287958feacb475c311d0eee" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string DescriptionItem.Description</definition>
+        <argsstring></argsstring>
+        <name>Description</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DescriptionItem.cs" line="8" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DescriptionItem.cs" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="struct_description_item_1af9a7d6244541b29b46d7aa21acf590c7" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>bool</type>
+        <definition>bool DescriptionItem.ItPositiveDesc</definition>
+        <argsstring></argsstring>
+        <name>ItPositiveDesc</name>
+        <briefdescription>
+<para>Влияет на отображение на панели простотра статов (<ref refid="class_tips_panel" kindref="compound">TipsPanel</ref>) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DescriptionItem.cs" line="12" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DescriptionItem.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DescriptionItem.cs" line="6" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DescriptionItem.cs" bodystart="5" bodyend="13"/>
+    <listofallmembers>
+      <member refid="struct_description_item_1a36ded7834287958feacb475c311d0eee" prot="public" virt="non-virtual"><scope>DescriptionItem</scope><name>Description</name></member>
+      <member refid="struct_description_item_1af9a7d6244541b29b46d7aa21acf590c7" prot="public" virt="non-virtual"><scope>DescriptionItem</scope><name>ItPositiveDesc</name></member>
+      <member refid="struct_description_item_1a66c69e84d8c37f6a4dfa84cd9f8121bd" prot="public" virt="non-virtual"><scope>DescriptionItem</scope><name>Name</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

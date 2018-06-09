@@ -1,0 +1,170 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_squad_skills_inventory_u_i" kind="class" prot="public">
+    <compoundname>SquadSkillsInventoryUI</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_squad_skills_inventory_u_i_1ad33490ef883abd556e1ae61bbfc12b97" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_squad_skills_inventory_u_i" kindref="compound">SquadSkillsInventoryUI</ref></type>
+        <definition>SquadSkillsInventoryUI SquadSkillsInventoryUI.Instance</definition>
+        <argsstring></argsstring>
+        <name>Instance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/SquadSkillsInventoryUI.cs" line="8" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/SquadSkillsInventoryUI.cs" bodystart="8" bodyend="-1"/>
+        <referencedby refid="class_squad_skills_inventory_u_i_1a8afd735fa1e312d92027da0ceb0e2254" compoundref="_squad_skills_inventory_u_i_8cs" startline="17" endline="20">Awake</referencedby>
+        <referencedby refid="class_a_drop_to_me_1aa823b910877eb709c120b6e082063ac0" compoundref="_a_drop_to_me_8cs" startline="37" endline="53">ADropToMe.RefreshUI</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_squad_skills_inventory_u_i_1a16fefc402b79f77510a5aada979ba736" prot="private" static="no" mutable="no">
+        <type>GameObject</type>
+        <definition>GameObject SquadSkillsInventoryUI.skillItemOriginal</definition>
+        <argsstring></argsstring>
+        <name>skillItemOriginal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/SquadSkillsInventoryUI.cs" line="10" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/SquadSkillsInventoryUI.cs" bodystart="10" bodyend="-1"/>
+        <referencedby refid="class_squad_skills_inventory_u_i_1af72e74461a1b96c205f9e97c27cb7bd8" compoundref="_squad_skills_inventory_u_i_8cs" startline="27" endline="65">RefreshUI</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_squad_skills_inventory_u_i_1a3f88948442ac944a394e61271e242107" prot="private" static="no" mutable="no">
+        <type>Transform</type>
+        <definition>Transform SquadSkillsInventoryUI.firstSkill</definition>
+        <argsstring></argsstring>
+        <name>firstSkill</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/SquadSkillsInventoryUI.cs" line="13" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/SquadSkillsInventoryUI.cs" bodystart="13" bodyend="-1"/>
+        <referencedby refid="class_squad_skills_inventory_u_i_1af72e74461a1b96c205f9e97c27cb7bd8" compoundref="_squad_skills_inventory_u_i_8cs" startline="27" endline="65">RefreshUI</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_squad_skills_inventory_u_i_1af637292b98f77645c8703a8cb60ffb51" prot="private" static="no" mutable="no">
+        <type>Transform</type>
+        <definition>Transform SquadSkillsInventoryUI.secondSkill</definition>
+        <argsstring></argsstring>
+        <name>secondSkill</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/SquadSkillsInventoryUI.cs" line="14" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/SquadSkillsInventoryUI.cs" bodystart="14" bodyend="-1"/>
+        <referencedby refid="class_squad_skills_inventory_u_i_1af72e74461a1b96c205f9e97c27cb7bd8" compoundref="_squad_skills_inventory_u_i_8cs" startline="27" endline="65">RefreshUI</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_squad_skills_inventory_u_i_1af603149275e40781cf09aeaee1654cc0" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SquadSkillsInventoryUI.canDrag</definition>
+        <argsstring></argsstring>
+        <name>canDrag</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/SquadSkillsInventoryUI.cs" line="15" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/SquadSkillsInventoryUI.cs" bodystart="15" bodyend="-1"/>
+        <referencedby refid="class_squad_skills_inventory_u_i_1af72e74461a1b96c205f9e97c27cb7bd8" compoundref="_squad_skills_inventory_u_i_8cs" startline="27" endline="65">RefreshUI</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_squad_skills_inventory_u_i_1a8afd735fa1e312d92027da0ceb0e2254" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SquadSkillsInventoryUI.Awake</definition>
+        <argsstring>()</argsstring>
+        <name>Awake</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/SquadSkillsInventoryUI.cs" line="17" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/SquadSkillsInventoryUI.cs" bodystart="17" bodyend="20"/>
+        <references refid="class_squad_skills_inventory_u_i_1ad33490ef883abd556e1ae61bbfc12b97" compoundref="_squad_skills_inventory_u_i_8cs" startline="8">Instance</references>
+      </memberdef>
+      <memberdef kind="function" id="class_squad_skills_inventory_u_i_1a4ea75c25eaeae4e434b783bb2df2cd70" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SquadSkillsInventoryUI.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/SquadSkillsInventoryUI.cs" line="22" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/SquadSkillsInventoryUI.cs" bodystart="22" bodyend="25"/>
+        <references refid="class_squad_skills_inventory_u_i_1af72e74461a1b96c205f9e97c27cb7bd8" compoundref="_squad_skills_inventory_u_i_8cs" startline="27" endline="65">RefreshUI</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_squad_skills_inventory_u_i_1af72e74461a1b96c205f9e97c27cb7bd8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SquadSkillsInventoryUI.RefreshUI</definition>
+        <argsstring>()</argsstring>
+        <name>RefreshUI</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/SquadSkillsInventoryUI.cs" line="27" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/SquadSkillsInventoryUI.cs" bodystart="27" bodyend="65"/>
+        <references refid="class_squad_skills_inventory_u_i_1af603149275e40781cf09aeaee1654cc0" compoundref="_squad_skills_inventory_u_i_8cs" startline="15">canDrag</references>
+        <references refid="class_squad_skills_inventory_u_i_1a3f88948442ac944a394e61271e242107" compoundref="_squad_skills_inventory_u_i_8cs" startline="13">firstSkill</references>
+        <references refid="class_squad_skills_inventory_u_i_1af637292b98f77645c8703a8cb60ffb51" compoundref="_squad_skills_inventory_u_i_8cs" startline="14">secondSkill</references>
+        <references refid="class_squad_skills_inventory_u_i_1a16fefc402b79f77510a5aada979ba736" compoundref="_squad_skills_inventory_u_i_8cs" startline="10">skillItemOriginal</references>
+        <referencedby refid="class_squad_skills_inventory_u_i_1a4ea75c25eaeae4e434b783bb2df2cd70" compoundref="_squad_skills_inventory_u_i_8cs" startline="22" endline="25">Start</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1088">
+        <label>SquadSkillsInventoryUI</label>
+        <link refid="class_squad_skills_inventory_u_i"/>
+        <childnode refid="1089" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1089">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1090">
+        <label>SquadSkillsInventoryUI</label>
+        <link refid="class_squad_skills_inventory_u_i"/>
+        <childnode refid="1091" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1091">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/SquadSkillsInventoryUI.cs" line="7" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/SquadSkillsInventoryUI.cs" bodystart="6" bodyend="66"/>
+    <listofallmembers>
+      <member refid="class_squad_skills_inventory_u_i_1a8afd735fa1e312d92027da0ceb0e2254" prot="private" virt="non-virtual"><scope>SquadSkillsInventoryUI</scope><name>Awake</name></member>
+      <member refid="class_squad_skills_inventory_u_i_1af603149275e40781cf09aeaee1654cc0" prot="private" virt="non-virtual"><scope>SquadSkillsInventoryUI</scope><name>canDrag</name></member>
+      <member refid="class_squad_skills_inventory_u_i_1a3f88948442ac944a394e61271e242107" prot="private" virt="non-virtual"><scope>SquadSkillsInventoryUI</scope><name>firstSkill</name></member>
+      <member refid="class_squad_skills_inventory_u_i_1ad33490ef883abd556e1ae61bbfc12b97" prot="public" virt="non-virtual"><scope>SquadSkillsInventoryUI</scope><name>Instance</name></member>
+      <member refid="class_squad_skills_inventory_u_i_1af72e74461a1b96c205f9e97c27cb7bd8" prot="public" virt="non-virtual"><scope>SquadSkillsInventoryUI</scope><name>RefreshUI</name></member>
+      <member refid="class_squad_skills_inventory_u_i_1af637292b98f77645c8703a8cb60ffb51" prot="private" virt="non-virtual"><scope>SquadSkillsInventoryUI</scope><name>secondSkill</name></member>
+      <member refid="class_squad_skills_inventory_u_i_1a16fefc402b79f77510a5aada979ba736" prot="private" virt="non-virtual"><scope>SquadSkillsInventoryUI</scope><name>skillItemOriginal</name></member>
+      <member refid="class_squad_skills_inventory_u_i_1a4ea75c25eaeae4e434b783bb2df2cd70" prot="private" virt="non-virtual"><scope>SquadSkillsInventoryUI</scope><name>Start</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

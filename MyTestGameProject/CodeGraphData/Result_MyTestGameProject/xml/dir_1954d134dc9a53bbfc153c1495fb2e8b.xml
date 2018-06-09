@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_1954d134dc9a53bbfc153c1495fb2e8b" kind="dir">
+    <compoundname>D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts</compoundname>
+    <innerdir refid="dir_b306f2ec1b0b852aba3aa7f360c18304">D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/CW</innerdir>
+    <innerdir refid="dir_5a634d4d6006ddf19bc89d7dca4eaa2d">D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene</innerdir>
+    <innerdir refid="dir_2be8b91c88bc599991ef39eb41882593">D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/"/>
+  </compounddef>
+</doxygen>

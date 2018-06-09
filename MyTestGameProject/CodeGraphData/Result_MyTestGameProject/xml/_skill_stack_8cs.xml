@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_skill_stack_8cs" kind="file">
+    <compoundname>SkillStack.cs</compoundname>
+    <innerclass refid="class_skill_stack" prot="public">SkillStack</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Collections;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Collections.Generic;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>UnityEngine;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal">[Serializable]</highlight></codeline>
+<codeline lineno="7" refid="class_skill_stack" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_skill_stack" kindref="compound">SkillStack</ref><sp/>:<sp/><ref refid="class_a_stack" kindref="compound">AStack</ref>,<sp/><ref refid="interface_i_descriptionable" kindref="compound">IDescriptionable</ref></highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9" refid="class_skill_stack_1a22a60a20f8bf76ef5cd53b90cdb1a3db" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">event</highlight><highlight class="normal"><sp/>Action&lt;Skill&gt;<sp/><ref refid="class_skill_stack_1a22a60a20f8bf76ef5cd53b90cdb1a3db" kindref="member">OnSkillChanged</ref>;</highlight></codeline>
+<codeline lineno="10" refid="class_skill_stack_1a1e01b41781490d340d68e42a8feb48da" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">event</highlight><highlight class="normal"><sp/>Action&lt;object&gt;<sp/><ref refid="class_skill_stack_1a1e01b41781490d340d68e42a8feb48da" kindref="member">OnStatsChanged</ref>;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="class_skill_stack_1aafdca9fa13bd2adf19a35a9e5d39c546" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[SerializeField]<sp/><ref refid="class_skill" kindref="compound">Skill</ref><sp/><ref refid="class_skill_stack_1aafdca9fa13bd2adf19a35a9e5d39c546" kindref="member">skill</ref>;</highlight></codeline>
+<codeline lineno="13" refid="class_skill_stack_1adf9aaa884fbe7ebc786df1d72ddb5862" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_skill" kindref="compound">Skill</ref><sp/><ref refid="class_skill" kindref="compound">Skill</ref><sp/>{<sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal"><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_skill_stack_1aafdca9fa13bd2adf19a35a9e5d39c546" kindref="member">skill</ref>;<sp/>}<sp/>set<sp/>{<sp/><ref refid="class_skill_stack_1aafdca9fa13bd2adf19a35a9e5d39c546" kindref="member">skill</ref><sp/>=<sp/>value;<sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_skill_stack_1a22a60a20f8bf76ef5cd53b90cdb1a3db" kindref="member">OnSkillChanged</ref><sp/>!=<sp/>null)<sp/><ref refid="class_skill_stack_1a22a60a20f8bf76ef5cd53b90cdb1a3db" kindref="member">OnSkillChanged</ref>(value);<sp/>}<sp/>}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="class_skill_stack_1a583fb59ba511989862caccad14a41634" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[SerializeField]<sp/></highlight><highlight class="keywordtype">object</highlight><highlight class="normal"><sp/><ref refid="class_skill_stack_1a583fb59ba511989862caccad14a41634" kindref="member">skillStats</ref>;</highlight></codeline>
+<codeline lineno="16" refid="class_skill_stack_1ab48f1bf96ca3d222daba7df0d6f3b18f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">object</highlight><highlight class="normal"><sp/><ref refid="class_skill_stack_1ab48f1bf96ca3d222daba7df0d6f3b18f" kindref="member">SkillStats</ref><sp/>{<sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal"><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_skill_stack_1a583fb59ba511989862caccad14a41634" kindref="member">skillStats</ref>;<sp/>}<sp/>set<sp/>{<sp/><ref refid="class_skill_stack_1a583fb59ba511989862caccad14a41634" kindref="member">skillStats</ref><sp/>=<sp/>value;<sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_skill_stack_1a1e01b41781490d340d68e42a8feb48da" kindref="member">OnStatsChanged</ref><sp/>!=<sp/>null)<sp/><ref refid="class_skill_stack_1a1e01b41781490d340d68e42a8feb48da" kindref="member">OnStatsChanged</ref>(value);<sp/>}<sp/>}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="class_skill_stack_1a939ccce0e307d68e2638dd7335a1ed11" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_skill_stack_1a939ccce0e307d68e2638dd7335a1ed11" kindref="member">SkillStack</ref>()</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="class_skill_stack_1a3e659c54599d0886c115bab8e454305d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_skill_stack_1a3e659c54599d0886c115bab8e454305d" kindref="member">SkillStack</ref>(<ref refid="class_skill" kindref="compound">Skill</ref><sp/><ref refid="class_skill_stack_1aafdca9fa13bd2adf19a35a9e5d39c546" kindref="member">skill</ref>,<sp/></highlight><highlight class="keywordtype">object</highlight><highlight class="normal"><sp/><ref refid="class_skill_stack_1a583fb59ba511989862caccad14a41634" kindref="member">skillStats</ref>)</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.skill<sp/>=<sp/><ref refid="class_skill_stack_1aafdca9fa13bd2adf19a35a9e5d39c546" kindref="member">skill</ref>;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.skillStats<sp/>=<sp/><ref refid="class_skill_stack_1a583fb59ba511989862caccad14a41634" kindref="member">skillStats</ref>;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="class_skill_stack_1ae938cdafc7ad4643fb6a9c953b892970" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="struct_description" kindref="compound">Description</ref><sp/><ref refid="class_skill_stack_1ae938cdafc7ad4643fb6a9c953b892970" kindref="member">GetDescription</ref>()</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_description" kindref="compound">Description</ref><sp/>skillDesc<sp/>=<sp/>skill.GetDescription();</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>desc<sp/>=<sp/><ref refid="class_skill_stack_1a583fb59ba511989862caccad14a41634" kindref="member">skillStats</ref><sp/>as<sp/><ref refid="interface_i_descriptionable" kindref="compound">IDescriptionable</ref>;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(desc<sp/>!=<sp/>null)</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_description" kindref="compound">Description</ref><sp/>statsDesc<sp/>=<sp/>desc.GetDescription();</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>skillDesc.Constraints<sp/>=<sp/>statsDesc.Constraints;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>skillDesc.Stats<sp/>=<sp/>statsDesc.Stats;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>skillDesc;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/SkillStack.cs"/>
+  </compounddef>
+</doxygen>

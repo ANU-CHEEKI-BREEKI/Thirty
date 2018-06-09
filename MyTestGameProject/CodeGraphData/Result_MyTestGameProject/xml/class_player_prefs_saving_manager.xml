@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_player_prefs_saving_manager" kind="class" prot="public">
+    <compoundname>PlayerPrefsSavingManager</compoundname>
+    <basecompoundref refid="interface_i_saving_manager" prot="public" virt="non-virtual">ISavingManager</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_player_prefs_saving_manager_1a0395aa3a2570421cc6d7606e3504b7b0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T PlayerPrefsSavingManager.LoadData&lt; T &gt;</definition>
+        <argsstring>(string name)</argsstring>
+        <name>LoadData&lt; T &gt;</name>
+        <reimplements refid="interface_i_saving_manager_1a8671058af54097796445d088fb71d1c2">LoadData&lt; T &gt;</reimplements>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/SavingManagers/PlayerPrefsSavingManager.cs" line="6" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/SavingManagers/PlayerPrefsSavingManager.cs" bodystart="6" bodyend="12"/>
+        <references refid="class_player_prefs_saving_manager_1a0848c228813d41c61a0f8f6c884441b6" compoundref="_player_prefs_saving_manager_8cs" startline="14" endline="17">SaveData&lt; T &gt;</references>
+      </memberdef>
+      <memberdef kind="function" id="class_player_prefs_saving_manager_1a0848c228813d41c61a0f8f6c884441b6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerPrefsSavingManager.SaveData&lt; T &gt;</definition>
+        <argsstring>(string name, object data)</argsstring>
+        <name>SaveData&lt; T &gt;</name>
+        <reimplements refid="interface_i_saving_manager_1a8973005feb8f6b245274195badab80b2">SaveData&lt; T &gt;</reimplements>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>object</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/SavingManagers/PlayerPrefsSavingManager.cs" line="14" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/SavingManagers/PlayerPrefsSavingManager.cs" bodystart="14" bodyend="17"/>
+        <referencedby refid="class_player_prefs_saving_manager_1a0395aa3a2570421cc6d7606e3504b7b0" compoundref="_player_prefs_saving_manager_8cs" startline="6" endline="12">LoadData&lt; T &gt;</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="727">
+        <label>PlayerPrefsSavingManager</label>
+        <link refid="class_player_prefs_saving_manager"/>
+        <childnode refid="728" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="728">
+        <label>ISavingManager</label>
+        <link refid="interface_i_saving_manager"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="729">
+        <label>PlayerPrefsSavingManager</label>
+        <link refid="class_player_prefs_saving_manager"/>
+        <childnode refid="730" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="730">
+        <label>ISavingManager</label>
+        <link refid="interface_i_saving_manager"/>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/SavingManagers/PlayerPrefsSavingManager.cs" line="5" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/SavingManagers/PlayerPrefsSavingManager.cs" bodystart="4" bodyend="18"/>
+    <listofallmembers>
+      <member refid="class_player_prefs_saving_manager_1a0395aa3a2570421cc6d7606e3504b7b0" prot="public" virt="non-virtual"><scope>PlayerPrefsSavingManager</scope><name>LoadData&lt; T &gt;</name></member>
+      <member refid="class_player_prefs_saving_manager_1a0848c228813d41c61a0f8f6c884441b6" prot="public" virt="non-virtual"><scope>PlayerPrefsSavingManager</scope><name>SaveData&lt; T &gt;</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

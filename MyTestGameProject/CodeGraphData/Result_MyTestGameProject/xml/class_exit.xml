@@ -1,0 +1,419 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_exit" kind="class" prot="public">
+    <compoundname>Exit</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_exit_1a521ebc982f5fd94874a5a7a9a0728bb4" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Exit.playersUnitCountITrigger</definition>
+        <argsstring></argsstring>
+        <name>playersUnitCountITrigger</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Exit.cs" line="8" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Exit.cs" bodystart="8" bodyend="-1"/>
+        <referencedby refid="class_exit_1aeadd397da7fd4e8475eee0e7c57e92f2" compoundref="_exit_8cs" startline="97" endline="107">OnDrawGizmos</referencedby>
+        <referencedby refid="class_exit_1a9d27e1c5450a56180701da7ed4462350" compoundref="_exit_8cs" startline="67" endline="80">OnTriggerEnter2D</referencedby>
+        <referencedby refid="class_exit_1a53613f606864b194b23ecb82f1be78e7" compoundref="_exit_8cs" startline="82" endline="95">OnTriggerExit2D</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_exit_1a2360d06a131a0d12bbac82e18711d7eb" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Exit.deltaTime</definition>
+        <argsstring></argsstring>
+        <name>deltaTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Exit.cs" line="9" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Exit.cs" bodystart="9" bodyend="-1"/>
+        <referencedby refid="class_exit_1a92357cf7bc75aaffd2252467bb86af92" compoundref="_exit_8cs" startline="40" endline="52">CheckCenterSquadToExit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_exit_1a2043cf628b050030f00bd7840550d209" prot="private" static="no" mutable="no">
+        <type>Transform</type>
+        <definition>Transform Exit.thisTransform</definition>
+        <argsstring></argsstring>
+        <name>thisTransform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Exit.cs" line="11" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Exit.cs" bodystart="11" bodyend="-1"/>
+        <referencedby refid="class_exit_1ae1a78adb937ee237c528ab0a1b03dc67" compoundref="_exit_8cs" startline="19" endline="38">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_exit_1a80ef22036abd4a891cba4b648df8d5fa" prot="private" static="no" mutable="no">
+        <type><ref refid="class_squad" kindref="compound">Squad</ref></type>
+        <definition>Squad Exit.playerSquad</definition>
+        <argsstring></argsstring>
+        <name>playerSquad</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Exit.cs" line="13" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Exit.cs" bodystart="13" bodyend="-1"/>
+        <referencedby refid="class_exit_1a92357cf7bc75aaffd2252467bb86af92" compoundref="_exit_8cs" startline="40" endline="52">CheckCenterSquadToExit</referencedby>
+        <referencedby refid="class_exit_1ae1a78adb937ee237c528ab0a1b03dc67" compoundref="_exit_8cs" startline="19" endline="38">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_exit_1acd5b7b928ab32d699b75ca6bda9748c1" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Exit.goToNextLevel</definition>
+        <argsstring></argsstring>
+        <name>goToNextLevel</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Exit.cs" line="15" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Exit.cs" bodystart="15" bodyend="-1"/>
+        <referencedby refid="class_exit_1a92357cf7bc75aaffd2252467bb86af92" compoundref="_exit_8cs" startline="40" endline="52">CheckCenterSquadToExit</referencedby>
+        <referencedby refid="class_exit_1aeadd397da7fd4e8475eee0e7c57e92f2" compoundref="_exit_8cs" startline="97" endline="107">OnDrawGizmos</referencedby>
+        <referencedby refid="class_exit_1a9d27e1c5450a56180701da7ed4462350" compoundref="_exit_8cs" startline="67" endline="80">OnTriggerEnter2D</referencedby>
+        <referencedby refid="class_exit_1a53613f606864b194b23ecb82f1be78e7" compoundref="_exit_8cs" startline="82" endline="95">OnTriggerExit2D</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_exit_1a097a75f35911023b04afc81cbee7a33e" prot="private" static="no" mutable="no">
+        <type>Collider2D</type>
+        <definition>Collider2D Exit.collider</definition>
+        <argsstring></argsstring>
+        <name>collider</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Exit.cs" line="17" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Exit.cs" bodystart="17" bodyend="-1"/>
+        <referencedby refid="class_exit_1a92357cf7bc75aaffd2252467bb86af92" compoundref="_exit_8cs" startline="40" endline="52">CheckCenterSquadToExit</referencedby>
+        <referencedby refid="class_exit_1ae1a78adb937ee237c528ab0a1b03dc67" compoundref="_exit_8cs" startline="19" endline="38">Start</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_exit_1ae1a78adb937ee237c528ab0a1b03dc67" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Exit.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Exit.cs" line="19" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Exit.cs" bodystart="19" bodyend="38"/>
+        <references refid="class_exit_1a097a75f35911023b04afc81cbee7a33e" compoundref="_exit_8cs" startline="17">collider</references>
+        <references refid="class_game_manager_1a4915f9a82f7dfe5f46638528f36255f8" compoundref="_game_manager_8cs" startline="43">GameManager.entranceBlockPosition</references>
+        <references refid="class_game_manager_1ad3e717f4fb0f378b969f4457de81f23e" compoundref="_game_manager_8cs" startline="7">GameManager.Instance</references>
+        <references refid="class_exit_1a80ef22036abd4a891cba4b648df8d5fa" compoundref="_exit_8cs" startline="13">playerSquad</references>
+        <references refid="class_ground_block_1a5794044afa730f3b88ecc134905956f8" compoundref="_ground_block_8cs" startline="9">GroundBlock.posInMinigrid</references>
+        <references refid="class_exit_1a2043cf628b050030f00bd7840550d209" compoundref="_exit_8cs" startline="11">thisTransform</references>
+      </memberdef>
+      <memberdef kind="function" id="class_exit_1a92357cf7bc75aaffd2252467bb86af92" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerator</type>
+        <definition>IEnumerator Exit.CheckCenterSquadToExit</definition>
+        <argsstring>()</argsstring>
+        <name>CheckCenterSquadToExit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Exit.cs" line="40" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Exit.cs" bodystart="40" bodyend="52"/>
+        <references refid="class_squad_1a2d34961b1e379d63c8f74f30583b299c" compoundref="_squad_8cs" startline="143">Squad.CenterSquad</references>
+        <references refid="class_exit_1a097a75f35911023b04afc81cbee7a33e" compoundref="_exit_8cs" startline="17">collider</references>
+        <references refid="class_exit_1a2360d06a131a0d12bbac82e18711d7eb" compoundref="_exit_8cs" startline="9">deltaTime</references>
+        <references refid="class_exit_1acd5b7b928ab32d699b75ca6bda9748c1" compoundref="_exit_8cs" startline="15">goToNextLevel</references>
+        <references refid="class_exit_1acd45ea80a112165123859e68e070d785" compoundref="_exit_8cs" startline="54" endline="65">LoadLevel</references>
+        <references refid="class_exit_1a80ef22036abd4a891cba4b648df8d5fa" compoundref="_exit_8cs" startline="13">playerSquad</references>
+        <referencedby refid="class_exit_1a9d27e1c5450a56180701da7ed4462350" compoundref="_exit_8cs" startline="67" endline="80">OnTriggerEnter2D</referencedby>
+        <referencedby refid="class_exit_1a53613f606864b194b23ecb82f1be78e7" compoundref="_exit_8cs" startline="82" endline="95">OnTriggerExit2D</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_exit_1acd45ea80a112165123859e68e070d785" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerator</type>
+        <definition>IEnumerator Exit.LoadLevel</definition>
+        <argsstring>()</argsstring>
+        <name>LoadLevel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Exit.cs" line="54" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Exit.cs" bodystart="54" bodyend="65"/>
+        <referencedby refid="class_exit_1a92357cf7bc75aaffd2252467bb86af92" compoundref="_exit_8cs" startline="40" endline="52">CheckCenterSquadToExit</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_exit_1a9d27e1c5450a56180701da7ed4462350" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Exit.OnTriggerEnter2D</definition>
+        <argsstring>(Collider2D collision)</argsstring>
+        <name>OnTriggerEnter2D</name>
+        <param>
+          <type>Collider2D</type>
+          <declname>collision</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Exit.cs" line="67" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Exit.cs" bodystart="67" bodyend="80"/>
+        <references refid="class_exit_1a92357cf7bc75aaffd2252467bb86af92" compoundref="_exit_8cs" startline="40" endline="52">CheckCenterSquadToExit</references>
+        <references refid="class_ground_1a73b07376785681f37c7feb08d8582aa5" compoundref="_ground_8cs" startline="57">Ground.GenerationIsDone</references>
+        <references refid="class_exit_1acd5b7b928ab32d699b75ca6bda9748c1" compoundref="_exit_8cs" startline="15">goToNextLevel</references>
+        <references refid="class_ground_1a682aa4de76f44144be5ec485ee9fe613" compoundref="_ground_8cs" startline="13">Ground.Instance</references>
+        <references refid="class_exit_1a521ebc982f5fd94874a5a7a9a0728bb4" compoundref="_exit_8cs" startline="8">playersUnitCountITrigger</references>
+      </memberdef>
+      <memberdef kind="function" id="class_exit_1a53613f606864b194b23ecb82f1be78e7" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Exit.OnTriggerExit2D</definition>
+        <argsstring>(Collider2D collision)</argsstring>
+        <name>OnTriggerExit2D</name>
+        <param>
+          <type>Collider2D</type>
+          <declname>collision</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Exit.cs" line="82" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Exit.cs" bodystart="82" bodyend="95"/>
+        <references refid="class_exit_1a92357cf7bc75aaffd2252467bb86af92" compoundref="_exit_8cs" startline="40" endline="52">CheckCenterSquadToExit</references>
+        <references refid="class_ground_1a73b07376785681f37c7feb08d8582aa5" compoundref="_ground_8cs" startline="57">Ground.GenerationIsDone</references>
+        <references refid="class_exit_1acd5b7b928ab32d699b75ca6bda9748c1" compoundref="_exit_8cs" startline="15">goToNextLevel</references>
+        <references refid="class_ground_1a682aa4de76f44144be5ec485ee9fe613" compoundref="_ground_8cs" startline="13">Ground.Instance</references>
+        <references refid="class_exit_1a521ebc982f5fd94874a5a7a9a0728bb4" compoundref="_exit_8cs" startline="8">playersUnitCountITrigger</references>
+      </memberdef>
+      <memberdef kind="function" id="class_exit_1aeadd397da7fd4e8475eee0e7c57e92f2" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Exit.OnDrawGizmos</definition>
+        <argsstring>()</argsstring>
+        <name>OnDrawGizmos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Exit.cs" line="97" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Exit.cs" bodystart="97" bodyend="107"/>
+        <references refid="class_exit_1acd5b7b928ab32d699b75ca6bda9748c1" compoundref="_exit_8cs" startline="15">goToNextLevel</references>
+        <references refid="class_exit_1a521ebc982f5fd94874a5a7a9a0728bb4" compoundref="_exit_8cs" startline="8">playersUnitCountITrigger</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="337">
+        <label>Exit</label>
+        <link refid="class_exit"/>
+        <childnode refid="338" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="338">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="341">
+        <label>Squad</label>
+        <link refid="class_squad"/>
+        <childnode refid="340" relation="public-inheritance">
+        </childnode>
+        <childnode refid="342" relation="usage">
+          <edgelabel>currentFormationModifyers</edgelabel>
+          <edgelabel>formation</edgelabel>
+        </childnode>
+        <childnode refid="343" relation="usage">
+          <edgelabel>unitOriginal</edgelabel>
+        </childnode>
+        <childnode refid="341" relation="usage">
+          <edgelabel>playerSquadInstance</edgelabel>
+        </childnode>
+        <childnode refid="352" relation="usage">
+          <edgelabel>inventory</edgelabel>
+        </childnode>
+        <childnode refid="351" relation="usage">
+          <edgelabel>unitStats</edgelabel>
+        </childnode>
+      </node>
+      <node id="344">
+        <label>Equipment</label>
+        <link refid="class_equipment"/>
+        <childnode refid="345" relation="public-inheritance">
+        </childnode>
+        <childnode refid="347" relation="usage">
+          <edgelabel>stats</edgelabel>
+        </childnode>
+      </node>
+      <node id="350">
+        <label>UnitPosition</label>
+        <link refid="class_unit_position"/>
+        <childnode refid="340" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="346">
+        <label>Item.MainProperties</label>
+        <link refid="struct_item_1_1_main_properties"/>
+      </node>
+      <node id="349">
+        <label>Damage</label>
+        <link refid="struct_damage"/>
+      </node>
+      <node id="348">
+        <label>IDescriptionable</label>
+        <link refid="interface_i_descriptionable"/>
+      </node>
+      <node id="339">
+        <label>Exit</label>
+        <link refid="class_exit"/>
+        <childnode refid="340" relation="public-inheritance">
+        </childnode>
+        <childnode refid="341" relation="usage">
+          <edgelabel>playerSquad</edgelabel>
+        </childnode>
+      </node>
+      <node id="345">
+        <label>Item</label>
+        <link refid="class_item"/>
+        <childnode refid="340" relation="public-inheritance">
+        </childnode>
+        <childnode refid="346" relation="usage">
+          <edgelabel>mainProperties</edgelabel>
+        </childnode>
+      </node>
+      <node id="353">
+        <label>SkillStack</label>
+        <link refid="class_skill_stack"/>
+        <childnode refid="354" relation="public-inheritance">
+        </childnode>
+        <childnode refid="348" relation="public-inheritance">
+        </childnode>
+        <childnode refid="355" relation="usage">
+          <edgelabel>skill</edgelabel>
+        </childnode>
+      </node>
+      <node id="347">
+        <label>EquipmentStats</label>
+        <link refid="struct_equipment_stats"/>
+        <childnode refid="348" relation="public-inheritance">
+        </childnode>
+        <childnode refid="349" relation="usage">
+          <edgelabel>damage</edgelabel>
+        </childnode>
+      </node>
+      <node id="354">
+        <label>AStack</label>
+        <link refid="class_a_stack"/>
+      </node>
+      <node id="351">
+        <label>UnitStats</label>
+        <link refid="struct_unit_stats"/>
+        <childnode refid="349" relation="usage">
+          <edgelabel>damage</edgelabel>
+        </childnode>
+      </node>
+      <node id="340">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="343">
+        <label>Unit</label>
+        <link refid="class_unit"/>
+        <childnode refid="340" relation="public-inheritance">
+        </childnode>
+        <childnode refid="343" relation="usage">
+          <edgelabel>target</edgelabel>
+        </childnode>
+        <childnode refid="341" relation="usage">
+          <edgelabel>squad</edgelabel>
+        </childnode>
+        <childnode refid="344" relation="usage">
+          <edgelabel>body</edgelabel>
+          <edgelabel>shield</edgelabel>
+          <edgelabel>weapon</edgelabel>
+          <edgelabel>helmet</edgelabel>
+        </childnode>
+        <childnode refid="350" relation="usage">
+          <edgelabel>TargetMovePositionObject</edgelabel>
+          <edgelabel>unitPosOriginal</edgelabel>
+        </childnode>
+        <childnode refid="351" relation="usage">
+          <edgelabel>stats</edgelabel>
+        </childnode>
+      </node>
+      <node id="355">
+        <label>Skill</label>
+        <link refid="class_skill"/>
+        <childnode refid="345" relation="public-inheritance">
+        </childnode>
+        <childnode refid="348" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="356">
+        <label>EquipmentStack</label>
+        <link refid="class_equipment_stack"/>
+        <childnode refid="354" relation="public-inheritance">
+        </childnode>
+        <childnode refid="345" relation="usage">
+          <edgelabel>equipmentMainProperties</edgelabel>
+        </childnode>
+        <childnode refid="347" relation="usage">
+          <edgelabel>equipmentStats</edgelabel>
+        </childnode>
+      </node>
+      <node id="342">
+        <label>FormationStats</label>
+        <link refid="class_formation_stats"/>
+      </node>
+      <node id="352">
+        <label>Inventory</label>
+        <link refid="class_inventory"/>
+        <childnode refid="353" relation="usage">
+          <edgelabel>firstSkill</edgelabel>
+          <edgelabel>secondSkill</edgelabel>
+        </childnode>
+        <childnode refid="344" relation="usage">
+          <edgelabel>body</edgelabel>
+          <edgelabel>shieldNone</edgelabel>
+          <edgelabel>helmetNone</edgelabel>
+          <edgelabel>shield</edgelabel>
+          <edgelabel>weapon</edgelabel>
+          <edgelabel>helmet</edgelabel>
+          <edgelabel>bodyNone</edgelabel>
+        </childnode>
+        <childnode refid="356" relation="usage">
+          <edgelabel>inventory</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Exit.cs" line="7" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Exit.cs" bodystart="6" bodyend="108"/>
+    <listofallmembers>
+      <member refid="class_exit_1a92357cf7bc75aaffd2252467bb86af92" prot="private" virt="non-virtual"><scope>Exit</scope><name>CheckCenterSquadToExit</name></member>
+      <member refid="class_exit_1a097a75f35911023b04afc81cbee7a33e" prot="private" virt="non-virtual"><scope>Exit</scope><name>collider</name></member>
+      <member refid="class_exit_1a2360d06a131a0d12bbac82e18711d7eb" prot="private" virt="non-virtual"><scope>Exit</scope><name>deltaTime</name></member>
+      <member refid="class_exit_1acd5b7b928ab32d699b75ca6bda9748c1" prot="private" virt="non-virtual"><scope>Exit</scope><name>goToNextLevel</name></member>
+      <member refid="class_exit_1acd45ea80a112165123859e68e070d785" prot="private" virt="non-virtual"><scope>Exit</scope><name>LoadLevel</name></member>
+      <member refid="class_exit_1aeadd397da7fd4e8475eee0e7c57e92f2" prot="private" virt="non-virtual"><scope>Exit</scope><name>OnDrawGizmos</name></member>
+      <member refid="class_exit_1a9d27e1c5450a56180701da7ed4462350" prot="private" virt="non-virtual"><scope>Exit</scope><name>OnTriggerEnter2D</name></member>
+      <member refid="class_exit_1a53613f606864b194b23ecb82f1be78e7" prot="private" virt="non-virtual"><scope>Exit</scope><name>OnTriggerExit2D</name></member>
+      <member refid="class_exit_1a80ef22036abd4a891cba4b648df8d5fa" prot="private" virt="non-virtual"><scope>Exit</scope><name>playerSquad</name></member>
+      <member refid="class_exit_1a521ebc982f5fd94874a5a7a9a0728bb4" prot="private" virt="non-virtual"><scope>Exit</scope><name>playersUnitCountITrigger</name></member>
+      <member refid="class_exit_1ae1a78adb937ee237c528ab0a1b03dc67" prot="private" virt="non-virtual"><scope>Exit</scope><name>Start</name></member>
+      <member refid="class_exit_1a2043cf628b050030f00bd7840550d209" prot="private" virt="non-virtual"><scope>Exit</scope><name>thisTransform</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

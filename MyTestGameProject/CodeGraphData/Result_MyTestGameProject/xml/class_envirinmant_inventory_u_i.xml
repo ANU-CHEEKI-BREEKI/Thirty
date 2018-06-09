@@ -1,0 +1,789 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_envirinmant_inventory_u_i" kind="class" prot="public">
+    <compoundname>EnvirinmantInventoryUI</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_envirinmant_inventory_u_i_1a6e66b605d092395812f43280ca33ceb2" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_envirinmant_inventory_u_i" kindref="compound">EnvirinmantInventoryUI</ref></type>
+        <definition>EnvirinmantInventoryUI EnvirinmantInventoryUI.Instance</definition>
+        <argsstring></argsstring>
+        <name>Instance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/EnvirinmantInventoryUI.cs" line="10" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/EnvirinmantInventoryUI.cs" bodystart="10" bodyend="-1"/>
+        <referencedby refid="class_envirinmant_inventory_u_i_1ac698ed02149ed5c7d6b281399870a65b" compoundref="_envirinmant_inventory_u_i_8cs" startline="47" endline="57">Awake</referencedby>
+        <referencedby refid="class_a_drop_to_me_1aa823b910877eb709c120b6e082063ac0" compoundref="_a_drop_to_me_8cs" startline="37" endline="53">ADropToMe.RefreshUI</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_envirinmant_inventory_u_i_1aa1b6945cef511b1921d11be633d73198" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>int</type>
+        <definition>int EnvirinmantInventoryUI.RadiusToFind</definition>
+        <argsstring></argsstring>
+        <name>RadiusToFind</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/EnvirinmantInventoryUI.cs" line="19" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/EnvirinmantInventoryUI.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_envirinmant_inventory_u_i_1a78072dc1f680668276681ea60789a275" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>bool</type>
+        <definition>bool EnvirinmantInventoryUI.Fill</definition>
+        <argsstring></argsstring>
+        <name>Fill</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/EnvirinmantInventoryUI.cs" line="28" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/EnvirinmantInventoryUI.cs" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_envirinmant_inventory_u_i_1a205b780769a79b1ee9a77cf51a6feb03" prot="private" static="no" mutable="no">
+        <type>GameObject</type>
+        <definition>GameObject EnvirinmantInventoryUI.inventoryItemOriginal</definition>
+        <argsstring></argsstring>
+        <name>inventoryItemOriginal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/EnvirinmantInventoryUI.cs" line="12" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/EnvirinmantInventoryUI.cs" bodystart="12" bodyend="-1"/>
+        <referencedby refid="class_envirinmant_inventory_u_i_1a3e90dd1b1fc49c77da52659c36d82eb8" compoundref="_envirinmant_inventory_u_i_8cs" startline="249" endline="262">SetImage</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_envirinmant_inventory_u_i_1a5d707618fd8d259934c26fb3963357f8" prot="private" static="no" mutable="no">
+        <type>Transform</type>
+        <definition>Transform EnvirinmantInventoryUI.envaironmentInventory</definition>
+        <argsstring></argsstring>
+        <name>envaironmentInventory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/EnvirinmantInventoryUI.cs" line="14" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/EnvirinmantInventoryUI.cs" bodystart="14" bodyend="-1"/>
+        <referencedby refid="class_envirinmant_inventory_u_i_1ac698ed02149ed5c7d6b281399870a65b" compoundref="_envirinmant_inventory_u_i_8cs" startline="47" endline="57">Awake</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_envirinmant_inventory_u_i_1afe3a4a3f2145f7cbb8bd2baa8fb84737" prot="private" static="no" mutable="no">
+        <type>Transform[]</type>
+        <definition>Transform [] EnvirinmantInventoryUI.envaironmentCells</definition>
+        <argsstring></argsstring>
+        <name>envaironmentCells</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/EnvirinmantInventoryUI.cs" line="15" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/EnvirinmantInventoryUI.cs" bodystart="15" bodyend="-1"/>
+        <referencedby refid="class_envirinmant_inventory_u_i_1ac698ed02149ed5c7d6b281399870a65b" compoundref="_envirinmant_inventory_u_i_8cs" startline="47" endline="57">Awake</referencedby>
+        <referencedby refid="class_envirinmant_inventory_u_i_1a6af509bb9e6c6d8868c1f67dd99bb5d9" compoundref="_envirinmant_inventory_u_i_8cs" startline="264" endline="271">ClearEnvironmantInventoryIcons</referencedby>
+        <referencedby refid="class_envirinmant_inventory_u_i_1acc99befc435fbf9e4fa4b3b6ee155736" compoundref="_envirinmant_inventory_u_i_8cs" startline="241" endline="247">FillEnvironmantInventoryIcons</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_envirinmant_inventory_u_i_1a0eb2ed928cce56da4648f0e6652dea26" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int EnvirinmantInventoryUI.maxRhitsCount</definition>
+        <argsstring></argsstring>
+        <name>maxRhitsCount</name>
+        <initializer>= 1000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/EnvirinmantInventoryUI.cs" line="17" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/EnvirinmantInventoryUI.cs" bodystart="17" bodyend="-1"/>
+        <referencedby refid="class_envirinmant_inventory_u_i_1aa5ec323f61bbe2dd1c378e1c2a0c3812" compoundref="_envirinmant_inventory_u_i_8cs" startline="59" endline="83">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_envirinmant_inventory_u_i_1a61fc1454f033c905dd20684605be2cbf" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int EnvirinmantInventoryUI.radiusToFind</definition>
+        <argsstring></argsstring>
+        <name>radiusToFind</name>
+        <initializer>= 20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/EnvirinmantInventoryUI.cs" line="18" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/EnvirinmantInventoryUI.cs" bodystart="18" bodyend="-1"/>
+        <referencedby refid="class_envirinmant_inventory_u_i_1a91fa826267c5bb02e5c07a27aa20d137" compoundref="_envirinmant_inventory_u_i_8cs" startline="155" endline="167">CreatePoints</referencedby>
+        <referencedby refid="class_envirinmant_inventory_u_i_1acb48239b76b5bcb5afd8201cfaed20c4" compoundref="_envirinmant_inventory_u_i_8cs" startline="215" endline="239">FindItems</referencedby>
+        <referencedby refid="class_envirinmant_inventory_u_i_1a8dc32bccb1f74c40f278702dd1c7d8cb" compoundref="_envirinmant_inventory_u_i_8cs" startline="283" endline="290">OnDrawGizmos</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_envirinmant_inventory_u_i_1a9db0ace0fb8240705703143c96207d64" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float EnvirinmantInventoryUI.delayBeforeDrawPickUpArea</definition>
+        <argsstring></argsstring>
+        <name>delayBeforeDrawPickUpArea</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/EnvirinmantInventoryUI.cs" line="24" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/EnvirinmantInventoryUI.cs" bodystart="24" bodyend="-1"/>
+        <referencedby refid="class_envirinmant_inventory_u_i_1aa914c887a307bb1170b24bbb3e6b3045" compoundref="_envirinmant_inventory_u_i_8cs" startline="127" endline="142">DrawPickUpArea</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_envirinmant_inventory_u_i_1aad1a332e6713e0859dfb34af42a4fd9f" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float EnvirinmantInventoryUI.rHitCirclreAngle</definition>
+        <argsstring></argsstring>
+        <name>rHitCirclreAngle</name>
+        <initializer>= 20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/EnvirinmantInventoryUI.cs" line="25" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/EnvirinmantInventoryUI.cs" bodystart="25" bodyend="-1"/>
+        <referencedby refid="class_envirinmant_inventory_u_i_1a207177c4b6229f313e0c600d56dfba91" compoundref="_envirinmant_inventory_u_i_8cs" startline="144" endline="153">CreateSinCosAngles</referencedby>
+        <referencedby refid="class_envirinmant_inventory_u_i_1aa5ec323f61bbe2dd1c378e1c2a0c3812" compoundref="_envirinmant_inventory_u_i_8cs" startline="59" endline="83">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_envirinmant_inventory_u_i_1a9d02f649794158246420f86cda4b4917" prot="private" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_equipment_stack" kindref="compound">EquipmentStack</ref> &gt;</type>
+        <definition>List&lt;EquipmentStack&gt; EnvirinmantInventoryUI.inventory</definition>
+        <argsstring></argsstring>
+        <name>inventory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/EnvirinmantInventoryUI.cs" line="27" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/EnvirinmantInventoryUI.cs" bodystart="27" bodyend="-1"/>
+        <referencedby refid="class_envirinmant_inventory_u_i_1ac698ed02149ed5c7d6b281399870a65b" compoundref="_envirinmant_inventory_u_i_8cs" startline="47" endline="57">Awake</referencedby>
+        <referencedby refid="class_envirinmant_inventory_u_i_1acc99befc435fbf9e4fa4b3b6ee155736" compoundref="_envirinmant_inventory_u_i_8cs" startline="241" endline="247">FillEnvironmantInventoryIcons</referencedby>
+        <referencedby refid="class_envirinmant_inventory_u_i_1a68d3e1ade720496a0ccc5e2a3aadf799" compoundref="_envirinmant_inventory_u_i_8cs" startline="169" endline="186">FillInventory</referencedby>
+        <referencedby refid="class_envirinmant_inventory_u_i_1acb48239b76b5bcb5afd8201cfaed20c4" compoundref="_envirinmant_inventory_u_i_8cs" startline="215" endline="239">FindItems</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_envirinmant_inventory_u_i_1ae52701576711ba9577be33ea83ac1c27" prot="private" static="no" mutable="no">
+        <type>RaycastHit2D[]</type>
+        <definition>RaycastHit2D [] EnvirinmantInventoryUI.rhits</definition>
+        <argsstring></argsstring>
+        <name>rhits</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/EnvirinmantInventoryUI.cs" line="30" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/EnvirinmantInventoryUI.cs" bodystart="30" bodyend="-1"/>
+        <referencedby refid="class_envirinmant_inventory_u_i_1acb48239b76b5bcb5afd8201cfaed20c4" compoundref="_envirinmant_inventory_u_i_8cs" startline="215" endline="239">FindItems</referencedby>
+        <referencedby refid="class_envirinmant_inventory_u_i_1a9bf125b3eecfde16b932c6f8fbc414e3" compoundref="_envirinmant_inventory_u_i_8cs" startline="188" endline="213">PickUpEquipment</referencedby>
+        <referencedby refid="class_envirinmant_inventory_u_i_1aa5ec323f61bbe2dd1c378e1c2a0c3812" compoundref="_envirinmant_inventory_u_i_8cs" startline="59" endline="83">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_envirinmant_inventory_u_i_1a596aa9966d797381062573e0fb34c264" prot="private" static="no" mutable="no">
+        <type>ContactFilter2D</type>
+        <definition>ContactFilter2D EnvirinmantInventoryUI.rHitFilter</definition>
+        <argsstring></argsstring>
+        <name>rHitFilter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/EnvirinmantInventoryUI.cs" line="31" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/EnvirinmantInventoryUI.cs" bodystart="31" bodyend="-1"/>
+        <referencedby refid="class_envirinmant_inventory_u_i_1acb48239b76b5bcb5afd8201cfaed20c4" compoundref="_envirinmant_inventory_u_i_8cs" startline="215" endline="239">FindItems</referencedby>
+        <referencedby refid="class_envirinmant_inventory_u_i_1aa5ec323f61bbe2dd1c378e1c2a0c3812" compoundref="_envirinmant_inventory_u_i_8cs" startline="59" endline="83">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_envirinmant_inventory_u_i_1a67d58a375b8a9e15cffc294d92554924" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int EnvirinmantInventoryUI.hitCount</definition>
+        <argsstring></argsstring>
+        <name>hitCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/EnvirinmantInventoryUI.cs" line="32" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/EnvirinmantInventoryUI.cs" bodystart="32" bodyend="-1"/>
+        <referencedby refid="class_envirinmant_inventory_u_i_1acb48239b76b5bcb5afd8201cfaed20c4" compoundref="_envirinmant_inventory_u_i_8cs" startline="215" endline="239">FindItems</referencedby>
+        <referencedby refid="class_envirinmant_inventory_u_i_1a9bf125b3eecfde16b932c6f8fbc414e3" compoundref="_envirinmant_inventory_u_i_8cs" startline="188" endline="213">PickUpEquipment</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_envirinmant_inventory_u_i_1acbbf78076f877be85a1e4a0ae74787a8" prot="private" static="no" mutable="no">
+        <type>LineRenderer</type>
+        <definition>LineRenderer EnvirinmantInventoryUI.lineRenderer</definition>
+        <argsstring></argsstring>
+        <name>lineRenderer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/EnvirinmantInventoryUI.cs" line="34" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/EnvirinmantInventoryUI.cs" bodystart="34" bodyend="-1"/>
+        <referencedby refid="class_envirinmant_inventory_u_i_1aa5ec323f61bbe2dd1c378e1c2a0c3812" compoundref="_envirinmant_inventory_u_i_8cs" startline="59" endline="83">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_envirinmant_inventory_u_i_1a697d6e0ad9934930870c44fba84afe72" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int EnvirinmantInventoryUI.rHitCirclreSegmentCount</definition>
+        <argsstring></argsstring>
+        <name>rHitCirclreSegmentCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/EnvirinmantInventoryUI.cs" line="35" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/EnvirinmantInventoryUI.cs" bodystart="35" bodyend="-1"/>
+        <referencedby refid="class_envirinmant_inventory_u_i_1a91fa826267c5bb02e5c07a27aa20d137" compoundref="_envirinmant_inventory_u_i_8cs" startline="155" endline="167">CreatePoints</referencedby>
+        <referencedby refid="class_envirinmant_inventory_u_i_1a207177c4b6229f313e0c600d56dfba91" compoundref="_envirinmant_inventory_u_i_8cs" startline="144" endline="153">CreateSinCosAngles</referencedby>
+        <referencedby refid="class_envirinmant_inventory_u_i_1aa5ec323f61bbe2dd1c378e1c2a0c3812" compoundref="_envirinmant_inventory_u_i_8cs" startline="59" endline="83">Start</referencedby>
+        <referencedby refid="class_envirinmant_inventory_u_i_1a89bbb26c5f15779212cd763364d24dce" compoundref="_envirinmant_inventory_u_i_8cs" startline="104" endline="112">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_envirinmant_inventory_u_i_1a68d83229ef1472fe2dc9edf8c562e1b5" prot="private" static="no" mutable="no">
+        <type>Vector3[]</type>
+        <definition>Vector3 [] EnvirinmantInventoryUI.rHitCirclreSegments</definition>
+        <argsstring></argsstring>
+        <name>rHitCirclreSegments</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/EnvirinmantInventoryUI.cs" line="36" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/EnvirinmantInventoryUI.cs" bodystart="36" bodyend="-1"/>
+        <referencedby refid="class_envirinmant_inventory_u_i_1a91fa826267c5bb02e5c07a27aa20d137" compoundref="_envirinmant_inventory_u_i_8cs" startline="155" endline="167">CreatePoints</referencedby>
+        <referencedby refid="class_envirinmant_inventory_u_i_1aa5ec323f61bbe2dd1c378e1c2a0c3812" compoundref="_envirinmant_inventory_u_i_8cs" startline="59" endline="83">Start</referencedby>
+        <referencedby refid="class_envirinmant_inventory_u_i_1a89bbb26c5f15779212cd763364d24dce" compoundref="_envirinmant_inventory_u_i_8cs" startline="104" endline="112">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_envirinmant_inventory_u_i_1a3b1f02de68398ea3f765cb05d8f8cd55" prot="private" static="no" mutable="no">
+        <type>float[]</type>
+        <definition>float [] EnvirinmantInventoryUI.sinAngles</definition>
+        <argsstring></argsstring>
+        <name>sinAngles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/EnvirinmantInventoryUI.cs" line="37" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/EnvirinmantInventoryUI.cs" bodystart="37" bodyend="-1"/>
+        <referencedby refid="class_envirinmant_inventory_u_i_1a91fa826267c5bb02e5c07a27aa20d137" compoundref="_envirinmant_inventory_u_i_8cs" startline="155" endline="167">CreatePoints</referencedby>
+        <referencedby refid="class_envirinmant_inventory_u_i_1a207177c4b6229f313e0c600d56dfba91" compoundref="_envirinmant_inventory_u_i_8cs" startline="144" endline="153">CreateSinCosAngles</referencedby>
+        <referencedby refid="class_envirinmant_inventory_u_i_1aa5ec323f61bbe2dd1c378e1c2a0c3812" compoundref="_envirinmant_inventory_u_i_8cs" startline="59" endline="83">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_envirinmant_inventory_u_i_1a753f676d3c8a8946e8515abe6e41b3a0" prot="private" static="no" mutable="no">
+        <type>float[]</type>
+        <definition>float [] EnvirinmantInventoryUI.cosAngles</definition>
+        <argsstring></argsstring>
+        <name>cosAngles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/EnvirinmantInventoryUI.cs" line="38" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/EnvirinmantInventoryUI.cs" bodystart="38" bodyend="-1"/>
+        <referencedby refid="class_envirinmant_inventory_u_i_1a91fa826267c5bb02e5c07a27aa20d137" compoundref="_envirinmant_inventory_u_i_8cs" startline="155" endline="167">CreatePoints</referencedby>
+        <referencedby refid="class_envirinmant_inventory_u_i_1a207177c4b6229f313e0c600d56dfba91" compoundref="_envirinmant_inventory_u_i_8cs" startline="144" endline="153">CreateSinCosAngles</referencedby>
+        <referencedby refid="class_envirinmant_inventory_u_i_1aa5ec323f61bbe2dd1c378e1c2a0c3812" compoundref="_envirinmant_inventory_u_i_8cs" startline="59" endline="83">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_envirinmant_inventory_u_i_1a00d0348249dc51fa5193cc9a6c67d3b8" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool EnvirinmantInventoryUI.toggleDown</definition>
+        <argsstring></argsstring>
+        <name>toggleDown</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/EnvirinmantInventoryUI.cs" line="39" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/EnvirinmantInventoryUI.cs" bodystart="39" bodyend="-1"/>
+        <referencedby refid="class_envirinmant_inventory_u_i_1ae6117f52e86c12ee7fd2a26589b8b2d8" compoundref="_envirinmant_inventory_u_i_8cs" startline="121" endline="125">ContentToggle_OnDown</referencedby>
+        <referencedby refid="class_envirinmant_inventory_u_i_1a04f4063182923218d10c33eaf8d4227c" compoundref="_envirinmant_inventory_u_i_8cs" startline="114" endline="119">ContentToggle_OnUp</referencedby>
+        <referencedby refid="class_envirinmant_inventory_u_i_1aa914c887a307bb1170b24bbb3e6b3045" compoundref="_envirinmant_inventory_u_i_8cs" startline="127" endline="142">DrawPickUpArea</referencedby>
+        <referencedby refid="class_envirinmant_inventory_u_i_1a89bbb26c5f15779212cd763364d24dce" compoundref="_envirinmant_inventory_u_i_8cs" startline="104" endline="112">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_envirinmant_inventory_u_i_1ace4e1a7214884d54097c4e99ae098eec" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool EnvirinmantInventoryUI.draw</definition>
+        <argsstring></argsstring>
+        <name>draw</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/EnvirinmantInventoryUI.cs" line="41" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/EnvirinmantInventoryUI.cs" bodystart="41" bodyend="-1"/>
+        <referencedby refid="class_envirinmant_inventory_u_i_1a04f4063182923218d10c33eaf8d4227c" compoundref="_envirinmant_inventory_u_i_8cs" startline="114" endline="119">ContentToggle_OnUp</referencedby>
+        <referencedby refid="class_envirinmant_inventory_u_i_1aa914c887a307bb1170b24bbb3e6b3045" compoundref="_envirinmant_inventory_u_i_8cs" startline="127" endline="142">DrawPickUpArea</referencedby>
+        <referencedby refid="class_envirinmant_inventory_u_i_1a89bbb26c5f15779212cd763364d24dce" compoundref="_envirinmant_inventory_u_i_8cs" startline="104" endline="112">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_envirinmant_inventory_u_i_1a8f4802763a33c79dc26b71629800528b" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool EnvirinmantInventoryUI.canRefresh</definition>
+        <argsstring></argsstring>
+        <name>canRefresh</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/EnvirinmantInventoryUI.cs" line="43" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/EnvirinmantInventoryUI.cs" bodystart="43" bodyend="-1"/>
+        <referencedby refid="class_envirinmant_inventory_u_i_1a52239b15a703cc9ea7b3bf638ed53366" compoundref="_envirinmant_inventory_u_i_8cs" startline="90" endline="94">RefreshOnUnitDeath</referencedby>
+        <referencedby refid="class_envirinmant_inventory_u_i_1abd4a790358b3eaa125d590b15c7b5b2f" compoundref="_envirinmant_inventory_u_i_8cs" startline="96" endline="102">WaitForRefresh</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_envirinmant_inventory_u_i_1a9088cbdf1b67ccc0edc1f19feae81511" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float EnvirinmantInventoryUI.timeToRefresh</definition>
+        <argsstring></argsstring>
+        <name>timeToRefresh</name>
+        <initializer>= 0.2f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/EnvirinmantInventoryUI.cs" line="45" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/EnvirinmantInventoryUI.cs" bodystart="45" bodyend="-1"/>
+        <referencedby refid="class_envirinmant_inventory_u_i_1abd4a790358b3eaa125d590b15c7b5b2f" compoundref="_envirinmant_inventory_u_i_8cs" startline="96" endline="102">WaitForRefresh</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_envirinmant_inventory_u_i_1ac698ed02149ed5c7d6b281399870a65b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void EnvirinmantInventoryUI.Awake</definition>
+        <argsstring>()</argsstring>
+        <name>Awake</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/EnvirinmantInventoryUI.cs" line="47" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/EnvirinmantInventoryUI.cs" bodystart="47" bodyend="57"/>
+        <references refid="class_envirinmant_inventory_u_i_1afe3a4a3f2145f7cbb8bd2baa8fb84737" compoundref="_envirinmant_inventory_u_i_8cs" startline="15">envaironmentCells</references>
+        <references refid="class_envirinmant_inventory_u_i_1a5d707618fd8d259934c26fb3963357f8" compoundref="_envirinmant_inventory_u_i_8cs" startline="14">envaironmentInventory</references>
+        <references refid="class_envirinmant_inventory_u_i_1a6e66b605d092395812f43280ca33ceb2" compoundref="_envirinmant_inventory_u_i_8cs" startline="10">Instance</references>
+        <references refid="class_envirinmant_inventory_u_i_1a9d02f649794158246420f86cda4b4917" compoundref="_envirinmant_inventory_u_i_8cs" startline="27">inventory</references>
+      </memberdef>
+      <memberdef kind="function" id="class_envirinmant_inventory_u_i_1aa5ec323f61bbe2dd1c378e1c2a0c3812" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void EnvirinmantInventoryUI.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/EnvirinmantInventoryUI.cs" line="59" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/EnvirinmantInventoryUI.cs" bodystart="59" bodyend="83"/>
+        <references refid="class_envirinmant_inventory_u_i_1a753f676d3c8a8946e8515abe6e41b3a0" compoundref="_envirinmant_inventory_u_i_8cs" startline="38">cosAngles</references>
+        <references refid="class_envirinmant_inventory_u_i_1a207177c4b6229f313e0c600d56dfba91" compoundref="_envirinmant_inventory_u_i_8cs" startline="144" endline="153">CreateSinCosAngles</references>
+        <references refid="class_envirinmant_inventory_u_i_1acbbf78076f877be85a1e4a0ae74787a8" compoundref="_envirinmant_inventory_u_i_8cs" startline="34">lineRenderer</references>
+        <references refid="class_envirinmant_inventory_u_i_1a0eb2ed928cce56da4648f0e6652dea26" compoundref="_envirinmant_inventory_u_i_8cs" startline="17">maxRhitsCount</references>
+        <references refid="class_envirinmant_inventory_u_i_1a52239b15a703cc9ea7b3bf638ed53366" compoundref="_envirinmant_inventory_u_i_8cs" startline="90" endline="94">RefreshOnUnitDeath</references>
+        <references refid="class_envirinmant_inventory_u_i_1aad1a332e6713e0859dfb34af42a4fd9f" compoundref="_envirinmant_inventory_u_i_8cs" startline="25">rHitCirclreAngle</references>
+        <references refid="class_envirinmant_inventory_u_i_1a697d6e0ad9934930870c44fba84afe72" compoundref="_envirinmant_inventory_u_i_8cs" startline="35">rHitCirclreSegmentCount</references>
+        <references refid="class_envirinmant_inventory_u_i_1a68d83229ef1472fe2dc9edf8c562e1b5" compoundref="_envirinmant_inventory_u_i_8cs" startline="36">rHitCirclreSegments</references>
+        <references refid="class_envirinmant_inventory_u_i_1a596aa9966d797381062573e0fb34c264" compoundref="_envirinmant_inventory_u_i_8cs" startline="31">rHitFilter</references>
+        <references refid="class_envirinmant_inventory_u_i_1ae52701576711ba9577be33ea83ac1c27" compoundref="_envirinmant_inventory_u_i_8cs" startline="30">rhits</references>
+        <references refid="class_envirinmant_inventory_u_i_1a3b1f02de68398ea3f765cb05d8f8cd55" compoundref="_envirinmant_inventory_u_i_8cs" startline="37">sinAngles</references>
+      </memberdef>
+      <memberdef kind="function" id="class_envirinmant_inventory_u_i_1aa116fe7076e09a3300de51ae8c191339" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void EnvirinmantInventoryUI.OnDestroy</definition>
+        <argsstring>()</argsstring>
+        <name>OnDestroy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/EnvirinmantInventoryUI.cs" line="85" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/EnvirinmantInventoryUI.cs" bodystart="85" bodyend="88"/>
+        <references refid="class_envirinmant_inventory_u_i_1a52239b15a703cc9ea7b3bf638ed53366" compoundref="_envirinmant_inventory_u_i_8cs" startline="90" endline="94">RefreshOnUnitDeath</references>
+      </memberdef>
+      <memberdef kind="function" id="class_envirinmant_inventory_u_i_1a52239b15a703cc9ea7b3bf638ed53366" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void EnvirinmantInventoryUI.RefreshOnUnitDeath</definition>
+        <argsstring>()</argsstring>
+        <name>RefreshOnUnitDeath</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/EnvirinmantInventoryUI.cs" line="90" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/EnvirinmantInventoryUI.cs" bodystart="90" bodyend="94"/>
+        <references refid="class_envirinmant_inventory_u_i_1a8f4802763a33c79dc26b71629800528b" compoundref="_envirinmant_inventory_u_i_8cs" startline="43">canRefresh</references>
+        <references refid="class_envirinmant_inventory_u_i_1abd4a790358b3eaa125d590b15c7b5b2f" compoundref="_envirinmant_inventory_u_i_8cs" startline="96" endline="102">WaitForRefresh</references>
+        <referencedby refid="class_envirinmant_inventory_u_i_1aa116fe7076e09a3300de51ae8c191339" compoundref="_envirinmant_inventory_u_i_8cs" startline="85" endline="88">OnDestroy</referencedby>
+        <referencedby refid="class_envirinmant_inventory_u_i_1aa5ec323f61bbe2dd1c378e1c2a0c3812" compoundref="_envirinmant_inventory_u_i_8cs" startline="59" endline="83">Start</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_envirinmant_inventory_u_i_1abd4a790358b3eaa125d590b15c7b5b2f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerator</type>
+        <definition>IEnumerator EnvirinmantInventoryUI.WaitForRefresh</definition>
+        <argsstring>()</argsstring>
+        <name>WaitForRefresh</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/EnvirinmantInventoryUI.cs" line="96" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/EnvirinmantInventoryUI.cs" bodystart="96" bodyend="102"/>
+        <references refid="class_envirinmant_inventory_u_i_1a8f4802763a33c79dc26b71629800528b" compoundref="_envirinmant_inventory_u_i_8cs" startline="43">canRefresh</references>
+        <references refid="class_envirinmant_inventory_u_i_1a1d2bb2748599f90727b1b487ce2acfd7" compoundref="_envirinmant_inventory_u_i_8cs" startline="273" endline="281">RefreshUI</references>
+        <references refid="class_envirinmant_inventory_u_i_1a9088cbdf1b67ccc0edc1f19feae81511" compoundref="_envirinmant_inventory_u_i_8cs" startline="45">timeToRefresh</references>
+        <referencedby refid="class_envirinmant_inventory_u_i_1a52239b15a703cc9ea7b3bf638ed53366" compoundref="_envirinmant_inventory_u_i_8cs" startline="90" endline="94">RefreshOnUnitDeath</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_envirinmant_inventory_u_i_1a89bbb26c5f15779212cd763364d24dce" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void EnvirinmantInventoryUI.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/EnvirinmantInventoryUI.cs" line="104" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/EnvirinmantInventoryUI.cs" bodystart="104" bodyend="112"/>
+        <references refid="class_envirinmant_inventory_u_i_1a91fa826267c5bb02e5c07a27aa20d137" compoundref="_envirinmant_inventory_u_i_8cs" startline="155" endline="167">CreatePoints</references>
+        <references refid="class_envirinmant_inventory_u_i_1ace4e1a7214884d54097c4e99ae098eec" compoundref="_envirinmant_inventory_u_i_8cs" startline="41">draw</references>
+        <references refid="class_envirinmant_inventory_u_i_1a697d6e0ad9934930870c44fba84afe72" compoundref="_envirinmant_inventory_u_i_8cs" startline="35">rHitCirclreSegmentCount</references>
+        <references refid="class_envirinmant_inventory_u_i_1a68d83229ef1472fe2dc9edf8c562e1b5" compoundref="_envirinmant_inventory_u_i_8cs" startline="36">rHitCirclreSegments</references>
+        <references refid="class_envirinmant_inventory_u_i_1a00d0348249dc51fa5193cc9a6c67d3b8" compoundref="_envirinmant_inventory_u_i_8cs" startline="39">toggleDown</references>
+      </memberdef>
+      <memberdef kind="function" id="class_envirinmant_inventory_u_i_1aa914c887a307bb1170b24bbb3e6b3045" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerator</type>
+        <definition>IEnumerator EnvirinmantInventoryUI.DrawPickUpArea</definition>
+        <argsstring>()</argsstring>
+        <name>DrawPickUpArea</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/EnvirinmantInventoryUI.cs" line="127" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/EnvirinmantInventoryUI.cs" bodystart="127" bodyend="142"/>
+        <references refid="class_envirinmant_inventory_u_i_1a9db0ace0fb8240705703143c96207d64" compoundref="_envirinmant_inventory_u_i_8cs" startline="24">delayBeforeDrawPickUpArea</references>
+        <references refid="class_envirinmant_inventory_u_i_1ace4e1a7214884d54097c4e99ae098eec" compoundref="_envirinmant_inventory_u_i_8cs" startline="41">draw</references>
+        <references refid="class_envirinmant_inventory_u_i_1a00d0348249dc51fa5193cc9a6c67d3b8" compoundref="_envirinmant_inventory_u_i_8cs" startline="39">toggleDown</references>
+        <referencedby refid="class_envirinmant_inventory_u_i_1ae6117f52e86c12ee7fd2a26589b8b2d8" compoundref="_envirinmant_inventory_u_i_8cs" startline="121" endline="125">ContentToggle_OnDown</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_envirinmant_inventory_u_i_1a207177c4b6229f313e0c600d56dfba91" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void EnvirinmantInventoryUI.CreateSinCosAngles</definition>
+        <argsstring>()</argsstring>
+        <name>CreateSinCosAngles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/EnvirinmantInventoryUI.cs" line="144" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/EnvirinmantInventoryUI.cs" bodystart="144" bodyend="153"/>
+        <references refid="class_envirinmant_inventory_u_i_1a753f676d3c8a8946e8515abe6e41b3a0" compoundref="_envirinmant_inventory_u_i_8cs" startline="38">cosAngles</references>
+        <references refid="class_envirinmant_inventory_u_i_1aad1a332e6713e0859dfb34af42a4fd9f" compoundref="_envirinmant_inventory_u_i_8cs" startline="25">rHitCirclreAngle</references>
+        <references refid="class_envirinmant_inventory_u_i_1a697d6e0ad9934930870c44fba84afe72" compoundref="_envirinmant_inventory_u_i_8cs" startline="35">rHitCirclreSegmentCount</references>
+        <references refid="class_envirinmant_inventory_u_i_1a3b1f02de68398ea3f765cb05d8f8cd55" compoundref="_envirinmant_inventory_u_i_8cs" startline="37">sinAngles</references>
+        <referencedby refid="class_envirinmant_inventory_u_i_1aa5ec323f61bbe2dd1c378e1c2a0c3812" compoundref="_envirinmant_inventory_u_i_8cs" startline="59" endline="83">Start</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_envirinmant_inventory_u_i_1a91fa826267c5bb02e5c07a27aa20d137" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void EnvirinmantInventoryUI.CreatePoints</definition>
+        <argsstring>()</argsstring>
+        <name>CreatePoints</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/EnvirinmantInventoryUI.cs" line="155" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/EnvirinmantInventoryUI.cs" bodystart="155" bodyend="167"/>
+        <references refid="class_envirinmant_inventory_u_i_1a753f676d3c8a8946e8515abe6e41b3a0" compoundref="_envirinmant_inventory_u_i_8cs" startline="38">cosAngles</references>
+        <references refid="class_envirinmant_inventory_u_i_1a61fc1454f033c905dd20684605be2cbf" compoundref="_envirinmant_inventory_u_i_8cs" startline="18">radiusToFind</references>
+        <references refid="class_envirinmant_inventory_u_i_1a697d6e0ad9934930870c44fba84afe72" compoundref="_envirinmant_inventory_u_i_8cs" startline="35">rHitCirclreSegmentCount</references>
+        <references refid="class_envirinmant_inventory_u_i_1a68d83229ef1472fe2dc9edf8c562e1b5" compoundref="_envirinmant_inventory_u_i_8cs" startline="36">rHitCirclreSegments</references>
+        <references refid="class_envirinmant_inventory_u_i_1a3b1f02de68398ea3f765cb05d8f8cd55" compoundref="_envirinmant_inventory_u_i_8cs" startline="37">sinAngles</references>
+        <referencedby refid="class_envirinmant_inventory_u_i_1a89bbb26c5f15779212cd763364d24dce" compoundref="_envirinmant_inventory_u_i_8cs" startline="104" endline="112">Update</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_envirinmant_inventory_u_i_1acc99befc435fbf9e4fa4b3b6ee155736" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void EnvirinmantInventoryUI.FillEnvironmantInventoryIcons</definition>
+        <argsstring>()</argsstring>
+        <name>FillEnvironmantInventoryIcons</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/EnvirinmantInventoryUI.cs" line="241" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/EnvirinmantInventoryUI.cs" bodystart="241" bodyend="247"/>
+        <references refid="class_envirinmant_inventory_u_i_1afe3a4a3f2145f7cbb8bd2baa8fb84737" compoundref="_envirinmant_inventory_u_i_8cs" startline="15">envaironmentCells</references>
+        <references refid="class_envirinmant_inventory_u_i_1a9d02f649794158246420f86cda4b4917" compoundref="_envirinmant_inventory_u_i_8cs" startline="27">inventory</references>
+        <references refid="class_envirinmant_inventory_u_i_1a3e90dd1b1fc49c77da52659c36d82eb8" compoundref="_envirinmant_inventory_u_i_8cs" startline="249" endline="262">SetImage</references>
+        <referencedby refid="class_envirinmant_inventory_u_i_1a1d2bb2748599f90727b1b487ce2acfd7" compoundref="_envirinmant_inventory_u_i_8cs" startline="273" endline="281">RefreshUI</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_envirinmant_inventory_u_i_1a6af509bb9e6c6d8868c1f67dd99bb5d9" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void EnvirinmantInventoryUI.ClearEnvironmantInventoryIcons</definition>
+        <argsstring>()</argsstring>
+        <name>ClearEnvironmantInventoryIcons</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/EnvirinmantInventoryUI.cs" line="264" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/EnvirinmantInventoryUI.cs" bodystart="264" bodyend="271"/>
+        <references refid="class_envirinmant_inventory_u_i_1afe3a4a3f2145f7cbb8bd2baa8fb84737" compoundref="_envirinmant_inventory_u_i_8cs" startline="15">envaironmentCells</references>
+        <referencedby refid="class_envirinmant_inventory_u_i_1a1d2bb2748599f90727b1b487ce2acfd7" compoundref="_envirinmant_inventory_u_i_8cs" startline="273" endline="281">RefreshUI</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_envirinmant_inventory_u_i_1a8dc32bccb1f74c40f278702dd1c7d8cb" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void EnvirinmantInventoryUI.OnDrawGizmos</definition>
+        <argsstring>()</argsstring>
+        <name>OnDrawGizmos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/EnvirinmantInventoryUI.cs" line="283" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/EnvirinmantInventoryUI.cs" bodystart="283" bodyend="290"/>
+        <references refid="class_squad_1a781a32dd5c6fadbe0a9e04f142ddc9da" compoundref="_squad_8cs" startline="10">Squad.playerSquadInstance</references>
+        <references refid="class_envirinmant_inventory_u_i_1a61fc1454f033c905dd20684605be2cbf" compoundref="_envirinmant_inventory_u_i_8cs" startline="18">radiusToFind</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_envirinmant_inventory_u_i_1a04f4063182923218d10c33eaf8d4227c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void EnvirinmantInventoryUI.ContentToggle_OnUp</definition>
+        <argsstring>()</argsstring>
+        <name>ContentToggle_OnUp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/EnvirinmantInventoryUI.cs" line="114" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/EnvirinmantInventoryUI.cs" bodystart="114" bodyend="119"/>
+        <references refid="class_envirinmant_inventory_u_i_1ace4e1a7214884d54097c4e99ae098eec" compoundref="_envirinmant_inventory_u_i_8cs" startline="41">draw</references>
+        <references refid="class_envirinmant_inventory_u_i_1a00d0348249dc51fa5193cc9a6c67d3b8" compoundref="_envirinmant_inventory_u_i_8cs" startline="39">toggleDown</references>
+      </memberdef>
+      <memberdef kind="function" id="class_envirinmant_inventory_u_i_1ae6117f52e86c12ee7fd2a26589b8b2d8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void EnvirinmantInventoryUI.ContentToggle_OnDown</definition>
+        <argsstring>()</argsstring>
+        <name>ContentToggle_OnDown</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/EnvirinmantInventoryUI.cs" line="121" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/EnvirinmantInventoryUI.cs" bodystart="121" bodyend="125"/>
+        <references refid="class_envirinmant_inventory_u_i_1aa914c887a307bb1170b24bbb3e6b3045" compoundref="_envirinmant_inventory_u_i_8cs" startline="127" endline="142">DrawPickUpArea</references>
+        <references refid="class_envirinmant_inventory_u_i_1a00d0348249dc51fa5193cc9a6c67d3b8" compoundref="_envirinmant_inventory_u_i_8cs" startline="39">toggleDown</references>
+      </memberdef>
+      <memberdef kind="function" id="class_envirinmant_inventory_u_i_1a68d3e1ade720496a0ccc5e2a3aadf799" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void EnvirinmantInventoryUI.FillInventory</definition>
+        <argsstring>(EquipmentStack stack)</argsstring>
+        <name>FillInventory</name>
+        <param>
+          <type><ref refid="class_equipment_stack" kindref="compound">EquipmentStack</ref></type>
+          <declname>stack</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/EnvirinmantInventoryUI.cs" line="169" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/EnvirinmantInventoryUI.cs" bodystart="169" bodyend="186"/>
+        <references refid="class_envirinmant_inventory_u_i_1a9d02f649794158246420f86cda4b4917" compoundref="_envirinmant_inventory_u_i_8cs" startline="27">inventory</references>
+        <referencedby refid="class_envirinmant_inventory_u_i_1acb48239b76b5bcb5afd8201cfaed20c4" compoundref="_envirinmant_inventory_u_i_8cs" startline="215" endline="239">FindItems</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_envirinmant_inventory_u_i_1a9bf125b3eecfde16b932c6f8fbc414e3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void EnvirinmantInventoryUI.PickUpEquipment</definition>
+        <argsstring>(EquipmentStack stack)</argsstring>
+        <name>PickUpEquipment</name>
+        <param>
+          <type><ref refid="class_equipment_stack" kindref="compound">EquipmentStack</ref></type>
+          <declname>stack</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/EnvirinmantInventoryUI.cs" line="188" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/EnvirinmantInventoryUI.cs" bodystart="188" bodyend="213"/>
+        <references refid="class_equipment_stack_1aea353e00a5c0c6e964fcfe01db42d12b" compoundref="_equipment_stack_8cs" startline="16">EquipmentStack.Count</references>
+        <references refid="class_equipment_stack_1afd0cfe57cae1b79a1e63aa64caaebe9e" compoundref="_equipment_stack_8cs" startline="13">EquipmentStack.EquipmentStats</references>
+        <references refid="class_envirinmant_inventory_u_i_1a67d58a375b8a9e15cffc294d92554924" compoundref="_envirinmant_inventory_u_i_8cs" startline="32">hitCount</references>
+        <references refid="struct_equipment_stats_1a40d92422bb84c73f61b6f3102da17dfb" compoundref="_equipment_stats_8cs" startline="19">EquipmentStats.Id</references>
+        <references refid="struct_equipment_stats_1a8dc2ea9210642e140167bb1030760f3e" compoundref="_equipment_stats_8cs" startline="35">EquipmentStats.ItemDurability</references>
+        <references refid="class_envirinmant_inventory_u_i_1ae52701576711ba9577be33ea83ac1c27" compoundref="_envirinmant_inventory_u_i_8cs" startline="30">rhits</references>
+        <references refid="class_dropped_item_1a25e2e7c5359d5c6e4d4fc46bb4543665" compoundref="_dropped_item_8cs" startline="7">DroppedItem.Stack</references>
+        <references refid="struct_equipment_stats_1aeb10a54b818a9a8c9c1aec28a00da3ca" compoundref="_equipment_stats_8cs" startline="16">EquipmentStats.Type</references>
+      </memberdef>
+      <memberdef kind="function" id="class_envirinmant_inventory_u_i_1acb48239b76b5bcb5afd8201cfaed20c4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void EnvirinmantInventoryUI.FindItems</definition>
+        <argsstring>()</argsstring>
+        <name>FindItems</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/EnvirinmantInventoryUI.cs" line="215" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/EnvirinmantInventoryUI.cs" bodystart="215" bodyend="239"/>
+        <references refid="class_envirinmant_inventory_u_i_1a68d3e1ade720496a0ccc5e2a3aadf799" compoundref="_envirinmant_inventory_u_i_8cs" startline="169" endline="186">FillInventory</references>
+        <references refid="class_envirinmant_inventory_u_i_1a67d58a375b8a9e15cffc294d92554924" compoundref="_envirinmant_inventory_u_i_8cs" startline="32">hitCount</references>
+        <references refid="class_envirinmant_inventory_u_i_1a9d02f649794158246420f86cda4b4917" compoundref="_envirinmant_inventory_u_i_8cs" startline="27">inventory</references>
+        <references refid="class_envirinmant_inventory_u_i_1a61fc1454f033c905dd20684605be2cbf" compoundref="_envirinmant_inventory_u_i_8cs" startline="18">radiusToFind</references>
+        <references refid="class_envirinmant_inventory_u_i_1a596aa9966d797381062573e0fb34c264" compoundref="_envirinmant_inventory_u_i_8cs" startline="31">rHitFilter</references>
+        <references refid="class_envirinmant_inventory_u_i_1ae52701576711ba9577be33ea83ac1c27" compoundref="_envirinmant_inventory_u_i_8cs" startline="30">rhits</references>
+        <references refid="class_dropped_item_1a25e2e7c5359d5c6e4d4fc46bb4543665" compoundref="_dropped_item_8cs" startline="7">DroppedItem.Stack</references>
+        <referencedby refid="class_envirinmant_inventory_u_i_1a1d2bb2748599f90727b1b487ce2acfd7" compoundref="_envirinmant_inventory_u_i_8cs" startline="273" endline="281">RefreshUI</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_envirinmant_inventory_u_i_1a3e90dd1b1fc49c77da52659c36d82eb8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void EnvirinmantInventoryUI.SetImage</definition>
+        <argsstring>(Transform cell, EquipmentStack stack, bool canDrag)</argsstring>
+        <name>SetImage</name>
+        <param>
+          <type>Transform</type>
+          <declname>cell</declname>
+        </param>
+        <param>
+          <type><ref refid="class_equipment_stack" kindref="compound">EquipmentStack</ref></type>
+          <declname>stack</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>canDrag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/EnvirinmantInventoryUI.cs" line="249" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/EnvirinmantInventoryUI.cs" bodystart="249" bodyend="262"/>
+        <references refid="class_envirinmant_inventory_u_i_1a205b780769a79b1ee9a77cf51a6feb03" compoundref="_envirinmant_inventory_u_i_8cs" startline="12">inventoryItemOriginal</references>
+        <referencedby refid="class_envirinmant_inventory_u_i_1acc99befc435fbf9e4fa4b3b6ee155736" compoundref="_envirinmant_inventory_u_i_8cs" startline="241" endline="247">FillEnvironmantInventoryIcons</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_envirinmant_inventory_u_i_1a1d2bb2748599f90727b1b487ce2acfd7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void EnvirinmantInventoryUI.RefreshUI</definition>
+        <argsstring>()</argsstring>
+        <name>RefreshUI</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/EnvirinmantInventoryUI.cs" line="273" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/EnvirinmantInventoryUI.cs" bodystart="273" bodyend="281"/>
+        <references refid="class_envirinmant_inventory_u_i_1a6af509bb9e6c6d8868c1f67dd99bb5d9" compoundref="_envirinmant_inventory_u_i_8cs" startline="264" endline="271">ClearEnvironmantInventoryIcons</references>
+        <references refid="class_envirinmant_inventory_u_i_1acc99befc435fbf9e4fa4b3b6ee155736" compoundref="_envirinmant_inventory_u_i_8cs" startline="241" endline="247">FillEnvironmantInventoryIcons</references>
+        <references refid="class_envirinmant_inventory_u_i_1acb48239b76b5bcb5afd8201cfaed20c4" compoundref="_envirinmant_inventory_u_i_8cs" startline="215" endline="239">FindItems</references>
+        <referencedby refid="class_envirinmant_inventory_u_i_1abd4a790358b3eaa125d590b15c7b5b2f" compoundref="_envirinmant_inventory_u_i_8cs" startline="96" endline="102">WaitForRefresh</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="309">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="308">
+        <label>EnvirinmantInventoryUI</label>
+        <link refid="class_envirinmant_inventory_u_i"/>
+        <childnode refid="309" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="311">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="310">
+        <label>EnvirinmantInventoryUI</label>
+        <link refid="class_envirinmant_inventory_u_i"/>
+        <childnode refid="311" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/EnvirinmantInventoryUI.cs" line="9" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/EnvirinmantInventoryUI.cs" bodystart="8" bodyend="291"/>
+    <listofallmembers>
+      <member refid="class_envirinmant_inventory_u_i_1ac698ed02149ed5c7d6b281399870a65b" prot="private" virt="non-virtual"><scope>EnvirinmantInventoryUI</scope><name>Awake</name></member>
+      <member refid="class_envirinmant_inventory_u_i_1a8f4802763a33c79dc26b71629800528b" prot="private" virt="non-virtual"><scope>EnvirinmantInventoryUI</scope><name>canRefresh</name></member>
+      <member refid="class_envirinmant_inventory_u_i_1a6af509bb9e6c6d8868c1f67dd99bb5d9" prot="private" virt="non-virtual"><scope>EnvirinmantInventoryUI</scope><name>ClearEnvironmantInventoryIcons</name></member>
+      <member refid="class_envirinmant_inventory_u_i_1ae6117f52e86c12ee7fd2a26589b8b2d8" prot="public" virt="non-virtual"><scope>EnvirinmantInventoryUI</scope><name>ContentToggle_OnDown</name></member>
+      <member refid="class_envirinmant_inventory_u_i_1a04f4063182923218d10c33eaf8d4227c" prot="public" virt="non-virtual"><scope>EnvirinmantInventoryUI</scope><name>ContentToggle_OnUp</name></member>
+      <member refid="class_envirinmant_inventory_u_i_1a753f676d3c8a8946e8515abe6e41b3a0" prot="private" virt="non-virtual"><scope>EnvirinmantInventoryUI</scope><name>cosAngles</name></member>
+      <member refid="class_envirinmant_inventory_u_i_1a91fa826267c5bb02e5c07a27aa20d137" prot="private" virt="non-virtual"><scope>EnvirinmantInventoryUI</scope><name>CreatePoints</name></member>
+      <member refid="class_envirinmant_inventory_u_i_1a207177c4b6229f313e0c600d56dfba91" prot="private" virt="non-virtual"><scope>EnvirinmantInventoryUI</scope><name>CreateSinCosAngles</name></member>
+      <member refid="class_envirinmant_inventory_u_i_1a9db0ace0fb8240705703143c96207d64" prot="private" virt="non-virtual"><scope>EnvirinmantInventoryUI</scope><name>delayBeforeDrawPickUpArea</name></member>
+      <member refid="class_envirinmant_inventory_u_i_1ace4e1a7214884d54097c4e99ae098eec" prot="private" virt="non-virtual"><scope>EnvirinmantInventoryUI</scope><name>draw</name></member>
+      <member refid="class_envirinmant_inventory_u_i_1aa914c887a307bb1170b24bbb3e6b3045" prot="private" virt="non-virtual"><scope>EnvirinmantInventoryUI</scope><name>DrawPickUpArea</name></member>
+      <member refid="class_envirinmant_inventory_u_i_1afe3a4a3f2145f7cbb8bd2baa8fb84737" prot="private" virt="non-virtual"><scope>EnvirinmantInventoryUI</scope><name>envaironmentCells</name></member>
+      <member refid="class_envirinmant_inventory_u_i_1a5d707618fd8d259934c26fb3963357f8" prot="private" virt="non-virtual"><scope>EnvirinmantInventoryUI</scope><name>envaironmentInventory</name></member>
+      <member refid="class_envirinmant_inventory_u_i_1a78072dc1f680668276681ea60789a275" prot="public" virt="non-virtual"><scope>EnvirinmantInventoryUI</scope><name>Fill</name></member>
+      <member refid="class_envirinmant_inventory_u_i_1acc99befc435fbf9e4fa4b3b6ee155736" prot="private" virt="non-virtual"><scope>EnvirinmantInventoryUI</scope><name>FillEnvironmantInventoryIcons</name></member>
+      <member refid="class_envirinmant_inventory_u_i_1a68d3e1ade720496a0ccc5e2a3aadf799" prot="public" virt="non-virtual"><scope>EnvirinmantInventoryUI</scope><name>FillInventory</name></member>
+      <member refid="class_envirinmant_inventory_u_i_1acb48239b76b5bcb5afd8201cfaed20c4" prot="public" virt="non-virtual"><scope>EnvirinmantInventoryUI</scope><name>FindItems</name></member>
+      <member refid="class_envirinmant_inventory_u_i_1a67d58a375b8a9e15cffc294d92554924" prot="private" virt="non-virtual"><scope>EnvirinmantInventoryUI</scope><name>hitCount</name></member>
+      <member refid="class_envirinmant_inventory_u_i_1a6e66b605d092395812f43280ca33ceb2" prot="public" virt="non-virtual"><scope>EnvirinmantInventoryUI</scope><name>Instance</name></member>
+      <member refid="class_envirinmant_inventory_u_i_1a9d02f649794158246420f86cda4b4917" prot="private" virt="non-virtual"><scope>EnvirinmantInventoryUI</scope><name>inventory</name></member>
+      <member refid="class_envirinmant_inventory_u_i_1a205b780769a79b1ee9a77cf51a6feb03" prot="private" virt="non-virtual"><scope>EnvirinmantInventoryUI</scope><name>inventoryItemOriginal</name></member>
+      <member refid="class_envirinmant_inventory_u_i_1acbbf78076f877be85a1e4a0ae74787a8" prot="private" virt="non-virtual"><scope>EnvirinmantInventoryUI</scope><name>lineRenderer</name></member>
+      <member refid="class_envirinmant_inventory_u_i_1a0eb2ed928cce56da4648f0e6652dea26" prot="private" virt="non-virtual"><scope>EnvirinmantInventoryUI</scope><name>maxRhitsCount</name></member>
+      <member refid="class_envirinmant_inventory_u_i_1aa116fe7076e09a3300de51ae8c191339" prot="private" virt="non-virtual"><scope>EnvirinmantInventoryUI</scope><name>OnDestroy</name></member>
+      <member refid="class_envirinmant_inventory_u_i_1a8dc32bccb1f74c40f278702dd1c7d8cb" prot="private" virt="non-virtual"><scope>EnvirinmantInventoryUI</scope><name>OnDrawGizmos</name></member>
+      <member refid="class_envirinmant_inventory_u_i_1a9bf125b3eecfde16b932c6f8fbc414e3" prot="public" virt="non-virtual"><scope>EnvirinmantInventoryUI</scope><name>PickUpEquipment</name></member>
+      <member refid="class_envirinmant_inventory_u_i_1a61fc1454f033c905dd20684605be2cbf" prot="private" virt="non-virtual"><scope>EnvirinmantInventoryUI</scope><name>radiusToFind</name></member>
+      <member refid="class_envirinmant_inventory_u_i_1aa1b6945cef511b1921d11be633d73198" prot="public" virt="non-virtual"><scope>EnvirinmantInventoryUI</scope><name>RadiusToFind</name></member>
+      <member refid="class_envirinmant_inventory_u_i_1a52239b15a703cc9ea7b3bf638ed53366" prot="private" virt="non-virtual"><scope>EnvirinmantInventoryUI</scope><name>RefreshOnUnitDeath</name></member>
+      <member refid="class_envirinmant_inventory_u_i_1a1d2bb2748599f90727b1b487ce2acfd7" prot="public" virt="non-virtual"><scope>EnvirinmantInventoryUI</scope><name>RefreshUI</name></member>
+      <member refid="class_envirinmant_inventory_u_i_1aad1a332e6713e0859dfb34af42a4fd9f" prot="private" virt="non-virtual"><scope>EnvirinmantInventoryUI</scope><name>rHitCirclreAngle</name></member>
+      <member refid="class_envirinmant_inventory_u_i_1a697d6e0ad9934930870c44fba84afe72" prot="private" virt="non-virtual"><scope>EnvirinmantInventoryUI</scope><name>rHitCirclreSegmentCount</name></member>
+      <member refid="class_envirinmant_inventory_u_i_1a68d83229ef1472fe2dc9edf8c562e1b5" prot="private" virt="non-virtual"><scope>EnvirinmantInventoryUI</scope><name>rHitCirclreSegments</name></member>
+      <member refid="class_envirinmant_inventory_u_i_1a596aa9966d797381062573e0fb34c264" prot="private" virt="non-virtual"><scope>EnvirinmantInventoryUI</scope><name>rHitFilter</name></member>
+      <member refid="class_envirinmant_inventory_u_i_1ae52701576711ba9577be33ea83ac1c27" prot="private" virt="non-virtual"><scope>EnvirinmantInventoryUI</scope><name>rhits</name></member>
+      <member refid="class_envirinmant_inventory_u_i_1a3e90dd1b1fc49c77da52659c36d82eb8" prot="public" virt="non-virtual"><scope>EnvirinmantInventoryUI</scope><name>SetImage</name></member>
+      <member refid="class_envirinmant_inventory_u_i_1a3b1f02de68398ea3f765cb05d8f8cd55" prot="private" virt="non-virtual"><scope>EnvirinmantInventoryUI</scope><name>sinAngles</name></member>
+      <member refid="class_envirinmant_inventory_u_i_1aa5ec323f61bbe2dd1c378e1c2a0c3812" prot="private" virt="non-virtual"><scope>EnvirinmantInventoryUI</scope><name>Start</name></member>
+      <member refid="class_envirinmant_inventory_u_i_1a9088cbdf1b67ccc0edc1f19feae81511" prot="private" virt="non-virtual"><scope>EnvirinmantInventoryUI</scope><name>timeToRefresh</name></member>
+      <member refid="class_envirinmant_inventory_u_i_1a00d0348249dc51fa5193cc9a6c67d3b8" prot="private" virt="non-virtual"><scope>EnvirinmantInventoryUI</scope><name>toggleDown</name></member>
+      <member refid="class_envirinmant_inventory_u_i_1a89bbb26c5f15779212cd763364d24dce" prot="private" virt="non-virtual"><scope>EnvirinmantInventoryUI</scope><name>Update</name></member>
+      <member refid="class_envirinmant_inventory_u_i_1abd4a790358b3eaa125d590b15c7b5b2f" prot="private" virt="non-virtual"><scope>EnvirinmantInventoryUI</scope><name>WaitForRefresh</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

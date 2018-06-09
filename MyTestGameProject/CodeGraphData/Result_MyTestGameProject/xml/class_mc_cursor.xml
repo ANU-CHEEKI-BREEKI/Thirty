@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_mc_cursor" kind="class" prot="public">
+    <compoundname>McCursor</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_mc_cursor_1aba4d93a3fe2caded82de255b705fca95" prot="private" static="no" mutable="no">
+        <type>Texture2D</type>
+        <definition>Texture2D McCursor.handCursorTexture</definition>
+        <argsstring></argsstring>
+        <name>handCursorTexture</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McCursor.cs" line="7" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McCursor.cs" bodystart="7" bodyend="-1"/>
+        <referencedby refid="class_mc_cursor_1a63860029f9917736e7d33fb762992c96" compoundref="_mc_cursor_8cs" startline="22" endline="29">SetHandCursor</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_mc_cursor_1ad75f87fe4ebdab110688bc70e8475566" prot="private" static="no" mutable="no">
+        <type>Texture2D</type>
+        <definition>Texture2D McCursor.brushCursorTexture</definition>
+        <argsstring></argsstring>
+        <name>brushCursorTexture</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McCursor.cs" line="8" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McCursor.cs" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_mc_cursor_1ae5e26e907aa16f18ad97b370f0626af2" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void McCursor.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McCursor.cs" line="11" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McCursor.cs" bodystart="11" bodyend="14"/>
+        <references refid="class_mc_cursor_1a0dfd5cac835297a3bf5c830a7c6dc933" compoundref="_mc_cursor_8cs" startline="31" endline="40">SetBrushCursor</references>
+      </memberdef>
+      <memberdef kind="function" id="class_mc_cursor_1ad0a85d9e26fa94aa02d7f33587b260de" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void McCursor.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McCursor.cs" line="17" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McCursor.cs" bodystart="17" bodyend="20"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_mc_cursor_1a63860029f9917736e7d33fb762992c96" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void McCursor.SetHandCursor</definition>
+        <argsstring>()</argsstring>
+        <name>SetHandCursor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McCursor.cs" line="22" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McCursor.cs" bodystart="22" bodyend="29"/>
+        <references refid="class_mc_cursor_1aba4d93a3fe2caded82de255b705fca95" compoundref="_mc_cursor_8cs" startline="7">handCursorTexture</references>
+      </memberdef>
+      <memberdef kind="function" id="class_mc_cursor_1a0dfd5cac835297a3bf5c830a7c6dc933" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void McCursor.SetBrushCursor</definition>
+        <argsstring>()</argsstring>
+        <name>SetBrushCursor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McCursor.cs" line="31" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McCursor.cs" bodystart="31" bodyend="40"/>
+        <references refid="class_mc_cursor_1a579a49d7751f110d3af967acf93148ae" compoundref="_mc_cursor_8cs" startline="42" endline="45">SetDefaultCursor</references>
+        <referencedby refid="class_mc_cursor_1ae5e26e907aa16f18ad97b370f0626af2" compoundref="_mc_cursor_8cs" startline="11" endline="14">Start</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_mc_cursor_1a579a49d7751f110d3af967acf93148ae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void McCursor.SetDefaultCursor</definition>
+        <argsstring>()</argsstring>
+        <name>SetDefaultCursor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McCursor.cs" line="42" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McCursor.cs" bodystart="42" bodyend="45"/>
+        <referencedby refid="class_mc_cursor_1a0dfd5cac835297a3bf5c830a7c6dc933" compoundref="_mc_cursor_8cs" startline="31" endline="40">SetBrushCursor</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="618">
+        <label>McCursor</label>
+        <link refid="class_mc_cursor"/>
+        <childnode refid="619" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="619">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="620">
+        <label>McCursor</label>
+        <link refid="class_mc_cursor"/>
+        <childnode refid="621" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="621">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McCursor.cs" line="6" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McCursor.cs" bodystart="5" bodyend="47"/>
+    <listofallmembers>
+      <member refid="class_mc_cursor_1ad75f87fe4ebdab110688bc70e8475566" prot="private" virt="non-virtual"><scope>McCursor</scope><name>brushCursorTexture</name></member>
+      <member refid="class_mc_cursor_1aba4d93a3fe2caded82de255b705fca95" prot="private" virt="non-virtual"><scope>McCursor</scope><name>handCursorTexture</name></member>
+      <member refid="class_mc_cursor_1a0dfd5cac835297a3bf5c830a7c6dc933" prot="public" virt="non-virtual"><scope>McCursor</scope><name>SetBrushCursor</name></member>
+      <member refid="class_mc_cursor_1a579a49d7751f110d3af967acf93148ae" prot="public" virt="non-virtual"><scope>McCursor</scope><name>SetDefaultCursor</name></member>
+      <member refid="class_mc_cursor_1a63860029f9917736e7d33fb762992c96" prot="public" virt="non-virtual"><scope>McCursor</scope><name>SetHandCursor</name></member>
+      <member refid="class_mc_cursor_1ae5e26e907aa16f18ad97b370f0626af2" prot="private" virt="non-virtual"><scope>McCursor</scope><name>Start</name></member>
+      <member refid="class_mc_cursor_1ad0a85d9e26fa94aa02d7f33587b260de" prot="private" virt="non-virtual"><scope>McCursor</scope><name>Update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

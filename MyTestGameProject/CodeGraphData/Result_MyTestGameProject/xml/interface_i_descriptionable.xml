@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="interface_i_descriptionable" kind="interface" prot="public">
+    <compoundname>IDescriptionable</compoundname>
+    <derivedcompoundref refid="struct_equipment_stats" prot="public" virt="non-virtual">EquipmentStats</derivedcompoundref>
+    <derivedcompoundref refid="class_skill" prot="public" virt="non-virtual">Skill</derivedcompoundref>
+    <derivedcompoundref refid="struct_skill_arrows_valley_1_1_arrow_walley_stats" prot="public" virt="non-virtual">SkillArrowsValley.ArrowWalleyStats</derivedcompoundref>
+    <derivedcompoundref refid="class_skill_stack" prot="public" virt="non-virtual">SkillStack</derivedcompoundref>
+    <derivedcompoundref refid="class_skill_upgrade_button" prot="public" virt="non-virtual">SkillUpgradeButton</derivedcompoundref>
+    <derivedcompoundref refid="class_squad_property_indicator" prot="public" virt="non-virtual">SquadPropertyIndicator</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_i_descriptionable_1a33be6e4687ad788d949f989aaadad45d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_description" kindref="compound">Description</ref></type>
+        <definition>Description IDescriptionable.GetDescription</definition>
+        <argsstring>()</argsstring>
+        <name>GetDescription</name>
+        <reimplementedby refid="struct_skill_arrows_valley_1_1_arrow_walley_stats_1aa41c15eb6177138bc53a22c3863d9387">GetDescription</reimplementedby>
+        <reimplementedby refid="class_skill_stack_1ae938cdafc7ad4643fb6a9c953b892970">GetDescription</reimplementedby>
+        <reimplementedby refid="class_squad_property_indicator_1af62c0fe843fc1a0167fb402d3944f05c">GetDescription</reimplementedby>
+        <reimplementedby refid="class_skill_1a3e12e9d4b70a40205da94526081c67fb">GetDescription</reimplementedby>
+        <reimplementedby refid="struct_equipment_stats_1aa5808678f48da4fbb5d2b4f1d162a781">GetDescription</reimplementedby>
+        <reimplementedby refid="class_skill_upgrade_button_1a9e2143326595f1001d28b53cdb12f0c9">GetDescription</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/IDescriptionable.cs" line="7" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="497">
+        <label>SkillArrowsValley.ArrowWalleyStats</label>
+        <link refid="struct_skill_arrows_valley_1_1_arrow_walley_stats"/>
+        <childnode refid="492" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="495">
+        <label>SkillArrowsValley</label>
+        <link refid="class_skill_arrows_valley"/>
+        <childnode refid="494" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="492">
+        <label>IDescriptionable</label>
+        <link refid="interface_i_descriptionable"/>
+      </node>
+      <node id="496">
+        <label>SkillCharge</label>
+        <link refid="class_skill_charge"/>
+        <childnode refid="494" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="499">
+        <label>SkillUpgradeButton</label>
+        <link refid="class_skill_upgrade_button"/>
+        <childnode refid="492" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="498">
+        <label>SkillStack</label>
+        <link refid="class_skill_stack"/>
+        <childnode refid="492" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="493">
+        <label>EquipmentStats</label>
+        <link refid="struct_equipment_stats"/>
+        <childnode refid="492" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="494">
+        <label>Skill</label>
+        <link refid="class_skill"/>
+        <childnode refid="492" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="500">
+        <label>SquadPropertyIndicator</label>
+        <link refid="class_squad_property_indicator"/>
+        <childnode refid="492" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/IDescriptionable.cs" line="6" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/IDescriptionable.cs" bodystart="5" bodyend="8"/>
+    <listofallmembers>
+      <member refid="interface_i_descriptionable_1a33be6e4687ad788d949f989aaadad45d" prot="public" virt="non-virtual"><scope>IDescriptionable</scope><name>GetDescription</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

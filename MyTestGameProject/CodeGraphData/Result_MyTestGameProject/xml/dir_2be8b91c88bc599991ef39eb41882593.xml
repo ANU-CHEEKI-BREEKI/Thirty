@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_2be8b91c88bc599991ef39eb41882593" kind="dir">
+    <compoundname>D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor</compoundname>
+    <innerfile refid="_mc_block_chooser_direction_toggle_flag_8cs">McBlockChooserDirectionToggleFlag.cs</innerfile>
+    <innerfile refid="_mc_block_entry_chooser_8cs">McBlockEntryChooser.cs</innerfile>
+    <innerfile refid="_mc_camera_controller_8cs">McCameraController.cs</innerfile>
+    <innerfile refid="_mc_cursor_8cs">McCursor.cs</innerfile>
+    <innerfile refid="_mc_exit_direction_chooser_8cs">McExitDirectionChooser.cs</innerfile>
+    <innerfile refid="_mc_file_manager_8cs">McFileManager.cs</innerfile>
+    <innerfile refid="_mc_grid_8cs">McGrid.cs</innerfile>
+    <innerfile refid="_mc_grid_construct_controller_8cs">McGridConstructController.cs</innerfile>
+    <innerfile refid="_mc_hider_8cs">McHider.cs</innerfile>
+    <innerfile refid="_mc_slider_value_8cs">McSliderValue.cs</innerfile>
+    <innerfile refid="_mc_slider_wheel_controller_8cs">McSliderWheelController.cs</innerfile>
+    <innerfile refid="_mc_toggle_type_of_block_8cs">McToggleTypeOfBlock.cs</innerfile>
+    <innerfile refid="_mc_ui_list_item_8cs">McUiListItem.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/"/>
+  </compounddef>
+</doxygen>

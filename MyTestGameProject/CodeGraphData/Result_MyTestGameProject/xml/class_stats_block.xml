@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_stats_block" kind="class" prot="public">
+    <compoundname>StatsBlock</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_stats_block_1a8862be3e6014b5230c9b525448154553" prot="private" static="no" mutable="no">
+        <type>TextMeshProUGUI</type>
+        <definition>TextMeshProUGUI StatsBlock.Name</definition>
+        <argsstring></argsstring>
+        <name>Name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/StatsBlock.cs" line="9" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/StatsBlock.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_stats_block_1a0a337579e44e12fa2a8f12bc63e1bc4d" prot="private" static="no" mutable="no">
+        <type>TextMeshProUGUI</type>
+        <definition>TextMeshProUGUI StatsBlock.Value</definition>
+        <argsstring></argsstring>
+        <name>Value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/StatsBlock.cs" line="10" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/StatsBlock.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_stats_block_1abc454b7b3a44b10089c71ddecc2fca90" prot="private" static="no" mutable="no">
+        <type>Color</type>
+        <definition>Color StatsBlock.positiveValueColor</definition>
+        <argsstring></argsstring>
+        <name>positiveValueColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/StatsBlock.cs" line="12" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/StatsBlock.cs" bodystart="12" bodyend="-1"/>
+        <referencedby refid="class_stats_block_1a040ca3904657c7eb050e9aa81cdbe77e" compoundref="_stats_block_8cs" startline="23" endline="31">SetValue</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_stats_block_1a2092df76a610692550fa4f1607832cb2" prot="private" static="no" mutable="no">
+        <type>Color</type>
+        <definition>Color StatsBlock.negativeValueColor</definition>
+        <argsstring></argsstring>
+        <name>negativeValueColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/StatsBlock.cs" line="13" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/StatsBlock.cs" bodystart="13" bodyend="-1"/>
+        <referencedby refid="class_stats_block_1a040ca3904657c7eb050e9aa81cdbe77e" compoundref="_stats_block_8cs" startline="23" endline="31">SetValue</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_stats_block_1a087a261d5edcc9304b6419966227d0b1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void StatsBlock.SetName</definition>
+        <argsstring>(string name)</argsstring>
+        <name>SetName</name>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/StatsBlock.cs" line="15" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/StatsBlock.cs" bodystart="15" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_stats_block_1a040ca3904657c7eb050e9aa81cdbe77e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void StatsBlock.SetValue</definition>
+        <argsstring>(string value, bool positive=true)</argsstring>
+        <name>SetValue</name>
+        <param>
+          <type>string</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>positive</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/StatsBlock.cs" line="23" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/StatsBlock.cs" bodystart="23" bodyend="31"/>
+        <references refid="class_stats_block_1a2092df76a610692550fa4f1607832cb2" compoundref="_stats_block_8cs" startline="13">negativeValueColor</references>
+        <references refid="class_stats_block_1abc454b7b3a44b10089c71ddecc2fca90" compoundref="_stats_block_8cs" startline="12">positiveValueColor</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1123">
+        <label>StatsBlock</label>
+        <link refid="class_stats_block"/>
+        <childnode refid="1124" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1124">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1125">
+        <label>StatsBlock</label>
+        <link refid="class_stats_block"/>
+        <childnode refid="1126" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1126">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/StatsBlock.cs" line="8" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/StatsBlock.cs" bodystart="7" bodyend="32"/>
+    <listofallmembers>
+      <member refid="class_stats_block_1a8862be3e6014b5230c9b525448154553" prot="private" virt="non-virtual"><scope>StatsBlock</scope><name>Name</name></member>
+      <member refid="class_stats_block_1a2092df76a610692550fa4f1607832cb2" prot="private" virt="non-virtual"><scope>StatsBlock</scope><name>negativeValueColor</name></member>
+      <member refid="class_stats_block_1abc454b7b3a44b10089c71ddecc2fca90" prot="private" virt="non-virtual"><scope>StatsBlock</scope><name>positiveValueColor</name></member>
+      <member refid="class_stats_block_1a087a261d5edcc9304b6419966227d0b1" prot="public" virt="non-virtual"><scope>StatsBlock</scope><name>SetName</name></member>
+      <member refid="class_stats_block_1a040ca3904657c7eb050e9aa81cdbe77e" prot="public" virt="non-virtual"><scope>StatsBlock</scope><name>SetValue</name></member>
+      <member refid="class_stats_block_1a0a337579e44e12fa2a8f12bc63e1bc4d" prot="private" virt="non-virtual"><scope>StatsBlock</scope><name>Value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

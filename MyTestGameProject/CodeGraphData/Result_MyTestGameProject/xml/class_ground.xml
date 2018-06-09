@@ -1,0 +1,803 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_ground" kind="class" prot="public">
+    <compoundname>Ground</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_ground_1a372f802f5c3fad73c558e3f1b9c8ac0e" prot="private" static="no" mutable="no">
+        <type>const string</type>
+        <definition>const string Ground.PATH_TO_PREFABS</definition>
+        <argsstring></argsstring>
+        <name>PATH_TO_PREFABS</name>
+        <initializer>= @&quot;Prefabs\MapBlocks\&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Ground.cs" line="10" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Ground.cs" bodystart="10" bodyend="-1"/>
+        <referencedby refid="class_ground_1a7f9246ff763af4ab468ade1cd36c89cd" compoundref="_ground_8cs" startline="440" endline="453">InstantiateMapBlockSprite</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ground_1a493c70d91948169717af161ce8704ea4" prot="private" static="no" mutable="no">
+        <type>const string</type>
+        <definition>const string Ground.PATH_TO_GRIDS</definition>
+        <argsstring></argsstring>
+        <name>PATH_TO_GRIDS</name>
+        <initializer>= @&quot;TextAssets\MapBlockGrids\Current\&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Ground.cs" line="11" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Ground.cs" bodystart="11" bodyend="-1"/>
+        <referencedby refid="class_ground_1a7a98426f8b61f2fdddb4bcc8bea0c8f4" compoundref="_ground_8cs" startline="97" endline="148">LoadMapBlocks</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ground_1af2f5f0db5a613c59084da9513bef08ba" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Ground.rowCountOfBlocks</definition>
+        <argsstring></argsstring>
+        <name>rowCountOfBlocks</name>
+        <initializer>= 5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Ground.cs" line="15" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Ground.cs" bodystart="15" bodyend="-1"/>
+        <referencedby refid="class_ground_1ae1e260633e2bc8ffb04a832958a3f83a" compoundref="_ground_8cs" startline="150" endline="264">GeneradeMap</referencedby>
+        <referencedby refid="class_ground_1a655b58afb09bb1d807fc6ea261cb2268" compoundref="_ground_8cs" startline="266" endline="295">GetEntranceAndExit</referencedby>
+        <referencedby refid="class_ground_1a55d85ceb5d5737e22bf053a60654539b" compoundref="_ground_8cs" startline="297" endline="349">GetExitDirection</referencedby>
+        <referencedby refid="class_ground_1a67925fbb09e492d80017e6fc0d59cea4" compoundref="_ground_8cs" startline="68" endline="95">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ground_1a668628e76f30db97e3b9f24ebde30a94" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Ground.colCountOfBlocks</definition>
+        <argsstring></argsstring>
+        <name>colCountOfBlocks</name>
+        <initializer>= 6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Ground.cs" line="17" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Ground.cs" bodystart="17" bodyend="-1"/>
+        <referencedby refid="class_ground_1ae1e260633e2bc8ffb04a832958a3f83a" compoundref="_ground_8cs" startline="150" endline="264">GeneradeMap</referencedby>
+        <referencedby refid="class_ground_1a655b58afb09bb1d807fc6ea261cb2268" compoundref="_ground_8cs" startline="266" endline="295">GetEntranceAndExit</referencedby>
+        <referencedby refid="class_ground_1a55d85ceb5d5737e22bf053a60654539b" compoundref="_ground_8cs" startline="297" endline="349">GetExitDirection</referencedby>
+        <referencedby refid="class_ground_1a67925fbb09e492d80017e6fc0d59cea4" compoundref="_ground_8cs" startline="68" endline="95">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ground_1a028b22e3989247bf3231f8d94e53356a" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Ground.seed</definition>
+        <argsstring></argsstring>
+        <name>seed</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Ground.cs" line="20" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Ground.cs" bodystart="20" bodyend="-1"/>
+        <referencedby refid="class_ground_1ae1e260633e2bc8ffb04a832958a3f83a" compoundref="_ground_8cs" startline="150" endline="264">GeneradeMap</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ground_1a34a97d0380c4bd5bfe5ac77ae216febe" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Ground.createRandom</definition>
+        <argsstring></argsstring>
+        <name>createRandom</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Ground.cs" line="21" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Ground.cs" bodystart="21" bodyend="-1"/>
+        <referencedby refid="class_ground_1ae1e260633e2bc8ffb04a832958a3f83a" compoundref="_ground_8cs" startline="150" endline="264">GeneradeMap</referencedby>
+        <referencedby refid="class_ground_1a67925fbb09e492d80017e6fc0d59cea4" compoundref="_ground_8cs" startline="68" endline="95">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ground_1af1ed57a121ea48189f2c4b501d00f9aa" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Ground.rightWallsChanse</definition>
+        <argsstring></argsstring>
+        <name>rightWallsChanse</name>
+        <initializer>= 0.5f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Ground.cs" line="22" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Ground.cs" bodystart="22" bodyend="-1"/>
+        <referencedby refid="class_ground_1ae1e260633e2bc8ffb04a832958a3f83a" compoundref="_ground_8cs" startline="150" endline="264">GeneradeMap</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ground_1a4a6b7ec1ab84f3a7206732709f142789" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Ground.topWallsChanse</definition>
+        <argsstring></argsstring>
+        <name>topWallsChanse</name>
+        <initializer>= 0.5f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Ground.cs" line="23" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Ground.cs" bodystart="23" bodyend="-1"/>
+        <referencedby refid="class_ground_1ae1e260633e2bc8ffb04a832958a3f83a" compoundref="_ground_8cs" startline="150" endline="264">GeneradeMap</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ground_1a75891bcef0304e8911ae3eca1c7af8d6" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Ground.willHaveLoops</definition>
+        <argsstring></argsstring>
+        <name>willHaveLoops</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Ground.cs" line="24" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Ground.cs" bodystart="24" bodyend="-1"/>
+        <referencedby refid="class_ground_1ae1e260633e2bc8ffb04a832958a3f83a" compoundref="_ground_8cs" startline="150" endline="264">GeneradeMap</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ground_1ac9df8bf397aeeaeb3646941e5efd6d2a" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Ground.exitOnColPercentOfMap</definition>
+        <argsstring></argsstring>
+        <name>exitOnColPercentOfMap</name>
+        <initializer>= 50</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Ground.cs" line="27" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Ground.cs" bodystart="27" bodyend="-1"/>
+        <referencedby refid="class_ground_1a655b58afb09bb1d807fc6ea261cb2268" compoundref="_ground_8cs" startline="266" endline="295">GetEntranceAndExit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ground_1ae20fb1d851fbc9ccb6ccf7ad38ac31b8" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Ground.exitOnRowPercentOfMap</definition>
+        <argsstring></argsstring>
+        <name>exitOnRowPercentOfMap</name>
+        <initializer>= 50</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Ground.cs" line="28" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Ground.cs" bodystart="28" bodyend="-1"/>
+        <referencedby refid="class_ground_1a655b58afb09bb1d807fc6ea261cb2268" compoundref="_ground_8cs" startline="266" endline="295">GetEntranceAndExit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ground_1a6f7de706ca0073fcc10413e7465578cb" prot="private" static="no" mutable="no">
+        <type>Camera</type>
+        <definition>Camera Ground.minimapCamera</definition>
+        <argsstring></argsstring>
+        <name>minimapCamera</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Ground.cs" line="30" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Ground.cs" bodystart="30" bodyend="-1"/>
+        <referencedby refid="class_ground_1a67925fbb09e492d80017e6fc0d59cea4" compoundref="_ground_8cs" startline="68" endline="95">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ground_1a55de342577c8503162eb86867d78accd" prot="private" static="no" mutable="no">
+        <type>bool[][]</type>
+        <definition>bool [][] Ground.rightWalls</definition>
+        <argsstring></argsstring>
+        <name>rightWalls</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Ground.cs" line="32" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Ground.cs" bodystart="32" bodyend="-1"/>
+        <referencedby refid="class_ground_1ae1e260633e2bc8ffb04a832958a3f83a" compoundref="_ground_8cs" startline="150" endline="264">GeneradeMap</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ground_1a127198058a3ef81d0e7acd62b026b841" prot="private" static="no" mutable="no">
+        <type>bool[][]</type>
+        <definition>bool [][] Ground.topWalls</definition>
+        <argsstring></argsstring>
+        <name>topWalls</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Ground.cs" line="33" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Ground.cs" bodystart="33" bodyend="-1"/>
+        <referencedby refid="class_ground_1ae1e260633e2bc8ffb04a832958a3f83a" compoundref="_ground_8cs" startline="150" endline="264">GeneradeMap</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ground_1ae13e121ce0be2f3fb393c661a33fc2cc" prot="private" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_same_blocks_container" kindref="compound">SameBlocksContainer</ref> &gt;</type>
+        <definition>List&lt;SameBlocksContainer&gt; Ground.blockContainers</definition>
+        <argsstring></argsstring>
+        <name>blockContainers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Ground.cs" line="43" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Ground.cs" bodystart="43" bodyend="-1"/>
+        <referencedby refid="class_ground_1ab9dca02151705dbe6ed96be9e4e26496" compoundref="_ground_8cs" startline="360" endline="438">FindMapBlock</referencedby>
+        <referencedby refid="class_ground_1a7a98426f8b61f2fdddb4bcc8bea0c8f4" compoundref="_ground_8cs" startline="97" endline="148">LoadMapBlocks</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ground_1a02e90362958f592320cea0f378de7cf1" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Ground.indexType</definition>
+        <argsstring></argsstring>
+        <name>indexType</name>
+        <initializer>= -1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Ground.cs" line="45" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Ground.cs" bodystart="45" bodyend="-1"/>
+        <referencedby refid="class_ground_1ab9dca02151705dbe6ed96be9e4e26496" compoundref="_ground_8cs" startline="360" endline="438">FindMapBlock</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ground_1a7adbe7164a1e10007bd43c6cb44ccc6d" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Ground.indexSame</definition>
+        <argsstring></argsstring>
+        <name>indexSame</name>
+        <initializer>= -1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Ground.cs" line="46" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Ground.cs" bodystart="46" bodyend="-1"/>
+        <referencedby refid="class_ground_1ab9dca02151705dbe6ed96be9e4e26496" compoundref="_ground_8cs" startline="360" endline="438">FindMapBlock</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ground_1afa51dbea99627b008855004ecf606465" prot="private" static="no" mutable="no">
+        <type>System.Random</type>
+        <definition>System.Random Ground.rnd</definition>
+        <argsstring></argsstring>
+        <name>rnd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Ground.cs" line="48" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Ground.cs" bodystart="48" bodyend="-1"/>
+        <referencedby refid="class_ground_1a67925fbb09e492d80017e6fc0d59cea4" compoundref="_ground_8cs" startline="68" endline="95">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ground_1a918d7bfb2bc747b3f1c0aaeda1453c63" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Ground.fullCountOfBlock</definition>
+        <argsstring></argsstring>
+        <name>fullCountOfBlock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Ground.cs" line="50" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Ground.cs" bodystart="50" bodyend="-1"/>
+        <referencedby refid="class_ground_1ae1e260633e2bc8ffb04a832958a3f83a" compoundref="_ground_8cs" startline="150" endline="264">GeneradeMap</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ground_1a40ba3460472cf2430d916e523012dfa6" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Ground.loadedBlockCount</definition>
+        <argsstring></argsstring>
+        <name>loadedBlockCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Ground.cs" line="51" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Ground.cs" bodystart="51" bodyend="-1"/>
+        <referencedby refid="class_ground_1ae1e260633e2bc8ffb04a832958a3f83a" compoundref="_ground_8cs" startline="150" endline="264">GeneradeMap</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ground_1a70f99c1e411608e02b9a84955aa8f12a" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Ground.progress</definition>
+        <argsstring></argsstring>
+        <name>progress</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Ground.cs" line="53" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Ground.cs" bodystart="53" bodyend="-1"/>
+        <referencedby refid="class_ground_1a723cb30e3bae5e225ed1a9f92a062492" compoundref="_ground_8cs" startline="61" endline="66">Awake</referencedby>
+        <referencedby refid="class_ground_1ae1e260633e2bc8ffb04a832958a3f83a" compoundref="_ground_8cs" startline="150" endline="264">GeneradeMap</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ground_1a88d87eb077faec967e071a5f0dff81d1" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Ground.generationIsDone</definition>
+        <argsstring></argsstring>
+        <name>generationIsDone</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Ground.cs" line="56" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Ground.cs" bodystart="56" bodyend="-1"/>
+        <referencedby refid="class_ground_1a723cb30e3bae5e225ed1a9f92a062492" compoundref="_ground_8cs" startline="61" endline="66">Awake</referencedby>
+        <referencedby refid="class_ground_1ae1e260633e2bc8ffb04a832958a3f83a" compoundref="_ground_8cs" startline="150" endline="264">GeneradeMap</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_ground_1a682aa4de76f44144be5ec485ee9fe613" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_ground" kindref="compound">Ground</ref></type>
+        <definition>Ground Ground.Instance</definition>
+        <argsstring></argsstring>
+        <name>Instance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Ground.cs" line="13" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Ground.cs" bodystart="13" bodyend="-1"/>
+        <referencedby refid="class_ground_1a723cb30e3bae5e225ed1a9f92a062492" compoundref="_ground_8cs" startline="61" endline="66">Awake</referencedby>
+        <referencedby refid="class_exit_1a9d27e1c5450a56180701da7ed4462350" compoundref="_exit_8cs" startline="67" endline="80">Exit.OnTriggerEnter2D</referencedby>
+        <referencedby refid="class_exit_1a53613f606864b194b23ecb82f1be78e7" compoundref="_exit_8cs" startline="82" endline="95">Exit.OnTriggerExit2D</referencedby>
+        <referencedby refid="class_progress_circle_1a530caf9ddd11e3f5e49b453bec71907d" compoundref="_progress_circle_8cs" startline="29" endline="53">ProgressCircle.Running</referencedby>
+        <referencedby refid="class_player_squad_path_finder_controller_1ac83070996eb9c85701fa92b42070c648" compoundref="_player_squad_path_finder_controller_8cs" startline="33" endline="44">PlayerSquadPathFinderController.Start</referencedby>
+        <referencedby refid="class_player_squad_path_finder_controller_1ab80ba8abaa0d312a85c41614ca4be146" compoundref="_player_squad_path_finder_controller_8cs" startline="149" endline="173">PlayerSquadPathFinderController.TextureToWorldPosition</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_ground_1a4587daf6f5efbee79a00724a7d906853" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>int</type>
+        <definition>int Ground.RowCountOfBlocks</definition>
+        <argsstring></argsstring>
+        <name>RowCountOfBlocks</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Ground.cs" line="16" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Ground.cs" bodystart="16" bodyend="-1"/>
+        <referencedby refid="class_ai_squad_controller_1a884586ff08b60c2ee405902e8313abdc" compoundref="_ai_squad_controller_8cs" startline="181" endline="223">AiSquadController.GoTo</referencedby>
+        <referencedby refid="class_player_squad_path_finder_controller_1a16d7e9b844dc620e9f1ff5f7713b8c59" compoundref="_player_squad_path_finder_controller_8cs" startline="71" endline="147">PlayerSquadPathFinderController.OnPointerUp</referencedby>
+        <referencedby refid="class_player_squad_controller_1a14624c20b184262769b880804049fb0b" compoundref="_player_squad_controller_8cs" startline="216" endline="297">PlayerSquadController.OnPointerUp</referencedby>
+        <referencedby refid="class_player_squad_path_finder_controller_1ab80ba8abaa0d312a85c41614ca4be146" compoundref="_player_squad_path_finder_controller_8cs" startline="149" endline="173">PlayerSquadPathFinderController.TextureToWorldPosition</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_ground_1a51db3f48d60129133133b200d30453de" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>int</type>
+        <definition>int Ground.ColCountOfBlocks</definition>
+        <argsstring></argsstring>
+        <name>ColCountOfBlocks</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Ground.cs" line="18" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Ground.cs" bodystart="18" bodyend="-1"/>
+        <referencedby refid="class_ai_squad_controller_1a884586ff08b60c2ee405902e8313abdc" compoundref="_ai_squad_controller_8cs" startline="181" endline="223">AiSquadController.GoTo</referencedby>
+        <referencedby refid="class_player_squad_path_finder_controller_1a16d7e9b844dc620e9f1ff5f7713b8c59" compoundref="_player_squad_path_finder_controller_8cs" startline="71" endline="147">PlayerSquadPathFinderController.OnPointerUp</referencedby>
+        <referencedby refid="class_player_squad_controller_1a14624c20b184262769b880804049fb0b" compoundref="_player_squad_controller_8cs" startline="216" endline="297">PlayerSquadController.OnPointerUp</referencedby>
+        <referencedby refid="class_player_squad_path_finder_controller_1ab80ba8abaa0d312a85c41614ca4be146" compoundref="_player_squad_path_finder_controller_8cs" startline="149" endline="173">PlayerSquadPathFinderController.TextureToWorldPosition</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_ground_1afeede04c0790f3ce580cf5a66a9d788d" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_ground_block" kindref="compound">GroundBlock</ref>[][]</type>
+        <definition>GroundBlock [][] Ground.MiniGrid</definition>
+        <argsstring></argsstring>
+        <name>MiniGrid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Ground.cs" line="35" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Ground.cs" bodystart="35" bodyend="-1"/>
+        <referencedby refid="class_ground_1ae1e260633e2bc8ffb04a832958a3f83a" compoundref="_ground_8cs" startline="150" endline="264">GeneradeMap</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_ground_1a13daf84b12b3105ca4a7a376ebf94018" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>bool[][]</type>
+        <definition>bool [][] Ground.Grid</definition>
+        <argsstring></argsstring>
+        <name>Grid</name>
+        <briefdescription>
+<para>if true - wall in this plase, cant walc if false - empty cell, can walc </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Ground.cs" line="41" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Ground.cs" bodystart="41" bodyend="-1"/>
+        <referencedby refid="class_ground_1ae1e260633e2bc8ffb04a832958a3f83a" compoundref="_ground_8cs" startline="150" endline="264">GeneradeMap</referencedby>
+        <referencedby refid="class_ai_squad_controller_1a884586ff08b60c2ee405902e8313abdc" compoundref="_ai_squad_controller_8cs" startline="181" endline="223">AiSquadController.GoTo</referencedby>
+        <referencedby refid="class_ground_1afdf3d8d5ee9fdba7eee55aa855e27dc9" compoundref="_ground_8cs" startline="351" endline="358">InsertToGrid</referencedby>
+        <referencedby refid="class_ground_1ac4d2b5e0755e859a3f7095c500ee0a8e" compoundref="_ground_8cs" startline="455" endline="477">OnDrawGizmos</referencedby>
+        <referencedby refid="class_player_squad_path_finder_controller_1a16d7e9b844dc620e9f1ff5f7713b8c59" compoundref="_player_squad_path_finder_controller_8cs" startline="71" endline="147">PlayerSquadPathFinderController.OnPointerUp</referencedby>
+        <referencedby refid="class_player_squad_controller_1a14624c20b184262769b880804049fb0b" compoundref="_player_squad_controller_8cs" startline="216" endline="297">PlayerSquadController.OnPointerUp</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_ground_1a73acd3ad8ccc0ade99279a0ece11d9da" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>float</type>
+        <definition>float Ground.Progress</definition>
+        <argsstring></argsstring>
+        <name>Progress</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Ground.cs" line="54" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Ground.cs" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_ground_1a73b07376785681f37c7feb08d8582aa5" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>bool</type>
+        <definition>bool Ground.GenerationIsDone</definition>
+        <argsstring></argsstring>
+        <name>GenerationIsDone</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Ground.cs" line="57" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Ground.cs" bodystart="57" bodyend="-1"/>
+        <referencedby refid="class_exit_1a9d27e1c5450a56180701da7ed4462350" compoundref="_exit_8cs" startline="67" endline="80">Exit.OnTriggerEnter2D</referencedby>
+        <referencedby refid="class_exit_1a53613f606864b194b23ecb82f1be78e7" compoundref="_exit_8cs" startline="82" endline="95">Exit.OnTriggerExit2D</referencedby>
+        <referencedby refid="class_progress_circle_1a530caf9ddd11e3f5e49b453bec71907d" compoundref="_progress_circle_8cs" startline="29" endline="53">ProgressCircle.Running</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="event">
+      <memberdef kind="event" id="class_ground_1a7f34ea03ba1fb2f99d6c0eaa3abadce0" prot="public" static="no" add="no" remove="no" raise="no">
+        <type>Action</type>
+        <definition>Action Ground.OnGenerationDone</definition>
+        <argsstring></argsstring>
+        <name>OnGenerationDone</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Ground.cs" line="59" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Ground.cs" bodystart="59" bodyend="-1"/>
+        <referencedby refid="class_ground_1ae1e260633e2bc8ffb04a832958a3f83a" compoundref="_ground_8cs" startline="150" endline="264">GeneradeMap</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_ground_1a723cb30e3bae5e225ed1a9f92a062492" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ground.Awake</definition>
+        <argsstring>()</argsstring>
+        <name>Awake</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Ground.cs" line="61" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Ground.cs" bodystart="61" bodyend="66"/>
+        <references refid="class_ground_1a88d87eb077faec967e071a5f0dff81d1" compoundref="_ground_8cs" startline="56">generationIsDone</references>
+        <references refid="class_ground_1a682aa4de76f44144be5ec485ee9fe613" compoundref="_ground_8cs" startline="13">Instance</references>
+        <references refid="class_ground_1a70f99c1e411608e02b9a84955aa8f12a" compoundref="_ground_8cs" startline="53">progress</references>
+      </memberdef>
+      <memberdef kind="function" id="class_ground_1a67925fbb09e492d80017e6fc0d59cea4" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ground.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Ground.cs" line="68" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Ground.cs" bodystart="68" bodyend="95"/>
+        <references refid="class_ground_1a668628e76f30db97e3b9f24ebde30a94" compoundref="_ground_8cs" startline="17">colCountOfBlocks</references>
+        <references refid="class_game_manager_1a8ec5bc3e62fc7fa4988c594a9cfbf16f" compoundref="_game_manager_8cs" startline="32">GameManager.ControlGroundSize</references>
+        <references refid="class_ground_1a34a97d0380c4bd5bfe5ac77ae216febe" compoundref="_ground_8cs" startline="21">createRandom</references>
+        <references refid="class_ground_1ae1e260633e2bc8ffb04a832958a3f83a" compoundref="_ground_8cs" startline="150" endline="264">GeneradeMap</references>
+        <references refid="class_game_manager_1ad3e717f4fb0f378b969f4457de81f23e" compoundref="_game_manager_8cs" startline="7">GameManager.Instance</references>
+        <references refid="class_ground_1a7a98426f8b61f2fdddb4bcc8bea0c8f4" compoundref="_ground_8cs" startline="97" endline="148">LoadMapBlocks</references>
+        <references refid="class_ground_1a6f7de706ca0073fcc10413e7465578cb" compoundref="_ground_8cs" startline="30">minimapCamera</references>
+        <references refid="class_ground_1afa51dbea99627b008855004ecf606465" compoundref="_ground_8cs" startline="48">rnd</references>
+        <references refid="class_ground_1af2f5f0db5a613c59084da9513bef08ba" compoundref="_ground_8cs" startline="15">rowCountOfBlocks</references>
+        <references refid="struct_map_block_1a8fb3e875d60f04656e388e30da38e6f7" compoundref="_map_block_8cs" startline="8">MapBlock.WORLD_BLOCK_SIZE</references>
+      </memberdef>
+      <memberdef kind="function" id="class_ground_1a7a98426f8b61f2fdddb4bcc8bea0c8f4" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ground.LoadMapBlocks</definition>
+        <argsstring>()</argsstring>
+        <name>LoadMapBlocks</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Ground.cs" line="97" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Ground.cs" bodystart="97" bodyend="148"/>
+        <references refid="class_ground_1ae13e121ce0be2f3fb393c661a33fc2cc" compoundref="_ground_8cs" startline="43">blockContainers</references>
+        <references refid="struct_map_block_1ae2a96207d757c40799df1eebf9796351" compoundref="_map_block_8cs" startline="23">MapBlock.Exit</references>
+        <references refid="struct_map_block_1a07051335369f7aef299caf00a5754900" compoundref="_map_block_8cs" startline="12">MapBlock.ExitString</references>
+        <references refid="class_game_manager_1a13f8f61de86322000b1055506e9c43c6" compoundref="_game_manager_8cs" startline="12">GameManager.GroundType</references>
+        <references refid="struct_map_block_1a73e60907d5e0da25e87e477255bb3e3a" compoundref="_map_block_8cs" startline="22">MapBlock.HasExit</references>
+        <references refid="class_game_manager_1ad3e717f4fb0f378b969f4457de81f23e" compoundref="_game_manager_8cs" startline="7">GameManager.Instance</references>
+        <references refid="class_ground_1a493c70d91948169717af161ce8704ea4" compoundref="_ground_8cs" startline="11">PATH_TO_GRIDS</references>
+        <referencedby refid="class_ground_1a67925fbb09e492d80017e6fc0d59cea4" compoundref="_ground_8cs" startline="68" endline="95">Start</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_ground_1ae1e260633e2bc8ffb04a832958a3f83a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerator</type>
+        <definition>IEnumerator Ground.GeneradeMap</definition>
+        <argsstring>()</argsstring>
+        <name>GeneradeMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Ground.cs" line="150" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Ground.cs" bodystart="150" bodyend="264"/>
+        <references refid="struct_map_block_1a3da7202e195233db372ff06be195e549" compoundref="_map_block_8cs" startline="9">MapBlock.BLOCK_SIZE</references>
+        <references refid="class_ground_1a668628e76f30db97e3b9f24ebde30a94" compoundref="_ground_8cs" startline="17">colCountOfBlocks</references>
+        <references refid="class_ground_1a34a97d0380c4bd5bfe5ac77ae216febe" compoundref="_ground_8cs" startline="21">createRandom</references>
+        <references refid="class_ground_1ab9dca02151705dbe6ed96be9e4e26496" compoundref="_ground_8cs" startline="360" endline="438">FindMapBlock</references>
+        <references refid="class_ground_1a918d7bfb2bc747b3f1c0aaeda1453c63" compoundref="_ground_8cs" startline="50">fullCountOfBlock</references>
+        <references refid="class_ground_1a88d87eb077faec967e071a5f0dff81d1" compoundref="_ground_8cs" startline="56">generationIsDone</references>
+        <references refid="class_ground_1a655b58afb09bb1d807fc6ea261cb2268" compoundref="_ground_8cs" startline="266" endline="295">GetEntranceAndExit</references>
+        <references refid="class_ground_1a55d85ceb5d5737e22bf053a60654539b" compoundref="_ground_8cs" startline="297" endline="349">GetExitDirection</references>
+        <references refid="class_ground_1a13daf84b12b3105ca4a7a376ebf94018" compoundref="_ground_8cs" startline="41">Grid</references>
+        <references refid="class_ground_1afdf3d8d5ee9fdba7eee55aa855e27dc9" compoundref="_ground_8cs" startline="351" endline="358">InsertToGrid</references>
+        <references refid="class_ground_1a7f9246ff763af4ab468ade1cd36c89cd" compoundref="_ground_8cs" startline="440" endline="453">InstantiateMapBlockSprite</references>
+        <references refid="class_ground_1a40ba3460472cf2430d916e523012dfa6" compoundref="_ground_8cs" startline="51">loadedBlockCount</references>
+        <references refid="class_ground_1afeede04c0790f3ce580cf5a66a9d788d" compoundref="_ground_8cs" startline="35">MiniGrid</references>
+        <references refid="class_ground_1a7f34ea03ba1fb2f99d6c0eaa3abadce0" compoundref="_ground_8cs" startline="59">OnGenerationDone</references>
+        <references refid="class_ground_1a70f99c1e411608e02b9a84955aa8f12a" compoundref="_ground_8cs" startline="53">progress</references>
+        <references refid="class_ground_1a55de342577c8503162eb86867d78accd" compoundref="_ground_8cs" startline="32">rightWalls</references>
+        <references refid="class_ground_1af1ed57a121ea48189f2c4b501d00f9aa" compoundref="_ground_8cs" startline="22">rightWallsChanse</references>
+        <references refid="class_ground_1af2f5f0db5a613c59084da9513bef08ba" compoundref="_ground_8cs" startline="15">rowCountOfBlocks</references>
+        <references refid="class_ground_1a028b22e3989247bf3231f8d94e53356a" compoundref="_ground_8cs" startline="20">seed</references>
+        <references refid="class_ground_1a127198058a3ef81d0e7acd62b026b841" compoundref="_ground_8cs" startline="33">topWalls</references>
+        <references refid="class_ground_1a4a6b7ec1ab84f3a7206732709f142789" compoundref="_ground_8cs" startline="23">topWallsChanse</references>
+        <references refid="class_ground_1a75891bcef0304e8911ae3eca1c7af8d6" compoundref="_ground_8cs" startline="24">willHaveLoops</references>
+        <references refid="struct_map_block_1a8fb3e875d60f04656e388e30da38e6f7" compoundref="_map_block_8cs" startline="8">MapBlock.WORLD_BLOCK_SIZE</references>
+        <referencedby refid="class_ground_1a67925fbb09e492d80017e6fc0d59cea4" compoundref="_ground_8cs" startline="68" endline="95">Start</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_ground_1a655b58afb09bb1d807fc6ea261cb2268" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ground.GetEntranceAndExit</definition>
+        <argsstring>(out Vector2 entranceBlockPosition, out Vector2 exitBlockPosition)</argsstring>
+        <name>GetEntranceAndExit</name>
+        <param>
+          <type>out Vector2</type>
+          <declname>entranceBlockPosition</declname>
+        </param>
+        <param>
+          <type>out Vector2</type>
+          <declname>exitBlockPosition</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Ground.cs" line="266" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Ground.cs" bodystart="266" bodyend="295"/>
+        <references refid="class_ground_1a668628e76f30db97e3b9f24ebde30a94" compoundref="_ground_8cs" startline="17">colCountOfBlocks</references>
+        <references refid="class_ground_1ac9df8bf397aeeaeb3646941e5efd6d2a" compoundref="_ground_8cs" startline="27">exitOnColPercentOfMap</references>
+        <references refid="class_ground_1ae20fb1d851fbc9ccb6ccf7ad38ac31b8" compoundref="_ground_8cs" startline="28">exitOnRowPercentOfMap</references>
+        <references refid="class_ground_1af2f5f0db5a613c59084da9513bef08ba" compoundref="_ground_8cs" startline="15">rowCountOfBlocks</references>
+        <referencedby refid="class_ground_1ae1e260633e2bc8ffb04a832958a3f83a" compoundref="_ground_8cs" startline="150" endline="264">GeneradeMap</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_ground_1a55d85ceb5d5737e22bf053a60654539b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_map_block_1a6bdb8970fb09cd0570ed7036457f96a3" kindref="member">MapBlock.Direction</ref></type>
+        <definition>MapBlock.Direction Ground.GetExitDirection</definition>
+        <argsstring>(MapBlock block, Vector2 positionInMinigrid, bool isExit)</argsstring>
+        <name>GetExitDirection</name>
+        <param>
+          <type><ref refid="struct_map_block" kindref="compound">MapBlock</ref></type>
+          <declname>block</declname>
+        </param>
+        <param>
+          <type>Vector2</type>
+          <declname>positionInMinigrid</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>isExit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Ground.cs" line="297" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Ground.cs" bodystart="297" bodyend="349"/>
+        <references refid="class_ground_1a668628e76f30db97e3b9f24ebde30a94" compoundref="_ground_8cs" startline="17">colCountOfBlocks</references>
+        <references refid="class_game_manager_1a613a4908bd2dc7a26af7a6241882e8d1" compoundref="_game_manager_8cs" startline="48">GameManager.exitDirection</references>
+        <references refid="class_game_manager_1ad3e717f4fb0f378b969f4457de81f23e" compoundref="_game_manager_8cs" startline="7">GameManager.Instance</references>
+        <references refid="class_ground_1af2f5f0db5a613c59084da9513bef08ba" compoundref="_ground_8cs" startline="15">rowCountOfBlocks</references>
+        <referencedby refid="class_ground_1ae1e260633e2bc8ffb04a832958a3f83a" compoundref="_ground_8cs" startline="150" endline="264">GeneradeMap</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_ground_1afdf3d8d5ee9fdba7eee55aa855e27dc9" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ground.InsertToGrid</definition>
+        <argsstring>(MapBlock block)</argsstring>
+        <name>InsertToGrid</name>
+        <param>
+          <type><ref refid="struct_map_block" kindref="compound">MapBlock</ref></type>
+          <declname>block</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Ground.cs" line="351" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Ground.cs" bodystart="351" bodyend="358"/>
+        <references refid="struct_map_block_1a9e46c3698814e50f60550ebd48ab9cb2" compoundref="_map_block_8cs" startline="10">MapBlock.BLOCK_SCALE</references>
+        <references refid="struct_map_block_1a3da7202e195233db372ff06be195e549" compoundref="_map_block_8cs" startline="9">MapBlock.BLOCK_SIZE</references>
+        <references refid="struct_map_block_1ad3c350cfa4b549e6df9a1f9f844e6723" compoundref="_map_block_8cs" startline="18">MapBlock.Grid</references>
+        <references refid="class_ground_1a13daf84b12b3105ca4a7a376ebf94018" compoundref="_ground_8cs" startline="41">Grid</references>
+        <references refid="struct_map_block_1a9ee28ce0eb05219689f005ec055a2f56" compoundref="_map_block_8cs" startline="20">MapBlock.WorldPosition</references>
+        <referencedby refid="class_ground_1ae1e260633e2bc8ffb04a832958a3f83a" compoundref="_ground_8cs" startline="150" endline="264">GeneradeMap</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_ground_1a7f9246ff763af4ab468ade1cd36c89cd" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_ground_block" kindref="compound">GroundBlock</ref></type>
+        <definition>GroundBlock Ground.InstantiateMapBlockSprite</definition>
+        <argsstring>(Vector2 position, string name)</argsstring>
+        <name>InstantiateMapBlockSprite</name>
+        <param>
+          <type>Vector2</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Ground.cs" line="440" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Ground.cs" bodystart="440" bodyend="453"/>
+        <references refid="struct_map_block_1a9e46c3698814e50f60550ebd48ab9cb2" compoundref="_map_block_8cs" startline="10">MapBlock.BLOCK_SCALE</references>
+        <references refid="class_ground_1a372f802f5c3fad73c558e3f1b9c8ac0e" compoundref="_ground_8cs" startline="10">PATH_TO_PREFABS</references>
+        <references refid="struct_map_block_1a8fb3e875d60f04656e388e30da38e6f7" compoundref="_map_block_8cs" startline="8">MapBlock.WORLD_BLOCK_SIZE</references>
+        <referencedby refid="class_ground_1ae1e260633e2bc8ffb04a832958a3f83a" compoundref="_ground_8cs" startline="150" endline="264">GeneradeMap</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_ground_1ac4d2b5e0755e859a3f7095c500ee0a8e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ground.OnDrawGizmos</definition>
+        <argsstring>()</argsstring>
+        <name>OnDrawGizmos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Ground.cs" line="455" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Ground.cs" bodystart="455" bodyend="477"/>
+        <references refid="struct_map_block_1a9e46c3698814e50f60550ebd48ab9cb2" compoundref="_map_block_8cs" startline="10">MapBlock.BLOCK_SCALE</references>
+        <references refid="class_ground_1a13daf84b12b3105ca4a7a376ebf94018" compoundref="_ground_8cs" startline="41">Grid</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_ground_1ab9dca02151705dbe6ed96be9e4e26496" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_same_blocks_container_1_1_block" kindref="compound">SameBlocksContainer.Block</ref></type>
+        <definition>SameBlocksContainer.Block Ground.FindMapBlock</definition>
+        <argsstring>(List&lt; MapBlock.Direction &gt; inclusionsDirection, List&lt; MapBlock.Direction &gt; exclusionsDirection, bool wantedExitBlock=false, MapBlock.Direction exitDirection=MapBlock.Direction.BOTTOM)</argsstring>
+        <name>FindMapBlock</name>
+        <param>
+          <type>List&lt; <ref refid="struct_map_block_1a6bdb8970fb09cd0570ed7036457f96a3" kindref="member">MapBlock.Direction</ref> &gt;</type>
+          <declname>inclusionsDirection</declname>
+        </param>
+        <param>
+          <type>List&lt; <ref refid="struct_map_block_1a6bdb8970fb09cd0570ed7036457f96a3" kindref="member">MapBlock.Direction</ref> &gt;</type>
+          <declname>exclusionsDirection</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>wantedExitBlock</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type><ref refid="struct_map_block_1a6bdb8970fb09cd0570ed7036457f96a3" kindref="member">MapBlock.Direction</ref></type>
+          <declname>exitDirection</declname>
+          <defval>MapBlock.Direction.BOTTOM</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Ground.cs" line="360" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Ground.cs" bodystart="360" bodyend="438"/>
+        <references refid="class_ground_1ae13e121ce0be2f3fb393c661a33fc2cc" compoundref="_ground_8cs" startline="43">blockContainers</references>
+        <references refid="class_ground_1a7adbe7164a1e10007bd43c6cb44ccc6d" compoundref="_ground_8cs" startline="46">indexSame</references>
+        <references refid="class_ground_1a02e90362958f592320cea0f378de7cf1" compoundref="_ground_8cs" startline="45">indexType</references>
+        <referencedby refid="class_ground_1ae1e260633e2bc8ffb04a832958a3f83a" compoundref="_ground_8cs" startline="150" endline="264">GeneradeMap</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="450">
+        <label>Ground</label>
+        <link refid="class_ground"/>
+        <childnode refid="451" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="451">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="452">
+        <label>Ground</label>
+        <link refid="class_ground"/>
+        <childnode refid="453" relation="public-inheritance">
+        </childnode>
+        <childnode refid="454" relation="usage">
+          <edgelabel>rnd</edgelabel>
+        </childnode>
+      </node>
+      <node id="454">
+        <label>System</label>
+      </node>
+      <node id="453">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Ground.cs" line="9" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Ground.cs" bodystart="8" bodyend="479"/>
+    <listofallmembers>
+      <member refid="class_ground_1a723cb30e3bae5e225ed1a9f92a062492" prot="private" virt="non-virtual"><scope>Ground</scope><name>Awake</name></member>
+      <member refid="class_ground_1ae13e121ce0be2f3fb393c661a33fc2cc" prot="private" virt="non-virtual"><scope>Ground</scope><name>blockContainers</name></member>
+      <member refid="class_ground_1a668628e76f30db97e3b9f24ebde30a94" prot="private" virt="non-virtual"><scope>Ground</scope><name>colCountOfBlocks</name></member>
+      <member refid="class_ground_1a51db3f48d60129133133b200d30453de" prot="public" virt="non-virtual"><scope>Ground</scope><name>ColCountOfBlocks</name></member>
+      <member refid="class_ground_1a34a97d0380c4bd5bfe5ac77ae216febe" prot="private" virt="non-virtual"><scope>Ground</scope><name>createRandom</name></member>
+      <member refid="class_ground_1ac9df8bf397aeeaeb3646941e5efd6d2a" prot="private" virt="non-virtual"><scope>Ground</scope><name>exitOnColPercentOfMap</name></member>
+      <member refid="class_ground_1ae20fb1d851fbc9ccb6ccf7ad38ac31b8" prot="private" virt="non-virtual"><scope>Ground</scope><name>exitOnRowPercentOfMap</name></member>
+      <member refid="class_ground_1ab9dca02151705dbe6ed96be9e4e26496" prot="public" virt="non-virtual"><scope>Ground</scope><name>FindMapBlock</name></member>
+      <member refid="class_ground_1a918d7bfb2bc747b3f1c0aaeda1453c63" prot="private" virt="non-virtual"><scope>Ground</scope><name>fullCountOfBlock</name></member>
+      <member refid="class_ground_1ae1e260633e2bc8ffb04a832958a3f83a" prot="private" virt="non-virtual"><scope>Ground</scope><name>GeneradeMap</name></member>
+      <member refid="class_ground_1a88d87eb077faec967e071a5f0dff81d1" prot="private" virt="non-virtual"><scope>Ground</scope><name>generationIsDone</name></member>
+      <member refid="class_ground_1a73b07376785681f37c7feb08d8582aa5" prot="public" virt="non-virtual"><scope>Ground</scope><name>GenerationIsDone</name></member>
+      <member refid="class_ground_1a655b58afb09bb1d807fc6ea261cb2268" prot="private" virt="non-virtual"><scope>Ground</scope><name>GetEntranceAndExit</name></member>
+      <member refid="class_ground_1a55d85ceb5d5737e22bf053a60654539b" prot="private" virt="non-virtual"><scope>Ground</scope><name>GetExitDirection</name></member>
+      <member refid="class_ground_1a13daf84b12b3105ca4a7a376ebf94018" prot="public" virt="non-virtual"><scope>Ground</scope><name>Grid</name></member>
+      <member refid="class_ground_1a7adbe7164a1e10007bd43c6cb44ccc6d" prot="private" virt="non-virtual"><scope>Ground</scope><name>indexSame</name></member>
+      <member refid="class_ground_1a02e90362958f592320cea0f378de7cf1" prot="private" virt="non-virtual"><scope>Ground</scope><name>indexType</name></member>
+      <member refid="class_ground_1afdf3d8d5ee9fdba7eee55aa855e27dc9" prot="private" virt="non-virtual"><scope>Ground</scope><name>InsertToGrid</name></member>
+      <member refid="class_ground_1a682aa4de76f44144be5ec485ee9fe613" prot="public" virt="non-virtual"><scope>Ground</scope><name>Instance</name></member>
+      <member refid="class_ground_1a7f9246ff763af4ab468ade1cd36c89cd" prot="private" virt="non-virtual"><scope>Ground</scope><name>InstantiateMapBlockSprite</name></member>
+      <member refid="class_ground_1a40ba3460472cf2430d916e523012dfa6" prot="private" virt="non-virtual"><scope>Ground</scope><name>loadedBlockCount</name></member>
+      <member refid="class_ground_1a7a98426f8b61f2fdddb4bcc8bea0c8f4" prot="private" virt="non-virtual"><scope>Ground</scope><name>LoadMapBlocks</name></member>
+      <member refid="class_ground_1afeede04c0790f3ce580cf5a66a9d788d" prot="public" virt="non-virtual"><scope>Ground</scope><name>MiniGrid</name></member>
+      <member refid="class_ground_1a6f7de706ca0073fcc10413e7465578cb" prot="private" virt="non-virtual"><scope>Ground</scope><name>minimapCamera</name></member>
+      <member refid="class_ground_1ac4d2b5e0755e859a3f7095c500ee0a8e" prot="private" virt="non-virtual"><scope>Ground</scope><name>OnDrawGizmos</name></member>
+      <member refid="class_ground_1a7f34ea03ba1fb2f99d6c0eaa3abadce0" prot="public" virt="non-virtual"><scope>Ground</scope><name>OnGenerationDone</name></member>
+      <member refid="class_ground_1a493c70d91948169717af161ce8704ea4" prot="private" virt="non-virtual"><scope>Ground</scope><name>PATH_TO_GRIDS</name></member>
+      <member refid="class_ground_1a372f802f5c3fad73c558e3f1b9c8ac0e" prot="private" virt="non-virtual"><scope>Ground</scope><name>PATH_TO_PREFABS</name></member>
+      <member refid="class_ground_1a73acd3ad8ccc0ade99279a0ece11d9da" prot="public" virt="non-virtual"><scope>Ground</scope><name>Progress</name></member>
+      <member refid="class_ground_1a70f99c1e411608e02b9a84955aa8f12a" prot="private" virt="non-virtual"><scope>Ground</scope><name>progress</name></member>
+      <member refid="class_ground_1a55de342577c8503162eb86867d78accd" prot="private" virt="non-virtual"><scope>Ground</scope><name>rightWalls</name></member>
+      <member refid="class_ground_1af1ed57a121ea48189f2c4b501d00f9aa" prot="private" virt="non-virtual"><scope>Ground</scope><name>rightWallsChanse</name></member>
+      <member refid="class_ground_1afa51dbea99627b008855004ecf606465" prot="private" virt="non-virtual"><scope>Ground</scope><name>rnd</name></member>
+      <member refid="class_ground_1af2f5f0db5a613c59084da9513bef08ba" prot="private" virt="non-virtual"><scope>Ground</scope><name>rowCountOfBlocks</name></member>
+      <member refid="class_ground_1a4587daf6f5efbee79a00724a7d906853" prot="public" virt="non-virtual"><scope>Ground</scope><name>RowCountOfBlocks</name></member>
+      <member refid="class_ground_1a028b22e3989247bf3231f8d94e53356a" prot="private" virt="non-virtual"><scope>Ground</scope><name>seed</name></member>
+      <member refid="class_ground_1a67925fbb09e492d80017e6fc0d59cea4" prot="private" virt="non-virtual"><scope>Ground</scope><name>Start</name></member>
+      <member refid="class_ground_1a127198058a3ef81d0e7acd62b026b841" prot="private" virt="non-virtual"><scope>Ground</scope><name>topWalls</name></member>
+      <member refid="class_ground_1a4a6b7ec1ab84f3a7206732709f142789" prot="private" virt="non-virtual"><scope>Ground</scope><name>topWallsChanse</name></member>
+      <member refid="class_ground_1a75891bcef0304e8911ae3eca1c7af8d6" prot="private" virt="non-virtual"><scope>Ground</scope><name>willHaveLoops</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

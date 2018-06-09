@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_0e0f28ddf65402ff8f0a8eb7dd2ba647" kind="dir">
+    <compoundname>D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap</compoundname>
+    <innerdir refid="dir_bf22d4f73066cdef43f180f18e87bc82">D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Brushes</innerdir>
+    <innerdir refid="dir_7bbc3788c025117c88521a155bce11eb">D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/GridInformation</innerdir>
+    <innerdir refid="dir_05ca346bff0b0419965ba02e1ebce7fe">D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/Tiles</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/2d-extras-master/Tilemap/"/>
+  </compounddef>
+</doxygen>

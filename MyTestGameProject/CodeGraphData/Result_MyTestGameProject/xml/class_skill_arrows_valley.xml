@@ -1,0 +1,434 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_skill_arrows_valley" kind="class" prot="public">
+    <compoundname>SkillArrowsValley</compoundname>
+    <basecompoundref refid="class_skill" prot="public" virt="non-virtual">Skill</basecompoundref>
+    <innerclass refid="struct_skill_arrows_valley_1_1_arrow_walley_stats" prot="public">SkillArrowsValley::ArrowWalleyStats</innerclass>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_skill_arrows_valley_1a32abfe22e73aa0fb2cb932f0d75aec8d" prot="private" static="no" mutable="no">
+        <type><ref refid="class_arrows_valley" kindref="compound">ArrowsValley</ref></type>
+        <definition>ArrowsValley SkillArrowsValley.origin</definition>
+        <argsstring></argsstring>
+        <name>origin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Skill/SkillArrowsValley.cs" line="41" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Skill/SkillArrowsValley.cs" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_skill_arrows_valley_1a050226f0bc99e0adb85f15b700b2bee8" prot="private" static="no" mutable="no">
+        <type><ref refid="struct_skill_arrows_valley_1_1_arrow_walley_stats" kindref="compound">ArrowWalleyStats</ref></type>
+        <definition>ArrowWalleyStats SkillArrowsValley.stats</definition>
+        <argsstring></argsstring>
+        <name>stats</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Skill/SkillArrowsValley.cs" line="44" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Skill/SkillArrowsValley.cs" bodystart="44" bodyend="-1"/>
+        <referencedby refid="class_skill_arrows_valley_1a9f5b2ce19c55d49593b2b55a590584d8" compoundref="_skill_arrows_valley_8cs" startline="66" endline="84">DoSkill</referencedby>
+        <referencedby refid="struct_skill_arrows_valley_1_1_arrow_walley_stats_1aa41c15eb6177138bc53a22c3863d9387" compoundref="_skill_arrows_valley_8cs" startline="21" endline="37">SkillArrowsValley.ArrowWalleyStats.GetDescription</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_skill_arrows_valley_1afbd2ce2cfec3b0c07483682a62b3b84d" prot="private" static="no" mutable="no">
+        <type>Vector2</type>
+        <definition>Vector2 SkillArrowsValley.castPosition</definition>
+        <argsstring></argsstring>
+        <name>castPosition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Skill/SkillArrowsValley.cs" line="48" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Skill/SkillArrowsValley.cs" bodystart="48" bodyend="-1"/>
+        <referencedby refid="class_skill_arrows_valley_1a9f5b2ce19c55d49593b2b55a590584d8" compoundref="_skill_arrows_valley_8cs" startline="66" endline="84">DoSkill</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_skill_arrows_valley_1acb067154b23f87eef506f72e9ad9fc4f" prot="private" static="no" mutable="no">
+        <type>Quaternion</type>
+        <definition>Quaternion SkillArrowsValley.castRotation</definition>
+        <argsstring></argsstring>
+        <name>castRotation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Skill/SkillArrowsValley.cs" line="49" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Skill/SkillArrowsValley.cs" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_skill_arrows_valley_1a079fe09a037912cf192d56fb10081050" prot="public" static="no" mutable="no">
+        <type><ref refid="class_squad" kindref="compound">Squad</ref></type>
+        <definition>Squad SkillArrowsValley.owner</definition>
+        <argsstring></argsstring>
+        <name>owner</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Skill/SkillArrowsValley.cs" line="46" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Skill/SkillArrowsValley.cs" bodystart="46" bodyend="-1"/>
+        <referencedby refid="class_skill_arrows_valley_1a9f5b2ce19c55d49593b2b55a590584d8" compoundref="_skill_arrows_valley_8cs" startline="66" endline="84">DoSkill</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_skill_arrows_valley_1a2223445ed5ef68951782e7a4064c9f7f" prot="protected" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>override object</type>
+        <definition>override object SkillArrowsValley.DefaultStats</definition>
+        <argsstring></argsstring>
+        <name>DefaultStats</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Skill/SkillArrowsValley.cs" line="51" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Skill/SkillArrowsValley.cs" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_skill_arrows_valley_1a058ec1f83c68a639339af5f998c67f29" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override object</type>
+        <definition>override object SkillArrowsValley.CalcUpgradedStats</definition>
+        <argsstring>(List&lt; DSPlayerSkill.SkillUpgrade &gt; upgrades)</argsstring>
+        <name>CalcUpgradedStats</name>
+        <reimplements refid="class_skill_1a92b7eac6a890ff46a5e9a85d3c56355e">CalcUpgradedStats</reimplements>
+        <param>
+          <type>List&lt; <ref refid="class_d_s_player_skill_1_1_skill_upgrade" kindref="compound">DSPlayerSkill.SkillUpgrade</ref> &gt;</type>
+          <declname>upgrades</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Skill/SkillArrowsValley.cs" line="53" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Skill/SkillArrowsValley.cs" bodystart="53" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="class_skill_arrows_valley_1a9f5b2ce19c55d49593b2b55a590584d8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override bool</type>
+        <definition>override bool SkillArrowsValley.DoSkill</definition>
+        <argsstring>(object skillStats)</argsstring>
+        <name>DoSkill</name>
+        <reimplements refid="class_skill_1aa612c92a725be9ffc631595f17e2071b">DoSkill</reimplements>
+        <param>
+          <type>object</type>
+          <declname>skillStats</declname>
+        </param>
+        <briefdescription>
+<para>описание класса <ref refid="class_skill" kindref="compound">Skill</ref> </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Skill/SkillArrowsValley.cs" line="66" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Skill/SkillArrowsValley.cs" bodystart="66" bodyend="84"/>
+        <references refid="class_skill_arrows_valley_1afbd2ce2cfec3b0c07483682a62b3b84d" compoundref="_skill_arrows_valley_8cs" startline="48">castPosition</references>
+        <references refid="class_skill_arrows_valley_1a079fe09a037912cf192d56fb10081050" compoundref="_skill_arrows_valley_8cs" startline="46">owner</references>
+        <references refid="class_skill_arrows_valley_1a050226f0bc99e0adb85f15b700b2bee8" compoundref="_skill_arrows_valley_8cs" startline="44">stats</references>
+      </memberdef>
+      <memberdef kind="function" id="class_skill_arrows_valley_1ae2367a692f568d489998506f14fc5c16" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void SkillArrowsValley.InitSkill</definition>
+        <argsstring>(params object[] args)</argsstring>
+        <name>InitSkill</name>
+        <param>
+          <type>params object[]</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+<para>opisanie </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_squad" kindref="compound">Squad</ref> - отряд который вызвал скилл</para><para>Vector2 - место куда будут лететь стрелы</para><para>Quaternion - сторона откуда будут лететь стрелы</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Skill/SkillArrowsValley.cs" line="94" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Skill/SkillArrowsValley.cs" bodystart="94" bodyend="104"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="885">
+        <label>SkillArrowsValley</label>
+        <link refid="class_skill_arrows_valley"/>
+        <childnode refid="886" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="889">
+        <label>IDescriptionable</label>
+        <link refid="interface_i_descriptionable"/>
+      </node>
+      <node id="887">
+        <label>Item</label>
+        <link refid="class_item"/>
+        <childnode refid="888" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="888">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="886">
+        <label>Skill</label>
+        <link refid="class_skill"/>
+        <childnode refid="887" relation="public-inheritance">
+        </childnode>
+        <childnode refid="889" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="896">
+        <label>Squad</label>
+        <link refid="class_squad"/>
+        <childnode refid="893" relation="public-inheritance">
+        </childnode>
+        <childnode refid="897" relation="usage">
+          <edgelabel>currentFormationModifyers</edgelabel>
+          <edgelabel>formation</edgelabel>
+        </childnode>
+        <childnode refid="898" relation="usage">
+          <edgelabel>unitOriginal</edgelabel>
+        </childnode>
+        <childnode refid="896" relation="usage">
+          <edgelabel>playerSquadInstance</edgelabel>
+        </childnode>
+        <childnode refid="904" relation="usage">
+          <edgelabel>inventory</edgelabel>
+        </childnode>
+        <childnode refid="903" relation="usage">
+          <edgelabel>unitStats</edgelabel>
+        </childnode>
+      </node>
+      <node id="909">
+        <label>SkillArrowsValley.ArrowWalleyStats</label>
+        <link refid="struct_skill_arrows_valley_1_1_arrow_walley_stats"/>
+        <childnode refid="910" relation="public-inheritance">
+        </childnode>
+        <childnode refid="911" relation="public-inheritance">
+        </childnode>
+        <childnode refid="912" relation="public-inheritance">
+        </childnode>
+        <childnode refid="895" relation="public-inheritance">
+        </childnode>
+        <childnode refid="901" relation="usage">
+          <edgelabel>damage</edgelabel>
+        </childnode>
+      </node>
+      <node id="899">
+        <label>Equipment</label>
+        <link refid="class_equipment"/>
+        <childnode refid="892" relation="public-inheritance">
+        </childnode>
+        <childnode refid="900" relation="usage">
+          <edgelabel>stats</edgelabel>
+        </childnode>
+      </node>
+      <node id="890">
+        <label>SkillArrowsValley</label>
+        <link refid="class_skill_arrows_valley"/>
+        <childnode refid="891" relation="public-inheritance">
+        </childnode>
+        <childnode refid="896" relation="usage">
+          <edgelabel>owner</edgelabel>
+        </childnode>
+        <childnode refid="908" relation="usage">
+          <edgelabel>origin</edgelabel>
+        </childnode>
+        <childnode refid="909" relation="usage">
+          <edgelabel>stats</edgelabel>
+        </childnode>
+      </node>
+      <node id="911">
+        <label>ISkillLockable</label>
+        <link refid="interface_i_skill_lockable"/>
+      </node>
+      <node id="902">
+        <label>UnitPosition</label>
+        <link refid="class_unit_position"/>
+        <childnode refid="893" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="894">
+        <label>Item.MainProperties</label>
+        <link refid="struct_item_1_1_main_properties"/>
+      </node>
+      <node id="901">
+        <label>Damage</label>
+        <link refid="struct_damage"/>
+      </node>
+      <node id="895">
+        <label>IDescriptionable</label>
+        <link refid="interface_i_descriptionable"/>
+      </node>
+      <node id="892">
+        <label>Item</label>
+        <link refid="class_item"/>
+        <childnode refid="893" relation="public-inheritance">
+        </childnode>
+        <childnode refid="894" relation="usage">
+          <edgelabel>mainProperties</edgelabel>
+        </childnode>
+      </node>
+      <node id="910">
+        <label>ISkillRadiusable</label>
+        <link refid="interface_i_skill_radiusable"/>
+      </node>
+      <node id="905">
+        <label>SkillStack</label>
+        <link refid="class_skill_stack"/>
+        <childnode refid="906" relation="public-inheritance">
+        </childnode>
+        <childnode refid="895" relation="public-inheritance">
+        </childnode>
+        <childnode refid="891" relation="usage">
+          <edgelabel>skill</edgelabel>
+        </childnode>
+      </node>
+      <node id="900">
+        <label>EquipmentStats</label>
+        <link refid="struct_equipment_stats"/>
+        <childnode refid="895" relation="public-inheritance">
+        </childnode>
+        <childnode refid="901" relation="usage">
+          <edgelabel>damage</edgelabel>
+        </childnode>
+      </node>
+      <node id="906">
+        <label>AStack</label>
+        <link refid="class_a_stack"/>
+      </node>
+      <node id="903">
+        <label>UnitStats</label>
+        <link refid="struct_unit_stats"/>
+        <childnode refid="901" relation="usage">
+          <edgelabel>damage</edgelabel>
+        </childnode>
+      </node>
+      <node id="893">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="898">
+        <label>Unit</label>
+        <link refid="class_unit"/>
+        <childnode refid="893" relation="public-inheritance">
+        </childnode>
+        <childnode refid="898" relation="usage">
+          <edgelabel>target</edgelabel>
+        </childnode>
+        <childnode refid="896" relation="usage">
+          <edgelabel>squad</edgelabel>
+        </childnode>
+        <childnode refid="899" relation="usage">
+          <edgelabel>body</edgelabel>
+          <edgelabel>shield</edgelabel>
+          <edgelabel>weapon</edgelabel>
+          <edgelabel>helmet</edgelabel>
+        </childnode>
+        <childnode refid="902" relation="usage">
+          <edgelabel>TargetMovePositionObject</edgelabel>
+          <edgelabel>unitPosOriginal</edgelabel>
+        </childnode>
+        <childnode refid="903" relation="usage">
+          <edgelabel>stats</edgelabel>
+        </childnode>
+      </node>
+      <node id="908">
+        <label>ArrowsValley</label>
+        <link refid="class_arrows_valley"/>
+        <childnode refid="893" relation="public-inheritance">
+        </childnode>
+        <childnode refid="898" relation="usage">
+          <edgelabel>unit</edgelabel>
+        </childnode>
+        <childnode refid="896" relation="usage">
+          <edgelabel>owner</edgelabel>
+        </childnode>
+        <childnode refid="901" relation="usage">
+          <edgelabel>damage</edgelabel>
+        </childnode>
+      </node>
+      <node id="891">
+        <label>Skill</label>
+        <link refid="class_skill"/>
+        <childnode refid="892" relation="public-inheritance">
+        </childnode>
+        <childnode refid="895" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="907">
+        <label>EquipmentStack</label>
+        <link refid="class_equipment_stack"/>
+        <childnode refid="906" relation="public-inheritance">
+        </childnode>
+        <childnode refid="892" relation="usage">
+          <edgelabel>equipmentMainProperties</edgelabel>
+        </childnode>
+        <childnode refid="900" relation="usage">
+          <edgelabel>equipmentStats</edgelabel>
+        </childnode>
+      </node>
+      <node id="897">
+        <label>FormationStats</label>
+        <link refid="class_formation_stats"/>
+      </node>
+      <node id="912">
+        <label>ISkillCooldownable</label>
+        <link refid="interface_i_skill_cooldownable"/>
+      </node>
+      <node id="904">
+        <label>Inventory</label>
+        <link refid="class_inventory"/>
+        <childnode refid="905" relation="usage">
+          <edgelabel>firstSkill</edgelabel>
+          <edgelabel>secondSkill</edgelabel>
+        </childnode>
+        <childnode refid="899" relation="usage">
+          <edgelabel>body</edgelabel>
+          <edgelabel>shieldNone</edgelabel>
+          <edgelabel>helmetNone</edgelabel>
+          <edgelabel>shield</edgelabel>
+          <edgelabel>weapon</edgelabel>
+          <edgelabel>helmet</edgelabel>
+          <edgelabel>bodyNone</edgelabel>
+        </childnode>
+        <childnode refid="907" relation="usage">
+          <edgelabel>inventory</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Skill/SkillArrowsValley.cs" line="7" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Skill/SkillArrowsValley.cs" bodystart="6" bodyend="105"/>
+    <listofallmembers>
+      <member refid="class_skill_arrows_valley_1a058ec1f83c68a639339af5f998c67f29" prot="public" virt="virtual"><scope>SkillArrowsValley</scope><name>CalcUpgradedStats</name></member>
+      <member refid="class_skill_arrows_valley_1afbd2ce2cfec3b0c07483682a62b3b84d" prot="private" virt="non-virtual"><scope>SkillArrowsValley</scope><name>castPosition</name></member>
+      <member refid="class_skill_arrows_valley_1acb067154b23f87eef506f72e9ad9fc4f" prot="private" virt="non-virtual"><scope>SkillArrowsValley</scope><name>castRotation</name></member>
+      <member refid="class_skill_arrows_valley_1a2223445ed5ef68951782e7a4064c9f7f" prot="protected" virt="non-virtual"><scope>SkillArrowsValley</scope><name>DefaultStats</name></member>
+      <member refid="class_skill_arrows_valley_1a9f5b2ce19c55d49593b2b55a590584d8" prot="public" virt="virtual"><scope>SkillArrowsValley</scope><name>DoSkill</name></member>
+      <member refid="class_skill_1a3e12e9d4b70a40205da94526081c67fb" prot="public" virt="virtual"><scope>SkillArrowsValley</scope><name>GetDescription</name></member>
+      <member refid="class_skill_1a193e8c3a91b5e51b0c0c85ca261ef7c5" prot="public" virt="non-virtual"><scope>SkillArrowsValley</scope><name>Id</name></member>
+      <member refid="class_skill_arrows_valley_1ae2367a692f568d489998506f14fc5c16" prot="public" virt="non-virtual"><scope>SkillArrowsValley</scope><name>InitSkill</name></member>
+      <member refid="class_skill_1a2c09ecf34bae54fb1df184699fbc7bd6" prot="public" virt="virtual" ambiguityscope="Skill."><scope>SkillArrowsValley</scope><name>InitSkill</name></member>
+      <member refid="class_item_1ab5454b792ec8183e499e187313654aa5" prot="public" virt="non-virtual"><scope>SkillArrowsValley</scope><name>MainPropertie</name></member>
+      <member refid="class_skill_arrows_valley_1a32abfe22e73aa0fb2cb932f0d75aec8d" prot="private" virt="non-virtual"><scope>SkillArrowsValley</scope><name>origin</name></member>
+      <member refid="class_skill_arrows_valley_1a079fe09a037912cf192d56fb10081050" prot="public" virt="non-virtual"><scope>SkillArrowsValley</scope><name>owner</name></member>
+      <member refid="class_skill_1a5d96c420caaa9a041966f05c24faa0e9" prot="public" virt="non-virtual"><scope>SkillArrowsValley</scope><name>SkillUseType</name></member>
+      <member refid="class_skill_arrows_valley_1a050226f0bc99e0adb85f15b700b2bee8" prot="private" virt="non-virtual"><scope>SkillArrowsValley</scope><name>stats</name></member>
+      <member refid="class_skill_1ab226518cc7d78543835d1ca3fa907618" prot="public" virt="non-virtual"><scope>SkillArrowsValley</scope><name>UpgradeLevelCost</name></member>
+      <member refid="class_skill_1a6e18d3f3690581beab603e99932b1a08" prot="public" virt="non-virtual"><scope>SkillArrowsValley</scope><name>UseType</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_cda74075fbd421f927123c5af3eea36b" kind="dir">
+    <compoundname>D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress</compoundname>
+    <innerfile refid="_d_s_player_score_8cs">DSPlayerScore.cs</innerfile>
+    <innerfile refid="_d_s_player_skill_8cs">DSPlayerSkill.cs</innerfile>
+    <innerfile refid="_d_s_player_skills_8cs">DSPlayerSkills.cs</innerfile>
+    <innerfile refid="_d_s_unit_stats_8cs">DSUnitStats.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress/"/>
+  </compounddef>
+</doxygen>

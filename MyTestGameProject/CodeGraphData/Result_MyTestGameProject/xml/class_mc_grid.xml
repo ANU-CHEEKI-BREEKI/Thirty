@@ -1,0 +1,598 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_mc_grid" kind="class" prot="public">
+    <compoundname>McGrid</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_mc_grid_1a11c7b772273f1ad9cd11b43b2e2a0544" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int McGrid.HORISONTAL_BLOCK_COUNT</definition>
+        <argsstring></argsstring>
+        <name>HORISONTAL_BLOCK_COUNT</name>
+        <initializer>= 2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McGrid.cs" line="8" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McGrid.cs" bodystart="8" bodyend="-1"/>
+        <referencedby refid="class_mc_grid_1adba118d7d0e6239205ef268ae876bed8" compoundref="_mc_grid_8cs" startline="46" endline="89">DrawBlockAreas</referencedby>
+        <referencedby refid="class_mc_grid_1a1355b61cc25821c23732f1b46fc0c1e8" compoundref="_mc_grid_8cs" startline="91" endline="140">DrawGrid</referencedby>
+        <referencedby refid="class_mc_grid_1a7701745ee3e3a5206150f5752a29ab71" compoundref="_mc_grid_8cs" startline="142" endline="186">DrawInputedBlock</referencedby>
+        <referencedby refid="class_mc_grid_construct_controller_1abd877ad2beab54a368ae70399b7a0cdb" compoundref="_mc_grid_construct_controller_8cs" startline="51" endline="87">McGridConstructController.OnPointerDown</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_mc_grid_1a47d34c513551534e159feb3ad0b3d380" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int McGrid.VERTICAL_BLOCK_COUNT</definition>
+        <argsstring></argsstring>
+        <name>VERTICAL_BLOCK_COUNT</name>
+        <initializer>= 2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McGrid.cs" line="9" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McGrid.cs" bodystart="9" bodyend="-1"/>
+        <referencedby refid="class_mc_grid_1adba118d7d0e6239205ef268ae876bed8" compoundref="_mc_grid_8cs" startline="46" endline="89">DrawBlockAreas</referencedby>
+        <referencedby refid="class_mc_grid_1a1355b61cc25821c23732f1b46fc0c1e8" compoundref="_mc_grid_8cs" startline="91" endline="140">DrawGrid</referencedby>
+        <referencedby refid="class_mc_grid_1a7701745ee3e3a5206150f5752a29ab71" compoundref="_mc_grid_8cs" startline="142" endline="186">DrawInputedBlock</referencedby>
+        <referencedby refid="class_mc_grid_construct_controller_1abd877ad2beab54a368ae70399b7a0cdb" compoundref="_mc_grid_construct_controller_8cs" startline="51" endline="87">McGridConstructController.OnPointerDown</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_mc_grid_1a792920665420025bafe4615cc811d7dc" prot="private" static="no" mutable="no">
+        <type>Color</type>
+        <definition>Color McGrid.DEFAULT_CELLS_FILL_GRID_COLOR</definition>
+        <argsstring></argsstring>
+        <name>DEFAULT_CELLS_FILL_GRID_COLOR</name>
+        <initializer>= Color.white</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McGrid.cs" line="11" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McGrid.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_mc_grid_1a9ba20b412e53b3435b25cb7631986442" prot="private" static="no" mutable="no">
+        <type>Color</type>
+        <definition>Color McGrid.DEFAULT_CELLS_EMPTY_GRID_COLOR</definition>
+        <argsstring></argsstring>
+        <name>DEFAULT_CELLS_EMPTY_GRID_COLOR</name>
+        <initializer>= Color.gray</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McGrid.cs" line="12" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McGrid.cs" bodystart="12" bodyend="-1"/>
+        <referencedby refid="class_mc_grid_1a1355b61cc25821c23732f1b46fc0c1e8" compoundref="_mc_grid_8cs" startline="91" endline="140">DrawGrid</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_mc_grid_1a6c7dacb4e73f2ed82c6c20a22c916fb0" prot="private" static="no" mutable="no">
+        <type>Color</type>
+        <definition>Color McGrid.SELECTEDT_GRID_COLOR</definition>
+        <argsstring></argsstring>
+        <name>SELECTEDT_GRID_COLOR</name>
+        <initializer>= Color.red</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McGrid.cs" line="13" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McGrid.cs" bodystart="13" bodyend="-1"/>
+        <referencedby refid="class_mc_grid_1a1355b61cc25821c23732f1b46fc0c1e8" compoundref="_mc_grid_8cs" startline="91" endline="140">DrawGrid</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_mc_grid_1ad331350fcaca295c65ffef6891c3a934" prot="private" static="no" mutable="no">
+        <type>Color</type>
+        <definition>Color McGrid.BLOCK_GRID_COLOR</definition>
+        <argsstring></argsstring>
+        <name>BLOCK_GRID_COLOR</name>
+        <initializer>= Color.cyan</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McGrid.cs" line="14" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McGrid.cs" bodystart="14" bodyend="-1"/>
+        <referencedby refid="class_mc_grid_1a1355b61cc25821c23732f1b46fc0c1e8" compoundref="_mc_grid_8cs" startline="91" endline="140">DrawGrid</referencedby>
+        <referencedby refid="class_mc_grid_1a2f343ba51a90a8c430e16f2ae7f3b022" compoundref="_mc_grid_8cs" startline="252" endline="265">OnDrawGizmos</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_mc_grid_1a963e0d2b92fc0e5629320243a280e8c1" prot="private" static="no" mutable="no">
+        <type>Color</type>
+        <definition>Color McGrid.DEFAULT_CELLS_FILL_INPUTED_GRID_COLOR</definition>
+        <argsstring></argsstring>
+        <name>DEFAULT_CELLS_FILL_INPUTED_GRID_COLOR</name>
+        <initializer>= Color.green</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McGrid.cs" line="15" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McGrid.cs" bodystart="15" bodyend="-1"/>
+        <referencedby refid="class_mc_grid_1a7701745ee3e3a5206150f5752a29ab71" compoundref="_mc_grid_8cs" startline="142" endline="186">DrawInputedBlock</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_mc_grid_1a5c4e91a262c703edf3083e805c7d3cb5" prot="private" static="no" mutable="no">
+        <type>Color</type>
+        <definition>Color McGrid.DEFAULT_CELLS_EMPTY_INPUTED_GRID_COLOR</definition>
+        <argsstring></argsstring>
+        <name>DEFAULT_CELLS_EMPTY_INPUTED_GRID_COLOR</name>
+        <initializer>= Color.yellow</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McGrid.cs" line="16" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McGrid.cs" bodystart="16" bodyend="-1"/>
+        <referencedby refid="class_mc_grid_1a7701745ee3e3a5206150f5752a29ab71" compoundref="_mc_grid_8cs" startline="142" endline="186">DrawInputedBlock</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_mc_grid_1aa2f87c3980d27258f0cd6bf19e8fd908" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int McGrid.gridWidth</definition>
+        <argsstring></argsstring>
+        <name>gridWidth</name>
+        <initializer>= <ref refid="struct_map_block_1a3da7202e195233db372ff06be195e549" kindref="member">MapBlock.BLOCK_SIZE</ref> * <ref refid="class_mc_grid_1a11c7b772273f1ad9cd11b43b2e2a0544" kindref="member">HORISONTAL_BLOCK_COUNT</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McGrid.cs" line="18" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McGrid.cs" bodystart="18" bodyend="-1"/>
+        <referencedby refid="class_mc_grid_1a1355b61cc25821c23732f1b46fc0c1e8" compoundref="_mc_grid_8cs" startline="91" endline="140">DrawGrid</referencedby>
+        <referencedby refid="class_mc_grid_1a7701745ee3e3a5206150f5752a29ab71" compoundref="_mc_grid_8cs" startline="142" endline="186">DrawInputedBlock</referencedby>
+        <referencedby refid="class_mc_grid_1ad721c0cf95f01fe7ffc384621a9ac2ba" compoundref="_mc_grid_8cs" startline="225" endline="250">FillCell</referencedby>
+        <referencedby refid="class_mc_grid_1a5196684e02bf9b0eeee6529b8c505ab8" compoundref="_mc_grid_8cs" startline="37" endline="44">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_mc_grid_1a5e045ba33e7370e968fe582f02335b46" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int McGrid.gridHeight</definition>
+        <argsstring></argsstring>
+        <name>gridHeight</name>
+        <initializer>= <ref refid="struct_map_block_1a3da7202e195233db372ff06be195e549" kindref="member">MapBlock.BLOCK_SIZE</ref> * <ref refid="class_mc_grid_1a47d34c513551534e159feb3ad0b3d380" kindref="member">VERTICAL_BLOCK_COUNT</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McGrid.cs" line="19" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McGrid.cs" bodystart="19" bodyend="-1"/>
+        <referencedby refid="class_mc_grid_1a1355b61cc25821c23732f1b46fc0c1e8" compoundref="_mc_grid_8cs" startline="91" endline="140">DrawGrid</referencedby>
+        <referencedby refid="class_mc_grid_1a7701745ee3e3a5206150f5752a29ab71" compoundref="_mc_grid_8cs" startline="142" endline="186">DrawInputedBlock</referencedby>
+        <referencedby refid="class_mc_grid_1ad721c0cf95f01fe7ffc384621a9ac2ba" compoundref="_mc_grid_8cs" startline="225" endline="250">FillCell</referencedby>
+        <referencedby refid="class_mc_grid_1a5196684e02bf9b0eeee6529b8c505ab8" compoundref="_mc_grid_8cs" startline="37" endline="44">Start</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_mc_grid_1a039d3d6737e9aab51db24ba7fc99fd42" prot="private" static="yes" mutable="no">
+        <type>Vector2</type>
+        <definition>Vector2 McGrid.selectedBlocksPosition</definition>
+        <argsstring></argsstring>
+        <name>selectedBlocksPosition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McGrid.cs" line="21" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McGrid.cs" bodystart="21" bodyend="-1"/>
+        <referencedby refid="class_mc_grid_1a1355b61cc25821c23732f1b46fc0c1e8" compoundref="_mc_grid_8cs" startline="91" endline="140">DrawGrid</referencedby>
+        <referencedby refid="class_mc_grid_1abe7666fff4d9fbf9466eb066af05808b" compoundref="_mc_grid_8cs" startline="206" endline="223">GetSelectedBlocks</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_mc_grid_1a4d989a8e441f446abb71a5b1a76d4abe" prot="private" static="yes" mutable="no">
+        <type><ref refid="struct_map_block" kindref="compound">MapBlock</ref></type>
+        <definition>MapBlock McGrid.inputedMapBlock</definition>
+        <argsstring></argsstring>
+        <name>inputedMapBlock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McGrid.cs" line="33" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McGrid.cs" bodystart="33" bodyend="-1"/>
+        <referencedby refid="class_mc_grid_1a7701745ee3e3a5206150f5752a29ab71" compoundref="_mc_grid_8cs" startline="142" endline="186">DrawInputedBlock</referencedby>
+        <referencedby refid="class_mc_grid_1a417f06ce0026fe50ad784331bb435550" compoundref="_mc_grid_8cs" startline="188" endline="199">InputMapBlock</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_mc_grid_1a6fc4918d5ee27a97d0d73c982c2ce544" prot="private" static="yes" mutable="no">
+        <type>Vector2</type>
+        <definition>Vector2 McGrid.inputedMapBlockPosition</definition>
+        <argsstring></argsstring>
+        <name>inputedMapBlockPosition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McGrid.cs" line="35" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McGrid.cs" bodystart="35" bodyend="-1"/>
+        <referencedby refid="class_mc_grid_1a7701745ee3e3a5206150f5752a29ab71" compoundref="_mc_grid_8cs" startline="142" endline="186">DrawInputedBlock</referencedby>
+        <referencedby refid="class_mc_grid_1a417f06ce0026fe50ad784331bb435550" compoundref="_mc_grid_8cs" startline="188" endline="199">InputMapBlock</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_mc_grid_1ab3ba3401f8bd20f90db9c9b66904cf9a" prot="public" static="yes" mutable="no">
+        <type><ref refid="class_mc_grid_construct_controller" kindref="compound">McGridConstructController</ref></type>
+        <definition>McGridConstructController McGrid.controller</definition>
+        <argsstring></argsstring>
+        <name>controller</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McGrid.cs" line="23" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McGrid.cs" bodystart="23" bodyend="-1"/>
+        <referencedby refid="class_mc_grid_1a1355b61cc25821c23732f1b46fc0c1e8" compoundref="_mc_grid_8cs" startline="91" endline="140">DrawGrid</referencedby>
+        <referencedby refid="class_mc_grid_1a5196684e02bf9b0eeee6529b8c505ab8" compoundref="_mc_grid_8cs" startline="37" endline="44">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_mc_grid_1aa4b60500bb0ed6b13e0b9dbf58954db1" prot="public" static="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool McGrid.hasInputedBlock</definition>
+        <argsstring></argsstring>
+        <name>hasInputedBlock</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McGrid.cs" line="31" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McGrid.cs" bodystart="31" bodyend="-1"/>
+        <referencedby refid="class_mc_grid_1a7701745ee3e3a5206150f5752a29ab71" compoundref="_mc_grid_8cs" startline="142" endline="186">DrawInputedBlock</referencedby>
+        <referencedby refid="class_mc_grid_construct_controller_1a510e5cc6b3f8ac75c52e1380abd03eef" compoundref="_mc_grid_construct_controller_8cs" startline="42" endline="49">McGridConstructController.OnDrag</referencedby>
+        <referencedby refid="class_mc_grid_construct_controller_1abd877ad2beab54a368ae70399b7a0cdb" compoundref="_mc_grid_construct_controller_8cs" startline="51" endline="87">McGridConstructController.OnPointerDown</referencedby>
+        <referencedby refid="class_mc_grid_1a66852ae1c2cfb1ca2e2fb7bf20e2b98b" compoundref="_mc_grid_8cs" startline="201" endline="204">ReseteInputMapBlock</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_mc_grid_1af9fd1972caa8124e92d533287cc7c5b3" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>bool[][]</type>
+        <definition>bool [][] McGrid.Grid</definition>
+        <argsstring></argsstring>
+        <name>Grid</name>
+        <briefdescription>
+<para>if true - wall in this plase, cant walc if false - empty cell, can walc </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McGrid.cs" line="29" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McGrid.cs" bodystart="29" bodyend="-1"/>
+        <referencedby refid="class_mc_grid_1a1355b61cc25821c23732f1b46fc0c1e8" compoundref="_mc_grid_8cs" startline="91" endline="140">DrawGrid</referencedby>
+        <referencedby refid="class_mc_grid_1ad721c0cf95f01fe7ffc384621a9ac2ba" compoundref="_mc_grid_8cs" startline="225" endline="250">FillCell</referencedby>
+        <referencedby refid="class_mc_grid_1abe7666fff4d9fbf9466eb066af05808b" compoundref="_mc_grid_8cs" startline="206" endline="223">GetSelectedBlocks</referencedby>
+        <referencedby refid="class_mc_grid_1a417f06ce0026fe50ad784331bb435550" compoundref="_mc_grid_8cs" startline="188" endline="199">InputMapBlock</referencedby>
+        <referencedby refid="class_mc_grid_1a2f343ba51a90a8c430e16f2ae7f3b022" compoundref="_mc_grid_8cs" startline="252" endline="265">OnDrawGizmos</referencedby>
+        <referencedby refid="class_mc_grid_1a5196684e02bf9b0eeee6529b8c505ab8" compoundref="_mc_grid_8cs" startline="37" endline="44">Start</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_mc_grid_1acacfb1ada53683316a9bb82640747624" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="struct_map_block" kindref="compound">MapBlock</ref></type>
+        <definition>MapBlock McGrid.InputedMapBlock</definition>
+        <argsstring></argsstring>
+        <name>InputedMapBlock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McGrid.cs" line="34" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McGrid.cs" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_mc_grid_1a5196684e02bf9b0eeee6529b8c505ab8" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void McGrid.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McGrid.cs" line="37" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McGrid.cs" bodystart="37" bodyend="44"/>
+        <references refid="class_mc_grid_1ab3ba3401f8bd20f90db9c9b66904cf9a" compoundref="_mc_grid_8cs" startline="23">controller</references>
+        <references refid="class_mc_grid_1af9fd1972caa8124e92d533287cc7c5b3" compoundref="_mc_grid_8cs" startline="29">Grid</references>
+        <references refid="class_mc_grid_1a5e045ba33e7370e968fe582f02335b46" compoundref="_mc_grid_8cs" startline="19">gridHeight</references>
+        <references refid="class_mc_grid_1aa2f87c3980d27258f0cd6bf19e8fd908" compoundref="_mc_grid_8cs" startline="18">gridWidth</references>
+      </memberdef>
+      <memberdef kind="function" id="class_mc_grid_1adba118d7d0e6239205ef268ae876bed8" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void McGrid.DrawBlockAreas</definition>
+        <argsstring>()</argsstring>
+        <name>DrawBlockAreas</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McGrid.cs" line="46" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McGrid.cs" bodystart="46" bodyend="89"/>
+        <references refid="struct_map_block_1a9e46c3698814e50f60550ebd48ab9cb2" compoundref="_map_block_8cs" startline="10">MapBlock.BLOCK_SCALE</references>
+        <references refid="class_mc_grid_1a11c7b772273f1ad9cd11b43b2e2a0544" compoundref="_mc_grid_8cs" startline="8">HORISONTAL_BLOCK_COUNT</references>
+        <references refid="class_mc_grid_1a47d34c513551534e159feb3ad0b3d380" compoundref="_mc_grid_8cs" startline="9">VERTICAL_BLOCK_COUNT</references>
+        <references refid="struct_map_block_1a8fb3e875d60f04656e388e30da38e6f7" compoundref="_map_block_8cs" startline="8">MapBlock.WORLD_BLOCK_SIZE</references>
+        <referencedby refid="class_mc_grid_1a2f343ba51a90a8c430e16f2ae7f3b022" compoundref="_mc_grid_8cs" startline="252" endline="265">OnDrawGizmos</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_mc_grid_1a1355b61cc25821c23732f1b46fc0c1e8" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void McGrid.DrawGrid</definition>
+        <argsstring>(Vector2 mousePosition)</argsstring>
+        <name>DrawGrid</name>
+        <param>
+          <type>Vector2</type>
+          <declname>mousePosition</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McGrid.cs" line="91" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McGrid.cs" bodystart="91" bodyend="140"/>
+        <references refid="class_mc_grid_1ad331350fcaca295c65ffef6891c3a934" compoundref="_mc_grid_8cs" startline="14">BLOCK_GRID_COLOR</references>
+        <references refid="struct_map_block_1a9e46c3698814e50f60550ebd48ab9cb2" compoundref="_map_block_8cs" startline="10">MapBlock.BLOCK_SCALE</references>
+        <references refid="struct_map_block_1a3da7202e195233db372ff06be195e549" compoundref="_map_block_8cs" startline="9">MapBlock.BLOCK_SIZE</references>
+        <references refid="class_mc_toggle_type_of_block_1ad2e5a070547daee60336765bcf9208ec" compoundref="_mc_toggle_type_of_block_8cs" startline="43">McToggleTypeOfBlock.BlocksSelected</references>
+        <references refid="class_mc_grid_1ab3ba3401f8bd20f90db9c9b66904cf9a" compoundref="_mc_grid_8cs" startline="23">controller</references>
+        <references refid="class_mc_grid_1a9ba20b412e53b3435b25cb7631986442" compoundref="_mc_grid_8cs" startline="12">DEFAULT_CELLS_EMPTY_GRID_COLOR</references>
+        <references refid="class_mc_file_manager_1a00ee331a97c6e6d3224d20cadf212bf1" compoundref="_mc_file_manager_8cs" startline="23">McFileManager.DialogShowed</references>
+        <references refid="class_mc_grid_1af9fd1972caa8124e92d533287cc7c5b3" compoundref="_mc_grid_8cs" startline="29">Grid</references>
+        <references refid="class_mc_grid_1a5e045ba33e7370e968fe582f02335b46" compoundref="_mc_grid_8cs" startline="19">gridHeight</references>
+        <references refid="class_mc_grid_1aa2f87c3980d27258f0cd6bf19e8fd908" compoundref="_mc_grid_8cs" startline="18">gridWidth</references>
+        <references refid="class_mc_toggle_type_of_block_1abfbaff764b1dc7b2015f3dad99c299ab" compoundref="_mc_toggle_type_of_block_8cs" startline="25">McToggleTypeOfBlock.Height</references>
+        <references refid="class_mc_grid_1a11c7b772273f1ad9cd11b43b2e2a0544" compoundref="_mc_grid_8cs" startline="8">HORISONTAL_BLOCK_COUNT</references>
+        <references refid="class_mc_grid_1a039d3d6737e9aab51db24ba7fc99fd42" compoundref="_mc_grid_8cs" startline="21">selectedBlocksPosition</references>
+        <references refid="class_mc_grid_1a6c7dacb4e73f2ed82c6c20a22c916fb0" compoundref="_mc_grid_8cs" startline="13">SELECTEDT_GRID_COLOR</references>
+        <references refid="class_mc_grid_1a47d34c513551534e159feb3ad0b3d380" compoundref="_mc_grid_8cs" startline="9">VERTICAL_BLOCK_COUNT</references>
+        <references refid="struct_map_block_1a8fb3e875d60f04656e388e30da38e6f7" compoundref="_map_block_8cs" startline="8">MapBlock.WORLD_BLOCK_SIZE</references>
+        <referencedby refid="class_mc_grid_1a2f343ba51a90a8c430e16f2ae7f3b022" compoundref="_mc_grid_8cs" startline="252" endline="265">OnDrawGizmos</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_mc_grid_1a7701745ee3e3a5206150f5752a29ab71" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void McGrid.DrawInputedBlock</definition>
+        <argsstring>(Vector2 mousePosition)</argsstring>
+        <name>DrawInputedBlock</name>
+        <param>
+          <type>Vector2</type>
+          <declname>mousePosition</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McGrid.cs" line="142" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McGrid.cs" bodystart="142" bodyend="186"/>
+        <references refid="struct_map_block_1a9e46c3698814e50f60550ebd48ab9cb2" compoundref="_map_block_8cs" startline="10">MapBlock.BLOCK_SCALE</references>
+        <references refid="struct_map_block_1a3da7202e195233db372ff06be195e549" compoundref="_map_block_8cs" startline="9">MapBlock.BLOCK_SIZE</references>
+        <references refid="class_mc_grid_1a5c4e91a262c703edf3083e805c7d3cb5" compoundref="_mc_grid_8cs" startline="16">DEFAULT_CELLS_EMPTY_INPUTED_GRID_COLOR</references>
+        <references refid="class_mc_grid_1a963e0d2b92fc0e5629320243a280e8c1" compoundref="_mc_grid_8cs" startline="15">DEFAULT_CELLS_FILL_INPUTED_GRID_COLOR</references>
+        <references refid="struct_map_block_1ad3c350cfa4b549e6df9a1f9f844e6723" compoundref="_map_block_8cs" startline="18">MapBlock.Grid</references>
+        <references refid="class_mc_grid_1a5e045ba33e7370e968fe582f02335b46" compoundref="_mc_grid_8cs" startline="19">gridHeight</references>
+        <references refid="class_mc_grid_1aa2f87c3980d27258f0cd6bf19e8fd908" compoundref="_mc_grid_8cs" startline="18">gridWidth</references>
+        <references refid="class_mc_grid_1aa4b60500bb0ed6b13e0b9dbf58954db1" compoundref="_mc_grid_8cs" startline="31">hasInputedBlock</references>
+        <references refid="class_mc_grid_1a11c7b772273f1ad9cd11b43b2e2a0544" compoundref="_mc_grid_8cs" startline="8">HORISONTAL_BLOCK_COUNT</references>
+        <references refid="class_mc_grid_1a4d989a8e441f446abb71a5b1a76d4abe" compoundref="_mc_grid_8cs" startline="33">inputedMapBlock</references>
+        <references refid="class_mc_grid_1a6fc4918d5ee27a97d0d73c982c2ce544" compoundref="_mc_grid_8cs" startline="35">inputedMapBlockPosition</references>
+        <references refid="class_mc_grid_1a47d34c513551534e159feb3ad0b3d380" compoundref="_mc_grid_8cs" startline="9">VERTICAL_BLOCK_COUNT</references>
+        <references refid="struct_map_block_1a8fb3e875d60f04656e388e30da38e6f7" compoundref="_map_block_8cs" startline="8">MapBlock.WORLD_BLOCK_SIZE</references>
+        <referencedby refid="class_mc_grid_1a2f343ba51a90a8c430e16f2ae7f3b022" compoundref="_mc_grid_8cs" startline="252" endline="265">OnDrawGizmos</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_mc_grid_1a2f343ba51a90a8c430e16f2ae7f3b022" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void McGrid.OnDrawGizmos</definition>
+        <argsstring>()</argsstring>
+        <name>OnDrawGizmos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McGrid.cs" line="252" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McGrid.cs" bodystart="252" bodyend="265"/>
+        <references refid="class_mc_grid_1ad331350fcaca295c65ffef6891c3a934" compoundref="_mc_grid_8cs" startline="14">BLOCK_GRID_COLOR</references>
+        <references refid="class_mc_grid_1adba118d7d0e6239205ef268ae876bed8" compoundref="_mc_grid_8cs" startline="46" endline="89">DrawBlockAreas</references>
+        <references refid="class_mc_grid_1a1355b61cc25821c23732f1b46fc0c1e8" compoundref="_mc_grid_8cs" startline="91" endline="140">DrawGrid</references>
+        <references refid="class_mc_grid_1a7701745ee3e3a5206150f5752a29ab71" compoundref="_mc_grid_8cs" startline="142" endline="186">DrawInputedBlock</references>
+        <references refid="class_mc_grid_1af9fd1972caa8124e92d533287cc7c5b3" compoundref="_mc_grid_8cs" startline="29">Grid</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_mc_grid_1a417f06ce0026fe50ad784331bb435550" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void McGrid.InputMapBlock</definition>
+        <argsstring>()</argsstring>
+        <name>InputMapBlock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McGrid.cs" line="188" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McGrid.cs" bodystart="188" bodyend="199"/>
+        <references refid="struct_map_block_1a3da7202e195233db372ff06be195e549" compoundref="_map_block_8cs" startline="9">MapBlock.BLOCK_SIZE</references>
+        <references refid="struct_map_block_1ad3c350cfa4b549e6df9a1f9f844e6723" compoundref="_map_block_8cs" startline="18">MapBlock.Grid</references>
+        <references refid="class_mc_grid_1af9fd1972caa8124e92d533287cc7c5b3" compoundref="_mc_grid_8cs" startline="29">Grid</references>
+        <references refid="class_mc_grid_1a4d989a8e441f446abb71a5b1a76d4abe" compoundref="_mc_grid_8cs" startline="33">inputedMapBlock</references>
+        <references refid="class_mc_grid_1a6fc4918d5ee27a97d0d73c982c2ce544" compoundref="_mc_grid_8cs" startline="35">inputedMapBlockPosition</references>
+        <references refid="class_mc_grid_1a66852ae1c2cfb1ca2e2fb7bf20e2b98b" compoundref="_mc_grid_8cs" startline="201" endline="204">ReseteInputMapBlock</references>
+      </memberdef>
+      <memberdef kind="function" id="class_mc_grid_1a66852ae1c2cfb1ca2e2fb7bf20e2b98b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void McGrid.ReseteInputMapBlock</definition>
+        <argsstring>()</argsstring>
+        <name>ReseteInputMapBlock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McGrid.cs" line="201" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McGrid.cs" bodystart="201" bodyend="204"/>
+        <references refid="class_mc_grid_1aa4b60500bb0ed6b13e0b9dbf58954db1" compoundref="_mc_grid_8cs" startline="31">hasInputedBlock</references>
+        <referencedby refid="class_mc_grid_1a417f06ce0026fe50ad784331bb435550" compoundref="_mc_grid_8cs" startline="188" endline="199">InputMapBlock</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_mc_grid_1abe7666fff4d9fbf9466eb066af05808b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_map_block" kindref="compound">MapBlock</ref></type>
+        <definition>MapBlock McGrid.GetSelectedBlocks</definition>
+        <argsstring>()</argsstring>
+        <name>GetSelectedBlocks</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McGrid.cs" line="206" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McGrid.cs" bodystart="206" bodyend="223"/>
+        <references refid="struct_map_block_1a3da7202e195233db372ff06be195e549" compoundref="_map_block_8cs" startline="9">MapBlock.BLOCK_SIZE</references>
+        <references refid="class_mc_grid_1af9fd1972caa8124e92d533287cc7c5b3" compoundref="_mc_grid_8cs" startline="29">Grid</references>
+        <references refid="class_mc_grid_1a039d3d6737e9aab51db24ba7fc99fd42" compoundref="_mc_grid_8cs" startline="21">selectedBlocksPosition</references>
+      </memberdef>
+      <memberdef kind="function" id="class_mc_grid_1ad721c0cf95f01fe7ffc384621a9ac2ba" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void McGrid.FillCell</definition>
+        <argsstring>(Vector2 coordinates, float brushSize, bool fill)</argsstring>
+        <name>FillCell</name>
+        <param>
+          <type>Vector2</type>
+          <declname>coordinates</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>brushSize</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>fill</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McGrid.cs" line="225" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McGrid.cs" bodystart="225" bodyend="250"/>
+        <references refid="struct_map_block_1a9e46c3698814e50f60550ebd48ab9cb2" compoundref="_map_block_8cs" startline="10">MapBlock.BLOCK_SCALE</references>
+        <references refid="class_mc_grid_1af9fd1972caa8124e92d533287cc7c5b3" compoundref="_mc_grid_8cs" startline="29">Grid</references>
+        <references refid="class_mc_grid_1a5e045ba33e7370e968fe582f02335b46" compoundref="_mc_grid_8cs" startline="19">gridHeight</references>
+        <references refid="class_mc_grid_1aa2f87c3980d27258f0cd6bf19e8fd908" compoundref="_mc_grid_8cs" startline="18">gridWidth</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="637">
+        <label>McGrid</label>
+        <link refid="class_mc_grid"/>
+        <childnode refid="638" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="638">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="644">
+        <label>McFileManager</label>
+        <link refid="class_mc_file_manager"/>
+        <childnode refid="640" relation="public-inheritance">
+        </childnode>
+        <childnode refid="641" relation="usage">
+          <edgelabel>gridConstructController</edgelabel>
+        </childnode>
+        <childnode refid="645" relation="usage">
+          <edgelabel>mapBlocks</edgelabel>
+        </childnode>
+        <childnode refid="646" relation="usage">
+          <edgelabel>dialogPanel</edgelabel>
+        </childnode>
+      </node>
+      <node id="646">
+        <label>McHider</label>
+        <link refid="class_mc_hider"/>
+        <childnode refid="640" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="639">
+        <label>McGrid</label>
+        <link refid="class_mc_grid"/>
+        <childnode refid="640" relation="public-inheritance">
+        </childnode>
+        <childnode refid="641" relation="usage">
+          <edgelabel>controller</edgelabel>
+        </childnode>
+        <childnode refid="645" relation="usage">
+          <edgelabel>inputedMapBlock</edgelabel>
+        </childnode>
+      </node>
+      <node id="645">
+        <label>MapBlock</label>
+        <link refid="struct_map_block"/>
+      </node>
+      <node id="641">
+        <label>McGridConstructController</label>
+        <link refid="class_mc_grid_construct_controller"/>
+        <childnode refid="640" relation="public-inheritance">
+        </childnode>
+        <childnode refid="642" relation="public-inheritance">
+        </childnode>
+        <childnode refid="643" relation="public-inheritance">
+        </childnode>
+        <childnode refid="644" relation="usage">
+          <edgelabel>fileManager</edgelabel>
+        </childnode>
+        <childnode refid="639" relation="usage">
+          <edgelabel>grid</edgelabel>
+        </childnode>
+      </node>
+      <node id="643">
+        <label>IPointerDownHandler</label>
+      </node>
+      <node id="640">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="642">
+        <label>IDragHandler</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McGrid.cs" line="7" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McGrid.cs" bodystart="6" bodyend="266"/>
+    <listofallmembers>
+      <member refid="class_mc_grid_1ad331350fcaca295c65ffef6891c3a934" prot="private" virt="non-virtual"><scope>McGrid</scope><name>BLOCK_GRID_COLOR</name></member>
+      <member refid="class_mc_grid_1ab3ba3401f8bd20f90db9c9b66904cf9a" prot="public" virt="non-virtual"><scope>McGrid</scope><name>controller</name></member>
+      <member refid="class_mc_grid_1a9ba20b412e53b3435b25cb7631986442" prot="private" virt="non-virtual"><scope>McGrid</scope><name>DEFAULT_CELLS_EMPTY_GRID_COLOR</name></member>
+      <member refid="class_mc_grid_1a5c4e91a262c703edf3083e805c7d3cb5" prot="private" virt="non-virtual"><scope>McGrid</scope><name>DEFAULT_CELLS_EMPTY_INPUTED_GRID_COLOR</name></member>
+      <member refid="class_mc_grid_1a792920665420025bafe4615cc811d7dc" prot="private" virt="non-virtual"><scope>McGrid</scope><name>DEFAULT_CELLS_FILL_GRID_COLOR</name></member>
+      <member refid="class_mc_grid_1a963e0d2b92fc0e5629320243a280e8c1" prot="private" virt="non-virtual"><scope>McGrid</scope><name>DEFAULT_CELLS_FILL_INPUTED_GRID_COLOR</name></member>
+      <member refid="class_mc_grid_1adba118d7d0e6239205ef268ae876bed8" prot="private" virt="non-virtual"><scope>McGrid</scope><name>DrawBlockAreas</name></member>
+      <member refid="class_mc_grid_1a1355b61cc25821c23732f1b46fc0c1e8" prot="private" virt="non-virtual"><scope>McGrid</scope><name>DrawGrid</name></member>
+      <member refid="class_mc_grid_1a7701745ee3e3a5206150f5752a29ab71" prot="private" virt="non-virtual"><scope>McGrid</scope><name>DrawInputedBlock</name></member>
+      <member refid="class_mc_grid_1ad721c0cf95f01fe7ffc384621a9ac2ba" prot="public" virt="non-virtual"><scope>McGrid</scope><name>FillCell</name></member>
+      <member refid="class_mc_grid_1abe7666fff4d9fbf9466eb066af05808b" prot="public" virt="non-virtual"><scope>McGrid</scope><name>GetSelectedBlocks</name></member>
+      <member refid="class_mc_grid_1af9fd1972caa8124e92d533287cc7c5b3" prot="public" virt="non-virtual"><scope>McGrid</scope><name>Grid</name></member>
+      <member refid="class_mc_grid_1a5e045ba33e7370e968fe582f02335b46" prot="private" virt="non-virtual"><scope>McGrid</scope><name>gridHeight</name></member>
+      <member refid="class_mc_grid_1aa2f87c3980d27258f0cd6bf19e8fd908" prot="private" virt="non-virtual"><scope>McGrid</scope><name>gridWidth</name></member>
+      <member refid="class_mc_grid_1aa4b60500bb0ed6b13e0b9dbf58954db1" prot="public" virt="non-virtual"><scope>McGrid</scope><name>hasInputedBlock</name></member>
+      <member refid="class_mc_grid_1a11c7b772273f1ad9cd11b43b2e2a0544" prot="public" virt="non-virtual"><scope>McGrid</scope><name>HORISONTAL_BLOCK_COUNT</name></member>
+      <member refid="class_mc_grid_1acacfb1ada53683316a9bb82640747624" prot="public" virt="non-virtual"><scope>McGrid</scope><name>InputedMapBlock</name></member>
+      <member refid="class_mc_grid_1a4d989a8e441f446abb71a5b1a76d4abe" prot="private" virt="non-virtual"><scope>McGrid</scope><name>inputedMapBlock</name></member>
+      <member refid="class_mc_grid_1a6fc4918d5ee27a97d0d73c982c2ce544" prot="private" virt="non-virtual"><scope>McGrid</scope><name>inputedMapBlockPosition</name></member>
+      <member refid="class_mc_grid_1a417f06ce0026fe50ad784331bb435550" prot="public" virt="non-virtual"><scope>McGrid</scope><name>InputMapBlock</name></member>
+      <member refid="class_mc_grid_1a2f343ba51a90a8c430e16f2ae7f3b022" prot="private" virt="non-virtual"><scope>McGrid</scope><name>OnDrawGizmos</name></member>
+      <member refid="class_mc_grid_1a66852ae1c2cfb1ca2e2fb7bf20e2b98b" prot="public" virt="non-virtual"><scope>McGrid</scope><name>ReseteInputMapBlock</name></member>
+      <member refid="class_mc_grid_1a039d3d6737e9aab51db24ba7fc99fd42" prot="private" virt="non-virtual"><scope>McGrid</scope><name>selectedBlocksPosition</name></member>
+      <member refid="class_mc_grid_1a6c7dacb4e73f2ed82c6c20a22c916fb0" prot="private" virt="non-virtual"><scope>McGrid</scope><name>SELECTEDT_GRID_COLOR</name></member>
+      <member refid="class_mc_grid_1a5196684e02bf9b0eeee6529b8c505ab8" prot="private" virt="non-virtual"><scope>McGrid</scope><name>Start</name></member>
+      <member refid="class_mc_grid_1a47d34c513551534e159feb3ad0b3d380" prot="public" virt="non-virtual"><scope>McGrid</scope><name>VERTICAL_BLOCK_COUNT</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

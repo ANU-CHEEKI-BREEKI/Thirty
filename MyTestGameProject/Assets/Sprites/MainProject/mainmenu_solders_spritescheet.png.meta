@@ -1,0 +1,802 @@
+fileFormatVersion: 2
+guid: 6c85d6e0d2bf796469a6a4777af70ea2
+timeCreated: 1525355809
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: mainmenu_solders_spritescheet_0
+    21300002: mainmenu_solders_spritescheet_1
+    21300004: mainmenu_solders_spritescheet_2
+    21300006: mainmenu_solders_spritescheet_3
+    21300008: mainmenu_solders_spritescheet_4
+    21300010: mainmenu_solders_spritescheet_5
+    21300012: mainmenu_solders_spritescheet_6
+    21300014: mainmenu_solders_spritescheet_7
+    21300016: mainmenu_solders_spritescheet_8
+    21300018: mainmenu_solders_spritescheet_9
+    21300020: mainmenu_solders_spritescheet_10
+    21300022: mainmenu_solders_spritescheet_11
+    21300024: mainmenu_solders_spritescheet_12
+    21300026: mainmenu_solders_spritescheet_13
+    21300028: mainmenu_solders_spritescheet_14
+    21300030: mainmenu_solders_spritescheet_15
+    21300032: mainmenu_solders_spritescheet_16
+    21300034: mainmenu_solders_spritescheet_17
+    21300036: mainmenu_solders_spritescheet_18
+    21300038: mainmenu_solders_spritescheet_19
+    21300040: mainmenu_solders_spritescheet_20
+    21300042: mainmenu_solders_spritescheet_21
+    21300044: mainmenu_solders_spritescheet_22
+    21300046: mainmenu_solders_spritescheet_23
+    21300048: mainmenu_solders_spritescheet_24
+    21300050: mainmenu_solders_spritescheet_25
+    21300052: mainmenu_solders_spritescheet_26
+    21300054: mainmenu_solders_spritescheet_27
+    21300056: mainmenu_solders_spritescheet_28
+    21300058: mainmenu_solders_spritescheet_29
+    21300060: mainmenu_solders_spritescheet_30
+    21300062: mainmenu_solders_spritescheet_31
+    21300064: mainmenu_solders_spritescheet_32
+    21300066: mainmenu_solders_spritescheet_33
+    21300068: mainmenu_solders_spritescheet_34
+    21300070: mainmenu_solders_spritescheet_35
+    21300072: mainmenu_solders_spritescheet_36
+    21300074: mainmenu_solders_spritescheet_37
+    21300076: mainmenu_solders_spritescheet_39
+    21300078: mainmenu_solders_spritescheet_40
+    21300080: mainmenu_solders_spritescheet_38
+    21300082: mainmenu_solders_spritescheet_blink_1
+    21300084: mainmenu_solders_spritescheet_blink_2
+    21300086: mainmenu_solders_spritescheet_blink_4
+    21300088: mainmenu_solders_spritescheet_blink_3
+    21300090: mainmenu_solders_spritescheet_blink_5
+    21300092: mainmenu_solders_spritescheet_blink_6
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 15
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: mainmenu_solders_spritescheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 887
+        width: 104
+        height: 137
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mainmenu_solders_spritescheet_1
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 887
+        width: 104
+        height: 137
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mainmenu_solders_spritescheet_2
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 887
+        width: 104
+        height: 137
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mainmenu_solders_spritescheet_3
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 887
+        width: 104
+        height: 137
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mainmenu_solders_spritescheet_4
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 887
+        width: 104
+        height: 137
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mainmenu_solders_spritescheet_5
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 887
+        width: 104
+        height: 137
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mainmenu_solders_spritescheet_6
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 887
+        width: 104
+        height: 137
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mainmenu_solders_spritescheet_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 767
+        width: 109
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mainmenu_solders_spritescheet_8
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 767
+        width: 109
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mainmenu_solders_spritescheet_9
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 767
+        width: 109
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mainmenu_solders_spritescheet_10
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 767
+        width: 109
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mainmenu_solders_spritescheet_11
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 767
+        width: 109
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mainmenu_solders_spritescheet_12
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 767
+        width: 109
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mainmenu_solders_spritescheet_13
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 767
+        width: 109
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mainmenu_solders_spritescheet_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 660
+        width: 85
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mainmenu_solders_spritescheet_15
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 660
+        width: 85
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mainmenu_solders_spritescheet_16
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 660
+        width: 85
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mainmenu_solders_spritescheet_17
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 660
+        width: 85
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mainmenu_solders_spritescheet_18
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 660
+        width: 85
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mainmenu_solders_spritescheet_19
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 660
+        width: 85
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mainmenu_solders_spritescheet_20
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 660
+        width: 85
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mainmenu_solders_spritescheet_21
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 660
+        width: 85
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mainmenu_solders_spritescheet_22
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 660
+        width: 85
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mainmenu_solders_spritescheet_23
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 660
+        width: 85
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mainmenu_solders_spritescheet_24
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 660
+        width: 85
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mainmenu_solders_spritescheet_25
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 660
+        width: 85
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mainmenu_solders_spritescheet_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 548
+        width: 107
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mainmenu_solders_spritescheet_27
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 548
+        width: 107
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mainmenu_solders_spritescheet_28
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 548
+        width: 107
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mainmenu_solders_spritescheet_29
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 548
+        width: 107
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mainmenu_solders_spritescheet_30
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 548
+        width: 107
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mainmenu_solders_spritescheet_31
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 548
+        width: 107
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mainmenu_solders_spritescheet_32
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 548
+        width: 107
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mainmenu_solders_spritescheet_33
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 548
+        width: 107
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mainmenu_solders_spritescheet_34
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 548
+        width: 107
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mainmenu_solders_spritescheet_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 436
+        width: 107
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mainmenu_solders_spritescheet_36
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 436
+        width: 107
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mainmenu_solders_spritescheet_37
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 436
+        width: 107
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mainmenu_solders_spritescheet_39
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 436
+        width: 107
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mainmenu_solders_spritescheet_40
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 436
+        width: 107
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mainmenu_solders_spritescheet_38
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 436
+        width: 107
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mainmenu_solders_spritescheet_blink_1
+      rect:
+        serializedVersion: 2
+        x: 944
+        y: 805
+        width: 80
+        height: 219
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mainmenu_solders_spritescheet_blink_2
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 828
+        width: 50
+        height: 196
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mainmenu_solders_spritescheet_blink_4
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 982
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mainmenu_solders_spritescheet_blink_3
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 973
+        width: 53
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mainmenu_solders_spritescheet_blink_5
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 940
+        width: 41
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: mainmenu_solders_spritescheet_blink_6
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 919
+        width: 53
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

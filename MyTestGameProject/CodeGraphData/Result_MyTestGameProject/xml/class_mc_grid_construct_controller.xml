@@ -1,0 +1,352 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_mc_grid_construct_controller" kind="class" prot="public">
+    <compoundname>McGridConstructController</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">IDragHandler</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">IPointerDownHandler</basecompoundref>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="class_mc_grid_construct_controller_1a3ec286f8508e9da3063af9701fe621f2" prot="public" static="no">
+        <name>GroundType</name>
+        <enumvalue id="class_mc_grid_construct_controller_1a3ec286f8508e9da3063af9701fe621f2accfefb4e091a653c15d5dd4a85675a59" prot="public">
+          <name>GRASSLAND</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_mc_grid_construct_controller_1a3ec286f8508e9da3063af9701fe621f2a36cf8b91b77de9ed87ccf5e3d76962b9" prot="public">
+          <name>DESERT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_mc_grid_construct_controller_1a3ec286f8508e9da3063af9701fe621f2aafeb717aa2a101f7f64840e0be38c171" prot="public">
+          <name>ROCK</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_mc_grid_construct_controller_1a3ec286f8508e9da3063af9701fe621f2a94099674ce1c1538b3013305fb9de5c4" prot="public">
+          <name>NEATHER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_mc_grid_construct_controller_1a3ec286f8508e9da3063af9701fe621f2a1868c2177fdc84d496f7784a23729d3b" prot="public">
+          <name>FOREST</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McGridConstructController.cs" line="20" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McGridConstructController.cs" bodystart="20" bodyend="20"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_mc_grid_construct_controller_1a1e0b4e69b724a824511dc6de9e602ac1" prot="private" static="no" mutable="no">
+        <type><ref refid="class_mc_grid" kindref="compound">McGrid</ref></type>
+        <definition>McGrid McGridConstructController.grid</definition>
+        <argsstring></argsstring>
+        <name>grid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McGridConstructController.cs" line="13" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McGridConstructController.cs" bodystart="13" bodyend="-1"/>
+        <referencedby refid="class_mc_grid_construct_controller_1a0743acabe36d1e7f6b90ebe332888778" compoundref="_mc_grid_construct_controller_8cs" startline="31" endline="35">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_mc_grid_construct_controller_1aa3ddaf4a48c4987e5512a63530438a35" prot="private" static="no" mutable="no">
+        <type><ref refid="class_mc_file_manager" kindref="compound">McFileManager</ref></type>
+        <definition>McFileManager McGridConstructController.fileManager</definition>
+        <argsstring></argsstring>
+        <name>fileManager</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McGridConstructController.cs" line="15" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McGridConstructController.cs" bodystart="15" bodyend="-1"/>
+        <referencedby refid="class_mc_grid_construct_controller_1a0743acabe36d1e7f6b90ebe332888778" compoundref="_mc_grid_construct_controller_8cs" startline="31" endline="35">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_mc_grid_construct_controller_1aacb0651f74420a3319d0f8cf75facb86" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float McGridConstructController.brushSize</definition>
+        <argsstring></argsstring>
+        <name>brushSize</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McGridConstructController.cs" line="17" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McGridConstructController.cs" bodystart="17" bodyend="-1"/>
+        <referencedby refid="class_mc_grid_construct_controller_1ab3f2c383ebe37eb80c735916c3706b5c" compoundref="_mc_grid_construct_controller_8cs" startline="37" endline="40">BrushSizeSlider</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_mc_grid_construct_controller_1a6e46b4387ce3e1ccbb22d1c5c528760f" prot="private" static="no" mutable="no">
+        <type><ref refid="class_mc_grid_construct_controller_1a3ec286f8508e9da3063af9701fe621f2" kindref="member">GroundType</ref></type>
+        <definition>GroundType McGridConstructController.groundTypeName</definition>
+        <argsstring></argsstring>
+        <name>groundTypeName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McGridConstructController.cs" line="22" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McGridConstructController.cs" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_mc_grid_construct_controller_1a9c72c5c667be71b77f1575cebe2cbe7a" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>float</type>
+        <definition>float McGridConstructController.BrushSize</definition>
+        <argsstring></argsstring>
+        <name>BrushSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McGridConstructController.cs" line="18" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McGridConstructController.cs" bodystart="18" bodyend="-1"/>
+        <referencedby refid="class_mc_grid_construct_controller_1a11fcc115a1d45bf646c507c0e2179aba" compoundref="_mc_grid_construct_controller_8cs" startline="89" endline="103">DrawGrid</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_mc_grid_construct_controller_1aea42c0dea414e9371a6927dceb5f4216" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type><ref refid="class_mc_grid_construct_controller_1a3ec286f8508e9da3063af9701fe621f2" kindref="member">GroundType</ref></type>
+        <definition>GroundType McGridConstructController.GroundTypeName</definition>
+        <argsstring></argsstring>
+        <name>GroundTypeName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McGridConstructController.cs" line="23" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McGridConstructController.cs" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_mc_grid_construct_controller_1a0743acabe36d1e7f6b90ebe332888778" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void McGridConstructController.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McGridConstructController.cs" line="31" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McGridConstructController.cs" bodystart="31" bodyend="35"/>
+        <references refid="class_mc_grid_construct_controller_1aa3ddaf4a48c4987e5512a63530438a35" compoundref="_mc_grid_construct_controller_8cs" startline="15">fileManager</references>
+        <references refid="class_mc_grid_construct_controller_1a1e0b4e69b724a824511dc6de9e602ac1" compoundref="_mc_grid_construct_controller_8cs" startline="13">grid</references>
+      </memberdef>
+      <memberdef kind="function" id="class_mc_grid_construct_controller_1a11fcc115a1d45bf646c507c0e2179aba" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void McGridConstructController.DrawGrid</definition>
+        <argsstring>(Vector2 coordinates, PointerEventData.InputButton button)</argsstring>
+        <name>DrawGrid</name>
+        <param>
+          <type>Vector2</type>
+          <declname>coordinates</declname>
+        </param>
+        <param>
+          <type>PointerEventData.InputButton</type>
+          <declname>button</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McGridConstructController.cs" line="89" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McGridConstructController.cs" bodystart="89" bodyend="103"/>
+        <references refid="class_mc_toggle_type_of_block_1ad2e5a070547daee60336765bcf9208ec" compoundref="_mc_toggle_type_of_block_8cs" startline="43">McToggleTypeOfBlock.BlocksSelected</references>
+        <references refid="class_mc_grid_construct_controller_1a9c72c5c667be71b77f1575cebe2cbe7a" compoundref="_mc_grid_construct_controller_8cs" startline="18">BrushSize</references>
+        <referencedby refid="class_mc_grid_construct_controller_1a510e5cc6b3f8ac75c52e1380abd03eef" compoundref="_mc_grid_construct_controller_8cs" startline="42" endline="49">OnDrag</referencedby>
+        <referencedby refid="class_mc_grid_construct_controller_1abd877ad2beab54a368ae70399b7a0cdb" compoundref="_mc_grid_construct_controller_8cs" startline="51" endline="87">OnPointerDown</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_mc_grid_construct_controller_1ab3f2c383ebe37eb80c735916c3706b5c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void McGridConstructController.BrushSizeSlider</definition>
+        <argsstring>(float newValue)</argsstring>
+        <name>BrushSizeSlider</name>
+        <param>
+          <type>float</type>
+          <declname>newValue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McGridConstructController.cs" line="37" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McGridConstructController.cs" bodystart="37" bodyend="40"/>
+        <references refid="class_mc_grid_construct_controller_1aacb0651f74420a3319d0f8cf75facb86" compoundref="_mc_grid_construct_controller_8cs" startline="17">brushSize</references>
+      </memberdef>
+      <memberdef kind="function" id="class_mc_grid_construct_controller_1a510e5cc6b3f8ac75c52e1380abd03eef" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void McGridConstructController.OnDrag</definition>
+        <argsstring>(PointerEventData eventData)</argsstring>
+        <name>OnDrag</name>
+        <param>
+          <type>PointerEventData</type>
+          <declname>eventData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McGridConstructController.cs" line="42" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McGridConstructController.cs" bodystart="42" bodyend="49"/>
+        <references refid="class_mc_toggle_type_of_block_1ad2e5a070547daee60336765bcf9208ec" compoundref="_mc_toggle_type_of_block_8cs" startline="43">McToggleTypeOfBlock.BlocksSelected</references>
+        <references refid="class_mc_grid_construct_controller_1a11fcc115a1d45bf646c507c0e2179aba" compoundref="_mc_grid_construct_controller_8cs" startline="89" endline="103">DrawGrid</references>
+        <references refid="class_mc_grid_1aa4b60500bb0ed6b13e0b9dbf58954db1" compoundref="_mc_grid_8cs" startline="31">McGrid.hasInputedBlock</references>
+      </memberdef>
+      <memberdef kind="function" id="class_mc_grid_construct_controller_1abd877ad2beab54a368ae70399b7a0cdb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void McGridConstructController.OnPointerDown</definition>
+        <argsstring>(PointerEventData eventData)</argsstring>
+        <name>OnPointerDown</name>
+        <param>
+          <type>PointerEventData</type>
+          <declname>eventData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McGridConstructController.cs" line="51" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McGridConstructController.cs" bodystart="51" bodyend="87"/>
+        <references refid="class_mc_toggle_type_of_block_1ad2e5a070547daee60336765bcf9208ec" compoundref="_mc_toggle_type_of_block_8cs" startline="43">McToggleTypeOfBlock.BlocksSelected</references>
+        <references refid="class_mc_grid_construct_controller_1a11fcc115a1d45bf646c507c0e2179aba" compoundref="_mc_grid_construct_controller_8cs" startline="89" endline="103">DrawGrid</references>
+        <references refid="class_mc_grid_1aa4b60500bb0ed6b13e0b9dbf58954db1" compoundref="_mc_grid_8cs" startline="31">McGrid.hasInputedBlock</references>
+        <references refid="class_mc_grid_1a11c7b772273f1ad9cd11b43b2e2a0544" compoundref="_mc_grid_8cs" startline="8">McGrid.HORISONTAL_BLOCK_COUNT</references>
+        <references refid="class_mc_grid_1a47d34c513551534e159feb3ad0b3d380" compoundref="_mc_grid_8cs" startline="9">McGrid.VERTICAL_BLOCK_COUNT</references>
+        <references refid="struct_map_block_1a8fb3e875d60f04656e388e30da38e6f7" compoundref="_map_block_8cs" startline="8">MapBlock.WORLD_BLOCK_SIZE</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="647">
+        <label>McGridConstructController</label>
+        <link refid="class_mc_grid_construct_controller"/>
+        <childnode refid="648" relation="public-inheritance">
+        </childnode>
+        <childnode refid="649" relation="public-inheritance">
+        </childnode>
+        <childnode refid="650" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="650">
+        <label>IPointerDownHandler</label>
+      </node>
+      <node id="648">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="649">
+        <label>IDragHandler</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="655">
+        <label>McFileManager</label>
+        <link refid="class_mc_file_manager"/>
+        <childnode refid="652" relation="public-inheritance">
+        </childnode>
+        <childnode refid="651" relation="usage">
+          <edgelabel>gridConstructController</edgelabel>
+        </childnode>
+        <childnode refid="656" relation="usage">
+          <edgelabel>mapBlocks</edgelabel>
+        </childnode>
+        <childnode refid="657" relation="usage">
+          <edgelabel>dialogPanel</edgelabel>
+        </childnode>
+      </node>
+      <node id="657">
+        <label>McHider</label>
+        <link refid="class_mc_hider"/>
+        <childnode refid="652" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="658">
+        <label>McGrid</label>
+        <link refid="class_mc_grid"/>
+        <childnode refid="652" relation="public-inheritance">
+        </childnode>
+        <childnode refid="651" relation="usage">
+          <edgelabel>controller</edgelabel>
+        </childnode>
+        <childnode refid="656" relation="usage">
+          <edgelabel>inputedMapBlock</edgelabel>
+        </childnode>
+      </node>
+      <node id="656">
+        <label>MapBlock</label>
+        <link refid="struct_map_block"/>
+      </node>
+      <node id="651">
+        <label>McGridConstructController</label>
+        <link refid="class_mc_grid_construct_controller"/>
+        <childnode refid="652" relation="public-inheritance">
+        </childnode>
+        <childnode refid="653" relation="public-inheritance">
+        </childnode>
+        <childnode refid="654" relation="public-inheritance">
+        </childnode>
+        <childnode refid="655" relation="usage">
+          <edgelabel>fileManager</edgelabel>
+        </childnode>
+        <childnode refid="658" relation="usage">
+          <edgelabel>grid</edgelabel>
+        </childnode>
+      </node>
+      <node id="654">
+        <label>IPointerDownHandler</label>
+      </node>
+      <node id="652">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="653">
+        <label>IDragHandler</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McGridConstructController.cs" line="12" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/map_constructor/McGridConstructController.cs" bodystart="8" bodyend="104"/>
+    <listofallmembers>
+      <member refid="class_mc_grid_construct_controller_1aacb0651f74420a3319d0f8cf75facb86" prot="private" virt="non-virtual"><scope>McGridConstructController</scope><name>brushSize</name></member>
+      <member refid="class_mc_grid_construct_controller_1a9c72c5c667be71b77f1575cebe2cbe7a" prot="public" virt="non-virtual"><scope>McGridConstructController</scope><name>BrushSize</name></member>
+      <member refid="class_mc_grid_construct_controller_1ab3f2c383ebe37eb80c735916c3706b5c" prot="public" virt="non-virtual"><scope>McGridConstructController</scope><name>BrushSizeSlider</name></member>
+      <member refid="class_mc_grid_construct_controller_1a11fcc115a1d45bf646c507c0e2179aba" prot="private" virt="non-virtual"><scope>McGridConstructController</scope><name>DrawGrid</name></member>
+      <member refid="class_mc_grid_construct_controller_1aa3ddaf4a48c4987e5512a63530438a35" prot="private" virt="non-virtual"><scope>McGridConstructController</scope><name>fileManager</name></member>
+      <member refid="class_mc_grid_construct_controller_1a1e0b4e69b724a824511dc6de9e602ac1" prot="private" virt="non-virtual"><scope>McGridConstructController</scope><name>grid</name></member>
+      <member refid="class_mc_grid_construct_controller_1a3ec286f8508e9da3063af9701fe621f2" prot="public" virt="non-virtual"><scope>McGridConstructController</scope><name>GroundType</name></member>
+      <member refid="class_mc_grid_construct_controller_1a6e46b4387ce3e1ccbb22d1c5c528760f" prot="private" virt="non-virtual"><scope>McGridConstructController</scope><name>groundTypeName</name></member>
+      <member refid="class_mc_grid_construct_controller_1aea42c0dea414e9371a6927dceb5f4216" prot="public" virt="non-virtual"><scope>McGridConstructController</scope><name>GroundTypeName</name></member>
+      <member refid="class_mc_grid_construct_controller_1a510e5cc6b3f8ac75c52e1380abd03eef" prot="public" virt="non-virtual"><scope>McGridConstructController</scope><name>OnDrag</name></member>
+      <member refid="class_mc_grid_construct_controller_1abd877ad2beab54a368ae70399b7a0cdb" prot="public" virt="non-virtual"><scope>McGridConstructController</scope><name>OnPointerDown</name></member>
+      <member refid="class_mc_grid_construct_controller_1a0743acabe36d1e7f6b90ebe332888778" prot="private" virt="non-virtual"><scope>McGridConstructController</scope><name>Start</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

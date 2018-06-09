@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_17b5b17fde101ea1f23f954061d0fc6f" kind="dir">
+    <compoundname>D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/ScenesButtons</compoundname>
+    <innerfile refid="_to_level_8cs">ToLevel.cs</innerfile>
+    <innerfile refid="_to_mainmenu_8cs">ToMainmenu.cs</innerfile>
+    <innerfile refid="_to_market_8cs">ToMarket.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/ScenesButtons/"/>
+  </compounddef>
+</doxygen>

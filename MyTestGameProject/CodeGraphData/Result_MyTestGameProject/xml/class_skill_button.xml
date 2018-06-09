@@ -1,0 +1,667 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_skill_button" kind="class" prot="public">
+    <compoundname>SkillButton</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">IPointerClickHandler</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">IDragHandler</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">IBeginDragHandler</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">IEndDragHandler</basecompoundref>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="class_skill_button_1a9f392e4c5c18fc978d9ce6c5e9f48270" prot="public" static="no">
+        <name>SkillNum</name>
+        <enumvalue id="class_skill_button_1a9f392e4c5c18fc978d9ce6c5e9f48270a32ceccb3e243f88a0a3ef9d358e06f2e" prot="public">
+          <name>FIRS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_skill_button_1a9f392e4c5c18fc978d9ce6c5e9f48270a2200becb80f0019c4a2ccecec350d0db" prot="public">
+          <name>SECOND</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SkillButton.cs" line="12" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SkillButton.cs" bodystart="12" bodyend="12"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_skill_button_1a8971d070efb15cf982ff6e5fc82e8c12" prot="private" static="no" mutable="no">
+        <type><ref refid="class_skill_1a5d96c420caaa9a041966f05c24faa0e9" kindref="member">Skill.SkillUseType</ref></type>
+        <definition>Skill.SkillUseType SkillButton.useType</definition>
+        <argsstring></argsstring>
+        <name>useType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SkillButton.cs" line="14" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SkillButton.cs" bodystart="14" bodyend="-1"/>
+        <referencedby refid="class_skill_button_1af806ebe2cb4f9a134df72231a6eac335" compoundref="_skill_button_8cs" startline="119" endline="125">OnBeginDrag</referencedby>
+        <referencedby refid="class_skill_button_1ad17124063d5b0e14189d26844e0d28ec" compoundref="_skill_button_8cs" startline="84" endline="97">OnDrag</referencedby>
+        <referencedby refid="class_skill_button_1a5ceba885332c906ee9c3910cdd568485" compoundref="_skill_button_8cs" startline="99" endline="117">OnEndDrag</referencedby>
+        <referencedby refid="class_skill_button_1a2b16ac3915324df320bac7437a3851e9" compoundref="_skill_button_8cs" startline="70" endline="82">OnPointerClick</referencedby>
+        <referencedby refid="class_skill_button_1ac7bbeb4eace1afff33a8b5e1c8a988f5" compoundref="_skill_button_8cs" startline="33" endline="68">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_skill_button_1ab8b81e25cfbde8e5dbcee7efb5afc010" prot="private" static="no" mutable="no">
+        <type><ref refid="class_skill_button_1a9f392e4c5c18fc978d9ce6c5e9f48270" kindref="member">SkillNum</ref></type>
+        <definition>SkillNum SkillButton.skillNum</definition>
+        <argsstring></argsstring>
+        <name>skillNum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SkillButton.cs" line="15" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SkillButton.cs" bodystart="15" bodyend="-1"/>
+        <referencedby refid="class_skill_button_1ac7bbeb4eace1afff33a8b5e1c8a988f5" compoundref="_skill_button_8cs" startline="33" endline="68">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_skill_button_1ac133edef4aa4932342816f546728224b" prot="private" static="no" mutable="no">
+        <type>Text</type>
+        <definition>Text SkillButton.cooldownText</definition>
+        <argsstring></argsstring>
+        <name>cooldownText</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SkillButton.cs" line="16" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SkillButton.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_skill_button_1afb90122d454c505e26da97dc95aa822b" prot="private" static="no" mutable="no">
+        <type>Image</type>
+        <definition>Image SkillButton.img</definition>
+        <argsstring></argsstring>
+        <name>img</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SkillButton.cs" line="18" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SkillButton.cs" bodystart="18" bodyend="-1"/>
+        <referencedby refid="class_skill_button_1ac7bbeb4eace1afff33a8b5e1c8a988f5" compoundref="_skill_button_8cs" startline="33" endline="68">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_skill_button_1a6eb967bfc248336164bf59488c095a11" prot="private" static="no" mutable="no">
+        <type>CanvasGroup</type>
+        <definition>CanvasGroup SkillButton.cg</definition>
+        <argsstring></argsstring>
+        <name>cg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SkillButton.cs" line="19" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SkillButton.cs" bodystart="19" bodyend="-1"/>
+        <referencedby refid="class_skill_button_1ac7bbeb4eace1afff33a8b5e1c8a988f5" compoundref="_skill_button_8cs" startline="33" endline="68">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_skill_button_1a8d8a67cae9e30c3a42f208f1c4dd2c67" prot="private" static="no" mutable="no">
+        <type><ref refid="class_inventory" kindref="compound">Inventory</ref></type>
+        <definition>Inventory SkillButton.playerInventory</definition>
+        <argsstring></argsstring>
+        <name>playerInventory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SkillButton.cs" line="20" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SkillButton.cs" bodystart="20" bodyend="-1"/>
+        <referencedby refid="class_skill_button_1ac7bbeb4eace1afff33a8b5e1c8a988f5" compoundref="_skill_button_8cs" startline="33" endline="68">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_skill_button_1a255d2de90a82903559bf4968ad9990d1" prot="private" static="no" mutable="no">
+        <type>Transform</type>
+        <definition>Transform SkillButton.playerSquadTransform</definition>
+        <argsstring></argsstring>
+        <name>playerSquadTransform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SkillButton.cs" line="21" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SkillButton.cs" bodystart="21" bodyend="-1"/>
+        <referencedby refid="class_skill_button_1ac7bbeb4eace1afff33a8b5e1c8a988f5" compoundref="_skill_button_8cs" startline="33" endline="68">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_skill_button_1a2aad49bfc6e1475c73ad882480689811" prot="private" static="no" mutable="no">
+        <type><ref refid="class_skill_stack" kindref="compound">SkillStack</ref></type>
+        <definition>SkillStack SkillButton.currentSkill</definition>
+        <argsstring></argsstring>
+        <name>currentSkill</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SkillButton.cs" line="23" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SkillButton.cs" bodystart="23" bodyend="-1"/>
+        <referencedby refid="class_skill_button_1ad17124063d5b0e14189d26844e0d28ec" compoundref="_skill_button_8cs" startline="84" endline="97">OnDrag</referencedby>
+        <referencedby refid="class_skill_button_1a5ceba885332c906ee9c3910cdd568485" compoundref="_skill_button_8cs" startline="99" endline="117">OnEndDrag</referencedby>
+        <referencedby refid="class_skill_button_1a2b16ac3915324df320bac7437a3851e9" compoundref="_skill_button_8cs" startline="70" endline="82">OnPointerClick</referencedby>
+        <referencedby refid="class_skill_button_1ac7bbeb4eace1afff33a8b5e1c8a988f5" compoundref="_skill_button_8cs" startline="33" endline="68">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_skill_button_1a9cb12bb490ada874821ecaa193734a7d" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SkillButton.canCast</definition>
+        <argsstring></argsstring>
+        <name>canCast</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SkillButton.cs" line="24" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SkillButton.cs" bodystart="24" bodyend="-1"/>
+        <referencedby refid="class_skill_button_1af806ebe2cb4f9a134df72231a6eac335" compoundref="_skill_button_8cs" startline="119" endline="125">OnBeginDrag</referencedby>
+        <referencedby refid="class_skill_button_1ad17124063d5b0e14189d26844e0d28ec" compoundref="_skill_button_8cs" startline="84" endline="97">OnDrag</referencedby>
+        <referencedby refid="class_skill_button_1a5ceba885332c906ee9c3910cdd568485" compoundref="_skill_button_8cs" startline="99" endline="117">OnEndDrag</referencedby>
+        <referencedby refid="class_skill_button_1a2b16ac3915324df320bac7437a3851e9" compoundref="_skill_button_8cs" startline="70" endline="82">OnPointerClick</referencedby>
+        <referencedby refid="class_skill_button_1ac7bbeb4eace1afff33a8b5e1c8a988f5" compoundref="_skill_button_8cs" startline="33" endline="68">Start</referencedby>
+        <referencedby refid="class_skill_button_1af08a61a11bbe8991bdb7f956433e845b" compoundref="_skill_button_8cs" startline="127" endline="144">WaitForCooldown</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_skill_button_1a94d887b3497fc91ae38a2956d1ec9b4a" prot="private" static="no" mutable="no">
+        <type>LineRenderer</type>
+        <definition>LineRenderer SkillButton.lineRenderer</definition>
+        <argsstring></argsstring>
+        <name>lineRenderer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SkillButton.cs" line="26" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SkillButton.cs" bodystart="26" bodyend="-1"/>
+        <referencedby refid="class_skill_button_1ac7bbeb4eace1afff33a8b5e1c8a988f5" compoundref="_skill_button_8cs" startline="33" endline="68">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_skill_button_1a9574716a140b72afa629d446219d0464" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SkillButton.rHitCirclreAngle</definition>
+        <argsstring></argsstring>
+        <name>rHitCirclreAngle</name>
+        <initializer>= 20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SkillButton.cs" line="27" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SkillButton.cs" bodystart="27" bodyend="-1"/>
+        <referencedby refid="class_skill_button_1a1d9c321ce72dbac72553b68c607039cc" compoundref="_skill_button_8cs" startline="147" endline="156">CreateSinCosAngles</referencedby>
+        <referencedby refid="class_skill_button_1ac7bbeb4eace1afff33a8b5e1c8a988f5" compoundref="_skill_button_8cs" startline="33" endline="68">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_skill_button_1a0ba3780d8296ea2a5192d011060e3a36" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SkillButton.rHitCirclreSegmentCount</definition>
+        <argsstring></argsstring>
+        <name>rHitCirclreSegmentCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SkillButton.cs" line="28" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SkillButton.cs" bodystart="28" bodyend="-1"/>
+        <referencedby refid="class_skill_button_1af3074b1eef12c2cee33c08bb5484f094" compoundref="_skill_button_8cs" startline="158" endline="170">CreatePoints</referencedby>
+        <referencedby refid="class_skill_button_1a1d9c321ce72dbac72553b68c607039cc" compoundref="_skill_button_8cs" startline="147" endline="156">CreateSinCosAngles</referencedby>
+        <referencedby refid="class_skill_button_1ad17124063d5b0e14189d26844e0d28ec" compoundref="_skill_button_8cs" startline="84" endline="97">OnDrag</referencedby>
+        <referencedby refid="class_skill_button_1ac7bbeb4eace1afff33a8b5e1c8a988f5" compoundref="_skill_button_8cs" startline="33" endline="68">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_skill_button_1a7e6f376a1702fd9d9cb63294c50272f1" prot="private" static="no" mutable="no">
+        <type>Vector3[]</type>
+        <definition>Vector3 [] SkillButton.rHitCirclreSegments</definition>
+        <argsstring></argsstring>
+        <name>rHitCirclreSegments</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SkillButton.cs" line="29" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SkillButton.cs" bodystart="29" bodyend="-1"/>
+        <referencedby refid="class_skill_button_1af3074b1eef12c2cee33c08bb5484f094" compoundref="_skill_button_8cs" startline="158" endline="170">CreatePoints</referencedby>
+        <referencedby refid="class_skill_button_1ad17124063d5b0e14189d26844e0d28ec" compoundref="_skill_button_8cs" startline="84" endline="97">OnDrag</referencedby>
+        <referencedby refid="class_skill_button_1ac7bbeb4eace1afff33a8b5e1c8a988f5" compoundref="_skill_button_8cs" startline="33" endline="68">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_skill_button_1a022bf43f84bc2371672f8d17b9acf7dc" prot="private" static="no" mutable="no">
+        <type>float[]</type>
+        <definition>float [] SkillButton.sinAngles</definition>
+        <argsstring></argsstring>
+        <name>sinAngles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SkillButton.cs" line="30" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SkillButton.cs" bodystart="30" bodyend="-1"/>
+        <referencedby refid="class_skill_button_1af3074b1eef12c2cee33c08bb5484f094" compoundref="_skill_button_8cs" startline="158" endline="170">CreatePoints</referencedby>
+        <referencedby refid="class_skill_button_1a1d9c321ce72dbac72553b68c607039cc" compoundref="_skill_button_8cs" startline="147" endline="156">CreateSinCosAngles</referencedby>
+        <referencedby refid="class_skill_button_1ac7bbeb4eace1afff33a8b5e1c8a988f5" compoundref="_skill_button_8cs" startline="33" endline="68">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_skill_button_1aef2536fc1ba1349fa15be3312e85ca7f" prot="private" static="no" mutable="no">
+        <type>float[]</type>
+        <definition>float [] SkillButton.cosAngles</definition>
+        <argsstring></argsstring>
+        <name>cosAngles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SkillButton.cs" line="31" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SkillButton.cs" bodystart="31" bodyend="-1"/>
+        <referencedby refid="class_skill_button_1af3074b1eef12c2cee33c08bb5484f094" compoundref="_skill_button_8cs" startline="158" endline="170">CreatePoints</referencedby>
+        <referencedby refid="class_skill_button_1a1d9c321ce72dbac72553b68c607039cc" compoundref="_skill_button_8cs" startline="147" endline="156">CreateSinCosAngles</referencedby>
+        <referencedby refid="class_skill_button_1ac7bbeb4eace1afff33a8b5e1c8a988f5" compoundref="_skill_button_8cs" startline="33" endline="68">Start</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_skill_button_1ac7bbeb4eace1afff33a8b5e1c8a988f5" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SkillButton.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SkillButton.cs" line="33" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SkillButton.cs" bodystart="33" bodyend="68"/>
+        <references refid="class_skill_button_1a9cb12bb490ada874821ecaa193734a7d" compoundref="_skill_button_8cs" startline="24">canCast</references>
+        <references refid="class_skill_button_1a6eb967bfc248336164bf59488c095a11" compoundref="_skill_button_8cs" startline="19">cg</references>
+        <references refid="class_skill_button_1aef2536fc1ba1349fa15be3312e85ca7f" compoundref="_skill_button_8cs" startline="31">cosAngles</references>
+        <references refid="class_skill_button_1a1d9c321ce72dbac72553b68c607039cc" compoundref="_skill_button_8cs" startline="147" endline="156">CreateSinCosAngles</references>
+        <references refid="class_skill_button_1a2aad49bfc6e1475c73ad882480689811" compoundref="_skill_button_8cs" startline="23">currentSkill</references>
+        <references refid="class_skill_button_1afb90122d454c505e26da97dc95aa822b" compoundref="_skill_button_8cs" startline="18">img</references>
+        <references refid="class_skill_button_1a94d887b3497fc91ae38a2956d1ec9b4a" compoundref="_skill_button_8cs" startline="26">lineRenderer</references>
+        <references refid="class_skill_button_1a8d8a67cae9e30c3a42f208f1c4dd2c67" compoundref="_skill_button_8cs" startline="20">playerInventory</references>
+        <references refid="class_skill_button_1a255d2de90a82903559bf4968ad9990d1" compoundref="_skill_button_8cs" startline="21">playerSquadTransform</references>
+        <references refid="class_skill_button_1a9574716a140b72afa629d446219d0464" compoundref="_skill_button_8cs" startline="27">rHitCirclreAngle</references>
+        <references refid="class_skill_button_1a0ba3780d8296ea2a5192d011060e3a36" compoundref="_skill_button_8cs" startline="28">rHitCirclreSegmentCount</references>
+        <references refid="class_skill_button_1a7e6f376a1702fd9d9cb63294c50272f1" compoundref="_skill_button_8cs" startline="29">rHitCirclreSegments</references>
+        <references refid="class_skill_button_1a022bf43f84bc2371672f8d17b9acf7dc" compoundref="_skill_button_8cs" startline="30">sinAngles</references>
+        <references refid="class_skill_stack_1adf9aaa884fbe7ebc786df1d72ddb5862" compoundref="_skill_stack_8cs" startline="13">SkillStack.Skill</references>
+        <references refid="class_skill_button_1ab8b81e25cfbde8e5dbcee7efb5afc010" compoundref="_skill_button_8cs" startline="15">skillNum</references>
+        <references refid="class_skill_button_1a8971d070efb15cf982ff6e5fc82e8c12" compoundref="_skill_button_8cs" startline="14">useType</references>
+      </memberdef>
+      <memberdef kind="function" id="class_skill_button_1af08a61a11bbe8991bdb7f956433e845b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerator</type>
+        <definition>IEnumerator SkillButton.WaitForCooldown</definition>
+        <argsstring>(float time)</argsstring>
+        <name>WaitForCooldown</name>
+        <param>
+          <type>float</type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SkillButton.cs" line="127" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SkillButton.cs" bodystart="127" bodyend="144"/>
+        <references refid="class_skill_button_1a9cb12bb490ada874821ecaa193734a7d" compoundref="_skill_button_8cs" startline="24">canCast</references>
+        <referencedby refid="class_skill_button_1a5ceba885332c906ee9c3910cdd568485" compoundref="_skill_button_8cs" startline="99" endline="117">OnEndDrag</referencedby>
+        <referencedby refid="class_skill_button_1a2b16ac3915324df320bac7437a3851e9" compoundref="_skill_button_8cs" startline="70" endline="82">OnPointerClick</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_skill_button_1a1d9c321ce72dbac72553b68c607039cc" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SkillButton.CreateSinCosAngles</definition>
+        <argsstring>()</argsstring>
+        <name>CreateSinCosAngles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SkillButton.cs" line="147" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SkillButton.cs" bodystart="147" bodyend="156"/>
+        <references refid="class_skill_button_1aef2536fc1ba1349fa15be3312e85ca7f" compoundref="_skill_button_8cs" startline="31">cosAngles</references>
+        <references refid="class_skill_button_1a9574716a140b72afa629d446219d0464" compoundref="_skill_button_8cs" startline="27">rHitCirclreAngle</references>
+        <references refid="class_skill_button_1a0ba3780d8296ea2a5192d011060e3a36" compoundref="_skill_button_8cs" startline="28">rHitCirclreSegmentCount</references>
+        <references refid="class_skill_button_1a022bf43f84bc2371672f8d17b9acf7dc" compoundref="_skill_button_8cs" startline="30">sinAngles</references>
+        <referencedby refid="class_skill_button_1ac7bbeb4eace1afff33a8b5e1c8a988f5" compoundref="_skill_button_8cs" startline="33" endline="68">Start</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_skill_button_1af3074b1eef12c2cee33c08bb5484f094" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SkillButton.CreatePoints</definition>
+        <argsstring>(Vector2 center, float radius)</argsstring>
+        <name>CreatePoints</name>
+        <param>
+          <type>Vector2</type>
+          <declname>center</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>radius</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SkillButton.cs" line="158" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SkillButton.cs" bodystart="158" bodyend="170"/>
+        <references refid="class_skill_button_1aef2536fc1ba1349fa15be3312e85ca7f" compoundref="_skill_button_8cs" startline="31">cosAngles</references>
+        <references refid="class_skill_button_1a0ba3780d8296ea2a5192d011060e3a36" compoundref="_skill_button_8cs" startline="28">rHitCirclreSegmentCount</references>
+        <references refid="class_skill_button_1a7e6f376a1702fd9d9cb63294c50272f1" compoundref="_skill_button_8cs" startline="29">rHitCirclreSegments</references>
+        <references refid="class_skill_button_1a022bf43f84bc2371672f8d17b9acf7dc" compoundref="_skill_button_8cs" startline="30">sinAngles</references>
+        <referencedby refid="class_skill_button_1ad17124063d5b0e14189d26844e0d28ec" compoundref="_skill_button_8cs" startline="84" endline="97">OnDrag</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_skill_button_1a2b16ac3915324df320bac7437a3851e9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SkillButton.OnPointerClick</definition>
+        <argsstring>(PointerEventData eventData)</argsstring>
+        <name>OnPointerClick</name>
+        <param>
+          <type>PointerEventData</type>
+          <declname>eventData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SkillButton.cs" line="70" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SkillButton.cs" bodystart="70" bodyend="82"/>
+        <references refid="class_skill_button_1a9cb12bb490ada874821ecaa193734a7d" compoundref="_skill_button_8cs" startline="24">canCast</references>
+        <references refid="interface_i_skill_cooldownable_1a60cb71c455161e5fa35fc0266f983c0a" compoundref="_i_skill_cooldownable_8cs" startline="7">ISkillCooldownable.Cooldown</references>
+        <references refid="class_skill_button_1a2aad49bfc6e1475c73ad882480689811" compoundref="_skill_button_8cs" startline="23">currentSkill</references>
+        <references refid="class_skill_1aa612c92a725be9ffc631595f17e2071b" compoundref="_skill_8cs" startline="28" endline="31">Skill.DoSkill</references>
+        <references refid="class_squad_1a781a32dd5c6fadbe0a9e04f142ddc9da" compoundref="_squad_8cs" startline="10">Squad.playerSquadInstance</references>
+        <references refid="class_skill_stack_1adf9aaa884fbe7ebc786df1d72ddb5862" compoundref="_skill_stack_8cs" startline="13">SkillStack.Skill</references>
+        <references refid="class_skill_stack_1ab48f1bf96ca3d222daba7df0d6f3b18f" compoundref="_skill_stack_8cs" startline="16">SkillStack.SkillStats</references>
+        <references refid="class_skill_button_1a8971d070efb15cf982ff6e5fc82e8c12" compoundref="_skill_button_8cs" startline="14">useType</references>
+        <references refid="class_skill_button_1af08a61a11bbe8991bdb7f956433e845b" compoundref="_skill_button_8cs" startline="127" endline="144">WaitForCooldown</references>
+      </memberdef>
+      <memberdef kind="function" id="class_skill_button_1ad17124063d5b0e14189d26844e0d28ec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SkillButton.OnDrag</definition>
+        <argsstring>(PointerEventData eventData)</argsstring>
+        <name>OnDrag</name>
+        <param>
+          <type>PointerEventData</type>
+          <declname>eventData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SkillButton.cs" line="84" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SkillButton.cs" bodystart="84" bodyend="97"/>
+        <references refid="class_skill_button_1a9cb12bb490ada874821ecaa193734a7d" compoundref="_skill_button_8cs" startline="24">canCast</references>
+        <references refid="class_skill_button_1af3074b1eef12c2cee33c08bb5484f094" compoundref="_skill_button_8cs" startline="158" endline="170">CreatePoints</references>
+        <references refid="class_skill_button_1a2aad49bfc6e1475c73ad882480689811" compoundref="_skill_button_8cs" startline="23">currentSkill</references>
+        <references refid="class_squad_1a781a32dd5c6fadbe0a9e04f142ddc9da" compoundref="_squad_8cs" startline="10">Squad.playerSquadInstance</references>
+        <references refid="class_skill_button_1a0ba3780d8296ea2a5192d011060e3a36" compoundref="_skill_button_8cs" startline="28">rHitCirclreSegmentCount</references>
+        <references refid="class_skill_button_1a7e6f376a1702fd9d9cb63294c50272f1" compoundref="_skill_button_8cs" startline="29">rHitCirclreSegments</references>
+        <references refid="class_skill_stack_1ab48f1bf96ca3d222daba7df0d6f3b18f" compoundref="_skill_stack_8cs" startline="16">SkillStack.SkillStats</references>
+        <references refid="class_skill_button_1a8971d070efb15cf982ff6e5fc82e8c12" compoundref="_skill_button_8cs" startline="14">useType</references>
+      </memberdef>
+      <memberdef kind="function" id="class_skill_button_1a5ceba885332c906ee9c3910cdd568485" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SkillButton.OnEndDrag</definition>
+        <argsstring>(PointerEventData eventData)</argsstring>
+        <name>OnEndDrag</name>
+        <param>
+          <type>PointerEventData</type>
+          <declname>eventData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SkillButton.cs" line="99" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SkillButton.cs" bodystart="99" bodyend="117"/>
+        <references refid="class_skill_button_1a9cb12bb490ada874821ecaa193734a7d" compoundref="_skill_button_8cs" startline="24">canCast</references>
+        <references refid="interface_i_skill_cooldownable_1a60cb71c455161e5fa35fc0266f983c0a" compoundref="_i_skill_cooldownable_8cs" startline="7">ISkillCooldownable.Cooldown</references>
+        <references refid="class_skill_button_1a2aad49bfc6e1475c73ad882480689811" compoundref="_skill_button_8cs" startline="23">currentSkill</references>
+        <references refid="class_skill_1aa612c92a725be9ffc631595f17e2071b" compoundref="_skill_8cs" startline="28" endline="31">Skill.DoSkill</references>
+        <references refid="class_squad_1a781a32dd5c6fadbe0a9e04f142ddc9da" compoundref="_squad_8cs" startline="10">Squad.playerSquadInstance</references>
+        <references refid="class_skill_stack_1adf9aaa884fbe7ebc786df1d72ddb5862" compoundref="_skill_stack_8cs" startline="13">SkillStack.Skill</references>
+        <references refid="class_skill_stack_1ab48f1bf96ca3d222daba7df0d6f3b18f" compoundref="_skill_stack_8cs" startline="16">SkillStack.SkillStats</references>
+        <references refid="class_skill_button_1a8971d070efb15cf982ff6e5fc82e8c12" compoundref="_skill_button_8cs" startline="14">useType</references>
+        <references refid="class_skill_button_1af08a61a11bbe8991bdb7f956433e845b" compoundref="_skill_button_8cs" startline="127" endline="144">WaitForCooldown</references>
+      </memberdef>
+      <memberdef kind="function" id="class_skill_button_1af806ebe2cb4f9a134df72231a6eac335" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SkillButton.OnBeginDrag</definition>
+        <argsstring>(PointerEventData eventData)</argsstring>
+        <name>OnBeginDrag</name>
+        <param>
+          <type>PointerEventData</type>
+          <declname>eventData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SkillButton.cs" line="119" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SkillButton.cs" bodystart="119" bodyend="125"/>
+        <references refid="class_skill_button_1a9cb12bb490ada874821ecaa193734a7d" compoundref="_skill_button_8cs" startline="24">canCast</references>
+        <references refid="class_squad_1a781a32dd5c6fadbe0a9e04f142ddc9da" compoundref="_squad_8cs" startline="10">Squad.playerSquadInstance</references>
+        <references refid="class_skill_button_1a8971d070efb15cf982ff6e5fc82e8c12" compoundref="_skill_button_8cs" startline="14">useType</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="918">
+        <label>IEndDragHandler</label>
+      </node>
+      <node id="917">
+        <label>IBeginDragHandler</label>
+      </node>
+      <node id="915">
+        <label>IPointerClickHandler</label>
+      </node>
+      <node id="914">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="913">
+        <label>SkillButton</label>
+        <link refid="class_skill_button"/>
+        <childnode refid="914" relation="public-inheritance">
+        </childnode>
+        <childnode refid="915" relation="public-inheritance">
+        </childnode>
+        <childnode refid="916" relation="public-inheritance">
+        </childnode>
+        <childnode refid="917" relation="public-inheritance">
+        </childnode>
+        <childnode refid="918" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="916">
+        <label>IDragHandler</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="933">
+        <label>Equipment</label>
+        <link refid="class_equipment"/>
+        <childnode refid="930" relation="public-inheritance">
+        </childnode>
+        <childnode refid="934" relation="usage">
+          <edgelabel>stats</edgelabel>
+        </childnode>
+      </node>
+      <node id="924">
+        <label>IEndDragHandler</label>
+      </node>
+      <node id="931">
+        <label>Item.MainProperties</label>
+        <link refid="struct_item_1_1_main_properties"/>
+      </node>
+      <node id="935">
+        <label>Damage</label>
+        <link refid="struct_damage"/>
+      </node>
+      <node id="928">
+        <label>IDescriptionable</label>
+        <link refid="interface_i_descriptionable"/>
+      </node>
+      <node id="930">
+        <label>Item</label>
+        <link refid="class_item"/>
+        <childnode refid="920" relation="public-inheritance">
+        </childnode>
+        <childnode refid="931" relation="usage">
+          <edgelabel>mainProperties</edgelabel>
+        </childnode>
+      </node>
+      <node id="926">
+        <label>SkillStack</label>
+        <link refid="class_skill_stack"/>
+        <childnode refid="927" relation="public-inheritance">
+        </childnode>
+        <childnode refid="928" relation="public-inheritance">
+        </childnode>
+        <childnode refid="929" relation="usage">
+          <edgelabel>skill</edgelabel>
+        </childnode>
+      </node>
+      <node id="925">
+        <label>Text</label>
+      </node>
+      <node id="934">
+        <label>EquipmentStats</label>
+        <link refid="struct_equipment_stats"/>
+        <childnode refid="928" relation="public-inheritance">
+        </childnode>
+        <childnode refid="935" relation="usage">
+          <edgelabel>damage</edgelabel>
+        </childnode>
+      </node>
+      <node id="927">
+        <label>AStack</label>
+        <link refid="class_a_stack"/>
+      </node>
+      <node id="923">
+        <label>IBeginDragHandler</label>
+      </node>
+      <node id="921">
+        <label>IPointerClickHandler</label>
+      </node>
+      <node id="920">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="929">
+        <label>Skill</label>
+        <link refid="class_skill"/>
+        <childnode refid="930" relation="public-inheritance">
+        </childnode>
+        <childnode refid="928" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="936">
+        <label>EquipmentStack</label>
+        <link refid="class_equipment_stack"/>
+        <childnode refid="927" relation="public-inheritance">
+        </childnode>
+        <childnode refid="930" relation="usage">
+          <edgelabel>equipmentMainProperties</edgelabel>
+        </childnode>
+        <childnode refid="934" relation="usage">
+          <edgelabel>equipmentStats</edgelabel>
+        </childnode>
+      </node>
+      <node id="919">
+        <label>SkillButton</label>
+        <link refid="class_skill_button"/>
+        <childnode refid="920" relation="public-inheritance">
+        </childnode>
+        <childnode refid="921" relation="public-inheritance">
+        </childnode>
+        <childnode refid="922" relation="public-inheritance">
+        </childnode>
+        <childnode refid="923" relation="public-inheritance">
+        </childnode>
+        <childnode refid="924" relation="public-inheritance">
+        </childnode>
+        <childnode refid="925" relation="usage">
+          <edgelabel>cooldownText</edgelabel>
+        </childnode>
+        <childnode refid="926" relation="usage">
+          <edgelabel>currentSkill</edgelabel>
+        </childnode>
+        <childnode refid="932" relation="usage">
+          <edgelabel>playerInventory</edgelabel>
+        </childnode>
+        <childnode refid="929" relation="usage">
+          <edgelabel>useType</edgelabel>
+        </childnode>
+      </node>
+      <node id="932">
+        <label>Inventory</label>
+        <link refid="class_inventory"/>
+        <childnode refid="926" relation="usage">
+          <edgelabel>firstSkill</edgelabel>
+          <edgelabel>secondSkill</edgelabel>
+        </childnode>
+        <childnode refid="933" relation="usage">
+          <edgelabel>body</edgelabel>
+          <edgelabel>shieldNone</edgelabel>
+          <edgelabel>helmetNone</edgelabel>
+          <edgelabel>shield</edgelabel>
+          <edgelabel>weapon</edgelabel>
+          <edgelabel>helmet</edgelabel>
+          <edgelabel>bodyNone</edgelabel>
+        </childnode>
+        <childnode refid="936" relation="usage">
+          <edgelabel>inventory</edgelabel>
+        </childnode>
+      </node>
+      <node id="922">
+        <label>IDragHandler</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SkillButton.cs" line="10" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SkillButton.cs" bodystart="9" bodyend="171"/>
+    <listofallmembers>
+      <member refid="class_skill_button_1a9cb12bb490ada874821ecaa193734a7d" prot="private" virt="non-virtual"><scope>SkillButton</scope><name>canCast</name></member>
+      <member refid="class_skill_button_1a6eb967bfc248336164bf59488c095a11" prot="private" virt="non-virtual"><scope>SkillButton</scope><name>cg</name></member>
+      <member refid="class_skill_button_1ac133edef4aa4932342816f546728224b" prot="private" virt="non-virtual"><scope>SkillButton</scope><name>cooldownText</name></member>
+      <member refid="class_skill_button_1aef2536fc1ba1349fa15be3312e85ca7f" prot="private" virt="non-virtual"><scope>SkillButton</scope><name>cosAngles</name></member>
+      <member refid="class_skill_button_1af3074b1eef12c2cee33c08bb5484f094" prot="private" virt="non-virtual"><scope>SkillButton</scope><name>CreatePoints</name></member>
+      <member refid="class_skill_button_1a1d9c321ce72dbac72553b68c607039cc" prot="private" virt="non-virtual"><scope>SkillButton</scope><name>CreateSinCosAngles</name></member>
+      <member refid="class_skill_button_1a2aad49bfc6e1475c73ad882480689811" prot="private" virt="non-virtual"><scope>SkillButton</scope><name>currentSkill</name></member>
+      <member refid="class_skill_button_1afb90122d454c505e26da97dc95aa822b" prot="private" virt="non-virtual"><scope>SkillButton</scope><name>img</name></member>
+      <member refid="class_skill_button_1a94d887b3497fc91ae38a2956d1ec9b4a" prot="private" virt="non-virtual"><scope>SkillButton</scope><name>lineRenderer</name></member>
+      <member refid="class_skill_button_1af806ebe2cb4f9a134df72231a6eac335" prot="public" virt="non-virtual"><scope>SkillButton</scope><name>OnBeginDrag</name></member>
+      <member refid="class_skill_button_1ad17124063d5b0e14189d26844e0d28ec" prot="public" virt="non-virtual"><scope>SkillButton</scope><name>OnDrag</name></member>
+      <member refid="class_skill_button_1a5ceba885332c906ee9c3910cdd568485" prot="public" virt="non-virtual"><scope>SkillButton</scope><name>OnEndDrag</name></member>
+      <member refid="class_skill_button_1a2b16ac3915324df320bac7437a3851e9" prot="public" virt="non-virtual"><scope>SkillButton</scope><name>OnPointerClick</name></member>
+      <member refid="class_skill_button_1a8d8a67cae9e30c3a42f208f1c4dd2c67" prot="private" virt="non-virtual"><scope>SkillButton</scope><name>playerInventory</name></member>
+      <member refid="class_skill_button_1a255d2de90a82903559bf4968ad9990d1" prot="private" virt="non-virtual"><scope>SkillButton</scope><name>playerSquadTransform</name></member>
+      <member refid="class_skill_button_1a9574716a140b72afa629d446219d0464" prot="private" virt="non-virtual"><scope>SkillButton</scope><name>rHitCirclreAngle</name></member>
+      <member refid="class_skill_button_1a0ba3780d8296ea2a5192d011060e3a36" prot="private" virt="non-virtual"><scope>SkillButton</scope><name>rHitCirclreSegmentCount</name></member>
+      <member refid="class_skill_button_1a7e6f376a1702fd9d9cb63294c50272f1" prot="private" virt="non-virtual"><scope>SkillButton</scope><name>rHitCirclreSegments</name></member>
+      <member refid="class_skill_button_1a022bf43f84bc2371672f8d17b9acf7dc" prot="private" virt="non-virtual"><scope>SkillButton</scope><name>sinAngles</name></member>
+      <member refid="class_skill_button_1ab8b81e25cfbde8e5dbcee7efb5afc010" prot="private" virt="non-virtual"><scope>SkillButton</scope><name>skillNum</name></member>
+      <member refid="class_skill_button_1a9f392e4c5c18fc978d9ce6c5e9f48270" prot="public" virt="non-virtual"><scope>SkillButton</scope><name>SkillNum</name></member>
+      <member refid="class_skill_button_1ac7bbeb4eace1afff33a8b5e1c8a988f5" prot="private" virt="non-virtual"><scope>SkillButton</scope><name>Start</name></member>
+      <member refid="class_skill_button_1a8971d070efb15cf982ff6e5fc82e8c12" prot="private" virt="non-virtual"><scope>SkillButton</scope><name>useType</name></member>
+      <member refid="class_skill_button_1af08a61a11bbe8991bdb7f956433e845b" prot="private" virt="non-virtual"><scope>SkillButton</scope><name>WaitForCooldown</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

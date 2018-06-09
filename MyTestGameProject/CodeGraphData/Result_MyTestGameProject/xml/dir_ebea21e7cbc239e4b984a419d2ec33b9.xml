@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_ebea21e7cbc239e4b984a419d2ec33b9" kind="dir">
+    <compoundname>D:/development</compoundname>
+    <innerdir refid="dir_3a7dcd824e151a7e6f87072ecb0fe73d">D:/development/unity</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/development/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_grid_layout_cell_width_8cs" kind="file">
+    <compoundname>GridLayoutCellWidth.cs</compoundname>
+    <innerclass refid="class_grid_layout_cell_width" prot="public">GridLayoutCellWidth</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Collections;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Collections.Generic;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>UnityEngine;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>UnityEngine.UI;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal">[ExecuteInEditMode]<sp/>[RequireComponent(typeof(GridLayoutGroup))]</highlight></codeline>
+<codeline lineno="7" refid="class_grid_layout_cell_width" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_grid_layout_cell_width" kindref="compound">GridLayoutCellWidth</ref><sp/>:<sp/>MonoBehaviour</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9" refid="class_grid_layout_cell_width_1a53e2274349487b9ca5092edca54b5fed" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>GridLayoutGroup<sp/><ref refid="class_grid_layout_cell_width_1a53e2274349487b9ca5092edca54b5fed" kindref="member">layout</ref>;</highlight></codeline>
+<codeline lineno="10" refid="class_grid_layout_cell_width_1a989793f21c38f54427056dc02f7c672a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>RectTransform<sp/><ref refid="class_grid_layout_cell_width_1a989793f21c38f54427056dc02f7c672a" kindref="member">thisTransform</ref>;</highlight></codeline>
+<codeline lineno="11" refid="class_grid_layout_cell_width_1a8f30f02dff1f44b9d7c8f9d3241865ff" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>LayoutGroup<sp/><ref refid="class_grid_layout_cell_width_1a8f30f02dff1f44b9d7c8f9d3241865ff" kindref="member">parentLayout</ref>;</highlight></codeline>
+<codeline lineno="12" refid="class_grid_layout_cell_width_1aad97132fd4f91004adfe8a8c265dbb7e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>RectTransform<sp/><ref refid="class_grid_layout_cell_width_1aad97132fd4f91004adfe8a8c265dbb7e" kindref="member">parentTransform</ref>;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="class_grid_layout_cell_width_1afe731fbc620b15b4caef12f4af8bcd1b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_grid_layout_cell_width_1afe731fbc620b15b4caef12f4af8bcd1b" kindref="member">Start</ref><sp/>()</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_grid_layout_cell_width_1a53e2274349487b9ca5092edca54b5fed" kindref="member">layout</ref><sp/>=<sp/>GetComponent&lt;GridLayoutGroup&gt;();</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_grid_layout_cell_width_1a989793f21c38f54427056dc02f7c672a" kindref="member">thisTransform</ref><sp/>=<sp/>(RectTransform)transform;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_grid_layout_cell_width_1aad97132fd4f91004adfe8a8c265dbb7e" kindref="member">parentTransform</ref><sp/>=<sp/>(RectTransform)thisTransform.parent;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_grid_layout_cell_width_1a8f30f02dff1f44b9d7c8f9d3241865ff" kindref="member">parentLayout</ref><sp/>=<sp/><ref refid="class_grid_layout_cell_width_1aad97132fd4f91004adfe8a8c265dbb7e" kindref="member">parentTransform</ref>.GetComponent&lt;LayoutGroup&gt;();</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="class_grid_layout_cell_width_1aaca77212e02e9612792942d78dd71d9c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_grid_layout_cell_width_1aaca77212e02e9612792942d78dd71d9c" kindref="member">Update</ref>()</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_grid_layout_cell_width_1a53e2274349487b9ca5092edca54b5fed" kindref="member">layout</ref>.constraint<sp/>!=<sp/>GridLayoutGroup.Constraint.FixedColumnCount)</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>layout.constraint<sp/>=<sp/>GridLayoutGroup.Constraint.FixedColumnCount;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>layout.cellSize<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Vector2(</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<ref refid="class_grid_layout_cell_width_1aad97132fd4f91004adfe8a8c265dbb7e" kindref="member">parentTransform</ref>.rect.width<sp/></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/><ref refid="class_grid_layout_cell_width_1a53e2274349487b9ca5092edca54b5fed" kindref="member">layout</ref>.padding.left<sp/></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/><ref refid="class_grid_layout_cell_width_1a53e2274349487b9ca5092edca54b5fed" kindref="member">layout</ref>.padding.right<sp/></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/><ref refid="class_grid_layout_cell_width_1a53e2274349487b9ca5092edca54b5fed" kindref="member">layout</ref>.spacing.x<sp/></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/><ref refid="class_grid_layout_cell_width_1a8f30f02dff1f44b9d7c8f9d3241865ff" kindref="member">parentLayout</ref>.padding.left<sp/></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/><ref refid="class_grid_layout_cell_width_1a8f30f02dff1f44b9d7c8f9d3241865ff" kindref="member">parentLayout</ref>.padding.right</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>)<sp/>/<sp/><ref refid="class_grid_layout_cell_width_1a53e2274349487b9ca5092edca54b5fed" kindref="member">layout</ref>.constraintCount,</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_grid_layout_cell_width_1a53e2274349487b9ca5092edca54b5fed" kindref="member">layout</ref>.cellSize.y</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/GridLayoutCellWidth.cs"/>
+  </compounddef>
+</doxygen>

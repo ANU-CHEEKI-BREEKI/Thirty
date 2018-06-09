@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_squadless_unit_spawner_8cs" kind="file">
+    <compoundname>SquadlessUnitSpawner.cs</compoundname>
+    <innerclass refid="class_squadless_unit_spawner" prot="public">SquadlessUnitSpawner</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Collections;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Collections.Generic;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>UnityEngine;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="class_squadless_unit_spawner" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_squadless_unit_spawner" kindref="compound">SquadlessUnitSpawner</ref><sp/>:<sp/>MonoBehaviour</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="7" refid="class_squadless_unit_spawner_1a8cd664c137afd90808e0a98b5841735a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[SerializeField]<sp/><ref refid="class_unit" kindref="compound">Unit</ref><sp/><ref refid="class_squadless_unit_spawner_1a8cd664c137afd90808e0a98b5841735a" kindref="member">unitOriginal</ref>;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="class_squadless_unit_spawner_1a07792c3769c964dc2db4b8a9131b31cd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[SerializeField]<sp/>[Range(0,<sp/>30)]<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_squadless_unit_spawner_1a07792c3769c964dc2db4b8a9131b31cd" kindref="member">count</ref>;</highlight></codeline>
+<codeline lineno="10" refid="class_squadless_unit_spawner_1aae34890101e0583fbe76bcec88c90b9c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[SerializeField]<sp/>[Range(0,<sp/>10)]<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_squadless_unit_spawner_1aae34890101e0583fbe76bcec88c90b9c" kindref="member">radiusSpawn</ref><sp/>=<sp/>5;</highlight></codeline>
+<codeline lineno="11" refid="class_squadless_unit_spawner_1adc5ed4f7c73e537fe609b6d59795a26a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[SerializeField]<sp/>[Range(0,<sp/>360)]<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_squadless_unit_spawner_1adc5ed4f7c73e537fe609b6d59795a26a" kindref="member">rangeRotation</ref><sp/>=<sp/>360;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="class_squadless_unit_spawner_1a786bd88912ec36ec8413729bb7222e74" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[SerializeField]<sp/><ref refid="class_equipment" kindref="compound">Equipment</ref><sp/><ref refid="class_squadless_unit_spawner_1a786bd88912ec36ec8413729bb7222e74" kindref="member">helmet</ref>;</highlight></codeline>
+<codeline lineno="14" refid="class_squadless_unit_spawner_1ad82fae4685f90330d1b64fd2756e104f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[SerializeField]<sp/><ref refid="class_equipment" kindref="compound">Equipment</ref><sp/><ref refid="class_squadless_unit_spawner_1ad82fae4685f90330d1b64fd2756e104f" kindref="member">body</ref>;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="class_squadless_unit_spawner_1ad6b8b2eff853ab9d2bd5ecd85e2d8ab3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_squadless_unit_spawner_1ad6b8b2eff853ab9d2bd5ecd85e2d8ab3" kindref="member">Start</ref><sp/>()</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Vector2<sp/>pos<sp/>=<sp/>transform.position;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>layer<sp/>=<sp/>LayerMask.NameToLayer(Squad.UnitFraction.NEUTRAL.ToString());</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="class_squadless_unit_spawner_1a07792c3769c964dc2db4b8a9131b31cd" kindref="member">count</ref>;<sp/>i++)</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_unit" kindref="compound">Unit</ref><sp/>unit<sp/>=<sp/>Instantiate(</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_squadless_unit_spawner_1a8cd664c137afd90808e0a98b5841735a" kindref="member">unitOriginal</ref>,</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Vector2(</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pos.x<sp/>+<sp/>Random.value<sp/>*<sp/><ref refid="class_squadless_unit_spawner_1aae34890101e0583fbe76bcec88c90b9c" kindref="member">radiusSpawn</ref>,</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pos.y<sp/>+<sp/>Random.value<sp/>*<sp/><ref refid="class_squadless_unit_spawner_1aae34890101e0583fbe76bcec88c90b9c" kindref="member">radiusSpawn</ref></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>),</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Quaternion.identity<sp/>*<sp/>Quaternion.Euler(0,<sp/>0,<sp/>Random.value<sp/>*<sp/><ref refid="class_squadless_unit_spawner_1adc5ed4f7c73e537fe609b6d59795a26a" kindref="member">rangeRotation</ref>)</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>unit.gameObject.layer<sp/>=<sp/>layer;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>unit.SetSelectionColor(Color.green);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>unit.delayToFindTargetAndAttack<sp/>=<sp/>(float)i<sp/>/<sp/>count;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>unit.SetBody(<ref refid="class_squadless_unit_spawner_1ad82fae4685f90330d1b64fd2756e104f" kindref="member">body</ref>);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>unit.SetHelmet(<ref refid="class_squadless_unit_spawner_1a786bd88912ec36ec8413729bb7222e74" kindref="member">helmet</ref>);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>unit.name<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Neutral<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>i;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Destroy(gameObject);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="class_squadless_unit_spawner_1a6b78cb430ddbfc604f02a417f58d0d47" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_squadless_unit_spawner_1a6b78cb430ddbfc604f02a417f58d0d47" kindref="member">OnDrawGizmos</ref>()</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Gizmos.color<sp/>=<sp/>Color.yellow;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Gizmos.DrawWireSphere(transform.position,<sp/><ref refid="class_squadless_unit_spawner_1aae34890101e0583fbe76bcec88c90b9c" kindref="member">radiusSpawn</ref>);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Unit/SquadlessUnitSpawner.cs"/>
+  </compounddef>
+</doxygen>

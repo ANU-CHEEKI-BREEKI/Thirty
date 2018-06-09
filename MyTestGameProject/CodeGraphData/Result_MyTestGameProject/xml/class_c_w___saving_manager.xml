@@ -1,0 +1,300 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_c_w___saving_manager" kind="class" prot="public">
+    <compoundname>CW_SavingManager</compoundname>
+    <basecompoundref refid="interface_i_saving_manager" prot="public" virt="non-virtual">ISavingManager</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_c_w___saving_manager_1a08de43084af63745f74453bffb315d6c" prot="private" static="no" mutable="no">
+        <type><ref refid="class_client" kindref="compound">Client</ref></type>
+        <definition>Client CW_SavingManager.client</definition>
+        <argsstring></argsstring>
+        <name>client</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/CW/CW_SavingManager.cs" line="6" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/CW/CW_SavingManager.cs" bodystart="6" bodyend="-1"/>
+        <referencedby refid="class_c_w___saving_manager_1a222778a8df13193589f3f51a561997df" compoundref="_c_w___saving_manager_8cs" startline="24" endline="28">CW_SavingManager</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_w___saving_manager_1ac085acda4aed3f81495f2544d0c2ec72" prot="private" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int CW_SavingManager.PORT</definition>
+        <argsstring></argsstring>
+        <name>PORT</name>
+        <initializer>= 1488</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/CW/CW_SavingManager.cs" line="8" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/CW/CW_SavingManager.cs" bodystart="8" bodyend="-1"/>
+        <referencedby refid="class_c_w___saving_manager_1a222778a8df13193589f3f51a561997df" compoundref="_c_w___saving_manager_8cs" startline="24" endline="28">CW_SavingManager</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_w___saving_manager_1a7db4fd877ff737ccbab8c797ba6b5b1c" prot="private" static="no" mutable="no">
+        <type>const string</type>
+        <definition>const string CW_SavingManager.GET</definition>
+        <argsstring></argsstring>
+        <name>GET</name>
+        <initializer>= &quot;G&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/CW/CW_SavingManager.cs" line="10" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/CW/CW_SavingManager.cs" bodystart="10" bodyend="-1"/>
+        <referencedby refid="class_c_w___saving_manager_1a8d76a2869ba286e592d05d7780606b9f" compoundref="_c_w___saving_manager_8cs" startline="39" endline="43">LoadData&lt; T &gt;</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_w___saving_manager_1a16ab8d35885b86b9f3d4346ff74d2dfd" prot="private" static="no" mutable="no">
+        <type>const string</type>
+        <definition>const string CW_SavingManager.SET</definition>
+        <argsstring></argsstring>
+        <name>SET</name>
+        <initializer>= &quot;S&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/CW/CW_SavingManager.cs" line="11" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/CW/CW_SavingManager.cs" bodystart="11" bodyend="-1"/>
+        <referencedby refid="class_c_w___saving_manager_1a18fd4f0ac8a587cb50d684ef9c471c66" compoundref="_c_w___saving_manager_8cs" startline="45" endline="48">SaveData&lt; T &gt;</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_w___saving_manager_1a578af60ec0d58ca216fe5cd3410eab05" prot="private" static="no" mutable="no">
+        <type>const string</type>
+        <definition>const string CW_SavingManager.YES</definition>
+        <argsstring></argsstring>
+        <name>YES</name>
+        <initializer>= &quot;true&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/CW/CW_SavingManager.cs" line="14" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/CW/CW_SavingManager.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_w___saving_manager_1abf7c99aeb6bb471f867ce2aa7e654c29" prot="private" static="no" mutable="no">
+        <type>const string</type>
+        <definition>const string CW_SavingManager.NO</definition>
+        <argsstring></argsstring>
+        <name>NO</name>
+        <initializer>= &quot;false&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/CW/CW_SavingManager.cs" line="15" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/CW/CW_SavingManager.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_w___saving_manager_1a627c59f50fb028a81e3eaef6e8a802bd" prot="private" static="no" mutable="no">
+        <type>const string</type>
+        <definition>const string CW_SavingManager.SET_NAME</definition>
+        <argsstring></argsstring>
+        <name>SET_NAME</name>
+        <initializer>= &quot;S_N&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/CW/CW_SavingManager.cs" line="17" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/CW/CW_SavingManager.cs" bodystart="17" bodyend="-1"/>
+        <referencedby refid="class_c_w___saving_manager_1a222778a8df13193589f3f51a561997df" compoundref="_c_w___saving_manager_8cs" startline="24" endline="28">CW_SavingManager</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_w___saving_manager_1acff2ce36a25d3f4122550e55e476a2b9" prot="private" static="no" mutable="no">
+        <type>const string</type>
+        <definition>const string CW_SavingManager.HAS_SAVES</definition>
+        <argsstring></argsstring>
+        <name>HAS_SAVES</name>
+        <initializer>= &quot;H_S&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/CW/CW_SavingManager.cs" line="19" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/CW/CW_SavingManager.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_w___saving_manager_1a1413efcafeebe27603c0cea657379f46" prot="private" static="no" mutable="no">
+        <type>const string</type>
+        <definition>const string CW_SavingManager.END_OF_COMMAND</definition>
+        <argsstring></argsstring>
+        <name>END_OF_COMMAND</name>
+        <initializer>= &quot;\r\n|\r\n&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/CW/CW_SavingManager.cs" line="21" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/CW/CW_SavingManager.cs" bodystart="21" bodyend="-1"/>
+        <referencedby refid="class_c_w___saving_manager_1a222778a8df13193589f3f51a561997df" compoundref="_c_w___saving_manager_8cs" startline="24" endline="28">CW_SavingManager</referencedby>
+        <referencedby refid="class_c_w___saving_manager_1a8d76a2869ba286e592d05d7780606b9f" compoundref="_c_w___saving_manager_8cs" startline="39" endline="43">LoadData&lt; T &gt;</referencedby>
+        <referencedby refid="class_c_w___saving_manager_1a18fd4f0ac8a587cb50d684ef9c471c66" compoundref="_c_w___saving_manager_8cs" startline="45" endline="48">SaveData&lt; T &gt;</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_c_w___saving_manager_1ab1b632b97e182f483ec5f72bf3f17168" prot="private" static="no" mutable="no">
+        <type>const string</type>
+        <definition>const string CW_SavingManager.SEPARATOR</definition>
+        <argsstring></argsstring>
+        <name>SEPARATOR</name>
+        <initializer>= &quot;\r\n&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/CW/CW_SavingManager.cs" line="22" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/CW/CW_SavingManager.cs" bodystart="22" bodyend="-1"/>
+        <referencedby refid="class_c_w___saving_manager_1a222778a8df13193589f3f51a561997df" compoundref="_c_w___saving_manager_8cs" startline="24" endline="28">CW_SavingManager</referencedby>
+        <referencedby refid="class_c_w___saving_manager_1a8d76a2869ba286e592d05d7780606b9f" compoundref="_c_w___saving_manager_8cs" startline="39" endline="43">LoadData&lt; T &gt;</referencedby>
+        <referencedby refid="class_c_w___saving_manager_1a18fd4f0ac8a587cb50d684ef9c471c66" compoundref="_c_w___saving_manager_8cs" startline="45" endline="48">SaveData&lt; T &gt;</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_c_w___saving_manager_1a5e1583f88e6266e758bdb67c6f4daca0" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>bool</type>
+        <definition>bool CW_SavingManager.HasSaves</definition>
+        <argsstring></argsstring>
+        <name>HasSaves</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/CW/CW_SavingManager.cs" line="30" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/CW/CW_SavingManager.cs" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_c_w___saving_manager_1a222778a8df13193589f3f51a561997df" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>CW_SavingManager.CW_SavingManager</definition>
+        <argsstring>(string serverIp, string name)</argsstring>
+        <name>CW_SavingManager</name>
+        <param>
+          <type>string</type>
+          <declname>serverIp</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/CW/CW_SavingManager.cs" line="24" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/CW/CW_SavingManager.cs" bodystart="24" bodyend="28"/>
+        <references refid="class_c_w___saving_manager_1a08de43084af63745f74453bffb315d6c" compoundref="_c_w___saving_manager_8cs" startline="6">client</references>
+        <references refid="class_c_w___saving_manager_1a1413efcafeebe27603c0cea657379f46" compoundref="_c_w___saving_manager_8cs" startline="21">END_OF_COMMAND</references>
+        <references refid="class_c_w___saving_manager_1ac085acda4aed3f81495f2544d0c2ec72" compoundref="_c_w___saving_manager_8cs" startline="8">PORT</references>
+        <references refid="class_c_w___saving_manager_1ab1b632b97e182f483ec5f72bf3f17168" compoundref="_c_w___saving_manager_8cs" startline="22">SEPARATOR</references>
+        <references refid="class_c_w___saving_manager_1a627c59f50fb028a81e3eaef6e8a802bd" compoundref="_c_w___saving_manager_8cs" startline="17">SET_NAME</references>
+      </memberdef>
+      <memberdef kind="function" id="class_c_w___saving_manager_1a8d76a2869ba286e592d05d7780606b9f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T CW_SavingManager.LoadData&lt; T &gt;</definition>
+        <argsstring>(string name)</argsstring>
+        <name>LoadData&lt; T &gt;</name>
+        <reimplements refid="interface_i_saving_manager_1a8671058af54097796445d088fb71d1c2">LoadData&lt; T &gt;</reimplements>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/CW/CW_SavingManager.cs" line="39" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/CW/CW_SavingManager.cs" bodystart="39" bodyend="43"/>
+        <references refid="class_c_w___saving_manager_1a1413efcafeebe27603c0cea657379f46" compoundref="_c_w___saving_manager_8cs" startline="21">END_OF_COMMAND</references>
+        <references refid="class_c_w___saving_manager_1a7db4fd877ff737ccbab8c797ba6b5b1c" compoundref="_c_w___saving_manager_8cs" startline="10">GET</references>
+        <references refid="class_c_w___saving_manager_1ab1b632b97e182f483ec5f72bf3f17168" compoundref="_c_w___saving_manager_8cs" startline="22">SEPARATOR</references>
+      </memberdef>
+      <memberdef kind="function" id="class_c_w___saving_manager_1a18fd4f0ac8a587cb50d684ef9c471c66" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CW_SavingManager.SaveData&lt; T &gt;</definition>
+        <argsstring>(string name, object data)</argsstring>
+        <name>SaveData&lt; T &gt;</name>
+        <reimplements refid="interface_i_saving_manager_1a8973005feb8f6b245274195badab80b2">SaveData&lt; T &gt;</reimplements>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>object</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/CW/CW_SavingManager.cs" line="45" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/CW/CW_SavingManager.cs" bodystart="45" bodyend="48"/>
+        <references refid="class_c_w___saving_manager_1a1413efcafeebe27603c0cea657379f46" compoundref="_c_w___saving_manager_8cs" startline="21">END_OF_COMMAND</references>
+        <references refid="class_c_w___saving_manager_1ab1b632b97e182f483ec5f72bf3f17168" compoundref="_c_w___saving_manager_8cs" startline="22">SEPARATOR</references>
+        <references refid="class_c_w___saving_manager_1a16ab8d35885b86b9f3d4346ff74d2dfd" compoundref="_c_w___saving_manager_8cs" startline="11">SET</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="141">
+        <label>CW_SavingManager</label>
+        <link refid="class_c_w___saving_manager"/>
+        <childnode refid="142" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="142">
+        <label>ISavingManager</label>
+        <link refid="interface_i_saving_manager"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="145">
+        <label>Client</label>
+        <link refid="class_client"/>
+      </node>
+      <node id="143">
+        <label>CW_SavingManager</label>
+        <link refid="class_c_w___saving_manager"/>
+        <childnode refid="144" relation="public-inheritance">
+        </childnode>
+        <childnode refid="145" relation="usage">
+          <edgelabel>client</edgelabel>
+        </childnode>
+      </node>
+      <node id="144">
+        <label>ISavingManager</label>
+        <link refid="interface_i_saving_manager"/>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/CW/CW_SavingManager.cs" line="5" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/CW/CW_SavingManager.cs" bodystart="4" bodyend="49"/>
+    <listofallmembers>
+      <member refid="class_c_w___saving_manager_1a08de43084af63745f74453bffb315d6c" prot="private" virt="non-virtual"><scope>CW_SavingManager</scope><name>client</name></member>
+      <member refid="class_c_w___saving_manager_1a222778a8df13193589f3f51a561997df" prot="public" virt="non-virtual"><scope>CW_SavingManager</scope><name>CW_SavingManager</name></member>
+      <member refid="class_c_w___saving_manager_1a1413efcafeebe27603c0cea657379f46" prot="private" virt="non-virtual"><scope>CW_SavingManager</scope><name>END_OF_COMMAND</name></member>
+      <member refid="class_c_w___saving_manager_1a7db4fd877ff737ccbab8c797ba6b5b1c" prot="private" virt="non-virtual"><scope>CW_SavingManager</scope><name>GET</name></member>
+      <member refid="class_c_w___saving_manager_1acff2ce36a25d3f4122550e55e476a2b9" prot="private" virt="non-virtual"><scope>CW_SavingManager</scope><name>HAS_SAVES</name></member>
+      <member refid="class_c_w___saving_manager_1a5e1583f88e6266e758bdb67c6f4daca0" prot="public" virt="non-virtual"><scope>CW_SavingManager</scope><name>HasSaves</name></member>
+      <member refid="class_c_w___saving_manager_1a8d76a2869ba286e592d05d7780606b9f" prot="public" virt="non-virtual"><scope>CW_SavingManager</scope><name>LoadData&lt; T &gt;</name></member>
+      <member refid="class_c_w___saving_manager_1abf7c99aeb6bb471f867ce2aa7e654c29" prot="private" virt="non-virtual"><scope>CW_SavingManager</scope><name>NO</name></member>
+      <member refid="class_c_w___saving_manager_1ac085acda4aed3f81495f2544d0c2ec72" prot="private" virt="non-virtual"><scope>CW_SavingManager</scope><name>PORT</name></member>
+      <member refid="class_c_w___saving_manager_1a18fd4f0ac8a587cb50d684ef9c471c66" prot="public" virt="non-virtual"><scope>CW_SavingManager</scope><name>SaveData&lt; T &gt;</name></member>
+      <member refid="class_c_w___saving_manager_1ab1b632b97e182f483ec5f72bf3f17168" prot="private" virt="non-virtual"><scope>CW_SavingManager</scope><name>SEPARATOR</name></member>
+      <member refid="class_c_w___saving_manager_1a16ab8d35885b86b9f3d4346ff74d2dfd" prot="private" virt="non-virtual"><scope>CW_SavingManager</scope><name>SET</name></member>
+      <member refid="class_c_w___saving_manager_1a627c59f50fb028a81e3eaef6e8a802bd" prot="private" virt="non-virtual"><scope>CW_SavingManager</scope><name>SET_NAME</name></member>
+      <member refid="class_c_w___saving_manager_1a578af60ec0d58ca216fe5cd3410eab05" prot="private" virt="non-virtual"><scope>CW_SavingManager</scope><name>YES</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

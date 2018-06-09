@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="interface_i_savable" kind="interface" prot="public">
+    <compoundname>ISavable</compoundname>
+    <derivedcompoundref refid="class_audio_settings" prot="public" virt="non-virtual">AudioSettings</derivedcompoundref>
+    <derivedcompoundref refid="class_common_settings" prot="public" virt="non-virtual">CommonSettings</derivedcompoundref>
+    <derivedcompoundref refid="class_d_s_player_score" prot="public" virt="non-virtual">DSPlayerScore</derivedcompoundref>
+    <derivedcompoundref refid="class_d_s_player_skills" prot="public" virt="non-virtual">DSPlayerSkills</derivedcompoundref>
+    <derivedcompoundref refid="class_d_s_unit_stats" prot="public" virt="non-virtual">DSUnitStats</derivedcompoundref>
+    <derivedcompoundref refid="class_graphix_settings" prot="public" virt="non-virtual">GraphixSettings</derivedcompoundref>
+    <derivedcompoundref refid="class_player_progress" prot="public" virt="non-virtual">PlayerProgress</derivedcompoundref>
+    <derivedcompoundref refid="class_settings" prot="public" virt="non-virtual">Settings</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_i_savable_1a6f524db1edec7552b99f40de1bf013f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ISavable.Save</definition>
+        <argsstring>()</argsstring>
+        <name>Save</name>
+        <reimplementedby refid="class_audio_settings_1adea407ab6da2ab2a4b0ea5c1dd3284cb">Save</reimplementedby>
+        <reimplementedby refid="class_d_s_player_score_1ada319703b1724b77280c17b32034f91d">Save</reimplementedby>
+        <reimplementedby refid="class_common_settings_1aa1cea5f470d046465e80cfaab5941089">Save</reimplementedby>
+        <reimplementedby refid="class_settings_1ae5b00b8649c4e746625fcf3d9c761d84">Save</reimplementedby>
+        <reimplementedby refid="class_d_s_player_skills_1a86df032cd30b8c2d40b87f424fb9aa25">Save</reimplementedby>
+        <reimplementedby refid="class_player_progress_1a01156ec3d7d513678ff7a2dd2f572126">Save</reimplementedby>
+        <reimplementedby refid="class_graphix_settings_1a76afdf75bb43b91d2ce1f8fa90c4967b">Save</reimplementedby>
+        <reimplementedby refid="class_d_s_unit_stats_1a6477a603d8005708b1a20352e84792af">Save</reimplementedby>
+        <briefdescription>
+<para>Сохранить данные в хранилище </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/ISaveble.cs" line="12" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_i_savable_1ad4c1956e2936ff33be4709453ad21190" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ISavable.Load</definition>
+        <argsstring>()</argsstring>
+        <name>Load</name>
+        <reimplementedby refid="class_audio_settings_1a718f10d86ed37ee471a747a8c87fc018">Load</reimplementedby>
+        <reimplementedby refid="class_d_s_player_score_1abe7248f2812a070166904eaababc2f11">Load</reimplementedby>
+        <reimplementedby refid="class_common_settings_1a83021b8c4e9132ceb31d3384088321c1">Load</reimplementedby>
+        <reimplementedby refid="class_player_progress_1a91b699dbeacf2f7997bf591c60aae48c">Load</reimplementedby>
+        <reimplementedby refid="class_d_s_player_skills_1a5b404a1a116697a3675538a74bbf55a1">Load</reimplementedby>
+        <reimplementedby refid="class_settings_1af64bfc78fd33803322b0e6181a805bd7">Load</reimplementedby>
+        <reimplementedby refid="class_graphix_settings_1a6c9891a5e3e997ddcff8c0bf9090ff55">Load</reimplementedby>
+        <reimplementedby refid="class_d_s_unit_stats_1a08d3412ff0d50ec139f6de20395f6edb">Load</reimplementedby>
+        <briefdescription>
+<para>Загрузить данные из хранилища </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/ISaveble.cs" line="17" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="525">
+        <label>PlayerProgress</label>
+        <link refid="class_player_progress"/>
+        <childnode refid="518" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="526">
+        <label>Settings</label>
+        <link refid="class_settings"/>
+        <childnode refid="518" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="523">
+        <label>DSUnitStats</label>
+        <link refid="class_d_s_unit_stats"/>
+        <childnode refid="518" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="518">
+        <label>ISavable</label>
+        <link refid="interface_i_savable"/>
+      </node>
+      <node id="519">
+        <label>AudioSettings</label>
+        <link refid="class_audio_settings"/>
+        <childnode refid="518" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="524">
+        <label>GraphixSettings</label>
+        <link refid="class_graphix_settings"/>
+        <childnode refid="518" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="521">
+        <label>DSPlayerScore</label>
+        <link refid="class_d_s_player_score"/>
+        <childnode refid="518" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="522">
+        <label>DSPlayerSkills</label>
+        <link refid="class_d_s_player_skills"/>
+        <childnode refid="518" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="520">
+        <label>CommonSettings</label>
+        <link refid="class_common_settings"/>
+        <childnode refid="518" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/ISaveble.cs" line="8" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/ISaveble.cs" bodystart="7" bodyend="18"/>
+    <listofallmembers>
+      <member refid="interface_i_savable_1ad4c1956e2936ff33be4709453ad21190" prot="public" virt="non-virtual"><scope>ISavable</scope><name>Load</name></member>
+      <member refid="interface_i_savable_1a6f524db1edec7552b99f40de1bf013f4" prot="public" virt="non-virtual"><scope>ISavable</scope><name>Save</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

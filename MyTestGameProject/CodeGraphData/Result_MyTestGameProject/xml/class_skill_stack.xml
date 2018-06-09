@@ -1,0 +1,233 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_skill_stack" kind="class" prot="public">
+    <compoundname>SkillStack</compoundname>
+    <basecompoundref refid="class_a_stack" prot="public" virt="non-virtual">AStack</basecompoundref>
+    <basecompoundref refid="interface_i_descriptionable" prot="public" virt="non-virtual">IDescriptionable</basecompoundref>
+      <sectiondef kind="event">
+      <memberdef kind="event" id="class_skill_stack_1a22a60a20f8bf76ef5cd53b90cdb1a3db" prot="public" static="no" add="no" remove="no" raise="no">
+        <type>Action&lt; <ref refid="class_skill" kindref="compound">Skill</ref> &gt;</type>
+        <definition>Action&lt;Skill&gt; SkillStack.OnSkillChanged</definition>
+        <argsstring></argsstring>
+        <name>OnSkillChanged</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/SkillStack.cs" line="9" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/SkillStack.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="event" id="class_skill_stack_1a1e01b41781490d340d68e42a8feb48da" prot="public" static="no" add="no" remove="no" raise="no">
+        <type>Action&lt; object &gt;</type>
+        <definition>Action&lt;object&gt; SkillStack.OnStatsChanged</definition>
+        <argsstring></argsstring>
+        <name>OnStatsChanged</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/SkillStack.cs" line="10" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/SkillStack.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_skill_stack_1aafdca9fa13bd2adf19a35a9e5d39c546" prot="private" static="no" mutable="no">
+        <type><ref refid="class_skill" kindref="compound">Skill</ref></type>
+        <definition>Skill SkillStack.skill</definition>
+        <argsstring></argsstring>
+        <name>skill</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/SkillStack.cs" line="12" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/SkillStack.cs" bodystart="12" bodyend="-1"/>
+        <referencedby refid="class_skill_stack_1a3e659c54599d0886c115bab8e454305d" compoundref="_skill_stack_8cs" startline="22" endline="26">SkillStack</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_skill_stack_1a583fb59ba511989862caccad14a41634" prot="private" static="no" mutable="no">
+        <type>object</type>
+        <definition>object SkillStack.skillStats</definition>
+        <argsstring></argsstring>
+        <name>skillStats</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/SkillStack.cs" line="15" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/SkillStack.cs" bodystart="15" bodyend="-1"/>
+        <referencedby refid="class_skill_stack_1ae938cdafc7ad4643fb6a9c953b892970" compoundref="_skill_stack_8cs" startline="28" endline="39">GetDescription</referencedby>
+        <referencedby refid="class_skill_stack_1a3e659c54599d0886c115bab8e454305d" compoundref="_skill_stack_8cs" startline="22" endline="26">SkillStack</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_skill_stack_1adf9aaa884fbe7ebc786df1d72ddb5862" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_skill" kindref="compound">Skill</ref></type>
+        <definition>Skill SkillStack.Skill</definition>
+        <argsstring></argsstring>
+        <name>Skill</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/SkillStack.cs" line="13" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/SkillStack.cs" bodystart="13" bodyend="-1"/>
+        <referencedby refid="class_skill_button_1a5ceba885332c906ee9c3910cdd568485" compoundref="_skill_button_8cs" startline="99" endline="117">SkillButton.OnEndDrag</referencedby>
+        <referencedby refid="class_skill_button_1a2b16ac3915324df320bac7437a3851e9" compoundref="_skill_button_8cs" startline="70" endline="82">SkillButton.OnPointerClick</referencedby>
+        <referencedby refid="class_skill_button_1ac7bbeb4eace1afff33a8b5e1c8a988f5" compoundref="_skill_button_8cs" startline="33" endline="68">SkillButton.Start</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_skill_stack_1ab48f1bf96ca3d222daba7df0d6f3b18f" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>object</type>
+        <definition>object SkillStack.SkillStats</definition>
+        <argsstring></argsstring>
+        <name>SkillStats</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/SkillStack.cs" line="16" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/SkillStack.cs" bodystart="16" bodyend="-1"/>
+        <referencedby refid="class_skill_button_1ad17124063d5b0e14189d26844e0d28ec" compoundref="_skill_button_8cs" startline="84" endline="97">SkillButton.OnDrag</referencedby>
+        <referencedby refid="class_skill_button_1a5ceba885332c906ee9c3910cdd568485" compoundref="_skill_button_8cs" startline="99" endline="117">SkillButton.OnEndDrag</referencedby>
+        <referencedby refid="class_skill_button_1a2b16ac3915324df320bac7437a3851e9" compoundref="_skill_button_8cs" startline="70" endline="82">SkillButton.OnPointerClick</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_skill_stack_1a939ccce0e307d68e2638dd7335a1ed11" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SkillStack.SkillStack</definition>
+        <argsstring>()</argsstring>
+        <name>SkillStack</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/SkillStack.cs" line="18" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/SkillStack.cs" bodystart="18" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_skill_stack_1a3e659c54599d0886c115bab8e454305d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SkillStack.SkillStack</definition>
+        <argsstring>(Skill skill, object skillStats)</argsstring>
+        <name>SkillStack</name>
+        <param>
+          <type><ref refid="class_skill" kindref="compound">Skill</ref></type>
+          <declname>skill</declname>
+        </param>
+        <param>
+          <type>object</type>
+          <declname>skillStats</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/SkillStack.cs" line="22" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/SkillStack.cs" bodystart="22" bodyend="26"/>
+        <references refid="class_skill_stack_1aafdca9fa13bd2adf19a35a9e5d39c546" compoundref="_skill_stack_8cs" startline="12">skill</references>
+        <references refid="class_skill_stack_1a583fb59ba511989862caccad14a41634" compoundref="_skill_stack_8cs" startline="15">skillStats</references>
+      </memberdef>
+      <memberdef kind="function" id="class_skill_stack_1ae938cdafc7ad4643fb6a9c953b892970" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_description" kindref="compound">Description</ref></type>
+        <definition>Description SkillStack.GetDescription</definition>
+        <argsstring>()</argsstring>
+        <name>GetDescription</name>
+        <reimplements refid="interface_i_descriptionable_1a33be6e4687ad788d949f989aaadad45d">GetDescription</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/SkillStack.cs" line="28" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/SkillStack.cs" bodystart="28" bodyend="39"/>
+        <references refid="class_skill_stack_1a583fb59ba511989862caccad14a41634" compoundref="_skill_stack_8cs" startline="15">skillStats</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="980">
+        <label>IDescriptionable</label>
+        <link refid="interface_i_descriptionable"/>
+      </node>
+      <node id="978">
+        <label>SkillStack</label>
+        <link refid="class_skill_stack"/>
+        <childnode refid="979" relation="public-inheritance">
+        </childnode>
+        <childnode refid="980" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="979">
+        <label>AStack</label>
+        <link refid="class_a_stack"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="987">
+        <label>Item.MainProperties</label>
+        <link refid="struct_item_1_1_main_properties"/>
+      </node>
+      <node id="983">
+        <label>IDescriptionable</label>
+        <link refid="interface_i_descriptionable"/>
+      </node>
+      <node id="985">
+        <label>Item</label>
+        <link refid="class_item"/>
+        <childnode refid="986" relation="public-inheritance">
+        </childnode>
+        <childnode refid="987" relation="usage">
+          <edgelabel>mainProperties</edgelabel>
+        </childnode>
+      </node>
+      <node id="981">
+        <label>SkillStack</label>
+        <link refid="class_skill_stack"/>
+        <childnode refid="982" relation="public-inheritance">
+        </childnode>
+        <childnode refid="983" relation="public-inheritance">
+        </childnode>
+        <childnode refid="984" relation="usage">
+          <edgelabel>skill</edgelabel>
+        </childnode>
+      </node>
+      <node id="982">
+        <label>AStack</label>
+        <link refid="class_a_stack"/>
+      </node>
+      <node id="986">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="984">
+        <label>Skill</label>
+        <link refid="class_skill"/>
+        <childnode refid="985" relation="public-inheritance">
+        </childnode>
+        <childnode refid="983" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/SkillStack.cs" line="8" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/SkillStack.cs" bodystart="7" bodyend="40"/>
+    <listofallmembers>
+      <member refid="class_skill_stack_1ae938cdafc7ad4643fb6a9c953b892970" prot="public" virt="non-virtual"><scope>SkillStack</scope><name>GetDescription</name></member>
+      <member refid="class_skill_stack_1a22a60a20f8bf76ef5cd53b90cdb1a3db" prot="public" virt="non-virtual"><scope>SkillStack</scope><name>OnSkillChanged</name></member>
+      <member refid="class_skill_stack_1a1e01b41781490d340d68e42a8feb48da" prot="public" virt="non-virtual"><scope>SkillStack</scope><name>OnStatsChanged</name></member>
+      <member refid="class_skill_stack_1adf9aaa884fbe7ebc786df1d72ddb5862" prot="public" virt="non-virtual"><scope>SkillStack</scope><name>Skill</name></member>
+      <member refid="class_skill_stack_1aafdca9fa13bd2adf19a35a9e5d39c546" prot="private" virt="non-virtual"><scope>SkillStack</scope><name>skill</name></member>
+      <member refid="class_skill_stack_1a939ccce0e307d68e2638dd7335a1ed11" prot="public" virt="non-virtual"><scope>SkillStack</scope><name>SkillStack</name></member>
+      <member refid="class_skill_stack_1a3e659c54599d0886c115bab8e454305d" prot="public" virt="non-virtual"><scope>SkillStack</scope><name>SkillStack</name></member>
+      <member refid="class_skill_stack_1a583fb59ba511989862caccad14a41634" prot="private" virt="non-virtual"><scope>SkillStack</scope><name>skillStats</name></member>
+      <member refid="class_skill_stack_1ab48f1bf96ca3d222daba7df0d6f3b18f" prot="public" virt="non-virtual"><scope>SkillStack</scope><name>SkillStats</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

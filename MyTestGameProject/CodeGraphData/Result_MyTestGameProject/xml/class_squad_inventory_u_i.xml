@@ -1,0 +1,365 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_squad_inventory_u_i" kind="class" prot="public">
+    <compoundname>SquadInventoryUI</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_squad_inventory_u_i_1a0545068926bec542ebe7b973634f46a8" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_squad_inventory_u_i" kindref="compound">SquadInventoryUI</ref></type>
+        <definition>SquadInventoryUI SquadInventoryUI.Instance</definition>
+        <argsstring></argsstring>
+        <name>Instance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/SquadInventoryUI.cs" line="10" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/SquadInventoryUI.cs" bodystart="10" bodyend="-1"/>
+        <referencedby refid="class_squad_inventory_u_i_1af468c7df56a5fb455fb01ccae607fcbf" compoundref="_squad_inventory_u_i_8cs" startline="30" endline="33">Awake</referencedby>
+        <referencedby refid="class_a_drop_to_me_1aa823b910877eb709c120b6e082063ac0" compoundref="_a_drop_to_me_8cs" startline="37" endline="53">ADropToMe.RefreshUI</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_squad_inventory_u_i_1ae6af708b56d2b8adceda4a77964ad1f6" prot="private" static="no" mutable="no">
+        <type>GameObject</type>
+        <definition>GameObject SquadInventoryUI.inventoryItemOriginal</definition>
+        <argsstring></argsstring>
+        <name>inventoryItemOriginal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/SquadInventoryUI.cs" line="12" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/SquadInventoryUI.cs" bodystart="12" bodyend="-1"/>
+        <referencedby refid="class_squad_inventory_u_i_1ab8238631f94d74d2ed65fe1b622eb31b" compoundref="_squad_inventory_u_i_8cs" startline="110" endline="123">SetImage</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_squad_inventory_u_i_1aaa8bcd0fc337bf64b1a49cfce5c91504" prot="private" static="no" mutable="no">
+        <type>Transform</type>
+        <definition>Transform SquadInventoryUI.helmetCell</definition>
+        <argsstring></argsstring>
+        <name>helmetCell</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/SquadInventoryUI.cs" line="15" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/SquadInventoryUI.cs" bodystart="15" bodyend="-1"/>
+        <referencedby refid="class_squad_inventory_u_i_1a1c33efc57d748213dac793c00997c015" compoundref="_squad_inventory_u_i_8cs" startline="61" endline="108">RefreshUI</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_squad_inventory_u_i_1a134e11a558d482ad8f13f2f50e0f1af0" prot="private" static="no" mutable="no">
+        <type>Transform</type>
+        <definition>Transform SquadInventoryUI.bodyCell</definition>
+        <argsstring></argsstring>
+        <name>bodyCell</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/SquadInventoryUI.cs" line="16" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/SquadInventoryUI.cs" bodystart="16" bodyend="-1"/>
+        <referencedby refid="class_squad_inventory_u_i_1a1c33efc57d748213dac793c00997c015" compoundref="_squad_inventory_u_i_8cs" startline="61" endline="108">RefreshUI</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_squad_inventory_u_i_1a75d7a966acbf24e7677ca73ff38df44d" prot="private" static="no" mutable="no">
+        <type>Transform</type>
+        <definition>Transform SquadInventoryUI.shieldCell</definition>
+        <argsstring></argsstring>
+        <name>shieldCell</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/SquadInventoryUI.cs" line="17" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/SquadInventoryUI.cs" bodystart="17" bodyend="-1"/>
+        <referencedby refid="class_squad_inventory_u_i_1a1c33efc57d748213dac793c00997c015" compoundref="_squad_inventory_u_i_8cs" startline="61" endline="108">RefreshUI</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_squad_inventory_u_i_1aa92bccb5afef5ac389a06f83f5524e4c" prot="private" static="no" mutable="no">
+        <type>Transform</type>
+        <definition>Transform SquadInventoryUI.weaponCell</definition>
+        <argsstring></argsstring>
+        <name>weaponCell</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/SquadInventoryUI.cs" line="18" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/SquadInventoryUI.cs" bodystart="18" bodyend="-1"/>
+        <referencedby refid="class_squad_inventory_u_i_1a1c33efc57d748213dac793c00997c015" compoundref="_squad_inventory_u_i_8cs" startline="61" endline="108">RefreshUI</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_squad_inventory_u_i_1a455a3d6bd90855de48dab09687924870" prot="private" static="no" mutable="no">
+        <type>Transform[]</type>
+        <definition>Transform [] SquadInventoryUI.inventoryCells</definition>
+        <argsstring></argsstring>
+        <name>inventoryCells</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/SquadInventoryUI.cs" line="20" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/SquadInventoryUI.cs" bodystart="20" bodyend="-1"/>
+        <referencedby refid="class_squad_inventory_u_i_1a1c33efc57d748213dac793c00997c015" compoundref="_squad_inventory_u_i_8cs" startline="61" endline="108">RefreshUI</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_squad_inventory_u_i_1ad4e4145f113f5a10a52e02ff89b0c39e" prot="private" static="no" mutable="no">
+        <type>Transform[]</type>
+        <definition>Transform [] SquadInventoryUI.consumablesCells</definition>
+        <argsstring></argsstring>
+        <name>consumablesCells</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/SquadInventoryUI.cs" line="22" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/SquadInventoryUI.cs" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_squad_inventory_u_i_1a749c1549348840d072dfd28a750218a0" prot="private" static="no" mutable="no">
+        <type><ref refid="class_score_panel" kindref="compound">ScorePanel</ref></type>
+        <definition>ScorePanel SquadInventoryUI.scorePanel</definition>
+        <argsstring></argsstring>
+        <name>scorePanel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/SquadInventoryUI.cs" line="24" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/SquadInventoryUI.cs" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_squad_inventory_u_i_1a13e8b6e5eade7ec17f773911245c29d6" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SquadInventoryUI.canRefresh</definition>
+        <argsstring></argsstring>
+        <name>canRefresh</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/SquadInventoryUI.cs" line="26" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/SquadInventoryUI.cs" bodystart="26" bodyend="-1"/>
+        <referencedby refid="class_squad_inventory_u_i_1a8c40304ab86dcbad9f57dbb280a8a496" compoundref="_squad_inventory_u_i_8cs" startline="47" endline="51">RefreshOnCntShanged</referencedby>
+        <referencedby refid="class_squad_inventory_u_i_1afe3a3d275e633dc580bcf3a5e952d2a8" compoundref="_squad_inventory_u_i_8cs" startline="53" endline="59">WaitForRefresh</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_squad_inventory_u_i_1af27a271ce68d162a1591858ce5a5b616" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SquadInventoryUI.timeToRefresh</definition>
+        <argsstring></argsstring>
+        <name>timeToRefresh</name>
+        <initializer>= 0.2f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/SquadInventoryUI.cs" line="28" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/SquadInventoryUI.cs" bodystart="28" bodyend="-1"/>
+        <referencedby refid="class_squad_inventory_u_i_1afe3a3d275e633dc580bcf3a5e952d2a8" compoundref="_squad_inventory_u_i_8cs" startline="53" endline="59">WaitForRefresh</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_squad_inventory_u_i_1af468c7df56a5fb455fb01ccae607fcbf" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SquadInventoryUI.Awake</definition>
+        <argsstring>()</argsstring>
+        <name>Awake</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/SquadInventoryUI.cs" line="30" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/SquadInventoryUI.cs" bodystart="30" bodyend="33"/>
+        <references refid="class_squad_inventory_u_i_1a0545068926bec542ebe7b973634f46a8" compoundref="_squad_inventory_u_i_8cs" startline="10">Instance</references>
+      </memberdef>
+      <memberdef kind="function" id="class_squad_inventory_u_i_1a4d5a747406bf471b65e0b54d820ad3b4" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SquadInventoryUI.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/SquadInventoryUI.cs" line="35" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/SquadInventoryUI.cs" bodystart="35" bodyend="39"/>
+        <references refid="class_squad_inventory_u_i_1a8c40304ab86dcbad9f57dbb280a8a496" compoundref="_squad_inventory_u_i_8cs" startline="47" endline="51">RefreshOnCntShanged</references>
+        <references refid="class_squad_inventory_u_i_1a1c33efc57d748213dac793c00997c015" compoundref="_squad_inventory_u_i_8cs" startline="61" endline="108">RefreshUI</references>
+      </memberdef>
+      <memberdef kind="function" id="class_squad_inventory_u_i_1a2bb81bccdcb100a5d9f0d99d1cddae13" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SquadInventoryUI.OnDestroy</definition>
+        <argsstring>()</argsstring>
+        <name>OnDestroy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/SquadInventoryUI.cs" line="41" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/SquadInventoryUI.cs" bodystart="41" bodyend="45"/>
+        <references refid="class_squad_1a781a32dd5c6fadbe0a9e04f142ddc9da" compoundref="_squad_8cs" startline="10">Squad.playerSquadInstance</references>
+        <references refid="class_squad_inventory_u_i_1a8c40304ab86dcbad9f57dbb280a8a496" compoundref="_squad_inventory_u_i_8cs" startline="47" endline="51">RefreshOnCntShanged</references>
+      </memberdef>
+      <memberdef kind="function" id="class_squad_inventory_u_i_1a8c40304ab86dcbad9f57dbb280a8a496" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SquadInventoryUI.RefreshOnCntShanged</definition>
+        <argsstring>(int cnt)</argsstring>
+        <name>RefreshOnCntShanged</name>
+        <param>
+          <type>int</type>
+          <declname>cnt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/SquadInventoryUI.cs" line="47" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/SquadInventoryUI.cs" bodystart="47" bodyend="51"/>
+        <references refid="class_squad_inventory_u_i_1a13e8b6e5eade7ec17f773911245c29d6" compoundref="_squad_inventory_u_i_8cs" startline="26">canRefresh</references>
+        <references refid="class_squad_inventory_u_i_1afe3a3d275e633dc580bcf3a5e952d2a8" compoundref="_squad_inventory_u_i_8cs" startline="53" endline="59">WaitForRefresh</references>
+        <referencedby refid="class_squad_inventory_u_i_1a2bb81bccdcb100a5d9f0d99d1cddae13" compoundref="_squad_inventory_u_i_8cs" startline="41" endline="45">OnDestroy</referencedby>
+        <referencedby refid="class_squad_inventory_u_i_1a4d5a747406bf471b65e0b54d820ad3b4" compoundref="_squad_inventory_u_i_8cs" startline="35" endline="39">Start</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_squad_inventory_u_i_1afe3a3d275e633dc580bcf3a5e952d2a8" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerator</type>
+        <definition>IEnumerator SquadInventoryUI.WaitForRefresh</definition>
+        <argsstring>()</argsstring>
+        <name>WaitForRefresh</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/SquadInventoryUI.cs" line="53" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/SquadInventoryUI.cs" bodystart="53" bodyend="59"/>
+        <references refid="class_squad_inventory_u_i_1a13e8b6e5eade7ec17f773911245c29d6" compoundref="_squad_inventory_u_i_8cs" startline="26">canRefresh</references>
+        <references refid="class_squad_inventory_u_i_1a1c33efc57d748213dac793c00997c015" compoundref="_squad_inventory_u_i_8cs" startline="61" endline="108">RefreshUI</references>
+        <references refid="class_squad_inventory_u_i_1af27a271ce68d162a1591858ce5a5b616" compoundref="_squad_inventory_u_i_8cs" startline="28">timeToRefresh</references>
+        <referencedby refid="class_squad_inventory_u_i_1a8c40304ab86dcbad9f57dbb280a8a496" compoundref="_squad_inventory_u_i_8cs" startline="47" endline="51">RefreshOnCntShanged</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_squad_inventory_u_i_1a1c33efc57d748213dac793c00997c015" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SquadInventoryUI.RefreshUI</definition>
+        <argsstring>()</argsstring>
+        <name>RefreshUI</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/SquadInventoryUI.cs" line="61" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/SquadInventoryUI.cs" bodystart="61" bodyend="108"/>
+        <references refid="class_inventory_1aa1cf6e7ace4e2897220ff4f8896fca53" compoundref="_inventory_8cs" startline="48">Inventory.Body</references>
+        <references refid="class_squad_inventory_u_i_1a134e11a558d482ad8f13f2f50e0f1af0" compoundref="_squad_inventory_u_i_8cs" startline="16">bodyCell</references>
+        <references refid="struct_equipment_stats_1abd05f10096c1d46af0f13806b754118e" compoundref="_equipment_stats_8cs" startline="22">EquipmentStats.Empty</references>
+        <references refid="class_inventory_1a9fd46393a3045d9798b8cc8b9bc78d05" compoundref="_inventory_8cs" startline="36">Inventory.Helmet</references>
+        <references refid="class_squad_inventory_u_i_1aaa8bcd0fc337bf64b1a49cfce5c91504" compoundref="_squad_inventory_u_i_8cs" startline="15">helmetCell</references>
+        <references refid="class_squad_1a000c2e8cc307d9629751785b96b53ce5" compoundref="_squad_8cs" startline="106">Squad.Inventory</references>
+        <references refid="class_squad_inventory_u_i_1a455a3d6bd90855de48dab09687924870" compoundref="_squad_inventory_u_i_8cs" startline="20">inventoryCells</references>
+        <references refid="class_squad_1a781a32dd5c6fadbe0a9e04f142ddc9da" compoundref="_squad_8cs" startline="10">Squad.playerSquadInstance</references>
+        <references refid="class_squad_inventory_u_i_1ab8238631f94d74d2ed65fe1b622eb31b" compoundref="_squad_inventory_u_i_8cs" startline="110" endline="123">SetImage</references>
+        <references refid="class_inventory_1a4280a990d639f958ff4c0e7249697a1f" compoundref="_inventory_8cs" startline="60">Inventory.Shield</references>
+        <references refid="class_squad_inventory_u_i_1a75d7a966acbf24e7677ca73ff38df44d" compoundref="_squad_inventory_u_i_8cs" startline="17">shieldCell</references>
+        <references refid="class_equipment_1a41b8725e8599baea7fd05b0725fa4812" compoundref="_equipment_8cs" startline="11">Equipment.Stats</references>
+        <references refid="class_inventory_1aada92657ba049bb0a3856e157b4e0e22" compoundref="_inventory_8cs" startline="72">Inventory.Weapon</references>
+        <references refid="class_squad_inventory_u_i_1aa92bccb5afef5ac389a06f83f5524e4c" compoundref="_squad_inventory_u_i_8cs" startline="18">weaponCell</references>
+        <referencedby refid="class_squad_inventory_u_i_1a4d5a747406bf471b65e0b54d820ad3b4" compoundref="_squad_inventory_u_i_8cs" startline="35" endline="39">Start</referencedby>
+        <referencedby refid="class_squad_inventory_u_i_1afe3a3d275e633dc580bcf3a5e952d2a8" compoundref="_squad_inventory_u_i_8cs" startline="53" endline="59">WaitForRefresh</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_squad_inventory_u_i_1ab8238631f94d74d2ed65fe1b622eb31b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SquadInventoryUI.SetImage</definition>
+        <argsstring>(Transform cell, EquipmentStack stack, bool canDrag)</argsstring>
+        <name>SetImage</name>
+        <param>
+          <type>Transform</type>
+          <declname>cell</declname>
+        </param>
+        <param>
+          <type><ref refid="class_equipment_stack" kindref="compound">EquipmentStack</ref></type>
+          <declname>stack</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>canDrag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/SquadInventoryUI.cs" line="110" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/SquadInventoryUI.cs" bodystart="110" bodyend="123"/>
+        <references refid="class_squad_inventory_u_i_1ae6af708b56d2b8adceda4a77964ad1f6" compoundref="_squad_inventory_u_i_8cs" startline="12">inventoryItemOriginal</references>
+        <referencedby refid="class_squad_inventory_u_i_1a1c33efc57d748213dac793c00997c015" compoundref="_squad_inventory_u_i_8cs" startline="61" endline="108">RefreshUI</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1054">
+        <label>SquadInventoryUI</label>
+        <link refid="class_squad_inventory_u_i"/>
+        <childnode refid="1055" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1055">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1056">
+        <label>SquadInventoryUI</label>
+        <link refid="class_squad_inventory_u_i"/>
+        <childnode refid="1057" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1058" relation="usage">
+          <edgelabel>scorePanel</edgelabel>
+        </childnode>
+      </node>
+      <node id="1058">
+        <label>ScorePanel</label>
+        <link refid="class_score_panel"/>
+        <childnode refid="1057" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1057">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/SquadInventoryUI.cs" line="9" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Inventory/SquadInventoryUI.cs" bodystart="8" bodyend="124"/>
+    <listofallmembers>
+      <member refid="class_squad_inventory_u_i_1af468c7df56a5fb455fb01ccae607fcbf" prot="private" virt="non-virtual"><scope>SquadInventoryUI</scope><name>Awake</name></member>
+      <member refid="class_squad_inventory_u_i_1a134e11a558d482ad8f13f2f50e0f1af0" prot="private" virt="non-virtual"><scope>SquadInventoryUI</scope><name>bodyCell</name></member>
+      <member refid="class_squad_inventory_u_i_1a13e8b6e5eade7ec17f773911245c29d6" prot="private" virt="non-virtual"><scope>SquadInventoryUI</scope><name>canRefresh</name></member>
+      <member refid="class_squad_inventory_u_i_1ad4e4145f113f5a10a52e02ff89b0c39e" prot="private" virt="non-virtual"><scope>SquadInventoryUI</scope><name>consumablesCells</name></member>
+      <member refid="class_squad_inventory_u_i_1aaa8bcd0fc337bf64b1a49cfce5c91504" prot="private" virt="non-virtual"><scope>SquadInventoryUI</scope><name>helmetCell</name></member>
+      <member refid="class_squad_inventory_u_i_1a0545068926bec542ebe7b973634f46a8" prot="public" virt="non-virtual"><scope>SquadInventoryUI</scope><name>Instance</name></member>
+      <member refid="class_squad_inventory_u_i_1a455a3d6bd90855de48dab09687924870" prot="private" virt="non-virtual"><scope>SquadInventoryUI</scope><name>inventoryCells</name></member>
+      <member refid="class_squad_inventory_u_i_1ae6af708b56d2b8adceda4a77964ad1f6" prot="private" virt="non-virtual"><scope>SquadInventoryUI</scope><name>inventoryItemOriginal</name></member>
+      <member refid="class_squad_inventory_u_i_1a2bb81bccdcb100a5d9f0d99d1cddae13" prot="private" virt="non-virtual"><scope>SquadInventoryUI</scope><name>OnDestroy</name></member>
+      <member refid="class_squad_inventory_u_i_1a8c40304ab86dcbad9f57dbb280a8a496" prot="private" virt="non-virtual"><scope>SquadInventoryUI</scope><name>RefreshOnCntShanged</name></member>
+      <member refid="class_squad_inventory_u_i_1a1c33efc57d748213dac793c00997c015" prot="public" virt="non-virtual"><scope>SquadInventoryUI</scope><name>RefreshUI</name></member>
+      <member refid="class_squad_inventory_u_i_1a749c1549348840d072dfd28a750218a0" prot="private" virt="non-virtual"><scope>SquadInventoryUI</scope><name>scorePanel</name></member>
+      <member refid="class_squad_inventory_u_i_1ab8238631f94d74d2ed65fe1b622eb31b" prot="public" virt="non-virtual"><scope>SquadInventoryUI</scope><name>SetImage</name></member>
+      <member refid="class_squad_inventory_u_i_1a75d7a966acbf24e7677ca73ff38df44d" prot="private" virt="non-virtual"><scope>SquadInventoryUI</scope><name>shieldCell</name></member>
+      <member refid="class_squad_inventory_u_i_1a4d5a747406bf471b65e0b54d820ad3b4" prot="private" virt="non-virtual"><scope>SquadInventoryUI</scope><name>Start</name></member>
+      <member refid="class_squad_inventory_u_i_1af27a271ce68d162a1591858ce5a5b616" prot="private" virt="non-virtual"><scope>SquadInventoryUI</scope><name>timeToRefresh</name></member>
+      <member refid="class_squad_inventory_u_i_1afe3a3d275e633dc580bcf3a5e952d2a8" prot="private" virt="non-virtual"><scope>SquadInventoryUI</scope><name>WaitForRefresh</name></member>
+      <member refid="class_squad_inventory_u_i_1aa92bccb5afef5ac389a06f83f5524e4c" prot="private" virt="non-virtual"><scope>SquadInventoryUI</scope><name>weaponCell</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

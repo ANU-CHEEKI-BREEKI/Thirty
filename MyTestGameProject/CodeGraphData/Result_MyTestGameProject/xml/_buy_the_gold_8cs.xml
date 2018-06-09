@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_buy_the_gold_8cs" kind="file">
+    <compoundname>BuyTheGold.cs</compoundname>
+    <innerclass refid="class_buy_the_gold" prot="public">BuyTheGold</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Collections;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Collections.Generic;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>UnityEngine;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>UnityEngine.UI;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="class_buy_the_gold" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_buy_the_gold" kindref="compound">BuyTheGold</ref><sp/>:<sp/>MonoBehaviour</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8" refid="class_buy_the_gold_1af40168a3c158821ee86945cec6c7427e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[SerializeField]<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_buy_the_gold_1af40168a3c158821ee86945cec6c7427e" kindref="member">gold</ref>;</highlight></codeline>
+<codeline lineno="9" refid="class_buy_the_gold_1afef3a12aba94027186021b8f50239b46" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[SerializeField]<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_buy_the_gold_1afef3a12aba94027186021b8f50239b46" kindref="member">cost</ref>;</highlight></codeline>
+<codeline lineno="10" refid="class_buy_the_gold_1ad80006c99a7f87ed73caf50531d3a8a1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Button<sp/><ref refid="class_buy_the_gold_1ad80006c99a7f87ed73caf50531d3a8a1" kindref="member">btn</ref>;</highlight></codeline>
+<codeline lineno="11" refid="class_buy_the_gold_1ae67a2e5ded52abb685620a6cc89bc079" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Text<sp/><ref refid="class_buy_the_gold_1ae67a2e5ded52abb685620a6cc89bc079" kindref="member">text</ref>;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="class_buy_the_gold_1ab53e32986c566faf798b53dfc8507d85" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_buy_the_gold_1ab53e32986c566faf798b53dfc8507d85" kindref="member">Start</ref><sp/>()</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_buy_the_gold_1ad80006c99a7f87ed73caf50531d3a8a1" kindref="member">btn</ref><sp/>=<sp/>GetComponent&lt;Button&gt;();</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>btn.onClick.AddListener(<ref refid="class_buy_the_gold_1a9305775315e3e47f4231f2c5a2adf570" kindref="member">OnBtnClick</ref>);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_buy_the_gold_1ad80006c99a7f87ed73caf50531d3a8a1" kindref="member">btn</ref>.transform.childCount<sp/>&gt;<sp/>0)</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_buy_the_gold_1ae67a2e5ded52abb685620a6cc89bc079" kindref="member">text</ref><sp/>=<sp/>btn.transform.GetChild(0).GetComponent&lt;Text&gt;();</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_buy_the_gold_1ae67a2e5ded52abb685620a6cc89bc079" kindref="member">text</ref><sp/>!=<sp/>null)</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>text.text<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;+&quot;</highlight><highlight class="normal"><sp/>+<sp/>gold.ToString();</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="class_buy_the_gold_1a9305775315e3e47f4231f2c5a2adf570" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_buy_the_gold_1a9305775315e3e47f4231f2c5a2adf570" kindref="member">OnBtnClick</ref>()</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_buy_the_gold_1aa78d2679447a39dc1b4600e5ef5523f6" kindref="member">AddGold</ref>(<ref refid="class_buy_the_gold_1af40168a3c158821ee86945cec6c7427e" kindref="member">gold</ref>);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="class_buy_the_gold_1aa78d2679447a39dc1b4600e5ef5523f6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_buy_the_gold_1aa78d2679447a39dc1b4600e5ef5523f6" kindref="member">AddGold</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_buy_the_gold_1af40168a3c158821ee86945cec6c7427e" kindref="member">gold</ref>)</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GameManager.Instance.PlayerProgress.score.gold.Value<sp/>+=<sp/><ref refid="class_buy_the_gold_1af40168a3c158821ee86945cec6c7427e" kindref="member">gold</ref>;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GameManager.Instance.PlayerProgress.score.Save();</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/MarketScene/BuyTheGold.cs"/>
+  </compounddef>
+</doxygen>

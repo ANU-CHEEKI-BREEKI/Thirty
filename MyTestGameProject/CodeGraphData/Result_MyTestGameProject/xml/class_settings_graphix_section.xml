@@ -1,0 +1,276 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_settings_graphix_section" kind="class" prot="public">
+    <compoundname>SettingsGraphixSection</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_settings_graphix_section_1ad301dc656930b7b7b8e32438b5cd2c34" prot="private" static="no" mutable="no">
+        <type>Toggle</type>
+        <definition>Toggle SettingsGraphixSection.showDamageToggle</definition>
+        <argsstring></argsstring>
+        <name>showDamageToggle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SettingsGraphixSection.cs" line="9" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SettingsGraphixSection.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_settings_graphix_section_1a8b389c43b67d9906da544974792c415a" prot="private" static="no" mutable="no">
+        <type>Toggle</type>
+        <definition>Toggle SettingsGraphixSection.allyOutlineToggle</definition>
+        <argsstring></argsstring>
+        <name>allyOutlineToggle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SettingsGraphixSection.cs" line="10" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SettingsGraphixSection.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_settings_graphix_section_1aee2a70f2c3294b6319f4270caffe8b11" prot="private" static="no" mutable="no">
+        <type>Toggle</type>
+        <definition>Toggle SettingsGraphixSection.enemyOutlineToggle</definition>
+        <argsstring></argsstring>
+        <name>enemyOutlineToggle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SettingsGraphixSection.cs" line="11" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SettingsGraphixSection.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_settings_graphix_section_1af3e25af329ab6f253bbd9d10c0b4a319" prot="private" static="no" mutable="no">
+        <type>Toggle</type>
+        <definition>Toggle SettingsGraphixSection.neutralOutlineToggle</definition>
+        <argsstring></argsstring>
+        <name>neutralOutlineToggle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SettingsGraphixSection.cs" line="12" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SettingsGraphixSection.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_settings_graphix_section_1aeb1f89c19abb8fda17d7347381958668" prot="private" static="no" mutable="no">
+        <type>Toggle</type>
+        <definition>Toggle SettingsGraphixSection.borderOutline</definition>
+        <argsstring></argsstring>
+        <name>borderOutline</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SettingsGraphixSection.cs" line="13" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SettingsGraphixSection.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_settings_graphix_section_1a209565159a9b2ff3e4290e1af7bc2655" prot="private" static="no" mutable="no">
+        <type>Toggle</type>
+        <definition>Toggle SettingsGraphixSection.underlayerOutline</definition>
+        <argsstring></argsstring>
+        <name>underlayerOutline</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SettingsGraphixSection.cs" line="14" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SettingsGraphixSection.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_settings_graphix_section_1a5a3dee7474c37d579048727f6ab4d879" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SettingsGraphixSection.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SettingsGraphixSection.cs" line="16" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SettingsGraphixSection.cs" bodystart="16" bodyend="19"/>
+        <references refid="class_settings_graphix_section_1a7ed0b4519c281179c9c7520a9e7337ac" compoundref="_settings_graphix_section_8cs" startline="21" endline="40">ResetPrefsUI</references>
+      </memberdef>
+      <memberdef kind="function" id="class_settings_graphix_section_1a7ed0b4519c281179c9c7520a9e7337ac" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SettingsGraphixSection.ResetPrefsUI</definition>
+        <argsstring>()</argsstring>
+        <name>ResetPrefsUI</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SettingsGraphixSection.cs" line="21" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SettingsGraphixSection.cs" bodystart="21" bodyend="40"/>
+        <references refid="class_settings_graphix_section_1a61f10cf56fe9d555066c99d62eeaf9e6" compoundref="_settings_graphix_section_8cs" startline="59" endline="62">OnAllyOutlineToggleValChanged</references>
+        <references refid="class_settings_graphix_section_1aadf1982a1da60a9adf5e85ce2598fe83" compoundref="_settings_graphix_section_8cs" startline="42" endline="46">OnBorderOutlineToggleValChanged</references>
+        <references refid="class_settings_graphix_section_1a7f2d3b22733ea698388e098218250c1c" compoundref="_settings_graphix_section_8cs" startline="64" endline="67">OnEnemyOutlineToggleValChanged</references>
+        <references refid="class_settings_graphix_section_1aff514073fdd18ac4a48d92aa3a4d080d" compoundref="_settings_graphix_section_8cs" startline="69" endline="72">OnNeutralOutlineToggleValChanged</references>
+        <references refid="class_settings_graphix_section_1a13c62f9598e7c39cc86951a351ab6af5" compoundref="_settings_graphix_section_8cs" startline="54" endline="57">OnShowDamageToggleValChanged</references>
+        <references refid="class_settings_graphix_section_1a236511e0b76d2b52d0ad416f02023825" compoundref="_settings_graphix_section_8cs" startline="48" endline="52">OnUnderlayerOutlineToggleValChanged</references>
+        <referencedby refid="class_settings_graphix_section_1a5a3dee7474c37d579048727f6ab4d879" compoundref="_settings_graphix_section_8cs" startline="16" endline="19">Start</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_settings_graphix_section_1aadf1982a1da60a9adf5e85ce2598fe83" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SettingsGraphixSection.OnBorderOutlineToggleValChanged</definition>
+        <argsstring>(bool value)</argsstring>
+        <name>OnBorderOutlineToggleValChanged</name>
+        <param>
+          <type>bool</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SettingsGraphixSection.cs" line="42" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SettingsGraphixSection.cs" bodystart="42" bodyend="46"/>
+        <referencedby refid="class_settings_graphix_section_1a7ed0b4519c281179c9c7520a9e7337ac" compoundref="_settings_graphix_section_8cs" startline="21" endline="40">ResetPrefsUI</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_settings_graphix_section_1a236511e0b76d2b52d0ad416f02023825" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SettingsGraphixSection.OnUnderlayerOutlineToggleValChanged</definition>
+        <argsstring>(bool value)</argsstring>
+        <name>OnUnderlayerOutlineToggleValChanged</name>
+        <param>
+          <type>bool</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SettingsGraphixSection.cs" line="48" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SettingsGraphixSection.cs" bodystart="48" bodyend="52"/>
+        <referencedby refid="class_settings_graphix_section_1a7ed0b4519c281179c9c7520a9e7337ac" compoundref="_settings_graphix_section_8cs" startline="21" endline="40">ResetPrefsUI</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_settings_graphix_section_1a13c62f9598e7c39cc86951a351ab6af5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SettingsGraphixSection.OnShowDamageToggleValChanged</definition>
+        <argsstring>(bool value)</argsstring>
+        <name>OnShowDamageToggleValChanged</name>
+        <param>
+          <type>bool</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SettingsGraphixSection.cs" line="54" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SettingsGraphixSection.cs" bodystart="54" bodyend="57"/>
+        <referencedby refid="class_settings_graphix_section_1a7ed0b4519c281179c9c7520a9e7337ac" compoundref="_settings_graphix_section_8cs" startline="21" endline="40">ResetPrefsUI</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_settings_graphix_section_1a61f10cf56fe9d555066c99d62eeaf9e6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SettingsGraphixSection.OnAllyOutlineToggleValChanged</definition>
+        <argsstring>(bool value)</argsstring>
+        <name>OnAllyOutlineToggleValChanged</name>
+        <param>
+          <type>bool</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SettingsGraphixSection.cs" line="59" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SettingsGraphixSection.cs" bodystart="59" bodyend="62"/>
+        <referencedby refid="class_settings_graphix_section_1a7ed0b4519c281179c9c7520a9e7337ac" compoundref="_settings_graphix_section_8cs" startline="21" endline="40">ResetPrefsUI</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_settings_graphix_section_1a7f2d3b22733ea698388e098218250c1c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SettingsGraphixSection.OnEnemyOutlineToggleValChanged</definition>
+        <argsstring>(bool value)</argsstring>
+        <name>OnEnemyOutlineToggleValChanged</name>
+        <param>
+          <type>bool</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SettingsGraphixSection.cs" line="64" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SettingsGraphixSection.cs" bodystart="64" bodyend="67"/>
+        <referencedby refid="class_settings_graphix_section_1a7ed0b4519c281179c9c7520a9e7337ac" compoundref="_settings_graphix_section_8cs" startline="21" endline="40">ResetPrefsUI</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_settings_graphix_section_1aff514073fdd18ac4a48d92aa3a4d080d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SettingsGraphixSection.OnNeutralOutlineToggleValChanged</definition>
+        <argsstring>(bool value)</argsstring>
+        <name>OnNeutralOutlineToggleValChanged</name>
+        <param>
+          <type>bool</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SettingsGraphixSection.cs" line="69" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SettingsGraphixSection.cs" bodystart="69" bodyend="72"/>
+        <referencedby refid="class_settings_graphix_section_1a7ed0b4519c281179c9c7520a9e7337ac" compoundref="_settings_graphix_section_8cs" startline="21" endline="40">ResetPrefsUI</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="856">
+        <label>SettingsGraphixSection</label>
+        <link refid="class_settings_graphix_section"/>
+        <childnode refid="857" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="857">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="858">
+        <label>SettingsGraphixSection</label>
+        <link refid="class_settings_graphix_section"/>
+        <childnode refid="859" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="859">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SettingsGraphixSection.cs" line="8" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SettingsGraphixSection.cs" bodystart="7" bodyend="73"/>
+    <listofallmembers>
+      <member refid="class_settings_graphix_section_1a8b389c43b67d9906da544974792c415a" prot="private" virt="non-virtual"><scope>SettingsGraphixSection</scope><name>allyOutlineToggle</name></member>
+      <member refid="class_settings_graphix_section_1aeb1f89c19abb8fda17d7347381958668" prot="private" virt="non-virtual"><scope>SettingsGraphixSection</scope><name>borderOutline</name></member>
+      <member refid="class_settings_graphix_section_1aee2a70f2c3294b6319f4270caffe8b11" prot="private" virt="non-virtual"><scope>SettingsGraphixSection</scope><name>enemyOutlineToggle</name></member>
+      <member refid="class_settings_graphix_section_1af3e25af329ab6f253bbd9d10c0b4a319" prot="private" virt="non-virtual"><scope>SettingsGraphixSection</scope><name>neutralOutlineToggle</name></member>
+      <member refid="class_settings_graphix_section_1a61f10cf56fe9d555066c99d62eeaf9e6" prot="public" virt="non-virtual"><scope>SettingsGraphixSection</scope><name>OnAllyOutlineToggleValChanged</name></member>
+      <member refid="class_settings_graphix_section_1aadf1982a1da60a9adf5e85ce2598fe83" prot="public" virt="non-virtual"><scope>SettingsGraphixSection</scope><name>OnBorderOutlineToggleValChanged</name></member>
+      <member refid="class_settings_graphix_section_1a7f2d3b22733ea698388e098218250c1c" prot="public" virt="non-virtual"><scope>SettingsGraphixSection</scope><name>OnEnemyOutlineToggleValChanged</name></member>
+      <member refid="class_settings_graphix_section_1aff514073fdd18ac4a48d92aa3a4d080d" prot="public" virt="non-virtual"><scope>SettingsGraphixSection</scope><name>OnNeutralOutlineToggleValChanged</name></member>
+      <member refid="class_settings_graphix_section_1a13c62f9598e7c39cc86951a351ab6af5" prot="public" virt="non-virtual"><scope>SettingsGraphixSection</scope><name>OnShowDamageToggleValChanged</name></member>
+      <member refid="class_settings_graphix_section_1a236511e0b76d2b52d0ad416f02023825" prot="public" virt="non-virtual"><scope>SettingsGraphixSection</scope><name>OnUnderlayerOutlineToggleValChanged</name></member>
+      <member refid="class_settings_graphix_section_1a7ed0b4519c281179c9c7520a9e7337ac" prot="private" virt="non-virtual"><scope>SettingsGraphixSection</scope><name>ResetPrefsUI</name></member>
+      <member refid="class_settings_graphix_section_1ad301dc656930b7b7b8e32438b5cd2c34" prot="private" virt="non-virtual"><scope>SettingsGraphixSection</scope><name>showDamageToggle</name></member>
+      <member refid="class_settings_graphix_section_1a5a3dee7474c37d579048727f6ab4d879" prot="private" virt="non-virtual"><scope>SettingsGraphixSection</scope><name>Start</name></member>
+      <member refid="class_settings_graphix_section_1a209565159a9b2ff3e4290e1af7bc2655" prot="private" virt="non-virtual"><scope>SettingsGraphixSection</scope><name>underlayerOutline</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

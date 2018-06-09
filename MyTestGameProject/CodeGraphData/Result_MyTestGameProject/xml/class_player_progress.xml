@@ -1,0 +1,217 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_player_progress" kind="class" prot="public">
+    <compoundname>PlayerProgress</compoundname>
+    <basecompoundref refid="interface_i_savable" prot="public" virt="non-virtual">ISavable</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_player_progress_1ac41622da7c01719336fc86a0a06385d6" prot="public" static="no" mutable="no">
+        <type><ref refid="class_d_s_player_score" kindref="compound">DSPlayerScore</ref></type>
+        <definition>DSPlayerScore PlayerProgress.score</definition>
+        <argsstring></argsstring>
+        <name>score</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress.cs" line="7" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress.cs" bodystart="7" bodyend="-1"/>
+        <referencedby refid="class_drop_to_equipment_market_1a60ed19a062359f3ec6c2e0d920e8686b" compoundref="_drop_to_equipment_market_8cs" startline="61" endline="75">DropToEquipmentMarket.CanGetFromThisIventory</referencedby>
+        <referencedby refid="class_call_converter_number_picker_1a5936c56affe137d478776a297ab8d8ae" compoundref="_call_converter_number_picker_8cs" startline="15" endline="70">CallConverterNumberPicker.OnPointerClick</referencedby>
+        <referencedby refid="class_player_progress_1a4dce6477232d0d60e4917eb5250c4ca3" compoundref="_player_progress_8cs" startline="11" endline="16">PlayerProgress</referencedby>
+        <referencedby refid="class_hospital_room_1a0a29986bed0b4100bcefa68633e59772" compoundref="_hospital_room_8cs" startline="123" endline="143">HospitalRoom.ResetConverter</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_progress_1a4de6098f28e607d10488bf8e41cd40ed" prot="public" static="no" mutable="no">
+        <type><ref refid="class_d_s_unit_stats" kindref="compound">DSUnitStats</ref></type>
+        <definition>DSUnitStats PlayerProgress.stats</definition>
+        <argsstring></argsstring>
+        <name>stats</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress.cs" line="8" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress.cs" bodystart="8" bodyend="-1"/>
+        <referencedby refid="class_player_progress_1a4dce6477232d0d60e4917eb5250c4ca3" compoundref="_player_progress_8cs" startline="11" endline="16">PlayerProgress</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_progress_1a7c8054b1e37d9b072cf10d3c0fc56353" prot="public" static="no" mutable="no">
+        <type><ref refid="class_d_s_player_skills" kindref="compound">DSPlayerSkills</ref></type>
+        <definition>DSPlayerSkills PlayerProgress.skills</definition>
+        <argsstring></argsstring>
+        <name>skills</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress.cs" line="9" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress.cs" bodystart="9" bodyend="-1"/>
+        <referencedby refid="class_player_progress_1a4dce6477232d0d60e4917eb5250c4ca3" compoundref="_player_progress_8cs" startline="11" endline="16">PlayerProgress</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_player_progress_1a4dce6477232d0d60e4917eb5250c4ca3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PlayerProgress.PlayerProgress</definition>
+        <argsstring>()</argsstring>
+        <name>PlayerProgress</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress.cs" line="11" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress.cs" bodystart="11" bodyend="16"/>
+        <references refid="class_player_progress_1ac41622da7c01719336fc86a0a06385d6" compoundref="_player_progress_8cs" startline="7">score</references>
+        <references refid="class_player_progress_1a7c8054b1e37d9b072cf10d3c0fc56353" compoundref="_player_progress_8cs" startline="9">skills</references>
+        <references refid="class_player_progress_1a4de6098f28e607d10488bf8e41cd40ed" compoundref="_player_progress_8cs" startline="8">stats</references>
+      </memberdef>
+      <memberdef kind="function" id="class_player_progress_1a91b699dbeacf2f7997bf591c60aae48c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerProgress.Load</definition>
+        <argsstring>()</argsstring>
+        <name>Load</name>
+        <reimplements refid="interface_i_savable_1ad4c1956e2936ff33be4709453ad21190">Load</reimplements>
+        <briefdescription>
+<para>Загрузить данные из хранилища </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress.cs" line="18" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress.cs" bodystart="18" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_player_progress_1a01156ec3d7d513678ff7a2dd2f572126" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerProgress.Save</definition>
+        <argsstring>()</argsstring>
+        <name>Save</name>
+        <reimplements refid="interface_i_savable_1a6f524db1edec7552b99f40de1bf013f4">Save</reimplements>
+        <briefdescription>
+<para>Сохранить данные в хранилище </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress.cs" line="25" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress.cs" bodystart="25" bodyend="30"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="731">
+        <label>PlayerProgress</label>
+        <link refid="class_player_progress"/>
+        <childnode refid="732" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="732">
+        <label>ISavable</label>
+        <link refid="interface_i_savable"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="733">
+        <label>PlayerProgress</label>
+        <link refid="class_player_progress"/>
+        <childnode refid="734" relation="public-inheritance">
+        </childnode>
+        <childnode refid="735" relation="usage">
+          <edgelabel>skills</edgelabel>
+        </childnode>
+        <childnode refid="741" relation="usage">
+          <edgelabel>score</edgelabel>
+        </childnode>
+        <childnode refid="743" relation="usage">
+          <edgelabel>stats</edgelabel>
+        </childnode>
+      </node>
+      <node id="743">
+        <label>DSUnitStats</label>
+        <link refid="class_d_s_unit_stats"/>
+        <childnode refid="734" relation="public-inheritance">
+        </childnode>
+        <childnode refid="744" relation="usage">
+          <edgelabel>speed</edgelabel>
+          <edgelabel>aceleration</edgelabel>
+          <edgelabel>attack</edgelabel>
+          <edgelabel>defence</edgelabel>
+          <edgelabel>health</edgelabel>
+          <edgelabel>rotationSpeed</edgelabel>
+        </childnode>
+      </node>
+      <node id="734">
+        <label>ISavable</label>
+        <link refid="interface_i_savable"/>
+      </node>
+      <node id="739">
+        <label>Item.MainProperties</label>
+        <link refid="struct_item_1_1_main_properties"/>
+      </node>
+      <node id="740">
+        <label>IDescriptionable</label>
+        <link refid="interface_i_descriptionable"/>
+      </node>
+      <node id="744">
+        <label>DSUnitStats.Stat</label>
+        <link refid="class_d_s_unit_stats_1_1_stat"/>
+      </node>
+      <node id="737">
+        <label>Item</label>
+        <link refid="class_item"/>
+        <childnode refid="738" relation="public-inheritance">
+        </childnode>
+        <childnode refid="739" relation="usage">
+          <edgelabel>mainProperties</edgelabel>
+        </childnode>
+      </node>
+      <node id="742">
+        <label>DSPlayerScore.Score</label>
+        <link refid="class_d_s_player_score_1_1_score"/>
+      </node>
+      <node id="738">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="736">
+        <label>Skill</label>
+        <link refid="class_skill"/>
+        <childnode refid="737" relation="public-inheritance">
+        </childnode>
+        <childnode refid="740" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="741">
+        <label>DSPlayerScore</label>
+        <link refid="class_d_s_player_score"/>
+        <childnode refid="734" relation="public-inheritance">
+        </childnode>
+        <childnode refid="742" relation="usage">
+          <edgelabel>gold</edgelabel>
+          <edgelabel>expirience</edgelabel>
+          <edgelabel>silver</edgelabel>
+        </childnode>
+      </node>
+      <node id="735">
+        <label>DSPlayerSkills</label>
+        <link refid="class_d_s_player_skills"/>
+        <childnode refid="734" relation="public-inheritance">
+        </childnode>
+        <childnode refid="736" relation="usage">
+          <edgelabel>firstSkill</edgelabel>
+          <edgelabel>secondSkill</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress.cs" line="6" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/NonMonobehaviour/DataStorage/DataClasses/PlayerProgress.cs" bodystart="5" bodyend="31"/>
+    <listofallmembers>
+      <member refid="class_player_progress_1a91b699dbeacf2f7997bf591c60aae48c" prot="public" virt="non-virtual"><scope>PlayerProgress</scope><name>Load</name></member>
+      <member refid="class_player_progress_1a4dce6477232d0d60e4917eb5250c4ca3" prot="public" virt="non-virtual"><scope>PlayerProgress</scope><name>PlayerProgress</name></member>
+      <member refid="class_player_progress_1a01156ec3d7d513678ff7a2dd2f572126" prot="public" virt="non-virtual"><scope>PlayerProgress</scope><name>Save</name></member>
+      <member refid="class_player_progress_1ac41622da7c01719336fc86a0a06385d6" prot="public" virt="non-virtual"><scope>PlayerProgress</scope><name>score</name></member>
+      <member refid="class_player_progress_1a7c8054b1e37d9b072cf10d3c0fc56353" prot="public" virt="non-virtual"><scope>PlayerProgress</scope><name>skills</name></member>
+      <member refid="class_player_progress_1a4de6098f28e607d10488bf8e41cd40ed" prot="public" virt="non-virtual"><scope>PlayerProgress</scope><name>stats</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

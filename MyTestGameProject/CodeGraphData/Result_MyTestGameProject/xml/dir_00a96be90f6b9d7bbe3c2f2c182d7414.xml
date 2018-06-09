@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_00a96be90f6b9d7bbe3c2f2c182d7414" kind="dir">
+    <compoundname>D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Skill</compoundname>
+    <innerfile refid="_skill_arrows_valley_8cs">SkillArrowsValley.cs</innerfile>
+    <innerfile refid="_skill_charge_8cs">SkillCharge.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Skill/"/>
+  </compounddef>
+</doxygen>

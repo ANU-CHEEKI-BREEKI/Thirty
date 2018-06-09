@@ -1,0 +1,300 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_skill" kind="class" prot="public">
+    <compoundname>Skill</compoundname>
+    <basecompoundref refid="class_item" prot="public" virt="non-virtual">Item</basecompoundref>
+    <basecompoundref refid="interface_i_descriptionable" prot="public" virt="non-virtual">IDescriptionable</basecompoundref>
+    <derivedcompoundref refid="class_skill_arrows_valley" prot="public" virt="non-virtual">SkillArrowsValley</derivedcompoundref>
+    <derivedcompoundref refid="class_skill_charge" prot="public" virt="non-virtual">SkillCharge</derivedcompoundref>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="class_skill_1a5d96c420caaa9a041966f05c24faa0e9" prot="public" static="no">
+        <name>SkillUseType</name>
+        <enumvalue id="class_skill_1a5d96c420caaa9a041966f05c24faa0e9a40600390b96d1c218ae0d475f977e25b" prot="public">
+          <name>CLICK</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_skill_1a5d96c420caaa9a041966f05c24faa0e9a717ec6d89c3386c654dc28bf3368c1f1" prot="public">
+          <name>DRAG_DROP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Skill.cs" line="10" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Skill.cs" bodystart="10" bodyend="10"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_skill_1aed77850b689310ed693a0eff0fa73d3a" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Skill.id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Skill.cs" line="14" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Skill.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_skill_1a6c7e0dd830836a4940caa8e8405e21e0" prot="private" static="no" mutable="no">
+        <type><ref refid="class_skill_1a5d96c420caaa9a041966f05c24faa0e9" kindref="member">SkillUseType</ref></type>
+        <definition>SkillUseType Skill.useType</definition>
+        <argsstring></argsstring>
+        <name>useType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Skill.cs" line="17" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Skill.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_skill_1af192c636ae5fd2515b0db78dff0feca1" prot="private" static="no" mutable="no">
+        <type>AnimationCurve</type>
+        <definition>AnimationCurve Skill.upgradeLevelCost</definition>
+        <argsstring></argsstring>
+        <name>upgradeLevelCost</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Skill.cs" line="20" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Skill.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_skill_1a193e8c3a91b5e51b0c0c85ca261ef7c5" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>int</type>
+        <definition>int Skill.Id</definition>
+        <argsstring></argsstring>
+        <name>Id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Skill.cs" line="15" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Skill.cs" bodystart="15" bodyend="-1"/>
+        <referencedby refid="class_skill_market_inventory_u_i_1a3e3fbd5ba1960faeef0d48952983b3db" compoundref="_skill_market_inventory_u_i_8cs" startline="40" endline="91">SkillMarketInventoryUI.RefreshUI</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_skill_1a6e18d3f3690581beab603e99932b1a08" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type><ref refid="class_skill_1a5d96c420caaa9a041966f05c24faa0e9" kindref="member">SkillUseType</ref></type>
+        <definition>SkillUseType Skill.UseType</definition>
+        <argsstring></argsstring>
+        <name>UseType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Skill.cs" line="18" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Skill.cs" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_skill_1ab226518cc7d78543835d1ca3fa907618" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>AnimationCurve</type>
+        <definition>AnimationCurve Skill.UpgradeLevelCost</definition>
+        <argsstring></argsstring>
+        <name>UpgradeLevelCost</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Skill.cs" line="21" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Skill.cs" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_skill_1a67283ebeaa9737d6d91d3a95efa122f6" prot="protected" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>abstract object</type>
+        <definition>abstract object Skill.DefaultStats</definition>
+        <argsstring></argsstring>
+        <name>DefaultStats</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Skill.cs" line="23" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Skill.cs" bodystart="23" bodyend="-1"/>
+        <referencedby refid="class_skill_1a92b7eac6a890ff46a5e9a85d3c56355e" compoundref="_skill_8cs" startline="41" endline="55">CalcUpgradedStats</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_skill_1aa612c92a725be9ffc631595f17e2071b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool Skill.DoSkill</definition>
+        <argsstring>(object skillStats)</argsstring>
+        <name>DoSkill</name>
+        <reimplementedby refid="class_skill_charge_1ac7aee442f45a7895b102cc98c8a94c04">DoSkill</reimplementedby>
+        <reimplementedby refid="class_skill_arrows_valley_1a9f5b2ce19c55d49593b2b55a590584d8">DoSkill</reimplementedby>
+        <param>
+          <type>object</type>
+          <declname>skillStats</declname>
+        </param>
+        <briefdescription>
+<para>описание класса <ref refid="class_skill" kindref="compound">Skill</ref> </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Skill.cs" line="28" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Skill.cs" bodystart="28" bodyend="31"/>
+        <referencedby refid="class_skill_button_1a5ceba885332c906ee9c3910cdd568485" compoundref="_skill_button_8cs" startline="99" endline="117">SkillButton.OnEndDrag</referencedby>
+        <referencedby refid="class_skill_button_1a2b16ac3915324df320bac7437a3851e9" compoundref="_skill_button_8cs" startline="70" endline="82">SkillButton.OnPointerClick</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_skill_1a2c09ecf34bae54fb1df184699fbc7bd6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Skill.InitSkill</definition>
+        <argsstring>(params System.Object[] args)</argsstring>
+        <name>InitSkill</name>
+        <param>
+          <type>params System.Object[]</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+<para>описание класса <ref refid="class_skill" kindref="compound">Skill</ref> </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>описание</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Skill.cs" line="37" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Skill.cs" bodystart="37" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="class_skill_1a92b7eac6a890ff46a5e9a85d3c56355e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>object</type>
+        <definition>virtual object Skill.CalcUpgradedStats</definition>
+        <argsstring>(List&lt; DSPlayerSkill.SkillUpgrade &gt; upgrades)</argsstring>
+        <name>CalcUpgradedStats</name>
+        <reimplementedby refid="class_skill_arrows_valley_1a058ec1f83c68a639339af5f998c67f29">CalcUpgradedStats</reimplementedby>
+        <reimplementedby refid="class_skill_charge_1a86a950b5a40c1d5e98d578ffcbc82fd1">CalcUpgradedStats</reimplementedby>
+        <param>
+          <type>List&lt; <ref refid="class_d_s_player_skill_1_1_skill_upgrade" kindref="compound">DSPlayerSkill.SkillUpgrade</ref> &gt;</type>
+          <declname>upgrades</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Skill.cs" line="41" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Skill.cs" bodystart="41" bodyend="55"/>
+        <references refid="class_skill_1a67283ebeaa9737d6d91d3a95efa122f6" compoundref="_skill_8cs" startline="23">DefaultStats</references>
+      </memberdef>
+      <memberdef kind="function" id="class_skill_1a3e12e9d4b70a40205da94526081c67fb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="struct_description" kindref="compound">Description</ref></type>
+        <definition>virtual Description Skill.GetDescription</definition>
+        <argsstring>()</argsstring>
+        <name>GetDescription</name>
+        <reimplements refid="interface_i_descriptionable_1a33be6e4687ad788d949f989aaadad45d">GetDescription</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Skill.cs" line="57" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Skill.cs" bodystart="57" bodyend="60"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="878">
+        <label>SkillArrowsValley</label>
+        <link refid="class_skill_arrows_valley"/>
+        <childnode refid="874" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="877">
+        <label>IDescriptionable</label>
+        <link refid="interface_i_descriptionable"/>
+      </node>
+      <node id="879">
+        <label>SkillCharge</label>
+        <link refid="class_skill_charge"/>
+        <childnode refid="874" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="875">
+        <label>Item</label>
+        <link refid="class_item"/>
+        <childnode refid="876" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="876">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="874">
+        <label>Skill</label>
+        <link refid="class_skill"/>
+        <childnode refid="875" relation="public-inheritance">
+        </childnode>
+        <childnode refid="877" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="883">
+        <label>Item.MainProperties</label>
+        <link refid="struct_item_1_1_main_properties"/>
+      </node>
+      <node id="884">
+        <label>IDescriptionable</label>
+        <link refid="interface_i_descriptionable"/>
+      </node>
+      <node id="881">
+        <label>Item</label>
+        <link refid="class_item"/>
+        <childnode refid="882" relation="public-inheritance">
+        </childnode>
+        <childnode refid="883" relation="usage">
+          <edgelabel>mainProperties</edgelabel>
+        </childnode>
+      </node>
+      <node id="882">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="880">
+        <label>Skill</label>
+        <link refid="class_skill"/>
+        <childnode refid="881" relation="public-inheritance">
+        </childnode>
+        <childnode refid="884" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Skill.cs" line="9" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/Item/Skill.cs" bodystart="8" bodyend="61"/>
+    <listofallmembers>
+      <member refid="class_skill_1a92b7eac6a890ff46a5e9a85d3c56355e" prot="public" virt="virtual"><scope>Skill</scope><name>CalcUpgradedStats</name></member>
+      <member refid="class_skill_1a67283ebeaa9737d6d91d3a95efa122f6" prot="protected" virt="non-virtual"><scope>Skill</scope><name>DefaultStats</name></member>
+      <member refid="class_skill_1aa612c92a725be9ffc631595f17e2071b" prot="public" virt="virtual"><scope>Skill</scope><name>DoSkill</name></member>
+      <member refid="class_skill_1a3e12e9d4b70a40205da94526081c67fb" prot="public" virt="virtual"><scope>Skill</scope><name>GetDescription</name></member>
+      <member refid="class_skill_1aed77850b689310ed693a0eff0fa73d3a" prot="private" virt="non-virtual"><scope>Skill</scope><name>id</name></member>
+      <member refid="class_skill_1a193e8c3a91b5e51b0c0c85ca261ef7c5" prot="public" virt="non-virtual"><scope>Skill</scope><name>Id</name></member>
+      <member refid="class_skill_1a2c09ecf34bae54fb1df184699fbc7bd6" prot="public" virt="virtual"><scope>Skill</scope><name>InitSkill</name></member>
+      <member refid="class_item_1ab5454b792ec8183e499e187313654aa5" prot="public" virt="non-virtual"><scope>Skill</scope><name>MainPropertie</name></member>
+      <member refid="class_skill_1a5d96c420caaa9a041966f05c24faa0e9" prot="public" virt="non-virtual"><scope>Skill</scope><name>SkillUseType</name></member>
+      <member refid="class_skill_1ab226518cc7d78543835d1ca3fa907618" prot="public" virt="non-virtual"><scope>Skill</scope><name>UpgradeLevelCost</name></member>
+      <member refid="class_skill_1af192c636ae5fd2515b0db78dff0feca1" prot="private" virt="non-virtual"><scope>Skill</scope><name>upgradeLevelCost</name></member>
+      <member refid="class_skill_1a6e18d3f3690581beab603e99932b1a08" prot="public" virt="non-virtual"><scope>Skill</scope><name>UseType</name></member>
+      <member refid="class_skill_1a6c7e0dd830836a4940caa8e8405e21e0" prot="private" virt="non-virtual"><scope>Skill</scope><name>useType</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

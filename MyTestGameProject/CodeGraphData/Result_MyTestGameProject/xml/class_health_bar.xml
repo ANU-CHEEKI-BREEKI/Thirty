@@ -1,0 +1,363 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_health_bar" kind="class" prot="public">
+    <compoundname>HealthBar</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_health_bar_1a45721d65af78be509352ee05934a1129" prot="private" static="no" mutable="no">
+        <type>Image</type>
+        <definition>Image HealthBar.targetGraphix</definition>
+        <argsstring></argsstring>
+        <name>targetGraphix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/HealthBar.cs" line="8" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/HealthBar.cs" bodystart="8" bodyend="-1"/>
+        <referencedby refid="class_health_bar_1a5e79cfbfe4284911e4aecab62c632843" compoundref="_health_bar_8cs" startline="16" endline="28">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_health_bar_1a9d9141b2b89053e9055008b15ccf8710" prot="private" static="no" mutable="no">
+        <type>RectTransform</type>
+        <definition>RectTransform HealthBar.targetGraphixTransform</definition>
+        <argsstring></argsstring>
+        <name>targetGraphixTransform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/HealthBar.cs" line="9" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/HealthBar.cs" bodystart="9" bodyend="-1"/>
+        <referencedby refid="class_health_bar_1a5e79cfbfe4284911e4aecab62c632843" compoundref="_health_bar_8cs" startline="16" endline="28">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_health_bar_1a1f9bf62f0581b448102dd5261170d1de" prot="private" static="no" mutable="no">
+        <type>Text</type>
+        <definition>Text HealthBar.textHp</definition>
+        <argsstring></argsstring>
+        <name>textHp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/HealthBar.cs" line="11" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/HealthBar.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_health_bar_1a47f1d43c47950773a1a99fbdb62c5c2c" prot="private" static="no" mutable="no">
+        <type>Text</type>
+        <definition>Text HealthBar.textCount</definition>
+        <argsstring></argsstring>
+        <name>textCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/HealthBar.cs" line="12" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/HealthBar.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_health_bar_1a3ff953456adf7b96a3cfe71778114502" prot="private" static="no" mutable="no">
+        <type><ref refid="class_squad" kindref="compound">Squad</ref></type>
+        <definition>Squad HealthBar.playerSquad</definition>
+        <argsstring></argsstring>
+        <name>playerSquad</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/HealthBar.cs" line="14" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/HealthBar.cs" bodystart="14" bodyend="-1"/>
+        <referencedby refid="class_health_bar_1aa750d5c02307a0c307ba0b0f1a16b9cf" compoundref="_health_bar_8cs" startline="35" endline="42">OnDestroy</referencedby>
+        <referencedby refid="class_health_bar_1a5e79cfbfe4284911e4aecab62c632843" compoundref="_health_bar_8cs" startline="16" endline="28">Start</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_health_bar_1a5e79cfbfe4284911e4aecab62c632843" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void HealthBar.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/HealthBar.cs" line="16" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/HealthBar.cs" bodystart="16" bodyend="28"/>
+        <references refid="class_health_bar_1afc22d85616ce25e2d45c0c085b77f586" compoundref="_health_bar_8cs" startline="30" endline="33">DrawCountUnits</references>
+        <references refid="class_health_bar_1a642dbe57248482cf016af8a8c7ddcc3e" compoundref="_health_bar_8cs" startline="44" endline="59">DrawHpBar</references>
+        <references refid="class_squad_1a65b75c51bbcefabed4baa6a5874e82f9" compoundref="_squad_8cs" startline="183">Squad.OnSumHealthChanged</references>
+        <references refid="class_squad_1afd2133a496c0a15fa187346fadbcf80d" compoundref="_squad_8cs" startline="182">Squad.OnUitCountChanged</references>
+        <references refid="class_health_bar_1a3ff953456adf7b96a3cfe71778114502" compoundref="_health_bar_8cs" startline="14">playerSquad</references>
+        <references refid="class_squad_1a781a32dd5c6fadbe0a9e04f142ddc9da" compoundref="_squad_8cs" startline="10">Squad.playerSquadInstance</references>
+        <references refid="class_squad_1a4e9a1bb8a4c693726c806427b646eaf2" compoundref="_squad_8cs" startline="169">Squad.SquadHealth</references>
+        <references refid="class_health_bar_1a45721d65af78be509352ee05934a1129" compoundref="_health_bar_8cs" startline="8">targetGraphix</references>
+        <references refid="class_health_bar_1a9d9141b2b89053e9055008b15ccf8710" compoundref="_health_bar_8cs" startline="9">targetGraphixTransform</references>
+        <references refid="class_squad_1a14f16d0bd1098a523c721fb610247c56" compoundref="_squad_8cs" startline="165">Squad.UnitCount</references>
+      </memberdef>
+      <memberdef kind="function" id="class_health_bar_1afc22d85616ce25e2d45c0c085b77f586" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void HealthBar.DrawCountUnits</definition>
+        <argsstring>(int newCount)</argsstring>
+        <name>DrawCountUnits</name>
+        <param>
+          <type>int</type>
+          <declname>newCount</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/HealthBar.cs" line="30" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/HealthBar.cs" bodystart="30" bodyend="33"/>
+        <referencedby refid="class_health_bar_1aa750d5c02307a0c307ba0b0f1a16b9cf" compoundref="_health_bar_8cs" startline="35" endline="42">OnDestroy</referencedby>
+        <referencedby refid="class_health_bar_1a5e79cfbfe4284911e4aecab62c632843" compoundref="_health_bar_8cs" startline="16" endline="28">Start</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_health_bar_1aa750d5c02307a0c307ba0b0f1a16b9cf" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void HealthBar.OnDestroy</definition>
+        <argsstring>()</argsstring>
+        <name>OnDestroy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/HealthBar.cs" line="35" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/HealthBar.cs" bodystart="35" bodyend="42"/>
+        <references refid="class_health_bar_1afc22d85616ce25e2d45c0c085b77f586" compoundref="_health_bar_8cs" startline="30" endline="33">DrawCountUnits</references>
+        <references refid="class_health_bar_1a642dbe57248482cf016af8a8c7ddcc3e" compoundref="_health_bar_8cs" startline="44" endline="59">DrawHpBar</references>
+        <references refid="class_health_bar_1a3ff953456adf7b96a3cfe71778114502" compoundref="_health_bar_8cs" startline="14">playerSquad</references>
+      </memberdef>
+      <memberdef kind="function" id="class_health_bar_1a642dbe57248482cf016af8a8c7ddcc3e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void HealthBar.DrawHpBar</definition>
+        <argsstring>(float squadHealth)</argsstring>
+        <name>DrawHpBar</name>
+        <param>
+          <type>float</type>
+          <declname>squadHealth</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/HealthBar.cs" line="44" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/HealthBar.cs" bodystart="44" bodyend="59"/>
+        <referencedby refid="class_health_bar_1aa750d5c02307a0c307ba0b0f1a16b9cf" compoundref="_health_bar_8cs" startline="35" endline="42">OnDestroy</referencedby>
+        <referencedby refid="class_health_bar_1a5e79cfbfe4284911e4aecab62c632843" compoundref="_health_bar_8cs" startline="16" endline="28">Start</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="461">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="460">
+        <label>HealthBar</label>
+        <link refid="class_health_bar"/>
+        <childnode refid="461" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="465">
+        <label>Squad</label>
+        <link refid="class_squad"/>
+        <childnode refid="463" relation="public-inheritance">
+        </childnode>
+        <childnode refid="466" relation="usage">
+          <edgelabel>currentFormationModifyers</edgelabel>
+          <edgelabel>formation</edgelabel>
+        </childnode>
+        <childnode refid="467" relation="usage">
+          <edgelabel>unitOriginal</edgelabel>
+        </childnode>
+        <childnode refid="465" relation="usage">
+          <edgelabel>playerSquadInstance</edgelabel>
+        </childnode>
+        <childnode refid="476" relation="usage">
+          <edgelabel>inventory</edgelabel>
+        </childnode>
+        <childnode refid="475" relation="usage">
+          <edgelabel>unitStats</edgelabel>
+        </childnode>
+      </node>
+      <node id="468">
+        <label>Equipment</label>
+        <link refid="class_equipment"/>
+        <childnode refid="469" relation="public-inheritance">
+        </childnode>
+        <childnode refid="471" relation="usage">
+          <edgelabel>stats</edgelabel>
+        </childnode>
+      </node>
+      <node id="474">
+        <label>UnitPosition</label>
+        <link refid="class_unit_position"/>
+        <childnode refid="463" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="470">
+        <label>Item.MainProperties</label>
+        <link refid="struct_item_1_1_main_properties"/>
+      </node>
+      <node id="473">
+        <label>Damage</label>
+        <link refid="struct_damage"/>
+      </node>
+      <node id="472">
+        <label>IDescriptionable</label>
+        <link refid="interface_i_descriptionable"/>
+      </node>
+      <node id="469">
+        <label>Item</label>
+        <link refid="class_item"/>
+        <childnode refid="463" relation="public-inheritance">
+        </childnode>
+        <childnode refid="470" relation="usage">
+          <edgelabel>mainProperties</edgelabel>
+        </childnode>
+      </node>
+      <node id="477">
+        <label>SkillStack</label>
+        <link refid="class_skill_stack"/>
+        <childnode refid="478" relation="public-inheritance">
+        </childnode>
+        <childnode refid="472" relation="public-inheritance">
+        </childnode>
+        <childnode refid="479" relation="usage">
+          <edgelabel>skill</edgelabel>
+        </childnode>
+      </node>
+      <node id="464">
+        <label>Text</label>
+      </node>
+      <node id="471">
+        <label>EquipmentStats</label>
+        <link refid="struct_equipment_stats"/>
+        <childnode refid="472" relation="public-inheritance">
+        </childnode>
+        <childnode refid="473" relation="usage">
+          <edgelabel>damage</edgelabel>
+        </childnode>
+      </node>
+      <node id="478">
+        <label>AStack</label>
+        <link refid="class_a_stack"/>
+      </node>
+      <node id="475">
+        <label>UnitStats</label>
+        <link refid="struct_unit_stats"/>
+        <childnode refid="473" relation="usage">
+          <edgelabel>damage</edgelabel>
+        </childnode>
+      </node>
+      <node id="463">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="467">
+        <label>Unit</label>
+        <link refid="class_unit"/>
+        <childnode refid="463" relation="public-inheritance">
+        </childnode>
+        <childnode refid="467" relation="usage">
+          <edgelabel>target</edgelabel>
+        </childnode>
+        <childnode refid="465" relation="usage">
+          <edgelabel>squad</edgelabel>
+        </childnode>
+        <childnode refid="468" relation="usage">
+          <edgelabel>body</edgelabel>
+          <edgelabel>shield</edgelabel>
+          <edgelabel>weapon</edgelabel>
+          <edgelabel>helmet</edgelabel>
+        </childnode>
+        <childnode refid="474" relation="usage">
+          <edgelabel>TargetMovePositionObject</edgelabel>
+          <edgelabel>unitPosOriginal</edgelabel>
+        </childnode>
+        <childnode refid="475" relation="usage">
+          <edgelabel>stats</edgelabel>
+        </childnode>
+      </node>
+      <node id="462">
+        <label>HealthBar</label>
+        <link refid="class_health_bar"/>
+        <childnode refid="463" relation="public-inheritance">
+        </childnode>
+        <childnode refid="464" relation="usage">
+          <edgelabel>textHp</edgelabel>
+          <edgelabel>textCount</edgelabel>
+        </childnode>
+        <childnode refid="465" relation="usage">
+          <edgelabel>playerSquad</edgelabel>
+        </childnode>
+      </node>
+      <node id="479">
+        <label>Skill</label>
+        <link refid="class_skill"/>
+        <childnode refid="469" relation="public-inheritance">
+        </childnode>
+        <childnode refid="472" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="480">
+        <label>EquipmentStack</label>
+        <link refid="class_equipment_stack"/>
+        <childnode refid="478" relation="public-inheritance">
+        </childnode>
+        <childnode refid="469" relation="usage">
+          <edgelabel>equipmentMainProperties</edgelabel>
+        </childnode>
+        <childnode refid="471" relation="usage">
+          <edgelabel>equipmentStats</edgelabel>
+        </childnode>
+      </node>
+      <node id="466">
+        <label>FormationStats</label>
+        <link refid="class_formation_stats"/>
+      </node>
+      <node id="476">
+        <label>Inventory</label>
+        <link refid="class_inventory"/>
+        <childnode refid="477" relation="usage">
+          <edgelabel>firstSkill</edgelabel>
+          <edgelabel>secondSkill</edgelabel>
+        </childnode>
+        <childnode refid="468" relation="usage">
+          <edgelabel>body</edgelabel>
+          <edgelabel>shieldNone</edgelabel>
+          <edgelabel>helmetNone</edgelabel>
+          <edgelabel>shield</edgelabel>
+          <edgelabel>weapon</edgelabel>
+          <edgelabel>helmet</edgelabel>
+          <edgelabel>bodyNone</edgelabel>
+        </childnode>
+        <childnode refid="480" relation="usage">
+          <edgelabel>inventory</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/HealthBar.cs" line="7" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/HealthBar.cs" bodystart="6" bodyend="60"/>
+    <listofallmembers>
+      <member refid="class_health_bar_1afc22d85616ce25e2d45c0c085b77f586" prot="private" virt="non-virtual"><scope>HealthBar</scope><name>DrawCountUnits</name></member>
+      <member refid="class_health_bar_1a642dbe57248482cf016af8a8c7ddcc3e" prot="private" virt="non-virtual"><scope>HealthBar</scope><name>DrawHpBar</name></member>
+      <member refid="class_health_bar_1aa750d5c02307a0c307ba0b0f1a16b9cf" prot="private" virt="non-virtual"><scope>HealthBar</scope><name>OnDestroy</name></member>
+      <member refid="class_health_bar_1a3ff953456adf7b96a3cfe71778114502" prot="private" virt="non-virtual"><scope>HealthBar</scope><name>playerSquad</name></member>
+      <member refid="class_health_bar_1a5e79cfbfe4284911e4aecab62c632843" prot="private" virt="non-virtual"><scope>HealthBar</scope><name>Start</name></member>
+      <member refid="class_health_bar_1a45721d65af78be509352ee05934a1129" prot="private" virt="non-virtual"><scope>HealthBar</scope><name>targetGraphix</name></member>
+      <member refid="class_health_bar_1a9d9141b2b89053e9055008b15ccf8710" prot="private" virt="non-virtual"><scope>HealthBar</scope><name>targetGraphixTransform</name></member>
+      <member refid="class_health_bar_1a47f1d43c47950773a1a99fbdb62c5c2c" prot="private" virt="non-virtual"><scope>HealthBar</scope><name>textCount</name></member>
+      <member refid="class_health_bar_1a1f9bf62f0581b448102dd5261170d1de" prot="private" virt="non-virtual"><scope>HealthBar</scope><name>textHp</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

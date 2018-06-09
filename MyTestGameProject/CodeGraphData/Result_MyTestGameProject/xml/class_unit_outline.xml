@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_unit_outline" kind="class" prot="public">
+    <compoundname>UnitOutline</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_unit_outline_1acaa4e5c0723ca921bfc2a3dc07ecea2f" prot="private" static="no" mutable="no">
+        <type>new SpriteRenderer</type>
+        <definition>new SpriteRenderer UnitOutline.renderer</definition>
+        <argsstring></argsstring>
+        <name>renderer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UnitOutline.cs" line="8" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UnitOutline.cs" bodystart="8" bodyend="-1"/>
+        <referencedby refid="class_unit_outline_1a1da69a7e2efce5fff627ca19149ede62" compoundref="_unit_outline_8cs" startline="10" endline="15">Start</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_unit_outline_1a1da69a7e2efce5fff627ca19149ede62" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnitOutline.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UnitOutline.cs" line="10" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UnitOutline.cs" bodystart="10" bodyend="15"/>
+        <references refid="class_unit_outline_1afff6e0d9a1377924b2731a8d6b26c3fe" compoundref="_unit_outline_8cs" startline="17" endline="58">ActivateOutline</references>
+        <references refid="class_unit_outline_1acaa4e5c0723ca921bfc2a3dc07ecea2f" compoundref="_unit_outline_8cs" startline="8">renderer</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_unit_outline_1afff6e0d9a1377924b2731a8d6b26c3fe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnitOutline.ActivateOutline</definition>
+        <argsstring>(bool useGameManager=true)</argsstring>
+        <name>ActivateOutline</name>
+        <param>
+          <type>bool</type>
+          <declname>useGameManager</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UnitOutline.cs" line="17" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UnitOutline.cs" bodystart="17" bodyend="58"/>
+        <references refid="class_graphix_settings_1a7ae59e9a75004fc4584c6cbceb71b38d" compoundref="_graphix_settings_8cs" startline="29">GraphixSettings.OutlineType</references>
+        <referencedby refid="class_unit_outline_1a1da69a7e2efce5fff627ca19149ede62" compoundref="_unit_outline_8cs" startline="10" endline="15">Start</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1254">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1253">
+        <label>UnitOutline</label>
+        <link refid="class_unit_outline"/>
+        <childnode refid="1254" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1256">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1255">
+        <label>UnitOutline</label>
+        <link refid="class_unit_outline"/>
+        <childnode refid="1256" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UnitOutline.cs" line="7" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UnitOutline.cs" bodystart="6" bodyend="59"/>
+    <listofallmembers>
+      <member refid="class_unit_outline_1afff6e0d9a1377924b2731a8d6b26c3fe" prot="public" virt="non-virtual"><scope>UnitOutline</scope><name>ActivateOutline</name></member>
+      <member refid="class_unit_outline_1acaa4e5c0723ca921bfc2a3dc07ecea2f" prot="private" virt="non-virtual"><scope>UnitOutline</scope><name>renderer</name></member>
+      <member refid="class_unit_outline_1a1da69a7e2efce5fff627ca19149ede62" prot="private" virt="non-virtual"><scope>UnitOutline</scope><name>Start</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

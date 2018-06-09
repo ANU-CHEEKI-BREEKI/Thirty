@@ -1,0 +1,14 @@
+﻿<Properties StartupItem="MyTestGameProject.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\main_scene\UI\Inventory\SkillMarketInventoryUI.cs">
+    <Files>
+      <File FileName="Assets\Shaders\SpriteOutline.shader" Line="1" Column="1" />
+      <File FileName="Assets\scripts\main_scene\ArrowsValley.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\main_scene\UI\Inventory\SkillMarketInventoryUI.cs" Line="56" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

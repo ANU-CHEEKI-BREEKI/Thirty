@@ -1,0 +1,353 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_toast" kind="class" prot="public">
+    <compoundname>Toast</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">IPointerClickHandler</basecompoundref>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="class_toast_1a204330673810365a1bbb6cf2eade1bd5" prot="public" static="no">
+        <name>ToastLifetime</name>
+        <enumvalue id="class_toast_1a204330673810365a1bbb6cf2eade1bd5adca6e617f6fb54033deb311e7e7c93cc" prot="public">
+          <name>FAST</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_toast_1a204330673810365a1bbb6cf2eade1bd5ac87f3be66ffc3c0d4249f1c2cc5f3cce" prot="public">
+          <name>MEDIUM</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_toast_1a204330673810365a1bbb6cf2eade1bd5a0e3066cbbd284dce8b76e7c4620d6d75" prot="public">
+          <name>SLOW</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Toast.cs" line="12" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Toast.cs" bodystart="12" bodyend="12"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_toast_1abb2ba67bfd809beafb78e8e7182d5183" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_toast" kindref="compound">Toast</ref></type>
+        <definition>Toast Toast.Instance</definition>
+        <argsstring></argsstring>
+        <name>Instance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Toast.cs" line="14" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Toast.cs" bodystart="14" bodyend="-1"/>
+        <referencedby refid="class_toast_1a8e50e56529b1b096a9eaf19dfd001981" compoundref="_toast_8cs" startline="26" endline="33">Awake</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_toast_1a843dd7c8d6c8764ae1de901ab40708a0" prot="private" static="no" mutable="no">
+        <type>TextMeshProUGUI</type>
+        <definition>TextMeshProUGUI Toast.text</definition>
+        <argsstring></argsstring>
+        <name>text</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Toast.cs" line="16" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Toast.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_toast_1aa3bbd75ad28e34b5eec5fa054922edcf" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Toast.floatDuration</definition>
+        <argsstring></argsstring>
+        <name>floatDuration</name>
+        <initializer>= 0.2f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Toast.cs" line="17" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Toast.cs" bodystart="17" bodyend="-1"/>
+        <referencedby refid="class_toast_1ac2acb1d55cc0e7cf8a12578fcd697f14" compoundref="_toast_8cs" startline="65" endline="99">Float</referencedby>
+        <referencedby refid="class_toast_1a6dc697b4689abda7eeefefefd5131bc7" compoundref="_toast_8cs" startline="35" endline="44">Show</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_toast_1adc5104838593032d1975212a32994a98" prot="private" static="no" mutable="no">
+        <type>Vector2</type>
+        <definition>Vector2 Toast.floatShiftInPercent</definition>
+        <argsstring></argsstring>
+        <name>floatShiftInPercent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Toast.cs" line="18" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Toast.cs" bodystart="18" bodyend="-1"/>
+        <referencedby refid="class_toast_1a6dc697b4689abda7eeefefefd5131bc7" compoundref="_toast_8cs" startline="35" endline="44">Show</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_toast_1a7e0b07d99b32560f8e8c52a85c8f9ccd" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Toast.startAlpha</definition>
+        <argsstring></argsstring>
+        <name>startAlpha</name>
+        <initializer>= 0.5f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Toast.cs" line="19" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Toast.cs" bodystart="19" bodyend="-1"/>
+        <referencedby refid="class_toast_1ac2acb1d55cc0e7cf8a12578fcd697f14" compoundref="_toast_8cs" startline="65" endline="99">Float</referencedby>
+        <referencedby refid="class_toast_1a6dc697b4689abda7eeefefefd5131bc7" compoundref="_toast_8cs" startline="35" endline="44">Show</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_toast_1a233aa004bcd02d01a091a7527c663456" prot="private" static="no" mutable="no">
+        <type>CanvasGroup</type>
+        <definition>CanvasGroup Toast.cg</definition>
+        <argsstring></argsstring>
+        <name>cg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Toast.cs" line="21" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Toast.cs" bodystart="21" bodyend="-1"/>
+        <referencedby refid="class_toast_1a8e50e56529b1b096a9eaf19dfd001981" compoundref="_toast_8cs" startline="26" endline="33">Awake</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_toast_1a65c590970936f071568a9ddf287fe811" prot="private" static="no" mutable="no">
+        <type>new RectTransform</type>
+        <definition>new RectTransform Toast.transform</definition>
+        <argsstring></argsstring>
+        <name>transform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Toast.cs" line="22" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Toast.cs" bodystart="22" bodyend="-1"/>
+        <referencedby refid="class_toast_1a8e50e56529b1b096a9eaf19dfd001981" compoundref="_toast_8cs" startline="26" endline="33">Awake</referencedby>
+        <referencedby refid="class_toast_1ac731791ae0c0a1df9b870702ada0dcc7" compoundref="_toast_8cs" startline="53" endline="63">WaitForRebuildPanel</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_toast_1a68503a4bdb06b29e1dfd99b1a3b2e96f" prot="private" static="no" mutable="no">
+        <type>Coroutine</type>
+        <definition>Coroutine Toast.lastCoroutine</definition>
+        <argsstring></argsstring>
+        <name>lastCoroutine</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Toast.cs" line="24" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Toast.cs" bodystart="24" bodyend="-1"/>
+        <referencedby refid="class_toast_1af70432b2d13f76fb1e6e1c39239afa4c" compoundref="_toast_8cs" startline="46" endline="51">Hide</referencedby>
+        <referencedby refid="class_toast_1a6dc697b4689abda7eeefefefd5131bc7" compoundref="_toast_8cs" startline="35" endline="44">Show</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_toast_1a8e50e56529b1b096a9eaf19dfd001981" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Toast.Awake</definition>
+        <argsstring>()</argsstring>
+        <name>Awake</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Toast.cs" line="26" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Toast.cs" bodystart="26" bodyend="33"/>
+        <references refid="class_toast_1a233aa004bcd02d01a091a7527c663456" compoundref="_toast_8cs" startline="21">cg</references>
+        <references refid="class_toast_1af70432b2d13f76fb1e6e1c39239afa4c" compoundref="_toast_8cs" startline="46" endline="51">Hide</references>
+        <references refid="class_toast_1abb2ba67bfd809beafb78e8e7182d5183" compoundref="_toast_8cs" startline="14">Instance</references>
+        <references refid="class_toast_1a65c590970936f071568a9ddf287fe811" compoundref="_toast_8cs" startline="22">transform</references>
+      </memberdef>
+      <memberdef kind="function" id="class_toast_1af70432b2d13f76fb1e6e1c39239afa4c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Toast.Hide</definition>
+        <argsstring>()</argsstring>
+        <name>Hide</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Toast.cs" line="46" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Toast.cs" bodystart="46" bodyend="51"/>
+        <references refid="class_toast_1a68503a4bdb06b29e1dfd99b1a3b2e96f" compoundref="_toast_8cs" startline="24">lastCoroutine</references>
+        <referencedby refid="class_toast_1a8e50e56529b1b096a9eaf19dfd001981" compoundref="_toast_8cs" startline="26" endline="33">Awake</referencedby>
+        <referencedby refid="class_toast_1ac2acb1d55cc0e7cf8a12578fcd697f14" compoundref="_toast_8cs" startline="65" endline="99">Float</referencedby>
+        <referencedby refid="class_toast_1a12acba0f372cb135f5d6da9da33e8d03" compoundref="_toast_8cs" startline="101" endline="104">OnPointerClick</referencedby>
+        <referencedby refid="class_toast_1a6dc697b4689abda7eeefefefd5131bc7" compoundref="_toast_8cs" startline="35" endline="44">Show</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_toast_1ac731791ae0c0a1df9b870702ada0dcc7" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerator</type>
+        <definition>IEnumerator Toast.WaitForRebuildPanel</definition>
+        <argsstring>()</argsstring>
+        <name>WaitForRebuildPanel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Toast.cs" line="53" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Toast.cs" bodystart="53" bodyend="63"/>
+        <references refid="class_toast_1a65c590970936f071568a9ddf287fe811" compoundref="_toast_8cs" startline="22">transform</references>
+        <referencedby refid="class_toast_1a6dc697b4689abda7eeefefefd5131bc7" compoundref="_toast_8cs" startline="35" endline="44">Show</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_toast_1ac2acb1d55cc0e7cf8a12578fcd697f14" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerator</type>
+        <definition>IEnumerator Toast.Float</definition>
+        <argsstring>(float floatDuration, float lifetime, Vector2 floatShiftInPercent, float startAlpha)</argsstring>
+        <name>Float</name>
+        <param>
+          <type>float</type>
+          <declname>floatDuration</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>lifetime</declname>
+        </param>
+        <param>
+          <type>Vector2</type>
+          <declname>floatShiftInPercent</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>startAlpha</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Toast.cs" line="65" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Toast.cs" bodystart="65" bodyend="99"/>
+        <references refid="class_toast_1aa3bbd75ad28e34b5eec5fa054922edcf" compoundref="_toast_8cs" startline="17">floatDuration</references>
+        <references refid="class_toast_1af70432b2d13f76fb1e6e1c39239afa4c" compoundref="_toast_8cs" startline="46" endline="51">Hide</references>
+        <references refid="class_toast_1a7e0b07d99b32560f8e8c52a85c8f9ccd" compoundref="_toast_8cs" startline="19">startAlpha</references>
+        <referencedby refid="class_toast_1a6dc697b4689abda7eeefefefd5131bc7" compoundref="_toast_8cs" startline="35" endline="44">Show</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_toast_1a6dc697b4689abda7eeefefefd5131bc7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Toast.Show</definition>
+        <argsstring>(string message, ToastLifetime lifetime=ToastLifetime.MEDIUM)</argsstring>
+        <name>Show</name>
+        <param>
+          <type>string</type>
+          <declname>message</declname>
+        </param>
+        <param>
+          <type><ref refid="class_toast_1a204330673810365a1bbb6cf2eade1bd5" kindref="member">ToastLifetime</ref></type>
+          <declname>lifetime</declname>
+          <defval>ToastLifetime.MEDIUM</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Toast.cs" line="35" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Toast.cs" bodystart="35" bodyend="44"/>
+        <references refid="class_toast_1ac2acb1d55cc0e7cf8a12578fcd697f14" compoundref="_toast_8cs" startline="65" endline="99">Float</references>
+        <references refid="class_toast_1aa3bbd75ad28e34b5eec5fa054922edcf" compoundref="_toast_8cs" startline="17">floatDuration</references>
+        <references refid="class_toast_1adc5104838593032d1975212a32994a98" compoundref="_toast_8cs" startline="18">floatShiftInPercent</references>
+        <references refid="class_toast_1af70432b2d13f76fb1e6e1c39239afa4c" compoundref="_toast_8cs" startline="46" endline="51">Hide</references>
+        <references refid="class_toast_1a68503a4bdb06b29e1dfd99b1a3b2e96f" compoundref="_toast_8cs" startline="24">lastCoroutine</references>
+        <references refid="class_toast_1a7e0b07d99b32560f8e8c52a85c8f9ccd" compoundref="_toast_8cs" startline="19">startAlpha</references>
+        <references refid="class_toast_1ac731791ae0c0a1df9b870702ada0dcc7" compoundref="_toast_8cs" startline="53" endline="63">WaitForRebuildPanel</references>
+      </memberdef>
+      <memberdef kind="function" id="class_toast_1a12acba0f372cb135f5d6da9da33e8d03" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Toast.OnPointerClick</definition>
+        <argsstring>(PointerEventData eventData)</argsstring>
+        <name>OnPointerClick</name>
+        <param>
+          <type>PointerEventData</type>
+          <declname>eventData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Toast.cs" line="101" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Toast.cs" bodystart="101" bodyend="104"/>
+        <references refid="class_toast_1af70432b2d13f76fb1e6e1c39239afa4c" compoundref="_toast_8cs" startline="46" endline="51">Hide</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1169">
+        <label>Toast</label>
+        <link refid="class_toast"/>
+        <childnode refid="1170" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1171" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1171">
+        <label>IPointerClickHandler</label>
+      </node>
+      <node id="1170">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1172">
+        <label>Toast</label>
+        <link refid="class_toast"/>
+        <childnode refid="1173" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1174" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1174">
+        <label>IPointerClickHandler</label>
+      </node>
+      <node id="1173">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Toast.cs" line="11" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/Toast.cs" bodystart="10" bodyend="105"/>
+    <listofallmembers>
+      <member refid="class_toast_1a8e50e56529b1b096a9eaf19dfd001981" prot="private" virt="non-virtual"><scope>Toast</scope><name>Awake</name></member>
+      <member refid="class_toast_1a233aa004bcd02d01a091a7527c663456" prot="private" virt="non-virtual"><scope>Toast</scope><name>cg</name></member>
+      <member refid="class_toast_1ac2acb1d55cc0e7cf8a12578fcd697f14" prot="private" virt="non-virtual"><scope>Toast</scope><name>Float</name></member>
+      <member refid="class_toast_1aa3bbd75ad28e34b5eec5fa054922edcf" prot="private" virt="non-virtual"><scope>Toast</scope><name>floatDuration</name></member>
+      <member refid="class_toast_1adc5104838593032d1975212a32994a98" prot="private" virt="non-virtual"><scope>Toast</scope><name>floatShiftInPercent</name></member>
+      <member refid="class_toast_1af70432b2d13f76fb1e6e1c39239afa4c" prot="private" virt="non-virtual"><scope>Toast</scope><name>Hide</name></member>
+      <member refid="class_toast_1abb2ba67bfd809beafb78e8e7182d5183" prot="public" virt="non-virtual"><scope>Toast</scope><name>Instance</name></member>
+      <member refid="class_toast_1a68503a4bdb06b29e1dfd99b1a3b2e96f" prot="private" virt="non-virtual"><scope>Toast</scope><name>lastCoroutine</name></member>
+      <member refid="class_toast_1a12acba0f372cb135f5d6da9da33e8d03" prot="public" virt="non-virtual"><scope>Toast</scope><name>OnPointerClick</name></member>
+      <member refid="class_toast_1a6dc697b4689abda7eeefefefd5131bc7" prot="public" virt="non-virtual"><scope>Toast</scope><name>Show</name></member>
+      <member refid="class_toast_1a7e0b07d99b32560f8e8c52a85c8f9ccd" prot="private" virt="non-virtual"><scope>Toast</scope><name>startAlpha</name></member>
+      <member refid="class_toast_1a843dd7c8d6c8764ae1de901ab40708a0" prot="private" virt="non-virtual"><scope>Toast</scope><name>text</name></member>
+      <member refid="class_toast_1a204330673810365a1bbb6cf2eade1bd5" prot="public" virt="non-virtual"><scope>Toast</scope><name>ToastLifetime</name></member>
+      <member refid="class_toast_1a65c590970936f071568a9ddf287fe811" prot="private" virt="non-virtual"><scope>Toast</scope><name>transform</name></member>
+      <member refid="class_toast_1ac731791ae0c0a1df9b870702ada0dcc7" prot="private" virt="non-virtual"><scope>Toast</scope><name>WaitForRebuildPanel</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

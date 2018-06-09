@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_settings_graphix_section_8cs" kind="file">
+    <compoundname>SettingsGraphixSection.cs</compoundname>
+    <innerclass refid="class_settings_graphix_section" prot="public">SettingsGraphixSection</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Collections;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Collections.Generic;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>UnityEngine;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>UnityEngine.UI;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="class_settings_graphix_section" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_settings_graphix_section" kindref="compound">SettingsGraphixSection</ref><sp/>:<sp/>MonoBehaviour</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9" refid="class_settings_graphix_section_1ad301dc656930b7b7b8e32438b5cd2c34" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[SerializeField]<sp/>Toggle<sp/><ref refid="class_settings_graphix_section_1ad301dc656930b7b7b8e32438b5cd2c34" kindref="member">showDamageToggle</ref>;</highlight></codeline>
+<codeline lineno="10" refid="class_settings_graphix_section_1a8b389c43b67d9906da544974792c415a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[SerializeField]<sp/>Toggle<sp/><ref refid="class_settings_graphix_section_1a8b389c43b67d9906da544974792c415a" kindref="member">allyOutlineToggle</ref>;</highlight></codeline>
+<codeline lineno="11" refid="class_settings_graphix_section_1aee2a70f2c3294b6319f4270caffe8b11" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[SerializeField]<sp/>Toggle<sp/><ref refid="class_settings_graphix_section_1aee2a70f2c3294b6319f4270caffe8b11" kindref="member">enemyOutlineToggle</ref>;</highlight></codeline>
+<codeline lineno="12" refid="class_settings_graphix_section_1af3e25af329ab6f253bbd9d10c0b4a319" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[SerializeField]<sp/>Toggle<sp/><ref refid="class_settings_graphix_section_1af3e25af329ab6f253bbd9d10c0b4a319" kindref="member">neutralOutlineToggle</ref>;</highlight></codeline>
+<codeline lineno="13" refid="class_settings_graphix_section_1aeb1f89c19abb8fda17d7347381958668" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[SerializeField]<sp/>Toggle<sp/><ref refid="class_settings_graphix_section_1aeb1f89c19abb8fda17d7347381958668" kindref="member">borderOutline</ref>;</highlight></codeline>
+<codeline lineno="14" refid="class_settings_graphix_section_1a209565159a9b2ff3e4290e1af7bc2655" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[SerializeField]<sp/>Toggle<sp/><ref refid="class_settings_graphix_section_1a209565159a9b2ff3e4290e1af7bc2655" kindref="member">underlayerOutline</ref>;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="class_settings_graphix_section_1a5a3dee7474c37d579048727f6ab4d879" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_settings_graphix_section_1a5a3dee7474c37d579048727f6ab4d879" kindref="member">Start</ref>()</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_settings_graphix_section_1a7ed0b4519c281179c9c7520a9e7337ac" kindref="member">ResetPrefsUI</ref>();</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="class_settings_graphix_section_1a7ed0b4519c281179c9c7520a9e7337ac" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_settings_graphix_section_1a7ed0b4519c281179c9c7520a9e7337ac" kindref="member">ResetPrefsUI</ref>()</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>showDamageToggle.isOn<sp/>=<sp/>GameManager.Instance.Settings.graphixSettings.ShowDamage;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>showDamageToggle.onValueChanged.AddListener(<ref refid="class_settings_graphix_section_1a13c62f9598e7c39cc86951a351ab6af5" kindref="member">OnShowDamageToggleValChanged</ref>);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>allyOutlineToggle.isOn<sp/>=<sp/>GameManager.Instance.Settings.graphixSettings.AllyOutline;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>allyOutlineToggle.onValueChanged.AddListener(<ref refid="class_settings_graphix_section_1a61f10cf56fe9d555066c99d62eeaf9e6" kindref="member">OnAllyOutlineToggleValChanged</ref>);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>enemyOutlineToggle.isOn<sp/>=<sp/>GameManager.Instance.Settings.graphixSettings.EnemyOutline;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>enemyOutlineToggle.onValueChanged.AddListener(<ref refid="class_settings_graphix_section_1a7f2d3b22733ea698388e098218250c1c" kindref="member">OnEnemyOutlineToggleValChanged</ref>);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>neutralOutlineToggle.isOn<sp/>=<sp/>GameManager.Instance.Settings.graphixSettings.NeutralOutline;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>neutralOutlineToggle.onValueChanged.AddListener(<ref refid="class_settings_graphix_section_1aff514073fdd18ac4a48d92aa3a4d080d" kindref="member">OnNeutralOutlineToggleValChanged</ref>);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>borderOutline.isOn<sp/>=<sp/>GameManager.Instance.Settings.graphixSettings.OutlineType<sp/>==<sp/>GraphixSettings.OutlineTypes.BORDER;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>borderOutline.onValueChanged.AddListener(<ref refid="class_settings_graphix_section_1aadf1982a1da60a9adf5e85ce2598fe83" kindref="member">OnBorderOutlineToggleValChanged</ref>);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>underlayerOutline.isOn<sp/>=<sp/>GameManager.Instance.Settings.graphixSettings.OutlineType<sp/>==<sp/>GraphixSettings.OutlineTypes.UNDERLAYER;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>underlayerOutline.onValueChanged.AddListener(<ref refid="class_settings_graphix_section_1a236511e0b76d2b52d0ad416f02023825" kindref="member">OnUnderlayerOutlineToggleValChanged</ref>);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="class_settings_graphix_section_1aadf1982a1da60a9adf5e85ce2598fe83" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_settings_graphix_section_1aadf1982a1da60a9adf5e85ce2598fe83" kindref="member">OnBorderOutlineToggleValChanged</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>value)</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(value)</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GameManager.Instance.Settings.graphixSettings.OutlineType<sp/>=<sp/>GraphixSettings.OutlineTypes.BORDER;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="class_settings_graphix_section_1a236511e0b76d2b52d0ad416f02023825" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_settings_graphix_section_1a236511e0b76d2b52d0ad416f02023825" kindref="member">OnUnderlayerOutlineToggleValChanged</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>value)</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(value)</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GameManager.Instance.Settings.graphixSettings.OutlineType<sp/>=<sp/>GraphixSettings.OutlineTypes.UNDERLAYER;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="class_settings_graphix_section_1a13c62f9598e7c39cc86951a351ab6af5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_settings_graphix_section_1a13c62f9598e7c39cc86951a351ab6af5" kindref="member">OnShowDamageToggleValChanged</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>value)</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GameManager.Instance.Settings.graphixSettings.ShowDamage<sp/>=<sp/>value;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="class_settings_graphix_section_1a61f10cf56fe9d555066c99d62eeaf9e6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_settings_graphix_section_1a61f10cf56fe9d555066c99d62eeaf9e6" kindref="member">OnAllyOutlineToggleValChanged</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>value)</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GameManager.Instance.Settings.graphixSettings.AllyOutline<sp/>=<sp/>value;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="class_settings_graphix_section_1a7f2d3b22733ea698388e098218250c1c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_settings_graphix_section_1a7f2d3b22733ea698388e098218250c1c" kindref="member">OnEnemyOutlineToggleValChanged</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>value)</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GameManager.Instance.Settings.graphixSettings.EnemyOutline<sp/>=<sp/>value;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="class_settings_graphix_section_1aff514073fdd18ac4a48d92aa3a4d080d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_settings_graphix_section_1aff514073fdd18ac4a48d92aa3a4d080d" kindref="member">OnNeutralOutlineToggleValChanged</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>value)</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GameManager.Instance.Settings.graphixSettings.NeutralOutline<sp/>=<sp/>value;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/SettingsGraphixSection.cs"/>
+  </compounddef>
+</doxygen>

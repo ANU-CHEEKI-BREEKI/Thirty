@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_pause_toggle" kind="class" prot="public">
+    <compoundname>PauseToggle</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_pause_toggle_1ab1a78920d2af49689f9dcbffa1c09450" prot="private" static="no" mutable="no">
+        <type>CanvasGroup</type>
+        <definition>CanvasGroup PauseToggle.darkscreen</definition>
+        <argsstring></argsstring>
+        <name>darkscreen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/PauseToggle.cs" line="8" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/PauseToggle.cs" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_pause_toggle_1aaae1c5d8f49a82ffba31f6b6f503df54" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PauseToggle.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/PauseToggle.cs" line="10" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/PauseToggle.cs" bodystart="10" bodyend="16"/>
+        <references refid="class_pause_toggle_1a4f3dbba318f1182edea54b8bdbf323a8" compoundref="_pause_toggle_8cs" startline="18" endline="33">onValChanged</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_pause_toggle_1a4f3dbba318f1182edea54b8bdbf323a8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PauseToggle.onValChanged</definition>
+        <argsstring>(bool newVal)</argsstring>
+        <name>onValChanged</name>
+        <param>
+          <type>bool</type>
+          <declname>newVal</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/PauseToggle.cs" line="18" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/PauseToggle.cs" bodystart="18" bodyend="33"/>
+        <references refid="class_dialog_box_1ad3b9b51e68ca37fdbaf9eb3d1a890125" compoundref="_dialog_box_8cs" startline="63">DialogBox.Instance</references>
+        <references refid="class_dialog_box_1ac1edc6c0e2806402a0f4b8317a2816a3" compoundref="_dialog_box_8cs" startline="66">DialogBox.Owner</references>
+        <references refid="class_dialog_box_1a85ea50ea435cec0291e7262bb58c737b" compoundref="_dialog_box_8cs" startline="65">DialogBox.Showned</references>
+        <referencedby refid="class_pause_toggle_1aaae1c5d8f49a82ffba31f6b6f503df54" compoundref="_pause_toggle_8cs" startline="10" endline="16">Start</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="715">
+        <label>PauseToggle</label>
+        <link refid="class_pause_toggle"/>
+        <childnode refid="716" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="716">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="717">
+        <label>PauseToggle</label>
+        <link refid="class_pause_toggle"/>
+        <childnode refid="718" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="718">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/PauseToggle.cs" line="7" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/UI/PauseToggle.cs" bodystart="6" bodyend="34"/>
+    <listofallmembers>
+      <member refid="class_pause_toggle_1ab1a78920d2af49689f9dcbffa1c09450" prot="private" virt="non-virtual"><scope>PauseToggle</scope><name>darkscreen</name></member>
+      <member refid="class_pause_toggle_1a4f3dbba318f1182edea54b8bdbf323a8" prot="public" virt="non-virtual"><scope>PauseToggle</scope><name>onValChanged</name></member>
+      <member refid="class_pause_toggle_1aaae1c5d8f49a82ffba31f6b6f503df54" prot="private" virt="non-virtual"><scope>PauseToggle</scope><name>Start</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

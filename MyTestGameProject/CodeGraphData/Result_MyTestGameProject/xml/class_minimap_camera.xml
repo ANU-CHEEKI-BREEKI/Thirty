@@ -1,0 +1,178 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_minimap_camera" kind="class" prot="public">
+    <compoundname>MinimapCamera</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_minimap_camera_1af82a935650b174fea6aee59f9b9a6b21" prot="private" static="no" mutable="no">
+        <type>RenderTexture</type>
+        <definition>RenderTexture MinimapCamera.map</definition>
+        <argsstring></argsstring>
+        <name>map</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/MinimapCamera.cs" line="8" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/MinimapCamera.cs" bodystart="8" bodyend="-1"/>
+        <referencedby refid="class_minimap_camera_1ad69c0f69395a6b34453e69570665b1c7" compoundref="_minimap_camera_8cs" startline="34" endline="44">GeneradeMapMiniature</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_minimap_camera_1ae57aaa288494d25e02bfe5e423ce1450" prot="private" static="no" mutable="no">
+        <type>LayerMask</type>
+        <definition>LayerMask MinimapCamera.mapLayer</definition>
+        <argsstring></argsstring>
+        <name>mapLayer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/MinimapCamera.cs" line="9" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/MinimapCamera.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_minimap_camera_1a8333d16a493b443f8b876c240c6d870c" prot="private" static="no" mutable="no">
+        <type>RenderTexture</type>
+        <definition>RenderTexture MinimapCamera.minimap</definition>
+        <argsstring></argsstring>
+        <name>minimap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/MinimapCamera.cs" line="12" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/MinimapCamera.cs" bodystart="12" bodyend="-1"/>
+        <referencedby refid="class_minimap_camera_1ad69c0f69395a6b34453e69570665b1c7" compoundref="_minimap_camera_8cs" startline="34" endline="44">GeneradeMapMiniature</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_minimap_camera_1a8102f34870f574e42015e5e60e1382e2" prot="private" static="no" mutable="no">
+        <type>LayerMask</type>
+        <definition>LayerMask MinimapCamera.minimapLayer</definition>
+        <argsstring></argsstring>
+        <name>minimapLayer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/MinimapCamera.cs" line="13" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/MinimapCamera.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_minimap_camera_1af7eb29a59d802f621759fe965e41fe86" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>Camera</type>
+        <definition>Camera MinimapCamera.Instance</definition>
+        <argsstring></argsstring>
+        <name>Instance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/MinimapCamera.cs" line="15" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/MinimapCamera.cs" bodystart="15" bodyend="-1"/>
+        <referencedby refid="class_minimap_camera_1a034be65115f321ece7ae8652808125df" compoundref="_minimap_camera_8cs" startline="17" endline="20">Awake</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_minimap_camera_1a034be65115f321ece7ae8652808125df" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MinimapCamera.Awake</definition>
+        <argsstring>()</argsstring>
+        <name>Awake</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/MinimapCamera.cs" line="17" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/MinimapCamera.cs" bodystart="17" bodyend="20"/>
+        <references refid="class_minimap_camera_1af7eb29a59d802f621759fe965e41fe86" compoundref="_minimap_camera_8cs" startline="15">Instance</references>
+      </memberdef>
+      <memberdef kind="function" id="class_minimap_camera_1a3a560605b8327f1c49db149ecf0fe402" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MinimapCamera.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/MinimapCamera.cs" line="22" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/MinimapCamera.cs" bodystart="22" bodyend="27"/>
+        <references refid="class_minimap_camera_1a3cb6f930ad2755a7f9de18f15b3755d3" compoundref="_minimap_camera_8cs" startline="29" endline="32">OnGroundGenerated</references>
+      </memberdef>
+      <memberdef kind="function" id="class_minimap_camera_1a3cb6f930ad2755a7f9de18f15b3755d3" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MinimapCamera.OnGroundGenerated</definition>
+        <argsstring>()</argsstring>
+        <name>OnGroundGenerated</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/MinimapCamera.cs" line="29" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/MinimapCamera.cs" bodystart="29" bodyend="32"/>
+        <references refid="class_minimap_camera_1ad69c0f69395a6b34453e69570665b1c7" compoundref="_minimap_camera_8cs" startline="34" endline="44">GeneradeMapMiniature</references>
+        <referencedby refid="class_minimap_camera_1a3a560605b8327f1c49db149ecf0fe402" compoundref="_minimap_camera_8cs" startline="22" endline="27">Start</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_minimap_camera_1ad69c0f69395a6b34453e69570665b1c7" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerator</type>
+        <definition>IEnumerator MinimapCamera.GeneradeMapMiniature</definition>
+        <argsstring>()</argsstring>
+        <name>GeneradeMapMiniature</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/MinimapCamera.cs" line="34" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/MinimapCamera.cs" bodystart="34" bodyend="44"/>
+        <references refid="class_minimap_camera_1af82a935650b174fea6aee59f9b9a6b21" compoundref="_minimap_camera_8cs" startline="8">map</references>
+        <references refid="class_minimap_camera_1a8333d16a493b443f8b876c240c6d870c" compoundref="_minimap_camera_8cs" startline="12">minimap</references>
+        <referencedby refid="class_minimap_camera_1a3cb6f930ad2755a7f9de18f15b3755d3" compoundref="_minimap_camera_8cs" startline="29" endline="32">OnGroundGenerated</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="686">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="685">
+        <label>MinimapCamera</label>
+        <link refid="class_minimap_camera"/>
+        <childnode refid="686" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="688">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="687">
+        <label>MinimapCamera</label>
+        <link refid="class_minimap_camera"/>
+        <childnode refid="688" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/MinimapCamera.cs" line="7" column="1" bodyfile="D:/development/unity/mytestgame/MyTestGameProject/Assets/Scripts/main_scene/MinimapCamera.cs" bodystart="6" bodyend="45"/>
+    <listofallmembers>
+      <member refid="class_minimap_camera_1a034be65115f321ece7ae8652808125df" prot="private" virt="non-virtual"><scope>MinimapCamera</scope><name>Awake</name></member>
+      <member refid="class_minimap_camera_1ad69c0f69395a6b34453e69570665b1c7" prot="private" virt="non-virtual"><scope>MinimapCamera</scope><name>GeneradeMapMiniature</name></member>
+      <member refid="class_minimap_camera_1af7eb29a59d802f621759fe965e41fe86" prot="public" virt="non-virtual"><scope>MinimapCamera</scope><name>Instance</name></member>
+      <member refid="class_minimap_camera_1af82a935650b174fea6aee59f9b9a6b21" prot="private" virt="non-virtual"><scope>MinimapCamera</scope><name>map</name></member>
+      <member refid="class_minimap_camera_1ae57aaa288494d25e02bfe5e423ce1450" prot="private" virt="non-virtual"><scope>MinimapCamera</scope><name>mapLayer</name></member>
+      <member refid="class_minimap_camera_1a8333d16a493b443f8b876c240c6d870c" prot="private" virt="non-virtual"><scope>MinimapCamera</scope><name>minimap</name></member>
+      <member refid="class_minimap_camera_1a8102f34870f574e42015e5e60e1382e2" prot="private" virt="non-virtual"><scope>MinimapCamera</scope><name>minimapLayer</name></member>
+      <member refid="class_minimap_camera_1a3cb6f930ad2755a7f9de18f15b3755d3" prot="private" virt="non-virtual"><scope>MinimapCamera</scope><name>OnGroundGenerated</name></member>
+      <member refid="class_minimap_camera_1a3a560605b8327f1c49db149ecf0fe402" prot="private" virt="non-virtual"><scope>MinimapCamera</scope><name>Start</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
