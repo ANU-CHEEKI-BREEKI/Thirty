@@ -7,8 +7,10 @@ using UnityEngine;
 
 public class Ground : MonoBehaviour
 {
-    const string PATH_TO_PREFABS = @"Prefabs\MapBlocks\";
-    const string PATH_TO_GRIDS = @"TextAssets\MapBlockGrids\Current\";
+    public enum GroundType { GRASSLAND }
+
+    public const string PATH_TO_PREFABS = @"Prefabs\MapBlocks\";
+    public const string PATH_TO_GRIDS = @"TextAssets\MapBlockPathMatrix\";
 
     static public Ground Instance { get; private set; }
 
@@ -98,7 +100,7 @@ public class Ground : MonoBehaviour
         int cnt = textAssets.Length;
 
         for (int i = 0; i < cnt; i++)
-        {             
+        {
             //удаляем номер блока с названия
             string nm = textAssets[i].name.Remove(textAssets[i].name.LastIndexOf(" ("));
 
@@ -122,7 +124,7 @@ public class Ground : MonoBehaviour
 
                 //десериализуем блок
                 fstream = new StringReader(textAssets[i].text);
-                MapBlock block = McFileManager.Deserialize(fstream);
+                MapBlock block = Extensions.Deserialize(fstream);
 
                 if (block.HasExit)
                 {
@@ -148,7 +150,7 @@ public class Ground : MonoBehaviour
         if (actionOnLoaded != null)
             actionOnLoaded();
     }
-    
+
     IEnumerator GeneradeMapCo()
     {
         // в игровом мире массивы распологаются снизу вверх, чтобы была привязка элементов
@@ -280,7 +282,7 @@ public class Ground : MonoBehaviour
 
             int col = rnd.Next(colCnt) + minCol;
             col = col > colCountOfBlocks - 1 ? colCountOfBlocks - 1 : col;
-            
+
             int row;
             if (col == colCountOfBlocks - 1 || col == 0)
             {
@@ -310,7 +312,7 @@ public class Ground : MonoBehaviour
         else if (positionInMinigrid.x == colCountOfBlocks - 1)
             allowableDirections.Add(MapBlock.Direction.RIGHT);
 
-        if(!isExit)
+        if (!isExit)
         {
             MapBlock.Direction d = MapBlock.Direction.BOTTOM;
             switch (GameManager.Instance.exitDirection)
@@ -335,7 +337,7 @@ public class Ground : MonoBehaviour
                 return d;
             }
         }
-        
+
         int index = rnd.Next(allowableDirections.Count);
 
         if (isExit)
@@ -357,7 +359,7 @@ public class Ground : MonoBehaviour
 
         for (int row = rowStart; row < rowEnd; row++)
             Array.Copy(block.Grid[row - rowStart], 0, Grid[row], (int)block.WorldPosition.x / MapBlock.BLOCK_SCALE, MapBlock.BLOCK_SIZE);
-    }    
+    }
 
     public SameBlocksContainer.Block FindMapBlock(
         List<MapBlock.Direction> inclusionsDirection,
@@ -368,7 +370,7 @@ public class Ground : MonoBehaviour
     {
         SameBlocksContainer.Block block = null;
 
-        if(wantedExitBlock)
+        if (wantedExitBlock)
             foreach (var item in inclusionsDirection)
                 if (exitDirection == item)
                     throw new Exception("Направление выхода не может совпадать с направлением проходов.");
@@ -470,10 +472,10 @@ public class Ground : MonoBehaviour
                         Gizmos.color = Color.black;
                         Gizmos.DrawWireCube(
                             new Vector2(
-                                col * MapBlock.BLOCK_SCALE + 0.5f, 
-                                row * MapBlock.BLOCK_SCALE + 0.5f
-                            ), 
-                            Vector3.one * MapBlock.BLOCK_SCALE
+                                col * MapBlock.BLOCK_SCALE + MapBlock.BLOCK_SCALE / 2f, 
+                                row * MapBlock.BLOCK_SCALE + MapBlock.BLOCK_SCALE / 2f
+                            ),
+                            new Vector3(MapBlock.BLOCK_SCALE, MapBlock.BLOCK_SCALE) / 1.2f
                         );
                     }
                 }

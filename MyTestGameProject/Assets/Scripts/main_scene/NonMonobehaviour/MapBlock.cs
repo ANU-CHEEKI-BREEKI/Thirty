@@ -15,15 +15,21 @@ public struct MapBlock
     /// if true - wall in this plase, cant walc
     /// if false - empty cell, can walc
     /// </summary> 
-    [SerializeField] public bool[][] Grid;
+    public bool[][] Grid;
     public List<Direction> Entrance;
-    public Vector2 WorldPosition;
-
+    [HideInInspector] public Vector2 WorldPosition;
+    
     public bool HasExit;
     public Direction Exit;
 
+    [Space]
+    public Ground.GroundType type;
+
+
     public override string ToString()
     {
+        Entrance.Sort();
+
         string res = "";
         res += "[ ";
         if(Entrance != null)
@@ -36,8 +42,11 @@ public struct MapBlock
             res += " [" + ExitString + Exit + "]";
         }
 
+        res += " [" + type.ToString() + "]";
+
         return res;
     }
 
     [Serializable] public enum Direction { BOTTOM, TOP, LEFT, RIGHT }
+
 }

@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
     bool gamePaused;
     public bool GamePaused { get { return gamePaused; } private set { gamePaused = value; } }
 
-    public McGridConstructController.GroundType GroundType = McGridConstructController.GroundType.GRASSLAND;
+    public Ground.GroundType GroundType = Ground.GroundType.GRASSLAND;
 
     [Header("Score")]
     [SerializeField]

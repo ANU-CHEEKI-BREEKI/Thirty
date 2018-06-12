@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using System.Reflection;
 using System.Text;
+using System.Xml.Serialization;
 using UnityEngine;
 
 public static class Extensions
@@ -160,4 +162,28 @@ public static class Extensions
         }
         return firstObj;
     }
+
+
+    #region Tools
+
+    static XmlSerializer blockSerializer = new XmlSerializer(typeof(MapBlock));
+
+    public static void Serialize(string path, MapBlock block)
+    {
+        using (FileStream fstream = new FileStream(path, FileMode.Create))
+            blockSerializer.Serialize(fstream, block);
+    }
+
+    public static MapBlock Deserialize(string path)
+    {
+        using (FileStream fstream = File.Open(path, FileMode.Open))
+            return (MapBlock)blockSerializer.Deserialize(fstream);
+    }
+
+    public static MapBlock Deserialize(TextReader reader)
+    {
+        return (MapBlock)blockSerializer.Deserialize(reader);
+    }
+
+    #endregion
 }

@@ -8,8 +8,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace>
-    </RootNamespace>
+    <RootNamespace></RootNamespace>
     <ProjectGuid>{015A8C12-616A-808C-1116-2C959B9A1A5E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -219,85 +218,70 @@
     <Compile Include="Assets\Scripts\main_scene\Unit\Unit.cs" />
     <Compile Include="Assets\Scripts\main_scene\Unit\UnitPosition.cs" />
     <Compile Include="Assets\Scripts\main_scene\UnitOutline.cs" />
-    <Compile Include="Assets\Scripts\map_constructor\McBlockChooserDirectionToggleFlag.cs" />
-    <Compile Include="Assets\Scripts\map_constructor\McBlockEntryChooser.cs" />
-    <Compile Include="Assets\Scripts\map_constructor\McCameraController.cs" />
-    <Compile Include="Assets\Scripts\map_constructor\McCursor.cs" />
-    <Compile Include="Assets\Scripts\map_constructor\McExitDirectionChooser.cs" />
-    <Compile Include="Assets\Scripts\map_constructor\McFileManager.cs" />
-    <Compile Include="Assets\Scripts\map_constructor\McGrid.cs" />
-    <Compile Include="Assets\Scripts\map_constructor\McGridConstructController.cs" />
-    <Compile Include="Assets\Scripts\map_constructor\McHider.cs" />
-    <Compile Include="Assets\Scripts\map_constructor\McSliderValue.cs" />
-    <Compile Include="Assets\Scripts\map_constructor\McSliderWheelController.cs" />
-    <Compile Include="Assets\Scripts\map_constructor\McToggleTypeOfBlock.cs" />
-    <Compile Include="Assets\Scripts\map_constructor\McUiListItem.cs" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
-    <None Include="Assets\Resources\TextAssets\MapBlockGrids\Current\[ (TOP) (LEFT) ] [EXIT RIGHT] [GRASSLAND] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\[ (RIGHT) ] [EXIT TOP] [GRASSLAND] (1).xml" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
-    <None Include="Assets\Resources\TextAssets\MapBlockGrids\Current\[ (BOTTOM) ] [EXIT RIGHT] [GRASSLAND] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockGrids\Current\[ (TOP) (RIGHT) ] [EXIT LEFT] [GRASSLAND] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\[ (TOP) (LEFT) (RIGHT) ] [EXIT BOTTOM] [GRASSLAND] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\[ (RIGHT) ] [EXIT BOTTOM] [GRASSLAND] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\[ (RIGHT) ] [EXIT LEFT] [GRASSLAND] (1).xml" />
     <None Include="Assets\Resources\TextAssets\Localization\EN.xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\[ (TOP) ] [EXIT LEFT] [GRASSLAND] (1).xml" />
     <None Include="Assets\2d-extras-master\Tilemap\Brushes\Tint Brush Smooth\Shaders\TintedTilemap.shader" />
-    <None Include="Assets\Resources\TextAssets\MapBlockGrids\Current\[ (RIGHT) ] [GRASSLAND] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockGrids\Current\[ (TOP) ] [EXIT LEFT] [GRASSLAND] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockGrids\Current\[ (TOP) (RIGHT) ] [EXIT BOTTOM] [GRASSLAND] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\[ (LEFT) ] [EXIT TOP] [GRASSLAND] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\[ (TOP) ] [EXIT RIGHT] [GRASSLAND] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\[ (LEFT) (RIGHT) ] [EXIT BOTTOM] [GRASSLAND] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\[ (BOTTOM) ] [EXIT LEFT] [GRASSLAND] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\[ (TOP) (LEFT) ] [EXIT BOTTOM] [GRASSLAND] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\[ (BOTTOM) (TOP) (RIGHT) ] [GRASSLAND] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\[ (BOTTOM) ] [EXIT RIGHT] [GRASSLAND] (1).xml" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
-    <None Include="Assets\Resources\TextAssets\MapBlockGrids\Current\[ (BOTTOM) ] [GRASSLAND] (1).xml" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\[ (TOP) ] [GRASSLAND] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\[ (BOTTOM) (TOP) ] [EXIT LEFT] [GRASSLAND] (1).xml" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
-    <None Include="Assets\Resources\TextAssets\MapBlockGrids\Current\[ (BOTTOM) (TOP) (LEFT) (RIGHT) ] [GRASSLAND] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockGrids\Current\[ (LEFT) ] [EXIT TOP] [GRASSLAND] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockGrids\Current\[ (RIGHT) ] [EXIT TOP] [GRASSLAND] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockGrids\Current\[ (BOTTOM) (LEFT) ] [EXIT RIGHT] [GRASSLAND] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\[ (BOTTOM) (LEFT) ] [EXIT TOP] [GRASSLAND] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\[ (BOTTOM) (LEFT) (RIGHT) ] [EXIT TOP] [GRASSLAND] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\[ (BOTTOM) (LEFT) ] [EXIT RIGHT] [GRASSLAND] (1).xml" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
-    <None Include="Assets\Resources\TextAssets\MapBlockGrids\Current\[ (TOP) ] [EXIT RIGHT] [GRASSLAND] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockGrids\Current\[ (LEFT) ] [EXIT BOTTOM] [GRASSLAND] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockGrids\Current\[ (TOP) (LEFT) ] [EXIT BOTTOM] [GRASSLAND] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockGrids\Current\[ (TOP) (LEFT) (RIGHT) ] [EXIT BOTTOM] [GRASSLAND] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockGrids\Current\[ (BOTTOM) (LEFT) (RIGHT) ] [GRASSLAND] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\[ (BOTTOM) (TOP) (RIGHT) ] [EXIT LEFT] [GRASSLAND] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\[ (LEFT) (RIGHT) ] [GRASSLAND] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\[ (LEFT) ] [EXIT RIGHT] [GRASSLAND] (1).xml" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
-    <None Include="Assets\Resources\TextAssets\Localization\RU.xml">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Assets\Resources\TextAssets\MapBlockGrids\Current\[ (BOTTOM) (TOP) (RIGHT) ] [EXIT LEFT] [GRASSLAND] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockGrids\Current\[ (BOTTOM) (RIGHT) ] [EXIT TOP] [GRASSLAND] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockGrids\Current\[ (TOP) (LEFT) (RIGHT) ] [GRASSLAND] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockGrids\Current\[ (BOTTOM) (RIGHT) ] [GRASSLAND] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockGrids\Current\[ (BOTTOM) (LEFT) (RIGHT) ] [EXIT TOP] [GRASSLAND] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\[ (BOTTOM) (TOP) ] [EXIT RIGHT] [GRASSLAND] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\[ (TOP) (LEFT) (RIGHT) ] [GRASSLAND] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\Localization\RU.xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\[ (BOTTOM) ] [GRASSLAND] (1).xml" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
-    <None Include="Assets\Resources\TextAssets\MapBlockGrids\Current\[ (BOTTOM) (TOP) (LEFT) ] [GRASSLAND] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\[ (LEFT) ] [GRASSLAND] (1).xml" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
-    <None Include="Assets\Resources\TextAssets\MapBlockGrids\Current\[ (BOTTOM) ] [EXIT LEFT] [GRASSLAND] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockGrids\Current\[ (BOTTOM) (TOP) (RIGHT) ] [GRASSLAND] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockGrids\Current\[ (RIGHT) ] [EXIT LEFT] [GRASSLAND] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockGrids\Current\[ (TOP) ] [EXIT BOTTOM] [GRASSLAND] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\[ (TOP) (RIGHT) ] [EXIT BOTTOM] [GRASSLAND] (1).xml" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
-    <None Include="Assets\Resources\TextAssets\MapBlockGrids\Current\[ (LEFT) (RIGHT) ] [EXIT TOP] [GRASSLAND] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockGrids\Current\[ (TOP) (LEFT) ] [GRASSLAND] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\[ (BOTTOM) (TOP) (LEFT) ] [GRASSLAND] (1).xml" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\[ (BOTTOM) ] [EXIT TOP] [GRASSLAND] (1).xml" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
-    <None Include="Assets\Resources\TextAssets\MapBlockGrids\Current\[ (BOTTOM) (TOP) ] [EXIT LEFT] [GRASSLAND] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockGrids\Current\[ (BOTTOM) ] [EXIT TOP] [GRASSLAND] (1).xml" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
-    <None Include="Assets\Resources\TextAssets\MapBlockGrids\Current\[ (LEFT) ] [GRASSLAND] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockGrids\Current\[ (BOTTOM) (LEFT) ] [GRASSLAND] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockGrids\Current\[ (BOTTOM) (TOP) (LEFT) ] [EXIT RIGHT] [GRASSLAND] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\[ (TOP) (RIGHT) ] [EXIT LEFT] [GRASSLAND] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\[ (BOTTOM) (LEFT) ] [GRASSLAND] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\[ (TOP) (RIGHT) ] [GRASSLAND] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\[ (RIGHT) ] [GRASSLAND] (1).xml" />
     <None Include="Assets\Shaders\SpriteOutline.shader" />
-    <None Include="Assets\Resources\TextAssets\MapBlockGrids\Current\[ (RIGHT) ] [EXIT BOTTOM] [GRASSLAND] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockGrids\Current\[ (BOTTOM) (RIGHT) ] [EXIT LEFT] [GRASSLAND] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\[ (BOTTOM) (RIGHT) ] [EXIT LEFT] [GRASSLAND] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\[ (BOTTOM) (RIGHT) ] [EXIT TOP] [GRASSLAND] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\[ (TOP) ] [EXIT BOTTOM] [GRASSLAND] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\[ (BOTTOM) (TOP) (LEFT) ] [EXIT RIGHT] [GRASSLAND] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\[ (BOTTOM) (RIGHT) ] [GRASSLAND] (1).xml" />
     <None Include="Assets\Shaders\VertexColorAlpha.shader" />
-    <None Include="Assets\Resources\TextAssets\MapBlockGrids\Current\[ (TOP) (RIGHT) ] [GRASSLAND] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockGrids\Current\[ (LEFT) (RIGHT) ] [EXIT BOTTOM] [GRASSLAND] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\[ (BOTTOM) (TOP) ] [GRASSLAND] (1).xml" />
     <None Include="Assets\Shaders\VertexColor.shader" />
-    <None Include="Assets\Resources\TextAssets\MapBlockGrids\Current\[ (TOP) ] [GRASSLAND] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockGrids\Current\[ (BOTTOM) (LEFT) ] [EXIT TOP] [GRASSLAND] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockGrids\Current\[ (BOTTOM) (TOP) ] [EXIT RIGHT] [GRASSLAND] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockGrids\Current\[ (LEFT) ] [EXIT RIGHT] [GRASSLAND] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockGrids\Current\[ (BOTTOM) (TOP) ] [GRASSLAND] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockGrids\Current\[ (LEFT) (RIGHT) ] [GRASSLAND] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\[ (LEFT) ] [EXIT BOTTOM] [GRASSLAND] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\[ (LEFT) (RIGHT) ] [EXIT TOP] [GRASSLAND] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\[ (BOTTOM) (LEFT) (RIGHT) ] [GRASSLAND] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\[ (TOP) (LEFT) ] [EXIT RIGHT] [GRASSLAND] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\[ (TOP) (LEFT) ] [GRASSLAND] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\[ (BOTTOM) (TOP) (LEFT) (RIGHT) ] [GRASSLAND] (1).xml" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>D:/development/unity/MyGame - Thirty/Game/MyTestGameProject/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>

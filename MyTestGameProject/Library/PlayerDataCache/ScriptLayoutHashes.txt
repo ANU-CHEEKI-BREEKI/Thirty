@@ -1,6 +1,6 @@
 Android
 PlayerPath?
-D:/development/unity/MyGame - Thirty/Game/MyTestGameProject/out/Thirty.a.1.3.apk
+D:/development/unity/MyGame - Thirty/out/Thirty.a.1.4.apk
 SceneListBegin?
 Assets/Scenes/main_menu.unity
 Assets/Scenes/market.unity
@@ -26,7 +26,6 @@ ff05dcdf90651c3d98a9cad3df5e471e UnityEngine.Timeline.dll:UnityEngine.Timeline.C
 4d5e65da3e1954fb9c4e81fcda16c86c Assembly-CSharp.dll:.VolumeSlider
 9778b00922ba8aae9a3acf3ff3f34ff4 Assembly-CSharp.dll:.UILineRenderer
 ae73b18b07cd4c26aa5b511ba60ab9f3 Assembly-CSharp.dll:.LevelGeneradingProgress
-42526854986fb5dfa600098af4c21d03 Assembly-CSharp.dll:.McExitDirectionChooser
 3fdbdc4938c540f7428b1f0276f07c59 Assembly-CSharp.dll:.PilumsVolley
 f278ec698acd7bb49ddccd048513d587 Assembly-CSharp.dll:.DialogBox
 89ecccd62fceff61ef5899c14495b2e0 Assembly-CSharp.dll:.MinimapCamera
@@ -63,7 +62,6 @@ c63db43c730fa2cbb8ca07de15898cb6 UnityEngine.UI.dll:UnityEngine.UI.Toggle
 f61c0793411f10cf5fbfa1473fef5ef2 UnityEngine.UI.dll:UnityEngine.UI.ToggleGroup
 86d36c43c53541d667100dc90b89cfba UnityEngine.UI.dll:UnityEngine.EventSystems.TouchInputModule
 1b8c02d0aa82fbf036a2b9b2d713eec3 UnityEngine.UI.dll:UnityEngine.UI.VerticalLayoutGroup
-230af51982e6c1736848349c5eddec57 Assembly-CSharp.dll:.McUiListItem
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.ResetPositionOnAwake
 fd9940306d0070fe25a81fcce98adae6 Assembly-CSharp.dll:.LoadingScreenManager
 bffa5c5e8a34ea09858958f8ec68ea0d Assembly-CSharp.dll:.ScorePanel
@@ -102,7 +100,6 @@ f61c0793411f10cf5fbfa1473fef5ef2 UnityEngine.UI.dll:UnityEngine.UI.ToggleGroup
 86d36c43c53541d667100dc90b89cfba UnityEngine.UI.dll:UnityEngine.EventSystems.TouchInputModule
 1b8c02d0aa82fbf036a2b9b2d713eec3 UnityEngine.UI.dll:UnityEngine.UI.VerticalLayoutGroup
 7cb0adf1bd7eeda64798e948850c404c Assembly-CSharp.dll:UnityEngine.Tilemaps.RandomTile
-cff362ae2e69dbf27354a18c66d199d0 Assembly-CSharp.dll:.McCursor
 a77a466e8a473823eafc67185cc9ba9a Assembly-CSharp.dll:.SkillsUpgrade
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.SpriteOutline
 8ef608f7211b941c793726598cf245e1 Assembly-CSharp.dll:.GameManager
@@ -123,7 +120,6 @@ ff05dcdf90651c3d98a9cad3df5e471e UnityEngine.Timeline.dll:UnityEngine.Timeline.C
 30afa8783a8bbee2e465ec9ce1efaee2 UnityEngine.Timeline.dll:UnityEngine.Timeline.PlayableTrack
 607d64d2c4bc76ac9876e6f7b9cc7edf UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
 53e8b87eaf0620c64bdd5c9eef628555 Assembly-CSharp.dll:.DropToInventory
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.McHider
 3f4c708a8c40fed9dc5b3efed385f3fb Assembly-CSharp.dll:.ScoreMarket
 fc1e0f4d8439d9928083474691511a13 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Networking.dll:UnityEngine.Networking.NetworkBehaviour
@@ -141,9 +137,7 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 528ea1fd7c01796fc60c4e2f172ea229 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformVisualizer
 9de3a22eca9aefadba2d10d5987cefe3 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 2e1f640e4b8217120cc4f0d4418d6830 Assembly-CSharp.dll:.HospitalRoom
-22f82d694eb43d99a0b1abbb58f588ff Assembly-CSharp.dll:.McSliderWheelController
 a2d71564a3231a1a4d16958b739f74e3 Assembly-CSharp.dll:.Toast
-7a75edc83a9f267c790ac1425865847a Assembly-CSharp.dll:.McToggleTypeOfBlock
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.UnitOutline
 0088cdc1d5c418759f4480857950da48 Assembly-CSharp.dll:.GameTipsPanel
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.NewBehaviourScript
@@ -173,7 +167,6 @@ bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.Audi
 c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingCollider
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingRenderer
 2441f208d9e7ee22450a573b65663902 Assembly-CSharp.dll:.PlayerSquadController
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.McBlockChooserDirectionToggleFlag
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.UnitPosition
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.CenterUnitSelection
 5ef7873df37f8c54ec74a6ee7a651483 Assembly-CSharp.dll:.ArrowsValley
@@ -185,7 +178,6 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.Spa
 5052c6e74c456cfa107927c76c936663 Assembly-CSharp.dll:UnityEngine.Tilemaps.AnimatedTile
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.DeathScreen
 c7f8443bedab9b1309055813bb6e61d5 Assembly-CSharp.dll:.NumberPickerDialogBox
-786b69f9e268a38d8e98de9c3659d058 Assembly-CSharp.dll:.McBlockEntryChooser
 f4bd1aee67eeef7953cce6c44588b3d7 TextMeshPro-2017.3-1.0.56-Runtime.dll:TMPro.TextContainer
 8e879b98cad4aa17a0beef746daecd35 TextMeshPro-2017.3-1.0.56-Runtime.dll:TMPro.TextMeshPro
 cdb4459900f4743ae0e8ca5a2c3a821a TextMeshPro-2017.3-1.0.56-Runtime.dll:TMPro.TextMeshProUGUI
@@ -225,7 +217,7 @@ b11448bc44f49db3e26525de9acc4a98 TextMeshPro-2017.3-1.0.56-Editor.dll:TMPro.Edit
 05524b8f659e7bfe5756d1335fec24ba TextMeshPro-2017.3-1.0.56-Editor.dll:TMPro.EditorUtilities.TMPro_TextContainerEditor
 84bbe0f5a8056821e3bb48acbb81f010 Assembly-CSharp.dll:.SquadlessUnitSpawner
 f3b55fc357403f48c52e8304d77cb7d3 Assembly-CSharp.dll:.SettingsGraphixSection
-c5d0778c8219998c7d0d9011348fbc0c Assembly-CSharp.dll:.GroundBlock
+7cb3a54315301203a534e15200ae61bb Assembly-CSharp.dll:.GroundBlock
 2c1e5bf6706d6ef15692a0124ca46ba6 Assembly-CSharp.dll:.TipsPanel
 4e64a8439d3f2714054286cecee27cab Assembly-CSharp.dll:UnityEngine.Tilemaps.PipelineTile
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.DestroyOnAwake
@@ -255,7 +247,6 @@ ae73b18b07cd4c26aa5b511ba60ab9f3 Assembly-CSharp.dll:.Exit
 a6317c2b30fab4f30c1274e3ced210ab Assembly-CSharp.dll:.PopUpTextController
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.DropToEquipment
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.DroppedItem
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.McGrid
 6dea643d10038645a184abb0fa1169f1 Assembly-CSharp.dll:.ToggleDoubleCheckmarks
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.DropToSkillMarket
 bf84cde3fa2fd13352ee750cd4681c9f Assembly-CSharp.dll:.TerrainHeight
@@ -296,10 +287,7 @@ fcc24e6aa8ec57932f32eee0dc9b8ef6 Assembly-CSharp.dll:.SquadSkillsInventoryUI
 828daa95842846c20a2dd84a6b54b16d Assembly-CSharp.dll:.TintTextureGenerator
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.DropToEquipmentMarket
 4e64a8439d3f2714054286cecee27cab Assembly-CSharp.dll:UnityEngine.Tilemaps.TerrainTile
-79162f3d7d36192b5ec005fed5ab909d Assembly-CSharp.dll:.McGridConstructController
 a0556ad027fed3605bba40666cbff78b Assembly-CSharp.dll:.SettingsAudioSection
-d24d216c0f5ff998e545a678ec1657c7 Assembly-CSharp.dll:.McSliderValue
-f3147ac9745ebc62cf42e9bca823bdba Assembly-CSharp.dll:.McCameraController
 224637cf0384615495d83918ea701bfe Assembly-CSharp.dll:.SkillUpgradeButton
 4adb17942ce73b690df527f049bfa8a9 Assembly-CSharp.dll:.DebugCunvas
 0adeaa901d56422325f113c065f4a075 Assembly-CSharp.dll:.UnitAnimationController
@@ -312,7 +300,6 @@ f3147ac9745ebc62cf42e9bca823bdba Assembly-CSharp.dll:.McCameraController
 630a80109db451e274528723f9088c7a Assembly-CSharp.dll:.UiEvents
 b0464befbdb0eb6e84ea1905f4f19781 Assembly-CSharp.dll:.UILineConnector
 f189429997e594b4af323171a643c640 Assembly-CSharp.dll:.EnvirinmantInventoryUI
-b1137be86684d9cdadbaf0588b9f3830 Assembly-CSharp.dll:.McFileManager
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.MainMenu
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.HideTipsPanel
 5f39d07a306e4a7127ffac0134c7dee0 Assembly-CSharp.dll:.SoundChannel
