@@ -50,8 +50,14 @@ public class Ground : MonoBehaviour
     int fullCountOfBlock;
     int loadedBlockCount;
 
-    float progress;
-    public float Progress { get { return progress; } }
+    float loadingProgress;
+    public float LoadingProgress { get { return loadingProgress; } }
+
+    bool loadingIsDone;
+    public bool LoadingIsDone { get { return loadingIsDone; } }
+
+    float generationProgress;
+    public float GenerationProgress { get { return generationProgress; } }
 
     bool generationIsDone;
     public bool GenerationIsDone { get { return generationIsDone; } }
@@ -62,50 +68,39 @@ public class Ground : MonoBehaviour
     {
         Instance = this;
         generationIsDone = false;
-        progress = 0;
-    }
+        generationProgress = 0;
 
-    void Start()
-    {
-        GameManager.Instance.WaitForLevelGenerated();
+        loadingIsDone = false;
+        loadingProgress = 0;
 
         if (createRandom)
             rnd = new System.Random();
         else
             rnd = new System.Random(seed.GetHashCode());
-
-        if (GameManager.Instance.ControlGroundSize)
-        {
-            rowCountOfBlocks = GameManager.Instance.RowCount;
-            colCountOfBlocks = GameManager.Instance.ColCount;
-        }
-
-        minimapCamera.orthographicSize = rowCountOfBlocks > colCountOfBlocks ? rowCountOfBlocks : colCountOfBlocks;
-        minimapCamera.orthographicSize *= MapBlock.WORLD_BLOCK_SIZE / 2;
-        minimapCamera.transform.position = new Vector3(
-            colCountOfBlocks * MapBlock.WORLD_BLOCK_SIZE / 2,
-            rowCountOfBlocks * MapBlock.WORLD_BLOCK_SIZE / 2,
-            minimapCamera.transform.position.z
-        );
-
-        LoadMapBlocks();
-        StartCoroutine(GeneradeMap());
-
-        GameManager.Instance.InitPlayer();
     }
 
-    private void LoadMapBlocks()
+    public void GeneradeMap(int rowCountOfBlocks, int colCountOfBlocks)
+    {
+        this.rowCountOfBlocks = rowCountOfBlocks;
+        this.colCountOfBlocks = colCountOfBlocks;
+
+        StartCoroutine(LoadMapBlocksCo(() =>
+        {
+            StartCoroutine(GeneradeMapCo());
+        }));
+    }
+
+    IEnumerator LoadMapBlocksCo(Action actionOnLoaded)
     {
         blockContainers = new List<SameBlocksContainer>();
-
         TextAsset[] textAssets = Resources.LoadAll<TextAsset>(PATH_TO_GRIDS);
-
         StringReader fstream;
+        int cnt = textAssets.Length;
 
-        foreach (var txtAsset in textAssets)
+        for (int i = 0; i < cnt; i++)
         {             
             //удаляем номер блока с названия
-            string nm = txtAsset.name.Remove(txtAsset.name.LastIndexOf(" ("));
+            string nm = textAssets[i].name.Remove(textAssets[i].name.LastIndexOf(" ("));
 
             //отсеиваем блоки не подходящие по типу месности
             if (nm.IndexOf(GameManager.Instance.GroundType.ToString()) != -1)
@@ -126,7 +121,7 @@ public class Ground : MonoBehaviour
                 }
 
                 //десериализуем блок
-                fstream = new StringReader(txtAsset.text);
+                fstream = new StringReader(textAssets[i].text);
                 MapBlock block = McFileManager.Deserialize(fstream);
 
                 if (block.HasExit)
@@ -135,19 +130,26 @@ public class Ground : MonoBehaviour
                     if (blockContainers[index].ExitBlocks[(int)block.Exit] == null)
                         blockContainers[index].ExitBlocks[(int)block.Exit] = new List<SameBlocksContainer.Block>();
 
-                    blockContainers[index].ExitBlocks[(int)block.Exit].Add(new SameBlocksContainer.Block() { Name = txtAsset.name, block = block });
+                    blockContainers[index].ExitBlocks[(int)block.Exit].Add(new SameBlocksContainer.Block() { Name = textAssets[i].name, block = block });
                 }
                 else
                 {
                     //заносим блок по index'у...
-                    blockContainers[index].SameBlocks.Add(new SameBlocksContainer.Block() { Name = txtAsset.name, block = block });
+                    blockContainers[index].SameBlocks.Add(new SameBlocksContainer.Block() { Name = textAssets[i].name, block = block });
                 }
             }
-            Resources.UnloadAsset(txtAsset);
+            Resources.UnloadAsset(textAssets[i]);
+            loadingProgress = (float)i / (cnt - 1);
+            yield return null;
         }
-    }
 
-    IEnumerator GeneradeMap()
+        loadingIsDone = true;
+
+        if (actionOnLoaded != null)
+            actionOnLoaded();
+    }
+    
+    IEnumerator GeneradeMapCo()
     {
         // в игровом мире массивы распологаются снизу вверх, чтобы была привязка элементов
         // к коодринатам игрового мира. по этому, стены лабиринта будут верхние а не нижние
@@ -252,7 +254,7 @@ public class Ground : MonoBehaviour
                 InsertToGrid(sameBlock.block);
 
                 loadedBlockCount++;
-                progress = (float)loadedBlockCount / fullCountOfBlock;
+                generationProgress = (float)loadedBlockCount / fullCountOfBlock;
 
                 yield return null;
             }

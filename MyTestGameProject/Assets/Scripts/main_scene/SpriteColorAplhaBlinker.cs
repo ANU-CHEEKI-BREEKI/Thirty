@@ -18,6 +18,7 @@ public class SpriteColorAplhaBlinker : MonoBehaviour
     {
         foreach (var item in allRenderers)
             item.Init();
+        Blink();
     }
 
     void Update()
@@ -42,6 +43,9 @@ public class SpriteColorAplhaBlinker : MonoBehaviour
             var color = Color.Lerp(item.FirstColor, item.SecondColor, UnityEngine.Random.value);
             foreach (var rnds in item.Rnds)
             {
+                if (rnds.Renderer == null)
+                    continue;
+
                 var newColor = rnds.StartColor * color;
                 newColor.a = alpha * item.PercentAplha;
                 if(item.InverseAplha)
@@ -132,7 +136,10 @@ public class SpriteColorAplhaBlinker : MonoBehaviour
         public RendererAndStartColor(SpriteRenderer renderer)
         {
             this.renderer = renderer;
-            startColor = renderer.color;
+            if (renderer != null)
+                startColor = renderer.color;
+            else
+                startColor = Color.white;
         }
     }
 }

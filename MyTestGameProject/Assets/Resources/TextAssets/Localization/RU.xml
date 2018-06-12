@@ -2,11 +2,15 @@
 <resources>
   <string name = "current_languade">Русский</string>
   
-  <string name = "downloading">Загрузка...</string>
+  <string name = "loading">Загрузка:</string>
+  <string name = "level_generading">Генерация уровня:</string>
+  <string name = "resoures_loadind">Загрузка ресурсов:</string>
   
   <string name = "play_game">В бой</string>
   <string name = "settings">Настройки</string>
   <string name = "squad">Отряд</string>
+  <string name = "developers">Разработчики</string>
+  
 
   <string name = "healtarget_weakest">сначала слабых</string>
   <string name = "healtarget_strongest">сначала сильных</string>
@@ -191,8 +195,14 @@
   <string name = "toast_cant_drop_weapon">Нельзя снимать оружие</string>
   <string name = "toast_cant_drop">Невозможно снять</string>
   
+  
+  
+  
   <string name = "you_died">Вы погибли</string>
   <string name = "tip_death_try_bay_equip_and_train_squad">Попробуйте, перед боем, купить снаряряжение и улучшить характеристики отряда, чтобы продержаться в бою дольше и победить!</string>
+
+  
+
 
 
 </resources>

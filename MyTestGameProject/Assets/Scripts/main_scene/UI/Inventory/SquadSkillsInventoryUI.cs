@@ -26,7 +26,7 @@ public class SquadSkillsInventoryUI : AInventoryUI
 
     override public void RefreshUI()
     {
-        if (!gameObject.activeSelf)
+        if (!gameObject.activeInHierarchy)
             return;
 
         var squadSkillStack = Squad.playerSquadInstance.Inventory.FirstSkill;
@@ -46,7 +46,6 @@ public class SquadSkillsInventoryUI : AInventoryUI
 
             if (st.Skill != null)
             {
-                go = Instantiate(skillItemOriginal, cell);
                 drag.SkillStack = new SkillStack();
                 drag.SkillStack.Skill = st.Skill;
                 drag.SkillStack.SkillStats = st.SkillStats;

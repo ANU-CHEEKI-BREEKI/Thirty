@@ -11,7 +11,7 @@ public class MinimapCamera : MonoBehaviour
     [SerializeField]
     RenderTexture minimap;
     [SerializeField] LayerMask minimapLayer;
-
+        
     static public Camera Instance { get; private set; }
 
     private void Awake()
@@ -33,6 +33,16 @@ public class MinimapCamera : MonoBehaviour
 
     IEnumerator GeneradeMapMiniature()
     {
+        var gr = Ground.Instance;
+
+        Instance.orthographicSize =  gr.RowCountOfBlocks > gr.ColCountOfBlocks ? gr.RowCountOfBlocks : gr.ColCountOfBlocks;
+        Instance.orthographicSize *= MapBlock.WORLD_BLOCK_SIZE / 2;
+        Instance.transform.position = new Vector3(
+            gr.ColCountOfBlocks * MapBlock.WORLD_BLOCK_SIZE / 2,
+            gr.RowCountOfBlocks * MapBlock.WORLD_BLOCK_SIZE / 2,
+            Instance.transform.position.z
+        );
+
         Instance.cullingMask = mapLayer.value;
         Instance.targetTexture = map;
         Instance.enabled = true;

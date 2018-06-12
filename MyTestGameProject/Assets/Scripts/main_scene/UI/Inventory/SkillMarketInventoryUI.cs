@@ -45,7 +45,7 @@ public class SkillMarketInventoryUI : AInventoryUI
 
     override public void RefreshUI()
     {
-        if (!gameObject.activeSelf)
+        if (!gameObject.activeInHierarchy)
             return;
 
         var savedSkills = GameManager.Instance.PlayerProgress.skills.skills;

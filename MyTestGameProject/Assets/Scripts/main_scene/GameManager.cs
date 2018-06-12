@@ -1,10 +1,11 @@
 ﻿using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public enum SceneIndex { MAIN_MENU = 0, MARKET, LEVEL, LOADING_SCREEN = -1 }
+    public enum SceneIndex { MAIN_MENU, MARKET, LEVEL, LOADING_SCREEN}
     public static GameManager Instance { get; private set; }
     
     bool gamePaused;
@@ -64,6 +65,8 @@ public class GameManager : MonoBehaviour
 
     void Awake()
     {
+        Debug.Log("Awake");
+
         Localization.SetLanguage(SystemLanguage.Russian);
         //Localization.SetLanguage(SystemLanguage.English);
 
@@ -101,8 +104,14 @@ public class GameManager : MonoBehaviour
             Instance.Resume();
     }
 
+    private void Start()
+    {
+        Debug.Log("Start");
+    }
+
     private void OnEnable()
     {
+        Debug.Log("OnEnable");
         SceneManager.sceneLoaded += OnLevelLoaded;
     }
 
@@ -113,6 +122,8 @@ public class GameManager : MonoBehaviour
 
     void OnLevelLoaded(Scene scene, LoadSceneMode mode)
     {
+        Debug.Log("OnLevelLoaded    " + scene.name + "    " + mode);
+
         var index = (SceneIndex)scene.buildIndex;
 
         switch (index)
@@ -127,6 +138,12 @@ public class GameManager : MonoBehaviour
                 break;
             case SceneIndex.LEVEL:
                 SoundManager.Instance.PlaySound(new SoundChannel.ClipSet(SoundManager.Instance.MusicLevel, true), SoundManager.SoundType.MUSIC);
+
+                Pause();
+                Ground.Instance.OnGenerationDone += Resume;
+                Ground.Instance.OnGenerationDone += InitPlayer;
+                Ground.Instance.GeneradeMap(rows, cols);
+
                 break;
             case SceneIndex.LOADING_SCREEN:
                 break;
@@ -172,12 +189,6 @@ public class GameManager : MonoBehaviour
         ResetPlayerNonmoneyScore();
 
         playerProgress.Save();
-    }
-
-    public void WaitForLevelGenerated()
-    {
-        Instance.Pause();
-        Ground.Instance.OnGenerationDone += Instance.Resume;
     }
 
     public void InitPlayer()
@@ -266,7 +277,7 @@ public class GameManager : MonoBehaviour
         if (secondSkill.Skill != null)
             secondSkill.SkillStats = secondSkill.Skill.CalcUpgradedStats(playerProgress.skills.skills.Find((t) => { return t.Id == secondSkill.Skill.Id; }).Upgrades);
 
-        SceneManager.LoadScene(2);
+        LoadScene(SceneIndex.LEVEL);
     }
 
     public void LoadMarket()
@@ -274,7 +285,7 @@ public class GameManager : MonoBehaviour
         if (BeforeLoadLevel != null)
             BeforeLoadLevel(SceneIndex.MARKET, level);
 
-        SceneManager.LoadScene(1);
+        LoadScene(SceneIndex.MARKET);
     }
 
     public void LoadMainMenu()
@@ -292,7 +303,13 @@ public class GameManager : MonoBehaviour
         if (BeforeLoadLevel != null)
             BeforeLoadLevel(SceneIndex.MAIN_MENU, level);
 
-        SceneManager.LoadScene(0);
+        LoadScene(SceneIndex.MAIN_MENU);
+    }
+
+    void LoadScene(SceneIndex index)
+    {
+        LoadingScreenManager.NextLevel = index;
+        SceneManager.LoadScene((int)SceneIndex.LOADING_SCREEN);
     }
 
     private void ReconfigureLevelSettings()

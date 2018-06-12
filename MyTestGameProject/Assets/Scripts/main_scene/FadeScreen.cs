@@ -46,9 +46,9 @@ public class FadeScreen : MonoBehaviour
 
         while (time < duration)
         {
-            time += Time.deltaTime;
+            time += Time.unscaledDeltaTime;
 
-            cg.alpha += t * Time.deltaTime / duration;
+            cg.alpha += t * Time.unscaledDeltaTime / duration;
 
             yield return null;
         }
@@ -97,9 +97,9 @@ public class FadeScreen : MonoBehaviour
 
         while (time < duration)
         {
-            time += Time.deltaTime;
+            time += Time.unscaledDeltaTime;
 
-            cg.alpha += t * Time.deltaTime / duration;
+            cg.alpha += t * Time.unscaledDeltaTime / duration;
 
             yield return null;
         }

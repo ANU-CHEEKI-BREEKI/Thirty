@@ -66,7 +66,7 @@ public class MarketConsumablesUI : AInventoryUI
 
     override public void RefreshUI()
     {
-        if (!gameObject.activeSelf)
+        if (!gameObject.activeInHierarchy)
             return;
 
         int cnt = inventory.Count;

@@ -13,11 +13,15 @@ public sealed class Localization
 
     static public string current_languade { get; private set; }
 
-    static public string downloading { get; private set; }
+    static public string loading { get; private set; }
+    static public string level_generading { get; private set; }
+    static public string resoures_loadind { get; private set; }
 
     static public string play_game { get; private set; }
     static public string settings { get; private set; }
     static public string squad { get; private set; }
+    static public string developers { get; private set; }
+
 
     static public string healtarget_weakest { get; private set; }
     static public string healtarget_strongest { get; private set; }

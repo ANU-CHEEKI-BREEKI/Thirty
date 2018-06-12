@@ -40,14 +40,9 @@ public class ToMainmenu : MonoBehaviour
 
     void FadeOn()
     {
-        if (!GameManager.Instance.GamePaused)
-        {
-            FadeScreen ds = GameObject.FindWithTag("DarkScreen").GetComponent<FadeScreen>();
-            ds.OnFadeOn += GameManager.Instance.LoadMainMenu;
+        FadeScreen ds = GameObject.FindWithTag("DarkScreen").GetComponent<FadeScreen>();
+        ds.OnFadeOn += GameManager.Instance.LoadMainMenu;
 
-            ds.FadeOn(0.5f);
-        }
-        else
-            GameManager.Instance.LoadMainMenu();
+        ds.FadeOn(0.5f);
     }
 }

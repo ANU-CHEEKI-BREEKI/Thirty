@@ -203,7 +203,7 @@ public class TipsPanel : MonoBehaviour, IDragHandler, IBeginDragHandler, IPointe
 
         yield return new WaitForEndOfFrame();
 
-        if (!gameObject.activeSelf)
+        if (!gameObject.activeInHierarchy)
         {
             ThisTransform.position = GetPosOnScreen(worldPosOnScreen);
             gameObject.SetActive(true);

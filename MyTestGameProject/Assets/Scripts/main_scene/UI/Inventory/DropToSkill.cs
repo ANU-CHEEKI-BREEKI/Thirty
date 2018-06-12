@@ -34,7 +34,7 @@ public class DropToSkill : ADropToMe
 
     public override bool CanGetFromThisIventory(AStack aStack)
     {
-        SkillStack stack = aStack as SkillStack;
+        //SkillStack stack = aStack as SkillStack;
         return true;
     }
 

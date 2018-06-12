@@ -1,6 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
+[RequireComponent(typeof(Camera))]
 public class CameraController : MonoBehaviour
 {
 
@@ -26,7 +27,7 @@ public class CameraController : MonoBehaviour
         thisTransform = transform;
         squadForFollow = GameObject.FindWithTag("Player").GetComponent<Squad>();
 
-        thisCam = Camera.main;
+        thisCam = GetComponent<Camera>();
 
         defaultCameraSize = thisCam.orthographicSize;
     }

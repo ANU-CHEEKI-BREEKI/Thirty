@@ -67,10 +67,10 @@
     <Compile Include="Assets\2d-extras-master\Tilemap\Brushes\Tint Brush\Scripts\Editor\TintBrush.cs" />
     <Compile Include="Assets\2d-extras-master\Tilemap\Tiles\Rule Tile\Scripts\Editor\RuleTileEditor.cs" />
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>D:/development/unity/mytestgame/MyTestGameProject/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>D:/development/unity/MyGame - Thirty/Game/MyTestGameProject/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>D:/development/unity/mytestgame/MyTestGameProject/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>D:/development/unity/MyGame - Thirty/Game/MyTestGameProject/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -307,10 +307,10 @@
       <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="TextMeshPro-2017.3-1.0.56-Editor">
-      <HintPath>D:/development/unity/mytestgame/MyTestGameProject/Assets/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.3-1.0.56-Editor.dll</HintPath>
+      <HintPath>D:/development/unity/MyGame - Thirty/Game/MyTestGameProject/Assets/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.3-1.0.56-Editor.dll</HintPath>
     </Reference>
     <Reference Include="TextMeshPro-2017.3-1.0.56-Runtime">
-      <HintPath>D:/development/unity/mytestgame/MyTestGameProject/Assets/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.3-1.0.56-Runtime.dll</HintPath>
+      <HintPath>D:/development/unity/MyGame - Thirty/Game/MyTestGameProject/Assets/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.3-1.0.56-Runtime.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.Advertisements">
       <HintPath>C:/Users/ANU CHEEKI BREEKI/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.7/Editor/UnityEditor.Advertisements.dll</HintPath>

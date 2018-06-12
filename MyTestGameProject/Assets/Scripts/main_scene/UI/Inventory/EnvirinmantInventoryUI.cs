@@ -272,7 +272,7 @@ public class EnvirinmantInventoryUI : AInventoryUI
 
     override public void RefreshUI()
     {
-        if (!gameObject.activeSelf)
+        if (!gameObject.activeInHierarchy)
             return;
 
         ClearEnvironmantInventoryIcons();

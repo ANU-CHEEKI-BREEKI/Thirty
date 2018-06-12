@@ -56,7 +56,7 @@ public class SquadInventoryUI : AInventoryUI
 
     override public void RefreshUI()
     {
-        if (!gameObject.activeSelf)
+        if (!gameObject.activeInHierarchy)
             return;
 
         //Equipment

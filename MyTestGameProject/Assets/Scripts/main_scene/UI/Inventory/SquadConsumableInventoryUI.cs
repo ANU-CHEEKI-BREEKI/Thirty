@@ -30,7 +30,7 @@ public class SquadConsumableInventoryUI : AInventoryUI
         if (Squad.playerSquadInstance == null)
             return;
 
-        if (!gameObject.activeSelf)
+        if (!gameObject.activeInHierarchy)
             return;
 
         var squadConsumableStack = Squad.playerSquadInstance.Inventory.FirstConsumable;
