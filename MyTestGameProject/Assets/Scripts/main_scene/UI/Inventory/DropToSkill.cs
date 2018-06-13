@@ -13,7 +13,7 @@ public class DropToSkill : ADropToMe
     {
         SkillStack stack = aStack as SkillStack;
 
-        var skillSaves = GameManager.Instance.PlayerProgress.skills;
+        var skillSaves = GameManager.Instance.PlayerProgress.Skills;
         switch (skillNum)
         {
             case SkillNum.FIRS:
@@ -27,7 +27,7 @@ public class DropToSkill : ADropToMe
                 skillSaves.secondSkill = Squad.playerSquadInstance.Inventory.SecondSkill.Skill;
                 break;
         }
-        GameManager.Instance.PlayerProgress.skills.Save();
+        GameManager.Instance.PlayerProgress.Skills.Save();
 
         return true;
     }

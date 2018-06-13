@@ -60,8 +60,8 @@ public class HospitalRoom : MonoBehaviour
     private void Converter_OnCliclOk()
     {
         //sub silver and save progress
-        GameManager.Instance.PlayerProgress.score.silver.Value -= converter.OutputValue;
-        GameManager.Instance.PlayerProgress.score.Save();
+        GameManager.Instance.PlayerProgress.Score.silver.Value -= converter.OutputValue;
+        GameManager.Instance.PlayerProgress.Score.Save();
 
         //heal the units
         List<Unit> weak = new List<Unit>();
@@ -133,7 +133,7 @@ public class HospitalRoom : MonoBehaviour
         converter.OutputValue = neededHealth;
         float cost = converter.InputValue;
 
-        float silver = GameManager.Instance.PlayerProgress.score.silver.Value;
+        float silver = GameManager.Instance.PlayerProgress.Score.silver.Value;
         if (cost > silver)
             cost = silver;
 

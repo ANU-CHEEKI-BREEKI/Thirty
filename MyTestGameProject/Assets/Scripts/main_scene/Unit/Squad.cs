@@ -280,16 +280,16 @@ public class Squad : MonoBehaviour
         {
             var progress = GameManager.Instance.PlayerProgress;
 
-            SetUnitsStats(progress.stats);
-            var skill = progress.skills.firstSkill;
+            SetUnitsStats(progress.Stats);
+            var skill = progress.Skills.firstSkill;
             inventory.FirstSkill.Skill = skill;
             if(skill != null)
-                inventory.FirstSkill.SkillStats = skill.CalcUpgradedStats(progress.skills.skills.Find((t)=> { return t.Id == skill.Id; }).Upgrades);
+                inventory.FirstSkill.SkillStats = skill.CalcUpgradedStats(progress.Skills.skills.Find((t)=> { return t.Id == skill.Id; }).Upgrades);
 
-            skill = progress.skills.secondSkill;
-            inventory.SecondSkill.Skill = progress.skills.secondSkill;
+            skill = progress.Skills.secondSkill;
+            inventory.SecondSkill.Skill = progress.Skills.secondSkill;
             if (skill != null)
-                inventory.SecondSkill.SkillStats = skill.CalcUpgradedStats(progress.skills.skills.Find((t) => { return t.Id == skill.Id; }).Upgrades);
+                inventory.SecondSkill.SkillStats = skill.CalcUpgradedStats(progress.Skills.skills.Find((t) => { return t.Id == skill.Id; }).Upgrades);
         }
     }
 

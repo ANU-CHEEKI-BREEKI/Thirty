@@ -1,38 +1,49 @@
 ﻿using System;
+using UnityEngine;
 using System.Collections.Generic;
 
 [Serializable]
 public class PlayerProgress : ISavable, IResetable
 {
-    public DSPlayerScore score;
-    public DSUnitStats stats;
-    public DSPlayerSkills skills;
+    [SerializeField] DSFlags flags;
+    [SerializeField] DSPlayerScore score;
+    [SerializeField] DSUnitStats stats;
+    [SerializeField] DSPlayerSkills skills;
+
+    public DSFlags Flags { get { return flags; } private set { flags = value; } }
+    public DSPlayerScore Score { get { return score; } private set { score = value; } }
+    public DSUnitStats Stats { get { return stats; } private set { stats = value; } }
+    public DSPlayerSkills Skills { get { return skills; } private set { skills = value; } }
 
     public PlayerProgress()
     {
-        score = new DSPlayerScore();
-        stats = new DSUnitStats();
-        skills = new DSPlayerSkills();
+        Flags = new DSFlags();
+        Score = new DSPlayerScore();
+        Stats = new DSUnitStats();
+        Skills = new DSPlayerSkills();
     }
 
     public void Load()
     {
-        score.Load();
-        stats.Load();
-        skills.Load();
-    }   
+        Flags.Load();
+        Score.Load();
+        Stats.Load();
+        Skills.Load();
+    }
 
     public void Save()
     {
-        score.Save();
-        stats.Save();
-        skills.Save();
+        Flags.Save();
+        Score.Save();
+        Stats.Save();
+        Skills.Save();
     }
 
     public void Reset()
     {
-        score.Reset();
-        stats.Reset();
-        skills.Reset();
+        Flags.Reset();
+        Score.Reset();
+        Stats.Reset();
+        Skills.Reset();
     }
 }

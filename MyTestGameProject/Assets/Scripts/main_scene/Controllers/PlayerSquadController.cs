@@ -61,7 +61,7 @@ public class PlayerSquadController : MonoBehaviour,  IPointerDownHandler, IPoint
 
     void Start ()
     {
-        ground = GameObject.FindWithTag("Ground").GetComponent<Ground>();
+        ground = Ground.Instance;
         squad = Squad.playerSquadInstance;
 
         lineRenderer = gameObject.GetComponent<LineRenderer>();
@@ -264,30 +264,26 @@ public class PlayerSquadController : MonoBehaviour,  IPointerDownHandler, IPoint
                         Mathf.Round(squad.PositionsTransform.position.y / MapBlock.BLOCK_SCALE)
                     );
                     endFindPath = new Vector2(
-                        Mathf.Round(movePosition.x / MapBlock.BLOCK_SCALE),
-                        Mathf.Round(movePosition.y / MapBlock.BLOCK_SCALE)
+                        Mathf.Round((movePosition.x- MapBlock.BLOCK_SCALE / 2f) / MapBlock.BLOCK_SCALE),
+                        Mathf.Round((movePosition.y - MapBlock.BLOCK_SCALE / 2f) / MapBlock.BLOCK_SCALE)
                     );
-
-                    if (endFindPath.y >= 0 && endFindPath.y < ground.RowCountOfBlocks * MapBlock.WORLD_BLOCK_SIZE / MapBlock.BLOCK_SCALE &&
-                        endFindPath.x >= 0 && endFindPath.x < ground.ColCountOfBlocks * MapBlock.WORLD_BLOCK_SIZE / MapBlock.BLOCK_SCALE)
+                                        
+                    if (!ground.Grid[(int)endFindPath.y][(int)endFindPath.x])
                     {
-                        if (!ground.Grid[(int)endFindPath.y][(int)endFindPath.x])
-                        {
-                            RaycastHit2D rhit = Physics2D.Linecast(squad.PositionsTransform.position, movePosition, directFindPathLayers.value);
+                        RaycastHit2D rhit = Physics2D.Linecast(squad.PositionsTransform.position, movePosition, directFindPathLayers.value);
 
-                            if (rhit.collider == null)
-                            {
-                                path = new List<Vector3>();
-                                path.Add(squad.transform.position);
-                                path.Add(movePosition);
-                                squad.SetEndMovePositions(movePosition, lookRotation);
-                                squad.GoTo(path);
-                            }
-                            else
-                            {
-                                thread = new Thread(FindPath);
-                                thread.Start();
-                            }
+                        if (rhit.collider == null)
+                        {
+                            path = new List<Vector3>();
+                            path.Add(squad.transform.position);
+                            path.Add(movePosition);
+                            squad.SetEndMovePositions(movePosition, lookRotation);
+                            squad.GoTo(path);
+                        }
+                        else
+                        {
+                            thread = new Thread(FindPath);
+                            thread.Start();
                         }
                     }
                 }
@@ -335,7 +331,7 @@ public class PlayerSquadController : MonoBehaviour,  IPointerDownHandler, IPoint
         for (int i = 0; i < rHitsCount; i++)
         {
             Unit unit = rHits[i].transform.gameObject.GetComponent<Unit>();
-            if (unit != null)
+            if (unit != null && unit.IsAlive)
                 unit.Selected = true;
         }
     }

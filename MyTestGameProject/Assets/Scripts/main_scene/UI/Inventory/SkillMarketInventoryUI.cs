@@ -48,7 +48,7 @@ public class SkillMarketInventoryUI : AInventoryUI
         if (!gameObject.activeInHierarchy)
             return;
 
-        var savedSkills = GameManager.Instance.PlayerProgress.skills.skills;
+        var savedSkills = GameManager.Instance.PlayerProgress.Skills.skills;
 
         int cnt = skillCells.Length;
         for (int i = 0; i < cnt; i++)

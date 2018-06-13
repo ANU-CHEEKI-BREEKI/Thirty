@@ -29,8 +29,6 @@ public class Ground : MonoBehaviour
     [SerializeField] [Range(10, 90)] float exitOnColPercentOfMap = 50;
     [SerializeField] [Range(10, 90)] float exitOnRowPercentOfMap = 50;
 
-    [SerializeField] Camera minimapCamera;
-
     bool[][] rightWalls;
     bool[][] topWalls;
 
@@ -52,28 +50,19 @@ public class Ground : MonoBehaviour
     int fullCountOfBlock;
     int loadedBlockCount;
 
-    float loadingProgress;
-    public float LoadingProgress { get { return loadingProgress; } }
+    float progress;
+    public float Progress { get { return progress; } }
 
-    bool loadingIsDone;
-    public bool LoadingIsDone { get { return loadingIsDone; } }
+    bool workIsDone;
+    public bool WorkIsDone { get { return workIsDone; } }
 
-    float generationProgress;
-    public float GenerationProgress { get { return generationProgress; } }
-
-    bool generationIsDone;
-    public bool GenerationIsDone { get { return generationIsDone; } }
+    public event Action OnWorkDone;
 
     public event Action OnGenerationDone;
 
     private void Awake()
     {
         Instance = this;
-        generationIsDone = false;
-        generationProgress = 0;
-
-        loadingIsDone = false;
-        loadingProgress = 0;
 
         if (createRandom)
             rnd = new System.Random();
@@ -94,6 +83,9 @@ public class Ground : MonoBehaviour
 
     IEnumerator LoadMapBlocksCo(Action actionOnLoaded)
     {
+        workIsDone = false;
+        progress = 0;
+
         blockContainers = new List<SameBlocksContainer>();
         TextAsset[] textAssets = Resources.LoadAll<TextAsset>(PATH_TO_GRIDS);
         StringReader fstream;
@@ -141,11 +133,14 @@ public class Ground : MonoBehaviour
                 }
             }
             Resources.UnloadAsset(textAssets[i]);
-            loadingProgress = (float)i / (cnt - 1);
+            progress = (float)i / (cnt - 1);
             yield return null;
         }
 
-        loadingIsDone = true;
+        workIsDone = true;
+
+        if (OnWorkDone != null)
+            OnWorkDone();
 
         if (actionOnLoaded != null)
             actionOnLoaded();
@@ -153,6 +148,9 @@ public class Ground : MonoBehaviour
 
     IEnumerator GeneradeMapCo()
     {
+        workIsDone = false;
+        progress = 0;
+
         // в игровом мире массивы распологаются снизу вверх, чтобы была привязка элементов
         // к коодринатам игрового мира. по этому, стены лабиринта будут верхние а не нижние
         int? seed;
@@ -256,15 +254,84 @@ public class Ground : MonoBehaviour
                 InsertToGrid(sameBlock.block);
 
                 loadedBlockCount++;
-                generationProgress = (float)loadedBlockCount / fullCountOfBlock;
+                progress = (float)loadedBlockCount / fullCountOfBlock;
 
                 yield return null;
             }
         }
 
-        generationIsDone = true;
+        workIsDone = true;
+
+        if (OnWorkDone != null)
+            OnWorkDone();
+        
         if (OnGenerationDone != null)
             OnGenerationDone();
+    }
+
+    public void RecalcMatrixByCurrentBlocks()
+    {
+        StartCoroutine(RecalcMatrixByCurrentBlocksCo());
+    }
+
+    IEnumerator RecalcMatrixByCurrentBlocksCo()
+    {
+        workIsDone = false;
+        progress = 0;
+
+        Transform tr = transform;
+        int cnt = tr.childCount;
+        
+        List<GroundBlock> gl = new List<GroundBlock>(cnt);
+        int maxX = 0;
+        int maxY = 0;
+
+        for (int i = 0; i < cnt; i++)
+        {
+            var gb = tr.GetChild(i).GetComponent<GroundBlock>();
+            gl.Add(gb);
+            gb.LoadBlockEntryesFromFile();
+            gb.block.WorldPosition = new Vector2(gb.posInMinigrid.x * MapBlock.WORLD_BLOCK_SIZE, gb.posInMinigrid.y * MapBlock.WORLD_BLOCK_SIZE);
+
+            if (maxX < gb.posInMinigrid.x)
+                maxX = (int)gb.posInMinigrid.x;
+
+            if (maxY < gb.posInMinigrid.y)
+                    maxY = (int)gb.posInMinigrid.y;
+
+            progress = i / cnt / 2;
+            yield return null;
+        }
+
+        maxX++;
+        maxY++;
+
+        MiniGrid = new GroundBlock[maxY][];
+        for (int row = 0; row < maxY; row++)
+            MiniGrid[row] = new GroundBlock[maxX];
+
+        Grid = new bool[maxY * MapBlock.BLOCK_SIZE][];
+        for (int row = 0; row < Grid.Length; row++)
+            Grid[row] = new bool[maxX * MapBlock.BLOCK_SIZE];
+
+        rowCountOfBlocks = maxY;
+        colCountOfBlocks = maxX;
+
+        for (int i = 0; i < cnt; i++)
+        {
+            var gb = gl[i];
+
+            MiniGrid[(int)gb.posInMinigrid.x][(int)gb.posInMinigrid.y] = gb;
+            InsertToGrid(gb.block);
+
+            progress = i / cnt / 2 + 0.5f;
+            yield return null;
+        }
+
+        workIsDone = true;       
+
+        if (OnWorkDone != null)
+            OnWorkDone();
     }
 
     void GetEntranceAndExit(out Vector2 entranceBlockPosition, out Vector2 exitBlockPosition)

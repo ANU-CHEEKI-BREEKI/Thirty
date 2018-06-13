@@ -7,7 +7,7 @@ using UnityEngine.Tilemaps;
 public class GroundBlock : MonoBehaviour
 {
     public MapBlock block;
-    [HideInInspector] public Vector2 posInMinigrid;
+    public Vector2 posInMinigrid;
 
     [ContextMenu("RecalculateMabBlockMatrix")]
     public void RecalculateMabBlockMatrix()
@@ -83,6 +83,13 @@ public class GroundBlock : MonoBehaviour
         }
     }
 
+    [ContextMenu("LoadBlockEntryesFromFile")]
+    public void LoadBlockEntryesFromFile()
+    {
+        string path = @"Assets\Resources\" + Ground.PATH_TO_GRIDS + name + ".xml";
+        block = Extensions.Deserialize(path);
+    }
+
     MapBlock blc;
     private void OnDrawGizmos()
     {
@@ -109,6 +116,4 @@ public class GroundBlock : MonoBehaviour
                         );
         }
     }
-
-
 }

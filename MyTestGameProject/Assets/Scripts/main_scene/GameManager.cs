@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public enum SceneIndex { MAIN_MENU, MARKET, LEVEL, LOADING_SCREEN}
+    public enum SceneIndex { MAIN_MENU, MARKET, LEVEL, LOADING_SCREEN, LEVEL_TRAINING }
     public static GameManager Instance { get; private set; }
     
     bool gamePaused;
@@ -147,6 +147,14 @@ public class GameManager : MonoBehaviour
                 break;
             case SceneIndex.LOADING_SCREEN:
                 break;
+            case SceneIndex.LEVEL_TRAINING:
+
+                Pause();
+                Ground.Instance.OnWorkDone += Resume;
+                Ground.Instance.OnWorkDone += InitPlayer;
+                Ground.Instance.RecalcMatrixByCurrentBlocks();
+
+                break;
             default:
                 break;
         }
@@ -163,8 +171,8 @@ public class GameManager : MonoBehaviour
     /// </summary>
     public void ResetPlayerNonmoneyScore()
     {
-        playerProgress.score.expirience.Value = 0;
-        playerProgress.score.silver.Value = 0;
+        playerProgress.Score.expirience.Value = 0;
+        playerProgress.Score.silver.Value = 0;
     }
 
     void OnUnhendeledException(string condition, string stackTrace, LogType type)
@@ -273,9 +281,9 @@ public class GameManager : MonoBehaviour
         var firstSkill = Squad.playerSquadInstance.Inventory.FirstSkill;
         var secondSkill = Squad.playerSquadInstance.Inventory.SecondSkill;
         if (firstSkill.Skill != null)
-            firstSkill.SkillStats = firstSkill.Skill.CalcUpgradedStats(playerProgress.skills.skills.Find((t) => { return t.Id == firstSkill.Skill.Id; }).Upgrades);
+            firstSkill.SkillStats = firstSkill.Skill.CalcUpgradedStats(playerProgress.Skills.skills.Find((t) => { return t.Id == firstSkill.Skill.Id; }).Upgrades);
         if (secondSkill.Skill != null)
-            secondSkill.SkillStats = secondSkill.Skill.CalcUpgradedStats(playerProgress.skills.skills.Find((t) => { return t.Id == secondSkill.Skill.Id; }).Upgrades);
+            secondSkill.SkillStats = secondSkill.Skill.CalcUpgradedStats(playerProgress.Skills.skills.Find((t) => { return t.Id == secondSkill.Skill.Id; }).Upgrades);
 
         LoadScene(SceneIndex.LEVEL);
     }
@@ -304,6 +312,16 @@ public class GameManager : MonoBehaviour
             BeforeLoadLevel(SceneIndex.MAIN_MENU, level);
 
         LoadScene(SceneIndex.MAIN_MENU);
+    }
+
+    public void LoadTrainingLevel()
+    {
+        if (Squad.playerSquadInstance != null)
+        {
+            Destroy(Squad.playerSquadInstance.gameObject);
+            Squad.playerSquadInstance = null;
+        }
+        LoadScene(SceneIndex.LEVEL_TRAINING);
     }
 
     void LoadScene(SceneIndex index)
@@ -380,21 +398,21 @@ public class GameManager : MonoBehaviour
     [ContextMenu("ResetScore")]
     public void ResetScore()
     {
-        playerProgress.score = new DSPlayerScore();
-        playerProgress.score.Save();
+        playerProgress.Score.Reset();
+        playerProgress.Score.Save();
     }
 
     [ContextMenu("ResetStats")]
     public void ResetStats()
     {
-        playerProgress.stats = new DSUnitStats();
-        playerProgress.stats.Save();
+        playerProgress.Stats.Reset();
+        playerProgress.Stats.Save();
     }
 
     [ContextMenu("ResetSkills")]
     public void ResetSkills()
     {
-        playerProgress.skills = new DSPlayerSkills();
-        playerProgress.skills.Save();
+        playerProgress.Skills.Reset();
+        playerProgress.Skills.Save();
     }
 }

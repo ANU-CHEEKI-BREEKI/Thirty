@@ -89,6 +89,7 @@ public class Unit : MonoBehaviour
     [SerializeField] [Range(0, 5)] float findTargetDeltaTime = 0.2f;
     [SerializeField] [Range(0, 5)] float attacInRanksDeltaTime = 1f;
     [SerializeField] [Range(0, 5)] float attacInPhalanxDeltaTime = 0.5f;
+    [SerializeField] [Range(0, 5)] float timeForDeath = 1f;
     [Space]
     [SerializeField] [Range(0, 180)] float frontPushingAngleException = 40;
     [SerializeField] [Range(0, 360)] float pushingAngle = 40;
@@ -199,6 +200,7 @@ public class Unit : MonoBehaviour
     float timerForFindTarget = 0;
     float timerPushingAlly = 0;
     float timerForUnion = 0;
+    float timerForLateDeath = 0;
 
     public event Action<bool> OnRunValueChanged;
     bool running = false;
@@ -252,6 +254,8 @@ public class Unit : MonoBehaviour
         get { return hit; }
         private set { hit = value; if (OnHitChanged != null) OnHitChanged(hit); }
     }
+
+    public bool IsAlive { get; private set; } = true;
 
     void Awake()
     {
@@ -380,12 +384,6 @@ public class Unit : MonoBehaviour
             squad.UnitDeath(this);
         }
 
-        if (OnUnitDeath != null)
-            OnUnitDeath();
-
-        selection.SetActive(false);
-
-
         if (DeatUnitsContainer == null)
         {
             var alldeads = GameObject.Find("AllDeadUnits");
@@ -396,12 +394,22 @@ public class Unit : MonoBehaviour
 
         ThisTransform.parent = DeatUnitsContainer;
 
-        Destroy(GetComponent<Collider2D>());
-        Destroy(rigidbody2D);
-        Destroy(this);
+        Selected = false;
+
+        IsAlive = false;
+    }
+
+    void LateDeath()
+    {
+        if (OnUnitDeath != null)
+            OnUnitDeath();
 
         if (OnAnyUnitDeath != null)
             OnAnyUnitDeath();
+
+        Destroy(GetComponent<Collider2D>());
+        Destroy(rigidbody2D);
+        Destroy(this);
     }
 
     void Squad_OnUnitStatsChanged(UnitStats oldS, UnitStats newS)
@@ -657,62 +665,71 @@ public class Unit : MonoBehaviour
     void Update()
     {
         float deltaTime = Time.deltaTime;
-
         shadow.rotation = Quaternion.identity;
 
-        if (squad != null)
+        if (IsAlive)
         {
-            if (timerForCheckEquipment < 0.5f)
-                timerForCheckEquipment += deltaTime;
-            else            
-                CheckEquipment();
-
-            squad.SumPositionUnit(this);
-        }
-
-        if (olreadyNotPushingAlly && pushedUnit.Count == 0)
-        {
-            if (timerPushingAlly < delayAfterPushingAlly)
+            if (squad != null)
             {
-                timerPushingAlly += deltaTime;
+                if (timerForCheckEquipment < 0.5f)
+                    timerForCheckEquipment += deltaTime;
+                else
+                    CheckEquipment();
+
+                squad.SumPositionUnit(this);
             }
-            else
-            {
-                timerPushingAlly = 0;
-                pushingAlly = false;
-            }
-        }
-        else
-        {
-            olreadyNotPushingAlly = false;
-        }
 
-        if (delayToFindTargetAndAttack <= 0)
-        {
-            if (!stanned && !pushingAlly)
+            if (olreadyNotPushingAlly && pushedUnit.Count == 0)
             {
-                if (timerForAttack < currentAttackDeltaTime)
+                if (timerPushingAlly < delayAfterPushingAlly)
                 {
-                    timerForAttack += deltaTime;
-                    if(Hit) Hit = false;
+                    timerPushingAlly += deltaTime;
                 }
                 else
-                    AttackTarget();
-
-                if (timerForFindTarget < findTargetDeltaTime)
-                    timerForFindTarget += deltaTime;
-                else
-                    FindTarget();
+                {
+                    timerPushingAlly = 0;
+                    pushingAlly = false;
+                }
+            }
+            else
+            {
+                olreadyNotPushingAlly = false;
             }
 
-            if (timerForUnion < unionCheckDeltatime)
-                timerForUnion += deltaTime;
+            if (delayToFindTargetAndAttack <= 0)
+            {
+                if (!stanned && !pushingAlly)
+                {
+                    if (timerForAttack < currentAttackDeltaTime)
+                    {
+                        timerForAttack += deltaTime;
+                        if (Hit) Hit = false;
+                    }
+                    else
+                        AttackTarget();
+
+                    if (timerForFindTarget < findTargetDeltaTime)
+                        timerForFindTarget += deltaTime;
+                    else
+                        FindTarget();
+                }
+
+                if (timerForUnion < unionCheckDeltatime)
+                    timerForUnion += deltaTime;
+                else
+                    CheckToUnion();
+            }
             else
-                CheckToUnion();
+            {
+                delayToFindTargetAndAttack -= deltaTime;
+            }
         }
         else
         {
-            delayToFindTargetAndAttack -= deltaTime;
+            if (timerForLateDeath < timeForDeath)
+                timerForLateDeath += deltaTime;
+            else
+                LateDeath();
         }
     }
 
@@ -736,13 +753,16 @@ public class Unit : MonoBehaviour
 
         if (squad != null)
         {
+            Unit unit = null;
             rHit = Cast(rHitLayerEnemy);
+            if(rHit)
+                unit = rHit.transform.gameObject.GetComponent<Unit>();
 
             switch (squad.CurrentFormation)
             {
                 case FormationStats.Formations.PHALANX:
                     if (rHit)
-                        SetTarget(rHit.transform.gameObject.GetComponent<Unit>());
+                        SetTarget(unit);
                     else
                         SetTarget(null);
 
@@ -753,15 +773,14 @@ public class Unit : MonoBehaviour
                     {
                         if (rHit)
                         {
-                            Unit unit = rHit.transform.gameObject.GetComponent<Unit>();
-                            if (unit.selected)
+                            if (unit.selected && unit.IsAlive)
                                 SetTarget(unit);
                         }
                     }
                     else
                     {
                         float dist = Vector2.Distance(target.ThisTransform.position, ThisTransform.position);
-                        if (dist > stats.AttackDistance || !target.Selected)
+                        if (!target.IsAlive || dist > stats.AttackDistance || !target.Selected)
                             SetTarget(null);
                     }
 
@@ -914,105 +933,114 @@ public class Unit : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (squad != null)
-            Moving();
+        if (IsAlive)
+        {
+            if (squad != null)
+                Moving();
 
-        if (Running && !pushingAlly && !stanned)
-        {
-            if (currentSpeed < stats.Speed)
-                currentSpeed += stats.Acceleration * Time.deltaTime;
+            if (Running && !pushingAlly && !stanned)
+            {
+                if (currentSpeed < stats.Speed)
+                    currentSpeed += stats.Acceleration * Time.deltaTime;
+                else
+                    currentSpeed = stats.Speed;
+            }
             else
-                currentSpeed = stats.Speed;
-        }
-        else
-        {
-            currentSpeed = 0;
+            {
+                currentSpeed = 0;
+            }
         }
     }
 
     void TakeHitFromUnit(Unit enemy)
     {
-        Quaternion enemyRot = Quaternion.LookRotation(Vector3.forward, enemy.ThisTransform.position - ThisTransform.position);
-        float rot = enemyRot.eulerAngles.z - ThisTransform.rotation.eulerAngles.z;
-        rot = rot < 0 ? -rot : rot;
+        if (IsAlive)
+        {
+            Quaternion enemyRot = Quaternion.LookRotation(Vector3.forward, enemy.ThisTransform.position - ThisTransform.position);
+            float rot = enemyRot.eulerAngles.z - ThisTransform.rotation.eulerAngles.z;
+            rot = rot < 0 ? -rot : rot;
 
-        // if it attack from back
-        if (rot > stats.DefenceHalfSector && rot < 360 - stats.DefenceHalfSector)
-        {
-            takeHit = enemy.stats.Attack;
-        }
-        else
-        {
-            if (squad.CurrentFormation == FormationStats.Formations.PHALANX || target != null)
-                takeHit = enemy.stats.Attack * (1 - stats.Defence);
+            // if it attack from back
+            if (rot > stats.DefenceHalfSector && rot < 360 - stats.DefenceHalfSector)
+            {
+                takeHit = enemy.stats.Attack;
+            }
             else
-                //если нет цели и не фаланга (т.е. отряд пытается пробежать насквозь другой отряд)
-                //то не защищаться
-                takeHit = enemy.stats.Attack * (1 - stats.Defence * stats.DefenceGoingThrought);
-        }
+            {
+                if (squad.CurrentFormation == FormationStats.Formations.PHALANX || target != null)
+                    takeHit = enemy.stats.Attack * (1 - stats.Defence);
+                else
+                    //если нет цели и не фаланга (т.е. отряд пытается пробежать насквозь другой отряд)
+                    //то не защищаться
+                    takeHit = enemy.stats.Attack * (1 - stats.Defence * stats.DefenceGoingThrought);
+            }
 
-        if (squad.CurrentFormation == FormationStats.Formations.RANKS && target == null)
-        {
-            if (enemy.Selected && Vector2.Distance(ThisTransform.position, enemy.ThisTransform.position) <= stats.AttackDistance)
-                SetTarget(enemy);
-        }
+            if (squad.CurrentFormation == FormationStats.Formations.RANKS && target == null)
+            {
+                if (enemy.Selected && Vector2.Distance(ThisTransform.position, enemy.ThisTransform.position) <= stats.AttackDistance)
+                    SetTarget(enemy);
+            }
 
-        float dmg = 0;
-        //если враг попал по нам
-        if (UnityEngine.Random.value <= takeHit)
-        {
-            dmg = enemy.stats.Damage.BaseDamage + enemy.stats.Damage.ArmourDamage - stats.Armour;
-            if (dmg < enemy.stats.Damage.ArmourDamage)
-                dmg = enemy.stats.Damage.ArmourDamage;
+            float dmg = 0;
+            //если враг попал по нам
+            if (UnityEngine.Random.value <= takeHit)
+            {
+                dmg = enemy.stats.Damage.BaseDamage + enemy.stats.Damage.ArmourDamage - stats.Armour;
+                if (dmg < enemy.stats.Damage.ArmourDamage)
+                    dmg = enemy.stats.Damage.ArmourDamage;
 
-            TakeDamage(dmg, enemy.squad, enemy);
+                TakeDamage(dmg, enemy.squad, enemy);
+            }
         }
     }
 
     public void TakeHitFromArrow(Damage damage, Vector2 arrowStartPosition, Squad owner)
     {
-        float dmg = 0;
-
-        Quaternion enemyRot = Quaternion.LookRotation(Vector3.forward, (Vector3)arrowStartPosition - ThisTransform.position);
-        float rot = enemyRot.eulerAngles.z - ThisTransform.rotation.eulerAngles.z;
-        rot = rot < 0 ? -rot : rot;
-
-        float chanceTohit = 1 - stats.MissileBlock;
-
-        //если стрелы летят в спину
-        if (!(rot <= stats.DefenceHalfSector || rot >= 360 - stats.DefenceHalfSector))
+        if (IsAlive)
         {
-            //если есть щит, то увеличиваем шанс попадания (так как мы уже учли щит в статах)
-            if (squad != null && !squad.Inventory.Shield.Stats.Empty)
+            float dmg = 0;
+
+            Quaternion enemyRot = Quaternion.LookRotation(Vector3.forward, (Vector3)arrowStartPosition - ThisTransform.position);
+            float rot = enemyRot.eulerAngles.z - ThisTransform.rotation.eulerAngles.z;
+            rot = rot < 0 ? -rot : rot;
+
+            float chanceTohit = 1 - stats.MissileBlock;
+
+            //если стрелы летят в спину
+            if (!(rot <= stats.DefenceHalfSector || rot >= 360 - stats.DefenceHalfSector))
             {
-                var shieldMissileBlock = (squad.Inventory.Shield).Stats.MissileBlock;
+                //если есть щит, то увеличиваем шанс попадания (так как мы уже учли щит в статах)
+                if (squad != null && !squad.Inventory.Shield.Stats.Empty)
+                {
+                    var shieldMissileBlock = (squad.Inventory.Shield).Stats.MissileBlock;
 
-                if (squad.CurrentFormation != FormationStats.Formations.RISEDSHIELDS)
-                    shieldMissileBlock *= 0.5f;
+                    if (squad.CurrentFormation != FormationStats.Formations.RISEDSHIELDS)
+                        shieldMissileBlock *= 0.5f;
 
-                chanceTohit += shieldMissileBlock;
+                    chanceTohit += shieldMissileBlock;
+                }
             }
-        }
 
-        if (UnityEngine.Random.value <= chanceTohit)
-        {
-            dmg = damage.BaseDamage - stats.Armour;
+            if (UnityEngine.Random.value <= chanceTohit)
+            {
+                dmg = damage.BaseDamage + damage.ArmourDamage - stats.Armour;
 
-            //если щиты подняты, то учитываем их броню
-            if (squad != null && squad.CurrentFormation == FormationStats.Formations.RISEDSHIELDS)
-                dmg -= (squad.Inventory.Shield).Stats.Armour;
+                //если щиты подняты, то учитываем их броню
+                if (squad != null && squad.CurrentFormation == FormationStats.Formations.RISEDSHIELDS)
+                    dmg -= (squad.Inventory.Shield).Stats.Armour;
 
-            if (dmg < damage.ArmourDamage)
-                dmg = damage.ArmourDamage;
-            
-            TakeDamage(dmg, owner);
-        }
-        else
-        {
-            bool friendlyfire = false;
-            if (gameObject.layer != LayerMask.NameToLayer(Squad.UnitFraction.ENEMY.ToString()) && owner == Squad.playerSquadInstance)
-                friendlyfire = true;
-            ShowPopUpTakenDamageText("block", friendlyfire);
+                if (dmg < damage.ArmourDamage)
+                    dmg = damage.ArmourDamage;
+
+                TakeDamage(dmg, owner);
+            }
+            else
+            {
+                bool friendlyfire = false;
+                if (gameObject.layer != LayerMask.NameToLayer(Squad.UnitFraction.ENEMY.ToString()) && owner == Squad.playerSquadInstance)
+                    friendlyfire = true;
+                ShowPopUpTakenDamageText("block", friendlyfire);
+            }
         }
     }
 
@@ -1023,31 +1051,37 @@ public class Unit : MonoBehaviour
     /// <param name="damage"></param>
     public void TakeHit(Damage damage)
     {
-        float dmg = damage.BaseDamage - stats.Armour;
-                
-        if (dmg < damage.ArmourDamage)
-            dmg = damage.ArmourDamage;
+        if (IsAlive)
+        {
+            float dmg = damage.BaseDamage + damage.ArmourDamage - stats.Armour;
 
-        TakeDamage(dmg, null);
+            if (dmg < damage.ArmourDamage)
+                dmg = damage.ArmourDamage;
+
+            TakeDamage(dmg, null);
+        }
     }
 
     void TakeDamage(float damage, Squad owner, Unit enemy = null)
     {
-        if (Health - damage < 0)
-            damage = Health;
+        if (IsAlive)
+        {
+            if (Health - damage < 0)
+                damage = Health;
 
-        SoundManager.Instance.PlaySound(
-            new SoundChannel.ClipSet(
-                SoundManager.Instance.TakeDamage[UnityEngine.Random.Range(0, SoundManager.Instance.TakeDamage.Length - 1)],
-                false,
-                0.2f
-            ), 
-            SoundManager.SoundType.FX
-        );
+            SoundManager.Instance.PlaySound(
+                new SoundChannel.ClipSet(
+                    SoundManager.Instance.TakeDamage[UnityEngine.Random.Range(0, SoundManager.Instance.TakeDamage.Length - 1)],
+                    false,
+                    0.2f
+                ),
+                SoundManager.SoundType.FX
+            );
 
-        Health -= damage;
+            Health -= damage;
 
-        AfterTakingDamage(damage, owner);
+            AfterTakingDamage(damage, owner);
+        }
     }
 
     public void Heal(float health)
@@ -1100,7 +1134,7 @@ public class Unit : MonoBehaviour
     void AfterTakingDamage(float dmg, Squad owner)
     {
         if (squad != Squad.playerSquadInstance && owner == Squad.playerSquadInstance)
-            GameManager.Instance.PlayerProgress.score.expirience.Value += (int)dmg;
+            GameManager.Instance.PlayerProgress.Score.expirience.Value += (int)dmg;
 
         bool friendlyfire = false;
         if (gameObject.layer != LayerMask.NameToLayer(Squad.UnitFraction.ENEMY.ToString()) && owner == Squad.playerSquadInstance)

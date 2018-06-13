@@ -176,13 +176,13 @@ public class SkillUpgradeButton : MonoBehaviour, IDescriptionable, IPointerClick
     
     void Upgrade()
     {
-        var score = GameManager.Instance.PlayerProgress.score;
+        var score = GameManager.Instance.PlayerProgress.Score;
         if (score.EnoughtMoney(currentCost, DSPlayerScore.Currency.EXPIRIENCE))
         {
             score.SpendMoney(currentCost, DSPlayerScore.Currency.EXPIRIENCE);
             upgradeStats.level++;
 
-            GameManager.Instance.PlayerProgress.skills.Save();
+            GameManager.Instance.PlayerProgress.Skills.Save();
 
             Refresh();
             foreach (var item in nextButton)

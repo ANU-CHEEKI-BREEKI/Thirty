@@ -8,6 +8,9 @@ public class LevelGeneradingProgress : MonoBehaviour
 {
     [SerializeField]  [Range(0, 0.1f)] float deltaTime = 0.01f;
 
+    Ground gr;
+    ProgressIndicator ind;
+
     private void Awake()
     {
         GetComponent<CanvasGroup>().alpha = 1;
@@ -15,35 +18,34 @@ public class LevelGeneradingProgress : MonoBehaviour
 
     void Start()
     {
+        gr = Ground.Instance;
+        ind = ProgressIndicator.Instance;
+
         StartCoroutine(ShowProgress());
     }
     
     IEnumerator ShowProgress()
     {
-        var gr = Ground.Instance;
-        var ind = ProgressIndicator.Instance;
-
         if (ind != null)
         {
             ind.Name = Localization.resoures_loadind;
-            while (!gr.LoadingIsDone)
-            {
-                ind.Value = gr.LoadingProgress;
-                yield return new WaitForSecondsRealtime(deltaTime);
-            }
-            ind.Value = gr.LoadingProgress;
-            yield return new WaitForSecondsRealtime(deltaTime);
+            gr.OnWorkDone += Foo;
 
-            ind.Name = Localization.level_generading;
-            while (!gr.GenerationIsDone)
+            while (GameManager.Instance.GamePaused)
             {
-                ind.Value = gr.GenerationProgress;
+                ind.Value = gr.Progress;
                 yield return new WaitForSecondsRealtime(deltaTime);
             }
-            ind.Value = gr.GenerationProgress;
+            ind.Value = gr.Progress;
             yield return new WaitForSecondsRealtime(deltaTime);
         }
 
-        Destroy(gameObject);
+        Destroy(gameObject);        
+    }
+
+    void Foo()
+    {
+        ind.Name = Localization.level_generading; ind.Value = 0;
+        gr.OnWorkDone -= Foo;
     }
 }

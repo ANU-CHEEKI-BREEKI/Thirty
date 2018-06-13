@@ -76,7 +76,6 @@
     <Compile Include="Assets\Scripts\main_scene\Controllers\UnitAnimation.cs" />
     <Compile Include="Assets\Scripts\main_scene\Controllers\UnitAnimationController.cs" />
     <Compile Include="Assets\Scripts\main_scene\DebugCunvas.cs" />
-    <Compile Include="Assets\Scripts\main_scene\DebugTools.cs" />
     <Compile Include="Assets\Scripts\main_scene\DestroyOnAwake.cs" />
     <Compile Include="Assets\Scripts\main_scene\DroppedItem.cs" />
     <Compile Include="Assets\Scripts\main_scene\Durabilityable.cs" />
@@ -109,6 +108,7 @@
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\DataStorage\DataClasses\IResetable.cs" />
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\DataStorage\DataClasses\ISaveble.cs" />
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\DataStorage\DataClasses\PlayerProgress.cs" />
+    <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\DataStorage\DataClasses\PlayerProgress\DSFlags.cs" />
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\DataStorage\DataClasses\PlayerProgress\DSPlayerScore.cs" />
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\DataStorage\DataClasses\PlayerProgress\DSPlayerSkill.cs" />
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\DataStorage\DataClasses\PlayerProgress\DSPlayerSkills.cs" />
@@ -193,9 +193,6 @@
     <Compile Include="Assets\Scripts\main_scene\UI\NumberPickerDialogBox.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\PauseToggle.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\ResetPositionOnAwake.cs" />
-    <Compile Include="Assets\Scripts\main_scene\UI\ScenesButtons\ToLevel.cs" />
-    <Compile Include="Assets\Scripts\main_scene\UI\ScenesButtons\ToMainmenu.cs" />
-    <Compile Include="Assets\Scripts\main_scene\UI\ScenesButtons\ToMarket.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\SetActiveOnAwake.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\SettingsAudioSection.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\SettingsGraphixSection.cs" />
@@ -206,6 +203,7 @@
     <Compile Include="Assets\Scripts\main_scene\UI\SquadCerrentProp.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\SquadPropertyIndicator.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\TipsPanel.cs" />
+    <Compile Include="Assets\Scripts\main_scene\UI\ToAnotherSceneButton.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\Toast.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\ToggleDoubleCheckmarks.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\UiEvents.cs" />

@@ -66,7 +66,7 @@ public class Exit : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (Ground.Instance.GenerationIsDone)
+        if (Ground.Instance.WorkIsDone)
         {
             Unit unit = collision.GetComponent<Unit>();
             if (unit != null && unit.gameObject.layer == LayerMask.NameToLayer("ALLY"))
@@ -81,7 +81,7 @@ public class Exit : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (Ground.Instance.GenerationIsDone)
+        if (Ground.Instance.WorkIsDone)
         {
             Unit unit = collision.GetComponent<Unit>();
             if (unit != null && unit.gameObject.layer == LayerMask.NameToLayer("ALLY"))

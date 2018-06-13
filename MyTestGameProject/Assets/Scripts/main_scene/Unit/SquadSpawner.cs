@@ -7,6 +7,7 @@ public class SquadSpawner : MonoBehaviour
     
     Quaternion rotation;
 
+    [SerializeField] Squad origin;
 
     [Header("Squad properties")]
     [SerializeField] Transform lookTarget;
@@ -31,6 +32,7 @@ public class SquadSpawner : MonoBehaviour
     [SerializeField] bool useDefaultTimeValues = true;
     [SerializeField] [Range(0, 1)] float slowApdateDeltaTime = 0.2f;
     [SerializeField] [Range(0, 5)] float attackDeltaTime = 1f;
+    
 
     void Start ()
     {
@@ -38,10 +40,8 @@ public class SquadSpawner : MonoBehaviour
 
         rotation = Quaternion.LookRotation(Vector3.forward, lookTarget.position - transform.position);
 
-        GameObject go = Instantiate(Resources.Load("Prefabs/Squads/EnemySquad")) as GameObject;
+        Squad squad = Instantiate(origin) as Squad;
 
-        Squad squad = go.GetComponent<Squad>();
-        squad.CurrentFormation = formation;
         squad.fraction = fraction;
         squad.PositionsTransform.position = transform.position;
         squad.PositionsTransform.rotation = rotation;
@@ -55,21 +55,26 @@ public class SquadSpawner : MonoBehaviour
             squad.Inventory.Shield = inventory.Shield;
         if (inventory.Weapon != null)
             squad.Inventory.Weapon = inventory.Weapon;
-       
-        AiSquadController controller = go.GetComponent<AiSquadController>();
-        controller.mode = mode;
-    
-        if(!useDefaultDistancesValues)
-        {
-            controller.distanceToActivateSquad = distanceToActivateSquad;
-            controller.radiusOfDefendArea = radiusOfDefendArea;
-            controller.radiusOfAttackArea = radiusOfAttackArea;
-        }
 
-        if(!useDefaultTimeValues)
+        squad.CurrentFormation = formation;             
+       
+        AiSquadController controller = squad.GetComponent<AiSquadController>();
+        if (controller != null)
         {
-            controller.slowApdateDeltaTime = slowApdateDeltaTime;
-            controller.attackDeltaTime = attackDeltaTime;
+            controller.mode = mode;
+
+            if (!useDefaultDistancesValues)
+            {
+                controller.distanceToActivateSquad = distanceToActivateSquad;
+                controller.radiusOfDefendArea = radiusOfDefendArea;
+                controller.radiusOfAttackArea = radiusOfAttackArea;
+            }
+
+            if (!useDefaultTimeValues)
+            {
+                controller.slowApdateDeltaTime = slowApdateDeltaTime;
+                controller.attackDeltaTime = attackDeltaTime;
+            }
         }
 
         Destroy(gameObject);

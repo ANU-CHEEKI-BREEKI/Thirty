@@ -18,7 +18,7 @@ public class SkillsUpgrade : MonoBehaviour
         //так как дальше будет цикл от начала списка до конца
         Buttons.Sort();
 
-        var skills = GameManager.Instance.PlayerProgress.skills.skills;
+        var skills = GameManager.Instance.PlayerProgress.Skills.skills;
 
         bool hasSkill = false;
         foreach (var item in skills)

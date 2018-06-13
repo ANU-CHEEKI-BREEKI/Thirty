@@ -9,6 +9,7 @@
   <string name = "play_game">В бой</string>
   <string name = "settings">Настройки</string>
   <string name = "squad">Отряд</string>
+  <string name = "training">Обучение</string>
   <string name = "developers">Разработчики</string>
   
 
@@ -17,6 +18,7 @@
   <string name = "healtarget_all">Всех</string>
 
   <string name = "error">-ERROR-</string>
+  <string name = "missing_string">-missing_string-</string>
 
   <string name = "formation_ranks_name">Свобоный строй</string>
   <string name = "formation_ranks_description">Отряд не держит строй.

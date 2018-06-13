@@ -20,14 +20,17 @@ public sealed class Localization
     static public string play_game { get; private set; }
     static public string settings { get; private set; }
     static public string squad { get; private set; }
+    static public string training { get; private set; }
     static public string developers { get; private set; }
-
 
     static public string healtarget_weakest { get; private set; }
     static public string healtarget_strongest { get; private set; }
     static public string healtarget_all { get; private set; }
 
     static public string error { get; private set; }
+    static public string missing_string { get; private set; }
+
+    
 
     static public string formation_ranks_name { get; private set; }
     static public string formation_ranks_description { get; private set; }
@@ -288,11 +291,15 @@ public sealed class Localization
     /// <returns>Значение строкового ресурса</returns>
     public static string GetString(string name)
     {
+        string res = string.Empty;
+
         var property = typeof(Localization).GetProperty(name, BindingFlags.Static | BindingFlags.Public);
+        if(property != null)
+            res = property.GetValue(null, null) as string;
 
-        if (property == null)
-            throw new Exception(string.Format("Поля строкового ресурса с именем \"{0}\" не существует.", name));
+        if (string.IsNullOrEmpty(res))
+            res = missing_string;
 
-        return property.GetValue(null, null) as string;
+        return res;
     }
 }

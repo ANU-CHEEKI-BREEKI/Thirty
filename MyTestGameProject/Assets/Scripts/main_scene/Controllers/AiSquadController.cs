@@ -49,7 +49,7 @@ public class AiSquadController : MonoBehaviour
     
     void Start()
     {
-        ground = GameObject.FindWithTag("Ground").GetComponent<Ground>();
+        ground = Ground.Instance;
 
         squad = gameObject.GetComponent<Squad>();
         startPosition = squad.PositionsTransform.position;

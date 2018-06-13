@@ -26,21 +26,21 @@ public class ScorePanel : MonoBehaviour
     {
         RefreshByEvent(0, 0, null);
 
-        GameManager.Instance.PlayerProgress.score.gold.OnValueChanged += RefreshByEvent;
-        GameManager.Instance.PlayerProgress.score.silver.OnValueChanged += RefreshByEvent;
-        GameManager.Instance.PlayerProgress.score.expirience.OnValueChanged += RefreshByEvent;
+        GameManager.Instance.PlayerProgress.Score.gold.OnValueChanged += RefreshByEvent;
+        GameManager.Instance.PlayerProgress.Score.silver.OnValueChanged += RefreshByEvent;
+        GameManager.Instance.PlayerProgress.Score.expirience.OnValueChanged += RefreshByEvent;
     }
 
     void OnDestroy()
     {
-        GameManager.Instance.PlayerProgress.score.gold.OnValueChanged -= RefreshByEvent;
-        GameManager.Instance.PlayerProgress.score.silver.OnValueChanged -= RefreshByEvent;
-        GameManager.Instance.PlayerProgress.score.expirience.OnValueChanged -= RefreshByEvent;
+        GameManager.Instance.PlayerProgress.Score.gold.OnValueChanged -= RefreshByEvent;
+        GameManager.Instance.PlayerProgress.Score.silver.OnValueChanged -= RefreshByEvent;
+        GameManager.Instance.PlayerProgress.Score.expirience.OnValueChanged -= RefreshByEvent;
     }
 
     void RefreshByEvent(float oldValue, float newValue, DSPlayerScore.Score score)
     {        
-        DSPlayerScore playerScore = GameManager.Instance.PlayerProgress.score;
+        DSPlayerScore playerScore = GameManager.Instance.PlayerProgress.Score;
 
         if (score != null)
         {

@@ -52,7 +52,7 @@ public class DropToConsumableMarket : ADropToMe
         if (st != null)
         {
             res = true;
-            var score = GameManager.Instance.PlayerProgress.score;
+            var score = GameManager.Instance.PlayerProgress.Score;
 
             if (st.ConsumableStats is ISkillCostable)
             {
