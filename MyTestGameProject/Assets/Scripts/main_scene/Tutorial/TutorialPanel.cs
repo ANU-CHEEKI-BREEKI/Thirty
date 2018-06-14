@@ -16,73 +16,159 @@ public class TutorialPanel : MonoBehaviour
     [Header("Script")]
     [SerializeField] TriggerTip[] triggerTips;
 
-    
+    TriggerTip lastTip;
+
+    List<int> anotherTipTriggersId;
 
     void Start ()
     {
+        anotherTipTriggersId = new List<int>();
+
         buttonOk.onClick.AddListener(()=> 
         {
-            Hide();
             tipsPanel.ResetTipPanelLayout();
             GameManager.Instance.Resume();
+            Hide();            
         });
 
         int cnt = triggerTips.Length;
         for (int i = 0; i < cnt; i++)
         {
+            triggerTips[i].id = i;
+
+            if (triggerTips[i].needExequteAnotherTriggerAftarThat)
+                anotherTipTriggersId.Add(triggerTips[i].anotherTriggerIndex);
 
             var ttip = triggerTips[i];
-            var arrH = ttip.toHide;
-            var sizeH = arrH.Length;
-            var arrS = ttip.toShow;
-            var sizeS = arrS.Length;
-            var tip = ttip.tip;
 
-            Action act = () =>
+            if (ttip.trigger != null)
             {
-                SetTip(ttip);
-
-                for (int j = 0; j < sizeH; j++)
+                Func<bool> act = () => { return Action(ttip); };
+                switch (ttip.triggerType)
                 {
-                    arrH[j].alpha = 0;
-                    arrH[j].blocksRaycasts = false;
+                    case GOTriggerEvent.TriggerType.STAY:
+                        ttip.trigger.OnPlayerTriggerStay += act;
+                        break;
+                    case GOTriggerEvent.TriggerType.ENTER:
+                        ttip.trigger.OnPlayerTriggerEnter += act;
+                        break;
+                    case GOTriggerEvent.TriggerType.EXIT:
+                        ttip.trigger.OnPlayerTriggerExit += act;
+                        break;
+                    case GOTriggerEvent.TriggerType.DESTROY:
+                        ttip.trigger.OnPlayerTriggerDestroy += act;
+                        break;
+                    case GOTriggerEvent.TriggerType.PDOWN:
+                        ttip.trigger.OnPlayerTriggerPoinderDown += act;
+                        break;
+                    case GOTriggerEvent.TriggerType.PUP:
+                        ttip.trigger.OnPlayerTriggerPoinderUp += act;
+                        break;
+                    case GOTriggerEvent.TriggerType.PCLICK:
+                        ttip.trigger.OnPlayerTriggerPointerClick += act;
+                        break;
+                    case GOTriggerEvent.TriggerType.PDROP:
+                        ttip.trigger.OnPlayerTriggerPointerDrop += act;
+                        break;
+                    case GOTriggerEvent.TriggerType.DISABLE:
+                        ttip.trigger.OnPlayerTriggerDisable += act;
+                        break;
                 }
-
-                for (int j = 0; j < sizeS; j++)
-                {
-                    arrS[j].alpha = 1;
-                    arrS[j].blocksRaycasts = true;
-                }
-
-                Show();
-                GameManager.Instance.Pause();
-            };
-
-
-            switch (triggerTips[i].triggerType)
-            {
-                case GOTriggerEvent.TriggerType.STAY:
-                    triggerTips[i].trigger.OnPlayerTriggerStay += act;
-                    break;
-                case GOTriggerEvent.TriggerType.ENTER:
-                    triggerTips[i].trigger.OnPlayerTriggerEnter += act;
-                    break;
-                case GOTriggerEvent.TriggerType.EXIT:
-                    triggerTips[i].trigger.OnPlayerTriggerExit += act;
-                    break;
             }
-            
         }
 
         tipsPanel.ResetTipPanelLayout();
         Hide();       
     }
 	
+    bool Action(TriggerTip ttip)
+    {
+        bool res = true;
+        if(ttip.requiresExequtePreviousTrigger)
+            res = triggerTips[ttip.previousTriggerIndex].executed;
+
+        if (res)
+        {
+            SetTip(ttip);
+
+            var arr = ttip.toHide;
+            var size = arr.Length;
+            for (int j = 0; j < size; j++)
+            {
+                if (arr[j] != null)
+                {
+                    arr[j].alpha = 0;
+                    arr[j].blocksRaycasts = false;
+                }
+            }
+            arr = ttip.toShow;
+            size = arr.Length;
+            for (int j = 0; j < size; j++)
+            {
+                if (arr[j] != null)
+                {
+                    arr[j].alpha = 1;
+                    arr[j].blocksRaycasts = true;
+                }
+            }
+            arr = ttip.toEnable;
+            size = arr.Length;
+            for (int j = 0; j < size; j++)
+                if (arr[j] != null)
+                    arr[j].interactable = true;
+            arr = ttip.toDisable;
+            size = arr.Length;
+            for (int j = 0; j < size; j++)
+                if (arr[j] != null)
+                    arr[j].interactable = false;
+            var arrGO = ttip.toActivate;
+            size = arrGO.Length;
+            for (int j = 0; j < size; j++)
+                if (arrGO[j] != null)
+                    arrGO[j].SetActive(true);
+            arrGO = ttip.toDeactivate;
+            size = arrGO.Length;
+            for (int j = 0; j < size; j++)
+                if (arrGO[j] != null)
+                    arrGO[j].SetActive(false);
+
+            Show();
+            GameManager.Instance.Pause();
+        }
+
+        triggerTips[ttip.id].executed = res;
+
+        return res;
+    }
+
     void Hide()
     {
         panelCanvasGroup.alpha = 0;
         panelCanvasGroup.blocksRaycasts = false;
         currentOrderText.enabled = true;
+
+        ExequteAnotherTipTrigger();
+    }
+
+    void ExequteAnotherTipTrigger()
+    {
+        int cnt = anotherTipTriggersId.Count;
+        for (int i = 0; i < cnt; i++)
+        {
+            try
+            {
+                if (anotherTipTriggersId[i] == lastTip.anotherTriggerIndex)
+                {
+                    Action(triggerTips[lastTip.anotherTriggerIndex]);
+                    anotherTipTriggersId.RemoveAt(i);
+                    break;
+                }
+            }
+            catch(Exception ex)
+            {
+                Debug.Log("Tакого индекса нет!!!!!!!");
+            }
+        }
     }
 
     void Show()
@@ -107,11 +193,46 @@ public class TutorialPanel : MonoBehaviour
         }
 
         tipsPanel.SetTip(ttip.tip);
+
+        lastTip = ttip;
+    }
+
+    [ContextMenu("RemoveUselessItems")]
+    void RemoveUselessItems()
+    {
+        int cntToRemove = 0;
+        for (int i = 0; i < triggerTips.Length; i++)
+        {
+            if(triggerTips[i].tip == null)
+            {
+                cntToRemove++;
+                for (int j = i; j < triggerTips.Length - 1; j++)
+                {
+                    triggerTips[j] = triggerTips[j + 1];
+                    triggerTips[j].id--;
+
+                    if (triggerTips[j].needExequteAnotherTriggerAftarThat && triggerTips[j].anotherTriggerIndex >= i)
+                        triggerTips[j].anotherTriggerIndex--;
+                    else
+                        triggerTips[j].anotherTriggerIndex = 0;
+
+                    if (triggerTips[j].requiresExequtePreviousTrigger && triggerTips[j].previousTriggerIndex >= i)
+                        triggerTips[j].previousTriggerIndex--;
+                    else
+                        triggerTips[j].previousTriggerIndex = 0;
+                }
+            }
+        }
+        Array.Resize(ref triggerTips, triggerTips.Length - cntToRemove);
+        Debug.Log("Было удалено " + cntToRemove + " штук бесполезных итемов массива.");
     }
 
     [Serializable]
     struct TriggerTip
     {
+        [HideInInspector] public int id;
+        [HideInInspector] public bool executed;
+
         public GOTriggerEvent trigger;
         public GOTriggerEvent.TriggerType triggerType;
         public SOTip tip;
@@ -120,7 +241,16 @@ public class TutorialPanel : MonoBehaviour
         public bool needExequteAnotherTriggerAftarThat;
         public int anotherTriggerIndex;
         [Space]
+        public bool requiresExequtePreviousTrigger;
+        public int previousTriggerIndex;
+        [Space]
         public CanvasGroup[] toHide;
         public CanvasGroup[] toShow;
+        [Space]
+        public CanvasGroup[] toEnable;
+        public CanvasGroup[] toDisable;
+        [Space]
+        public GameObject[] toActivate;
+        public GameObject[] toDeactivate;
     }
 }

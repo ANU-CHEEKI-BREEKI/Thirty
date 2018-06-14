@@ -48,7 +48,7 @@ public class GameTipsPanel : MonoBehaviour
         if (GetComponent<LayoutGroup>() != null)
             ResetTipPanelLayout(true);
 
-        if(tip.Direction == SOTip.Directions.HORISONTL)
+        if(tip.Direction == SOTip.Directions.HORISONTAL)
         {
             var layout = gameObject.AddComponent<HorizontalLayoutGroup>();
             layout.childAlignment = TextAnchor.MiddleCenter;
@@ -96,7 +96,7 @@ public class GameTipsPanel : MonoBehaviour
             img.sprite = image;
             img.preserveAspect = preserveAspect;
 
-            if (dir == SOTip.Directions.HORISONTL)
+            if (dir == SOTip.Directions.HORISONTAL)
             {
                 var el = go.AddComponent<LayoutElement>();
                 el.preferredWidth = 200;

@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu]
 public class SOTip : ScriptableObject
 {
-    public enum Directions { HORISONTL, VERTICAL }
+    public enum Directions { HORISONTAL, VERTICAL }
 
     [SerializeField] Sprite firstImage;
     [SerializeField] Sprite secondImage;

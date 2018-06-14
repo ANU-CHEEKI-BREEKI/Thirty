@@ -27,7 +27,8 @@ ff05dcdf90651c3d98a9cad3df5e471e UnityEngine.Timeline.dll:UnityEngine.Timeline.C
 4d5e65da3e1954fb9c4e81fcda16c86c Assembly-CSharp.dll:.VolumeSlider
 9778b00922ba8aae9a3acf3ff3f34ff4 Assembly-CSharp.dll:.UILineRenderer
 ae73b18b07cd4c26aa5b511ba60ab9f3 Assembly-CSharp.dll:.LevelGeneradingProgress
-6127aa688382e8ff4cd7b66dccdd257a Assembly-CSharp.dll:.TutorialPanel
+903bc43a6ca8433fa86920bcc1769f08 Assembly-CSharp.dll:.TutorialPanel
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.TriggerConstraintShieldInPlayerInventory
 3fdbdc4938c540f7428b1f0276f07c59 Assembly-CSharp.dll:.PilumsVolley
 f278ec698acd7bb49ddccd048513d587 Assembly-CSharp.dll:.DialogBox
 89ecccd62fceff61ef5899c14495b2e0 Assembly-CSharp.dll:.MinimapCamera
@@ -66,7 +67,7 @@ f61c0793411f10cf5fbfa1473fef5ef2 UnityEngine.UI.dll:UnityEngine.UI.ToggleGroup
 1b8c02d0aa82fbf036a2b9b2d713eec3 UnityEngine.UI.dll:UnityEngine.UI.VerticalLayoutGroup
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.ResetPositionOnAwake
 fd9940306d0070fe25a81fcce98adae6 Assembly-CSharp.dll:.LoadingScreenManager
-0359aec559755b9f1d61dfe2aa7906bf Assembly-CSharp.dll:.GOTriggerEvent
+c1dc89b1abe6e7fd851ed476e4012639 Assembly-CSharp.dll:.GOTriggerEvent
 bffa5c5e8a34ea09858958f8ec68ea0d Assembly-CSharp.dll:.ScorePanel
 b153d881559dca121e93b982ea677910 Assembly-CSharp.dll:.DragConsumable
 a35dc9cca2faebc5f5f1aeb9e8e47bbe UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
@@ -121,6 +122,7 @@ ff05dcdf90651c3d98a9cad3df5e471e UnityEngine.Timeline.dll:UnityEngine.Timeline.C
 30afa8783a8bbee2e465ec9ce1efaee2 UnityEngine.Timeline.dll:UnityEngine.Timeline.GroupTrack
 30afa8783a8bbee2e465ec9ce1efaee2 UnityEngine.Timeline.dll:UnityEngine.Timeline.PlayableTrack
 607d64d2c4bc76ac9876e6f7b9cc7edf UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.SquadTriggerInitiator
 53e8b87eaf0620c64bdd5c9eef628555 Assembly-CSharp.dll:.DropToInventory
 3f4c708a8c40fed9dc5b3efed385f3fb Assembly-CSharp.dll:.ScoreMarket
 fc1e0f4d8439d9928083474691511a13 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
@@ -169,9 +171,10 @@ bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.Audi
 c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingCollider
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingRenderer
 2441f208d9e7ee22450a573b65663902 Assembly-CSharp.dll:.PlayerSquadController
+2b4e5b276a229327aeb6305127e3f5bf Assembly-CSharp.dll:.TriggerConstraintDestroyGameObject
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.UnitPosition
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.CenterUnitSelection
-5ef7873df37f8c54ec74a6ee7a651483 Assembly-CSharp.dll:.ArrowsValley
+ce338c1762b506bc487788e845ef98cc Assembly-CSharp.dll:.ArrowsValley
 04836f63de6f09bbddef795517e430c2 Assembly-CSharp.dll:.SquadPropertyIndicator
 8d811d63e251fc360630e36c1c18dc4a Assembly-CSharp.dll:.CallConverterNumberPicker
 3ee73e66b21e42bf0aa4e44123a8c3c6 Assembly-CSharp.dll:.ConsumablePilumsVolley
@@ -223,6 +226,7 @@ f3b55fc357403f48c52e8304d77cb7d3 Assembly-CSharp.dll:.SettingsGraphixSection
 2c1e5bf6706d6ef15692a0124ca46ba6 Assembly-CSharp.dll:.TipsPanel
 4e64a8439d3f2714054286cecee27cab Assembly-CSharp.dll:UnityEngine.Tilemaps.PipelineTile
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.DestroyOnAwake
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.TriggerConstraintPlayeFormationPhalanx
 bda05f6f414ac70b03ca780e67da1ba7 Assembly-CSharp.dll:.LocalizationByEditor
 23959897406681e43f107fa5c64166ca Assembly-CSharp.dll:.DropToSkill
 8759d8bf299d270cb51f4e79f5c0b946 Assembly-CSharp.dll:.ProgressIndicator
@@ -266,6 +270,7 @@ f0945666c22d025d89b721020fe3772a Assembly-CSharp.dll:.Equipment
 e0f7ffd5d5c2abe4b2e16569a21163da UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioRoom
 67a5f2c97205d2e41a8ed7c7ce898f6e UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioSoundfieldExtension
 67a5f2c97205d2e41a8ed7c7ce898f6e UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioSourceExtension
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.TriggerConstraintSpearInPlayerInventory
 4ddd055a11e3b372c3777c02d5301071 Assembly-CSharp.dll:.AiSquadController
 afb058d190a9f50e07be2ec4c98e6f33 Assembly-CSharp.dll:.SkillArrowsValley
 d20829f1596d67ae92f35b9efc9cbdef Assembly-CSharp.dll:.Unit
@@ -305,6 +310,8 @@ f189429997e594b4af323171a643c640 Assembly-CSharp.dll:.EnvirinmantInventoryUI
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.HideTipsPanel
 5f39d07a306e4a7127ffac0134c7dee0 Assembly-CSharp.dll:.SoundChannel
 36fd3c90117ab62dd768133b82ecc16d Assembly-CSharp.dll:.SquadCerrentProp
+f8a7c9a42768b4703f4bf2ebb8713e29 Assembly-CSharp.dll:.FollowCanvasToSquad
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.TriggerConstraintPlayeFormationShields
 c2759edd955aa88ee00e61d431143610 Assembly-CSharp.dll:.SkillButton
 b30cd7754bfc1593b47f5140046d4a69 Assembly-CSharp.dll:.Squad
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.TerrainWalker

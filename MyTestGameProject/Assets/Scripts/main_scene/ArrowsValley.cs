@@ -26,16 +26,20 @@ public class ArrowsValley : MonoBehaviour
     //закешированая ссылка на результат каста
     RaycastHit2D rhit;
 
+   
+
     //задержка между предупредительным и настоящим залпами
     [SerializeField] [Range(0, 10)] float dalayBeforeWarningValley;
 
-	[HideInInspector] public Damage damage;
+	public Damage damage;
 
     [HideInInspector] public Squad owner = Squad.playerSquadInstance;
 
     [SerializeField] Transform endPoint;
 
     [SerializeField] LayerMask raycastTargetLayers;
+
+    [SerializeField] bool runOnAwake;
 
     private void Awake()
     {
@@ -45,6 +49,9 @@ public class ArrowsValley : MonoBehaviour
         warningValleyParticleSystem = transform.GetChild(0).GetComponent<ParticleSystem>();
 
         layerMask = raycastTargetLayers.value;
+
+        if (runOnAwake)
+            StartValley();
     }
 
     private void Start()

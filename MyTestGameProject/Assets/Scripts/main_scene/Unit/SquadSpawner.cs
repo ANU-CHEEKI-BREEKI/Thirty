@@ -42,7 +42,7 @@ public class SquadSpawner : MonoBehaviour
         rotation = Quaternion.LookRotation(Vector3.forward, lookTarget.position - transform.position);
 
         if (origin == null)
-            origin = Resources.Load(@"Prefabs\Squads\EnemySquad") as Squad;
+            origin = (Resources.Load("Prefabs/Squads/EnemySquad") as GameObject).GetComponent<Squad>();
 
         Squad squad = Instantiate(origin) as Squad;
 
