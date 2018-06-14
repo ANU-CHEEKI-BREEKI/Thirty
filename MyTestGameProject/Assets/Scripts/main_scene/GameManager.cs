@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public enum SceneIndex { MAIN_MENU, MARKET, LEVEL, LOADING_SCREEN, LEVEL_TRAINING }
+    public enum SceneIndex { MAIN_MENU, MARKET, LEVEL, LOADING_SCREEN, LEVEL_TUTORIAL }
     public static GameManager Instance { get; private set; }
     
     bool gamePaused;
@@ -132,6 +132,7 @@ public class GameManager : MonoBehaviour
                 SoundManager.Instance.PlaySound(new SoundChannel.ClipSet(SoundManager.Instance.MusicMainMenu, true), SoundManager.SoundType.MUSIC);
                 SoundManager.Instance.PlaySound(new SoundChannel.ClipSet(SoundManager.Instance.BonfireMainMenu, true, 0.1f), SoundManager.SoundType.FX);
                 SoundManager.Instance.PlaySound(new SoundChannel.ClipSet(SoundManager.Instance.SharpingSwordMainMenu, true, 0.2f), SoundManager.SoundType.FX);
+
                 break;
             case SceneIndex.MARKET:
                 SoundManager.Instance.PlaySound(new SoundChannel.ClipSet(SoundManager.Instance.MusicMarket, false), SoundManager.SoundType.MUSIC);
@@ -139,19 +140,23 @@ public class GameManager : MonoBehaviour
             case SceneIndex.LEVEL:
                 SoundManager.Instance.PlaySound(new SoundChannel.ClipSet(SoundManager.Instance.MusicLevel, true), SoundManager.SoundType.MUSIC);
 
+                FadeScreen.Instance.FadeOnStartScene = false;
                 Pause();
                 Ground.Instance.OnGenerationDone += Resume;
                 Ground.Instance.OnGenerationDone += InitPlayer;
+                Ground.Instance.OnGenerationDone += FadeScreen.Instance.FateOnStartScene;
                 Ground.Instance.GeneradeMap(rows, cols);
 
                 break;
             case SceneIndex.LOADING_SCREEN:
                 break;
-            case SceneIndex.LEVEL_TRAINING:
+            case SceneIndex.LEVEL_TUTORIAL:
 
+                FadeScreen.Instance.FadeOnStartScene = false;
                 Pause();
                 Ground.Instance.OnWorkDone += Resume;
                 Ground.Instance.OnWorkDone += InitPlayer;
+                Ground.Instance.OnWorkDone += FadeScreen.Instance.FateOnStartScene;
                 Ground.Instance.RecalcMatrixByCurrentBlocks();
 
                 break;
@@ -314,14 +319,14 @@ public class GameManager : MonoBehaviour
         LoadScene(SceneIndex.MAIN_MENU);
     }
 
-    public void LoadTrainingLevel()
+    public void LoadTutorialLevel()
     {
         if (Squad.playerSquadInstance != null)
         {
             Destroy(Squad.playerSquadInstance.gameObject);
             Squad.playerSquadInstance = null;
         }
-        LoadScene(SceneIndex.LEVEL_TRAINING);
+        LoadScene(SceneIndex.LEVEL_TUTORIAL);
     }
 
     void LoadScene(SceneIndex index)

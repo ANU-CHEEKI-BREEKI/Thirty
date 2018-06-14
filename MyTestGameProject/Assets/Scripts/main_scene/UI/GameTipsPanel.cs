@@ -8,42 +8,45 @@ public class GameTipsPanel : MonoBehaviour
 {
     [Header("UI")]
     [SerializeField] TextMeshProUGUI tipsText;
-    [SerializeField] Image tipsImage1;
-    [SerializeField] Image tipsImage2;
+    [SerializeField] RectTransform tipsImagePlace;
     [Header("Tips")]
     [SerializeField] SOTip[] tips;
 
+    [SerializeField] bool setTipOnStart = true;
+
     private void Start()
     {
-        SetTips();
+        if (setTipOnStart)
+        {
+            SOTip tip = tips[Random.Range(0, tips.Length)];
+            SetTip(tip);
+        }
     }
 
-    void SetTips()
+    [ContextMenu("SetTips")]
+    public void SetTip(SOTip tip)
     {
-        SOTip tip = tips[Random.Range(0, tips.Length)];
+        ResetImagePasePanel();
 
-        if(tip.IsLocalisedText)
+        if (tip.IsLocalisedText)
             tipsText.text = Localization.GetString(tip.TipText);
         else
             tipsText.text = tip.TipText;
-
-        tipsImage1.gameObject.SetActive(false);
-        tipsImage2.gameObject.SetActive(false);
-        if (tip.Images.Length > 0)
+        
+        //
+        if (tip.AnimatedImageOriginal == null)
         {
-            tipsImage1.sprite = tip.Images[0];
-            tipsImage1.gameObject.SetActive(true);
-            if (tip.Images.Length == 2)
-            {
-                tipsImage2.sprite = tip.Images[1];
-                tipsImage2.gameObject.SetActive(true);
-            }
+            SetImage(tip.FirstImage, tip.Direction);
+            SetImage(tip.SecondImage, tip.Direction);
+            LayoutRebuilder.MarkLayoutForRebuild(tipsImagePlace);
+        }
+        else
+        {
+            SetAnimatedImage(tip.AnimatedImageOriginal);
         }
 
-        {
-            var layout = GetComponent<LayoutGroup>();
-            DestroyImmediate(layout);
-        }
+        if (GetComponent<LayoutGroup>() != null)
+            ResetTipPanelLayout(true);
 
         if(tip.Direction == SOTip.Directions.HORISONTL)
         {
@@ -56,6 +59,8 @@ public class GameTipsPanel : MonoBehaviour
             layout.childControlWidth = true;
             layout.childForceExpandHeight = true;
             layout.childForceExpandWidth = true;
+
+            tipsText.alignment = TextAlignmentOptions.Midline;
         }
         else
         {
@@ -66,8 +71,51 @@ public class GameTipsPanel : MonoBehaviour
             layout.childControlWidth = true;
             layout.childForceExpandHeight = true;
             layout.childForceExpandWidth = true;
+
+            tipsText.alignment = TextAlignmentOptions.Top;
         }
+    }
 
+    public void ResetTipPanelLayout(bool immediate = false)
+    {
+        var layout = GetComponent<LayoutGroup>();
 
+        if (immediate)
+            DestroyImmediate(layout);
+        else
+            Destroy(layout);
+    }
+
+    void SetImage(Sprite image, SOTip.Directions dir, bool preserveAspect = true)
+    {
+        if (image != null)
+        {
+            var go = new GameObject();
+            go.transform.SetParent(tipsImagePlace, false);
+            var img = go.AddComponent<Image>();
+            img.sprite = image;
+            img.preserveAspect = preserveAspect;
+
+            if (dir == SOTip.Directions.HORISONTL)
+            {
+                var el = go.AddComponent<LayoutElement>();
+                el.preferredWidth = 200;
+                var fit = go.AddComponent<ContentSizeFitter>();
+                fit.horizontalFit = ContentSizeFitter.FitMode.PreferredSize;
+            }
+        }
+    }
+
+    void SetAnimatedImage(GameObject origin)
+    {
+        Instantiate(origin, tipsImagePlace);
+    }
+
+    void ResetImagePasePanel()
+    {
+        int cnt = tipsImagePlace.childCount;
+        if (cnt > 0)
+            for (int i = 0; i < cnt; i++)
+                Destroy(tipsImagePlace.GetChild(i).gameObject);
     }
 }

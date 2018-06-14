@@ -22,6 +22,7 @@ public sealed class Localization
     static public string squad { get; private set; }
     static public string training { get; private set; }
     static public string developers { get; private set; }
+    static public string understud { get; private set; }
 
     static public string healtarget_weakest { get; private set; }
     static public string healtarget_strongest { get; private set; }
@@ -206,6 +207,14 @@ public sealed class Localization
 
     static public string you_died { get; private set; }
     static public string tip_death_try_bay_equip_and_train_squad { get; private set; }
+
+
+
+    static public string tip_death_try_to_follow_the_advices { get; private set; }
+    static public string tip_squad_phalanx_movement { get; private set; }
+    static public string tip_squad_ranks_movement { get; private set; }
+
+    
 
     #endregion;
 

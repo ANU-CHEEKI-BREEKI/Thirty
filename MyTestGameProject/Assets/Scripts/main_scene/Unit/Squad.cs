@@ -18,7 +18,7 @@ public class Squad : MonoBehaviour
     public UnitStats UnitStats { get { return unitStats; } }
 
     [Header("Squad default properties")]
-    [SerializeField] [Range(1, 100)] int fullSquadUnitCount = 30;
+    [Range(1, 100)] public int fullSquadUnitCount = 30;
     public int FULL_SQUAD_UNIT_COUNT { get { return fullSquadUnitCount; } }
     [SerializeField] [Range(1, 100)] int squadLength = 10;
     public int SQUAD_LENGTH { get { return squadLength; } }
@@ -594,8 +594,10 @@ public class Squad : MonoBehaviour
             if(this == playerSquadInstance)
             {
                 gameObject.AddComponent<DestroyOnAwake>();
+         //       Destroy(this);
             }
-            Destroy(this);
+
+            Destroy(gameObject);
         }
 
         if (OnUitCountChanged != null) OnUitCountChanged(unitPositions.Count);

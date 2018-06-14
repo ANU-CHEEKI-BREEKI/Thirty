@@ -12,6 +12,10 @@ public class FadeScreen : MonoBehaviour
 
     public static FadeScreen Instance { get; private set; }
 
+    public bool FadeOnStartScene { get; set; } = true;
+
+    bool fadeWhenStart = true;
+
     private void Awake()
     {
         Instance = this;
@@ -22,17 +26,11 @@ public class FadeScreen : MonoBehaviour
 
     void Start ()
     {
-        if (SceneManager.GetActiveScene().buildIndex == 2)
-        {
-            Ground.Instance.OnGenerationDone += FadeWhenStart;
-        }
-        else
-        {
-            FadeWhenStart();
-        }
+        if(FadeOnStartScene)
+            FateOnStartScene();
     }
 
-    void FadeWhenStart()
+    public void FateOnStartScene()
     {
         FadeOff(2f);
     }

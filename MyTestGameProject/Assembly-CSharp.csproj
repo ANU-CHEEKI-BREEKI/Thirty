@@ -150,6 +150,13 @@
     <Compile Include="Assets\Scripts\main_scene\Stakes.cs" />
     <Compile Include="Assets\Scripts\main_scene\TerrainHeight.cs" />
     <Compile Include="Assets\Scripts\main_scene\TerrainWalker.cs" />
+    <Compile Include="Assets\Scripts\main_scene\Tutorial\ATriggerConstraint.cs" />
+    <Compile Include="Assets\Scripts\main_scene\Tutorial\FollowCanvasToSquad.cs" />
+    <Compile Include="Assets\Scripts\main_scene\Tutorial\GOTriggerEvent.cs" />
+    <Compile Include="Assets\Scripts\main_scene\Tutorial\ITriggerEvent.cs" />
+    <Compile Include="Assets\Scripts\main_scene\Tutorial\SquadTriggerInitiator.cs" />
+    <Compile Include="Assets\Scripts\main_scene\Tutorial\TriggerConstraintDestroyGameObject.cs" />
+    <Compile Include="Assets\Scripts\main_scene\Tutorial\TutorialPanel.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\ConfirmPanel.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\DeathScreen.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\DialogBox.cs" />

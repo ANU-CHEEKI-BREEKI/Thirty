@@ -11,7 +11,7 @@
   <string name = "squad">Отряд</string>
   <string name = "training">Обучение</string>
   <string name = "developers">Разработчики</string>
-  
+  <string name = "understud">Понял</string>
 
   <string name = "healtarget_weakest">сначала слабых</string>
   <string name = "healtarget_strongest">сначала сильных</string>
@@ -203,8 +203,18 @@
   <string name = "you_died">Вы погибли</string>
   <string name = "tip_death_try_bay_equip_and_train_squad">Попробуйте, перед боем, купить снаряряжение и улучшить характеристики отряда, чтобы продержаться в бою дольше и победить!</string>
 
+
   
-
-
+  
+  
+  
+  
+  
+  <string name = "tip_death_try_to_follow_the_advices">Попробуйте следовать советам, и вы обязательно справитесь!</string>
+  <string name = "tip_squad_phalanx_movement">Для передвижения в фаланге, укажите отряду куда итди и куда смотреть. На протяжении всего перемещения, отряд будет пытаться повернуться в указаном направлении.
+Отряд будет атаковать всех, кто окажется на пути</string>
+  <string name = "tip_squad_ranks_movement">Для передвижения свободным строем, укажите отряду куда итди. На протяжении всего перемещения, отряд будет повернут в направлении движения.
+ В радиусе вокруг указаной точки будут выделены враги. Отряд будет атаковать только выделенных врагов</string>
+  
 
 </resources>

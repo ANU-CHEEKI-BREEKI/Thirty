@@ -13,6 +13,7 @@ public class SquadSpawner : MonoBehaviour
     [SerializeField] Transform lookTarget;
 
     [Space]
+    [SerializeField] int unitCount = 30;
     [SerializeField] FormationStats.Formations formation;
     [SerializeField] Inventory inventory;
 
@@ -40,8 +41,12 @@ public class SquadSpawner : MonoBehaviour
 
         rotation = Quaternion.LookRotation(Vector3.forward, lookTarget.position - transform.position);
 
+        if (origin == null)
+            origin = Resources.Load(@"Prefabs\Squads\EnemySquad") as Squad;
+
         Squad squad = Instantiate(origin) as Squad;
 
+        squad.fullSquadUnitCount = unitCount;
         squad.fraction = fraction;
         squad.PositionsTransform.position = transform.position;
         squad.PositionsTransform.rotation = rotation;
