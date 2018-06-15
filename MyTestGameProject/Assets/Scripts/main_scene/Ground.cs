@@ -316,12 +316,12 @@ public class Ground : MonoBehaviour
 
         rowCountOfBlocks = maxY;
         colCountOfBlocks = maxX;
-
+        
         for (int i = 0; i < cnt; i++)
         {
             var gb = gl[i];
 
-            MiniGrid[(int)gb.posInMinigrid.x][(int)gb.posInMinigrid.y] = gb;
+            MiniGrid[(int)gb.posInMinigrid.y][(int)gb.posInMinigrid.x] = gb;
             InsertToGrid(gb.block);
 
             progress = i / cnt / 2 + 0.5f;

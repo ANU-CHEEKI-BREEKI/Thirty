@@ -32,17 +32,23 @@ public class GameTipsPanel : MonoBehaviour
             tipsText.text = Localization.GetString(tip.TipText);
         else
             tipsText.text = tip.TipText;
-        
+
         //
-        if (tip.AnimatedImageOriginal == null)
+        tipsImagePlace.gameObject.SetActive(true);
+
+        if (tip.AnimatedImageOriginal != null)
         {
-            SetImage(tip.FirstImage, tip.Direction);
-            SetImage(tip.SecondImage, tip.Direction);
+            SetAnimatedImage(tip.AnimatedImageOriginal);
+        }
+        else if(tip.Images.Length > 0)
+        {
+            foreach (var img in tip.Images)
+                SetImage(img, tip.Direction);
             LayoutRebuilder.MarkLayoutForRebuild(tipsImagePlace);
         }
         else
         {
-            SetAnimatedImage(tip.AnimatedImageOriginal);
+            tipsImagePlace.gameObject.SetActive(false);
         }
 
         if (GetComponent<LayoutGroup>() != null)
@@ -72,7 +78,7 @@ public class GameTipsPanel : MonoBehaviour
             layout.childForceExpandHeight = true;
             layout.childForceExpandWidth = true;
 
-            tipsText.alignment = TextAlignmentOptions.Top;
+            tipsText.alignment = TextAlignmentOptions.Midline;
         }
     }
 
@@ -103,12 +109,27 @@ public class GameTipsPanel : MonoBehaviour
                 var fit = go.AddComponent<ContentSizeFitter>();
                 fit.horizontalFit = ContentSizeFitter.FitMode.PreferredSize;
             }
+            else
+            {
+                var layout = tipsImagePlace.GetComponent<LayoutGroup>();
+                int p = 50;
+                layout.padding.left = p;
+                layout.padding.right = p;
+                layout.padding.top = p;
+                layout.padding.bottom = p;
+            }
         }
     }
 
     void SetAnimatedImage(GameObject origin)
     {
         Instantiate(origin, tipsImagePlace);
+        var layout = tipsImagePlace.GetComponent<LayoutGroup>();
+        int p = 0;
+        layout.padding.left = p;
+        layout.padding.right = p;
+        layout.padding.top = p;
+        layout.padding.bottom = p;
     }
 
     void ResetImagePasePanel()

@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Squad : MonoBehaviour
 {
@@ -276,7 +277,7 @@ public class Squad : MonoBehaviour
 
         SetProp(inventory.Weapon);
 
-        if (this == playerSquadInstance)
+        if (this == playerSquadInstance && (GameManager.SceneIndex)SceneManager.GetActiveScene().buildIndex != GameManager.SceneIndex.LEVEL_TUTORIAL)
         {
             var progress = GameManager.Instance.PlayerProgress;
 

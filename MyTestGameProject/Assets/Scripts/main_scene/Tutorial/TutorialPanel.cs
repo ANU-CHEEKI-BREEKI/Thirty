@@ -89,55 +89,61 @@ public class TutorialPanel : MonoBehaviour
 
         if (res)
         {
-            SetTip(ttip);
-
-            var arr = ttip.toHide;
-            var size = arr.Length;
-            for (int j = 0; j < size; j++)
+            if (!ttip.isLastTrigger)
             {
-                if (arr[j] != null)
-                {
-                    arr[j].alpha = 0;
-                    arr[j].blocksRaycasts = false;
-                }
-            }
-            arr = ttip.toShow;
-            size = arr.Length;
-            for (int j = 0; j < size; j++)
-            {
-                if (arr[j] != null)
-                {
-                    arr[j].alpha = 1;
-                    arr[j].blocksRaycasts = true;
-                }
-            }
-            arr = ttip.toEnable;
-            size = arr.Length;
-            for (int j = 0; j < size; j++)
-                if (arr[j] != null)
-                    arr[j].interactable = true;
-            arr = ttip.toDisable;
-            size = arr.Length;
-            for (int j = 0; j < size; j++)
-                if (arr[j] != null)
-                    arr[j].interactable = false;
-            var arrGO = ttip.toActivate;
-            size = arrGO.Length;
-            for (int j = 0; j < size; j++)
-                if (arrGO[j] != null)
-                    arrGO[j].SetActive(true);
-            arrGO = ttip.toDeactivate;
-            size = arrGO.Length;
-            for (int j = 0; j < size; j++)
-                if (arrGO[j] != null)
-                    arrGO[j].SetActive(false);
+                SetTip(ttip);
 
-            Show();
-            GameManager.Instance.Pause();
+                var arr = ttip.toHide;
+                var size = arr.Length;
+                for (int j = 0; j < size; j++)
+                {
+                    if (arr[j] != null)
+                    {
+                        arr[j].alpha = 0;
+                        arr[j].blocksRaycasts = false;
+                    }
+                }
+                arr = ttip.toShow;
+                size = arr.Length;
+                for (int j = 0; j < size; j++)
+                {
+                    if (arr[j] != null)
+                    {
+                        arr[j].alpha = 1;
+                        arr[j].blocksRaycasts = true;
+                    }
+                }
+                arr = ttip.toEnable;
+                size = arr.Length;
+                for (int j = 0; j < size; j++)
+                    if (arr[j] != null)
+                        arr[j].interactable = true;
+                arr = ttip.toDisable;
+                size = arr.Length;
+                for (int j = 0; j < size; j++)
+                    if (arr[j] != null)
+                        arr[j].interactable = false;
+                var arrGO = ttip.toActivate;
+                size = arrGO.Length;
+                for (int j = 0; j < size; j++)
+                    if (arrGO[j] != null)
+                        arrGO[j].SetActive(true);
+                arrGO = ttip.toDeactivate;
+                size = arrGO.Length;
+                for (int j = 0; j < size; j++)
+                    if (arrGO[j] != null)
+                        arrGO[j].SetActive(false);
+
+                Show();
+                GameManager.Instance.Pause();
+            }
+            else
+            {
+                GameManager.Instance.LoadMainMenu();
+            }
         }
 
         triggerTips[ttip.id].executed = res;
-
         return res;
     }
 
@@ -232,7 +238,8 @@ public class TutorialPanel : MonoBehaviour
     {
         [HideInInspector] public int id;
         [HideInInspector] public bool executed;
-
+        public bool isLastTrigger;
+        [Space]
         public GOTriggerEvent trigger;
         public GOTriggerEvent.TriggerType triggerType;
         public SOTip tip;

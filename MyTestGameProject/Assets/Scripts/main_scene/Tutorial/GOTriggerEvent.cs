@@ -13,6 +13,8 @@ public class GOTriggerEvent : MonoBehaviour, IPointerClickHandler, IPointerDownH
 
     [SerializeField] ATriggerConstraint[] constraints;
 
+    SquadTriggerInitiator initiator = null;
+
     public event Func<bool> OnPlayerTriggerEnter;
     public event Func<bool> OnPlayerTriggerExit;
     public event Func<bool> OnPlayerTriggerStay;
@@ -33,8 +35,11 @@ public class GOTriggerEvent : MonoBehaviour, IPointerClickHandler, IPointerDownH
             constraints = GetComponents<ATriggerConstraint>();
     }
 
-    void DestroyOnTriggerActivates()
+    void DestroyOnTriggerActivates(TriggerType type)
     {
+        if ((initiator != null && initiator.Squad != null))
+            initiator.TriggerCallBakc(TriggerType.DESTROY);
+
         if (deleteOnTriggerActivates)
         {
             if (deleteOnlyScript)
@@ -46,7 +51,6 @@ public class GOTriggerEvent : MonoBehaviour, IPointerClickHandler, IPointerDownH
 
     void Trigger(Collider2D collision, TriggerType type)
     {
-        SquadTriggerInitiator initiator = null;
         if (collision != null)
             initiator = collision.GetComponent<SquadTriggerInitiator>();
 
@@ -57,42 +61,42 @@ public class GOTriggerEvent : MonoBehaviour, IPointerClickHandler, IPointerDownH
                 case TriggerType.STAY:
                     if (OnPlayerTriggerStay != null)
                         if(OnPlayerTriggerStay())
-                            DestroyOnTriggerActivates();
+                            DestroyOnTriggerActivates(type);
                     break;
                 case TriggerType.ENTER:
                     if (OnPlayerTriggerEnter != null)
                         if(OnPlayerTriggerEnter())
-                            DestroyOnTriggerActivates();
+                            DestroyOnTriggerActivates(type);
                     break;
                 case TriggerType.EXIT:
                     if (OnPlayerTriggerExit != null)
                         if(OnPlayerTriggerExit())
-                            DestroyOnTriggerActivates();
+                            DestroyOnTriggerActivates(type);
                     break;
                 case TriggerType.PDOWN:
                     if (OnPlayerTriggerPoinderDown != null)
                         if(OnPlayerTriggerPoinderDown())
-                            DestroyOnTriggerActivates();
+                            DestroyOnTriggerActivates(type);
                     break;
                 case TriggerType.PUP:
                     if (OnPlayerTriggerPoinderUp != null)
                         if(OnPlayerTriggerPoinderUp())
-                            DestroyOnTriggerActivates();
+                            DestroyOnTriggerActivates(type);
                     break;
                 case TriggerType.PCLICK:
                     if (OnPlayerTriggerPointerClick != null)
                         if(OnPlayerTriggerPointerClick())
-                            DestroyOnTriggerActivates();
+                            DestroyOnTriggerActivates(type);
                     break;
                 case TriggerType.PDROP:
                     if (OnPlayerTriggerPointerDrop != null)
                         if(OnPlayerTriggerPointerDrop())
-                            DestroyOnTriggerActivates();
+                            DestroyOnTriggerActivates(type);
                     break;
                 case TriggerType.DISABLE:
                     if (OnPlayerTriggerDisable != null)
                         if (OnPlayerTriggerDisable())
-                            DestroyOnTriggerActivates();
+                            DestroyOnTriggerActivates(type);
                     break;
             }
         }
@@ -131,7 +135,7 @@ public class GOTriggerEvent : MonoBehaviour, IPointerClickHandler, IPointerDownH
 
         for (int i = 0; i < cnt; i++)
         {
-            if (!constraints[i].IsTrue)
+            if (constraints[i] != null && !constraints[i].IsTrue)
             {
                 res = false;
                 break;

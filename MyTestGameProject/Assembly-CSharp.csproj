@@ -158,8 +158,10 @@
     <Compile Include="Assets\Scripts\main_scene\Tutorial\TriggerConstraintDestroyGameObject.cs" />
     <Compile Include="Assets\Scripts\main_scene\Tutorial\TriggerConstraintPlayeFormationPhalanx.cs" />
     <Compile Include="Assets\Scripts\main_scene\Tutorial\TriggerConstraintPlayeFormationShields.cs" />
+    <Compile Include="Assets\Scripts\main_scene\Tutorial\TriggerConstraintPlayerTakesUnits.cs" />
     <Compile Include="Assets\Scripts\main_scene\Tutorial\TriggerConstraintShieldInPlayerInventory.cs" />
     <Compile Include="Assets\Scripts\main_scene\Tutorial\TriggerConstraintSpearInPlayerInventory.cs" />
+    <Compile Include="Assets\Scripts\main_scene\Tutorial\TriggerGoToMainMenu.cs" />
     <Compile Include="Assets\Scripts\main_scene\Tutorial\TutorialPanel.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\ConfirmPanel.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\DeathScreen.cs" />

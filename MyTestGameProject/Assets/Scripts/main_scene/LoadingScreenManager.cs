@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class LoadingScreenManager : MonoBehaviour
 {
     public static GameManager.SceneIndex NextLevel { get; set; }
+    public static GameManager.SceneIndex CurrentLenel { get; private set; }
 
     static LoadingScreenManager instance;
 
@@ -48,6 +49,8 @@ public class LoadingScreenManager : MonoBehaviour
         ind.Value = 1;
         Application.backgroundLoadingPriority = prioryty;
         operation.allowSceneActivation = true;
+
+        CurrentLenel = NextLevel;
     }
 	
 

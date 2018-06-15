@@ -738,7 +738,7 @@ public class Unit : MonoBehaviour
         timerForUnion = 0;
         if (selected && squad == null)
         {
-            if (Squad.playerSquadInstance.UnitCount < Squad.playerSquadInstance.FULL_SQUAD_UNIT_COUNT)
+            if (Squad.playerSquadInstance.UnitCount < Squad.playerSquadInstance.FULL_SQUAD_UNIT_COUNT && Squad.playerSquadInstance.CurrentFormation == FormationStats.Formations.RANKS)
             {
                 float dist = Vector2.Distance(ThisTransform.position, Squad.playerSquadInstance.CenterSquad);
                 if (dist <= Squad.playerSquadInstance.DistanceToUnionWithSquad && !Squad.playerSquadInstance.InFight)

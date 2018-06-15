@@ -1,6 +1,6 @@
 Android
 PlayerPath?
-D:/development/unity/MyGame - Thirty/out/Thirty.a.1.4.apk
+D:/development/unity/MyGame - Thirty/out/Thirty.a.1.5.apk
 SceneListBegin?
 Assets/Scenes/main_menu.unity
 Assets/Scenes/market.unity
@@ -27,7 +27,7 @@ ff05dcdf90651c3d98a9cad3df5e471e UnityEngine.Timeline.dll:UnityEngine.Timeline.C
 4d5e65da3e1954fb9c4e81fcda16c86c Assembly-CSharp.dll:.VolumeSlider
 9778b00922ba8aae9a3acf3ff3f34ff4 Assembly-CSharp.dll:.UILineRenderer
 ae73b18b07cd4c26aa5b511ba60ab9f3 Assembly-CSharp.dll:.LevelGeneradingProgress
-903bc43a6ca8433fa86920bcc1769f08 Assembly-CSharp.dll:.TutorialPanel
+2fddb56232ced115f828384404adde7c Assembly-CSharp.dll:.TutorialPanel
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.TriggerConstraintShieldInPlayerInventory
 3fdbdc4938c540f7428b1f0276f07c59 Assembly-CSharp.dll:.PilumsVolley
 f278ec698acd7bb49ddccd048513d587 Assembly-CSharp.dll:.DialogBox
@@ -171,7 +171,7 @@ bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.Audi
 c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingCollider
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingRenderer
 2441f208d9e7ee22450a573b65663902 Assembly-CSharp.dll:.PlayerSquadController
-2b4e5b276a229327aeb6305127e3f5bf Assembly-CSharp.dll:.TriggerConstraintDestroyGameObject
+1554dd1d37dcc64f01b8f93d90ae0de8 Assembly-CSharp.dll:.TriggerConstraintDestroyGameObject
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.UnitPosition
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.CenterUnitSelection
 ce338c1762b506bc487788e845ef98cc Assembly-CSharp.dll:.ArrowsValley
@@ -289,7 +289,7 @@ dfa9a4723889c77894bfc6918bcfb9ca Assembly-CSharp.dll:.StatsBlock
 9de3a22eca9aefadba2d10d5987cefe3 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 fcc24e6aa8ec57932f32eee0dc9b8ef6 Assembly-CSharp.dll:.SquadSkillsInventoryUI
 5b5f728344e2a781df9bf7f53b997f24 Assembly-CSharp.dll:.ShowAllyUnitsHp
-65968900dc4db80e7d6e40c1fd1a7aae Assembly-CSharp.dll:.SOTip
+afba19a9679ab0cdcb3ea54e36aa0443 Assembly-CSharp.dll:.SOTip
 828daa95842846c20a2dd84a6b54b16d Assembly-CSharp.dll:.TintTextureGenerator
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.DropToEquipmentMarket
 4e64a8439d3f2714054286cecee27cab Assembly-CSharp.dll:UnityEngine.Tilemaps.TerrainTile
@@ -319,3 +319,5 @@ b30cd7754bfc1593b47f5140046d4a69 Assembly-CSharp.dll:.Squad
 8d93a23f25af42a983863485fb7c6788 Assembly-CSharp.dll:.DropToConsumable
 ccce343eaef88744870b72a06f29831d Assembly-CSharp.dll:.ConfirmPanel
 0be65be8f1974ff92aed839a6c0a9cb4 Assembly-CSharp.dll:.SkillsPanelScrollAndHeight
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.TriggerConstraintPlayerTakesUnits
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.TriggerGoToMainMenu

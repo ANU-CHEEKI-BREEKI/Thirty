@@ -34,6 +34,11 @@ public class SquadTriggerInitiator : MonoBehaviour
             rb.MovePosition(squad.CenterSquad);
 	}
 
+    public void TriggerCallBakc(GOTriggerEvent.TriggerType type)
+    {
+        squad.GoTo(null);
+    }
+
     private void OnDrawGizmos()
     {
         if (cl != null && tr != null)

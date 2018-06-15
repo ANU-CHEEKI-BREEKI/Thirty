@@ -6,11 +6,31 @@ public class TriggerConstraintDestroyGameObject : ATriggerConstraint
 {
     [SerializeField] GameObject monitoringObject;
 
+    [SerializeField] bool all;
+    [SerializeField] GameObject[] allOfThisMonitoring;
+
     public override bool IsTrue
     {
         get
         {
-            return monitoringObject == null;
+            bool res = true;
+            if (!all)
+            {
+                res = monitoringObject == null;
+            }
+            else
+            {
+                int c = allOfThisMonitoring.Length;
+                for (int i = 0; i < c; i++)
+                {
+                    if (allOfThisMonitoring[i] != null)
+                    {
+                        res = false;
+                        break;
+                    }
+                }
+            }
+            return res;
         }
     }
 }

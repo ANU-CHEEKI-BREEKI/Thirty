@@ -308,6 +308,14 @@ public class AiSquadController : MonoBehaviour
                 Gizmos.DrawWireSphere(squad.PositionsTransform.position, distanceToActivateSquad);
             }
         }
+        else
+        {
+            Gizmos.color = Color.green;
+            Gizmos.DrawWireSphere(transform.position, radiusOfDefendArea);
+
+            Gizmos.color = Color.yellow;
+            Gizmos.DrawWireSphere(transform.position, radiusOfAttackArea);
+        }
     }
 
     public enum AiSquadBehaviour { HOLD_POSITION, ATTACK, DEFEND, }

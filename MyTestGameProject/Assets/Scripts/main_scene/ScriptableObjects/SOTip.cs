@@ -7,8 +7,7 @@ public class SOTip : ScriptableObject
 {
     public enum Directions { HORISONTAL, VERTICAL }
 
-    [SerializeField] Sprite firstImage;
-    [SerializeField] Sprite secondImage;
+    [SerializeField] Sprite[] images;
     [SerializeField] GameObject animatedImageOriginal;
     [TextArea(1, 10)]
     [SerializeField] string tipText;
@@ -16,8 +15,7 @@ public class SOTip : ScriptableObject
     [Space]
     [SerializeField] Directions direction;
 
-    public Sprite FirstImage { get { return firstImage; } }
-    public Sprite SecondImage { get { return secondImage; } }
+    public Sprite[] Images { get { return images; } }
     public GameObject AnimatedImageOriginal { get { return animatedImageOriginal; } }
     public string TipText { get { return tipText; } }
     public bool IsLocalisedText { get { return isLocalisedText; } }
