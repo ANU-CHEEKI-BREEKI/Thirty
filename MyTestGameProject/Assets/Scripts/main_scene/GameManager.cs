@@ -151,6 +151,7 @@ public class GameManager : MonoBehaviour
             case SceneIndex.LOADING_SCREEN:
                 break;
             case SceneIndex.LEVEL_TUTORIAL:
+                SoundManager.Instance.PlaySound(new SoundChannel.ClipSet(SoundManager.Instance.MusicLevel, true), SoundManager.SoundType.MUSIC);
 
                 FadeScreen.Instance.FadeOnStartScene = false;
                 Pause();
@@ -190,8 +191,6 @@ public class GameManager : MonoBehaviour
                 .AddCancelButton("Ясно")
                 .SetSize(900, 600)
                 .Show(Vector2.zero, this);
-
-            Instance.OnApplicationPause(true);
         }
     }
 
@@ -278,10 +277,7 @@ public class GameManager : MonoBehaviour
     {
         level++;
 
-        ReconfigureLevelSettings();
-
-        if (BeforeLoadLevel != null)
-            BeforeLoadLevel(SceneIndex.LEVEL, level);
+        ReconfigureLevelSettings();        
 
         var firstSkill = Squad.playerSquadInstance.Inventory.FirstSkill;
         var secondSkill = Squad.playerSquadInstance.Inventory.SecondSkill;
@@ -295,9 +291,6 @@ public class GameManager : MonoBehaviour
 
     public void LoadMarket()
     {
-        if (BeforeLoadLevel != null)
-            BeforeLoadLevel(SceneIndex.MARKET, level);
-
         LoadScene(SceneIndex.MARKET);
     }
 
@@ -312,9 +305,6 @@ public class GameManager : MonoBehaviour
         }
 
         ReconfigureLevelSettings();
-
-        if (BeforeLoadLevel != null)
-            BeforeLoadLevel(SceneIndex.MAIN_MENU, level);
 
         LoadScene(SceneIndex.MAIN_MENU);
     }
@@ -331,6 +321,9 @@ public class GameManager : MonoBehaviour
 
     void LoadScene(SceneIndex index)
     {
+        if (BeforeLoadLevel != null)
+            BeforeLoadLevel(index, level);
+
         LoadingScreenManager.NextLevel = index;
         SceneManager.LoadScene((int)SceneIndex.LOADING_SCREEN);
     }
@@ -353,18 +346,7 @@ public class GameManager : MonoBehaviour
             }
         }
     }
-
-    private void OnApplicationPause(bool pause)
-    {
-        if (pause)
-        {
-            var go = GameObject.Find("PauseToggle");
-            if (go != null)
-                go.GetComponent<UnityEngine.UI.Toggle>().isOn = pause;
-        }
-    }
     
-
     [ContextMenu("ResetAllSettings")]
     public void ResetAllSettings()
     {

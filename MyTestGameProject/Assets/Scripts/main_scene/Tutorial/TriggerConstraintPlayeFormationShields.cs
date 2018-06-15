@@ -8,7 +8,10 @@ public class TriggerConstraintPlayeFormationShields : ATriggerConstraint
     {
         get
         {
-            return Squad.playerSquadInstance.CurrentFormation == FormationStats.Formations.RISEDSHIELDS;
+            if (Squad.playerSquadInstance != null)
+                return Squad.playerSquadInstance.CurrentFormation == FormationStats.Formations.RISEDSHIELDS;
+            else
+                return false;
         }
     }
 }

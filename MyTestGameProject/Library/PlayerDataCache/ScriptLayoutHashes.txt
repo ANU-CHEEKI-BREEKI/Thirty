@@ -144,6 +144,7 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 a2d71564a3231a1a4d16958b739f74e3 Assembly-CSharp.dll:.Toast
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.UnitOutline
 567cece2d5d1e7fc4085b07ee49480c3 Assembly-CSharp.dll:.GameTipsPanel
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.TriggerGoToMainMenu
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.NewBehaviourScript
 f4bd1aee67eeef7953cce6c44588b3d7 TextMeshPro-2017.3-1.0.56-Runtime.dll:TMPro.TextContainer
 8e879b98cad4aa17a0beef746daecd35 TextMeshPro-2017.3-1.0.56-Runtime.dll:TMPro.TextMeshPro
@@ -302,6 +303,7 @@ a0556ad027fed3605bba40666cbff78b Assembly-CSharp.dll:.SettingsAudioSection
 1a755e417b9b04acbb508df9d5c6e29c Assembly-CSharp.dll:.StatsPanelUI
 29d54cacd202c718e55938e5d5ab1ae9 Assembly-CSharp.dll:.SquadSpawner
 45819cff01303ea68264e0384e74a008 Assembly-CSharp.dll:.MarketConsumablesUI
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.TriggerConstraintPlayerTakesUnits
 970f497e442a67f5675975547343deb0 Assembly-CSharp.dll:.Durabilityable
 630a80109db451e274528723f9088c7a Assembly-CSharp.dll:.UiEvents
 b0464befbdb0eb6e84ea1905f4f19781 Assembly-CSharp.dll:.UILineConnector
@@ -319,5 +321,3 @@ b30cd7754bfc1593b47f5140046d4a69 Assembly-CSharp.dll:.Squad
 8d93a23f25af42a983863485fb7c6788 Assembly-CSharp.dll:.DropToConsumable
 ccce343eaef88744870b72a06f29831d Assembly-CSharp.dll:.ConfirmPanel
 0be65be8f1974ff92aed839a6c0a9cb4 Assembly-CSharp.dll:.SkillsPanelScrollAndHeight
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.TriggerConstraintPlayerTakesUnits
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.TriggerGoToMainMenu

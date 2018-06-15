@@ -8,7 +8,10 @@ public class TriggerConstraintPlayeFormationPhalanx : ATriggerConstraint
     {
         get
         {
-            return Squad.playerSquadInstance.CurrentFormation == FormationStats.Formations.PHALANX;
+            if (Squad.playerSquadInstance != null)
+                return Squad.playerSquadInstance.CurrentFormation == FormationStats.Formations.PHALANX;
+            else
+                return false;
         }
     }
 }
