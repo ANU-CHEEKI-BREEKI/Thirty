@@ -129,16 +129,16 @@ public class GameManager : MonoBehaviour
         switch (index)
         {
             case SceneIndex.MAIN_MENU:
-                SoundManager.Instance.PlaySound(new SoundChannel.ClipSet(SoundManager.Instance.MusicMainMenu, true), SoundManager.SoundType.MUSIC);
-                SoundManager.Instance.PlaySound(new SoundChannel.ClipSet(SoundManager.Instance.BonfireMainMenu, true, 0.1f), SoundManager.SoundType.FX);
-                SoundManager.Instance.PlaySound(new SoundChannel.ClipSet(SoundManager.Instance.SharpingSwordMainMenu, true, 0.2f), SoundManager.SoundType.FX);
+                SoundManager.Instance.PlaySound(new SoundChannel.ClipSet(SoundManager.Instance.SoundClipsContainer.Music.MusicMainMenu, true), SoundManager.SoundType.MUSIC);
+                SoundManager.Instance.PlaySound(new SoundChannel.ClipSet(SoundManager.Instance.SoundClipsContainer.FX.BonfireMainMenu, true, 0.1f), SoundManager.SoundType.FX);
+                SoundManager.Instance.PlaySound(new SoundChannel.ClipSet(SoundManager.Instance.SoundClipsContainer.FX.SharpingSwordMainMenu, true, 0.2f), SoundManager.SoundType.FX);
 
                 break;
             case SceneIndex.MARKET:
-                SoundManager.Instance.PlaySound(new SoundChannel.ClipSet(SoundManager.Instance.MusicMarket, false), SoundManager.SoundType.MUSIC);
+                SoundManager.Instance.PlaySound(new SoundChannel.ClipSet(SoundManager.Instance.SoundClipsContainer.Music.MusicMarket, false), SoundManager.SoundType.MUSIC);
                 break;
             case SceneIndex.LEVEL:
-                SoundManager.Instance.PlaySound(new SoundChannel.ClipSet(SoundManager.Instance.MusicLevel, true), SoundManager.SoundType.MUSIC);
+                SoundManager.Instance.PlaySound(new SoundChannel.ClipSet(SoundManager.Instance.SoundClipsContainer.Music.MusicLevel, true), SoundManager.SoundType.MUSIC);
 
                 FadeScreen.Instance.FadeOnStartScene = false;
                 Pause();
@@ -151,7 +151,7 @@ public class GameManager : MonoBehaviour
             case SceneIndex.LOADING_SCREEN:
                 break;
             case SceneIndex.LEVEL_TUTORIAL:
-                SoundManager.Instance.PlaySound(new SoundChannel.ClipSet(SoundManager.Instance.MusicLevel, true), SoundManager.SoundType.MUSIC);
+                SoundManager.Instance.PlaySound(new SoundChannel.ClipSet(SoundManager.Instance.SoundClipsContainer.Music.MusicLevel, true), SoundManager.SoundType.MUSIC);
 
                 FadeScreen.Instance.FadeOnStartScene = false;
                 Pause();

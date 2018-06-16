@@ -1071,7 +1071,7 @@ public class Unit : MonoBehaviour
 
             SoundManager.Instance.PlaySound(
                 new SoundChannel.ClipSet(
-                    SoundManager.Instance.TakeDamage[UnityEngine.Random.Range(0, SoundManager.Instance.TakeDamage.Length - 1)],
+                    SoundManager.Instance.SoundClipsContainer.FX.TakeDamage[UnityEngine.Random.Range(0, SoundManager.Instance.SoundClipsContainer.FX.TakeDamage.Length - 1)],
                     false,
                     0.2f
                 ),

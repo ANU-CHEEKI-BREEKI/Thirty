@@ -141,6 +141,7 @@
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\UnitStatsModifyer.cs" />
     <Compile Include="Assets\Scripts\main_scene\PilumsVolley.cs" />
     <Compile Include="Assets\Scripts\main_scene\ProgressIndicator.cs" />
+    <Compile Include="Assets\Scripts\main_scene\ScriptableObjects\SOSoundContainer.cs" />
     <Compile Include="Assets\Scripts\main_scene\ScriptableObjects\SOTip.cs" />
     <Compile Include="Assets\Scripts\main_scene\ShowAllyUnitsHp.cs" />
     <Compile Include="Assets\Scripts\main_scene\SoundChannel.cs" />

@@ -204,7 +204,7 @@ d672cee35261f9935d5ce974c746730f TextMeshPro-2017.3-1.0.56-Runtime.dll:TMPro.TMP
 3dd1ef6f4de6a0f25e89f0ac7f9c0c03 Assembly-CSharp.dll:.SkillMarketInventoryUI
 134fbd7ee7c3619a31f7c5407c515a63 Assembly-CSharp.dll:.BuyTheGold
 0d9ffdc9cda3d6d795be7196813db8ad Assembly-CSharp.dll:.HealthBar
-f01b7063e8f5096dc61cb203c9fc441a Assembly-CSharp.dll:.SoundManager
+2d98e2ba30dc83a9f81c7ea38183b91c Assembly-CSharp.dll:.SoundManager
 05524b8f659e7bfe5756d1335fec24ba TextMeshPro-2017.3-1.0.56-Editor.dll:TMPro.EditorUtilities.DropdownEditor
 05524b8f659e7bfe5756d1335fec24ba TextMeshPro-2017.3-1.0.56-Editor.dll:TMPro.EditorUtilities.TMP_ColorGradientEditor
 05524b8f659e7bfe5756d1335fec24ba TextMeshPro-2017.3-1.0.56-Editor.dll:TMPro.EditorUtilities.TMP_ContextMenus
@@ -321,3 +321,4 @@ b30cd7754bfc1593b47f5140046d4a69 Assembly-CSharp.dll:.Squad
 8d93a23f25af42a983863485fb7c6788 Assembly-CSharp.dll:.DropToConsumable
 ccce343eaef88744870b72a06f29831d Assembly-CSharp.dll:.ConfirmPanel
 0be65be8f1974ff92aed839a6c0a9cb4 Assembly-CSharp.dll:.SkillsPanelScrollAndHeight
+47356a5ef76d39fb48c0c7a7cf9c4561 Assembly-CSharp.dll:.SOSoundContainer

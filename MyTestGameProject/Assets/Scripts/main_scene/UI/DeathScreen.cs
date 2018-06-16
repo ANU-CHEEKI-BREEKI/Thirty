@@ -29,8 +29,8 @@ public class DeathScreen : MonoBehaviour
 
         SoundManager.Instance.PlaySound(
             new List<SoundChannel.ClipSet>(){
-                new SoundChannel.ClipSet(SoundManager.Instance.DeathScreen, false),
-                new SoundChannel.ClipSet(SoundManager.Instance.DeathScreenWind, true),
+                new SoundChannel.ClipSet(SoundManager.Instance.SoundClipsContainer.FX.DeathScreen, false),
+                new SoundChannel.ClipSet(SoundManager.Instance.SoundClipsContainer.FX.DeathScreenWind, true),
             },
             SoundManager.SoundType.MUSIC,
             100
