@@ -65,7 +65,7 @@ public class StatsPanelUI : MonoBehaviour
         OnEquipmentChanged(null);
     }
 
-    void OnEquipmentChanged(Equipment eq)
+    void OnEquipmentChanged(EquipmentStack eq)
     {
         if (Squad.playerSquadInstance != null)
         {
@@ -73,10 +73,10 @@ public class StatsPanelUI : MonoBehaviour
             {
                 EquipmentStats[] equipStats = new EquipmentStats[]
                 {
-                    Squad.playerSquadInstance.Inventory.Helmet.Stats,
-                    Squad.playerSquadInstance.Inventory.Body.Stats,
-                    Squad.playerSquadInstance.Inventory.Shield.Stats,
-                    Squad.playerSquadInstance.Inventory.Weapon.Stats
+                    Squad.playerSquadInstance.Inventory.Helmet.EquipmentStats,
+                    Squad.playerSquadInstance.Inventory.Body.EquipmentStats,
+                    Squad.playerSquadInstance.Inventory.Shield.EquipmentStats,
+                    Squad.playerSquadInstance.Inventory.Weapon.EquipmentStats
                 };
                 UnitStats stats = UnitStats.CalcStats(Squad.playerSquadInstance.UnitStats, equipStats, Squad.playerSquadInstance.CurrentFormationModifyers);
 

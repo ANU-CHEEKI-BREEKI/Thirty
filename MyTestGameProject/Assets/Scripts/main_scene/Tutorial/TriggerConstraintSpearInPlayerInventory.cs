@@ -12,9 +12,9 @@ public class TriggerConstraintSpearInPlayerInventory : ATriggerConstraint
             {
                 var w = Squad.playerSquadInstance.Inventory.Weapon;
                 bool res = true;
-                return w.Stats.Type == EquipmentStats.TypeOfEquipment.WEAPON
-                    && res == w.Stats.CanReformToPhalanx
-                    && res == w.Stats.CanReformToPhalanxInFight;
+                return w.EquipmentStats.Type == EquipmentStats.TypeOfEquipment.WEAPON
+                    && res == w.EquipmentStats.CanReformToPhalanx
+                    && res == w.EquipmentStats.CanReformToPhalanxInFight;
             }
             else return false;
         }

@@ -46,19 +46,16 @@ public class DropToEquipment : ADropToMe
     public override bool AddToThisInventory(AStack aStack)
     {
         EquipmentStack stack = aStack as EquipmentStack;
-
         var stats = stack.EquipmentStats;
-        Equipment eq = (Resources.Load(stack.EquipmentMainProperties.PathToPrefab) as GameObject).GetComponent<Equipment>();
-        eq.Stats = stats;
 
         if (stats.Type == EquipmentStats.TypeOfEquipment.HEAD)
         {
-            Squad.playerSquadInstance.Inventory.Helmet = eq;
+            Squad.playerSquadInstance.Inventory.Helmet = stack;
         }
         else if (stats.Type == EquipmentStats.TypeOfEquipment.SHIELD)
         {
-            if (Squad.playerSquadInstance.Inventory.Weapon.Stats.CanUseWithShield)
-                Squad.playerSquadInstance.Inventory.Shield = eq;
+            if (Squad.playerSquadInstance.Inventory.Weapon.EquipmentStats.CanUseWithShield)
+                Squad.playerSquadInstance.Inventory.Shield = stack;
             else
             {
                 Toast.Instance.Show(Localization.toast_cant_use_with_current_weapon);
@@ -67,12 +64,12 @@ public class DropToEquipment : ADropToMe
         }
         else if (stats.Type == EquipmentStats.TypeOfEquipment.BODY)
         {
-            Squad.playerSquadInstance.Inventory.Body = eq;
+            Squad.playerSquadInstance.Inventory.Body = stack;
         }
         else if (stats.Type == EquipmentStats.TypeOfEquipment.WEAPON)
         {
-            if (stats.CanUseWithShield || Squad.playerSquadInstance.Inventory.Shield.Stats.Empty)
-                Squad.playerSquadInstance.Inventory.Weapon = eq;
+            if (stats.CanUseWithShield || Squad.playerSquadInstance.Inventory.Shield.EquipmentStats.Empty)
+                Squad.playerSquadInstance.Inventory.Weapon = stack;
             else
             {
                 Toast.Instance.Show(Localization.toast_cant_use_with_shield);

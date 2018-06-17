@@ -548,13 +548,13 @@ public class Unit : MonoBehaviour
         SetWeapon(squad.Inventory.Weapon);
     }
 
-    void SetWeapon(Equipment weapon)
+    void SetWeapon(EquipmentStack weapon)
     {
         Destroy(Weapon);
-        Weapon = Instantiate(Resources.Load<GameObject>(weapon.MainPropertie.PathToPrefab), ThisTransform.position, ThisTransform.rotation, ThisTransform);
+        Weapon = Instantiate(Resources.Load<GameObject>(weapon.EquipmentMainProperties.PathToPrefab), ThisTransform.position, ThisTransform.rotation, ThisTransform);
         Weapon.name = "Weapon";
         this.weapon = (Weapon.transform.GetComponent<Item>() as Equipment);
-        this.weapon.Stats = weapon.Stats;
+        this.weapon.Stats = weapon.EquipmentStats;
 
         if(!this.weapon.Stats.CanReformToPhalanx)
         {
@@ -570,31 +570,31 @@ public class Unit : MonoBehaviour
         }
     }
 
-    void SetShield(Equipment shield)
+    void SetShield(EquipmentStack shield)
     {
         Destroy(Shield);
-        Shield = Instantiate(Resources.Load<GameObject>(shield.MainPropertie.PathToPrefab), ThisTransform.position, ThisTransform.rotation, ThisTransform);
+        Shield = Instantiate(Resources.Load<GameObject>(shield.EquipmentMainProperties.PathToPrefab), ThisTransform.position, ThisTransform.rotation, ThisTransform);
         Shield.name = "Shield";
         this.shield = (Shield.transform.GetComponent<Item>() as Equipment);
-        this.shield.Stats = shield.Stats;
+        this.shield.Stats = shield.EquipmentStats;
     }
 
-    public void SetBody(Equipment body)
+    public void SetBody(EquipmentStack body)
     {
         Destroy(Body);
-        Body = Instantiate(Resources.Load<GameObject>(body.MainPropertie.PathToPrefab), ThisTransform.position, ThisTransform.rotation, ThisTransform);
+        Body = Instantiate(Resources.Load<GameObject>(body.EquipmentMainProperties.PathToPrefab), ThisTransform.position, ThisTransform.rotation, ThisTransform);
         Body.name = "Body";
         this.body = (Body.transform.GetComponent<Item>() as Equipment);
-        this.body.Stats = body.Stats;
+        this.body.Stats = body.EquipmentStats;
     }
 
-    public void SetHelmet(Equipment helmet)
+    public void SetHelmet(EquipmentStack helmet)
     {
         Destroy(Helmet);
-        Helmet = Instantiate(Resources.Load<GameObject>(helmet.MainPropertie.PathToPrefab), ThisTransform.position, ThisTransform.rotation, ThisTransform);
+        Helmet = Instantiate(Resources.Load<GameObject>(helmet.EquipmentMainProperties.PathToPrefab), ThisTransform.position, ThisTransform.rotation, ThisTransform);
         Helmet.name = "Helmet";
         this.helmet = (Helmet.transform.GetComponent<Item>() as Equipment);
-        this.helmet.Stats = helmet.Stats;
+        this.helmet.Stats = helmet.EquipmentStats;
     }
 
     void SetArms(GameObject arms)
@@ -619,10 +619,10 @@ public class Unit : MonoBehaviour
     {
         EquipmentStats[] equipStats = new EquipmentStats[]
         {
-            squad.Inventory.Helmet.Stats,
-            squad.Inventory.Body.Stats,
-            squad.Inventory.Shield.Stats,
-            squad.Inventory.Weapon.Stats
+            squad.Inventory.Helmet.EquipmentStats,
+            squad.Inventory.Body.EquipmentStats,
+            squad.Inventory.Shield.EquipmentStats,
+            squad.Inventory.Weapon.EquipmentStats
         };
 
         float health = stats.Health;
@@ -889,22 +889,22 @@ public class Unit : MonoBehaviour
     {
         timerForCheckEquipment = 0;
         bool equipChanged = false;
-        if (helmet.Stats.Id != squad.Inventory.Helmet.Stats.Id)
+        if (!helmet.Stats.Equals(squad.Inventory.Helmet.EquipmentStats))
         {
             SetHelmet(squad.Inventory.Helmet);
             equipChanged = true;
         }
-        if (body.Stats.Id != squad.Inventory.Body.Stats.Id)
+        if (!body.Stats.Equals(squad.Inventory.Body.EquipmentStats))
         {
             SetBody(squad.Inventory.Body);
             equipChanged = true;
         }
-        if (shield.Stats.Id != squad.Inventory.Shield.Stats.Id)
+        if (!shield.Stats.Equals(squad.Inventory.Shield.EquipmentStats))
         {
             SetShield(squad.Inventory.Shield);
             equipChanged = true;
         }
-        if (weapon.Stats.Id != squad.Inventory.Weapon.Stats.Id)
+        if (!weapon.Stats.Equals(squad.Inventory.Weapon.EquipmentStats))
         {
             SetWeapon(squad.Inventory.Weapon);
             equipChanged = true;
@@ -1010,9 +1010,9 @@ public class Unit : MonoBehaviour
             if (!(rot <= stats.DefenceHalfSector || rot >= 360 - stats.DefenceHalfSector))
             {
                 //если есть щит, то увеличиваем шанс попадания (так как мы уже учли щит в статах)
-                if (squad != null && !squad.Inventory.Shield.Stats.Empty)
+                if (squad != null && !squad.Inventory.Shield.EquipmentStats.Empty)
                 {
-                    var shieldMissileBlock = (squad.Inventory.Shield).Stats.MissileBlock;
+                    var shieldMissileBlock = (squad.Inventory.Shield).EquipmentStats.MissileBlock;
 
                     if (squad.CurrentFormation != FormationStats.Formations.RISEDSHIELDS)
                         shieldMissileBlock *= 0.5f;
@@ -1027,7 +1027,7 @@ public class Unit : MonoBehaviour
 
                 //если щиты подняты, то учитываем их броню
                 if (squad != null && squad.CurrentFormation == FormationStats.Formations.RISEDSHIELDS)
-                    dmg -= (squad.Inventory.Shield).Stats.Armour;
+                    dmg -= (squad.Inventory.Shield).EquipmentStats.Armour;
 
                 if (dmg < damage.ArmourDamage)
                     dmg = damage.ArmourDamage;

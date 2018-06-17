@@ -8,5 +8,5 @@ public class Equipment : Item
 {
     [Header("Equipment properties")]
     [SerializeField] EquipmentStats stats;
-    public EquipmentStats Stats { get { return stats; } set { stats = value; } }
+    public EquipmentStats Stats { get { return stats; } set { stats = value; } } 
 }

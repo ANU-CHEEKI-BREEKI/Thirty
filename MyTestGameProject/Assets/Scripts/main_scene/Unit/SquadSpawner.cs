@@ -52,14 +52,17 @@ public class SquadSpawner : MonoBehaviour
         squad.PositionsTransform.rotation = rotation;
         squad.endLookRotation = rotation;
 
-        if (inventory.Helmet != null)
-            squad.Inventory.Helmet = inventory.Helmet;
-        if (inventory.Body != null)
-            squad.Inventory.Body = inventory.Body;
-        if (inventory.Shield != null)
-            squad.Inventory.Shield = inventory.Shield;
-        if (inventory.Weapon != null)
-            squad.Inventory.Weapon = inventory.Weapon;
+
+        //пока  что код убрал, так как в префабах все ссылки похерились. при пересоздании уровней опять откоментирую код.
+
+        //if (inventory.Helmet != null)
+        //    squad.Inventory.Helmet = inventory.Helmet;
+        //if (inventory.Body != null)
+        //    squad.Inventory.Body = inventory.Body;
+        //if (inventory.Shield != null)
+        //    squad.Inventory.Shield = inventory.Shield;
+        //if (inventory.Weapon != null)
+        //    squad.Inventory.Weapon = inventory.Weapon;
 
         squad.CurrentFormation = formation;             
        

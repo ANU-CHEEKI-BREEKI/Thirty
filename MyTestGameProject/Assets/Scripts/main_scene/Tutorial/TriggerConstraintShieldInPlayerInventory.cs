@@ -8,8 +8,12 @@ public class TriggerConstraintShieldInPlayerInventory : ATriggerConstraint
     {
         get
         {
-            var s = Squad.playerSquadInstance.Inventory.Shield;
-            return !s.Stats.Empty && s.Stats.Type == EquipmentStats.TypeOfEquipment.SHIELD;
+            if (Squad.playerSquadInstance != null)
+            {
+                var s = Squad.playerSquadInstance.Inventory.Shield;
+                return !s.EquipmentStats.Empty && s.EquipmentStats.Type == EquipmentStats.TypeOfEquipment.SHIELD;
+            }
+            else return false;
         }
     }
 }

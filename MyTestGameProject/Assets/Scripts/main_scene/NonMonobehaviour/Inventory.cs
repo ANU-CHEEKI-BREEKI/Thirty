@@ -10,12 +10,18 @@ public class Inventory
     /// <summary>
     /// arg is a new  equipment
     /// </summary>
-    public event Action<Equipment> OnEquipmentChanged;
+    public event Action<EquipmentStack> OnEquipmentChanged;
+
+    EquipmentStack helmetStack;
+    EquipmentStack bodyStack;
+    EquipmentStack shieldStack;
+    EquipmentStack weaponStack;
 
     [SerializeField] Equipment helmet;
     [SerializeField] Equipment body;
     [SerializeField] Equipment shield;
     [SerializeField] Equipment weapon;
+
     [SerializeField] SkillStack firstSkill;
     [SerializeField] SkillStack secondSkill;
     [SerializeField] ConsumableStack firstConsumable;
@@ -23,64 +29,112 @@ public class Inventory
 
     [Space]
     [SerializeField] Equipment helmetNone;
-    //public Equipment HelmetNone { get { return helmetNone; } }
-
     [SerializeField] Equipment bodyNone;
-    //public Equipment BodyNone { get { return bodyNone; } }
-
     [SerializeField] Equipment shieldNone;
-    //public Equipment ShieldNone { get { return shieldNone; } }
 
     [SerializeField] EquipmentStack[] inventory = new EquipmentStack[3];
     public int Length { get { return inventory.Length; } }
 
-    public Equipment Helmet
+    public EquipmentStack Helmet
     {
-        get { return helmet; }
+        get
+        {
+            if(helmetStack == null)
+                helmetStack = new EquipmentStack()
+                {
+                    EquipmentMainProperties = helmet.MainPropertie,
+                    EquipmentStats = helmet.Stats
+                };
+            return helmetStack;
+        }
         set
         {
             if (value == null)
-                helmet = helmetNone;
+            {
+                helmetStack.EquipmentMainProperties = helmetNone.MainPropertie;
+                helmetStack.EquipmentStats = helmetNone.Stats;
+            }
             else
-                helmet = value;
-            EquipmentChanged(helmet);
+            {
+                helmetStack.EquipmentMainProperties = value.EquipmentMainProperties;
+                helmetStack.EquipmentStats = value.EquipmentStats;
+            }
+            EquipmentChanged(helmetStack);
         }
     }
-    public Equipment Body
+    public EquipmentStack Body
     {
-        get { return body; }
+        get
+        {
+            if (bodyStack == null)
+                bodyStack = new EquipmentStack()
+                {
+                    EquipmentMainProperties = body.MainPropertie,
+                    EquipmentStats = body.Stats
+                };
+            return bodyStack;
+        }
         set
         {
             if (value == null)
-                body = bodyNone;
+            {
+                bodyStack.EquipmentMainProperties = bodyNone.MainPropertie;
+                bodyStack.EquipmentStats = bodyNone.Stats;
+            }
             else
-                body = value;
-            EquipmentChanged(body);
+            {
+                bodyStack.EquipmentMainProperties = value.EquipmentMainProperties;
+                bodyStack.EquipmentStats = value.EquipmentStats;
+            }
+            EquipmentChanged(bodyStack);
         }
     }
-    public Equipment Shield
+    public EquipmentStack Shield
     {
-        get { return shield; }
+        get {
+            if (shieldStack == null)
+                shieldStack = new EquipmentStack()
+                {
+                    EquipmentMainProperties = shield.MainPropertie,
+                    EquipmentStats = shield.Stats
+                };
+            return shieldStack;
+        }
         set
         {
             if (value == null)
-                shield = shieldNone;
+            {
+                shieldStack.EquipmentMainProperties = shieldNone.MainPropertie;
+                shieldStack.EquipmentStats = shieldNone.Stats;
+            }
             else
-                shield = value;
-            EquipmentChanged(shield);
+            {
+                shieldStack.EquipmentMainProperties = value.EquipmentMainProperties;
+                shieldStack.EquipmentStats = value.EquipmentStats;
+            }
+            EquipmentChanged(shieldStack);
         }
     }
-    public Equipment Weapon
+    public EquipmentStack Weapon
     {
-        get { return weapon; }
+        get {
+            if (weaponStack == null)
+                weaponStack = new EquipmentStack()
+                {
+                    EquipmentMainProperties = weapon.MainPropertie,
+                    EquipmentStats = weapon.Stats
+                };
+            return weaponStack;
+        }
         set
         {
             if (value == null)
                 throw new Exception("Нельзя убрать оружие!!!");
 
-            weapon = value;
+            weaponStack.EquipmentMainProperties = value.EquipmentMainProperties;
+            weaponStack.EquipmentStats = value.EquipmentStats;
 
-            EquipmentChanged(weapon);
+            EquipmentChanged(weaponStack);
         }
     }
     public SkillStack FirstSkill { get { return firstSkill; } set { firstSkill = value; } }
@@ -88,7 +142,7 @@ public class Inventory
     public ConsumableStack FirstConsumable { get { return firstConsumable; } set { firstConsumable = value; } }
     public ConsumableStack SecondConsumable { get { return secondConsumable; } set { secondConsumable = value; } }
 
-    void EquipmentChanged(Equipment eq)
+    void EquipmentChanged(EquipmentStack eq)
     {
         if (OnEquipmentChanged != null) OnEquipmentChanged(eq);
     }
@@ -102,7 +156,12 @@ public class Inventory
 
         set
         {
-            inventory[index] = value;            
+            inventory[index] = value;
         }
     }
+
+    //public Inventory()
+    //{
+    //    if(weapon.EquipmentMainProperties)
+    //}
 }

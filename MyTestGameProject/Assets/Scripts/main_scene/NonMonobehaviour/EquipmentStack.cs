@@ -42,6 +42,14 @@ public class EquipmentStack : AStack, IDescriptionable
         this.count = itemStackToCopy.count;
     }
 
+    public EquipmentStack(EquipmentStack itemStackToCopy, int count)
+    {
+        this.equipmentMainProperties = itemStackToCopy.equipmentMainProperties;
+        this.equipmentStats = itemStackToCopy.equipmentStats;
+        this.count = count;
+    }
+
+
     public void PushItems(EquipmentStack stack)
     {
         if (stack.equipmentStats.Type == this.equipmentStats.Type 

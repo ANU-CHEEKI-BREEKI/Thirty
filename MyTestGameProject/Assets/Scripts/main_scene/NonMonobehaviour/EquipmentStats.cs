@@ -317,4 +317,9 @@ public struct EquipmentStats : IDescriptionable
 
         return res;
     }
+
+    public bool Equals(EquipmentStats eqS)
+    {
+        return type == eqS.type && id == eqS.id && durability == eqS.durability;
+    }
 }

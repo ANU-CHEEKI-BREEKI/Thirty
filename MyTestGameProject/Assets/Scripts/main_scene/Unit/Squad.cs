@@ -51,17 +51,31 @@ public class Squad : MonoBehaviour
             {
                 case FormationStats.Formations.PHALANX:
 
-                    if (!(inventory.Weapon).Stats.CanReformToPhalanx)
-                        formation = lastFormation;
-                    else if (!inventory.Weapon.Stats.CanReformToPhalanxInFight && InFight)
+                    if (!(inventory.Weapon).EquipmentStats.CanReformToPhalanx)
+                    {
                         formation = lastFormation;
 
+                        if (Squad.playerSquadInstance == this)
+                            Toast.Instance.Show("[non local] с этим оружием нельзя перестроится в фалангу ");
+                    }
+                    else if (!inventory.Weapon.EquipmentStats.CanReformToPhalanxInFight && InFight)
+                    {
+                        formation = lastFormation;
+
+                        if (Squad.playerSquadInstance == this)
+                            Toast.Instance.Show("[non local] с этим оружием нельзя перестроится в фалангу в бою");
+                    }
                     break;
 
                 case FormationStats.Formations.RISEDSHIELDS:
 
-                    if(inventory.Shield.Stats.Empty)
+                    if (inventory.Shield.EquipmentStats.Empty)
+                    {
                         formation = lastFormation;
+
+                        if(Squad.playerSquadInstance == this)
+                            Toast.Instance.Show("[non local] без щитов нельзя перестроится \"черепахой\"");
+                    }
 
                     break;
             }
@@ -330,21 +344,21 @@ public class Squad : MonoBehaviour
     /// </summary>
     void CalcSpeed()
     {
-        currentSpeed = maxSpeed * (1 + (inventory.Body).Stats.AddSpeed) * (1 + currentFormationModifyers.SQUAD_ADDITIONAL_SPEED);
+        currentSpeed = maxSpeed * (1 + (inventory.Body).EquipmentStats.AddSpeed) * (1 + currentFormationModifyers.SQUAD_ADDITIONAL_SPEED);
         currentRotationSpeed = maxRotationSpeed * (1 + currentFormationModifyers.SQUAD_ADDITIONAL_ROTATION_SPEED);
     }
     
 
 
-    void SetProp(Equipment newEquipment = null)
+    void SetProp(EquipmentStack newEquipment = null)
     {
         CalcSpeed();
 
-        if (newEquipment != null && newEquipment.Stats.Type == EquipmentStats.TypeOfEquipment.WEAPON)
+        if (newEquipment != null && newEquipment.EquipmentStats.Type == EquipmentStats.TypeOfEquipment.WEAPON)
         {
-            if(!inventory.Weapon.Stats.CanUseWithShield)
+            if(!inventory.Weapon.EquipmentStats.CanUseWithShield)
             {
-                if (!inventory.Shield.Stats.Empty)
+                if (!inventory.Shield.EquipmentStats.Empty)
                 {
                     DropEquipment(new EquipmentStack(inventory.Shield, UnitCount));
                     inventory.Shield = null;
@@ -353,7 +367,7 @@ public class Squad : MonoBehaviour
                         CurrentFormation = FormationStats.Formations.RANKS;
                 }
             }
-            if (!(inventory.Weapon).Stats.CanReformToPhalanx)
+            if (!(inventory.Weapon).EquipmentStats.CanReformToPhalanx)
             {
                 CurrentFormation = FormationStats.Formations.RANKS;
             }

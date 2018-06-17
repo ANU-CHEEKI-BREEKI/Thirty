@@ -67,7 +67,7 @@ public class SquadInventoryUI : AInventoryUI
             inventoryItemOriginal,
             helmetCell,
             new EquipmentStack(Squad.playerSquadInstance.Inventory.Helmet, cnt),
-            !Squad.playerSquadInstance.Inventory.Helmet.Stats.Empty
+            !Squad.playerSquadInstance.Inventory.Helmet.EquipmentStats.Empty
         );
         if (bodyCell.childCount > 0)
             Destroy(bodyCell.GetChild(bodyCell.childCount - 1).gameObject);
@@ -75,7 +75,7 @@ public class SquadInventoryUI : AInventoryUI
             inventoryItemOriginal, 
             bodyCell,
             new EquipmentStack(Squad.playerSquadInstance.Inventory.Body, cnt),
-            !Squad.playerSquadInstance.Inventory.Body.Stats.Empty
+            !Squad.playerSquadInstance.Inventory.Body.EquipmentStats.Empty
         );
         if (shieldCell.childCount > 0)
             Destroy(shieldCell.GetChild(shieldCell.childCount - 1).gameObject);
@@ -83,7 +83,7 @@ public class SquadInventoryUI : AInventoryUI
             inventoryItemOriginal, 
             shieldCell,
             new EquipmentStack(Squad.playerSquadInstance.Inventory.Shield, cnt),
-            !Squad.playerSquadInstance.Inventory.Shield.Stats.Empty
+            !Squad.playerSquadInstance.Inventory.Shield.EquipmentStats.Empty
         );
         if (weaponCell.childCount > 0)
             Destroy(weaponCell.GetChild(weaponCell.childCount - 1).gameObject);

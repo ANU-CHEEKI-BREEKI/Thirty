@@ -44,8 +44,8 @@ public class SquadlessUnitSpawner : MonoBehaviour
             unit.gameObject.layer = layer;
             unit.SetSelectionColor(Color.green);
             unit.delayToFindTargetAndAttack = (float)i / count;
-            unit.SetBody(body);
-            unit.SetHelmet(helmet);
+            unit.SetBody(new EquipmentStack(body));
+            unit.SetHelmet(new EquipmentStack(helmet));
 
             unit.name = "Neutral " + i;
         }

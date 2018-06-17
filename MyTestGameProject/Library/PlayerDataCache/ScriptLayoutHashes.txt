@@ -1,6 +1,6 @@
 Android
 PlayerPath?
-D:/development/unity/MyGame - Thirty/out/Thirty.a.1.5.apk
+C:/Users/ANU CHEEKI BREEKI/Desktop/Thirty.a.2.1.apk
 SceneListBegin?
 Assets/Scenes/main_menu.unity
 Assets/Scenes/market.unity
@@ -183,6 +183,7 @@ ce338c1762b506bc487788e845ef98cc Assembly-CSharp.dll:.ArrowsValley
 19f8067d929a79bcefc1e81d2a3c01e3 Assembly-CSharp.dll:.StatsUpgrade
 5052c6e74c456cfa107927c76c936663 Assembly-CSharp.dll:UnityEngine.Tilemaps.AnimatedTile
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.DeathScreen
+47356a5ef76d39fb48c0c7a7cf9c4561 Assembly-CSharp.dll:.SOSoundContainer
 c7f8443bedab9b1309055813bb6e61d5 Assembly-CSharp.dll:.NumberPickerDialogBox
 f4bd1aee67eeef7953cce6c44588b3d7 TextMeshPro-2017.3-1.0.56-Runtime.dll:TMPro.TextContainer
 8e879b98cad4aa17a0beef746daecd35 TextMeshPro-2017.3-1.0.56-Runtime.dll:TMPro.TextMeshPro
@@ -321,4 +322,3 @@ b30cd7754bfc1593b47f5140046d4a69 Assembly-CSharp.dll:.Squad
 8d93a23f25af42a983863485fb7c6788 Assembly-CSharp.dll:.DropToConsumable
 ccce343eaef88744870b72a06f29831d Assembly-CSharp.dll:.ConfirmPanel
 0be65be8f1974ff92aed839a6c0a9cb4 Assembly-CSharp.dll:.SkillsPanelScrollAndHeight
-47356a5ef76d39fb48c0c7a7cf9c4561 Assembly-CSharp.dll:.SOSoundContainer
