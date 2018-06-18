@@ -6,6 +6,8 @@ using UnityEngine;
 
 public class AiSquadController : MonoBehaviour
 {
+    public enum AiSquadBehaviour { HOLD_POSITION, ATTACK, DEFEND }
+
     //слои, через которые не будет искаться путь напрямую
     [SerializeField] LayerMask directFindPathLayers;
 
@@ -38,12 +40,8 @@ public class AiSquadController : MonoBehaviour
 
     bool pathfindingIsRunning = false;
 
-    List<Vector3> path;
-    Vector2 startFindPath;
-    Vector2 endFindPath;
-
     Vector2 movePosition;
-    Quaternion lookRotation;
+    Vector2 lookPosition;
 
     bool canGo;
     
@@ -122,11 +120,7 @@ public class AiSquadController : MonoBehaviour
         if (attackPlayer)
         {
             movePosition = playerSquad.CenterSquad;
-            lookRotation = Quaternion.LookRotation(
-                Vector3.forward,
-                playerSquad.CenterSquad - squad.CenterSquad
-            );
-
+            lookPosition = playerSquad.CenterSquad;
             canGo = true;
         }
         else
@@ -134,10 +128,7 @@ public class AiSquadController : MonoBehaviour
             if (Vector2.Distance(squad.PositionsTransform.position, startPosition) > 3f)
             {
                 movePosition = startPosition;
-                lookRotation = Quaternion.LookRotation(
-                    Vector3.forward,
-                    startPosition - squad.PositionsTransform.position
-                );
+                lookPosition = startPosition;
 
                 canGo = true;
             }
@@ -145,7 +136,7 @@ public class AiSquadController : MonoBehaviour
                 canGo = false;
         }
 
-        GoTo();
+        Move();
     }
 
     private void SquadBehaviour()
@@ -178,90 +169,15 @@ public class AiSquadController : MonoBehaviour
         }
     }
 
-    void GoTo()
+    void Move()
     {
         if (canGo)
         {
-            if (!pathfindingIsRunning)
-            {
-                SetStartPosition();
-
-                startFindPath = new Vector2(
-                        Mathf.Round(squad.PositionsTransform.position.x / MapBlock.BLOCK_SCALE),
-                        Mathf.Round(squad.PositionsTransform.position.y / MapBlock.BLOCK_SCALE)
-                    );
-                endFindPath = new Vector2(
-                    Mathf.Round(movePosition.x / MapBlock.BLOCK_SCALE),
-                    Mathf.Round(movePosition.y / MapBlock.BLOCK_SCALE)
-                );
-
-                if (endFindPath.y >= 0 && endFindPath.y < ground.RowCountOfBlocks * MapBlock.WORLD_BLOCK_SIZE / MapBlock.BLOCK_SCALE &&
-                    endFindPath.x >= 0 && endFindPath.x < ground.ColCountOfBlocks * MapBlock.WORLD_BLOCK_SIZE / MapBlock.BLOCK_SCALE)
-                {
-                    if (!ground.Grid[(int)endFindPath.y][(int)endFindPath.x])
-                    {
-                        RaycastHit2D rhit = Physics2D.Linecast(squad.PositionsTransform.position, movePosition, directFindPathLayers.value);
-
-                        if (rhit.collider == null)
-                        {
-                            path = new List<Vector3>();
-                            path.Add(squad.transform.position);
-                            path.Add(playerSquad.PositionsTransform.position);
-
-                            squad.SetEndMovePositions(movePosition, lookRotation);
-
-                            squad.GoTo(path);
-                        }
-                        else
-                        {
-                            ThreadPool.QueueUserWorkItem(FindPath);
-                        }
-                    }
-                }
-            }
+            squad.Controller.MoveToPoint(movePosition);
+            squad.Controller.RotateAfterMoving(lookPosition);
         }
     }
-
-    private void SetStartPosition()
-    {
-        //
-        var angle = Quaternion.LookRotation(Vector3.forward, movePosition - squad.CenterSquad).eulerAngles.z;
-
-        float angleLook = squad.PositionsTransform.rotation.eulerAngles.z;
-        if (squad.FlipRotation) angleLook += 180;
-
-        var sin = Mathf.Sin(angle * Mathf.Deg2Rad);
-        var sin2 = Mathf.Sin(angleLook * Mathf.Deg2Rad);
-
-        if (sin * sin2 < 0)
-        {
-            RaycastHit2D rhit = Physics2D.CircleCast(
-                squad.CenterSquad,
-                0.1f,
-                Vector2.zero,
-                0,
-                1 << LayerMask.NameToLayer("MAP")
-            );
-
-            if (!rhit)
-                squad.PositionsTransform.position = squad.CenterSquad;
-        }
-    }
-
-    void FindPath(System.Object o)
-    {
-        pathfindingIsRunning = true;
-
-        path = Labirinth.FindPathLee(ground.Grid, startFindPath, endFindPath, MapBlock.BLOCK_SCALE);
-
-        if (path != null)
-            squad.SetEndMovePositions(movePosition, lookRotation);
-
-        squad.GoTo(path);
-
-        pathfindingIsRunning = false;
-    }
-    
+       
     private void BehaviorOnHold()
     {
 
@@ -317,6 +233,4 @@ public class AiSquadController : MonoBehaviour
             Gizmos.DrawWireSphere(transform.position, radiusOfAttackArea);
         }
     }
-
-    public enum AiSquadBehaviour { HOLD_POSITION, ATTACK, DEFEND, }
 }

@@ -50,7 +50,7 @@ public class SquadSpawner : MonoBehaviour
         squad.fraction = fraction;
         squad.PositionsTransform.position = transform.position;
         squad.PositionsTransform.rotation = rotation;
-        squad.endLookRotation = rotation;
+        squad.EndLookRotation = rotation;
 
 
         //пока  что код убрал, так как в префабах все ссылки похерились. при пересоздании уровней опять откоментирую код.

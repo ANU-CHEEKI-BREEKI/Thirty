@@ -36,7 +36,7 @@ public class SquadTriggerInitiator : MonoBehaviour
 
     public void TriggerCallBakc(GOTriggerEvent.TriggerType type)
     {
-        squad.GoTo(null);
+        squad.Path = null;
     }
 
     private void OnDrawGizmos()

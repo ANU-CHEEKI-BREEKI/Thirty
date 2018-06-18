@@ -1258,7 +1258,7 @@ public class Unit : MonoBehaviour
         //    LookTo(squad.PositionsTransform.rotation);
 
         //юнит смотрит туда куда должен смотреть отряд
-        LookTo(squad.endLookRotation);
+        LookTo(squad.EndLookRotation);
 
         if (!CheckPositionInRange(TargetMovePositionObject.transform.position))
         {

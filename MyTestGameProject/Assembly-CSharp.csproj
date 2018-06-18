@@ -101,6 +101,7 @@
     <Compile Include="Assets\Scripts\main_scene\NewBehaviourScript.cs" />
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\AStack.cs" />
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\ConsumableStack.cs" />
+    <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\Controllers\SquadController.cs" />
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\Damage.cs" />
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\DataStorage\DataClasses\AudioSettings.cs" />
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\DataStorage\DataClasses\CommonSettings.cs" />

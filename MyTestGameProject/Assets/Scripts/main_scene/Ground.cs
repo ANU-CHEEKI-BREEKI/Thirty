@@ -14,6 +14,12 @@ public class Ground : MonoBehaviour
 
     static public Ground Instance { get; private set; }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    [SerializeField] LayerMask directFindPathLayers;
+    public LayerMask DirectFindPathLayers { get { return directFindPathLayers; } }
+
     [SerializeField] int rowCountOfBlocks = 5;
     public int RowCountOfBlocks { get { return rowCountOfBlocks; } }
     [SerializeField] int colCountOfBlocks = 6;
@@ -52,9 +58,7 @@ public class Ground : MonoBehaviour
 
     float progress;
     public float Progress { get { return progress; } }
-
-    bool workIsDone;
-    public bool WorkIsDone { get { return workIsDone; } }
+    public bool WorkIsDone { get { return progress >= 1; } }
 
     public event Action OnWorkDone;
 
@@ -83,7 +87,6 @@ public class Ground : MonoBehaviour
 
     IEnumerator LoadMapBlocksCo(Action actionOnLoaded)
     {
-        workIsDone = false;
         progress = 0;
 
         blockContainers = new List<SameBlocksContainer>();
@@ -137,18 +140,23 @@ public class Ground : MonoBehaviour
             yield return null;
         }
 
-        workIsDone = true;
+        progress = 1;
 
         if (OnWorkDone != null)
+        {
             OnWorkDone();
+            OnWorkDone = null;
+        }
 
         if (actionOnLoaded != null)
+        {
             actionOnLoaded();
+            actionOnLoaded = null;
+        }
     }
 
     IEnumerator GeneradeMapCo()
     {
-        workIsDone = false;
         progress = 0;
 
         // в игровом мире массивы распологаются снизу вверх, чтобы была привязка элементов
@@ -260,10 +268,13 @@ public class Ground : MonoBehaviour
             }
         }
 
-        workIsDone = true;
+        progress = 1;
 
         if (OnWorkDone != null)
+        {
             OnWorkDone();
+            OnWorkDone = null;
+        }
         
         if (OnGenerationDone != null)
             OnGenerationDone();
@@ -276,7 +287,6 @@ public class Ground : MonoBehaviour
 
     IEnumerator RecalcMatrixByCurrentBlocksCo()
     {
-        workIsDone = false;
         progress = 0;
 
         Transform tr = transform;
@@ -328,10 +338,13 @@ public class Ground : MonoBehaviour
             yield return null;
         }
 
-        workIsDone = true;       
+        progress = 1;
 
         if (OnWorkDone != null)
+        {
             OnWorkDone();
+            OnWorkDone = null;
+        }
     }
 
     void GetEntranceAndExit(out Vector2 entranceBlockPosition, out Vector2 exitBlockPosition)
@@ -526,6 +539,14 @@ public class Ground : MonoBehaviour
         return Instantiate(go, position, Quaternion.identity, gameObject.transform).GetComponent<GroundBlock>();
     }
 
+    public bool CanWalk(int row, int col)
+    {
+        if (row > 0 && col > 0 && Grid.Length > 0 && row < Grid.Length && col < Grid[0].Length)
+            return !Grid[row][col];
+        else
+            return false;
+    }       
+
     private void OnDrawGizmos()
     {
         if (Grid != null)
@@ -539,7 +560,7 @@ public class Ground : MonoBehaviour
                         Gizmos.color = Color.black;
                         Gizmos.DrawWireCube(
                             new Vector2(
-                                col * MapBlock.BLOCK_SCALE + MapBlock.BLOCK_SCALE / 2f, 
+                                col * MapBlock.BLOCK_SCALE + MapBlock.BLOCK_SCALE / 2f,
                                 row * MapBlock.BLOCK_SCALE + MapBlock.BLOCK_SCALE / 2f
                             ),
                             new Vector3(MapBlock.BLOCK_SCALE, MapBlock.BLOCK_SCALE) / 1.2f
@@ -548,5 +569,28 @@ public class Ground : MonoBehaviour
                 }
             }
         }
-    }    
+    }
+
+    //private void OnGUI()
+    //{
+    //    if (Grid != null)
+    //    {
+    //        for (int row = 0; row < Grid.Length; row++)
+    //        {
+    //            for (int col = 0; col < Grid[row].Length; col++)
+    //            {
+    //                if (Grid[row][col])
+    //                {
+    //                    Gizmos.color = Color.black;
+    //                    Vector2 pos = new Vector2(
+    //                            col * MapBlock.BLOCK_SCALE,
+    //                            row * MapBlock.BLOCK_SCALE + MapBlock.BLOCK_SCALE / 2f
+    //                        );
+    //                    Vector2 p = Camera.main.WorldToScreenPoint(pos);
+    //                    GUI.Label(new Rect(p.x, -p.y + Screen.height, 300, 20), string.Format("x={0},y={1}", col, row));
+    //                }
+    //            }
+    //        }
+    //    }
+    //}
 }

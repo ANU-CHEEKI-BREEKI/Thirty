@@ -10,10 +10,7 @@ public class PlayerSquadController : MonoBehaviour,  IPointerDownHandler, IPoint
 
     Squad squad;
     Ground ground;
-
-    //слои, через которые не будет искаться путь напрямую
-    [SerializeField] LayerMask directFindPathLayers;
-
+    
     [SerializeField] [Range(0, 10)] float lookVectorDistanse = 2;
     [SerializeField] [Range(0, 10)] float cicleCastRadius = 3;
     [SerializeField] [Range(0, 1)] float circleConstrincInPercent = 0.2f;
@@ -24,18 +21,12 @@ public class PlayerSquadController : MonoBehaviour,  IPointerDownHandler, IPoint
     
     bool coroutineAlive = false;
 
-    float rHitCirclreAngle = 20;
-    int rHitCirclreSegmentCount;
+    float circlreAngle = 20;
+    int circlreSegmentCount;
 
-    Vector3[] rHitCirclreSegments;
+    Vector3[] circlreSegments;
     float[] sinAngles;
     float[] cosAngles;
-
-    Thread thread;
-
-    List<Vector3> path;
-    Vector2 startFindPath;
-    Vector2 endFindPath;
 
     Vector3 lookPosition;
     Vector3 movePosition;
@@ -68,11 +59,11 @@ public class PlayerSquadController : MonoBehaviour,  IPointerDownHandler, IPoint
 
         rHits = new RaycastHit2D[maxHitsCount];
 
-        rHitCirclreSegmentCount = (int)(360 / rHitCirclreAngle) + 1;
+        circlreSegmentCount = (int)(360 / circlreAngle) + 1;
 
-        rHitCirclreSegments = new Vector3[rHitCirclreSegmentCount];
-        sinAngles = new float[rHitCirclreSegmentCount];
-        cosAngles = new float[rHitCirclreSegmentCount];
+        circlreSegments = new Vector3[circlreSegmentCount];
+        sinAngles = new float[circlreSegmentCount];
+        cosAngles = new float[circlreSegmentCount];
 
         switch (squad.fraction)
         {
@@ -136,8 +127,8 @@ public class PlayerSquadController : MonoBehaviour,  IPointerDownHandler, IPoint
                     default: // Formation.Formations.RANKS:
                         CreatePoints();
 
-                        lineRenderer.positionCount = rHitCirclreSegmentCount;
-                        lineRenderer.SetPositions(rHitCirclreSegments);
+                        lineRenderer.positionCount = circlreSegmentCount;
+                        lineRenderer.SetPositions(circlreSegments);
 
                         break;
                 }
@@ -149,27 +140,16 @@ public class PlayerSquadController : MonoBehaviour,  IPointerDownHandler, IPoint
         }
     }
 
-    public void DeselectEnemyes()
-    {
-        for (int i = 0; i < rHitsCount; i++)
-        {
-            if (rHits[i])
-            {
-                Unit unit = rHits[i].transform.gameObject.GetComponent<Unit>();
-                if (unit != null)
-                    unit.Selected = false;
-            }
-        }
-    }
+    
 
     void CreateSinCosAngles()
     {
-        float angle = rHitCirclreAngle;
-        for (int i = 0; i < (rHitCirclreSegmentCount); i++)
+        float angle = circlreAngle;
+        for (int i = 0; i < (circlreSegmentCount); i++)
         {
             sinAngles[i] = Mathf.Sin(Mathf.Deg2Rad * angle);
             cosAngles[i] = Mathf.Cos(Mathf.Deg2Rad * angle);
-            angle += rHitCirclreAngle;
+            angle += circlreAngle;
         }
     }
 
@@ -178,12 +158,12 @@ public class PlayerSquadController : MonoBehaviour,  IPointerDownHandler, IPoint
         float x;
         float y;
 
-        for (int i = 0; i < (rHitCirclreSegmentCount); i++)
+        for (int i = 0; i < (circlreSegmentCount); i++)
         {
             x = sinAngles[i] * cicleCastRadius + lookPosition.x;
             y = cosAngles[i] * cicleCastRadius + lookPosition.y;
             
-            rHitCirclreSegments[i] = new Vector3(x, y, -9);
+            circlreSegments[i] = new Vector3(x, y, -9);
         }
     }
 
@@ -228,7 +208,6 @@ public class PlayerSquadController : MonoBehaviour,  IPointerDownHandler, IPoint
 
         if (touch.fingerId == touchId || count == 0)
         {
-
             if (squad != null && !GameManager.Instance.GamePaused && !squad.Charging)
             {
                 mouseDown = false;
@@ -245,48 +224,18 @@ public class PlayerSquadController : MonoBehaviour,  IPointerDownHandler, IPoint
                             lookRotation = Quaternion.LookRotation(Vector3.forward, movePosition - squad.PositionsTransform.position);
                         break;
 
-                    default :// Formation.Formations.RANKS:
+                    default:// Formation.Formations.RANKS:
                         movePosition = Camera.main.ScreenToWorldPoint(touch.position);
                         movePosition = new Vector3(movePosition.x, movePosition.y, transform.position.z);
-                        lookRotation = Quaternion.LookRotation(Vector3.forward, movePosition - squad.PositionsTransform.position);
+                        lookPosition = movePosition;
                         SelectEnemyes();
                         if (rHitsCount > 0)
                             StartCoroutine(CircleCastConstrict());
                         break;
                 }
 
-                if (thread == null || !thread.IsAlive)
-                {
-                    SetStartPosition();
-
-                    startFindPath = new Vector2(
-                        Mathf.Round(squad.PositionsTransform.position.x / MapBlock.BLOCK_SCALE),
-                        Mathf.Round(squad.PositionsTransform.position.y / MapBlock.BLOCK_SCALE)
-                    );
-                    endFindPath = new Vector2(
-                        Mathf.Round((movePosition.x- MapBlock.BLOCK_SCALE / 2f) / MapBlock.BLOCK_SCALE),
-                        Mathf.Round((movePosition.y - MapBlock.BLOCK_SCALE / 2f) / MapBlock.BLOCK_SCALE)
-                    );
-                                        
-                    if (!ground.Grid[(int)endFindPath.y][(int)endFindPath.x])
-                    {
-                        RaycastHit2D rhit = Physics2D.Linecast(squad.PositionsTransform.position, movePosition, directFindPathLayers.value);
-
-                        if (rhit.collider == null)
-                        {
-                            path = new List<Vector3>();
-                            path.Add(squad.transform.position);
-                            path.Add(movePosition);
-                            squad.SetEndMovePositions(movePosition, lookRotation);
-                            squad.GoTo(path);
-                        }
-                        else
-                        {
-                            thread = new Thread(FindPath);
-                            thread.Start();
-                        }
-                    }
-                }
+                squad.Controller.MoveToPoint(movePosition);
+                squad.Controller.RotateAfterMoving(lookPosition);
             }
         }
     }
@@ -336,16 +285,19 @@ public class PlayerSquadController : MonoBehaviour,  IPointerDownHandler, IPoint
         }
     }
 
-    void FindPath()
+    public void DeselectEnemyes()
     {
-        path = Labirinth.FindPathLee(ground.Grid, startFindPath, endFindPath, MapBlock.BLOCK_SCALE);
-
-        if (path != null)
-            squad.SetEndMovePositions(movePosition, lookRotation);
-
-        squad.GoTo(path);
+        for (int i = 0; i < rHitsCount; i++)
+        {
+            if (rHits[i])
+            {
+                Unit unit = rHits[i].transform.gameObject.GetComponent<Unit>();
+                if (unit != null)
+                    unit.Selected = false;
+            }
+        }
     }
-
+    
     IEnumerator CircleCastConstrict()
     {
         if (cicleCastRadius > circleMinRadius)

@@ -183,12 +183,14 @@ public class GameManager : MonoBehaviour
 
     void OnUnhendeledException(string condition, string stackTrace, LogType type)
     {
+        Instance.Pause();
+
         if (type == LogType.Error || type == LogType.Exception || type == LogType.Warning)
         {
             DialogBox.Instance
                 .SetTitle("Необработаное системное сообщение")
                 .SetText(condition + "\r\n\r\n" + stackTrace, true)
-                .AddCancelButton("Ясно")
+                .AddButton("Ясно", () => { Instance.Resume(); DialogBox.Instance.Hide(); })
                 .SetSize(900, 600)
                 .Show(Vector2.zero, this);
         }
@@ -231,8 +233,8 @@ public class GameManager : MonoBehaviour
 
         squad.PositionsTransform.position = pos;
         squad.PositionsTransform.rotation = rot;
-        squad.endLookRotation = rot;
-        squad.GoTo(null);
+        squad.EndLookRotation = rot;
+        squad.Path = null;
 
         squad.ResetUnitPositions();
 

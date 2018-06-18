@@ -23,7 +23,7 @@ public class MinimapCamera : MonoBehaviour
     {
         Instance.enabled = false;
 
-        Ground.Instance.OnWorkDone += OnGroundGenerated;
+        Ground.Instance.OnGenerationDone += OnGroundGenerated;
     }
 
     void OnGroundGenerated()

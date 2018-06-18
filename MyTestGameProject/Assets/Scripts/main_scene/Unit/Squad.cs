@@ -187,8 +187,41 @@ public class Squad : MonoBehaviour
     }
 
     List<Vector3> path = null;
-    public Quaternion endLookRotation;
-    Vector3 endMovePosition;
+    /// <summary>
+    /// EndMovePosition нужно задавать ПОСЛЕ задания пути
+    /// </summary>
+    public List<Vector3> Path
+    {
+        get
+        {
+            return path;
+        }
+
+        set
+        {
+            path = value;
+            pathStep = 1;
+        }
+    }
+    public Quaternion EndLookRotation { get; set; }
+    /// <summary>
+    /// Нужно задавать ПОСЛЕ задания пути
+    /// </summary>
+    public Vector3 EndMovePosition
+    {
+        get
+        {
+            Vector3 res = Vector3.zero;
+            if (path != null)
+                res = path[path.Count - 1];
+            return res;
+        }
+        set
+        {
+            if (path != null)
+                path[path.Count - 1] = value;
+        }
+    }
 
     LineRenderer lineRenderer;
 
@@ -234,6 +267,11 @@ public class Squad : MonoBehaviour
     float sumY = 0;
     int countSumUnit = 0;
 
+    /// <summary>
+    /// Контроллер перемещения отряда. Ищет путь и задает его. И т.п.
+    /// </summary>
+    public SquadController Controller { get; private set; }
+
     void Awake()
     {
         if (this.tag == "Player")
@@ -265,8 +303,10 @@ public class Squad : MonoBehaviour
 
     void Start()
     {
-        endLookRotation = PositionsTransform.rotation;
-        LookWithoutFullRotation(endLookRotation);
+        Controller = new SquadController(this);
+
+        EndLookRotation = PositionsTransform.rotation;
+        LookWithoutFullRotation(EndLookRotation);
 
         for (int i = 0; i < FULL_SQUAD_UNIT_COUNT; i++)
         {
@@ -418,9 +458,9 @@ public class Squad : MonoBehaviour
 
         currentSpeed /= 1 + modifyer.Speed.Value;
     }
-
+    
     void Moving()
-    {        
+    {    
         switch (CurrentFormation)
         {
             case FormationStats.Formations.RANKS:
@@ -446,26 +486,26 @@ public class Squad : MonoBehaviour
     void MovingInPhalanx()
     {
         //если указан путь
-        if (path != null)
+        if (Path != null)
         {
             // если еще не дошли до последней точки пути
-            if (pathStep < path.Count)
+            if (pathStep < Path.Count)
             {
                 //идем по указанному пути к следующей точке
-                LookWithoutFullRotation(endLookRotation);
+                LookWithoutFullRotation(EndLookRotation);
 
-                MoveTo(path[pathStep]);
+                MoveTo(Path[pathStep]);
 
-                if (CheckPositionInRange(path[pathStep], positionAcuracy))
+                if (CheckPositionInRange(Path[pathStep], positionAcuracy))
                     pathStep++;
             }
-            else if (pathStep == path.Count) // остановились
+            else if (pathStep == Path.Count) // остановились
             {                
-                LookWithoutFullRotation(endLookRotation);
+                LookWithoutFullRotation(EndLookRotation);
 
-                if (CheckRotationInRange(endLookRotation, rotationAcuracy))
+                if (CheckRotationInRange(EndLookRotation, rotationAcuracy))
                 {
-                    path = null;
+                    Path = null;
                     pathStep = 1;
                 }
             }
@@ -477,25 +517,25 @@ public class Squad : MonoBehaviour
     /// </summary>
     void MovingInRanks()
     {
-        if (path != null)
+        if (Path != null)
         {
-            if (pathStep < path.Count)
+            if (pathStep < Path.Count)
             { 
-                Quaternion lookRot = CalcTargetRotations(path[pathStep]);
+                Quaternion lookRot = CalcTargetRotations(Path[pathStep]);
                 LookWithoutFullRotation(lookRot);
 
-                MoveTo(path[pathStep]);
+                MoveTo(Path[pathStep]);
 
-                if (CheckPositionInRange(path[pathStep], positionAcuracy))
+                if (CheckPositionInRange(Path[pathStep], positionAcuracy))
                     pathStep++;
             }
-            else if (pathStep == path.Count)
+            else if (pathStep == Path.Count)
             {
-                LookWithoutFullRotation(endLookRotation);
+                LookWithoutFullRotation(EndLookRotation);
 
-                if (CheckRotationInRange(endLookRotation, rotationAcuracy))
+                if (CheckRotationInRange(EndLookRotation, rotationAcuracy))
                 {
-                    path = null;
+                    Path = null;
                     pathStep = 1;
                 }
             }
@@ -532,11 +572,11 @@ public class Squad : MonoBehaviour
     {
         if (lineRenderer != null)
         {
-            if (path != null)
+            if (Path != null)
             {
-                lineRenderer.positionCount = path.Count + 2 - pathStep;
+                lineRenderer.positionCount = Path.Count + 2 - pathStep;
                 Vector3[] p = new Vector3[lineRenderer.positionCount];
-                Array.Copy(path.ToArray(), pathStep, p, 2, path.Count - pathStep);
+                Array.Copy(Path.ToArray(), pathStep, p, 2, Path.Count - pathStep);
                 p[0] = centerSquad;
                 p[1] = PositionsTransform.position;
                 for (int i = 0; i < p.Length; i++)
@@ -969,33 +1009,7 @@ public class Squad : MonoBehaviour
             unitCount -= SQUAD_LENGTH;
         }
     }
-
-    /// <summary>
-    /// Усанавливает конечную точку пути и поворот отряда
-    /// </summary>
-    /// <param name="positionMove">конечная точка пути отряда</param>
-    /// <param name="rotationLook">конечный поворот отряда</param>
-    public void SetEndMovePositions(Vector3 positionMove, Quaternion rotationLook)
-    {
-        endLookRotation = rotationLook;
-        endMovePosition = positionMove;
-    }
-
-    /// <summary>
-    /// Задает отряду путь
-    /// </summary>
-    /// <param name="path">Путь для отряда</param>
-    public void GoTo(List<Vector3> path)
-    {
-        this.path = path;
-        if (path != null)
-        {
-            path[path.Count - 1] = endMovePosition;
-        }
-
-        pathStep = 1;
-    }
-
+    
     Quaternion CalcTargetRotations(Vector3 targetPosition)
     {
         return Quaternion.LookRotation(Vector3.forward, targetPosition - PositionsTransform.position);

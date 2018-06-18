@@ -19,7 +19,6 @@ public class PlayerSquadPathFinderController : MonoBehaviour, IPointerDownHandle
 
     Vector3 lookPosition;
     Vector3 movePosition;
-    Quaternion lookRotation;
 
     bool mouseDown = false;
     int touchId;
@@ -94,56 +93,21 @@ public class PlayerSquadPathFinderController : MonoBehaviour, IPointerDownHandle
                     case FormationStats.Formations.PHALANX:
                         lookPosition = cameraToControl.ScreenToWorldPoint(touch.position);
                         lookPosition = new Vector3(lookPosition.x, lookPosition.y, transform.position.z);
-
-                        if (Vector3.Distance(lookPosition, movePosition) >= lookVectorDistanse)
-                            lookRotation = Quaternion.LookRotation(Vector3.forward, lookPosition - movePosition);
-                        else
-                            lookRotation = Quaternion.LookRotation(Vector3.forward, movePosition - squadToControl.PositionsTransform.position);
                         break;
 
                     default:// Formation.Formations.RANKS:
                         movePosition = TextureToWorldPosition(touch.position);
                         movePosition = new Vector3(movePosition.x, movePosition.y, transform.position.z);
-                        lookRotation = Quaternion.LookRotation(Vector3.forward, movePosition - squadToControl.PositionsTransform.position);
+                        lookPosition = movePosition;
                         break;
                 }
 
-                if (thread == null || !thread.IsAlive)
-                {
-                    startFindPath = new Vector2(
-                        Mathf.Round(squadToControl.PositionsTransform.position.x / MapBlock.BLOCK_SCALE),
-                        Mathf.Round(squadToControl.PositionsTransform.position.y / MapBlock.BLOCK_SCALE)
-                    );
-                    endFindPath = new Vector2(
-                        Mathf.Round(movePosition.x / MapBlock.BLOCK_SCALE),
-                        Mathf.Round(movePosition.y / MapBlock.BLOCK_SCALE)
-                    );
-
-                    if (endFindPath.y >= 0 && endFindPath.y < ground.RowCountOfBlocks * MapBlock.WORLD_BLOCK_SIZE / MapBlock.BLOCK_SCALE &&
-                        endFindPath.x >= 0 && endFindPath.x < ground.ColCountOfBlocks * MapBlock.WORLD_BLOCK_SIZE / MapBlock.BLOCK_SCALE)
-                    {
-                        if (!ground.Grid[(int)endFindPath.y][(int)endFindPath.x])
-                        {
-                            RaycastHit2D rhit = Physics2D.Linecast(squadToControl.PositionsTransform.position, movePosition, 1 << LayerMask.NameToLayer("MAP"));
-
-                            if (rhit.collider == null)
-                            {
-                                path = new List<Vector3>();
-                                path.Add(squadToControl.transform.position);
-                                path.Add(movePosition);
-                                squadToControl.SetEndMovePositions(movePosition, lookRotation);
-                                squadToControl.GoTo(path);
-                            }
-                            else
-                            {
-                                thread = new Thread(FindPath);
-                                thread.Start();
-                            }
-                        }
-                    }
-                }
+                squadToControl.Controller.MoveToPoint(movePosition);
+                squadToControl.Controller.RotateAfterMoving(lookPosition);
             }
         }
+
+
     }
 
     Vector2 TextureToWorldPosition(Vector2 touchPos)
@@ -172,13 +136,4 @@ public class PlayerSquadPathFinderController : MonoBehaviour, IPointerDownHandle
         return res;
     }
 
-    void FindPath()
-    {
-        path = Labirinth.FindPathLee(ground.Grid, startFindPath, endFindPath, MapBlock.BLOCK_SCALE);
-
-        if (path != null)
-            squadToControl.SetEndMovePositions(movePosition, lookRotation);
-
-        squadToControl.GoTo(path);
-    }
 }
