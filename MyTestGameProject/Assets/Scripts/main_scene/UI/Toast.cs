@@ -62,7 +62,7 @@ public class Toast : MonoBehaviour, IPointerClickHandler
         float delta;
         while (floatDuration > 0 || lifetime > 0)
         {
-            delta = Time.deltaTime;
+            delta = Time.unscaledDeltaTime;
             floatDuration -= delta;
             lifetime -= delta;
 

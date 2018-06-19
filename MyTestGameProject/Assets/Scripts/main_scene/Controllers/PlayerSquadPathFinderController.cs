@@ -103,7 +103,7 @@ public class PlayerSquadPathFinderController : MonoBehaviour, IPointerDownHandle
                 }
 
                 squadToControl.Controller.MoveToPoint(movePosition);
-                squadToControl.Controller.RotateAfterMoving(lookPosition);
+                squadToControl.Controller.RotateAfterMoving(Quaternion.LookRotation(Vector3.forward, movePosition - squadToControl.PositionsTransform.position));
             }
         }
 

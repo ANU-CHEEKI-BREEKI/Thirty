@@ -104,14 +104,8 @@ public class GameManager : MonoBehaviour
             Instance.Resume();
     }
 
-    private void Start()
-    {
-        Debug.Log("Start");
-    }
-
     private void OnEnable()
     {
-        Debug.Log("OnEnable");
         SceneManager.sceneLoaded += OnLevelLoaded;
     }
 

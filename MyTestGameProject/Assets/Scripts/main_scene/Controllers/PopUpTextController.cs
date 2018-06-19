@@ -22,6 +22,8 @@ public class PopUpTextController : MonoBehaviour
 
     Camera mainCamera;
 
+    public bool ScaledDeltaTime { get; set; } = true;
+
     private void Awake()
     {
         thisTransform = transform;
@@ -43,35 +45,42 @@ public class PopUpTextController : MonoBehaviour
             for (int i = 0; i < 30; i++)
                 GiveBackText(t.Pop());
         }
-    }
 
-    void Update()
-    {
-        PopUpTexts();
+        StartCoroutine(PopUpTexts());
     }
-
-    void PopUpTexts()
+    
+    IEnumerator PopUpTexts()
     {
-        for (int i = 0; i < textes.Count; i++)
+        while (true)
         {
-            if (textes[i].properties.RemainingLifetime <= 0)
-            {
-                GiveBackText(textes[i].textUI);
-                textes.Remove(textes[i]);
-                i--;
-                continue;
-            }
-
-            var prop = textes[i].properties;
-            prop.RemainingLifetime -= Time.deltaTime;
-            prop.Position += prop.Speed * Time.deltaTime;
-            textes[i].properties = prop;
-            textes[i].textUI.color = prop.Color;
-            textes[i].textUI.transform.position = prop.Position;
-            if(prop.FontSize == null)
-                textes[i].textUI.fontSize = mainCamera.orthographicSize / 1.7f; 
+            float deltatime = 0;
+            if (ScaledDeltaTime)
+                deltatime = Time.deltaTime;
             else
-                textes[i].textUI.fontSize = prop.FontSize.Value;
+                deltatime = Time.unscaledDeltaTime;
+
+            for (int i = 0; i < textes.Count; i++)
+            {
+                if (textes[i].properties.RemainingLifetime <= 0)
+                {
+                    GiveBackText(textes[i].textUI);
+                    textes.Remove(textes[i]);
+                    i--;
+                    continue;
+                }
+
+                var prop = textes[i].properties;
+                prop.RemainingLifetime -= deltatime;
+                prop.Position += prop.Speed * deltatime;
+                textes[i].properties = prop;
+                textes[i].textUI.color = prop.Color;
+                textes[i].textUI.transform.position = prop.Position;
+                if (prop.FontSize == null)
+                    textes[i].textUI.fontSize = mainCamera.orthographicSize / 1.7f;
+                else
+                    textes[i].textUI.fontSize = prop.FontSize.Value;
+            }
+            yield return new WaitForEndOfFrame();
         }
     }
 

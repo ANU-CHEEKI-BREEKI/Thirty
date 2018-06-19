@@ -28,6 +28,7 @@ public class SoundChannel : MonoBehaviour
         var go = new GameObject(name);
         go.transform.parent = transform;
         AudioSource res = go.AddComponent<AudioSource>();
+        res.playOnAwake = false;
 
         if (poolSources.Count + usedSources.Count > maxAudioSourceCount)
             Debug.Log("Было создано аудиосурсов больше чем установлено в настройках скрипта!!!");
@@ -179,8 +180,8 @@ public class SoundChannel : MonoBehaviour
                 if(item.needToStop)
                     item.source.volume = Mathf.Lerp(0, item.fadeStartVolume, timer / fade);
 
-            timer -= Time.deltaTime;
-            yield return new WaitForEndOfFrame();
+            timer -= Time.unscaledDeltaTime;
+            yield return null;
         }
 
         for (int i = 0; i < usedSources.Count; i++)

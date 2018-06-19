@@ -587,73 +587,76 @@ public static class Labirinth
         int row = (int)target.y;
         int col = (int)target.x;
 
-        if (row > 0)
+        wallCoordinates = Vector2.zero;
+
+        if (labirinth.Length > 0 && row >= 0 && row < labirinth.Length && col >= 0 && col < labirinth[0].Length)
         {
-            //if (col > 0)
-            //    if (labirinth[row - 1][col - 1])
-            //    {
-            //        wallCoordinates = new Vector2(col - 1, row - 1);
-            //        return true;
-            //    }
-
-            //if (col < labirinth[row].Length - 1)
-            //    if (labirinth[row - 1][col + 1])
-            //    {
-            //        wallCoordinates = new Vector2(col + 1, row - 1);
-            //        return true;
-            //    }
-
-            if (labirinth[row - 1][col])
+            if (row > 0)
             {
-                wallCoordinates = new Vector2(col, row - 1);
-                return true;
-            }
-        }
+                //if (col > 0)
+                //    if (labirinth[row - 1][col - 1])
+                //    {
+                //        wallCoordinates = new Vector2(col - 1, row - 1);
+                //        return true;
+                //    }
 
-        if (row < labirinth.Length - 1)
-        {
-            //if (col > 0)
-            //    if (labirinth[row + 1][col - 1])
-            //    {
-            //        wallCoordinates = new Vector2(col - 1, row + 1);
-            //        return true;
-            //    }
+                //if (col < labirinth[row].Length - 1)
+                //    if (labirinth[row - 1][col + 1])
+                //    {
+                //        wallCoordinates = new Vector2(col + 1, row - 1);
+                //        return true;
+                //    }
 
-            //if (col < labirinth[row].Length - 1)
-            //    if (labirinth[row + 1][col + 1])
-            //    {
-            //        wallCoordinates = new Vector2(col + 1, row + 1);
-            //        return true;
-            //    }
-
-            if (labirinth[row + 1][col])
-            {
-                wallCoordinates = new Vector2(col, row + 1);
-                return true;
-            }
-        }
-
-        if (col > 0)
-            if (labirinth[row][col - 1])
-            {
-                wallCoordinates = new Vector2(col - 1, row);
-                return true;
+                if (labirinth[row - 1][col])
+                {
+                    wallCoordinates = new Vector2(col, row - 1);
+                    return true;
+                }
             }
 
-        if (col < labirinth[row].Length - 1)
-            if (labirinth[row][col + 1])
+            if (row < labirinth.Length - 1)
             {
-                wallCoordinates = new Vector2(col + 1, row);
-                return true;
+                //if (col > 0)
+                //    if (labirinth[row + 1][col - 1])
+                //    {
+                //        wallCoordinates = new Vector2(col - 1, row + 1);
+                //        return true;
+                //    }
+
+                //if (col < labirinth[row].Length - 1)
+                //    if (labirinth[row + 1][col + 1])
+                //    {
+                //        wallCoordinates = new Vector2(col + 1, row + 1);
+                //        return true;
+                //    }
+
+                if (labirinth[row + 1][col])
+                {
+                    wallCoordinates = new Vector2(col, row + 1);
+                    return true;
+                }
             }
+
+            if (col > 0)
+                if (labirinth[row][col - 1])
+                {
+                    wallCoordinates = new Vector2(col - 1, row);
+                    return true;
+                }
+
+            if (col < labirinth[row].Length - 1)
+                if (labirinth[row][col + 1])
+                {
+                    wallCoordinates = new Vector2(col + 1, row);
+                    return true;
+                }
 
             if (labirinth[row][col])
             {
                 wallCoordinates = new Vector2(col, row);
                 return true;
             }
-
-        wallCoordinates = Vector2.zero;
+        }        
         return false;
     }
 

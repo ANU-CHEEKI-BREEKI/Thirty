@@ -120,10 +120,12 @@ public class SkillButton : MonoBehaviour, IPointerClickHandler, IPointerDownHand
             if (typeOfSkill == Type.CONSUMABLE)
             {
                 if (currentConsumable.Count < 0)
-                    countText.gameObject.SetActive(false);
+                    countText.enabled = false;
                 else
                     countText.text = currentConsumable.Count.ToString(StringFormats.intNumber);
             }
+            else
+                countText.enabled = false;
         }
     }
 

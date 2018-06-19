@@ -174,7 +174,7 @@ public class AiSquadController : MonoBehaviour
         if (canGo)
         {
             squad.Controller.MoveToPoint(movePosition);
-            squad.Controller.RotateAfterMoving(lookPosition);
+            squad.Controller.RotateAfterMoving(Quaternion.LookRotation(Vector3.forward, (Vector3)(playerSquad.CenterSquad - squad.CenterSquad)));
         }
     }
        

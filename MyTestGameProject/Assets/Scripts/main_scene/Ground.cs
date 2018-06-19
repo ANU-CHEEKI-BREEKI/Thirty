@@ -300,7 +300,7 @@ public class Ground : MonoBehaviour
         {
             var gb = tr.GetChild(i).GetComponent<GroundBlock>();
             gl.Add(gb);
-            gb.LoadBlockEntryesFromFile();
+            gb.LoadBlockStateFromFile();
             gb.block.WorldPosition = new Vector2(gb.posInMinigrid.x * MapBlock.WORLD_BLOCK_SIZE, gb.posInMinigrid.y * MapBlock.WORLD_BLOCK_SIZE);
 
             if (maxX < gb.posInMinigrid.x)

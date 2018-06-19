@@ -1,6 +1,6 @@
 Android
 PlayerPath?
-C:/Users/ANU CHEEKI BREEKI/Desktop/Thirty.a.2.2.apk
+C:/Users/ANU CHEEKI BREEKI/Desktop/Thirty.a.2.2b.apk
 SceneListBegin?
 Assets/Scenes/main_menu.unity
 Assets/Scenes/market.unity

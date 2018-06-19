@@ -29,6 +29,8 @@ public class ScorePanel : MonoBehaviour
         GameManager.Instance.PlayerProgress.Score.gold.OnValueChanged += RefreshByEvent;
         GameManager.Instance.PlayerProgress.Score.silver.OnValueChanged += RefreshByEvent;
         GameManager.Instance.PlayerProgress.Score.expirience.OnValueChanged += RefreshByEvent;
+
+        PopUpTextController.Instance.ScaledDeltaTime = false;
     }
 
     void OnDestroy()

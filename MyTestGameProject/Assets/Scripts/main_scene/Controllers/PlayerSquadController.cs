@@ -212,6 +212,8 @@ public class PlayerSquadController : MonoBehaviour,  IPointerDownHandler, IPoint
             {
                 mouseDown = false;
 
+                lookRotation = Quaternion.LookRotation(Vector3.forward, movePosition - squad.PositionsTransform.position);
+
                 switch (squad.CurrentFormation)
                 {
                     case FormationStats.Formations.PHALANX:
@@ -220,14 +222,12 @@ public class PlayerSquadController : MonoBehaviour,  IPointerDownHandler, IPoint
 
                         if (Vector3.Distance(lookPosition, movePosition) >= lookVectorDistanse)
                             lookRotation = Quaternion.LookRotation(Vector3.forward, lookPosition - movePosition);
-                        else
-                            lookRotation = Quaternion.LookRotation(Vector3.forward, movePosition - squad.PositionsTransform.position);
+
                         break;
 
                     default:// Formation.Formations.RANKS:
                         movePosition = Camera.main.ScreenToWorldPoint(touch.position);
                         movePosition = new Vector3(movePosition.x, movePosition.y, transform.position.z);
-                        lookPosition = movePosition;
                         SelectEnemyes();
                         if (rHitsCount > 0)
                             StartCoroutine(CircleCastConstrict());
@@ -235,7 +235,7 @@ public class PlayerSquadController : MonoBehaviour,  IPointerDownHandler, IPoint
                 }
 
                 squad.Controller.MoveToPoint(movePosition);
-                squad.Controller.RotateAfterMoving(lookPosition);
+                squad.Controller.RotateAfterMoving(lookRotation);
             }
         }
     }

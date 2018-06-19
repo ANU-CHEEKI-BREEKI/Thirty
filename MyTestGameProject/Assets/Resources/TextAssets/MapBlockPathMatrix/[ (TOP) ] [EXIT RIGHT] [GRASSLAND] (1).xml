@@ -450,6 +450,6 @@
     <y>0</y>
   </WorldPosition>
   <HasExit>true</HasExit>
-  <Exit>LEFT</Exit>
+  <Exit>RIGHT</Exit>
   <type>GRASSLAND</type>
 </MapBlock>

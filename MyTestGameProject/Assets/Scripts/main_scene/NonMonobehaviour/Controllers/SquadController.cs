@@ -100,9 +100,9 @@ public class SquadController
     /// Указывает точку, в которую должен смотреть отряд по окончанию пути перемещения
     /// </summary>
     /// <param name="worldPositionToLook"></param>
-    public void RotateAfterMoving(Vector2 worldPositionToLook)
+    public void RotateAfterMoving(Quaternion rotation)
     {
-        squad.EndLookRotation = Quaternion.LookRotation(Vector3.forward, (Vector3)worldPositionToLook - squad.EndMovePosition);
+        squad.EndLookRotation = rotation;
     }
 
     void SetStartPosition(Vector2 newPos)

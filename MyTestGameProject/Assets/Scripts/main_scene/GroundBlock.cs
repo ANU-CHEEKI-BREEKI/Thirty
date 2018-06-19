@@ -9,11 +9,11 @@ public class GroundBlock : MonoBehaviour
     public MapBlock block;
     public Vector2 posInMinigrid;
 
-    [ContextMenu("RecalculateMabBlockMatrix")]
+    [ContextMenu("RewriteFileFromCorrentBlockState")]
     /// <summary>
     /// НЕ Кроссплатформенно
     /// </summary>
-    void RecalculateMabBlockMatrix()
+    void RewriteFileFromCorrentBlockState()
     {
         string path = @"Assets\Resources\" + Ground.PATH_TO_GRIDS + name + ".xml";
 
@@ -86,12 +86,11 @@ public class GroundBlock : MonoBehaviour
         }
     }
 
-    [ContextMenu("LoadBlockEntryesFromFile")]
     /// <summary>
     /// Кроссплатформенно
     /// </summary>
-    [ContextMenu("LoadBlockEntryesFromFile")]
-    public void LoadBlockEntryesFromFile()
+    [ContextMenu("LoadBlockStateFromFile")]
+    public void LoadBlockStateFromFile()
     {
         string path = Ground.PATH_TO_GRIDS + name;
         var ta = Resources.Load<TextAsset>(path);
