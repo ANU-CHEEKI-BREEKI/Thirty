@@ -61,8 +61,8 @@ public class Ground : MonoBehaviour
     public bool WorkIsDone { get { return progress >= 1; } }
 
     public event Action OnWorkDone;
-
     public event Action OnGenerationDone;
+    public event Action OnRecalcByCurrentBlocks;
 
     private void Awake()
     {
@@ -345,6 +345,12 @@ public class Ground : MonoBehaviour
             OnWorkDone();
             OnWorkDone = null;
         }
+
+        if (OnRecalcByCurrentBlocks != null)
+        {
+            OnRecalcByCurrentBlocks();
+            OnRecalcByCurrentBlocks = null;
+        }        
     }
 
     void GetEntranceAndExit(out Vector2 entranceBlockPosition, out Vector2 exitBlockPosition)

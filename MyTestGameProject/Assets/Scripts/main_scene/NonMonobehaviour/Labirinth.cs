@@ -425,7 +425,7 @@ public static class Labirinth
     {
         bool h = false, l = false;
 
-        if (labirinth.Length != labirintHeight)
+        if (labirinth.Length != labirintHeight || labirintHeight == 0)
         {
             pathMatrix = new float[labirinth.Length][];
             l = true;
@@ -433,7 +433,7 @@ public static class Labirinth
 
         for (int row = 0; row < pathMatrix.Length; row++)
         {
-            if (labirinth[row].Length != labirintWindth)
+            if (labirinth[row].Length != labirintWindth || labirintWindth == 0)
             {
                 pathMatrix[row] = new float[labirinth[row].Length];
                 h = true;
@@ -528,9 +528,6 @@ public static class Labirinth
     /// <param name="moveValue">на сколько двигать</param>
     public static void MoveFromWall(bool[][] labirinth, List<Vector3> path)
     {
-        int moveValue = 1;
-        List<Vector3> previousPath = new List<Vector3>();
-
         //проходим по каждой точке пути
         for (int i = 1; i < path.Count; i++)
         {
@@ -538,23 +535,11 @@ public static class Labirinth
             //проверяем есть ли рядом стена на указаном расстоянии
             if(ExistNearWall(labirinth, path[i], out coord))
             {
-                Vector2 newPos = ((Vector2)path[i] * 2 - coord);
+                Vector2 newPos = ((Vector2)path[i] * 2 - coord); //двигаем точку на расстояние
                 if (!ExistNearWall(labirinth, newPos, out coord))//на новом мeсте стены нет
-                    path[i] = new Vector3(newPos.x, newPos.y); //двигаем точку на расстояние
+                    path[i] = new Vector3(newPos.x, newPos.y);   //применяем сдвиг
             }
             //если путь разорвался, то, алгоритмом Ли, восстанавливаем его
-            //previousPath.Clear();
-            //previousPath.AddRange(path.GetRange(0, i));
-            //if (!NearExistPath(previousPath, path[i]))
-            //{
-            //    var range = FindPathLee(labirinth, path[i - 1], path[i]);
-            //    if (range != null)
-            //    {
-            //        path.InsertRange(i, range);
-            //        i += range.Count;
-            //    }
-
-            //}
         }
     }
 

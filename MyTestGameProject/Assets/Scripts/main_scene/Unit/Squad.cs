@@ -25,6 +25,7 @@ public class Squad : MonoBehaviour
     public int SQUAD_LENGTH { get { return squadLength; } }
     int squadRowsMax;
     public int SQUAD_ROWS_MAX {  get { return squadRowsMax; } }
+    [SerializeField] float distanceToCenterSquad = 10;
     [Space]
     [SerializeField] [Range(1, 10)] float maxSpeed = 4;
     public float MaxSpeed { get { return maxSpeed; } }
@@ -345,7 +346,7 @@ public class Squad : MonoBehaviour
             inventory.SecondSkill.Skill = progress.Skills.secondSkill;
             if (skill != null)
                 inventory.SecondSkill.SkillStats = skill.CalcUpgradedStats(progress.Skills.skills.Find((t) => { return t.Id == skill.Id; }).Upgrades);
-        }
+        }       
     }
 
     public void SetUnitsStats(DSUnitStats stats)
@@ -370,10 +371,48 @@ public class Squad : MonoBehaviour
     {
         DrawPath();
 
-        if(minimapMark != null)
-            minimapMark.position = centerSquad;
+        CalcCenterSquad();
+        
+        //if (minimapMark != null)
+        //    minimapMark.position = centerSquad;
 
         Moving();
+    }
+
+    private void CalcCenterSquad()
+    {
+        int cnt = UnitCount;
+        float sumX = 0;
+        float sumY = 0;
+        Vector2 pos;
+        int countSumUnit = 0;
+        
+        float distSqr = distanceToCenterSquad * distanceToCenterSquad;
+
+        float sumX2 = 0;
+        float sumY2 = 0;
+        int countSumUnit2 = 0;
+
+        for (int i = 0; i < UnitCount; i++)
+        {
+            pos = unitPositions[i].Unit.ThisTransform.position;
+            if (Vector2.SqrMagnitude(pos - centerSquad) > distSqr)
+            {
+                sumX2 += pos.x;
+                sumY2 += pos.y;
+                countSumUnit2++;
+            }
+            else
+            {
+                sumX += pos.x;
+                sumY += pos.y;
+                countSumUnit++;
+            }
+        }
+        if(countSumUnit > 0)
+            centerSquad = new Vector2(sumX / countSumUnit, sumY / countSumUnit);
+        else
+            centerSquad = new Vector2(sumX2 / countSumUnit2, sumY2 / countSumUnit2);
     }
 
 
@@ -540,29 +579,6 @@ public class Squad : MonoBehaviour
                 }
             }
         }
-    }
-
-    /// <summary>
-    /// <para>Прибавляет позицию юнита к общей сумме и вычисляя среднее значение, определяет координаты центра отряда.</para>
-    /// <para>Этот метод необходимо вызывать в отдном из методов Update</para>
-    /// </summary>
-    /// <param name="unit"></param>
-    public void SumPositionUnit(Unit unit)
-    {
-        Vector2 pos = unit.ThisTransform.position;
-
-        sumX += pos.x;
-        sumY += pos.y;
-        countSumUnit++;
-
-        if(countSumUnit >= unitPositions.Count)
-        {
-            centerSquad = new Vector2(sumX / countSumUnit, sumY / countSumUnit);
-            sumX = 0;
-            sumY = 0;
-            countSumUnit = 0;
-        }       
-
     }
 
     /// <summary>
@@ -1061,5 +1077,7 @@ public class Squad : MonoBehaviour
         Gizmos.color = Color.gray;
         Gizmos.DrawWireSphere(centerSquad, distanceToUnionWithSquad);
 
+        Gizmos.color = Color.magenta;
+        Gizmos.DrawWireSphere(centerSquad, distanceToCenterSquad);
     }
 }

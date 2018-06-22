@@ -24,6 +24,7 @@ public class MinimapCamera : MonoBehaviour
         Instance.enabled = false;
 
         Ground.Instance.OnGenerationDone += OnGroundGenerated;
+        Ground.Instance.OnRecalcByCurrentBlocks += OnGroundGenerated;
     }
 
     void OnGroundGenerated()

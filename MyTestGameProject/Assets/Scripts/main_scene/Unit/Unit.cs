@@ -676,7 +676,7 @@ public class Unit : MonoBehaviour
                 else
                     CheckEquipment();
 
-                squad.SumPositionUnit(this);
+                //squad.SumPositionUnit(this);
             }
 
             if (olreadyNotPushingAlly && pushedUnit.Count == 0)
