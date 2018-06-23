@@ -6,57 +6,71 @@ using UnityEngine.UI;
 
 public class HealthBar : MonoBehaviour
 {
-    [SerializeField] Image targetGraphix;
-    RectTransform targetGraphixTransform;
+    [SerializeField] Image hpBar;
 
     [SerializeField] TextMeshProUGUI textHp;
     [SerializeField] TextMeshProUGUI textCount;
 
-    Squad playerSquad;
+    [SerializeField] Squad squad;
 
-	void Start ()
+	void Awake()
     {
-        playerSquad = Squad.playerSquadInstance;
+        if(squad == null)
+            squad = Squad.playerSquadInstance;
 
-        targetGraphixTransform = (RectTransform)targetGraphix.transform;
-        targetGraphixTransform.anchorMax = Vector2.one;
+        squad.OnSumHealthChanged += DrawHpBar;
+        squad.OnUitCountChanged += DrawCountUnits;
 
-        playerSquad.OnSumHealthChanged += DrawHpBar;
-        playerSquad.OnUitCountChanged += DrawCountUnits;
+        DrawHpBar(squad.SquadHealth);
+        DrawCountUnits(squad.UnitCount);
 
-        DrawHpBar(playerSquad.SquadHealth);
-        DrawCountUnits(playerSquad.UnitCount);
+        hpBar.type = Image.Type.Filled;
+        hpBar.fillMethod = Image.FillMethod.Horizontal;
+    }
+
+    private void OnEnable()
+    {
+        DrawHpBar(squad.SquadHealth);
+        DrawCountUnits(squad.UnitCount);
     }
 
     void DrawCountUnits(int newCount)
     {
-        textCount.text = newCount + "/" + playerSquad.FULL_SQUAD_UNIT_COUNT;
+        if (squad != null && gameObject.activeInHierarchy)
+        {
+            if(textCount != null)
+                textCount.text = newCount + "/" + squad.FULL_SQUAD_UNIT_COUNT;
+        }
     }
 
     private void OnDestroy()
     {
-        if (playerSquad != null)
+        if (squad != null)
         {
-            playerSquad.OnSumHealthChanged -= DrawHpBar;
-            playerSquad.OnUitCountChanged -= DrawCountUnits;
+            squad.OnSumHealthChanged -= DrawHpBar;
+            squad.OnUitCountChanged -= DrawCountUnits;
         }
     }
 
     void DrawHpBar(float squadHealth)
     {
-        float maxHp = playerSquad.UnitStats.Health * playerSquad.FULL_SQUAD_UNIT_COUNT;
+        if (squad != null && gameObject.activeInHierarchy)
+        {
+            float maxHp = squad.UnitStats.Health * squad.FULL_SQUAD_UNIT_COUNT;
 
-        float t = squadHealth / maxHp;
-        Color color;
-        if (t >= 0.5f)
-            color = Color.Lerp(Color.yellow, Color.green, t*2 - 1 - 0.3f);
-        else
-            color = Color.Lerp(Color.red, Color.yellow, t*2 - 0.3f);
+            float t = squadHealth / maxHp;
+            Color color;
+            if (t >= 0.5f)
+                color = Color.Lerp(Color.yellow, Color.green, t * 2 - 1 - 0.3f);
+            else
+                color = Color.Lerp(Color.red, Color.yellow, t * 2 - 0.3f);
 
-        targetGraphix.color = color;
-        targetGraphixTransform.anchorMax = new Vector2(squadHealth / maxHp, 1);
+            hpBar.color = color;
+            hpBar.fillAmount = t;
 
-        textHp.text = squadHealth.ToString("0") + "/" + maxHp;
+            if(textHp != null)
+                textHp.text = squadHealth.ToString("0") + "/" + maxHp;
+        }
     }
 }
 

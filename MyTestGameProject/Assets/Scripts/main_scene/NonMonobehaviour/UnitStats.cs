@@ -117,7 +117,10 @@ public struct UnitStats
 
         for (i = 0; i < equipCnt; i++)
             if (equipmentStats[i].Type == EquipmentStats.TypeOfEquipment.WEAPON)
-                baseStats.attackDistance += equipmentStats[i].AttackDistance;
+                if(!equipmentStats[i].CanReformToPhalanxInFight && formationStats.FORMATION != FormationStats.Formations.PHALANX)
+                    baseStats.attackDistance += 1;
+                else
+                    baseStats.attackDistance += equipmentStats[i].AttackDistance;
 
         k = 1;
         for (i = 0; i < equipCnt; i++)

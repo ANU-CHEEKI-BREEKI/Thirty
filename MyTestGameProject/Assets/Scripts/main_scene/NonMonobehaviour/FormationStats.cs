@@ -9,7 +9,7 @@ public abstract class FormationStats
     public enum Formations { RANKS, PHALANX, RISEDSHIELDS }
 
     public readonly Formations FORMATION;
-
+    
     public readonly float SQUAD_ADDITIONAL_SPEED;
     public readonly float SQUAD_ADDITIONAL_ROTATION_SPEED;
 

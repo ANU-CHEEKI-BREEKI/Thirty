@@ -1,6 +1,6 @@
 Android
 PlayerPath?
-C:/Users/ANU CHEEKI BREEKI/Desktop/Thirty.a.2.2b.apk
+C:/Users/ANU CHEEKI BREEKI/Desktop/Thirty.v.0.3a.apk
 SceneListBegin?
 Assets/Scenes/main_menu.unity
 Assets/Scenes/market.unity
@@ -9,6 +9,7 @@ Assets/Scenes/load_screen.unity
 Assets/Scenes/level_tutorial.unity
 SceneListEnd?
 855705ccc451c5d8b6e47b41ff34fcba Assembly-CSharp.dll:.MarketInventoryUI
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.SquadInfoCellPresenter
 b03587ec8dc14c4f226eab9b76225f9a Assembly-CSharp.dll:.UnitAnimation
 4d6763a4d2204729bf905c140aee2e38 Assembly-CSharp.dll:.SettingsProgressSection
 f8fbede914d2abfe8e66f80af11e2978 Assembly-CSharp.dll:.Ground
@@ -204,7 +205,7 @@ e763036081c708b34f78f5a56f72c23d TextMeshPro-2017.3-1.0.56-Runtime.dll:TMPro.TMP
 d672cee35261f9935d5ce974c746730f TextMeshPro-2017.3-1.0.56-Runtime.dll:TMPro.TMP_Text
 3dd1ef6f4de6a0f25e89f0ac7f9c0c03 Assembly-CSharp.dll:.SkillMarketInventoryUI
 134fbd7ee7c3619a31f7c5407c515a63 Assembly-CSharp.dll:.BuyTheGold
-0d9ffdc9cda3d6d795be7196813db8ad Assembly-CSharp.dll:.HealthBar
+18a370c63e50cb757b7a17243729d19a Assembly-CSharp.dll:.HealthBar
 2d98e2ba30dc83a9f81c7ea38183b91c Assembly-CSharp.dll:.SoundManager
 05524b8f659e7bfe5756d1335fec24ba TextMeshPro-2017.3-1.0.56-Editor.dll:TMPro.EditorUtilities.DropdownEditor
 05524b8f659e7bfe5756d1335fec24ba TextMeshPro-2017.3-1.0.56-Editor.dll:TMPro.EditorUtilities.TMP_ColorGradientEditor
@@ -255,6 +256,7 @@ ae73b18b07cd4c26aa5b511ba60ab9f3 Assembly-CSharp.dll:.Exit
 a6317c2b30fab4f30c1274e3ced210ab Assembly-CSharp.dll:.PopUpTextController
 f837e8b34b44559089c7b71079cd238f Assembly-CSharp.dll:.ToAnotherSceneButton
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.DropToEquipment
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.SquadInfoShowerButton
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.DroppedItem
 6dea643d10038645a184abb0fa1169f1 Assembly-CSharp.dll:.ToggleDoubleCheckmarks
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.DropToSkillMarket
@@ -273,7 +275,7 @@ e0f7ffd5d5c2abe4b2e16569a21163da UnityEngine.GoogleAudioSpatializer.dll:UnityEng
 67a5f2c97205d2e41a8ed7c7ce898f6e UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioSoundfieldExtension
 67a5f2c97205d2e41a8ed7c7ce898f6e UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioSourceExtension
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.TriggerConstraintSpearInPlayerInventory
-4ddd055a11e3b372c3777c02d5301071 Assembly-CSharp.dll:.AiSquadController
+891b8cc17905682c6231c8ebca84c82f Assembly-CSharp.dll:.AiSquadController
 afb058d190a9f50e07be2ec4c98e6f33 Assembly-CSharp.dll:.SkillArrowsValley
 d20829f1596d67ae92f35b9efc9cbdef Assembly-CSharp.dll:.Unit
 750a94f407bcf9b70b45f05e74095e79 Assembly-CSharp.dll:.NumberConverter
@@ -288,6 +290,7 @@ dfa9a4723889c77894bfc6918bcfb9ca Assembly-CSharp.dll:.StatsBlock
 025ecb23ef53daad74e96f4a3aa20e19 Assembly-CSharp.dll:.PauseToggle
 040358f0dbbbea249d5774ea08f52f98 Assembly-CSharp.dll:.SquadConsumableInventoryUI
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.FadeScreen
+110822f0d5e4b2ecd6ab8653aac3e3f6 Assembly-CSharp.dll:.SquadInfoPanel
 9de3a22eca9aefadba2d10d5987cefe3 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 fcc24e6aa8ec57932f32eee0dc9b8ef6 Assembly-CSharp.dll:.SquadSkillsInventoryUI
 5b5f728344e2a781df9bf7f53b997f24 Assembly-CSharp.dll:.ShowAllyUnitsHp
@@ -316,7 +319,7 @@ f189429997e594b4af323171a643c640 Assembly-CSharp.dll:.EnvirinmantInventoryUI
 f8a7c9a42768b4703f4bf2ebb8713e29 Assembly-CSharp.dll:.FollowCanvasToSquad
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.TriggerConstraintPlayeFormationShields
 c2759edd955aa88ee00e61d431143610 Assembly-CSharp.dll:.SkillButton
-7dbd93b3103a423446c555ca272bda8e Assembly-CSharp.dll:.Squad
+c0bad03cd4825248dae70396b9113c0f Assembly-CSharp.dll:.Squad
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.TerrainWalker
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.ShowSettingsSection
 8d93a23f25af42a983863485fb7c6788 Assembly-CSharp.dll:.DropToConsumable

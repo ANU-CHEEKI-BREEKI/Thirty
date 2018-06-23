@@ -32,6 +32,33 @@ public class FormationButton : MonoBehaviour, IPointerDownHandler, IPointerUpHan
 
     Squad playerSquad;
 
+    public static FormationButton Instance { get; private set; }
+
+    public Sprite GetIcon(FormationStats.Formations formation)
+    {
+        Sprite res = null;
+        switch (formation)
+        {
+            case FormationStats.Formations.RANKS:
+                res = imageRanks.sprite;
+                break;
+            case FormationStats.Formations.PHALANX:
+                res = imagePhalanx.sprite;
+                break;
+            case FormationStats.Formations.RISEDSHIELDS:
+                res = imageShields.sprite;
+                break;
+            default:
+                break;
+        }
+        return res;
+    }
+
+    private void Awake()
+    {
+        Instance = this;
+    }
+
     private void Start()
     {
         playerSquad = Squad.playerSquadInstance;

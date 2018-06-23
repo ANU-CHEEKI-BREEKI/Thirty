@@ -8,7 +8,7 @@ public class FollowCanvasToSquad : MonoBehaviour
 
     Transform tr;
 
-    private void Start()
+    private void Awake()
     {
         tr = transform;
     }
@@ -18,4 +18,10 @@ public class FollowCanvasToSquad : MonoBehaviour
         if(squad != null)
             tr.position = squad.CenterSquad;
 	}
+
+    private void OnEnable()
+    {
+        if (squad != null)
+            tr.position = squad.CenterSquad;
+    }
 }

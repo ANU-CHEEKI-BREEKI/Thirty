@@ -128,6 +128,7 @@
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\IDescriptionable.cs" />
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\IInventoryUI.cs" />
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\Inventory.cs" />
+    <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\IPresenter.cs" />
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\ISkillCooldownable.cs" />
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\ISkillCostable.cs" />
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\ISkillDirectionable.cs" />
@@ -217,6 +218,9 @@
     <Compile Include="Assets\Scripts\main_scene\UI\SkillButton.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\SliderValueViewer.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\SquadCerrentProp.cs" />
+    <Compile Include="Assets\Scripts\main_scene\UI\SquadInfoCellPresenter.cs" />
+    <Compile Include="Assets\Scripts\main_scene\UI\SquadInfoPanel.cs" />
+    <Compile Include="Assets\Scripts\main_scene\UI\SquadInfoShowerButton.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\SquadPropertyIndicator.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\TipsPanel.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\ToAnotherSceneButton.cs" />

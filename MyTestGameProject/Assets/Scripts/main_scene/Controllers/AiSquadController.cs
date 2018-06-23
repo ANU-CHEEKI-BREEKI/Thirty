@@ -6,17 +6,20 @@ using UnityEngine;
 
 public class AiSquadController : MonoBehaviour
 {
-    public enum AiSquadBehaviour { HOLD_POSITION, ATTACK, DEFEND }
-
-    //слои, через которые не будет искаться путь напрямую
-    [SerializeField] LayerMask directFindPathLayers;
+    public enum AiSquadBehaviour { HOLD, ATTACK, DEFEND }
 
     [Range(0, 1)] public float slowApdateDeltaTime = 0.2f;
     [Range(0, 5)] public float attackDeltaTime = 1f;
+    [Range(0, 5)] public float formationDeltaTime = 1f;
     [Range(1, 200)] public float distanceToActivateSquad = 50;
     [Range(1, 50)] public float radiusOfDefendArea = 15;
     [Range(1, 50)] public float radiusOfAttackArea = 30;
     public  AiSquadBehaviour mode = AiSquadBehaviour.DEFEND;
+
+    [Space]
+    [SerializeField] bool canReformRanks = true;
+    [SerializeField] bool canReformPhalanx = true;
+    [SerializeField] bool canReformShields = true;
 
     [Space]
     [SerializeField] [Range(0, 20)] float distToResetStartPosBeforeFindPath = 5f;
@@ -57,8 +60,8 @@ public class AiSquadController : MonoBehaviour
 
         playerSquad = GameObject.FindWithTag("Player").GetComponent<Squad>();
 
-        StartCoroutine(SlowUpdate());
-        StartCoroutine(Attack());
+        // StartCoroutine(UpdateBehaviour());
+        //StartCoroutine(UpdateAttack());
 
         squad.OnSquadDestroy += Squad_OnSquadDestroy;
     }
@@ -73,7 +76,44 @@ public class AiSquadController : MonoBehaviour
         squad.OnSquadDestroy -= Squad_OnSquadDestroy;
     }
 
-    IEnumerator SlowUpdate()
+    float timerBehaviour = 0;
+    float timerAttack = 0;
+    float timerFormation = 0;
+
+    void Update()
+    {
+        float delta = Time.deltaTime;
+        timerBehaviour += delta;
+        timerAttack += delta;
+        timerFormation += delta;
+
+
+        if (timerBehaviour >= slowApdateDeltaTime)
+        {
+            timerBehaviour = 0;
+            if (playerSquad != null)
+            {
+                CalcDistances();
+                ActivateSquad();
+                SquadBehaviour();               
+            }
+        }
+
+        if (timerAttack >= attackDeltaTime)
+        {
+            timerAttack = 0;
+            SquadAttack();
+        }
+
+        if (timerFormation >= formationDeltaTime)
+        {
+            timerFormation = 0;
+            SetFormation();
+        }        
+    }
+
+
+    IEnumerator UpdateBehaviour()
     {
         while (true)
         {
@@ -82,13 +122,14 @@ public class AiSquadController : MonoBehaviour
                 CalcDistances();
                 ActivateSquad();
                 SquadBehaviour();
+                SetFormation();
             }
 
             yield return new WaitForSeconds(slowApdateDeltaTime);
         }
     }
 
-    IEnumerator Attack()
+    IEnumerator UpdateAttack()
     {
         while (true)
         {
@@ -96,6 +137,23 @@ public class AiSquadController : MonoBehaviour
                 SquadAttack();
 
             yield return new WaitForSeconds(attackDeltaTime);
+        }
+    }
+
+    void SetFormation()
+    {
+        if (canGo)
+        {
+            if (distanceToPlayer > squad.Inventory.Weapon.EquipmentStats.AttackDistance + 3)
+            {
+                if (canReformRanks)
+                    squad.CurrentFormation = FormationStats.Formations.RANKS;
+            }
+            else
+            {
+                if (canReformPhalanx)
+                    squad.CurrentFormation = FormationStats.Formations.PHALANX;
+            }
         }
     }
 
@@ -109,8 +167,8 @@ public class AiSquadController : MonoBehaviour
 
     private void CalcDistances()
     {
-        distanceToPlayer = Vector2.Distance(squad.PositionsTransform.position, playerSquad.CenterSquad);
-        distanceToStartPosition = Vector2.Distance(squad.PositionsTransform.position, startPosition);
+        distanceToPlayer = Vector2.Distance(squad.CenterSquad, playerSquad.CenterSquad);
+        distanceToStartPosition = Vector2.Distance(squad.CenterSquad, startPosition);
 
         distPlayerSquadToStartPos = Vector2.Distance(startPosition, playerSquad.CenterSquad);
     }
@@ -145,7 +203,7 @@ public class AiSquadController : MonoBehaviour
         {
             switch (mode)
             {
-                case AiSquadBehaviour.HOLD_POSITION:
+                case AiSquadBehaviour.HOLD:
                     BehaviorOnHold();
                     break;
                 case AiSquadBehaviour.ATTACK:

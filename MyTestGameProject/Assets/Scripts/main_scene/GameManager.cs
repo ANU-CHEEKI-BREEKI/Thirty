@@ -150,12 +150,20 @@ public class GameManager : MonoBehaviour
                 FadeScreen.Instance.FadeOnStartScene = false;
                 Pause();
                 Ground.Instance.OnWorkDone += Resume;
-                Ground.Instance.OnWorkDone += InitPlayer;
+                //Ground.Instance.OnWorkDone += InitPlayer;
                 Ground.Instance.OnWorkDone += FadeScreen.Instance.FateOnStartScene;
                 Ground.Instance.RecalcMatrixByCurrentBlocks();
 
                 break;
             default:
+
+                FadeScreen.Instance.FadeOnStartScene = false;
+                Pause();
+                Ground.Instance.OnWorkDone += Resume;
+                //Ground.Instance.OnWorkDone += InitPlayer;
+                Ground.Instance.OnWorkDone += FadeScreen.Instance.FateOnStartScene;
+                Ground.Instance.RecalcMatrixByCurrentBlocks();
+
                 break;
         }
     }
@@ -238,6 +246,18 @@ public class GameManager : MonoBehaviour
             Camera.main.transform.position.z
         );
 
+        var progress = GameManager.Instance.PlayerProgress;
+
+        squad.SetUnitsStats(progress.Stats);
+        var skill = progress.Skills.firstSkill;
+        squad.Inventory.FirstSkill.Skill = skill;
+        if (skill != null)
+            squad.Inventory.FirstSkill.SkillStats = skill.CalcUpgradedStats(progress.Skills.skills.Find((t) => { return t.Id == skill.Id; }).Upgrades);
+
+        skill = progress.Skills.secondSkill;
+        squad.Inventory.SecondSkill.Skill = progress.Skills.secondSkill;
+        if (skill != null)
+            squad.Inventory.SecondSkill.SkillStats = skill.CalcUpgradedStats(progress.Skills.skills.Find((t) => { return t.Id == skill.Id; }).Upgrades);
     }
 
     void Update()
