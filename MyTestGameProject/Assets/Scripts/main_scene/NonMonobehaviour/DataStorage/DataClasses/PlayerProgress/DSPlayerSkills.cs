@@ -6,8 +6,8 @@ using UnityEngine;
 public class DSPlayerSkills : ISavable, IResetable
 {
     public List<DSPlayerSkill> skills;
-    public Skill firstSkill;
-    public Skill secondSkill;
+    public Executable firstSkill;
+    public Executable secondSkill;
 
     public DSPlayerSkills()
     {

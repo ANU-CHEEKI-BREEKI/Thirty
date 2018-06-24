@@ -59,7 +59,7 @@ public class ConsumablePilumsVolley : Consumable
     
     public override object DefaultStats { get { return stats; } }
 
-    public override bool DoSkill(object skillStats)
+    public override bool Execute(object skillStats)
     {
         bool res = true;
 
@@ -93,7 +93,7 @@ public class ConsumablePilumsVolley : Consumable
     /// <para>Vector2 - место куда будут лететь пилумы</para>
     /// <para>int - кол во доступных пилумов</para>
     /// </param>
-    public override void InitSkill(params object[] args)
+    public override void Init(params object[] args)
     {
         owner = args[0] as Squad;
         castPosition = (Vector2)args[1];

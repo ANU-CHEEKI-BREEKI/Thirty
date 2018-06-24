@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [Serializable]
-public class ConsumableStack : AStack, IStackCountConstraintable, IDescriptionable
+public class ConsumableStack : AExecutableStack, IStackCountConstraintable, IDescriptionable
 {
     public event Action<Consumable> OnConsumableChanged;
     public event Action<object> OnStatsChanged;
@@ -41,6 +41,14 @@ public class ConsumableStack : AStack, IStackCountConstraintable, IDescriptionab
     }
 
     public override Item.MainProperties? MainProperties { get { if (consumable != null) return consumable.MainPropertie; else return null; } }
+
+    public override Item Item
+    {
+        get
+        {
+            return consumable;
+        }
+    }
 
     public ConsumableStack() : this(null, null)
     {

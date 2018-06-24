@@ -4,13 +4,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [Serializable]
-public class SkillStack : AStack, IDescriptionable
+public class SkillStack : AExecutableStack, IDescriptionable
 {
-    public event Action<Skill> OnSkillChanged;
+    public event Action<Executable> OnSkillChanged;
     public event Action<object> OnStatsChanged;
 
-    [SerializeField] Skill skill;
-    public Skill Skill { get { return skill; } set { skill = value; if (OnSkillChanged != null) OnSkillChanged(value); } }
+    [SerializeField] Executable skill;
+    public Executable Skill { get { return skill; } set { skill = value; if (OnSkillChanged != null) OnSkillChanged(value); } }
 
     [SerializeField] object skillStats;
     public object SkillStats
@@ -29,11 +29,19 @@ public class SkillStack : AStack, IDescriptionable
 
     public override Item.MainProperties? MainProperties { get { if (skill != null) return skill.MainPropertie; else return null; } }
 
+    public override Item Item
+    {
+        get
+        {
+            return skill;
+        }
+    }
+
     public SkillStack()
     {
     }
 
-    public SkillStack(Skill skill, object skillStats)
+    public SkillStack(Executable skill, object skillStats)
     {
         this.skill = skill;
         this.skillStats = skillStats;

@@ -21,10 +21,10 @@ public class PilumsVolley : MonoBehaviour
     //kем был инициирован залп
     [HideInInspector] public Squad owner = Squad.playerSquadInstance;
 
-    Action<int> CallbackUsedCount;
+    Action<int, Squad> CallbackUsedCount;
     int countPilumsInValley = 0;
     
-    public void Init(Vector2 positionOfTarget, Damage damage, float distance, float speed, int countOfPilumsToVolley, Squad owner = null, Action<int> callbackUsedCount = null)
+    public void Init(Vector2 positionOfTarget, Damage damage, float distance, float speed, int countOfPilumsToVolley, Squad owner = null, Action<int, Squad> callbackUsedCount = null)
     {
         //кол-во юнитов отряде. - то есть и кол во пилумов в залпе
         int countOfUnits = 30;
@@ -95,7 +95,7 @@ public class PilumsVolley : MonoBehaviour
         pSys.Play();
         Destroy(gameObject, pSys.main.duration);
         if(CallbackUsedCount!= null)
-            CallbackUsedCount(countPilumsInValley);
+            CallbackUsedCount(countPilumsInValley, owner);
     }
 
     private void OnParticleCollision(GameObject other)

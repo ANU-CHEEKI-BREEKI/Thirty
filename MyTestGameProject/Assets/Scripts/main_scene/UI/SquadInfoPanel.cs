@@ -22,8 +22,20 @@ public class SquadInfoPanel : MonoBehaviour
     {
         OnShowChanged += Present;
 
-        if(squad != null)
+        if (squad != null)
+        {
             squad.OnFormationChanged += Squad_OnFormationChanged;
+            var inv = squad.Inventory;
+            inv.FirstSkill.OnSkillChanged += OnExecChanded;
+            inv.SecondSkill.OnSkillChanged += OnExecChanded;
+            inv.FirstConsumable.OnConsumableChanged += OnExecChanded;
+            inv.SecondConsumable.OnConsumableChanged += OnExecChanded;
+        }
+    }
+
+    private void OnExecChanded(Executable obj)
+    {
+        Present(Show);
     }
 
     private void Start()
@@ -35,7 +47,14 @@ public class SquadInfoPanel : MonoBehaviour
     {
         OnShowChanged -= Present;
         if (squad != null)
+        {
             squad.OnFormationChanged -= Squad_OnFormationChanged;
+            var inv = squad.Inventory;
+            inv.FirstSkill.OnSkillChanged -= OnExecChanded;
+            inv.SecondSkill.OnSkillChanged -= OnExecChanded;
+            inv.FirstConsumable.OnConsumableChanged -= OnExecChanded;
+            inv.SecondConsumable.OnConsumableChanged -= OnExecChanded;
+        }
     }
 
     private void Squad_OnFormationChanged(FormationStats.Formations obj)

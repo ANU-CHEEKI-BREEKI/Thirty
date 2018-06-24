@@ -123,7 +123,7 @@ public static class Extensions
 
     #region
 
-    public static string GetNameLocalise(this Skill.SkillUseType useType)
+    public static string GetNameLocalise(this Executable.ExecatableUseType useType)
     {
         return useType.ToString();
     }

@@ -15,7 +15,7 @@ public class SkillButton : MonoBehaviour, IPointerClickHandler, IPointerDownHand
     [SerializeField] Type typeOfSkill;
     [Space]
 
-    Skill.SkillUseType useType;
+    Executable.ExecatableUseType useType;
     [SerializeField] SkillNum skillNum;
     [SerializeField] TextMeshProUGUI cooldownText;
     [SerializeField] TextMeshProUGUI countText;
@@ -141,18 +141,18 @@ public class SkillButton : MonoBehaviour, IPointerClickHandler, IPointerDownHand
 
     void OnPointerClickSkill(PointerEventData eventData)
     {
-        if (useType == Skill.SkillUseType.CLICK && Squad.playerSquadInstance != null && canCast)
+        if (useType == Executable.ExecatableUseType.CLICK && Squad.playerSquadInstance != null && canCast)
         {
-            currentSkill.Skill.InitSkill(Squad.playerSquadInstance);
+            currentSkill.Skill.Init(Squad.playerSquadInstance);
             DoSkill();
         }
     }
 
     void OnPointerClickConsumable(PointerEventData eventData)
     {
-        if (useType == Skill.SkillUseType.CLICK && Squad.playerSquadInstance != null && canCast)
+        if (useType == Executable.ExecatableUseType.CLICK && Squad.playerSquadInstance != null && canCast)
         {
-            currentConsumable.Consumable.InitSkill(Squad.playerSquadInstance);
+            currentConsumable.Consumable.Init(Squad.playerSquadInstance);
             DoConsumable();
         }
     }
@@ -205,9 +205,9 @@ public class SkillButton : MonoBehaviour, IPointerClickHandler, IPointerDownHand
 
     void OnEndDragSkill(Vector2 position)
     {
-        if (useType == Skill.SkillUseType.DRAG_DROP_PLASE && Squad.playerSquadInstance != null && canCast)
+        if (useType == Executable.ExecatableUseType.DRAG_DROP_PLASE && Squad.playerSquadInstance != null && canCast)
         {
-            currentSkill.Skill.InitSkill(
+            currentSkill.Skill.Init(
                 Squad.playerSquadInstance,
                 (Vector2)Camera.main.ScreenToWorldPoint(position),
                 playerSquadTransform.rotation
@@ -215,13 +215,13 @@ public class SkillButton : MonoBehaviour, IPointerClickHandler, IPointerDownHand
             DoSkill();
             lineRenderer.positionCount = 0;
         }
-        else if (useType == Skill.SkillUseType.DRAG_DIRECTION && Squad.playerSquadInstance != null && canCast)
+        else if (useType == Executable.ExecatableUseType.DRAG_DIRECTION && Squad.playerSquadInstance != null && canCast)
         {
             if (currentSkill.Skill is ISkillDirectionable)
             {
                 ISkillDirectionable t = currentSkill.Skill as ISkillDirectionable;
 
-                currentSkill.Skill.InitSkill(
+                currentSkill.Skill.Init(
                     Squad.playerSquadInstance,
                     ((Vector2)Camera.main.ScreenToWorldPoint(position) - Squad.playerSquadInstance.CenterSquad).normalized * t.Distance + Squad.playerSquadInstance.CenterSquad
                 );
@@ -233,9 +233,9 @@ public class SkillButton : MonoBehaviour, IPointerClickHandler, IPointerDownHand
 
     void OnEndDragConsumable(Vector2 position)
     {
-        if (useType == Skill.SkillUseType.DRAG_DROP_PLASE && Squad.playerSquadInstance != null && canCast)
+        if (useType == Executable.ExecatableUseType.DRAG_DROP_PLASE && Squad.playerSquadInstance != null && canCast)
         {
-            currentConsumable.Consumable.InitSkill(
+            currentConsumable.Consumable.Init(
                 Squad.playerSquadInstance,
                 (Vector2)Camera.main.ScreenToWorldPoint(position),
                 playerSquadTransform.rotation,
@@ -244,13 +244,13 @@ public class SkillButton : MonoBehaviour, IPointerClickHandler, IPointerDownHand
             DoSkill();
             lineRenderer.positionCount = 0;
         }
-        else if (useType == Skill.SkillUseType.DRAG_DIRECTION && Squad.playerSquadInstance != null && canCast)
+        else if (useType == Executable.ExecatableUseType.DRAG_DIRECTION && Squad.playerSquadInstance != null && canCast)
         {
             if (currentConsumable.ConsumableStats is ISkillDirectionable)
             {
                 ISkillDirectionable t = currentConsumable.ConsumableStats as ISkillDirectionable;
 
-                currentConsumable.Consumable.InitSkill(
+                currentConsumable.Consumable.Init(
                     Squad.playerSquadInstance,
                     ((Vector2)Camera.main.ScreenToWorldPoint(position) - Squad.playerSquadInstance.CenterSquad).normalized * t.Distance + Squad.playerSquadInstance.CenterSquad,
                     currentConsumable.Count
@@ -286,7 +286,7 @@ public class SkillButton : MonoBehaviour, IPointerClickHandler, IPointerDownHand
 
     void OnDragSkill(Vector2 position)
     {
-        if (useType == Skill.SkillUseType.DRAG_DROP_PLASE && Squad.playerSquadInstance != null && canCast)
+        if (useType == Executable.ExecatableUseType.DRAG_DROP_PLASE && Squad.playerSquadInstance != null && canCast)
         {
             if (currentSkill.SkillStats is ISkillRadiusable)
             {
@@ -297,7 +297,7 @@ public class SkillButton : MonoBehaviour, IPointerClickHandler, IPointerDownHand
                 lineRenderer.SetPositions(rHitCirclreSegments);
             }
         }
-        else if (useType == Skill.SkillUseType.DRAG_DIRECTION && Squad.playerSquadInstance != null && canCast)
+        else if (useType == Executable.ExecatableUseType.DRAG_DIRECTION && Squad.playerSquadInstance != null && canCast)
         {
             if (currentSkill.Skill is ISkillDirectionable)
             {
@@ -318,7 +318,7 @@ public class SkillButton : MonoBehaviour, IPointerClickHandler, IPointerDownHand
 
     void OnDragConsumable(Vector2 position)
     {
-        if (useType == Skill.SkillUseType.DRAG_DROP_PLASE && Squad.playerSquadInstance != null && canCast)
+        if (useType == Executable.ExecatableUseType.DRAG_DROP_PLASE && Squad.playerSquadInstance != null && canCast)
         {
             if (currentConsumable.ConsumableStats is ISkillRadiusable)
             {
@@ -329,7 +329,7 @@ public class SkillButton : MonoBehaviour, IPointerClickHandler, IPointerDownHand
                 lineRenderer.SetPositions(rHitCirclreSegments);
             }
         }
-        else if (useType == Skill.SkillUseType.DRAG_DIRECTION && Squad.playerSquadInstance != null && canCast)
+        else if (useType == Executable.ExecatableUseType.DRAG_DIRECTION && Squad.playerSquadInstance != null && canCast)
         {
             if (currentConsumable.ConsumableStats is ISkillDirectionable)
             {
@@ -352,7 +352,7 @@ public class SkillButton : MonoBehaviour, IPointerClickHandler, IPointerDownHand
 
     void DoSkill()
     {
-        if (currentSkill.Skill.DoSkill(currentSkill.SkillStats))
+        if (currentSkill.Skill.Execute(currentSkill.SkillStats))
         {
             ISkillCooldownable c = currentSkill.SkillStats as ISkillCooldownable;
             if (c != null)
@@ -363,7 +363,7 @@ public class SkillButton : MonoBehaviour, IPointerClickHandler, IPointerDownHand
     void DoConsumable()
     {
         currentConsumable.Consumable.CallbackUsedCount += DecrementUsedConsumableCount;
-        if (currentConsumable.Consumable.DoSkill(currentConsumable.ConsumableStats))
+        if (currentConsumable.Consumable.Execute(currentConsumable.ConsumableStats))
         {
             ISkillCooldownable c = currentConsumable.ConsumableStats as ISkillCooldownable;
             if (c != null)
@@ -377,9 +377,10 @@ public class SkillButton : MonoBehaviour, IPointerClickHandler, IPointerDownHand
         currentConsumable.Consumable.CallbackUsedCount -= DecrementUsedConsumableCount;
     }
 
-    void DecrementUsedConsumableCount(int count)
+    void DecrementUsedConsumableCount(int count, Squad owner)
     {
-        currentConsumable.Count -= count;
+        if(owner == Squad.playerSquadInstance)
+            currentConsumable.Count -= count;
     }
 
     IEnumerator WaitForCooldown(float time)

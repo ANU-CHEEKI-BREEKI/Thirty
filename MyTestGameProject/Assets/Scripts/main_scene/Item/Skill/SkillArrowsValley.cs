@@ -64,7 +64,7 @@ public class SkillArrowsValley : Skill
         return newStats;
     }
     
-    public override bool DoSkill(object skillStats)
+    public override bool Execute(object skillStats)
     {
         bool res = true;
 
@@ -92,7 +92,7 @@ public class SkillArrowsValley : Skill
     /// <para>Vector2 - место куда будут лететь стрелы</para>
     /// <para>Quaternion - сторона откуда будут лететь стрелы</para>
     /// </param>
-    public override void InitSkill(params object[] args)
+    public override void Init(params object[] args)
     {
         if (args.Length > 0)
             owner = (Squad)args[0];

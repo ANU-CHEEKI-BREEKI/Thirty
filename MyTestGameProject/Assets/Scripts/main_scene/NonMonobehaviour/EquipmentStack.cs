@@ -17,6 +17,14 @@ public class EquipmentStack : AStack, IDescriptionable
 
     public override Item.MainProperties? MainProperties { get { return equipmentMainProperties; } }
 
+    public override Item Item
+    {
+        get
+        {
+            return null;
+        }
+    }
+
     public EquipmentStack()
     {
     }

@@ -82,8 +82,8 @@ public class SkillMarketInventoryUI : AInventoryUI
                 unlocked = sl.Unlocked;
 
 
-            Skill first = Squad.playerSquadInstance.Inventory.FirstSkill.Skill;
-            Skill second = Squad.playerSquadInstance.Inventory.SecondSkill.Skill;
+            Executable first = Squad.playerSquadInstance.Inventory.FirstSkill.Skill;
+            Executable second = Squad.playerSquadInstance.Inventory.SecondSkill.Skill;
             //  если такой скилл уже взят как первый скилл       или     если такой скилл уже взят как второй скилл    или   самый первый апгрейд не вкачан
             if ((first!= null && skills[i].Skill.Id == first.Id) || (second != null && skills[i].Skill.Id == second.Id) || !unlocked)
             {

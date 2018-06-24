@@ -39,7 +39,7 @@ public class SkillCharge : Skill
     /// </summary>
     public override object DefaultStats { get { return defaultStats; } }
 
-    public override bool DoSkill(object skillStats)
+    public override bool Execute(object skillStats)
     {
         bool res = true;
 
@@ -63,7 +63,7 @@ public class SkillCharge : Skill
     /// <param name="args">
     /// <para>Squad - отряд который вызвал скилл</para>
     /// </param>
-    public override void InitSkill(params object[] args)
+    public override void Init(params object[] args)
     {
         if (args.Length > 0)
             owner = (Squad)args[0];
