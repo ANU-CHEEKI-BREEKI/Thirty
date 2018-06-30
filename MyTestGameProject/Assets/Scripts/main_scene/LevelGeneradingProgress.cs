@@ -28,7 +28,7 @@ public class LevelGeneradingProgress : MonoBehaviour
     {
         if (ind != null)
         {
-            ind.Name = Localization.resoures_loadind;
+            ind.Name = LocalizedStrings.resoures_loadind;
             gr.OnWorkDone += Foo;
 
             while (GameManager.Instance.GamePaused)
@@ -45,7 +45,7 @@ public class LevelGeneradingProgress : MonoBehaviour
 
     void Foo()
     {
-        ind.Name = Localization.level_generading; ind.Value = 0;
+        ind.Name = LocalizedStrings.level_generading; ind.Value = 0;
         gr.OnWorkDone -= Foo;
     }
 }

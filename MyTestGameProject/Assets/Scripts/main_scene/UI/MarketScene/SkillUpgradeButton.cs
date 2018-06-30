@@ -103,9 +103,9 @@ public class SkillUpgradeButton : MonoBehaviour, IDescriptionable, IPointerClick
         Action ok = Upgrade;
         ok += TipsPanel.Instance.Hide;
         actions.Add(ok);
-        actionsNames.Add(Localization.upgrade);
+        actionsNames.Add(LocalizedStrings.upgrade);
         actions.Add(TipsPanel.Instance.Hide);
-        actionsNames.Add(Localization.cancel);
+        actionsNames.Add(LocalizedStrings.cancel);
 
         maximumLevelText.text = "/" + maxLevel.ToString();
 
@@ -192,7 +192,7 @@ public class SkillUpgradeButton : MonoBehaviour, IDescriptionable, IPointerClick
         }
         else
         {
-            Toast.Instance.Show(Localization.toast_not_enough_expirience);
+            Toast.Instance.Show(LocalizedStrings.toast_not_enough_expirience);
         }
     }
 

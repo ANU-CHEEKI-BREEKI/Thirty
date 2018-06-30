@@ -107,8 +107,8 @@ public struct EquipmentStats : IDescriptionable
             {
                 d = new DescriptionItem()
                 {
-                    Name = Localization.attention,
-                    Description = Localization.weaponConstraint_cantReformPhalanx,
+                    Name = LocalizedStrings.attention,
+                    Description = LocalizedStrings.weaponConstraint_cantReformPhalanx,
                     ItPositiveDesc = canReformToFhalanx
                 };
                 constraints.Add(d);
@@ -119,8 +119,8 @@ public struct EquipmentStats : IDescriptionable
                 {
                     d = new DescriptionItem()
                     {
-                        Name = Localization.attention,
-                        Description = Localization.weaponConstraint_cantReformPhalanxInFight,
+                        Name = LocalizedStrings.attention,
+                        Description = LocalizedStrings.weaponConstraint_cantReformPhalanxInFight,
                         ItPositiveDesc = canReformToPhalanxInFight
                     };
                     constraints.Add(d);
@@ -131,8 +131,8 @@ public struct EquipmentStats : IDescriptionable
             {
                 d = new DescriptionItem()
                 {
-                    Name = Localization.attention,
-                    Description = Localization.weaponConstraint_cantUseShield,
+                    Name = LocalizedStrings.attention,
+                    Description = LocalizedStrings.weaponConstraint_cantUseShield,
                     ItPositiveDesc = canUseWithShield
                 };
                 constraints.Add(d);
@@ -144,7 +144,7 @@ public struct EquipmentStats : IDescriptionable
 
             d = new DescriptionItem()
             {
-                Name = Localization.mass,
+                Name = LocalizedStrings.mass,
                 Description = Mass.ToString(StringFormats.floatNumber),
                 ItPositiveDesc = true
             };
@@ -154,7 +154,7 @@ public struct EquipmentStats : IDescriptionable
             {
                 d = new DescriptionItem()
                 {
-                    Name = Localization.attackDistance,
+                    Name = LocalizedStrings.attackDistance,
                     Description = AttackDistance.ToString(StringFormats.floatNumber),
                     ItPositiveDesc = true
                 };
@@ -165,8 +165,8 @@ public struct EquipmentStats : IDescriptionable
             {
                 d = new DescriptionItem()
                 {
-                    Name = Localization.attack,
-                    Description = AddAttack.ToString(StringFormats.floatSignNumberPercent) + Localization.baseValue,
+                    Name = LocalizedStrings.attack,
+                    Description = AddAttack.ToString(StringFormats.floatSignNumberPercent) + LocalizedStrings.baseValue,
                     ItPositiveDesc = AddAttack > 0
                 };
                 stats.Add(d);
@@ -176,8 +176,8 @@ public struct EquipmentStats : IDescriptionable
             {
                 d = new DescriptionItem()
                 {
-                    Name = Localization.defence,
-                    Description = AddDefence.ToString(StringFormats.floatSignNumberPercent) + Localization.baseValue,
+                    Name = LocalizedStrings.defence,
+                    Description = AddDefence.ToString(StringFormats.floatSignNumberPercent) + LocalizedStrings.baseValue,
                     ItPositiveDesc = AddDefence > 0
                 };
                 stats.Add(d);
@@ -187,8 +187,8 @@ public struct EquipmentStats : IDescriptionable
             {
                 d = new DescriptionItem()
                 {
-                    Name = Localization.defenceHalfSector,
-                    Description = AddDefenceHalfSector.ToString(StringFormats.floatSignNumberPercent) + Localization.baseValue,
+                    Name = LocalizedStrings.defenceHalfSector,
+                    Description = AddDefenceHalfSector.ToString(StringFormats.floatSignNumberPercent) + LocalizedStrings.baseValue,
                     ItPositiveDesc = AddDefenceHalfSector > 0
                 };
                 stats.Add(d);
@@ -198,8 +198,8 @@ public struct EquipmentStats : IDescriptionable
             {
                 d = new DescriptionItem()
                 {
-                    Name = Localization.speed,
-                    Description = AddSpeed.ToString(StringFormats.floatSignNumberPercent) + Localization.baseValue,
+                    Name = LocalizedStrings.speed,
+                    Description = AddSpeed.ToString(StringFormats.floatSignNumberPercent) + LocalizedStrings.baseValue,
                     ItPositiveDesc = AddSpeed > 0
                 };
                 stats.Add(d);
@@ -209,8 +209,8 @@ public struct EquipmentStats : IDescriptionable
             {
                 d = new DescriptionItem()
                 {
-                    Name = Localization.acceleration,
-                    Description = AddAcceleretion.ToString(StringFormats.floatSignNumberPercent) + Localization.baseValue,
+                    Name = LocalizedStrings.acceleration,
+                    Description = AddAcceleretion.ToString(StringFormats.floatSignNumberPercent) + LocalizedStrings.baseValue,
                     ItPositiveDesc = AddAcceleretion > 0
                 };
                 stats.Add(d);
@@ -220,8 +220,8 @@ public struct EquipmentStats : IDescriptionable
             {
                 d = new DescriptionItem()
                 {
-                    Name = Localization.rotationSpeed,
-                    Description = AddRotationSpeed.ToString(StringFormats.floatSignNumberPercent) + Localization.baseValue,
+                    Name = LocalizedStrings.rotationSpeed,
+                    Description = AddRotationSpeed.ToString(StringFormats.floatSignNumberPercent) + LocalizedStrings.baseValue,
                     ItPositiveDesc = AddRotationSpeed > 0
                 };
                 stats.Add(d);
@@ -231,8 +231,8 @@ public struct EquipmentStats : IDescriptionable
             {
                 d = new DescriptionItem()
                 {
-                    Name = Localization.chargeImpact,
-                    Description = AddChargeImpact.ToString(StringFormats.floatSignNumberPercent) + Localization.baseValue,
+                    Name = LocalizedStrings.chargeImpact,
+                    Description = AddChargeImpact.ToString(StringFormats.floatSignNumberPercent) + LocalizedStrings.baseValue,
                     ItPositiveDesc = AddChargeImpact > 0
                 };
                 stats.Add(d);
@@ -242,8 +242,8 @@ public struct EquipmentStats : IDescriptionable
             {
                 d = new DescriptionItem()
                 {
-                    Name = Localization.chargeDeflect,
-                    Description = AddChargeDeflect.ToString(StringFormats.floatSignNumberPercent) + Localization.baseValue,
+                    Name = LocalizedStrings.chargeDeflect,
+                    Description = AddChargeDeflect.ToString(StringFormats.floatSignNumberPercent) + LocalizedStrings.baseValue,
                     ItPositiveDesc = AddChargeDeflect > 0
                 };
                 stats.Add(d);
@@ -253,7 +253,7 @@ public struct EquipmentStats : IDescriptionable
             {
                 d = new DescriptionItem()
                 {
-                    Name = Localization.armour,
+                    Name = LocalizedStrings.armour,
                     Description = Armour.ToString(StringFormats.floatNumber),
                     ItPositiveDesc = true
                 };
@@ -264,7 +264,7 @@ public struct EquipmentStats : IDescriptionable
             {
                 d = new DescriptionItem()
                 {
-                    Name = Localization.baseDamage,
+                    Name = LocalizedStrings.baseDamage,
                     Description = Damag.BaseDamage.ToString(StringFormats.floatNumber),
                     ItPositiveDesc = true
                 };
@@ -275,7 +275,7 @@ public struct EquipmentStats : IDescriptionable
             {
                 d = new DescriptionItem()
                 {
-                    Name = Localization.armourDamage,
+                    Name = LocalizedStrings.armourDamage,
                     Description = Damag.ArmourDamage.ToString(StringFormats.floatNumber),
                     ItPositiveDesc = true
                 };
@@ -286,7 +286,7 @@ public struct EquipmentStats : IDescriptionable
             {
                 d = new DescriptionItem()
                 {
-                    Name = Localization.missileBlock,
+                    Name = LocalizedStrings.missileBlock,
                     Description = MissileBlock.ToString(StringFormats.floatNumberPercent),
                     ItPositiveDesc = MissileBlock > 0
                 };
@@ -297,8 +297,8 @@ public struct EquipmentStats : IDescriptionable
             {
                 d = new DescriptionItem()
                 {
-                    Name = Localization.chargeDamage,
-                    Description = AddChargeDamage.ToString(StringFormats.floatSignNumberPercent) + Localization.baseValue,
+                    Name = LocalizedStrings.chargeDamage,
+                    Description = AddChargeDamage.ToString(StringFormats.floatSignNumberPercent) + LocalizedStrings.baseValue,
                     ItPositiveDesc = AddChargeDamage > 0
                 };
                 stats.Add(d);

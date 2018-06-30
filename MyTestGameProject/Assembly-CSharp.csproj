@@ -142,6 +142,7 @@
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\ITerrainWalker.cs" />
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\Labirinth.cs" />
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\Localization.cs" />
+    <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\LocalizedStrings.cs" />
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\MapBlock.cs" />
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\SameBlocksContainer.cs" />
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\SkillStack.cs" />

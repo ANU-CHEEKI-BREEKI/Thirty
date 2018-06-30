@@ -34,7 +34,7 @@ public class LoadingScreenManager : MonoBehaviour
         Application.backgroundLoadingPriority = ThreadPriority.Low;
 
         var ind = ProgressIndicator.Instance;
-        ind.Name = Localization.loading;
+        ind.Name = LocalizedStrings.loading;
         ind.Value = 0;
 
         while (operation.progress < 0.9f || time < granteeMinimemTimeToLoad)

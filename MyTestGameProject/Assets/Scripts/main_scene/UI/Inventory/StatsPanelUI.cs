@@ -83,43 +83,43 @@ public class StatsPanelUI : MonoBehaviour
                 StatsBlock sb;
 
                 sb = statsPanel.transform.GetChild(1).GetComponent<StatsBlock>();
-                sb.SetName(Localization.health);
+                sb.SetName(LocalizedStrings.health);
                 sb.SetValue(stats.Health.ToString(formatNumber) + string.Format(formatConnat, Squad.playerSquadInstance.UnitStats.Health));
 
                 sb = statsPanel.transform.GetChild(2).GetComponent<StatsBlock>();
-                sb.SetName(Localization.armour);
+                sb.SetName(LocalizedStrings.armour);
                 sb.SetValue(stats.Armour.ToString(formatNumber) + string.Format(formatConnat, zero));
 
                 sb = statsPanel.transform.GetChild(3).GetComponent<StatsBlock>();
-                sb.SetName(Localization.baseDamage);
+                sb.SetName(LocalizedStrings.baseDamage);
                 sb.SetValue(stats.Damage.BaseDamage.ToString(formatNumber) + string.Format(formatConnat, zero));
 
                 sb = statsPanel.transform.GetChild(4).GetComponent<StatsBlock>();
-                sb.SetName(Localization.armourDamage);
+                sb.SetName(LocalizedStrings.armourDamage);
                 sb.SetValue(stats.Damage.ArmourDamage.ToString(formatNumber) + string.Format(formatConnat, zero));
 
                 sb = statsPanel.transform.GetChild(5).GetComponent<StatsBlock>();
-                sb.SetName(Localization.attack);
+                sb.SetName(LocalizedStrings.attack);
                 sb.SetValue(stats.Attack.ToString(formatNumberPercent) + string.Format(formatConnat, Squad.playerSquadInstance.UnitStats.Attack.ToString(formatNumberPercent)));
 
                 sb = statsPanel.transform.GetChild(6).GetComponent<StatsBlock>();
-                sb.SetName(Localization.defence);
+                sb.SetName(LocalizedStrings.defence);
                 sb.SetValue(stats.Defence.ToString(formatNumberPercent) + string.Format(formatConnat, Squad.playerSquadInstance.UnitStats.Defence.ToString(formatNumberPercent)));
 
                 sb = statsPanel.transform.GetChild(7).GetComponent<StatsBlock>();
-                sb.SetName(Localization.missileBlock);
+                sb.SetName(LocalizedStrings.missileBlock);
                 sb.SetValue(stats.MissileBlock.ToString(formatNumberPercent) + string.Format(formatConnat, zero));
 
                 sb = statsPanel.transform.GetChild(8).GetComponent<StatsBlock>();
-                sb.SetName(Localization.attackDistance);
+                sb.SetName(LocalizedStrings.attackDistance);
                 sb.SetValue(stats.AttackDistance.ToString(formatNumber) + string.Format(formatConnat, zero));
 
                 sb = statsPanel.transform.GetChild(9).GetComponent<StatsBlock>();
-                sb.SetName(Localization.speed);
+                sb.SetName(LocalizedStrings.speed);
                 sb.SetValue(stats.Speed.ToString(formatNumber) + string.Format(formatConnat, Squad.playerSquadInstance.UnitStats.Speed.ToString(formatNumber)));
 
                 sb = statsPanel.transform.GetChild(10).GetComponent<StatsBlock>();
-                sb.SetName(Localization.rotationSpeed);
+                sb.SetName(LocalizedStrings.rotationSpeed);
                 sb.SetValue(stats.RotationSpeed.ToString(formatNumber) + string.Format(formatConnat, Squad.playerSquadInstance.UnitStats.RotationSpeed.ToString(formatNumber)));
             }
         }

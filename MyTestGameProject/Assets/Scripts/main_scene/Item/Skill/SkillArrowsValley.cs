@@ -25,11 +25,11 @@ public class SkillArrowsValley : Skill
 
             DescriptionItem[] stats = new DescriptionItem[]
             {
-                new DescriptionItem(){ Name = Localization.baseDamage, Description = damage.BaseDamage.ToString(StringFormats.floatNumber), ItPositiveDesc = true },
-                new DescriptionItem(){ Name = Localization.armourDamage, Description = damage.ArmourDamage.ToString(StringFormats.floatNumber), ItPositiveDesc = true },
-                new DescriptionItem(){ Name = Localization.arrowWalley_arrowscount, Description = countOfArrows.ToString(StringFormats.floatNumber), ItPositiveDesc = true },
-                new DescriptionItem(){ Name = Localization.arrowWalley_radius, Description = radius.ToString(StringFormats.floatNumber), ItPositiveDesc = true },
-                new DescriptionItem(){ Name = Localization.cooldown, Description = cooldown.ToString(StringFormats.floatNumber), ItPositiveDesc = true },
+                new DescriptionItem(){ Name = LocalizedStrings.baseDamage, Description = damage.BaseDamage.ToString(StringFormats.floatNumber), ItPositiveDesc = true },
+                new DescriptionItem(){ Name = LocalizedStrings.armourDamage, Description = damage.ArmourDamage.ToString(StringFormats.floatNumber), ItPositiveDesc = true },
+                new DescriptionItem(){ Name = LocalizedStrings.arrowWalley_arrowscount, Description = countOfArrows.ToString(StringFormats.floatNumber), ItPositiveDesc = true },
+                new DescriptionItem(){ Name = LocalizedStrings.arrowWalley_radius, Description = radius.ToString(StringFormats.floatNumber), ItPositiveDesc = true },
+                new DescriptionItem(){ Name = LocalizedStrings.cooldown, Description = cooldown.ToString(StringFormats.floatNumber), ItPositiveDesc = true },
             };
 
             d.Stats = stats;

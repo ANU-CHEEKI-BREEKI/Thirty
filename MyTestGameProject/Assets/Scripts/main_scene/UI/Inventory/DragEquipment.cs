@@ -11,7 +11,7 @@ public class DragEquipment : Drag
     protected override void OnCantDrag()
     {
         if (EquipStack.EquipmentStats.Type == EquipmentStats.TypeOfEquipment.WEAPON)
-            Toast.Instance.Show(Localization.toast_cant_drop_weapon);
+            Toast.Instance.Show(LocalizedStrings.toast_cant_drop_weapon);
         else
             base.OnCantDrag();
     }

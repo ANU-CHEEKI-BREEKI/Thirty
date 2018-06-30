@@ -36,7 +36,7 @@ public class DropToEquipment : ADropToMe
                     }
                     else
                     {
-                        Toast.Instance.Show(Localization.toast_not_enough_equipment_count);
+                        Toast.Instance.Show(LocalizedStrings.toast_not_enough_equipment_count);
                     }
                 }
             }
@@ -58,7 +58,7 @@ public class DropToEquipment : ADropToMe
                 Squad.playerSquadInstance.Inventory.Shield = stack;
             else
             {
-                Toast.Instance.Show(Localization.toast_cant_use_with_current_weapon);
+                Toast.Instance.Show(LocalizedStrings.toast_cant_use_with_current_weapon);
                 return false;
             }
         }
@@ -72,7 +72,7 @@ public class DropToEquipment : ADropToMe
                 Squad.playerSquadInstance.Inventory.Weapon = stack;
             else
             {
-                Toast.Instance.Show(Localization.toast_cant_use_with_shield);
+                Toast.Instance.Show(LocalizedStrings.toast_cant_use_with_shield);
                 return false;
             }
         }

@@ -17,13 +17,13 @@ public static class Extensions
         switch (durability)
         {
             case EquipmentStats.Durability.DAMAGED:
-                res = Localization.durability_damaged;
+                res = LocalizedStrings.durability_damaged;
                 break;
             case EquipmentStats.Durability.WORN:
-                res = Localization.durability_worn;
+                res = LocalizedStrings.durability_worn;
                 break;
             case EquipmentStats.Durability.NEW:
-                res = Localization.durability_new;
+                res = LocalizedStrings.durability_new;
                 break;
             default:
                 res = "ERROR";
@@ -60,13 +60,13 @@ public static class Extensions
         switch (healTarget)
         {
             case HospitalRoom.HealTarget.WEAKEST:
-                res = Localization.healtarget_weakest;
+                res = LocalizedStrings.healtarget_weakest;
                 break;
             case HospitalRoom.HealTarget.STRONGEST:
-                res = Localization.healtarget_strongest;
+                res = LocalizedStrings.healtarget_strongest;
                 break;
             default:
-                res = Localization.error;
+                res = LocalizedStrings.error;
                 break;
         }
         return res;
@@ -104,16 +104,16 @@ public static class Extensions
         switch (currency)
         {
             case DSPlayerScore.Currency.GOLD:
-                res = Localization.gold;
+                res = LocalizedStrings.gold;
                 break;
             case DSPlayerScore.Currency.SILVER:
-                res = Localization.silver;
+                res = LocalizedStrings.silver;
                 break;
             case DSPlayerScore.Currency.EXPIRIENCE:
-                res = Localization.expirience;
+                res = LocalizedStrings.expirience;
                 break;
             default:
-                res = Localization.error;
+                res = LocalizedStrings.error;
                 break;
         }
         return res;

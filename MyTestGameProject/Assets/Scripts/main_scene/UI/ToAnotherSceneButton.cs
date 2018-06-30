@@ -24,8 +24,8 @@ public class ToAnotherSceneButton : MonoBehaviour
                 .SetTitle("[non localice] вы уверены?")
                 .SetPrefButtonHeight(80)
                 .SetText("[non localice] точто точно???")
-                .AddCancelButton(Localization.no)
-                .AddButton(Localization.yes, FadeOn)
+                .AddCancelButton(LocalizedStrings.no)
+                .AddButton(LocalizedStrings.yes, FadeOn)
                 .Show();
         }
         else

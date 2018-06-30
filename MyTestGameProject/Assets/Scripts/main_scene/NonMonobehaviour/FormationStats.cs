@@ -75,12 +75,12 @@ public abstract class FormationStats
 
             res.Add(new DescriptionItem()
             {
-                Name = Localization.speed,
+                Name = LocalizedStrings.speed,
                 Description = string.Format(
                     "{0}{1}% {2}",
                     sign,
                     (UNIT_ADDITIONAL_SPEED*100).ToString(format),
-                    Localization.currentValue
+                    LocalizedStrings.currentValue
                 ),
                 ItPositiveDesc = positive
             });
@@ -101,11 +101,11 @@ public abstract class FormationStats
 
             res.Add(new DescriptionItem()
             {
-                Name = Localization.rotationSpeed,
+                Name = LocalizedStrings.rotationSpeed,
                 Description = string.Format("{0}{1}% {2}",
                     sign,
                     (UNIT_ADDITIONAL_ROTATION_SPEED*100).ToString(format),
-                    Localization.currentValue
+                    LocalizedStrings.currentValue
                 ),
                 ItPositiveDesc = positive
             });
@@ -126,11 +126,11 @@ public abstract class FormationStats
 
             res.Add(new DescriptionItem()
             {
-                Name = Localization.baseDamage,
+                Name = LocalizedStrings.baseDamage,
                 Description = string.Format("{0}{1}% {2}",
                     sign,
                     (UNIT_ADDITIONAL_DAMAGE*100).ToString(format),
-                    Localization.currentValue
+                    LocalizedStrings.currentValue
                 ),
                 ItPositiveDesc = positive
             });
@@ -151,11 +151,11 @@ public abstract class FormationStats
 
             res.Add(new DescriptionItem()
             {
-                Name = Localization.attack,
+                Name = LocalizedStrings.attack,
                 Description = string.Format("{0}{1}% {2}",
                     sign,
                     (UNIT_ADDITIONAL_ATTACK * 100).ToString(format),
-                    Localization.currentValue
+                    LocalizedStrings.currentValue
                 ),
                 ItPositiveDesc = positive
             });
@@ -176,11 +176,11 @@ public abstract class FormationStats
 
             res.Add(new DescriptionItem()
             {
-                Name = Localization.defence,
+                Name = LocalizedStrings.defence,
                 Description = string.Format("{0}{1}% {2}",
                     sign,
                     (UNIT_ADDITIONAL_DEFENCE * 100).ToString(format),
-                    Localization.currentValue
+                    LocalizedStrings.currentValue
                 ),
                 ItPositiveDesc = positive
             });

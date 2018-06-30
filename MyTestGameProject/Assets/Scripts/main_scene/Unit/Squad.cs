@@ -126,7 +126,7 @@ public class Squad : MonoBehaviour
     [SerializeField] float currentRotationSpeed = 50;
     public float CurrentRotationSpeed { get { return currentRotationSpeed; } }
     [Space]
-    [SerializeField] bool flipRotation = false;
+    bool flipRotation = false;
     public bool FlipRotation
     {
         get { return flipRotation; }
@@ -142,28 +142,30 @@ public class Squad : MonoBehaviour
     }
       
 
-    [SerializeField] int attakingUnitsCount = 0;
+    int attakingUnitsCount = 0;
     public int AttakingUnitsCount
     {
         get { return attakingUnitsCount; }
-        set { attakingUnitsCount = value; if (attakingUnitsCount < 0) attakingUnitsCount = 0; SetFlagFight(); }
+        set
+        {
+            attakingUnitsCount = value;
+            if (attakingUnitsCount < 0) attakingUnitsCount = 0;
+            if (attakingUnitsCount > UnitCount) attakingUnitsCount = UnitCount;
+            SetFlagFight();
+        }
     }
-    [SerializeField] int targettedUnitsCount = 0;
+    int targettedUnitsCount = 0;
     public int TargettedUnitsCount
     {
         get { return targettedUnitsCount; }
-        set { targettedUnitsCount = value; SetFlagFight(); }
+        set
+        {
+            targettedUnitsCount = value;
+            if (targettedUnitsCount < 0) targettedUnitsCount = 0;
+            if (targettedUnitsCount > UnitCount) targettedUnitsCount = UnitCount;
+            SetFlagFight();
+        }
     }
-    [Space]
-    [SerializeField] Vector2 centerSquad;
-    public Vector2 CenterSquad { get { return centerSquad; } }
-    [Space]
-    [SerializeField] List<UnitPosition> unitPositions;
-    /// <summary>
-    /// Ни в коем случае не надо ничкго менять в позициях! Понял, йопта?!
-    /// </summary>
-    public List<UnitPosition> UnitPositions { get { return unitPositions; } }
-
     public event Action<bool> OnInFightFlagChanged;
     bool inFight;
     public bool InFight
@@ -177,6 +179,16 @@ public class Squad : MonoBehaviour
         }
     }
 
+    [Space]
+    Vector2 centerSquad;
+    public Vector2 CenterSquad { get { return centerSquad; } }
+    [Space]
+    [SerializeField] List<UnitPosition> unitPositions;
+    /// <summary>
+    /// Ни в коем случае не надо ничкго менять в позициях! Понял, йопта?!
+    /// </summary>
+    public List<UnitPosition> UnitPositions { get { return unitPositions; } }
+    
     public GameObject UnitsContainer { get; private set; }
     public int UnitCount { get { return unitPositions.Count; } }
 
@@ -331,6 +343,11 @@ public class Squad : MonoBehaviour
         inventory.OnEquipmentChanged += SetProp;
 
         SetProp(inventory.Weapon);
+    }
+
+    private void OnDestroy()
+    {
+        StopAllCoroutines();
     }
 
     public void SetUnitsStats(DSUnitStats stats)
@@ -886,6 +903,10 @@ public class Squad : MonoBehaviour
 
     void ReformSquadInRanks(bool flipRotation, UnitPosition objToRemove)
     {
+        //experemental row
+        //squadLength = 5;
+
+
         unitPositions.Remove(objToRemove);
         if (objToRemove != null)
             Destroy(objToRemove.gameObject);
@@ -919,6 +940,9 @@ public class Squad : MonoBehaviour
 
     void ReformSquadInPhalanx(bool flipRotation, UnitPosition objToRemove)
     {
+        //experemental row
+        //squadLength = 10;
+
         //удаление объекта
         if (objToRemove != null)
         {

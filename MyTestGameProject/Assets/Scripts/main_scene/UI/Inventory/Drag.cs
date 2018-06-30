@@ -58,7 +58,7 @@ public abstract class Drag : MonoBehaviour, IDragHandler, IBeginDragHandler, IEn
 
     protected virtual void OnCantDrag()
     {
-        Toast.Instance.Show(Localization.toast_cant_drop);
+        Toast.Instance.Show(LocalizedStrings.toast_cant_drop);
     }
 
     public void OnEndDrag(PointerEventData eventData)

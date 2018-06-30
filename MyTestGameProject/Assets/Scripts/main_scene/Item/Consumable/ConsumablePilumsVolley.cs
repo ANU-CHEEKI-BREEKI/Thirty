@@ -43,11 +43,11 @@ public class ConsumablePilumsVolley : Consumable
 
             DescriptionItem[] stats = new DescriptionItem[]
             {
-                new DescriptionItem(){ Name = Localization.baseDamage, Description = damage.BaseDamage.ToString(StringFormats.floatNumber), ItPositiveDesc = true },
-                new DescriptionItem(){ Name = Localization.armourDamage, Description = damage.ArmourDamage.ToString(StringFormats.floatNumber), ItPositiveDesc = true },
-                new DescriptionItem(){ Name = Localization.cooldown, Description = cooldown.ToString(StringFormats.floatNumber), ItPositiveDesc = true },
-                new DescriptionItem(){ Name = Localization.attackDistance, Description = distance.ToString(StringFormats.floatNumber), ItPositiveDesc = true },
-                new DescriptionItem(){ Name = Localization.flyingSpeed, Description = speed.ToString(StringFormats.floatNumber), ItPositiveDesc = true },
+                new DescriptionItem(){ Name = LocalizedStrings.baseDamage, Description = damage.BaseDamage.ToString(StringFormats.floatNumber), ItPositiveDesc = true },
+                new DescriptionItem(){ Name = LocalizedStrings.armourDamage, Description = damage.ArmourDamage.ToString(StringFormats.floatNumber), ItPositiveDesc = true },
+                new DescriptionItem(){ Name = LocalizedStrings.cooldown, Description = cooldown.ToString(StringFormats.floatNumber), ItPositiveDesc = true },
+                new DescriptionItem(){ Name = LocalizedStrings.attackDistance, Description = distance.ToString(StringFormats.floatNumber), ItPositiveDesc = true },
+                new DescriptionItem(){ Name = LocalizedStrings.flyingSpeed, Description = speed.ToString(StringFormats.floatNumber), ItPositiveDesc = true },
             };
 
             d.Stats = stats;

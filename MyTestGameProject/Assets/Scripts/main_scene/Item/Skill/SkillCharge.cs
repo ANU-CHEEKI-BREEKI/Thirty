@@ -21,8 +21,8 @@ public class SkillCharge : Skill
         {
             var desc = modifyer.GetDescription();
             List<DescriptionItem> l = new List<DescriptionItem>(desc.Stats);
-            l.Add(new DescriptionItem() { Name = Localization.duration, Description = duration.ToString(StringFormats.floatNumber), ItPositiveDesc = true });
-            l.Add(new DescriptionItem() { Name = Localization.cooldown, Description = cooldown.ToString(StringFormats.floatNumber), ItPositiveDesc = true });
+            l.Add(new DescriptionItem() { Name = LocalizedStrings.duration, Description = duration.ToString(StringFormats.floatNumber), ItPositiveDesc = true });
+            l.Add(new DescriptionItem() { Name = LocalizedStrings.cooldown, Description = cooldown.ToString(StringFormats.floatNumber), ItPositiveDesc = true });
 
             return new Description() { Stats = l.ToArray() };
         }

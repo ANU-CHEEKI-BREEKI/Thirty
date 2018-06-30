@@ -68,7 +68,7 @@ public class GameManager : MonoBehaviour
         Debug.Log("Awake");
 
         Localization.SetLanguage(SystemLanguage.Russian);
-        //Localization.SetLanguage(SystemLanguage.English);
+        //LocalizedStrings.SetLanguage(SystemLanguage.English);
 
         if (Instance == null)
         {

@@ -194,6 +194,21 @@ public class Unit : MonoBehaviour
     /// </summary>
     List<Unit> targettedBy = new List<Unit>(5);
     bool attaking = false;
+    bool Attaking
+    {
+        get { return attaking; }
+        set
+        {
+            if (value != attaking)
+            {
+                attaking = value;
+                if (attaking)
+                    squad.AttakingUnitsCount++;
+                else
+                    squad.AttakingUnitsCount--;
+            }
+        }
+    }
     bool olreadyNotPushingAlly = false;
 
     float timerForAttack = 0;
@@ -367,19 +382,15 @@ public class Unit : MonoBehaviour
             squad.OnUnitStatsChanged -= Squad_OnUnitStatsChanged;
 
             //если этот юнит атаковал, то уменьшаем кол во атаковавших
-            if (attaking)
-                squad.AttakingUnitsCount--;
-            
+            Attaking = false;
+
             // убираем метку targetted с цели
             if (target != null)
                 target.RemoveTagrettedBy(this);
 
             //ставим всем, кто атаковал этот юнит, цель null 
             for (int i = 0; i < targettedBy.Count; i++)
-            {
                 targettedBy[i].SetTarget(null);
-                i--;
-            }
             
             squad.UnitDeath(this);
         }
@@ -603,10 +614,7 @@ public class Unit : MonoBehaviour
         Arms = Instantiate(arms, ThisTransform.position, ThisTransform.rotation, ThisTransform);
         Arms.name = "Arms";
     }
-
-
-
-
+     
 
     /// <summary>
     /// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1
@@ -631,11 +639,7 @@ public class Unit : MonoBehaviour
             stats.Health = health;
         rigidbody2D.mass = stats.Mass;
     }
-
-
-
-
-
+    
 
     RaycastHit2D Cast(int layers)
     {
@@ -762,9 +766,16 @@ public class Unit : MonoBehaviour
             {
                 case FormationStats.Formations.PHALANX:
                     if (rHit)
-                        SetTarget(unit);
+                    {
+                        if (unit.IsAlive)
+                        {
+                            SetTarget(unit);
+                        }
+                    }
                     else
+                    {
                         SetTarget(null);
+                    }
 
                     break;
 
@@ -795,23 +806,13 @@ public class Unit : MonoBehaviour
         if (target != null)
         {
             target.TakeHitFromUnit(this);
-            SetAttakingFlag(true);
+            Attaking = true;
             Hit = true;
         }
         else
         {
-            SetAttakingFlag(false);
+            Attaking = false;
         }
-    }
-
-    void SetAttakingFlag(bool flag)
-    {
-        if (flag && !attaking)
-            squad.AttakingUnitsCount++;
-        else if (!flag && attaking)
-            squad.AttakingUnitsCount--;
-
-        attaking = flag;
     }
 
     void OnReformSquad(FormationStats.Formations newFormation)
@@ -1095,16 +1096,22 @@ public class Unit : MonoBehaviour
 
     void AddTargettedBy(Unit unit)
     {
-        if (targettedBy.Count == 0)
-            squad.TargettedUnitsCount++;
-        targettedBy.Add(unit);
+        if (squad != null)
+        {
+            if (targettedBy.Count == 0)
+                squad.TargettedUnitsCount++;
+            targettedBy.Add(unit);
+        }
     }
 
     void RemoveTagrettedBy(Unit unit)
     {
-        targettedBy.Remove(unit);
-        if (targettedBy.Count == 0)
-            squad.TargettedUnitsCount--;
+        if (squad != null)
+        {
+            targettedBy.Remove(unit);
+            if (targettedBy.Count == 0)
+                squad.TargettedUnitsCount--;
+        }
     }
 
     void SetTarget(Unit newTarget)

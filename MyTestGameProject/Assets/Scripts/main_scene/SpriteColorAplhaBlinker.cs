@@ -18,40 +18,31 @@ public class SpriteColorAplhaBlinker : MonoBehaviour
     {
         foreach (var item in allRenderers)
             item.Init();
-        Blink();
+        StartCoroutine(Blink());
     }
-
-    void Update()
+    
+    IEnumerator Blink()
     {
-        if (timer >= frequensy)
+        while (true)
         {
-            Blink();
-            timer = 0;
-        }
-        else
-        {
-            timer += Time.deltaTime;
-        }
-    }
+            var alpha = Mathf.Lerp(minAlpha, maxAlpha, UnityEngine.Random.value);
 
-    void Blink()
-    {
-        var alpha = Mathf.Lerp(minAlpha, maxAlpha, UnityEngine.Random.value);
-
-        foreach (var item in allRenderers)
-        {
-            var color = Color.Lerp(item.FirstColor, item.SecondColor, UnityEngine.Random.value);
-            foreach (var rnds in item.Rnds)
+            foreach (var item in allRenderers)
             {
-                if (rnds.Renderer == null)
-                    continue;
+                var color = Color.Lerp(item.FirstColor, item.SecondColor, UnityEngine.Random.value);
+                foreach (var rnds in item.Rnds)
+                {
+                    if (rnds.Renderer == null)
+                        continue;
 
-                var newColor = rnds.StartColor * color;
-                newColor.a = alpha * item.PercentAplha;
-                if(item.InverseAplha)
-                    newColor.a = maxAlpha - newColor.a + minAlpha;
-                rnds.Renderer.color = newColor;
+                    var newColor = rnds.StartColor * color;
+                    newColor.a = alpha * item.PercentAplha;
+                    if (item.InverseAplha)
+                        newColor.a = maxAlpha - newColor.a + minAlpha;
+                    rnds.Renderer.color = newColor;
+                }
             }
+            yield return new WaitForSecondsRealtime(frequensy);
         }
     }
 

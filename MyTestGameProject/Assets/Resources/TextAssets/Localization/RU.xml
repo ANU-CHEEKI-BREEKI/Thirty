@@ -20,11 +20,11 @@
   <string name = "error">-ERROR-</string>
   <string name = "missing_string">-missing_string-</string>
 
-  <string name = "formation_ranks_name">Свобоный строй</string>
+  <string name = "formation_ranks_name">Свободный строй</string>
   <string name = "formation_ranks_description">Отряд не держит строй.
-  При получении урона юниты будут ошеломлены, и некоторое время не смогут защищатся.</string>
+  При получении урона юниты будут ошеломлены, и некоторое время не смогут защищаться.</string>
   <string name = "formation_phalanx_name">Фаланга</string>
-  <string name = "formation_phalanx_description">Отряд постоен в фалангу.
+  <string name = "formation_phalanx_description">Отряд построен в фалангу.
   Плотные ряды юнитов будут отталкивать врага назад, не давая ему пройти сквозь Ваш отряд.</string>
   <string name = "formation_shields_name">Поднятые щиты</string>
   <string name = "formation_shields_description">Отряд поднял щиты и защищается от обстрела.
@@ -98,7 +98,7 @@
   <string name = "equipment_helmet_corinthian_close_name">Коринфский закрытый шлем</string>
   <string name = "equipment_helmet_corinthian_close_description">Хорошая защита, но пришлось пожертвовать обзором. Хорошо подойдет для фаланги, так как солдаты прикрыты с флангов.</string>
   <string name = "equipment_helmet_thrace_open_name">Фракийский открытый шлем</string>
-  <string name = "equipment_helmet_thrace_open_description">Средяя защита, но зато, не уменьшает обзор. Такие шлемы предпочитают мечники, так как им часто приходится сражаться нарушив строй.</string>
+  <string name = "equipment_helmet_thrace_open_description">Средняя защита, но зато, не уменьшает обзор. Такие шлемы предпочитают мечники, так как им часто приходится сражаться нарушив строй.</string>
   <string name = "equipment_helmet_none_name">Нет шлема</string>
   <string name = "equipment_helmet_none_description">У вас нет шлемов.</string>
   <string name = "equipment_shield_hoplon_name">Гоплон</string>
@@ -118,7 +118,7 @@
   <string name = "equipment_weapon_sarrisa_name">Сарриса</string>
   <string name = "equipment_weapon_sarrisa_description">Пика. Ооочень длинная палка с ооочень острым наконечником. Держать приходится двумя руками. Идеальное оружие для фаланги, но если нарушить строй, стает огомной обузой для своего хозяина. Кроме того, если враг подберется вплотную, пику уже не опустить.</string>
   <string name = "equipment_weapon_wings_sarrisa_name">Крылатая сарриса</string>
-  <string name = "equipment_weapon_wings_sarrisa_description">Пика. За счет крылатого наконечника, наносит ужасные увечия, но броню пробить тяжелее. Держать приходится двумя руками. Идеальное оружие для фаланги, но если нарушить строй, стает огомной обузой для своего хозяина. Кроме того, если враг подберется вплотную, пику уже не опустить.</string>
+  <string name = "equipment_weapon_wings_sarrisa_description">Пика. За счет крылатого наконечника, наносит ужасные увечия, но броню пробить тяжелее. Держать приходится двумя руками. Идеальное оружие для фаланги, но если нарушить строй, стает огромной обузой для своего хозяина. Кроме того, если враг подберется вплотную, пику уже не опустить.</string>
 
   <string name = "skill_arrowWalley_name">Залп стрел</string>
   <string name = "skill_arrowWalley_description">Залп стрел в небольшой области, который замочит все что там есть</string>
@@ -130,29 +130,29 @@
   <string name = "consumable_pilums_description">Пилумы - метательное оружие. Намного тяжелее стрел, что позволяет легко пробивать броню, но кинуть их можно совсем недалеко, и только по прямой траектории.</string>
   <string name = "consumable_pilums_light_name">Легкие пилумы</string>
   <string name = "consumable_pilums_light_description">Метательное оружие. Облегченный вариант обычных пилумов. Летят дальше, можно взять с собой больше штук, но урон сквозь доспехи меньше. Можно кинуть только по прямой траектории.</string>
-  <string name = "consumable_pilums_heavy_name">Тежёлые пилумы</string>
-  <string name = "consumable_pilums_heavy_description">Метательное оружие. Намного тяжелее обычных пилумов. Летят на меньшее растояние, можно взять меньше штук, но урон сквозь доспехи намного больше. Можно кинуть только по прямой траектории.</string>
+  <string name = "consumable_pilums_heavy_name">Тяжёлые пилумы</string>
+  <string name = "consumable_pilums_heavy_description">Метательное оружие. Намного тяжелее обычных пилумов. Летят на меньшее расстояние, можно взять меньше штук, но урон сквозь доспехи намного больше. Можно кинуть только по прямой траектории.</string>
   <string name = "consumable_pilums_perfect_name">Калёные острые сбалансированные пилумы</string>
-  <string name = "consumable_pilums_perfect_description">Метательное оружие с закаленным и заточеным наконечником. Прошивает блоню насквозь. Можно кинуть только по прямой траектории.</string>
+  <string name = "consumable_pilums_perfect_description">Метательное оружие с закаленным и заточенным наконечником. Прошивает броню насквозь. Можно кинуть только по прямой траектории.</string>
 
   <string name = "skill_upgrade_arrowWalley_startunlock_name">Созвать ополчение</string>
-  <string name = "skill_upgrade_arrowWalley_startunlock_description">Созвать ополчение и вооружить луками. Теперь вы сможете вызывать ливень стрел на указанную територию.</string>
+  <string name = "skill_upgrade_arrowWalley_startunlock_description">Созвать ополчение и вооружить луками. Теперь вы сможете вызывать ливень стрел на указанную территорию.</string>
   <string name = "skill_upgrade_arrowWalley_basedamage_largebow_name">Большой лук</string>
-  <string name = "skill_upgrade_arrowWalley_basedamage_largebow_description">Вооружить лучников большими луками. Стрелы, выпущеные с таколо лука наносят намного больше урона.</string>
+  <string name = "skill_upgrade_arrowWalley_basedamage_largebow_description">Вооружить лучников большими луками. Стрелы, выпущенные с такого лука наносят намного больше урона.</string>
   <string name = "skill_upgrade_arrowWalley_basedamage_weightarrows_name">Утяжелить стрелы</string>
-  <string name = "skill_upgrade_arrowWalley_basedamage_weightarrows_description">Приказать лучникам утяжелить наконечники своих стрел. Такие стрелы лугче будут наносить больше урона.</string>
+  <string name = "skill_upgrade_arrowWalley_basedamage_weightarrows_description">Приказать лучникам утяжелить наконечники своих стрел. Такие стрелы будут наносить больше урона.</string>
   <string name = "skill_upgrade_arrowWalley_armourdamage_sharparrows_name">Заточить стрелы</string>
-  <string name = "skill_upgrade_arrowWalley_armourdamage_sharparrows_description">Приказать лучникам заточить наконечники своих стрел. Такие стрелы будут лугче пробивать броню.</string>
+  <string name = "skill_upgrade_arrowWalley_armourdamage_sharparrows_description">Приказать лучникам заточить наконечники своих стрел. Такие стрелы будут лучше пробивать броню.</string>
   <string name = "skill_upgrade_arrowWalley_armourdamage_temperedarrows_name">Закаленные стрелы</string>
-  <string name = "skill_upgrade_arrowWalley_armourdamage_temperedarrows_description">Вооружить лучников стрелами с закаленными наконечниками. Такие стрелы не остановят даже самые лучьшие доспехи.</string>
+  <string name = "skill_upgrade_arrowWalley_armourdamage_temperedarrows_description">Вооружить лучников стрелами с закаленными наконечниками. Такие стрелы не остановят даже самые лучшие доспехи.</string>
   <string name = "skill_upgrade_arrowWalley_arrowscount_name">Набрать рекрутов</string>
   <string name = "skill_upgrade_arrowWalley_arrowscount_description">Набрать новых рекрутов. Теперь даже солнце закроется огромной тучей выпущеных стрел.</string>
-  <string name = "skill_upgrade_arrowWalley_radius_name">Штре строй!</string>
+  <string name = "skill_upgrade_arrowWalley_radius_name">Шире строй!</string>
   <string name = "skill_upgrade_arrowWalley_radius_description">Рассредоточить ряды. Это позволит снарядить лучников более мощными луками.</string>  
   <string name = "skill_upgrade_arrowWalley_radius_minus_name">Орлиный глаз</string>
-  <string name = "skill_upgrade_arrowWalley_radius_minus_description">Обучть лучников точной стрельбе на большие расстояния. Это увеличит кучность стрельбы.</string>
+  <string name = "skill_upgrade_arrowWalley_radius_minus_description">Обучить лучников точной стрельбе на большие расстояния. Это увеличит кучность стрельбы.</string>
   <string name = "skill_upgrade_arrowWalley_cooldown_name">Быстрые руки</string>
-  <string name = "skill_upgrade_arrowWalley_cooldown_description">Обучть лучников технике быстрой перезарядки. Это позволит стрелять чаще.</string>
+  <string name = "skill_upgrade_arrowWalley_cooldown_description">Обучить лучников технике быстрой перезарядки. Это позволит стрелять чаще.</string>
   
   <string name = "skill_upgrade_charge_startunlock_name">Тренировать натиск</string>
   <string name = "skill_upgrade_charge_startunlock_description">Обучить солдат в отряде, по команде, быстро ускоряться и сбивать врагов с ног, нанося им урон своим оружием.</string>
@@ -160,10 +160,10 @@
   <string name = "skill_upgrade_charge_speed_moretrain_description">Тренировать солдат ещё и ещё, пока они не станут бегать быстрее.</string>
   <string name = "skill_upgrade_charge_speed_ligthfootwear_name">Облегченная обувь</string>
   <string name = "skill_upgrade_charge_speed_ligthfootwear_description">Более легкая обувь позволит бегать ещё быстрее.</string>
-  <string name = "skill_upgrade_charge_speed_shortranderun_name">Бег на малые дистинции</string>
-  <string name = "skill_upgrade_charge_speed_shortranderun_description">Тренировать быстый бег на малые дистанции, что повысит максимальную скорость бега.</string>
-  <string name = "skill_upgrade_charge_duration_longrangerun_name">Бег на большие дистинции</string>
-  <string name = "skill_upgrade_charge_duration_longrangerun_description">Тренировать быстый бег на большие дистанции, что повысит продолжительность натиска.</string>
+  <string name = "skill_upgrade_charge_speed_shortranderun_name">Бег на малые дистанции</string>
+  <string name = "skill_upgrade_charge_speed_shortranderun_description">Тренировать быстрый бег на малые дистанции, что повысит максимальную скорость бега.</string>
+  <string name = "skill_upgrade_charge_duration_longrangerun_name">Бег на большие дистанции</string>
+  <string name = "skill_upgrade_charge_duration_longrangerun_description">Тренировать быстрый бег на большие дистанции, что повысит продолжительность натиска.</string>
   <string name = "skill_upgrade_charge_acceleration_reinforcefootbase_name">Укрепить подошву</string>
   <string name = "skill_upgrade_charge_acceleration_reinforcefootbase_description">Лучшее сцепление с землей позволить быстрее ускоряться.</string>
   <string name = "skill_upgrade_charge_acceleration_lowerstart_name">Низкий старт</string>
@@ -176,7 +176,7 @@
   <string name = "toMainMenu">В главное меню</string>
   <string name = "goToMainMenu_header">Вы действительно хотите выйти в главное меню?</string>
   <string name = "goToMainMenu_info">Текущий прогресс игры будет утерян.</string>
-  <string name = "resetSettings_header">Вы дейcтвительно хотите установить настройки по умолчанию?</string>
+  <string name = "resetSettings_header">Вы действительно хотите установить настройки по умолчанию?</string>
   <string name = "resetSettings_info">Все настройки будут установлены по умолчанию.</string>
 
   <string name = "currentValue">тек.знач.</string>
@@ -201,20 +201,84 @@
   
   
   <string name = "you_died">Вы погибли</string>
-  <string name = "tip_death_try_bay_equip_and_train_squad">Попробуйте, перед боем, купить снаряряжение и улучшить характеристики отряда, чтобы продержаться в бою дольше и победить!</string>
+  <string name = "tip_try_to_buy_equip_and_consumables">Попробуйте перед битвой купить лучшее снаряжение и расходуемые предметы. Это поможет вам пройти дальше и победить!</string>
+  <string name = "tip_try_to_train_squad_and_skills">Попробуйте перед битвой улучшить характеристики отряда, выбрать и улучшить умения отряда. Это поможет вам пройти дальше и победить!</string>
 
+  <string name = "tip_barricades">Баррикады и деревянные колья крайне опасны!
+У баррикад не очень большой урон, но они очень прочные.
+У кольев урон огромный, но наносят они его только с фронтальной стороны.</string>
+  <string name = "tip_basic">Вы управляете отрядом, состоящим из Тридцати солдат. 
+Отряд может быть перестроен в три построения:
+свободный строй, фаланга и "черепаха".
+</string>
+  <string name = "tip_how_to_block_arrows">Переместите отряд к указанное точке, чтобы солдаты встретили обстрел фронтально, и заблокировали как можно больше стрел</string>
+  <string name = "tip_close_inventory">Закройте инвентарь</string>
+  <string name = "tip_congratulations">Поздравляем!
+Теперь Вы знаете основы механики и сможете преуспеть в прохождении нелегких уровней!</string>
+  <string name = "tip_consumables">В данный момент вам повезло! У вас есть пилумы! 
+Пилумы - это расходуемые предметы. Их можно покупать в магазине между уровнями. Там же, можно изучать умения отряда. Расходуемые предметы и умения применяются аналогично. Чтобы узнать как - посмотрите их описание, кликнув на иконку в инвентаре</string>
+  <string name = "tip_default_formation">По умолчанию отряд построен свободным строем</string>
+  <string name = "tip_destroy_marked_enemy">Уничтожьте отмеченный вражеский отряд</string>
+  <string name = "tip_drag_equipment">Чтобы поместить экипировку в инвентарь или убрать из него, перетяните иконку желаемого предмета в новое место.</string>
+  <string name = "tip_dropped_equipment">После смерти любого юнита, на земле оказывается его экипировка.
+Экипировку можно поднять и поместить в инвентарь, но не больше чем юнитов в вашем отряде на одну ячейку.
+Так же, можно заменить текущую экипировку, если новой хватает на всех членов отряда</string>
+  <string name = "tip_go_to_point">Переместите отряд к отмеченной точке</string>
+  <string name = "tip_go_to_point_and_recruit_units">После ожесточенных битв, было бы не плохо пополнить ряды своего отряда.
 
-  
-  
-  
-  
-  
-  
+Перейдите к указаной точке</string>
+  <string name = "tip_look_to_enemy_and_reform_phalanx">Повернитесь к врагу лицом, а затем, перестройтесь фалангой.
+
+Уничтожьте врага</string>
+  <string name = "tip_minimap_info">Для ориентирования на местности и передвижения на большие расстояния, у вас есть возможность просматривать мини-кару.</string>
+  <string name = "tip_minimap_how_to_use">Откройте мини-кару, зажав соответствующую кнопку справа вверху.
+Для указания отряду точки перемещения, коснитесь к нужному месту прямо на мини-каре</string>
+  <string name = "tip_open_inventory">Откройте инвентарь отряда, нажав на кнопку справа вверху экрана.
+(Если зажать эту кнопку, то через секунду будет отображен радиус поиска предметов)</string>
+  <string name = "tip_phalanx_defence">Фаланга - защитное построение. 
+Отступая в фаланге задом, Вы сможете выстоять даже против превосходящих количеством сил врага.
+Однако, если Вы вооружены пиками, то фаланга прекрасно чувствует себя и в атаке</string>
+  <string name = "tip_phalanx_side_movement">Фаланга держит строй в любой ситуации, и иногда, эта способность бывает крайне полезна. 
+Например, чтобы пройти труднопреодолимые препятствия, можно развернуть отряд боком, и протиснуться не получив урона</string>
+  <string name = "tip_pikes">Проход перекрыт пикинерами! Если пикинеры встали в фалангу, то в честном бою лоб-в-лоб ни у кого нет шансов противостоять им.
+Есть только два варианта: либо атаковать их, пока пики еще не опущены (тогда они не смогут перестроится фалангой), либо расстрелять их издалека (так как пикинеры не могут использовать щиты)</string>
+  <string name = "tip_pilums_how_to_use">Чтобы бросить пилумы во врага, нажмите на кнопку с их изображением, и не поднимая пальца, перетяните его в сторону врага. Поднимите палец с экрана</string>
+  <string name = "tip_read_modifyer_panel">Внимательно изучайте все модификаторы.
+Тогда для вас не будет непредсказуемых исходов битв!</string>
+  <string name = "tip_how_to_reform_squad">Для изменения построения, нажмите на кнопку слева вверху, и проведите пальцем в сторону появившейся кнопки, соответствующей желаемому построению.
+Если перестроение возможно, отряд будет перестроен.
+Текущее построение отображается на главной кнопке.</string>
+  <string name = "tip_reform_to_phalanx">Перестройте отряд фалангой</string>
+  <string name = "tip_reform_to_shields">Перестройте отряд "Черепахой"</string>
+  <string name = "tip_retreat_and_regroup">Отступите в указанную позицию и перегруппируйтесь</string>
+  <string name = "tip_shields_info">Поднятые щиты крайне эффективны для блокирования обстрела, но, при этом, отряд становится сильно уязвимым в ближнем бою.
+Щиты не блокируют обстрел, если солдаты развернуты к снарядам спиной</string>
+  <string name = "tip_squadless_units">Кроме врагов, есть еще нейтральные солдаты. Ими можно пополнить свои ряды.
+Чтобы пополнить свой отряд, перестройте его в свободный строй и выделите нейтральных солдат. Когда они окажутся рядом, то присоединятся к вам.
+Отряд должен быть вне боя</string>
+  <string name = "tip_squad_modifyer_panel">Более детальную информацию о каждом построении и других модификаторах, действующий на отряд, можно узнать кликнув на соответствующую иконку на панели вверху экрана</string>
+  <string name = "tip_squad_phalanx_movement">Для передвижения в фаланге, укажите отряду куда идти и куда смотреть. На протяжении всего перемещения, отряд будет пытаться повернуться в указанном направлении.
+Отряд будет атаковать всех, кто окажется на пути</string>  
+  <string name = "tip_squad_ranks_movement">Для передвижения свободным строем, укажите отряду куда идти. На протяжении всего перемещения, отряд будет повернут в направлении движения.
+ В радиусе вокруг указанной точки будут выделены враги. Отряд будет атаковать только выделенных врагов</string>
+  <string name = "tip_squad_shields_movement">Управление отрядом в построении "черепахой" аналогично управлению отрядом в свободном построении</string>
+  <string name = "tip_surround">Не допускайте окружения! Солдаты не могут защищать свою спину. Если Вас окружат, скорее всего, вы проиграете.
+В такой ситуации, лучше отступить и перегруппироваться, чтобы встретить врага лицом к лицу</string>
+  <string name = "tip_take_a_shields">Чтобы иметь возможность перестроится "черепахой", Вам необходимо иметь щиты.
+
+Поднимите щиты с земли</string>
+  <string name = "tip_take_a_spears">Чтобы иметь возможность перестроится фалангой, Вам необходимо иметь копья или пики.
+
+Поднимите копья и замените ими своё оружие</string>
+  <string name = "tip_take_units">Пополните отряд новыми солдатами</string>
   <string name = "tip_death_try_to_follow_the_advices">Попробуйте следовать советам, и вы обязательно справитесь!</string>
-  <string name = "tip_squad_phalanx_movement">Для передвижения в фаланге, укажите отряду куда итди и куда смотреть. На протяжении всего перемещения, отряд будет пытаться повернуться в указаном направлении.
-Отряд будет атаковать всех, кто окажется на пути</string>
-  <string name = "tip_squad_ranks_movement">Для передвижения свободным строем, укажите отряду куда итди. На протяжении всего перемещения, отряд будет повернут в направлении движения.
- В радиусе вокруг указаной точки будут выделены враги. Отряд будет атаковать только выделенных врагов</string>
-  
+  <string name = "tip_watch_equipment_stats">Надетая экипировка влияет на характеристики бойцов отряда и способность перестраиваться в другие построения.
+Чтобы посмотреть какое влияние окажет экипировка, коснитесь к желаемой иконке предмета. Чтобы закрыть окно просмотра характеристик, коснитесь его.</string>
+  <string name = "tip_watch_squad_stats">Чтобы узнать текущие характеристики отряда, нажмите на кнопку со стрелкой на левом краю интерфейса инвентаря.
+Чтобы закрыть окно просмотра характеристик, нажмите на эту кнопу еще раз</string>
+  <string name = "tip_open_squad_modifyer_stats">Откройте окно просмотра модификаторов характеристик  отряда</string>
+  <string name = "tip_tutorial_welcome">Добро пожаловать в обучение основным механикам.
+(это, по сути, ранняя версия. так как в игре, пока что, нет сюжета, то подсказки ведутся от имени рассказчика. после добавления сюжета, текст будет переписан с целью погрузить игрока в атмосферу игры)
+Удачи!</string>
 
 </resources>

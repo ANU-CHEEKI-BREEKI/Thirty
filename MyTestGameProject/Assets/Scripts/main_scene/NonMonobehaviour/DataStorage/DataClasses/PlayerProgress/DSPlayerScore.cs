@@ -131,13 +131,13 @@ public class DSPlayerScore : ISavable, IResetable
         switch (currency)
         {
             case Currency.SILVER:
-                res = Localization.toast_not_enough_silver;
+                res = LocalizedStrings.toast_not_enough_silver;
                 break;
             case Currency.GOLD:
-                res = Localization.toast_not_enough_gold;
+                res = LocalizedStrings.toast_not_enough_gold;
                 break;
             case Currency.EXPIRIENCE:
-                res = Localization.toast_not_enough_expirience;
+                res = LocalizedStrings.toast_not_enough_expirience;
                 break;
         }
         return res;

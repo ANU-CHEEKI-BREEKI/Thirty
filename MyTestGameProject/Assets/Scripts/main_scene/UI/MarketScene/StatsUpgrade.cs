@@ -63,14 +63,14 @@ public class StatsUpgrade : MonoBehaviour
         switch (statName)
         {
             case StatName.HEALTH:
-                name.text = Localization.health;
+                name.text = LocalizedStrings.health;
                 stat = stats.Health;
                 currentValue.text = stat.Value.ToString(valFormat);
                 roundDig = 0;
                 break;
 
             case StatName.ATTACK:
-                name.text = Localization.attack;
+                name.text = LocalizedStrings.attack;
                 stat = stats.Attack;
                 currentValue.text = (stat.Value * 1).ToString(percentFormat);
                 roundDig = 2;
@@ -78,7 +78,7 @@ public class StatsUpgrade : MonoBehaviour
                 break;
 
             case StatName.DEFENCE:
-                name.text = Localization.defence;
+                name.text = LocalizedStrings.defence;
                 stat = stats.Defence;
                 currentValue.text = (stat.Value * 1).ToString(percentFormat);
                 roundDig = 2;
@@ -86,7 +86,7 @@ public class StatsUpgrade : MonoBehaviour
                 break;
 
             case StatName.SPEED:
-                name.text = Localization.speed;
+                name.text = LocalizedStrings.speed;
                 stat = stats.Speed;
                 currentValue.text = stat.Value.ToString(valFormat);
                 roundDig = 2;
@@ -100,7 +100,7 @@ public class StatsUpgrade : MonoBehaviour
                 break;
 
             case StatName.ROTATION_SPEED:
-                name.text = Localization.rotationSpeed;
+                name.text = LocalizedStrings.rotationSpeed;
                 stat = stats.RotationSpeed;
                 currentValue.text = stat.Value.ToString(valFormat);
                 roundDig = 0;
@@ -144,9 +144,9 @@ public class StatsUpgrade : MonoBehaviour
         else
         {
             if(score.expirience.Value <= 0)
-                Toast.Instance.Show(Localization.toast_not_enough_expirience);
+                Toast.Instance.Show(LocalizedStrings.toast_not_enough_expirience);
             else
-                Toast.Instance.Show(Localization.toast_stat_max_upgrade);
+                Toast.Instance.Show(LocalizedStrings.toast_stat_max_upgrade);
         }
     }
 
