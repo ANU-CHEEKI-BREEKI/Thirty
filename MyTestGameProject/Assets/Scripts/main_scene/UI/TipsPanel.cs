@@ -154,7 +154,7 @@ public class TipsPanel : MonoBehaviour, IDragHandler, IBeginDragHandler, IPointe
 
         if (!string.IsNullOrEmpty(desc.UseType))
         {
-            howToUsePanel.SetName("How to use:");
+            howToUsePanel.SetName(LocalizedStrings.how_to_use);
             howToUsePanel.SetValue(desc.UseType);
         }
         howToUsePanel.gameObject.SetActive(!string.IsNullOrEmpty(desc.UseType));

@@ -75,6 +75,11 @@ public sealed class LocalizedStrings
     public static string equipment_market { get; private set; }
     public static string consumables_market { get; private set; }
     public static string equipment_ground { get; private set; }
+    public static string you_died { get; private set; }
+    public static string how_to_use { get; private set; }
+    public static string executable_use_type_click { get; private set; }
+    public static string executable_use_type_drag_drop_place { get; private set; }
+    public static string executable_use_type_drag_direction { get; private set; }
     public static string equipment_body_chainmail_name { get; private set; }
     public static string equipment_body_chainmail_description { get; private set; }
     public static string equipment_body_linotorax_name { get; private set; }
@@ -175,7 +180,6 @@ public sealed class LocalizedStrings
     public static string toast_stat_max_upgrade { get; private set; }
     public static string toast_cant_drop_weapon { get; private set; }
     public static string toast_cant_drop { get; private set; }
-    public static string you_died { get; private set; }
     public static string tip_try_to_buy_equip_and_consumables { get; private set; }
     public static string tip_try_to_train_squad_and_skills { get; private set; }
     public static string tip_barricades { get; private set; }

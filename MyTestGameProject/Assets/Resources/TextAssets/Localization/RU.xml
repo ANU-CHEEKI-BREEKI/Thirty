@@ -17,8 +17,8 @@
   <string name = "healtarget_strongest">сначала сильных</string>
   <string name = "healtarget_all">Всех</string>
 
-  <string name = "error">-ERROR-</string>
-  <string name = "missing_string">-missing_string-</string>
+  <string name = "error">[ERROR]</string>
+  <string name = "missing_string">[missing_string]</string>
 
   <string name = "formation_ranks_name">Свободный строй</string>
   <string name = "formation_ranks_description">Отряд не держит строй.
@@ -86,7 +86,15 @@
   <string name = "equipment_market">Магазин экипировки</string>
   <string name = "consumables_market">Магазин расходников</string>
   <string name = "equipment_ground">Экипировка на земле</string>
-  
+
+  <string name = "you_died">Вы погибли</string>
+
+  <string name = "how_to_use">Как использовать:</string>
+  <string name = "executable_use_type_click">Кликнуть</string>
+  <string name = "executable_use_type_drag_drop_place">Перетянуть и отпустить</string>
+  <string name = "executable_use_type_drag_direction">Перетянуть в направлении</string>
+
+
   <string name = "equipment_body_chainmail_name">Простая кольчуга</string>
   <string name = "equipment_body_chainmail_description">Простая кольчуга. Легкая, защищает от порезов, но прошивается стрелами насквозь, что заставляет ее хозяина рваться в ближний бог, где стрелы, скорее всего, его не достанут. </string>
   <string name = "equipment_body_linotorax_name">Обычный линоторакс</string>
@@ -197,10 +205,8 @@
   <string name = "toast_cant_drop_weapon">Нельзя снимать оружие</string>
   <string name = "toast_cant_drop">Невозможно снять</string>
   
-  
-  
-  
-  <string name = "you_died">Вы погибли</string>
+    
+
   <string name = "tip_try_to_buy_equip_and_consumables">Попробуйте перед битвой купить лучшее снаряжение и расходуемые предметы. Это поможет вам пройти дальше и победить!</string>
   <string name = "tip_try_to_train_squad_and_skills">Попробуйте перед битвой улучшить характеристики отряда, выбрать и улучшить умения отряда. Это поможет вам пройти дальше и победить!</string>
 

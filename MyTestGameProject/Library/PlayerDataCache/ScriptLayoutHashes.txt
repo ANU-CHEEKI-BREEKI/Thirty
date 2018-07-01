@@ -1,6 +1,6 @@
 Android
 PlayerPath?
-C:/Users/ANU CHEEKI BREEKI/Desktop/Thirty.v.0.4a.apk
+C:/Users/ANU CHEEKI BREEKI/Desktop/Thirty.v.0.5a.apk
 SceneListBegin?
 Assets/Scenes/main_menu.unity
 Assets/Scenes/market.unity
@@ -319,7 +319,7 @@ f189429997e594b4af323171a643c640 Assembly-CSharp.dll:.EnvirinmantInventoryUI
 f8a7c9a42768b4703f4bf2ebb8713e29 Assembly-CSharp.dll:.FollowCanvasToSquad
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.TriggerConstraintPlayeFormationShields
 c2759edd955aa88ee00e61d431143610 Assembly-CSharp.dll:.SkillButton
-30a4825a869b6c31456845849cfb3507 Assembly-CSharp.dll:.Squad
+8542d128444915326d744a2e36476bf0 Assembly-CSharp.dll:.Squad
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.TerrainWalker
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.ShowSettingsSection
 8d93a23f25af42a983863485fb7c6788 Assembly-CSharp.dll:.DropToConsumable

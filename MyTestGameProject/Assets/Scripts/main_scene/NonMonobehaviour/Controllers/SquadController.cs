@@ -22,7 +22,7 @@ public class SquadController
         this.squad = squad;
     }
 
-    bool pathFinding = false;
+    Coroutine pathFinding = null;
     //---------------------------------------------------
 
     /// <summary>
@@ -32,66 +32,66 @@ public class SquadController
     /// <param name="optimazePathByPhysicsCast">нужно ли оптимизировать путь <para>оптимизация заключается в рейкасте и исключении лишних точек пути</para></param>
     public void MoveToPoint(Vector2 worldPositionToMove, bool optimazePathByPhysicsCast = true)
     {
-        if (!pathFinding)
+        if (pathFinding != null)
         {
-            movePos = worldPositionToMove;
+            Labirinth.StopFinding(pathFinding);
+            pathFinding = null;
+        }
 
-            squadStartPos = GetStartPosition();
+        movePos = worldPositionToMove;
 
-            startFindPath = new Vector2(
-                Mathf.Round(squadStartPos.x / MapBlock.BLOCK_SCALE),
-                Mathf.Round(squadStartPos.y / MapBlock.BLOCK_SCALE)
+        squadStartPos = GetStartPosition();
+
+        startFindPath = new Vector2(
+            Mathf.Round(squadStartPos.x / MapBlock.BLOCK_SCALE),
+            Mathf.Round(squadStartPos.y / MapBlock.BLOCK_SCALE)
+        );
+        endFindPath = new Vector2(
+            Mathf.Round((movePos.x - MapBlock.BLOCK_SCALE / 2f) / MapBlock.BLOCK_SCALE),
+            Mathf.Round((movePos.y - MapBlock.BLOCK_SCALE / 2f) / MapBlock.BLOCK_SCALE)
+        );
+
+        if (Ground.Instance.CanWalk((int)endFindPath.y, (int)endFindPath.x))
+        {
+            SetStartPosition(squadStartPos);
+
+            //var rhit = Physics2D.CircleCast(
+            //    origin: squadStartPos,
+            //    radius: squad.SQUAD_LENGTH / 4,
+            //    direction: movePos - squadStartPos,
+            //    distance: Vector2.Distance(movePos, squadStartPos),
+            //    layerMask: Ground.Instance.DirectFindPathLayers.value
+            //);
+
+            var rhit = Physics2D.Linecast(
+                start: squadStartPos,
+                end: movePos,
+                layerMask: Ground.Instance.DirectFindPathLayers.value
             );
-            endFindPath = new Vector2(
-                Mathf.Round((movePos.x - MapBlock.BLOCK_SCALE / 2f) / MapBlock.BLOCK_SCALE),
-                Mathf.Round((movePos.y - MapBlock.BLOCK_SCALE / 2f) / MapBlock.BLOCK_SCALE)
-            );
 
-            if (Ground.Instance.CanWalk((int)endFindPath.y, (int)endFindPath.x))
+            if (rhit.collider == null)
             {
-                SetStartPosition(squadStartPos);
-
-                //var rhit = Physics2D.CircleCast(
-                //    origin: squadStartPos,
-                //    radius: squad.SQUAD_LENGTH / 4,
-                //    direction: movePos - squadStartPos,
-                //    distance: Vector2.Distance(movePos, squadStartPos),
-                //    layerMask: Ground.Instance.DirectFindPathLayers.value
-                //);
-
-                var rhit = Physics2D.Linecast(
-                    start: squadStartPos,
-                    end: movePos,
-                    layerMask: Ground.Instance.DirectFindPathLayers.value
-                );
-
-                if (rhit.collider == null)
+                path = new List<Vector3>();
+                path.Add(squadStartPos);
+                path.Add(movePos);
+                SetPath(movePos, optimazePathByPhysicsCast);
+            }
+            else
+            {
+                Labirinth.OnWorkDone += (obj) =>
                 {
-                    path = new List<Vector3>();
-                    path.Add(squadStartPos);
-                    path.Add(movePos);
-                    SetPath(movePos, optimazePathByPhysicsCast);
-                }
-                else
-                {
-                    pathFinding = true;
-
-                    Labirinth.OnWorkDone += (obj) =>
+                    path = obj as List<Vector3>;
+                    if (path.Count == 0)
+                        path = null;
+                    else
                     {
-                        path = obj as List<Vector3>;
-                        if (path.Count == 0)
-                            path = null;
-                        else
-                        {
-                            Labirinth.MoveFromWall(Ground.Instance.Grid, path);
-                            Labirinth.ScalePath(path, MapBlock.BLOCK_SCALE, true);
-                            SetPath(movePos, optimazePathByPhysicsCast);
-                        }
-                        pathFinding = false;
-                    };
-
-                    Labirinth.FindPathLee(Ground.Instance.Grid, startFindPath, endFindPath);
-                }
+                        Labirinth.MoveFromWall(Ground.Instance.Grid, path);
+                        Labirinth.ScalePath(path, MapBlock.BLOCK_SCALE, true);
+                        SetPath(movePos, optimazePathByPhysicsCast);
+                    }
+                    pathFinding = null;
+                };
+                pathFinding = Labirinth.FindPathLee(Ground.Instance.Grid, startFindPath, endFindPath);
             }
         }
     }

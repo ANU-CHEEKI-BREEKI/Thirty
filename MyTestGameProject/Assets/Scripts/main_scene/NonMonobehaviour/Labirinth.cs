@@ -5,21 +5,16 @@ using UnityEngine;
 
 public static class Labirinth
 {
-    
     static System.Random rnd;
-    //размеры последней созданной вспомагаельной матрицы. чтоб не пересоздавать матрицу
-    static int labirintHeight = 0;
-    //размеры последней созданной вспомагаельной матрицы. чтоб не пересоздавать матрицу
-    static int labirintWindth = 0;
 
     //вспомагательная матрица для поиска пути (в ней прописываются длины путей)
     static float[][] pathMatrix;
     //хз
-    static List<Vector2> oldLabelCell;
+    static List<Vector2> oldLabelCell = new List<Vector2>();
     //хз
-    static List<Vector2> newLabelCell;
+    static List<Vector2> newLabelCell = new List<Vector2>();
     //хз
-    static List<Vector2> tempList;
+    static List<Vector2> tempList = new List<Vector2>();
 
 
     
@@ -180,17 +175,22 @@ public static class Labirinth
     /// <param name="start">Интексы ячейки с которой начинается путь. x - столбец, y - строка</param>
     /// <param name="finish">Индексы ячейки к торорой нужно найти путь. x - столбец, y - строка</param>
     /// <returns>один из искомых путей. null - если пути нет</returns>
-    public static void FindPathLee(bool[][] labirinth, Vector2 start, Vector2 finish)
+    public static Coroutine FindPathLee(bool[][] labirinth, Vector2 start, Vector2 finish)
     {
         start = new Vector2((int)start.x, (int)start.y);
         finish = new Vector2((int)finish.x, (int)finish.y);
 
         List<Vector3> resultPath = new List<Vector3>();
 
-        GameManager.Instance.StartCoroutine(FindPathLeeCo(labirinth, start, finish, resultPath));
+        var findPathLeeCoroutine = GameManager.Instance.StartCoroutine(FindPathLeeCo(labirinth, start, finish, resultPath));
+        
+        return findPathLeeCoroutine;
+    }
 
-        if (resultPath.Count == 0)
-            resultPath = null;
+    public static void StopFinding(Coroutine coroutine)
+    {
+        GameManager.Instance.StopCoroutine(coroutine);
+        OnWorkDone = null;
     }
 
     /// <summary>
@@ -423,45 +423,21 @@ public static class Labirinth
 
     static void CreateLabirinthPathMatrix(bool[][] labirinth)
     {
-        bool h = false, l = false;
-
-        if (labirinth.Length != labirintHeight || labirintHeight == 0)
-        {
+        if(pathMatrix == null || pathMatrix.Length != labirinth.Length)
             pathMatrix = new float[labirinth.Length][];
-            l = true;
-        }
 
         for (int row = 0; row < pathMatrix.Length; row++)
         {
-            if (labirinth[row].Length != labirintWindth || labirintWindth == 0)
-            {
+            if (pathMatrix[row] == null || pathMatrix[row].Length != labirinth[row].Length)
                 pathMatrix[row] = new float[labirinth[row].Length];
-                h = true;
-            }
 
             for (int col = 0; col < pathMatrix[row].Length; col++)
-            {
                 pathMatrix[row][col] = -1;
-            }
         }
 
-        if (l || h)
-        {
-            oldLabelCell = new List<Vector2>(labirintHeight * labirintWindth);
-            newLabelCell = new List<Vector2>(labirintHeight * labirintWindth);
-            tempList = new List<Vector2>(labirintHeight * labirintWindth);
-        }
-        else
-        {
-            oldLabelCell.Clear();
-            newLabelCell.Clear();
-            tempList.Clear();
-        }
-
-        //это было дописано без полного понимания работы алгоритма через год после создания остального кода этого класса
-        labirintHeight = labirinth.Length;
-        labirintWindth = labirinth[0].Length;
-
+        oldLabelCell.Clear();
+        newLabelCell.Clear();
+        tempList.Clear();
     }
 
     /// <summary>

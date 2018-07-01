@@ -144,7 +144,6 @@ public class ArrowsValley : MonoBehaviour
     void WarningValley()
     {
         int count = warningValleyParticleSystem.GetTriggerParticles(ParticleSystemTriggerEventType.Inside, trigPartc);
-        Debug.Log(count);
         for (int i = 0; i < count; i++)
         {
             if (trigPartc[i].velocity.x == 0 && trigPartc[i].velocity.y == 0)

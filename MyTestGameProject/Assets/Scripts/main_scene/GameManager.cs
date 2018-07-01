@@ -65,8 +65,6 @@ public class GameManager : MonoBehaviour
 
     void Awake()
     {
-        Debug.Log("Awake");
-
         Localization.SetLanguage(SystemLanguage.Russian);
         //LocalizedStrings.SetLanguage(SystemLanguage.English);
 
@@ -116,8 +114,6 @@ public class GameManager : MonoBehaviour
 
     void OnLevelLoaded(Scene scene, LoadSceneMode mode)
     {
-        Debug.Log("OnLevelLoaded    " + scene.name + "    " + mode);
-
         var index = (SceneIndex)scene.buildIndex;
 
         switch (index)

@@ -121,11 +121,26 @@ public static class Extensions
 
     #endregion
 
-    #region
+    #region Executable.ExecatableUseType
 
     public static string GetNameLocalise(this Executable.ExecatableUseType useType)
     {
-        return useType.ToString();
+        string res = LocalizedStrings.missing_string;
+
+        switch (useType)
+        {
+            case Executable.ExecatableUseType.CLICK:
+                res = LocalizedStrings.executable_use_type_click;
+                break;
+            case Executable.ExecatableUseType.DRAG_DROP_PLASE:
+                res = LocalizedStrings.executable_use_type_drag_drop_place;
+                break;
+            case Executable.ExecatableUseType.DRAG_DIRECTION:
+                res = LocalizedStrings.executable_use_type_drag_direction;
+                break;
+        }
+
+        return res;
     }
 
     #endregion
@@ -164,7 +179,7 @@ public static class Extensions
     }
 
 
-    #region Tools
+    #region Tools FileManagement
 
     static XmlSerializer blockSerializer = new XmlSerializer(typeof(MapBlock));
 
