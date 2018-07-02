@@ -4,59 +4,43 @@ using UnityEngine;
 
 public class SquadSpawner : MonoBehaviour
 {
-    
-    Quaternion rotation;
-
-    [SerializeField] Squad origin;
-
-    [Header("Squad properties")]
     [SerializeField] Transform lookTarget;
-
+    //----------------------
+    //Все эти ScriptableObject'ы нужны лишь потому что сейчас нет вложенных префабов. И когда они будут я хз. Пускай уж так, чем никак.
+    //----------------------
     [Space]
-    [SerializeField] int unitCount = 30;
-    [SerializeField] FormationStats.Formations formation;
-    [SerializeField] Inventory inventory;
-
     [Space]
-    [SerializeField] Squad.UnitFraction fraction;
-
-    [Header("AI properties")]
-    [SerializeField] AiSquadController.AiSquadBehaviour mode;
-
+    [SerializeField] SOSquadSpawnerSquadPropertiesResourse squadProperties;
+    [SerializeField] SOSquadSpawnerEquipmentResourse equipment;
+    [SerializeField] SOSquadSpawnerSkillsResourse skills;
+    [SerializeField] SOSquadSpawnerConsumablesResourse consumables;
     [Space]
-    [SerializeField] bool useDefaultDistancesValues = true;
-    [SerializeField] [Range(1, 200)] float distanceToActivateSquad = 50;
-    [SerializeField] [Range(1, 50)] float radiusOfDefendArea = 15;
-    [SerializeField] [Range(1, 50)] float radiusOfAttackArea = 30;
-
-    [Space]
-    [SerializeField] bool useDefaultTimeValues = true;
-    [SerializeField] [Range(0, 1)] float slowApdateDeltaTime = 0.2f;
-    [SerializeField] [Range(0, 5)] float attackDeltaTime = 1f;
-    
+    [SerializeField] SOSquadSpawnerAISettingsResourse aiSettings;
+    //----------------------
+    Quaternion rotation;    
 
     void Start ()
     {
-        lookTarget = transform.GetChild(0);
+        //lookTarget = transform.GetChild(0);
 
-        rotation = Quaternion.LookRotation(Vector3.forward, lookTarget.position - transform.position);
+        //rotation = Quaternion.LookRotation(Vector3.forward, lookTarget.position - transform.position);
 
-        if (origin == null)
-            origin = (Resources.Load("Prefabs/Squads/EnemySquad") as GameObject).GetComponent<Squad>();
+        //if (origin == null)
+        //    origin = (Resources.Load("Prefabs/Squads/EnemySquad") as GameObject).GetComponent<Squad>();
 
-        Squad squad = Instantiate(origin) as Squad;
+        //Squad squad = Instantiate(origin) as Squad;
 
-        squad.fullSquadUnitCount = unitCount;
-        squad.fraction = fraction;
-        squad.PositionsTransform.position = transform.position;
-        squad.PositionsTransform.rotation = rotation;
-        squad.EndLookRotation = rotation;
+        //squad.fullSquadUnitCount = unitCount;
+        //squad.fraction = fraction;
+        //squad.PositionsTransform.position = transform.position;
+        //squad.PositionsTransform.rotation = rotation;
+        //squad.EndLookRotation = rotation;
 
 
         //пока  что код убрал, так как в префабах все ссылки похерились. при пересоздании уровней опять откоментирую код.
 
         //if (inventory.Helmet != null)
-        //    squad.Inventory.Helmet = inventory.Helmet;
+        //   squad.Inventory.Helmet = inventory.Helmet;
         //if (inventory.Body != null)
         //    squad.Inventory.Body = inventory.Body;
         //if (inventory.Shield != null)
@@ -64,26 +48,26 @@ public class SquadSpawner : MonoBehaviour
         //if (inventory.Weapon != null)
         //    squad.Inventory.Weapon = inventory.Weapon;
 
-        squad.CurrentFormation = formation;             
+        //squad.CurrentFormation = formation;             
        
-        AiSquadController controller = squad.GetComponent<AiSquadController>();
-        if (controller != null)
-        {
-            controller.mode = mode;
+        //AiSquadController controller = squad.GetComponent<AiSquadController>();
+        //if (controller != null)
+        //{
+        //    controller.mode = mode;
 
-            if (!useDefaultDistancesValues)
-            {
-                controller.distanceToActivateSquad = distanceToActivateSquad;
-                controller.radiusOfDefendArea = radiusOfDefendArea;
-                controller.radiusOfAttackArea = radiusOfAttackArea;
-            }
+        //    if (!useDefaultDistancesValues)
+        //    {
+        //        controller.distanceToActivateSquad = distanceToActivateSquad;
+        //        controller.radiusOfDefendArea = radiusOfDefendArea;
+        //        controller.radiusOfAttackArea = radiusOfAttackArea;
+        //    }
 
-            if (!useDefaultTimeValues)
-            {
-                controller.slowApdateDeltaTime = slowApdateDeltaTime;
-                controller.attackDeltaTime = attackDeltaTime;
-            }
-        }
+        //    if (!useDefaultTimeValues)
+        //    {
+        //        controller.slowApdateDeltaTime = slowApdateDeltaTime;
+        //        controller.attackDeltaTime = attackDeltaTime;
+        //    }
+        //}
 
         Destroy(gameObject);
     }
@@ -91,25 +75,27 @@ public class SquadSpawner : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        Gizmos.color = Color.green;
-        Gizmos.DrawLine(transform.position, lookTarget.position);
+        //Gizmos.color = Color.green;
+        //Gizmos.DrawLine(transform.position, lookTarget.position);
 
-        Gizmos.color = Color.green;
-        Gizmos.DrawWireSphere(transform.position, 2);
+        //Gizmos.color = Color.green;
+        //Gizmos.DrawWireSphere(transform.position, 2);
 
-        Gizmos.color = Color.blue;
-        Gizmos.DrawWireSphere(lookTarget.position, 1);
+        //Gizmos.color = Color.blue;
+        //Gizmos.DrawWireSphere(lookTarget.position, 1);
 
-        if (!useDefaultDistancesValues)
-        {
-            Gizmos.color = Color.red;
-            Gizmos.DrawWireSphere(transform.position, distanceToActivateSquad);
+        //if (!aiSettings.UseDefaultDistancesOptions)
+        //{
+        //    var dOpt = aiSettings.DistancesOptions;
 
-            Gizmos.color = Color.green;
-            Gizmos.DrawWireSphere(transform.position, radiusOfDefendArea);
+        //    Gizmos.color = Color.red;
+        //    Gizmos.DrawWireSphere(transform.position, dOpt.DistanceToActivateSquad);
 
-            Gizmos.color = Color.yellow;
-            Gizmos.DrawWireSphere(transform.position, radiusOfAttackArea);
-        }
+        //    Gizmos.color = Color.green;
+        //    Gizmos.DrawWireSphere(transform.position, dOpt.RadiusOfDefendArea);
+
+        //    Gizmos.color = Color.yellow;
+        //    Gizmos.DrawWireSphere(transform.position, dOpt.RadiusOfAttackArea);
+        //}
     }
 }

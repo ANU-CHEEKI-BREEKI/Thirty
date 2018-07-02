@@ -64,6 +64,7 @@ public struct UnitStats
     public float ChargeDeflect { get { return chargeDeflect; } }
 
     [SerializeField] [Range(0, 5)] float unitChargeAddDamage;
+
     public float ChargeAddDamage { get { return unitChargeAddDamage; } }
 
     public static UnitStats CalcStats(UnitStats baseStats, EquipmentStats[] equipmentStats, FormationStats formationStats)

@@ -15,16 +15,19 @@ public class Squad : MonoBehaviour
     [Header("Default units properties in this squad")]
     [SerializeField] Unit unitOriginal;
     [Space]
-    [SerializeField] UnitStats unitStats;
-    public UnitStats UnitStats { get { return unitStats; } }
+    [SerializeField] UnitStats unitStats;//задавать статы ТОЛЬКО с инспектора. 
+    public UnitStats UnitStats { get { return unitStats; } set { unitStats = value; } }
 
     [Header("Squad default properties")]
-    [Range(1, 100)] public int fullSquadUnitCount = 30;
-    public int FULL_SQUAD_UNIT_COUNT { get { return fullSquadUnitCount; } }
+    [SerializeField] [Range(1, 100)] int fullSquadUnitCount = 30;
+    public int FULL_SQUAD_UNIT_COUNT { get { return fullSquadUnitCount; } set { fullSquadUnitCount = value; } }
     [SerializeField] [Range(1, 100)] int squadLength = 10;
-    public int SQUAD_LENGTH { get { return squadLength; } }
+    public int SQUAD_LENGTH { get { return squadLength; } set { squadLength = value; } }
     int squadRowsMax;
     public int SQUAD_ROWS_MAX {  get { return squadRowsMax; } }
+    /// <summary>
+    /// Радиус вогруг центра отряда, юниты за пределами которого не будут учтены в расчете положения центра отряда.
+    /// </summary>
     [SerializeField] float distanceToCenterSquad = 10;
     [Space]
     [SerializeField] [Range(1, 10)] float maxSpeed = 4;

@@ -100,7 +100,7 @@ public class Ground : MonoBehaviour
             string nm = textAssets[i].name.Remove(textAssets[i].name.LastIndexOf(" ("));
 
             //отсеиваем блоки не подходящие по типу месности
-            if (nm.IndexOf(GameManager.Instance.GroundType.ToString()) != -1)
+            if (nm.IndexOf(GameManager.Instance.CurrentLevel.GroundType.ToString()) != -1)
             {
                 //удаляем тип месности из названия
                 nm = nm.Remove(nm.LastIndexOf(" ["));

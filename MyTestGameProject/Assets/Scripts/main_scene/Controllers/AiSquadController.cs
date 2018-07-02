@@ -8,29 +8,18 @@ public class AiSquadController : MonoBehaviour
 {
     public enum AiSquadBehaviour { HOLD, ATTACK, DEFEND }
 
-    [Range(0, 1)] public float slowApdateDeltaTime = 0.2f;
-    [Range(0, 5)] public float attackDeltaTime = 1f;    
-    [Range(1, 200)] public float distanceToActivateSquad = 50;
-    [Range(1, 50)] public float radiusOfDefendArea = 15;
-    [Range(1, 50)] public float radiusOfAttackArea = 30;
-    public  AiSquadBehaviour mode = AiSquadBehaviour.DEFEND;
+    [SerializeField] AiSquadBehaviour mode = AiSquadBehaviour.DEFEND;
+    public AiSquadBehaviour Mode { get { return mode; } set { mode = value; } }
 
-    [Space]
-    [Tooltip("Задержка перед перестроением")]
-    [SerializeField] float reformLatency = 0.07f;
-    [SerializeField] bool canReformRanks = true;
-    [Tooltip("Время невозможности перестроения после перестроения свободным строем")]
-    [SerializeField] float cooldownAfterReformToRanks = 1f;
-    [SerializeField] bool canReformPhalanx = true;
-    [Tooltip("Время невозможности перестроения после перестроения фалангой")]
-    [SerializeField] float cooldownAfterReformToPhalanx = 1f;
-    [SerializeField] bool canReformShields = true;
-    [Tooltip("Время невозможности перестроения после перестроения черепахой")]
-    [SerializeField] float cooldownAfterReformToShields = 1f;
+    [Space] [ContextMenuItem("Reset values", "ResetDistansesSettings")]
+    [SerializeField] DistancesSettings distancesOptions;
+    public DistancesSettings DistancesOptions { get { return distancesOptions; } set { distancesOptions = value; } }
 
-    [Space]
-    [SerializeField] [Range(0, 20)] float distToResetStartPosBeforeFindPath = 5f;
+    [Space] [ContextMenuItem("Reset values", "ResetReformSettings")]
+    [SerializeField] ReformSettings reformOptions;
+    public ReformSettings ReformOptions { get { return reformOptions; } set { reformOptions = value; } }
 
+    
     Ground ground;
 
     Squad squad;
@@ -81,6 +70,10 @@ public class AiSquadController : MonoBehaviour
     List<AExecutableBehaviour> allExeBehaviour;
     List<AExecutableBehaviour> exeBehaviourToRemove;
 
+    float timerBehaviour = 0;
+    float timerAttack = 0;
+    Coroutine formationChangedCoroutine = null;
+
     void Start()
     {
         ground = Ground.Instance;
@@ -125,12 +118,8 @@ public class AiSquadController : MonoBehaviour
         squad.OnSquadDestroy -= Squad_OnSquadDestroy;
     }
 
-    float timerBehaviour = 0;
-    float timerAttack = 0;
-    Coroutine formationChangedCoroutine = null;
-
-
-
+    
+    
     void Update()
     {
         float delta = Time.deltaTime;
@@ -138,7 +127,7 @@ public class AiSquadController : MonoBehaviour
         timerAttack += delta;
 
 
-        if (timerBehaviour >= slowApdateDeltaTime)
+        if (timerBehaviour >= distancesOptions.SlowApdateDeltaTime)
         {
             timerBehaviour = 0;
             if (playerSquad != null)
@@ -156,7 +145,7 @@ public class AiSquadController : MonoBehaviour
             }
         }
 
-        if (timerAttack >= attackDeltaTime)
+        if (timerAttack >= distancesOptions.AttackDeltaTime)
         {
             timerAttack = 0;
             SquadAttack();
@@ -165,20 +154,19 @@ public class AiSquadController : MonoBehaviour
         SetFormation();
     }
       
-
     void SetFormation()
     {
         if (canGo)
         {
             if (distanceToPlayer > squad.Inventory.Weapon.EquipmentStats.AttackDistance + 3)
             {
-                if (canReformRanks && formationChangedCoroutine == null && squad.CurrentFormation != FormationStats.Formations.RANKS)
-                    formationChangedCoroutine = StartCoroutine(SetFormationLate(reformLatency, FormationStats.Formations.RANKS));
+                if (reformOptions.CanReformRanks && formationChangedCoroutine == null && squad.CurrentFormation != FormationStats.Formations.RANKS)
+                    formationChangedCoroutine = StartCoroutine(SetFormationLate(reformOptions.ReformLatency, FormationStats.Formations.RANKS));
             }
             else
             {
-                if (canReformPhalanx && formationChangedCoroutine == null && squad.CurrentFormation != FormationStats.Formations.PHALANX)
-                    formationChangedCoroutine = StartCoroutine(SetFormationLate(reformLatency, FormationStats.Formations.PHALANX));
+                if (reformOptions.CanReformPhalanx && formationChangedCoroutine == null && squad.CurrentFormation != FormationStats.Formations.PHALANX)
+                    formationChangedCoroutine = StartCoroutine(SetFormationLate(reformOptions.ReformLatency, FormationStats.Formations.PHALANX));
             }
         }
     }
@@ -192,13 +180,13 @@ public class AiSquadController : MonoBehaviour
         switch (formation)
         {
             case FormationStats.Formations.RANKS:
-                cooldown = cooldownAfterReformToRanks;
+                cooldown = reformOptions.CooldownAfterReformToRanks;
                 break;
             case FormationStats.Formations.PHALANX:
-                cooldown = cooldownAfterReformToPhalanx;
+                cooldown = reformOptions.CooldownAfterReformToPhalanx;
                 break;
             case FormationStats.Formations.RISEDSHIELDS:
-                cooldown = cooldownAfterReformToShields;
+                cooldown = reformOptions.CooldownAfterReformToShields;
                 break;
         }
 
@@ -213,7 +201,7 @@ public class AiSquadController : MonoBehaviour
 
     private void ActivateSquad()
     {
-        if (distanceToPlayer <= distanceToActivateSquad)
+        if (distanceToPlayer <= distancesOptions.DistanceToActivateSquad)
             SetActiveSquad(true);
         else
             SetActiveSquad(false);
@@ -297,23 +285,23 @@ public class AiSquadController : MonoBehaviour
 
     private void BehaviorOnAttack()
     {
-        if (distanceToPlayer <= radiusOfAttackArea)
+        if (distanceToPlayer <= distancesOptions.RadiusOfAttackArea)
             attackPlayer = true;
     }
 
     private void BehaviorOnDefend()
     {
-        if (distPlayerSquadToStartPos > radiusOfAttackArea)
+        if (distPlayerSquadToStartPos > distancesOptions.RadiusOfAttackArea)
             attackPlayer = false;
 
-        if (distanceToStartPosition <= radiusOfDefendArea)
+        if (distanceToStartPosition <= distancesOptions.RadiusOfDefendArea)
         {
-            if (distPlayerSquadToStartPos <= radiusOfDefendArea)
+            if (distPlayerSquadToStartPos <= distancesOptions.RadiusOfDefendArea)
                 attackPlayer = true;
         }
-        else if (distanceToStartPosition <= radiusOfAttackArea)
+        else if (distanceToStartPosition <= distancesOptions.RadiusOfAttackArea)
         {
-            if (distPlayerSquadToStartPos <= radiusOfAttackArea)
+            if (distPlayerSquadToStartPos <= distancesOptions.RadiusOfAttackArea)
                 attackPlayer = true;
         }
     }
@@ -325,24 +313,107 @@ public class AiSquadController : MonoBehaviour
             if (squad.enabled)
             {
                 Gizmos.color = Color.green;
-                Gizmos.DrawWireSphere(startPosition, radiusOfDefendArea);
+                Gizmos.DrawWireSphere(startPosition, distancesOptions.RadiusOfDefendArea);
 
                 Gizmos.color = Color.yellow;
-                Gizmos.DrawWireSphere(startPosition, radiusOfAttackArea);
+                Gizmos.DrawWireSphere(startPosition, distancesOptions.RadiusOfAttackArea);
             }
             else
             {
                 Gizmos.color = Color.red;
-                Gizmos.DrawWireSphere(squad.PositionsTransform.position, distanceToActivateSquad);
+                Gizmos.DrawWireSphere(squad.PositionsTransform.position, distancesOptions.DistanceToActivateSquad);
             }
         }
         else
         {
             Gizmos.color = Color.green;
-            Gizmos.DrawWireSphere(transform.position, radiusOfDefendArea);
+            Gizmos.DrawWireSphere(transform.position, distancesOptions.RadiusOfDefendArea);
 
             Gizmos.color = Color.yellow;
-            Gizmos.DrawWireSphere(transform.position, radiusOfAttackArea);
+            Gizmos.DrawWireSphere(transform.position, distancesOptions.RadiusOfAttackArea);
+        }
+    }
+    
+    void ResetDistansesSettings()
+    {
+        distancesOptions.Reset();
+    }
+
+    void ResetReformSettings()
+    {
+        reformOptions.Reset();
+    }
+
+    [Serializable]
+    public struct DistancesSettings : IResetable
+    {
+        [Range(0, 1)] [SerializeField] float slowApdateDeltaTime;// = 0.2f;
+        public float SlowApdateDeltaTime { get { return slowApdateDeltaTime; } }
+
+        [Range(0, 5)] [SerializeField] float attackDeltaTime;// = 1f;
+        public float AttackDeltaTime { get { return attackDeltaTime; } }
+
+        [Range(1, 200)] [SerializeField] float distanceToActivateSquad;// = 50;
+        public float DistanceToActivateSquad { get { return distanceToActivateSquad; } }
+
+        [Range(1, 50)] [SerializeField] float radiusOfDefendArea;// = 15;
+        public float RadiusOfDefendArea { get { return radiusOfDefendArea; } }
+
+        [Range(1, 50)] [SerializeField] float radiusOfAttackArea;// = 30;
+        public float RadiusOfAttackArea { get { return radiusOfAttackArea; } }
+        
+        [ContextMenu("Reset")]
+        public void Reset()
+        {
+            slowApdateDeltaTime = 0.2f;
+            attackDeltaTime = 1f;
+            distanceToActivateSquad = 50;
+            radiusOfDefendArea = 15;
+            radiusOfAttackArea = 30;
+        }
+    }
+
+    [Serializable]
+    public struct ReformSettings : IResetable
+    {
+        [Tooltip("Задержка перед перестроением")]
+        [SerializeField] float reformLatency;// = 0.06f;
+        public float ReformLatency { get { return reformLatency; } }
+
+        [Space]
+        [SerializeField] bool canReformRanks;// = true;
+        public bool CanReformRanks { get { return canReformRanks; } }
+
+        [Tooltip("Время невозможности перестроения после перестроения свободным строем")]
+        [SerializeField] float cooldownAfterReformToRanks;// = 1f;
+        public float CooldownAfterReformToRanks { get { return cooldownAfterReformToRanks; } }
+
+        [Space]
+        [SerializeField] bool canReformPhalanx;// = true;
+        public bool CanReformPhalanx { get { return canReformPhalanx; } }
+
+        [Tooltip("Время невозможности перестроения после перестроения фалангой")]
+        [SerializeField] float cooldownAfterReformToPhalanx;// = 1f;
+        public float CooldownAfterReformToPhalanx { get { return cooldownAfterReformToPhalanx; } }
+
+        [Space]
+        [SerializeField] bool canReformShields;// = true;
+        public bool CanReformShields { get { return canReformShields; } }
+
+        [Tooltip("Время невозможности перестроения после перестроения черепахой")]
+        [SerializeField] float cooldownAfterReformToShields;// = 1f;
+        public float CooldownAfterReformToShields { get { return cooldownAfterReformToShields; } }
+
+        [ContextMenu("Reset")]
+        public void Reset()
+        {
+            reformLatency = 0.06f;
+            canReformRanks = true;
+            cooldownAfterReformToRanks = 1f;
+            canReformPhalanx = true;
+            cooldownAfterReformToPhalanx = 1f;
+            canReformShields = true;
+            cooldownAfterReformToShields = 1f;
         }
     }
 }

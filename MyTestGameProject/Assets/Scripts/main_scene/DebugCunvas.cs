@@ -40,7 +40,7 @@ public class DebugCunvas : MonoBehaviour
 
         StartCoroutine(Coroutine(
             condition: () => { return true; },
-            action: () => { fpsScaledText.text = "scaled fps:    " + (1f / Time.deltaTime).ToString(StringFormats.floatNumber); },
+            action: () => { fpsScaledText.text = "ground:    " + GameManager.Instance.CurrentLevel.GroundType.ToString(); },
             cleanup: () => { },
             deltaTime: 0.1f,
             type: CoroutineType.REAL_TIME
@@ -48,7 +48,7 @@ public class DebugCunvas : MonoBehaviour
 
         StartCoroutine(Coroutine(
             condition: () => { return true; },
-            action: () => { levelText.text = "level:    " + GameManager.Instance.Level.ToString(StringFormats.intNumber); },
+            action: () => { levelText.text = "whole level:    " + GameManager.Instance.CurrentLevel.WholeLevel.ToString(StringFormats.intNumber); },
             cleanup: () => { },
             deltaTime: 1f,
             type: CoroutineType.REAL_TIME

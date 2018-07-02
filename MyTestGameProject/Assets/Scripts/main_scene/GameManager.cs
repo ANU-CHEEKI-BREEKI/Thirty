@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -10,8 +11,6 @@ public class GameManager : MonoBehaviour
     
     bool gamePaused;
     public bool GamePaused { get { return gamePaused; } private set { gamePaused = value; } }
-
-    public Ground.GroundType GroundType = Ground.GroundType.GRASSLAND;
 
     [Header("Score")]
     [SerializeField]
@@ -50,8 +49,7 @@ public class GameManager : MonoBehaviour
     [HideInInspector] public MapBlock.Direction exitDirection;
     [HideInInspector] public MapBlock.Direction entranceDirection;
 
-    int level;
-    public int Level { get { return level; } }
+    public LevelInfo CurrentLevel { get; private set; }
 
     Squad squad;
     public Squad PlayerSquad { get { return squad; } }
@@ -71,7 +69,7 @@ public class GameManager : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
-            level = 0;
+            CurrentLevel = new LevelInfo();
             defFixedDeltaTime = Time.fixedDeltaTime;
 
             Application.logMessageReceived += OnUnhendeledException;
@@ -287,7 +285,7 @@ public class GameManager : MonoBehaviour
 
     public void LoadNextLevel()
     {
-        level++;
+        CurrentLevel.NextLevel();
 
         ReconfigureLevelSettings();        
 
@@ -308,7 +306,7 @@ public class GameManager : MonoBehaviour
 
     public void LoadMainMenu()
     {
-        level = 0;
+        CurrentLevel = new LevelInfo();
 
         if (Squad.playerSquadInstance != null)
         {
@@ -334,7 +332,7 @@ public class GameManager : MonoBehaviour
     void LoadScene(SceneIndex index)
     {
         if (BeforeLoadLevel != null)
-            BeforeLoadLevel(index, level);
+            BeforeLoadLevel(index, CurrentLevel.Level);
 
         LoadingScreenManager.NextLevel = index;
         SceneManager.LoadScene((int)SceneIndex.LOADING_SCREEN);
@@ -342,14 +340,14 @@ public class GameManager : MonoBehaviour
 
     private void ReconfigureLevelSettings()
     {
-        if (level == 0)
+        if (CurrentLevel.Level == 1)
         {
-            rows = 1;
+            rows = 2;
             cols = 2;
         }
         else
         {
-            if (level % 2 == 0)
+            if (CurrentLevel.Level % 2 == 0)
             {
                 if (rows < cols)
                     rows++;
@@ -359,6 +357,36 @@ public class GameManager : MonoBehaviour
         }
     }
     
+    public class LevelInfo
+    {
+        public Ground.GroundType GroundType { get; private set; } = Ground.GroundType.GRASSLAND;
+        public int Level { get; private set; }
+        public int WholeLevel { get; private set; }
+
+        public LevelInfo()
+        {
+            Level = 1;
+            WholeLevel = 0;
+            GroundType = Ground.GroundType.GRASSLAND;
+        }       
+
+        public void NextLevel()
+        {
+            WholeLevel++;
+            Level++;
+            if (Level >= 5)
+            {
+                var v = (Enum.GetValues(typeof(Ground.GroundType)) as Ground.GroundType[]).ToList();
+                var i = v.IndexOf(GroundType);
+                if (i < v.Count - 1)
+                {
+                    GroundType = v[i + 1];
+                    Level = 1;
+                }
+            }
+        }
+    }
+
     [ContextMenu("ResetAllSettings")]
     public void ResetAllSettings()
     {

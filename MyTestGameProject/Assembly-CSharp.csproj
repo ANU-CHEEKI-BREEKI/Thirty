@@ -152,6 +152,11 @@
     <Compile Include="Assets\Scripts\main_scene\PilumsVolley.cs" />
     <Compile Include="Assets\Scripts\main_scene\ProgressIndicator.cs" />
     <Compile Include="Assets\Scripts\main_scene\ScriptableObjects\SOSoundContainer.cs" />
+    <Compile Include="Assets\Scripts\main_scene\ScriptableObjects\SOSquadSpawnerResources\SOSquadSpawnerAISettingsResourse.cs" />
+    <Compile Include="Assets\Scripts\main_scene\ScriptableObjects\SOSquadSpawnerResources\SOSquadSpawnerConsumablesResourse.cs" />
+    <Compile Include="Assets\Scripts\main_scene\ScriptableObjects\SOSquadSpawnerResources\SOSquadSpawnerEquipmentResourse.cs" />
+    <Compile Include="Assets\Scripts\main_scene\ScriptableObjects\SOSquadSpawnerResources\SOSquadSpawnerSkillsResourse.cs" />
+    <Compile Include="Assets\Scripts\main_scene\ScriptableObjects\SOSquadSpawnerResources\SOSquadSpawnerSquadPropertiesResourse.cs" />
     <Compile Include="Assets\Scripts\main_scene\ScriptableObjects\SOTip.cs" />
     <Compile Include="Assets\Scripts\main_scene\ShowAllyUnitsHp.cs" />
     <Compile Include="Assets\Scripts\main_scene\SoundChannel.cs" />

@@ -159,9 +159,4 @@ public class Inventory
             inventory[index] = value;
         }
     }
-
-    //public Inventory()
-    //{
-    //    if(weapon.EquipmentMainProperties)
-    //}
 }
