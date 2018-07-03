@@ -6,6 +6,7 @@ public class PilumsVolleyBehaviour : AExecutableBehaviour
 {
     ConsumableStack stack;
     bool throwPilums = true;
+    bool cooldown = false;
 
     public PilumsVolleyBehaviour(AiSquadController controller, ConsumableStack stack) : base(controller)
     {
@@ -19,8 +20,10 @@ public class PilumsVolleyBehaviour : AExecutableBehaviour
         {
             stack.Count -= cnt;
             if (stack.Count <= 0)
+            {
                 stack.Consumable = null;
-            DisposeMe(this);
+                DisposeMe(this);
+            }
         }
     }
 
@@ -28,16 +31,27 @@ public class PilumsVolleyBehaviour : AExecutableBehaviour
     {
         if (stack.Consumable != null)
         {
-            if (controller.AttackPlayer && throwPilums && controller.DistanceToPlayer <= ((ConsumablePilumsVolley.PilumsVolleyStats)stack.ConsumableStats).Distance)
+            if (!cooldown && throwPilums && controller.DistanceToPlayer <= ((ConsumablePilumsVolley.PilumsVolleyStats)stack.ConsumableStats).Distance * 0.7f)
             {
+                throwPilums = false;
+
                 stack.Consumable.Init(controller.ConstrolledSquad, controller.TargetSquad.CenterSquad, stack.Count);
                 stack.Consumable.Execute(stack.ConsumableStats);
-                throwPilums = false;
+                
+                GameManager.Instance.StartCoroutine(Cooldown(((ConsumablePilumsVolley.PilumsVolleyStats)stack.ConsumableStats).Cooldown));
             }
-            if (!controller.AttackPlayer)
+
+            if (!cooldown && controller.DistanceToPlayer > ((ConsumablePilumsVolley.PilumsVolleyStats)stack.ConsumableStats).Distance * 0.65f)
             {
                 throwPilums = true;
             }
         }
+    }
+
+    IEnumerator Cooldown(float duration)
+    {
+        cooldown = true;
+        yield return new WaitForSeconds(duration);
+        cooldown = false;
     }
 }

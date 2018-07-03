@@ -7,27 +7,37 @@ using UnityEngine;
 public class SOSquadSpawnerEquipmentResourse : ScriptableObject
 {
     [SerializeField] AnimationCurve equipmentLevelDependency;
-    [SerializeField] EquipmentContainer[] headByLevel;
-    public EquipmentStack HeadByLevel { get { return GetEquipment(headByLevel); } }
-
-    [SerializeField] EquipmentContainer[] bodyByLevel;
-    public EquipmentStack BodyByLevel { get { return GetEquipment(bodyByLevel); } }
-
-    [SerializeField] EquipmentContainer[] weaponByLevel;
-    public EquipmentStack WeaponByLevel { get { return GetEquipment(weaponByLevel); } }
-
-    [SerializeField] EquipmentContainer[] shieldByLevel;
-    public EquipmentStack ShieldByLevel { get { return GetEquipment(shieldByLevel); } }
+    [SerializeField] EquipmentContainer[] equipmentByLevel;
+    public EquipmentStack EquipmentByLevel { get { return GetEquipment(equipmentByLevel); } }
     
     EquipmentStack GetEquipment(EquipmentContainer[] equipments)
     {
-        throw new NotImplementedException();
+        EquipmentStack res = null;
+
+        if (equipments.Length > 0)
+        {
+            float t = GameManager.Instance.CurrentLevel.WholeLevelT;
+            float val = equipmentLevelDependency.Evaluate(t);
+            int index = Mathf.RoundToInt(equipmentLevelDependency.Evaluate(t) * (equipments.Length - 1));
+            int l2 = equipments[index].randomEquipment.Length;
+            int l3 = equipments[index].durability.Length;
+            if (l2 > 0 && l3 > 0)
+            {
+                var eq = equipments[index].randomEquipment[UnityEngine.Random.Range(0, l2)];
+                var eqMS = eq.MainPropertie;
+                var eqS = eq.Stats;
+                eqS.ItemDurability = equipments[index].durability[UnityEngine.Random.Range(0, l3)];
+                res = new EquipmentStack(eqMS, eqS);
+            }
+        }
+
+        return res;
     }
 
     [Serializable]
     public class EquipmentContainer
     {
-        [SerializeField] Equipment[] randomEquipment;
-        [SerializeField] EquipmentStats.Durability durability;
+        public Equipment[] randomEquipment;
+        public EquipmentStats.Durability[] durability;
     }
 }

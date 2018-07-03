@@ -5,6 +5,7 @@ using UnityEngine;
 public class FollowCanvasToSquad : MonoBehaviour
 {
     [SerializeField] Squad squad;
+    public Squad SquadForFollow { get { return squad; } set { squad = value; } }
 
     Transform tr;
 
@@ -15,13 +16,21 @@ public class FollowCanvasToSquad : MonoBehaviour
 
     void Update ()
     {
-        if(squad != null)
-            tr.position = squad.CenterSquad;
-	}
+        Follow();
+    }
 
     private void OnEnable()
     {
+        Follow();
+    }
+
+    void Follow()
+    {
         if (squad != null)
-            tr.position = squad.CenterSquad;
+        {
+            Vector3 pos = squad.CenterSquad;
+            pos.z = -2;
+            tr.position = pos;
+        }
     }
 }

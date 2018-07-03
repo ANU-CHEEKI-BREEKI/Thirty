@@ -16,7 +16,26 @@ public class Squad : MonoBehaviour
     [SerializeField] Unit unitOriginal;
     [Space]
     [SerializeField] UnitStats unitStats;//задавать статы ТОЛЬКО с инспектора. 
-    public UnitStats UnitStats { get { return unitStats; } set { unitStats = value; } }
+    public UnitStats DefaultUnitStats { get { return unitStats; } set { unitStats = value; } }
+    /// <summary>
+    /// При каждом вызове свойства происходит расчет. Будте аккуратны.
+    /// </summary>
+    public UnitStats UnitStats
+    {
+        get
+        {
+            EquipmentStats[] equipStats = new EquipmentStats[]
+            {
+                inventory.Helmet.EquipmentStats,
+                inventory.Body.EquipmentStats,
+                inventory.Shield.EquipmentStats,
+                inventory.Weapon.EquipmentStats
+            };
+            var stats = UnitStats.CalcStats(unitStats, equipStats, currentFormationModifyers);
+            //и тут ещё строчку для модификаторов отряда
+            return stats;
+        }
+    }
 
     [Header("Squad default properties")]
     [SerializeField] [Range(1, 100)] int fullSquadUnitCount = 30;

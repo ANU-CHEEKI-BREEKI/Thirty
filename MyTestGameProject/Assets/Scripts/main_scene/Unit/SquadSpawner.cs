@@ -11,7 +11,12 @@ public class SquadSpawner : MonoBehaviour
     [Space]
     [Space]
     [SerializeField] SOSquadSpawnerSquadPropertiesResourse squadProperties;
-    [SerializeField] SOSquadSpawnerEquipmentResourse equipment;
+    [Space]
+    [SerializeField] SOSquadSpawnerEquipmentResourse helmetEquipment;
+    [SerializeField] SOSquadSpawnerEquipmentResourse bodyEquipment;
+    [SerializeField] SOSquadSpawnerEquipmentResourse weaponEquipment;
+    [SerializeField] SOSquadSpawnerEquipmentResourse shieldEquipment;
+    [Space]
     [SerializeField] SOSquadSpawnerSkillsResourse skills;
     [SerializeField] SOSquadSpawnerConsumablesResourse consumables;
     [Space]
@@ -21,53 +26,79 @@ public class SquadSpawner : MonoBehaviour
 
     void Start ()
     {
-        //lookTarget = transform.GetChild(0);
+        lookTarget = transform.GetChild(0);
+        rotation = Quaternion.LookRotation(Vector3.forward, lookTarget.position - transform.position);
 
-        //rotation = Quaternion.LookRotation(Vector3.forward, lookTarget.position - transform.position);
+        //squad prop
+        Squad origin = squadProperties.SquadOrigin;
+        Squad squad = Instantiate(origin) as Squad;
+        if(!squadProperties.UseDefaultUnitCount)
+            squad.FULL_SQUAD_UNIT_COUNT = squadProperties.UnitCount;
+        squad.fraction = squadProperties.Fraction;
+        squad.PositionsTransform.position = transform.position;
+        squad.PositionsTransform.rotation = rotation;
+        squad.EndLookRotation = rotation;
 
-        //if (origin == null)
-        //    origin = (Resources.Load("Prefabs/Squads/EnemySquad") as GameObject).GetComponent<Squad>();
+        var inv = squad.Inventory;
+        //equipment
+        if (helmetEquipment != null)
+            inv.Helmet = helmetEquipment.EquipmentByLevel;
+        if (bodyEquipment != null)
+            inv.Body = bodyEquipment.EquipmentByLevel;
+        if (weaponEquipment != null)
+            inv.Weapon = weaponEquipment.EquipmentByLevel;
+        if (shieldEquipment != null)
+            inv.Shield = shieldEquipment.EquipmentByLevel;
 
-        //Squad squad = Instantiate(origin) as Squad;
+        //skills
+        if (skills != null)
+        {
+            if(skills.AllowOwnSkill)
+                inv.FirstSkill = skills.SkillByLevel;
+            else
+                inv.FirstSkill = null;
 
-        //squad.fullSquadUnitCount = unitCount;
-        //squad.fraction = fraction;
-        //squad.PositionsTransform.position = transform.position;
-        //squad.PositionsTransform.rotation = rotation;
-        //squad.EndLookRotation = rotation;
+            if (skills.AllowOwnSkill)
+            {
+                inv.SecondSkill = skills.SkillByLevel;
+                if (inv.SecondSkill.Skill == inv.FirstSkill.Skill)
+                    inv.SecondSkill = null;
+            }
+            else
+                inv.SecondSkill = null;
+        }
 
+        //consumables
+        if (consumables != null)
+        {
+            if (consumables.AllowOwnConsumable)
+            {
+                inv.FirstConsumable = consumables.ConsumableByLevel;
+                inv.FirstConsumable.Count = squad.FULL_SQUAD_UNIT_COUNT;
+            }
+            else
+                inv.FirstConsumable = null;
 
-        //пока  что код убрал, так как в префабах все ссылки похерились. при пересоздании уровней опять откоментирую код.
+            if (consumables.AllowOwnConsumable)
+            {
+                inv.SecondConsumable = consumables.ConsumableByLevel;
+                inv.SecondConsumable.Count = squad.FULL_SQUAD_UNIT_COUNT;
+            }
+            else
+                inv.SecondConsumable = null;
+        }
 
-        //if (inventory.Helmet != null)
-        //   squad.Inventory.Helmet = inventory.Helmet;
-        //if (inventory.Body != null)
-        //    squad.Inventory.Body = inventory.Body;
-        //if (inventory.Shield != null)
-        //    squad.Inventory.Shield = inventory.Shield;
-        //if (inventory.Weapon != null)
-        //    squad.Inventory.Weapon = inventory.Weapon;
-
-        //squad.CurrentFormation = formation;             
-       
-        //AiSquadController controller = squad.GetComponent<AiSquadController>();
-        //if (controller != null)
-        //{
-        //    controller.mode = mode;
-
-        //    if (!useDefaultDistancesValues)
-        //    {
-        //        controller.distanceToActivateSquad = distanceToActivateSquad;
-        //        controller.radiusOfDefendArea = radiusOfDefendArea;
-        //        controller.radiusOfAttackArea = radiusOfAttackArea;
-        //    }
-
-        //    if (!useDefaultTimeValues)
-        //    {
-        //        controller.slowApdateDeltaTime = slowApdateDeltaTime;
-        //        controller.attackDeltaTime = attackDeltaTime;
-        //    }
-        //}
+        //AI
+        squad.CurrentFormation = aiSettings.StartFormation;
+        AiSquadController controller = squad.GetComponent<AiSquadController>();
+        if (controller != null)
+        {
+            controller.Mode = aiSettings.Mode;
+            if(!aiSettings.UseDefaultDistancesOptions)
+                controller.DistancesOptions = aiSettings.DistancesOptions;
+            if (!aiSettings.UseDefaultReformOptions)
+                controller.ReformOptions = aiSettings.ReformOptions;
+        }
 
         Destroy(gameObject);
     }
@@ -75,27 +106,27 @@ public class SquadSpawner : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        //Gizmos.color = Color.green;
-        //Gizmos.DrawLine(transform.position, lookTarget.position);
+        Gizmos.color = Color.green;
+        Gizmos.DrawLine(transform.position, lookTarget.position);
 
-        //Gizmos.color = Color.green;
-        //Gizmos.DrawWireSphere(transform.position, 2);
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireSphere(transform.position, 2);
 
-        //Gizmos.color = Color.blue;
-        //Gizmos.DrawWireSphere(lookTarget.position, 1);
+        Gizmos.color = Color.blue;
+        Gizmos.DrawWireSphere(lookTarget.position, 1);
 
-        //if (!aiSettings.UseDefaultDistancesOptions)
-        //{
-        //    var dOpt = aiSettings.DistancesOptions;
+        if (aiSettings != null && !aiSettings.UseDefaultDistancesOptions)
+        {
+            var dOpt = aiSettings.DistancesOptions;
 
-        //    Gizmos.color = Color.red;
-        //    Gizmos.DrawWireSphere(transform.position, dOpt.DistanceToActivateSquad);
+            Gizmos.color = Color.red;
+            Gizmos.DrawWireSphere(transform.position, dOpt.DistanceToActivateSquad);
 
-        //    Gizmos.color = Color.green;
-        //    Gizmos.DrawWireSphere(transform.position, dOpt.RadiusOfDefendArea);
+            Gizmos.color = Color.green;
+            Gizmos.DrawWireSphere(transform.position, dOpt.RadiusOfDefendArea);
 
-        //    Gizmos.color = Color.yellow;
-        //    Gizmos.DrawWireSphere(transform.position, dOpt.RadiusOfAttackArea);
-        //}
+            Gizmos.color = Color.yellow;
+            Gizmos.DrawWireSphere(transform.position, dOpt.RadiusOfAttackArea);
+        }
     }
 }

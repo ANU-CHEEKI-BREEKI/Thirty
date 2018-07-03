@@ -67,6 +67,7 @@
     <Compile Include="Assets\2d-extras-master\Tilemap\Tiles\Random Tile\Scripts\RandomTile.cs" />
     <Compile Include="Assets\2d-extras-master\Tilemap\Tiles\Rule Tile\Scripts\RuleTile.cs" />
     <Compile Include="Assets\2d-extras-master\Tilemap\Tiles\Terrain Tile\Scripts\TerrainTile.cs" />
+    <Compile Include="Assets\Scripts\main_scene\AddInfoPanelToSquad.cs" />
     <Compile Include="Assets\Scripts\main_scene\ArrowsValley.cs" />
     <Compile Include="Assets\Scripts\main_scene\BreakOnCollision.cs" />
     <Compile Include="Assets\Scripts\main_scene\CenterUnitSelection.cs" />

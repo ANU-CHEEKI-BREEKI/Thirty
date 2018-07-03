@@ -9,6 +9,7 @@ public class DebugCunvas : MonoBehaviour
     [SerializeField] TextMeshProUGUI fpsText;
     [SerializeField] TextMeshProUGUI fpsScaledText;
     [SerializeField] TextMeshProUGUI levelText;
+    [SerializeField] TextMeshProUGUI wholeLevelText;
     [SerializeField] TextMeshProUGUI timescaleText;
 
     static DebugCunvas instance;
@@ -48,11 +49,19 @@ public class DebugCunvas : MonoBehaviour
 
         StartCoroutine(Coroutine(
             condition: () => { return true; },
-            action: () => { levelText.text = "whole level:    " + GameManager.Instance.CurrentLevel.WholeLevel.ToString(StringFormats.intNumber); },
+            action: () => { levelText.text = "level:    " + GameManager.Instance.CurrentLevel.Level.ToString(StringFormats.intNumber); },
             cleanup: () => { },
             deltaTime: 1f,
             type: CoroutineType.REAL_TIME
         ));
+
+        StartCoroutine(Coroutine(
+           condition: () => { return true; },
+           action: () => { wholeLevelText.text = "whole level:    " + GameManager.Instance.CurrentLevel.WholeLevel.ToString(StringFormats.intNumber); },
+           cleanup: () => { },
+           deltaTime: 1f,
+           type: CoroutineType.REAL_TIME
+       ));
 
         StartCoroutine(Coroutine(
             condition: () => { return true; },

@@ -537,7 +537,7 @@ public class Unit : MonoBehaviour
         Color color = Color.white;
         if (squad != null)
         {
-            float t = Health / squad.UnitStats.Health;
+            float t = Health / squad.DefaultUnitStats.Health;
             if (t >= 0.5f)
                 color = Color.Lerp(Color.yellow, Color.green, t * 2 - 1 - 0.3f);
             else
@@ -634,7 +634,7 @@ public class Unit : MonoBehaviour
         };
 
         float health = stats.Health;
-        stats = UnitStats.CalcStats(squad.UnitStats, equipStats, squad.CurrentFormationModifyers);
+        stats = UnitStats.CalcStats(squad.DefaultUnitStats, equipStats, squad.CurrentFormationModifyers);
         if(health > 0)//без проверки юниты умирают при инициализации
             stats.Health = health;
         rigidbody2D.mass = stats.Mass;

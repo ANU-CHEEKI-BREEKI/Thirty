@@ -179,10 +179,9 @@ public class GameManager : MonoBehaviour
 
     void OnUnhendeledException(string condition, string stackTrace, LogType type)
     {
-        Instance.Pause();
-
         if (type == LogType.Error || type == LogType.Exception || type == LogType.Warning)
         {
+            Instance.Pause();
             DialogBox.Instance
                 .SetTitle("Необработаное системное сообщение")
                 .SetText(condition + "\r\n\r\n" + stackTrace, true)
@@ -360,21 +359,38 @@ public class GameManager : MonoBehaviour
     public class LevelInfo
     {
         public Ground.GroundType GroundType { get; private set; } = Ground.GroundType.GRASSLAND;
+        /// <summary>
+        /// Текущий уровень на текущем типе уровней
+        /// </summary>
         public int Level { get; private set; }
+        /// <summary>
+        /// Максимальное количество уровней на одном типе уровней
+        /// </summary>
+        public int MaxLevel { get { return 10; } }
+        /// <summary>
+        /// Текущий уровень включая все уровни всех типов (типа сквозная нумерация)
+        /// </summary>
         public int WholeLevel { get; private set; }
+        /// <summary>
+        /// Суммарное максимальное количество уровней
+        /// </summary>
+        public int MaxWholeLevel { get; private set; }
+
+        public float WholeLevelT { get { return (float)WholeLevel / MaxWholeLevel; } }
 
         public LevelInfo()
         {
-            Level = 1;
-            WholeLevel = 0;
+            Level = 0;
+            WholeLevel = 10;
             GroundType = Ground.GroundType.GRASSLAND;
+            MaxWholeLevel = Enum.GetValues(typeof(Ground.GroundType)).Length * MaxLevel;
         }       
 
         public void NextLevel()
         {
             WholeLevel++;
             Level++;
-            if (Level >= 5)
+            if (Level >= MaxLevel)
             {
                 var v = (Enum.GetValues(typeof(Ground.GroundType)) as Ground.GroundType[]).ToList();
                 var i = v.IndexOf(GroundType);

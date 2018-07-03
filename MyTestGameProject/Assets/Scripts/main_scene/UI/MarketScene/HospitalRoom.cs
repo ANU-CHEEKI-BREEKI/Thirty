@@ -69,7 +69,7 @@ public class HospitalRoom : MonoBehaviour
         List<Unit> strong = new List<Unit>();
         var pos = Squad.playerSquadInstance.UnitPositions;
         int cnt = pos.Count;
-        float unitHealth = Squad.playerSquadInstance.UnitStats.Health;
+        float unitHealth = Squad.playerSquadInstance.DefaultUnitStats.Health;
         float health;
         switch (healTarget.value)
         {
@@ -124,7 +124,7 @@ public class HospitalRoom : MonoBehaviour
     {
         var pos = Squad.playerSquadInstance.UnitPositions;
         int cnt = pos.Count;
-        float unitHealth = Squad.playerSquadInstance.UnitStats.Health;
+        float unitHealth = Squad.playerSquadInstance.DefaultUnitStats.Health;
 
         float neededHealth = 0;
         for (int i = 0; i < cnt; i++)
@@ -158,7 +158,7 @@ public class HospitalRoom : MonoBehaviour
             float avg = health / cnt;
             for (int i = 0; i < cnt; i++)
             {
-                float need = units[i].squad.UnitStats.Health - units[i].Stats.Health;
+                float need = units[i].squad.DefaultUnitStats.Health - units[i].Stats.Health;
                 if (avg > need)
                 {
                     units[i].Heal(need);

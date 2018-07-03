@@ -163,7 +163,7 @@ public class PlayerSquadController : MonoBehaviour,  IPointerDownHandler, IPoint
             x = sinAngles[i] * cicleCastRadius + lookPosition.x;
             y = cosAngles[i] * cicleCastRadius + lookPosition.y;
             
-            circlreSegments[i] = new Vector3(x, y, -9);
+            circlreSegments[i] = new Vector3(x, y, -1);
         }
     }
 

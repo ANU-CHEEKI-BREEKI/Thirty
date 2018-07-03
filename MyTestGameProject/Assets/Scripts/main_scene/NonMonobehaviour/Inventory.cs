@@ -17,11 +17,12 @@ public class Inventory
     EquipmentStack shieldStack;
     EquipmentStack weaponStack;
 
+    [Header("StartEquipment")]
     [SerializeField] Equipment helmet;
     [SerializeField] Equipment body;
     [SerializeField] Equipment shield;
     [SerializeField] Equipment weapon;
-
+    [Space]
     [SerializeField] SkillStack firstSkill;
     [SerializeField] SkillStack secondSkill;
     [SerializeField] ConsumableStack firstConsumable;
@@ -43,12 +44,14 @@ public class Inventory
                 helmetStack = new EquipmentStack()
                 {
                     EquipmentMainProperties = helmet.MainPropertie,
-                    EquipmentStats = helmet.Stats
+                    EquipmentStats = helmet.Stats                    
                 };
             return helmetStack;
         }
         set
         {
+            if (helmetStack == null)
+                helmetStack = Helmet;
             if (value == null)
             {
                 helmetStack.EquipmentMainProperties = helmetNone.MainPropertie;
@@ -76,6 +79,8 @@ public class Inventory
         }
         set
         {
+            if (bodyStack == null)
+                bodyStack = Body;
             if (value == null)
             {
                 bodyStack.EquipmentMainProperties = bodyNone.MainPropertie;
@@ -102,6 +107,8 @@ public class Inventory
         }
         set
         {
+            if (shieldStack == null)
+                shieldStack = Shield;
             if (value == null)
             {
                 shieldStack.EquipmentMainProperties = shieldNone.MainPropertie;
@@ -128,6 +135,8 @@ public class Inventory
         }
         set
         {
+            if (weaponStack == null)
+                weaponStack = Weapon;
             if (value == null)
                 throw new Exception("Нельзя убрать оружие!!!");
 
@@ -137,10 +146,10 @@ public class Inventory
             EquipmentChanged(weaponStack);
         }
     }
-    public SkillStack FirstSkill { get { return firstSkill; } set { firstSkill = value; } }
-    public SkillStack SecondSkill { get { return secondSkill; } set { secondSkill = value; } }
-    public ConsumableStack FirstConsumable { get { return firstConsumable; } set { firstConsumable = value; } }
-    public ConsumableStack SecondConsumable { get { return secondConsumable; } set { secondConsumable = value; } }
+    public SkillStack FirstSkill { get { return firstSkill; } set { if (value == null) firstSkill.Skill = null; else firstSkill = value; } }
+    public SkillStack SecondSkill { get { return secondSkill; } set { if (value == null) secondSkill.Skill = null; else secondSkill = value; } }
+    public ConsumableStack FirstConsumable { get { return firstConsumable; } set { if (value == null) firstConsumable.Consumable = null; else firstConsumable = value; } }
+    public ConsumableStack SecondConsumable { get { return secondConsumable; } set { if (value == null) secondConsumable.Consumable = null; else secondConsumable = value; } }
 
     void EquipmentChanged(EquipmentStack eq)
     {

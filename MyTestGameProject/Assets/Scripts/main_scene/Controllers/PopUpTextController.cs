@@ -112,6 +112,12 @@ public class PopUpTextController : MonoBehaviour
         txt.text = textProp.Text;
         txt.color = textProp.Color;
 
+        //аккуратно тут
+        if(fontSize == null)
+            txt.fontSize = mainCamera.orthographicSize / 1.7f;
+        else
+            txt.fontSize = fontSize.Value;
+
         textes.Add(new Item() { properties = textProp, textUI = txt });
     }
     

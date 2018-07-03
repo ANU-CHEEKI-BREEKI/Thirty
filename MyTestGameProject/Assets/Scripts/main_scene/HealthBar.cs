@@ -12,8 +12,9 @@ public class HealthBar : MonoBehaviour
     [SerializeField] TextMeshProUGUI textCount;
 
     [SerializeField] Squad squad;
+    public Squad Squad { get { return squad; } set { squad = value; } }
 
-	void Awake()
+    void Start()
     {
         if(squad == null)
             squad = Squad.playerSquadInstance;
@@ -30,8 +31,11 @@ public class HealthBar : MonoBehaviour
 
     private void OnEnable()
     {
-        DrawHpBar(squad.SquadHealth);
-        DrawCountUnits(squad.UnitCount);
+        if (squad != null)
+        {
+            DrawHpBar(squad.SquadHealth);
+            DrawCountUnits(squad.UnitCount);
+        }
     }
 
     void DrawCountUnits(int newCount)
@@ -56,7 +60,7 @@ public class HealthBar : MonoBehaviour
     {
         if (squad != null && gameObject.activeInHierarchy)
         {
-            float maxHp = squad.UnitStats.Health * squad.FULL_SQUAD_UNIT_COUNT;
+            float maxHp = squad.DefaultUnitStats.Health * squad.FULL_SQUAD_UNIT_COUNT;
 
             float t = squadHealth / maxHp;
             Color color;

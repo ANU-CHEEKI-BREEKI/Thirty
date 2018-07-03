@@ -77,10 +77,10 @@ public class DropToConsumable : ADropToMe
         switch (consumableCellNum)
         {
             case SkillNum.FIRS:
-                Squad.playerSquadInstance.Inventory.FirstConsumable.Consumable = null;
+                Squad.playerSquadInstance.Inventory.FirstConsumable = null;
                 break;
             case SkillNum.SECOND:
-                Squad.playerSquadInstance.Inventory.SecondConsumable.Consumable = null;
+                Squad.playerSquadInstance.Inventory.SecondConsumable = null;
                 break;
         }
 
