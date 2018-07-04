@@ -5,9 +5,6 @@ using UnityEngine;
 
 public class Unit : MonoBehaviour
 {
-    static Transform DroppedItemsContainer;
-    static Transform DeatUnitsContainer;
-
     static public event Action OnAnyUnitDeath;
 
     [HideInInspector] public UnitPosition TargetMovePositionObject;
@@ -15,8 +12,6 @@ public class Unit : MonoBehaviour
     [HideInInspector] public Squad squad;
 
     [SerializeField] UnitPosition unitPosOriginal;
-    [SerializeField] GameObject DroppedItemOriginal;
-    
 
     [Space] [SerializeField] Transform shadow;
     public GameObject Shadow { get { return shadow.gameObject; } }
@@ -395,15 +390,7 @@ public class Unit : MonoBehaviour
             squad.UnitDeath(this);
         }
 
-        if (DeatUnitsContainer == null)
-        {
-            var alldeads = GameObject.Find("AllDeadUnits");
-            if (alldeads == null)
-                alldeads = new GameObject("AllDeadUnits");
-            DeatUnitsContainer = alldeads.transform;
-        }
-
-        ThisTransform.parent = DeatUnitsContainer;
+        DropingItemsManager.Instance.DropUnitCorp(this);
 
         Selected = false;
 
@@ -872,17 +859,7 @@ public class Unit : MonoBehaviour
         if (stack.Count > 0)
         {            
             stack.PopItems(1);
-
-            if(DroppedItemsContainer == null)
-            {
-                var dropitcont = GameObject.Find("DroppedItemsContainer");
-                if (dropitcont == null)
-                    dropitcont = new GameObject("DroppedItemsContainer");
-                DroppedItemsContainer = dropitcont.transform;
-            }
-
-            DroppedItem di = Instantiate(DroppedItemOriginal, ThisTransform.position, ThisTransform.rotation, DroppedItemsContainer).GetComponent<DroppedItem>();
-            di.Stack = new EquipmentStack(stack.EquipmentMainProperties, stack.EquipmentStats);
+            DropingItemsManager.Instance.DropEquipment(new EquipmentStack(stack, 1), ThisTransform);
         }
     }
 
@@ -1074,7 +1051,8 @@ public class Unit : MonoBehaviour
                 new SoundChannel.ClipSet(
                     SoundManager.Instance.SoundClipsContainer.FX.TakeDamage[UnityEngine.Random.Range(0, SoundManager.Instance.SoundClipsContainer.FX.TakeDamage.Length - 1)],
                     false,
-                    0.2f
+                    0.2f,
+                    ThisTransform.position
                 ),
                 SoundManager.SoundType.FX
             );

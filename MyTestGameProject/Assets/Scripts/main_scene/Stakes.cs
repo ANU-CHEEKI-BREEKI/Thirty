@@ -20,7 +20,7 @@ public class Stakes : MonoBehaviour
 
     bool canDamage = false;
 
-    private void Start()
+    private void Awake()
     {
         if (damagingTickRate < damagingDuration)
             throw new System.Exception("damagingTickRate должно быть больше или равно damagingDuration");
@@ -28,7 +28,31 @@ public class Stakes : MonoBehaviour
         colliders = GetComponents<Collider2D>();
 
         durabilityble = GetComponent<Durabilityable>();
+
+        if(durabilityble != null)
+            durabilityble.OnBreak += Durabilityble_OnBreak;
+    }
+
+    private void Durabilityble_OnBreak()
+    {
+        Destroy(this);
+
+        int cnt = colliders.Length;
+        for (int i = 0; i < cnt; i++)
+            Destroy(colliders[i]);
+
+        Destroy(GetComponent<PlatformEffector2D>());
+    }
+
+    private void Start()
+    {
         StartCoroutine(SwitchDamaging());
+    }
+
+    void OnDestroy()
+    {
+        if(durabilityble != null)
+            durabilityble.OnBreak -= Durabilityble_OnBreak;
     }
 
     IEnumerator SwitchDamaging()
@@ -67,17 +91,6 @@ public class Stakes : MonoBehaviour
         unit.TakeHit(damage);
 
         if (durabilityble != null)
-        {
-            if (durabilityble.TakeDamage(damage.BaseDamage))
-            {
-                Destroy(this);
-
-                int cnt = colliders.Length;
-                for (int i = 0; i < cnt; i++)
-                    Destroy(colliders[i]);
-
-                Destroy(GetComponent<PlatformEffector2D>());
-            }
-        }
+            durabilityble.TakeDamage(damage.BaseDamage);
     }
 }

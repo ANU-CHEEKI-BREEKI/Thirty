@@ -3,7 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[ExecuteInEditMode]
 public class Durabilityable : MonoBehaviour
 {
     /// <summary>
@@ -33,8 +32,14 @@ public class Durabilityable : MonoBehaviour
     SpriteRenderer renderer;
     Transform thisTransform;
 
-	void Start ()
+    public event Action OnBreak;
+
+    bool alive;
+
+    void Start()
     {
+        alive = true;
+
         if (maximumDurability < durability)
             throw new System.Exception("maximumDurability должно быть больше или равно durability");
         if (maximumDurability == 0)
@@ -46,6 +51,9 @@ public class Durabilityable : MonoBehaviour
         spritesCount = durabilitySprites.Length;
 
         SetSprite();
+
+        if (durability <= 0)
+            BreakDown();
     }
 
     /// <summary>
@@ -76,12 +84,23 @@ public class Durabilityable : MonoBehaviour
 
     public void BreakDown()
     {
-        durability = 0;
-        Destroy(this);
-        thisTransform.rotation = thisTransform.rotation * Quaternion.Euler(0, 0, brokenRrotation);
-        thisTransform.rotation = thisTransform.rotation * Quaternion.Euler(0, 0, UnityEngine.Random.Range(-brokenRotationRange, brokenRotationRange));
+        if (alive)
+        {
+            alive = false;
 
-        SetSprite(true);
+            if (OnBreak != null)
+            {
+                OnBreak();
+                OnBreak = null;
+            }
+
+            durability = 0;
+            Destroy(this);
+            thisTransform.rotation = thisTransform.rotation * Quaternion.Euler(0, 0, brokenRrotation);
+            thisTransform.rotation = thisTransform.rotation * Quaternion.Euler(0, 0, UnityEngine.Random.Range(-brokenRotationRange, brokenRotationRange));
+
+            SetSprite(true);
+        }
     }
 
     void SetSprite(bool broken = false)

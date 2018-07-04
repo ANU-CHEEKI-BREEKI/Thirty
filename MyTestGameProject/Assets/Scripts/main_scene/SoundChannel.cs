@@ -30,6 +30,10 @@ public class SoundChannel : MonoBehaviour
         AudioSource res = go.AddComponent<AudioSource>();
         res.playOnAwake = false;
 
+        res.spatialBlend = 1;
+        res.minDistance = 7;
+        res.maxDistance = 12;
+
         if (poolSources.Count + usedSources.Count > maxAudioSourceCount)
             Debug.Log("Было создано аудиосурсов больше чем установлено в настройках скрипта!!!");
 
@@ -207,11 +211,13 @@ public class SoundChannel : MonoBehaviour
             src.source.loop = clipSet.Loop;
             src.volumeDempfer = volume;
             src.Type = type;
+            src.source.transform.position = src.clipQueue.Peek().Position;
             src.Play();
 
             if (!src.source.loop)
             {
                 var clip = src.clipQueue.Dequeue();
+
                 if (loop)
                     src.clipQueue.Enqueue(clip);
 
@@ -303,12 +309,17 @@ public class SoundChannel : MonoBehaviour
         public AudioClip Clip { get; }
         public bool Loop { get; }
         public float Volume { get { return volumeDempfer; } }
+        public Vector2 Position { get; }
 
-        public ClipSet(AudioClip clip, bool loop = false, float volumeDempfer = 1)
+        public ClipSet(AudioClip clip, bool loop = false, float volumeDempfer = 1, Vector2? pos = null)
         {
             this.Clip = clip;
             this.volumeDempfer = volumeDempfer;
             this.Loop = loop;
+            if (pos != null)
+                Position = pos.Value;
+            else
+                Position = Vector2.zero;
         }
     }
 }

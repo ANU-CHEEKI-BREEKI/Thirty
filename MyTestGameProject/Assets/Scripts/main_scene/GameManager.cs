@@ -381,7 +381,7 @@ public class GameManager : MonoBehaviour
         public LevelInfo()
         {
             Level = 0;
-            WholeLevel = 10;
+            WholeLevel = 0;
             GroundType = Ground.GroundType.GRASSLAND;
             MaxWholeLevel = Enum.GetValues(typeof(Ground.GroundType)).Length * MaxLevel;
         }       

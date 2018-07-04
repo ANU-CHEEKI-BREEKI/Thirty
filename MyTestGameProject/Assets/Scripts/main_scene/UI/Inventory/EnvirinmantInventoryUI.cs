@@ -240,7 +240,10 @@ public class EnvirinmantInventoryUI : AInventoryUI
 
     private void FillEnvironmantInventoryIcons()
     {
-        for (int i = 0; i < inventory.Count; i++)
+        int cnt = inventory.Count;
+        if (cnt > envaironmentCells.Length)
+            cnt = envaironmentCells.Length;
+        for (int i = 0; i < cnt; i++)
         {
             SetImage(inventoryItemOriginal, envaironmentCells[i], inventory[i], true);
         }

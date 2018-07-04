@@ -67,6 +67,7 @@
     <Compile Include="Assets\2d-extras-master\Tilemap\Tiles\Random Tile\Scripts\RandomTile.cs" />
     <Compile Include="Assets\2d-extras-master\Tilemap\Tiles\Rule Tile\Scripts\RuleTile.cs" />
     <Compile Include="Assets\2d-extras-master\Tilemap\Tiles\Terrain Tile\Scripts\TerrainTile.cs" />
+    <Compile Include="Assets\Scripts\EditorHelperTools.cs" />
     <Compile Include="Assets\Scripts\main_scene\AddInfoPanelToSquad.cs" />
     <Compile Include="Assets\Scripts\main_scene\ArrowsValley.cs" />
     <Compile Include="Assets\Scripts\main_scene\BreakOnCollision.cs" />
@@ -80,6 +81,9 @@
     <Compile Include="Assets\Scripts\main_scene\Controllers\UnitAnimationController.cs" />
     <Compile Include="Assets\Scripts\main_scene\DebugCunvas.cs" />
     <Compile Include="Assets\Scripts\main_scene\DestroyOnAwake.cs" />
+    <Compile Include="Assets\Scripts\main_scene\DestroyOnAwakeWithChanse.cs" />
+    <Compile Include="Assets\Scripts\main_scene\DropIemsOnBreakDurabilityable.cs" />
+    <Compile Include="Assets\Scripts\main_scene\DropingItemsManager.cs" />
     <Compile Include="Assets\Scripts\main_scene\DroppedItem.cs" />
     <Compile Include="Assets\Scripts\main_scene\Durabilityable.cs" />
     <Compile Include="Assets\Scripts\main_scene\Exit.cs" />
@@ -153,6 +157,7 @@
     <Compile Include="Assets\Scripts\main_scene\PilumsVolley.cs" />
     <Compile Include="Assets\Scripts\main_scene\ProgressIndicator.cs" />
     <Compile Include="Assets\Scripts\main_scene\ScriptableObjects\SOSoundContainer.cs" />
+    <Compile Include="Assets\Scripts\main_scene\ScriptableObjects\SOSquadSpawnerResources\SOCount.cs" />
     <Compile Include="Assets\Scripts\main_scene\ScriptableObjects\SOSquadSpawnerResources\SOSquadSpawnerAISettingsResourse.cs" />
     <Compile Include="Assets\Scripts\main_scene\ScriptableObjects\SOSquadSpawnerResources\SOSquadSpawnerConsumablesResourse.cs" />
     <Compile Include="Assets\Scripts\main_scene\ScriptableObjects\SOSquadSpawnerResources\SOSquadSpawnerEquipmentResourse.cs" />
