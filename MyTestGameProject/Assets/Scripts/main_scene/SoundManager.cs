@@ -33,7 +33,12 @@ public class SoundManager : MonoBehaviour
         instance = this;
         DontDestroyOnLoad(gameObject);
 
-
+        var t = Enum.GetValues(typeof(SoundType)) as SoundType[];
+        for (int i = 0; i < t.Length; i++)
+        {
+            channels[i].name = t[i].ToString();
+            channels[i].Type = t[i];
+        }
     }
     
     public void SetChannelAudioSourcesCount(SoundType type, int count)

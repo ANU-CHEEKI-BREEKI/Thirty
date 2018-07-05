@@ -205,7 +205,23 @@
   <string name = "toast_cant_drop_weapon">Нельзя снимать оружие</string>
   <string name = "toast_cant_drop">Невозможно снять</string>
   
-    
+  
+  
+  <string name = "next">Следующий</string>
+  <string name = "previous">Предыдущий</string>
+  <string name = "close">Закрыть</string>
+  
+  <string name = "button_inv">Кнопка отображения инвентаря</string>
+  <string name = "button_tips_review">Для того чтобы ещё раз просмотреть ранее показанные подсказки, нажмите на эту кнопку</string>
+  <string name = "button_formation">Переключатель построения отряда</string>
+  <string name = "modyfyers_panel">Панель модификаторов, действующих на отряд</string>
+  <string name = "button_minimap">Кнопка отображения мини-карты</string>
+  <string name = "inv_used_equip">Надетая экипировка</string>
+  <string name = "inv_cells_for_store">Ячейки для хранения предметов</string>
+  <string name = "inv_items_on_ground">Предметы на земле</string>
+  <string name = "all_tips_review">Все подсказки</string>
+  
+  
 
   <string name = "tip_try_to_buy_equip_and_consumables">Попробуйте перед битвой купить лучшее снаряжение и расходуемые предметы. Это поможет вам пройти дальше и победить!</string>
   <string name = "tip_try_to_train_squad_and_skills">Попробуйте перед битвой улучшить характеристики отряда, выбрать и улучшить умения отряда. Это поможет вам пройти дальше и победить!</string>
@@ -224,7 +240,7 @@
   <string name = "tip_consumables">В данный момент вам повезло! У вас есть пилумы! 
 Пилумы - это расходуемые предметы. Их можно покупать в магазине между уровнями. Там же, можно изучать умения отряда. Расходуемые предметы и умения применяются аналогично. Чтобы узнать как - посмотрите их описание, кликнув на иконку в инвентаре</string>
   <string name = "tip_default_formation">По умолчанию отряд построен свободным строем</string>
-  <string name = "tip_destroy_marked_enemy">Уничтожьте отмеченный вражеский отряд</string>
+  <string name = "tip_destroy_marked_enemy">Уничтожте отмеченный вражеский отряд</string>
   <string name = "tip_drag_equipment">Чтобы поместить экипировку в инвентарь или убрать из него, перетяните иконку желаемого предмета в новое место.</string>
   <string name = "tip_dropped_equipment">После смерти любого юнита, на земле оказывается его экипировка.
 Экипировку можно поднять и поместить в инвентарь, но не больше чем юнитов в вашем отряде на одну ячейку.
@@ -235,7 +251,7 @@
 Перейдите к указаной точке</string>
   <string name = "tip_look_to_enemy_and_reform_phalanx">Повернитесь к врагу лицом, а затем, перестройтесь фалангой.
 
-Уничтожьте врага</string>
+Уничтожте врага</string>
   <string name = "tip_minimap_info">Для ориентирования на местности и передвижения на большие расстояния, у вас есть возможность просматривать мини-кару.</string>
   <string name = "tip_minimap_how_to_use">Откройте мини-кару, зажав соответствующую кнопку справа вверху.
 Для указания отряду точки перемещения, коснитесь к нужному месту прямо на мини-каре</string>

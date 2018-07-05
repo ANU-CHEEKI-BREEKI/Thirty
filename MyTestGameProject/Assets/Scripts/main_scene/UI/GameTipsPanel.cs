@@ -40,7 +40,7 @@ public class GameTipsPanel : MonoBehaviour
         {
             SetAnimatedImage(tip.AnimatedImageOriginal);
         }
-        else if(tip.Images.Length > 0)
+        else if (tip.Images.Length > 0)
         {
             foreach (var img in tip.Images)
                 SetImage(img, tip.Direction);
@@ -54,7 +54,7 @@ public class GameTipsPanel : MonoBehaviour
         if (GetComponent<LayoutGroup>() != null)
             ResetTipPanelLayout(true);
 
-        if(tip.Direction == SOTip.Directions.HORISONTAL)
+        if (tip.Direction == SOTip.Directions.HORISONTAL)
         {
             var layout = gameObject.AddComponent<HorizontalLayoutGroup>();
             layout.childAlignment = TextAnchor.MiddleCenter;

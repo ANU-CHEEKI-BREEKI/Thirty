@@ -7,29 +7,107 @@ using UnityEngine.UI;
 
 public class TutorialPanel : MonoBehaviour
 {
-    [Header("UI")]
+    [Header("UI", order = 0)]
+    [Header("Main tips UI", order = 1)]
     [SerializeField] GameTipsPanel tipsPanel;
     [SerializeField] Button buttonOk;
     [SerializeField] CanvasGroup panelCanvasGroup;
     [SerializeField] TextMeshProUGUI currentOrderText;
 
-    [Header("Script")]
+    [Header("ALL tips review UI", order = 2)]
+    [SerializeField] Button buttonOpenReview;
+    [SerializeField] Button buttonCloseReview;
+    [SerializeField] Button buttonPrev;
+    [SerializeField] Button buttonNext;
+    [SerializeField] GameObject textNumbersPanel;
+    [SerializeField] TextMeshProUGUI currentNumber;
+    [SerializeField] TextMeshProUGUI allNumber;
+
+    [Header("Script", order = 3)]
+    [Header("Tips values", order = 4)]
     [SerializeField] TriggerTip[] triggerTips;
 
     TriggerTip lastTip;
 
     List<int> anotherTipTriggersId;
+    List<TriggerTip> tipsToReview;
+    int reviewIndex;
 
     void Start ()
     {
         anotherTipTriggersId = new List<int>();
+        tipsToReview = new List<TriggerTip>();
 
-        buttonOk.onClick.AddListener(()=> 
-        {
-            tipsPanel.ResetTipPanelLayout();
-            GameManager.Instance.Resume();
-            Hide();            
-        });
+        buttonOpenReview.onClick.AddListener( 
+            ()=>
+            {
+                reviewIndex = tipsToReview.Count - 1;
+                if (reviewIndex >= 0)
+                {
+                    SetTip(tipsToReview[reviewIndex], true);
+                    Show();
+                    buttonOk.gameObject.SetActive(false);
+
+                    buttonPrev.gameObject.SetActive(true);
+                    buttonNext.gameObject.SetActive(true);
+                    buttonPrev.interactable = reviewIndex > 0;
+                    buttonNext.interactable = reviewIndex < tipsToReview.Count - 1;
+
+                    textNumbersPanel.gameObject.SetActive(true);
+                    currentNumber.text = (tipsToReview.Count).ToString(StringFormats.intNumber);
+                    allNumber.text = (tipsToReview.Count).ToString(StringFormats.intNumber);
+
+                    GameManager.Instance.Pause();
+                }
+            }
+        );
+
+        buttonCloseReview.onClick.AddListener(
+            () =>
+            {
+                Hide();
+                GameManager.Instance.Resume();
+            }
+        );
+
+        buttonPrev.onClick.AddListener(
+            () =>
+            {
+                if(reviewIndex > 0)
+                {
+                    reviewIndex--;
+                    SetTip(tipsToReview[reviewIndex], true);
+                    currentNumber.text = (reviewIndex + 1).ToString(StringFormats.intNumber);
+                }
+                buttonPrev.interactable = reviewIndex > 0;
+                buttonNext.interactable = reviewIndex < tipsToReview.Count - 1;
+            }
+        );
+
+        buttonNext.onClick.AddListener(
+            () =>
+            {
+                if (reviewIndex < tipsToReview.Count - 1)
+                {
+                    reviewIndex++;
+                    SetTip(tipsToReview[reviewIndex], true);
+                    currentNumber.text = (reviewIndex + 1).ToString(StringFormats.intNumber);
+
+                    buttonPrev.interactable = reviewIndex > 0;
+                    buttonNext.interactable = reviewIndex < tipsToReview.Count - 1;
+                    
+                }
+            }
+        );
+
+        buttonOk.onClick.AddListener(
+            () =>
+            {
+                tipsPanel.ResetTipPanelLayout();
+                GameManager.Instance.Resume();
+                Hide();
+            }
+        );
 
         int cnt = triggerTips.Length;
         for (int i = 0; i < cnt; i++)
@@ -80,62 +158,68 @@ public class TutorialPanel : MonoBehaviour
         tipsPanel.ResetTipPanelLayout();
         Hide();       
     }
-	
+
     bool Action(TriggerTip ttip)
     {
         bool res = true;
-        if(ttip.requiresExequtePreviousTrigger)
+        if (ttip.requiresExequtePreviousTrigger)
             res = triggerTips[ttip.previousTriggerIndex].executed;
 
         if (res)
         {
             if (!ttip.isLastTrigger)
             {
-                SetTip(ttip);
-
-                var arr = ttip.toHide;
-                var size = arr.Length;
-                for (int j = 0; j < size; j++)
+                if (tipsPanel != null)// костыль
                 {
-                    if (arr[j] != null)
-                    {
-                        arr[j].alpha = 0;
-                        arr[j].blocksRaycasts = false;
-                    }
-                }
-                arr = ttip.toShow;
-                size = arr.Length;
-                for (int j = 0; j < size; j++)
-                {
-                    if (arr[j] != null)
-                    {
-                        arr[j].alpha = 1;
-                        arr[j].blocksRaycasts = true;
-                    }
-                }
-                arr = ttip.toEnable;
-                size = arr.Length;
-                for (int j = 0; j < size; j++)
-                    if (arr[j] != null)
-                        arr[j].interactable = true;
-                arr = ttip.toDisable;
-                size = arr.Length;
-                for (int j = 0; j < size; j++)
-                    if (arr[j] != null)
-                        arr[j].interactable = false;
-                var arrGO = ttip.toActivate;
-                size = arrGO.Length;
-                for (int j = 0; j < size; j++)
-                    if (arrGO[j] != null)
-                        arrGO[j].SetActive(true);
-                arrGO = ttip.toDeactivate;
-                size = arrGO.Length;
-                for (int j = 0; j < size; j++)
-                    if (arrGO[j] != null)
-                        arrGO[j].SetActive(false);
+                    SetTip(ttip);
 
-                Show();
-                GameManager.Instance.Pause();
+                    var arr = ttip.toHide;
+                    var size = arr.Length;
+                    for (int j = 0; j < size; j++)
+                    {
+                        if (arr[j] != null)
+                        {
+                            arr[j].alpha = 0;
+                            arr[j].blocksRaycasts = false;
+                        }
+                    }
+                    arr = ttip.toShow;
+                    size = arr.Length;
+                    for (int j = 0; j < size; j++)
+                    {
+                        if (arr[j] != null)
+                        {
+                            arr[j].alpha = 1;
+                            arr[j].blocksRaycasts = true;
+                        }
+                    }
+                    arr = ttip.toEnable;
+                    size = arr.Length;
+                    for (int j = 0; j < size; j++)
+                        if (arr[j] != null)
+                            arr[j].interactable = true;
+                    arr = ttip.toDisable;
+                    size = arr.Length;
+                    for (int j = 0; j < size; j++)
+                        if (arr[j] != null)
+                            arr[j].interactable = false;
+                    var arrGO = ttip.toActivate;
+                    size = arrGO.Length;
+                    for (int j = 0; j < size; j++)
+                        if (arrGO[j] != null)
+                            arrGO[j].SetActive(true);
+                    arrGO = ttip.toDeactivate;
+                    size = arrGO.Length;
+                    for (int j = 0; j < size; j++)
+                        if (arrGO[j] != null)
+                            arrGO[j].SetActive(false);
+
+                    if(ttip.dublicateToReview)
+                        tipsToReview.Add(ttip);
+
+                    Show();
+                    GameManager.Instance.Pause();
+                }
             }
             else
             {
@@ -151,7 +235,18 @@ public class TutorialPanel : MonoBehaviour
     {
         panelCanvasGroup.alpha = 0;
         panelCanvasGroup.blocksRaycasts = false;
-        currentOrderText.enabled = true;
+
+        tipsPanel.ResetTipPanelLayout();
+
+        if (lastTip.screenTextDublicate)
+        {
+            if (lastTip.tip.IsLocalisedText)
+                currentOrderText.text = Localization.GetString(lastTip.tip.TipText);
+            else
+                currentOrderText.text = lastTip.tip.TipText;
+
+            currentOrderText.enabled = true;
+        }
 
         ExequteAnotherTipTrigger();
     }
@@ -179,28 +274,25 @@ public class TutorialPanel : MonoBehaviour
 
     void Show()
     {
+        buttonOk.gameObject.SetActive(true);
+
+        buttonPrev.gameObject.SetActive(false);
+        buttonNext.gameObject.SetActive(false);
+
+        textNumbersPanel.gameObject.SetActive(false);
+
         panelCanvasGroup.alpha = 1;
         panelCanvasGroup.blocksRaycasts = true;
+
         currentOrderText.enabled = false;
     }
-
-    void SetTip(TriggerTip ttip)
+    
+    void SetTip(TriggerTip ttip, bool itsReview = false)
     {
-        if (ttip.screenTextDublicate)
-        {
-            if (ttip.tip.IsLocalisedText)
-                currentOrderText.text = Localization.GetString(ttip.tip.TipText);
-            else
-                currentOrderText.text = ttip.tip.TipText;
-        }
-        else
-        {
-            currentOrderText.text = string.Empty;
-        }
-
         tipsPanel.SetTip(ttip.tip);
 
-        lastTip = ttip;
+        if (!itsReview)
+            lastTip = ttip;
     }
 
     [ContextMenu("RemoveUselessItems")]
@@ -244,6 +336,7 @@ public class TutorialPanel : MonoBehaviour
         public GOTriggerEvent.TriggerType triggerType;
         public SOTip tip;
         public bool screenTextDublicate;
+        public bool dublicateToReview;
         [Space]
         public bool needExequteAnotherTriggerAftarThat;
         public int anotherTriggerIndex;

@@ -11,11 +11,13 @@ public class AiSquadController : MonoBehaviour
     [SerializeField] AiSquadBehaviour mode = AiSquadBehaviour.DEFEND;
     public AiSquadBehaviour Mode { get { return mode; } set { mode = value; } }
 
-    [Space] [ContextMenuItem("Reset values", "ResetDistansesSettings")]
+    [Space]
+    [ContextMenuItem("Reset values", "ResetDistansesSettings")]
     [SerializeField] DistancesSettings distancesOptions;
     public DistancesSettings DistancesOptions { get { return distancesOptions; } set { distancesOptions = value; } }
 
-    [Space] [ContextMenuItem("Reset values", "ResetReformSettings")]
+    [Space]
+    [ContextMenuItem("Reset values", "ResetReformSettings")]
     [SerializeField] ReformSettings reformOptions;
     public ReformSettings ReformOptions { get { return reformOptions; } set { reformOptions = value; } }
 
@@ -345,24 +347,23 @@ public class AiSquadController : MonoBehaviour
     }
 
     [Serializable]
-    public struct DistancesSettings : IResetable
+    public struct DistancesSettings
     {
-        [Range(0, 1)] [SerializeField] float slowApdateDeltaTime;// = 0.2f;
+        [Range(0, 1)] [SerializeField] float slowApdateDeltaTime;
         public float SlowApdateDeltaTime { get { return slowApdateDeltaTime; } }
 
-        [Range(0, 5)] [SerializeField] float attackDeltaTime;// = 1f;
+        [Range(0, 5)] [SerializeField] float attackDeltaTime;
         public float AttackDeltaTime { get { return attackDeltaTime; } }
 
-        [Range(1, 200)] [SerializeField] float distanceToActivateSquad;// = 50;
+        [Range(1, 200)] [SerializeField] float distanceToActivateSquad;
         public float DistanceToActivateSquad { get { return distanceToActivateSquad; } }
 
-        [Range(1, 50)] [SerializeField] float radiusOfDefendArea;// = 15;
+        [Range(1, 50)] [SerializeField] float radiusOfDefendArea;
         public float RadiusOfDefendArea { get { return radiusOfDefendArea; } }
 
-        [Range(1, 50)] [SerializeField] float radiusOfAttackArea;// = 30;
+        [Range(1, 50)] [SerializeField] float radiusOfAttackArea;
         public float RadiusOfAttackArea { get { return radiusOfAttackArea; } }
         
-        [ContextMenu("Reset")]
         public void Reset()
         {
             slowApdateDeltaTime = 0.2f;
@@ -374,37 +375,36 @@ public class AiSquadController : MonoBehaviour
     }
 
     [Serializable]
-    public struct ReformSettings : IResetable
+    public struct ReformSettings
     {
         [Tooltip("Задержка перед перестроением")]
-        [SerializeField] float reformLatency;// = 0.06f;
+        [SerializeField] float reformLatency;
         public float ReformLatency { get { return reformLatency; } }
 
         [Space]
-        [SerializeField] bool canReformRanks;// = true;
+        [SerializeField] bool canReformRanks;
         public bool CanReformRanks { get { return canReformRanks; } }
 
         [Tooltip("Время невозможности перестроения после перестроения свободным строем")]
-        [SerializeField] float cooldownAfterReformToRanks;// = 1f;
+        [SerializeField] float cooldownAfterReformToRanks;
         public float CooldownAfterReformToRanks { get { return cooldownAfterReformToRanks; } }
 
         [Space]
-        [SerializeField] bool canReformPhalanx;// = true;
+        [SerializeField] bool canReformPhalanx;
         public bool CanReformPhalanx { get { return canReformPhalanx; } }
 
         [Tooltip("Время невозможности перестроения после перестроения фалангой")]
-        [SerializeField] float cooldownAfterReformToPhalanx;// = 1f;
+        [SerializeField] float cooldownAfterReformToPhalanx;
         public float CooldownAfterReformToPhalanx { get { return cooldownAfterReformToPhalanx; } }
 
         [Space]
-        [SerializeField] bool canReformShields;// = true;
+        [SerializeField] bool canReformShields;
         public bool CanReformShields { get { return canReformShields; } }
 
         [Tooltip("Время невозможности перестроения после перестроения черепахой")]
-        [SerializeField] float cooldownAfterReformToShields;// = 1f;
+        [SerializeField] float cooldownAfterReformToShields;
         public float CooldownAfterReformToShields { get { return cooldownAfterReformToShields; } }
 
-        [ContextMenu("Reset")]
         public void Reset()
         {
             reformLatency = 0.06f;

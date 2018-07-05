@@ -180,6 +180,18 @@ public sealed class LocalizedStrings
     public static string toast_stat_max_upgrade { get; private set; }
     public static string toast_cant_drop_weapon { get; private set; }
     public static string toast_cant_drop { get; private set; }
+    public static string next { get; private set; }
+    public static string previous { get; private set; }
+    public static string close { get; private set; }
+    public static string button_inv { get; private set; }
+    public static string button_tips_review { get; private set; }
+    public static string button_formation { get; private set; }
+    public static string modyfyers_panel { get; private set; }
+    public static string button_minimap { get; private set; }
+    public static string inv_used_equip { get; private set; }
+    public static string inv_cells_for_store { get; private set; }
+    public static string inv_items_on_ground { get; private set; }
+    public static string all_tips_review { get; private set; }
     public static string tip_try_to_buy_equip_and_consumables { get; private set; }
     public static string tip_try_to_train_squad_and_skills { get; private set; }
     public static string tip_barricades { get; private set; }

@@ -15,6 +15,8 @@ public class SoundChannel : MonoBehaviour
     /// </summary>
     List<AudioSourseSet> usedSources;
 
+    public SoundManager.SoundType Type { get; set; }
+
     void Awake()
     {
         poolSources = new List<AudioSourseSet>(maxAudioSourceCount);
@@ -30,9 +32,16 @@ public class SoundChannel : MonoBehaviour
         AudioSource res = go.AddComponent<AudioSource>();
         res.playOnAwake = false;
 
-        res.spatialBlend = 1;
-        res.minDistance = 7;
-        res.maxDistance = 12;
+        if (Type == SoundManager.SoundType.FX)
+        {
+            res.spatialBlend = 1;
+            res.minDistance = 7;
+            res.maxDistance = 12;
+        }
+        else
+        {
+            res.spatialBlend = 0;
+        }
 
         if (poolSources.Count + usedSources.Count > maxAudioSourceCount)
             Debug.Log("Было создано аудиосурсов больше чем установлено в настройках скрипта!!!");

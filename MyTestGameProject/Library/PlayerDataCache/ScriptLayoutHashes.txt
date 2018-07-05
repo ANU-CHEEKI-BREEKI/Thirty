@@ -1,6 +1,6 @@
 Android
 PlayerPath?
-C:/Users/ANU CHEEKI BREEKI/Desktop/Thirty.v.0.6a.apk
+C:/Users/ANU CHEEKI BREEKI/Desktop/Thirty.v.0.7a.apk
 SceneListBegin?
 Assets/Scenes/main_menu.unity
 Assets/Scenes/market.unity
@@ -28,7 +28,7 @@ ff05dcdf90651c3d98a9cad3df5e471e UnityEngine.Timeline.dll:UnityEngine.Timeline.C
 4d5e65da3e1954fb9c4e81fcda16c86c Assembly-CSharp.dll:.VolumeSlider
 9778b00922ba8aae9a3acf3ff3f34ff4 Assembly-CSharp.dll:.UILineRenderer
 ae73b18b07cd4c26aa5b511ba60ab9f3 Assembly-CSharp.dll:.LevelGeneradingProgress
-2fddb56232ced115f828384404adde7c Assembly-CSharp.dll:.TutorialPanel
+11e2f861a08f344f75abccac6698f861 Assembly-CSharp.dll:.TutorialPanel
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.TriggerConstraintShieldInPlayerInventory
 3fdbdc4938c540f7428b1f0276f07c59 Assembly-CSharp.dll:.PilumsVolley
 f278ec698acd7bb49ddccd048513d587 Assembly-CSharp.dll:.DialogBox
