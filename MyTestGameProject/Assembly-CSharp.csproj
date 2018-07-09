@@ -163,6 +163,8 @@
     <Compile Include="Assets\Scripts\main_scene\ScriptableObjects\SOSquadSpawnerResources\SOSquadSpawnerEquipmentResourse.cs" />
     <Compile Include="Assets\Scripts\main_scene\ScriptableObjects\SOSquadSpawnerResources\SOSquadSpawnerSkillsResourse.cs" />
     <Compile Include="Assets\Scripts\main_scene\ScriptableObjects\SOSquadSpawnerResources\SOSquadSpawnerSquadPropertiesResourse.cs" />
+    <Compile Include="Assets\Scripts\main_scene\ScriptableObjects\SOStatsModifier.cs" />
+    <Compile Include="Assets\Scripts\main_scene\ScriptableObjects\SOTerrainStatsModifier.cs" />
     <Compile Include="Assets\Scripts\main_scene\ScriptableObjects\SOTip.cs" />
     <Compile Include="Assets\Scripts\main_scene\ShowAllyUnitsHp.cs" />
     <Compile Include="Assets\Scripts\main_scene\SoundChannel.cs" />
@@ -171,6 +173,7 @@
     <Compile Include="Assets\Scripts\main_scene\SpriteOutline.cs" />
     <Compile Include="Assets\Scripts\main_scene\Stakes.cs" />
     <Compile Include="Assets\Scripts\main_scene\TerrainHeight.cs" />
+    <Compile Include="Assets\Scripts\main_scene\TerrainStatsModifier.cs" />
     <Compile Include="Assets\Scripts\main_scene\TerrainWalker.cs" />
     <Compile Include="Assets\Scripts\main_scene\Tutorial\ATriggerConstraint.cs" />
     <Compile Include="Assets\Scripts\main_scene\Tutorial\GOTriggerEvent.cs" />

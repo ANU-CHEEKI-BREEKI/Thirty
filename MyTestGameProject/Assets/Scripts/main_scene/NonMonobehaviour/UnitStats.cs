@@ -10,14 +10,35 @@ public struct UnitStats
     public const float MAX_DEFENCE = 0.9f;
     public const float MAX_MISSILE_BLOCK = 0.95f;
 
-    public const float NORMAL_EQUIPED_MASS = 75;
-    public const float NORMAL_NUDE_MASS = 60;
-
+    public enum EquipmentWeight
+    {
+        /// <summary>
+        /// если экипа весит меньше или равно VERY_LIGHT, то юнит считается очень легким
+        /// </summary>
+        VERY_LIGHT = 5,
+        /// <summary>
+        /// если экипа весит меньше или равно LIGHT, то юнит считается легким
+        /// </summary>
+        LIGHT = 10,
+        /// <summary>
+        /// если экипа весит меньше или равно MEDIUM, то юнит считается средним
+        /// </summary>
+        MEDIUM = 20,
+        /// <summary>
+        /// если экипа весит меньше или равно HEAVY, то юнит считается тежелым
+        /// </summary>
+        HEAVY = 25,
+        /// <summary>
+        /// если экипа весит больше HEAVY, то юнит считается очень тежелым
+        /// </summary>
+        VERY_HEAVY = int.MaxValue
+    }
+    
     [SerializeField] [Range(0, 200)] float health;
     public float Health { get { return health; } set { health = value; } }
 
-    [SerializeField] [Range(0, 200)] float mass;
-    public float Mass { get { return mass; } }
+    [SerializeField] [Range(0, 200)] float equipmentMass;
+    public float EquipmentMass { get { return equipmentMass; } }
 
     [SerializeField] [Range(0, 500)] float armour;
     public float Armour { get { return armour; } }
@@ -75,7 +96,7 @@ public struct UnitStats
         int equipCnt = equipmentStats.Length;
 
         for (i = 0; i < equipCnt; i++)
-            baseStats.mass += equipmentStats[i].Mass;
+            baseStats.equipmentMass += equipmentStats[i].Mass;
 
          k = 1;
         for (i = 0; i < equipCnt; i++)
@@ -174,166 +195,146 @@ public struct UnitStats
         return baseStats;
     }
 
-    public static UnitStats ModifyStats(UnitStats baseStats, UnitStatsModifyer modifyer, UnitStatsModifyer.UseType usetype = UnitStatsModifyer.UseType.APPLY)
+    public static UnitStats ModifyStats(UnitStats baseStats, UnitStatsModifier modifyer, UnitStatsModifier.UseType usetype = UnitStatsModifier.UseType.APPLY)
     {
-        if (usetype == UnitStatsModifyer.UseType.APPLY)
+        if (usetype == UnitStatsModifier.UseType.APPLY)
         {
-            if (modifyer.Mass.VType == UnitStatsModifyer.Modifyer.ValueType.UNIT)
-                baseStats.mass += modifyer.Mass.Value;
-            else
-                baseStats.mass *= 1 + modifyer.Mass.Value;
-
-            if (modifyer.Attack.VType == UnitStatsModifyer.Modifyer.ValueType.UNIT)
+            if (modifyer.Attack.VType == UnitStatsModifier.Modifyer.ValueType.UNIT)
                 baseStats.attack += modifyer.Attack.Value;
             else
                 baseStats.attack *= 1 + modifyer.Attack.Value;
 
-            if (modifyer.Defence.VType == UnitStatsModifyer.Modifyer.ValueType.UNIT)
+            if (modifyer.Defence.VType == UnitStatsModifier.Modifyer.ValueType.UNIT)
                 baseStats.defence += modifyer.Defence.Value;
             else
                 baseStats.defence *= 1 + modifyer.Defence.Value;
 
-            if (modifyer.Armour.VType == UnitStatsModifyer.Modifyer.ValueType.UNIT)
+            if (modifyer.Armour.VType == UnitStatsModifier.Modifyer.ValueType.UNIT)
                 baseStats.armour += modifyer.Armour.Value;
             else
                 baseStats.armour *= 1 + modifyer.Armour.Value;
 
-            if (modifyer.MissileBlock.VType == UnitStatsModifyer.Modifyer.ValueType.UNIT)
+            if (modifyer.MissileBlock.VType == UnitStatsModifier.Modifyer.ValueType.UNIT)
                 baseStats.missileBlock += modifyer.MissileBlock.Value;
             else
                 baseStats.missileBlock *= 1 + modifyer.MissileBlock.Value;
 
             float armDmg = baseStats.damage.ArmourDamage;
-            if (modifyer.ArmourDamage.VType == UnitStatsModifyer.Modifyer.ValueType.UNIT)
+            if (modifyer.ArmourDamage.VType == UnitStatsModifier.Modifyer.ValueType.UNIT)
                 armDmg += modifyer.ArmourDamage.Value;
             else
                 armDmg *= 1 + modifyer.ArmourDamage.Value;
 
             float baseDmg = baseStats.damage.BaseDamage;
-            if (modifyer.BaseDamage.VType == UnitStatsModifyer.Modifyer.ValueType.UNIT)
+            if (modifyer.BaseDamage.VType == UnitStatsModifier.Modifyer.ValueType.UNIT)
                 baseDmg += modifyer.BaseDamage.Value;
             else
                 baseDmg *= 1 + modifyer.BaseDamage.Value;
 
             baseStats.damage = new Damage(baseDmg, armDmg);
-
-            if (modifyer.AttackDistance.VType == UnitStatsModifyer.Modifyer.ValueType.UNIT)
-                baseStats.attackDistance += modifyer.AttackDistance.Value;
-            else
-                baseStats.attackDistance *= 1 + modifyer.AttackDistance.Value;
-
-            if (modifyer.DefenceHalfSector.VType == UnitStatsModifyer.Modifyer.ValueType.UNIT)
+            
+            if (modifyer.DefenceHalfSector.VType == UnitStatsModifier.Modifyer.ValueType.UNIT)
                 baseStats.defenceHalfSector += modifyer.DefenceHalfSector.Value;
             else
                 baseStats.defenceHalfSector *= 1 + modifyer.DefenceHalfSector.Value;
 
-            if (modifyer.Speed.VType == UnitStatsModifyer.Modifyer.ValueType.UNIT)
+            if (modifyer.Speed.VType == UnitStatsModifier.Modifyer.ValueType.UNIT)
                 baseStats.speed += modifyer.Speed.Value;
             else
                 baseStats.speed *= 1 + modifyer.Speed.Value;
 
-            if (modifyer.Acceleration.VType == UnitStatsModifyer.Modifyer.ValueType.UNIT)
+            if (modifyer.Acceleration.VType == UnitStatsModifier.Modifyer.ValueType.UNIT)
                 baseStats.acceleration += modifyer.Acceleration.Value;
             else
                 baseStats.acceleration *= 1 + modifyer.Acceleration.Value;
 
-            if (modifyer.RotationSpeed.VType == UnitStatsModifyer.Modifyer.ValueType.UNIT)
+            if (modifyer.RotationSpeed.VType == UnitStatsModifier.Modifyer.ValueType.UNIT)
                 baseStats.rotationSpeed += modifyer.RotationSpeed.Value;
             else
                 baseStats.rotationSpeed *= 1 + modifyer.RotationSpeed.Value;
 
-            if (modifyer.ChargeImpact.VType == UnitStatsModifyer.Modifyer.ValueType.UNIT)
+            if (modifyer.ChargeImpact.VType == UnitStatsModifier.Modifyer.ValueType.UNIT)
                 baseStats.chargeImpact += modifyer.ChargeImpact.Value;
             else
                 baseStats.chargeImpact *= 1 + modifyer.ChargeImpact.Value;
 
-            if (modifyer.ChargeDeflect.VType == UnitStatsModifyer.Modifyer.ValueType.UNIT)
+            if (modifyer.ChargeDeflect.VType == UnitStatsModifier.Modifyer.ValueType.UNIT)
                 baseStats.chargeDeflect += modifyer.ChargeDeflect.Value;
             else
                 baseStats.chargeDeflect *= 1 + modifyer.ChargeDeflect.Value;
 
-            if (modifyer.ChargeAddDamage.VType == UnitStatsModifyer.Modifyer.ValueType.UNIT)
+            if (modifyer.ChargeAddDamage.VType == UnitStatsModifier.Modifyer.ValueType.UNIT)
                 baseStats.unitChargeAddDamage += modifyer.ChargeAddDamage.Value;
             else
                 baseStats.unitChargeAddDamage *= 1 + modifyer.ChargeAddDamage.Value;
         }
         else
         {
-            if (modifyer.Mass.VType == UnitStatsModifyer.Modifyer.ValueType.UNIT)
-                baseStats.mass -= modifyer.Mass.Value;
-            else
-                baseStats.mass /= 1 + modifyer.Mass.Value;
-
-            if (modifyer.Attack.VType == UnitStatsModifyer.Modifyer.ValueType.UNIT)
+            if (modifyer.Attack.VType == UnitStatsModifier.Modifyer.ValueType.UNIT)
                 baseStats.attack -= modifyer.Attack.Value;
             else
                 baseStats.attack /= 1 + modifyer.Attack.Value;
 
-            if (modifyer.Defence.VType == UnitStatsModifyer.Modifyer.ValueType.UNIT)
+            if (modifyer.Defence.VType == UnitStatsModifier.Modifyer.ValueType.UNIT)
                 baseStats.defence -= modifyer.Defence.Value;
             else
                 baseStats.defence /= 1 + modifyer.Defence.Value;
 
-            if (modifyer.Armour.VType == UnitStatsModifyer.Modifyer.ValueType.UNIT)
+            if (modifyer.Armour.VType == UnitStatsModifier.Modifyer.ValueType.UNIT)
                 baseStats.armour -= modifyer.Armour.Value;
             else
                 baseStats.armour /= 1 + modifyer.Armour.Value;
 
-            if (modifyer.MissileBlock.VType == UnitStatsModifyer.Modifyer.ValueType.UNIT)
+            if (modifyer.MissileBlock.VType == UnitStatsModifier.Modifyer.ValueType.UNIT)
                 baseStats.missileBlock -= modifyer.MissileBlock.Value;
             else
                 baseStats.missileBlock /= 1 + modifyer.MissileBlock.Value;
 
             float armDmg = baseStats.damage.ArmourDamage;
-            if (modifyer.ArmourDamage.VType == UnitStatsModifyer.Modifyer.ValueType.UNIT)
+            if (modifyer.ArmourDamage.VType == UnitStatsModifier.Modifyer.ValueType.UNIT)
                 armDmg -= modifyer.ArmourDamage.Value;
             else
                 armDmg /= 1 + modifyer.ArmourDamage.Value;
 
             float baseDmg = baseStats.damage.BaseDamage;
-            if (modifyer.BaseDamage.VType == UnitStatsModifyer.Modifyer.ValueType.UNIT)
+            if (modifyer.BaseDamage.VType == UnitStatsModifier.Modifyer.ValueType.UNIT)
                 baseDmg -= modifyer.BaseDamage.Value;
             else
                 baseDmg /= 1 + modifyer.BaseDamage.Value;
 
             baseStats.damage = new Damage(baseDmg, armDmg);
-
-            if (modifyer.AttackDistance.VType == UnitStatsModifyer.Modifyer.ValueType.UNIT)
-                baseStats.attackDistance -= modifyer.AttackDistance.Value;
-            else
-                baseStats.attackDistance /= 1 + modifyer.AttackDistance.Value;
-
-            if (modifyer.DefenceHalfSector.VType == UnitStatsModifyer.Modifyer.ValueType.UNIT)
+            
+            if (modifyer.DefenceHalfSector.VType == UnitStatsModifier.Modifyer.ValueType.UNIT)
                 baseStats.defenceHalfSector -= modifyer.DefenceHalfSector.Value;
             else
                 baseStats.defenceHalfSector /= 1 + modifyer.DefenceHalfSector.Value;
 
-            if (modifyer.Speed.VType == UnitStatsModifyer.Modifyer.ValueType.UNIT)
+            if (modifyer.Speed.VType == UnitStatsModifier.Modifyer.ValueType.UNIT)
                 baseStats.speed -= modifyer.Speed.Value;
             else
                 baseStats.speed /= 1 + modifyer.Speed.Value;
 
-            if (modifyer.Acceleration.VType == UnitStatsModifyer.Modifyer.ValueType.UNIT)
+            if (modifyer.Acceleration.VType == UnitStatsModifier.Modifyer.ValueType.UNIT)
                 baseStats.acceleration -= modifyer.Acceleration.Value;
             else
                 baseStats.acceleration /= 1 + modifyer.Acceleration.Value;
 
-            if (modifyer.RotationSpeed.VType == UnitStatsModifyer.Modifyer.ValueType.UNIT)
+            if (modifyer.RotationSpeed.VType == UnitStatsModifier.Modifyer.ValueType.UNIT)
                 baseStats.rotationSpeed -= modifyer.RotationSpeed.Value;
             else
                 baseStats.rotationSpeed /= 1 + modifyer.RotationSpeed.Value;
 
-            if (modifyer.ChargeImpact.VType == UnitStatsModifyer.Modifyer.ValueType.UNIT)
+            if (modifyer.ChargeImpact.VType == UnitStatsModifier.Modifyer.ValueType.UNIT)
                 baseStats.chargeImpact -= modifyer.ChargeImpact.Value;
             else
                 baseStats.chargeImpact /= 1 + modifyer.ChargeImpact.Value;
 
-            if (modifyer.ChargeDeflect.VType == UnitStatsModifyer.Modifyer.ValueType.UNIT)
+            if (modifyer.ChargeDeflect.VType == UnitStatsModifier.Modifyer.ValueType.UNIT)
                 baseStats.chargeDeflect -= modifyer.ChargeDeflect.Value;
             else
                 baseStats.chargeDeflect /= 1 + modifyer.ChargeDeflect.Value;
 
-            if (modifyer.ChargeAddDamage.VType == UnitStatsModifyer.Modifyer.ValueType.UNIT)
+            if (modifyer.ChargeAddDamage.VType == UnitStatsModifier.Modifyer.ValueType.UNIT)
                 baseStats.unitChargeAddDamage -= modifyer.ChargeAddDamage.Value;
             else
                 baseStats.unitChargeAddDamage /= 1 + modifyer.ChargeAddDamage.Value;

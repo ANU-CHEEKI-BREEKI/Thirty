@@ -87,23 +87,23 @@ public class FormationButton : MonoBehaviour, IPointerDownHandler, IPointerUpHan
         }
     }
 
-    private void PlayerSquad_OnBeginCharge(UnitStatsModifyer m)
+    private void PlayerSquad_OnBeginCharge(UnitStatsModifier m)
     {
         thisCg.alpha = 0.7f;
         thisCg.interactable = false;
         canUse = false;
     }
 
-    private void PlayerSquad_OnEndCharge(UnitStatsModifyer m)
+    private void PlayerSquad_OnEndCharge(UnitStatsModifier m)
     {
         thisCg.alpha = 1;
         thisCg.interactable = true;
         canUse = true;
     }    
 
-    private void PlayerSquadInstance_OnFormationChanged(FormationStats.Formations formation)
+    private void PlayerSquadInstance_OnFormationChanged(FormationStats formation)
     {
-        SetImage(playerSquad.CurrentFormation);
+        SetImage(formation.FORMATION);
     }
 
     void SetImage(FormationStats.Formations formation)

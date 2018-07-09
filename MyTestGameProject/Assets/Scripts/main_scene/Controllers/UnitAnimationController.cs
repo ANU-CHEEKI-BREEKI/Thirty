@@ -80,9 +80,9 @@ public class UnitAnimationController : MonoBehaviour
         Charging = value;
     }
 
-    void Squad_OnFormationChanged(FormationStats.Formations value)
+    void Squad_OnFormationChanged(FormationStats value)
     {
-        Formation = value;
+        Formation = value.FORMATION;
     }
     void Squad_OnInFightFlagChanged(bool value)
     {
@@ -149,7 +149,7 @@ public class UnitAnimationController : MonoBehaviour
         }
     }
 
-    void Death()
+    void Death(Unit unit)
     {
         var t = UnityEngine.Random.Range(0, 2);
         

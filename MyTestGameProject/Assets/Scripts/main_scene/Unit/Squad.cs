@@ -125,7 +125,7 @@ public class Squad : MonoBehaviour
 
             if(lastFormation != formation)
                 if (OnFormationChanged != null)
-                    OnFormationChanged(formation);
+                    OnFormationChanged(currentFormationModifyers);
 
             if (tag == "Player" && formation != FormationStats.Formations.RANKS && PlayerSquadController.Instance != null)
                 PlayerSquadController.Instance.DeselectEnemyes();
@@ -264,12 +264,12 @@ public class Squad : MonoBehaviour
 
     public event Action<int> OnUitCountChanged;
     public event Action<float> OnSumHealthChanged;
-    public event Action<FormationStats.Formations> OnFormationChanged;
+    public event Action<FormationStats> OnFormationChanged;
     public event Action<EquipmentStack> OnDropStackFromInventory;
     public event Action<FormationStats.Formations> OnReformSquad;
     public event Action OnInitiateUnitPositions;
-    public event Action<UnitStatsModifyer> OnBeginCharge;
-    public event Action<UnitStatsModifyer> OnEndCharge;
+    public event Action<UnitStatsModifier> OnBeginCharge;
+    public event Action<UnitStatsModifier> OnEndCharge;
 
     /// <summary>
     /// старые статы и новые статы
@@ -301,6 +301,22 @@ public class Squad : MonoBehaviour
     float sumX = 0;
     float sumY = 0;
     int countSumUnit = 0;
+
+    List<UnitStatsModifier> statsModifyers = new List<UnitStatsModifier>();
+    List<SOTerrainStatsModifier> terrainStatsModifyers = new List<SOTerrainStatsModifier>();
+    Dictionary<UnitStatsModifier, int> statsDictionary = new Dictionary<UnitStatsModifier, int>();
+    Dictionary<SOTerrainStatsModifier, int> terrainStatsDictionary = new Dictionary<SOTerrainStatsModifier, int>();
+    public event Action<UnitStatsModifier> OnCallApplyModifierToAllUnit;
+    public event Action<UnitStatsModifier> OnCallRejectModifierToAllUnit;
+    public event Action<SOTerrainStatsModifier> OnCallApplyTerrainModifierToAllUnit;
+    public event Action<SOTerrainStatsModifier> OnCallRejectTerrainModifierToAllUnit;
+    public event Action<UnitStatsModifier[]> OnModifiersListChanged;
+    public event Action<SOTerrainStatsModifier[]> OnTerrainModifiersListChanged;
+    /// <summary>
+    /// Процент юнитов в отряде от общего кол-ва, которые должны иметь модификатор, чтобы он применился ко всему отряду
+    /// </summary>
+    public const float percentUnitCountToApplyModifier = 0.2f;
+    int UnitCountToApplyModifier { get { return Mathf.RoundToInt(percentUnitCountToApplyModifier * UnitCount); } }
 
     /// <summary>
     /// Контроллер перемещения отряда. Ищет путь и задает его. И т.п.
@@ -357,7 +373,7 @@ public class Squad : MonoBehaviour
 
         CurrentFormation = CurrentFormation;
         if (OnFormationChanged != null)
-            OnFormationChanged(CurrentFormation);
+            OnFormationChanged(CurrentFormationModifyers);
 
         if (minimapMark != null)
             minimapMark.gameObject.SetActive(true);
@@ -371,6 +387,149 @@ public class Squad : MonoBehaviour
     {
         StopAllCoroutines();
     }
+
+    #region Stats Modifiers
+
+    void UnitModifierAdded(UnitStatsModifier modifyer)
+    {
+        if (statsDictionary.ContainsKey(modifyer))
+            statsDictionary[modifyer]++;
+        else
+            statsDictionary.Add(modifyer, 1);
+
+        if (statsDictionary[modifyer] > UnitCountToApplyModifier && !statsModifyers.Contains(modifyer))
+            AddStatsModifier(modifyer);
+    }
+    
+    void UnitModifierRemoved(UnitStatsModifier modifyer)
+    {
+        if (!statsDictionary.ContainsKey(modifyer))
+            return;
+
+        statsDictionary[modifyer]--;
+
+        if (statsDictionary[modifyer] < UnitCountToApplyModifier && statsModifyers.Contains(modifyer))
+            RemoveStatsModifier(modifyer);
+
+        if (statsDictionary.ContainsKey(modifyer) && statsDictionary[modifyer] <= 0)
+            statsDictionary.Remove(modifyer);
+    }
+
+    public void AddStatsModifier(UnitStatsModifier modifier)
+    {
+        if (!statsModifyers.Contains(modifier))
+        {
+            statsModifyers.Add(modifier);
+
+            if(OnCallApplyModifierToAllUnit != null)
+                OnCallApplyModifierToAllUnit(modifier);
+
+            if (OnModifiersListChanged != null)
+                OnModifiersListChanged(statsModifyers.ToArray());
+
+            Debug.Log("было вызвано событие для применения модиф. ко всему отряду");
+        }
+        else
+            Debug.Log("Модификатор уже существует!");
+    }
+
+    /// <summary>
+    /// Удаляет модификаток, эквивалентный переданому, и отменяэт его действия с юнитoB
+    /// </summary>
+    /// <param name="modifier"></param>
+    public void RemoveStatsModifier(UnitStatsModifier modifier)
+    {
+        if (statsModifyers.Remove(modifier))
+        {
+            // ТУТ НАДО БЫЛО БЫ НЕ У ВСЕХ ОТНИМАТЬ У ТОЛЬКО У ТЕХ, НА КОГО НЕ ДОЛЖНЫ ДЕЙСТВОВАТЬ. НО Я ПОКА ХЗ КАК, ЧТОБЫ ОПТИМИЗИРОВАННО БЫЛО
+            if (OnCallRejectModifierToAllUnit != null)
+                OnCallRejectModifierToAllUnit(modifier);
+
+            if (OnModifiersListChanged != null)
+                OnModifiersListChanged(statsModifyers.ToArray());
+
+            Debug.Log("было вызвано событие для отмены модиф. ко всему отряду");
+        }
+        else
+        {
+            Debug.Log("такого модиф. отряда нет");
+        }
+    }
+
+    #endregion
+
+    #region Terrain Stats Modifiers
+
+    void UnitTerrainModifierAdded(SOTerrainStatsModifier modifyer)
+    {
+        if (terrainStatsDictionary.ContainsKey(modifyer))
+            terrainStatsDictionary[modifyer]++;
+        else
+            terrainStatsDictionary.Add(modifyer, 1);
+
+        if (terrainStatsDictionary[modifyer] > UnitCountToApplyModifier && !terrainStatsModifyers.Contains(modifyer))
+            AddTerrainStatsModifier(modifyer);
+    }
+
+    void UnitTerrainModifierRemoved(SOTerrainStatsModifier modifyer)
+    {
+        if (!terrainStatsDictionary.ContainsKey(modifyer))
+            return;
+
+        terrainStatsDictionary[modifyer]--;
+
+        if (terrainStatsDictionary[modifyer] < UnitCountToApplyModifier && terrainStatsModifyers.Contains(modifyer))
+            RemoveTerrainStatsModifier(modifyer);
+
+        if (terrainStatsDictionary.ContainsKey(modifyer) && terrainStatsDictionary[modifyer] <= 0)
+            terrainStatsDictionary.Remove(modifyer);
+    }
+
+    public void AddTerrainStatsModifier(SOTerrainStatsModifier modifier)
+    {
+        if (!terrainStatsModifyers.Contains(modifier))
+        {
+            terrainStatsModifyers.Add(modifier);
+
+            if (OnCallApplyTerrainModifierToAllUnit != null)
+                OnCallApplyTerrainModifierToAllUnit(modifier);
+
+            if (OnTerrainModifiersListChanged != null)
+                OnTerrainModifiersListChanged(terrainStatsModifyers.ToArray());
+
+            Debug.Log("было вызвано событие для применения модиф.ландшафта ко всему отряду");
+        }
+        else
+            Debug.Log("Модификатор ландшафта отряда уже существует!");
+    }
+
+    /// <summary>
+    /// Удаляет модификаток, эквивалентный переданому, и отменяэт его действия с юнитoB
+    /// </summary>
+    /// <param name="modifier"></param>
+    public void RemoveTerrainStatsModifier(SOTerrainStatsModifier modifier)
+    {
+        if (terrainStatsModifyers.Remove(modifier))
+        {
+            // ТУТ НАДО БЫЛО БЫ НЕ У ВСЕХ ОТНИМАТЬ У ТОЛЬКО У ТЕХ НА КОГО НЕ ДОЛЖНЫ ДЕЙСТВОВАТЬ. НО Я ПОКА ХЗ КАК, ЧТОБЫ ОПТИМИЗИРОВАННО БЫЛО
+            if (OnCallRejectTerrainModifierToAllUnit != null)
+                OnCallRejectTerrainModifierToAllUnit(modifier);
+
+            if (OnTerrainModifiersListChanged != null)
+                OnTerrainModifiersListChanged(terrainStatsModifyers.ToArray());
+
+            Debug.Log("было вызвано событие для отмены модиф.ландшафта ко всему отряду");
+        }
+        else
+        {
+            Debug.Log("такого модиф.ландшафта отряда нет");
+        }
+    }
+
+    #endregion
+        
+
+
 
     public void SetUnitsStats(DSUnitStats stats)
     {
@@ -500,12 +659,12 @@ public class Squad : MonoBehaviour
             InFight = false;
     }
 
-    public void Charge(UnitStatsModifyer modifyer, float duration)
+    public void Charge(UnitStatsModifier modifyer, float duration)
     {
         StartCoroutine(WaitForEndGharge(modifyer, duration));
     }
 
-    IEnumerator WaitForEndGharge(UnitStatsModifyer modifyer, float duration)
+    IEnumerator WaitForEndGharge(UnitStatsModifier modifyer, float duration)
     {
         if (OnBeginCharge != null)
             OnBeginCharge(modifyer);
@@ -677,6 +836,13 @@ public class Squad : MonoBehaviour
     /// <param name="unitPositionObject"></param>
     public void UnitDeath(Unit unit)
     {
+        unit.OnModifierAdded -= UnitModifierAdded;
+        unit.OnModifierRemoved -= UnitModifierRemoved;
+
+        unit.OnTerrainModifierAdded -= UnitTerrainModifierAdded;
+        unit.OnTerrainModifierRemoved-= UnitTerrainModifierRemoved;
+        //-------
+
         ReformSquad(flipRotation, unit.TargetMovePositionObject);
         
         if (unitPositions.Count <= 0)
@@ -703,6 +869,13 @@ public class Squad : MonoBehaviour
     /// <param name="unit"></param>
     void AddUnitWithoutReformSquad(Unit unit)
     {
+        unit.OnModifierAdded += UnitModifierAdded;
+        unit.OnModifierRemoved += UnitModifierRemoved;
+
+        unit.OnTerrainModifierAdded += UnitTerrainModifierAdded;
+        unit.OnTerrainModifierRemoved += UnitTerrainModifierRemoved;
+        //-------
+
         UnitPosition targetMovePositionObject = unit.TargetMovePositionObject.GetComponent<UnitPosition>();
 
         unitPositions.Add(targetMovePositionObject);

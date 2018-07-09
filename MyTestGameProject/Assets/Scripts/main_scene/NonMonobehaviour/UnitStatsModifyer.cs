@@ -4,16 +4,18 @@ using UnityEngine;
 using static Description;
 
 [Serializable]
-public struct UnitStatsModifyer: IDescriptionable, IEquatable<UnitStatsModifyer>
+public struct UnitStatsModifier: IDescriptionable
 {
     public enum UseType { APPLY, REJECT}
 
+    [SerializeField] UIIfo uiInfo;
+    public UIIfo UiInfo { get { return uiInfo; } }
+
+    [Space]
+
 	[SerializeField] Modifyer health;
     public Modifyer Health { get { return health; } set { health = value; } }
-
-    [SerializeField] Modifyer mass;
-    public Modifyer Mass { get { return mass; } set { mass = value; } }
-
+    
     [SerializeField] Modifyer armour;
     public Modifyer Armour { get { return armour; } set { armour = value; } }
 
@@ -39,11 +41,7 @@ public struct UnitStatsModifyer: IDescriptionable, IEquatable<UnitStatsModifyer>
 
     [SerializeField] Modifyer missileBlock;
     public Modifyer MissileBlock { get { return missileBlock; } set { missileBlock = value; } }
-
-    [Space]
-    [SerializeField] Modifyer attackDistance;
-    public Modifyer AttackDistance { get { return attackDistance; } set { attackDistance = value; } }
-
+    
     [Space]
     [SerializeField] Modifyer speed;
     public Modifyer Speed { get { return speed; } set { speed = value; } }
@@ -89,6 +87,17 @@ public struct UnitStatsModifyer: IDescriptionable, IEquatable<UnitStatsModifyer>
         }
     }
 
+    [Serializable] 
+    public struct UIIfo
+    {
+        [SerializeField] Sprite icon;
+        public Sprite Icon { get { return icon; } }
+        [SerializeField] string resourceName;
+        public string ResourceName  { get { return resourceName; } }
+        [SerializeField] string resourceDesc;
+        public string ResourceDesc { get { return resourceDesc; } }
+    }
+
     public Description GetDescription()
     {
         Description d = new Description();
@@ -99,7 +108,12 @@ public struct UnitStatsModifyer: IDescriptionable, IEquatable<UnitStatsModifyer>
         foreach (var fi in fieldsInfo)
         {
             var f = fi.GetValue(this);
+            if (f == null)
+                continue;
+
             var ft = f.GetType();
+            if (ft.Name != typeof(Modifyer).Name)
+                continue;
 
             var vi = ft.GetField("value", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
             float v = Convert.ToSingle(vi.GetValue(f));
@@ -123,30 +137,5 @@ public struct UnitStatsModifyer: IDescriptionable, IEquatable<UnitStatsModifyer>
         d.Stats = stats.ToArray();
 
         return d;
-    }
-
-    public bool Equals(UnitStatsModifyer other)
-    {
-        bool res = true;
-
-        var flags = System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.NonPublic;
-
-        var thisFieldsInfo = this.GetType().GetFields(flags);
-        var otherFieldsInfo = this.GetType().GetFields(flags);
-        int cnt = thisFieldsInfo.Length;
-
-        for (int i = 0; i < cnt; i++)
-        {
-            var thisVal = thisFieldsInfo[i].GetValue(this);
-            var otherVal = otherFieldsInfo[i].GetValue(other);
-
-            if (!thisVal.Equals(otherVal))
-            {
-                res = false;
-                break;
-            }
-        }
-
-        return res;
     }
 }

@@ -201,4 +201,38 @@ public static class Extensions
     }
 
     #endregion
+
+    public static UnitStats.EquipmentWeight GetWeightByMass(float equipmentMass)
+    {
+        if (equipmentMass <= (float)UnitStats.EquipmentWeight.VERY_LIGHT)
+            return UnitStats.EquipmentWeight.VERY_LIGHT;
+        else if (equipmentMass <= (float)UnitStats.EquipmentWeight.LIGHT)
+            return UnitStats.EquipmentWeight.LIGHT;
+        else if (equipmentMass <= (float)UnitStats.EquipmentWeight.MEDIUM)
+            return UnitStats.EquipmentWeight.MEDIUM;
+        else if (equipmentMass <= (float)UnitStats.EquipmentWeight.HEAVY)
+            return UnitStats.EquipmentWeight.HEAVY;
+        else return UnitStats.EquipmentWeight.VERY_HEAVY;
+    }
+
+    public static string GetLocalizeName(this UnitStats.EquipmentWeight obj)
+    {
+        var res = LocalizedStrings.missing_string;
+        res = obj.ToString() + " ВЕС";
+        switch (obj)
+        {
+            case UnitStats.EquipmentWeight.VERY_LIGHT:
+                break;
+            case UnitStats.EquipmentWeight.LIGHT:
+                break;
+            case UnitStats.EquipmentWeight.MEDIUM:
+                break;
+            case UnitStats.EquipmentWeight.HEAVY:
+                break;
+            case UnitStats.EquipmentWeight.VERY_HEAVY:
+                break;
+        }
+        return res;
+    }
+
 }

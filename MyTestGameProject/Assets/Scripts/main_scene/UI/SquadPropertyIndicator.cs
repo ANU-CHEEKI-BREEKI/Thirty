@@ -6,66 +6,34 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using static Description;
 
-public class SquadPropertyIndicator : MonoBehaviour, IDescriptionable, IPointerClickHandler
+public class SquadPropertyIndicator : MonoBehaviour, IPointerClickHandler
 {
-    [SerializeField] Type type;
-    [SerializeField] FormationStats.Formations formation;
+    Description desc;
+    Image img;
 
-    FormationStats f;
-
-    [SerializeField] string stringResourceName;
-    [SerializeField] string stringResourceDescription;
-
-    private void Start()
+    private void Awake()
     {
-        switch (formation)
-        {
-            case FormationStats.Formations.RANKS:
-                f = new FormationStats.Ranks();
-                break;
-            case FormationStats.Formations.PHALANX:
-                f = new FormationStats.Phalanx();
-                break;
-            case FormationStats.Formations.RISEDSHIELDS:
-                f = new FormationStats.RisedShields();
-                break;
-        }
+        img = GetComponent<Image>();
     }
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        TipsPanel.Instance.Show(GetDescription(), transform.position);
+        TipsPanel.Instance.Show(desc, transform.position);
     }
 
-    public Description GetDescription()
+    public void Present(params object[] arr)
     {
-        DescriptionItem[] constraints = null;
-        DescriptionItem[] stats = null;
-
-        switch (type)
-        {           
-            case Type.FORMATION:
-                               
-                stats = f.GetModifiers();
-
-                break;
-
-            case Type.TERRAIN_MODIFIER:
-
-                
-
-                break;
-        }
-
-        return new Description()
+        if (arr.Length > 0)
         {
-            Name = Localization.GetString(stringResourceName),
-            Desc = Localization.GetString(stringResourceDescription),
-            Constraints = constraints,
-            Stats = stats,
-            Icon = GetComponent<Image>().sprite
-        };
-    }
+            if(img != null)
+                img.sprite = arr[0] as Sprite;
 
-    public enum Type { CONDITION, FORMATION, TERRAIN_MODIFIER}
+            if (arr.Length > 1)
+                desc = (Description)arr[1];
+
+            gameObject.SetActive(true);
+        }
+        else
+            gameObject.SetActive(false);
+    }
 }

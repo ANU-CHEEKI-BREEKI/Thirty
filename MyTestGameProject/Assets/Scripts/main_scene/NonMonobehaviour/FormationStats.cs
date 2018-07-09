@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using static Description;
 
-public abstract class FormationStats
+public abstract class FormationStats : IDescriptionable
 {
     public enum Formations { RANKS, PHALANX, RISEDSHIELDS }
 
@@ -51,7 +51,7 @@ public abstract class FormationStats
         this.FORMATION = FORMATION;
     }
 
-    public DescriptionItem[] GetModifiers()
+    DescriptionItem[] GetModifiers()
     {
         List<DescriptionItem> res = new List<DescriptionItem>();
 
@@ -187,6 +187,30 @@ public abstract class FormationStats
         }
 
         return res.ToArray();
+    }
+
+    public Description GetDescription()
+    {
+        var desc = new Description();
+        desc.Stats = GetModifiers();
+
+        switch (FORMATION)
+        {
+            case Formations.RANKS:
+                desc.Name = LocalizedStrings.formation_ranks_name;
+                desc.Desc = LocalizedStrings.formation_ranks_description;
+                break;
+            case Formations.PHALANX:
+                desc.Name = LocalizedStrings.formation_phalanx_name;
+                desc.Desc = LocalizedStrings.formation_phalanx_description;
+                break;
+            case Formations.RISEDSHIELDS:
+                desc.Name = LocalizedStrings.formation_shields_name;
+                desc.Desc = LocalizedStrings.formation_shields_description;
+                break;
+        }
+
+        return desc;
     }
 
     public class Ranks : FormationStats

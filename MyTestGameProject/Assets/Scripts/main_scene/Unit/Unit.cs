@@ -91,7 +91,13 @@ public class Unit : MonoBehaviour
     [SerializeField] [Range(0, 360)] float chargePpushingAngle = 120;
     [SerializeField] [Range(0, 90)] float weaponAngleDeviation = 10;
 
-    List<UnitStatsModifyer> StatsModifyers = new List<UnitStatsModifyer>();
+    List<UnitStatsModifier> statsModifyers = new List<UnitStatsModifier>();
+    public event Action<UnitStatsModifier> OnModifierAdded;
+    public event Action<UnitStatsModifier> OnModifierRemoved;
+
+    List<SOTerrainStatsModifier> terrainStatsModifyers = new List<SOTerrainStatsModifier>();
+    public event Action<SOTerrainStatsModifier> OnTerrainModifierAdded;
+    public event Action<SOTerrainStatsModifier> OnTerrainModifierRemoved;
 
     new Rigidbody2D rigidbody2D;
     CircleCollider2D circleCollider2D;
@@ -180,7 +186,7 @@ public class Unit : MonoBehaviour
         private set { _weapon = value; if (OnWeaponChanged != null) OnWeaponChanged(_weapon); }
     }
     Equipment weapon;
-    
+
     bool pushingAlly = false;
     List<Unit> pushedUnit = new List<Unit>(3);
 
@@ -252,7 +258,7 @@ public class Unit : MonoBehaviour
     [NonSerialized] public float delayToFindTargetAndAttack = 0;
 
     public event Action AfterInitiate;
-    public event Action OnUnitDeath;
+    public event Action<Unit> OnUnitDeath;
 
     /// <summary>
     /// Флаг, который будет включатся при нанесении врагу удара, и сразу выключатся (в следующем кадре).
@@ -302,7 +308,7 @@ public class Unit : MonoBehaviour
             SetEquipment();
 
             squad.OnFormationChanged += OnFormationChanged;
-            OnFormationChanged(squad.CurrentFormation);
+            OnFormationChanged(squad.CurrentFormationModifyers);
 
             squad.OnDropStackFromInventory += OnDropStack;
 
@@ -318,10 +324,15 @@ public class Unit : MonoBehaviour
 
             squad.OnUnitStatsChanged += Squad_OnUnitStatsChanged;
 
-            if(gameObject.layer != LayerMask.NameToLayer(Squad.UnitFraction.ENEMY.ToString()))
-            Selected = true;
-            
+            if (gameObject.layer != LayerMask.NameToLayer(Squad.UnitFraction.ENEMY.ToString()))
+                Selected = true;
+
             normLayer = gameObject.layer;
+
+            squad.OnCallApplyModifierToAllUnit += OnCallApplyModifierToAll;
+            squad.OnCallRejectModifierToAllUnit += OnCallRejectModifierToAll;
+            squad.OnCallApplyTerrainModifierToAllUnit += OnCallApplyTerrainModifierToAll;
+            squad.OnCallRejectTerrainModifierToAllUnit += OnCallRejectTerrainModifierToAll;
         }
 
         if (AfterInitiate != null) AfterInitiate();
@@ -376,6 +387,12 @@ public class Unit : MonoBehaviour
 
             squad.OnUnitStatsChanged -= Squad_OnUnitStatsChanged;
 
+
+            squad.OnCallApplyModifierToAllUnit -= OnCallApplyModifierToAll;
+            squad.OnCallRejectModifierToAllUnit -= OnCallRejectModifierToAll;
+            squad.OnCallApplyTerrainModifierToAllUnit -= OnCallApplyTerrainModifierToAll;
+            squad.OnCallRejectTerrainModifierToAllUnit -= OnCallRejectTerrainModifierToAll;
+
             //если этот юнит атаковал, то уменьшаем кол во атаковавших
             Attaking = false;
 
@@ -386,8 +403,8 @@ public class Unit : MonoBehaviour
             //ставим всем, кто атаковал этот юнит, цель null 
             for (int i = 0; i < targettedBy.Count; i++)
                 targettedBy[i].SetTarget(null);
-            
-            squad.UnitDeath(this);
+
+            //squad.UnitDeath(this);
         }
 
         DropingItemsManager.Instance.DropUnitCorp(this);
@@ -399,14 +416,18 @@ public class Unit : MonoBehaviour
 
     void LateDeath()
     {
+        Destroy(GetComponent<Collider2D>());
+        Destroy(rigidbody2D);
+
         if (OnUnitDeath != null)
-            OnUnitDeath();
+            OnUnitDeath(this);
 
         if (OnAnyUnitDeath != null)
             OnAnyUnitDeath();
 
-        Destroy(GetComponent<Collider2D>());
-        Destroy(rigidbody2D);
+        if (squad != null)
+            squad.UnitDeath(this);
+
         Destroy(this);
     }
 
@@ -414,7 +435,7 @@ public class Unit : MonoBehaviour
     {
         if (Health > newS.Health)
             Health = newS.Health;
-        else if(oldS.Health < newS.Health)
+        else if (oldS.Health < newS.Health)
         {
             float k = Health / oldS.Health;
             Health = newS.Health * k;
@@ -423,7 +444,7 @@ public class Unit : MonoBehaviour
         SetProperties();
     }
 
-    void Squad_OnBeginCharge(UnitStatsModifyer modifyer)
+    void Squad_OnBeginCharge(UnitStatsModifier modifyer)
     {
         Charging = true;
 
@@ -435,7 +456,7 @@ public class Unit : MonoBehaviour
         AddStatsModifyer(modifyer);
     }
 
-    void Squad_OnEndCharge(UnitStatsModifyer modifyer)
+    void Squad_OnEndCharge(UnitStatsModifier modifyer)
     {
         Charging = false;
 
@@ -444,37 +465,107 @@ public class Unit : MonoBehaviour
         RemoveStatsModifyer(modifyer);
     }
 
-    public void AddStatsModifyer(UnitStatsModifyer modifyer)
+    public void AddStatsModifyer(UnitStatsModifier modifier)
     {
-        StatsModifyers.Add(modifyer);
-        stats = UnitStats.ModifyStats(stats, modifyer);
-    }
-
-    /// <summary>
-    /// Удаляет первый попавшийся модификаток, эквивалентный переданому, и отменяэт его действия с юнита
-    /// </summary>
-    /// <param name="modifyer"></param>
-    public void RemoveStatsModifyer(UnitStatsModifyer modifyer)
-    {
-        bool removed = false;
-        int cnt = StatsModifyers.Count;
-        for (int i = 0; i < cnt; i++)
+        if (!statsModifyers.Contains(modifier))
         {
-            if (StatsModifyers[i].Equals(modifyer))
-            {
-                StatsModifyers.RemoveAt(i);
-                removed = true;
-                break;
-            }
-        }
-
-        if (removed)
-        {
-            stats = UnitStats.ModifyStats(stats, modifyer, UnitStatsModifyer.UseType.REJECT);
+            statsModifyers.Add(modifier);
+            stats = UnitStats.ModifyStats(stats, modifier);
+            Debug.Log("Модификатор добавлен");
+            if (OnModifierAdded != null)
+                OnModifierAdded(modifier);
         }
         else
         {
-            Debug.Log("cant ramove modifyer");
+            Debug.Log("Такой модификатор уже есть");
+        }
+    }
+
+    /// <summary>
+    /// Удаляет модификаток, эквивалентный переданому, и отменяэт его действия с юнита
+    /// </summary>
+    /// <param name="modifier"></param>
+    public void RemoveStatsModifyer(UnitStatsModifier modifier)
+    {
+        if (statsModifyers.Remove(modifier))
+        {
+            stats = UnitStats.ModifyStats(stats, modifier, UnitStatsModifier.UseType.REJECT);
+            Debug.Log("Модификатор удален");
+            if (OnModifierRemoved != null)
+                OnModifierRemoved(modifier);
+        }
+        else
+        {
+            Debug.Log("Такого модификатора нет");
+        }
+    }
+
+    public void AddTerrainStatsModifyer(SOTerrainStatsModifier modifier)
+    {
+        if (!terrainStatsModifyers.Contains(modifier))
+        {
+            terrainStatsModifyers.Add(modifier);
+            stats = UnitStats.ModifyStats(stats, modifier.GetModifierByEquipmentMass(stats.EquipmentMass));
+            Debug.Log("Модификатор ландшафта добавлен");
+            if (OnTerrainModifierAdded != null)
+                OnTerrainModifierAdded(modifier);
+        }
+        else
+        {
+            Debug.Log("Такой модификатор ландшафта уже есть");
+        }
+    }
+
+    /// <summary>
+    /// Удаляет модификаток, эквивалентный переданому, и отменяэт его действия с юнита
+    /// </summary>
+    /// <param name="modifier"></param>
+    public void RemoveTerrainStatsModifyer(SOTerrainStatsModifier modifier)
+    {
+        if (terrainStatsModifyers.Remove(modifier))
+        {
+            stats = UnitStats.ModifyStats(stats, modifier.GetModifierByEquipmentMass(stats.EquipmentMass), UnitStatsModifier.UseType.REJECT);
+            Debug.Log("Модификатор ландшафта удален");
+            if (OnTerrainModifierRemoved != null)
+                OnTerrainModifierRemoved(modifier);
+        }
+        else
+        {
+            Debug.Log("Такого модификатора ландшафта нет");
+        }
+    }
+
+    void OnCallApplyModifierToAll(UnitStatsModifier modifier)
+    {
+        if (!statsModifyers.Contains(modifier))
+        {
+            statsModifyers.Add(modifier);
+            stats = UnitStats.ModifyStats(stats, modifier);
+        }
+    }
+
+    void OnCallRejectModifierToAll(UnitStatsModifier modifier)
+    {
+        if (statsModifyers.Remove(modifier))
+        {
+            stats = UnitStats.ModifyStats(stats, modifier, UnitStatsModifier.UseType.REJECT);
+        }
+    }
+
+    void OnCallApplyTerrainModifierToAll(SOTerrainStatsModifier modifier)
+    {
+        if (!terrainStatsModifyers.Contains(modifier))
+        {
+            terrainStatsModifyers.Add(modifier);
+            stats = UnitStats.ModifyStats(stats, modifier.GetModifierByEquipmentMass(stats.EquipmentMass));
+        }
+    }
+
+    void OnCallRejectTerrainModifierToAll(SOTerrainStatsModifier modifier)
+    {
+        if (terrainStatsModifyers.Remove(modifier))
+        {
+            stats = UnitStats.ModifyStats(stats, modifier.GetModifierByEquipmentMass(stats.EquipmentMass), UnitStatsModifier.UseType.REJECT);
         }
     }
 
@@ -624,7 +715,7 @@ public class Unit : MonoBehaviour
         stats = UnitStats.CalcStats(squad.DefaultUnitStats, equipStats, squad.CurrentFormationModifyers);
         if(health > 0)//без проверки юниты умирают при инициализации
             stats.Health = health;
-        rigidbody2D.mass = stats.Mass;
+        rigidbody2D.mass = stats.EquipmentMass;
     }
     
 
@@ -892,7 +983,7 @@ public class Unit : MonoBehaviour
             SetProperties();
     }
 
-    void OnFormationChanged(FormationStats.Formations newFormation)
+    void OnFormationChanged(FormationStats newFormation)
     {
         SetProperties();
 

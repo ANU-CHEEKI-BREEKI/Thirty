@@ -60,7 +60,7 @@ public class StatsPanelUI : MonoBehaviour
             animation.Play(animNames[1]);
     }
 
-    void OnFormationChanged(FormationStats.Formations formation)
+    void OnFormationChanged(FormationStats formation)
     {
         OnEquipmentChanged(null);
     }

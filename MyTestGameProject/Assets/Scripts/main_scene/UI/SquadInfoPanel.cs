@@ -22,6 +22,11 @@ public class SquadInfoPanel : MonoBehaviour
     [SerializeField] GameObject[] damageIco;
     [SerializeField] TextMeshProUGUI armourBlockText;
     [SerializeField] GameObject[] armourIco;
+    [Space]
+    [SerializeField] Image[] weightIcons;
+    [SerializeField] Sprite lihgtWeight;
+    [SerializeField] Sprite mediumWeight;
+    [SerializeField] Sprite heavyWeight;
 
     Camera camera;
 
@@ -59,7 +64,7 @@ public class SquadInfoPanel : MonoBehaviour
             inv.SecondConsumable.OnConsumableChanged += OnExecChanded;
         }
 
-        Squad_OnFormationChanged(squad.CurrentFormation);
+        Squad_OnFormationChanged(squad.CurrentFormationModifyers);
 
         Present(Show);
     }
@@ -93,7 +98,7 @@ public class SquadInfoPanel : MonoBehaviour
         thisTransform.localScale = camera.orthographicSize * 0.05f * (Vector3.one * 0.03f);
     }
 
-    private void Squad_OnFormationChanged(FormationStats.Formations obj)
+    private void Squad_OnFormationChanged(FormationStats obj)
     {
         if (squad != null && cells.Length == 6 && show)
         {
@@ -109,6 +114,43 @@ public class SquadInfoPanel : MonoBehaviour
         {
             if (value)
             {
+                var w = Extensions.GetWeightByMass(squad.UnitStats.EquipmentMass);
+                Sprite ico = null;
+                int cnt= 0;
+                if (w == UnitStats.EquipmentWeight.VERY_LIGHT)
+                {
+                    ico = lihgtWeight;
+                    cnt= 1;
+                }
+                else if (w == UnitStats.EquipmentWeight.VERY_HEAVY)
+                {
+                    ico = heavyWeight;
+                    cnt= 3;
+                }
+                else
+                {
+                    ico = mediumWeight;
+                    if (w == UnitStats.EquipmentWeight.HEAVY)
+                        cnt= 3;
+                    else if (w == UnitStats.EquipmentWeight.MEDIUM)
+                        cnt= 2;
+                    else
+                        cnt= 1;
+                }
+                for (int i = 0; i < weightIcons.Length; i++)
+                {
+                    if (i < cnt)
+                    {
+                        weightIcons[i].sprite = ico;
+                        weightIcons[i].gameObject.SetActive(true);
+                    }
+                    else
+                    {
+                        weightIcons[i].gameObject.SetActive(false);
+                    }
+                }
+
+
                 float t = squad.SquadHealth / (squad.DefaultUnitStats.Health * squad.FULL_SQUAD_UNIT_COUNT);
                 hpBar.fillAmount = t;
                 Color color;

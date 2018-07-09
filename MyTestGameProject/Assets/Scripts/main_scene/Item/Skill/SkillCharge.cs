@@ -9,7 +9,7 @@ public class SkillCharge : Skill
     [Serializable]
     public struct ChargeStats: ISkillLockable, ISkillCooldownable, IDescriptionable
     {
-        public UnitStatsModifyer modifyer;
+        public UnitStatsModifier modifyer;
         [Range(1, 10)] public float duration;
         [Range(0, 1080)] public float cooldown;
         public bool unlocked;
