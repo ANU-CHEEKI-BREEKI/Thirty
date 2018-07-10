@@ -114,6 +114,9 @@ public class SquadCerrentProp : MonoBehaviour
         d.Desc = "Разная местность по разному влияет на отряды рязной тяжести.\r\n" +
             "Будте внимательны, местность может как дать вам преимущество, так и стать вашим местом захоронения.";
         ind.Present(null, d);
+
+        Squad_OnModifiersListChanged(squad.StatsModifiers);
+        Squad_OnTerrainModifiersListChanged(squad.TerrainStatsModifiers);
     }
 
     SquadPropertyIndicator CreateNew(int index = -1)
@@ -126,7 +129,9 @@ public class SquadCerrentProp : MonoBehaviour
 
     private void PlayerSquadInstance_OnFormationChanged(FormationStats formation)
     {
-        formationInd.Present(FormationButton.Instance.GetIcon(formation.FORMATION), formation.GetDescription());
+        var d = formation.GetDescription();
+        d.Icon = FormationButton.Instance.GetIcon(formation.FORMATION);
+        formationInd.Present(d.Icon, d);
     }
 
     private void PlayerSquadInstance_OnInFightFlagChanged(bool newValue)
@@ -149,10 +154,7 @@ public class SquadCerrentProp : MonoBehaviour
             if (i < arr.Length)
             {
                 var desc = arr[i].GetDescription();
-                desc.Name = Localization.GetString(arr[i].UiInfo.ResourceName);
-                desc.Desc = Localization.GetString(arr[i].UiInfo.ResourceDesc);
-
-                modifiersInd[i].Present(arr[i].UiInfo.Icon, desc);
+                modifiersInd[i].Present(desc.Icon, desc);
             }
             else
                 modifiersInd[i].Present();
@@ -171,9 +173,7 @@ public class SquadCerrentProp : MonoBehaviour
             {
                 var mod = arr[i].GetModifierByEquipmentMass(squad.UnitStats.EquipmentMass);
                 var desc = mod.GetDescription();
-                desc.Name = Localization.GetString(mod.UiInfo.ResourceName);
-                desc.Desc = Localization.GetString(mod.UiInfo.ResourceDesc);
-                terrainModifiersInd[i].Present(mod.UiInfo.Icon, desc);
+                terrainModifiersInd[i].Present(desc.Icon, desc);
 
             }
             else

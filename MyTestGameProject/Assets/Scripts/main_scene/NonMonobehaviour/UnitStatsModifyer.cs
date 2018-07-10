@@ -136,6 +136,17 @@ public struct UnitStatsModifier: IDescriptionable
 
         d.Stats = stats.ToArray();
 
+        d.Name = Localization.GetString(uiInfo.ResourceName);
+        d.Desc = Localization.GetString(uiInfo.ResourceDesc);
+        d.Icon = uiInfo.Icon;
+
         return d;
+    }
+
+    public UnitStatsModifier Reset()
+    {
+        var res = new UnitStatsModifier();
+        res.uiInfo = this.uiInfo;
+        return res;
     }
 }

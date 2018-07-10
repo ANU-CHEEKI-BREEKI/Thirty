@@ -35,6 +35,29 @@
   <string name = "condition_inFight_description">  Отряд сражается в ближнем бою.
   Это может накладывать некоторые ограничения, например, нельзя пополнить отряд или опустить пики, поэтому, внимательно читайте описение предметов.</string>
   
+  
+  <string name = "terrain_modifier_dirt_name">Грязь</string>
+  <string name = "terrain_modifier_dirt_description">В грязи сложно передвигаться, соответственно падает скорость перемешения и защита.
+Чем тяжелее солдаты, тем сложнее им придется в грязи.</string>
+  <string name = "terrain_modifier_forest_name">Лес</string>
+  <string name = "terrain_modifier_forest_description">Чем тяжелее солдат, тем ему сложнее передвигаться, защищатся и атаковать в лесу.
+Однако, легковооружённые солдаты, наоборот чувствуют себя в лесу как дома.</string>
+  <string name = "terrain_modifier_forest_light_name">Редколесье</string>
+  <string name = "terrain_modifier_forest_light_description">Тяжеловооруженным солдатам сложнее передвигаться, защищатся и атаковать в редколесье, однако эти неудобства не критичны.
+Легковооружённые же солдаты, чувствуют себя в редколесье немного защищённее чем в чистом поле.</string>
+  <string name = "terrain_modifier_grass_name">Высокая трава</string>
+  <string name = "terrain_modifier_grass_description">Не влияет на способности солдат, однако, в ней легко можно спрятать целый отряд.</string>
+  <string name = "terrain_modifier_road_ground_name">Грунтовая дорога</string>
+  <string name = "terrain_modifier_road_ground_description">По дороге значетельно легче перемещатся чем по не преспособленной для этого местности.
+Тяжеловооружённым солдатам легче переносить тяготы своей брони.</string>
+  <string name = "terrain_modifier_road_rock_name">Мощёная дорога</string>
+  <string name = "terrain_modifier_road_rock_description">По дороге значетельно легче перемещатся, ведь она для этого и была созданна.
+Тяжеловооружённые солдаты чувствуют себя на такой дороге наиболее защищённо.</string>
+  <string name = "terrain_modifier_water_light_name">Мелководье</string>
+  <string name = "terrain_modifier_water_light_description">В воде довольно сожно совершать выпады или манёвры. Падает атака и скорость перемещения.
+Чем тяжелее солдаты, тем сложнее им придется в воде.</string>
+  
+  
   <string name = "health">Здоровье</string>
   <string name = "squadHealth">Здоровье отряда</string>
   <string name = "armour">Броня</string>

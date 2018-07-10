@@ -8,7 +8,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <ProjectGuid>{015A8C12-616A-808C-1116-2C959B9A1A5E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -175,18 +176,6 @@
     <Compile Include="Assets\Scripts\main_scene\TerrainHeight.cs" />
     <Compile Include="Assets\Scripts\main_scene\TerrainStatsModifier.cs" />
     <Compile Include="Assets\Scripts\main_scene\TerrainWalker.cs" />
-    <Compile Include="Assets\Scripts\main_scene\Tutorial\ATriggerConstraint.cs" />
-    <Compile Include="Assets\Scripts\main_scene\Tutorial\GOTriggerEvent.cs" />
-    <Compile Include="Assets\Scripts\main_scene\Tutorial\ITriggerEvent.cs" />
-    <Compile Include="Assets\Scripts\main_scene\Tutorial\SquadTriggerInitiator.cs" />
-    <Compile Include="Assets\Scripts\main_scene\Tutorial\TriggerConstraintDestroyGameObject.cs" />
-    <Compile Include="Assets\Scripts\main_scene\Tutorial\TriggerConstraintPlayeFormationPhalanx.cs" />
-    <Compile Include="Assets\Scripts\main_scene\Tutorial\TriggerConstraintPlayeFormationShields.cs" />
-    <Compile Include="Assets\Scripts\main_scene\Tutorial\TriggerConstraintPlayerTakesUnits.cs" />
-    <Compile Include="Assets\Scripts\main_scene\Tutorial\TriggerConstraintShieldInPlayerInventory.cs" />
-    <Compile Include="Assets\Scripts\main_scene\Tutorial\TriggerConstraintSpearInPlayerInventory.cs" />
-    <Compile Include="Assets\Scripts\main_scene\Tutorial\TriggerGoToMainMenu.cs" />
-    <Compile Include="Assets\Scripts\main_scene\Tutorial\TutorialPanel.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\ConfirmPanel.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\DeathScreen.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\DialogBox.cs" />
@@ -257,6 +246,19 @@
     <Compile Include="Assets\Scripts\main_scene\Unit\Unit.cs" />
     <Compile Include="Assets\Scripts\main_scene\Unit\UnitPosition.cs" />
     <Compile Include="Assets\Scripts\main_scene\UnitOutline.cs" />
+    <Compile Include="Assets\Scripts\Tutorial\ATriggerConstraint.cs" />
+    <Compile Include="Assets\Scripts\Tutorial\GOTriggerEvent.cs" />
+    <Compile Include="Assets\Scripts\Tutorial\ITriggerEvent.cs" />
+    <Compile Include="Assets\Scripts\Tutorial\KillAllUnitsInRangeOnAwake.cs" />
+    <Compile Include="Assets\Scripts\Tutorial\SquadTriggerInitiator.cs" />
+    <Compile Include="Assets\Scripts\Tutorial\TriggerConstraintDestroyGameObject.cs" />
+    <Compile Include="Assets\Scripts\Tutorial\TriggerConstraintPlayeFormationPhalanx.cs" />
+    <Compile Include="Assets\Scripts\Tutorial\TriggerConstraintPlayeFormationShields.cs" />
+    <Compile Include="Assets\Scripts\Tutorial\TriggerConstraintPlayerTakesUnits.cs" />
+    <Compile Include="Assets\Scripts\Tutorial\TriggerConstraintShieldInPlayerInventory.cs" />
+    <Compile Include="Assets\Scripts\Tutorial\TriggerConstraintSpearInPlayerInventory.cs" />
+    <Compile Include="Assets\Scripts\Tutorial\TriggerGoToMainMenu.cs" />
+    <Compile Include="Assets\Scripts\Tutorial\TutorialPanel.cs" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\[ (RIGHT) ] [EXIT TOP] [GRASSLAND] (1).xml" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
@@ -289,7 +291,9 @@
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\[ (BOTTOM) (TOP) ] [EXIT RIGHT] [GRASSLAND] (1).xml" />
     <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\[ (TOP) (LEFT) (RIGHT) ] [GRASSLAND] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\Localization\RU.xml" />
+    <None Include="Assets\Resources\TextAssets\Localization\RU.xml">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\[ (BOTTOM) ] [GRASSLAND] (1).xml" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\[ (LEFT) ] [GRASSLAND] (1).xml" />

@@ -61,7 +61,7 @@ public class ToAnotherSceneButton : MonoBehaviour
             case GameManager.SceneIndex.LOADING_SCREEN:
                 Debug.Log("Не ну это перебор уже. Сюда незя пепеходить напрямую!");
                 break;
-            case GameManager.SceneIndex.LEVEL_TUTORIAL:
+            case GameManager.SceneIndex.LEVEL_TUTORIAL_1:
                 GameManager.Instance.LoadTutorialLevel();
                 break;
         }

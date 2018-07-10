@@ -32,7 +32,13 @@ public class Squad : MonoBehaviour
                 inventory.Weapon.EquipmentStats
             };
             var stats = UnitStats.CalcStats(unitStats, equipStats, currentFormationModifyers);
-            //и тут ещё строчку для модификаторов отряда
+
+            foreach (var mod in statsModifyers)
+                stats = UnitStats.ModifyStats(stats, mod);
+
+            foreach (var mod in terrainStatsModifyers)
+                stats = UnitStats.ModifyStats(stats, mod.GetModifierByEquipmentMass(stats.EquipmentMass));
+
             return stats;
         }
     }
@@ -53,6 +59,7 @@ public class Squad : MonoBehaviour
     public float MaxSpeed { get { return maxSpeed; } }
     [SerializeField] [Range(1, 180)] float maxRotationSpeed = 50;
     public float MaxRotationSpeed { get { return maxRotationSpeed; } }
+    [SerializeField] [Range(1, 180)] float minRotationSpeed = 5;
     [Space]
     [SerializeField] [Range(0, 90)] float rotationAcuracy = 5;
     public float RotationAcuracy { get { return rotationAcuracy; } }
@@ -303,7 +310,9 @@ public class Squad : MonoBehaviour
     int countSumUnit = 0;
 
     List<UnitStatsModifier> statsModifyers = new List<UnitStatsModifier>();
+    public UnitStatsModifier[] StatsModifiers { get { return statsModifyers.ToArray(); } }
     List<SOTerrainStatsModifier> terrainStatsModifyers = new List<SOTerrainStatsModifier>();
+    public SOTerrainStatsModifier[] TerrainStatsModifiers { get { return terrainStatsModifyers.ToArray(); } }
     Dictionary<UnitStatsModifier, int> statsDictionary = new Dictionary<UnitStatsModifier, int>();
     Dictionary<SOTerrainStatsModifier, int> terrainStatsDictionary = new Dictionary<SOTerrainStatsModifier, int>();
     public event Action<UnitStatsModifier> OnCallApplyModifierToAllUnit;
@@ -597,19 +606,22 @@ public class Squad : MonoBehaviour
             centerSquad = new Vector2(sumX2 / countSumUnit2, sumY2 / countSumUnit2);
     }
 
-
-
-    /// <summary>
-    /// тут старая реализация !!!
-    /// ЕСЛИ ЕСТЬ БАГ С ПЕРЕМЕЩЕНИЕМ, НАДО ПОСМОТРЕТЬ СЮДА
-    /// </summary>
     void CalcSpeed()
     {
-        currentSpeed = maxSpeed * (1 + (inventory.Body).EquipmentStats.AddSpeed) * (1 + currentFormationModifyers.SQUAD_ADDITIONAL_SPEED);
-        currentRotationSpeed = maxRotationSpeed * (1 + currentFormationModifyers.SQUAD_ADDITIONAL_ROTATION_SPEED);
-    }
-    
+        //currentSpeed = maxSpeed * (1 + (inventory.Body).EquipmentStats.AddSpeed) * (1 + currentFormationModifyers.SQUAD_ADDITIONAL_SPEED);
+        //currentRotationSpeed = maxRotationSpeed * (1 + currentFormationModifyers.SQUAD_ADDITIONAL_ROTATION_SPEED);
+        var stats = UnitStats;
 
+        currentSpeed = stats.Speed / 10;
+        if (currentSpeed > maxSpeed)
+            currentSpeed = maxSpeed;
+
+        currentRotationSpeed = stats.RotationSpeed / 6;
+        if (currentRotationSpeed < minRotationSpeed)
+            currentRotationSpeed = minRotationSpeed;
+        if (currentRotationSpeed > maxRotationSpeed)
+            currentRotationSpeed = maxRotationSpeed;
+    }
 
     void SetProp(EquipmentStack newEquipment = null)
     {

@@ -184,7 +184,18 @@ public class TipsPanel : MonoBehaviour, IDragHandler, IBeginDragHandler, IPointe
             actionButtonsPanel.gameObject.SetActive(false);
         }
 
-        GameManager.Instance.StartCoroutine(WaitForeRebuildPanel(worldPosOnScreen));
+        //GameManager.Instance.StartCoroutine(WaitForeRebuildPanel(worldPosOnScreen));
+
+        LayoutRebuilder.ForceRebuildLayoutImmediate(ThisTransform);
+        if (!gameObject.activeInHierarchy)
+        {
+            ThisTransform.position = GetPosOnScreen(worldPosOnScreen);
+            gameObject.SetActive(true);
+        }
+        else
+        {
+            ThisTransform.position = GetPosOnScreen(ThisTransform.position);
+        }
     }
 
     public void Hide()

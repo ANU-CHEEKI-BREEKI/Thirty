@@ -713,7 +713,14 @@ public class Unit : MonoBehaviour
 
         float health = stats.Health;
         stats = UnitStats.CalcStats(squad.DefaultUnitStats, equipStats, squad.CurrentFormationModifyers);
-        if(health > 0)//без проверки юниты умирают при инициализации
+
+        foreach (var mod in statsModifyers)
+            stats = UnitStats.ModifyStats(stats, mod);
+
+        foreach (var mod in terrainStatsModifyers)
+            stats = UnitStats.ModifyStats(stats, mod.GetModifierByEquipmentMass(stats.EquipmentMass));
+
+        if (health > 0)//без проверки юниты умирают при инициализации
             stats.Health = health;
         rigidbody2D.mass = stats.EquipmentMass;
     }

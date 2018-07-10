@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public enum SceneIndex { MAIN_MENU, MARKET, LEVEL, LOADING_SCREEN, LEVEL_TUTORIAL }
+    public enum SceneIndex { MAIN_MENU, MARKET, LEVEL, LOADING_SCREEN, LEVEL_TUTORIAL_1, LEVEL_TUTORIAL_2, LEVEL_TUTORIAL_3 }
     public static GameManager Instance { get; private set; }
     
     bool gamePaused;
@@ -138,13 +138,14 @@ public class GameManager : MonoBehaviour
                 break;
             case SceneIndex.LOADING_SCREEN:
                 break;
-            case SceneIndex.LEVEL_TUTORIAL:
+            case SceneIndex.LEVEL_TUTORIAL_1:
+            case SceneIndex.LEVEL_TUTORIAL_2:
+            case SceneIndex.LEVEL_TUTORIAL_3:
                 SoundManager.Instance.PlaySound(new SoundChannel.ClipSet(SoundManager.Instance.SoundClipsContainer.Music.MusicLevel, true), SoundManager.SoundType.MUSIC);
 
                 FadeScreen.Instance.FadeOnStartScene = false;
                 Pause();
                 Ground.Instance.OnWorkDone += Resume;
-                //Ground.Instance.OnWorkDone += InitPlayer;
                 Ground.Instance.OnWorkDone += FadeScreen.Instance.FateOnStartScene;
                 Ground.Instance.RecalcMatrixByCurrentBlocks();
 
@@ -325,7 +326,7 @@ public class GameManager : MonoBehaviour
             Destroy(Squad.playerSquadInstance.gameObject);
             Squad.playerSquadInstance = null;
         }
-        LoadScene(SceneIndex.LEVEL_TUTORIAL);
+        LoadScene(SceneIndex.LEVEL_TUTORIAL_1);
     }
 
     void LoadScene(SceneIndex index)

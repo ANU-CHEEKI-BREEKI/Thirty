@@ -1972,12 +1972,12 @@ TextureImporter:
       name: terrainModifier_rockRoad
       rect:
         serializedVersion: 2
-        x: 1302
-        y: 249
+        x: 1300
+        y: 248
         width: 100
         height: 100
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1992,12 +1992,12 @@ TextureImporter:
       name: terrainModifier_ground_road
       rect:
         serializedVersion: 2
-        x: 1402
-        y: 249
+        x: 1400
+        y: 248
         width: 100
         height: 100
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2012,12 +2012,12 @@ TextureImporter:
       name: terrainModifier_water
       rect:
         serializedVersion: 2
-        x: 1502
-        y: 250
+        x: 1500
+        y: 248
         width: 100
         height: 100
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2032,12 +2032,12 @@ TextureImporter:
       name: terrainModifier_dirt
       rect:
         serializedVersion: 2
-        x: 1602
-        y: 250
+        x: 1600
+        y: 248
         width: 100
         height: 100
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2052,12 +2052,12 @@ TextureImporter:
       name: terrainModifier_grass
       rect:
         serializedVersion: 2
-        x: 1702
-        y: 250
+        x: 1700
+        y: 248
         width: 100
         height: 100
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2072,12 +2072,12 @@ TextureImporter:
       name: terrainModifier_forest
       rect:
         serializedVersion: 2
-        x: 1802
-        y: 250
+        x: 1800
+        y: 248
         width: 100
         height: 100
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2092,12 +2092,12 @@ TextureImporter:
       name: terrainModifier_light_forest
       rect:
         serializedVersion: 2
-        x: 1902
-        y: 250
+        x: 1900
+        y: 248
         width: 100
         height: 100
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

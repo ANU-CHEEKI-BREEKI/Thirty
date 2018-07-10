@@ -31,6 +31,20 @@ public sealed class LocalizedStrings
     public static string formation_shields_description { get; private set; }
     public static string condition_inFight_name { get; private set; }
     public static string condition_inFight_description { get; private set; }
+    public static string terrain_modifier_dirt_name { get; private set; }
+    public static string terrain_modifier_dirt_description { get; private set; }
+    public static string terrain_modifier_forest_name { get; private set; }
+    public static string terrain_modifier_forest_description { get; private set; }
+    public static string terrain_modifier_forest_light_name { get; private set; }
+    public static string terrain_modifier_forest_light_description { get; private set; }
+    public static string terrain_modifier_grass_name { get; private set; }
+    public static string terrain_modifier_grass_description { get; private set; }
+    public static string terrain_modifier_road_ground_name { get; private set; }
+    public static string terrain_modifier_road_ground_description { get; private set; }
+    public static string terrain_modifier_road_rock_name { get; private set; }
+    public static string terrain_modifier_road_rock_description { get; private set; }
+    public static string terrain_modifier_water_light_name { get; private set; }
+    public static string terrain_modifier_water_light_description { get; private set; }
     public static string health { get; private set; }
     public static string squadHealth { get; private set; }
     public static string armour { get; private set; }
