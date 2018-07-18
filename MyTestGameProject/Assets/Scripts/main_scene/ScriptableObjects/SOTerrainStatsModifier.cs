@@ -11,6 +11,9 @@ public class SOTerrainStatsModifier : ScriptableObject
     [SerializeField] SOStatsModifier heavyWeightUnit;
     [SerializeField] SOStatsModifier veryHeavyWeightUnit;
 
+    [SerializeField] bool needMask;
+    public bool NeedMask { get { return needMask; } }
+
     public UnitStatsModifier GetModifierByEquipmentMass(UnitStats.EquipmentWeight equipmentMass)
     {
         var res = new UnitStatsModifier();

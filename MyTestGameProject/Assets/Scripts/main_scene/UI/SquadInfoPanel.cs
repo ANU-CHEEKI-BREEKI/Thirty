@@ -28,28 +28,72 @@ public class SquadInfoPanel : MonoBehaviour
     [SerializeField] Sprite mediumWeight;
     [SerializeField] Sprite heavyWeight;
 
-    Camera camera;
-
     Transform thisTransform;
 
-    static Action<bool> OnShowChanged;
+    static Action OnShowChanged;
     static bool show = true;
     static public bool Show
     {
         get { return show; }
-        set { if (show != value) { show = value; if (OnShowChanged != null) OnShowChanged(value); } }
+        set
+        {
+            if (show != value)
+            {
+                show = value;
+                if (OnShowChanged != null)
+                    OnShowChanged();
+            }
+        }
     }
+
+    static Camera camera;
+    bool inCamera = true;
+    bool InCamera
+    {
+        set
+        {
+            if (inCamera != value)
+            {
+                inCamera = value;
+                Present();
+            }
+        }
+    }
+    float orthographicSize;
+
+    bool inMask = true;
+    bool InMask
+    {
+        set
+        {
+            if (inMask != value)
+            {
+                inMask = value;
+                Present();
+            }
+        }
+    }
+
+    CanvasGroup cg;
 
     private void OnExecChanded(Executable obj)
     {
-        Present(Show);
+        Present();
     }
 
     private void Awake()
     {
         OnShowChanged += Present;
-        camera = Camera.main;
+        if(camera == null)
+            camera = Camera.main;
+
+        orthographicSize = camera.orthographicSize;
+
         thisTransform = transform;
+
+        cg = GetComponent<CanvasGroup>();
+        if (cg == null)
+            cg = gameObject.AddComponent<CanvasGroup>();
     }
 
     private void Start()
@@ -62,11 +106,13 @@ public class SquadInfoPanel : MonoBehaviour
             inv.SecondSkill.OnSkillChanged += OnExecChanded;
             inv.FirstConsumable.OnConsumableChanged += OnExecChanded;
             inv.SecondConsumable.OnConsumableChanged += OnExecChanded;
+            inv.OnEquipmentChanged += Inv_OnEquipmentChanged;
+            squad.OnTerrainModifiersListChanged += Squad_OnTerrainModifiersListChanged;            
         }
 
         Squad_OnFormationChanged(squad.CurrentFormationModifyers);
 
-        Present(Show);
+        Present();
     }
 
     private void OnDestroy()
@@ -80,22 +126,60 @@ public class SquadInfoPanel : MonoBehaviour
             inv.SecondSkill.OnSkillChanged -= OnExecChanded;
             inv.FirstConsumable.OnConsumableChanged -= OnExecChanded;
             inv.SecondConsumable.OnConsumableChanged -= OnExecChanded;
+            inv.OnEquipmentChanged -= Inv_OnEquipmentChanged;
+            squad.OnTerrainModifiersListChanged -= Squad_OnTerrainModifiersListChanged;
         }
     }
 
-    private void OnEnable()
-    {
-        SetScale();
-    }
+
+    //private void OnEnable()
+    //{
+    //    SetScaleAndVisible();
+    //}
 
     private void Update()
     {
-        SetScale();
+        SetScaleAndVisible();
     }
 
-    void SetScale()
+    void SetScaleAndVisible()
     {
-        thisTransform.localScale = camera.orthographicSize * 0.05f * (Vector3.one * 0.03f);
+        if (orthographicSize != camera.orthographicSize)
+        {
+            orthographicSize = camera.orthographicSize;
+            thisTransform.localScale = orthographicSize * 0.0015f * Vector3.one; //orthographicSize * 0.05f * (Vector3.one * 0.03f); 
+        }
+                
+        var v = camera.WorldToViewportPoint(thisTransform.position);
+        if (v.x > 0 && v.x < 1 && v.y > 0 && v.y < 1)
+            InCamera = true;
+        else
+            InCamera = false;
+
+        var mask = SquadMask.Instance;
+        if (inCamera)
+        {
+            if (squad.Hiding && mask != null)
+            {
+                var size = mask.Size / 2;
+                if (Vector2.SqrMagnitude((Vector2)thisTransform.position - mask.Position) <= size * size)
+                    InMask = true;
+                else
+                    InMask = false;
+            }
+            else
+                InMask = true;
+        }
+    }
+
+    private void Squad_OnTerrainModifiersListChanged(SOTerrainStatsModifier[] obj)
+    {
+        SetIcoPercent();
+    }
+
+    private void Inv_OnEquipmentChanged(EquipmentStack obj)
+    {
+        SetIcoPercent();
     }
 
     private void Squad_OnFormationChanged(FormationStats obj)
@@ -108,11 +192,11 @@ public class SquadInfoPanel : MonoBehaviour
         SetIcoPercent();
     }
 
-    void Present(bool value)
+    void Present()
     {
         if (squad != null && cells.Length == 6)
         {
-            if (value)
+            if (show && inCamera && inMask)
             {
                 var w = Extensions.GetWeightByMass(squad.UnitStats.EquipmentMass);
                 Sprite ico = null;
@@ -193,7 +277,8 @@ public class SquadInfoPanel : MonoBehaviour
                 }
             }
 
-            gameObject.SetActive(value);
+            //gameObject.SetActive(show && inCamera);
+            cg.alpha = show && inCamera && inMask ? 1 : 0;
         }
     }
 

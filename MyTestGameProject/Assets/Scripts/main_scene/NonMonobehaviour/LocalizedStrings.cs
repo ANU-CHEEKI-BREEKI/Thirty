@@ -63,6 +63,19 @@ public sealed class LocalizedStrings
     public static string chargeDamage { get; private set; }
     public static string defenceGoingThrough { get; private set; }
     public static string flyingSpeed { get; private set; }
+    public static string weight { get; private set; }
+    public static string weapon_damage { get; private set; }
+    public static string armour_armour { get; private set; }
+    public static string missile_block_short { get; private set; }
+    public static string squad_info_main { get; private set; }
+    public static string skills { get; private set; }
+    public static string consumables { get; private set; }
+    public static string squad_info_main_stats { get; private set; }
+    public static string weight_very_light { get; private set; }
+    public static string weight_light { get; private set; }
+    public static string weight_medium { get; private set; }
+    public static string weight_heavy { get; private set; }
+    public static string weight_very_heavy { get; private set; }
     public static string arrowWalley_radius { get; private set; }
     public static string arrowWalley_arrowscount { get; private set; }
     public static string cooldown { get; private set; }
@@ -85,7 +98,6 @@ public sealed class LocalizedStrings
     public static string description { get; private set; }
     public static string equipment { get; private set; }
     public static string inventory { get; private set; }
-    public static string consumables { get; private set; }
     public static string equipment_market { get; private set; }
     public static string consumables_market { get; private set; }
     public static string equipment_ground { get; private set; }
@@ -197,6 +209,7 @@ public sealed class LocalizedStrings
     public static string next { get; private set; }
     public static string previous { get; private set; }
     public static string close { get; private set; }
+    public static string again { get; private set; }
     public static string button_inv { get; private set; }
     public static string button_tips_review { get; private set; }
     public static string button_formation { get; private set; }
@@ -206,46 +219,91 @@ public sealed class LocalizedStrings
     public static string inv_cells_for_store { get; private set; }
     public static string inv_items_on_ground { get; private set; }
     public static string all_tips_review { get; private set; }
+    public static string button_squad_panel { get; private set; }
+    public static string buttons_skills { get; private set; }
+    public static string buttons_consumables { get; private set; }
     public static string tip_try_to_buy_equip_and_consumables { get; private set; }
     public static string tip_try_to_train_squad_and_skills { get; private set; }
-    public static string tip_barricades { get; private set; }
-    public static string tip_basic { get; private set; }
-    public static string tip_how_to_block_arrows { get; private set; }
-    public static string tip_close_inventory { get; private set; }
-    public static string tip_congratulations { get; private set; }
-    public static string tip_consumables { get; private set; }
-    public static string tip_default_formation { get; private set; }
-    public static string tip_destroy_marked_enemy { get; private set; }
-    public static string tip_drag_equipment { get; private set; }
-    public static string tip_dropped_equipment { get; private set; }
-    public static string tip_go_to_point { get; private set; }
-    public static string tip_go_to_point_and_recruit_units { get; private set; }
-    public static string tip_look_to_enemy_and_reform_phalanx { get; private set; }
-    public static string tip_minimap_info { get; private set; }
-    public static string tip_minimap_how_to_use { get; private set; }
-    public static string tip_open_inventory { get; private set; }
-    public static string tip_phalanx_defence { get; private set; }
-    public static string tip_phalanx_side_movement { get; private set; }
-    public static string tip_pikes { get; private set; }
-    public static string tip_pilums_how_to_use { get; private set; }
-    public static string tip_read_modifyer_panel { get; private set; }
-    public static string tip_how_to_reform_squad { get; private set; }
-    public static string tip_reform_to_phalanx { get; private set; }
-    public static string tip_reform_to_shields { get; private set; }
-    public static string tip_retreat_and_regroup { get; private set; }
-    public static string tip_shields_info { get; private set; }
-    public static string tip_squadless_units { get; private set; }
-    public static string tip_squad_modifyer_panel { get; private set; }
-    public static string tip_squad_phalanx_movement { get; private set; }
-    public static string tip_squad_ranks_movement { get; private set; }
-    public static string tip_squad_shields_movement { get; private set; }
-    public static string tip_surround { get; private set; }
-    public static string tip_take_a_shields { get; private set; }
-    public static string tip_take_a_spears { get; private set; }
-    public static string tip_take_units { get; private set; }
-    public static string tip_death_try_to_follow_the_advices { get; private set; }
-    public static string tip_watch_equipment_stats { get; private set; }
-    public static string tip_watch_squad_stats { get; private set; }
-    public static string tip_open_squad_modifyer_stats { get; private set; }
-    public static string tip_tutorial_welcome { get; private set; }
+    public static string tutorial_tip_death_try_to_follow_the_advices { get; private set; }
+    public static string tutorial_tip_lvl1_barricades { get; private set; }
+    public static string tutorial_tip_lvl1_basic { get; private set; }
+    public static string tutorial_tip_lvl1_how_to_block_arrows { get; private set; }
+    public static string tutorial_tip_lvl1_close_inventory { get; private set; }
+    public static string tutorial_tip_lvl1_congratulations { get; private set; }
+    public static string tutorial_tip_lvl1_drag_equipment { get; private set; }
+    public static string tutorial_tip_lvl1_dropped_equipment { get; private set; }
+    public static string tutorial_tip_lvl1_form_info_phalanx { get; private set; }
+    public static string tutorial_tip_lvl1_form_info_ranks { get; private set; }
+    public static string tutorial_tip_lvl1_form_info_shields { get; private set; }
+    public static string tutorial_tip_lvl1_go_to_camp_exit { get; private set; }
+    public static string tutorial_tip_lvl1_go_level_exit { get; private set; }
+    public static string tutorial_tip_lvl1_go_to_point { get; private set; }
+    public static string tutorial_tip_lvl1_how_to_open_inventory { get; private set; }
+    public static string tutorial_tip_lvl1_minimap_info { get; private set; }
+    public static string tutorial_tip_lvl1_minimap_how_to_use { get; private set; }
+    public static string tutorial_tip_lvl1_open_inventory { get; private set; }
+    public static string tutorial_tip_lvl1_open_minimap { get; private set; }
+    public static string tutorial_tip_lvl1_other_formations_dependedn { get; private set; }
+    public static string tutorial_tip_lvl1_phalanx_side_movement { get; private set; }
+    public static string tutorial_tip_lvl1_read_modifyer_panel { get; private set; }
+    public static string tutorial_tip_lvl1_how_to_reform_squad { get; private set; }
+    public static string tutorial_tip_lvl1_reform_to_phalanx { get; private set; }
+    public static string tutorial_tip_lvl1_reform_to_shields { get; private set; }
+    public static string tutorial_tip_lvl1_squad_modifyer_panel { get; private set; }
+    public static string tutorial_tip_lvl1_squad_phalanx_movement { get; private set; }
+    public static string tutorial_tip_lvl1_squad_ranks_movement { get; private set; }
+    public static string tutorial_tip_lvl1_squad_shields_movement { get; private set; }
+    public static string tutorial_tip_lvl1_take_a_shields { get; private set; }
+    public static string tutorial_tip_lvl1_take_a_spears { get; private set; }
+    public static string tutorial_tip_lvl1_watch_equipment_stats { get; private set; }
+    public static string tutorial_tip_lvl1_watch_squad_stats { get; private set; }
+    public static string tutorial_tip_lvl1_open_squad_modifyer_stats { get; private set; }
+    public static string tutorial_tip_lvl1_tutorial_welcome { get; private set; }
+    public static string tutorial_tip_lvl2_charge_how_to_use { get; private set; }
+    public static string tutorial_tip_lvl2_charge_pikes { get; private set; }
+    public static string tutorial_tip_lvl2_congratulations { get; private set; }
+    public static string tutorial_tip_lvl2_consumables { get; private set; }
+    public static string tutorial_tip_lvl2_destroy_enemy_on_path { get; private set; }
+    public static string tutorial_tip_lvl2_destroy_marked_enemy { get; private set; }
+    public static string tutorial_tip_lvl2_enemy_pilums { get; private set; }
+    public static string tutorial_tip_lvl2_go_to_point_1 { get; private set; }
+    public static string tutorial_tip_lvl2_go_to_point_2 { get; private set; }
+    public static string tutorial_tip_lvl2_go_to_point_3 { get; private set; }
+    public static string tutorial_tip_lvl2_go_to_point_after_fight { get; private set; }
+    public static string tutorial_tip_lvl2_go_to_point_exit { get; private set; }
+    public static string tutorial_tip_lvl2_how_to_open_squad_main_info_panels { get; private set; }
+    public static string tutorial_tip_lvl2_look_to_enemy_end_regroup_to_phalanx { get; private set; }
+    public static string tutorial_tip_lvl2_open_squad_main_info_panels { get; private set; }
+    public static string tutorial_tip_lvl2_phalanx_defence { get; private set; }
+    public static string tutorial_tip_lvl2_pikes { get; private set; }
+    public static string tutorial_tip_lvl2_pilums_how_to_use { get; private set; }
+    public static string tutorial_tip_lvl2_retreat_and_regroup { get; private set; }
+    public static string tutorial_tip_lvl2_shoot_pikes { get; private set; }
+    public static string tutorial_tip_lvl2_squadless_unit { get; private set; }
+    public static string tutorial_tip_lvl2_squad_main_info_panel_icons { get; private set; }
+    public static string tutorial_tip_lvl2_squad_main_info_panels { get; private set; }
+    public static string tutorial_tip_lvl2_squad_phalanx_movement { get; private set; }
+    public static string tutorial_tip_lvl2_squad_ranks_movement { get; private set; }
+    public static string tutorial_tip_lvl2_squad_shields_movement { get; private set; }
+    public static string tutorial_tip_lvl2_squad_surround { get; private set; }
+    public static string tutorial_tip_lvl2_take_shields_and_attack { get; private set; }
+    public static string tutorial_tip_lvl2_take_units { get; private set; }
+    public static string tutorial_tip_lvl2_welcome { get; private set; }
+    public static string tutorial_tip_lvl3_congratulations { get; private set; }
+    public static string tutorial_tip_lvl3_destroy_enemy { get; private set; }
+    public static string tutorial_tip_lvl3_forest_be_carefull { get; private set; }
+    public static string tutorial_tip_lvl3_go_to_enemy_1 { get; private set; }
+    public static string tutorial_tip_lvl3_go_to_exit { get; private set; }
+    public static string tutorial_tip_lvl3_go_to_forest { get; private set; }
+    public static string tutorial_tip_lvl3_go_to_forest_enemy { get; private set; }
+    public static string tutorial_tip_lvl3_go_to_road { get; private set; }
+    public static string tutorial_tip_lvl3_take_heavy_equipment { get; private set; }
+    public static string tutorial_tip_lvl3_take_units { get; private set; }
+    public static string tutorial_tip_lvl3_terrain_base { get; private set; }
+    public static string tutorial_tip_lvl3_terrain_forest { get; private set; }
+    public static string tutorial_tip_lvl3_terrain_other { get; private set; }
+    public static string tutorial_tip_lvl3_terrain_road { get; private set; }
+    public static string tutorial_tip_lvl3_terrain_road_heavy { get; private set; }
+    public static string tutorial_tip_lvl3_weight_base { get; private set; }
+    public static string tutorial_tip_lvl3_welcome { get; private set; }
 }

@@ -19,7 +19,36 @@ public class DropingItemsManager : MonoBehaviour
     }
 
     static Transform droppedItemsContainer;
+    static Transform DroppedItemsContainer
+    {
+        get
+        {
+            if (droppedItemsContainer == null)
+            {
+                var dropitcont = GameObject.Find("DroppedItemsContainer");
+                if (dropitcont == null)
+                    dropitcont = new GameObject("DroppedItemsContainer");
+                droppedItemsContainer = dropitcont.transform;
+            }
+            return droppedItemsContainer;
+        }
+    }
+
     static Transform deatUnitsContainer;
+    static Transform DeatUnitsContainer
+    {
+        get
+        {
+            if (deatUnitsContainer == null)
+            {
+                var alldeads = GameObject.Find("AllDeadUnits");
+                if (alldeads == null)
+                    alldeads = new GameObject("AllDeadUnits");
+                deatUnitsContainer = alldeads.transform;
+            }
+            return deatUnitsContainer;
+        }
+    }
 
     GameObject droppedItemOriginal = null;
     const string droppedItemOriginalResourcePath = @"Prefabs/Inventory/DroppedItem";
@@ -28,22 +57,6 @@ public class DropingItemsManager : MonoBehaviour
     {
         if (droppedItemOriginal == null)
             droppedItemOriginal = Resources.Load<GameObject>(droppedItemOriginalResourcePath);
-
-        if (droppedItemsContainer == null)
-        {
-            var dropitcont = GameObject.Find("DroppedItemsContainer");
-            if (dropitcont == null)
-                dropitcont = new GameObject("DroppedItemsContainer");
-            droppedItemsContainer = dropitcont.transform;
-        }
-
-        if (deatUnitsContainer == null)
-        {
-            var alldeads = GameObject.Find("AllDeadUnits");
-            if (alldeads == null)
-                alldeads = new GameObject("AllDeadUnits");
-            deatUnitsContainer = alldeads.transform;
-        }
     }
 
     public void DropEquipment(EquipmentStack stack, Transform sender, float randmizePosition = 0)
@@ -55,12 +68,12 @@ public class DropingItemsManager : MonoBehaviour
             pos.y += Random.Range(-1f, 1f) * randmizePosition;
         }
 
-        DroppedItem di = Instantiate(droppedItemOriginal, pos, sender.rotation, droppedItemsContainer).GetComponent<DroppedItem>();
+        DroppedItem di = Instantiate(droppedItemOriginal, pos, sender.rotation, DroppedItemsContainer).GetComponent<DroppedItem>();
         di.Stack = new EquipmentStack(stack.EquipmentMainProperties, stack.EquipmentStats, stack.Count);
     }
 
     public void DropUnitCorp(Unit corp)
     {
-        corp.transform.parent = deatUnitsContainer;
+        corp.transform.parent = DeatUnitsContainer;
     }
 }

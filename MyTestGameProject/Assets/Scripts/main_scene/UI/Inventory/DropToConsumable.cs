@@ -51,22 +51,25 @@ public class DropToConsumable : ADropToMe
 
     public override void OnDrop(PointerEventData eventData)
     {
-        var drag = eventData.pointerDrag.GetComponent<DragConsumable>();
-
-        if (drag != null && drag.CanDrag)
+        if (CanDrop)
         {
-            var oldDrop = drag.OldParent.GetComponent<ADropToMe>();
+            var drag = eventData.pointerDrag.GetComponent<DragConsumable>();
 
-            //если ячейка свободна
-            if (transform.childCount == 0)
+            if (drag != null && drag.CanDrag)
             {
-                if (oldDrop.CanGetFromThisIventory(drag.ConsumableStack))
-                    if (AddToThisInventory(drag.ConsumableStack))
-                        oldDrop.RemoveFromThisInventory(drag.ConsumableStack);
-            }
+                var oldDrop = drag.OldParent.GetComponent<ADropToMe>();
 
-            Destroy(drag.gameObject);
-            RefreshUI();
+                //если ячейка свободна
+                if (transform.childCount == 0)
+                {
+                    if (oldDrop.CanGetFromThisIventory(drag.ConsumableStack))
+                        if (AddToThisInventory(drag.ConsumableStack))
+                            oldDrop.RemoveFromThisInventory(drag.ConsumableStack);
+                }
+
+                Destroy(drag.gameObject);
+                RefreshUI();
+            }
         }
     }
 

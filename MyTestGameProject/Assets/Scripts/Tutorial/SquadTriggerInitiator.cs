@@ -18,7 +18,7 @@ public class SquadTriggerInitiator : MonoBehaviour
 
         if(squad == null)
         {
-            Debug.Log("Не туда засунул этот обьект. Надо внетрь сквада.");
+            Debug.Log("Не туда засунул этот обьект. Надо внутрь сквада.");
             Destroy(gameObject);
             return;
         }
@@ -34,7 +34,7 @@ public class SquadTriggerInitiator : MonoBehaviour
             rb.MovePosition(squad.CenterSquad);
 	}
 
-    public void TriggerCallBakc(GOTriggerEvent.TriggerType type)
+    public void TriggerCallBack(GOTriggerEvent.TriggerType type)
     {
         squad.Path = null;
     }

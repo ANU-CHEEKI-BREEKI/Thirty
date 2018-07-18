@@ -9,6 +9,7 @@ public class ToAnotherSceneButton : MonoBehaviour
     Button btn;
     [SerializeField] bool needConfirm;
     [SerializeField] GameManager.SceneIndex scene;
+    public GameManager.SceneIndex SceneIndex { get { return scene; } }
 
     private void Start()
     {
@@ -62,7 +63,9 @@ public class ToAnotherSceneButton : MonoBehaviour
                 Debug.Log("Не ну это перебор уже. Сюда незя пепеходить напрямую!");
                 break;
             case GameManager.SceneIndex.LEVEL_TUTORIAL_1:
-                GameManager.Instance.LoadTutorialLevel();
+            case GameManager.SceneIndex.LEVEL_TUTORIAL_2:
+            case GameManager.SceneIndex.LEVEL_TUTORIAL_3:
+                GameManager.Instance.LoadTutorialLevel(scene);
                 break;
         }
     }

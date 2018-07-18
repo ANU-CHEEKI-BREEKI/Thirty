@@ -7,6 +7,9 @@ public abstract class AInventoryUI : MonoBehaviour
 {
     abstract public void RefreshUI();
 
+    [SerializeField] bool canDrag = true;
+    protected bool CanDrag { get { return canDrag; } }
+
     /// <summary>
     /// Создаем контейнер итема в указаной ячейке, устанавливаем иконку и её цвет
     /// </summary>

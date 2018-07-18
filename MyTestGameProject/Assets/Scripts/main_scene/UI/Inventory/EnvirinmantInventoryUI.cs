@@ -245,7 +245,7 @@ public class EnvirinmantInventoryUI : AInventoryUI
             cnt = envaironmentCells.Length;
         for (int i = 0; i < cnt; i++)
         {
-            SetImage(inventoryItemOriginal, envaironmentCells[i], inventory[i], true);
+            SetImage(inventoryItemOriginal, envaironmentCells[i], inventory[i], CanDrag);
         }
     }
 

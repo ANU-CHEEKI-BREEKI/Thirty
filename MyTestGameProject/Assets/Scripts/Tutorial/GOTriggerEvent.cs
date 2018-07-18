@@ -39,7 +39,7 @@ public class GOTriggerEvent : MonoBehaviour, IPointerClickHandler, IPointerDownH
     void DestroyOnTriggerActivates(TriggerType type)
     {
         if ((initiator != null && initiator.Squad != null))
-            initiator.TriggerCallBakc(TriggerType.DESTROY);
+            initiator.TriggerCallBack(TriggerType.DESTROY);
 
         if (deleteOnTriggerActivates)
         {
@@ -55,7 +55,7 @@ public class GOTriggerEvent : MonoBehaviour, IPointerClickHandler, IPointerDownH
         if (collision != null)
             initiator = collision.GetComponent<SquadTriggerInitiator>();
 
-        if ((collision == null || (initiator != null && initiator.Squad != null)) && ConstraintsAreTrue())
+        if ((collision == null || (initiator != null && initiator.Squad != null && initiator.Squad == Squad.playerSquadInstance)) && ConstraintsAreTrue())
         {
             switch (type)
             {

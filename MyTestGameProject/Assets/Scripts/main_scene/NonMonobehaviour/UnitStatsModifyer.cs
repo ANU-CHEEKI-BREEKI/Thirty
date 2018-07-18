@@ -68,7 +68,7 @@ public struct UnitStatsModifier: IDescriptionable
         /// <summary>
         /// Указывает что хранится в значении
         /// </summary>
-        public enum ValueType { PERCENT, UNIT }
+        public enum ValueType { ADD_MULTIPLIED, ADD }
 
         /// <summary>
         /// Указывает что хранится в значении
@@ -123,13 +123,13 @@ public struct UnitStatsModifier: IDescriptionable
                 var ti = ft.GetField("type", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
                 Modifyer.ValueType t = (Modifyer.ValueType) ti.GetValue(f);
 
-                if(t == Modifyer.ValueType.PERCENT)
+                if(t == Modifyer.ValueType.ADD_MULTIPLIED)
                 {
-                    stats.Add(new DescriptionItem() { Name = Localization.GetString(fi.Name), Description = v.ToString(StringFormats.floatSignNumberPercent), ItPositiveDesc = v > 0 });
+                    stats.Add(new DescriptionItem() { Name = Localization.GetString(fi.Name), Description = string.Format("{0} {1}", v.ToString(StringFormats.floatSignNumberPercent), LocalizedStrings.baseValue) , ItPositiveDesc = v > 0 });
                 }
                 else
                 {
-                    stats.Add(new DescriptionItem() { Name = Localization.GetString(fi.Name), Description = v.ToString(StringFormats.floatSignNumber), ItPositiveDesc = v > 0 });
+                    stats.Add(new DescriptionItem() { Name = Localization.GetString(fi.Name), Description = v.ToString(StringFormats.floatSignNumberPercent), ItPositiveDesc = v > 0 });
                 }
             }
         }

@@ -18,16 +18,19 @@ public class DropToSkillMarket : ADropToMe
 
     public override void OnDrop(PointerEventData eventData)
     {
-        DragSkill drag = eventData.pointerDrag.GetComponent<DragSkill>();
-
-        if (drag != null && drag.CanDrag)
+        if (CanDrop)
         {
-            var oldParentDrop = drag.OldParent.GetComponent<ADropToMe>();
-            oldParentDrop.RemoveFromThisInventory(null);
-            AddToThisInventory(drag.SkillStack);
+            DragSkill drag = eventData.pointerDrag.GetComponent<DragSkill>();
 
-            Destroy(drag.gameObject);
-            RefreshUI();
+            if (drag != null && drag.CanDrag)
+            {
+                var oldParentDrop = drag.OldParent.GetComponent<ADropToMe>();
+                oldParentDrop.RemoveFromThisInventory(null);
+                AddToThisInventory(drag.SkillStack);
+
+                Destroy(drag.gameObject);
+                RefreshUI();
+            }
         }
     }
 

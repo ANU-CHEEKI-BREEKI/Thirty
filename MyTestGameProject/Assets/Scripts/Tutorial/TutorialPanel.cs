@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class TutorialPanel : MonoBehaviour
@@ -220,13 +221,25 @@ public class TutorialPanel : MonoBehaviour
                     if(ttip.dublicateToReview)
                         tipsToReview.Add(ttip);
 
-                    Show();
-                    GameManager.Instance.Pause();
+                    if (ttip.tip != null)
+                    {
+                        Show();
+                        GameManager.Instance.Pause();
+                    }
                 }
             }
             else
             {
-                GameManager.Instance.LoadMainMenu();
+                var scInd = (GameManager.SceneIndex)SceneManager.GetActiveScene().buildIndex;
+                if(scInd < GameManager.SceneIndex.LEVEL_TUTORIAL_3)
+                {
+                    var nextLevel = (GameManager.SceneIndex)((int)scInd + 1);
+                    if(GameManager.Instance.PlayerProgress.Flags.AvalaibleTutorialLevel < nextLevel)
+                        GameManager.Instance.PlayerProgress.Flags.AvalaibleTutorialLevel = nextLevel;
+                    GameManager.Instance.LoadTutorialLevel(nextLevel);
+                }
+                else
+                    GameManager.Instance.LoadMainMenu();
             }
         }
 
@@ -292,7 +305,8 @@ public class TutorialPanel : MonoBehaviour
     
     void SetTip(TriggerTip ttip, bool itsReview = false)
     {
-        tipsPanel.SetTip(ttip.tip);
+        if(ttip.tip != null)
+            tipsPanel.SetTip(ttip.tip);
 
         if (!itsReview)
             lastTip = ttip;

@@ -5,6 +5,8 @@ using UnityEngine.EventSystems;
 public abstract class ADropToMe: MonoBehaviour, IDropHandler
 {
     protected new Transform transform;
+    [SerializeField] bool canDrop = true;
+    protected bool CanDrop { get { return canDrop; }}
 
     private void Start()
     {

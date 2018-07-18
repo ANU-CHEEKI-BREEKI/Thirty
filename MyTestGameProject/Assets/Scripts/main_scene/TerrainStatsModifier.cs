@@ -6,14 +6,12 @@ using UnityEngine;
 public class TerrainStatsModifier : MonoBehaviour
 {
     [SerializeField] SOTerrainStatsModifier soModyfier;
-    
+
     private void Awake()
     {
         GetComponent<Collider2D>().isTrigger = true;
     }
-
     
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         var unit = collision.gameObject.GetComponent<Unit>();

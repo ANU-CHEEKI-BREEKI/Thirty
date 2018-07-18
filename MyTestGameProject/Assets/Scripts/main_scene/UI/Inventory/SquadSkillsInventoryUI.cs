@@ -12,7 +12,6 @@ public class SquadSkillsInventoryUI : AInventoryUI
     [Header("Skills containers")]
     [SerializeField] Transform firstSkillCell;
     [SerializeField] Transform secondSkillCell;
-    [SerializeField] bool canDrag = true;
     
     void Awake()
     {
@@ -30,10 +29,10 @@ public class SquadSkillsInventoryUI : AInventoryUI
             return;
 
         var squadSkillStack = Squad.playerSquadInstance.Inventory.FirstSkill;
-        SetImage(skillItemOriginal, firstSkillCell, squadSkillStack, canDrag);
+        SetImage(skillItemOriginal, firstSkillCell, squadSkillStack, CanDrag);
 
         squadSkillStack = Squad.playerSquadInstance.Inventory.SecondSkill;
-        SetImage(skillItemOriginal, secondSkillCell, squadSkillStack, canDrag);
+        SetImage(skillItemOriginal, secondSkillCell, squadSkillStack, CanDrag);
     }
 
     public override GameObject SetImage(GameObject origin, Transform cell, AStack stack, bool canDrag)

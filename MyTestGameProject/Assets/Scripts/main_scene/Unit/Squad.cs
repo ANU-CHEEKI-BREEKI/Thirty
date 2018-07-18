@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Text;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -169,7 +170,9 @@ public class Squad : MonoBehaviour
         }
 
     }
-      
+
+    bool hiding;
+    public bool Hiding { get { return hiding; } }
 
     int attakingUnitsCount = 0;
     public int AttakingUnitsCount
@@ -388,9 +391,12 @@ public class Squad : MonoBehaviour
             minimapMark.gameObject.SetActive(true);
 
         inventory.OnEquipmentChanged += SetProp;
+        OnModifiersListChanged += Squad_OnModifiersListChanged;
+        OnTerrainModifiersListChanged += Squad_OnTerrainModifiersListChanged;
 
         SetProp(inventory.Weapon);
     }
+
 
     private void OnDestroy()
     {
@@ -506,6 +512,13 @@ public class Squad : MonoBehaviour
             if (OnTerrainModifiersListChanged != null)
                 OnTerrainModifiersListChanged(terrainStatsModifyers.ToArray());
 
+            if (terrainStatsModifyers.Count > 0 && modifier.NeedMask)
+            {
+                if (this == playerSquadInstance && SquadMask.Instance != null)
+                    SquadMask.Instance.Active = true;
+                hiding = true;
+            }
+
             Debug.Log("было вызвано событие для применения модиф.ландшафта ко всему отряду");
         }
         else
@@ -527,6 +540,13 @@ public class Squad : MonoBehaviour
             if (OnTerrainModifiersListChanged != null)
                 OnTerrainModifiersListChanged(terrainStatsModifyers.ToArray());
 
+            if (terrainStatsModifyers.Find(mod => mod.NeedMask) == null)
+            {
+                if (this == playerSquadInstance && SquadMask.Instance != null)
+                    SquadMask.Instance.Active = false;
+                hiding = false;
+            }
+
             Debug.Log("было вызвано событие для отмены модиф.ландшафта ко всему отряду");
         }
         else
@@ -538,6 +558,15 @@ public class Squad : MonoBehaviour
     #endregion
         
 
+    private void Squad_OnTerrainModifiersListChanged(SOTerrainStatsModifier[] obj)
+    {
+        CalcSpeed();
+    }
+
+    private void Squad_OnModifiersListChanged(UnitStatsModifier[] obj)
+    {
+        CalcSpeed();
+    }
 
 
     public void SetUnitsStats(DSUnitStats stats)
@@ -563,9 +592,6 @@ public class Squad : MonoBehaviour
         DrawPath();
 
         CalcCenterSquad();
-        
-        //if (minimapMark != null)
-        //    minimapMark.position = centerSquad;
 
         Moving();
     }
@@ -613,8 +639,8 @@ public class Squad : MonoBehaviour
         var stats = UnitStats;
 
         currentSpeed = stats.Speed / 10;
-        if (currentSpeed > maxSpeed)
-            currentSpeed = maxSpeed;
+        //if (currentSpeed > maxSpeed)
+        //    currentSpeed = maxSpeed;
 
         currentRotationSpeed = stats.RotationSpeed / 6;
         if (currentRotationSpeed < minRotationSpeed)
@@ -682,14 +708,10 @@ public class Squad : MonoBehaviour
             OnBeginCharge(modifyer);
         charging = true;
         
-        currentSpeed *= 1 + modifyer.Speed.Value;
-
         yield return new WaitForSeconds(duration);
         if (OnEndCharge != null)
             OnEndCharge(modifyer);
         charging = false;
-
-        currentSpeed /= 1 + modifyer.Speed.Value;
     }
     
     void Moving()
@@ -848,11 +870,11 @@ public class Squad : MonoBehaviour
     /// <param name="unitPositionObject"></param>
     public void UnitDeath(Unit unit)
     {
-        unit.OnModifierAdded -= UnitModifierAdded;
-        unit.OnModifierRemoved -= UnitModifierRemoved;
+        unit.OnModifierAdd -= UnitModifierAdded;
+        unit.OnModifierRemove -= UnitModifierRemoved;
 
-        unit.OnTerrainModifierAdded -= UnitTerrainModifierAdded;
-        unit.OnTerrainModifierRemoved-= UnitTerrainModifierRemoved;
+        unit.OnTerrainModifierAdd -= UnitTerrainModifierAdded;
+        unit.OnTerrainModifierRemove-= UnitTerrainModifierRemoved;
         //-------
 
         ReformSquad(flipRotation, unit.TargetMovePositionObject);
@@ -881,11 +903,11 @@ public class Squad : MonoBehaviour
     /// <param name="unit"></param>
     void AddUnitWithoutReformSquad(Unit unit)
     {
-        unit.OnModifierAdded += UnitModifierAdded;
-        unit.OnModifierRemoved += UnitModifierRemoved;
+        unit.OnModifierAdd += UnitModifierAdded;
+        unit.OnModifierRemove += UnitModifierRemoved;
 
-        unit.OnTerrainModifierAdded += UnitTerrainModifierAdded;
-        unit.OnTerrainModifierRemoved += UnitTerrainModifierRemoved;
+        unit.OnTerrainModifierAdd += UnitTerrainModifierAdded;
+        unit.OnTerrainModifierRemove += UnitTerrainModifierRemoved;
         //-------
 
         UnitPosition targetMovePositionObject = unit.TargetMovePositionObject.GetComponent<UnitPosition>();

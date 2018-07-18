@@ -92,12 +92,12 @@ public class Unit : MonoBehaviour
     [SerializeField] [Range(0, 90)] float weaponAngleDeviation = 10;
 
     List<UnitStatsModifier> statsModifyers = new List<UnitStatsModifier>();
-    public event Action<UnitStatsModifier> OnModifierAdded;
-    public event Action<UnitStatsModifier> OnModifierRemoved;
+    public event Action<UnitStatsModifier> OnModifierAdd;
+    public event Action<UnitStatsModifier> OnModifierRemove;
 
     List<SOTerrainStatsModifier> terrainStatsModifyers = new List<SOTerrainStatsModifier>();
-    public event Action<SOTerrainStatsModifier> OnTerrainModifierAdded;
-    public event Action<SOTerrainStatsModifier> OnTerrainModifierRemoved;
+    public event Action<SOTerrainStatsModifier> OnTerrainModifierAdd;
+    public event Action<SOTerrainStatsModifier> OnTerrainModifierRemove;
 
     new Rigidbody2D rigidbody2D;
     CircleCollider2D circleCollider2D;
@@ -342,38 +342,7 @@ public class Unit : MonoBehaviour
     {
         if (squad != null)
         {
-            EquipmentStack stack;
-
-            if (!helmet.Stats.Empty)
-            {
-                stack = new EquipmentStack(helmet);
-                OnDropStack(stack);
-            }
-            if (!body.Stats.Empty)
-            {
-                stack = new EquipmentStack(body);
-                OnDropStack(stack);
-            }
-            if (!shield.Stats.Empty)
-            {
-                stack = new EquipmentStack(shield);
-                OnDropStack(stack);
-            }
-            if (!weapon.Stats.Empty)
-            {
-                stack = new EquipmentStack(weapon);
-                OnDropStack(stack);
-            }
-
-            int cnt = squad.Inventory.Length;
-            for (int i = 0; i < cnt; i++)
-            {
-                if (squad.Inventory[i] != null && squad.Inventory[i].Count > 0 && squad.Inventory[i].Count >= squad.UnitCount)
-                {
-                    OnDropStack(new EquipmentStack(squad.Inventory[i].EquipmentMainProperties, squad.Inventory[i].EquipmentStats));
-                    squad.Inventory[i].PopItems(1);
-                }
-            }
+            DropEquipment();
 
             squad.OnFormationChanged -= OnFormationChanged;
             squad.OnDropStackFromInventory -= OnDropStack;
@@ -404,7 +373,7 @@ public class Unit : MonoBehaviour
             for (int i = 0; i < targettedBy.Count; i++)
                 targettedBy[i].SetTarget(null);
 
-            //squad.UnitDeath(this);
+            squad.UnitDeath(this);
         }
 
         DropingItemsManager.Instance.DropUnitCorp(this);
@@ -412,6 +381,42 @@ public class Unit : MonoBehaviour
         Selected = false;
 
         IsAlive = false;
+    }
+
+    private void DropEquipment()
+    {
+        EquipmentStack stack;
+
+        if (!helmet.Stats.Empty)
+        {
+            stack = new EquipmentStack(helmet);
+            OnDropStack(stack);
+        }
+        if (!body.Stats.Empty)
+        {
+            stack = new EquipmentStack(body);
+            OnDropStack(stack);
+        }
+        if (!shield.Stats.Empty)
+        {
+            stack = new EquipmentStack(shield);
+            OnDropStack(stack);
+        }
+        if (!weapon.Stats.Empty)
+        {
+            stack = new EquipmentStack(weapon);
+            OnDropStack(stack);
+        }
+
+        int cnt = squad.Inventory.Length;
+        for (int i = 0; i < cnt; i++)
+        {
+            if (squad.Inventory[i] != null && squad.Inventory[i].Count > 0 && squad.Inventory[i].Count >= squad.UnitCount)
+            {
+                OnDropStack(new EquipmentStack(squad.Inventory[i].EquipmentMainProperties, squad.Inventory[i].EquipmentStats));
+                squad.Inventory[i].PopItems(1);
+            }
+        }
     }
 
     void LateDeath()
@@ -424,9 +429,12 @@ public class Unit : MonoBehaviour
 
         if (OnAnyUnitDeath != null)
             OnAnyUnitDeath();
+        
+        foreach (var mod in statsModifyers)
+            RemoveStatsModifyer(mod);
 
-        if (squad != null)
-            squad.UnitDeath(this);
+        foreach (var tmod in terrainStatsModifyers)
+            RemoveTerrainStatsModifyer(tmod);
 
         Destroy(this);
     }
@@ -467,18 +475,20 @@ public class Unit : MonoBehaviour
 
     public void AddStatsModifyer(UnitStatsModifier modifier)
     {
-        if (!statsModifyers.Contains(modifier))
-        {
-            statsModifyers.Add(modifier);
-            stats = UnitStats.ModifyStats(stats, modifier);
-            Debug.Log("Модификатор добавлен");
-            if (OnModifierAdded != null)
-                OnModifierAdded(modifier);
-        }
-        else
-        {
-            Debug.Log("Такой модификатор уже есть");
-        }
+        //if (!statsModifyers.Contains(modifier))
+        //{
+        //    statsModifyers.Add(modifier);
+        //    stats = UnitStats.ModifyStats(stats, modifier);
+        //    Debug.Log("Модификатор добавлен");
+           
+        //}
+        //else
+        //{
+        //    Debug.Log("Такой модификатор уже есть");
+        //}
+
+        if (OnModifierAdd != null)
+            OnModifierAdd(modifier);
     }
 
     /// <summary>
@@ -487,33 +497,30 @@ public class Unit : MonoBehaviour
     /// <param name="modifier"></param>
     public void RemoveStatsModifyer(UnitStatsModifier modifier)
     {
-        if (statsModifyers.Remove(modifier))
-        {
-            stats = UnitStats.ModifyStats(stats, modifier, UnitStatsModifier.UseType.REJECT);
-            Debug.Log("Модификатор удален");
-            if (OnModifierRemoved != null)
-                OnModifierRemoved(modifier);
-        }
-        else
-        {
-            Debug.Log("Такого модификатора нет");
-        }
+        //if (statsModifyers.Remove(modifier))
+        //{
+        //    stats = UnitStats.ModifyStats(stats, modifier, UnitStatsModifier.UseType.REJECT);
+        //    Debug.Log("Модификатор удален");
+        //}
+        //else
+        //{
+        //    Debug.Log("Такого модификатора нет");
+        //}
+
+        if (OnModifierRemove != null)
+            OnModifierRemove(modifier);
     }
 
     public void AddTerrainStatsModifyer(SOTerrainStatsModifier modifier)
     {
-        if (!terrainStatsModifyers.Contains(modifier))
-        {
-            terrainStatsModifyers.Add(modifier);
-            stats = UnitStats.ModifyStats(stats, modifier.GetModifierByEquipmentMass(stats.EquipmentMass));
-            Debug.Log("Модификатор ландшафта добавлен");
-            if (OnTerrainModifierAdded != null)
-                OnTerrainModifierAdded(modifier);
-        }
-        else
-        {
-            Debug.Log("Такой модификатор ландшафта уже есть");
-        }
+        //if (!terrainStatsModifyers.Contains(modifier))
+        //{
+        //    terrainStatsModifyers.Add(modifier);
+        //    stats = UnitStats.ModifyStats(stats, modifier.GetModifierByEquipmentMass(stats.EquipmentMass));
+        //    Debug.Log("Модификатор ландшафта добавлен");
+        //}
+        if (OnTerrainModifierAdd != null)
+            OnTerrainModifierAdd(modifier);
     }
 
     /// <summary>
@@ -522,17 +529,17 @@ public class Unit : MonoBehaviour
     /// <param name="modifier"></param>
     public void RemoveTerrainStatsModifyer(SOTerrainStatsModifier modifier)
     {
-        if (terrainStatsModifyers.Remove(modifier))
-        {
-            stats = UnitStats.ModifyStats(stats, modifier.GetModifierByEquipmentMass(stats.EquipmentMass), UnitStatsModifier.UseType.REJECT);
-            Debug.Log("Модификатор ландшафта удален");
-            if (OnTerrainModifierRemoved != null)
-                OnTerrainModifierRemoved(modifier);
-        }
-        else
-        {
-            Debug.Log("Такого модификатора ландшафта нет");
-        }
+        //if (terrainStatsModifyers.Remove(modifier))
+        //{
+        //    stats = UnitStats.ModifyStats(stats, modifier.GetModifierByEquipmentMass(stats.EquipmentMass), UnitStatsModifier.UseType.REJECT);
+        //    Debug.Log("Модификатор ландшафта удален");
+        //}
+        //else
+        //{
+        //    Debug.Log("Такого модификатора ландшафта нет");
+        //}
+        if (OnTerrainModifierRemove != null)
+            OnTerrainModifierRemove(modifier);
     }
 
     void OnCallApplyModifierToAll(UnitStatsModifier modifier)

@@ -338,12 +338,16 @@ public class AiSquadController : MonoBehaviour
     
     void ResetDistansesSettings()
     {
-        distancesOptions.Reset();
+        var d = new DistancesSettings();
+        d.Reset();
+        distancesOptions = d;
     }
 
     void ResetReformSettings()
     {
-        reformOptions.Reset();
+        var r = new ReformSettings();
+        r.Reset();
+        reformOptions = r;
     }
 
     [Serializable]

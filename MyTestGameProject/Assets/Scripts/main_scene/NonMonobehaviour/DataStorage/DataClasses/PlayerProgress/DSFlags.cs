@@ -7,9 +7,12 @@ public class DSFlags : ISavable, IResetable
 {
     [SerializeField] bool isFirstStartGame;
     [SerializeField] bool needTraining;
+    //для туториала костыль (
+    [SerializeField] GameManager.SceneIndex avalaibleTutorialLevel;
 
     public bool IsFirstStartGame { get { return isFirstStartGame; } private set { isFirstStartGame = value; } }
     public bool NeedTraining { get { return needTraining; } private set { needTraining = value; } }
+    public GameManager.SceneIndex AvalaibleTutorialLevel { get { return avalaibleTutorialLevel; } set { avalaibleTutorialLevel = value; } }
 
     public DSFlags()
     {
@@ -34,5 +37,7 @@ public class DSFlags : ISavable, IResetable
     {
         isFirstStartGame = true;
         needTraining = true;
+
+        avalaibleTutorialLevel = GameManager.SceneIndex.LEVEL_TUTORIAL_1;
     }
 }

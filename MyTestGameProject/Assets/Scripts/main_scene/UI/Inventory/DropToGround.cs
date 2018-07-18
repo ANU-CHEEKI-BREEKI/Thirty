@@ -4,23 +4,26 @@ public class DropToGround : ADropToMe
 {
     public override void OnDrop(PointerEventData eventData)
     {
-        DragEquipment drag = eventData.pointerDrag.GetComponent<DragEquipment>();
-
-        if (drag != null && drag.CanDrag)
+        if (CanDrop)
         {
-            ADropToMe oldParentDrop = drag.OldParent.GetComponent<ADropToMe>();
+            DragEquipment drag = eventData.pointerDrag.GetComponent<DragEquipment>();
 
-            //если перетащили откуда либо на пол
-            if (!(oldParentDrop is DropToGround))
+            if (drag != null && drag.CanDrag)
             {
-                //если передащили на заполненную клетку
-                EquipmentStack stack = new EquipmentStack(drag.EquipStack.EquipmentMainProperties, drag.EquipStack.EquipmentStats, drag.EquipStack.Count);
-                if (oldParentDrop.CanGetFromThisIventory(drag.EquipStack))
-                    if (AddToThisInventory(drag.EquipStack))
-                        oldParentDrop.RemoveFromThisInventory(drag.EquipStack);
+                ADropToMe oldParentDrop = drag.OldParent.GetComponent<ADropToMe>();
 
-                Destroy(drag.gameObject);
-                RefreshUI();
+                //если перетащили откуда либо на пол
+                if (!(oldParentDrop is DropToGround))
+                {
+                    //если передащили на заполненную клетку
+                    EquipmentStack stack = new EquipmentStack(drag.EquipStack.EquipmentMainProperties, drag.EquipStack.EquipmentStats, drag.EquipStack.Count);
+                    if (oldParentDrop.CanGetFromThisIventory(drag.EquipStack))
+                        if (AddToThisInventory(drag.EquipStack))
+                            oldParentDrop.RemoveFromThisInventory(drag.EquipStack);
+
+                    Destroy(drag.gameObject);
+                    RefreshUI();
+                }
             }
         }
     }

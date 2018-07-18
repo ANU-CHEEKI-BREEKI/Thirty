@@ -13,7 +13,6 @@ public class SquadConsumableInventoryUI : AInventoryUI
     [Header("Consumable containers")]
     [SerializeField] Transform firstConsCell;
     [SerializeField] Transform secondConsCell;
-    [SerializeField] bool canDrag = true;
 
     void Awake()
     {
@@ -34,10 +33,10 @@ public class SquadConsumableInventoryUI : AInventoryUI
             return;
 
         var squadConsumableStack = Squad.playerSquadInstance.Inventory.FirstConsumable;
-        SetImage(consumableItemOriginal, firstConsCell, squadConsumableStack, canDrag);
+        SetImage(consumableItemOriginal, firstConsCell, squadConsumableStack, CanDrag);
 
         squadConsumableStack = Squad.playerSquadInstance.Inventory.SecondConsumable;
-        SetImage(consumableItemOriginal, secondConsCell, squadConsumableStack, canDrag);
+        SetImage(consumableItemOriginal, secondConsCell, squadConsumableStack, CanDrag);
     }
 
     public override GameObject SetImage(GameObject origin, Transform cell, AStack stack, bool canDrag)

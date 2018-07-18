@@ -319,14 +319,19 @@ public class GameManager : MonoBehaviour
         LoadScene(SceneIndex.MAIN_MENU);
     }
 
-    public void LoadTutorialLevel()
+    public void LoadTutorialLevel(SceneIndex index)
     {
+        if (index != GameManager.SceneIndex.LEVEL_TUTORIAL_1 &&
+            index != GameManager.SceneIndex.LEVEL_TUTORIAL_2 &&
+            index != GameManager.SceneIndex.LEVEL_TUTORIAL_3)
+            throw new Exception("даный уровень не обучающий. невозможно его загручить как обучающий.");
+
         if (Squad.playerSquadInstance != null)
         {
             Destroy(Squad.playerSquadInstance.gameObject);
             Squad.playerSquadInstance = null;
         }
-        LoadScene(SceneIndex.LEVEL_TUTORIAL_1);
+        LoadScene(index);
     }
 
     void LoadScene(SceneIndex index)

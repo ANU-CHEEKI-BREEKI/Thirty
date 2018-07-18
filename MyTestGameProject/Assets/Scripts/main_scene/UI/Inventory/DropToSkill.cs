@@ -40,21 +40,24 @@ public class DropToSkill : ADropToMe
 
     public override void OnDrop(PointerEventData eventData)
     {
-        DragSkill drag = eventData.pointerDrag.GetComponent<DragSkill>();
-
-        if (drag != null && drag.CanDrag)
+        if (CanDrop)
         {
-            var oldDrop = drag.OldParent.GetComponent<ADropToMe>();
+            DragSkill drag = eventData.pointerDrag.GetComponent<DragSkill>();
 
-            oldDrop.RemoveFromThisInventory(null);
+            if (drag != null && drag.CanDrag)
+            {
+                var oldDrop = drag.OldParent.GetComponent<ADropToMe>();
 
-            //если в инвентаре есть стак
-            if (transform.childCount > 0)
-                RemoveFromThisInventory(null);
-            AddToThisInventory(drag.SkillStack);
+                oldDrop.RemoveFromThisInventory(null);
 
-            Destroy(drag.gameObject);
-            RefreshUI();
+                //если в инвентаре есть стак
+                if (transform.childCount > 0)
+                    RemoveFromThisInventory(null);
+                AddToThisInventory(drag.SkillStack);
+
+                Destroy(drag.gameObject);
+                RefreshUI();
+            }
         }
     }
 

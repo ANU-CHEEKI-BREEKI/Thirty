@@ -31,7 +31,10 @@ public class PilumsVolleyBehaviour : AExecutableBehaviour
     {
         if (stack.Consumable != null)
         {
-            if (!cooldown && throwPilums && controller.DistanceToPlayer <= ((ConsumablePilumsVolley.PilumsVolleyStats)stack.ConsumableStats).Distance * 0.7f)
+            float throwDistance = ((ConsumablePilumsVolley.PilumsVolleyStats)stack.ConsumableStats).Distance * 0.7f;
+            float rhowAgainDistance = ((ConsumablePilumsVolley.PilumsVolleyStats)stack.ConsumableStats).Distance * 0.65f;
+
+            if (!cooldown && throwPilums && controller.DistanceToPlayer <= throwDistance && controller.DistanceToPlayer <= controller.DistancesOptions.RadiusOfDefendArea)
             {
                 throwPilums = false;
 
@@ -41,7 +44,7 @@ public class PilumsVolleyBehaviour : AExecutableBehaviour
                 GameManager.Instance.StartCoroutine(Cooldown(((ConsumablePilumsVolley.PilumsVolleyStats)stack.ConsumableStats).Cooldown));
             }
 
-            if (!cooldown && controller.DistanceToPlayer > ((ConsumablePilumsVolley.PilumsVolleyStats)stack.ConsumableStats).Distance * 0.65f)
+            if (!cooldown && controller.DistanceToPlayer > rhowAgainDistance)
             {
                 throwPilums = true;
             }

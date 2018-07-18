@@ -5,22 +5,25 @@ public class DropToEquipmentMarket : ADropToMe
 {
     override public void OnDrop(PointerEventData eventData)
     {
-        DragEquipment drag = eventData.pointerDrag.GetComponent<DragEquipment>();
-
-        if (drag != null && drag.CanDrag)
+        if (CanDrop)
         {
-            ADropToMe oldParentDrop = drag.OldParent.GetComponent<ADropToMe>();
+            DragEquipment drag = eventData.pointerDrag.GetComponent<DragEquipment>();
 
-            //если перетащили откуда либо кроме самого магазина
-            if (!(oldParentDrop is DropToEquipmentMarket) && !(oldParentDrop is DropToConsumableMarket))
+            if (drag != null && drag.CanDrag)
             {
-                EquipmentStack stack = new EquipmentStack(drag.EquipStack.EquipmentMainProperties, drag.EquipStack.EquipmentStats, drag.EquipStack.Count);
-                if (oldParentDrop.CanGetFromThisIventory(stack))
-                    if (AddToThisInventory(stack))
-                        oldParentDrop.RemoveFromThisInventory(stack);
+                ADropToMe oldParentDrop = drag.OldParent.GetComponent<ADropToMe>();
 
-                Destroy(drag.gameObject);
-                RefreshUI();
+                //если перетащили откуда либо кроме самого магазина
+                if (!(oldParentDrop is DropToEquipmentMarket) && !(oldParentDrop is DropToConsumableMarket))
+                {
+                    EquipmentStack stack = new EquipmentStack(drag.EquipStack.EquipmentMainProperties, drag.EquipStack.EquipmentStats, drag.EquipStack.Count);
+                    if (oldParentDrop.CanGetFromThisIventory(stack))
+                        if (AddToThisInventory(stack))
+                            oldParentDrop.RemoveFromThisInventory(stack);
+
+                    Destroy(drag.gameObject);
+                    RefreshUI();
+                }
             }
         }
     }

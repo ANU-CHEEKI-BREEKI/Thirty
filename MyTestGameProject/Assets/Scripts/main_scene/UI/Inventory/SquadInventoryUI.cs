@@ -67,7 +67,7 @@ public class SquadInventoryUI : AInventoryUI
             inventoryItemOriginal,
             helmetCell,
             new EquipmentStack(Squad.playerSquadInstance.Inventory.Helmet, cnt),
-            !Squad.playerSquadInstance.Inventory.Helmet.EquipmentStats.Empty
+            !Squad.playerSquadInstance.Inventory.Helmet.EquipmentStats.Empty && CanDrag
         );
         if (bodyCell.childCount > 0)
             Destroy(bodyCell.GetChild(bodyCell.childCount - 1).gameObject);
@@ -75,7 +75,7 @@ public class SquadInventoryUI : AInventoryUI
             inventoryItemOriginal, 
             bodyCell,
             new EquipmentStack(Squad.playerSquadInstance.Inventory.Body, cnt),
-            !Squad.playerSquadInstance.Inventory.Body.EquipmentStats.Empty
+            !Squad.playerSquadInstance.Inventory.Body.EquipmentStats.Empty && CanDrag
         );
         if (shieldCell.childCount > 0)
             Destroy(shieldCell.GetChild(shieldCell.childCount - 1).gameObject);
@@ -83,7 +83,7 @@ public class SquadInventoryUI : AInventoryUI
             inventoryItemOriginal, 
             shieldCell,
             new EquipmentStack(Squad.playerSquadInstance.Inventory.Shield, cnt),
-            !Squad.playerSquadInstance.Inventory.Shield.EquipmentStats.Empty
+            !Squad.playerSquadInstance.Inventory.Shield.EquipmentStats.Empty && CanDrag
         );
         if (weaponCell.childCount > 0)
             Destroy(weaponCell.GetChild(weaponCell.childCount - 1).gameObject);
@@ -101,7 +101,7 @@ public class SquadInventoryUI : AInventoryUI
             if (inventoryCells[i].childCount > 0)
                 Destroy(inventoryCells[i].GetChild(0).gameObject);
             if (Squad.playerSquadInstance.Inventory[i] != null && Squad.playerSquadInstance.Inventory[i].Count > 0)
-                SetImage(inventoryItemOriginal, inventoryCells[i], Squad.playerSquadInstance.Inventory[i], true);
+                SetImage(inventoryItemOriginal, inventoryCells[i], Squad.playerSquadInstance.Inventory[i], CanDrag);
             else if (Squad.playerSquadInstance.Inventory[i] != null && Squad.playerSquadInstance.Inventory[i].Count <= 0)
                 Squad.playerSquadInstance.Inventory[i] = null;
         }

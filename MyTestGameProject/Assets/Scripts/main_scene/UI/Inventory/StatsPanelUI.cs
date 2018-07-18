@@ -39,8 +39,14 @@ public class StatsPanelUI : MonoBehaviour
 
         Squad.playerSquadInstance.OnFormationChanged += OnFormationChanged;
         Squad.playerSquadInstance.Inventory.OnEquipmentChanged += OnEquipmentChanged;
+        Squad.playerSquadInstance.OnTerrainModifiersListChanged += PlayerSquadInstance_OnTerrainModifiersListChanged;
 
         RefreshPanel();
+    }
+
+    private void PlayerSquadInstance_OnTerrainModifiersListChanged(SOTerrainStatsModifier[] obj)
+    {
+        OnEquipmentChanged(null);
     }
 
     private void OnDestroy()

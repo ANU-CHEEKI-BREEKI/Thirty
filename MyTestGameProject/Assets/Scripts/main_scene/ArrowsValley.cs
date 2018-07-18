@@ -54,11 +54,6 @@ public class ArrowsValley : MonoBehaviour
             StartValley();
     }
 
-    private void Start()
-    {
-        StartCoroutine(DestroyValleyObject());
-    }
-
     IEnumerator DestroyValleyObject()
     {
         while(realValleyParticleSystem.IsAlive())
@@ -110,6 +105,8 @@ public class ArrowsValley : MonoBehaviour
         ));
         StartCoroutine(WAitForWarningValley(dalayBeforeWarningValley));
         warningValleyParticleSystem.Play(false);
+
+        StartCoroutine(DestroyValleyObject());
     }
 
     IEnumerator WAitForWarningValley(float time)
