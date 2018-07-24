@@ -373,7 +373,16 @@ public class Unit : MonoBehaviour
             for (int i = 0; i < targettedBy.Count; i++)
                 targettedBy[i].SetTarget(null);
 
-            squad.UnitDeath(this);
+            {//это всё должно идти именно в таком порядке!!!
+             //сначала обрабатываем модификаторы,а потом уже указываем отряду что этот юнит умер
+                foreach (var mod in statsModifyers)
+                    RemoveStatsModifyer(mod);
+
+                foreach (var tmod in terrainStatsModifyers)
+                    RemoveTerrainStatsModifyer(tmod);
+
+                squad.UnitDeath(this);
+            }
         }
 
         DropingItemsManager.Instance.DropUnitCorp(this);
@@ -430,11 +439,7 @@ public class Unit : MonoBehaviour
         if (OnAnyUnitDeath != null)
             OnAnyUnitDeath();
         
-        foreach (var mod in statsModifyers)
-            RemoveStatsModifyer(mod);
-
-        foreach (var tmod in terrainStatsModifyers)
-            RemoveTerrainStatsModifyer(tmod);
+        
 
         Destroy(this);
     }
