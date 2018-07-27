@@ -17,12 +17,15 @@ public class SquadController
     List<Vector3> path;
     Vector2 movePos;
     Vector2 squadStartPos;
+
+    Labirinth labirinth;
+
     public SquadController(Squad squad)
     {
         this.squad = squad;
+        labirinth = new Labirinth();
     }
 
-    Coroutine pathFinding = null;
     //---------------------------------------------------
 
     /// <summary>
@@ -32,11 +35,8 @@ public class SquadController
     /// <param name="optimazePathByPhysicsCast">нужно ли оптимизировать путь <para>оптимизация заключается в рейкасте и исключении лишних точек пути</para></param>
     public void MoveToPoint(Vector2 worldPositionToMove, bool optimazePathByPhysicsCast = true)
     {
-        if (pathFinding != null)
-        {
-            Labirinth.StopFinding(pathFinding);
-            pathFinding = null;
-        }
+        if (!labirinth.IsWorkDone)
+            labirinth.StopFinding();
 
         movePos = worldPositionToMove;
 
@@ -69,6 +69,7 @@ public class SquadController
                 layerMask: Ground.Instance.DirectFindPathLayers.value
             );
 
+            //если на пути по прямой нет препятствий
             if (rhit.collider == null)
             {
                 path = new List<Vector3>();
@@ -78,7 +79,7 @@ public class SquadController
             }
             else
             {
-                Labirinth.OnWorkDone += (obj) =>
+                labirinth.OnWorkDone += (obj) =>
                 {
                     path = obj as List<Vector3>;
                     if (path.Count == 0)
@@ -89,9 +90,8 @@ public class SquadController
                         Labirinth.ScalePath(path, MapBlock.BLOCK_SCALE, true);
                         SetPath(movePos, optimazePathByPhysicsCast);
                     }
-                    pathFinding = null;
                 };
-                pathFinding = Labirinth.FindPathLee(Ground.Instance.Grid, startFindPath, endFindPath);
+                labirinth.FindPathLee(Ground.Instance.Grid, startFindPath, endFindPath, GameManager.Instance);
             }
         }
     }

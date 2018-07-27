@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using UnityEngine;
 
-public static class Labirinth
+public class Labirinth
 {
     static System.Random rnd;
 
@@ -16,13 +17,71 @@ public static class Labirinth
     //хз
     static List<Vector2> tempList = new List<Vector2>();
 
+    float progress = 1;
+    public bool IsWorkDone { get { return progress >= 1; } }
 
-    
-    static float progress;
-    static public float Progress { get { return progress; } }
-    static public bool WorkIsDone { get { return progress >= 1; } }
+    public event Action<object> OnWorkDone;
+    CancellationTokenSource cts = new CancellationTokenSource();
 
-    static public event Action<object> OnWorkDone;
+    static Coroutine callBack = null;
+    static MyConcurentEventList concurentCallBacksList = new MyConcurentEventList();
+    static int pathfindingCount = 0;
+
+    /// <summary>
+    /// Поиск пути в лабиринте из ячейки start к ячейке finish. Алгоритм поиска - волновой (Алгоритм Ли)
+    /// </summary>
+    /// <param name="labirinth">Матрица проходимости, где true - если ячейка занята и пройти нельзя, false - ячейка пустая и пройти можно</param>
+    /// <param name="start">Интексы ячейки с которой начинается путь. x - столбец, y - строка</param>
+    /// <param name="finish">Индексы ячейки к торорой нужно найти путь. x - столбец, y - строка</param>
+    /// <param name="context">Игровой объект на котором будет карутина обратного вызова</param>
+    /// <returns>один из искомых путей. null - если пути нет</returns>
+    public void FindPathLee(bool[][] labirinth, Vector2 start, Vector2 finish, MonoBehaviour context)
+    {
+        if (context == null)
+            throw new NullReferenceException();
+
+        start = new Vector2((int)start.x, (int)start.y);
+        finish = new Vector2((int)finish.x, (int)finish.y);
+        List<Vector3> resultPath = new List<Vector3>();
+
+        if(!IsWorkDone)
+        {
+            StopFinding();
+            cts = new CancellationTokenSource();
+        }
+        
+        pathfindingCount++;
+
+        if (callBack == null)
+            callBack = context.StartCoroutine(CallBack());
+
+        ThreadPool.QueueUserWorkItem(
+            (object state) =>
+            {
+                FindPathLeeThread(labirinth, start, finish, resultPath, (CancellationToken)state);
+            },
+            cts.Token
+        );
+    }
+
+    public void StopFinding()
+    {
+        cts.Cancel();
+        if (pathfindingCount > 0) pathfindingCount--;
+        progress = 1;
+    }
+
+    static IEnumerator CallBack()
+    {
+        while (pathfindingCount > 0)
+        {
+            concurentCallBacksList.DoAll();
+            yield return new WaitForSecondsRealtime(0.1f);
+        }
+        
+        pathfindingCount = 0;
+        callBack = null;
+    }
 
     /// <summary>
     /// Создание лабиринта по алгоритму Еллера
@@ -168,30 +227,6 @@ public static class Labirinth
         }
     }
 
-    /// <summary>
-    /// Поиск пути в лабиринте из ячейки start к ячейке finish. Алгоритм поиска - волновой (Алгоритм Ли)
-    /// </summary>
-    /// <param name="labirinth">Матрица проходимости, где true - если ячейка занята и пройти нельзя, false - ячейка пустая и пройти можно</param>
-    /// <param name="start">Интексы ячейки с которой начинается путь. x - столбец, y - строка</param>
-    /// <param name="finish">Индексы ячейки к торорой нужно найти путь. x - столбец, y - строка</param>
-    /// <returns>один из искомых путей. null - если пути нет</returns>
-    public static Coroutine FindPathLee(bool[][] labirinth, Vector2 start, Vector2 finish)
-    {
-        start = new Vector2((int)start.x, (int)start.y);
-        finish = new Vector2((int)finish.x, (int)finish.y);
-
-        List<Vector3> resultPath = new List<Vector3>();
-
-        var findPathLeeCoroutine = GameManager.Instance.StartCoroutine(FindPathLeeCo(labirinth, start, finish, resultPath));
-        
-        return findPathLeeCoroutine;
-    }
-
-    public static void StopFinding(Coroutine coroutine)
-    {
-        GameManager.Instance.StopCoroutine(coroutine);
-        OnWorkDone = null;
-    }
 
     /// <summary>
     /// Поиск пути в лабиринте из ячейки start к ячейке finish. Алгоритм поиска - волновой (Алгоритм Ли)
@@ -200,7 +235,7 @@ public static class Labirinth
     /// <param name="start">Интексы ячейки с которой начинается путь. x - столбец, y - строка</param>
     /// <param name="finish">Индексы ячейки к торорой нужно найти путь. x - столбец, y - строка</param>
     /// <returns>один из искомых путей. null - если пути нет</returns>
-    static IEnumerator FindPathLeeCo(bool[][] labirinth, Vector2 start, Vector2 finish, List<Vector3> resultPath)
+    void FindPathLeeThread(bool[][] labirinth, Vector2 start, Vector2 finish, List<Vector3> resultPath, CancellationToken token)
     {
         progress = 0;
 
@@ -221,8 +256,16 @@ public static class Labirinth
             int maxQ = labirinth.Length * labirinth[0].Length;
             do
             {
+
+                if (token.IsCancellationRequested)
+                    return;
+
+
                 foreach (var item in oldLabelCell)
                 {
+                    if (token.IsCancellationRequested)
+                        return;
+
                     int row = (int)item.y;
                     int col = (int)item.x;
 
@@ -295,8 +338,6 @@ public static class Labirinth
                 q++;
                 progress = (float)q / maxQ * 0.9f;
 
-                yield return null;
-
             } while (pathMatrix[(int)finish.y][(int)finish.x] == -1 && oldLabelCell.Count > 0);
 
             if (pathMatrix[(int)finish.y][(int)finish.x] == -1)
@@ -315,6 +356,10 @@ public static class Labirinth
 
                 while (!cell.Equals(start))
                 {
+
+                    if (token.IsCancellationRequested)
+                        return;
+
                     int row = (int)cell.y;
                     int col = (int)cell.x;
 
@@ -399,7 +444,6 @@ public static class Labirinth
                     q++;
                     progress = q / max * 0.1f + 0.9f;
 
-                    yield return null;
                 }
 
                 Vector3 t;
@@ -416,8 +460,14 @@ public static class Labirinth
 
         if (OnWorkDone != null)
         {
-            OnWorkDone(resultPath);
-            OnWorkDone = null;
+            concurentCallBacksList.Add
+            (
+                ()=> 
+                {
+                    OnWorkDone(resultPath);
+                    OnWorkDone = null;
+                }
+            );
         }
     }
 
@@ -629,5 +679,5 @@ public static class Labirinth
             if (translateToCenterCells)
                 path[i] = new Vector3(path[i].x + scale / 2, path[i].y + scale / 2);
         }
-    }
+    }    
 }
