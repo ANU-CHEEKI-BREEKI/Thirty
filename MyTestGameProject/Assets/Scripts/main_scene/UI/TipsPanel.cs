@@ -40,7 +40,7 @@ public class TipsPanel : MonoBehaviour, IDragHandler, IBeginDragHandler, IPointe
     public RectTransform ThisTransform { get; private set; }
 
     public static TipsPanel Instance { get; private set; }
-    public bool Showed { get { return gameObject.activeSelf; } }
+    public bool Showed { get { return gameObject.activeInHierarchy; } }
 
     Vector2 startSwipe;
     Vector2 startSwipePosition;
@@ -160,7 +160,7 @@ public class TipsPanel : MonoBehaviour, IDragHandler, IBeginDragHandler, IPointe
         howToUsePanel.gameObject.SetActive(!string.IsNullOrEmpty(desc.UseType));
     }
 
-    public void Show(Description desc, Vector2 worldPosOnScreen, List<Action> actions = null, List<string> actionsNames = null)
+    public void Show(Description desc, Vector2 worldPos, List<Action> actions = null, List<string> actionsNames = null)
     {
         SetDescription(desc);
 
@@ -184,18 +184,17 @@ public class TipsPanel : MonoBehaviour, IDragHandler, IBeginDragHandler, IPointe
             actionButtonsPanel.gameObject.SetActive(false);
         }
 
-        //GameManager.Instance.StartCoroutine(WaitForeRebuildPanel(worldPosOnScreen));
-
         LayoutRebuilder.ForceRebuildLayoutImmediate(ThisTransform);
+
         if (!gameObject.activeInHierarchy)
         {
-            ThisTransform.position = GetPosOnScreen(worldPosOnScreen);
+            ThisTransform.position = GetPosOnScreen(MainCanvas.Instance.WorldToScreenPoint(worldPos));
             gameObject.SetActive(true);
         }
         else
         {
-            ThisTransform.position = GetPosOnScreen(ThisTransform.position);
-        }
+            ThisTransform.position = GetPosOnScreen(MainCanvas.Instance.WorldToScreenPoint(ThisTransform.position));
+        }        
     }
 
     public void Hide()
@@ -203,7 +202,7 @@ public class TipsPanel : MonoBehaviour, IDragHandler, IBeginDragHandler, IPointe
         gameObject.SetActive(false);
     }
 
-    IEnumerator WaitForeRebuildPanel(Vector2 worldPosOnScreen)
+    IEnumerator WaitForeRebuildPanel(Vector2 worldPos)
     {
         bool active = gameObject.activeSelf;
 
@@ -216,12 +215,12 @@ public class TipsPanel : MonoBehaviour, IDragHandler, IBeginDragHandler, IPointe
 
         if (!gameObject.activeInHierarchy)
         {
-            ThisTransform.position = GetPosOnScreen(worldPosOnScreen);
+            ThisTransform.position = GetPosOnScreen(MainCanvas.Instance.WorldToScreenPoint(worldPos));
             gameObject.SetActive(true);
         }
         else
         {
-            ThisTransform.position = GetPosOnScreen(ThisTransform.position);
+            ThisTransform.position = GetPosOnScreen(MainCanvas.Instance.WorldToScreenPoint(ThisTransform.position));
         }
     }
 
@@ -239,9 +238,8 @@ public class TipsPanel : MonoBehaviour, IDragHandler, IBeginDragHandler, IPointe
             touch.position = Input.mousePosition;
         }
 
-        startSwipe = Camera.main.ScreenToWorldPoint(touch.position);
-
-        startSwipePosition = ThisTransform.position;
+        startSwipe = touch.position / MainCanvas.Instance.Canvas.scaleFactor;
+        startSwipePosition = MainCanvas.Instance.WorldToScreenPoint(ThisTransform.position);
     }
 
     public void OnDrag(PointerEventData eventData)
@@ -258,25 +256,20 @@ public class TipsPanel : MonoBehaviour, IDragHandler, IBeginDragHandler, IPointe
             touch.position = Input.mousePosition;
         }
 
-        Vector2 swipe = (Vector2)Camera.main.ScreenToWorldPoint(touch.position) - startSwipe;
+        Vector2 swipe = touch.position / MainCanvas.Instance.Canvas.scaleFactor - startSwipe;
 
-        (ThisTransform).position = GetPosOnScreen(startSwipePosition + swipe);
+        ThisTransform.position = GetPosOnScreen(startSwipePosition + swipe);
 
         //для закрытия окна по клику на него. но только если небыло движенияэтого  окна
         if (touch.position != mouseDownStartPosition)
             mouseDownPosition = touch.position;
     }
 
-    Vector3 GetPosOnScreen(Vector2 worldPosOnScreen)
-    {
-        Vector2 t = Camera.main.WorldToScreenPoint(worldPosOnScreen);
-
-        Vector2 newPos = new Vector2(
-            Mathf.Clamp(t.x, 0 + ThisTransform.rect.width / 2, Camera.main.pixelWidth - ThisTransform.rect.width / 2),
-            Mathf.Clamp(t.y, 0 + ThisTransform.rect.height / 2, Camera.main.pixelHeight - ThisTransform.rect.height / 2)
-        );
-
-        newPos = Camera.main.ScreenToWorldPoint(newPos);
+    Vector3 GetPosOnScreen(Vector2 screenPosition)
+    { 
+        var newPos = MainCanvas.Instance.ClampToScreenRect(screenPosition, ThisTransform.rect.size);
+        
+        newPos = MainCanvas.Instance.ScreenToWorldPoint(newPos);
 
         return new Vector3(
             newPos.x,

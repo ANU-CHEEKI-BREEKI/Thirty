@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Text;
 using UnityEngine;
+using UnityEngine.Rendering;
 using UnityEngine.SceneManagement;
 
 public class Squad : MonoBehaviour
@@ -1032,9 +1033,10 @@ public class Squad : MonoBehaviour
 
             case FormationStats.Formations.RISEDSHIELDS:
 
-                unitPositions.Remove(objToRemove);
-                if (objToRemove != null)
-                    Destroy(objToRemove.gameObject);
+                //unitPositions.Remove(objToRemove);
+                //if (objToRemove != null)
+                //    Destroy(objToRemove.gameObject);
+                ReformSquadInRanks(flipRotation, objToRemove);
 
                 newFormation = FormationStats.Formations.RISEDSHIELDS;
                 break;
@@ -1160,6 +1162,23 @@ public class Squad : MonoBehaviour
                     ((1 - row) * flip + UnityEngine.Random.value * 0.5f), //*unitPositions[i].Scale,
                     0
                 );
+
+                if (!flipRotation)
+                {
+                    unitPositions[i].PositionInArray = new Vector2(
+                        i - row * SQUAD_LENGTH,
+                        -((1 - row) * flip) + 1
+                    );
+                }
+                else
+                {
+                    unitPositions[i].PositionInArray = new Vector2(
+                        i - row * SQUAD_LENGTH,
+                        (1 - row) * flip + 1
+                    );
+                }
+
+                unitPositions[i].RowInPhalanx = (int)unitPositions[i].PositionInArray.y + 1;
             }
 
             row++;
@@ -1255,7 +1274,7 @@ public class Squad : MonoBehaviour
                     );
                 }
 
-                unitPositions[i].RowInPhalanx = (int)unitPositions[i].PositionInArray.y + 1;
+                unitPositions[i].RowInPhalanx = (int)unitPositions[i].PositionInArray.y + 1;                
             }
 
             row++;

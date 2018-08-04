@@ -53,8 +53,6 @@ public class SquadCerrentProp : MonoBehaviour
         Squad_OnModifiersListChanged(new UnitStatsModifier[] { });
         Squad_OnTerrainModifiersListChanged(new SOTerrainStatsModifier[] { });
         Inventory_OnEquipmentChanged(null);
-
-
     }
 
     void OnDestroy()
@@ -139,7 +137,7 @@ public class SquadCerrentProp : MonoBehaviour
         if(newValue)
             inFightInd.Present(inFightIco, new Description() {Name = LocalizedStrings.condition_inFight_name, Desc = LocalizedStrings.condition_inFight_description });
         else
-            inFightInd.Present();
+            inFightInd.Present(null, null);
     }
 
 
@@ -157,7 +155,7 @@ public class SquadCerrentProp : MonoBehaviour
                 modifiersInd[i].Present(desc.Icon, desc);
             }
             else
-                modifiersInd[i].Present();
+                modifiersInd[i].Present(null, null);
         }
     }
 
@@ -174,10 +172,9 @@ public class SquadCerrentProp : MonoBehaviour
                 var mod = arr[i].GetModifierByEquipmentMass(squad.UnitStats.EquipmentMass);
                 var desc = mod.GetDescription();
                 terrainModifiersInd[i].Present(desc.Icon, desc);
-
             }
             else
-                terrainModifiersInd[i].Present();
+                terrainModifiersInd[i].Present(null, null);
         }
     }
 }

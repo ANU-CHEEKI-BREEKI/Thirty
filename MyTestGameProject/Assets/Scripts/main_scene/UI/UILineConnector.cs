@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 [ExecuteInEditMode]
 public class UILineConnector : MonoBehaviour
@@ -11,6 +12,9 @@ public class UILineConnector : MonoBehaviour
     [Space]
     [SerializeField] Transform prevObj;
     public Transform PrevObj { set { prevObj = value; } }
+    [SerializeField] Vector2 shiftThis;
+    [SerializeField] Vector2 shiftPrev;
+    [SerializeField] Vector2 shiftCenter;
 
     void Start()
     {
@@ -27,6 +31,7 @@ public class UILineConnector : MonoBehaviour
 #endif
 
     bool enabled = true;
+
     public bool Enabled
     {
         set
@@ -45,36 +50,41 @@ public class UILineConnector : MonoBehaviour
 
     void DrawLine()
     {
+        //ВНИМАНИЕ!!!!!!
+        //точки в лайнрендерере надо указывать в локальных координатах!
+
         if (line != null && prevObj != null)
         {
-
             Camera mainCam = Camera.main;
 
-            int pointsCount = 1;
-            Vector2 nextPos = prevObj.position;
+            Vector2 prevPos = prevObj.position;
             Vector2 thisPos = transform.position;
 
-            if (nextPos.x != thisPos.x) pointsCount++;
-            if (nextPos.y != thisPos.y) pointsCount++;
-            if (pointsCount == 3) pointsCount++;
+            int pointsCount = 2;
+            if (prevPos.x != thisPos.x && prevPos.y != thisPos.y)
+                pointsCount = 4;
 
             Vector2[] points = new Vector2[pointsCount];
 
-            Vector2 prevPosScreen = mainCam.WorldToScreenPoint(nextPos);
-            Vector2 thisPosScreen = mainCam.WorldToScreenPoint(thisPos);
+            Vector2 prevPosScreen = MainCanvas.Instance.WorldToScreenPoint(prevPos);
+            Vector2 thisPosScreen = MainCanvas.Instance.WorldToScreenPoint(thisPos);
 
-            Vector2 prevPosShift = prevPosScreen - thisPosScreen;
+            //точки в лайнрендерере надо указывать в локальных координатах!
+            Vector2 prevScreenLocalPos = prevPosScreen + shiftPrev - thisPosScreen - shiftThis;
 
-            points[0] = prevPosShift;
+            points[0] = prevScreenLocalPos;
             points[pointsCount - 1] = Vector2.zero;
 
-            float dist = prevPosShift.x / 2 - ((RectTransform)transform).rect.width / 2;
-
             if (pointsCount == 4)
-            {
-                points[1] = new Vector2(dist, prevPosShift.y);
-                points[2] = new Vector2(dist, 0);
+            {             
+                //при расположении линии горизонтально
+                points[1] = new Vector2(prevScreenLocalPos.x / 2, prevScreenLocalPos.y) + shiftCenter;
+                points[2] = new Vector2(prevScreenLocalPos.x / 2, 0) + shiftCenter;
+
+                //для вертикального расположения можно будет дорботать. пока что не надо.
+                // ...
             }
+
             line.Points = points;
         }
     }

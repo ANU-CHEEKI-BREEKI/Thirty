@@ -21,19 +21,17 @@ public class SquadPropertyIndicator : MonoBehaviour, IPointerClickHandler
         TipsPanel.Instance.Show(desc, transform.position);
     }
 
-    public void Present(params object[] arr)
+    public void Present(Sprite sprite, Description? d)
     {
-        if (arr.Length > 0)
-        {
-            if(img != null)
-                img.sprite = arr[0] as Sprite;
+        if (img != null && sprite != null)
+            img.sprite = sprite;
 
-            if (arr.Length > 1)
-                desc = (Description)arr[1];
+        if (d != null)
+            desc = d.Value;
 
-            gameObject.SetActive(true);
-        }
-        else
+        if (sprite == null && d == null)
             gameObject.SetActive(false);
+        else
+            gameObject.SetActive(true);
     }
 }

@@ -26,7 +26,12 @@ public class ArrowsValley : MonoBehaviour
     //закешированая ссылка на результат каста
     RaycastHit2D rhit;
 
-   
+    //количество уже упавших на землю стрел. 
+    //нужно для того чтобы не наваливать циклами по все частицам,когда они уже все остановились
+    int hittedArrowsCount;
+    //макс число стрел в залпе.
+    //нужно для того чтобы не наваливать циклами по все частицам,когда они уже все остановились
+    int particlesCount;
 
     //задержка между предупредительным и настоящим залпами
     [SerializeField] [Range(0, 10)] float dalayBeforeWarningValley;
@@ -99,6 +104,9 @@ public class ArrowsValley : MonoBehaviour
 
     public void StartValley()
     {
+        hittedArrowsCount = 0;
+        particlesCount = (int)(realValleyParticleSystem.emission.rateOverTime.constant * realValleyParticleSystem.main.duration);
+
         StartCoroutine(GoToLowLevelRendering(
             warningValleyParticleSystem,
             warningValleyParticleSystem.main.duration + warningValleyParticleSystem.main.startLifetime.constant * 0.4f
@@ -131,89 +139,53 @@ public class ArrowsValley : MonoBehaviour
     {
         UnityEngine.Profiling.Profiler.BeginSample(PROFILING_NAME);
 
-        //WarningValley();
-
         RealValley();
 
         UnityEngine.Profiling.Profiler.EndSample();
     }
-
-    void WarningValley()
-    {
-        int count = warningValleyParticleSystem.GetTriggerParticles(ParticleSystemTriggerEventType.Inside, trigPartc);
-        for (int i = 0; i < count; i++)
-        {
-            if (trigPartc[i].velocity.x == 0 && trigPartc[i].velocity.y == 0)
-            {
-                //список для частиц в коллайдере из модуля системы частиц Triggers
-                float t = trigPartc[i].remainingLifetime - trigPartc[i].startLifetime * (1 - 0.4f);
-                t = t < 0 ? -t : t;
-                if (t <= 0.08f)
-                {
-                    rhit = Physics2D.CircleCast(trigPartc[i].position, 0.5f, Vector2.zero, 0, layerMask);
-
-                    Debug.DrawLine(
-                        trigPartc[i].position + new Vector3(0.2f, 0.2f, 0),
-                        trigPartc[i].position + new Vector3(-0.2f, -0.2f, 0),
-                        Color.green
-                    );
-                    Debug.DrawLine(
-                        trigPartc[i].position + new Vector3(-0.2f, 0.2f, 0),
-                        trigPartc[i].position + new Vector3(0.2f, -0.2f, 0),
-                        Color.green
-                    );
-
-                    if (rhit)
-                    {
-                        unit = rhit.collider.GetComponent<Unit>();
-                        if (unit != null)
-                            unit.TakeHitFromArrow(damage, transform.position, owner);
-
-                        ParticleSystem.Particle p = trigPartc[i];
-                        p.remainingLifetime = -1;
-                        trigPartc[i] = p;
-                    }
-                }
-            }
-        }
-        warningValleyParticleSystem.SetTriggerParticles(ParticleSystemTriggerEventType.Inside, trigPartc);
-    }
-
+    
     void RealValley()
     {
+        trigPartc.Clear();
         int count = realValleyParticleSystem.GetTriggerParticles(ParticleSystemTriggerEventType.Inside, trigPartc);
 
-        for (int i = 0; i < count; i++)
+        if (hittedArrowsCount < particlesCount)
         {
-            if (trigPartc[i].velocity.x == 0 && trigPartc[i].velocity.y == 0)
+            for (int i = 0; i < count; i++)
             {
-                //список для частиц в коллайдере из модуля системы частиц Triggers
-                float t = trigPartc[i].remainingLifetime - trigPartc[i].startLifetime * (1 - 0.4f);
-                t = t < 0 ? -t : t;
-                if (t <= 0.08f)
-                {                   
-                    rhit = Physics2D.CircleCast(trigPartc[i].position, 0.5f, Vector2.zero, 0, layerMask);
-
-                    Debug.DrawLine(
-                        trigPartc[i].position + new Vector3(0.2f, 0.2f, 0), 
-                        trigPartc[i].position + new Vector3(-0.2f,-0.2f,0), 
-                        Color.red
-                    );
-                    Debug.DrawLine(
-                        trigPartc[i].position + new Vector3(-0.2f, 0.2f, 0),
-                        trigPartc[i].position + new Vector3(0.2f, -0.2f, 0),
-                        Color.red
-                    );
-
-                    if (rhit)
+                if (trigPartc[i].velocity.x == 0 && trigPartc[i].velocity.y == 0)
+                {
+                    //список для частиц в коллайдере из модуля системы частиц Triggers
+                    float t = trigPartc[i].remainingLifetime - trigPartc[i].startLifetime * (1 - 0.4f);
+                    t = t < 0 ? -t : t;
+                    //если время жизни стрелы меньше 0,08f то она только что упала на землю
+                    if (t <= 0.08f)
                     {
-                        unit = rhit.collider.GetComponent<Unit>();
-                        if (unit != null)
-                            unit.TakeHitFromArrow(damage, transform.position, owner);
+                        hittedArrowsCount++;
 
-                        ParticleSystem.Particle p = trigPartc[i];
-                        p.remainingLifetime = -1;
-                        trigPartc[i] = p;
+                        rhit = Physics2D.CircleCast(trigPartc[i].position, 0.5f, Vector2.zero, 0, layerMask);
+
+                        Debug.DrawLine(
+                            trigPartc[i].position + new Vector3(0.2f, 0.2f, 0),
+                            trigPartc[i].position + new Vector3(-0.2f, -0.2f, 0),
+                            Color.red
+                        );
+                        Debug.DrawLine(
+                            trigPartc[i].position + new Vector3(-0.2f, 0.2f, 0),
+                            trigPartc[i].position + new Vector3(0.2f, -0.2f, 0),
+                            Color.red
+                        );
+
+                        if (rhit)
+                        {
+                            unit = rhit.collider.GetComponent<Unit>();
+                            if (unit != null)
+                                unit.TakeHitFromArrow(damage, transform.position, owner);
+
+                            ParticleSystem.Particle p = trigPartc[i];
+                            p.remainingLifetime = -1;
+                            trigPartc[i] = p;
+                        }
                     }
                 }
             }

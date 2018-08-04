@@ -122,6 +122,8 @@ public sealed class LocalizedStrings
     public static string equipment_helmet_none_description { get; private set; }
     public static string equipment_shield_hoplon_name { get; private set; }
     public static string equipment_shield_hoplon_description { get; private set; }
+    public static string equipment_shield_scutum_name { get; private set; }
+    public static string equipment_shield_scutum_description { get; private set; }
     public static string equipment_shield_bakler_name { get; private set; }
     public static string equipment_shield_bakler_description { get; private set; }
     public static string equipment_shield_none_name { get; private set; }

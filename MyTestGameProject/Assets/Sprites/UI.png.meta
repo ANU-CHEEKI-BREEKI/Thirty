@@ -98,8 +98,9 @@ TextureImporter:
     21300186: terrainModifier_grass
     21300188: terrainModifier_forest
     21300190: terrainModifier_light_forest
+    21300192: scutum
   externalObjects: {}
-  serializedVersion: 5
+  serializedVersion: 6
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -117,6 +118,8 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -127,7 +130,7 @@ TextureImporter:
     serializedVersion: 2
     filterMode: -1
     aniso: -1
-    mipBias: -1
+    mipBias: -100
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -2104,6 +2107,26 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 10aeb5a148ed1d34f832b7b9fb1ea16f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scutum
+      rect:
+        serializedVersion: 2
+        x: 1102
+        y: 1448
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fd5abe813d9b424c99a62e58ad2d823
       vertices: []
       indices: 
       edges: []

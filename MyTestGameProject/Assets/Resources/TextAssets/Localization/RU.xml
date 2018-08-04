@@ -150,6 +150,8 @@
   <string name = "equipment_helmet_none_description">У вас нет шлемов.</string>
   <string name = "equipment_shield_hoplon_name">Гоплон</string>
   <string name = "equipment_shield_hoplon_description">Щит фалангитов. Дает очень хорошую защиту, но атаковать вне фаланги очень тяжело.</string>
+   <string name = "equipment_shield_scutum_name">Скутум</string>
+  <string name = "equipment_shield_scutum_description">Классический римский щит. Дает очень хорошую защиту, но передвигаться с ним немного не удобно.</string>
   <string name = "equipment_shield_bakler_name">Железный баклер</string>
   <string name = "equipment_shield_bakler_description">Малый щит. Средняя защита, но не мешает махать мечем. Из за размеров щита, под обстрел лучше не попадать.</string>
   <string name = "equipment_shield_none_name">Нет щита</string>

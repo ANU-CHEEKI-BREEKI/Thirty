@@ -13,8 +13,26 @@ public class UILineRenderer : MaskableGraphic
     public float LineThickness = 2;
     public bool UseMargins;
     public Vector2 Margin;
-    public Vector2[] Points;
     public bool relativeSize;
+
+    [SerializeField] Vector2[] points;
+    /// <summary>
+    /// Returns copy of points.
+    /// Sets points.
+    /// </summary>
+    public Vector2[] Points
+    {
+        
+        get
+        {
+            return new List<Vector2>(points).ToArray();
+        }
+        set
+        {
+            points = value;
+            SetVerticesDirty();
+        }
+    }
 
     public override Texture mainTexture
     {
@@ -65,8 +83,8 @@ public class UILineRenderer : MaskableGraphic
     protected override void OnPopulateMesh(VertexHelper vh)
     {
         // requires sets of quads
-        if (Points == null || Points.Length < 2)
-            Points = new[] { new Vector2(0, 0), new Vector2(1, 1) };
+        if (points == null || points.Length < 2)
+            points = new[] { new Vector2(0, 0), new Vector2(1, 1) };
         var capSize = 24;
         var sizeX = rectTransform.rect.width;
         var sizeY = rectTransform.rect.height;
@@ -82,18 +100,18 @@ public class UILineRenderer : MaskableGraphic
         // build a new set of points taking into account the cap sizes. 
         // would be cool to support corners too, but that might be a bit tough :)
         var pointList = new List<Vector2>();
-        pointList.Add(Points[0]);
-        var capPoint = Points[0] + (Points[1] - Points[0]).normalized * capSize;
+        pointList.Add(points[0]);
+        var capPoint = points[0] + (points[1] - points[0]).normalized * capSize;
         pointList.Add(capPoint);
 
         // should bail before the last point to add another cap point
-        for (int i = 1; i < Points.Length - 1; i++)
+        for (int i = 1; i < points.Length - 1; i++)
         {
-            pointList.Add(Points[i]);
+            pointList.Add(points[i]);
         }
-        capPoint = Points[Points.Length - 1] - (Points[Points.Length - 1] - Points[Points.Length - 2]).normalized * capSize;
+        capPoint = points[points.Length - 1] - (points[points.Length - 1] - points[points.Length - 2]).normalized * capSize;
         pointList.Add(capPoint);
-        pointList.Add(Points[Points.Length - 1]);
+        pointList.Add(points[points.Length - 1]);
 
         var TempPoints = pointList.ToArray();
         if (UseMargins)

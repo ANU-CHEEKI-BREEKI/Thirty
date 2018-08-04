@@ -13,12 +13,39 @@ public class UnitPosition : MonoBehaviour
     /// </summary>
     public Vector2 PositionInArray { get; set; }
     public float Scale { get; set; }
-    public Unit Unit { get; set; }
+    UnitAnimationController animController;
+    Unit unit;
+    public Unit Unit
+    {
+        get
+        {
+            return unit;
+        }
+        set
+        {
+            unit = value;
+            animController = unit.GetComponent<UnitAnimationController>();
+        }
+    }
     public Squad Squad { get; set; }
     /// <summary>
     /// Начиная с единицы (1,2,3,...)
     /// </summary>
-    public int RowInPhalanx { get; set; }
+    public int RowInPhalanx
+    {
+        get
+        {
+            return rowInPhalanx;
+        }
+        set
+        {
+            rowInPhalanx = value;
+            animController.SortingOrger = -value;
+        }
+    }
+    int rowInPhalanx;
+
+
 
     private void Start()
     {

@@ -106,6 +106,7 @@
     <Compile Include="Assets\Scripts\main_scene\LevelGeneradingProgress.cs" />
     <Compile Include="Assets\Scripts\main_scene\LoadingScreenManager.cs" />
     <Compile Include="Assets\Scripts\main_scene\LocalizationByEditor.cs" />
+    <Compile Include="Assets\Scripts\main_scene\MainCanvas.cs" />
     <Compile Include="Assets\Scripts\main_scene\MinimapCamera.cs" />
     <Compile Include="Assets\Scripts\main_scene\NewBehaviourScript.cs" />
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\AExecutableStack.cs" />
@@ -179,6 +180,7 @@
     <Compile Include="Assets\Scripts\main_scene\TerrainStatsModifier.cs" />
     <Compile Include="Assets\Scripts\main_scene\TerrainWalker.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\ConfirmPanel.cs" />
+    <Compile Include="Assets\Scripts\main_scene\UI\DeactivateOnAwake.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\DeathScreen.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\DialogBox.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\GameTipsPanel.cs" />
@@ -221,7 +223,6 @@
     <Compile Include="Assets\Scripts\main_scene\UI\NumberPickerDialogBox.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\PauseToggle.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\ResetPositionOnAwake.cs" />
-    <Compile Include="Assets\Scripts\main_scene\UI\SetActiveOnAwake.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\SettingsAudioSection.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\SettingsGraphixSection.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\SettingsProgressSection.cs" />

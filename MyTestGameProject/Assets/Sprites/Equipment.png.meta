@@ -482,15 +482,15 @@ TextureImporter:
     21300954: Equipment_477
     21300956: Equipment_478
     21300958: Equipment_479
-    21300960: Equipment_480
-    21300962: Equipment_481
-    21300964: Equipment_482
-    21300966: Equipment_483
-    21300968: Equipment_484
-    21300970: Equipment_485
-    21300972: Equipment_486
-    21300974: Equipment_487
-    21300976: Equipment_488
+    21300960: Equipment_body_linotorax_new_rnk_idle
+    21300962: Equipment_body_linotorax_new_rnk_run
+    21300964: Equipment_body_linotorax_new_rnk_fight
+    21300966: Equipment_body_linotorax_new_phx_idle
+    21300968: Equipment_body_linotorax_new_phx_run
+    21300970: Equipment_body_linotorax_new_shl_idle
+    21300972: Equipment_body_linotorax_new_shl_run
+    21300974: Equipment_body_linotorax_new_death_1
+    21300976: Equipment_body_linotorax_new_death_2
     21300978: Equipment_489
     21300980: Equipment_490
     21300982: Equipment_491
@@ -706,15 +706,15 @@ TextureImporter:
     21301402: Equipment_701
     21301404: Equipment_702
     21301406: Equipment_703
-    21301408: Equipment_704
-    21301410: Equipment_705
-    21301412: Equipment_706
-    21301414: Equipment_707
-    21301416: Equipment_708
-    21301418: Equipment_709
-    21301420: Equipment_710
-    21301422: Equipment_711
-    21301424: Equipment_712
+    21301408: Equipment_shield_scutum_new_rnk_idle
+    21301410: Equipment_shield_scutum_new_rnk_run
+    21301412: Equipment_shield_scutum_new_rnk_fight
+    21301414: Equipment_shield_scutum_new_phx_idle
+    21301416: Equipment_shield_scutum_new_phx_run
+    21301418: Equipment_shield_scutum_new_shl_idle
+    21301420: Equipment_shield_scutum_new_shl_run
+    21301422: Equipment_shield_scutum_new_death_1
+    21301424: Equipment_shield_scutum_new_death_2
     21301426: Equipment_713
     21301428: Equipment_714
     21301430: Equipment_715
@@ -1016,7 +1016,7 @@ TextureImporter:
     21302022: Equipment_1018
     21302024: Equipment_1019
   externalObjects: {}
-  serializedVersion: 5
+  serializedVersion: 6
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -1034,6 +1034,8 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -1044,7 +1046,7 @@ TextureImporter:
     serializedVersion: 2
     filterMode: -1
     aniso: -1
-    mipBias: -1
+    mipBias: -100
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -10706,7 +10708,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_480
+      name: Equipment_body_linotorax_new_rnk_idle
       rect:
         serializedVersion: 2
         x: 0
@@ -10726,7 +10728,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_481
+      name: Equipment_body_linotorax_new_rnk_run
       rect:
         serializedVersion: 2
         x: 64
@@ -10746,7 +10748,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_482
+      name: Equipment_body_linotorax_new_rnk_fight
       rect:
         serializedVersion: 2
         x: 128
@@ -10766,7 +10768,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_483
+      name: Equipment_body_linotorax_new_phx_idle
       rect:
         serializedVersion: 2
         x: 192
@@ -10786,7 +10788,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_484
+      name: Equipment_body_linotorax_new_phx_run
       rect:
         serializedVersion: 2
         x: 256
@@ -10806,7 +10808,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_485
+      name: Equipment_body_linotorax_new_shl_idle
       rect:
         serializedVersion: 2
         x: 320
@@ -10826,7 +10828,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_486
+      name: Equipment_body_linotorax_new_shl_run
       rect:
         serializedVersion: 2
         x: 384
@@ -10846,7 +10848,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_487
+      name: Equipment_body_linotorax_new_death_1
       rect:
         serializedVersion: 2
         x: 448
@@ -10866,7 +10868,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_488
+      name: Equipment_body_linotorax_new_death_2
       rect:
         serializedVersion: 2
         x: 512
@@ -15186,7 +15188,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_704
+      name: Equipment_shield_scutum_new_rnk_idle
       rect:
         serializedVersion: 2
         x: 0
@@ -15206,7 +15208,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_705
+      name: Equipment_shield_scutum_new_rnk_run
       rect:
         serializedVersion: 2
         x: 64
@@ -15226,7 +15228,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_706
+      name: Equipment_shield_scutum_new_rnk_fight
       rect:
         serializedVersion: 2
         x: 128
@@ -15246,7 +15248,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_707
+      name: Equipment_shield_scutum_new_phx_idle
       rect:
         serializedVersion: 2
         x: 192
@@ -15266,7 +15268,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_708
+      name: Equipment_shield_scutum_new_phx_run
       rect:
         serializedVersion: 2
         x: 256
@@ -15286,7 +15288,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_709
+      name: Equipment_shield_scutum_new_shl_idle
       rect:
         serializedVersion: 2
         x: 320
@@ -15306,7 +15308,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_710
+      name: Equipment_shield_scutum_new_shl_run
       rect:
         serializedVersion: 2
         x: 384
@@ -15326,7 +15328,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_711
+      name: Equipment_shield_scutum_new_death_1
       rect:
         serializedVersion: 2
         x: 448
@@ -15346,7 +15348,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_712
+      name: Equipment_shield_scutum_new_death_2
       rect:
         serializedVersion: 2
         x: 512

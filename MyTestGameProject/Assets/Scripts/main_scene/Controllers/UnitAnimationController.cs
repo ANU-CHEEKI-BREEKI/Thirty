@@ -2,11 +2,27 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 [RequireComponent(typeof(Unit))]
 public class UnitAnimationController : MonoBehaviour
 {
     [SerializeField] UnitOutline underlayerOutline;
+
+    public int SortingOrger
+    {
+        get
+        {
+            if (group != null)
+                return group.sortingOrder;
+             return 0;
+        }
+        set
+        {
+            if (group != null)
+                group.sortingOrder = value;
+        }
+    }
 
     new SpriteRenderer[] renderer = new SpriteRenderer[6];
     new UnitAnimation[] animation = new UnitAnimation[6];
@@ -16,6 +32,8 @@ public class UnitAnimationController : MonoBehaviour
 
     Squad squad;
     Unit unit;
+
+    SortingGroup group;
 
     FormationStats.Formations formation;
     bool hit;
@@ -47,6 +65,7 @@ public class UnitAnimationController : MonoBehaviour
     private void Awake()
     {
         unit = GetComponent<Unit>();
+        group = GetComponent<SortingGroup>();
 
         unit.OnArmsChanged += Unit_OnArmsChanged;
         unit.OnBodyChanged += Unit_OnBodyChanged;
@@ -83,6 +102,14 @@ public class UnitAnimationController : MonoBehaviour
     void Squad_OnFormationChanged(FormationStats value)
     {
         Formation = value.FORMATION;
+
+        if (group != null)
+        {
+            if (value.FORMATION == FormationStats.Formations.PHALANX)
+                group.enabled = false;
+            else
+                group.enabled = true;
+        }
     }
     void Squad_OnInFightFlagChanged(bool value)
     {
@@ -174,6 +201,9 @@ public class UnitAnimationController : MonoBehaviour
                 Destroy(renderer[i].transform.GetComponent<Item>());
             }
         }
+
+        if (group != null)
+            group.sortingLayerName = "Item";
 
         Destroy(unit.Shadow);
 
