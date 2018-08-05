@@ -70,11 +70,16 @@ public class PlayerSquadController : MonoBehaviour,  IPointerDownHandler, IPoint
             case Squad.UnitFraction.ALLY:
                 rHitLayer = 1 << LayerMask.NameToLayer(Squad.UnitFraction.ENEMY.ToString());
                 rHitLayer = rHitLayer | 1 << LayerMask.NameToLayer(Squad.UnitFraction.NEUTRAL.ToString());
+                rHitLayer = rHitLayer | 1 << LayerMask.NameToLayer("FALLEN_ENEMY");
+                rHitLayer = rHitLayer | 1 << LayerMask.NameToLayer("FALLEN_NEUTRAL");
                 break;
             case Squad.UnitFraction.ENEMY:
                 rHitLayer = 1 << LayerMask.NameToLayer(Squad.UnitFraction.ALLY.ToString());
+                rHitLayer = rHitLayer | 1 << LayerMask.NameToLayer("FALLEN_ALLY");
                 break;
         }
+        
+
 
         rHitFilter = new ContactFilter2D()
         {

@@ -41,6 +41,8 @@ public class UnitAnimationController : MonoBehaviour
     bool inFight;
     bool charging;
 
+    bool fallen = false;
+
     public FormationStats.Formations Formation
     {
         get { return formation; }
@@ -75,6 +77,9 @@ public class UnitAnimationController : MonoBehaviour
         unit.OnWeaponChanged += Unit_OnWeaponChanged;
         unit.OnChargingValueChanged += Unit_OnChargingValueChanged;
 
+        unit.OnUnitFallDown += Unit_OnUnitFallDown;
+        unit.OnUnitStandUp += Unit_OnUnitStandUp;
+
         unit.OnUnitDeath += Death;
 
         unit.OnRunValueChanged += Unit_OnRunValueChanged;
@@ -83,7 +88,7 @@ public class UnitAnimationController : MonoBehaviour
         Unit_OnArmsChanged(unit.Arms);
         Unit_OnLegsChanged(unit.Legs);
     }
-
+    
     void Unit_AfterInitiate()
     {
         squad = unit.squad;
@@ -93,6 +98,38 @@ public class UnitAnimationController : MonoBehaviour
             squad.OnFormationChanged += Squad_OnFormationChanged;
         }
     }
+
+    private void Unit_OnUnitStandUp()
+    {
+        Debug.Log("Unit_OnUnitStandUp");
+
+        fallen = false;
+        SetAnimationStates();
+    }
+
+    private void Unit_OnUnitFallDown()
+    {
+        Debug.Log("Unit_OnUnitFallDown");
+
+        fallen = true;
+
+        for (int i = 0; i < 6; i++)
+        {
+            if (animation[i] != null && renderer[i] != null)
+            {
+                renderer[i].sprite = animation[i].Fallen;
+
+                renderer[i].sortingLayerName = "Item";
+                Outline(i);
+            }
+        }
+
+        unit.Shadow.SetActive(false);
+
+        if (group != null)
+            group.sortingLayerName = "Item";
+    }
+
 
     void Unit_OnChargingValueChanged(bool value)
     {
@@ -164,6 +201,9 @@ public class UnitAnimationController : MonoBehaviour
         unit.OnWeaponChanged -= Unit_OnWeaponChanged;
         unit.OnChargingValueChanged -= Unit_OnChargingValueChanged;
 
+        unit.OnUnitFallDown += Unit_OnUnitFallDown;
+        unit.OnUnitStandUp += Unit_OnUnitStandUp;
+
         unit.OnRunValueChanged -= Unit_OnRunValueChanged;
         unit.AfterInitiate -= Unit_AfterInitiate;
 
@@ -184,10 +224,17 @@ public class UnitAnimationController : MonoBehaviour
         {
             if (animation[i] != null && renderer[i] != null)
             {
-                if (t == 0)
-                    renderer[i].sprite = animation[i].Death_1;
+                if (!fallen)
+                {
+                    if (t == 0)
+                        renderer[i].sprite = animation[i].Death_1;
+                    else
+                        renderer[i].sprite = animation[i].Death_2;
+                }
                 else
-                    renderer[i].sprite = animation[i].Death_2;
+                {
+                    renderer[i].sprite = animation[i].Death_1;
+                }
                 
                 renderer[i].sortingLayerName = "Item";
                 Outline(i, false);
@@ -212,6 +259,9 @@ public class UnitAnimationController : MonoBehaviour
 
     void SetAnimationStates()
     {
+        if (fallen)
+            return;
+
         switch (formation)
         {
             case global::FormationStats.Formations.RANKS:
@@ -223,6 +273,7 @@ public class UnitAnimationController : MonoBehaviour
                             if (animation[i] != null && renderer[i].sprite != animation[i].Rnk_fight)
                             {
                                 renderer[i].sprite = animation[i].Rnk_fight;
+                                renderer[i].sortingLayerName = "Unit";
                                 Outline(i);
                             }
                         }
@@ -236,6 +287,7 @@ public class UnitAnimationController : MonoBehaviour
                                 if (animation[i] != null && renderer[i].sprite != animation[i].Rnk_run)
                                 {
                                     renderer[i].sprite = animation[i].Rnk_run;
+                                    renderer[i].sortingLayerName = "Unit";
                                     Outline(i);
                                 }
                             }
@@ -249,6 +301,7 @@ public class UnitAnimationController : MonoBehaviour
                                     if (animation[i] != null && renderer[i].sprite != animation[i].Rnk_fight)
                                     {
                                         renderer[i].sprite = animation[i].Rnk_fight;
+                                        renderer[i].sortingLayerName = "Unit";
                                         Outline(i);
                                     }
                                 }
@@ -260,6 +313,7 @@ public class UnitAnimationController : MonoBehaviour
                                     if (animation[i] != null && renderer[i].sprite != animation[i].Rnk_idle)
                                     {
                                         renderer[i].sprite = animation[i].Rnk_idle;
+                                        renderer[i].sortingLayerName = "Unit";
                                         Outline(i);
                                     }
                                 }
@@ -277,6 +331,7 @@ public class UnitAnimationController : MonoBehaviour
                             if (animation[i] != null && renderer[i].sprite != animation[i].Phx_run)
                             {
                                 renderer[i].sprite = animation[i].Phx_run;
+                                renderer[i].sortingLayerName = "Unit";
                                 Outline(i);
                             }
                         }
@@ -288,6 +343,7 @@ public class UnitAnimationController : MonoBehaviour
                             if (animation[i] != null && renderer[i].sprite != animation[i].Phx_idle)
                             {
                                 renderer[i].sprite = animation[i].Phx_idle;
+                                renderer[i].sortingLayerName = "Unit";
                                 Outline(i);
                             }
                         }
@@ -303,6 +359,7 @@ public class UnitAnimationController : MonoBehaviour
                             if (animation[i] != null && renderer[i].sprite != animation[i].Shl_run)
                             {
                                 renderer[i].sprite = animation[i].Shl_run;
+                                renderer[i].sortingLayerName = "Unit";
                                 Outline(i);
                             }
                         }
@@ -314,6 +371,7 @@ public class UnitAnimationController : MonoBehaviour
                             if (animation[i] != null && renderer[i].sprite != animation[i].Shl_idle)
                             {
                                 renderer[i].sprite = animation[i].Shl_idle;
+                                renderer[i].sortingLayerName = "Unit";
                                 Outline(i);
                             }
                         }
@@ -321,6 +379,8 @@ public class UnitAnimationController : MonoBehaviour
                     break;
                 }
         }
+
+        unit.Shadow.SetActive(true);
     }
 
     void Outline(int itemIndex, bool anable = true)

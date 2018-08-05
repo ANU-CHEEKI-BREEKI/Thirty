@@ -107,7 +107,7 @@ TextureImporter:
     21300204: Equipment_legs_shl_run
     21300206: Equipment_legs_death_1
     21300208: Equipment_legs_death_2
-    21300210: Equipment_105
+    21300210: Equipment_legs_fallen
     21300212: Equipment_106
     21300214: Equipment_107
     21300216: Equipment_108
@@ -139,7 +139,7 @@ TextureImporter:
     21300268: Equipment_head_shl_run
     21300270: Equipment_head_death_1
     21300272: Equipment_head_death_2
-    21300274: Equipment_137
+    21300274: Equipment_head_fallen
     21300276: Equipment_138
     21300278: Equipment_139
     21300280: Equipment_140
@@ -171,7 +171,7 @@ TextureImporter:
     21300332: Equipment_helm_1_new_shl_run
     21300334: Equipment_helm_1_new_death_1
     21300336: Equipment_helm_1_new_death_2
-    21300338: Equipment_169
+    21300338: Equipment_helm_1_new_fallen
     21300340: Equipment_170
     21300342: Equipment_171
     21300344: Equipment_172
@@ -203,7 +203,7 @@ TextureImporter:
     21300396: Equipment_helm_2_new_shl_run
     21300398: Equipment_helm_2_new_death_1
     21300400: Equipment_helm_2_new_death_2
-    21300402: Equipment_201
+    21300402: Equipment_helm_2_new_fallen
     21300404: Equipment_202
     21300406: Equipment_203
     21300408: Equipment_204
@@ -395,7 +395,7 @@ TextureImporter:
     21300780: Equipment_body_nude_shl_run
     21300782: Equipment_body_nude_death_1
     21300784: Equipment_body_nude_death_2
-    21300786: Equipment_393
+    21300786: Equipment_body_nude_fallen
     21300788: Equipment_394
     21300790: Equipment_395
     21300792: Equipment_396
@@ -427,7 +427,7 @@ TextureImporter:
     21300844: Equipment_body_1_new_shl_run
     21300846: Equipment_body_1_new_death_1
     21300848: Equipment_body_1_new_death_2
-    21300850: Equipment_425
+    21300850: Equipment_body_1_new_fallen
     21300852: Equipment_426
     21300854: Equipment_427
     21300856: Equipment_428
@@ -459,7 +459,7 @@ TextureImporter:
     21300908: Equipment_body_2_new_shl_run
     21300910: Equipment_body_2_new_death_1
     21300912: Equipment_body_2_new_death_2
-    21300914: Equipment_457
+    21300914: Equipment_body_2_new_fallen
     21300916: Equipment_458
     21300918: Equipment_459
     21300920: Equipment_460
@@ -491,7 +491,7 @@ TextureImporter:
     21300972: Equipment_body_linotorax_new_shl_run
     21300974: Equipment_body_linotorax_new_death_1
     21300976: Equipment_body_linotorax_new_death_2
-    21300978: Equipment_489
+    21300978: Equipment_body_linotorax_new_fallen
     21300980: Equipment_490
     21300982: Equipment_491
     21300984: Equipment_492
@@ -651,7 +651,7 @@ TextureImporter:
     21301292: Equipment_shield_1_new_shl_run
     21301294: Equipment_shield_1_new_death_1
     21301296: Equipment_shield_1_new_death_2
-    21301298: Equipment_649
+    21301298: Equipment_shield_1_new_fallen
     21301300: Equipment_650
     21301302: Equipment_651
     21301304: Equipment_652
@@ -683,7 +683,7 @@ TextureImporter:
     21301356: Equipment_shield_2_new_shl_run
     21301358: Equipment_shield_2_new_death_1
     21301360: Equipment_shield_2_new_death_2
-    21301362: Equipment_681
+    21301362: Equipment_shield_2_new_fallen
     21301364: Equipment_682
     21301366: Equipment_683
     21301368: Equipment_684
@@ -715,7 +715,7 @@ TextureImporter:
     21301420: Equipment_shield_scutum_new_shl_run
     21301422: Equipment_shield_scutum_new_death_1
     21301424: Equipment_shield_scutum_new_death_2
-    21301426: Equipment_713
+    21301426: Equipment_shield_scutum_new_fallen
     21301428: Equipment_714
     21301430: Equipment_715
     21301432: Equipment_716
@@ -873,7 +873,7 @@ TextureImporter:
     21301736: Equipment_sword_1_shl_run
     21301738: Equipment_sword_1_death_1
     21301740: Equipment_sword_1_death_2
-    21301742: Equipment_871
+    21301742: Equipment_sword_1_fallen
     21301744: Equipment_872
     21301746: Equipment_873
     21301748: Equipment_874
@@ -898,7 +898,7 @@ TextureImporter:
     21301786: Equipment_893
     21301788: Equipment_894
     21301790: Equipment_895
-    21301792: Equipment_900
+    21301792: Equipment_spear_1_fallen
     21301794: Equipment_901
     21301796: Equipment_902
     21301798: Equipment_903
@@ -988,7 +988,7 @@ TextureImporter:
     21301966: Equipment_pike_1_phx_idle
     21301968: Equipment_pike_1_death_1
     21301970: Equipment_pike_1_death_2
-    21301972: Equipment_993
+    21301972: Equipment_pike_1_fallen
     21301974: Equipment_994
     21301976: Equipment_995
     21301978: Equipment_996
@@ -1015,6 +1015,7 @@ TextureImporter:
     21302020: Equipment_1017
     21302022: Equipment_1018
     21302024: Equipment_1019
+    21302026: Equipment_arms_fallen
   externalObjects: {}
   serializedVersion: 6
   mipmaps:
@@ -1291,8 +1292,8 @@ TextureImporter:
       name: Equipment_unit_selection
       rect:
         serializedVersion: 2
-        x: 576
-        y: 2041
+        x: 569
+        y: 1913
         width: 7
         height: 7
       alignment: 0
@@ -3208,7 +3209,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_105
+      name: Equipment_legs_fallen
       rect:
         serializedVersion: 2
         x: 576
@@ -3848,7 +3849,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_137
+      name: Equipment_head_fallen
       rect:
         serializedVersion: 2
         x: 576
@@ -4488,7 +4489,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_169
+      name: Equipment_helm_1_new_fallen
       rect:
         serializedVersion: 2
         x: 576
@@ -5128,10 +5129,10 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_201
+      name: Equipment_helm_2_new_fallen
       rect:
         serializedVersion: 2
-        x: 576
+        x: 575
         y: 1600
         width: 64
         height: 64
@@ -8968,7 +8969,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_393
+      name: Equipment_body_nude_fallen
       rect:
         serializedVersion: 2
         x: 576
@@ -9608,7 +9609,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_425
+      name: Equipment_body_1_new_fallen
       rect:
         serializedVersion: 2
         x: 576
@@ -10248,7 +10249,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_457
+      name: Equipment_body_2_new_fallen
       rect:
         serializedVersion: 2
         x: 576
@@ -10888,7 +10889,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_489
+      name: Equipment_body_linotorax_new_fallen
       rect:
         serializedVersion: 2
         x: 576
@@ -14088,7 +14089,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_649
+      name: Equipment_shield_1_new_fallen
       rect:
         serializedVersion: 2
         x: 576
@@ -14728,7 +14729,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_681
+      name: Equipment_shield_2_new_fallen
       rect:
         serializedVersion: 2
         x: 576
@@ -15368,7 +15369,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_713
+      name: Equipment_shield_scutum_new_fallen
       rect:
         serializedVersion: 2
         x: 576
@@ -18528,7 +18529,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_871
+      name: Equipment_sword_1_fallen
       rect:
         serializedVersion: 2
         x: 448
@@ -19028,15 +19029,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_900
+      name: Equipment_spear_1_fallen
       rect:
         serializedVersion: 2
         x: 384
-        y: 192
+        y: 128
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -19668,26 +19669,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_932
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 128
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8c36d729e58b97d4f964b7e0b1170e97
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Equipment_933
       rect:
         serializedVersion: 2
@@ -20183,26 +20164,6 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: f56af6868d3cdd744be367f0c7f98857
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Equipment_961
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1c61b06beb3653844bb691c4a2959caa
       vertices: []
       indices: 
       edges: []
@@ -20828,15 +20789,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_993
+      name: Equipment_pike_1_fallen
       rect:
         serializedVersion: 2
         x: 320
         y: 0
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -21363,6 +21324,26 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 1d4a9519abef01c48a6969e606824825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Equipment_arms_fallen
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 1984
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a66e8e497ad0bb34da98e1aa35afaf13
       vertices: []
       indices: 
       edges: []

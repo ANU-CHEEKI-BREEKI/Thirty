@@ -20,6 +20,9 @@ public class UnitAnimation : MonoBehaviour
     [Header("Death animation states")]
     [SerializeField] Sprite death_1;
     [SerializeField] Sprite death_2;
+    [Space]
+    [Header("Fallen animation states")]
+    [SerializeField] Sprite fallen;
 
     public Sprite Rnk_idle { get { return rnk_idle; } }
     public Sprite Rnk_run { get { return rnk_run; } }
@@ -33,4 +36,6 @@ public class UnitAnimation : MonoBehaviour
 
     public Sprite Death_1 { get { return death_1; } }
     public Sprite Death_2 { get { return death_2; } }
+
+    public Sprite Fallen { get { return fallen; } }
 }

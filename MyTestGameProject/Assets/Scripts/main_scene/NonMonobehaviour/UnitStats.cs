@@ -111,7 +111,7 @@ public struct UnitStats
         baseStats.defence = baseStats.defence > MAX_DEFENCE ? MAX_DEFENCE : baseStats.defence;
                 
         for (i = 0; i < equipCnt; i++)
-            if(equipmentStats[i].Type != EquipmentStats.TypeOfEquipment.SHIELD)
+            //if(equipmentStats[i].Type != EquipmentStats.TypeOfEquipment.SHIELD)
             baseStats.armour += equipmentStats[i].Armour;
 
         float t = 0;
@@ -164,15 +164,11 @@ public struct UnitStats
             k += equipmentStats[i].AddRotationSpeed;
         baseStats.rotationSpeed *= k * (1 + formationStats.UNIT_ADDITIONAL_ROTATION_SPEED);
 
-        k = 1;
         for (i = 0; i < equipCnt; i++)
-            k += equipmentStats[i].AddChargeImpact;
-        baseStats.chargeImpact *= k;
+            baseStats.chargeImpact += equipmentStats[i].ChargeImpact;
 
-        k = 1;
         for (i = 0; i < equipCnt; i++)
-            k += equipmentStats[i].AddChargeDeflect;
-        baseStats.chargeDeflect *= k;
+            baseStats.chargeDeflect += equipmentStats[i].ChargeDeflect;
 
         k = 1;
         for (i = 0; i < equipCnt; i++)

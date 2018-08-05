@@ -45,6 +45,12 @@ public struct EquipmentStats : IDescriptionable
     [SerializeField] [Range(0, 10)] float attackDistance;
     public float AttackDistance { get { return attackDistance; } }
 
+    [SerializeField] [Range(-1, 1)] float chargeImpact;
+    public float ChargeImpact { get { return chargeImpact; } }
+
+    [SerializeField] [Range(-1, 1)] float chargeDeflect;
+    public float ChargeDeflect { get { return chargeDeflect; } }
+
     [Header("----свойства-модификаторы----", order = 3)]
     [SerializeField] [Range(-1, 1)] float addAttack;
     public float AddAttack { get { return addAttack; } }
@@ -63,12 +69,7 @@ public struct EquipmentStats : IDescriptionable
 
     [SerializeField] [Range(-1, 1)] float addRotationSpeed;
     public float AddRotationSpeed { get { return addRotationSpeed; } }
-    
-    [SerializeField] [Range(-1, 1)] float addChargeImpact;
-    public float AddChargeImpact { get { return addChargeImpact; } }
 
-    [SerializeField] [Range(-1, 1)] float addChargeDeflect;
-    public float AddChargeDeflect { get { return addChargeDeflect; } }
     #endregion
 
     [Header("Свойства на которые влияет состояние экипировки", order = 1)] [Space]
@@ -227,24 +228,24 @@ public struct EquipmentStats : IDescriptionable
                 stats.Add(d);
             }
 
-            if (AddChargeImpact != 0)
+            if (ChargeImpact != 0)
             {
                 d = new DescriptionItem()
                 {
                     Name = LocalizedStrings.chargeImpact,
-                    Description = AddChargeImpact.ToString(StringFormats.floatSignNumberPercent) + LocalizedStrings.baseValue,
-                    ItPositiveDesc = AddChargeImpact > 0
+                    Description = ChargeImpact.ToString(StringFormats.floatSignNumberPercent) + LocalizedStrings.baseValue,
+                    ItPositiveDesc = ChargeImpact > 0
                 };
                 stats.Add(d);
             }
 
-            if (AddChargeDeflect != 0)
+            if (ChargeDeflect != 0)
             {
                 d = new DescriptionItem()
                 {
                     Name = LocalizedStrings.chargeDeflect,
-                    Description = AddChargeDeflect.ToString(StringFormats.floatSignNumberPercent) + LocalizedStrings.baseValue,
-                    ItPositiveDesc = AddChargeDeflect > 0
+                    Description = ChargeDeflect.ToString(StringFormats.floatSignNumberPercent) + LocalizedStrings.baseValue,
+                    ItPositiveDesc = ChargeDeflect > 0
                 };
                 stats.Add(d);
             }

@@ -1,6 +1,6 @@
 Android
 PlayerPath?
-C:/Users/ANU CHEEKI BREEKI/Desktop/Thirty.v.0.8.5a.apk
+C:/Users/ANU CHEEKI BREEKI/Desktop/Thirty.v.0.8.6a.apk
 SceneListBegin?
 Assets/Scenes/main_menu.unity
 Assets/Scenes/market.unity
@@ -12,7 +12,7 @@ Assets/Scenes/level_tutorial_3.unity
 SceneListEnd?
 cfba408c0c89345a971c4360bc93b882 Assembly-CSharp.dll:.MarketInventoryUI
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.SquadInfoCellPresenter
-d360d09a5e482df450712dce027e8036 Assembly-CSharp.dll:.UnitAnimation
+31bda29d6063b0d653e31c02f5bde5ae Assembly-CSharp.dll:.UnitAnimation
 edbfac507104270d17d441b1b250535e Assembly-CSharp.dll:.SettingsProgressSection
 8f65b67bf4473054cb6def9b3cb3f967 Assembly-CSharp.dll:.Ground
 486cd95c82d8305219c352c06b776e1f UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
@@ -284,7 +284,7 @@ e033f131358cea5a0eabf9561e781deb UnityEngine.TestRunner.dll:UnityEngine.TestTool
 70f7dc248db3379548a88e8d4fa049f8 UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioRoom
 28a95668dd28649297d595834fe8417e UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioSoundfieldExtension
 28a95668dd28649297d595834fe8417e UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioSourceExtension
-38cfb6496ad1b50a7926cf60c90a066c Assembly-CSharp.dll:.Equipment
+75727171ab643771f251a40d108391e5 Assembly-CSharp.dll:.Equipment
 6e35323d80fc9da821dc91aaa9a50b80 Assembly-CSharp.dll:.SpriteColorAplhaBlinker
 1a90b221dc803408fbafa883c12bcab4 UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioListenerExtension
 70f7dc248db3379548a88e8d4fa049f8 UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioRoom
@@ -294,7 +294,7 @@ e033f131358cea5a0eabf9561e781deb UnityEngine.TestRunner.dll:UnityEngine.TestTool
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.DropingItemsManager
 0984d60f2ed9eb4b6f5b4a85b9b899f4 Assembly-CSharp.dll:.AiSquadController
 e1ae6c4023fce7fe37f497e8f30c2b9b Assembly-CSharp.dll:.SkillArrowsValley
-23748bcfef3a592d39fd3b423fc4d048 Assembly-CSharp.dll:.Unit
+719fb7aa6ef9b401c2349bd7b410e9cc Assembly-CSharp.dll:.Unit
 bfb9519e1d2f041cc96d653b6ea68953 Assembly-CSharp.dll:.NumberConverter
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.CloseSquadPanelsOnAwake
 0559e5a592c80d76da73981c580c9787 Assembly-CSharp.dll:.CameraController
@@ -345,7 +345,7 @@ e683776ccf93cc61b47b322b852d36ee Assembly-CSharp.dll:.SquadCerrentProp
 89ddf13387916bae13ce3d5a9420aa06 Assembly-CSharp.dll:.SkillButton
 ce8dfcc1d4f20e02b78ad0b9451db48a Assembly-CSharp.dll:.SOSquadSpawnerAISettingsResourse
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.MainCanvas
-25857772871c336e467d7a3b93aba134 Assembly-CSharp.dll:.Squad
+ef789dbd5f233e1a910943a5b9d5db35 Assembly-CSharp.dll:.Squad
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.TerrainWalker
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.ShowSettingsSection
 a76ac6c8fecd9da72794f2adcf487452 Assembly-CSharp.dll:.DropToConsumable

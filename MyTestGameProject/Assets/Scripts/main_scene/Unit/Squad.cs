@@ -329,7 +329,15 @@ public class Squad : MonoBehaviour
     /// Процент юнитов в отряде от общего кол-ва, которые должны иметь модификатор, чтобы он применился ко всему отряду
     /// </summary>
     public const float percentUnitCountToApplyModifier = 0.2f;
-    int UnitCountToApplyModifier { get { return Mathf.RoundToInt(percentUnitCountToApplyModifier * UnitCount); } }
+    int UnitCountToApplyModifier
+    {
+        get
+        {
+            var val = Mathf.RoundToInt(percentUnitCountToApplyModifier * UnitCount);
+            if (val < 1) val = 1;
+            return val;
+        }
+    }
 
     /// <summary>
     /// Контроллер перемещения отряда. Ищет путь и задает его. И т.п.
@@ -413,7 +421,7 @@ public class Squad : MonoBehaviour
         else
             statsDictionary.Add(modifyer, 1);
 
-        if (statsDictionary[modifyer] > UnitCountToApplyModifier && !statsModifyers.Contains(modifyer))
+        if (statsDictionary[modifyer] >= UnitCountToApplyModifier && !statsModifyers.Contains(modifyer))
             AddStatsModifier(modifyer);
     }
     
@@ -483,7 +491,7 @@ public class Squad : MonoBehaviour
         else
             terrainStatsDictionary.Add(modifyer, 1);
 
-        if (terrainStatsDictionary[modifyer] > UnitCountToApplyModifier && !terrainStatsModifyers.Contains(modifyer))
+        if (terrainStatsDictionary[modifyer] >= UnitCountToApplyModifier && !terrainStatsModifyers.Contains(modifyer))
             AddTerrainStatsModifier(modifyer);
     }
 
