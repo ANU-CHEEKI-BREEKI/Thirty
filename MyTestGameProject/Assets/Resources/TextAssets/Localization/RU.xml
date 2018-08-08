@@ -140,6 +140,8 @@
   <string name = "equipment_body_linotorax_description">Обычный линоторакс, такие есть у всех. Защищает от порезов и, слегка, от стрел.</string>
   <string name = "equipment_body_anatomic_armour_name">Анатомичный панцирь</string>
   <string name = "equipment_body_anatomic_armour_description">Тяжелая броня, внешне повторяющая мускулистое тело. Отлично защищает хозяина от стрел, порезов и колющих ударов.</string>
+  <string name = "equipment_body_lorica_segmentata_name">Лорика сегментата</string>
+  <string name = "equipment_body_lorica_segmentata_description">Тяжелые пластинчатые доспехи конца Римской республики. Отлично защищают хозяина, но сковывают движения. Кроме того, крайне дороги в производстве.</string>
   <string name = "equipment_body_none_name">Нет брони</string>
   <string name = "equipment_body_none_description">Просто туника.</string>
   <string name = "equipment_helmet_corinthian_close_name">Коринфский закрытый шлем</string>
@@ -149,11 +151,13 @@
   <string name = "equipment_helmet_none_name">Нет шлема</string>
   <string name = "equipment_helmet_none_description">У вас нет шлемов.</string>
   <string name = "equipment_shield_hoplon_name">Гоплон</string>
-  <string name = "equipment_shield_hoplon_description">Щит фалангитов. Дает очень хорошую защиту, но атаковать вне фаланги очень тяжело.</string>
-   <string name = "equipment_shield_scutum_name">Скутум</string>
-  <string name = "equipment_shield_scutum_description">Классический римский щит. Дает очень хорошую защиту, но передвигаться с ним немного не удобно.</string>
+  <string name = "equipment_shield_hoplon_description">Щит фалангитов. Даёт очень хорошую защиту, но атаковать вне фаланги очень тяжело.</string>
   <string name = "equipment_shield_bakler_name">Железный баклер</string>
   <string name = "equipment_shield_bakler_description">Малый щит. Средняя защита, но не мешает махать мечем. Из за размеров щита, под обстрел лучше не попадать.</string>
+  <string name = "equipment_shield_scutum_name">Скутум</string>
+  <string name = "equipment_shield_scutum_description">Классический римский щит. Даёт очень хорошую защиту, но передвигаться с ним немного не удобно.</string>
+  <string name = "equipment_shield_thyreos_name">Туреос</string>
+  <string name = "equipment_shield_thyreos_description">Большой овальный щит греческого типа. Даёт хорошую защиту, не сильно мешая хозяину.</string>
   <string name = "equipment_shield_none_name">Нет щита</string>
   <string name = "equipment_shield_none_description">У вас нет щитов.</string>
   <string name = "equipment_weapon_doru_name">Дору</string>

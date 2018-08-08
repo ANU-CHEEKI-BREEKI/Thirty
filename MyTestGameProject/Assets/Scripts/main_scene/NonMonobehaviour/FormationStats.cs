@@ -21,7 +21,10 @@ public abstract class FormationStats : IDescriptionable
     public readonly float UNIT_ADDITIONAL_ATTACK;
     public readonly float UNIT_ADDITIONAL_DEFENCE;
 
-    public readonly float UNIT_ADDITIONAL_DEFENCE_SECTOR;   
+    public readonly float UNIT_ADDITIONAL_DEFENCE_SECTOR;
+
+    public readonly float UNIT_CHARGE_IMPACT;
+    public readonly float UNIT_CHARGE_DEFLECT;
 
     public FormationStats(
         float SQUAD_ADDITIONAL_SPEED = 0,
@@ -32,6 +35,8 @@ public abstract class FormationStats : IDescriptionable
         float UNIT_ADDITIONAL_ATTACK = 0,
         float UNIT_ADDITIONAL_DEFENCE = 0,
         float UNIT_ADDITIONAL_DEFENCE_SECTOR = 0,
+        float UNIT_CHARGE_IMPACT = 0,
+        float UNIT_CHARGE_DEFLECT = 0,
         Formations FORMATION = Formations.RANKS
     )
     {
@@ -47,6 +52,9 @@ public abstract class FormationStats : IDescriptionable
         this.UNIT_ADDITIONAL_DEFENCE = UNIT_ADDITIONAL_DEFENCE;
 
         this.UNIT_ADDITIONAL_DEFENCE_SECTOR = UNIT_ADDITIONAL_DEFENCE_SECTOR;
+
+        this.UNIT_CHARGE_IMPACT = UNIT_CHARGE_IMPACT;
+        this.UNIT_CHARGE_DEFLECT = UNIT_CHARGE_DEFLECT;
 
         this.FORMATION = FORMATION;
     }
@@ -186,6 +194,26 @@ public abstract class FormationStats : IDescriptionable
             });
         }
 
+        if (UNIT_CHARGE_IMPACT != 0)
+        {
+            res.Add(new DescriptionItem()
+            {
+                Name = LocalizedStrings.chargeImpact,
+                Description = UNIT_CHARGE_IMPACT.ToString(StringFormats.intSignNumberPercent),
+                ItPositiveDesc = UNIT_CHARGE_IMPACT > 0
+            });
+        }
+
+        if (UNIT_CHARGE_DEFLECT != 0)
+        {
+            res.Add(new DescriptionItem()
+            {
+                Name = LocalizedStrings.chargeDeflect,
+                Description = UNIT_CHARGE_DEFLECT.ToString(StringFormats.intSignNumberPercent),
+                ItPositiveDesc = UNIT_CHARGE_DEFLECT > 0
+            });
+        }
+
         return res.ToArray();
     }
 
@@ -224,8 +252,9 @@ public abstract class FormationStats : IDescriptionable
             -0.8f, -0.9f,
             -0.8f, -0.955f,
              0.9f,
-            -0.1f,    0.1f,
+            -0.1f,  0.1f,
             -0.5f,
+             0f,    0f,
             Formations.PHALANX
         ) { }
     }
@@ -238,6 +267,7 @@ public abstract class FormationStats : IDescriptionable
              0,
             -0.5f, -0.8f, 
              0,
+             0f,   -0.2f,
              Formations.RISEDSHIELDS
         ) { }
     }

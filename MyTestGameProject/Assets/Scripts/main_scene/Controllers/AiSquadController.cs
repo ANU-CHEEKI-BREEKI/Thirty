@@ -334,6 +334,11 @@ public class AiSquadController : MonoBehaviour
             Gizmos.color = Color.yellow;
             Gizmos.DrawWireSphere(transform.position, distancesOptions.RadiusOfAttackArea);
         }
+
+        if(allExeBehaviour != null)
+            foreach (var b in allExeBehaviour)
+                if (b is IGizmosDrawable)
+                    (b as IGizmosDrawable).OnDrawGizmos();
     }
     
     void ResetDistansesSettings()

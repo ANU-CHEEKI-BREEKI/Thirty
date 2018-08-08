@@ -165,10 +165,14 @@ public struct UnitStats
         baseStats.rotationSpeed *= k * (1 + formationStats.UNIT_ADDITIONAL_ROTATION_SPEED);
 
         for (i = 0; i < equipCnt; i++)
-            baseStats.chargeImpact += equipmentStats[i].ChargeImpact;
+            if (!(equipmentStats[i].Type == EquipmentStats.TypeOfEquipment.SHIELD && formationStats.FORMATION == FormationStats.Formations.RISEDSHIELDS))
+                baseStats.chargeImpact += equipmentStats[i].ChargeImpact;
+        baseStats.chargeDeflect += formationStats.UNIT_CHARGE_IMPACT;
 
         for (i = 0; i < equipCnt; i++)
-            baseStats.chargeDeflect += equipmentStats[i].ChargeDeflect;
+            if (!(equipmentStats[i].Type == EquipmentStats.TypeOfEquipment.SHIELD && formationStats.FORMATION == FormationStats.Formations.RISEDSHIELDS))
+                baseStats.chargeDeflect += equipmentStats[i].ChargeDeflect;
+        baseStats.chargeDeflect += formationStats.UNIT_CHARGE_DEFLECT;
 
         k = 1;
         for (i = 0; i < equipCnt; i++)

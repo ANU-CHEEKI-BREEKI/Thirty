@@ -5,6 +5,7 @@ using UnityEngine;
 public class UnitOutline : MonoBehaviour
 {
     SpriteRenderer spriteRenderer;
+    public float Alpha { get; set; } = 1;
 
     void Awake()
     {
@@ -43,6 +44,8 @@ public class UnitOutline : MonoBehaviour
                 color = gs.NeutralOutlineColor;
             }
         }
+
+        color.a = Alpha;
 
         if (!enable)
             color.a = 0;

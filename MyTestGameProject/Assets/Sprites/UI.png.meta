@@ -99,6 +99,8 @@ TextureImporter:
     21300188: terrainModifier_forest
     21300190: terrainModifier_light_forest
     21300192: scutum
+    21300194: thyreos
+    21300196: lorica_segmentata
   externalObjects: {}
   serializedVersion: 6
   mipmaps:
@@ -2120,13 +2122,53 @@ TextureImporter:
         width: 100
         height: 100
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 1fd5abe813d9b424c99a62e58ad2d823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thyreos
+      rect:
+        serializedVersion: 2
+        x: 1202
+        y: 1448
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac6f27b8353597445b59fd4de2795c30
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lorica_segmentata
+      rect:
+        serializedVersion: 2
+        x: 1302
+        y: 1448
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d34ee3fb8add3445b849060a6838349
       vertices: []
       indices: 
       edges: []

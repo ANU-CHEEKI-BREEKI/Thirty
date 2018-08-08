@@ -514,16 +514,16 @@ TextureImporter:
     21301018: Equipment_509
     21301020: Equipment_510
     21301022: Equipment_511
-    21301024: Equipment_512
-    21301026: Equipment_513
-    21301028: Equipment_514
-    21301030: Equipment_515
-    21301032: Equipment_516
-    21301034: Equipment_517
-    21301036: Equipment_518
-    21301038: Equipment_519
-    21301040: Equipment_520
-    21301042: Equipment_521
+    21301024: Equipment_body_lorica_segmentata_new_rnk_idle
+    21301026: Equipment_body_lorica_segmentata_new_rnk_run
+    21301028: Equipment_body_lorica_segmentata_new_rnk_fight
+    21301030: Equipment_body_lorica_segmentata_new_phx_idle
+    21301032: Equipment_body_lorica_segmentata_new_phx_run
+    21301034: Equipment_body_lorica_segmentata_new_shl_idle
+    21301036: Equipment_body_lorica_segmentata_new_shl_run
+    21301038: Equipment_body_lorica_segmentata_new_death_1
+    21301040: Equipment_body_lorica_segmentata_new_death_2
+    21301042: Equipment_body_lorica_segmentata_new_fallen
     21301044: Equipment_522
     21301046: Equipment_523
     21301048: Equipment_524
@@ -738,16 +738,16 @@ TextureImporter:
     21301466: Equipment_733
     21301468: Equipment_734
     21301470: Equipment_735
-    21301472: Equipment_736
-    21301474: Equipment_737
-    21301476: Equipment_738
-    21301478: Equipment_739
-    21301480: Equipment_740
-    21301482: Equipment_741
-    21301484: Equipment_742
-    21301486: Equipment_743
-    21301488: Equipment_744
-    21301490: Equipment_745
+    21301472: Equipment_shield_thyreos_new_rnk_idle
+    21301474: Equipment_shield_thyreos_new_rnk_run
+    21301476: Equipment_shield_thyreos_new_rnk_fight
+    21301478: Equipment_shield_thyreos_new_phx_idle
+    21301480: Equipment_shield_thyreos_new_phx_run
+    21301482: Equipment_shield_thyreos_new_shl_idle
+    21301484: Equipment_shield_thyreos_new_shl_run
+    21301486: Equipment_shield_thyreos_new_death_1
+    21301488: Equipment_shield_thyreos_new_death_2
+    21301490: Equipment_shield_thyreos_new_fallen
     21301492: Equipment_746
     21301494: Equipment_747
     21301496: Equipment_748
@@ -11349,7 +11349,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_512
+      name: Equipment_body_lorica_segmentata_new_rnk_idle
       rect:
         serializedVersion: 2
         x: 0
@@ -11369,7 +11369,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_513
+      name: Equipment_body_lorica_segmentata_new_rnk_run
       rect:
         serializedVersion: 2
         x: 64
@@ -11389,7 +11389,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_514
+      name: Equipment_body_lorica_segmentata_new_rnk_fight
       rect:
         serializedVersion: 2
         x: 128
@@ -11409,7 +11409,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_515
+      name: Equipment_body_lorica_segmentata_new_phx_idle
       rect:
         serializedVersion: 2
         x: 192
@@ -11429,7 +11429,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_516
+      name: Equipment_body_lorica_segmentata_new_phx_run
       rect:
         serializedVersion: 2
         x: 256
@@ -11449,7 +11449,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_517
+      name: Equipment_body_lorica_segmentata_new_shl_idle
       rect:
         serializedVersion: 2
         x: 320
@@ -11469,7 +11469,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_518
+      name: Equipment_body_lorica_segmentata_new_shl_run
       rect:
         serializedVersion: 2
         x: 384
@@ -11489,7 +11489,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_519
+      name: Equipment_body_lorica_segmentata_new_death_1
       rect:
         serializedVersion: 2
         x: 448
@@ -11509,7 +11509,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_520
+      name: Equipment_body_lorica_segmentata_new_death_2
       rect:
         serializedVersion: 2
         x: 512
@@ -11529,7 +11529,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_521
+      name: Equipment_body_lorica_segmentata_new_fallen
       rect:
         serializedVersion: 2
         x: 576
@@ -15829,7 +15829,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_736
+      name: Equipment_shield_thyreos_new_rnk_idle
       rect:
         serializedVersion: 2
         x: 0
@@ -15849,7 +15849,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_737
+      name: Equipment_shield_thyreos_new_rnk_run
       rect:
         serializedVersion: 2
         x: 64
@@ -15869,7 +15869,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_738
+      name: Equipment_shield_thyreos_new_rnk_fight
       rect:
         serializedVersion: 2
         x: 128
@@ -15889,7 +15889,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_739
+      name: Equipment_shield_thyreos_new_phx_idle
       rect:
         serializedVersion: 2
         x: 192
@@ -15909,7 +15909,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_740
+      name: Equipment_shield_thyreos_new_phx_run
       rect:
         serializedVersion: 2
         x: 256
@@ -15929,7 +15929,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_741
+      name: Equipment_shield_thyreos_new_shl_idle
       rect:
         serializedVersion: 2
         x: 320
@@ -15949,7 +15949,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_742
+      name: Equipment_shield_thyreos_new_shl_run
       rect:
         serializedVersion: 2
         x: 384
@@ -15969,7 +15969,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_743
+      name: Equipment_shield_thyreos_new_death_1
       rect:
         serializedVersion: 2
         x: 448
@@ -15989,7 +15989,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_744
+      name: Equipment_shield_thyreos_new_death_2
       rect:
         serializedVersion: 2
         x: 512
@@ -16009,7 +16009,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_745
+      name: Equipment_shield_thyreos_new_fallen
       rect:
         serializedVersion: 2
         x: 576

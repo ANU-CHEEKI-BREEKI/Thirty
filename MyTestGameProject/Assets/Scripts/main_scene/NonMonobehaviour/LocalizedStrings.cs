@@ -112,6 +112,8 @@ public sealed class LocalizedStrings
     public static string equipment_body_linotorax_description { get; private set; }
     public static string equipment_body_anatomic_armour_name { get; private set; }
     public static string equipment_body_anatomic_armour_description { get; private set; }
+    public static string equipment_body_lorica_segmentata_name { get; private set; }
+    public static string equipment_body_lorica_segmentata_description { get; private set; }
     public static string equipment_body_none_name { get; private set; }
     public static string equipment_body_none_description { get; private set; }
     public static string equipment_helmet_corinthian_close_name { get; private set; }
@@ -122,10 +124,12 @@ public sealed class LocalizedStrings
     public static string equipment_helmet_none_description { get; private set; }
     public static string equipment_shield_hoplon_name { get; private set; }
     public static string equipment_shield_hoplon_description { get; private set; }
-    public static string equipment_shield_scutum_name { get; private set; }
-    public static string equipment_shield_scutum_description { get; private set; }
     public static string equipment_shield_bakler_name { get; private set; }
     public static string equipment_shield_bakler_description { get; private set; }
+    public static string equipment_shield_scutum_name { get; private set; }
+    public static string equipment_shield_scutum_description { get; private set; }
+    public static string equipment_shield_thyreos_name { get; private set; }
+    public static string equipment_shield_thyreos_description { get; private set; }
     public static string equipment_shield_none_name { get; private set; }
     public static string equipment_shield_none_description { get; private set; }
     public static string equipment_weapon_doru_name { get; private set; }

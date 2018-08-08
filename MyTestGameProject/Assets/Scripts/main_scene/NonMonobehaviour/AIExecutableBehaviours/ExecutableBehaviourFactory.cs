@@ -15,7 +15,11 @@ public static class ExecutableBehaviourFactory
 
     static AExecutableBehaviour GetBehaviourSkill(SkillStack stack, AiSquadController controller)
     {
-        return null;
+        if (stack.Skill is SkillCharge)
+            return new SkillChargeBehaviour(controller, stack);
+
+        else
+            return null;
     }
 
     static AExecutableBehaviour GetBehaviourConsumable(ConsumableStack stack, AiSquadController controller)

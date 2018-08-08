@@ -136,7 +136,7 @@ public class Squad : MonoBehaviour
                 if (OnFormationChanged != null)
                     OnFormationChanged(currentFormationModifyers);
 
-            if (tag == "Player" && formation != FormationStats.Formations.RANKS && PlayerSquadController.Instance != null)
+            if (tag == "Player" && formation == FormationStats.Formations.PHALANX && PlayerSquadController.Instance != null)
                 PlayerSquadController.Instance.DeselectEnemyes();
         }
     }
@@ -662,24 +662,12 @@ public class Squad : MonoBehaviour
     {
         CalcSpeed();
 
-        if (newEquipment != null && newEquipment.EquipmentStats.Type == EquipmentStats.TypeOfEquipment.WEAPON)
-        {
-            if(!inventory.Weapon.EquipmentStats.CanUseWithShield)
-            {
-                if (!inventory.Shield.EquipmentStats.Empty)
-                {
-                    DropEquipment(new EquipmentStack(inventory.Shield, UnitCount));
-                    inventory.Shield = null;
-
-                    if (CurrentFormation == FormationStats.Formations.RISEDSHIELDS)
-                        CurrentFormation = FormationStats.Formations.RANKS;
-                }
-            }
-            if (!(inventory.Weapon).EquipmentStats.CanReformToPhalanx)
-            {
+        if (newEquipment != null && !(inventory.Weapon).EquipmentStats.CanReformToPhalanx)
                 CurrentFormation = FormationStats.Formations.RANKS;
-            }
-        }
+
+        if (newEquipment != null && newEquipment.EquipmentStats.Type == EquipmentStats.TypeOfEquipment.SHIELD && newEquipment.EquipmentStats.Empty)
+            if (CurrentFormation == FormationStats.Formations.RISEDSHIELDS)
+                CurrentFormation = FormationStats.Formations.RANKS;
     }
 
     void  SetFlagFight()
@@ -781,26 +769,35 @@ public class Squad : MonoBehaviour
     /// </summary>
     void MovingInRanks()
     {
-        if (Path != null)
+        if (charging)
         {
-            if (pathStep < Path.Count)
-            { 
-                Quaternion lookRot = CalcTargetRotations(Path[pathStep]);
-                LookWithoutFullRotation(lookRot);
-
-                MoveTo(Path[pathStep]);
-
-                if (CheckPositionInRange(Path[pathStep], positionAcuracy))
-                    pathStep++;
-            }
-            else if (pathStep == Path.Count)
+            var pos = PositionsTransform.position;
+            var step = flipRotation ? -PositionsTransform.up : PositionsTransform.up;
+            MoveTo(pos + step * currentSpeed);
+        }
+        else
+        {
+            if (Path != null)
             {
-                LookWithoutFullRotation(EndLookRotation);
-
-                if (CheckRotationInRange(EndLookRotation, rotationAcuracy))
+                if (pathStep < Path.Count)
                 {
-                    Path = null;
-                    pathStep = 1;
+                    Quaternion lookRot = CalcTargetRotations(Path[pathStep]);
+                    LookWithoutFullRotation(lookRot);
+
+                    MoveTo(Path[pathStep]);
+
+                    if (CheckPositionInRange(Path[pathStep], positionAcuracy))
+                        pathStep++;
+                }
+                else if (pathStep == Path.Count)
+                {
+                    LookWithoutFullRotation(EndLookRotation);
+
+                    if (CheckRotationInRange(EndLookRotation, rotationAcuracy))
+                    {
+                        Path = null;
+                        pathStep = 1;
+                    }
                 }
             }
         }

@@ -87,6 +87,8 @@ public class UnitAnimationController : MonoBehaviour
 
         Unit_OnArmsChanged(unit.Arms);
         Unit_OnLegsChanged(unit.Legs);
+
+        underlayerOutline.Alpha = 0.3f;
     }
     
     void Unit_AfterInitiate()

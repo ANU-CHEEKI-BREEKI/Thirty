@@ -113,6 +113,7 @@
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\AIExecutableBehaviours\AExecutableBehaviour.cs" />
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\AIExecutableBehaviours\ConsumableBehaviours\PilumsVolleyBehaviour.cs" />
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\AIExecutableBehaviours\ExecutableBehaviourFactory.cs" />
+    <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\AIExecutableBehaviours\SkillsBehaviours\SkillChargeBehaviour.cs" />
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\AStack.cs" />
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\ConsumableStack.cs" />
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\Controllers\SquadController.cs" />
@@ -138,6 +139,7 @@
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\Extensions.cs" />
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\FormationStats.cs" />
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\IDescriptionable.cs" />
+    <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\IGizmosDrawable.cs" />
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\IInventoryUI.cs" />
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\Inventory.cs" />
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\IPresenter.cs" />
@@ -244,12 +246,14 @@
     <Compile Include="Assets\Scripts\main_scene\UI\VolumeSlider.cs" />
     <Compile Include="Assets\Scripts\main_scene\Unit\FollowCanvasToSquad.cs" />
     <Compile Include="Assets\Scripts\main_scene\Unit\Squad.cs" />
+    <Compile Include="Assets\Scripts\main_scene\Unit\SquadDirectionIndicator.cs" />
     <Compile Include="Assets\Scripts\main_scene\Unit\SquadlessUnitSpawner.cs" />
     <Compile Include="Assets\Scripts\main_scene\Unit\SquadSpawner.cs" />
     <Compile Include="Assets\Scripts\main_scene\Unit\Unit.cs" />
     <Compile Include="Assets\Scripts\main_scene\Unit\UnitPosition.cs" />
     <Compile Include="Assets\Scripts\main_scene\UnitOutline.cs" />
     <Compile Include="Assets\Scripts\ShowColliderGizmos.cs" />
+    <Compile Include="Assets\Scripts\Tools\Math.cs" />
     <Compile Include="Assets\Scripts\Tutorial\ActivateOnTriggerEnter.cs" />
     <Compile Include="Assets\Scripts\Tutorial\ATriggerConstraint.cs" />
     <Compile Include="Assets\Scripts\Tutorial\CloseSquadPanelsOnAwake.cs" />

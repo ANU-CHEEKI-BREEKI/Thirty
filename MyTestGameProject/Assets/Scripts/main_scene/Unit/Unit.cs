@@ -472,21 +472,17 @@ public class Unit : MonoBehaviour
     {
         Charging = true;
 
-        currentChargeImpact = stats.ChargeImpact;
-
         chargeRotation = squad.PositionsTransform.rotation;
         chargeRotation = squad.FlipRotation ? chargeRotation * Quaternion.Euler(0, 0, 180) : chargeRotation;
 
-        //throw new NotImplementedException();
-
         AddStatsModifyer(modifyer);
+
+        currentChargeImpact = stats.ChargeImpact;
     }
 
     void Squad_OnEndCharge(UnitStatsModifier modifyer)
     {
         Charging = false;
-
-        //throw new NotImplementedException();
 
         RemoveStatsModifyer(modifyer);
     }
@@ -664,7 +660,7 @@ public class Unit : MonoBehaviour
         SetWeapon(squad.Inventory.Weapon);
     }
 
-    void SetWeapon(EquipmentStack weapon)
+    public void SetWeapon(EquipmentStack weapon)
     {
         Destroy(Weapon);
         Weapon = Instantiate(Resources.Load<GameObject>(weapon.EquipmentMainProperties.PathToPrefab), ThisTransform.position, ThisTransform.rotation, ThisTransform);
@@ -686,7 +682,7 @@ public class Unit : MonoBehaviour
         }
     }
 
-    void SetShield(EquipmentStack shield)
+    public void SetShield(EquipmentStack shield)
     {
         Destroy(Shield);
         Shield = Instantiate(Resources.Load<GameObject>(shield.EquipmentMainProperties.PathToPrefab), ThisTransform.position, ThisTransform.rotation, ThisTransform);
@@ -1028,7 +1024,7 @@ public class Unit : MonoBehaviour
             pushingAlly = false;
             pushedUnit.Clear();
         }
-        else if (squad.CurrentFormation == FormationStats.Formations.RANKS)
+        else //if (squad.CurrentFormation == FormationStats.Formations.RANKS)
         {
             currentAttackDeltaTime = attacInRanksDeltaTime;
         }
@@ -1063,7 +1059,7 @@ public class Unit : MonoBehaviour
             float rot = enemyRot.eulerAngles.z - ThisTransform.rotation.eulerAngles.z;
             rot = rot < 0 ? -rot : rot;
 
-            // if it attack from back
+            // если враг атакует в спину
             bool hitFromBack = !(rot <= stats.DefenceHalfSector || rot >= 360 - stats.DefenceHalfSector);
 
             if (hitFromBack || fallen)
@@ -1096,7 +1092,7 @@ public class Unit : MonoBehaviour
                 dmg = damage.BaseDamage + damage.ArmourDamage - stats.Armour;
 
                 //если попало в спину, то броню щита не учитываем
-                if (hitFromBack)
+                if (hitFromBack && shield != null)
                     dmg += shield.Stats.Armour;
 
                 if (dmg < damage.ArmourDamage)
@@ -1150,7 +1146,7 @@ public class Unit : MonoBehaviour
                 dmg = damage.BaseDamage + damage.ArmourDamage - stats.Armour;
 
                 //если попало в спину, то броню щита не учитываем
-                if (hitFromBack)
+                if (hitFromBack && shield != null)
                     dmg += shield.Stats.Armour;
 
                 if (dmg < damage.ArmourDamage)
@@ -1178,7 +1174,9 @@ public class Unit : MonoBehaviour
     {
         if (IsAlive)
         {
-            float dmg = damage.BaseDamage + damage.ArmourDamage - (stats.Armour - shield.Stats.Armour);
+            float dmg = damage.BaseDamage + damage.ArmourDamage - stats.Armour;
+            if (shield != null)
+                dmg += shield.Stats.Armour;
 
             if (dmg < damage.ArmourDamage)
                 dmg = damage.ArmourDamage;
@@ -1227,13 +1225,14 @@ public class Unit : MonoBehaviour
             GameManager.Instance.PlayerProgress.Score.expirience.Value += (int)dmg;
 
         bool friendlyfire = false;
-        if (gameObject.layer != LayerMask.NameToLayer(Squad.UnitFraction.ENEMY.ToString()) && owner == Squad.playerSquadInstance)
+        if (gameObject.layer != LayerMask.NameToLayer("ENEMY") && 
+            gameObject.layer != LayerMask.NameToLayer("FALLEN_ENEMY") && 
+                owner == Squad.playerSquadInstance)
             friendlyfire = true;
 
         ShowPopUpTakenDamageText(dmg.ToString(StringFormats.floatNumber), friendlyfire);
-
-        if (squad == null || squad.CurrentFormation != FormationStats.Formations.PHALANX)
-            TakeStan();
+                
+        TakeStan();
     }
 
     public void Heal(float health)
@@ -1296,7 +1295,7 @@ public class Unit : MonoBehaviour
             else
                 color = GameManager.Instance.Settings.graphixSettings.DamageToAllyColor;
 
-            if (gameObject.layer == LayerMask.NameToLayer("ENEMY"))
+            if (gameObject.layer == LayerMask.NameToLayer("ENEMY") || gameObject.layer == LayerMask.NameToLayer("FALLEN_ENEMY"))
                 color = GameManager.Instance.Settings.graphixSettings.DamageToEnemyColor;
 
             Color endColor = color;
@@ -1330,7 +1329,11 @@ public class Unit : MonoBehaviour
         else
             duration = delayAfterTakingDamage;
 
-        StartCoroutine(Stan(duration * koef));
+        //если воин не в фаланге то застанить
+        if (squad == null || squad.CurrentFormation != FormationStats.Formations.PHALANX)
+            StartCoroutine(Stan(duration * koef));
+        else if(fallen) //если в фаланге, то станить только если ебили с ног
+            StartCoroutine(Stan(duration * koef));
     }
 
     /// <summary>
@@ -1341,6 +1344,12 @@ public class Unit : MonoBehaviour
     IEnumerator Stan(float delay)
     {
         stanned = true;
+
+        //тут сбрасываем всё что только можно
+        if (charging)
+            Charging = false;
+        SetTarget(null);
+        
         yield return new WaitForSeconds(delay);
         stanned = false;
 
@@ -1482,6 +1491,28 @@ public class Unit : MonoBehaviour
     {
         ThisTransform.rotation = Quaternion.RotateTowards(ThisTransform.rotation, lookRotation, stats.RotationSpeed * Time.deltaTime);
     }
+
+    void FallDown()
+    {
+        if(gameObject.layer == LayerMask.NameToLayer("ALLY"))
+            gameObject.layer = LayerMask.NameToLayer("FALLEN_ALLY");
+        else if(gameObject.layer == LayerMask.NameToLayer("ENEMY"))
+            gameObject.layer = LayerMask.NameToLayer("FALLEN_ENEMY");
+        else if(gameObject.layer == LayerMask.NameToLayer("NEUTRAL"))
+            gameObject.layer = LayerMask.NameToLayer("FALLEN_NEUTRAL");
+        fallen = true;
+
+        if (OnUnitFallDown != null)
+            OnUnitFallDown();
+    }
+
+    void StandUp()
+    {
+        gameObject.layer = normLayer;
+        fallen = false;
+        if (OnUnitStandUp != null)
+            OnUnitStandUp();
+    }
     
     void OnPushStart(Collision2D collision)
     {
@@ -1552,6 +1583,7 @@ public class Unit : MonoBehaviour
         float speedKoef = currentSpeed / stats.Speed;
         speedKoef = speedKoef > 1 ? 1 : speedKoef;
 
+        //если врезались в стену
         if (collision.gameObject.layer == LayerMask.NameToLayer("MAP") || collision.gameObject.layer == LayerMask.NameToLayer("WALL"))
         {
             float dmg = speedKoef * weapon.Stats.Damag.BaseDamage * (1 + stats.ChargeAddDamage);
@@ -1559,7 +1591,7 @@ public class Unit : MonoBehaviour
             fallen = true;
             TakeDamage(dmg, squad);
         }
-        else
+        else//если врезались в юнита
         {
             Unit enemy = collision.transform.GetComponent<Unit>();
             if(enemy != null)
@@ -1567,18 +1599,16 @@ public class Unit : MonoBehaviour
                 //чтоб коллизия была спереди
                 float rot = Quaternion.LookRotation(Vector3.forward, enemy.ThisTransform.position - ThisTransform.position).eulerAngles.z;
                 float sub = Mathf.Abs(ThisTransform.rotation.eulerAngles.z - rot);
-                //if (sub >= chargePpushingAngle / 2 && sub <= 360 - chargePpushingAngle / 2)
-                //   return;
-                
-                //союзники
+                if (sub >= chargePpushingAngle / 2 && sub <= 360 - chargePpushingAngle / 2)
+                   return;
+                                
+                //если врезались в союзника
                 if (enemy.gameObject.layer == gameObject.layer)
                 {
                     if (enemy.squad != squad || !enemy.Charging)
-                    {
                         TakeStan(speedKoef);
-                    }
                 }
-                //враги и нейтралы
+                //если врезались во врага или нейтрала
                 else
                 {                
                     float dmg = (stats.Damage.BaseDamage + stats.Damage.ArmourDamage) * (1 + stats.ChargeAddDamage) * speedKoef;
@@ -1587,58 +1617,83 @@ public class Unit : MonoBehaviour
                     dmg -= enemy.stats.Armour;
                     if (dmg < stats.Damage.ArmourDamage)
                         dmg = stats.Damage.ArmourDamage;
-                    
-                    //если базовые значения эффективности натиска больше или равно чем защита врага, то наносим урон, а иначе, получаем его
-                    if (stats.ChargeImpact - enemy.stats.ChargeDeflect >= 0)
+
+                    //проверяем пришелся ли удар в спину врагу
+
+                    //тут не совсем точно просчитано, но работает и хер с ним
+                    Quaternion enemyRot = Quaternion.LookRotation(Vector3.forward, -enemy.ThisTransform.position + ThisTransform.position);
+                    float enemyRotation = enemyRot.eulerAngles.z - ThisTransform.rotation.eulerAngles.z;
+                    enemyRotation = enemyRotation < 0 ? -enemyRotation : enemyRotation;
+                    bool hitFromBack = !(enemyRotation <= stats.DefenceHalfSector || enemyRotation >= 360 - stats.DefenceHalfSector);
+
+                    float enemyDeflect = 0.5f;
+                    bool weWonCharge = true;
+
+                    Debug.Log(hitFromBack);
+
+                    //если натиск против натиска, то считается у кого натиск сильнее
+                    if (enemy.charging)
+                    {
+                        //если против натиска, то вместо суммарного сопротивления врага используем базовое значение.
+                        //короче, надо лучше думать, перед тем как контрнатиск применять!!!
+                        if (enemy.stats.ChargeImpact < stats.ChargeImpact)
+                        {
+                            if (enemy.squad != null)
+                                enemyDeflect = enemy.squad.UnitStats.ChargeDeflect;
+                        }
+                        //если мы проигрываем врагу по силе натиска, то ничего не делаем
+                        else
+                            weWonCharge = false;
+                    }
+                    //если применять натиск на стоячего юнита, то считаем его сопротивление натиску
+                    else
+                    {
+                        enemyDeflect = enemy.stats.ChargeDeflect;
+
+                        //если ударили в спину, то щит и иоружие не сщитаются 
+                        if (hitFromBack)
+                        {   //Если его щит поднят, то он уже и так не учтён и отнимать не надо!!!
+                            if (enemy.shield != null && enemy.squad != null && enemy.squad.CurrentFormation != FormationStats.Formations.RISEDSHIELDS)
+                                enemyDeflect -= enemy.shield.Stats.ChargeDeflect;
+                            //оружие в любом случае отнимаем
+                            if (enemy.weapon != null)
+                                enemyDeflect -= enemy.weapon.Stats.ChargeDeflect;
+                        }
+                    }
+                       
+
+                    //если значения эффективности натиска больше или равно чем защита врага, то наносим урон
+                    if (weWonCharge && stats.ChargeImpact - enemyDeflect >= 0)
                     {
                         //но наносим до тех пор, пока хватает текущей эффективности
-                        currentChargeImpact -= enemy.stats.ChargeDeflect;
-                        if(currentChargeImpact >= 0)
+                        currentChargeImpact -= enemyDeflect;
+                        if (currentChargeImpact >= 0)
                         {
                             //тут надо правильно рассчитать силу импульса
-                            Vector2 forseToEnemy = ThisTransform.up * (currentChargeImpact * currentSpeed) / Time.deltaTime / 5;
+                            Vector2 forseToEnemy = ThisTransform.up * (stats.ChargeImpact * currentSpeed) / Time.deltaTime / 2;
 
                             enemy.FallDown();
                             enemy.GoTo(forseToEnemy);
-                            enemy.TakeDamage(dmg, squad, this);  
+                            enemy.TakeDamage(dmg, squad, this);
                         }
                         else
                         {
                             Charging = false;
                         }
                     }
-                    else 
+                    //если не смогли пробить натиском врага, то натиск спадает
+                    else
                     {
-                        TakeDamage(dmg * stats.ChargeImpact / enemy.stats.ChargeDeflect, enemy.squad, enemy);
+                        Charging = false;
                     }
-
-                    //if (rigidbody2D.velocity.sqrMagnitude < 7)
-                    //Charging = false;
+                    //else     !!!накаких обраточек. просто не проходит урон и всё!!!
+                    //{
+                    //    -----------------------------//если отражение натиска слишком велико, то получаем обраточку от врага
+                    //    //TakeDamage(dmg * stats.ChargeImpact / enemyDeflect, enemy.squad, enemy);
+                    //}
                 }
             }
         }
-    }
-
-    void FallDown()
-    {
-        if(gameObject.layer == LayerMask.NameToLayer("ALLY"))
-            gameObject.layer = LayerMask.NameToLayer("FALLEN_ALLY");
-        else if(gameObject.layer == LayerMask.NameToLayer("ENEMY"))
-            gameObject.layer = LayerMask.NameToLayer("FALLEN_ENEMY");
-        else if(gameObject.layer == LayerMask.NameToLayer("NEUTRAL"))
-            gameObject.layer = LayerMask.NameToLayer("FALLEN_NEUTRAL");
-        fallen = true;
-
-        if (OnUnitFallDown != null)
-            OnUnitFallDown();
-    }
-
-    void StandUp()
-    {
-        gameObject.layer = normLayer;
-        fallen = false;
-        if (OnUnitStandUp != null)
-            OnUnitStandUp();
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
