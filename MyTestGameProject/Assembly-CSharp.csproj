@@ -145,6 +145,7 @@
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\IPresenter.cs" />
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\ISkillCooldownable.cs" />
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\ISkillCostable.cs" />
+    <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\ISkillDelayable.cs" />
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\ISkillDirectionable.cs" />
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\ISkillLockable.cs" />
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\IStackCountConstraintable.cs" />

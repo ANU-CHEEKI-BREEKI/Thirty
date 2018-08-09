@@ -43,9 +43,7 @@ public class SkillArrowsValley : Skill
     [Space]
 
     [SerializeField] ArrowWalleyStats stats;
-
-    [HideInInspector] public Squad owner;
-
+    
     Vector2 castPosition;
     Quaternion castRotation;
 
@@ -66,6 +64,8 @@ public class SkillArrowsValley : Skill
     
     public override bool Execute(object skillStats)
     {
+        base.Execute(skillStats);
+
         bool res = true;
 
         ArrowWalleyStats stats;

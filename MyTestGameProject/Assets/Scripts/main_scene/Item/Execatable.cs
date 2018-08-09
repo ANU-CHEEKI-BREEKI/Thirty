@@ -14,13 +14,46 @@ public abstract class Executable : Item, IDescriptionable
     [SerializeField] ExecatableUseType useType;
     public ExecatableUseType UseType { get { return useType; } }
 
-    
-    public abstract object DefaultStats { get; } 
+    [HideInInspector] public Squad owner;
+
+    public abstract object DefaultStats { get; }
 
     /// <summary>
     /// описание класса Skill
     /// </summary>
-    public abstract bool Execute(object skillStats);
+    public virtual bool Execute(object skillStats)
+    {
+        if (owner != null)
+        {
+            Color sc = Color.black;
+            Color ec;
+            var gs = GameManager.Instance.Settings.graphixSettings;
+            switch (owner.fraction)
+            {
+                case Squad.UnitFraction.ALLY:
+                    sc = gs.AllyOutlineColor;
+                    break;
+                case Squad.UnitFraction.ENEMY:
+                    sc = gs.EnemyOutlineColor;
+                    break;
+                case Squad.UnitFraction.NEUTRAL:
+                    sc = gs.NeutralOutlineColor;
+                    break;
+            }
+            ec = new Color(sc.r, sc.g, sc.b, 0.5f);
+
+            PopUpTextController.Instance.AddTextLabel(
+                Localization.GetString(MainPropertie.StringResourceName),
+                owner.CenterSquad,
+                startColor: sc,
+                endColor: ec,
+                fontSize: 15
+            );
+        }
+
+        return true;
+    }
+    
 
     /// <summary>
     /// описание класса Skill

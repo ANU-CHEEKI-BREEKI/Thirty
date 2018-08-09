@@ -32,8 +32,7 @@ public class SkillCharge : Skill
     [SerializeField] ChargeStats defaultStats;
     [Space]
     [SerializeField] FormationStats.Formations canChargeOn;
-    [HideInInspector] public Squad owner;
-
+    
     /// <summary>
     /// Учавствуе в CalcUpgradedStats. Вызывается родительским классом.
     /// </summary>
@@ -41,6 +40,8 @@ public class SkillCharge : Skill
 
     public override bool Execute(object skillStats)
     {
+        base.Execute(skillStats);
+
         bool res = true;
 
         ChargeStats stats;

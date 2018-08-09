@@ -1318,22 +1318,24 @@ public class Unit : MonoBehaviour
     /// <param name="koef">коефициент от 0 до 1</param>
     public void TakeStan(float koef = 1)
     {
-        koef = Mathf.Clamp01(koef);
+        if (!charging)
+        {
+            koef = Mathf.Clamp01(koef);
 
-        Running = false;
-        Charging = false;
+            Running = false;
 
-        float duration = 1;
-        if (fallen)
-            duration = delayAfterFalling;
-        else
-            duration = delayAfterTakingDamage;
+            float duration = 1;
+            if (fallen)
+                duration = delayAfterFalling;
+            else
+                duration = delayAfterTakingDamage;
 
-        //если воин не в фаланге то застанить
-        if (squad == null || squad.CurrentFormation != FormationStats.Formations.PHALANX)
-            StartCoroutine(Stan(duration * koef));
-        else if(fallen) //если в фаланге, то станить только если ебили с ног
-            StartCoroutine(Stan(duration * koef));
+            //если воин не в фаланге то застанить
+            if (squad == null || squad.CurrentFormation != FormationStats.Formations.PHALANX)
+                StartCoroutine(Stan(duration * koef));
+            else if (fallen) //если в фаланге, то станить только если ебили с ног
+                StartCoroutine(Stan(duration * koef));
+        }
     }
 
     /// <summary>
@@ -1346,8 +1348,6 @@ public class Unit : MonoBehaviour
         stanned = true;
 
         //тут сбрасываем всё что только можно
-        if (charging)
-            Charging = false;
         SetTarget(null);
         
         yield return new WaitForSeconds(delay);
@@ -1405,21 +1405,40 @@ public class Unit : MonoBehaviour
             //отталкиваем врага
             target.rigidbody2D.velocity = Vector2.zero;
             target.GoTo(ThisTransform.up * (target.stats.Speed + currentSpeed));
-            //target.rigidbody2D.AddForce(
-            //    ThisTransform.up * (target.speed + currentSpeed), 
-            //    ForceMode2D.Force
-            //);
-        }
 
-        //юнит смотрит туда куда и отряд
-        //if (squad.FlipRotation)
-        //    LookTo(squad.PositionsTransform.rotation * Quaternion.Euler(0, 0, 180));
-        //else
-        //    LookTo(squad.PositionsTransform.rotation);
+            //если цель применяет натиск на фалангу, то наносим ей урон
+            if(target.charging)
+            {
+                //проверяем чтобы target бежал в сторону фаланги и только тогда наносим урон
+                //проверяем дется ли удар в спину врагу
+                //тут не совсем точно просчитано, но работает и хер с ним
+                //Quaternion enemyRot = Quaternion.LookRotation(Vector3.forward, -target.ThisTransform.position + ThisTransform.position);
+                //float enemyRotation = enemyRot.eulerAngles.z - ThisTransform.rotation.eulerAngles.z;
+                //enemyRotation = enemyRotation < 0 ? -enemyRotation : enemyRotation;
+                //bool hitFromBack = !(enemyRotation <= stats.DefenceHalfSector || enemyRotation >= 360 - stats.DefenceHalfSector);
+
+                //если враг спереди и смотрит на нас
+                if (true)//!hitFromBack)
+                {
+                    //расчитываем урон
+                    float dmg = (stats.Damage.BaseDamage + stats.Damage.ArmourDamage);
+                    dmg = dmg < 0 ? -dmg : dmg;
+
+                    dmg -= target.stats.Armour;
+                    if (dmg < stats.Damage.ArmourDamage)
+                        dmg = stats.Damage.ArmourDamage;
+
+                    //сбрасываем цели натиск и наносим урон
+                    target.Charging = false;
+                    target.TakeDamage(dmg, squad, this);
+                }
+            }
+        }        
 
         //юнит смотрит туда куда должен смотреть отряд
         LookTo(squad.EndLookRotation);
 
+        //если не дожли ещё, то идём
         if (!CheckPositionInRange(TargetMovePositionObject.transform.position))
         {
             Vector3 tPos = TargetMovePositionObject.transform.position - ThisTransform.position;
@@ -1589,6 +1608,7 @@ public class Unit : MonoBehaviour
             float dmg = speedKoef * weapon.Stats.Damag.BaseDamage * (1 + stats.ChargeAddDamage);
             FallDown();
             fallen = true;
+            Charging = false;
             TakeDamage(dmg, squad);
         }
         else//если врезались в юнита
@@ -1597,6 +1617,7 @@ public class Unit : MonoBehaviour
             if(enemy != null)
             {
                 //чтоб коллизия была спереди
+                //тоесть чтобы враг, с которым мы столкнулись был спереди нас
                 float rot = Quaternion.LookRotation(Vector3.forward, enemy.ThisTransform.position - ThisTransform.position).eulerAngles.z;
                 float sub = Mathf.Abs(ThisTransform.rotation.eulerAngles.z - rot);
                 if (sub >= chargePpushingAngle / 2 && sub <= 360 - chargePpushingAngle / 2)
@@ -1619,7 +1640,6 @@ public class Unit : MonoBehaviour
                         dmg = stats.Damage.ArmourDamage;
 
                     //проверяем пришелся ли удар в спину врагу
-
                     //тут не совсем точно просчитано, но работает и хер с ним
                     Quaternion enemyRot = Quaternion.LookRotation(Vector3.forward, -enemy.ThisTransform.position + ThisTransform.position);
                     float enemyRotation = enemyRot.eulerAngles.z - ThisTransform.rotation.eulerAngles.z;
@@ -1673,6 +1693,8 @@ public class Unit : MonoBehaviour
                             Vector2 forseToEnemy = ThisTransform.up * (stats.ChargeImpact * currentSpeed) / Time.deltaTime / 2;
 
                             enemy.FallDown();
+                            if(enemy.charging)
+                                Charging = false;
                             enemy.GoTo(forseToEnemy);
                             enemy.TakeDamage(dmg, squad, this);
                         }
@@ -1686,11 +1708,6 @@ public class Unit : MonoBehaviour
                     {
                         Charging = false;
                     }
-                    //else     !!!накаких обраточек. просто не проходит урон и всё!!!
-                    //{
-                    //    -----------------------------//если отражение натиска слишком велико, то получаем обраточку от врага
-                    //    //TakeDamage(dmg * stats.ChargeImpact / enemyDeflect, enemy.squad, enemy);
-                    //}
                 }
             }
         }

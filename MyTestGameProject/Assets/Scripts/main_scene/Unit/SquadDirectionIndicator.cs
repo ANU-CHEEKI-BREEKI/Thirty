@@ -89,10 +89,12 @@ public class SquadDirectionIndicator : MonoBehaviour
             transformToFolow.rotation * Quaternion.Euler(0, 0, 180) : 
             transformToFolow.rotation;
 
+        float newRadius = squadToFollow.UnitCount / squadToFollow.SQUAD_LENGTH / 2 + radius;
+
         //sin и cos поменял местами потому что нужен сдвиг в 90 градусов из за точки отсчета вверху.
         //так проще чем добавлять 90 градусов каждый раз
-        newPos.x += Tools.Math.Cos(rot.eulerAngles.z + 90) * radius;
-        newPos.y += Tools.Math.Sin(rot.eulerAngles.z + 90) * radius;
+        newPos.x += Tools.Math.Cos(rot.eulerAngles.z + 90) * newRadius;
+        newPos.y += Tools.Math.Sin(rot.eulerAngles.z + 90) * newRadius;
         thisTransform.position = newPos;
         thisTransform.rotation = rot;
     }

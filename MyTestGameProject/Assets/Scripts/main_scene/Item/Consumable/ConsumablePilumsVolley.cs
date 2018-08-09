@@ -12,13 +12,12 @@ public class ConsumablePilumsVolley : Consumable
 
     [SerializeField] PilumsVolleyStats stats;
 
-    [HideInInspector] public Squad owner;
     int countOfPilumsToVolley;
 
     Vector2 castPosition;
 
     [Serializable]
-    public struct PilumsVolleyStats : ISkillCooldownable, IStackCountConstraintable, ISkillCostable, ISkillDirectionable, IDescriptionable
+    public struct PilumsVolleyStats : ISkillCooldownable, IStackCountConstraintable, ISkillCostable, ISkillDirectionable, IDescriptionable, ISkillDelayable
     {
         public Damage damage;
         public float speed;
@@ -27,6 +26,7 @@ public class ConsumablePilumsVolley : Consumable
         [SerializeField] float cooldown;
         [SerializeField] int maxCount;
         [SerializeField] int costPerOne;
+        [SerializeField] float delay;
         
 
         public float Cooldown { get { return cooldown; } }
@@ -36,6 +36,8 @@ public class ConsumablePilumsVolley : Consumable
         public int MaxCount { get { return maxCount; } }
 
         public float Distance { get { return distance; } }
+
+        public float Delay { get { return delay; } }
 
         public Description GetDescription()
         {
@@ -61,28 +63,44 @@ public class ConsumablePilumsVolley : Consumable
 
     public override bool Execute(object skillStats)
     {
+        base.Execute(skillStats);
+        
         bool res = true;
+        PilumsVolleyStats stats = new PilumsVolleyStats();
 
         if (skillStats != null)
         {
-            PilumsVolleyStats stats = (PilumsVolleyStats)skillStats;
+            stats = (PilumsVolleyStats)skillStats;
 
-            if (countOfPilumsToVolley > 0)
-            {
-                var volley = Instantiate(origin, owner.CenterSquad, owner.PositionsTransform.rotation);
-                volley.Init(castPosition, stats.damage, stats.Distance, stats.speed, countOfPilumsToVolley, owner, CallBack);
-                volley.StartVolley();
-            }
-            else
-            {
+            if (countOfPilumsToVolley <= 0)
                 res = false;
-            }
         }
         else
         {
             res = false;
         }
+
+        if (res)
+        {
+            var init = new InitStruct()
+            {
+                owner = this.owner,
+                castPosition = this.castPosition,
+                countOfPilumsToVolley = this.countOfPilumsToVolley
+            };
+            GameManager.Instance.StartCoroutine(DelayForExecute(stats, stats.Delay, init));
+        }
+
         return true;
+    }
+
+    IEnumerator DelayForExecute(PilumsVolleyStats stats, float delay, InitStruct init)
+    {
+        yield return new WaitForSeconds(1);
+
+        var volley = Instantiate(origin, init.owner.CenterSquad, init.owner.PositionsTransform.rotation);
+        volley.Init(init.castPosition, stats.damage, stats.Distance, stats.speed, init.countOfPilumsToVolley, init.owner, CallBack);
+        volley.StartVolley();
     }
 
     /// <summary>
@@ -98,5 +116,12 @@ public class ConsumablePilumsVolley : Consumable
         owner = args[0] as Squad;
         castPosition = (Vector2)args[1];
         countOfPilumsToVolley = (int)args[2];
+    }
+
+    struct InitStruct
+    {
+        public Squad owner;
+        public Vector2 castPosition;
+        public int countOfPilumsToVolley;
     }
 }
