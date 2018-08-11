@@ -101,6 +101,7 @@ TextureImporter:
     21300192: scutum
     21300194: thyreos
     21300196: lorica_segmentata
+    21300198: skill_spear_push
   externalObjects: {}
   serializedVersion: 6
   mipmaps:
@@ -1638,7 +1639,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1348
+        y: 1248
         width: 100
         height: 100
       alignment: 0
@@ -1658,7 +1659,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 100
-        y: 1348
+        y: 1248
         width: 100
         height: 100
       alignment: 0
@@ -2169,6 +2170,26 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 3d34ee3fb8add3445b849060a6838349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skill_spear_push
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1348
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed64991c28d5408448069759999dbd07
       vertices: []
       indices: 
       edges: []

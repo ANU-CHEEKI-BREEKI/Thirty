@@ -102,6 +102,7 @@
     <Compile Include="Assets\Scripts\main_scene\Item\Item.cs" />
     <Compile Include="Assets\Scripts\main_scene\Item\Skill.cs" />
     <Compile Include="Assets\Scripts\main_scene\Item\Skill\SkillArrowsValley.cs" />
+    <Compile Include="Assets\Scripts\main_scene\Item\Skill\SkillBash.cs" />
     <Compile Include="Assets\Scripts\main_scene\Item\Skill\SkillCharge.cs" />
     <Compile Include="Assets\Scripts\main_scene\LevelGeneradingProgress.cs" />
     <Compile Include="Assets\Scripts\main_scene\LoadingScreenManager.cs" />
@@ -147,7 +148,9 @@
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\ISkillCostable.cs" />
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\ISkillDelayable.cs" />
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\ISkillDirectionable.cs" />
+    <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\ISkillDurationable.cs" />
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\ISkillLockable.cs" />
+    <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\ISkillTwoPhases.cs" />
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\IStackCountConstraintable.cs" />
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\ITerrainWalker.cs" />
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\Labirinth.cs" />

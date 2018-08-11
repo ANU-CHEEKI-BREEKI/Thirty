@@ -11,6 +11,11 @@ public struct Description
     public ConditionsInfo? Condition { get; set; }
     public string UseType { get; set; }
 
+    //добавил так в тупую, потому что много где используется эта структура. и менять ооочень плохо
+    public DescriptionItem[] SecondStats { get; set; }
+    public string StatsName { get; set; }
+    public string SecondStatsName { get; set; }
+
     public struct CostInfo
     {
         public int? CostPerOne { get; set; }

@@ -177,7 +177,10 @@
   <string name = "skill_arrowWalley_description">Залп стрел в небольшой области, который замочит все что там есть</string>
   <string name = "skill_charge_name">Натиск</string>
   <string name = "skill_charge_description">Быстрый натиск для стремительного сближения с врагом.</string>
-
+  <string name = "skill_phalanx_push_name">Отпор фаланги</string>
+  <string name = "skill_phalanx_push_description">Тяжелый удар фаланги, пробивающий даже самую сильную броню. Однако такой удар исощяет воинов и им нужно некоторое время чтобы перевести дух.</string>
+  <string name = "skill_shield_bash_name">Урар щитом</string>
+  <string name = "skill_shield_bash_description">Сокрушительный удар щитом, способный повалить на ноги любого воина.</string>
  
   <string name = "consumable_pilums_name">Пилумы</string>
   <string name = "consumable_pilums_description">Пилумы - метательное оружие. Намного тяжелее стрел, что позволяет легко пробивать броню, но кинуть их можно совсем недалеко, и только по прямой траектории.</string>

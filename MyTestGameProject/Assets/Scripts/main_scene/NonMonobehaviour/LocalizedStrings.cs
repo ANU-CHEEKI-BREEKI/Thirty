@@ -148,6 +148,10 @@ public sealed class LocalizedStrings
     public static string skill_arrowWalley_description { get; private set; }
     public static string skill_charge_name { get; private set; }
     public static string skill_charge_description { get; private set; }
+    public static string skill_phalanx_push_name { get; private set; }
+    public static string skill_phalanx_push_description { get; private set; }
+    public static string skill_shield_bash_name { get; private set; }
+    public static string skill_shield_bash_description { get; private set; }
     public static string consumable_pilums_name { get; private set; }
     public static string consumable_pilums_description { get; private set; }
     public static string consumable_pilums_light_name { get; private set; }

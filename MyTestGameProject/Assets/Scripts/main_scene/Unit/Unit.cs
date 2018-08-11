@@ -749,13 +749,27 @@ public class Unit : MonoBehaviour
     }
     
 
-    RaycastHit2D Cast(int layers)
+    RaycastHit2D BoxCast(int layers)
     {
         SetDistanceLineForAttack();
 
         //rHit = Physics2D.Linecast(startRay.position, endRay.position, rHitLayer);                
 
         return Physics2D.BoxCast(
+            startRay.position + (endRay.position - startRay.position) / 2,
+            new Vector2(attackLineWidth, attackLineLength),
+            Quaternion.LookRotation(endRay.position - startRay.position).eulerAngles.z,
+            endRay.position - startRay.position,
+            0,
+            layers
+        );
+    }
+
+    RaycastHit2D[] BoxCastAll(int layers)
+    {
+        SetDistanceLineForAttack();
+        
+        return Physics2D.BoxCastAll(
             startRay.position + (endRay.position - startRay.position) / 2,
             new Vector2(attackLineWidth, attackLineLength),
             Quaternion.LookRotation(endRay.position - startRay.position).eulerAngles.z,
@@ -865,15 +879,12 @@ public class Unit : MonoBehaviour
 
         if (squad != null)
         {
-            Unit unit = null;
-            rHit = Cast(rHitLayerEnemy);
-            if(rHit)
-                unit = rHit.transform.gameObject.GetComponent<Unit>();
+            Unit unit = FindEnemy();
 
             switch (squad.CurrentFormation)
             {
                 case FormationStats.Formations.PHALANX:
-                    if (rHit)
+                    if (unit != null)
                     {
                         if (unit.IsAlive)
                         {
@@ -890,7 +901,7 @@ public class Unit : MonoBehaviour
                 default: // Formation.Formations.RANKS:
                     if (target == null)
                     {
-                        if (rHit)
+                        if (unit != null)
                         {
                             if (unit.selected && unit.IsAlive)
                                 SetTarget(unit);
@@ -906,6 +917,64 @@ public class Unit : MonoBehaviour
                     break;
             }
         }
+    }
+
+    /// <summary>
+    /// Найти первого врага, по которому могбы ударить оружием даный юнит
+    /// </summary>
+    /// <returns>Враг</returns>
+    public Unit FindEnemy()
+    {
+        Unit res = null;
+        var hit = BoxCast(rHitLayerEnemy);
+        if (hit)
+            res = hit.transform.gameObject.GetComponent<Unit>();
+        return res;
+    }
+
+    /// <summary>
+    /// Найти всех врагов даного юнита
+    /// </summary>
+    /// <param name="byWeapon">
+    /// <para>true - искать всех врагов, которых мог бы ударить данный юнит своим оружием</para>
+    /// <para>false - искать всех врагов, которые находятся спереди рядом с данным юнитом. Например, если нужно ударить врагов щитом или ногой.</para>
+    /// </param>
+    /// <returns>Враги</returns>
+    public Unit[] FindEnemyes(bool byWeapon = true)
+    {
+        List<Unit> res = new List<Unit>();
+        if (byWeapon)
+        {
+            var hits = BoxCastAll(rHitLayerEnemy);
+            if (hits != null && hits.Length > 0)
+            {
+                for (int i = 0; i < hits.Length; i++)
+                {
+                    var unit = hits[i].transform.GetComponent<Unit>();
+                    if (unit != null)
+                        res.Add(unit);
+                }
+            }
+        }
+        else
+        {
+            var cols = Physics2D.OverlapCircleAll(
+                ThisTransform.position + ThisTransform.up, 
+                circleCollider2D.radius, 
+                rHitLayerEnemy
+            );
+
+            if (cols != null && cols.Length > 0)
+            {
+                for (int i = 0; i < cols.Length; i++)
+                {
+                    var unit = cols[i].GetComponent<Unit>();
+                    if (unit != null)
+                        res.Add(unit);
+                }
+            }
+        }
+        return res.ToArray();
     }
 
     void AttackTarget()
@@ -1318,7 +1387,7 @@ public class Unit : MonoBehaviour
     /// <param name="koef">коефициент от 0 до 1</param>
     public void TakeStan(float koef = 1)
     {
-        if (!charging)
+        if (!charging && !stanned)
         {
             koef = Mathf.Clamp01(koef);
 
@@ -1511,7 +1580,7 @@ public class Unit : MonoBehaviour
         ThisTransform.rotation = Quaternion.RotateTowards(ThisTransform.rotation, lookRotation, stats.RotationSpeed * Time.deltaTime);
     }
 
-    void FallDown()
+    public void FallDown()
     {
         if(gameObject.layer == LayerMask.NameToLayer("ALLY"))
             gameObject.layer = LayerMask.NameToLayer("FALLEN_ALLY");
@@ -1519,10 +1588,15 @@ public class Unit : MonoBehaviour
             gameObject.layer = LayerMask.NameToLayer("FALLEN_ENEMY");
         else if(gameObject.layer == LayerMask.NameToLayer("NEUTRAL"))
             gameObject.layer = LayerMask.NameToLayer("FALLEN_NEUTRAL");
+
         fallen = true;
+        Charging = false;
+        Running = false;
 
         if (OnUnitFallDown != null)
             OnUnitFallDown();
+
+        TakeStan();
     }
 
     void StandUp()
@@ -1607,8 +1681,6 @@ public class Unit : MonoBehaviour
         {
             float dmg = speedKoef * weapon.Stats.Damag.BaseDamage * (1 + stats.ChargeAddDamage);
             FallDown();
-            fallen = true;
-            Charging = false;
             TakeDamage(dmg, squad);
         }
         else//если врезались в юнита
@@ -1693,8 +1765,6 @@ public class Unit : MonoBehaviour
                             Vector2 forseToEnemy = ThisTransform.up * (stats.ChargeImpact * currentSpeed) / Time.deltaTime / 2;
 
                             enemy.FallDown();
-                            if(enemy.charging)
-                                Charging = false;
                             enemy.GoTo(forseToEnemy);
                             enemy.TakeDamage(dmg, squad, this);
                         }

@@ -31,7 +31,12 @@ public class TipsPanel : MonoBehaviour, IDragHandler, IBeginDragHandler, IPointe
     [SerializeField] TextMeshProUGUI description;
     [Header("Stats")]
     [SerializeField] Transform constraintsPanel;
+    [Space]
+    [SerializeField] TextMeshProUGUI statsName;
     [SerializeField] Transform statsPanel;
+    [SerializeField] TextMeshProUGUI secondStatsName;
+    [SerializeField] Transform secondStatsPanel;
+    [Space]
     [SerializeField] GameObject statsBlockOriginal;    
     [Space]
     [SerializeField] Transform actionButtonsPanel;
@@ -61,6 +66,8 @@ public class TipsPanel : MonoBehaviour, IDragHandler, IBeginDragHandler, IPointe
             Destroy(constraintsPanel.GetChild(i).gameObject);
         for (int i = 0; i < statsPanel.childCount; i++)
             Destroy(statsPanel.GetChild(i).gameObject);
+        for (int i = 0; i < secondStatsPanel.childCount; i++)
+            Destroy(secondStatsPanel.GetChild(i).gameObject);
 
         if (desc.Icon != null)
         {
@@ -92,6 +99,14 @@ public class TipsPanel : MonoBehaviour, IDragHandler, IBeginDragHandler, IPointe
         else
             constraintsPanel.gameObject.SetActive(false);
 
+        if (!string.IsNullOrEmpty(desc.StatsName))
+        {
+            statsName.gameObject.SetActive(true);
+            statsName.text = desc.StatsName;
+        }
+        else
+            statsName.gameObject.SetActive(false);
+
         if (desc.Stats != null && desc.Stats.Length > 0)
         {
             foreach (var d in desc.Stats)
@@ -105,6 +120,28 @@ public class TipsPanel : MonoBehaviour, IDragHandler, IBeginDragHandler, IPointe
         }
         else
             statsPanel.gameObject.SetActive(false);
+
+        if (!string.IsNullOrEmpty(desc.SecondStatsName))
+        {
+            secondStatsName.gameObject.SetActive(true);
+            secondStatsName.text = desc.SecondStatsName;
+        }
+        else
+            secondStatsName.gameObject.SetActive(false);
+
+        if (desc.SecondStats != null && desc.SecondStats.Length > 0)
+        {
+            foreach (var d in desc.SecondStats)
+            {
+                GameObject go = Instantiate(statsBlockOriginal, secondStatsPanel);
+                StatsBlock sb = go.GetComponent<StatsBlock>();
+                sb.SetName(d.Name);
+                sb.SetValue(d.Description, d.ItPositiveDesc);
+            }
+            secondStatsPanel.gameObject.SetActive(true);
+        }
+        else
+            secondStatsPanel.gameObject.SetActive(false);
 
         if (desc.Cost != null)
         {

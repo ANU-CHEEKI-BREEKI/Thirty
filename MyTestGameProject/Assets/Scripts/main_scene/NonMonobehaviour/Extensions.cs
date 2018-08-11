@@ -145,6 +145,17 @@ public static class Extensions
 
     #endregion
 
+    #region 
+
+    public static string GetNamelocalize(this FormationStats.Formations formation)
+    {
+        return formation.ToString();
+    }
+
+    #endregion
+
+
+
     static string exmes = "Такого поля не существует: ";
     public static object IncreaseNumberField(this object obj, float val, string[] pathFieldNames, int startIndex = 0, BindingFlags flags = BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic)
     {

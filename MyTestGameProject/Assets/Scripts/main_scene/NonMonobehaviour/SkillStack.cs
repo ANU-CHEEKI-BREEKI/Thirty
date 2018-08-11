@@ -50,12 +50,35 @@ public class SkillStack : AExecutableStack, IDescriptionable
     public Description GetDescription()
     {
         Description skillDesc = skill.GetDescription();
-        var desc = skillStats as IDescriptionable;
-        if (desc != null)
+        var stats = skillStats as IDescriptionable;
+        if (stats != null)
         {
-            Description statsDesc = desc.GetDescription();
-            skillDesc.Constraints = statsDesc.Constraints;
-            skillDesc.Stats = statsDesc.Stats;
+            Description statsDesc = stats.GetDescription();
+
+            var list = new List<Description.DescriptionItem>();
+            if(skillDesc.Constraints != null)
+                list.AddRange(skillDesc.Constraints);
+            if (statsDesc.Constraints != null)
+                list.AddRange(statsDesc.Constraints);
+            skillDesc.Constraints = list.ToArray();
+
+            list.Clear();
+            if (skillDesc.Stats != null)
+                list.AddRange(skillDesc.Stats);
+            if (statsDesc.Stats != null)
+                list.AddRange(statsDesc.Stats);
+            skillDesc.Stats = list.ToArray();
+
+            list.Clear();
+            if (skillDesc.SecondStats != null)
+                list.AddRange(skillDesc.SecondStats);
+            if (statsDesc.SecondStats != null)
+                list.AddRange(statsDesc.SecondStats);
+            skillDesc.SecondStats = list.ToArray();
+
+            skillDesc.StatsName = statsDesc.StatsName;
+            skillDesc.SecondStatsName = statsDesc.SecondStatsName;
+
             skillDesc.Cost = statsDesc.Cost;
 
             if (skillDesc.Cost != null)

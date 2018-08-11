@@ -7,7 +7,7 @@ using static Description;
 public class SkillCharge : Skill
 {
     [Serializable]
-    public struct ChargeStats: ISkillLockable, ISkillCooldownable, IDescriptionable
+    public struct ChargeStats: ISkillLockable, ISkillCooldownable, IDescriptionable, ISkillDurationable
     {
         public UnitStatsModifier modifyer;
         [Range(1, 10)] public float duration;
@@ -16,6 +16,7 @@ public class SkillCharge : Skill
 
         public bool Unlocked { get { return unlocked; } }
         public float Cooldown { get { return cooldown; } }
+        public float Duration { get { return duration; } }
 
         public Description GetDescription()
         {
@@ -31,7 +32,7 @@ public class SkillCharge : Skill
     [Header("SkillCharge")]
     [SerializeField] ChargeStats defaultStats;
     [Space]
-    [SerializeField] FormationStats.Formations canChargeOn;
+    [SerializeField] List<FormationStats.Formations> canExecute;
     
     /// <summary>
     /// Учавствуе в CalcUpgradedStats. Вызывается родительским классом.
@@ -50,7 +51,7 @@ public class SkillCharge : Skill
         else
             stats = this.defaultStats;
 
-        if (res && owner.CurrentFormation == canChargeOn)
+        if (res && canExecute.Contains(owner.CurrentFormation))
             owner.Charge(stats.modifyer, stats.duration);
         else
             res = false;

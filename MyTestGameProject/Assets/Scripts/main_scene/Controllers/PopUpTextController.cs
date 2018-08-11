@@ -44,46 +44,40 @@ public class PopUpTextController : MonoBehaviour
 
             for (int i = 0; i < 30; i++)
                 GiveBackText(t.Pop());
-        }
+        }        
+    }
 
-        StartCoroutine(PopUpTexts());
+    private void Update()
+    {
+        float deltatime = 0;
+        if (ScaledDeltaTime)
+            deltatime = Time.deltaTime;
+        else
+            deltatime = Time.unscaledDeltaTime;
+
+        for (int i = 0; i < textes.Count; i++)
+        {
+            if (textes[i].properties.RemainingLifetime <= 0)
+            {
+                GiveBackText(textes[i].textUI);
+                textes.Remove(textes[i]);
+                i--;
+                continue;
+            }
+
+            var prop = textes[i].properties;
+            prop.RemainingLifetime -= deltatime;
+            prop.Position += prop.Speed * deltatime;
+            textes[i].properties = prop;
+            textes[i].textUI.color = prop.Color;
+            textes[i].textUI.transform.position = prop.Position;
+            if (prop.FontSize == null)
+                textes[i].textUI.fontSize = mainCamera.orthographicSize / 1.7f;
+            else
+                textes[i].textUI.fontSize = prop.FontSize.Value;
+        }
     }
     
-    IEnumerator PopUpTexts()
-    {
-        while (true)
-        {
-            float deltatime = 0;
-            if (ScaledDeltaTime)
-                deltatime = Time.deltaTime;
-            else
-                deltatime = Time.unscaledDeltaTime;
-
-            for (int i = 0; i < textes.Count; i++)
-            {
-                if (textes[i].properties.RemainingLifetime <= 0)
-                {
-                    GiveBackText(textes[i].textUI);
-                    textes.Remove(textes[i]);
-                    i--;
-                    continue;
-                }
-
-                var prop = textes[i].properties;
-                prop.RemainingLifetime -= deltatime;
-                prop.Position += prop.Speed * deltatime;
-                textes[i].properties = prop;
-                textes[i].textUI.color = prop.Color;
-                textes[i].textUI.transform.position = prop.Position;
-                if (prop.FontSize == null)
-                    textes[i].textUI.fontSize = mainCamera.orthographicSize / 1.7f;
-                else
-                    textes[i].textUI.fontSize = prop.FontSize.Value;
-            }
-            yield return new WaitForEndOfFrame();
-        }
-    }
-
     public void AddTextLabel(string text, Vector2 worldPosition, float? lifetime = null, Vector2? screenFloatSpeed = null, 
         Color? startColor = null, Color? endColor = null, int sortingOrder = 0, float? fontSize = null)
     {
