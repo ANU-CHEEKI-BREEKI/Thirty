@@ -14,6 +14,8 @@ public class HealthBar : MonoBehaviour
     [SerializeField] Squad squad;
     public Squad Squad { get { return squad; } set { squad = value; } }
 
+    public bool Active { get; set; } = true;
+
     void Start()
     {
         if(squad == null)
@@ -27,6 +29,8 @@ public class HealthBar : MonoBehaviour
 
         hpBar.type = Image.Type.Filled;
         hpBar.fillMethod = Image.FillMethod.Horizontal;
+
+        DrawHpBar(squad.SquadHealth);
     }
 
     private void OnEnable()
@@ -58,7 +62,7 @@ public class HealthBar : MonoBehaviour
 
     void DrawHpBar(float squadHealth)
     {
-        if (squad != null && gameObject.activeInHierarchy)
+        if (squad != null && gameObject.activeInHierarchy && Active)
         {
             float maxHp = squad.DefaultUnitStats.Health * squad.FULL_SQUAD_UNIT_COUNT;
 

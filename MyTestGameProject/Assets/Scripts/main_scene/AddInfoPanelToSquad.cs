@@ -19,10 +19,6 @@ public class AddInfoPanelToSquad : MonoBehaviour
             var canvasFollow = panel.GetComponent<FollowCanvasToSquad>();
             if (canvasFollow != null)
                 canvasFollow.SquadForFollow = squad;
-
-            var healthBar = panel.GetComponent<HealthBar>();
-            if (healthBar != null)
-                healthBar.Squad = squad;
         }
         Destroy(this);
     }

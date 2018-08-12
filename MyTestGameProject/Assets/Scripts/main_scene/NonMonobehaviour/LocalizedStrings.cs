@@ -21,6 +21,9 @@ public sealed class LocalizedStrings
     public static string healtarget_weakest { get; private set; }
     public static string healtarget_strongest { get; private set; }
     public static string healtarget_all { get; private set; }
+    public static string first_phase { get; private set; }
+    public static string second_phase { get; private set; }
+    public static string two_phases_skill { get; private set; }
     public static string error { get; private set; }
     public static string missing_string { get; private set; }
     public static string formation_ranks_name { get; private set; }
@@ -207,6 +210,7 @@ public sealed class LocalizedStrings
     public static string durability_new { get; private set; }
     public static string durability_worn { get; private set; }
     public static string durability_damaged { get; private set; }
+    public static string can_use_in_this_formations { get; private set; }
     public static string toast_cant_use_with_shield { get; private set; }
     public static string toast_cant_use_with_current_weapon { get; private set; }
     public static string toast_not_enough_gold { get; private set; }
@@ -216,6 +220,11 @@ public sealed class LocalizedStrings
     public static string toast_stat_max_upgrade { get; private set; }
     public static string toast_cant_drop_weapon { get; private set; }
     public static string toast_cant_drop { get; private set; }
+    public static string toast_cant_reform_phalanx_with_this_weapon { get; private set; }
+    public static string toast_cant_reform_phalanx_in_fight_with_this_weapon { get; private set; }
+    public static string toast_cant_reform_shields_without_shields { get; private set; }
+    public static string toast_cant_use_skill_in_this_formation { get; private set; }
+    public static string toast_cant_use_skill_without_shields { get; private set; }
     public static string next { get; private set; }
     public static string previous { get; private set; }
     public static string close { get; private set; }

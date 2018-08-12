@@ -79,11 +79,21 @@ public class MainCanvas : MonoBehaviour
                 DestroyImmediate(item);
     }
 
+    /// <summary>
+    /// Переводит кооддинаты экрана в координаты мировые сразу ичитывая scaleFactor
+    /// </summary>
+    /// <param name="point"></param>
+    /// <returns></returns>
     public Vector3 ScreenToWorldPoint(Vector3 point)
     {
         return Camera.ScreenToWorldPoint(point * Canvas.scaleFactor);
     }
 
+    /// <summary>
+    /// Переводит кооддинаты мировые в координаты экрана сразу ичитывая scaleFactor
+    /// </summary>
+    /// <param name="point"></param>
+    /// <returns></returns>
     public Vector3 WorldToScreenPoint(Vector3 point)
     {
         return Camera.WorldToScreenPoint(point) / Canvas.scaleFactor;

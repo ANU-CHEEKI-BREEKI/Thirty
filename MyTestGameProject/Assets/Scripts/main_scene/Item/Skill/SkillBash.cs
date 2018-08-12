@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Text;
+using Tools;
 using UnityEngine;
 using static Description;
 
@@ -50,11 +51,14 @@ public class SkillBash : Skill
         {
             var desc = firstPhaseModifyer.GetDescription();
             List<DescriptionItem> l = new List<DescriptionItem>(desc.Stats);
-            l.Add(new DescriptionItem() { Name = LocalizedStrings.duration, Description = firstPhaseDuration.ToString(StringFormats.floatNumber), ItPositiveDesc = true });
+            if (secondPhaseDuration > 0)
+                l.Add(new DescriptionItem() { Name = LocalizedStrings.duration, Description = firstPhaseDuration.ToString(StringFormats.floatNumber), ItPositiveDesc = true });
 
             var desc2 = secondPhaseModifyer.GetDescription();
             List<DescriptionItem> l2 = new List<DescriptionItem>(desc2.Stats);
-            l2.Add(new DescriptionItem() { Name = LocalizedStrings.duration, Description = secondPhaseDuration.ToString(StringFormats.floatNumber), ItPositiveDesc = true });
+
+            if(secondPhaseDuration > 0)
+                l2.Add(new DescriptionItem() { Name = LocalizedStrings.duration, Description = secondPhaseDuration.ToString(StringFormats.floatNumber), ItPositiveDesc = true });
 
             DescriptionItem coold = new DescriptionItem()
             {
@@ -67,28 +71,50 @@ public class SkillBash : Skill
             {
                 ItPositiveDesc = false,
                 Name = LocalizedStrings.attention,
-                Description = "-non loc- Это умение имеет два этапа"
+                Description = LocalizedStrings.two_phases_skill
             };
 
-            DescriptionItem[] c = new DescriptionItem[]
+
+            List<DescriptionItem> c = new List<DescriptionItem>();
+            if (secondPhaseDuration > 0)
+                c.Add(constr);
+
+            if (bashType == Type.SHIELD)
             {
-                constr,
-                coold
+                var constr2 = new DescriptionItem()
+                {
+                    ItPositiveDesc = false,
+                    Name = LocalizedStrings.attention,
+                    Description = LocalizedStrings.toast_cant_use_skill_without_shields
+                };
+                c.Add(constr2);
+            }
+
+            if (secondPhaseDuration > 0)
+                c.Add(coold);
+            else
+                l.Add(coold);
+
+            var res = new Description()
+            {
+                Constraints = c.ToArray(),                
+                Stats = l.ToArray(),                
             };
 
-            return new Description()
+            if (secondPhaseDuration > 0)
             {
-                Constraints = c,
-                StatsName = "-non loc- Первый этап:",
-                Stats = l.ToArray(),
-                SecondStatsName = "-non loc- Второй этап:",
-                SecondStats = l2.ToArray()
-            };
+                res.StatsName = LocalizedStrings.first_phase;
+                res.SecondStatsName = LocalizedStrings.second_phase;
+                res.SecondStats = l2.ToArray();
+            }
+            return res;
         }
     }
 
     [SerializeField] BashStats defaultStats;
     [SerializeField] protected List<FormationStats.Formations> canExecute;
+
+    Dictionary<Squad, Coroutine> coroutines = new Dictionary<Squad, Coroutine>();
 
     /// <summary>
     /// Учавствуе в CalcUpgradedStats. Вызывается родительским классом.
@@ -121,19 +147,24 @@ public class SkillBash : Skill
             {
                 if (!(stats.BaschType == BashStats.Type.SHIELD && owner.Inventory.Shield.EquipmentStats.Empty))
                 {
-                    owner.StartCoroutine(ExecuteWithPhases(stats, owner));
+                    Coroutine cor = null;
+                    if(coroutines.ContainsKey(owner))
+                        cor = coroutines[owner];
+                    if(cor != null)
+                        owner.StopCoroutine(cor);
+                    coroutines[owner] = owner.StartCoroutine(ExecuteWithPhases(stats, owner));
                 }
                 else
                 {
                     Debug.Log("Без щита незя бить щитом...");
-                    Toast.Instance.Show("-non loc- Без щита незя бить щитом...");
+                    Toast.Instance.Show(LocalizedStrings.toast_cant_use_skill_without_shields);
                     res = false;
                 }
             }
             else
             {
                 Debug.Log("В данном построении нельзя использовать скилл");
-                Toast.Instance.Show("-non loc- В данном построении нельзя использовать это умение");
+                Toast.Instance.Show(LocalizedStrings.toast_cant_use_skill_in_this_formation);
                 res = false;
             }
         }
@@ -169,15 +200,18 @@ public class SkillBash : Skill
         for (int i = 0; i < cnt; i++)
         {
             var unit = pos[i].Unit;
-            var unitStats = unit.Stats;
-
-            var enemyes = unit.FindEnemyes(weapon);
-            int cnt2 = enemyes.Length;
-            for (int j = 0; j < cnt2; j++)
+            if (!unit.Stanned)
             {
-                if (!weapon)
-                    enemyes[j].FallDown();
-                enemyes[j].TakeHit(unitStats.Damage);
+                var unitStats = unit.Stats;
+
+                var enemyes = unit.FindEnemyes(weapon);
+                int cnt2 = enemyes.Length;
+                for (int j = 0; j < cnt2; j++)
+                {
+                    if (!weapon)
+                        enemyes[j].FallDown();
+                    enemyes[j].TakeHit(unitStats.Damage);
+                }
             }
         }
 
@@ -188,13 +222,20 @@ public class SkillBash : Skill
 
         //убираем прошлый модификатор и добавляем новый
         owner.RemoveStatsModifier(stats.firstPhaseModifyer);
-        owner.AddStatsModifier(stats.secondPhaseModifyer);
 
-        //ждем конца скилла
-        yield return new WaitForSeconds(stats.secondPhaseDuration);
+        //если вторая фаза есть вообще
+        if (stats.secondPhaseDuration > 0)
+        {
+            owner.AddStatsModifier(stats.secondPhaseModifyer);
 
-        //убираем модификатор
-        owner.RemoveStatsModifier(stats.secondPhaseModifyer);
+            //ждем конца скилла
+            yield return new WaitForSeconds(stats.secondPhaseDuration);
+
+            //убираем модификатор
+            owner.RemoveStatsModifier(stats.secondPhaseModifyer);
+        }
+
+        coroutines[owner] = null;
     }
 
     public override Description GetDescription()
@@ -207,7 +248,7 @@ public class SkillBash : Skill
         canUse.Name = LocalizedStrings.attention;
 
         StringBuilder sb = new StringBuilder();
-        sb.Append("-non loc- можно использовать в построениях: ");
+        sb.Append(LocalizedStrings.can_use_in_this_formations);
         for (int i = 0; i < canExecute.Count; i++)
         {
             sb.Append(canExecute[i].GetNamelocalize());
@@ -219,5 +260,17 @@ public class SkillBash : Skill
 
         return desc;
     }
+    
+    public override object CalcUpgradedStats(List<DSPlayerSkill.SkillUpgrade> upgrades)
+    {
+        BashStats newStats = (BashStats)base.CalcUpgradedStats(upgrades);
 
+        foreach (var upgrade in upgrades)
+        {
+            if (upgrade.isUpgradeToUnlock && upgrade.level > 0)
+                newStats.unlocked = true;
+        }
+
+        return newStats;
+    }
 }

@@ -9,19 +9,15 @@ using static Description;
 public class SquadPropertyIndicator : MonoBehaviour, IPointerClickHandler
 {
     Description desc;
-    Image img;
-
-    private void Awake()
-    {
-        img = GetComponent<Image>();
-    }
-
+    [SerializeField] Image img;
+    [SerializeField] Image background;
+    
     public void OnPointerClick(PointerEventData eventData)
     {
         TipsPanel.Instance.Show(desc, transform.position);
     }
 
-    public void Present(Sprite sprite, Description? d)
+    public void Present(Sprite sprite, Description? d, bool? isPositive = null)
     {
         if (img != null && sprite != null)
             img.sprite = sprite;
@@ -33,5 +29,18 @@ public class SquadPropertyIndicator : MonoBehaviour, IPointerClickHandler
             gameObject.SetActive(false);
         else
             gameObject.SetActive(true);
+
+        if (background != null)
+        {
+            if (isPositive != null)
+            {
+                if (isPositive.Value)
+                    background.color = Color.green;
+                else
+                    background.color = Color.red;
+            }
+            else
+                background.color = Color.black;
+        }
     }
 }

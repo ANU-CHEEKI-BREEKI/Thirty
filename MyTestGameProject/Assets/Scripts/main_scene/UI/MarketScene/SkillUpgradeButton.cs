@@ -56,6 +56,9 @@ public class SkillUpgradeButton : MonoBehaviour, IDescriptionable, IPointerClick
     UILineConnector connector;
     bool locked = true;
 
+    [SerializeField] bool isTwoPhaseSkill = false;
+    [SerializeField] bool isSecondPhase = false;
+
     void Awake()
     {
         upgradeStats.Id = transform.GetSiblingIndex();
@@ -102,10 +105,10 @@ public class SkillUpgradeButton : MonoBehaviour, IDescriptionable, IPointerClick
         actionsNames = new List<string>();
         Action ok = Upgrade;
         ok += TipsPanel.Instance.Hide;
-        actions.Add(ok);
-        actionsNames.Add(LocalizedStrings.upgrade);
         actions.Add(TipsPanel.Instance.Hide);
         actionsNames.Add(LocalizedStrings.cancel);
+        actions.Add(ok);
+        actionsNames.Add(LocalizedStrings.upgrade);
 
         maximumLevelText.text = "/" + maxLevel.ToString();
 
@@ -212,6 +215,18 @@ public class SkillUpgradeButton : MonoBehaviour, IDescriptionable, IPointerClick
                 format = StringFormats.floatSignNumber;
             else
                 format = StringFormats.floatSignNumberPercent;
+
+            if(isTwoPhaseSkill)
+            {
+                if(!isSecondPhase)
+                {
+                    res.StatsName = LocalizedStrings.first_phase;
+                }
+                else
+                {
+                    res.StatsName = LocalizedStrings.second_phase;
+                }
+            }
 
             res.Stats = new DescriptionItem[]
             {

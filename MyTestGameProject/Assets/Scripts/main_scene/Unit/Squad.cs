@@ -88,14 +88,14 @@ public class Squad : MonoBehaviour
                         formation = lastFormation;
 
                         if (Squad.playerSquadInstance == this)
-                            Toast.Instance.Show("[non local] с этим оружием нельзя перестроится в фалангу ");
+                            Toast.Instance.Show(LocalizedStrings.toast_cant_reform_phalanx_with_this_weapon);
                     }
                     else if (!inventory.Weapon.EquipmentStats.CanReformToPhalanxInFight && InFight)
                     {
                         formation = lastFormation;
 
                         if (Squad.playerSquadInstance == this)
-                            Toast.Instance.Show("[non local] с этим оружием нельзя перестроится в фалангу в бою");
+                            Toast.Instance.Show(LocalizedStrings.toast_cant_reform_phalanx_in_fight_with_this_weapon);
                     }
                     break;
 
@@ -106,7 +106,7 @@ public class Squad : MonoBehaviour
                         formation = lastFormation;
 
                         if(Squad.playerSquadInstance == this)
-                            Toast.Instance.Show("[non local] без щитов нельзя перестроится \"черепахой\"");
+                            Toast.Instance.Show(LocalizedStrings.toast_cant_reform_shields_without_shields);
                     }
 
                     break;

@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using System;
+using Tools;
 
 public class HospitalRoom : MonoBehaviour
 {
@@ -26,7 +27,7 @@ public class HospitalRoom : MonoBehaviour
         int cnt = t.Length;
         healTarget.options.Clear();
         for (int i = 0; i < cnt; i++)
-            healTarget.options.Add(new TMP_Dropdown.OptionData(t[i].GetNameLocalise()));
+            healTarget.options.Add(new TMP_Dropdown.OptionData(t[i].GetNameLocalize()));
         healTarget.value = 1;
         healTarget.value = 0;
 

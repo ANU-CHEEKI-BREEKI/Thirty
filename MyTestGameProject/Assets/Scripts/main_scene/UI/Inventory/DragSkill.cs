@@ -11,8 +11,10 @@ public class DragSkill : Drag
 
     public override void OnPointerClick(PointerEventData eventData)
     {
-        TipsPanel.Instance.Show(skillStack.GetDescription(), thisTransform.position);
-      
+        base.OnPointerClick(eventData);
+
+        if (CanCallClick)
+            TipsPanel.Instance.Show(skillStack.GetDescription(), thisTransform.position);
     }
 
     protected override void OnCantDrag()

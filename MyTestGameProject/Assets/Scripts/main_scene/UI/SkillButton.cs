@@ -70,6 +70,9 @@ public class SkillButton : MonoBehaviour, IPointerClickHandler, IPointerDownHand
     private void OnDestroy()
     {
         StopAllCoroutines();
+
+        if (typeOfSkill == Type.CONSUMABLE)
+            currentConsumable.Consumable.CallbackUsedCount -= DecrementUsedConsumableCount;
     }
 
     private void Initiate()
@@ -107,6 +110,7 @@ public class SkillButton : MonoBehaviour, IPointerClickHandler, IPointerDownHand
             {
                 useType = currentConsumable.Consumable.UseType;
                 img.sprite = currentConsumable.Consumable.MainPropertie.Icon;
+                currentConsumable.Consumable.CallbackUsedCount += DecrementUsedConsumableCount;
             }
         }
 
@@ -177,9 +181,6 @@ public class SkillButton : MonoBehaviour, IPointerClickHandler, IPointerDownHand
         }
     }
 
-
-
-
     public void OnPointerUp(PointerEventData eventData)
     {
         Touch touch = new Touch() { position = Input.mousePosition };
@@ -241,7 +242,7 @@ public class SkillButton : MonoBehaviour, IPointerClickHandler, IPointerDownHand
                 playerSquadTransform.rotation,
                 currentConsumable.Count
             );
-            DoSkill();
+            DoConsumable();
             lineRenderer.positionCount = 0;
         }
         else if (useType == Executable.ExecatableUseType.DRAG_DIRECTION && Squad.playerSquadInstance != null && canCast)
@@ -361,26 +362,24 @@ public class SkillButton : MonoBehaviour, IPointerClickHandler, IPointerDownHand
     }
 
     void DoConsumable()
-    {
-        currentConsumable.Consumable.CallbackUsedCount += DecrementUsedConsumableCount;
+    {        
         if (currentConsumable.Consumable.Execute(currentConsumable.ConsumableStats))
         {
             ISkillCooldownable c = currentConsumable.ConsumableStats as ISkillCooldownable;
             if (c != null)
                 StartCoroutine(WaitForCooldown(c.Cooldown));
-                        
-            if (currentConsumable.Count <= 0)
-                Destroy(cell);
-            else
-                countText.text = currentConsumable.Count.ToString(StringFormats.intNumber);
         }
-        currentConsumable.Consumable.CallbackUsedCount -= DecrementUsedConsumableCount;
     }
 
     void DecrementUsedConsumableCount(int count, Squad owner)
     {
         if(owner == Squad.playerSquadInstance)
             currentConsumable.Count -= count;
+
+        if (currentConsumable.Count <= 0)
+            Destroy(cell);
+        else
+            countText.text = currentConsumable.Count.ToString(StringFormats.intNumber);
     }
 
     IEnumerator WaitForCooldown(float time)

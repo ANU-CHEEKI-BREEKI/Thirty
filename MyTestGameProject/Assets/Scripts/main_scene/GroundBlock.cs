@@ -44,7 +44,7 @@ public class GroundBlock : MonoBehaviour
             FindTilesInLayer(chld, "uper layer");
         }
 
-        Extensions.Serialize(path, block);
+        Tools.FileManagement.Serialize(path, block);
 
         Debug.Log("GroundBlock -- RecalculateMabBlockMatrix -- Done! -- " + name);
     }
@@ -95,7 +95,7 @@ public class GroundBlock : MonoBehaviour
         string path = Ground.PATH_TO_GRIDS + name;
         var ta = Resources.Load<TextAsset>(path);
         using (var fstream = new StringReader(ta.text))
-            block = Extensions.Deserialize(fstream);
+            block = Tools.FileManagement.Deserialize(fstream);
         Resources.UnloadAsset(ta);
     }
 
@@ -106,7 +106,7 @@ public class GroundBlock : MonoBehaviour
         if (blc.Grid == null)
         {
             string path = @"Assets\Resources\" + Ground.PATH_TO_GRIDS + name + ".xml";
-            blc = Extensions.Deserialize(path);
+            blc = Tools.FileManagement.Deserialize(path);
         }
 
         if (blc.Grid != null)

@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 
 public class DragEquipment : Drag
-{   
+{
     public EquipmentStack EquipStack { get; set; }
 
     protected override void OnCantDrag()
@@ -18,6 +18,9 @@ public class DragEquipment : Drag
 
     public override void OnPointerClick(PointerEventData eventData)
     {
-        TipsPanel.Instance.Show(EquipStack.GetDescription(), thisTransform.position);
+        base.OnPointerClick(eventData);
+
+        if (CanCallClick)
+            TipsPanel.Instance.Show(EquipStack.GetDescription(), thisTransform.position);
     }
 }

@@ -119,7 +119,7 @@ public class Ground : MonoBehaviour
 
                 //десериализуем блок
                 fstream = new StringReader(textAssets[i].text);
-                MapBlock block = Extensions.Deserialize(fstream);
+                MapBlock block = Tools.FileManagement.Deserialize(fstream);
 
                 if (block.HasExit)
                 {

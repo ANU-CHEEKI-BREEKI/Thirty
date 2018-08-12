@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System;
+using Tools;
 
 [CreateAssetMenu(fileName = "SO_TSM_")]
 public class SOTerrainStatsModifier : ScriptableObject
@@ -40,6 +41,6 @@ public class SOTerrainStatsModifier : ScriptableObject
 
     public UnitStatsModifier GetModifierByEquipmentMass(float equipmentMass)
     {
-        return GetModifierByEquipmentMass(Extensions.GetWeightByMass(equipmentMass));
+        return GetModifierByEquipmentMass(Others.GetWeightByMass(equipmentMass));
     }
 }

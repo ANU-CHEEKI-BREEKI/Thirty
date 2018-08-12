@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using Tools;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -69,7 +70,7 @@ public class SquadCerrentProp : MonoBehaviour
 
     private void Inventory_OnEquipmentChanged(EquipmentStack obj)
     {
-        var w = Extensions.GetWeightByMass(squad.UnitStats.EquipmentMass);
+        var w = Others.GetWeightByMass(squad.UnitStats.EquipmentMass);
         Sprite ico = null;
         int cnt = 0;
         if (w == UnitStats.EquipmentWeight.VERY_LIGHT)
@@ -108,7 +109,7 @@ public class SquadCerrentProp : MonoBehaviour
 
         var ind = weightIcons[0].transform.parent.GetComponent<SquadPropertyIndicator>();
         var d = new Description();
-        d.Name = w.GetLocalizeName();
+        d.Name = w.GetNameLocalize();
         d.Desc = "Разная местность по разному влияет на отряды рязной тяжести.\r\n" +
             "Будте внимательны, местность может как дать вам преимущество, так и стать вашим местом захоронения.";
         ind.Present(null, d);
@@ -152,7 +153,7 @@ public class SquadCerrentProp : MonoBehaviour
             if (i < arr.Length)
             {
                 var desc = arr[i].GetDescription();
-                modifiersInd[i].Present(desc.Icon, desc);
+                modifiersInd[i].Present(desc.Icon, desc, arr[i].UiInfo.IsPositiveModifier);
             }
             else
                 modifiersInd[i].Present(null, null);
@@ -171,7 +172,7 @@ public class SquadCerrentProp : MonoBehaviour
             {
                 var mod = arr[i].GetModifierByEquipmentMass(squad.UnitStats.EquipmentMass);
                 var desc = mod.GetDescription();
-                terrainModifiersInd[i].Present(desc.Icon, desc);
+                terrainModifiersInd[i].Present(desc.Icon, desc, mod.UiInfo.IsPositiveModifier);
             }
             else
                 terrainModifiersInd[i].Present(null, null);

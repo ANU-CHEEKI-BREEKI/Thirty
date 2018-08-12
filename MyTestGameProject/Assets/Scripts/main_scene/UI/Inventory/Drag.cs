@@ -6,6 +6,14 @@ using UnityEngine.EventSystems;
 
 public abstract class Drag : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHandler, IPointerClickHandler
 {
+    /// <summary>
+    /// Возвращаемое значение будет указыать нужно ли выполнять функцию OnPointerClick
+    /// </summary>
+    public event Func<Drag, bool> BeforeClick;
+
+    bool canCallClick = false;
+    protected bool CanCallClick { get { return canCallClick; } }
+
     protected Transform thisTransform;
     Transform canvas;
     public Transform OldParent { get; private set; }
@@ -76,5 +84,11 @@ public abstract class Drag : MonoBehaviour, IDragHandler, IBeginDragHandler, IEn
         }
     }
 
-    public abstract void OnPointerClick(PointerEventData eventData);    
+    public virtual void OnPointerClick(PointerEventData eventData)
+    {
+        if (BeforeClick != null)
+            canCallClick = BeforeClick(this);
+        else
+            canCallClick = true;
+    }
 }

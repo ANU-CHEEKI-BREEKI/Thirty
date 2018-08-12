@@ -307,7 +307,7 @@ public struct EquipmentStats : IDescriptionable
 
             EquipmentStats st = this;
             res.Condition = new Description.ConditionsInfo() {
-                Name = ItemDurability.GetNameLocalise(),
+                Name = Tools.Extensions.GetNameLocalise(ItemDurability),
                 Value = (Description.ConditionsInfo.Conditions)Enum.GetNames(typeof(Durability)).ToList().FindIndex((s)=> { return Enum.GetName(typeof(Durability), st.ItemDurability) == s; })
             };
             res.Cost = new Description.CostInfo() { CostPerOne = Cost };

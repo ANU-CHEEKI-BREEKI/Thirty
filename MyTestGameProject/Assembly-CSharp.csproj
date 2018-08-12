@@ -93,7 +93,6 @@
     <Compile Include="Assets\Scripts\main_scene\GameManager.cs" />
     <Compile Include="Assets\Scripts\main_scene\Ground.cs" />
     <Compile Include="Assets\Scripts\main_scene\GroundBlock.cs" />
-    <Compile Include="Assets\Scripts\main_scene\HealthBar.cs" />
     <Compile Include="Assets\Scripts\main_scene\ISkillRadiusable.cs" />
     <Compile Include="Assets\Scripts\main_scene\Item\Consumable.cs" />
     <Compile Include="Assets\Scripts\main_scene\Item\Consumable\ConsumablePilumsVolley.cs" />
@@ -137,7 +136,6 @@
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\Description.cs" />
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\EquipmentStack.cs" />
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\EquipmentStats.cs" />
-    <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\Extensions.cs" />
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\FormationStats.cs" />
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\IDescriptionable.cs" />
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\IGizmosDrawable.cs" />
@@ -218,6 +216,7 @@
     <Compile Include="Assets\Scripts\main_scene\UI\MainMenu.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\MarketScene\BuyTheGold.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\MarketScene\CallConverterNumberPicker.cs" />
+    <Compile Include="Assets\Scripts\main_scene\UI\MarketScene\CustomButton.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\MarketScene\HospitalRoom.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\MarketScene\NumberConverter.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\MarketScene\ScoreMarket.cs" />
@@ -237,8 +236,12 @@
     <Compile Include="Assets\Scripts\main_scene\UI\SliderValueViewer.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\SquadCerrentProp.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\SquadInfoCellPresenter.cs" />
-    <Compile Include="Assets\Scripts\main_scene\UI\SquadInfoPanel.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\SquadInfoShowerButton.cs" />
+    <Compile Include="Assets\Scripts\main_scene\UI\SquadMainInfoUI\HealthBar.cs" />
+    <Compile Include="Assets\Scripts\main_scene\UI\SquadMainInfoUI\MainStatesPanel.cs" />
+    <Compile Include="Assets\Scripts\main_scene\UI\SquadMainInfoUI\MainStatsPanel.cs" />
+    <Compile Include="Assets\Scripts\main_scene\UI\SquadMainInfoUI\SquadInfoPanel.cs" />
+    <Compile Include="Assets\Scripts\main_scene\UI\SquadMainInfoUI\SquadWeight.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\SquadPropertyIndicator.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\TipsPanel.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\ToAnotherSceneButton.cs" />
@@ -257,7 +260,10 @@
     <Compile Include="Assets\Scripts\main_scene\Unit\UnitPosition.cs" />
     <Compile Include="Assets\Scripts\main_scene\UnitOutline.cs" />
     <Compile Include="Assets\Scripts\ShowColliderGizmos.cs" />
+    <Compile Include="Assets\Scripts\Tools\Extensions.cs" />
+    <Compile Include="Assets\Scripts\Tools\FileManagement.cs" />
     <Compile Include="Assets\Scripts\Tools\Math.cs" />
+    <Compile Include="Assets\Scripts\Tools\Others.cs" />
     <Compile Include="Assets\Scripts\Tutorial\ActivateOnTriggerEnter.cs" />
     <Compile Include="Assets\Scripts\Tutorial\ATriggerConstraint.cs" />
     <Compile Include="Assets\Scripts\Tutorial\CloseSquadPanelsOnAwake.cs" />

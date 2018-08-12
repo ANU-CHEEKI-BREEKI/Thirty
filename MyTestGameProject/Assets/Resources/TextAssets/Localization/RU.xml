@@ -17,6 +17,10 @@
   <string name = "healtarget_strongest">сначала сильных</string>
   <string name = "healtarget_all">Всех</string>
 
+  <string name = "first_phase">Первый этап</string>
+  <string name = "second_phase">Второй этап</string>
+  <string name = "two_phases_skill">Это умение имеет два этапа</string>
+  
   <string name = "error">[ERROR]</string>
   <string name = "missing_string">[missing_string]</string>
 
@@ -243,6 +247,8 @@
   <string name = "durability_worn">поношенный</string>
   <string name = "durability_damaged">испорченный</string>
   
+  <string name = "can_use_in_this_formations">Можно использовать в построениях: </string>
+  
   <string name = "toast_cant_use_with_shield">Нельзя использовать вместе со щитом</string>
   <string name = "toast_cant_use_with_current_weapon">Нельзя использовать вместе с текущим оружием</string>
   <string name = "toast_not_enough_gold">Недостаточно золота</string>
@@ -253,6 +259,12 @@
   <string name = "toast_cant_drop_weapon">Нельзя снимать оружие</string>
   <string name = "toast_cant_drop">Невозможно снять</string>
   
+  <string name = "toast_cant_reform_phalanx_with_this_weapon">C этим оружием нельзя перестроится в фалангу</string>
+  <string name = "toast_cant_reform_phalanx_in_fight_with_this_weapon">C этим оружием нельзя перестроится в фалангу в бою</string>
+  <string name = "toast_cant_reform_shields_without_shields">Без щитов нельзя перестроится "черепахой"</string>
+  
+  <string name = "toast_cant_use_skill_in_this_formation">Нельзя использовать это умение в текущем построении</string>
+  <string name = "toast_cant_use_skill_without_shields">Нельзя использовать это умение без щитов</string>
   
   
   <string name = "next">Следующий</string>

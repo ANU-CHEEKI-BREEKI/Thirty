@@ -5,6 +5,7 @@ using UnityEngine;
 public class SkillsUpgrade : MonoBehaviour
 {
     [SerializeField] int skillId;
+    public int SkillId { get { return skillId; } }
 
     List<DSPlayerSkill.SkillUpgrade> upgrades;
     List<SkillUpgradeButton> buttons = new List<SkillUpgradeButton>();

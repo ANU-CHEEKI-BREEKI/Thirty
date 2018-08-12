@@ -96,6 +96,8 @@ public struct UnitStatsModifier: IDescriptionable
         public string ResourceName  { get { return resourceName; } }
         [SerializeField] string resourceDesc;
         public string ResourceDesc { get { return resourceDesc; } }
+        [SerializeField] bool isPositiveModifier;
+        public bool IsPositiveModifier { get { return isPositiveModifier; } }
     }
 
     public Description GetDescription()

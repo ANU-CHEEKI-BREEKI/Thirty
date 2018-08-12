@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Tools;
 using UnityEngine;
 
 public class TriggerConstraintPlayerVeryHeavyWeight : ATriggerConstraint
@@ -11,7 +12,7 @@ public class TriggerConstraintPlayerVeryHeavyWeight : ATriggerConstraint
             bool res = false;
             var s = Squad.playerSquadInstance;
             if (s != null)
-                res = Extensions.GetWeightByMass(s.UnitStats.EquipmentMass) == UnitStats.EquipmentWeight.VERY_HEAVY;
+                res = Others.GetWeightByMass(s.UnitStats.EquipmentMass) == UnitStats.EquipmentWeight.VERY_HEAVY;
             return res;
         }
     }
