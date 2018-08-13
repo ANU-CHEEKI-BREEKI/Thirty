@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -16,6 +17,8 @@ public class SkillMarketInventoryUI : AInventoryUI
     [SerializeField] Color selectedSkillCellColor;
     [Space]
     [SerializeField] Transform selectedSkillUpgradeContainer;
+    [Space]
+    [SerializeField] TextMeshProUGUI selectedSkillUpgradesPage;
 
     Color cellDefaultColor;
 
@@ -69,8 +72,11 @@ public class SkillMarketInventoryUI : AInventoryUI
         for (int i = 0; i < cnt; i++)
         {
             var su = selectedSkillUpgradeContainer.GetChild(i).GetComponent<SkillsUpgrade>();
-            allUpgrades.Add(su);
-            su.gameObject.SetActive(false);
+            if (su != null)
+            {
+                allUpgrades.Add(su);
+                su.gameObject.SetActive(false);
+            }
         }
 
         cellDefaultColor = skillCells[0].GetComponent<Image>().color;
@@ -125,6 +131,9 @@ public class SkillMarketInventoryUI : AInventoryUI
             {
                 if (skillCells[i] != null)
                     skillCells[i].GetComponent<Image>().color = selectedSkillCellColor;
+
+                if (selectedSkillUpgradesPage != null)
+                    selectedSkillUpgradesPage.text = Localization.GetString(drag.SkillStack.Skill.MainPropertie.StringResourceName);
             }
             else
             {
@@ -189,7 +198,7 @@ public class SkillMarketInventoryUI : AInventoryUI
             var l = selectedSkillUpgradeContainer.GetComponent<LayoutElement>();
             Vector2 size = MainCanvas.Instance.WorldToScreenPoint(b.size);
             l.preferredHeight = size.y + 100;
-            l.preferredWidth = size.x + 100;
+            l.preferredWidth = size.x + 100;           
         }
         else
         {

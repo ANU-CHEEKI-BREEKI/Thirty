@@ -19,6 +19,8 @@ public abstract class Drag : MonoBehaviour, IDragHandler, IBeginDragHandler, IEn
     public Transform OldParent { get; private set; }
     CanvasGroup canvasGroup;
 
+    abstract public AStack Stack { get; set; }
+
     public bool CanDrag { get; set; }
 
     void Start()

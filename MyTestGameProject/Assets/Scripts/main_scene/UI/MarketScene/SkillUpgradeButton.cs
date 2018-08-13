@@ -32,8 +32,8 @@ public class SkillUpgradeButton : MonoBehaviour, IDescriptionable, IPointerClick
     [Header("Script")]
     [SerializeField] SkillsUpgrade parent;
     [Space]
-    [SerializeField] SkillUpgradeButton[] previousButton;
-    [SerializeField] SkillUpgradeButton[] nextButton;
+    [SerializeField] List<SkillUpgradeButton> previousButton;
+    [SerializeField] List<SkillUpgradeButton> nextButton;
     [Space]
     [SerializeField] DSPlayerSkill.SkillUpgrade upgradeStats;
     public DSPlayerSkill.SkillUpgrade UpgradeStats { get { return upgradeStats; } }
@@ -67,7 +67,7 @@ public class SkillUpgradeButton : MonoBehaviour, IDescriptionable, IPointerClick
 
 		icon.sprite = iconSource;
 		
-        if (connector != null && previousButton.Length > 0)
+        if (connector != null && previousButton.Count > 0)
             connector.PrevObj = previousButton[0].transform;
     }
 
@@ -77,8 +77,17 @@ public class SkillUpgradeButton : MonoBehaviour, IDescriptionable, IPointerClick
     {
 		icon.sprite = iconSource;
 		
-        if (connector != null && previousButton.Length > 0)
+        if (connector != null && previousButton.Count > 0)
             connector.PrevObj = previousButton[0].transform;
+
+        if(previousButton != null && previousButton.Count > 0)
+        {
+            foreach (var btn in previousButton)
+            {
+                if (!btn.nextButton.Contains(this))
+                    btn.nextButton.Add(this);
+            }
+        }
     }
 
 #endif
@@ -143,7 +152,7 @@ public class SkillUpgradeButton : MonoBehaviour, IDescriptionable, IPointerClick
         costText.text = cost;
 
         bool lvlZero = false;
-        if (previousButton.Length > 0)
+        if (previousButton.Count > 0)
         {
             foreach (var item in previousButton)
             {

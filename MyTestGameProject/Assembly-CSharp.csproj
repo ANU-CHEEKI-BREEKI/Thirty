@@ -205,6 +205,7 @@
     <Compile Include="Assets\Scripts\main_scene\UI\Inventory\EnvirinmantInventoryUI.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\Inventory\GridLayoutCellWidth.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\Inventory\HideTipsPanel.cs" />
+    <Compile Include="Assets\Scripts\main_scene\UI\Inventory\InventoryCellUI.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\Inventory\MarketConsumablesUI.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\Inventory\MarketInventoryUI.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\Inventory\SkillMarketInventoryUI.cs" />

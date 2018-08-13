@@ -71,7 +71,7 @@ public class SkillButton : MonoBehaviour, IPointerClickHandler, IPointerDownHand
     {
         StopAllCoroutines();
 
-        if (typeOfSkill == Type.CONSUMABLE)
+        if (typeOfSkill == Type.CONSUMABLE && currentConsumable != null && currentConsumable.Consumable != null)
             currentConsumable.Consumable.CallbackUsedCount -= DecrementUsedConsumableCount;
     }
 

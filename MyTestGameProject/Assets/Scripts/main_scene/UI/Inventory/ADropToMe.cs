@@ -1,13 +1,16 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
 public abstract class ADropToMe: MonoBehaviour, IDropHandler
 {
-    protected new Transform transform;
+    [Header("ADropToMe")]    
     [SerializeField] bool canDrop = true;
     protected bool CanDrop { get { return canDrop; }}
 
+    protected new Transform transform;
+    
     private void Start()
     {
         transform = base.transform;

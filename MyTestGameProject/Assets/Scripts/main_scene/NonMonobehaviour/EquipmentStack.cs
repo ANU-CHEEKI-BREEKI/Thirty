@@ -25,6 +25,14 @@ public class EquipmentStack : AStack, IDescriptionable
         }
     }
 
+    public override object Stats
+    {
+        get
+        {
+            return equipmentStats;
+        }
+    }
+
     public EquipmentStack()
     {
     }

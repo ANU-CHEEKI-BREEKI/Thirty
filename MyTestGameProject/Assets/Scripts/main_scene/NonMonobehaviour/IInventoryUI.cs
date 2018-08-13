@@ -25,7 +25,7 @@ public abstract class AInventoryUI : MonoBehaviour
         if (cell.childCount > 0)
             Destroy(cell.GetChild(cell.childCount - 1).gameObject);
 
-        if (stack.MainProperties != null)
+        if (origin != null && stack != null && stack.MainProperties != null)
         {
             go = Instantiate(origin, cell);
 
@@ -37,7 +37,13 @@ public abstract class AInventoryUI : MonoBehaviour
 
             var drag = go.GetComponent<Drag>();
             drag.CanDrag = canDrag;
+            drag.Stack = stack;            
         }
+
+        var cellUI = cell.GetComponent<InventoryCellUI>();
+        if (cellUI != null)
+            cellUI.Present();
+
         return go;
     }
 }

@@ -7,6 +7,14 @@ public abstract class AStack
 {
     abstract public Item.MainProperties? MainProperties { get; }
 
-    [Obsolete("Надо удалить это свойство. Но пока что впадлу удалять и все его реализации")]
+    /// <summary>
+    /// Только в тех случаях, когда используется AStack !!!!!
+    /// </summary>
+    [Obsolete("Не надо использовать. Вроде как реализвано, но не нужно. и накладно. И сбивает с толку, например, в EquipmentStats всегда null")]
     abstract public Item Item { get; }
+
+    /// <summary>
+    /// Только в тех случаях, когда используется AStack !!!!!
+    /// </summary>
+    abstract public object Stats { get; }
 }

@@ -204,7 +204,7 @@ public class SkillBash : Skill
             {
                 var unitStats = unit.Stats;
 
-                var enemyes = unit.FindEnemyes(weapon);
+                var enemyes = unit.FindEnemyes(weapon, false);
                 int cnt2 = enemyes.Length;
                 for (int j = 0; j < cnt2; j++)
                 {

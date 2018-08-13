@@ -51,6 +51,14 @@ public class ConsumableStack : AExecutableStack, IStackCountConstraintable, IDes
         }
     }
 
+    public override object Stats
+    {
+        get
+        {
+            return ConsumableStats;
+        }
+    }
+
     public ConsumableStack() : this(null, null)
     {
     }

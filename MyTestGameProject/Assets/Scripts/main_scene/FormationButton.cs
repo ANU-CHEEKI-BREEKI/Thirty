@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -17,6 +18,9 @@ public class FormationButton : MonoBehaviour, IPointerDownHandler, IPointerUpHan
     [Space]
     [SerializeField] Image imageShields;
     [SerializeField] GameObject shieldsCell;
+    [Space]
+    [SerializeField] TextMeshProUGUI cooldownText;
+
     CanvasGroup thisCg;
 
     float angle;
@@ -33,6 +37,10 @@ public class FormationButton : MonoBehaviour, IPointerDownHandler, IPointerUpHan
     Squad playerSquad;
 
     public static FormationButton Instance { get; private set; }
+
+    bool enable = true;
+
+    bool buttonsEnabled = true;
 
     public Sprite GetIcon(FormationStats.Formations formation)
     {
@@ -75,6 +83,9 @@ public class FormationButton : MonoBehaviour, IPointerDownHandler, IPointerUpHan
         playerSquad.OnFormationChanged += PlayerSquadInstance_OnFormationChanged;
         playerSquad.OnBeginCharge += PlayerSquad_OnBeginCharge;
         playerSquad.OnEndCharge += PlayerSquad_OnEndCharge;
+
+        if (cooldownText != null)
+            cooldownText.text = string.Empty;
     }
 
     private void OnDestroy()
@@ -99,11 +110,18 @@ public class FormationButton : MonoBehaviour, IPointerDownHandler, IPointerUpHan
         thisCg.alpha = 1;
         thisCg.interactable = true;
         canUse = true;
-    }    
+    }
 
     private void PlayerSquadInstance_OnFormationChanged(FormationStats formation)
     {
         SetImage(formation.FORMATION);
+
+        StartCoroutine(Tools.Others.Cooldown(
+            3,
+            StartCooldown,
+            EndCooldown,
+            cooldownText
+        ));
     }
 
     void SetImage(FormationStats.Formations formation)
@@ -124,73 +142,79 @@ public class FormationButton : MonoBehaviour, IPointerDownHandler, IPointerUpHan
 
     private void SetButtonsEnabled(bool val)
     {
-        ranksCell.SetActive(val);
-        phalanxCell.SetActive(val);
-        shieldsCell.SetActive(val);
+        if (buttonsEnabled != val)
+        {
+            ranksCell.SetActive(val);
+            phalanxCell.SetActive(val);
+            shieldsCell.SetActive(val);
+            buttonsEnabled = val;
+        }
     }
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        if (canUse)
+        if (canUse && enable)
         {
             SetButtonsEnabled(true);
+        }
+        else
+        {
+            Toast.Instance.Show(LocalizedStrings.toast_cant_use_because_of_cooldown);
+        }
 
+        if (!mouseDown)
+        {
             startP = Camera.main.WorldToScreenPoint(thisTransform.position);
 
-            if (!mouseDown)
-            {
-                mouseDown = true;
+            mouseDown = true;
 
-                int count = Input.touchCount;
-                Touch touch;
-                if (count > 0)
-                {
-                    touch = Input.GetTouch(Input.touchCount - 1);
-                    touchId = touch.fingerId;
-                }
-                else
-                {
-                    touch = new Touch();
-                    touch.position = Input.mousePosition;
-                }
-            }
-        }
-    }
-
-    public void OnPointerUp(PointerEventData eventData)
-    {
-        if (canUse)
-        {
             int count = Input.touchCount;
             Touch touch;
             if (count > 0)
             {
                 touch = Input.GetTouch(Input.touchCount - 1);
+                touchId = touch.fingerId;
             }
             else
             {
                 touch = new Touch();
                 touch.position = Input.mousePosition;
             }
-
-            if (touchId == touch.fingerId || count == 0)
-            {
-                mouseDown = false;
-
-                endP = touch.position;
-                angle = GetAngle(startP, endP);
-                playerSquad.CurrentFormation = GetFormation(angle);
-                SetImage(playerSquad.CurrentFormation);
-
-                SetButtonsEnabled(false);
-            }
         }
     }
 
+    public void OnPointerUp(PointerEventData eventData)
+    {
+        int count = Input.touchCount;
+        Touch touch;
+        if (count > 0)
+        {
+            touch = Input.GetTouch(Input.touchCount - 1);
+        }
+        else
+        {
+            touch = new Touch();
+            touch.position = Input.mousePosition;
+        }
+
+        if (touchId == touch.fingerId || count == 0)
+            mouseDown = false;
+
+        if (canUse && enable && !mouseDown)
+        {
+            endP = touch.position;
+            angle = GetAngle(startP, endP);
+            playerSquad.CurrentFormation = GetFormation(angle);
+            SetButtonsEnabled(false);
+        }
+    }    
+
     public void OnDrag(PointerEventData eventData)
     {
-        if (mouseDown && canUse)
+        if (mouseDown && canUse && enable)
         {
+            SetButtonsEnabled(true);
+
             int count = Input.touchCount;
             Touch touch = new Touch();
             if (count > 0)
@@ -214,6 +238,25 @@ public class FormationButton : MonoBehaviour, IPointerDownHandler, IPointerUpHan
             FormationStats.Formations f = GetFormation(angle);
             SetImage(f);
         }
+    }
+
+    void StartCooldown()
+    {
+        enable = false;
+        var c = currentFormationButton.color;
+        c.a = 0.7f;
+        currentFormationButton.color = c;
+    }
+
+    void EndCooldown()
+    {
+        enable = true;
+        var c = currentFormationButton.color;
+        c.a = 1f;
+        currentFormationButton.color = c;
+
+        if (mouseDown)
+            OnDrag(new PointerEventData(EventSystem.current));
     }
 
     FormationStats.Formations GetFormation(float angle)

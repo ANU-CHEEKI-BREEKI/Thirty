@@ -85,8 +85,15 @@ public class SquadInfoPanel : MonoBehaviour
 
     private void Start()
     {
-        if (squad != null)
-            Present();
+        if (squad == null)
+            squad = Squad.playerSquadInstance;
+
+        squadWeight.Squad = squad;
+        mainStatesPanel.Squad = squad;
+        healthBar.Squad = squad;
+        mainStatsPanel.Squad = squad;
+
+        Present();
     }
 
     private void OnDestroy()
@@ -136,11 +143,6 @@ public class SquadInfoPanel : MonoBehaviour
     {
         var active = show && inCamera && inMask;
         cg.alpha = active ? 1 : 0;
-
-        squadWeight.Squad = squad;
-        mainStatesPanel.Squad = squad;
-        healthBar.Squad = squad;
-        mainStatsPanel.Squad = squad;
 
         squadWeight.Active = active;
         mainStatesPanel.Active = active;

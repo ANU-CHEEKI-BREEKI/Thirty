@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public enum SceneIndex { MAIN_MENU, MARKET, LEVEL, LOADING_SCREEN, LEVEL_TUTORIAL_1, LEVEL_TUTORIAL_2, LEVEL_TUTORIAL_3 }
+    public enum SceneIndex { MAIN_MENU, MARKET, LEVEL, LOADING_SCREEN, LEVEL_TUTORIAL_1, LEVEL_TUTORIAL_2, LEVEL_TUTORIAL_3, TESTING_LEVEL }
     public static GameManager Instance { get; private set; }
     
     bool gamePaused;
@@ -120,10 +120,13 @@ public class GameManager : MonoBehaviour
                 SoundManager.Instance.PlaySound(new SoundChannel.ClipSet(SoundManager.Instance.SoundClipsContainer.Music.MusicMainMenu, true), SoundManager.SoundType.MUSIC);
                 SoundManager.Instance.PlaySound(new SoundChannel.ClipSet(SoundManager.Instance.SoundClipsContainer.FX.BonfireMainMenu, true, 0.1f), SoundManager.SoundType.FX);
                 SoundManager.Instance.PlaySound(new SoundChannel.ClipSet(SoundManager.Instance.SoundClipsContainer.FX.SharpingSwordMainMenu, true, 0.2f), SoundManager.SoundType.FX);
+                InitPlayer();
 
                 break;
             case SceneIndex.MARKET:
                 SoundManager.Instance.PlaySound(new SoundChannel.ClipSet(SoundManager.Instance.SoundClipsContainer.Music.MusicMarket, false), SoundManager.SoundType.MUSIC);
+                InitPlayer();
+
                 break;
             case SceneIndex.LEVEL:
                 SoundManager.Instance.PlaySound(new SoundChannel.ClipSet(SoundManager.Instance.SoundClipsContainer.Music.MusicLevel, true), SoundManager.SoundType.MUSIC);
@@ -208,37 +211,41 @@ public class GameManager : MonoBehaviour
         Vector2 pos;
         Quaternion rot;
 
-        MapBlock block = Ground.Instance.MiniGrid[(int)entranceBlockPosition.y][(int)entranceBlockPosition.x].block;
-
-        if (block.Exit == MapBlock.Direction.LEFT)
+        if (SceneManager.GetActiveScene().buildIndex == (int)SceneIndex.LEVEL)
         {
-            pos = new Vector2(
-                MapBlock.WORLD_BLOCK_SIZE * 0.1f,
-                MapBlock.WORLD_BLOCK_SIZE * 0.5f - MapBlock.BLOCK_SCALE * 0.5f
+            MapBlock block = Ground.Instance.MiniGrid[(int)entranceBlockPosition.y][(int)entranceBlockPosition.x].block;
+
+            if (block.Exit == MapBlock.Direction.LEFT)
+            {
+                pos = new Vector2(
+                    MapBlock.WORLD_BLOCK_SIZE * 0.1f,
+                    MapBlock.WORLD_BLOCK_SIZE * 0.5f - MapBlock.BLOCK_SCALE * 0.5f
+                );
+                rot = Quaternion.identity * Quaternion.Euler(0, 0, -90);
+            }
+            else
+            {
+                pos = new Vector2(
+                    MapBlock.WORLD_BLOCK_SIZE * 0.5f - MapBlock.BLOCK_SCALE * 0.5f,
+                    MapBlock.WORLD_BLOCK_SIZE * 0.1f
+                );
+                rot = Quaternion.identity;
+            }
+
+            squad.PositionsTransform.position = pos;
+            squad.PositionsTransform.rotation = rot;
+            squad.EndLookRotation = rot;
+            squad.Path = null;
+
+            squad.ResetUnitPositions();
+
+
+            Camera.main.transform.position = new Vector3(
+                squad.PositionsTransform.position.x,
+                squad.PositionsTransform.position.y,
+                Camera.main.transform.position.z
             );
-            rot = Quaternion.identity * Quaternion.Euler(0, 0, -90);
         }
-        else
-        {
-            pos = new Vector2(
-                MapBlock.WORLD_BLOCK_SIZE * 0.5f - MapBlock.BLOCK_SCALE * 0.5f,
-                MapBlock.WORLD_BLOCK_SIZE * 0.1f
-            );
-            rot = Quaternion.identity;
-        }
-
-        squad.PositionsTransform.position = pos;
-        squad.PositionsTransform.rotation = rot;
-        squad.EndLookRotation = rot;
-        squad.Path = null;
-
-        squad.ResetUnitPositions();
-
-        Camera.main.transform.position = new Vector3(
-            squad.PositionsTransform.position.x,
-            squad.PositionsTransform.position.y,
-            Camera.main.transform.position.z
-        );
 
         var progress = GameManager.Instance.PlayerProgress;
 
@@ -326,6 +333,16 @@ public class GameManager : MonoBehaviour
             index != GameManager.SceneIndex.LEVEL_TUTORIAL_3)
             throw new Exception("даный уровень не обучающий. невозможно его загручить как обучающий.");
 
+        if (Squad.playerSquadInstance != null)
+        {
+            Destroy(Squad.playerSquadInstance.gameObject);
+            Squad.playerSquadInstance = null;
+        }
+        LoadScene(index);
+    }
+
+    public void LoadTestingLevel(SceneIndex index)
+    {
         if (Squad.playerSquadInstance != null)
         {
             Destroy(Squad.playerSquadInstance.gameObject);

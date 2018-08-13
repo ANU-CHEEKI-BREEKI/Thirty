@@ -53,7 +53,7 @@ TextureImporter:
     21300096: linotorax
     21300098: anatomik_armour
     21300100: chainmail
-    21300102: inventory_cell
+    21300102: inventory_cell_new
     21300104: no_helmet
     21300106: no_shield
     21300108: no_armour
@@ -102,6 +102,8 @@ TextureImporter:
     21300194: thyreos
     21300196: lorica_segmentata
     21300198: skill_spear_push
+    21300200: inventory_cell_worn
+    21300202: inventory_cell_damaged
   externalObjects: {}
   serializedVersion: 6
   mipmaps:
@@ -1215,7 +1217,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: inventory_cell
+      name: inventory_cell_new
       rect:
         serializedVersion: 2
         x: 1848
@@ -2183,13 +2185,53 @@ TextureImporter:
         width: 100
         height: 100
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: ed64991c28d5408448069759999dbd07
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory_cell_worn
+      rect:
+        serializedVersion: 2
+        x: 1848
+        y: 1843
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 10, y: 10, z: 10, w: 10}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89006d5f58e829d45b782f87bb9ede8a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: inventory_cell_damaged
+      rect:
+        serializedVersion: 2
+        x: 1948
+        y: 1843
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 10, y: 10, z: 10, w: 10}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10c5a71675ea8844cb1b425f54ae0d2e
       vertices: []
       indices: 
       edges: []

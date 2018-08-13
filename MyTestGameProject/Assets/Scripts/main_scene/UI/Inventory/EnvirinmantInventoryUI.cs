@@ -258,7 +258,7 @@ public class EnvirinmantInventoryUI : AInventoryUI
             var drag = go.GetComponent<DragEquipment>();
             var txt = go.transform.GetChild(0).GetComponent<TextMeshProUGUI>();
 
-            drag.EquipStack = st;
+            //drag.EquipStack = st;
             txt.text = drag.EquipStack.Count.ToString();
         }
         return go;

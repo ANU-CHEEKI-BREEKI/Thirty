@@ -103,16 +103,13 @@ public class MarketInventoryUI : AInventoryUI
         int cnt = inventory.Count;
         for (int i = 0; i < cnt; i++)
         {
-            if(items[i].childCount > 0)
-                Destroy(items[i].GetChild(0).gameObject);
             SetImage(inventoryItemOriginal, items[i], inventory[i], true);
         }
 
         int cnt2 = items.Count;
         if(cnt2 > cnt)
             for (int i = cnt; i < cnt2; i++)
-                if (items[i].childCount > 0)
-                    Destroy(items[i].GetChild(0).gameObject);
+                SetImage(null, items[i], null, false);
     }
 
     public override GameObject SetImage(GameObject origin, Transform cell, AStack stack, bool canDrag)
@@ -124,7 +121,7 @@ public class MarketInventoryUI : AInventoryUI
             var drag = go.GetComponent<DragEquipment>();
             var txt = go.transform.GetChild(0).GetComponent<TextMeshProUGUI>();
 
-            drag.EquipStack = st;
+            //drag.EquipStack = st;
             txt.text = drag.EquipStack.Count.ToString();
         }
         return go;

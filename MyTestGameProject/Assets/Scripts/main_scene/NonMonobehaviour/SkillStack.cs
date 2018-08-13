@@ -38,6 +38,14 @@ public class SkillStack : AExecutableStack, IDescriptionable
         }
     }
 
+    public override object Stats
+    {
+        get
+        {
+            return SkillStats;
+        }
+    }
+
     public SkillStack()
     {
     }

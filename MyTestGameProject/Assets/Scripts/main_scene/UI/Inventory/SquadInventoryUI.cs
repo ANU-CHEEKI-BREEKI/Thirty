@@ -61,32 +61,24 @@ public class SquadInventoryUI : AInventoryUI
 
         //Equipment
         int cnt = Squad.playerSquadInstance.UnitCount;
-        if (helmetCell.childCount > 0)
-            Destroy(helmetCell.GetChild(helmetCell.childCount - 1).gameObject);
         SetImage(
             inventoryItemOriginal,
             helmetCell,
             new EquipmentStack(Squad.playerSquadInstance.Inventory.Helmet, cnt),
             !Squad.playerSquadInstance.Inventory.Helmet.EquipmentStats.Empty && CanDrag
         );
-        if (bodyCell.childCount > 0)
-            Destroy(bodyCell.GetChild(bodyCell.childCount - 1).gameObject);
         SetImage(
             inventoryItemOriginal, 
             bodyCell,
             new EquipmentStack(Squad.playerSquadInstance.Inventory.Body, cnt),
             !Squad.playerSquadInstance.Inventory.Body.EquipmentStats.Empty && CanDrag
         );
-        if (shieldCell.childCount > 0)
-            Destroy(shieldCell.GetChild(shieldCell.childCount - 1).gameObject);
         SetImage(
             inventoryItemOriginal, 
             shieldCell,
             new EquipmentStack(Squad.playerSquadInstance.Inventory.Shield, cnt),
             !Squad.playerSquadInstance.Inventory.Shield.EquipmentStats.Empty && CanDrag
         );
-        if (weaponCell.childCount > 0)
-            Destroy(weaponCell.GetChild(weaponCell.childCount - 1).gameObject);
         SetImage(
             inventoryItemOriginal, 
             weaponCell,
@@ -98,12 +90,22 @@ public class SquadInventoryUI : AInventoryUI
         cnt = inventoryCells.Length;
         for (int i = 0; i < cnt; i++)
         {
-            if (inventoryCells[i].childCount > 0)
-                Destroy(inventoryCells[i].GetChild(0).gameObject);
-            if (Squad.playerSquadInstance.Inventory[i] != null && Squad.playerSquadInstance.Inventory[i].Count > 0)
-                SetImage(inventoryItemOriginal, inventoryCells[i], Squad.playerSquadInstance.Inventory[i], CanDrag);
-            else if (Squad.playerSquadInstance.Inventory[i] != null && Squad.playerSquadInstance.Inventory[i].Count <= 0)
-                Squad.playerSquadInstance.Inventory[i] = null;
+            if (Squad.playerSquadInstance.Inventory[i] != null)
+            {
+                if (Squad.playerSquadInstance.Inventory[i].Count > 0)
+                {
+                    SetImage(inventoryItemOriginal, inventoryCells[i], Squad.playerSquadInstance.Inventory[i], CanDrag);
+                }
+                else if (Squad.playerSquadInstance.Inventory[i].Count <= 0)
+                {
+                    SetImage(null, inventoryCells[i], null, false);
+                    Squad.playerSquadInstance.Inventory[i] = null;
+                }
+            }
+            else
+            {
+                SetImage(null, inventoryCells[i], null, false);
+            }
         }
     }
 
@@ -116,7 +118,7 @@ public class SquadInventoryUI : AInventoryUI
             var drag = go.GetComponent<DragEquipment>();
             var txt = go.transform.GetChild(0).GetComponent<TextMeshProUGUI>();
 
-            drag.EquipStack = st;
+            //drag.EquipStack = st;
             if (!st.EquipmentStats.Empty)
                 txt.text = drag.EquipStack.Count.ToString();
             else

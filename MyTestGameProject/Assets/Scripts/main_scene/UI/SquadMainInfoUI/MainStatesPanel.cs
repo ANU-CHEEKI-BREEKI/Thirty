@@ -13,19 +13,19 @@ public class MainStatesPanel : MonoBehaviour
 
     private void Start()
     {
-        if (squad != null)
-        {
-            squad.OnFormationChanged += Squad_OnFormationChanged;
+        if (squad == null)
+            squad = Squad.playerSquadInstance;
 
-            var inv = squad.Inventory;
-            inv.FirstSkill.OnSkillChanged += OnExecChanded;
-            inv.SecondSkill.OnSkillChanged += OnExecChanded;
-            inv.FirstConsumable.OnConsumableChanged += OnExecChanded;
-            inv.SecondConsumable.OnConsumableChanged += OnExecChanded;
-            inv.OnEquipmentChanged += Inv_OnEquipmentChanged;
+        squad.OnFormationChanged += Squad_OnFormationChanged;
 
-            Present();
-        }
+        var inv = squad.Inventory;
+        inv.FirstSkill.OnSkillChanged += OnExecChanded;
+        inv.SecondSkill.OnSkillChanged += OnExecChanded;
+        inv.FirstConsumable.OnConsumableChanged += OnExecChanded;
+        inv.SecondConsumable.OnConsumableChanged += OnExecChanded;
+        inv.OnEquipmentChanged += Inv_OnEquipmentChanged;
+
+        Present();
     }
 
 

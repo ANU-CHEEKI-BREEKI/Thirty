@@ -145,7 +145,8 @@ public class Unit : MonoBehaviour
     float currentAttackDeltaTime = 0;
     float unionCheckDeltatime = 0.5f;
 
-    int rHitLayerEnemy;
+    int rHitLayerEnemyAll;
+    int rHitLayerEnemyStaying;
     RaycastHit2D rHit;
     Unit target;
 
@@ -597,17 +598,19 @@ public class Unit : MonoBehaviour
         switch (fraction)
         {
             case Squad.UnitFraction.ALLY:
-                rHitLayerEnemy = 1 << LayerMask.NameToLayer("ENEMY");
-                rHitLayerEnemy = rHitLayerEnemy | 1 << LayerMask.NameToLayer("FALLEN_ENEMY");
+                rHitLayerEnemyStaying = 1 << LayerMask.NameToLayer("ENEMY"); 
+
+                rHitLayerEnemyAll = 1 << LayerMask.NameToLayer("ENEMY");
+                rHitLayerEnemyAll = rHitLayerEnemyAll | 1 << LayerMask.NameToLayer("FALLEN_ENEMY");
                 Selected = true;
                 break;
             case Squad.UnitFraction.ENEMY:
-                rHitLayerEnemy = 1 << LayerMask.NameToLayer("ALLY");
-                rHitLayerEnemy = rHitLayerEnemy | 1 << LayerMask.NameToLayer("FALLEN_ALLY");
+                rHitLayerEnemyStaying = 1 << LayerMask.NameToLayer("ALLY");
+
+                rHitLayerEnemyAll = 1 << LayerMask.NameToLayer("ALLY");
+                rHitLayerEnemyAll = rHitLayerEnemyAll | 1 << LayerMask.NameToLayer("FALLEN_ALLY");
                 break;
         }
-
-        
     }
 
     void Squad_OnInitiateUnitPositions()
@@ -922,11 +925,18 @@ public class Unit : MonoBehaviour
     /// <summary>
     /// Найти первого врага, по которому могбы ударить оружием даный юнит
     /// </summary>
+    /// <param name="includeFallenUnits">включиь ли в поиск сбитых с ног врагов</param>
     /// <returns>Враг</returns>
-    public Unit FindEnemy()
+    public Unit FindEnemy(bool includeFallenUnits = true)
     {
         Unit res = null;
-        var hit = BoxCast(rHitLayerEnemy);
+        int layer;
+        if (includeFallenUnits)
+            layer = rHitLayerEnemyAll;
+        else
+            layer = rHitLayerEnemyStaying;
+
+        var hit = BoxCast(layer);
         if (hit)
             res = hit.transform.gameObject.GetComponent<Unit>();
         return res;
@@ -939,13 +949,20 @@ public class Unit : MonoBehaviour
     /// <para>true - искать всех врагов, которых мог бы ударить данный юнит своим оружием</para>
     /// <para>false - искать всех врагов, которые находятся спереди рядом с данным юнитом. Например, если нужно ударить врагов щитом или ногой.</para>
     /// </param>
+    /// <param name="includeFallenUnits">включиь ли в поиск сбитых с ног врагов</param>
     /// <returns>Враги</returns>
-    public Unit[] FindEnemyes(bool byWeapon = true)
+    public Unit[] FindEnemyes(bool byWeapon = true, bool includeFallenUnits = true)
     {
         List<Unit> res = new List<Unit>();
+        int layer;
+        if (includeFallenUnits)
+            layer = rHitLayerEnemyAll;
+        else
+            layer = rHitLayerEnemyStaying;
+
         if (byWeapon)
         {
-            var hits = BoxCastAll(rHitLayerEnemy);
+            var hits = BoxCastAll(layer);
             if (hits != null && hits.Length > 0)
             {
                 for (int i = 0; i < hits.Length; i++)
@@ -960,8 +977,8 @@ public class Unit : MonoBehaviour
         {
             var cols = Physics2D.OverlapCircleAll(
                 ThisTransform.position + ThisTransform.up, 
-                circleCollider2D.radius, 
-                rHitLayerEnemy
+                circleCollider2D.radius,
+                layer
             );
 
             if (cols != null && cols.Length > 0)
@@ -1235,16 +1252,16 @@ public class Unit : MonoBehaviour
 
     /// <summary>
     /// Нанести удар по юниту.
-    /// <para>Урон будет расчитан с учетом брони юнита, но без учета вероятности попадания по нему (его параметра защиты).</para>
-    /// <para>!!!!Также, не учитывается броня щита!!!!</para>
+    /// <para>Урон будет расчитан с учетом брони юнита. Но без учета вероятности попадания по нему (его параметра защиты).</para>
     /// </summary>
-    /// <param name="damage"></param>
-    public void TakeHit(Damage damage)
+    /// <param name="damage">урон</param>
+    /// <param name="fromBack">если удар наносится в спину, то броня щита не будет учтена</param>
+    public void TakeHit(Damage damage, bool fromBack = false)
     {
         if (IsAlive)
         {
             float dmg = damage.BaseDamage + damage.ArmourDamage - stats.Armour;
-            if (shield != null)
+            if (fromBack && shield != null)
                 dmg += shield.Stats.Armour;
 
             if (dmg < damage.ArmourDamage)

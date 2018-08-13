@@ -9,6 +9,21 @@ public class DragConsumable : Drag
     [SerializeField] ConsumableStack consumableStack;
     public ConsumableStack ConsumableStack { get { return consumableStack; } set { consumableStack = value; } }
 
+    public override AStack Stack
+    {
+        get
+        {
+            return ConsumableStack;
+        }
+        set
+        {
+            if (value is ConsumableStack)
+                ConsumableStack = value as ConsumableStack;
+            else
+                throw new ArgumentException("не тот стак засунуть пытаешься.");
+        }
+    }
+
     public override void OnPointerClick(PointerEventData eventData)
     {
         base.OnPointerClick(eventData);

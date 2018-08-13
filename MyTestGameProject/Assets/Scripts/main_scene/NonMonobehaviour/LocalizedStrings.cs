@@ -225,6 +225,7 @@ public sealed class LocalizedStrings
     public static string toast_cant_reform_shields_without_shields { get; private set; }
     public static string toast_cant_use_skill_in_this_formation { get; private set; }
     public static string toast_cant_use_skill_without_shields { get; private set; }
+    public static string toast_cant_use_because_of_cooldown { get; private set; }
     public static string next { get; private set; }
     public static string previous { get; private set; }
     public static string close { get; private set; }

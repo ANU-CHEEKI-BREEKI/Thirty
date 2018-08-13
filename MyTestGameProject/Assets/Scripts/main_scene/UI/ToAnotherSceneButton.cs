@@ -64,8 +64,11 @@ public class ToAnotherSceneButton : MonoBehaviour
                 break;
             case GameManager.SceneIndex.LEVEL_TUTORIAL_1:
             case GameManager.SceneIndex.LEVEL_TUTORIAL_2:
-            case GameManager.SceneIndex.LEVEL_TUTORIAL_3:
+            case GameManager.SceneIndex.LEVEL_TUTORIAL_3:        
                 GameManager.Instance.LoadTutorialLevel(scene);
+                break;
+            default:
+                GameManager.Instance.LoadTestingLevel(scene);
                 break;
         }
     }

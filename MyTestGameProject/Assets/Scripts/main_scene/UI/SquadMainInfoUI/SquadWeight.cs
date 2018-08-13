@@ -19,12 +19,12 @@ public class SquadWeight : MonoBehaviour
 
     void Start()
     {
-        if (squad != null)
-        {
-            squad.Inventory.OnEquipmentChanged += Inv_OnEquipmentChanged;
+        if (squad == null)
+            squad = Squad.playerSquadInstance;
 
-            Present();
-        }
+        squad.Inventory.OnEquipmentChanged += Inv_OnEquipmentChanged;
+
+        Present();
     }
 
     private void OnDestroy()

@@ -23,15 +23,16 @@ public class MainStatsPanel : MonoBehaviour
 
     private void Start()
     {
-        if(squad != null)
-        {
-            squad.OnFormationChanged += Squad_OnFormationChanged;
-            squad.OnTerrainModifiersListChanged += Squad_OnTerrainModifiersListChanged;
-            squad.OnModifiersListChanged += Squad_OnModifiersListChanged;
-            squad.Inventory.OnEquipmentChanged += Inv_OnEquipmentChanged;
+        if (squad == null)
+            squad = Squad.playerSquadInstance;
 
-            Present();
-        }
+        squad.OnFormationChanged += Squad_OnFormationChanged;
+        squad.OnTerrainModifiersListChanged += Squad_OnTerrainModifiersListChanged;
+        squad.OnModifiersListChanged += Squad_OnModifiersListChanged;
+        squad.Inventory.OnEquipmentChanged += Inv_OnEquipmentChanged;
+
+        Present();
+
     }
 
     private void OnDestroy()

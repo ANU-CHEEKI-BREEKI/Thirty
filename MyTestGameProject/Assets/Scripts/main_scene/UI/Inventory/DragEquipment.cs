@@ -6,7 +6,23 @@ using UnityEngine.EventSystems;
 
 public class DragEquipment : Drag
 {
-    public EquipmentStack EquipStack { get; set; }
+    [SerializeField] EquipmentStack equipStack;
+    public EquipmentStack EquipStack { get { return equipStack; } set { equipStack = value; } }
+
+    public override AStack Stack
+    {
+        get
+        {
+            return EquipStack;
+        }
+        set
+        {
+            if (value is EquipmentStack)
+                EquipStack = value as EquipmentStack;
+            else
+                throw new ArgumentException("не тот стак засунуть пытаешься.");
+        }
+    }
 
     protected override void OnCantDrag()
     {
