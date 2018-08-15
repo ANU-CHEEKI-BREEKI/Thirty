@@ -112,7 +112,6 @@ public class SkillBash : Skill
     }
 
     [SerializeField] BashStats defaultStats;
-    [SerializeField] protected List<FormationStats.Formations> canExecute;
 
     Dictionary<Squad, Coroutine> coroutines = new Dictionary<Squad, Coroutine>();
 
@@ -130,27 +129,27 @@ public class SkillBash : Skill
     public override bool Execute(object skillStats)
     {
         var res = base.Execute(skillStats);
-        BashStats stats = new BashStats();
-        try
+        if (res)
         {
-            stats = (BashStats)skillStats;
-        }
-        catch
-        {
-            Debug.Log("Были переданы статы не того скила... скорее всего... кароче сто то с приведением типа...");
-            return false;
-        }
+            BashStats stats = new BashStats();
+            try
+            {
+                stats = (BashStats)skillStats;
+            }
+            catch
+            {
+                Debug.Log("Были переданы статы не того скила... скорее всего... кароче сто то с приведением типа...");
+                return false;
+            }
 
-        if(owner != null)
-        {
-            if (canExecute.Contains(owner.CurrentFormation))
+            if (owner != null)
             {
                 if (!(stats.BaschType == BashStats.Type.SHIELD && owner.Inventory.Shield.EquipmentStats.Empty))
                 {
                     Coroutine cor = null;
-                    if(coroutines.ContainsKey(owner))
+                    if (coroutines.ContainsKey(owner))
                         cor = coroutines[owner];
-                    if(cor != null)
+                    if (cor != null)
                         owner.StopCoroutine(cor);
                     coroutines[owner] = owner.StartCoroutine(ExecuteWithPhases(stats, owner));
                 }
@@ -163,17 +162,10 @@ public class SkillBash : Skill
             }
             else
             {
-                Debug.Log("В данном построении нельзя использовать скилл");
-                Toast.Instance.Show(LocalizedStrings.toast_cant_use_skill_in_this_formation);
+                Debug.Log("Без овнера этот скилл не работает...");
                 res = false;
             }
         }
-        else
-        {
-            Debug.Log("Без овнера этот скилл не работает...");
-            res = false;
-        }
-
         return res;
     }
 
@@ -236,29 +228,6 @@ public class SkillBash : Skill
         }
 
         coroutines[owner] = null;
-    }
-
-    public override Description GetDescription()
-    {
-        var desc = base.GetDescription();
-
-        DescriptionItem canUse = new DescriptionItem();
-        canUse.ItPositiveDesc = false;
-
-        canUse.Name = LocalizedStrings.attention;
-
-        StringBuilder sb = new StringBuilder();
-        sb.Append(LocalizedStrings.can_use_in_this_formations);
-        for (int i = 0; i < canExecute.Count; i++)
-        {
-            sb.Append(canExecute[i].GetNamelocalize());
-            if(i < canExecute.Count - 1)
-                sb.Append(", ");
-        }
-        canUse.Description = sb.ToString();
-        desc.Constraints = new DescriptionItem[] { canUse };
-
-        return desc;
     }
     
     public override object CalcUpgradedStats(List<DSPlayerSkill.SkillUpgrade> upgrades)

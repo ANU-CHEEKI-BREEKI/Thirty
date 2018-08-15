@@ -546,16 +546,16 @@ TextureImporter:
     21301082: Equipment_541
     21301084: Equipment_542
     21301086: Equipment_543
-    21301088: Equipment_544
-    21301090: Equipment_545
-    21301092: Equipment_546
-    21301094: Equipment_547
-    21301096: Equipment_548
-    21301098: Equipment_549
-    21301100: Equipment_550
-    21301102: Equipment_551
-    21301104: Equipment_552
-    21301106: Equipment_553
+    21301088: Equipment_body_chestplate_large_new_rnk_idle
+    21301090: Equipment_body_chestplate_large_new_rnk_run
+    21301092: Equipment_body_chestplate_large_new_rnk_fight
+    21301094: Equipment_body_chestplate_large_new_phx_idle
+    21301096: Equipment_body_chestplate_large_new_phx_run
+    21301098: Equipment_body_chestplate_large_new_shl_idle
+    21301100: Equipment_body_chestplate_large_new_shl_run
+    21301102: Equipment_body_chestplate_large_new_death_1
+    21301104: Equipment_body_chestplate_large_new_death_2
+    21301106: Equipment_body_chestplate_lagre_new_fallen
     21301108: Equipment_554
     21301110: Equipment_555
     21301112: Equipment_556
@@ -578,16 +578,16 @@ TextureImporter:
     21301146: Equipment_573
     21301148: Equipment_574
     21301150: Equipment_575
-    21301152: Equipment_576
-    21301154: Equipment_577
-    21301156: Equipment_578
-    21301158: Equipment_579
-    21301160: Equipment_580
-    21301162: Equipment_581
-    21301164: Equipment_582
-    21301166: Equipment_583
-    21301168: Equipment_584
-    21301170: Equipment_585
+    21301152: Equipment_body_chestplate_medium_new_rnk_idle
+    21301154: Equipment_body_chestplate_medium_new_rnk_run
+    21301156: Equipment_body_chestplate_medium_new_rnk_fight
+    21301158: Equipment_body_chestplate_medium_new_phx_idle
+    21301160: Equipment_body_chestplate_medium_new_phx_run
+    21301162: Equipment_body_chestplate_medium_new_shl_idle
+    21301164: Equipment_body_chestplate_medium_new_shl_run
+    21301166: Equipment_body_chestplate_medium_new_death_1
+    21301168: Equipment_body_chestplate_medium_new_death_2
+    21301170: Equipment_body_chestplate_medium_new_fallen
     21301172: Equipment_586
     21301174: Equipment_587
     21301176: Equipment_588
@@ -610,16 +610,16 @@ TextureImporter:
     21301210: Equipment_605
     21301212: Equipment_606
     21301214: Equipment_607
-    21301216: Equipment_608
-    21301218: Equipment_609
-    21301220: Equipment_610
-    21301222: Equipment_611
-    21301224: Equipment_612
-    21301226: Equipment_613
-    21301228: Equipment_614
-    21301230: Equipment_615
-    21301232: Equipment_616
-    21301234: Equipment_617
+    21301216: Equipment_body_chestplate_small_new_rnk_idle
+    21301218: Equipment_body_chestplate_small_new_rnk_run
+    21301220: Equipment_body_chestplate_small_new_rnk_fight
+    21301222: Equipment_body_chestplate_small_new_phx_idle
+    21301224: Equipment_body_chestplate_small_new_phx_run
+    21301226: Equipment_body_chestplate_small_new_shl_idle
+    21301228: Equipment_body_chestplate_small_new_shl_run
+    21301230: Equipment_body_chestplate_small_new_death_1
+    21301232: Equipment_body_chestplate_small_new_death_2
+    21301234: Equipment_body_chestplate_small_new_fallen
     21301236: Equipment_618
     21301238: Equipment_619
     21301240: Equipment_620
@@ -11989,7 +11989,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_544
+      name: Equipment_body_chestplate_large_new_rnk_idle
       rect:
         serializedVersion: 2
         x: 0
@@ -12009,7 +12009,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_545
+      name: Equipment_body_chestplate_large_new_rnk_run
       rect:
         serializedVersion: 2
         x: 64
@@ -12029,7 +12029,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_546
+      name: Equipment_body_chestplate_large_new_rnk_fight
       rect:
         serializedVersion: 2
         x: 128
@@ -12049,7 +12049,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_547
+      name: Equipment_body_chestplate_large_new_phx_idle
       rect:
         serializedVersion: 2
         x: 192
@@ -12069,7 +12069,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_548
+      name: Equipment_body_chestplate_large_new_phx_run
       rect:
         serializedVersion: 2
         x: 256
@@ -12089,7 +12089,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_549
+      name: Equipment_body_chestplate_large_new_shl_idle
       rect:
         serializedVersion: 2
         x: 320
@@ -12109,7 +12109,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_550
+      name: Equipment_body_chestplate_large_new_shl_run
       rect:
         serializedVersion: 2
         x: 384
@@ -12129,7 +12129,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_551
+      name: Equipment_body_chestplate_large_new_death_1
       rect:
         serializedVersion: 2
         x: 448
@@ -12149,7 +12149,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_552
+      name: Equipment_body_chestplate_large_new_death_2
       rect:
         serializedVersion: 2
         x: 512
@@ -12169,7 +12169,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_553
+      name: Equipment_body_chestplate_lagre_new_fallen
       rect:
         serializedVersion: 2
         x: 576
@@ -12629,7 +12629,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_576
+      name: Equipment_body_chestplate_medium_new_rnk_idle
       rect:
         serializedVersion: 2
         x: 0
@@ -12649,7 +12649,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_577
+      name: Equipment_body_chestplate_medium_new_rnk_run
       rect:
         serializedVersion: 2
         x: 64
@@ -12669,7 +12669,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_578
+      name: Equipment_body_chestplate_medium_new_rnk_fight
       rect:
         serializedVersion: 2
         x: 128
@@ -12689,7 +12689,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_579
+      name: Equipment_body_chestplate_medium_new_phx_idle
       rect:
         serializedVersion: 2
         x: 192
@@ -12709,7 +12709,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_580
+      name: Equipment_body_chestplate_medium_new_phx_run
       rect:
         serializedVersion: 2
         x: 256
@@ -12729,7 +12729,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_581
+      name: Equipment_body_chestplate_medium_new_shl_idle
       rect:
         serializedVersion: 2
         x: 320
@@ -12749,7 +12749,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_582
+      name: Equipment_body_chestplate_medium_new_shl_run
       rect:
         serializedVersion: 2
         x: 384
@@ -12769,7 +12769,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_583
+      name: Equipment_body_chestplate_medium_new_death_1
       rect:
         serializedVersion: 2
         x: 448
@@ -12789,7 +12789,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_584
+      name: Equipment_body_chestplate_medium_new_death_2
       rect:
         serializedVersion: 2
         x: 512
@@ -12809,7 +12809,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_585
+      name: Equipment_body_chestplate_medium_new_fallen
       rect:
         serializedVersion: 2
         x: 576
@@ -13269,7 +13269,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_608
+      name: Equipment_body_chestplate_small_new_rnk_idle
       rect:
         serializedVersion: 2
         x: 0
@@ -13289,7 +13289,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_609
+      name: Equipment_body_chestplate_small_new_rnk_run
       rect:
         serializedVersion: 2
         x: 64
@@ -13309,7 +13309,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_610
+      name: Equipment_body_chestplate_small_new_rnk_fight
       rect:
         serializedVersion: 2
         x: 128
@@ -13329,7 +13329,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_611
+      name: Equipment_body_chestplate_small_new_phx_idle
       rect:
         serializedVersion: 2
         x: 192
@@ -13349,7 +13349,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_612
+      name: Equipment_body_chestplate_small_new_phx_run
       rect:
         serializedVersion: 2
         x: 256
@@ -13369,7 +13369,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_613
+      name: Equipment_body_chestplate_small_new_shl_idle
       rect:
         serializedVersion: 2
         x: 320
@@ -13389,7 +13389,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_614
+      name: Equipment_body_chestplate_small_new_shl_run
       rect:
         serializedVersion: 2
         x: 384
@@ -13409,7 +13409,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_615
+      name: Equipment_body_chestplate_small_new_death_1
       rect:
         serializedVersion: 2
         x: 448
@@ -13429,7 +13429,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_616
+      name: Equipment_body_chestplate_small_new_death_2
       rect:
         serializedVersion: 2
         x: 512
@@ -13449,7 +13449,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_617
+      name: Equipment_body_chestplate_small_new_fallen
       rect:
         serializedVersion: 2
         x: 576

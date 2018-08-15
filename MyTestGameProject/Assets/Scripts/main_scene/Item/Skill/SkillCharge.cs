@@ -41,20 +41,21 @@ public class SkillCharge : Skill
 
     public override bool Execute(object skillStats)
     {
-        base.Execute(skillStats);
+        bool res = base.Execute(skillStats);
 
-        bool res = true;
+        if (res)
+        {
+            ChargeStats stats;
+            if (skillStats != null && skillStats is ChargeStats)
+                stats = (ChargeStats)skillStats;
+            else
+                stats = this.defaultStats;
 
-        ChargeStats stats;
-        if (skillStats != null && skillStats is ChargeStats)
-            stats = (ChargeStats)skillStats;
-        else
-            stats = this.defaultStats;
-
-        if (res && canExecute.Contains(owner.CurrentFormation))
-            owner.Charge(stats.modifyer, stats.duration);
-        else
-            res = false;
+            if (res && canExecute.Contains(owner.CurrentFormation))
+                owner.Charge(stats.modifyer, stats.duration);
+            else
+                res = false;
+        }
 
         return res;
     }

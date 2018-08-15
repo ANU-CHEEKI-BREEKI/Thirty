@@ -14,20 +14,28 @@ public class InventoryCellUI : MonoBehaviour
     [Space]
     [SerializeField] Sprite damagedCellSprite;
     [SerializeField] Color damagedCellColor;
-
-    Image image;
-    Transform thisTransform;
+    [Space]
+    [SerializeField] Image thisImage;
+    [SerializeField] Transform thisTransform;
+    [SerializeField] GameObject thisGo;
 
     private void Awake()
     {
-        image = GetComponent<Image>();
-        thisTransform = transform;
+        if(thisImage == null)
+            thisImage = GetComponent<Image>();
+        if (thisTransform == null)
+            thisTransform = transform;
+        if (thisGo == null)
+            thisGo = gameObject;
     }
 
     public void Present()
     {
-        image.sprite = newCellSprite;
-        image.color = newCellColor;
+        if (!thisGo.activeInHierarchy)
+            return;
+
+        thisImage.sprite = newCellSprite;
+        thisImage.color = newCellColor;
 
         if (thisTransform.childCount > 0)
         {
@@ -41,12 +49,12 @@ public class InventoryCellUI : MonoBehaviour
                     switch (stats.ItemDurability)
                     {
                         case EquipmentStats.Durability.DAMAGED:
-                            image.sprite = damagedCellSprite;
-                            image.color = damagedCellColor;
+                            thisImage.sprite = damagedCellSprite;
+                            thisImage.color = damagedCellColor;
                             break;
                         case EquipmentStats.Durability.WORN:
-                            image.sprite = wornCellSprite;
-                            image.color = wornCellColor;
+                            thisImage.sprite = wornCellSprite;
+                            thisImage.color = wornCellColor;
                             break;
                     }
                 }

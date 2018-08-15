@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text;
 using Tools;
 using UnityEngine;
 
@@ -19,40 +20,51 @@ public abstract class Executable : Item, IDescriptionable
 
     public abstract object DefaultStats { get; }
 
+    [SerializeField] List<FormationStats.Formations> cantExecute;
+    
     /// <summary>
     /// описание класса Skill
     /// </summary>
     public virtual bool Execute(object skillStats)
     {
+        bool res = true;
         if (owner != null)
         {
-            Color sc = Color.black;
-            Color ec;
-            var gs = GameManager.Instance.Settings.graphixSettings;
-            switch (owner.fraction)
+            if (!cantExecute.Contains(owner.CurrentFormation))
             {
-                case Squad.UnitFraction.ALLY:
-                    sc = gs.AllyOutlineColor;
-                    break;
-                case Squad.UnitFraction.ENEMY:
-                    sc = gs.EnemyOutlineColor;
-                    break;
-                case Squad.UnitFraction.NEUTRAL:
-                    sc = gs.NeutralOutlineColor;
-                    break;
-            }
-            ec = new Color(sc.r, sc.g, sc.b, 0.5f);
+                Color sc = Color.black;
+                Color ec;
+                var gs = GameManager.Instance.Settings.graphixSettings;
+                switch (owner.fraction)
+                {
+                    case Squad.UnitFraction.ALLY:
+                        sc = gs.AllyOutlineColor;
+                        break;
+                    case Squad.UnitFraction.ENEMY:
+                        sc = gs.EnemyOutlineColor;
+                        break;
+                    case Squad.UnitFraction.NEUTRAL:
+                        sc = gs.NeutralOutlineColor;
+                        break;
+                }
+                ec = new Color(sc.r, sc.g, sc.b, 0.5f);
 
-            PopUpTextController.Instance.AddTextLabel(
-                Localization.GetString(MainPropertie.StringResourceName),
-                owner.CenterSquad,
-                startColor: sc,
-                endColor: ec,
-                fontSize: 15
-            );
+                PopUpTextController.Instance.AddTextLabel(
+                    Localization.GetString(MainPropertie.StringResourceName),
+                    owner.CenterSquad,
+                    startColor: sc,
+                    endColor: ec,
+                    fontSize: 15
+                );
+            }
+            else
+            {
+                Toast.Instance.Show(LocalizedStrings.toast_cant_use_skill_in_this_formation);
+                return res;
+            }
         }
 
-        return true;
+        return res;
     }
     
 
@@ -80,10 +92,29 @@ public abstract class Executable : Item, IDescriptionable
 
     public virtual Description GetDescription()
     {
-        return new Description()
+        var desc = new Description()
         {
             Name = Localization.GetString(MainPropertie.StringResourceName),
             Desc = Localization.GetString(MainPropertie.StringResourceDescription)
         };
+
+        Description.DescriptionItem canUse = new Description.DescriptionItem();
+        canUse.ItPositiveDesc = false;
+
+        canUse.Name = LocalizedStrings.attention;
+
+        StringBuilder sb = new StringBuilder();
+        sb.Append(LocalizedStrings.cant_use_in_this_formations);
+        for (int i = 0; i < cantExecute.Count; i++)
+        {
+            sb.Append(cantExecute[i].GetNamelocalize());
+            if (i < cantExecute.Count - 1)
+                sb.Append(", ");
+        }
+        canUse.Description = sb.ToString();
+        desc.Constraints = new Description.DescriptionItem[] { canUse };
+
+
+        return desc;
     }
 }

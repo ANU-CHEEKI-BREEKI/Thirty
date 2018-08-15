@@ -352,6 +352,10 @@ public class Unit : MonoBehaviour
 
     public void Death()
     {
+        Selected = false;
+
+        IsAlive = false;
+
         if (squad != null)
         {
             DropEquipment();
@@ -368,7 +372,6 @@ public class Unit : MonoBehaviour
 
             squad.OnUnitStatsChanged -= Squad_OnUnitStatsChanged;
 
-
             squad.OnCallApplyModifierToAllUnit -= OnCallApplyModifierToAll;
             squad.OnCallRejectModifierToAllUnit -= OnCallRejectModifierToAll;
             squad.OnCallApplyTerrainModifierToAllUnit -= OnCallApplyTerrainModifierToAll;
@@ -382,8 +385,10 @@ public class Unit : MonoBehaviour
                 target.RemoveTagrettedBy(this);
 
             //ставим всем, кто атаковал этот юнит, цель null 
-            for (int i = 0; i < targettedBy.Count; i++)
-                targettedBy[i].SetTarget(null);
+            //tempList нужен потому что после unit.SetTarget(null); будет менятся список targettedBy
+            var tempList = new List<Unit>(targettedBy);
+            foreach (var unit in tempList)
+                unit.SetTarget(null);
 
             {//это всё должно идти именно в таком порядке!!!
              //сначала обрабатываем модификаторы,а потом уже указываем отряду что этот юнит умер
@@ -398,10 +403,20 @@ public class Unit : MonoBehaviour
         }
 
         DropingItemsManager.Instance.DropUnitCorp(this);
+    }
 
-        Selected = false;
+    void LateDeath()
+    {
+        Destroy(GetComponent<Collider2D>());
+        Destroy(rigidbody2D);
 
-        IsAlive = false;
+        if (OnUnitDeath != null)
+            OnUnitDeath(this);
+
+        if (OnAnyUnitDeath != null)
+            OnAnyUnitDeath();
+
+        Destroy(this);
     }
 
     private void DropEquipment()
@@ -438,22 +453,6 @@ public class Unit : MonoBehaviour
                 squad.Inventory[i].PopItems(1);
             }
         }
-    }
-
-    void LateDeath()
-    {
-        Destroy(GetComponent<Collider2D>());
-        Destroy(rigidbody2D);
-
-        if (OnUnitDeath != null)
-            OnUnitDeath(this);
-
-        if (OnAnyUnitDeath != null)
-            OnAnyUnitDeath();
-        
-        
-
-        Destroy(this);
     }
 
     void Squad_OnUnitStatsChanged(UnitStats oldS, UnitStats newS)

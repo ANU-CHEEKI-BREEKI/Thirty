@@ -1,6 +1,6 @@
 Android
 PlayerPath?
-C:/Users/ANU CHEEKI BREEKI/Desktop/Thirty.v.0.8.9a.apk
+C:/Users/ANU CHEEKI BREEKI/Desktop/Thirty.v.0.8.9.4a.apk
 SceneListBegin?
 Assets/Scenes/main_menu.unity
 Assets/Scenes/market.unity
@@ -13,7 +13,7 @@ Assets/Scenes/testing level.unity
 SceneListEnd?
 cfba408c0c89345a971c4360bc93b882 Assembly-CSharp.dll:.MarketInventoryUI
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.SquadInfoCellPresenter
-b981715f3b2a461c237c223556cf1cec Assembly-CSharp.dll:.SkillBash
+f0e96b78ce4f75eaa62bccb4d1decd96 Assembly-CSharp.dll:.SkillBash
 31bda29d6063b0d653e31c02f5bde5ae Assembly-CSharp.dll:.UnitAnimation
 edbfac507104270d17d441b1b250535e Assembly-CSharp.dll:.SettingsProgressSection
 8f65b67bf4473054cb6def9b3cb3f967 Assembly-CSharp.dll:.Ground
@@ -176,7 +176,7 @@ e04611b8715e6833d2bd7010fc6be10b TextMeshPro-2017.3-1.0.56-Runtime.dll:TMPro.TMP
 93307bd34e39d73fd24e00ec39c25a91 TextMeshPro-2017.3-1.0.56-Runtime.dll:TMPro.TMP_SubMesh
 66b3109aa5921cf800bec17926c6adba TextMeshPro-2017.3-1.0.56-Runtime.dll:TMPro.TMP_SubMeshUI
 6a2951ab5e4b0040f1623443d5712d75 TextMeshPro-2017.3-1.0.56-Runtime.dll:TMPro.TMP_Text
-40b1fc28f5115a9e23983605bba6e06c Assembly-CSharp.dll:.SkillCharge
+1e44a60ec13b69ffb3e08b4416934b25 Assembly-CSharp.dll:.SkillCharge
 382b8ef512fa8d6108723a01b57af65b UnityEngine.Analytics.dll:UnityEngine.Analytics.AnalyticsEventTracker
 d22c788799ee45d8676254eccf20e8b8 UnityEngine.Analytics.dll:UnityEngine.Analytics.AnalyticsTracker
 088b96f164ec145f3299aac229f06b3f Assembly-CSharp.dll:.SOSquadSpawnerSquadPropertiesResourse
@@ -192,7 +192,7 @@ dfd33ff9ae3ce8d7ca1f22b475ec2387 UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.Spa
 21af4a11a1026e16fa75fdd2e08c7506 Assembly-CSharp.dll:.ArrowsValley
 beb0404e0ccc67bca2d29812e12987c4 Assembly-CSharp.dll:.SquadPropertyIndicator
 5de7aab021cee149ebc4c0c68ad49c13 Assembly-CSharp.dll:.CallConverterNumberPicker
-f6f90ee9b22cd9140522924a4e6731fd Assembly-CSharp.dll:.ConsumablePilumsVolley
+da8ce595210cf654e9ec167a6bdd8f68 Assembly-CSharp.dll:.ConsumablePilumsVolley
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.GridLayoutCellWidth
 3d3a19b897cfa96e5be83b0e978002eb Assembly-CSharp.dll:.StatsUpgrade
 762cc5c1b35e1c889059192f4b978a4b Assembly-CSharp.dll:UnityEngine.Tilemaps.AnimatedTile
@@ -300,7 +300,7 @@ e033f131358cea5a0eabf9561e781deb UnityEngine.TestRunner.dll:UnityEngine.TestTool
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.TriggerConstraintSpearInPlayerInventory
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.DropingItemsManager
 0984d60f2ed9eb4b6f5b4a85b9b899f4 Assembly-CSharp.dll:.AiSquadController
-2de293febafafd10c04b5cb790f845ed Assembly-CSharp.dll:.SkillArrowsValley
+eb4b557a86d256c7417c250e22a468ff Assembly-CSharp.dll:.SkillArrowsValley
 719fb7aa6ef9b401c2349bd7b410e9cc Assembly-CSharp.dll:.Unit
 bfb9519e1d2f041cc96d653b6ea68953 Assembly-CSharp.dll:.NumberConverter
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.CloseSquadPanelsOnAwake
@@ -341,7 +341,7 @@ c1e304e427befceb26946fb4a790ef23 Assembly-CSharp.dll:.StatsPanelUI
 7e3b9a058409b85b9c186ea5c8765fec Assembly-CSharp.dll:.UiEvents
 f4bb7f9413a3cb4c816246cd5d3093a2 Assembly-CSharp.dll:.UILineConnector
 613ed75077b5f98ec561d9197d05e30c Assembly-CSharp.dll:.EnvirinmantInventoryUI
-9fa6a5300a0c1df6221bb4f4a41f2e66 Assembly-CSharp.dll:.InventoryCellUI
+beb141371945226d3066cfcf49fccb55 Assembly-CSharp.dll:.InventoryCellUI
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.MainMenu
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.HideTipsPanel
 369baf7da30fc1f2af1b6fa046151e80 Assembly-CSharp.dll:.SoundChannel
@@ -360,3 +360,4 @@ a76ac6c8fecd9da72794f2adcf487452 Assembly-CSharp.dll:.DropToConsumable
 76d17c39c1299e0444bd195c725d3dea Assembly-CSharp.dll:.ConfirmPanel
 7ac9c67e897c2b4a4ed3371eac444ebb Assembly-CSharp.dll:.SkillsPanelScrollAndHeight
 605379bf9b01ba6264253fd57b03751d Assembly-CSharp.dll:.SOSquadSpawnerConsumablesResourse
+45278273cee1ee8392175b9ff1955d49 Assembly-CSharp.dll:.SkillBuffSelf

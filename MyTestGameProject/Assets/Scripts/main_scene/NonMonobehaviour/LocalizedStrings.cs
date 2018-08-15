@@ -117,6 +117,12 @@ public sealed class LocalizedStrings
     public static string equipment_body_anatomic_armour_description { get; private set; }
     public static string equipment_body_lorica_segmentata_name { get; private set; }
     public static string equipment_body_lorica_segmentata_description { get; private set; }
+    public static string equipment_body_chestplate_small_name { get; private set; }
+    public static string equipment_body_chestplate_small_description { get; private set; }
+    public static string equipment_body_chestplate_medium_name { get; private set; }
+    public static string equipment_body_chestplate_medium_description { get; private set; }
+    public static string equipment_body_chestplate_large_name { get; private set; }
+    public static string equipment_body_chestplate_large_description { get; private set; }
     public static string equipment_body_none_name { get; private set; }
     public static string equipment_body_none_description { get; private set; }
     public static string equipment_helmet_corinthian_close_name { get; private set; }
@@ -155,6 +161,8 @@ public sealed class LocalizedStrings
     public static string skill_phalanx_push_description { get; private set; }
     public static string skill_shield_bash_name { get; private set; }
     public static string skill_shield_bash_description { get; private set; }
+    public static string skill_rally_ranks_name { get; private set; }
+    public static string skill_rally_ranks_description { get; private set; }
     public static string consumable_pilums_name { get; private set; }
     public static string consumable_pilums_description { get; private set; }
     public static string consumable_pilums_light_name { get; private set; }
@@ -211,6 +219,7 @@ public sealed class LocalizedStrings
     public static string durability_worn { get; private set; }
     public static string durability_damaged { get; private set; }
     public static string can_use_in_this_formations { get; private set; }
+    public static string cant_use_in_this_formations { get; private set; }
     public static string toast_cant_use_with_shield { get; private set; }
     public static string toast_cant_use_with_current_weapon { get; private set; }
     public static string toast_not_enough_gold { get; private set; }

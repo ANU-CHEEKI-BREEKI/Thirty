@@ -64,23 +64,20 @@ public class SkillArrowsValley : Skill
     
     public override bool Execute(object skillStats)
     {
-        base.Execute(skillStats);
-
-        bool res = true;
-
-        ArrowWalleyStats stats;
-        if (skillStats != null && skillStats is ArrowWalleyStats)
-            stats = (ArrowWalleyStats)skillStats;
-        else
-            stats = this.stats;
+        bool res = base.Execute(skillStats);
 
         if (res)
         {
+            ArrowWalleyStats stats;
+            if (skillStats != null && skillStats is ArrowWalleyStats)
+                stats = (ArrowWalleyStats)skillStats;
+            else
+                stats = this.stats;
+
             ArrowsValley valley = Instantiate(origin, Vector2.zero, castRotation);
             valley.Init(castPosition, stats.damage, stats.radius, stats.countOfArrows, owner);
             valley.StartValley();
         }
-
         return res;
     }
 
