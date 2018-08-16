@@ -51,8 +51,7 @@ public class SkillBash : Skill
         {
             var desc = firstPhaseModifyer.GetDescription();
             List<DescriptionItem> l = new List<DescriptionItem>(desc.Stats);
-            if (secondPhaseDuration > 0)
-                l.Add(new DescriptionItem() { Name = LocalizedStrings.duration, Description = firstPhaseDuration.ToString(StringFormats.floatNumber), ItPositiveDesc = true });
+            l.Add(new DescriptionItem() { Name = LocalizedStrings.duration, Description = firstPhaseDuration.ToString(StringFormats.floatNumber), ItPositiveDesc = true });
 
             var desc2 = secondPhaseModifyer.GetDescription();
             List<DescriptionItem> l2 = new List<DescriptionItem>(desc2.Stats);

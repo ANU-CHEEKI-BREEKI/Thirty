@@ -208,6 +208,14 @@ public class GameManager : MonoBehaviour
     {
         squad = Squad.playerSquadInstance;
 
+
+        var mods = squad.StatsModifiers;
+        foreach (var m in mods)
+            squad.RemoveStatsModifier(m);
+        var modst = squad.TerrainStatsModifiers;
+        foreach (var mt in modst)
+            squad.RemoveTerrainStatsModifier(mt);
+
         Vector2 pos;
         Quaternion rot;
 
@@ -238,7 +246,6 @@ public class GameManager : MonoBehaviour
             squad.Path = null;
 
             squad.ResetUnitPositions();
-
 
             Camera.main.transform.position = new Vector3(
                 squad.PositionsTransform.position.x,

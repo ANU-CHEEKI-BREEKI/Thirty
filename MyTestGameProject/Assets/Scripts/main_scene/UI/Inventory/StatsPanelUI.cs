@@ -55,6 +55,7 @@ public class StatsPanelUI : MonoBehaviour
         {
             Squad.playerSquadInstance.OnFormationChanged -= OnFormationChanged;
             Squad.playerSquadInstance.Inventory.OnEquipmentChanged -= OnEquipmentChanged;
+            Squad.playerSquadInstance.OnTerrainModifiersListChanged -= PlayerSquadInstance_OnTerrainModifiersListChanged;
         }
     }
 

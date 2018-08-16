@@ -42,9 +42,14 @@ public class SquadMask : MonoBehaviour
 
     private void Awake()
     {
-        Instance = this;
-        Active = false;
-        thisTransform = transform;
+        if (Instance == null)
+        {
+            Instance = this;
+            Active = false;
+            thisTransform = transform;
+        }
+        else
+            Destroy(gameObject);
     }
 
 }

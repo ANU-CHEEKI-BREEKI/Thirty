@@ -57,7 +57,7 @@ public class NumberConverter : MonoBehaviour
         }
     }
 
-    void Start ()
+    void Awake ()
     {
         btnOk.onClick.AddListener(OnApply);
         slider.onValueChanged.AddListener(OnSliderValChanged);

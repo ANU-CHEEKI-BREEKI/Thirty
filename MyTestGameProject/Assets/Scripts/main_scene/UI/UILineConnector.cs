@@ -6,6 +6,8 @@ using UnityEngine.UI;
 [ExecuteInEditMode]
 public class UILineConnector : MonoBehaviour
 {
+    [SerializeField] bool updateLine = false;
+
     [SerializeField] UILineRenderer line;
     [SerializeField] Color enabledColor;
     [SerializeField] Color disabledColor;
@@ -21,14 +23,15 @@ public class UILineConnector : MonoBehaviour
         DrawLine();
     }
 
-#if UNITY_EDITOR
-
     void Update()
     {
-        DrawLine();
-    }
+        #if UNITY_EDITOR
+            DrawLine();
+        #endif
 
-#endif
+        if (updateLine)
+            DrawLine();
+    }
 
     bool enabled = true;
 

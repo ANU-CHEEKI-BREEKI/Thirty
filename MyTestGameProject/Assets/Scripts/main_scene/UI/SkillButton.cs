@@ -29,7 +29,7 @@ public class SkillButton : MonoBehaviour, IPointerClickHandler, IPointerDownHand
     SkillStack currentSkill;
     ConsumableStack currentConsumable;
     bool canCast;
-
+    
     LineRenderer lineRenderer;
     float rHitCirclreAngle = 20;
     int rHitCirclreSegmentCount;
@@ -42,6 +42,7 @@ public class SkillButton : MonoBehaviour, IPointerClickHandler, IPointerDownHand
     int touchId;
     bool finger;
 
+    bool consumableCallbackExpected = false;
 
     private void Start()
     {
@@ -362,24 +363,33 @@ public class SkillButton : MonoBehaviour, IPointerClickHandler, IPointerDownHand
     }
 
     void DoConsumable()
-    {        
+    {
+        consumableCallbackExpected = true;
         if (currentConsumable.Consumable.Execute(currentConsumable.ConsumableStats))
         {
+            
             ISkillCooldownable c = currentConsumable.ConsumableStats as ISkillCooldownable;
             if (c != null)
                 StartCoroutine(WaitForCooldown(c.Cooldown));
+        }
+        else
+        {
+            consumableCallbackExpected = false;
         }
     }
 
     void DecrementUsedConsumableCount(int count, Squad owner)
     {
-        if(owner == Squad.playerSquadInstance)
+        if (owner == Squad.playerSquadInstance && consumableCallbackExpected)
+        {
             currentConsumable.Count -= count;
+            consumableCallbackExpected = false;
 
-        if (currentConsumable.Count <= 0)
-            Destroy(cell);
-        else
-            countText.text = currentConsumable.Count.ToString(StringFormats.intNumber);
+            if (currentConsumable.Count <= 0)
+                Destroy(cell);
+            else
+                countText.text = currentConsumable.Count.ToString(StringFormats.intNumber);
+        }
     }
 
     IEnumerator WaitForCooldown(float time)

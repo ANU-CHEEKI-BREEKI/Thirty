@@ -19,7 +19,7 @@ public class HospitalRoom : MonoBehaviour
     [Space]
     [SerializeField] CanvasGroup healControl;
 
-	void Start ()
+	void Awake ()
     {
         LineOriginalUnitHealthIndicator.gameObject.SetActive(false);
 

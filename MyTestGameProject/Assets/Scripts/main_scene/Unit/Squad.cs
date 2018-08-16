@@ -414,29 +414,29 @@ public class Squad : MonoBehaviour
 
     #region Stats Modifiers
 
-    void UnitModifierAdded(UnitStatsModifier modifyer)
+    void UnitModifierAdded(UnitStatsModifier modifier)
     {
-        if (statsDictionary.ContainsKey(modifyer))
-            statsDictionary[modifyer]++;
+        if (statsDictionary.ContainsKey(modifier))
+            statsDictionary[modifier]++;
         else
-            statsDictionary.Add(modifyer, 1);
+            statsDictionary.Add(modifier, 1);
 
-        if (statsDictionary[modifyer] >= UnitCountToApplyModifier && !statsModifyers.Contains(modifyer))
-            AddStatsModifier(modifyer);
+        if (statsDictionary[modifier] >= UnitCountToApplyModifier && !statsModifyers.Contains(modifier))
+            AddStatsModifier(modifier);
     }
     
-    void UnitModifierRemoved(UnitStatsModifier modifyer)
+    void UnitModifierRemoved(UnitStatsModifier modifier)
     {
-        if (!statsDictionary.ContainsKey(modifyer))
+        if (!statsDictionary.ContainsKey(modifier))
             return;
 
-        statsDictionary[modifyer]--;
+        statsDictionary[modifier]--;
 
-        if (statsDictionary[modifyer] < UnitCountToApplyModifier && statsModifyers.Contains(modifyer))
-            RemoveStatsModifier(modifyer);
+        if (statsDictionary[modifier] < UnitCountToApplyModifier && statsModifyers.Contains(modifier))
+            RemoveStatsModifier(modifier);
 
-        if (statsDictionary.ContainsKey(modifyer) && statsDictionary[modifyer] <= 0)
-            statsDictionary.Remove(modifyer);
+        if (statsDictionary.ContainsKey(modifier) && statsDictionary[modifier] <= 0)
+            statsDictionary.Remove(modifier);
     }
 
     public void AddStatsModifier(UnitStatsModifier modifier)
@@ -468,6 +468,8 @@ public class Squad : MonoBehaviour
             // ТУТ НАДО БЫЛО БЫ НЕ У ВСЕХ ОТНИМАТЬ У ТОЛЬКО У ТЕХ, НА КОГО НЕ ДОЛЖНЫ ДЕЙСТВОВАТЬ. НО Я ПОКА ХЗ КАК, ЧТОБЫ ОПТИМИЗИРОВАННО БЫЛО
             if (OnCallRejectModifierToAllUnit != null)
                 OnCallRejectModifierToAllUnit(modifier);
+            if (statsDictionary.ContainsKey(modifier))
+                statsDictionary.Remove(modifier);
 
             if (OnModifiersListChanged != null)
                 OnModifiersListChanged(statsModifyers.ToArray());
@@ -484,29 +486,29 @@ public class Squad : MonoBehaviour
 
     #region Terrain Stats Modifiers
 
-    void UnitTerrainModifierAdded(SOTerrainStatsModifier modifyer)
+    void UnitTerrainModifierAdded(SOTerrainStatsModifier modifier)
     {
-        if (terrainStatsDictionary.ContainsKey(modifyer))
-            terrainStatsDictionary[modifyer]++;
+        if (terrainStatsDictionary.ContainsKey(modifier))
+            terrainStatsDictionary[modifier]++;
         else
-            terrainStatsDictionary.Add(modifyer, 1);
+            terrainStatsDictionary.Add(modifier, 1);
 
-        if (terrainStatsDictionary[modifyer] >= UnitCountToApplyModifier && !terrainStatsModifyers.Contains(modifyer))
-            AddTerrainStatsModifier(modifyer);
+        if (terrainStatsDictionary[modifier] >= UnitCountToApplyModifier && !terrainStatsModifyers.Contains(modifier))
+            AddTerrainStatsModifier(modifier);
     }
 
-    void UnitTerrainModifierRemoved(SOTerrainStatsModifier modifyer)
+    void UnitTerrainModifierRemoved(SOTerrainStatsModifier modifier)
     {
-        if (!terrainStatsDictionary.ContainsKey(modifyer))
+        if (!terrainStatsDictionary.ContainsKey(modifier))
             return;
 
-        terrainStatsDictionary[modifyer]--;
+        terrainStatsDictionary[modifier]--;
 
-        if (terrainStatsDictionary[modifyer] < UnitCountToApplyModifier && terrainStatsModifyers.Contains(modifyer))
-            RemoveTerrainStatsModifier(modifyer);
+        if (terrainStatsDictionary[modifier] < UnitCountToApplyModifier && terrainStatsModifyers.Contains(modifier))
+            RemoveTerrainStatsModifier(modifier);
 
-        if (terrainStatsDictionary.ContainsKey(modifyer) && terrainStatsDictionary[modifyer] <= 0)
-            terrainStatsDictionary.Remove(modifyer);
+        if (terrainStatsDictionary.ContainsKey(modifier) && terrainStatsDictionary[modifier] <= 0)
+            terrainStatsDictionary.Remove(modifier);
     }
 
     public void AddTerrainStatsModifier(SOTerrainStatsModifier modifier)
@@ -545,6 +547,8 @@ public class Squad : MonoBehaviour
             // ТУТ НАДО БЫЛО БЫ НЕ У ВСЕХ ОТНИМАТЬ У ТОЛЬКО У ТЕХ НА КОГО НЕ ДОЛЖНЫ ДЕЙСТВОВАТЬ. НО Я ПОКА ХЗ КАК, ЧТОБЫ ОПТИМИЗИРОВАННО БЫЛО
             if (OnCallRejectTerrainModifierToAllUnit != null)
                 OnCallRejectTerrainModifierToAllUnit(modifier);
+            if (terrainStatsDictionary.ContainsKey(modifier))
+                terrainStatsDictionary.Remove(modifier);
 
             if (OnTerrainModifiersListChanged != null)
                 OnTerrainModifiersListChanged(terrainStatsModifyers.ToArray());
