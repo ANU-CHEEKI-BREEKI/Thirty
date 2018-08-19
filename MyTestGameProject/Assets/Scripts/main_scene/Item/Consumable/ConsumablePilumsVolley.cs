@@ -63,35 +63,36 @@ public class ConsumablePilumsVolley : Consumable
 
     public override bool Execute(object skillStats)
     {
-        base.Execute(skillStats);
-        
-        bool res = true;
-        PilumsVolleyStats stats = new PilumsVolleyStats();
-
-        if (skillStats != null)
-        {
-            stats = (PilumsVolleyStats)skillStats;
-
-            if (countOfPilumsToVolley <= 0)
-                res = false;
-        }
-        else
-        {
-            res = false;
-        }
+        bool res = base.Execute(skillStats);
 
         if (res)
         {
-            var init = new InitStruct()
-            {
-                owner = this.owner,
-                castPosition = this.castPosition,
-                countOfPilumsToVolley = this.countOfPilumsToVolley
-            };
-            GameManager.Instance.StartCoroutine(DelayForExecute(stats, stats.Delay, init));
-        }
+            PilumsVolleyStats stats = new PilumsVolleyStats();
 
-        return true;
+            if (skillStats != null)
+            {
+                stats = (PilumsVolleyStats)skillStats;
+
+                if (countOfPilumsToVolley <= 0)
+                    res = false;
+            }
+            else
+            {
+                res = false;
+            }
+
+            if (res)
+            {
+                var init = new InitStruct()
+                {
+                    owner = this.owner,
+                    castPosition = this.castPosition,
+                    countOfPilumsToVolley = this.countOfPilumsToVolley
+                };
+                GameManager.Instance.StartCoroutine(DelayForExecute(stats, stats.Delay, init));
+            }
+        }
+        return res;
     }
 
     IEnumerator DelayForExecute(PilumsVolleyStats stats, float delay, InitStruct init)

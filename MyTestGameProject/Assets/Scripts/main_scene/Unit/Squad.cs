@@ -136,7 +136,7 @@ public class Squad : MonoBehaviour
                 if (OnFormationChanged != null)
                     OnFormationChanged(currentFormationModifyers);
 
-            if (tag == "Player" && formation == FormationStats.Formations.PHALANX && PlayerSquadController.Instance != null)
+            if (this == playerSquadInstance && formation == FormationStats.Formations.PHALANX && PlayerSquadController.Instance != null)
                 PlayerSquadController.Instance.DeselectEnemyes();
         }
     }

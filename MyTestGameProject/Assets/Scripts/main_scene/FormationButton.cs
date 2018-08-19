@@ -20,6 +20,8 @@ public class FormationButton : MonoBehaviour, IPointerDownHandler, IPointerUpHan
     [SerializeField] GameObject shieldsCell;
     [Space]
     [SerializeField] TextMeshProUGUI cooldownText;
+    [Space]
+    [SerializeField] float buttonRadius = 50;
 
     CanvasGroup thisCg;
 
@@ -77,6 +79,12 @@ public class FormationButton : MonoBehaviour, IPointerDownHandler, IPointerUpHan
 
         thisTransform = transform;
 
+        if (buttonRadius <= 0)
+            buttonRadius = Mathf.Max(
+                (thisTransform as RectTransform).rect.width,
+                (thisTransform as RectTransform).rect.height
+            );
+
         SetImage(playerSquad.CurrentFormation);
 
 
@@ -114,8 +122,6 @@ public class FormationButton : MonoBehaviour, IPointerDownHandler, IPointerUpHan
 
     private void PlayerSquadInstance_OnFormationChanged(FormationStats formation)
     {
-        SetImage(formation.FORMATION);
-
         StartCoroutine(Tools.Others.Cooldown(
             3,
             StartCooldown,
@@ -164,7 +170,7 @@ public class FormationButton : MonoBehaviour, IPointerDownHandler, IPointerUpHan
 
         if (!mouseDown)
         {
-            startP = Camera.main.WorldToScreenPoint(thisTransform.position);
+            startP = MainCanvas.Instance.WorldToScreenPoint(thisTransform.position);
 
             mouseDown = true;
 
@@ -199,14 +205,17 @@ public class FormationButton : MonoBehaviour, IPointerDownHandler, IPointerUpHan
 
         if (touchId == touch.fingerId || count == 0)
             mouseDown = false;
+        
+        endP = touch.position;
 
-        if (canUse && enable && !mouseDown)
+        if (canUse && enable && !mouseDown && OutOfButton(startP, endP))
         {
-            endP = touch.position;
             angle = GetAngle(startP, endP);
             playerSquad.CurrentFormation = GetFormation(angle);
-            SetButtonsEnabled(false);
         }
+
+        SetImage(playerSquad.CurrentFormation);
+        SetButtonsEnabled(false);
     }    
 
     public void OnDrag(PointerEventData eventData)
@@ -234,9 +243,17 @@ public class FormationButton : MonoBehaviour, IPointerDownHandler, IPointerUpHan
             }
 
             endP = touch.position;
-            angle = GetAngle(startP, endP);
-            FormationStats.Formations f = GetFormation(angle);
-            SetImage(f);
+            if (OutOfButton(startP, endP))
+            {
+
+                angle = GetAngle(startP, endP);
+                FormationStats.Formations f = GetFormation(angle);
+                SetImage(f);
+            }
+            else
+            {
+                SetImage(playerSquad.CurrentFormation);
+            }
         }
     }
 
@@ -281,7 +298,7 @@ public class FormationButton : MonoBehaviour, IPointerDownHandler, IPointerUpHan
 
     float GetAngle(Vector3 spart, Vector3 end)
     {
-        Vector2 center = Camera.main.WorldToScreenPoint(imagePhalanx.transform.position);
+        Vector2 center = MainCanvas.Instance.WorldToScreenPoint(imagePhalanx.transform.position);
         center = center - startP;
         center.Normalize();
 
@@ -295,5 +312,9 @@ public class FormationButton : MonoBehaviour, IPointerDownHandler, IPointerUpHan
         return res;
     }
 
+    bool OutOfButton(Vector2 buttonCenterOnScreenCoord, Vector2 mousePosonScreenCoord)
+    {
+        return (buttonCenterOnScreenCoord - mousePosonScreenCoord).sqrMagnitude > buttonRadius * buttonRadius;
+    }
 
 }

@@ -31,5 +31,7 @@ public class DSPlayerSkills : ISavable, IResetable
     public void Reset()
     {
         skills = new List<DSPlayerSkill>();
+        firstSkill = null;
+        secondSkill = null;
     }
 }

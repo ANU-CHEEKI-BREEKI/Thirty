@@ -60,7 +60,7 @@ public abstract class Executable : Item, IDescriptionable
             else
             {
                 Toast.Instance.Show(LocalizedStrings.toast_cant_use_skill_in_this_formation);
-                return res;
+                res = false;
             }
         }
 
