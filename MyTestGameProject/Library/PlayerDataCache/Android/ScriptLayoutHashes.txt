@@ -1,6 +1,6 @@
 Android
 PlayerPath?
-C:/Users/ANU CHEEKI BREEKI/Desktop/Thirty.v.0.9a.apk
+C:/Users/ANU CHEEKI BREEKI/Desktop/Thirty.v.0.9.2a.apk
 SceneListBegin?
 Assets/Scenes/main_menu.unity
 Assets/Scenes/market.unity
@@ -333,7 +333,7 @@ de8823665ed3f4042496a6a8613ef6e4 Assembly-CSharp.dll:.UnitAnimationController
 3b649d47cb5398f00aa690c7343a3106 Assembly-CSharp.dll:.AddInfoPanelToSquad
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.TriggerConstraintPlayerVeryHeavyWeight
 39a692458f96692c668ecc49f4c55ad5 Assembly-CSharp.dll:.DeactivateOnAwake
-27ce5724fa345b54b6dd03a7e1cab5e0 Assembly-CSharp.dll:.FormationButton
+3d86ae309e8fe835a2507bfd3c497312 Assembly-CSharp.dll:.FormationButton
 c1e304e427befceb26946fb4a790ef23 Assembly-CSharp.dll:.StatsPanelUI
 614e0337141fa72e03a68f8203e893d3 Assembly-CSharp.dll:.SquadSpawner
 468c28091f02e0732f9686bd9ca936e2 Assembly-CSharp.dll:.MarketConsumablesUI
@@ -361,3 +361,11 @@ a76ac6c8fecd9da72794f2adcf487452 Assembly-CSharp.dll:.DropToConsumable
 76d17c39c1299e0444bd195c725d3dea Assembly-CSharp.dll:.ConfirmPanel
 7ac9c67e897c2b4a4ed3371eac444ebb Assembly-CSharp.dll:.SkillsPanelScrollAndHeight
 605379bf9b01ba6264253fd57b03751d Assembly-CSharp.dll:.SOSquadSpawnerConsumablesResourse
+a7e736744ba3322aa433c42528db6e19 Assembly-CSharp.dll:.ConvertTileResourceManager
+a619a8c3b1b23e696831a41db2f32a30 Assembly-CSharp.dll:.MockRuleTile
+486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.ConvertBlockToExpected
+486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.ConvertRuleTileToSimpleTile
+486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.SetAllTilerenderersToNonmask
+486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.DeleteTilesOutOfBounds
+486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.DeleteAllSpriteMaskAndGroups
+486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.ConvertMockRuleTileToRealRuleTile

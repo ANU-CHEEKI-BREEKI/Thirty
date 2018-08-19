@@ -46,5 +46,41 @@ namespace Tools
 
             onEnd();
         }
+
+        static public T[] GetAllComponentsWithAllChildrens<T>(Transform parent) where T : Component
+        {
+            List<T> maps = new List<T>();
+
+            var mps = parent.GetComponent<T>();
+            if (mps != null)
+                maps.Add(mps);
+
+            int cnt = parent.childCount;
+            for (int i = 0; i < cnt; i++)
+            {
+                var ch = parent.GetChild(i);
+                maps.AddRange(GetAllComponentsWithAllChildrens<T>(ch));
+            }
+
+            return maps.ToArray();
+        }
+
+        static public Transform FindChildWithNameContains(Transform parent, string containsStr)
+        {
+            Transform res = null;
+
+            int cnt = parent.childCount;
+            for (int i = 0; i < cnt; i++)
+            {
+                var ch = parent.GetChild(i);
+                if (ch.name.Contains(containsStr))
+                {
+                    res = ch;
+                    break;
+                }
+            }
+
+            return res;
+        }
     }
 }

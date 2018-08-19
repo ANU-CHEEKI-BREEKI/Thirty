@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/market.unity
+- path: Assets/Scenes/testing level.unity
   isLoaded: 1
   isActive: 1

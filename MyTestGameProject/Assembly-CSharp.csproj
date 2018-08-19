@@ -108,6 +108,14 @@
     <Compile Include="Assets\Scripts\main_scene\LoadingScreenManager.cs" />
     <Compile Include="Assets\Scripts\main_scene\LocalizationByEditor.cs" />
     <Compile Include="Assets\Scripts\main_scene\MainCanvas.cs" />
+    <Compile Include="Assets\Scripts\main_scene\MapBlockConverter\ConvertBlockToExpected.cs" />
+    <Compile Include="Assets\Scripts\main_scene\MapBlockConverter\ConvertMockRuleTileToRealRuleTile.cs" />
+    <Compile Include="Assets\Scripts\main_scene\MapBlockConverter\ConvertRuleTileToSimpleTile.cs" />
+    <Compile Include="Assets\Scripts\main_scene\MapBlockConverter\ConvertTileResourceManager.cs" />
+    <Compile Include="Assets\Scripts\main_scene\MapBlockConverter\DeleteAllSpriteMaskAndGroups.cs" />
+    <Compile Include="Assets\Scripts\main_scene\MapBlockConverter\DeleteTilesOutOfBounds.cs" />
+    <Compile Include="Assets\Scripts\main_scene\MapBlockConverter\MockRuleTile.cs" />
+    <Compile Include="Assets\Scripts\main_scene\MapBlockConverter\SetAllTilerenderersToNonmask.cs" />
     <Compile Include="Assets\Scripts\main_scene\MinimapCamera.cs" />
     <Compile Include="Assets\Scripts\main_scene\NewBehaviourScript.cs" />
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\AExecutableStack.cs" />
