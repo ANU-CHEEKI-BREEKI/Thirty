@@ -7,7 +7,7 @@ using UnityEngine;
 
 public class Ground : MonoBehaviour
 {
-    public enum GroundType { GRASSLAND }
+    public enum GroundType { GRASSLAND, SWAMP }
 
     public const string PATH_TO_PREFABS = @"Prefabs\MapBlocks\";
     public const string PATH_TO_GRIDS = @"TextAssets\MapBlockPathMatrix\";

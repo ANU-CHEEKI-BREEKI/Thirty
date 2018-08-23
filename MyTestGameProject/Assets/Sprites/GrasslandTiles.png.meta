@@ -2,11 +2,11 @@ fileFormatVersion: 2
 guid: 9760b67d11ee7184f89e131a8bcf7ff7
 TextureImporter:
   fileIDToRecycleName:
-    21300000: GrasslandTiles_0
-    21300002: GrasslandTiles_1
-    21300004: GrasslandTiles_2
-    21300006: GrasslandTiles_3
-    21300008: GrasslandTiles_4
+    21300000: mount_inner_corner_1
+    21300002: mount_inner_corner_2
+    21300004: mount_corner_1
+    21300006: mount_border_top
+    21300008: mount_corner_2
     21300010: GrasslandTiles_5
     21300012: GrasslandTiles_6
     21300014: GrasslandTiles_7
@@ -27,11 +27,11 @@ TextureImporter:
     21300044: GrasslandTiles_22
     21300046: GrasslandTiles_23
     21300048: GrasslandTiles_24
-    21300050: GrasslandTiles_25
-    21300052: GrasslandTiles_26
-    21300054: GrasslandTiles_27
-    21300056: GrasslandTiles_28
-    21300058: GrasslandTiles_29
+    21300050: mount_inner_corner_3
+    21300052: mount_inner_corner_4
+    21300054: mount_border_left
+    21300056: mount_center
+    21300058: mount_border_right
     21300060: GrasslandTiles_30
     21300062: GrasslandTiles_31
     21300064: GrasslandTiles_32
@@ -46,7 +46,7 @@ TextureImporter:
     21300082: GrasslandTiles_41
     21300084: GrasslandTiles_42
     21300086: GrasslandTiles_43
-    21300088: GrasslandTiles_44
+    21300088: 1
     21300090: GrasslandTiles_45
     21300092: GrasslandTiles_46
     21300094: GrasslandTiles_47
@@ -54,9 +54,9 @@ TextureImporter:
     21300098: GrasslandTiles_49
     21300100: GrasslandTiles_50
     21300102: GrasslandTiles_51
-    21300104: GrasslandTiles_52
-    21300106: GrasslandTiles_53
-    21300108: GrasslandTiles_54
+    21300104: mount_corner_3
+    21300106: mount_border_bot
+    21300108: mount_corner_4
     21300110: GrasslandTiles_55
     21300112: GrasslandTiles_56
     21300114: GrasslandTiles_57
@@ -76,7 +76,7 @@ TextureImporter:
     21300142: GrasslandTiles_71
     21300144: GrasslandTiles_72
     21300146: GrasslandTiles_73
-    21300148: GrasslandTiles_74
+    21300148: swamp_road_rock_connector_corner
     21300150: GrasslandTiles_75
     21300152: GrasslandTiles_76
     21300154: GrasslandTiles_77
@@ -146,18 +146,18 @@ TextureImporter:
     21300282: GrasslandTiles_141
     21300284: GrasslandTiles_142
     21300286: GrasslandTiles_143
-    21300288: GrasslandTiles_144
-    21300290: GrasslandTiles_145
-    21300292: GrasslandTiles_146
-    21300294: GrasslandTiles_147
+    21300288: swamp_road_rock_center
+    21300290: swamp_road_rock_border
+    21300292: swamp_road_rock_1
+    21300294: swamp_road_rock_2
     21300296: GrasslandTiles_148
     21300298: GrasslandTiles_149
     21300300: GrasslandTiles_150
     21300302: GrasslandTiles_151
     21300304: GrasslandTiles_152
-    21300306: GrasslandTiles_153
-    21300308: GrasslandTiles_154
-    21300310: GrasslandTiles_155
+    21300306: wall_rock_corner_1
+    21300308: wall_rock_border_top
+    21300310: wall_rock_corner_2
     21300312: GrasslandTiles_156
     21300314: GrasslandTiles_157
     21300316: GrasslandTiles_158
@@ -173,16 +173,16 @@ TextureImporter:
     21300336: GrasslandTiles_168
     21300338: GrasslandTiles_169
     21300340: GrasslandTiles_170
-    21300342: GrasslandTiles_171
-    21300344: GrasslandTiles_172
-    21300346: GrasslandTiles_173
-    21300348: GrasslandTiles_174
+    21300342: swamp_road_rock_4
+    21300344: swamp_road_rock_3
+    21300346: swamp_road_rock_5
+    21300348: swamp_road_rock_6
     21300350: GrasslandTiles_175
     21300352: GrasslandTiles_176
     21300354: GrasslandTiles_177
-    21300356: GrasslandTiles_178
-    21300358: GrasslandTiles_179
-    21300360: GrasslandTiles_180
+    21300356: wall_rock_border_left
+    21300358: wall_rock_center
+    21300360: wall_rock_border_right
     21300362: GrasslandTiles_181
     21300364: GrasslandTiles_182
     21300366: GrasslandTiles_183
@@ -200,18 +200,18 @@ TextureImporter:
     21300390: GrasslandTiles_195
     21300392: GrasslandTiles_196
     21300394: GrasslandTiles_197
-    21300396: GrasslandTiles_198
-    21300398: GrasslandTiles_199
+    21300396: swamp_road_rock_cnnector_border_corner
+    21300398: swamp_road_rock_cnnector_border_center
     21300400: GrasslandTiles_200
     21300402: GrasslandTiles_201
     21300404: GrasslandTiles_202
-    21300406: GrasslandTiles_203
-    21300408: GrasslandTiles_204
-    21300410: GrasslandTiles_205
-    21300412: GrasslandTiles_206
-    21300414: GrasslandTiles_207
-    21300416: GrasslandTiles_208
-    21300418: GrasslandTiles_209
+    21300406: wall_rock_corner_3
+    21300408: wall_rock_border_bot
+    21300410: wall_rock_corner_4
+    21300412: grassland_grass_corner
+    21300414: grassland_grass_border
+    21300416: wall_rock_broken_left
+    21300418: wall_rock_broken_right
     21300420: GrasslandTiles_210
     21300422: GrasslandTiles_211
     21300424: GrasslandTiles_212
@@ -233,10 +233,10 @@ TextureImporter:
     21300456: GrasslandTiles_228
     21300458: GrasslandTiles_229
     21300460: GrasslandTiles_230
-    21300462: GrasslandTiles_231
-    21300464: GrasslandTiles_232
-    21300466: GrasslandTiles_233
-    21300468: GrasslandTiles_234
+    21300462: grassland_grass_inner_corner
+    21300464: grassland_grass_center
+    21300466: wall_rock_broken_top
+    21300468: wall_rock_broken_bot
     21300470: GrasslandTiles_235
     21300472: GrasslandTiles_236
     21300474: GrasslandTiles_237
@@ -327,15 +327,15 @@ TextureImporter:
     21300644: GrasslandTiles_322
     21300646: GrasslandTiles_323
     21300648: GrasslandTiles_324
-    21300650: GrasslandTiles_325
-    21300652: GrasslandTiles_326
-    21300654: GrasslandTiles_327
-    21300656: GrasslandTiles_328
-    21300658: GrasslandTiles_329
-    21300660: GrasslandTiles_330
-    21300662: GrasslandTiles_331
-    21300664: GrasslandTiles_332
-    21300666: GrasslandTiles_333
+    21300650: road_rock_corner
+    21300652: road_rock_border
+    21300654: road_rock_1
+    21300656: road_rock_3
+    21300658: road_rock_5
+    21300660: road_rock_cnnector_border_center
+    21300662: dirt_outter_border
+    21300664: dirt_center
+    21300666: dirt_border
     21300668: GrasslandTiles_334
     21300670: GrasslandTiles_335
     21300672: GrasslandTiles_336
@@ -352,15 +352,15 @@ TextureImporter:
     21300694: GrasslandTiles_347
     21300696: GrasslandTiles_348
     21300698: GrasslandTiles_349
-    21300700: GrasslandTiles_350
-    21300702: GrasslandTiles_351
-    21300704: GrasslandTiles_352
-    21300706: GrasslandTiles_353
-    21300708: GrasslandTiles_354
-    21300710: GrasslandTiles_355
-    21300712: GrasslandTiles_356
-    21300714: GrasslandTiles_357
-    21300716: GrasslandTiles_358
+    21300700: road_rock_connector_corner
+    21300702: road_rock_center
+    21300704: road_rock_2
+    21300706: road_rock_4
+    21300708: road_rock_6
+    21300710: road_rock_cnnector_border_corner
+    21300712: dirt_outter_rorner
+    21300714: dirt_outter_inner_corner
+    21300716: dirt_corner
     21300718: GrasslandTiles_359
     21300720: GrasslandTiles_360
     21300722: GrasslandTiles_361
@@ -377,12 +377,12 @@ TextureImporter:
     21300744: GrasslandTiles_372
     21300746: GrasslandTiles_373
     21300748: GrasslandTiles_374
-    21300750: GrasslandTiles_375
-    21300752: GrasslandTiles_376
-    21300754: GrasslandTiles_377
-    21300756: GrasslandTiles_378
-    21300758: GrasslandTiles_379
-    21300760: GrasslandTiles_380
+    21300750: road_rock_diag
+    21300752: road_rock_center_without_2_corner_2
+    21300754: road_rock_center_without_2_corner
+    21300756: road_rock_cnnector_border_corner_mirror_X
+    21300758: road_rock_center_without_1_corner
+    21300760: road_rock_cnnector_border_corner_2
     21300762: GrasslandTiles_381
     21300764: GrasslandTiles_382
     21300766: GrasslandTiles_383
@@ -402,14 +402,14 @@ TextureImporter:
     21300794: GrasslandTiles_397
     21300796: GrasslandTiles_398
     21300798: GrasslandTiles_399
-    21300800: GrasslandTiles_400
-    21300802: GrasslandTiles_401
-    21300804: GrasslandTiles_402
-    21300806: GrasslandTiles_403
-    21300808: GrasslandTiles_404
-    21300810: GrasslandTiles_405
-    21300812: GrasslandTiles_406
-    21300814: GrasslandTiles_407
+    21300800: swamp_grass
+    21300802: swamp_moss_center
+    21300804: swamp_moss_border
+    21300806: swamp_dry_grass_1
+    21300808: swamp_dry_grass_2
+    21300810: swamp_dry_grass_3
+    21300812: shallow_water_border
+    21300814: shallow_water_center
     21300816: GrasslandTiles_408
     21300818: GrasslandTiles_409
     21300820: GrasslandTiles_410
@@ -427,15 +427,15 @@ TextureImporter:
     21300844: GrasslandTiles_422
     21300846: GrasslandTiles_423
     21300848: GrasslandTiles_424
-    21300850: GrasslandTiles_425
-    21300852: GrasslandTiles_426
-    21300854: GrasslandTiles_427
-    21300856: GrasslandTiles_428
-    21300858: GrasslandTiles_429
-    21300860: GrasslandTiles_430
-    21300862: GrasslandTiles_431
-    21300864: GrasslandTiles_432
-    21300866: GrasslandTiles_433
+    21300850: swamp_moss_border_single
+    21300852: swamp_moss_center_2
+    21300854: swamp_moss_corner
+    21300856: swamp_dry_grass_4
+    21300858: swamp_dry_grass_5
+    21300860: swamp_dry_grass_6
+    21300862: shallow_water_outter_corner
+    21300864: shallow_water_outter_connector
+    21300866: shallow_water_corner
     21300868: GrasslandTiles_434
     21300870: GrasslandTiles_435
     21300872: GrasslandTiles_436
@@ -634,8 +634,9 @@ TextureImporter:
     21301258: tree_3_shadow
     21301260: tree_2_shadow
     21301262: tree_1_shadow
+    21301264: GrasslandTiles_17
   externalObjects: {}
-  serializedVersion: 5
+  serializedVersion: 6
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -653,6 +654,8 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
   isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -663,7 +666,7 @@ TextureImporter:
     serializedVersion: 2
     filterMode: 1
     aniso: -1
-    mipBias: -1
+    mipBias: -100
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -725,7 +728,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: GrasslandTiles_0
+      name: mount_inner_corner_1
       rect:
         serializedVersion: 2
         x: 2
@@ -745,7 +748,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GrasslandTiles_1
+      name: mount_inner_corner_2
       rect:
         serializedVersion: 2
         x: 164
@@ -765,7 +768,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GrasslandTiles_2
+      name: mount_corner_1
       rect:
         serializedVersion: 2
         x: 326
@@ -776,7 +779,11 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -80, y: -80}
+        - {x: -27, y: 22}
+        - {x: 80, y: 80}
+        - {x: 80, y: -80}
       tessellationDetail: 0
       bones: []
       spriteID: 02d1135876267cd4ba22e8115e9d908d
@@ -785,7 +792,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GrasslandTiles_3
+      name: mount_border_top
       rect:
         serializedVersion: 2
         x: 488
@@ -796,7 +803,12 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -80, y: -80}
+        - {x: -80, y: 80}
+        - {x: -1, y: 65}
+        - {x: 80, y: 80}
+        - {x: 80, y: -80}
       tessellationDetail: 0
       bones: []
       spriteID: ea7a1539957ac4a4681241fa8da685b5
@@ -805,7 +817,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GrasslandTiles_4
+      name: mount_corner_2
       rect:
         serializedVersion: 2
         x: 650
@@ -816,7 +828,11 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -80, y: -80}
+        - {x: -80, y: 80}
+        - {x: 3, y: 25}
+        - {x: 80, y: -80}
       tessellationDetail: 0
       bones: []
       spriteID: 18ff552b8c9ad88419dacd6e85faf6d1
@@ -836,7 +852,13 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -41, y: -53}
+        - {x: -77, y: -1}
+        - {x: -58, y: 56}
+        - {x: 12, y: 57}
+        - {x: 80, y: 80}
+        - {x: 80, y: -80}
       tessellationDetail: 0
       bones: []
       spriteID: 2a5a36289bce4d743838ded8f166e871
@@ -856,7 +878,12 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -80, y: -80}
+        - {x: -80, y: 80}
+        - {x: 8, y: 66}
+        - {x: 72, y: 40}
+        - {x: 79, y: -42}
       tessellationDetail: 0
       bones: []
       spriteID: 3f9a128c327b13c44a99506d1bcf3f45
@@ -876,7 +903,12 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -80, y: -80}
+        - {x: -74, y: 11}
+        - {x: -11, y: 80}
+        - {x: 58, y: 54}
+        - {x: 80, y: -80}
       tessellationDetail: 0
       bones: []
       spriteID: 700d08fd4d61fa240b463207c22ffca2
@@ -896,7 +928,12 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 3, y: -75}
+        - {x: -51, y: -55}
+        - {x: -80, y: 80}
+        - {x: 80, y: 80}
+        - {x: 62, y: -61}
       tessellationDetail: 0
       bones: []
       spriteID: 705451779b2162d458f00d7b35f37224
@@ -1065,7 +1102,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GrasslandTiles_25
+      name: mount_inner_corner_3
       rect:
         serializedVersion: 2
         x: 2
@@ -1085,7 +1122,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GrasslandTiles_26
+      name: mount_inner_corner_4
       rect:
         serializedVersion: 2
         x: 164
@@ -1105,7 +1142,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GrasslandTiles_27
+      name: mount_border_left
       rect:
         serializedVersion: 2
         x: 326
@@ -1116,7 +1153,12 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -80, y: -80}
+        - {x: -71, y: -3}
+        - {x: -80, y: 80}
+        - {x: 80, y: 80}
+        - {x: 80, y: -80}
       tessellationDetail: 0
       bones: []
       spriteID: 038c053210184824ea02510dd27370be
@@ -1125,7 +1167,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GrasslandTiles_28
+      name: mount_center
       rect:
         serializedVersion: 2
         x: 488
@@ -1136,7 +1178,11 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -80, y: -80}
+        - {x: -80, y: 80}
+        - {x: 80, y: 80}
+        - {x: 80, y: -80}
       tessellationDetail: 0
       bones: []
       spriteID: 1b45a5b5d6561e94e92bea48cf7659a7
@@ -1145,7 +1191,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GrasslandTiles_29
+      name: mount_border_right
       rect:
         serializedVersion: 2
         x: 650
@@ -1156,7 +1202,12 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -80, y: -80}
+        - {x: -80, y: 80}
+        - {x: 80, y: 80}
+        - {x: 68, y: -10}
+        - {x: 80, y: -80}
       tessellationDetail: 0
       bones: []
       spriteID: 0229d54e86c89c843a501fbdf7919df1
@@ -1176,7 +1227,11 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -80, y: -80}
+        - {x: -80, y: 80}
+        - {x: 80, y: 80}
+        - {x: 80, y: -80}
       tessellationDetail: 0
       bones: []
       spriteID: 23fb898c1fe95d445b9e97ae5d33c40c
@@ -1445,7 +1500,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GrasslandTiles_52
+      name: mount_corner_3
       rect:
         serializedVersion: 2
         x: 326
@@ -1456,7 +1511,11 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -63, y: -10}
+        - {x: -80, y: 80}
+        - {x: 80, y: 80}
+        - {x: 80, y: -80}
       tessellationDetail: 0
       bones: []
       spriteID: 9150db20d3566514aa0e5008c7849630
@@ -1465,7 +1524,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GrasslandTiles_53
+      name: mount_border_bot
       rect:
         serializedVersion: 2
         x: 488
@@ -1476,7 +1535,12 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -1, y: -66}
+        - {x: -80, y: -80}
+        - {x: -80, y: 80}
+        - {x: 80, y: 80}
+        - {x: 80, y: -80}
       tessellationDetail: 0
       bones: []
       spriteID: 4deb91e358640f94f873c849a611d3c5
@@ -1485,7 +1549,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GrasslandTiles_54
+      name: mount_corner_4
       rect:
         serializedVersion: 2
         x: 650
@@ -1496,7 +1560,12 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -80, y: -80}
+        - {x: -80, y: 80}
+        - {x: 80, y: 80}
+        - {x: 61, y: 21}
+        - {x: -11, y: -62}
       tessellationDetail: 0
       bones: []
       spriteID: 950bc1842c378894eb6dd791f94c72b4
@@ -1516,7 +1585,12 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -11, y: -68}
+        - {x: -80, y: -80}
+        - {x: -80, y: 80}
+        - {x: 80, y: 80}
+        - {x: 80, y: -80}
       tessellationDetail: 0
       bones: []
       spriteID: 2418bafe6d1cd1f4f8540dd5a2ee89d0
@@ -1556,7 +1630,12 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 80, y: -80}
+        - {x: -80, y: -80}
+        - {x: -80, y: 80}
+        - {x: 80, y: 80}
+        - {x: 63, y: 6}
       tessellationDetail: 0
       bones: []
       spriteID: aed9eae760f554c4da4d117b1e6ab17a
@@ -1576,7 +1655,12 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -80, y: -80}
+        - {x: -80, y: 80}
+        - {x: 80, y: 80}
+        - {x: 62, y: 4}
+        - {x: 80, y: -80}
       tessellationDetail: 0
       bones: []
       spriteID: 7d243fac2b1a24e4db78778c272eca02
@@ -1856,7 +1940,12 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -80, y: -80}
+        - {x: -80, y: 80}
+        - {x: -5, y: 66}
+        - {x: 80, y: 80}
+        - {x: 80, y: -80}
       tessellationDetail: 0
       bones: []
       spriteID: abea620e40878e44e970b8522f52f80e
@@ -1876,7 +1965,11 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -80, y: -80}
+        - {x: -80, y: 80}
+        - {x: 80, y: 80}
+        - {x: 80, y: -80}
       tessellationDetail: 0
       bones: []
       spriteID: 1ad08a0b4da48f641a85dc92291e49b3
@@ -1896,7 +1989,12 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -80, y: -80}
+        - {x: -61, y: 3}
+        - {x: -80, y: 80}
+        - {x: 80, y: 80}
+        - {x: 80, y: -80}
       tessellationDetail: 0
       bones: []
       spriteID: 93992e275b3f6f04292a7675d4a7fbe4
@@ -1916,7 +2014,12 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -80, y: -80}
+        - {x: -56, y: 8}
+        - {x: -80, y: 80}
+        - {x: 80, y: 80}
+        - {x: 80, y: -80}
       tessellationDetail: 0
       bones: []
       spriteID: dd8dac9fcad8ae14e9190177c3cdf586
@@ -2825,7 +2928,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GrasslandTiles_153
+      name: wall_rock_corner_1
       rect:
         serializedVersion: 2
         x: 488
@@ -2845,7 +2948,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GrasslandTiles_154
+      name: wall_rock_border_top
       rect:
         serializedVersion: 2
         x: 650
@@ -2865,7 +2968,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GrasslandTiles_155
+      name: wall_rock_corner_2
       rect:
         serializedVersion: 2
         x: 812
@@ -3165,7 +3268,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GrasslandTiles_178
+      name: wall_rock_border_left
       rect:
         serializedVersion: 2
         x: 488
@@ -3185,7 +3288,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GrasslandTiles_179
+      name: wall_rock_center
       rect:
         serializedVersion: 2
         x: 650
@@ -3205,7 +3308,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GrasslandTiles_180
+      name: wall_rock_border_right
       rect:
         serializedVersion: 2
         x: 812
@@ -3505,7 +3608,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GrasslandTiles_203
+      name: wall_rock_corner_3
       rect:
         serializedVersion: 2
         x: 488
@@ -3525,7 +3628,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GrasslandTiles_204
+      name: wall_rock_border_bot
       rect:
         serializedVersion: 2
         x: 650
@@ -3545,7 +3648,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GrasslandTiles_205
+      name: wall_rock_corner_4
       rect:
         serializedVersion: 2
         x: 812
@@ -3565,7 +3668,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GrasslandTiles_206
+      name: grassland_grass_corner
       rect:
         serializedVersion: 2
         x: 974
@@ -3585,7 +3688,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GrasslandTiles_207
+      name: grassland_grass_border
       rect:
         serializedVersion: 2
         x: 1136
@@ -3605,7 +3708,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GrasslandTiles_208
+      name: wall_rock_broken_left
       rect:
         serializedVersion: 2
         x: 1298
@@ -3625,7 +3728,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GrasslandTiles_209
+      name: wall_rock_broken_right
       rect:
         serializedVersion: 2
         x: 1460
@@ -3956,7 +4059,11 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -80, y: -80}
+        - {x: -27, y: 13}
+        - {x: 80, y: 80}
+        - {x: 80, y: -80}
       tessellationDetail: 0
       bones: []
       spriteID: e89bab3ef06f1d642b2bfb63d9a2e8de
@@ -3996,7 +4103,12 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -80, y: -80}
+        - {x: -54, y: -17}
+        - {x: -44, y: 67}
+        - {x: 56, y: 55}
+        - {x: 80, y: -80}
       tessellationDetail: 0
       bones: []
       spriteID: 0b4c5a4af5006604296dec9ef6fec1da
@@ -4016,7 +4128,12 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -80, y: -80}
+        - {x: -42, y: -5}
+        - {x: -80, y: 80}
+        - {x: 80, y: 80}
+        - {x: 80, y: -80}
       tessellationDetail: 0
       bones: []
       spriteID: cf3f8a105c8274c4f9e7dc662997ac19
@@ -4065,7 +4182,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GrasslandTiles_231
+      name: grassland_grass_inner_corner
       rect:
         serializedVersion: 2
         x: 974
@@ -4085,7 +4202,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GrasslandTiles_232
+      name: grassland_grass_center
       rect:
         serializedVersion: 2
         x: 1136
@@ -4105,7 +4222,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GrasslandTiles_233
+      name: wall_rock_broken_top
       rect:
         serializedVersion: 2
         x: 1298
@@ -4125,7 +4242,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GrasslandTiles_234
+      name: wall_rock_broken_bot
       rect:
         serializedVersion: 2
         x: 1460
@@ -4456,7 +4573,12 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -9, y: -62}
+        - {x: -80, y: -80}
+        - {x: -80, y: 80}
+        - {x: 80, y: 80}
+        - {x: 57, y: -8}
       tessellationDetail: 0
       bones: []
       spriteID: d7191469fe2039f45ad087bb90db2859
@@ -4516,7 +4638,12 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -80, y: -80}
+        - {x: -80, y: 80}
+        - {x: 80, y: 80}
+        - {x: 37, y: 7}
+        - {x: 80, y: -80}
       tessellationDetail: 0
       bones: []
       spriteID: 236b051fc1022e547bdc0fc3275731a3
@@ -4956,7 +5083,11 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -46, y: -80}
+        - {x: -42, y: 80}
+        - {x: 80, y: 80}
+        - {x: 80, y: -80}
       tessellationDetail: 0
       bones: []
       spriteID: 1ff162aacb467e242a9a91831b1f4683
@@ -4976,7 +5107,11 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -80, y: -80}
+        - {x: -80, y: 80}
+        - {x: 80, y: 80}
+        - {x: 80, y: -80}
       tessellationDetail: 0
       bones: []
       spriteID: e2eb44fdbee03a84da1d5c4f89255e22
@@ -4996,7 +5131,11 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -80, y: -80}
+        - {x: -80, y: 80}
+        - {x: 80, y: 80}
+        - {x: 80, y: -80}
       tessellationDetail: 0
       bones: []
       spriteID: dca12852f221e5847bc6984d866008c8
@@ -5016,7 +5155,11 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -80, y: -80}
+        - {x: -80, y: 80}
+        - {x: 80, y: 80}
+        - {x: 80, y: -80}
       tessellationDetail: 0
       bones: []
       spriteID: 9cc28b417073c6140a88f01bd825c4c3
@@ -5456,7 +5599,11 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -18, y: -2}
+        - {x: -45, y: 80}
+        - {x: 80, y: 80}
+        - {x: 80, y: -56}
       tessellationDetail: 0
       bones: []
       spriteID: 51e6626910b76234e92030452d353752
@@ -5476,7 +5623,13 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -80, y: -55}
+        - {x: -80, y: 80}
+        - {x: -38, y: 80}
+        - {x: 80, y: -39}
+        - {x: 80, y: -80}
+        - {x: -60, y: -80}
       tessellationDetail: 0
       bones: []
       spriteID: a716940965b67c84d87e3c3ca8e83ec2
@@ -5496,7 +5649,11 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -18, y: -20}
+        - {x: -80, y: 80}
+        - {x: 80, y: 80}
+        - {x: 80, y: -80}
       tessellationDetail: 0
       bones: []
       spriteID: 0b4517fc61ae4564b824ba9b86ed4ef4
@@ -5945,7 +6102,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GrasslandTiles_325
+      name: road_rock_corner
       rect:
         serializedVersion: 2
         x: 2
@@ -5956,7 +6113,11 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -80, y: -80}
+        - {x: -12, y: 12}
+        - {x: 80, y: 80}
+        - {x: 80, y: -80}
       tessellationDetail: 0
       bones: []
       spriteID: 155c81021fce7e743b2e33134fa533c9
@@ -5965,7 +6126,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GrasslandTiles_326
+      name: road_rock_border
       rect:
         serializedVersion: 2
         x: 164
@@ -5976,7 +6137,11 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -80, y: -80}
+        - {x: -80, y: 80}
+        - {x: 80, y: 80}
+        - {x: 80, y: -80}
       tessellationDetail: 0
       bones: []
       spriteID: 3d70045e31accb04192328156ffda281
@@ -5985,7 +6150,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GrasslandTiles_327
+      name: road_rock_1
       rect:
         serializedVersion: 2
         x: 326
@@ -5996,7 +6161,14 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -80, y: -80}
+        - {x: -55, y: 15}
+        - {x: -64, y: 58}
+        - {x: 6, y: 80}
+        - {x: 69, y: 46}
+        - {x: 61, y: -7}
+        - {x: 80, y: -80}
       tessellationDetail: 0
       bones: []
       spriteID: d1a0175784e3f7f41836f890fe598e99
@@ -6005,7 +6177,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GrasslandTiles_328
+      name: road_rock_3
       rect:
         serializedVersion: 2
         x: 488
@@ -6016,7 +6188,13 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -80, y: -80}
+        - {x: -62, y: -4}
+        - {x: -80, y: 80}
+        - {x: 80, y: 80}
+        - {x: 67, y: 3}
+        - {x: 80, y: -80}
       tessellationDetail: 0
       bones: []
       spriteID: d3db08c363709234ca527a7a9a822a12
@@ -6025,7 +6203,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GrasslandTiles_329
+      name: road_rock_5
       rect:
         serializedVersion: 2
         x: 650
@@ -6036,7 +6214,11 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -80, y: -80}
+        - {x: -80, y: 80}
+        - {x: 80, y: 80}
+        - {x: 80, y: -80}
       tessellationDetail: 0
       bones: []
       spriteID: b023c3b7965d7f24baac2e2003f5fe2e
@@ -6045,7 +6227,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GrasslandTiles_330
+      name: road_rock_cnnector_border_center
       rect:
         serializedVersion: 2
         x: 812
@@ -6056,7 +6238,11 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -80, y: -80}
+        - {x: -80, y: 80}
+        - {x: 80, y: 80}
+        - {x: 80, y: -80}
       tessellationDetail: 0
       bones: []
       spriteID: 2439181309a4e724db858db8e0cf9b64
@@ -6065,7 +6251,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GrasslandTiles_331
+      name: dirt_outter_border
       rect:
         serializedVersion: 2
         x: 974
@@ -6085,7 +6271,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GrasslandTiles_332
+      name: dirt_center
       rect:
         serializedVersion: 2
         x: 1136
@@ -6096,7 +6282,11 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -80, y: -80}
+        - {x: -80, y: 80}
+        - {x: 80, y: 80}
+        - {x: 80, y: -80}
       tessellationDetail: 0
       bones: []
       spriteID: f0278e8f6ed8a32449fb457a0c8be9cf
@@ -6105,7 +6295,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GrasslandTiles_333
+      name: dirt_border
       rect:
         serializedVersion: 2
         x: 1298
@@ -6116,7 +6306,11 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -80, y: -80}
+        - {x: -80, y: 80}
+        - {x: 80, y: 80}
+        - {x: 80, y: -80}
       tessellationDetail: 0
       bones: []
       spriteID: b35f9b2037d7d2348bf95113a9d16ecb
@@ -6445,7 +6639,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GrasslandTiles_350
+      name: road_rock_connector_corner
       rect:
         serializedVersion: 2
         x: 2
@@ -6456,7 +6650,12 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 2, y: -62}
+        - {x: -80, y: -80}
+        - {x: -80, y: 80}
+        - {x: 80, y: 80}
+        - {x: 67, y: 0}
       tessellationDetail: 0
       bones: []
       spriteID: 4c276bb767c70c94784e0b136b0ee748
@@ -6465,7 +6664,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GrasslandTiles_351
+      name: road_rock_center
       rect:
         serializedVersion: 2
         x: 164
@@ -6476,7 +6675,11 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -80, y: -80}
+        - {x: -80, y: 80}
+        - {x: 80, y: 80}
+        - {x: 80, y: -80}
       tessellationDetail: 0
       bones: []
       spriteID: aa4ec85333671404b953ec2ce566b46f
@@ -6485,7 +6688,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GrasslandTiles_352
+      name: road_rock_2
       rect:
         serializedVersion: 2
         x: 326
@@ -6496,7 +6699,13 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -80, y: -80}
+        - {x: -72, y: -2}
+        - {x: -80, y: 80}
+        - {x: 80, y: 80}
+        - {x: 76, y: 2}
+        - {x: 80, y: -80}
       tessellationDetail: 0
       bones: []
       spriteID: 9f8906bdfb013d24a80eec49ccb08e3a
@@ -6505,7 +6714,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GrasslandTiles_353
+      name: road_rock_4
       rect:
         serializedVersion: 2
         x: 488
@@ -6516,7 +6725,12 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -80, y: -80}
+        - {x: -80, y: 80}
+        - {x: 80, y: 80}
+        - {x: 46, y: -6}
+        - {x: 80, y: -80}
       tessellationDetail: 0
       bones: []
       spriteID: 4535775f2e1bdb54dbaf333d894d0804
@@ -6525,7 +6739,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GrasslandTiles_354
+      name: road_rock_6
       rect:
         serializedVersion: 2
         x: 650
@@ -6536,7 +6750,13 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -80, y: -80}
+        - {x: -67, y: 3}
+        - {x: -80, y: 80}
+        - {x: 80, y: 80}
+        - {x: 71, y: 10}
+        - {x: 80, y: -80}
       tessellationDetail: 0
       bones: []
       spriteID: b1084d74e89f3cc4cb6ae0607bc74757
@@ -6545,7 +6765,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GrasslandTiles_355
+      name: road_rock_cnnector_border_corner
       rect:
         serializedVersion: 2
         x: 812
@@ -6556,7 +6776,11 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -80, y: -80}
+        - {x: -80, y: 80}
+        - {x: 80, y: 80}
+        - {x: 80, y: -80}
       tessellationDetail: 0
       bones: []
       spriteID: 21e666234090f0b4394525d296956c33
@@ -6565,7 +6789,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GrasslandTiles_356
+      name: dirt_outter_rorner
       rect:
         serializedVersion: 2
         x: 974
@@ -6585,7 +6809,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GrasslandTiles_357
+      name: dirt_outter_inner_corner
       rect:
         serializedVersion: 2
         x: 1136
@@ -6605,7 +6829,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GrasslandTiles_358
+      name: dirt_corner
       rect:
         serializedVersion: 2
         x: 1298
@@ -6616,7 +6840,11 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -27, y: -25}
+        - {x: -80, y: 80}
+        - {x: 80, y: 80}
+        - {x: 80, y: -80}
       tessellationDetail: 0
       bones: []
       spriteID: 9c7f1a11f62cf0645bac2710d5bac878
@@ -6945,7 +7173,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GrasslandTiles_375
+      name: road_rock_diag
       rect:
         serializedVersion: 2
         x: 2
@@ -6956,7 +7184,11 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -58, y: -62}
+        - {x: -75, y: 73}
+        - {x: 60, y: 55}
+        - {x: 70, y: -75}
       tessellationDetail: 0
       bones: []
       spriteID: f5ee9535e64265f4da990ae6d622a765
@@ -6965,7 +7197,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GrasslandTiles_376
+      name: road_rock_center_without_2_corner_2
       rect:
         serializedVersion: 2
         x: 164
@@ -6976,7 +7208,11 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -80, y: -80}
+        - {x: -80, y: 80}
+        - {x: 80, y: 80}
+        - {x: 80, y: -80}
       tessellationDetail: 0
       bones: []
       spriteID: 4b2506007d1ef4043bb60467139b3d69
@@ -6985,7 +7221,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GrasslandTiles_377
+      name: road_rock_center_without_2_corner
       rect:
         serializedVersion: 2
         x: 326
@@ -6996,7 +7232,11 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -80, y: -80}
+        - {x: -80, y: 80}
+        - {x: 80, y: 80}
+        - {x: 80, y: -80}
       tessellationDetail: 0
       bones: []
       spriteID: db626b79411ae7048aaa144007abfda1
@@ -7005,7 +7245,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GrasslandTiles_378
+      name: road_rock_cnnector_border_corner_mirror_X
       rect:
         serializedVersion: 2
         x: 488
@@ -7016,7 +7256,11 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -80, y: -80}
+        - {x: -80, y: 80}
+        - {x: 80, y: 80}
+        - {x: 80, y: -80}
       tessellationDetail: 0
       bones: []
       spriteID: cad54587b26583947ab88daaadab4659
@@ -7025,7 +7269,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GrasslandTiles_379
+      name: road_rock_center_without_1_corner
       rect:
         serializedVersion: 2
         x: 650
@@ -7036,7 +7280,11 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -80, y: -80}
+        - {x: -80, y: 80}
+        - {x: 80, y: 80}
+        - {x: 80, y: -80}
       tessellationDetail: 0
       bones: []
       spriteID: f67d62fddaa9f9c46bbba4b694153eff
@@ -7045,7 +7293,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GrasslandTiles_380
+      name: road_rock_cnnector_border_corner_2
       rect:
         serializedVersion: 2
         x: 812
@@ -7056,7 +7304,12 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 2, y: -68}
+        - {x: -80, y: -80}
+        - {x: -80, y: 80}
+        - {x: 80, y: 80}
+        - {x: 80, y: -80}
       tessellationDetail: 0
       bones: []
       spriteID: 6daae28300fc02346b74cf1da4771396
@@ -7445,7 +7698,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GrasslandTiles_400
+      name: swamp_grass
       rect:
         serializedVersion: 2
         x: 2
@@ -7465,7 +7718,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GrasslandTiles_401
+      name: swamp_moss_center
       rect:
         serializedVersion: 2
         x: 164
@@ -7485,7 +7738,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GrasslandTiles_402
+      name: swamp_moss_border
       rect:
         serializedVersion: 2
         x: 326
@@ -7505,7 +7758,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GrasslandTiles_403
+      name: swamp_dry_grass_1
       rect:
         serializedVersion: 2
         x: 488
@@ -7525,7 +7778,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GrasslandTiles_404
+      name: swamp_dry_grass_2
       rect:
         serializedVersion: 2
         x: 650
@@ -7545,7 +7798,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GrasslandTiles_405
+      name: swamp_dry_grass_3
       rect:
         serializedVersion: 2
         x: 812
@@ -7565,7 +7818,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GrasslandTiles_406
+      name: shallow_water_border
       rect:
         serializedVersion: 2
         x: 974
@@ -7585,7 +7838,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GrasslandTiles_407
+      name: shallow_water_center
       rect:
         serializedVersion: 2
         x: 1136
@@ -7945,7 +8198,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GrasslandTiles_425
+      name: swamp_moss_border_single
       rect:
         serializedVersion: 2
         x: 2
@@ -7965,7 +8218,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GrasslandTiles_426
+      name: swamp_moss_center_2
       rect:
         serializedVersion: 2
         x: 164
@@ -7985,7 +8238,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GrasslandTiles_427
+      name: swamp_moss_corner
       rect:
         serializedVersion: 2
         x: 326
@@ -8005,7 +8258,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GrasslandTiles_428
+      name: swamp_dry_grass_4
       rect:
         serializedVersion: 2
         x: 488
@@ -8025,7 +8278,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GrasslandTiles_429
+      name: swamp_dry_grass_5
       rect:
         serializedVersion: 2
         x: 650
@@ -8045,7 +8298,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GrasslandTiles_430
+      name: swamp_dry_grass_6
       rect:
         serializedVersion: 2
         x: 812
@@ -8065,7 +8318,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GrasslandTiles_431
+      name: shallow_water_outter_corner
       rect:
         serializedVersion: 2
         x: 974
@@ -8085,7 +8338,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GrasslandTiles_432
+      name: shallow_water_outter_connector
       rect:
         serializedVersion: 2
         x: 1136
@@ -8105,7 +8358,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GrasslandTiles_433
+      name: shallow_water_corner
       rect:
         serializedVersion: 2
         x: 1298
@@ -11945,161 +12198,1281 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tree_1
+      name: GrasslandTiles_17
       rect:
         serializedVersion: 2
-        x: 4008
-        y: 4003
-        width: 88
-        height: 92
+        x: 2756
+        y: 2800
+        width: 160
+        height: 160
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 41ff8e5d472a515478eae01f16ee8707
+      spriteID: 95297a7b8df8e574e9b7fec7209725d1
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tree_2
+      name: GrasslandTiles_18
       rect:
         serializedVersion: 2
-        x: 4019
-        y: 3920
-        width: 77
-        height: 81
+        x: 2918
+        y: 2800
+        width: 160
+        height: 160
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 87c8d9727d8530641804d102ca20b43c
+      spriteID: c2efcd5050980334a98ba16213c629b7
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tree_3
+      name: GrasslandTiles_19
       rect:
         serializedVersion: 2
-        x: 3875
-        y: 3720
-        width: 221
-        height: 198
+        x: 3080
+        y: 2800
+        width: 160
+        height: 160
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4c90023feabc9fe45856b2035f455790
+      spriteID: ea29950eeeaf294498fe634c131df93e
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tree_4
+      name: GrasslandTiles_20
       rect:
         serializedVersion: 2
-        x: 3660
-        y: 3268
-        width: 436
-        height: 448
+        x: 3242
+        y: 2800
+        width: 160
+        height: 160
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b745957934afd946b7ee306dfa6e8af
+      spriteID: 0c3b49e919454f247b2d10f9f59612c3
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tree_4_shadow
+      name: GrasslandTiles_21
       rect:
         serializedVersion: 2
-        x: 3660
-        y: 2820
-        width: 436
-        height: 448
+        x: 3404
+        y: 2800
+        width: 160
+        height: 160
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 453389d02cb6b2d4f9246048205dfa26
+      spriteID: dffac71d046befb4bbc81237f491e5c9
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tree_3_shadow
+      name: GrasslandTiles_22
       rect:
         serializedVersion: 2
-        x: 3654
-        y: 3722
-        width: 221
-        height: 198
+        x: 3566
+        y: 2800
+        width: 160
+        height: 160
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e4bb53b1a3abac24bbee7c3549fde77a
+      spriteID: df1ef4392e2ef704d878131dbec88e68
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tree_2_shadow
+      name: GrasslandTiles_23
       rect:
         serializedVersion: 2
-        x: 3812
-        y: 3918
-        width: 207
-        height: 83
-      alignment: 9
-      pivot: {x: 0.85506654, y: 0.5598828}
+        x: 3728
+        y: 2800
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 77fc14a2b190c9a46950912cd8ef002a
+      spriteID: cef575608cb57a547914e8804c0af2e7
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tree_1_shadow
+      name: GrasslandTiles_24
       rect:
         serializedVersion: 2
-        x: 3755
-        y: 4001
-        width: 253
-        height: 95
-      alignment: 9
-      pivot: {x: 0.6629855, y: 0.48109066}
+        x: 3890
+        y: 2800
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ebeb7c5d5a1891f4385b5d8b45a940d2
+      spriteID: c06447442d01a9f419e048689c23e401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrasslandTiles_42
+      rect:
+        serializedVersion: 2
+        x: 2756
+        y: 2962
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76028b7a9d7b68e47b0c31dca23a2578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrasslandTiles_43
+      rect:
+        serializedVersion: 2
+        x: 2756
+        y: 3124
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cdb8528e13c5ca438795b98c57d6496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrasslandTiles_45
+      rect:
+        serializedVersion: 2
+        x: 2756
+        y: 3286
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0d38427e3e0dbb45b1c8982acc9c272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrasslandTiles_46
+      rect:
+        serializedVersion: 2
+        x: 2756
+        y: 3448
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 117a16e01d5ec4949bd1809eed473884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrasslandTiles_47
+      rect:
+        serializedVersion: 2
+        x: 2756
+        y: 3610
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d273fbd17f0f31c4bac56d127c377d8a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrasslandTiles_48
+      rect:
+        serializedVersion: 2
+        x: 2756
+        y: 3772
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bb45aef3743a15419dc5237418de6f0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrasslandTiles_49
+      rect:
+        serializedVersion: 2
+        x: 2756
+        y: 3934
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36504832a205fdc4282b21ec1110dcbb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrasslandTiles_67
+      rect:
+        serializedVersion: 2
+        x: 2918
+        y: 3934
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a91b1a554127ec40afdcb8e57e218a4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrasslandTiles_68
+      rect:
+        serializedVersion: 2
+        x: 2918
+        y: 3772
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ace1ad2cbcbbc5545a21bc1de2e4922e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrasslandTiles_69
+      rect:
+        serializedVersion: 2
+        x: 2918
+        y: 3610
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2a53931179a6f748ab0b9639e9015bb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrasslandTiles_70
+      rect:
+        serializedVersion: 2
+        x: 2918
+        y: 3448
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6c1238caba02cc48ab4dbe8863604db
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrasslandTiles_71
+      rect:
+        serializedVersion: 2
+        x: 2918
+        y: 3286
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b7a13a0d7b0674498cfb42ab42e7322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrasslandTiles_72
+      rect:
+        serializedVersion: 2
+        x: 2918
+        y: 3124
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 524636569677c474ab075a2f41283154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrasslandTiles_73
+      rect:
+        serializedVersion: 2
+        x: 2918
+        y: 2962
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 589e199792412ce47b50092e9c8b40aa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1
+      rect:
+        serializedVersion: 2
+        x: 3080
+        y: 3934
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41e96feddf858a64497f648ff1320fa2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swamp_road_rock_connector_corner
+      rect:
+        serializedVersion: 2
+        x: 3080
+        y: 3772
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d3f758ded6fcac4da2dfa8da6ffccac
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrasslandTiles_92
+      rect:
+        serializedVersion: 2
+        x: 3080
+        y: 3610
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 595f23aa69cd9874ab771e00fa5c9058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrasslandTiles_93
+      rect:
+        serializedVersion: 2
+        x: 3080
+        y: 3448
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28dd00fe2251a3e4cb96d79e9f9027f5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrasslandTiles_94
+      rect:
+        serializedVersion: 2
+        x: 3080
+        y: 3286
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a78d75d6fa1a96040af8dd9b2c9b2b20
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrasslandTiles_95
+      rect:
+        serializedVersion: 2
+        x: 3080
+        y: 3124
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 423356fd488a3a34cb211a1781d66727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrasslandTiles_96
+      rect:
+        serializedVersion: 2
+        x: 3080
+        y: 2962
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b3002ca27359744ca6110f96bd35e63
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrasslandTiles_97
+      rect:
+        serializedVersion: 2
+        x: 3242
+        y: 2962
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8dcf95187712bd42a31ea88b6ac50f5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrasslandTiles_98
+      rect:
+        serializedVersion: 2
+        x: 3404
+        y: 2962
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3b4e6a55831059478f41ac1e685ae1a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrasslandTiles_99
+      rect:
+        serializedVersion: 2
+        x: 3566
+        y: 2962
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76c7f6aa1350d7f419ff23912faf8a46
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrasslandTiles_117
+      rect:
+        serializedVersion: 2
+        x: 3728
+        y: 2962
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e846d6f1d38bce64a8f3b69a576c1298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrasslandTiles_118
+      rect:
+        serializedVersion: 2
+        x: 3890
+        y: 2962
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e4bf262a01c8484ea178d224a13728a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrasslandTiles_119
+      rect:
+        serializedVersion: 2
+        x: 3890
+        y: 3124
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbf888d5d56b358429c720dafcf0736d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrasslandTiles_120
+      rect:
+        serializedVersion: 2
+        x: 3728
+        y: 3124
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65593c40b02bc5f428295ed73eea3cfd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrasslandTiles_121
+      rect:
+        serializedVersion: 2
+        x: 3566
+        y: 3124
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0f6d8f563c9ac548bf328073fef0134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrasslandTiles_122
+      rect:
+        serializedVersion: 2
+        x: 3404
+        y: 3124
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efe008b70f902284ba59d23b0efa63de
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrasslandTiles_123
+      rect:
+        serializedVersion: 2
+        x: 3242
+        y: 3124
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c45fadf2050be0044a74674c2fa7c356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrasslandTiles_124
+      rect:
+        serializedVersion: 2
+        x: 3242
+        y: 3286
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80e3fdae15dcdb640a3e9c87e21db9f8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrasslandTiles_142
+      rect:
+        serializedVersion: 2
+        x: 3242
+        y: 3448
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c85a5b3485b3dca4c9574e3c538fc37c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrasslandTiles_143
+      rect:
+        serializedVersion: 2
+        x: 3242
+        y: 3610
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfc7bea6ad632ce41b52e830674c3c01
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swamp_road_rock_center
+      rect:
+        serializedVersion: 2
+        x: 3242
+        y: 3772
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b144e53968d5dd74e839056ad95bbf84
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swamp_road_rock_border
+      rect:
+        serializedVersion: 2
+        x: 3242
+        y: 3934
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afaed112db2be7a4292f48e923ceea50
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swamp_road_rock_1
+      rect:
+        serializedVersion: 2
+        x: 3404
+        y: 3934
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aab6e42919d55e743bae0d51c037390f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swamp_road_rock_2
+      rect:
+        serializedVersion: 2
+        x: 3404
+        y: 3772
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8aab4fe2dc5a0f74299a06f0cfdd19f3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrasslandTiles_148
+      rect:
+        serializedVersion: 2
+        x: 3404
+        y: 3610
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9c964cc1fd15844d9f72b6d3ec986ba
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrasslandTiles_149
+      rect:
+        serializedVersion: 2
+        x: 3404
+        y: 3448
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99a48672b74b13b489aa431c78fa5de1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrasslandTiles_167
+      rect:
+        serializedVersion: 2
+        x: 3404
+        y: 3286
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45f7aba2fd0f14f4095ca0032d9d3f8c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrasslandTiles_168
+      rect:
+        serializedVersion: 2
+        x: 3566
+        y: 3286
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e878af3ac7f2a84ca287951a6c7e814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrasslandTiles_169
+      rect:
+        serializedVersion: 2
+        x: 3566
+        y: 3448
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87e26ab10ecb0bc41b9d72eacc976997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrasslandTiles_170
+      rect:
+        serializedVersion: 2
+        x: 3566
+        y: 3610
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69f646f0b2b8e4145aca885f8603360b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swamp_road_rock_4
+      rect:
+        serializedVersion: 2
+        x: 3566
+        y: 3772
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 048691191c9fd5741b61e51f415231e9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swamp_road_rock_3
+      rect:
+        serializedVersion: 2
+        x: 3566
+        y: 3934
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4348151ab10551d4daa34fc9adc36265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swamp_road_rock_5
+      rect:
+        serializedVersion: 2
+        x: 3728
+        y: 3934
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc592ba9df2571b4299c444dc9fad006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swamp_road_rock_6
+      rect:
+        serializedVersion: 2
+        x: 3728
+        y: 3772
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31fa5d187e4ec7f48b744e32c22c7d91
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrasslandTiles_192
+      rect:
+        serializedVersion: 2
+        x: 3728
+        y: 3610
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 968b4a623cd9aa54bbb4760dc3a3391a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrasslandTiles_193
+      rect:
+        serializedVersion: 2
+        x: 3728
+        y: 3448
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6efccfd49b09f89479c83514ccfb9d8e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrasslandTiles_194
+      rect:
+        serializedVersion: 2
+        x: 3728
+        y: 3286
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 647d5406ba106c9498ccd990b193deeb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrasslandTiles_195
+      rect:
+        serializedVersion: 2
+        x: 3890
+        y: 3286
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2638819698c46543a50dc9f237c2e07
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrasslandTiles_196
+      rect:
+        serializedVersion: 2
+        x: 3890
+        y: 3448
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acb18088a90888245a3c00cef9c43435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GrasslandTiles_197
+      rect:
+        serializedVersion: 2
+        x: 3890
+        y: 3610
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3d17e01242de9743885f5e155fa0242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swamp_road_rock_cnnector_border_corner
+      rect:
+        serializedVersion: 2
+        x: 3890
+        y: 3772
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43e06ee39b1a6074083571b112541eab
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: swamp_road_rock_cnnector_border_center
+      rect:
+        serializedVersion: 2
+        x: 3890
+        y: 3934
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 942118829ea6c8f46899e9e311a21565
       vertices: []
       indices: 
       edges: []

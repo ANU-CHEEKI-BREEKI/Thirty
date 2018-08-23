@@ -42,8 +42,23 @@ TextureImporter:
     21300074: tree_2_shadow
     21300076: tree_3_shadow
     21300078: tree_4_shadow
+    21300080: grass_single
+    21300082: grass_single_shadow
+    21300084: grass_multiple
+    21300086: grass_multiple_shadow
+    21300088: bulrash
+    21300090: bulrash_shadow
+    21300092: dead_tree_1
+    21300094: dead_tree_2
+    21300096: dead_tree_1_shadow
+    21300098: dead_tree_2_shadow
+    21300100: stump
+    21300102: fallen_dead_tree_1
+    21300104: fallen_dead_tree_2
+    21300106: fallen_dead_tree_2_mirrored
+    21300108: fallen_dead_tree_1_mirrored
   externalObjects: {}
-  serializedVersion: 5
+  serializedVersion: 6
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -61,6 +76,8 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -71,7 +88,7 @@ TextureImporter:
     serializedVersion: 2
     filterMode: -1
     aniso: -1
-    mipBias: -1
+    mipBias: -100
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -741,7 +758,7 @@ TextureImporter:
         width: 87
         height: 93
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -761,7 +778,7 @@ TextureImporter:
         width: 77
         height: 81
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -781,7 +798,7 @@ TextureImporter:
         width: 221
         height: 198
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -801,7 +818,7 @@ TextureImporter:
         width: 437
         height: 449
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -821,7 +838,7 @@ TextureImporter:
         width: 436
         height: 448
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -841,7 +858,7 @@ TextureImporter:
         width: 221
         height: 198
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -888,6 +905,306 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 79895fecd96fc7a4aad2b7afd04f96eb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass_single
+      rect:
+        serializedVersion: 2
+        x: 1642
+        y: 682
+        width: 84
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7425c898920aca64795960d0c104800a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass_single_shadow
+      rect:
+        serializedVersion: 2
+        x: 1615
+        y: 581
+        width: 111
+        height: 99
+      alignment: 9
+      pivot: {x: 0.6134792, y: 0.48807225}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2166009cecd44946a0c6b6c1fc99b15
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass_multiple
+      rect:
+        serializedVersion: 2
+        x: 1726
+        y: 529
+        width: 322
+        height: 243
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71441ee929e7e33428c4590774d3f282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass_multiple_shadow
+      rect:
+        serializedVersion: 2
+        x: 1711
+        y: 279
+        width: 337
+        height: 250
+      alignment: 9
+      pivot: {x: 0.5672984, y: 0.4752584}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbde530b97dbca64183ed00656cd5e3c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bulrash
+      rect:
+        serializedVersion: 2
+        x: 1786
+        y: 64
+        width: 220
+        height: 202
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebb6bc9d339c939468e5ffd34ba2ad29
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bulrash_shadow
+      rect:
+        serializedVersion: 2
+        x: 1562
+        y: 74
+        width: 214
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d96c736e2f12914abc2aa4ab01ca801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dead_tree_1
+      rect:
+        serializedVersion: 2
+        x: 1675
+        y: 2005
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 194d5ffa1937fad46b3140a3428ba254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dead_tree_2
+      rect:
+        serializedVersion: 2
+        x: 1678
+        y: 1962
+        width: 25
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e8b04f05dd2a404aa429ea7199b4f78
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dead_tree_1_shadow
+      rect:
+        serializedVersion: 2
+        x: 1468
+        y: 1999
+        width: 202
+        height: 48
+      alignment: 9
+      pivot: {x: 0.9720737, y: 0.4455719}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6ae2dab3f3f7cc4889a17573917a1f5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dead_tree_2_shadow
+      rect:
+        serializedVersion: 2
+        x: 1477
+        y: 1944
+        width: 197
+        height: 52
+      alignment: 9
+      pivot: {x: 0.9668148, y: 0.64570034}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4240459ed2bc36a488424a08b520389c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stump
+      rect:
+        serializedVersion: 2
+        x: 978
+        y: 2024
+        width: 28
+        height: 23
+      alignment: 9
+      pivot: {x: 0.66642326, y: 0.5859587}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01aee26ea224cce489b7456431568997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fallen_dead_tree_1
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 1877
+        width: 42
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8696e222619e04b40bb542400a49183c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fallen_dead_tree_2
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 1876
+        width: 44
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6928c972acd63a0499a3d4a3525e139b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fallen_dead_tree_2_mirrored
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 1698
+        width: 38
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec8527f15c8986848b5502598264b005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fallen_dead_tree_1_mirrored
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 1699
+        width: 44
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e62b6790d38760542bf4cb234f13e4f2
       vertices: []
       indices: 
       edges: []
