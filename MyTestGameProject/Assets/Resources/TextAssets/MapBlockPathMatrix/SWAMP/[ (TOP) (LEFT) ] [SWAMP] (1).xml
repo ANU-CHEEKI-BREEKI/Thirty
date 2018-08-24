@@ -28,16 +28,16 @@
       <boolean>true</boolean>
       <boolean>true</boolean>
       <boolean>true</boolean>
+      <boolean>false</boolean>
+      <boolean>false</boolean>
       <boolean>true</boolean>
       <boolean>true</boolean>
       <boolean>true</boolean>
       <boolean>true</boolean>
       <boolean>true</boolean>
-      <boolean>true</boolean>
-      <boolean>true</boolean>
-      <boolean>true</boolean>
-      <boolean>true</boolean>
-      <boolean>true</boolean>
+      <boolean>false</boolean>
+      <boolean>false</boolean>
+      <boolean>false</boolean>
       <boolean>true</boolean>
       <boolean>true</boolean>
       <boolean>true</boolean>
@@ -49,27 +49,10 @@
       <boolean>true</boolean>
       <boolean>true</boolean>
       <boolean>true</boolean>
-      <boolean>true</boolean>
-      <boolean>true</boolean>
-      <boolean>true</boolean>
       <boolean>false</boolean>
       <boolean>false</boolean>
-      <boolean>true</boolean>
-      <boolean>true</boolean>
-      <boolean>true</boolean>
-      <boolean>true</boolean>
-      <boolean>true</boolean>
-      <boolean>true</boolean>
-      <boolean>true</boolean>
-      <boolean>true</boolean>
-      <boolean>true</boolean>
-      <boolean>true</boolean>
-      <boolean>true</boolean>
-      <boolean>true</boolean>
-    </ArrayOfBoolean>
-    <ArrayOfBoolean>
-      <boolean>true</boolean>
-      <boolean>true</boolean>
+      <boolean>false</boolean>
+      <boolean>false</boolean>
       <boolean>true</boolean>
       <boolean>true</boolean>
       <boolean>true</boolean>
@@ -78,12 +61,7 @@
       <boolean>false</boolean>
       <boolean>false</boolean>
       <boolean>false</boolean>
-      <boolean>true</boolean>
-      <boolean>true</boolean>
-      <boolean>true</boolean>
-      <boolean>true</boolean>
-      <boolean>true</boolean>
-      <boolean>true</boolean>
+      <boolean>false</boolean>
       <boolean>true</boolean>
       <boolean>true</boolean>
       <boolean>true</boolean>
@@ -93,6 +71,26 @@
       <boolean>true</boolean>
       <boolean>true</boolean>
       <boolean>true</boolean>
+      <boolean>false</boolean>
+      <boolean>false</boolean>
+      <boolean>false</boolean>
+      <boolean>false</boolean>
+      <boolean>false</boolean>
+      <boolean>false</boolean>
+      <boolean>false</boolean>
+      <boolean>false</boolean>
+      <boolean>false</boolean>
+      <boolean>false</boolean>
+      <boolean>false</boolean>
+      <boolean>false</boolean>
+      <boolean>false</boolean>
+      <boolean>false</boolean>
+      <boolean>false</boolean>
+      <boolean>true</boolean>
+      <boolean>true</boolean>
+    </ArrayOfBoolean>
+    <ArrayOfBoolean>
+      <boolean>true</boolean>
       <boolean>true</boolean>
       <boolean>true</boolean>
       <boolean>true</boolean>
@@ -101,14 +99,38 @@
       <boolean>false</boolean>
       <boolean>false</boolean>
       <boolean>false</boolean>
+      <boolean>false</boolean>
+      <boolean>false</boolean>
+      <boolean>false</boolean>
+      <boolean>false</boolean>
+      <boolean>false</boolean>
+      <boolean>false</boolean>
+      <boolean>false</boolean>
+      <boolean>false</boolean>
+      <boolean>false</boolean>
+      <boolean>false</boolean>
+      <boolean>true</boolean>
+    </ArrayOfBoolean>
+    <ArrayOfBoolean>
+      <boolean>false</boolean>
       <boolean>true</boolean>
       <boolean>true</boolean>
       <boolean>true</boolean>
-      <boolean>true</boolean>
-      <boolean>true</boolean>
-      <boolean>true</boolean>
-      <boolean>true</boolean>
-      <boolean>true</boolean>
+      <boolean>false</boolean>
+      <boolean>false</boolean>
+      <boolean>false</boolean>
+      <boolean>false</boolean>
+      <boolean>false</boolean>
+      <boolean>false</boolean>
+      <boolean>false</boolean>
+      <boolean>false</boolean>
+      <boolean>false</boolean>
+      <boolean>false</boolean>
+      <boolean>false</boolean>
+      <boolean>false</boolean>
+      <boolean>false</boolean>
+      <boolean>false</boolean>
+      <boolean>false</boolean>
       <boolean>true</boolean>
     </ArrayOfBoolean>
     <ArrayOfBoolean>
@@ -116,24 +138,6 @@
       <boolean>false</boolean>
       <boolean>true</boolean>
       <boolean>true</boolean>
-      <boolean>true</boolean>
-      <boolean>false</boolean>
-      <boolean>false</boolean>
-      <boolean>false</boolean>
-      <boolean>false</boolean>
-      <boolean>false</boolean>
-      <boolean>false</boolean>
-      <boolean>false</boolean>
-      <boolean>false</boolean>
-      <boolean>false</boolean>
-      <boolean>false</boolean>
-      <boolean>false</boolean>
-      <boolean>false</boolean>
-      <boolean>true</boolean>
-      <boolean>true</boolean>
-      <boolean>true</boolean>
-    </ArrayOfBoolean>
-    <ArrayOfBoolean>
       <boolean>false</boolean>
       <boolean>false</boolean>
       <boolean>false</boolean>
@@ -149,32 +153,6 @@
       <boolean>false</boolean>
       <boolean>false</boolean>
       <boolean>false</boolean>
-      <boolean>false</boolean>
-      <boolean>false</boolean>
-      <boolean>true</boolean>
-      <boolean>true</boolean>
-      <boolean>true</boolean>
-    </ArrayOfBoolean>
-    <ArrayOfBoolean>
-      <boolean>false</boolean>
-      <boolean>false</boolean>
-      <boolean>false</boolean>
-      <boolean>false</boolean>
-      <boolean>false</boolean>
-      <boolean>false</boolean>
-      <boolean>false</boolean>
-      <boolean>false</boolean>
-      <boolean>false</boolean>
-      <boolean>false</boolean>
-      <boolean>false</boolean>
-      <boolean>false</boolean>
-      <boolean>false</boolean>
-      <boolean>false</boolean>
-      <boolean>false</boolean>
-      <boolean>false</boolean>
-      <boolean>false</boolean>
-      <boolean>false</boolean>
-      <boolean>true</boolean>
       <boolean>true</boolean>
     </ArrayOfBoolean>
     <ArrayOfBoolean>
@@ -278,9 +256,9 @@
       <boolean>false</boolean>
       <boolean>false</boolean>
       <boolean>false</boolean>
-      <boolean>false</boolean>
-      <boolean>false</boolean>
-      <boolean>false</boolean>
+      <boolean>true</boolean>
+      <boolean>true</boolean>
+      <boolean>true</boolean>
       <boolean>false</boolean>
       <boolean>false</boolean>
       <boolean>false</boolean>
@@ -291,7 +269,6 @@
       <boolean>false</boolean>
       <boolean>false</boolean>
       <boolean>false</boolean>
-      <boolean>true</boolean>
       <boolean>false</boolean>
       <boolean>false</boolean>
       <boolean>false</boolean>
@@ -301,27 +278,6 @@
       <boolean>false</boolean>
       <boolean>false</boolean>
       <boolean>false</boolean>
-      <boolean>true</boolean>
-      <boolean>true</boolean>
-      <boolean>true</boolean>
-      <boolean>false</boolean>
-      <boolean>false</boolean>
-      <boolean>true</boolean>
-      <boolean>true</boolean>
-    </ArrayOfBoolean>
-    <ArrayOfBoolean>
-      <boolean>false</boolean>
-      <boolean>false</boolean>
-      <boolean>true</boolean>
-      <boolean>true</boolean>
-      <boolean>false</boolean>
-      <boolean>false</boolean>
-      <boolean>false</boolean>
-      <boolean>false</boolean>
-      <boolean>false</boolean>
-      <boolean>false</boolean>
-      <boolean>false</boolean>
-      <boolean>true</boolean>
       <boolean>true</boolean>
       <boolean>true</boolean>
       <boolean>true</boolean>
@@ -332,10 +288,10 @@
       <boolean>true</boolean>
     </ArrayOfBoolean>
     <ArrayOfBoolean>
-      <boolean>true</boolean>
-      <boolean>true</boolean>
-      <boolean>true</boolean>
-      <boolean>true</boolean>
+      <boolean>false</boolean>
+      <boolean>false</boolean>
+      <boolean>false</boolean>
+      <boolean>false</boolean>
       <boolean>false</boolean>
       <boolean>false</boolean>
       <boolean>false</boolean>
@@ -354,29 +310,7 @@
       <boolean>true</boolean>
     </ArrayOfBoolean>
     <ArrayOfBoolean>
-      <boolean>true</boolean>
-      <boolean>true</boolean>
-      <boolean>true</boolean>
-      <boolean>true</boolean>
       <boolean>false</boolean>
-      <boolean>false</boolean>
-      <boolean>false</boolean>
-      <boolean>false</boolean>
-      <boolean>false</boolean>
-      <boolean>false</boolean>
-      <boolean>false</boolean>
-      <boolean>false</boolean>
-      <boolean>false</boolean>
-      <boolean>false</boolean>
-      <boolean>true</boolean>
-      <boolean>true</boolean>
-      <boolean>true</boolean>
-      <boolean>true</boolean>
-      <boolean>true</boolean>
-      <boolean>true</boolean>
-    </ArrayOfBoolean>
-    <ArrayOfBoolean>
-      <boolean>true</boolean>
       <boolean>true</boolean>
       <boolean>true</boolean>
       <boolean>false</boolean>
@@ -401,6 +335,71 @@
       <boolean>true</boolean>
       <boolean>true</boolean>
       <boolean>true</boolean>
+      <boolean>false</boolean>
+      <boolean>false</boolean>
+      <boolean>false</boolean>
+      <boolean>false</boolean>
+      <boolean>false</boolean>
+      <boolean>false</boolean>
+      <boolean>false</boolean>
+      <boolean>false</boolean>
+      <boolean>false</boolean>
+      <boolean>false</boolean>
+      <boolean>false</boolean>
+      <boolean>false</boolean>
+      <boolean>false</boolean>
+      <boolean>true</boolean>
+      <boolean>true</boolean>
+      <boolean>true</boolean>
+      <boolean>true</boolean>
+    </ArrayOfBoolean>
+    <ArrayOfBoolean>
+      <boolean>true</boolean>
+      <boolean>true</boolean>
+      <boolean>true</boolean>
+      <boolean>false</boolean>
+      <boolean>false</boolean>
+      <boolean>false</boolean>
+      <boolean>false</boolean>
+      <boolean>false</boolean>
+      <boolean>false</boolean>
+      <boolean>false</boolean>
+      <boolean>false</boolean>
+      <boolean>false</boolean>
+      <boolean>false</boolean>
+      <boolean>false</boolean>
+      <boolean>false</boolean>
+      <boolean>false</boolean>
+      <boolean>false</boolean>
+      <boolean>true</boolean>
+      <boolean>true</boolean>
+      <boolean>true</boolean>
+    </ArrayOfBoolean>
+    <ArrayOfBoolean>
+      <boolean>true</boolean>
+      <boolean>true</boolean>
+      <boolean>true</boolean>
+      <boolean>false</boolean>
+      <boolean>false</boolean>
+      <boolean>false</boolean>
+      <boolean>false</boolean>
+      <boolean>false</boolean>
+      <boolean>false</boolean>
+      <boolean>false</boolean>
+      <boolean>false</boolean>
+      <boolean>false</boolean>
+      <boolean>false</boolean>
+      <boolean>false</boolean>
+      <boolean>false</boolean>
+      <boolean>false</boolean>
+      <boolean>true</boolean>
+      <boolean>true</boolean>
+      <boolean>true</boolean>
+      <boolean>true</boolean>
+    </ArrayOfBoolean>
+    <ArrayOfBoolean>
+      <boolean>true</boolean>
+      <boolean>true</boolean>
       <boolean>true</boolean>
       <boolean>true</boolean>
       <boolean>false</boolean>
@@ -413,7 +412,8 @@
       <boolean>false</boolean>
       <boolean>false</boolean>
       <boolean>false</boolean>
-      <boolean>true</boolean>
+      <boolean>false</boolean>
+      <boolean>false</boolean>
       <boolean>true</boolean>
       <boolean>true</boolean>
       <boolean>true</boolean>
@@ -452,5 +452,5 @@
   </WorldPosition>
   <HasExit>false</HasExit>
   <Exit>BOTTOM</Exit>
-  <type>GRASSLAND</type>
+  <type>SWAMP</type>
 </MapBlock>

@@ -453,5 +453,5 @@
   </WorldPosition>
   <HasExit>true</HasExit>
   <Exit>TOP</Exit>
-  <type>GRASSLAND</type>
+  <type>SWAMP</type>
 </MapBlock>

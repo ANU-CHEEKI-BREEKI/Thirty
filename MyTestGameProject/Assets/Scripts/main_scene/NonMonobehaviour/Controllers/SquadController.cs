@@ -66,7 +66,7 @@ public class SquadController
             var rhit = Physics2D.Linecast(
                 start: squadStartPos,
                 end: movePos,
-                layerMask: Ground.Instance.DirectFindPathLayers.value
+                layerMask: Ground.Instance.UnwalkablePathLayers.value
             );
 
             //если на пути по прямой нет препятствий
@@ -134,7 +134,7 @@ public class SquadController
                 0.1f,
                 Vector2.zero,
                 0,
-                Ground.Instance.DirectFindPathLayers
+                Ground.Instance.UnwalkablePathLayers
             );
 
             if (!rhit)
@@ -172,7 +172,7 @@ public class SquadController
                 radius: squad.SQUAD_LENGTH / 2,
                 direction: oldPath[i] - oldPath[current],
                 distance: Vector2.Distance(oldPath[current], oldPath[i]),
-                layerMask: Ground.Instance.DirectFindPathLayers.value
+                layerMask: Ground.Instance.UnwalkablePathLayers.value
             );
 
             if (hit.collider != null)

@@ -9,7 +9,13 @@ public class TerrainStatsModifier : MonoBehaviour
 
     private void Awake()
     {
-        GetComponent<Collider2D>().isTrigger = true;
+        //это всё на случай если я забываю выставить все настройки в редакторе. т.к. вложенных перфабов ещё нет и всё херится
+
+        var cols = GetComponents<Collider2D>();
+        foreach (var col in cols)
+            col.isTrigger = true;
+
+        gameObject.layer = 0;//default layer
     }
     
     private void OnTriggerEnter2D(Collider2D collision)

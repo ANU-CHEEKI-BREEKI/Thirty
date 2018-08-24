@@ -5,12 +5,17 @@ using System.IO;
 using System.Text;
 using UnityEngine;
 
+[ExecuteInEditMode]
 public class Ground : MonoBehaviour
 {
     public enum GroundType { GRASSLAND, SWAMP }
 
     public const string PATH_TO_PREFABS = @"Prefabs\MapBlocks\";
     public const string PATH_TO_GRIDS = @"TextAssets\MapBlockPathMatrix\";
+    public static string PATH_TO_BLOCK_OF_TYPE (GroundType type)
+    {
+        return type + @"\";
+    }
 
     static public Ground Instance { get; private set; }
 
@@ -18,7 +23,7 @@ public class Ground : MonoBehaviour
     /// 
     /// </summary>
     [SerializeField] LayerMask directFindPathLayers;
-    public LayerMask DirectFindPathLayers { get { return directFindPathLayers; } }
+    public LayerMask UnwalkablePathLayers { get { return directFindPathLayers; } }
 
     [SerializeField] int rowCountOfBlocks = 5;
     public int RowCountOfBlocks { get { return rowCountOfBlocks; } }
@@ -64,6 +69,7 @@ public class Ground : MonoBehaviour
     public event Action OnGenerationDone;
     public event Action OnRecalcByCurrentBlocks;
 
+    [ContextMenu("Init")]
     private void Awake()
     {
         Instance = this;
@@ -90,7 +96,7 @@ public class Ground : MonoBehaviour
         progress = 0;
 
         blockContainers = new List<SameBlocksContainer>();
-        TextAsset[] textAssets = Resources.LoadAll<TextAsset>(PATH_TO_GRIDS);
+        TextAsset[] textAssets = Resources.LoadAll<TextAsset>(PATH_TO_GRIDS + PATH_TO_BLOCK_OF_TYPE(GameManager.Instance.CurrentLevel.GroundType));
         StringReader fstream;
         int cnt = textAssets.Length;
 
@@ -539,7 +545,7 @@ public class Ground : MonoBehaviour
             position.y + MapBlock.WORLD_BLOCK_SIZE / 2// - MapBlock.BLOCK_SCALE / 2
         );
 
-        GameObject go = Resources.Load(PATH_TO_PREFABS + name) as GameObject;
+        GameObject go = Resources.Load(PATH_TO_PREFABS + PATH_TO_BLOCK_OF_TYPE(GameManager.Instance.CurrentLevel.GroundType) + name) as GameObject;
         go.layer = gameObject.layer;
 
         return Instantiate(go, position, Quaternion.identity, gameObject.transform).GetComponent<GroundBlock>();

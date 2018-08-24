@@ -15,7 +15,7 @@ public class GroundBlock : MonoBehaviour
     /// </summary>
     void RewriteFileFromCorrentBlockState()
     {
-        string path = @"Assets\Resources\" + Ground.PATH_TO_GRIDS + name + ".xml";
+        string path = @"Assets\Resources\" + Ground.PATH_TO_GRIDS + Ground.PATH_TO_BLOCK_OF_TYPE(block.type) + name + ".xml";
 
         block.Grid = new bool[MapBlock.BLOCK_SIZE][];
         for (int row = 0; row < MapBlock.BLOCK_SIZE; row++)
@@ -61,7 +61,7 @@ public class GroundBlock : MonoBehaviour
                 var layer = ll.GetChild(i);
                 var collider = layer.GetComponent<TilemapCollider2D>();
                 //если нашли нужный, то проходим по всем ясейкам и записываем в массив. а потом и в соответствующий файл
-                if (collider != null)
+                if (collider != null && ((1 << collider.gameObject.layer) & Ground.Instance.UnwalkablePathLayers.value) != 0)
                 {
                     var tilemap = layer.GetComponent<Tilemap>();
                     CalcMatrix(ref block, tilemap);
@@ -92,7 +92,7 @@ public class GroundBlock : MonoBehaviour
     [ContextMenu("LoadBlockStateFromFile")]
     public void LoadBlockStateFromFile()
     {
-        string path = Ground.PATH_TO_GRIDS + name;
+        string path = Ground.PATH_TO_GRIDS + Ground.PATH_TO_BLOCK_OF_TYPE(block.type) + name;
         var ta = Resources.Load<TextAsset>(path);
         using (var fstream = new StringReader(ta.text))
             block = Tools.FileManagement.Deserialize(fstream);
@@ -105,7 +105,7 @@ public class GroundBlock : MonoBehaviour
         blc = block;
         if (blc.Grid == null)
         {
-            string path = @"Assets\Resources\" + Ground.PATH_TO_GRIDS + name + ".xml";
+            string path = @"Assets\Resources\" + Ground.PATH_TO_GRIDS + Ground.PATH_TO_BLOCK_OF_TYPE(block.type) + name + ".xml";
             blc = Tools.FileManagement.Deserialize(path);
         }
 

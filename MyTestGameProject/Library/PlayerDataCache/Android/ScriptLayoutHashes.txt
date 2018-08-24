@@ -1,6 +1,6 @@
 Android
 PlayerPath?
-C:/Users/ANU CHEEKI BREEKI/Desktop/Thirty.v.0.9.2ad.apk
+C:/Users/ANU CHEEKI BREEKI/Desktop/Thirty.v.0.10a.apk
 SceneListBegin?
 Assets/Scenes/main_menu.unity
 Assets/Scenes/market.unity
@@ -201,6 +201,7 @@ da8ce595210cf654e9ec167a6bdd8f68 Assembly-CSharp.dll:.ConsumablePilumsVolley
 3d3a19b897cfa96e5be83b0e978002eb Assembly-CSharp.dll:.StatsUpgrade
 762cc5c1b35e1c889059192f4b978a4b Assembly-CSharp.dll:UnityEngine.Tilemaps.AnimatedTile
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.DeathScreen
+486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.poly
 4c7f826cd370320c29d92912db7b8ab3 Assembly-CSharp.dll:.SOStatsModifier
 d82f16572c6640fc3a4a26ce7d7e1294 Assembly-CSharp.dll:.SOSoundContainer
 4b5f476c631072365065d75889164b71 Assembly-CSharp.dll:.NumberPickerDialogBox
@@ -227,6 +228,7 @@ c6f75232b982399b580e43fab9055486 Assembly-CSharp.dll:.ActivateOnTriggerEnter
 885b1ca41383b3d55ffde126b4557bd2 Assembly-CSharp.dll:.BuyTheGold
 ef8031899138048148ae72ff156153a9 Assembly-CSharp.dll:.TriggerConstraintGOInside
 3d56127603763e9d0ae41ec279e805c3 Assembly-CSharp.dll:.SquadWeight
+486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.SetAllWaterOutterToDefaultPhysicLayer
 081d80e157c81f73207a2f5b69a3e4ce Assembly-CSharp.dll:.HealthBar
 f3349bd07db89d1067b8398fe4341bba Assembly-CSharp.dll:.SoundManager
 486cd95c82d8305219c352c06b776e1f TextMeshPro-2017.3-1.0.56-Editor.dll:TMPro.EditorUtilities.DropdownEditor
@@ -325,6 +327,7 @@ c80e12df7ae7e8b80cfa5dc25712677e Assembly-CSharp.dll:.SquadConsumableInventoryUI
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.FadeScreen
 ac15557c80fae91a3d2b420f48cf1531 Assembly-CSharp.dll:.SquadInfoPanel
 0a006f3734181ba8b26758f0866152c0 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
+486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.SetAllTileCollidersToUseByComposite
 f92d59d83f3d407fab414283b1deb11c Assembly-CSharp.dll:.SquadSkillsInventoryUI
 9d52ecb7b1925f6532f68ea4d3d8afe9 Assembly-CSharp.dll:.ShowAllyUnitsHp
 7e765b0246d5c21da6c6fe624b1ba58b Assembly-CSharp.dll:.SOTip

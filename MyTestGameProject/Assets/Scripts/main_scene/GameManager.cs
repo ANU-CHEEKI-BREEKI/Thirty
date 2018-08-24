@@ -396,7 +396,7 @@ public class GameManager : MonoBehaviour
         /// <summary>
         /// Максимальное количество уровней на одном типе уровней
         /// </summary>
-        public int MaxLevel { get { return 10; } }
+        public int MaxLevel { get { return 3; } }
         /// <summary>
         /// Текущий уровень включая все уровни всех типов (типа сквозная нумерация)
         /// </summary>
