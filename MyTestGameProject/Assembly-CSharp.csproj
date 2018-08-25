@@ -82,6 +82,7 @@
     <Compile Include="Assets\Scripts\main_scene\Controllers\UnitAnimationController.cs" />
     <Compile Include="Assets\Scripts\main_scene\DebugCunvas.cs" />
     <Compile Include="Assets\Scripts\main_scene\DestroyOnAwake.cs" />
+    <Compile Include="Assets\Scripts\main_scene\DestroyOnAwakeAllAndStayOne.cs" />
     <Compile Include="Assets\Scripts\main_scene\DestroyOnAwakeWithChanse.cs" />
     <Compile Include="Assets\Scripts\main_scene\DropIemsOnBreakDurabilityable.cs" />
     <Compile Include="Assets\Scripts\main_scene\DropingItemsManager.cs" />
