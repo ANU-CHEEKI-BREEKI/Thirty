@@ -116,6 +116,7 @@
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\AIExecutableBehaviours\AExecutableBehaviour.cs" />
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\AIExecutableBehaviours\ConsumableBehaviours\PilumsVolleyBehaviour.cs" />
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\AIExecutableBehaviours\ExecutableBehaviourFactory.cs" />
+    <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\AIExecutableBehaviours\SkillsBehaviours\ArrowVolleyBehaviour.cs" />
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\AIExecutableBehaviours\SkillsBehaviours\SkillChargeBehaviour.cs" />
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\AStack.cs" />
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\ConsumableStack.cs" />

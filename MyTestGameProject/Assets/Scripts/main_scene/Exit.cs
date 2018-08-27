@@ -61,6 +61,7 @@ public class Exit : MonoBehaviour
         while(cg.alpha != 1)
             yield return null;
 
+        GameManager.Instance.PlayerProgress.Score.ApplyTempValues();
         GameManager.Instance.LoadMarket();
     }
 

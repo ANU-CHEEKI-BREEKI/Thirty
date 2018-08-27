@@ -78,8 +78,7 @@ public class GameManager : MonoBehaviour
 
             BeforeLoadLevel += (a, b) =>
             {
-                if (a == SceneIndex.MAIN_MENU)
-                    ResetPlayerNonmoneyScore();
+                ResetPlayerTempScore();
                 playerProgress.Save();
 
                 SoundManager.Instance.StopPlayingChannel(SoundManager.SoundType.MUSIC, 1.5f);
@@ -172,13 +171,9 @@ public class GameManager : MonoBehaviour
         playerProgress.Load();
     }
 
-    /// <summary>
-    /// Золото сбрасывать НЕЛЬЗЯ !!! Это покупная валюта!
-    /// </summary>
-    public void ResetPlayerNonmoneyScore()
+    public void ResetPlayerTempScore()
     {
-        playerProgress.Score.expirience.Value = 0;
-        playerProgress.Score.silver.Value = 0;
+        playerProgress.Score.ResetTempValues();
     }
 
     void OnUnhendeledException(string condition, string stackTrace, LogType type)
@@ -199,7 +194,7 @@ public class GameManager : MonoBehaviour
     {
         settings.Save();
 
-        ResetPlayerNonmoneyScore();
+        ResetPlayerTempScore();
 
         playerProgress.Save();
     }

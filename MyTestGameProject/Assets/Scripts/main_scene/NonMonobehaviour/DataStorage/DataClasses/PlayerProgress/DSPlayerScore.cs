@@ -10,6 +10,10 @@ public class DSPlayerScore : ISavable, IResetable
     public Score silver;
     public Score expirience;
 
+    public Score tempGold;
+    public Score tempSilver;
+    public Score tempExpirience;
+
     public void Save()
     {
         GameManager.Instance.SavingManager.SaveData<DSPlayerScore>(this.GetType().Name, this);
@@ -24,11 +28,29 @@ public class DSPlayerScore : ISavable, IResetable
             f.SetValue(this, f.GetValue(g));
     }
 
+    public void ApplyTempValues()
+    {
+        gold.Value += tempGold.Value;
+        silver.Value += tempSilver.Value;
+        expirience.Value += tempExpirience.Value;
+
+        ResetTempValues();
+    }
+
+    public void ResetTempValues()
+    {
+        tempGold.Value = 0;
+        tempSilver.Value = 0;
+        tempExpirience.Value = 0;
+    }
+
     public void Reset()
     {
         gold.Value = 0;
         silver.Value = 0;
         expirience.Value = 0;
+
+        ResetTempValues();
     }
 
     /// <summary>

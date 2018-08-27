@@ -68,8 +68,10 @@ public class ArrowsValley : MonoBehaviour
         Destroy(gameObject);
     }
 
-    public void Init(Vector2 position, Damage damage, float radius, int countOfArrows, Squad owner = null)
+    public void Init(Vector2 position, Damage damage, float radius, int countOfArrows, Squad owner = null, float dalayBeforeWarningValley = 2)
     {
+        this.dalayBeforeWarningValley = dalayBeforeWarningValley;
+
         transform.position = position - (Vector2)endPoint.position;
 
         this.damage = damage;

@@ -16,7 +16,9 @@ public static class StringFormats
     public const string intSignNumber = "+0.;-0.";
     public const string intSignNumberPercent = "+0.%;-0.%";
     public const string intSeparatorNumber = "#,0";
+    public const string intSeparatorSignNumber = "+#,0;-#,0";
 
     public static readonly NumberFormatInfo nfi = new NumberFormatInfo { NumberGroupSeparator = " " };
+    public static readonly NumberFormatInfo nfiSign = new NumberFormatInfo { NumberGroupSeparator = " ", PositiveSign = "+", NegativeSign = "-" };
 
 }

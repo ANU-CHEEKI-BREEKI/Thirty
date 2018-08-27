@@ -17,7 +17,8 @@ public static class ExecutableBehaviourFactory
     {
         if (stack.Skill is SkillCharge)
             return new SkillChargeBehaviour(controller, stack);
-
+        else if (stack.Skill is SkillArrowsValley)
+            return new ArrowVolleyBehaviour(controller, stack);
         else
             return null;
     }

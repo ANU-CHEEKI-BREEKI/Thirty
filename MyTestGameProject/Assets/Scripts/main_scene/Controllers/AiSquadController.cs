@@ -158,7 +158,10 @@ public class AiSquadController : MonoBehaviour
       
     void SetFormation()
     {
-        if (canGo)
+        //if (canGo)
+        //{
+
+        if (mode == AiSquadBehaviour.ATTACK)
         {
             if (distanceToPlayer > squad.Inventory.Weapon.EquipmentStats.AttackDistance + 3)
             {
@@ -171,6 +174,20 @@ public class AiSquadController : MonoBehaviour
                     formationChangedCoroutine = StartCoroutine(SetFormationLate(reformOptions.ReformLatency, FormationStats.Formations.PHALANX));
             }
         }
+        else if(mode == AiSquadBehaviour.DEFEND)
+        {
+            if(attackPlayer)
+            {
+                if (reformOptions.CanReformPhalanx && formationChangedCoroutine == null && squad.CurrentFormation != FormationStats.Formations.PHALANX)
+                    formationChangedCoroutine = StartCoroutine(SetFormationLate(reformOptions.ReformLatencyInDefendMode, FormationStats.Formations.PHALANX));
+            }
+            else
+            {
+                if (reformOptions.CanReformRanks && formationChangedCoroutine == null && squad.CurrentFormation != FormationStats.Formations.RANKS)
+                    formationChangedCoroutine = StartCoroutine(SetFormationLate(reformOptions.ReformLatencyInDefendMode, FormationStats.Formations.RANKS));
+            }
+        }
+            
     }
 
     IEnumerator SetFormationLate(float latency, FormationStats.Formations formation)
@@ -389,6 +406,9 @@ public class AiSquadController : MonoBehaviour
         [Tooltip("Задержка перед перестроением")]
         [SerializeField] float reformLatency;
         public float ReformLatency { get { return reformLatency; } }
+        [Tooltip("Задержка перед перестроением в режиме защиты")]
+        [SerializeField] float reformLatencyInDefendMode;
+        public float ReformLatencyInDefendMode { get { return reformLatencyInDefendMode; } }
 
         [Space]
         [SerializeField] bool canReformRanks;

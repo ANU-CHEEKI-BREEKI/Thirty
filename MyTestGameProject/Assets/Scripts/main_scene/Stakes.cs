@@ -20,6 +20,8 @@ public class Stakes : MonoBehaviour
 
     bool canDamage = false;
 
+    public Squad owner = null;
+
     private void Awake()
     {
         if (damagingTickRate < damagingDuration)
@@ -88,7 +90,7 @@ public class Stakes : MonoBehaviour
 
     void HitUnit(Unit unit, Damage damage)
     {
-        unit.TakeHit(damage);
+        unit.TakeHit(damage, owner: owner);
 
         if (durabilityble != null)
             durabilityble.TakeDamage(damage.BaseDamage);

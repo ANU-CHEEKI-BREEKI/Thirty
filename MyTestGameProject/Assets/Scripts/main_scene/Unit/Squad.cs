@@ -45,6 +45,24 @@ public class Squad : MonoBehaviour
         }
     }
 
+    public Vector2 Direction
+    {
+        get
+        {
+            return Rotation * Vector2.up;
+        }
+    }
+    public Quaternion Rotation
+    {
+        get
+        {
+            var rot = PositionsTransform.rotation;
+            if (flipRotation)
+                rot *= Quaternion.Euler(0, 0, 180);
+            return rot;
+        }
+    }
+
     [Header("Squad default properties")]
     [SerializeField] [Range(1, 100)] int fullSquadUnitCount = 30;
     public int FULL_SQUAD_UNIT_COUNT { get { return fullSquadUnitCount; } set { fullSquadUnitCount = value; } }
@@ -57,7 +75,7 @@ public class Squad : MonoBehaviour
     /// </summary>
     [SerializeField] float distanceToCenterSquad = 10;
     [Space]
-    [SerializeField] [Range(1, 10)] float maxSpeed = 4;
+    float maxSpeed = 4;
     public float MaxSpeed { get { return maxSpeed; } }
     [SerializeField] [Range(1, 180)] float maxRotationSpeed = 50;
     public float MaxRotationSpeed { get { return maxRotationSpeed; } }
@@ -211,6 +229,9 @@ public class Squad : MonoBehaviour
                 OnInFightFlagChanged(value);
         }
     }
+
+    bool isMoving = false;
+    public bool IsMoving { get { return isMoving; } }
 
     [Space]
     Vector2 centerSquad;
@@ -716,7 +737,9 @@ public class Squad : MonoBehaviour
     }
     
     void Moving()
-    {    
+    {
+        isMoving = false;
+
         switch (CurrentFormation)
         {
             case FormationStats.Formations.RANKS:
@@ -1317,6 +1340,7 @@ public class Squad : MonoBehaviour
     void MoveTo(Vector2 position)
     {
         PositionsTransform.position = Vector2.MoveTowards(PositionsTransform.position, position, CurrentSpeed * Time.deltaTime);
+        isMoving = true;
     }
 
     /// <summary>

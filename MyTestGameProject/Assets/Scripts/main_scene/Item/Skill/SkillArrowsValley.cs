@@ -7,17 +7,20 @@ using static Description;
 public class SkillArrowsValley : Skill
 {
     [Serializable]
-    public struct ArrowWalleyStats : ISkillRadiusable, ISkillLockable, ISkillCooldownable, IDescriptionable
+    public struct ArrowWalleyStats : ISkillRadiusable, ISkillLockable, ISkillCooldownable, IDescriptionable, ISkillDelayable
     {
         public Damage damage;
         [Range(5, 10)] public float radius;
         [Range(50, 500)] public int countOfArrows;
         [Range(0, 1080)] public float cooldown;
+        public float delay;
         public bool unlocked;
 
         public float Radius { get { return radius; } }
         public bool Unlocked { get { return unlocked; } }
         public float Cooldown { get { return cooldown; } }
+
+        public float Delay { get { return delay; } }
 
         public Description GetDescription()
         {
@@ -75,7 +78,7 @@ public class SkillArrowsValley : Skill
                 stats = this.stats;
 
             ArrowsValley valley = Instantiate(origin, Vector2.zero, castRotation);
-            valley.Init(castPosition, stats.damage, stats.radius, stats.countOfArrows, owner);
+            valley.Init(castPosition, stats.damage, stats.radius, stats.countOfArrows, owner, stats.delay);
             valley.StartValley();
         }
         return res;

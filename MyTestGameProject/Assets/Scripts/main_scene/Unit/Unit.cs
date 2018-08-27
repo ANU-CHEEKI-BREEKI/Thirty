@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Unit : MonoBehaviour
 {
@@ -1255,7 +1256,7 @@ public class Unit : MonoBehaviour
     /// </summary>
     /// <param name="damage">урон</param>
     /// <param name="fromBack">если удар наносится в спину, то броня щита не будет учтена</param>
-    public void TakeHit(Damage damage, bool fromBack = false)
+    public void TakeHit(Damage damage, bool fromBack = false, Squad owner = null)
     {
         if (IsAlive)
         {
@@ -1266,7 +1267,7 @@ public class Unit : MonoBehaviour
             if (dmg < damage.ArmourDamage)
                 dmg = damage.ArmourDamage;
 
-            TakeDamage(dmg, null);
+            TakeDamage(dmg, owner);
         }
     }
 
@@ -1306,8 +1307,8 @@ public class Unit : MonoBehaviour
     /// <param name="owner">Вгар, который нанес урон</param>
     void AfterTakingDamage(float dmg, Squad owner)
     {
-        if (squad != Squad.playerSquadInstance && owner == Squad.playerSquadInstance)
-            GameManager.Instance.PlayerProgress.Score.expirience.Value += (int)dmg;
+        if (squad != Squad.playerSquadInstance && owner == Squad.playerSquadInstance && SceneManager.GetActiveScene().buildIndex == (int)GameManager.SceneIndex.LEVEL)
+            GameManager.Instance.PlayerProgress.Score.tempExpirience.Value += (int)dmg;
 
         bool friendlyfire = false;
         if (gameObject.layer != LayerMask.NameToLayer("ENEMY") && 
@@ -1389,10 +1390,8 @@ public class Unit : MonoBehaviour
             PopUpTextController.Instance.AddTextLabel(
                 text,
                 ThisTransform.position,
-                2,
-                new Vector2(0, 2),
-                color,
-                endColor
+                startColor: color,
+                endColor: endColor
             );
         }
     }
