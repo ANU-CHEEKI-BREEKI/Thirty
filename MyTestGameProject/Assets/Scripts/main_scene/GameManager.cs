@@ -78,7 +78,7 @@ public class GameManager : MonoBehaviour
 
             BeforeLoadLevel += (a, b) =>
             {
-                ResetPlayerTempScore();
+                ResetPlayerTempProgressValues();
                 playerProgress.Save();
 
                 SoundManager.Instance.StopPlayingChannel(SoundManager.SoundType.MUSIC, 1.5f);
@@ -171,9 +171,14 @@ public class GameManager : MonoBehaviour
         playerProgress.Load();
     }
 
-    public void ResetPlayerTempScore()
+    public void ResetPlayerTempProgressValues()
     {
-        playerProgress.Score.ResetTempValues();
+        playerProgress.ResetTempValues();
+    }
+
+    public void ApplyPlayerTempProgressValues()
+    {
+        playerProgress.ApplyTempValues();
     }
 
     void OnUnhendeledException(string condition, string stackTrace, LogType type)
@@ -194,7 +199,7 @@ public class GameManager : MonoBehaviour
     {
         settings.Save();
 
-        ResetPlayerTempScore();
+        ResetPlayerTempProgressValues();
 
         playerProgress.Save();
     }

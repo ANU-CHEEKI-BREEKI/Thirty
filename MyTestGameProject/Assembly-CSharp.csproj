@@ -127,8 +127,10 @@
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\DataStorage\DataClasses\GraphixSettings.cs" />
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\DataStorage\DataClasses\IResetable.cs" />
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\DataStorage\DataClasses\ISaveble.cs" />
+    <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\DataStorage\DataClasses\ITempValuesApplyable.cs" />
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\DataStorage\DataClasses\PlayerProgress.cs" />
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\DataStorage\DataClasses\PlayerProgress\DSFlags.cs" />
+    <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\DataStorage\DataClasses\PlayerProgress\DSPlayerEquipment.cs" />
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\DataStorage\DataClasses\PlayerProgress\DSPlayerScore.cs" />
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\DataStorage\DataClasses\PlayerProgress\DSPlayerSkill.cs" />
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\DataStorage\DataClasses\PlayerProgress\DSPlayerSkills.cs" />
@@ -184,6 +186,7 @@
     <Compile Include="Assets\Scripts\main_scene\SpriteOutline.cs" />
     <Compile Include="Assets\Scripts\main_scene\SquadMask.cs" />
     <Compile Include="Assets\Scripts\main_scene\Stakes.cs" />
+    <Compile Include="Assets\Scripts\main_scene\TempValuesEndLevelScreen.cs" />
     <Compile Include="Assets\Scripts\main_scene\TerrainHeight.cs" />
     <Compile Include="Assets\Scripts\main_scene\TerrainStatsModifier.cs" />
     <Compile Include="Assets\Scripts\main_scene\TerrainWalker.cs" />
@@ -207,6 +210,7 @@
     <Compile Include="Assets\Scripts\main_scene\UI\Inventory\DropToSkill.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\Inventory\DropToSkillMarket.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\Inventory\EnvirinmantInventoryUI.cs" />
+    <Compile Include="Assets\Scripts\main_scene\UI\Inventory\FillMarketInventory.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\Inventory\GridLayoutCellWidth.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\Inventory\HideTipsPanel.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\Inventory\InventoryCellUI.cs" />
@@ -218,7 +222,9 @@
     <Compile Include="Assets\Scripts\main_scene\UI\Inventory\SquadSkillsInventoryUI.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\Inventory\StatsBlock.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\Inventory\StatsPanelUI.cs" />
+    <Compile Include="Assets\Scripts\main_scene\UI\IUIItemPresenter.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\MainMenu.cs" />
+    <Compile Include="Assets\Scripts\main_scene\UI\MarketScene\AllowedEquipmantPanel.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\MarketScene\BuyTheGold.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\MarketScene\CallConverterNumberPicker.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\MarketScene\CustomButton.cs" />
@@ -248,6 +254,7 @@
     <Compile Include="Assets\Scripts\main_scene\UI\SquadMainInfoUI\SquadInfoPanel.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\SquadMainInfoUI\SquadWeight.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\SquadPropertyIndicator.cs" />
+    <Compile Include="Assets\Scripts\main_scene\UI\TempAllowedEquipmentItemUI.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\TipsPanel.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\ToAnotherSceneButton.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\Toast.cs" />

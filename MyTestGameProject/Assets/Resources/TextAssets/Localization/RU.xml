@@ -137,7 +137,12 @@
   <string name = "executable_use_type_drag_drop_place">Перетянуть и отпустить</string>
   <string name = "executable_use_type_drag_direction">Перетянуть в направлении</string>
 
-
+  <string name = "_continue">Продолжить</string>
+  <string name = "your_money_and_exp">Заработанные деньги и очки опыта</string>
+  <string name = "allowed_equipmant">Открытое снаряжение:</string>
+  <string name = "allowed_equipmant_tooltip">Теперь данное снаряжение будет всегда доступно для покупки в магазине</string>
+  <string name = "allowed_equipmant_none_tooltip">Вы не открыли нового снаряжения :(</string>
+  
   <string name = "equipment_body_chainmail_name">Простая кольчуга</string>
   <string name = "equipment_body_chainmail_description">Простая кольчуга. Легкая, защищает от порезов, но прошивается стрелами насквозь, что заставляет ее хозяина рваться в ближний бог, где стрелы, скорее всего, его не достанут. </string>
   <string name = "equipment_body_linotorax_name">Обычный линоторакс</string>

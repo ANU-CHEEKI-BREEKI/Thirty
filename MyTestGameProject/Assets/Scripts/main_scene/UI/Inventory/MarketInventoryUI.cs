@@ -10,17 +10,8 @@ public class MarketInventoryUI : AInventoryUI
     [Space]
     [Tooltip("Родительский объект для ячеек предметов. КРОМЕ ячеек внем не должно быть НИЧЕГО.")]
     [SerializeField] Transform itemsContainer;
-
-    [Header("Автозаполнение магазина")]
-    [SerializeField] bool autoFillMarket = true;
-    [SerializeField] Equipment[] originalEquipment;
-    [Space]
-    [SerializeField] AnimationCurve dependanceOfGameLevel;
-    [SerializeField] int minLevel = 1;
-    [SerializeField] int maxLevel = 20;
-    
+        
     List<Transform> items;
-
     List<EquipmentStack> inventory;
 
     public bool Fill { get { return inventory.Count == items.Count; } }
@@ -42,7 +33,6 @@ public class MarketInventoryUI : AInventoryUI
 
     private void Start()
     {
-        AutoFill();
         RefreshUI();
     }
 
@@ -125,32 +115,5 @@ public class MarketInventoryUI : AInventoryUI
             txt.text = drag.EquipStack.Count.ToString();
         }
         return go;
-    }
-
-    void AutoFill()
-    {
-        int cnt = originalEquipment.Length;
-
-        int cnt2 = itemsContainer.childCount - 6;
-        for(int i = 0; i < cnt2; i++)
-        {
-            Equipment eq = originalEquipment[Random.Range(0, cnt)];
-            EquipmentStats qs = eq.Stats;
-
-            int r = Random.Range(0, 3);
-            if(r == 0)
-            {
-                qs.ItemDurability = EquipmentStats.Durability.NEW;
-            }else if(r == 1)
-            {
-                qs.ItemDurability = EquipmentStats.Durability.DAMAGED;
-            }
-            else if(r == 2)
-            {
-                qs.ItemDurability = EquipmentStats.Durability.WORN;
-            }
-            EquipmentStack eqs = new EquipmentStack(eq.MainPropertie, qs, Random.Range(10, 100));
-            AddToInventory(eqs);
-        }
     }
 }

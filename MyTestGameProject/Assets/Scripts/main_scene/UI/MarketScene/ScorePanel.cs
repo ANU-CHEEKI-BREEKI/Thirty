@@ -8,17 +8,16 @@ using TMPro;
 public class ScorePanel : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI gold;
-    [SerializeField] bool isTempGoldVal;
-    [Space]
     [SerializeField] TextMeshProUGUI silver;
-    [SerializeField] bool isTempSilverVal;
-    [Space]
     [SerializeField] TextMeshProUGUI expirience;
-    [SerializeField] bool isTempExpirienceVal;
     [Space]
-    [SerializeField] bool scaledDeltaTimeInPopUpTextController;
+    [SerializeField] public bool scaledDeltaTimeInPopUpTextController;
     [Space]
-    [SerializeField] float summTextTime = 1;
+    [SerializeField] bool isTempValues;
+    [Space]
+    [SerializeField] public float summTextTime = 1;
+    [SerializeField] public Vector2 popUpTextSpeed = new Vector2(.5f, -1);
+    [SerializeField] public float  popUpTextLifetime = 0.75f;
 
     Coroutine goldCo = null;
     Coroutine silvCo = null;
@@ -42,53 +41,10 @@ public class ScorePanel : MonoBehaviour
         tempGold = new T();
         tempSilv = new T();
         tempExp = new T();
-    }
 
-    void Start()
-    {
         var score = GameManager.Instance.PlayerProgress.Score;
 
-        if (gold != null)
-        {
-            if (!isTempGoldVal)
-            {
-                score.gold.OnValueChanged += RefreshByEventGold;
-                RefreshByEventGold(score.gold.Value, score.gold.Value, score.gold);
-            }
-            else
-            {
-                score.tempGold.OnValueChanged += RefreshByEventGold;
-                RefreshByEventGold(score.tempGold.Value, score.tempGold.Value, score.tempGold);
-            }
-        }
-
-        if (silver != null)
-        {
-            if (!isTempSilverVal)
-            {
-                score.silver.OnValueChanged += RefreshByEventSilver;
-                RefreshByEventSilver(score.silver.Value, score.silver.Value, score.silver);
-            }
-            else
-            {
-                score.tempSilver.OnValueChanged += RefreshByEventSilver;
-                RefreshByEventSilver(score.tempSilver.Value, score.tempSilver.Value, score.tempSilver);
-            }
-        }
-
-        if (expirience != null)
-        {
-            if (!isTempSilverVal)
-            {
-                score.expirience.OnValueChanged += RefreshByEventExpirience;
-                RefreshByEventExpirience(score.expirience.Value, score.expirience.Value, score.expirience);
-            }
-            else
-            {
-                score.tempExpirience.OnValueChanged += RefreshByEventExpirience;
-                RefreshByEventExpirience(score.tempExpirience.Value, score.tempExpirience.Value, score.tempExpirience);
-            }
-        }
+        Reset(isTempValues, scaledDeltaTimeInPopUpTextController);
 
         PopUpTextController.Instance.ScaledDeltaTime = scaledDeltaTimeInPopUpTextController;
     }
@@ -97,7 +53,7 @@ public class ScorePanel : MonoBehaviour
     {
         if (gold != null)
         {
-            if (!isTempGoldVal)
+            if (!isTempValues)
                 GameManager.Instance.PlayerProgress.Score.gold.OnValueChanged -= RefreshByEventGold;
             else
                 GameManager.Instance.PlayerProgress.Score.tempGold.OnValueChanged -= RefreshByEventGold;
@@ -105,7 +61,7 @@ public class ScorePanel : MonoBehaviour
 
         if (silver != null)
         {
-            if (!isTempSilverVal)
+            if (!isTempValues)
                 GameManager.Instance.PlayerProgress.Score.silver.OnValueChanged -= RefreshByEventSilver;
             else
                 GameManager.Instance.PlayerProgress.Score.tempSilver.OnValueChanged -= RefreshByEventSilver;
@@ -113,15 +69,159 @@ public class ScorePanel : MonoBehaviour
 
         if (expirience != null)
         {
-            if (!isTempSilverVal)
+            if (!isTempValues)
                 GameManager.Instance.PlayerProgress.Score.expirience.OnValueChanged -= RefreshByEventExpirience;
             else
                 GameManager.Instance.PlayerProgress.Score.tempExpirience.OnValueChanged -= RefreshByEventExpirience;
         }
     }
 
+    public void Reset(bool asTempValues = false, bool scaledTime = false, bool setStartValuesWithDelay = false, bool subscribeToEvents = true)
+    {
+        var score = GameManager.Instance.PlayerProgress.Score;
+
+        Unsubscribe(isTempValues);
+        if(subscribeToEvents)
+            Subscribe(asTempValues);
+        isTempValues = asTempValues;
+
+        scaledDeltaTimeInPopUpTextController = scaledTime;
+        PopUpTextController.Instance.ScaledDeltaTime = scaledDeltaTimeInPopUpTextController;
+
+        if (!setStartValuesWithDelay)
+        {
+            if (!asTempValues)
+            {
+                if (gold != null)
+                    gold.text = score.gold.Value.ToString(StringFormats.intSeparatorNumber, StringFormats.nfi);
+
+                if (silver != null)
+                    silver.text = score.silver.Value.ToString(StringFormats.intSeparatorNumber, StringFormats.nfi);
+
+                if (expirience != null)
+                    expirience.text = score.expirience.Value.ToString(StringFormats.intSeparatorNumber, StringFormats.nfi);
+            }
+            else
+            {
+                if (gold != null)
+                    gold.text = score.tempGold.Value.ToString(StringFormats.intSeparatorSignNumber, StringFormats.nfi);
+
+                if (silver != null)
+                    silver.text = score.tempSilver.Value.ToString(StringFormats.intSeparatorSignNumber, StringFormats.nfi);
+
+                if (expirience != null)
+                    expirience.text = score.tempExpirience.Value.ToString(StringFormats.intSeparatorSignNumber, StringFormats.nfi);
+            }
+        }
+        else
+        {
+            if (!asTempValues)
+            {
+                if (gold != null)
+                {
+                    gold.text = 0.ToString(StringFormats.intSeparatorNumber, StringFormats.nfi);
+                    RefreshByEventGold(0, score.gold.Value, new DSPlayerScore.Score() { Value = score.gold.Value });
+                }
+
+                if (silver != null)
+                {
+                    silver.text = 0.ToString(StringFormats.intSeparatorNumber, StringFormats.nfi);
+                    RefreshByEventSilver(0, score.silver.Value, new DSPlayerScore.Score() { Value = score.silver.Value });
+                }
+
+                if (expirience != null)
+                {
+                    expirience.text = 0.ToString(StringFormats.intSeparatorNumber, StringFormats.nfi);
+                    RefreshByEventExpirience(0, score.expirience.Value, new DSPlayerScore.Score() { Value = score.expirience.Value });
+                }
+            }
+            else
+            {
+                if (gold != null)
+                {
+                    gold.text = 0.ToString(StringFormats.intSeparatorSignNumber, StringFormats.nfi);
+                    RefreshByEventGold(0, score.tempGold.Value, new DSPlayerScore.Score() { Value = score.tempGold.Value });
+                }
+
+                if (silver != null)
+                {
+                    silver.text = 0.ToString(StringFormats.intSeparatorSignNumber, StringFormats.nfi);
+                    RefreshByEventSilver(0, score.tempSilver.Value, new DSPlayerScore.Score() { Value = score.tempSilver.Value });
+                }
+
+                if (expirience != null)
+                {
+                    expirience.text = 0.ToString(StringFormats.intSeparatorSignNumber, StringFormats.nfi);
+                    RefreshByEventExpirience(0, score.tempExpirience.Value, new DSPlayerScore.Score() { Value = score.tempExpirience.Value });
+                }
+            }
+        }
+
+        LayoutRebuilder.ForceRebuildLayoutImmediate(rTransform);
+
+    }
+
+    void Subscribe(bool isTempValues)
+    {
+        var score = GameManager.Instance.PlayerProgress.Score;
+
+        if (!isTempValues)
+        {
+            if (gold != null)
+                score.gold.OnValueChanged += RefreshByEventGold;
+
+            if (silver != null)
+                score.silver.OnValueChanged += RefreshByEventSilver;
+
+            if (expirience != null)
+                score.expirience.OnValueChanged += RefreshByEventExpirience;
+        }
+        else
+        {
+            if (gold != null)
+                score.tempGold.OnValueChanged += RefreshByEventGold;
+
+            if (silver != null)
+                score.tempSilver.OnValueChanged += RefreshByEventSilver;
+
+            if (expirience != null)
+                score.tempExpirience.OnValueChanged += RefreshByEventExpirience;
+        }
+    }
+
+    void Unsubscribe(bool isTempValues)
+    {
+        var score = GameManager.Instance.PlayerProgress.Score;
+
+        if (!isTempValues)
+        {
+            if (gold != null)
+                score.gold.OnValueChanged -= RefreshByEventGold;
+
+            if (silver != null)
+                score.silver.OnValueChanged -= RefreshByEventSilver;
+
+            if (expirience != null)
+                score.expirience.OnValueChanged -= RefreshByEventExpirience;
+        }
+        else
+        {
+            if (gold != null)
+                score.tempGold.OnValueChanged -= RefreshByEventGold;
+
+            if (silver != null)
+                score.tempSilver.OnValueChanged -= RefreshByEventSilver;
+
+            if (expirience != null)
+                score.tempExpirience.OnValueChanged -= RefreshByEventExpirience;
+        }
+    }
+
     void RefreshByEventGold(float oldValue, float newValue, DSPlayerScore.Score score)
     {
+        if (!gameObject.activeInHierarchy)
+            return;
+
         tempGold.val += newValue - oldValue;
 
         if (goldCo == null)
@@ -130,6 +230,9 @@ public class ScorePanel : MonoBehaviour
 
     void RefreshByEventSilver(float oldValue, float newValue, DSPlayerScore.Score score)
     {
+        if (!gameObject.activeInHierarchy)
+            return;
+
         tempSilv.val += newValue - oldValue;
 
         if (silvCo == null)
@@ -138,6 +241,9 @@ public class ScorePanel : MonoBehaviour
 
     void RefreshByEventExpirience(float oldValue, float newValue, DSPlayerScore.Score score)
     {
+        if (!gameObject.activeInHierarchy)
+            return;
+
         tempExp.val += newValue - oldValue;
 
         if(expCo == null)
@@ -165,11 +271,12 @@ public class ScorePanel : MonoBehaviour
             PopUpTextController.Instance.AddTextLabel(
                 text,
                 pos,
-                screenFloatSpeed: new Vector2(.5f, -1),
+                screenFloatSpeed: popUpTextSpeed,
                 startColor: color,
                 endColor: color,
-                sortingOrder: 1,
-                fontSize: fontSize - 10
+                sortingOrder: 1000,
+                fontSize: fontSize - 10,
+                lifetime: popUpTextLifetime
             );
         }
     }
@@ -183,24 +290,24 @@ public class ScorePanel : MonoBehaviour
 
         PopText(value.val, textUGUI);
 
-        string format = StringFormats.intSeparatorNumber;        
+        string format = StringFormats.intSeparatorNumber;
 
         if (textUGUI == gold)
         {
             goldCo = null;
-            if (isTempGoldVal)
+            if (isTempValues)
                 format = StringFormats.intSeparatorSignNumber;
         }
         else if (textUGUI == silver)
         {
             silvCo = null;
-            if (isTempSilverVal)
+            if (isTempValues)
                 format = StringFormats.intSeparatorSignNumber;
         }
         else if (textUGUI == expirience)
         {
             expCo = null;
-            if (isTempExpirienceVal)
+            if (isTempValues)
                 format = StringFormats.intSeparatorSignNumber;
         }
 
@@ -215,69 +322,4 @@ public class ScorePanel : MonoBehaviour
     {
         public float val;
     }
-
-    //void RefreshByEvent(float oldValue, float newValue, DSPlayerScore.Score score)
-    //{        
-    //    DSPlayerScore playerScore = GameManager.Instance.PlayerProgress.Score;
-
-    //    if (score != null)
-    //    {
-    //        float deltaScore = score.Value - oldValue;
-
-    //        if (deltaScore != 0)
-    //        {
-    //            Color color;
-
-    //            string text = deltaScore.ToString(StringFormats.intSeparatorNumber, StringFormats.nfi);
-
-    //            if (deltaScore <= 0)
-    //            {
-    //                color = Color.red;
-    //            }
-    //            else
-    //            {
-    //                color = Color.green;
-    //                text = "+" + text;
-    //            }
-
-    //            Vector2 pos = Vector2.zero;
-    //            float fontSize = 20;
-
-    //            if (score == playerScore.gold)
-    //            {
-    //                pos = gold.transform.position;
-    //                fontSize = gold.fontSize;
-    //            }
-    //            else if (score == playerScore.silver)
-    //            {
-    //                pos = silver.transform.position;
-    //                fontSize = silver.fontSize;
-    //            }
-    //            else if (score == playerScore.expirience)
-    //            {
-    //                pos = expirience.transform.position;
-    //                fontSize = expirience.fontSize;
-    //            }
-    //            pos.y -= 1;
-
-    //            PopUpTextController.Instance.AddTextLabel(
-    //                text,
-    //                pos,
-    //                1,
-    //                new Vector2(1, -2),
-    //                color,
-    //                color,
-    //                1,
-    //                fontSize - 10
-    //            );
-    //        }
-    //    }
-
-    //    gold.text = playerScore.gold.Value.ToString(StringFormats.intSeparatorNumber, StringFormats.nfi);
-    //    silver.text = playerScore.silver.Value.ToString(StringFormats.intSeparatorNumber, StringFormats.nfi);
-    //    expirience.text = playerScore.expirience.Value.ToString(StringFormats.intSeparatorNumber, StringFormats.nfi);
-
-    //    LayoutRebuilder.ForceRebuildLayoutImmediate(rTransform);
-
-    //}
 }

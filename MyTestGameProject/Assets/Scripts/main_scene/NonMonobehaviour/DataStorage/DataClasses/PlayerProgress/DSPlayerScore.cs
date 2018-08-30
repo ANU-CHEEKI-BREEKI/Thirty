@@ -2,7 +2,7 @@
 using UnityEngine;
 
 [Serializable]
-public class DSPlayerScore : ISavable, IResetable
+public class DSPlayerScore : ISavable, IResetable, ITempValuesApplyable
 {
     public enum Currency { SILVER, GOLD, EXPIRIENCE }
 
@@ -28,6 +28,9 @@ public class DSPlayerScore : ISavable, IResetable
             f.SetValue(this, f.GetValue(g));
     }
 
+    /// <summary>
+    /// Применяет и сбрасывает
+    /// </summary>
     public void ApplyTempValues()
     {
         gold.Value += tempGold.Value;

@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -44,27 +45,23 @@ public class Exit : MonoBehaviour
             if (collider.OverlapPoint(playerSquad.CenterSquad))
             {
                 goToNextLevel = true;
-                StartCoroutine(LoadLevel());
+
+                Action act = null;
+                act = () =>
+                {
+                    TempValuesEndLevelScreen.Instance.Show();
+                    FadeScreen.Instance.OnFadeOn -= act;
+                };
+
+                FadeScreen.Instance.OnFadeOn += act;
+                FadeScreen.Instance.FadeOn(1f);
+
                 break;
             }
             yield return new WaitForSeconds(deltaTime);
         }
     }
-
-    IEnumerator LoadLevel()
-    {
-        FadeScreen ds = GameObject.FindWithTag("DarkScreen").GetComponent<FadeScreen>();
-        CanvasGroup cg = ds.GetComponent<CanvasGroup>();
-
-        ds.FadeOn(1f);
-
-        while(cg.alpha != 1)
-            yield return null;
-
-        GameManager.Instance.PlayerProgress.Score.ApplyTempValues();
-        GameManager.Instance.LoadMarket();
-    }
-
+    
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (Ground.Instance.WorkIsDone)

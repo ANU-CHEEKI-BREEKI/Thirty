@@ -109,6 +109,11 @@ public sealed class LocalizedStrings
     public static string executable_use_type_click { get; private set; }
     public static string executable_use_type_drag_drop_place { get; private set; }
     public static string executable_use_type_drag_direction { get; private set; }
+    public static string _continue { get; private set; }
+    public static string your_money_and_exp { get; private set; }
+    public static string allowed_equipmant { get; private set; }
+    public static string allowed_equipmant_tooltip { get; private set; }
+    public static string allowed_equipmant_none_tooltip { get; private set; }
     public static string equipment_body_chainmail_name { get; private set; }
     public static string equipment_body_chainmail_description { get; private set; }
     public static string equipment_body_linotorax_name { get; private set; }

@@ -214,28 +214,23 @@ public class EnvirinmantInventoryUI : AInventoryUI
 
     public void FindItems()
     {
+        var playerEq = GameManager.Instance.PlayerProgress.Equipment;
+
         hitCount = Physics2D.CircleCast(Squad.playerSquadInstance.CenterSquad, radiusToFind, Vector2.zero, rHitFilter, rhits);
 
-        int cnt = inventory.Count;
-        for (int i = 0; i < cnt; i++)
-            inventory[i].PopItems(inventory[i].Count);
+        inventory.Clear();
 
         for (int i = 0; i < hitCount; i++)
         {
             DroppedItem di = rhits[i].transform.GetComponent<DroppedItem>();
             FillInventory(di.Stack);
+
+            //"открываем" увиденную экипировку - но тлько в временное хранилище
+            if(!playerEq.IsThisEquipmantAllowed(di.Stack.EquipmentStats))
+                playerEq.AddTempValue(di.Stack);
         }
 
-        cnt = inventory.Count;
-        for (int i = 0; i < cnt; i++)
-        {
-            if (inventory[i].Count <= 0)
-            {
-                inventory.RemoveAt(i);
-                i--;
-                cnt--;
-            }
-        }
+        inventory.RemoveAll((st) => { return st.Count <= 0; });
     }
 
     private void FillEnvironmantInventoryIcons()
@@ -243,10 +238,9 @@ public class EnvirinmantInventoryUI : AInventoryUI
         int cnt = inventory.Count;
         if (cnt > envaironmentCells.Length)
             cnt = envaironmentCells.Length;
+
         for (int i = 0; i < cnt; i++)
-        {
             SetImage(inventoryItemOriginal, envaironmentCells[i], inventory[i], CanDrag);
-        }
     }
 
     public override GameObject SetImage(GameObject origin, Transform cell, AStack stack, bool canDrag)
@@ -275,7 +269,7 @@ public class EnvirinmantInventoryUI : AInventoryUI
 
     override public void RefreshUI()
     {
-        if (!gameObject.activeInHierarchy)
+        if (!envaironmentInventory.gameObject.activeInHierarchy)
             return;
 
         ClearEnvironmantInventoryIcons();
