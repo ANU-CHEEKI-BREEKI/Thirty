@@ -29,7 +29,7 @@ public class FillMarketInventory : MonoBehaviour
         List<Equipment> eqList = new List<Equipment>();
         foreach (var e in eq)
         {
-            if (!e.Stats.Empty && playerEq.IsThisEquipmantAllowed(e.Stats))
+            if (playerEq.IsThisEquipmantAllowed(e.Stats))
                 eqList.Add(e);
         }
 

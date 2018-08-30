@@ -93,4 +93,6 @@ public abstract class Drag : MonoBehaviour, IDragHandler, IBeginDragHandler, IEn
         else
             canCallClick = true;
     }
+
+    public abstract void Present();
 }

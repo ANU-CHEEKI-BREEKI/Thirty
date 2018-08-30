@@ -101,6 +101,7 @@
     <Compile Include="Assets\Scripts\main_scene\Item\Equipment.cs" />
     <Compile Include="Assets\Scripts\main_scene\Item\Execatable.cs" />
     <Compile Include="Assets\Scripts\main_scene\Item\Item.cs" />
+    <Compile Include="Assets\Scripts\main_scene\Item\Money.cs" />
     <Compile Include="Assets\Scripts\main_scene\Item\Skill.cs" />
     <Compile Include="Assets\Scripts\main_scene\Item\Skill\SkillArrowsValley.cs" />
     <Compile Include="Assets\Scripts\main_scene\Item\Skill\SkillBash.cs" />
@@ -174,6 +175,7 @@
     <Compile Include="Assets\Scripts\main_scene\ScriptableObjects\SOSquadSpawnerResources\SOSquadSpawnerAISettingsResourse.cs" />
     <Compile Include="Assets\Scripts\main_scene\ScriptableObjects\SOSquadSpawnerResources\SOSquadSpawnerConsumablesResourse.cs" />
     <Compile Include="Assets\Scripts\main_scene\ScriptableObjects\SOSquadSpawnerResources\SOSquadSpawnerEquipmentResourse.cs" />
+    <Compile Include="Assets\Scripts\main_scene\ScriptableObjects\SOSquadSpawnerResources\SOSquadSpawnerMoneyResourse.cs" />
     <Compile Include="Assets\Scripts\main_scene\ScriptableObjects\SOSquadSpawnerResources\SOSquadSpawnerSkillsResourse.cs" />
     <Compile Include="Assets\Scripts\main_scene\ScriptableObjects\SOSquadSpawnerResources\SOSquadSpawnerSquadPropertiesResourse.cs" />
     <Compile Include="Assets\Scripts\main_scene\ScriptableObjects\SOStatsModifier.cs" />
@@ -277,7 +279,9 @@
     <Compile Include="Assets\Scripts\MapBlockConverter\ConvertTileResourceManager.cs" />
     <Compile Include="Assets\Scripts\MapBlockConverter\DeleteAllSpriteMaskAndGroups.cs" />
     <Compile Include="Assets\Scripts\MapBlockConverter\DeleteTilesOutOfBounds.cs" />
+    <Compile Include="Assets\Scripts\MapBlockConverter\DropOnBreakResourcesManager.cs" />
     <Compile Include="Assets\Scripts\MapBlockConverter\MockRuleTile.cs" />
+    <Compile Include="Assets\Scripts\MapBlockConverter\ResetAllDropOnBreakComponents.cs" />
     <Compile Include="Assets\Scripts\MapBlockConverter\SetAllTileCollidersToUseByComposite.cs" />
     <Compile Include="Assets\Scripts\MapBlockConverter\SetAllTilerenderersToNonmask.cs" />
     <Compile Include="Assets\Scripts\MapBlockConverter\SetAllWaterOutterToDefaultPhysicLayer.cs" />

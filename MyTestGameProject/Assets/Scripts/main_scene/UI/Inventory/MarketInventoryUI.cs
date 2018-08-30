@@ -107,12 +107,11 @@ public class MarketInventoryUI : AInventoryUI
         var go = base.SetImage(origin, cell, stack, canDrag);
         if (go != null)
         {
-            var st = stack as EquipmentStack;
             var drag = go.GetComponent<DragEquipment>();
-            var txt = go.transform.GetChild(0).GetComponent<TextMeshProUGUI>();
 
-            //drag.EquipStack = st;
-            txt.text = drag.EquipStack.Count.ToString();
+            drag.showNewEquipment = true;
+            drag.Stack = stack;//нужно чтобы инициализировать значек показывающий новую экипировку
+            drag.Present();
         }
         return go;
     }

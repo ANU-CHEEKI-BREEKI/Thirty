@@ -9,29 +9,17 @@ public class AllowedEquipmantPanel : MonoBehaviour
     [Space]
     [SerializeField] string pathToEquipmant = @"Prefabs/Items/Equipment/";
 
+    public static AllowedEquipmantPanel MainInstance { get; private set; }
+
     private void Awake()
     {
-        if (tempValues)
-            GameManager.Instance.PlayerProgress.Equipment.OnTempEquipmentAdded += OnTempAllowedEquimpantAdded;
-
+        if(gameObject.tag == "Main")
+            MainInstance = this;
+        
         ClearAll();
     }
 
-    private void OnDestroy()
-    {
-        if (tempValues)
-            GameManager.Instance.PlayerProgress.Equipment.OnTempEquipmentAdded -= OnTempAllowedEquimpantAdded;
-    }
-
-    public void OnTempAllowedEquimpantAdded(EquipmentStack stack)
-    {
-        if (!gameObject.activeInHierarchy)
-            return;
-
-        AddEq(stack);
-    }
-
-    void AddEq(EquipmentStack stack)
+    public void AddEq(EquipmentStack stack)
     {
         var item = Instantiate(itemOriginal, transform);
         item.Present(stack.EquipmentMainProperties.Icon);

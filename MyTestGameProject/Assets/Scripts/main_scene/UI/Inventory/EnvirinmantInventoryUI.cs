@@ -224,13 +224,19 @@ public class EnvirinmantInventoryUI : AInventoryUI
         {
             DroppedItem di = rhits[i].transform.GetComponent<DroppedItem>();
             FillInventory(di.Stack);
-
-            //"открываем" увиденную экипировку - но тлько в временное хранилище
-            if(!playerEq.IsThisEquipmantAllowed(di.Stack.EquipmentStats))
-                playerEq.AddTempValue(di.Stack);
         }
 
         inventory.RemoveAll((st) => { return st.Count <= 0; });
+        inventory.Sort((a, b) => { return a.EquipmentStats.Type.CompareTo(b.EquipmentStats.Type); });
+        foreach (var i in inventory)
+        {
+            //"открываем" увиденную экипировку - но тлько в временное хранилище
+            if (!playerEq.IsThisEquipmantAllowed(i.EquipmentStats) && !playerEq.IsThisEquipmantInTempValues(i.EquipmentStats))
+            {
+                playerEq.AddTempValue(i.EquipmentStats);
+                AllowedEquipmantPanel.MainInstance.AddEq(i);
+            }
+        }
     }
 
     private void FillEnvironmantInventoryIcons()

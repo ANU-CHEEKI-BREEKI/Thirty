@@ -32,6 +32,11 @@ public class DragConsumable : Drag
             TipsPanel.Instance.Show(consumableStack.GetDescription(), thisTransform.position);
     }
 
+    public override void Present()
+    {
+        throw new NotImplementedException();
+    }
+
     protected override void OnCantDrag()
     {
         base.OnCantDrag();

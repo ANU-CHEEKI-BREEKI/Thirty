@@ -15,8 +15,6 @@ public class DSPlayerEquipment : ISavable, IResetable, ITempValuesApplyable
         }
     }
 
-    public event Action<EquipmentStack> OnTempEquipmentAdded;
-
     public DSPlayerEquipment()
     {
         Reset();
@@ -46,47 +44,52 @@ public class DSPlayerEquipment : ISavable, IResetable, ITempValuesApplyable
         ResetTempValues();
     }
 
+    public EqId GetEquipmantAllowed(EquipmentStats stats)
+    {
+        if (!IsThisEquipmantAllowed(stats))
+            throw new Exception("Ну ты че. проверь сначала...");
+
+        var eq = new EqId(stats.Id, stats.Type);
+        return allowedEquipmentId.Find(e => e.Id == eq.Id && e.Type == eq.Type);
+    }
+
     public bool IsThisEquipmantAllowed(EquipmentStats stats)
     {
-        return allowedEquipmentId.Contains(new EqId() { id = stats.Id, type = stats.Type});
+        var eq = new EqId(stats.Id, stats.Type);
+        return allowedEquipmentId.FindIndex(e => e.Id == eq.Id && e.Type == eq.Type) >= 0;
     }
 
     public void AllowThisEquipment(EquipmentStats stats)
     {
-        var eq = new EqId() { id = stats.Id, type = stats.Type };
-        if (!allowedEquipmentId.Contains(eq))
+        var eq = new EqId(stats.Id, stats.Type);
+        if (!IsThisEquipmantAllowed(stats))
             allowedEquipmentId.Add(eq);
     }
 
     public int DisallowThisEquipment(EquipmentStats stats)
     {
-        return allowedEquipmentId.RemoveAll((e) => { return stats.Id == e.id && stats.Type == e.type; });
+        return allowedEquipmentId.RemoveAll((e) => { return stats.Id == e.Id && stats.Type == e.Type; });
     }
 
     public bool IsThisEquipmantInTempValues(EquipmentStats stats)
     {
-        return tempAllowedEquipmentId.Contains(new EqId() { id = stats.Id, type = stats.Type });
+        var eq = new EqId(stats.Id, stats.Type);
+        return tempAllowedEquipmentId.FindIndex(e => e.Id == eq.Id && e.Type == eq.Type) >= 0;
     }
 
-    public void AddTempValue(EquipmentStack stack)
+    public void AddTempValue(EquipmentStats stats)
     {
-        var eq = new EqId() { id = stack.EquipmentStats.Id, type = stack.EquipmentStats.Type };
-        if (!tempAllowedEquipmentId.Contains(eq))
-        {
+        var eq = new EqId(stats.Id, stats.Type);
+        if (!IsThisEquipmantInTempValues(stats))
             tempAllowedEquipmentId.Add(eq);
-            if (OnTempEquipmentAdded != null)
-                OnTempEquipmentAdded(stack);
-        }
     }
 
     /// <summary>
-    /// Применяет и сбрасывает
+    /// Применяет
     /// </summary>
     public void ApplyTempValues()
     {
         allowedEquipmentId.AddRange(tempAllowedEquipmentId);
-
-        ResetTempValues();
     }
     
     /// <summary>
@@ -101,9 +104,35 @@ public class DSPlayerEquipment : ISavable, IResetable, ITempValuesApplyable
     }
 
     [Serializable]
-    public struct EqId
+    public class EqId
     {
-        public int id;
-        public EquipmentStats.TypeOfEquipment type;
+        [SerializeField] int id;
+        [SerializeField] EquipmentStats.TypeOfEquipment type;
+        [SerializeField] bool isNew;
+
+        public int Id { get { return id; } private set { id = value; } }
+        public EquipmentStats.TypeOfEquipment Type { get { return type; } private set { type = value; } }
+        public bool IsNew { get { return isNew; } private set { isNew = value; } }
+
+        public EqId(int id, EquipmentStats.TypeOfEquipment type, bool isNew = true)
+        {
+            Id = id;
+            Type = type;
+            IsNew = isNew;
+        }
+
+        public EqId(EqId eqid, int? id = null, EquipmentStats.TypeOfEquipment? type = null, bool? isNew = null)
+        {
+            Id = eqid.Id;
+            Type = eqid.Type;
+            IsNew = eqid.IsNew;
+
+            if (id != null)
+                Id = id.Value;
+            if (type != null)
+                Type = type.Value;
+            if (isNew != null)
+                IsNew = isNew.Value;
+        }
     }
 }

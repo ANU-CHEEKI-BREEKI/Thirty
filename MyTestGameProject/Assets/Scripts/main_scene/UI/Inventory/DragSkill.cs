@@ -32,6 +32,11 @@ public class DragSkill : Drag
             TipsPanel.Instance.Show(skillStack.GetDescription(), thisTransform.position);
     }
 
+    public override void Present()
+    {
+        throw new NotImplementedException();
+    }
+
     protected override void OnCantDrag()
     {
         base.OnCantDrag();

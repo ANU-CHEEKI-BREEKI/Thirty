@@ -78,7 +78,6 @@ public class GameManager : MonoBehaviour
 
             BeforeLoadLevel += (a, b) =>
             {
-                ResetPlayerTempProgressValues();
                 playerProgress.Save();
 
                 SoundManager.Instance.StopPlayingChannel(SoundManager.SoundType.MUSIC, 1.5f);
@@ -179,6 +178,7 @@ public class GameManager : MonoBehaviour
     public void ApplyPlayerTempProgressValues()
     {
         playerProgress.ApplyTempValues();
+        ResetPlayerTempProgressValues();
     }
 
     void OnUnhendeledException(string condition, string stackTrace, LogType type)
@@ -299,6 +299,8 @@ public class GameManager : MonoBehaviour
 
     public void LoadNextLevel()
     {
+        ResetPlayerTempProgressValues();
+
         CurrentLevel.NextLevel();
 
         ReconfigureLevelSettings();        

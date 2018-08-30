@@ -29,15 +29,13 @@ public class DSPlayerScore : ISavable, IResetable, ITempValuesApplyable
     }
 
     /// <summary>
-    /// Применяет и сбрасывает
+    /// Применяет
     /// </summary>
     public void ApplyTempValues()
     {
         gold.Value += tempGold.Value;
         silver.Value += tempSilver.Value;
         expirience.Value += tempExpirience.Value;
-
-        ResetTempValues();
     }
 
     public void ResetTempValues()
