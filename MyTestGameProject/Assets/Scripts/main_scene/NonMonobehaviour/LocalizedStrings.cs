@@ -136,6 +136,14 @@ public sealed class LocalizedStrings
     public static string equipment_helmet_thrace_open_description { get; private set; }
     public static string equipment_helmet_none_name { get; private set; }
     public static string equipment_helmet_none_description { get; private set; }
+    public static string equipment_helmet_chalcidian_name { get; private set; }
+    public static string equipment_helmet_chalcidian_description { get; private set; }
+    public static string equipment_helmet_imperial_name { get; private set; }
+    public static string equipment_helmet_imperial_description { get; private set; }
+    public static string equipment_helmet_montefortino_name { get; private set; }
+    public static string equipment_helmet_montefortino_description { get; private set; }
+    public static string equipment_helmet_phrygian_close_name { get; private set; }
+    public static string equipment_helmet_phrygian_close_description { get; private set; }
     public static string equipment_shield_hoplon_name { get; private set; }
     public static string equipment_shield_hoplon_description { get; private set; }
     public static string equipment_shield_bakler_name { get; private set; }
@@ -158,6 +166,14 @@ public sealed class LocalizedStrings
     public static string equipment_weapon_sarrisa_description { get; private set; }
     public static string equipment_weapon_wings_sarrisa_name { get; private set; }
     public static string equipment_weapon_wings_sarrisa_description { get; private set; }
+    public static string equipment_weapon_stick_name { get; private set; }
+    public static string equipment_weapon_stick_description { get; private set; }
+    public static string equipment_weapon_forks_name { get; private set; }
+    public static string equipment_weapon_forks_description { get; private set; }
+    public static string equipment_weapon_knife_name { get; private set; }
+    public static string equipment_weapon_knife_description { get; private set; }
+    public static string equipment_weapon_cudgel_name { get; private set; }
+    public static string equipment_weapon_cudgel_sarrisa_description { get; private set; }
     public static string skill_arrowWalley_name { get; private set; }
     public static string skill_arrowWalley_description { get; private set; }
     public static string skill_charge_name { get; private set; }

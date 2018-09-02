@@ -226,16 +226,16 @@ TextureImporter:
     21300442: Equipment_221
     21300444: Equipment_222
     21300446: Equipment_223
-    21300448: Equipment_224
-    21300450: Equipment_225
-    21300452: Equipment_226
-    21300454: Equipment_227
-    21300456: Equipment_228
-    21300458: Equipment_229
-    21300460: Equipment_230
-    21300462: Equipment_231
-    21300464: Equipment_232
-    21300466: Equipment_233
+    21300448: Equipment_helm_imperial_idle
+    21300450: Equipment_helm_imperial_rnk_run
+    21300452: Equipment_helm_imperial_rnk_fight
+    21300454: Equipment_helm_imperial_phx_idle
+    21300456: Equipment_helm_imperial_phx_run
+    21300458: Equipment_helm_imperial_shl_idle
+    21300460: Equipment_helm_imperial_shl_run
+    21300462: Equipment_helm_imperial_death_1
+    21300464: Equipment_helm_imperial_death_2
+    21300466: Equipment_helm_imperial_fallen
     21300468: Equipment_234
     21300470: Equipment_235
     21300472: Equipment_236
@@ -258,16 +258,16 @@ TextureImporter:
     21300506: Equipment_253
     21300508: Equipment_254
     21300510: Equipment_255
-    21300512: Equipment_256
-    21300514: Equipment_257
-    21300516: Equipment_258
-    21300518: Equipment_259
-    21300520: Equipment_260
-    21300522: Equipment_261
-    21300524: Equipment_262
-    21300526: Equipment_263
-    21300528: Equipment_264
-    21300530: Equipment_265
+    21300512: Equipment_helm_montefortino_rnk_idle
+    21300514: Equipment_helm_montefortino_rnk_run
+    21300516: Equipment_helm_montefortino_rnk_fight
+    21300518: Equipment_helm_montefortino_phx_idle
+    21300520: Equipment_helm_montefortino_phx_run
+    21300522: Equipment_helm_montefortino_shl_idle
+    21300524: Equipment_helm_montefortino_shl_run
+    21300526: Equipment_helm_montefortino_death_1
+    21300528: Equipment_helm_montefortino_death_2
+    21300530: Equipment_helm_montefortino_fallen
     21300532: Equipment_266
     21300534: Equipment_267
     21300536: Equipment_268
@@ -290,16 +290,16 @@ TextureImporter:
     21300570: Equipment_285
     21300572: Equipment_286
     21300574: Equipment_287
-    21300576: Equipment_288
-    21300578: Equipment_289
-    21300580: Equipment_290
-    21300582: Equipment_291
-    21300584: Equipment_292
-    21300586: Equipment_293
-    21300588: Equipment_294
-    21300590: Equipment_295
-    21300592: Equipment_296
-    21300594: Equipment_297
+    21300576: Equipment_helm_chalcidian_rnk_idle
+    21300578: Equipment_helm_chalcidian_rnk_run
+    21300580: Equipment_helm_chalcidian_rnk_fight
+    21300582: Equipment_helm_chalcidian_phx_idle
+    21300584: Equipment_helm_chalcidian_phx_run
+    21300586: Equipment_helm_chalcidian_shl_idle
+    21300588: Equipment_helm_chalcidian_shl_run
+    21300590: Equipment_helm_chalcidian_death_1
+    21300592: Equipment_helm_chalcidian_death_2
+    21300594: Equipment_helm_chalcidian_fallen
     21300596: Equipment_298
     21300598: Equipment_299
     21300600: Equipment_300
@@ -322,16 +322,16 @@ TextureImporter:
     21300634: Equipment_317
     21300636: Equipment_318
     21300638: Equipment_319
-    21300640: Equipment_320
-    21300642: Equipment_321
-    21300644: Equipment_322
-    21300646: Equipment_323
-    21300648: Equipment_324
-    21300650: Equipment_325
-    21300652: Equipment_326
-    21300654: Equipment_327
-    21300656: Equipment_328
-    21300658: Equipment_329
+    21300640: Equipment_helm_phrygian_rnk_idle
+    21300642: Equipment_helm_phrygian_rnk_run
+    21300644: Equipment_helm_phrygian_rnk_fight
+    21300646: Equipment_helm_phrygian_phx_idle
+    21300648: Equipment_helm_phrygian_phx_run
+    21300650: Equipment_helm_phrygian_shl_idle
+    21300652: Equipment_helm_phrygian_shl_run
+    21300654: Equipment_helm_phrygian_death_1
+    21300656: Equipment_helm_phrygian_death_2
+    21300658: Equipment_helm_phrygian_fallen
     21300660: Equipment_330
     21300662: Equipment_331
     21300664: Equipment_332
@@ -870,23 +870,23 @@ TextureImporter:
     21301730: Equipment_sword_1_rnk_run
     21301732: Equipment_sword_1_rnk_fight
     21301734: Equipment_sword_1_shl_idle
-    21301736: Equipment_sword_1_shl_run
-    21301738: Equipment_sword_1_death_1
-    21301740: Equipment_sword_1_death_2
-    21301742: Equipment_sword_1_fallen
-    21301744: Equipment_872
-    21301746: Equipment_873
-    21301748: Equipment_874
-    21301750: Equipment_875
-    21301752: Equipment_876
-    21301754: Equipment_877
-    21301756: Equipment_878
-    21301758: Equipment_879
-    21301760: Equipment_880
-    21301762: Equipment_881
-    21301764: Equipment_882
-    21301766: Equipment_883
-    21301768: Equipment_884
+    21301736: Equipment_sword_1_death_1
+    21301738: Equipment_sword_1_death_2
+    21301740: Equipment_sword_1_fallen
+    21301742: Equipment_xiphos_rnk_idle
+    21301744: Equipment_xiphos_rnk_run
+    21301746: Equipment_xiphos_rnk_fight
+    21301748: Equipment_xiphos_shl_idle
+    21301750: Equipment_xiphos_death_1
+    21301752: Equipment_xiphos_death_2
+    21301754: Equipment_xiphos_fallen
+    21301756: Equipment_cutgel_rnk_idle
+    21301758: Equipment_cutgel_rnk_run
+    21301760: Equipment_cutgel_rnk_fight
+    21301762: Equipment_cutgel_shl_idle
+    21301764: Equipment_cutgel_death_1
+    21301766: Equipment_cutgel_death_2
+    21301768: Equipment_cutgel_fallen
     21301770: Equipment_885
     21301772: Equipment_886
     21301774: Equipment_887
@@ -899,7 +899,7 @@ TextureImporter:
     21301788: Equipment_894
     21301790: Equipment_895
     21301792: Equipment_spear_1_fallen
-    21301794: Equipment_901
+    21301794: Equipment_knife_rnk_idle
     21301796: Equipment_902
     21301798: Equipment_903
     21301800: Equipment_904
@@ -931,20 +931,20 @@ TextureImporter:
     21301852: Equipment_spear_1_death_1
     21301854: Equipment_spear_1_death_2
     21301856: Equipment_932
-    21301858: Equipment_933
-    21301860: Equipment_934
-    21301862: Equipment_935
-    21301864: Equipment_936
-    21301866: Equipment_937
-    21301868: Equipment_938
-    21301870: Equipment_939
-    21301872: Equipment_940
-    21301874: Equipment_941
-    21301876: Equipment_942
-    21301878: Equipment_943
-    21301880: Equipment_944
-    21301882: Equipment_945
-    21301884: Equipment_946
+    21301858: Equipment_stick_rnk_idle
+    21301860: Equipment_stick_rnk_run
+    21301862: Equipment_stick_rnk_fight
+    21301864: Equipment_stick_phx_idle
+    21301866: Equipment_stick_death_1
+    21301868: Equipment_stick_death_2
+    21301870: Equipment_stick_fallen
+    21301872: Equipment_forks_rnk_idle
+    21301874: Equipment_forks_rnk_run
+    21301876: Equipment_forks_rnk_fight
+    21301878: Equipment_forks_phx_idle
+    21301880: Equipment_forks_death_1
+    21301882: Equipment_forks_death_2
+    21301884: Equipment_forks_fallen
     21301886: Equipment_947
     21301888: Equipment_948
     21301890: Equipment_949
@@ -1016,8 +1016,15 @@ TextureImporter:
     21302022: Equipment_1018
     21302024: Equipment_1019
     21302026: Equipment_arms_fallen
+    21302028: Equipment_knife_rnk_run
+    21302030: Equipment_knife_rnk_fight
+    21302032: Equipment_knife_shl_idle
+    21302034: Equipment_knife_death_1
+    21302036: Equipment_knife_death_2
+    21302038: Equipment_knife_fallen
+    21302040: Equipment_0
   externalObjects: {}
-  serializedVersion: 6
+  serializedVersion: 7
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -5905,17 +5912,21 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_224
+      name: Equipment_helm_imperial_idle
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1536
+        x: 1
+        y: 1537
         width: 64
         height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -8, y: -11}
+        - {x: -8, y: 7}
+        - {x: 5, y: 7}
+        - {x: 5, y: -11}
       physicsShape: []
       tessellationDetail: 0
       bones: []
@@ -5925,7 +5936,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_225
+      name: Equipment_helm_imperial_rnk_run
       rect:
         serializedVersion: 2
         x: 64
@@ -5935,7 +5946,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -7, y: -12}
+        - {x: -7, y: 6}
+        - {x: 6, y: 6}
+        - {x: 6, y: -12}
       physicsShape: []
       tessellationDetail: 0
       bones: []
@@ -5945,7 +5960,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_226
+      name: Equipment_helm_imperial_rnk_fight
       rect:
         serializedVersion: 2
         x: 128
@@ -5955,7 +5970,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -6, y: -11}
+        - {x: -6, y: 6}
+        - {x: 6, y: 6}
+        - {x: 6, y: -11}
       physicsShape: []
       tessellationDetail: 0
       bones: []
@@ -5965,7 +5984,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_227
+      name: Equipment_helm_imperial_phx_idle
       rect:
         serializedVersion: 2
         x: 192
@@ -5975,7 +5994,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -7, y: -12}
+        - {x: -7, y: 6}
+        - {x: 6, y: 6}
+        - {x: 6, y: -12}
       physicsShape: []
       tessellationDetail: 0
       bones: []
@@ -5985,7 +6008,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_228
+      name: Equipment_helm_imperial_phx_run
       rect:
         serializedVersion: 2
         x: 256
@@ -5995,7 +6018,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -7, y: -12}
+        - {x: -7, y: 6}
+        - {x: 6, y: 6}
+        - {x: 5, y: -12}
       physicsShape: []
       tessellationDetail: 0
       bones: []
@@ -6005,7 +6032,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_229
+      name: Equipment_helm_imperial_shl_idle
       rect:
         serializedVersion: 2
         x: 320
@@ -6015,7 +6042,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -7, y: -11}
+        - {x: -7, y: 8}
+        - {x: 6, y: 8}
+        - {x: 6, y: -11}
       physicsShape: []
       tessellationDetail: 0
       bones: []
@@ -6025,7 +6056,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_230
+      name: Equipment_helm_imperial_shl_run
       rect:
         serializedVersion: 2
         x: 384
@@ -6035,7 +6066,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -7, y: -11}
+        - {x: -7, y: 8}
+        - {x: 6, y: 8}
+        - {x: 6, y: -11}
       physicsShape: []
       tessellationDetail: 0
       bones: []
@@ -6045,7 +6080,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_231
+      name: Equipment_helm_imperial_death_1
       rect:
         serializedVersion: 2
         x: 448
@@ -6055,7 +6090,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: 4, y: 16}
+        - {x: 12, y: 26}
+        - {x: 21, y: 22}
+        - {x: 16, y: 6}
       physicsShape: []
       tessellationDetail: 0
       bones: []
@@ -6065,7 +6104,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_232
+      name: Equipment_helm_imperial_death_2
       rect:
         serializedVersion: 2
         x: 512
@@ -6075,7 +6114,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -27, y: -18}
+        - {x: -19, y: -5}
+        - {x: -8, y: -15}
+        - {x: -18, y: -25}
       physicsShape: []
       tessellationDetail: 0
       bones: []
@@ -6085,7 +6128,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_233
+      name: Equipment_helm_imperial_fallen
       rect:
         serializedVersion: 2
         x: 576
@@ -6095,7 +6138,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: 6, y: 19}
+        - {x: 17, y: 26}
+        - {x: 25, y: 20}
+        - {x: 18, y: 7}
       physicsShape: []
       tessellationDetail: 0
       bones: []
@@ -6545,7 +6592,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_256
+      name: Equipment_helm_montefortino_rnk_idle
       rect:
         serializedVersion: 2
         x: 0
@@ -6555,7 +6602,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -7, y: -9}
+        - {x: -7, y: 7}
+        - {x: 7, y: 7}
+        - {x: 7, y: -9}
       physicsShape: []
       tessellationDetail: 0
       bones: []
@@ -6565,7 +6616,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_257
+      name: Equipment_helm_montefortino_rnk_run
       rect:
         serializedVersion: 2
         x: 64
@@ -6575,7 +6626,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -7, y: -8}
+        - {x: -7, y: 9}
+        - {x: 6, y: 9}
+        - {x: 6, y: -8}
       physicsShape: []
       tessellationDetail: 0
       bones: []
@@ -6585,7 +6640,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_258
+      name: Equipment_helm_montefortino_rnk_fight
       rect:
         serializedVersion: 2
         x: 128
@@ -6595,7 +6650,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -7, y: -9}
+        - {x: -7, y: 7}
+        - {x: 6, y: 7}
+        - {x: 6, y: -9}
       physicsShape: []
       tessellationDetail: 0
       bones: []
@@ -6605,7 +6664,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_259
+      name: Equipment_helm_montefortino_phx_idle
       rect:
         serializedVersion: 2
         x: 192
@@ -6615,7 +6674,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -6, y: -10}
+        - {x: -6, y: 6}
+        - {x: 7, y: 6}
+        - {x: 7, y: -10}
       physicsShape: []
       tessellationDetail: 0
       bones: []
@@ -6625,7 +6688,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_260
+      name: Equipment_helm_montefortino_phx_run
       rect:
         serializedVersion: 2
         x: 256
@@ -6635,7 +6698,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -6, y: -10}
+        - {x: -6, y: 6}
+        - {x: 7, y: 6}
+        - {x: 7, y: -10}
       physicsShape: []
       tessellationDetail: 0
       bones: []
@@ -6645,7 +6712,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_261
+      name: Equipment_helm_montefortino_shl_idle
       rect:
         serializedVersion: 2
         x: 320
@@ -6655,7 +6722,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -7, y: -9}
+        - {x: -7, y: 7}
+        - {x: 6, y: 7}
+        - {x: 6, y: -9}
       physicsShape: []
       tessellationDetail: 0
       bones: []
@@ -6665,7 +6736,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_262
+      name: Equipment_helm_montefortino_shl_run
       rect:
         serializedVersion: 2
         x: 384
@@ -6675,7 +6746,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -7, y: -8}
+        - {x: -7, y: 8}
+        - {x: 6, y: 8}
+        - {x: 6, y: -8}
       physicsShape: []
       tessellationDetail: 0
       bones: []
@@ -6685,7 +6760,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_263
+      name: Equipment_helm_montefortino_death_1
       rect:
         serializedVersion: 2
         x: 448
@@ -6695,7 +6770,12 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: 14, y: 5}
+        - {x: 3, y: 15}
+        - {x: 11, y: 25}
+        - {x: 21, y: 26}
+        - {x: 20, y: 15}
       physicsShape: []
       tessellationDetail: 0
       bones: []
@@ -6705,7 +6785,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_264
+      name: Equipment_helm_montefortino_death_2
       rect:
         serializedVersion: 2
         x: 512
@@ -6715,7 +6795,12 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -26, y: -24}
+        - {x: -25, y: -10}
+        - {x: -16, y: -7}
+        - {x: -9, y: -12}
+        - {x: -15, y: -23}
       physicsShape: []
       tessellationDetail: 0
       bones: []
@@ -6725,7 +6810,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_265
+      name: Equipment_helm_montefortino_fallen
       rect:
         serializedVersion: 2
         x: 576
@@ -6735,7 +6820,12 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: 6, y: 16}
+        - {x: 16, y: 25}
+        - {x: 24, y: 26}
+        - {x: 23, y: 16}
+        - {x: 16, y: 8}
       physicsShape: []
       tessellationDetail: 0
       bones: []
@@ -7185,7 +7275,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_288
+      name: Equipment_helm_chalcidian_rnk_idle
       rect:
         serializedVersion: 2
         x: 0
@@ -7195,7 +7285,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -7, y: -9}
+        - {x: -7, y: 9}
+        - {x: 6, y: 9}
+        - {x: 6, y: -9}
       physicsShape: []
       tessellationDetail: 0
       bones: []
@@ -7205,7 +7299,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_289
+      name: Equipment_helm_chalcidian_rnk_run
       rect:
         serializedVersion: 2
         x: 64
@@ -7215,7 +7309,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -7, y: -10}
+        - {x: -7, y: 6}
+        - {x: 6, y: 6}
+        - {x: 6, y: -10}
       physicsShape: []
       tessellationDetail: 0
       bones: []
@@ -7225,7 +7323,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_290
+      name: Equipment_helm_chalcidian_rnk_fight
       rect:
         serializedVersion: 2
         x: 128
@@ -7235,7 +7333,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -7, y: -10}
+        - {x: -7, y: 6}
+        - {x: 6, y: 6}
+        - {x: 6, y: -10}
       physicsShape: []
       tessellationDetail: 0
       bones: []
@@ -7245,7 +7347,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_291
+      name: Equipment_helm_chalcidian_phx_idle
       rect:
         serializedVersion: 2
         x: 192
@@ -7255,7 +7357,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -7, y: -10}
+        - {x: -7, y: 6}
+        - {x: 6, y: 6}
+        - {x: 6, y: -10}
       physicsShape: []
       tessellationDetail: 0
       bones: []
@@ -7265,7 +7371,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_292
+      name: Equipment_helm_chalcidian_phx_run
       rect:
         serializedVersion: 2
         x: 256
@@ -7275,7 +7381,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -7, y: -10}
+        - {x: -7, y: 6}
+        - {x: 6, y: 6}
+        - {x: 6, y: -10}
       physicsShape: []
       tessellationDetail: 0
       bones: []
@@ -7285,7 +7395,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_293
+      name: Equipment_helm_chalcidian_shl_idle
       rect:
         serializedVersion: 2
         x: 320
@@ -7295,7 +7405,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -7, y: -9}
+        - {x: -7, y: 8}
+        - {x: 6, y: 8}
+        - {x: 6, y: -9}
       physicsShape: []
       tessellationDetail: 0
       bones: []
@@ -7305,7 +7419,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_294
+      name: Equipment_helm_chalcidian_shl_run
       rect:
         serializedVersion: 2
         x: 384
@@ -7315,7 +7429,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -7, y: -9}
+        - {x: -7, y: 8}
+        - {x: 6, y: 8}
+        - {x: 6, y: -9}
       physicsShape: []
       tessellationDetail: 0
       bones: []
@@ -7325,7 +7443,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_295
+      name: Equipment_helm_chalcidian_death_1
       rect:
         serializedVersion: 2
         x: 448
@@ -7335,7 +7453,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: 5, y: 7}
+        - {x: 5, y: 24}
+        - {x: 20, y: 24}
+        - {x: 20, y: 7}
       physicsShape: []
       tessellationDetail: 0
       bones: []
@@ -7345,7 +7467,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_296
+      name: Equipment_helm_chalcidian_death_2
       rect:
         serializedVersion: 2
         x: 512
@@ -7355,7 +7477,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -25, y: -23}
+        - {x: -25, y: -8}
+        - {x: -10, y: -8}
+        - {x: -10, y: -23}
       physicsShape: []
       tessellationDetail: 0
       bones: []
@@ -7365,7 +7491,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_297
+      name: Equipment_helm_chalcidian_fallen
       rect:
         serializedVersion: 2
         x: 576
@@ -7375,7 +7501,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: 10, y: 12}
+        - {x: 9, y: 24}
+        - {x: 23, y: 24}
+        - {x: 23, y: 11}
       physicsShape: []
       tessellationDetail: 0
       bones: []
@@ -7825,17 +7955,21 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_320
+      name: Equipment_helm_phrygian_rnk_idle
       rect:
         serializedVersion: 2
         x: 0
-        y: 1344
+        y: 1345
         width: 64
         height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -7, y: -10}
+        - {x: -7, y: 5}
+        - {x: 6, y: 5}
+        - {x: 6, y: -10}
       physicsShape: []
       tessellationDetail: 0
       bones: []
@@ -7845,7 +7979,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_321
+      name: Equipment_helm_phrygian_rnk_run
       rect:
         serializedVersion: 2
         x: 64
@@ -7855,7 +7989,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -7, y: -8}
+        - {x: -7, y: 9}
+        - {x: 6, y: 9}
+        - {x: 6, y: -8}
       physicsShape: []
       tessellationDetail: 0
       bones: []
@@ -7865,7 +8003,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_322
+      name: Equipment_helm_phrygian_rnk_fight
       rect:
         serializedVersion: 2
         x: 128
@@ -7875,7 +8013,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -7, y: -9}
+        - {x: -7, y: 7}
+        - {x: 6, y: 7}
+        - {x: 6, y: -9}
       physicsShape: []
       tessellationDetail: 0
       bones: []
@@ -7885,7 +8027,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_323
+      name: Equipment_helm_phrygian_phx_idle
       rect:
         serializedVersion: 2
         x: 192
@@ -7895,7 +8037,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -6, y: -10}
+        - {x: -6, y: 6}
+        - {x: 7, y: 6}
+        - {x: 7, y: -10}
       physicsShape: []
       tessellationDetail: 0
       bones: []
@@ -7905,7 +8051,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_324
+      name: Equipment_helm_phrygian_phx_run
       rect:
         serializedVersion: 2
         x: 256
@@ -7915,7 +8061,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -6, y: -10}
+        - {x: -6, y: 6}
+        - {x: 7, y: 6}
+        - {x: 7, y: -10}
       physicsShape: []
       tessellationDetail: 0
       bones: []
@@ -7925,7 +8075,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_325
+      name: Equipment_helm_phrygian_shl_idle
       rect:
         serializedVersion: 2
         x: 320
@@ -7935,7 +8085,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -7, y: -10}
+        - {x: -7, y: 7}
+        - {x: 6, y: 7}
+        - {x: 6, y: -10}
       physicsShape: []
       tessellationDetail: 0
       bones: []
@@ -7945,7 +8099,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_326
+      name: Equipment_helm_phrygian_shl_run
       rect:
         serializedVersion: 2
         x: 384
@@ -7955,7 +8109,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -7, y: -8}
+        - {x: -7, y: 8}
+        - {x: 6, y: 8}
+        - {x: 6, y: -8}
       physicsShape: []
       tessellationDetail: 0
       bones: []
@@ -7965,7 +8123,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_327
+      name: Equipment_helm_phrygian_death_1
       rect:
         serializedVersion: 2
         x: 448
@@ -7975,7 +8133,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: 5, y: 7}
+        - {x: 5, y: 26}
+        - {x: 21, y: 26}
+        - {x: 21, y: 7}
       physicsShape: []
       tessellationDetail: 0
       bones: []
@@ -7985,7 +8147,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_328
+      name: Equipment_helm_phrygian_death_2
       rect:
         serializedVersion: 2
         x: 512
@@ -7995,7 +8157,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -26, y: -24}
+        - {x: -26, y: -8}
+        - {x: -11, y: -8}
+        - {x: -11, y: -24}
       physicsShape: []
       tessellationDetail: 0
       bones: []
@@ -8005,7 +8171,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_329
+      name: Equipment_helm_phrygian_fallen
       rect:
         serializedVersion: 2
         x: 576
@@ -8015,7 +8181,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: 9, y: 11}
+        - {x: 9, y: 26}
+        - {x: 24, y: 26}
+        - {x: 24, y: 11}
       physicsShape: []
       tessellationDetail: 0
       bones: []
@@ -19398,7 +19568,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_sword_1_shl_run
+      name: Equipment_sword_1_death_1
       rect:
         serializedVersion: 2
         x: 256
@@ -19409,10 +19579,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 5, y: 4}
-        - {x: 11, y: 17}
-        - {x: 16, y: 15}
-        - {x: 9, y: 1}
+      - - {x: -12, y: -21}
+        - {x: 11, y: -10}
+        - {x: 15, y: -15}
+        - {x: -7, y: -28}
       physicsShape: []
       tessellationDetail: 0
       bones: []
@@ -19422,7 +19592,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_sword_1_death_1
+      name: Equipment_sword_1_death_2
       rect:
         serializedVersion: 2
         x: 320
@@ -19433,10 +19603,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -8, y: -30}
-        - {x: -13, y: -19}
-        - {x: 12, y: -10}
-        - {x: 15, y: -18}
+      - - {x: 18, y: -19}
+        - {x: 7, y: 6}
+        - {x: 16, y: 13}
+        - {x: 24, y: -17}
       physicsShape: []
       tessellationDetail: 0
       bones: []
@@ -19446,7 +19616,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_sword_1_death_2
+      name: Equipment_sword_1_fallen
       rect:
         serializedVersion: 2
         x: 384
@@ -19457,10 +19627,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 16, y: -21}
-        - {x: 7, y: 10}
-        - {x: 18, y: 14}
-        - {x: 24, y: -18}
+      - - {x: -8, y: -28}
+        - {x: -10, y: -20}
+        - {x: 13, y: -9}
+        - {x: 13, y: -16}
       physicsShape: []
       tessellationDetail: 0
       bones: []
@@ -19470,7 +19640,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_sword_1_fallen
+      name: Equipment_xiphos_rnk_idle
       rect:
         serializedVersion: 2
         x: 448
@@ -19481,10 +19651,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -7, y: -30}
-        - {x: -12, y: -21}
-        - {x: 11, y: -8}
-        - {x: 15, y: -17}
+      - - {x: 5, y: -13}
+        - {x: 0, y: -10}
+        - {x: 10, y: 16}
+        - {x: 15, y: 14}
       physicsShape: []
       tessellationDetail: 0
       bones: []
@@ -19494,7 +19664,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_872
+      name: Equipment_xiphos_rnk_run
       rect:
         serializedVersion: 2
         x: 512
@@ -19504,7 +19674,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: 11, y: 6}
+        - {x: 14, y: 20}
+        - {x: 19, y: 19}
+        - {x: 17, y: 5}
       physicsShape: []
       tessellationDetail: 0
       bones: []
@@ -19514,7 +19688,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_873
+      name: Equipment_xiphos_rnk_fight
       rect:
         serializedVersion: 2
         x: 576
@@ -19524,7 +19698,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: 15, y: -7}
+        - {x: 4, y: 21}
+        - {x: 10, y: 24}
+        - {x: 21, y: -6}
       physicsShape: []
       tessellationDetail: 0
       bones: []
@@ -19534,7 +19712,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_874
+      name: Equipment_xiphos_shl_idle
       rect:
         serializedVersion: 2
         x: 640
@@ -19544,7 +19722,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: 15, y: -6}
+        - {x: 5, y: 20}
+        - {x: 12, y: 22}
+        - {x: 20, y: -5}
       physicsShape: []
       tessellationDetail: 0
       bones: []
@@ -19554,7 +19736,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_875
+      name: Equipment_xiphos_death_1
       rect:
         serializedVersion: 2
         x: 704
@@ -19564,7 +19746,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -8, y: -25}
+        - {x: -12, y: -20}
+        - {x: 12, y: -10}
+        - {x: 14, y: -15}
       physicsShape: []
       tessellationDetail: 0
       bones: []
@@ -19574,7 +19760,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_876
+      name: Equipment_xiphos_death_2
       rect:
         serializedVersion: 2
         x: 768
@@ -19584,7 +19770,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: 17, y: -19}
+        - {x: 6, y: 7}
+        - {x: 13, y: 10}
+        - {x: 24, y: -17}
       physicsShape: []
       tessellationDetail: 0
       bones: []
@@ -19594,7 +19784,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_877
+      name: Equipment_xiphos_fallen
       rect:
         serializedVersion: 2
         x: 832
@@ -19604,7 +19794,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -9, y: -25}
+        - {x: -12, y: -19}
+        - {x: 12, y: -11}
+        - {x: 14, y: -16}
       physicsShape: []
       tessellationDetail: 0
       bones: []
@@ -19614,7 +19808,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_878
+      name: Equipment_cutgel_rnk_idle
       rect:
         serializedVersion: 2
         x: 896
@@ -19624,7 +19818,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -1, y: -10}
+        - {x: 9, y: 15}
+        - {x: 14, y: 15}
+        - {x: 6, y: -13}
       physicsShape: []
       tessellationDetail: 0
       bones: []
@@ -19634,7 +19832,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_879
+      name: Equipment_cutgel_rnk_run
       rect:
         serializedVersion: 2
         x: 960
@@ -19644,7 +19842,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: 12, y: 5}
+        - {x: 12, y: 19}
+        - {x: 18, y: 19}
+        - {x: 18, y: 5}
       physicsShape: []
       tessellationDetail: 0
       bones: []
@@ -19654,7 +19856,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_880
+      name: Equipment_cutgel_rnk_fight
       rect:
         serializedVersion: 2
         x: 1024
@@ -19664,7 +19866,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: 14, y: -6}
+        - {x: 4, y: 20}
+        - {x: 11, y: 22}
+        - {x: 20, y: -5}
       physicsShape: []
       tessellationDetail: 0
       bones: []
@@ -19674,7 +19880,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_881
+      name: Equipment_cutgel_shl_idle
       rect:
         serializedVersion: 2
         x: 1088
@@ -19684,7 +19890,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: 15, y: -7}
+        - {x: 4, y: 20}
+        - {x: 12, y: 23}
+        - {x: 19, y: -4}
       physicsShape: []
       tessellationDetail: 0
       bones: []
@@ -19694,7 +19904,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_882
+      name: Equipment_cutgel_death_1
       rect:
         serializedVersion: 2
         x: 1152
@@ -19704,7 +19914,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -11, y: -28}
+        - {x: -15, y: -21}
+        - {x: 12, y: -10}
+        - {x: 14, y: -15}
       physicsShape: []
       tessellationDetail: 0
       bones: []
@@ -19714,7 +19928,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_883
+      name: Equipment_cutgel_death_2
       rect:
         serializedVersion: 2
         x: 1216
@@ -19724,7 +19938,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: 18, y: -18}
+        - {x: 7, y: 8}
+        - {x: 13, y: 10}
+        - {x: 23, y: -16}
       physicsShape: []
       tessellationDetail: 0
       bones: []
@@ -19734,7 +19952,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_884
+      name: Equipment_cutgel_fallen
       rect:
         serializedVersion: 2
         x: 1280
@@ -19744,7 +19962,11 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -11, y: -27}
+        - {x: -13, y: -20}
+        - {x: 11, y: -11}
+        - {x: 15, y: -15}
       physicsShape: []
       tessellationDetail: 0
       bones: []
@@ -19998,17 +20220,21 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_901
+      name: Equipment_knife_rnk_idle
       rect:
         serializedVersion: 2
-        x: 448
+        x: 0
         y: 192
         width: 64
         height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: 3, y: -1}
+        - {x: 8, y: 16}
+        - {x: 14, y: 15}
+        - {x: 9, y: -3}
       physicsShape: []
       tessellationDetail: 0
       bones: []
@@ -20642,17 +20868,21 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_933
+      name: Equipment_stick_rnk_idle
       rect:
         serializedVersion: 2
         x: 448
         y: 128
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: 5, y: -27}
+        - {x: 12, y: -8}
+        - {x: 17, y: -10}
+        - {x: 11, y: -28}
       physicsShape: []
       tessellationDetail: 0
       bones: []
@@ -20662,17 +20892,21 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_934
+      name: Equipment_stick_rnk_run
       rect:
         serializedVersion: 2
         x: 512
         y: 128
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: 5, y: -28}
+        - {x: 11, y: -16}
+        - {x: 16, y: -17}
+        - {x: 10, y: -30}
       physicsShape: []
       tessellationDetail: 0
       bones: []
@@ -20682,17 +20916,21 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_935
+      name: Equipment_stick_rnk_fight
       rect:
         serializedVersion: 2
         x: 576
         y: 128
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: 16, y: -55}
+        - {x: 7, y: 5}
+        - {x: 12, y: 5}
+        - {x: 20, y: -55}
       physicsShape: []
       tessellationDetail: 0
       bones: []
@@ -20702,17 +20940,21 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_936
+      name: Equipment_stick_phx_idle
       rect:
         serializedVersion: 2
         x: 640
         y: 128
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: 8, y: -48}
+        - {x: -3, y: 14}
+        - {x: 4, y: 14}
+        - {x: 13, y: -48}
       physicsShape: []
       tessellationDetail: 0
       bones: []
@@ -20722,17 +20964,21 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_937
+      name: Equipment_stick_death_1
       rect:
         serializedVersion: 2
         x: 704
         y: 128
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: 8, y: -55}
+        - {x: -3, y: 9}
+        - {x: 2, y: 10}
+        - {x: 12, y: -53}
       physicsShape: []
       tessellationDetail: 0
       bones: []
@@ -20742,17 +20988,21 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_938
+      name: Equipment_stick_death_2
       rect:
         serializedVersion: 2
         x: 768
         y: 128
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -5, y: -64}
+        - {x: 15, y: 1}
+        - {x: 20, y: -1}
+        - {x: 0, y: -64}
       physicsShape: []
       tessellationDetail: 0
       bones: []
@@ -20762,17 +21012,21 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_939
+      name: Equipment_stick_fallen
       rect:
         serializedVersion: 2
         x: 832
         y: 128
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: 8, y: -55}
+        - {x: -2, y: 8}
+        - {x: 5, y: 8}
+        - {x: 12, y: -55}
       physicsShape: []
       tessellationDetail: 0
       bones: []
@@ -20782,17 +21036,21 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_940
+      name: Equipment_forks_rnk_idle
       rect:
         serializedVersion: 2
         x: 896
         y: 128
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: 6, y: -17}
+        - {x: 12, y: -5}
+        - {x: 19, y: -15}
+        - {x: 8, y: -28}
       physicsShape: []
       tessellationDetail: 0
       bones: []
@@ -20802,17 +21060,21 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_941
+      name: Equipment_forks_rnk_run
       rect:
         serializedVersion: 2
         x: 960
         y: 128
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: 6, y: -29}
+        - {x: 7, y: -11}
+        - {x: 16, y: -14}
+        - {x: 14, y: -29}
       physicsShape: []
       tessellationDetail: 0
       bones: []
@@ -20822,17 +21084,21 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_942
+      name: Equipment_forks_rnk_fight
       rect:
         serializedVersion: 2
         x: 1024
         y: 128
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: 16, y: -55}
+        - {x: 3, y: 5}
+        - {x: 15, y: 8}
+        - {x: 20, y: -54}
       physicsShape: []
       tessellationDetail: 0
       bones: []
@@ -20842,17 +21108,21 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_943
+      name: Equipment_forks_phx_idle
       rect:
         serializedVersion: 2
         x: 1088
         y: 128
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: 7, y: -38}
+        - {x: -6, y: 15}
+        - {x: 7, y: 19}
+        - {x: 12, y: -37}
       physicsShape: []
       tessellationDetail: 0
       bones: []
@@ -20862,17 +21132,21 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_944
+      name: Equipment_forks_death_1
       rect:
         serializedVersion: 2
         x: 1152
         y: 128
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: 6, y: -45}
+        - {x: -7, y: 12}
+        - {x: 7, y: 14}
+        - {x: 11, y: -44}
       physicsShape: []
       tessellationDetail: 0
       bones: []
@@ -20882,17 +21156,21 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_945
+      name: Equipment_forks_death_2
       rect:
         serializedVersion: 2
         x: 1216
         y: 128
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -10, y: -64}
+        - {x: 12, y: -7}
+        - {x: 17, y: -8}
+        - {x: 6, y: -64}
       physicsShape: []
       tessellationDetail: 0
       bones: []
@@ -20902,17 +21180,21 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Equipment_946
+      name: Equipment_forks_fallen
       rect:
         serializedVersion: 2
         x: 1280
         y: 128
         width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: 7, y: -46}
+        - {x: -6, y: 13}
+        - {x: 7, y: 14}
+        - {x: 13, y: -45}
       physicsShape: []
       tessellationDetail: 0
       bones: []
@@ -22356,6 +22638,170 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Equipment_knife_rnk_run
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11, y: 5}
+        - {x: 11, y: 13}
+        - {x: 17, y: 13}
+        - {x: 17, y: 5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 880a480390a2dbc4cb610c34df767e6b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Equipment_knife_rnk_fight
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 14, y: -6}
+        - {x: 8, y: 10}
+        - {x: 16, y: 12}
+        - {x: 21, y: -3}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0e5da921cdbd464aa6b28904193caa4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Equipment_knife_shl_idle
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 14, y: -7}
+        - {x: 9, y: 12}
+        - {x: 15, y: 13}
+        - {x: 20, y: -6}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b72c1db9330f953459440c6073e5794b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Equipment_knife_death_1
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -1, y: -21}
+        - {x: -1, y: -13}
+        - {x: 14, y: -10}
+        - {x: 15, y: -17}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15b42da86697f374c8715752d43de35c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Equipment_knife_death_2
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 17, y: -20}
+        - {x: 11, y: -1}
+        - {x: 17, y: 0}
+        - {x: 23, y: -18}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 136af37d4aa41fb4890b4e21c5ea0056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Equipment_knife_fallen
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -2, y: -19}
+        - {x: -2, y: -11}
+        - {x: 13, y: -11}
+        - {x: 13, y: -19}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe3d6da928f15f74e94a0cfb5bc0fdd9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Equipment_0
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 890f2251432a56a48b4dfd6d743ac9bd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -22365,6 +22811,8 @@ TextureImporter:
     edges: []
     weights: []
   spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

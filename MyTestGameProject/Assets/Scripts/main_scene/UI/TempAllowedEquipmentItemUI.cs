@@ -12,8 +12,16 @@ public class TempAllowedEquipmentItemUI : MonoBehaviour
         img = GetComponent<Image>();
     }
 
-    public void Present(Sprite ico)
+    public void Present(Sprite ico, bool enabled = true)
     {
         img.sprite = ico;
+
+        Color c = Color.white;
+        if (enabled)
+            c.a = 1;
+        else
+            c.a = 0.2f;
+
+        img.color = c;
     }
 }

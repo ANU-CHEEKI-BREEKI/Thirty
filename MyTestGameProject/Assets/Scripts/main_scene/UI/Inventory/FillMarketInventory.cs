@@ -3,16 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-[RequireComponent(typeof(MarketInventoryUI))]
 public class FillMarketInventory : MonoBehaviour
 {
     [SerializeField] string pathToEquipmentResources;
-
-    MarketInventoryUI inventory;
+    [Space]
+    [SerializeField] MarketInventoryUI inventory;
 
     void Awake()
     {
-        inventory = GetComponent<MarketInventoryUI>();
+        if(inventory == null)
+            inventory = GetComponent<MarketInventoryUI>();
     }
 
     void Start()

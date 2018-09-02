@@ -1,6 +1,6 @@
 Android
 PlayerPath?
-C:/Users/ANU CHEEKI BREEKI/Desktop/Thirty.v.0.10.4a.apk
+C:/Users/ANU CHEEKI BREEKI/Desktop/Thirty.v.0.10.5a.apk
 SceneListBegin?
 Assets/Scenes/main_menu.unity
 Assets/Scenes/market.unity
@@ -313,7 +313,7 @@ e033f131358cea5a0eabf9561e781deb UnityEngine.TestRunner.dll:UnityEngine.TestTool
 70f7dc248db3379548a88e8d4fa049f8 UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioRoom
 28a95668dd28649297d595834fe8417e UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioSoundfieldExtension
 28a95668dd28649297d595834fe8417e UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioSourceExtension
-575b31d40a4f413553ba0f34c0209574 Assembly-CSharp.dll:.FillMarketInventory
+e2359f412e0dbe87d24fd4d43edc7059 Assembly-CSharp.dll:.FillMarketInventory
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.TriggerConstraintSpearInPlayerInventory
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.DropingItemsManager
 44b08d85ea9b7814412f885e50c025b0 Assembly-CSharp.dll:.AiSquadController

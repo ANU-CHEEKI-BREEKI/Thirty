@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -10,13 +11,15 @@ public class MarketInventoryUI : AInventoryUI
     [Space]
     [Tooltip("Родительский объект для ячеек предметов. КРОМЕ ячеек внем не должно быть НИЧЕГО.")]
     [SerializeField] Transform itemsContainer;
-        
+    [Space]
+    EquipmentStats.TypeOfEquipment currentType;
+
     List<Transform> items;
     List<EquipmentStack> inventory;
 
-    public bool Fill { get { return inventory.Count == items.Count; } }
-
     public static MarketInventoryUI Instance { get; private set; }
+
+    public bool Fill { get { return inventory.Count == items.Count; } }
 
     private void Awake()
     {
@@ -28,7 +31,10 @@ public class MarketInventoryUI : AInventoryUI
         int cnt = itemsContainer.childCount;
         items = new List<Transform>(itemsContainer.childCount);
         for (int i = 0; i < cnt; i++)
-            items.Add(itemsContainer.GetChild(i));
+        {
+            var ch = itemsContainer.GetChild(i);
+            items.Add(ch);
+        }
     }
 
     private void Start()
@@ -91,14 +97,19 @@ public class MarketInventoryUI : AInventoryUI
             return;
 
         int cnt = inventory.Count;
+        int q = 0;
         for (int i = 0; i < cnt; i++)
         {
-            SetImage(inventoryItemOriginal, items[i], inventory[i], true);
+            if (inventory[i].EquipmentStats.Type == currentType)
+            {
+                SetImage(inventoryItemOriginal, items[q], inventory[i], true);
+                q++;
+            }
         }
 
         int cnt2 = items.Count;
-        if(cnt2 > cnt)
-            for (int i = cnt; i < cnt2; i++)
+        if(cnt2 > q)
+            for (int i = q; i < cnt2; i++)
                 SetImage(null, items[i], null, false);
     }
 
@@ -114,5 +125,11 @@ public class MarketInventoryUI : AInventoryUI
             drag.Present();
         }
         return go;
+    }
+
+    public void SetCurrentEquipmentType(string type)
+    {
+        currentType = (EquipmentStats.TypeOfEquipment)Enum.Parse(typeof(EquipmentStats.TypeOfEquipment), type);
+        RefreshUI();
     }
 }

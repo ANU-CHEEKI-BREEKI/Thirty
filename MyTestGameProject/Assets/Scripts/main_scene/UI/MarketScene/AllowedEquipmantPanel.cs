@@ -16,13 +16,19 @@ public class AllowedEquipmantPanel : MonoBehaviour
         if(gameObject.tag == "Main")
             MainInstance = this;
         
-        ClearAll();
+        //ClearAll();
+        Reset(tempValues);
     }
 
     public void AddEq(EquipmentStack stack)
     {
+        var playerEq = GameManager.Instance.PlayerProgress.Equipment;
+
         var item = Instantiate(itemOriginal, transform);
-        item.Present(stack.EquipmentMainProperties.Icon);
+        if(tempValues)
+            item.Present(stack.EquipmentMainProperties.Icon);
+        else
+            item.Present(stack.EquipmentMainProperties.Icon, playerEq.IsThisEquipmantAllowed(stack.EquipmentStats));
     }
 
     void ClearAll()
@@ -49,8 +55,7 @@ public class AllowedEquipmantPanel : MonoBehaviour
             }
             else
             {
-                if (playerEq.IsThisEquipmantAllowed(e.Stats))
-                    AddEq(new EquipmentStack(e));
+                AddEq(new EquipmentStack(e));
             }
         }
     }
