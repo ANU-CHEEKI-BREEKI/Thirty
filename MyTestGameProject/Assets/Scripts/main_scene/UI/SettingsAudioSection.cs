@@ -23,13 +23,7 @@ public class SettingsAudioSection : MonoBehaviour
 
         reset.onClick.AddListener(OnDefaultSetingsButtonClick);
     }
-
-    void OnDisable()
-    {
-        if (GameManager.Instance != null && GameManager.Instance.Settings != null && GameManager.Instance.Settings.audioSettings != null)
-            GameManager.Instance.Settings.audioSettings.Save();
-    }
-
+    
     void OnEnable()
     {
         Refresh();
@@ -37,7 +31,8 @@ public class SettingsAudioSection : MonoBehaviour
 
     void Refresh()
     {
-        var aset = GameManager.Instance.Settings.audioSettings;
+        var aset = GameManager.Instance.SavablePlayerData.Settings.audioSettings;
+
         sliderMusicVolume.Value = aset.musicVolume.Value;
         sliderFxVolume.Value = aset.fxVolume.Value;
         sliderUIVolume.Value = aset.uiVolume.Value;
@@ -46,27 +41,27 @@ public class SettingsAudioSection : MonoBehaviour
 
     private void SliderMusicVolume_OnEndEditValue(float volume)
     {
-        GameManager.Instance.Settings.audioSettings.musicVolume.Value = volume;
+        GameManager.Instance.SavablePlayerData.Settings.audioSettings.musicVolume.Value = volume;
     }
 
     private void SliderFxVolume_OnEndEditValue(float volume)
     {
-        GameManager.Instance.Settings.audioSettings.fxVolume.Value = volume;
+        GameManager.Instance.SavablePlayerData.Settings.audioSettings.fxVolume.Value = volume;
     }
 
     private void SliderUIVolume_OnEndEditValue(float volume)
     {
-        GameManager.Instance.Settings.audioSettings.uiVolume.Value = volume;
+        GameManager.Instance.SavablePlayerData.Settings.audioSettings.uiVolume.Value = volume;
     }
         
     private void SliderGeneralVolume_OnEndEditValue(float volume)
     {
-        GameManager.Instance.Settings.audioSettings.generalVolume.Value = volume;
+        GameManager.Instance.SavablePlayerData.Settings.audioSettings.generalVolume.Value = volume;
     }
 
     void OnDefaultSetingsButtonClick()
     {
-        GameManager.Instance.Settings.audioSettings.Reset();
+        GameManager.Instance.SavablePlayerData.Settings.audioSettings.Reset();
         Refresh();
     }
 }

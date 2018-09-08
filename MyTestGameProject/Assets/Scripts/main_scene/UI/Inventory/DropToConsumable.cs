@@ -26,7 +26,7 @@ public class DropToConsumable : ADropToMe
                 break;
         }
 
-        var score = GameManager.Instance.PlayerProgress.Score;
+        var score = GameManager.Instance.SavablePlayerData.PlayerProgress.Score;
         int cost = -1;
         //проверяем стоит ли оно денег
         if (stack.ConsumableStats is ISkillCostable)
@@ -101,7 +101,7 @@ public class DropToConsumable : ADropToMe
             if (t)
             {
                 int cost = (stack.ConsumableStats as ISkillCostable).Cost * stack.Count;
-                var score = GameManager.Instance.PlayerProgress.Score;
+                var score = GameManager.Instance.SavablePlayerData.PlayerProgress.Score;
                 score.EarnMoney(cost, stack.Consumable.MainPropertie.Currency);
             }
         }

@@ -30,9 +30,9 @@ public class CallConverterNumberPicker : MonoBehaviour, IPointerClickHandler
 
                     //нужно не только голду проверять!!! хилка то на серебре!
 
-                    if (value > GameManager.Instance.PlayerProgress.Score.gold.Value)
+                    if (value > GameManager.Instance.SavablePlayerData.PlayerProgress.Score.gold.Value)
                     {
-                        value = GameManager.Instance.PlayerProgress.Score.gold.Value;
+                        value = GameManager.Instance.SavablePlayerData.PlayerProgress.Score.gold.Value;
                         converter.SetMaxValues(0, value);
                     }
                     converter.InputValue = value;
@@ -50,9 +50,9 @@ public class CallConverterNumberPicker : MonoBehaviour, IPointerClickHandler
 
                     converter.OutputValue = value;
                     value = converter.InputValue;
-                    if (value > GameManager.Instance.PlayerProgress.Score.gold.Value)
+                    if (value > GameManager.Instance.SavablePlayerData.PlayerProgress.Score.gold.Value)
                     {
-                        value = GameManager.Instance.PlayerProgress.Score.gold.Value;
+                        value = GameManager.Instance.SavablePlayerData.PlayerProgress.Score.gold.Value;
                         converter.SetMaxValues(0, value);
                     }
                     converter.InputValue = value;

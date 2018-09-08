@@ -21,7 +21,7 @@ public class SpriteOutline : MonoBehaviour
     {
 		if (renderer != null)
 		{
-			GraphixSettings gs = GameManager.Instance.Settings.graphixSettings;
+			GraphixSettings gs = GameManager.Instance.SavablePlayerData.Settings.graphixSettings;
 
             if (gs.OutlineType == GraphixSettings.OutlineTypes.BORDER)
             {

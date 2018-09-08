@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -12,20 +11,16 @@ public class GameManager : MonoBehaviour
     bool gamePaused;
     public bool GamePaused { get { return gamePaused; } private set { gamePaused = value; } }
 
-    [Header("Score")]
-    [SerializeField]
-    PlayerProgress playerProgress = new PlayerProgress();
-    public PlayerProgress PlayerProgress { get { return playerProgress; } }
-
+    [Header("Savable Data")]
+    [SerializeField] SavablePlayerData savablePlayerData = new SavablePlayerData();
+    public SavablePlayerData SavablePlayerData { get { return savablePlayerData; } }
+    
     [Header("Time manage")]
     [SerializeField]
     [Range(0, 1)]
     float timeScale = 1;
 
-    [Header("Settings")]
-    [SerializeField]
-    Settings settings = new Settings();
-    public Settings Settings { get { return settings; } }
+    
 
     [Header("Game")]
     [SerializeField]
@@ -54,7 +49,7 @@ public class GameManager : MonoBehaviour
     Squad squad;
     public Squad PlayerSquad { get { return squad; } }
 
-    public ISavingManager SavingManager { get; set; } = new PlayerPrefsSavingManager();
+    public ISavingManager SavingManager { get; set; }
 
     /// <summary>
     /// первый агрумент - номер сцены, на которую будет совершен переход. второй агрумент - номер игрового уровня
@@ -63,22 +58,43 @@ public class GameManager : MonoBehaviour
 
     void Awake()
     {
-        Localization.SetLanguage(SystemLanguage.Russian);
-        //LocalizedStrings.SetLanguage(SystemLanguage.English);
-
         if (Instance == null)
         {
             Instance = this;
             CurrentLevel = new LevelInfo();
             defFixedDeltaTime = Time.fixedDeltaTime;
-
             Application.logMessageReceived += OnUnhendeledException;
 
-            DownloadSaves();
+            Localization.SetLanguage(SystemLanguage.Russian);
+
+#if UNITY_EDITOR
+            SavingManager = new PlayerPrefsSavingManager();
+#else
+            SavingManager = new GPSSavingManager();
+#endif
+
+            bool debug = false;
+#if DEBUG
+            debug = true;
+#endif
+
+            Action<bool> onLogIn = (b) =>
+            {
+                DownloadSaves();
+                if (b)
+                {
+                    Social.ReportProgress(GPSConstants.achievement_welcome, 100, null);
+                }
+                else
+                {
+                    Toast.Instance.Show("can't authenticate");
+                }
+            };
+            GPSWrapper.LogInPlayer(debug, onLogIn);
 
             BeforeLoadLevel += (a, b) =>
             {
-                playerProgress.Save();
+                savablePlayerData.PlayerProgress.Save();
 
                 SoundManager.Instance.StopPlayingChannel(SoundManager.SoundType.MUSIC, 1.5f);
                 SoundManager.Instance.StopPlayingChannel(SoundManager.SoundType.FX, 1.5f);
@@ -166,24 +182,32 @@ public class GameManager : MonoBehaviour
 
     public void DownloadSaves()
     {
-        settings.Load();
-        playerProgress.Load();
+        //ModalInfoPanel.Instance.Show("[non loc] Загрузка сохранений...");
+        Action onLoad = null;
+        onLoad = () =>
+        {
+            //ModalInfoPanel.Instance.Hide();
+            savablePlayerData.OnLoaded -= onLoad;
+        };
+        savablePlayerData.OnLoaded += onLoad;
+        savablePlayerData.Load();
     }
 
     public void ResetPlayerTempProgressValues()
     {
-        playerProgress.ResetTempValues();
+        savablePlayerData.PlayerProgress.ResetTempValues();
     }
 
     public void ApplyPlayerTempProgressValues()
     {
-        playerProgress.ApplyTempValues();
-        ResetPlayerTempProgressValues();
+        savablePlayerData.PlayerProgress.ApplyTempValues();
+
+        ResetPlayerTempProgressValues();    
     }
 
     void OnUnhendeledException(string condition, string stackTrace, LogType type)
     {
-        if (type == LogType.Error || type == LogType.Exception || type == LogType.Warning)
+        if (type == LogType.Error || type == LogType.Exception || type == LogType.Assert)
         {
             Instance.Pause();
             DialogBox.Instance
@@ -195,13 +219,22 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    private void OnApplicationQuit()
+    public void SaveAndQuit()
     {
-        settings.Save();
-
         ResetPlayerTempProgressValues();
 
-        playerProgress.Save();
+        //ModalInfoPanel.Instance.Show("[non loc] Сохранение данных...");
+        Action onSaved = null;
+        onSaved = () =>
+        {
+            //ModalInfoPanel.Instance.Hide();
+            savablePlayerData.OnSaved -= onSaved;
+            GPSWrapper.SignOutPlayer();
+            Application.Quit();
+            Debug.Log("Quit");
+        };
+        savablePlayerData.OnSaved += onSaved;
+        savablePlayerData.Save();
     }
 
     public void InitPlayer()
@@ -254,7 +287,7 @@ public class GameManager : MonoBehaviour
             );
         }
 
-        var progress = GameManager.Instance.PlayerProgress;
+        var progress = GameManager.Instance.SavablePlayerData.PlayerProgress;
 
         squad.SetUnitsStats(progress.Stats);
         var skill = progress.Skills.firstSkill;
@@ -308,9 +341,9 @@ public class GameManager : MonoBehaviour
         var firstSkill = Squad.playerSquadInstance.Inventory.FirstSkill;
         var secondSkill = Squad.playerSquadInstance.Inventory.SecondSkill;
         if (firstSkill.Skill != null)
-            firstSkill.SkillStats = firstSkill.Skill.CalcUpgradedStats(playerProgress.Skills.skills.Find((t) => { return t.Id == firstSkill.Skill.Id; }).Upgrades);
+            firstSkill.SkillStats = firstSkill.Skill.CalcUpgradedStats(savablePlayerData.PlayerProgress.Skills.skills.Find((t) => { return t.Id == firstSkill.Skill.Id; }).Upgrades);
         if (secondSkill.Skill != null)
-            secondSkill.SkillStats = secondSkill.Skill.CalcUpgradedStats(playerProgress.Skills.skills.Find((t) => { return t.Id == secondSkill.Skill.Id; }).Upgrades);
+            secondSkill.SkillStats = secondSkill.Skill.CalcUpgradedStats(savablePlayerData.PlayerProgress.Skills.skills.Find((t) => { return t.Id == secondSkill.Skill.Id; }).Upgrades);
 
         LoadScene(SceneIndex.LEVEL);
     }
@@ -438,56 +471,48 @@ public class GameManager : MonoBehaviour
     [ContextMenu("ResetAllSettings")]
     public void ResetAllSettings()
     {
-        settings = new Settings();
-        settings.Save();
+        savablePlayerData.Reset();
     }
 
     [ContextMenu("ResetAudioSettings")]
     public void ResetAudioSettings()
     {
-        settings.audioSettings = new AudioSettings();
-        settings.audioSettings.Save();
+        savablePlayerData.Settings.audioSettings.Reset();
     }
 
     [ContextMenu("ResetCommonSettings")]
     public void ResetCommonSettings()
     {
-        settings.commonSettings = new CommonSettings();
-        settings.commonSettings.Save();
+        savablePlayerData.Settings.commonSettings.Reset();
     }
 
     [ContextMenu("ResetGraphixSettings")]
     public void ResetGraphixSettings()
     {
-        settings.graphixSettings = new GraphixSettings();
-        settings.graphixSettings.Save();
+        savablePlayerData.Settings.graphixSettings.Reset();
     }
 
     [ContextMenu("ResetAllProgress")]
     public void ResetAllProgress()
     {
-        playerProgress = new PlayerProgress();
-        playerProgress.Save();
+        savablePlayerData.PlayerProgress.Reset();
     }
 
     [ContextMenu("ResetScore")]
     public void ResetScore()
     {
-        playerProgress.Score.Reset();
-        playerProgress.Score.Save();
+        savablePlayerData.PlayerProgress.Score.Reset();
     }
 
     [ContextMenu("ResetStats")]
     public void ResetStats()
     {
-        playerProgress.Stats.Reset();
-        playerProgress.Stats.Save();
+        savablePlayerData.PlayerProgress.Stats.Reset();
     }
 
     [ContextMenu("ResetSkills")]
     public void ResetSkills()
     {
-        playerProgress.Skills.Reset();
-        playerProgress.Skills.Save();
+        savablePlayerData.PlayerProgress.Skills.Reset();
     }
 }

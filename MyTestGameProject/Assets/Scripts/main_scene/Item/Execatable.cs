@@ -34,7 +34,7 @@ public abstract class Executable : Item, IDescriptionable
             {
                 Color sc = Color.black;
                 Color ec;
-                var gs = GameManager.Instance.Settings.graphixSettings;
+                var gs = GameManager.Instance.SavablePlayerData.Settings.graphixSettings;
                 switch (owner.fraction)
                 {
                     case Squad.UnitFraction.ALLY:

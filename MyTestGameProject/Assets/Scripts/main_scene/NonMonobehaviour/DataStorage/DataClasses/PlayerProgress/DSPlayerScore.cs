@@ -2,7 +2,7 @@
 using UnityEngine;
 
 [Serializable]
-public class DSPlayerScore : ISavable, IResetable, ITempValuesApplyable
+public class DSPlayerScore : ITempValuesApplyable, IResetable, ILoadedDataApplyable
 {
     public enum Currency { SILVER, GOLD, EXPIRIENCE }
 
@@ -14,18 +14,15 @@ public class DSPlayerScore : ISavable, IResetable, ITempValuesApplyable
     public Score tempSilver;
     public Score tempExpirience;
 
-    public void Save()
+    public DSPlayerScore()
     {
-        GameManager.Instance.SavingManager.SaveData<DSPlayerScore>(this.GetType().Name, this);
-    }
+        gold = new Score();
+        silver = new Score();
+        expirience = new Score();
 
-    public void Load()
-    {
-        System.Reflection.BindingFlags flags = System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.NonPublic;
-        var g = GameManager.Instance.SavingManager.LoadData<DSPlayerScore>(this.GetType().Name);
-        var fields = this.GetType().GetFields(flags);
-        foreach (var f in fields)
-            f.SetValue(this, f.GetValue(g));
+        tempGold = new Score();
+        tempSilver = new Score();
+        tempExpirience = new Score();
     }
 
     /// <summary>
@@ -89,7 +86,7 @@ public class DSPlayerScore : ISavable, IResetable, ITempValuesApplyable
     /// <param name="value">не отрицательное значение!</param>
     /// <param name="currency">валюта</param>
     /// <returns>потрптилась ли валюта</returns>
-    public bool SpendMoney(float value, Currency currency, bool saveAdterOperation = true)
+    public bool SpendMoney(float value, Currency currency)
     {
         if (value < 0) throw new Exception("позволяется только не отрицательные значения");
 
@@ -108,9 +105,6 @@ public class DSPlayerScore : ISavable, IResetable, ITempValuesApplyable
                         expirience.Value -= value;
                     break;
             }
-
-            if (saveAdterOperation)
-                Save();
         }
 
         return res;
@@ -122,7 +116,7 @@ public class DSPlayerScore : ISavable, IResetable, ITempValuesApplyable
     /// <param name="value">не отрицательное значение!</param>
     /// <param name="currency">валюта</param>
     /// <returns>зачислена ли валюта</returns>
-    public void EarnMoney(float value, Currency currency, bool saveAdterOperation = true)
+    public void EarnMoney(float value, Currency currency)
     {
         if (value < 0) throw new Exception("позволяется только не отрицательные значения");
 
@@ -139,8 +133,6 @@ public class DSPlayerScore : ISavable, IResetable, ITempValuesApplyable
                 break;
         }
 
-        if (saveAdterOperation)
-            Save();
     }
 
     /// <summary>
@@ -166,6 +158,19 @@ public class DSPlayerScore : ISavable, IResetable, ITempValuesApplyable
         return res;
     }
 
+    public void ApplyLoadedData(object data)
+    {
+        var d = data as DSPlayerScore;
+
+        gold.Value = d.gold.Value;
+        silver.Value = d.silver.Value;
+        expirience.Value = d.expirience.Value;
+
+        tempGold.Value = d.tempGold.Value;
+        tempSilver.Value = d.tempSilver.Value;
+        tempExpirience.Value = d.tempExpirience.Value;
+    }
+    
     [Serializable]
     public class Score
     {

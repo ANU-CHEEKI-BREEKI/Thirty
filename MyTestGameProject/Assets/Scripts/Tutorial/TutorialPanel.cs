@@ -234,8 +234,8 @@ public class TutorialPanel : MonoBehaviour
                 if(scInd < GameManager.SceneIndex.LEVEL_TUTORIAL_3)
                 {
                     var nextLevel = (GameManager.SceneIndex)((int)scInd + 1);
-                    if(GameManager.Instance.PlayerProgress.Flags.AvalaibleTutorialLevel < nextLevel)
-                        GameManager.Instance.PlayerProgress.Flags.AvalaibleTutorialLevel = nextLevel;
+                    if(GameManager.Instance.SavablePlayerData.PlayerProgress.Flags.AvalaibleTutorialLevel < nextLevel)
+                        GameManager.Instance.SavablePlayerData.PlayerProgress.Flags.AvalaibleTutorialLevel = nextLevel;
                     GameManager.Instance.LoadTutorialLevel(nextLevel);
                 }
                 else

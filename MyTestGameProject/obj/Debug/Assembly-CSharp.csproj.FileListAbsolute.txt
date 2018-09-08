@@ -419,9 +419,7 @@ D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Temp\bin\Debug\Syste
 D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Temp\bin\Debug\TextMeshPro-2017.3-1.0.56-Editor.dll
 D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Temp\bin\Debug\TextMeshPro-2017.3-1.0.56-Runtime.dll
 D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Temp\bin\Debug\Unity.Locator.dll
-D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Temp\bin\Debug\Unity.PackageManagerUI.Editor.dll
 D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Temp\bin\Debug\UnityEditor.dll
-D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Temp\bin\Debug\UnityEditor.StandardEvents.dll
 D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Temp\bin\Debug\UnityEngine.AccessibilityModule.dll
 D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Temp\bin\Debug\UnityEngine.AIModule.dll
 D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Temp\bin\Debug\UnityEngine.Analytics.dll
@@ -579,3 +577,5 @@ D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Temp\bin\Debug\Unity
 D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Temp\bin\Debug\UnityEngine.LocalizationModule.xml
 D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Temp\bin\Debug\UnityEngine.ProfilerModule.xml
 D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Temp\bin\Debug\UnityEngine.StreamingModule.xml
+D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Temp\bin\Debug\Unity.PackageManagerUI.Editor.dll
+D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Temp\bin\Debug\UnityEditor.StandardEvents.dll

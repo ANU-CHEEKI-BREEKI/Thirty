@@ -23,7 +23,7 @@ public class FillMarketInventory : MonoBehaviour
 
     public void Fill(MarketInventoryUI inventory)
     {
-        var playerEq = GameManager.Instance.PlayerProgress.Equipment;
+        var playerEq = GameManager.Instance.SavablePlayerData.PlayerProgress.Equipment;
 
         var eq = Resources.LoadAll<Equipment>(pathToEquipmentResources);
         List<Equipment> eqList = new List<Equipment>();

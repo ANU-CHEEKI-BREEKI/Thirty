@@ -15,13 +15,13 @@ public class ScoreMarket : MonoBehaviour
     {
         converter = GetComponent<NumberConverter>();
         converter.OnCliclOk += Converter_OnCliclOk;
-        GameManager.Instance.PlayerProgress.Score.gold.OnValueChanged += Gold_OnValueChanged;
-        converter.SetMaxValues(0, GameManager.Instance.PlayerProgress.Score.gold.Value);
+        GameManager.Instance.SavablePlayerData.PlayerProgress.Score.gold.OnValueChanged += Gold_OnValueChanged;
+        converter.SetMaxValues(0, GameManager.Instance.SavablePlayerData.PlayerProgress.Score.gold.Value);
     }
 
     private void OnDestroy()
     {
-        GameManager.Instance.PlayerProgress.Score.gold.OnValueChanged -= Gold_OnValueChanged;
+        GameManager.Instance.SavablePlayerData.PlayerProgress.Score.gold.OnValueChanged -= Gold_OnValueChanged;
         if(converter != null)
             converter.OnCliclOk -= Converter_OnCliclOk;
     }
@@ -39,13 +39,12 @@ public class ScoreMarket : MonoBehaviour
         switch (convertFor)
         {
             case ConvertType.SILVER:
-                GameManager.Instance.PlayerProgress.Score.silver.Value += outputValue;
+                GameManager.Instance.SavablePlayerData.PlayerProgress.Score.silver.Value += outputValue;
                 break;
             case ConvertType.EXPIRIENCE:
-                GameManager.Instance.PlayerProgress.Score.expirience.Value += outputValue;
+                GameManager.Instance.SavablePlayerData.PlayerProgress.Score.expirience.Value += outputValue;
                 break;
         }
-        GameManager.Instance.PlayerProgress.Score.gold.Value -= inputValue;
-        GameManager.Instance.PlayerProgress.Score.Save();
+        GameManager.Instance.SavablePlayerData.PlayerProgress.Score.gold.Value -= inputValue;
     }
 }

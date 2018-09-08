@@ -10,7 +10,7 @@ public class Money : ScriptableObject
 
     public void Use(int count, bool asTempValue = true)
     {
-        var ps = GameManager.Instance.PlayerProgress.Score;
+        var ps = GameManager.Instance.SavablePlayerData.PlayerProgress.Score;
         if (asTempValue)
         {
             switch (currency)

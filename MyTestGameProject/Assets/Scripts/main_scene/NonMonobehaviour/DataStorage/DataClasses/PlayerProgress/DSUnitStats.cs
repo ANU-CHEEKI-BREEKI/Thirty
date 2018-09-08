@@ -2,7 +2,7 @@
 using UnityEngine;
 
 [Serializable]
-public class DSUnitStats : ISavable, IResetable
+public class DSUnitStats : IResetable
 {
     [SerializeField] Stat health = new Stat(50, 200, 50);
     public Stat Health { get { return health; } }
@@ -78,21 +78,7 @@ public class DSUnitStats : ISavable, IResetable
     {
         Reset();
     }
-
-    public void Save()
-    {
-        GameManager.Instance.SavingManager.SaveData<DSUnitStats>(this.GetType().Name, this);
-    }
-
-    public void Load()
-    {
-        System.Reflection.BindingFlags flags = System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.NonPublic;
-        var g = GameManager.Instance.SavingManager.LoadData<DSUnitStats>(this.GetType().Name);
-        var fields = this.GetType().GetFields(flags);
-        foreach (var f in fields)
-            f.SetValue(this, f.GetValue(g));
-    }
-
+    
     public void Reset()
     {
         health = new Stat(50, 200, 50);

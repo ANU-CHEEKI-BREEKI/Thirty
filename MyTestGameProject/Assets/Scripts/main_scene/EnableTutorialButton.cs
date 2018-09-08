@@ -14,7 +14,7 @@ public class EnableTutorialButton : MonoBehaviour
     {
         btn = GetComponent<Button>();
         b = GetComponent<ToAnotherSceneButton>();
-        progres = GameManager.Instance.PlayerProgress;
+        progres = GameManager.Instance.SavablePlayerData.PlayerProgress;
     }
 
     private void OnEnable()

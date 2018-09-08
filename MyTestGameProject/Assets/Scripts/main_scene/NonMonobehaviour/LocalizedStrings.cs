@@ -173,7 +173,7 @@ public sealed class LocalizedStrings
     public static string equipment_weapon_knife_name { get; private set; }
     public static string equipment_weapon_knife_description { get; private set; }
     public static string equipment_weapon_cudgel_name { get; private set; }
-    public static string equipment_weapon_cudgel_sarrisa_description { get; private set; }
+    public static string equipment_weapon_cudgel_description { get; private set; }
     public static string skill_arrowWalley_name { get; private set; }
     public static string skill_arrowWalley_description { get; private set; }
     public static string skill_charge_name { get; private set; }

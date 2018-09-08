@@ -1,8 +1,9 @@
 ﻿using System;
+using System.Reflection;
 using UnityEngine;
 
 [Serializable]
-public class AudioSettings : ISavable, IResetable
+public class AudioSettings : ILoadedDataApplyable, ICopyabe
 {
     public CalledValue generalVolume;
     [Space]
@@ -20,18 +21,24 @@ public class AudioSettings : ISavable, IResetable
         Reset();
     }
 
-    public void Save()
+    public void ApplyLoadedData(object data)
     {
-        GameManager.Instance.SavingManager.SaveData<AudioSettings>(this.GetType().Name, this);
+        var d = data as AudioSettings;
+
+        generalVolume.Value = d.generalVolume.Value;
+        musicVolume.Value = d.musicVolume.Value;
+        fxVolume.Value = d.fxVolume.Value;
+        uiVolume.Value = d.uiVolume.Value;
     }
 
-    public void Load()
+    public object Copy()
     {
-        System.Reflection.BindingFlags flags = System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.NonPublic;
-        var g = GameManager.Instance.SavingManager.LoadData<AudioSettings>(this.GetType().Name);
-        var fields = this.GetType().GetFields(flags);
-        foreach (var f in fields)
-            f.SetValue(this, f.GetValue(g));
+        var res = new AudioSettings();
+        res.generalVolume.Value = this.generalVolume.Value;
+        res.musicVolume.Value = this.musicVolume.Value;
+        res.fxVolume.Value = this.fxVolume.Value;
+        res.uiVolume.Value = this.uiVolume.Value;
+        return res;
     }
 
     public void Reset()

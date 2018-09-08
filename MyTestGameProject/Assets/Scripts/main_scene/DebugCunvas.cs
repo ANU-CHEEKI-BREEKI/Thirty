@@ -12,6 +12,8 @@ public class DebugCunvas : MonoBehaviour
     [SerializeField] TextMeshProUGUI wholeLevelText;
     [SerializeField] TextMeshProUGUI timescaleText;
 
+    [SerializeField] TextMeshProUGUI savingManagerText;
+
     static DebugCunvas instance;
 
     void Awake()
@@ -27,6 +29,8 @@ public class DebugCunvas : MonoBehaviour
         Init();
 
         DontDestroyOnLoad(gameObject);
+
+        savingManagerText.text = GameManager.Instance.SavingManager.GetType().ToString();
     }
 
     void Init()

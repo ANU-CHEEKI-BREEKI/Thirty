@@ -920,8 +920,13 @@ public class Squad : MonoBehaviour
 
             if(this == playerSquadInstance)
             {
-                gameObject.AddComponent<DestroyOnAwake>();
-         //       Destroy(this);
+                gameObject.AddComponent<DestroyOnAwake>(); // Destroy(this); on next level
+
+                Social.ReportProgress(GPSConstants.achievement_heroes_never_die, 100, (b) => 
+                {
+                    if (b) Debug.Log("achievement_heroes_never_die   unlocked");
+                    else Debug.Log("achievement_heroes_never_die   can't be unlocked");
+                });
             }
 
             Destroy(gameObject);

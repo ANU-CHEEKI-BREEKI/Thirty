@@ -21,7 +21,7 @@ public class DragEquipment : Drag
             equipStack = value;
             if (showNewEquipment)
             {
-                var pe = GameManager.Instance.PlayerProgress.Equipment;
+                var pe = GameManager.Instance.SavablePlayerData.PlayerProgress.Equipment;
                 if (pe.IsThisEquipmantAllowed(value.EquipmentStats))
                     isNewItem = pe.GetEquipmantAllowed(value.EquipmentStats).IsNew;
             }
@@ -68,7 +68,7 @@ public class DragEquipment : Drag
 
             if (showNewEquipment)
             {
-                var pe = GameManager.Instance.PlayerProgress.Equipment;
+                var pe = GameManager.Instance.SavablePlayerData.PlayerProgress.Equipment;
                 if (pe.IsThisEquipmantAllowed(equipStack.EquipmentStats))
                 {
                     var eqid = pe.GetEquipmantAllowed(equipStack.EquipmentStats);

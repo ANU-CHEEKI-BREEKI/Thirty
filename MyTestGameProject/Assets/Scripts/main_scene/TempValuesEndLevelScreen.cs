@@ -33,7 +33,7 @@ public class TempValuesEndLevelScreen : MonoBehaviour
         score.popUpTextLifetime = 1.5f;
         equipment.Reset();
 
-        if (GameManager.Instance.PlayerProgress.Equipment.TempAllowedEquipmentIdCopy.Count == 0)
+        if (GameManager.Instance.SavablePlayerData.PlayerProgress.Equipment.TempAllowedEquipmentIdCopy.Count == 0)
             textEquipmantTooltip.text = LocalizedStrings.allowed_equipmant_none_tooltip;
         else
             textEquipmantTooltip.text = LocalizedStrings.allowed_equipmant_tooltip;

@@ -203,7 +203,7 @@
   <string name = "equipment_weapon_knife_name">Нож</string>
   <string name = "equipment_weapon_knife_description">Пригодится, если нужно отрезать кусок хлеба</string>
   <string name = "equipment_weapon_cudgel_name">Дубина</string>
-  <string name = "equipment_weapon_cudgel_sarrisa_description">Толстая палка.</string>
+  <string name = "equipment_weapon_cudgel_description">Толстая палка.</string>
   
   
   

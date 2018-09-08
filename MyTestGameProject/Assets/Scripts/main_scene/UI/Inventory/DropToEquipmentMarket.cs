@@ -38,7 +38,7 @@ public class DropToEquipmentMarket : ADropToMe
         float summ = stack.EquipmentStats.Cost * stack.Count;
         summ = (float)Math.Truncate(summ);
 
-        GameManager.Instance.PlayerProgress.Score.EarnMoney(summ, stack.EquipmentMainProperties.Currency);
+        GameManager.Instance.SavablePlayerData.PlayerProgress.Score.EarnMoney(summ, stack.EquipmentMainProperties.Currency);
 
         // а тут уже добавояем
         MarketInventoryUI.Instance.AddToInventory(stack);
@@ -53,7 +53,7 @@ public class DropToEquipmentMarket : ADropToMe
         float summ = stack.EquipmentStats.Cost * stack.Count;
         summ = (float)Math.Truncate(summ);
 
-        GameManager.Instance.PlayerProgress.Score.SpendMoney(summ, stack.EquipmentMainProperties.Currency);
+        GameManager.Instance.SavablePlayerData.PlayerProgress.Score.SpendMoney(summ, stack.EquipmentMainProperties.Currency);
 
         // а тут уже удаляем
         MarketInventoryUI.Instance.RemoveFtomInventory(stack);
@@ -67,11 +67,11 @@ public class DropToEquipmentMarket : ADropToMe
 
         float summ = stack.EquipmentStats.Cost * stack.Count;
 
-        if (GameManager.Instance.PlayerProgress.Score.EnoughtMoney(summ, stack.EquipmentMainProperties.Currency))
+        if (GameManager.Instance.SavablePlayerData.PlayerProgress.Score.EnoughtMoney(summ, stack.EquipmentMainProperties.Currency))
             return true;
         else
         {
-            Toast.Instance.Show(GameManager.Instance.PlayerProgress.Score.NotEoughtMoveyWarningString(stack.EquipmentMainProperties.Currency));
+            Toast.Instance.Show(GameManager.Instance.SavablePlayerData.PlayerProgress.Score.NotEoughtMoveyWarningString(stack.EquipmentMainProperties.Currency));
             return false;
         }
     }

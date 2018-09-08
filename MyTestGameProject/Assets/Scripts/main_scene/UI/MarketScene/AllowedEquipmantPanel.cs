@@ -22,7 +22,7 @@ public class AllowedEquipmantPanel : MonoBehaviour
 
     public void AddEq(EquipmentStack stack)
     {
-        var playerEq = GameManager.Instance.PlayerProgress.Equipment;
+        var playerEq = GameManager.Instance.SavablePlayerData.PlayerProgress.Equipment;
 
         var item = Instantiate(itemOriginal, transform);
         if(tempValues)
@@ -43,7 +43,7 @@ public class AllowedEquipmantPanel : MonoBehaviour
 
         ClearAll();
 
-        var playerEq = GameManager.Instance.PlayerProgress.Equipment;
+        var playerEq = GameManager.Instance.SavablePlayerData.PlayerProgress.Equipment;
 
         var eqs = Resources.LoadAll<Equipment>(pathToEquipmant);
         foreach (var e in eqs)

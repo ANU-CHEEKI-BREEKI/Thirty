@@ -53,7 +53,7 @@ public class StatsUpgrade : MonoBehaviour
 
     void SetValues()
     {
-        DSUnitStats stats = GameManager.Instance.PlayerProgress.Stats;
+        DSUnitStats stats = GameManager.Instance.SavablePlayerData.PlayerProgress.Stats;
         int roundDig = 0;
         string percentFormat = "##0.##%";
         string addValPercevtFormat = "+##0.##%";
@@ -124,7 +124,7 @@ public class StatsUpgrade : MonoBehaviour
 
     void OnClick()
     {
-        DSPlayerScore score = GameManager.Instance.PlayerProgress.Score;
+        DSPlayerScore score = GameManager.Instance.SavablePlayerData.PlayerProgress.Score;
         if (stat.Value < stat.MaxValue && score.expirience.Value > 0)
         {
             if (nextLevelCost <= score.expirience.Value)
@@ -153,7 +153,7 @@ public class StatsUpgrade : MonoBehaviour
     [ContextMenu("ResetThisStat")]
     void ResetStat()
     {
-        DSUnitStats stats = GameManager.Instance.PlayerProgress.Stats;
+        DSUnitStats stats = GameManager.Instance.SavablePlayerData.PlayerProgress.Stats;
         switch (statName)
         {
             case StatName.HEALTH:
@@ -180,7 +180,6 @@ public class StatsUpgrade : MonoBehaviour
                 stats.RotationSpeed.Value = stats.RotationSpeed.MinValue;
                 break;
         }
-        GameManager.Instance.PlayerProgress.Stats.Save();
         SetValues();
     }
 }

@@ -214,7 +214,7 @@ public class EnvirinmantInventoryUI : AInventoryUI
 
     public void FindItems()
     {
-        var playerEq = GameManager.Instance.PlayerProgress.Equipment;
+        var playerEq = GameManager.Instance.SavablePlayerData.PlayerProgress.Equipment;
 
         hitCount = Physics2D.CircleCast(Squad.playerSquadInstance.CenterSquad, radiusToFind, Vector2.zero, rHitFilter, rhits);
 

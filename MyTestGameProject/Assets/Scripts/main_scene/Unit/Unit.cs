@@ -1308,7 +1308,7 @@ public class Unit : MonoBehaviour
     void AfterTakingDamage(float dmg, Squad owner)
     {
         if (squad != Squad.playerSquadInstance && owner == Squad.playerSquadInstance && SceneManager.GetActiveScene().buildIndex == (int)GameManager.SceneIndex.LEVEL)
-            GameManager.Instance.PlayerProgress.Score.tempExpirience.Value += (int)dmg;
+            GameManager.Instance.SavablePlayerData.PlayerProgress.Score.tempExpirience.Value += (int)dmg;
 
         bool friendlyfire = false;
         if (gameObject.layer != LayerMask.NameToLayer("ENEMY") && 
@@ -1372,17 +1372,17 @@ public class Unit : MonoBehaviour
 
     void ShowPopUpTakenDamageText(string text, bool friendly = false)
     {
-        if (GameManager.Instance.Settings.graphixSettings.ShowDamage)
+        if (GameManager.Instance.SavablePlayerData.Settings.graphixSettings.ShowDamage)
         {
             Color color;
 
             if (friendly)
-                color = GameManager.Instance.Settings.graphixSettings.FrieldlyDamageColor;
+                color = GameManager.Instance.SavablePlayerData.Settings.graphixSettings.FrieldlyDamageColor;
             else
-                color = GameManager.Instance.Settings.graphixSettings.DamageToAllyColor;
+                color = GameManager.Instance.SavablePlayerData.Settings.graphixSettings.DamageToAllyColor;
 
             if (gameObject.layer == LayerMask.NameToLayer("ENEMY") || gameObject.layer == LayerMask.NameToLayer("FALLEN_ENEMY"))
-                color = GameManager.Instance.Settings.graphixSettings.DamageToEnemyColor;
+                color = GameManager.Instance.SavablePlayerData.Settings.graphixSettings.DamageToEnemyColor;
 
             Color endColor = color;
             endColor.a = 0.5f;

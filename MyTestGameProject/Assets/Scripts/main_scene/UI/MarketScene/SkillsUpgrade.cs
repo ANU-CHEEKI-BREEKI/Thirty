@@ -19,9 +19,11 @@ public class SkillsUpgrade : MonoBehaviour
         //так как дальше будет цикл от начала списка до конца
         Buttons.Sort();
 
-        var skills = GameManager.Instance.PlayerProgress.Skills.skills;
+        var skills = GameManager.Instance.SavablePlayerData.PlayerProgress.Skills.skills;
+
 
         bool hasSkill = false;
+        //ищем в созранениях информацию о прокачке скиллов
         foreach (var item in skills)
         {
             if(item.Id == skillId)
@@ -31,9 +33,16 @@ public class SkillsUpgrade : MonoBehaviour
                 break;
             }
         }
+        //если в сохранениях нет прокачки для этого скилла, то добавляем новую информацию,
+        //о непрокачанном скиле
         if (!hasSkill)
-            skills.Add(new DSPlayerSkill(skillId));
+        {
+            var newSkillUps = new DSPlayerSkill(skillId);
+            skills.Add(newSkillUps);
+            upgrades = newSkillUps.Upgrades;
+        }
 
+        //проходим по соответствующим кнопкам и инициализируем их
         int cnt = Buttons.Count;
         for(int i = 0; i < cnt; i++)
         {

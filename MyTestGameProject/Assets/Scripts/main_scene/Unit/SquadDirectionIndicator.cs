@@ -39,7 +39,7 @@ public class SquadDirectionIndicator : MonoBehaviour
 
         transformToFolow = squadToFollow.PositionsTransform;
 
-        var gs = GameManager.Instance.Settings.graphixSettings;
+        var gs = GameManager.Instance.SavablePlayerData.Settings.graphixSettings;
         Color color = Color.white;
         if (squadToFollow.fraction == Squad.UnitFraction.ALLY)
             color = gs.AllyOutlineColor;

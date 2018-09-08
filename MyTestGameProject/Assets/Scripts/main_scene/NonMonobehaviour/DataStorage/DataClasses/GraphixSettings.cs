@@ -1,8 +1,9 @@
 ﻿using System;
+using System.Reflection;
 using UnityEngine;
 
 [Serializable]
-public class GraphixSettings : ISavable, IResetable
+public class GraphixSettings : ICopyabe
 {
     public enum OutlineTypes { BORDER, UNDERLAYER }
 
@@ -55,25 +56,6 @@ public class GraphixSettings : ISavable, IResetable
     /// </summary>
     public Color32 NeutralOutlineColor = Color.yellow;
 
-    public GraphixSettings()
-    {
-        Reset();
-    }
-
-    public void Save()
-    {
-        GameManager.Instance.SavingManager.SaveData<GraphixSettings>(this.GetType().Name, this);
-    }
-
-    public void Load()
-    {
-        System.Reflection.BindingFlags flags = System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.NonPublic;
-        var g = GameManager.Instance.SavingManager.LoadData<GraphixSettings>(this.GetType().Name);
-        var fields = this.GetType().GetFields(flags);
-        foreach (var f in fields)
-            f.SetValue(this, f.GetValue(g));
-    }
-
     public void Reset()
     {
         ShowDamage = true;
@@ -87,5 +69,16 @@ public class GraphixSettings : ISavable, IResetable
         EnemyOutlineColor = Color.red;
         NeutralOutline = true;
         NeutralOutlineColor = Color.yellow;
+    }
+
+    public object Copy()
+    {
+        BindingFlags f = BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance;
+        var res = new GraphixSettings();
+
+        foreach (var fiels in GetType().GetFields(f))
+            fiels.SetValue(res, fiels.GetValue(this));
+
+        return res;
     }
 }

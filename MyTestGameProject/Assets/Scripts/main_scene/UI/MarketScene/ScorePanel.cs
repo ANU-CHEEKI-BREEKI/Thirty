@@ -42,7 +42,7 @@ public class ScorePanel : MonoBehaviour
         tempSilv = new T();
         tempExp = new T();
 
-        var score = GameManager.Instance.PlayerProgress.Score;
+        var score = GameManager.Instance.SavablePlayerData.PlayerProgress.Score;
 
         Reset(isTempValues, scaledDeltaTimeInPopUpTextController);
 
@@ -54,31 +54,31 @@ public class ScorePanel : MonoBehaviour
         if (gold != null)
         {
             if (!isTempValues)
-                GameManager.Instance.PlayerProgress.Score.gold.OnValueChanged -= RefreshByEventGold;
+                GameManager.Instance.SavablePlayerData.PlayerProgress.Score.gold.OnValueChanged -= RefreshByEventGold;
             else
-                GameManager.Instance.PlayerProgress.Score.tempGold.OnValueChanged -= RefreshByEventGold;
+                GameManager.Instance.SavablePlayerData.PlayerProgress.Score.tempGold.OnValueChanged -= RefreshByEventGold;
         }
 
         if (silver != null)
         {
             if (!isTempValues)
-                GameManager.Instance.PlayerProgress.Score.silver.OnValueChanged -= RefreshByEventSilver;
+                GameManager.Instance.SavablePlayerData.PlayerProgress.Score.silver.OnValueChanged -= RefreshByEventSilver;
             else
-                GameManager.Instance.PlayerProgress.Score.tempSilver.OnValueChanged -= RefreshByEventSilver;
+                GameManager.Instance.SavablePlayerData.PlayerProgress.Score.tempSilver.OnValueChanged -= RefreshByEventSilver;
         }
 
         if (expirience != null)
         {
             if (!isTempValues)
-                GameManager.Instance.PlayerProgress.Score.expirience.OnValueChanged -= RefreshByEventExpirience;
+                GameManager.Instance.SavablePlayerData.PlayerProgress.Score.expirience.OnValueChanged -= RefreshByEventExpirience;
             else
-                GameManager.Instance.PlayerProgress.Score.tempExpirience.OnValueChanged -= RefreshByEventExpirience;
+                GameManager.Instance.SavablePlayerData.PlayerProgress.Score.tempExpirience.OnValueChanged -= RefreshByEventExpirience;
         }
     }
 
     public void Reset(bool asTempValues = false, bool scaledTime = false, bool setStartValuesWithDelay = false, bool subscribeToEvents = true)
     {
-        var score = GameManager.Instance.PlayerProgress.Score;
+        var score = GameManager.Instance.SavablePlayerData.PlayerProgress.Score;
 
         Unsubscribe(isTempValues);
         if(subscribeToEvents)
@@ -163,7 +163,7 @@ public class ScorePanel : MonoBehaviour
 
     void Subscribe(bool isTempValues)
     {
-        var score = GameManager.Instance.PlayerProgress.Score;
+        var score = GameManager.Instance.SavablePlayerData.PlayerProgress.Score;
 
         if (!isTempValues)
         {
@@ -191,7 +191,7 @@ public class ScorePanel : MonoBehaviour
 
     void Unsubscribe(bool isTempValues)
     {
-        var score = GameManager.Instance.PlayerProgress.Score;
+        var score = GameManager.Instance.SavablePlayerData.PlayerProgress.Score;
 
         if (!isTempValues)
         {

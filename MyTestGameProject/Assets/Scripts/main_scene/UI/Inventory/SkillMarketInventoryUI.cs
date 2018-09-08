@@ -44,7 +44,7 @@ public class SkillMarketInventoryUI : AInventoryUI
 
     void Start()
     {
-        var savedSkills = GameManager.Instance.PlayerProgress.Skills.skills;
+        var savedSkills = GameManager.Instance.SavablePlayerData.PlayerProgress.Skills.skills;
 
         int cnt = skillsContainer.childCount;
         skillCells = new DropToSkillMarket[cnt];
@@ -91,7 +91,7 @@ public class SkillMarketInventoryUI : AInventoryUI
         if (!gameObject.activeInHierarchy)
             return;
 
-        var savedSkills = GameManager.Instance.PlayerProgress.Skills.skills;
+        var savedSkills = GameManager.Instance.SavablePlayerData.PlayerProgress.Skills.skills;
 
         int cnt = skillCells.Length;
         for (int i = 0; i < cnt; i++)

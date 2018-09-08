@@ -269,21 +269,21 @@ public class SoundChannel : MonoBehaviour
                 switch (value)
                 {
                     case SoundManager.SoundType.MUSIC:
-                        GameManager.Instance.Settings.audioSettings.musicVolume.OnValueChanged += OnVolumeChanged;
-                        chanelVolume = GameManager.Instance.Settings.audioSettings.musicVolume.Value;
+                        GameManager.Instance.SavablePlayerData.Settings.audioSettings.musicVolume.OnValueChanged += OnVolumeChanged;
+                        chanelVolume = GameManager.Instance.SavablePlayerData.Settings.audioSettings.musicVolume.Value;
                         break;
                     case SoundManager.SoundType.UI:
-                        GameManager.Instance.Settings.audioSettings.uiVolume.OnValueChanged += OnVolumeChanged;
-                        chanelVolume = GameManager.Instance.Settings.audioSettings.uiVolume.Value;
+                        GameManager.Instance.SavablePlayerData.Settings.audioSettings.uiVolume.OnValueChanged += OnVolumeChanged;
+                        chanelVolume = GameManager.Instance.SavablePlayerData.Settings.audioSettings.uiVolume.Value;
                         break;
                     case SoundManager.SoundType.FX:
-                        GameManager.Instance.Settings.audioSettings.fxVolume.OnValueChanged += OnVolumeChanged;
-                        chanelVolume = GameManager.Instance.Settings.audioSettings.fxVolume.Value;
+                        GameManager.Instance.SavablePlayerData.Settings.audioSettings.fxVolume.OnValueChanged += OnVolumeChanged;
+                        chanelVolume = GameManager.Instance.SavablePlayerData.Settings.audioSettings.fxVolume.Value;
                         break;
                 }
 
-                GameManager.Instance.Settings.audioSettings.generalVolume.OnValueChanged += OnGeneralVolumeChanged;
-                generalVolume = GameManager.Instance.Settings.audioSettings.generalVolume.Value;
+                GameManager.Instance.SavablePlayerData.Settings.audioSettings.generalVolume.OnValueChanged += OnGeneralVolumeChanged;
+                generalVolume = GameManager.Instance.SavablePlayerData.Settings.audioSettings.generalVolume.Value;
             }
         }
        

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [Serializable]
-public class DSPlayerEquipment : ISavable, IResetable, ITempValuesApplyable
+public class DSPlayerEquipment : ITempValuesApplyable, IResetable
 {
     public List<EqId> allowedEquipmentId;
     [SerializeField] List<EqId> tempAllowedEquipmentId;
@@ -19,21 +19,7 @@ public class DSPlayerEquipment : ISavable, IResetable, ITempValuesApplyable
     {
         Reset();
     }
-
-    public void Save()
-    {
-        GameManager.Instance.SavingManager.SaveData<DSPlayerEquipment>(this.GetType().Name, this);
-    }
-
-    public void Load()
-    {
-        System.Reflection.BindingFlags flags = System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.NonPublic;
-        var g = GameManager.Instance.SavingManager.LoadData<DSPlayerEquipment>(this.GetType().Name);
-        var fields = this.GetType().GetFields(flags);
-        foreach (var f in fields)
-            f.SetValue(this, f.GetValue(g));
-    }
-
+    
     public void Reset()
     {
         if (allowedEquipmentId == null)
@@ -102,7 +88,7 @@ public class DSPlayerEquipment : ISavable, IResetable, ITempValuesApplyable
         else
             tempAllowedEquipmentId.Clear();
     }
-
+    
     [Serializable]
     public class EqId
     {

@@ -19,7 +19,7 @@ public class UnitOutline : MonoBehaviour
 	
     public void ActivateOutline()
     {
-        var gs = GameManager.Instance.Settings.graphixSettings;
+        var gs = GameManager.Instance.SavablePlayerData.Settings.graphixSettings;
         var ot = gs.OutlineType;
 
         var enable = false;
