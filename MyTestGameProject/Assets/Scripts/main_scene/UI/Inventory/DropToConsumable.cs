@@ -43,7 +43,7 @@ public class DropToConsumable : ADropToMe
         return true;
     }
 
-    public override bool CanGetFromThisIventory(AStack aStack)
+    public override bool CanGetFromThisIventory(AStack aStack, AStack stackForReplacement)
     {
         //var stack = aStack as ConsumableStack;
         return true;
@@ -62,7 +62,7 @@ public class DropToConsumable : ADropToMe
                 //если ячейка свободна
                 if (transform.childCount == 0)
                 {
-                    if (oldDrop.CanGetFromThisIventory(drag.ConsumableStack))
+                    if (oldDrop.CanGetFromThisIventory(drag.ConsumableStack, null))
                         if (AddToThisInventory(drag.ConsumableStack))
                             oldDrop.RemoveFromThisInventory(drag.ConsumableStack);
                 }

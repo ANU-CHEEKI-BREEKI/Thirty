@@ -20,8 +20,6 @@ public class GameManager : MonoBehaviour
     [Range(0, 1)]
     float timeScale = 1;
 
-    
-
     [Header("Game")]
     [SerializeField]
     bool controlGroundSize = true;
@@ -66,29 +64,55 @@ public class GameManager : MonoBehaviour
             Application.logMessageReceived += OnUnhendeledException;
 
             Localization.SetLanguage(SystemLanguage.Russian);
-
-#if UNITY_EDITOR
-            SavingManager = new PlayerPrefsSavingManager();
-#else
-            SavingManager = new GPSSavingManager();
-#endif
-
+            
             bool debug = false;
 #if DEBUG
             debug = true;
 #endif
+            var mes = "Вход в аккаунт...";
+
+            ModalInfoPanel.Instance.Add(mes);
 
             Action<bool> onLogIn = (b) =>
             {
-                DownloadSaves();
+                ModalInfoPanel.Instance.Remove(mes);
+
                 if (b)
                 {
+                    SavingManager = new GPSSavingManager();
                     Social.ReportProgress(GPSConstants.achievement_welcome, 100, null);
                 }
                 else
                 {
-                    Toast.Instance.Show("can't authenticate");
+                    SavingManager = new PlayerPrefsSavingManager();
+                    Toast.Instance.Show("[non loc] не удалось войти. игра будет охраняться локально");
                 }
+                DownloadSaves();
+
+                //Это событие вызывается перед событием неудачи действия в GPSWrapper,
+                //поэтому в нем назнаем другой менеджер
+                //а в самом менеджере просто пробуем сохранить/загрузить ещё разок
+                GPSWrapper.OnPlayerLoggedInValueChanged += (val) =>
+                {
+                    if (val)
+                    {
+                        SavingManager = new GPSSavingManager();
+                        var tempSaves = savablePlayerData.Copy() as SavablePlayerData;
+
+                        Action onLoad = null;
+                        onLoad = () =>
+                        {
+                            savablePlayerData.OnLoaded -= onLoad;
+                            savablePlayerData.Merge(tempSaves);
+                        };
+                        savablePlayerData.OnLoaded += onLoad;
+                        savablePlayerData.Load();
+                    }
+                    else
+                    {
+                        SavingManager = new PlayerPrefsSavingManager();
+                    }
+                };
             };
             GPSWrapper.LogInPlayer(debug, onLogIn);
 
@@ -182,14 +206,6 @@ public class GameManager : MonoBehaviour
 
     public void DownloadSaves()
     {
-        //ModalInfoPanel.Instance.Show("[non loc] Загрузка сохранений...");
-        Action onLoad = null;
-        onLoad = () =>
-        {
-            //ModalInfoPanel.Instance.Hide();
-            savablePlayerData.OnLoaded -= onLoad;
-        };
-        savablePlayerData.OnLoaded += onLoad;
         savablePlayerData.Load();
     }
 
@@ -223,13 +239,31 @@ public class GameManager : MonoBehaviour
     {
         ResetPlayerTempProgressValues();
 
-        //ModalInfoPanel.Instance.Show("[non loc] Сохранение данных...");
+        if(GPSWrapper.PlayerLoggedIn)
+        {
+            Action onSaved = null;
+            onSaved = () =>
+            {
+                savablePlayerData.OnSaved -= onSaved;
+                GPSWrapper.LogOutPlayer();
+                Savelocal();
+            };
+            savablePlayerData.OnSaved += onSaved;
+            savablePlayerData.Save();
+        }
+        else
+        {
+            Savelocal();
+        }
+    }
+
+    void Savelocal()
+    {
+        SavingManager = new PlayerPrefsSavingManager();
         Action onSaved = null;
         onSaved = () =>
         {
-            //ModalInfoPanel.Instance.Hide();
             savablePlayerData.OnSaved -= onSaved;
-            GPSWrapper.SignOutPlayer();
             Application.Quit();
             Debug.Log("Quit");
         };

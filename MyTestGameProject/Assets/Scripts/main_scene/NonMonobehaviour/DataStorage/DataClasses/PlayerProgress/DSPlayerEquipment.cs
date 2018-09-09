@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [Serializable]
-public class DSPlayerEquipment : ITempValuesApplyable, IResetable
+public class DSPlayerEquipment : ITempValuesApplyable, IResetable, IMergeable
 {
     public List<EqId> allowedEquipmentId;
     [SerializeField] List<EqId> tempAllowedEquipmentId;
@@ -88,7 +88,16 @@ public class DSPlayerEquipment : ITempValuesApplyable, IResetable
         else
             tempAllowedEquipmentId.Clear();
     }
-    
+
+    public void Merge(object data)
+    {
+        var d = data as DSPlayerEquipment;
+
+        foreach (var item in d.allowedEquipmentId)
+            if (allowedEquipmentId.Find((e) => { return e.Id == item.Id && e.Type == item.Type; }) == null)
+                allowedEquipmentId.Add(item);
+    }
+
     [Serializable]
     public class EqId
     {

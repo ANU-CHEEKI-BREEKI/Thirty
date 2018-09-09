@@ -17,7 +17,7 @@ public class DropToGround : ADropToMe
                 {
                     //если передащили на заполненную клетку
                     EquipmentStack stack = new EquipmentStack(drag.EquipStack.EquipmentMainProperties, drag.EquipStack.EquipmentStats, drag.EquipStack.Count);
-                    if (oldParentDrop.CanGetFromThisIventory(drag.EquipStack))
+                    if (oldParentDrop.CanGetFromThisIventory(drag.EquipStack, null))
                         if (AddToThisInventory(drag.EquipStack))
                             oldParentDrop.RemoveFromThisInventory(drag.EquipStack);
 
@@ -50,7 +50,7 @@ public class DropToGround : ADropToMe
         return true;
     }
 
-    public override bool CanGetFromThisIventory(AStack aStack)
+    public override bool CanGetFromThisIventory(AStack aStack, AStack stackForReplacement)
     {
         return true;
     }

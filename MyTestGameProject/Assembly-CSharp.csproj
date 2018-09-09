@@ -276,6 +276,7 @@
     <Compile Include="Assets\Scripts\main_scene\FadeScreen.cs" />
     <Compile Include="Assets\Scripts\main_scene\FormationButton.cs" />
     <Compile Include="Assets\Scripts\main_scene\GameManager.cs" />
+    <Compile Include="Assets\Scripts\main_scene\GPSLogInButton.cs" />
     <Compile Include="Assets\Scripts\main_scene\GPSWrapperMB.cs" />
     <Compile Include="Assets\Scripts\main_scene\Ground.cs" />
     <Compile Include="Assets\Scripts\main_scene\GroundBlock.cs" />
@@ -312,6 +313,7 @@
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\DataStorage\DataClasses\GraphixSettings.cs" />
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\DataStorage\DataClasses\ICopyabe.cs" />
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\DataStorage\DataClasses\ILoadedDataApplyable.cs" />
+    <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\DataStorage\DataClasses\IMergeable.cs" />
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\DataStorage\DataClasses\IResetable.cs" />
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\DataStorage\DataClasses\ISaveble.cs" />
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\DataStorage\DataClasses\ITempValuesApplyable.cs" />

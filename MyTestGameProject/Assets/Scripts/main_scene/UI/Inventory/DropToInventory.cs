@@ -32,7 +32,7 @@ public class DropToInventory : ADropToMe
 
                         //заносим предметы в инвентарь отряда
                         EquipmentStack stack = new EquipmentStack(thisDrag.EquipStack.EquipmentMainProperties, thisDrag.EquipStack.EquipmentStats, cnt);
-                        if (oldParentDrop.CanGetFromThisIventory(stack))
+                        if (oldParentDrop.CanGetFromThisIventory(stack, thisDrag.EquipStack))
                             if (AddToThisInventory(stack))
                                 oldParentDrop.RemoveFromThisInventory(stack);
                     }
@@ -45,7 +45,7 @@ public class DropToInventory : ADropToMe
                     cnt = Squad.playerSquadInstance.UnitCount < cnt ? Squad.playerSquadInstance.UnitCount : cnt;
                     EquipmentStack stack = new EquipmentStack(drag.EquipStack.EquipmentMainProperties, drag.EquipStack.EquipmentStats, cnt);
 
-                    if (oldParentDrop.CanGetFromThisIventory(stack))
+                    if (oldParentDrop.CanGetFromThisIventory(stack, null))
                         if (AddToThisInventory(stack))
                             oldParentDrop.RemoveFromThisInventory(stack);
                 }
@@ -93,7 +93,7 @@ public class DropToInventory : ADropToMe
         return true;
     }
 
-    public override bool CanGetFromThisIventory(AStack aStack)
+    public override bool CanGetFromThisIventory(AStack aStack, AStack stackForReplacement)
     {
         return true;
     }

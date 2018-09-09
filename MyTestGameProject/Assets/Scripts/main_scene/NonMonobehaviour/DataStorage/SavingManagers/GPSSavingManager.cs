@@ -12,10 +12,7 @@ public class GPSSavingManager : ISavingManager
     class Game
     {
         public ISavedGameMetadata gameData;
-        public Action onGameOpened;
-        public Action onGameCantOpen;
         public Type type;
-        public bool IsOpen { get { return gameData != null && gameData.IsOpen; } }
     }
 
     Dictionary<string, Game> games = new Dictionary<string, Game>();
@@ -29,30 +26,24 @@ public class GPSSavingManager : ISavingManager
 
         Game game = games[name];
 
-        if (game.IsOpen)
+        GPSWrapper.OpenSavedGame(name, (status, gameData) =>
         {
-            GPSWrapper.SaveGame(
-                game.gameData, 
-                Encoding.ASCII.GetBytes(jsonStr), 
-                game.gameData.TotalTimePlayed + (DateTime.Now - game.gameData.LastModifiedTimestamp), 
-                OnSavedGameWritten
-            );
-        }
-        else
-        {
-            game.onGameOpened = () =>
+            if (status == SavedGameRequestStatus.Success)
             {
+                game.gameData = gameData;
+                game.type = typeof(T);
                 GPSWrapper.SaveGame(
-                    game.gameData, 
-                    Encoding.ASCII.GetBytes(jsonStr), 
+                    game.gameData,
+                    Encoding.ASCII.GetBytes(jsonStr),
                     game.gameData.TotalTimePlayed + (DateTime.Now - game.gameData.LastModifiedTimestamp),
                     OnSavedGameWritten
                 );
-                game.type = typeof(T);
-                game.onGameOpened = null;
-            };
-            GPSWrapper.OpenSavedGame(name, OnSavedGameOpened);
-        }
+            }
+            else
+            {
+                CallOnDataSaved(name, false);
+            }
+        });
     }
 
     public override void LoadData<T>(string name)
@@ -62,36 +53,19 @@ public class GPSSavingManager : ISavingManager
 
         Game game = games[name];
 
-        if (game.IsOpen)
+        GPSWrapper.OpenSavedGame(name, (status, gameData) =>
         {
-            GPSWrapper.LoadGameData(game.gameData, OnSavedGameDataRead);
-        }
-        else
-        {
-            game.onGameOpened = () =>
+            if (status == SavedGameRequestStatus.Success)
             {
-                GPSWrapper.LoadGameData(game.gameData, OnSavedGameDataRead);
+                game.gameData = gameData;
                 game.type = typeof(T);
-                game.onGameOpened = null;
-            };
-            GPSWrapper.OpenSavedGame(name, OnSavedGameOpened);
-        }
-    }
-
-    public void OnSavedGameOpened(SavedGameRequestStatus status, ISavedGameMetadata game)
-    {
-        var g = games[game.Filename];
-
-        if (status == SavedGameRequestStatus.Success)
-        {
-            g.gameData = game;
-            if (g.onGameOpened != null) g.onGameOpened.Invoke();
-        }
-        else
-        {
-            g.gameData = null;
-            if (g.onGameCantOpen != null) g.onGameCantOpen.Invoke();
-        }
+                GPSWrapper.LoadGameData(game.gameData, OnSavedGameDataRead);
+            }
+            else
+            {
+                CallOnDataLoaded(name, null, false);
+            }
+        });
     }
 
     public void OnSavedGameWritten(SavedGameRequestStatus status, ISavedGameMetadata game)
@@ -103,26 +77,27 @@ public class GPSSavingManager : ISavingManager
         }
         else
         {
-            Toast.Instance.Show("Не удалось сохранить прогресс: " + game.Filename);
-            CallOnDataSaved(game.Filename, false);
+            Toast.Instance.Show("Не удалось сохранить прогресс");
+            CallOnDataSaved(null, false);
         }
     }
 
     public void OnSavedGameDataRead(SavedGameRequestStatus status, byte[] data, ISavedGameMetadata game)
     {
-        var g = games[game.Filename];
         if (status == SavedGameRequestStatus.Success)
         {
+            var g = games[game.Filename];
             Toast.Instance.Show("Прогресс загружен: " + game.Filename);
 
             var jsonStr = Encoding.ASCII.GetString(data);
             var loadedData = JsonUtility.FromJson(jsonStr, g.type);
 
-            CallOnDataLoaded(g.gameData.Filename, loadedData);
+            CallOnDataLoaded(g.gameData.Filename, loadedData, true);
         }
         else
         {
-            CallOnDataLoaded(g.gameData.Filename, null);
+            Toast.Instance.Show("Не удалось загрузить прогресс");
+            CallOnDataLoaded(null, null, false);
         }
     }
 }

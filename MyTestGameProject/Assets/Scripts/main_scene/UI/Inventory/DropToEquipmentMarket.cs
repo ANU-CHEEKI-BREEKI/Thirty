@@ -17,7 +17,7 @@ public class DropToEquipmentMarket : ADropToMe
                 if (!(oldParentDrop is DropToEquipmentMarket) && !(oldParentDrop is DropToConsumableMarket))
                 {
                     EquipmentStack stack = new EquipmentStack(drag.EquipStack.EquipmentMainProperties, drag.EquipStack.EquipmentStats, drag.EquipStack.Count);
-                    if (oldParentDrop.CanGetFromThisIventory(stack))
+                    if (oldParentDrop.CanGetFromThisIventory(stack, null))
                         if (AddToThisInventory(stack))
                             oldParentDrop.RemoveFromThisInventory(stack);
 
@@ -61,11 +61,21 @@ public class DropToEquipmentMarket : ADropToMe
         return true;
     }
 
-    public override bool CanGetFromThisIventory(AStack aStack)
+    public override bool CanGetFromThisIventory(AStack aStack, AStack stackForReplacement)
     {
         EquipmentStack stack = aStack as EquipmentStack;
 
         float summ = stack.EquipmentStats.Cost * stack.Count;
+
+        EquipmentStack stackForReplace;
+        if (stackForReplacement != null)
+        {
+            stackForReplace = stackForReplacement as EquipmentStack;
+            if (!stackForReplace.EquipmentStats.Empty && stack.EquipmentMainProperties.Currency == stackForReplace.EquipmentMainProperties.Currency)
+                summ -= stackForReplace.EquipmentStats.Cost * stackForReplace.Count;
+
+            if (summ < 0) summ = 0;
+        }
 
         if (GameManager.Instance.SavablePlayerData.PlayerProgress.Score.EnoughtMoney(summ, stack.EquipmentMainProperties.Currency))
             return true;

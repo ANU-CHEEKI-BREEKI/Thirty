@@ -3,7 +3,7 @@ using System.Reflection;
 using UnityEngine;
 
 [Serializable]
-public class DSFlags : IResetable
+public class DSFlags : IResetable, IMergeable
 {
     [SerializeField] bool isFirstStartGame;
     [SerializeField] bool needTraining;
@@ -25,5 +25,16 @@ public class DSFlags : IResetable
         needTraining = true;
 
         avalaibleTutorialLevel = GameManager.SceneIndex.LEVEL_TUTORIAL_1;
+    }
+
+    public void Merge(object data)
+    {
+        var d = data as DSFlags;
+
+        isFirstStartGame = d.isFirstStartGame || isFirstStartGame;
+        needTraining = d.needTraining || needTraining;
+
+        if (d.avalaibleTutorialLevel > avalaibleTutorialLevel)
+            avalaibleTutorialLevel = d.avalaibleTutorialLevel;
     }
 }

@@ -13,6 +13,6 @@ public class PlayerPrefsSavingManager : ISavingManager
     {
         if (!PlayerPrefs.HasKey(name))
             SaveData<T>(name, (T)Activator.CreateInstance(typeof(T)));
-        CallOnDataLoaded(name, JsonUtility.FromJson<T>(PlayerPrefs.GetString(name)));
+        CallOnDataLoaded(name, JsonUtility.FromJson<T>(PlayerPrefs.GetString(name)), true);
     }
 }

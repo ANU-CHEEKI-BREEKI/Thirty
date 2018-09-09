@@ -29,6 +29,6 @@ public class BuyTheGold : MonoBehaviour
     void AddGold(float gold)
     {
         GameManager.Instance.SavablePlayerData.PlayerProgress.Score.gold.Value += gold;
-        GameManager.Instance.SavablePlayerData.Save();
+        GameManager.Instance.SavablePlayerData.PlayerProgress.Save();
     }
 }

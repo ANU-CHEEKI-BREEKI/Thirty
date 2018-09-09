@@ -2,7 +2,7 @@
 using UnityEngine;
 
 [Serializable]
-public class DSPlayerScore : ITempValuesApplyable, IResetable, ILoadedDataApplyable
+public class DSPlayerScore : ITempValuesApplyable, IResetable, ILoadedDataApplyable, IMergeable
 {
     public enum Currency { SILVER, GOLD, EXPIRIENCE }
 
@@ -170,7 +170,20 @@ public class DSPlayerScore : ITempValuesApplyable, IResetable, ILoadedDataApplya
         tempSilver.Value = d.tempSilver.Value;
         tempExpirience.Value = d.tempExpirience.Value;
     }
-    
+
+    public void Merge(object data)
+    {
+        var d = data as DSPlayerScore;
+
+        gold.Value = Mathf.Max(gold.Value, d.gold.Value);
+        silver.Value = Mathf.Max(d.silver.Value, silver.Value);
+        expirience.Value = Mathf.Max(d.expirience.Value, expirience.Value);
+
+        tempGold.Value = Mathf.Max(d.tempGold.Value, tempGold.Value);
+        tempSilver.Value = Mathf.Max(d.tempSilver.Value, tempSilver.Value);
+        tempExpirience.Value = Mathf.Max(d.tempExpirience.Value, tempExpirience.Value);
+    }
+
     [Serializable]
     public class Score
     {

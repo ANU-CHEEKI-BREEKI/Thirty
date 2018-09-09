@@ -29,8 +29,6 @@ public class DebugCunvas : MonoBehaviour
         Init();
 
         DontDestroyOnLoad(gameObject);
-
-        savingManagerText.text = GameManager.Instance.SavingManager.GetType().ToString();
     }
 
     void Init()
@@ -61,7 +59,12 @@ public class DebugCunvas : MonoBehaviour
 
         StartCoroutine(Coroutine(
            condition: () => { return true; },
-           action: () => { wholeLevelText.text = "whole level:    " + GameManager.Instance.CurrentLevel.WholeLevel.ToString(StringFormats.intNumber); },
+           action: () => 
+           {
+               wholeLevelText.text = "whole level:    " + GameManager.Instance.CurrentLevel.WholeLevel.ToString(StringFormats.intNumber);
+               if (GameManager.Instance.SavingManager != null)
+                   savingManagerText.text = GameManager.Instance.SavingManager.GetType().ToString();
+           },
            cleanup: () => { },
            deltaTime: 1f,
            type: CoroutineType.REAL_TIME

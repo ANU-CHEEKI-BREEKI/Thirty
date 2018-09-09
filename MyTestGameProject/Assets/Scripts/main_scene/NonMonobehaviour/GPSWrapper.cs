@@ -8,27 +8,51 @@ using UnityEngine;
 
 public static class GPSWrapper
 {
-    static public bool PlayerLoggedIn { get; private set; } = false;
+    static public event Action<bool> OnPlayerLoggedInValueChanged;
+    static bool playerLoggedIn;
+    static public bool PlayerLoggedIn
+    {
+        get
+        {
+            return playerLoggedIn;
+        }
+        private set
+        {
+            var old = playerLoggedIn;
+            playerLoggedIn = value;
+
+            if (old != value && OnPlayerLoggedInValueChanged != null)
+                OnPlayerLoggedInValueChanged.Invoke(value);
+        }
+    }
 
     static public void LogInPlayer(bool debug, Action<bool> onLogInCompleted)
     {
-        var config = new PlayGamesClientConfiguration
-            .Builder()
-            .EnableSavedGames()// enables saving game progress.
-            .Build();
-        PlayGamesPlatform.InitializeInstance(config);
-
-        PlayGamesPlatform.DebugLogEnabled = debug;
-        PlayGamesPlatform.Activate();
-        Social.localUser.Authenticate((b)=>
+        if (!PlayerLoggedIn)
         {
-            PlayerLoggedIn = b;
-            if(onLogInCompleted != null)
-                onLogInCompleted.Invoke(b);
-        });
+            var config = new PlayGamesClientConfiguration
+                .Builder()
+                .EnableSavedGames()// enables saving game progress.
+                .Build();
+            PlayGamesPlatform.InitializeInstance(config);
+
+            PlayGamesPlatform.DebugLogEnabled = debug;
+            PlayGamesPlatform.Activate();
+            Social.localUser.Authenticate((b) =>
+            {
+                PlayerLoggedIn = b;
+                if (onLogInCompleted != null)
+                    onLogInCompleted.Invoke(b);
+            });
+        }
+        else
+        {
+            if (onLogInCompleted != null)
+                onLogInCompleted.Invoke(true);
+        }
     }
 
-    static public void SignOutPlayer()
+    static public void LogOutPlayer()
     {
         PlayGamesPlatform.Instance.SignOut();
         PlayerLoggedIn = false;
@@ -44,7 +68,14 @@ public static class GPSWrapper
             .WithUpdatedDescription("Saved game at " + DateTime.Now);
 
         SavedGameMetadataUpdate updatedMetadata = builder.Build();
-        savedGameClient.CommitUpdate(game, updatedMetadata, savedData, onSavedGameWritten);
+        savedGameClient.CommitUpdate(game, updatedMetadata, savedData, (status , data) =>
+        {
+            if (status != SavedGameRequestStatus.Success)
+                PlayerLoggedIn = false;
+
+            if(onSavedGameWritten != null)
+                onSavedGameWritten.Invoke(status, data);
+        });
     }
 
     static public void OpenSavedGame(string filename, Action<SavedGameRequestStatus, ISavedGameMetadata> onSavedGameOpened)
@@ -54,8 +85,15 @@ public static class GPSWrapper
             filename,
             DataSource.ReadCacheOrNetwork,
             ConflictResolutionStrategy.UseLongestPlaytime,
-            onSavedGameOpened
-        );
+             (status, data) =>
+             {
+                 if (status != SavedGameRequestStatus.Success)
+                     PlayerLoggedIn = false;
+
+                 if (onSavedGameOpened != null)
+                     onSavedGameOpened.Invoke(status, data);
+             }
+         );
     }
 
     static public void LoadGameData(ISavedGameMetadata game, Action<SavedGameRequestStatus, byte[], ISavedGameMetadata> onSavedGameDataRead)
@@ -68,6 +106,9 @@ public static class GPSWrapper
         {
             status = s;
             data = d;
+
+            if (status != SavedGameRequestStatus.Success)
+                PlayerLoggedIn = false;
 
             if (onSavedGameDataRead != null)
                 onSavedGameDataRead.Invoke(status, data, game);
@@ -97,6 +138,7 @@ public static class GPSWrapper
     {
         if(PlayerLoggedIn)
             Social.ShowAchievementsUI();
+
         if (onAchOpened != null)
             onAchOpened.Invoke(PlayerLoggedIn);
     }

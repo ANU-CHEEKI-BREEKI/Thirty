@@ -2,7 +2,7 @@
 using UnityEngine;
 
 [Serializable]
-public class DSUnitStats : IResetable
+public class DSUnitStats : IResetable, IMergeable
 {
     [SerializeField] Stat health = new Stat(50, 200, 50);
     public Stat Health { get { return health; } }
@@ -87,5 +87,17 @@ public class DSUnitStats : IResetable
         speed = new Stat(35, 50, 35);
         aceleration = new Stat(35, 60, 35);
         rotationSpeed = new Stat(360, 460, 360);
+    }
+
+    public void Merge(object data)
+    {
+        var d = data as DSUnitStats;
+
+        health.Value = Mathf.Max(health.Value, d.health.Value);
+        attack.Value = Mathf.Max(attack.Value, d.attack.Value);
+        defence.Value = Mathf.Max(defence.Value, d.defence.Value);
+        speed.Value = Mathf.Max(speed.Value, d.speed.Value);
+        aceleration.Value = Mathf.Max(aceleration.Value, d.aceleration.Value);
+        rotationSpeed.Value = Mathf.Max(rotationSpeed.Value, d.rotationSpeed.Value);
     }
 }

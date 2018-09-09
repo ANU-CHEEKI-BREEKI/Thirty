@@ -27,7 +27,9 @@ public class ModalInfoPanel : MonoBehaviour
 
     public void Remove(string message)
     {
-        messages.RemoveAll((m) => { return m == message; });
+        int index = messages.FindIndex((m) => { return m == message; });
+        if(index >= 0)
+            messages.RemoveAt(index);
 
         if (messages.Count == 0)
         {

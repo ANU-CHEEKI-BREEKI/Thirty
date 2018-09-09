@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [Serializable]
-public class SavablePlayerData : ISavable, IResetable
+public class SavablePlayerData : ISavable, IResetable, IMergeable, ICopyabe
 {
     [Header("Score")]
     [SerializeField] PlayerProgress playerProgress;
@@ -31,6 +31,12 @@ public class SavablePlayerData : ISavable, IResetable
         settings = new Settings(true);
 
         Reset();
+    }
+
+    public void Reset()
+    {
+        playerProgress.Reset();
+        settings.Reset();
     }
 
     string mesLoad = "[non loc] Загрузка данных...";
@@ -99,29 +105,38 @@ public class SavablePlayerData : ISavable, IResetable
         settings.Save();
     }
 
-    public void Reset()
-    {
-        playerProgress.Reset();
-        settings.Reset();
-    }
-
     void CheckSaved()
     {
-        if (!checkedS && OnSaved != null && savedP && savedS)
+        if (!checkedS && savedP && savedS)
         {
             ModalInfoPanel.Instance.Remove(mesSave);
-            OnSaved();
+            if(OnSaved != null)
+                OnSaved();
             checkedS = true;
         }
     }
 
     void CheckLoaded()
     {
-        if (OnLoaded != null && loadedP && loadedS)
+        if (!chechedL && loadedP && loadedS)
         {
             ModalInfoPanel.Instance.Remove(mesLoad);
-            OnLoaded();
+            if(OnLoaded != null)
+                OnLoaded();
             chechedL = true;
         }
+    }
+
+    public void Merge(object data)
+    {
+        var d = data as SavablePlayerData;
+
+        playerProgress.Merge(d.playerProgress);
+    }
+
+    public object Copy()
+    {
+        var str = JsonUtility.ToJson(this);
+        return JsonUtility.FromJson<SavablePlayerData>(str);
     }
 }

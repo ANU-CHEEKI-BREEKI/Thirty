@@ -3,8 +3,10 @@ using UnityEngine;
 using System.Collections.Generic;
 
 [Serializable]
-public class PlayerProgress : IResetable, ITempValuesApplyable, ILoadedDataApplyable, ISavable
+public class PlayerProgress : IResetable, ITempValuesApplyable, ILoadedDataApplyable, ISavable, IMergeable
 {
+    [SerializeField] DateTime savedDateTime;
+
     [SerializeField] DSFlags flags;
     [SerializeField] DSPlayerScore score;
     [SerializeField] DSUnitStats stats;
@@ -68,6 +70,8 @@ public class PlayerProgress : IResetable, ITempValuesApplyable, ILoadedDataApply
     {
         var mes = "[non loc] Сохранение прогресса игры...";
 
+        savedDateTime = DateTime.Now;
+
         ModalInfoPanel.Instance.Add(mes);
         Action<string, bool> onSaved = null;
         onSaved = (s, b) =>
@@ -89,8 +93,8 @@ public class PlayerProgress : IResetable, ITempValuesApplyable, ILoadedDataApply
         var mes = "[non loc] Загрузка сохранённого прогресса...";
 
         ModalInfoPanel.Instance.Add(mes);
-        Action<string, object> onLoad = null;
-        onLoad = (s, p) =>
+        Action<string, object, bool> onLoad = null;
+        onLoad = (s, p, success) =>
         {
             if (s == this.GetType().Name)
             {
@@ -103,5 +107,16 @@ public class PlayerProgress : IResetable, ITempValuesApplyable, ILoadedDataApply
         };
         GameManager.Instance.SavingManager.OnDataLoaded += onLoad;
         GameManager.Instance.SavingManager.LoadData<PlayerProgress>(this.GetType().Name);
+    }
+
+    public void Merge(object data)
+    {
+        var d = data as PlayerProgress;
+
+        Flags.Merge(d.Flags);
+        Score.Merge(d.Score);
+        Stats.Merge(d.Stats);
+        Skills.Merge(d.Skills);
+        Equipment.Merge(d.Equipment);
     }
 }

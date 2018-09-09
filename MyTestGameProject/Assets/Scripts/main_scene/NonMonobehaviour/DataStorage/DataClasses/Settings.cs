@@ -4,6 +4,8 @@ using UnityEngine;
 [Serializable]
 public class Settings : IResetable, ILoadedDataApplyable, ISavable, ITempValuesApplyable, ICopyabe
 {
+    [SerializeField] DateTime savedDateTime;
+
     public GraphixSettings graphixSettings;
     public AudioSettings audioSettings;
     public CommonSettings commonSettings;
@@ -54,6 +56,8 @@ public class Settings : IResetable, ILoadedDataApplyable, ISavable, ITempValuesA
     {
         var mes = "[non loc] Сохранение настроек игры...";
 
+        savedDateTime = DateTime.Now;
+
         ModalInfoPanel.Instance.Add(mes);
         Action<string, bool> onSaved = null;
         onSaved = (s, b) =>
@@ -75,8 +79,8 @@ public class Settings : IResetable, ILoadedDataApplyable, ISavable, ITempValuesA
         var mes = "[non loc] Загрузка сохраннных настроек...";
 
         ModalInfoPanel.Instance.Add(mes);
-        Action<string, object> onLoad = null;
-        onLoad = (s, p) =>
+        Action<string, object, bool> onLoad = null;
+        onLoad = (s, p, success) =>
         {
             if (s == this.GetType().Name)
             {

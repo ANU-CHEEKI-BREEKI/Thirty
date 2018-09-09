@@ -23,7 +23,7 @@ public abstract class ADropToMe: MonoBehaviour, IDropHandler
     /// </summary>
     /// <param name="stack"></param>
     /// <returns>true если можно взять отсюда</returns>
-    public abstract bool CanGetFromThisIventory(AStack aStack);
+    public abstract bool CanGetFromThisIventory(AStack aStack, AStack stackForReplacement);
 
     /// <summary>
     /// 

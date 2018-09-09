@@ -25,7 +25,7 @@ public class DropToEquipment : ADropToMe
                         if (Squad.playerSquadInstance.UnitCount <= drag.EquipStack.Count)
                         {
                             EquipmentStack stack = new EquipmentStack(drag.EquipStack.EquipmentMainProperties, drag.EquipStack.EquipmentStats, Squad.playerSquadInstance.UnitCount);
-                            if (oldParentDrop.CanGetFromThisIventory(stack))
+                            if (oldParentDrop.CanGetFromThisIventory(stack, thisDrag.EquipStack))
                                 if (AddToThisInventory(stack))
                                 {
                                     oldParentDrop.RemoveFromThisInventory(stack);
@@ -102,7 +102,7 @@ public class DropToEquipment : ADropToMe
         return true;
     }
 
-    public override bool CanGetFromThisIventory(AStack aStack)
+    public override bool CanGetFromThisIventory(AStack aStack, AStack stackForReplacement)
     {
         return true;
     }

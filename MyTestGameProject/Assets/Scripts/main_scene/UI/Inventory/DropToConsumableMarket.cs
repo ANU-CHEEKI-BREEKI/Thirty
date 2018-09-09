@@ -16,7 +16,7 @@ public class DropToConsumableMarket : ADropToMe
                 //если перетащили откуда либо кроме самого магазина
                 if (!(oldParentDrop is DropToConsumableMarket))
                 {
-                    if (oldParentDrop.CanGetFromThisIventory(drag.ConsumableStack))
+                    if (oldParentDrop.CanGetFromThisIventory(drag.ConsumableStack, null))
                         if (AddToThisInventory(drag.ConsumableStack))
                             oldParentDrop.RemoveFromThisInventory(drag.ConsumableStack);
 
@@ -48,7 +48,7 @@ public class DropToConsumableMarket : ADropToMe
         return true;
     }
 
-    public override bool CanGetFromThisIventory(AStack stack)
+    public override bool CanGetFromThisIventory(AStack stack, AStack stackForReplacement)
     {
         bool res = false;
         var st = stack as ConsumableStack;

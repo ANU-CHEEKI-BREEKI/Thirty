@@ -1,6 +1,6 @@
 Android
 PlayerPath?
-C:/Users/ANU CHEEKI BREEKI/Desktop/Thirty.v.0.10.7r.apk
+C:/Users/ANU CHEEKI BREEKI/Desktop/Thirty.v.0.10.8r.apk
 SceneListBegin?
 Assets/Scenes/main_menu.unity
 Assets/Scenes/market.unity
@@ -257,6 +257,7 @@ bf9092984e391e854436c93547ae117f TextMeshPro-2017.3-1.0.56-Editor.dll:TMPro.Edit
 8fc922543b928018f71312c99c0e6cb3 Assembly-CSharp.dll:.SettingsGraphixSection
 74ffcbc8dedfdc7229d1cff2e4521452 Assembly-CSharp.dll:.DestroyOnAwakeWithChanse
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.CustomButton
+b727ee19a550ae0eb44f6a1badeade49 Assembly-CSharp.dll:.ModalInfoPanel
 9c07b5955b69354ec4c5d3c39973a114 Assembly-CSharp.dll:.GroundBlock
 eb874b99d60f70b8a95028ca7a3419fa Assembly-CSharp.dll:.TipsPanel
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.ResetAllDropOnBreakComponents
@@ -340,6 +341,7 @@ ac15557c80fae91a3d2b420f48cf1531 Assembly-CSharp.dll:.SquadInfoPanel
 0a006f3734181ba8b26758f0866152c0 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.SetAllTileCollidersToUseByComposite
 f92d59d83f3d407fab414283b1deb11c Assembly-CSharp.dll:.SquadSkillsInventoryUI
+9b35fe76c5926c1e3b28cd276935c667 Assembly-CSharp.dll:.GPSLogInButton
 9d52ecb7b1925f6532f68ea4d3d8afe9 Assembly-CSharp.dll:.ShowAllyUnitsHp
 7e765b0246d5c21da6c6fe624b1ba58b Assembly-CSharp.dll:.SOTip
 8c042738ed90ace6daeecbbbcece8ee6 Assembly-CSharp.dll:.TintTextureGenerator
@@ -384,4 +386,3 @@ a76ac6c8fecd9da72794f2adcf487452 Assembly-CSharp.dll:.DropToConsumable
 76d17c39c1299e0444bd195c725d3dea Assembly-CSharp.dll:.ConfirmPanel
 7ac9c67e897c2b4a4ed3371eac444ebb Assembly-CSharp.dll:.SkillsPanelScrollAndHeight
 605379bf9b01ba6264253fd57b03751d Assembly-CSharp.dll:.SOSquadSpawnerConsumablesResourse
-b727ee19a550ae0eb44f6a1badeade49 Assembly-CSharp.dll:.ModalInfoPanel
