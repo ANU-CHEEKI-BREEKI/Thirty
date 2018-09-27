@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class GPSLogInButton : MonoBehaviour
@@ -10,7 +8,6 @@ public class GPSLogInButton : MonoBehaviour
     [SerializeField] Sprite loggedIn;
     [SerializeField] Sprite loggedOut;
 
-
     private void Awake()
     {
         if (img == null)
@@ -18,6 +15,11 @@ public class GPSLogInButton : MonoBehaviour
 
         GPSWrapper.OnPlayerLoggedInValueChanged += GPSWrapper_OnPlayerLoggedInValueChanged;
         GPSWrapper_OnPlayerLoggedInValueChanged(GPSWrapper.PlayerLoggedIn);
+    }
+
+    private void OnDestroy()
+    {
+        GPSWrapper.OnPlayerLoggedInValueChanged -= GPSWrapper_OnPlayerLoggedInValueChanged;
     }
 
     private void GPSWrapper_OnPlayerLoggedInValueChanged(bool val)

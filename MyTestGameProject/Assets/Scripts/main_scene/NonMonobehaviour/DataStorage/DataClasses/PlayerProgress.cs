@@ -12,6 +12,7 @@ public class PlayerProgress : IResetable, ITempValuesApplyable, ILoadedDataApply
     [SerializeField] DSUnitStats stats;
     [SerializeField] DSPlayerSkills skills;
     [SerializeField] DSPlayerEquipment equipment;
+    [SerializeField] DSPlayerSquad squad;
 
     public DSFlags Flags { get { return flags; } private set { flags = value; } }
     public DSPlayerScore Score { get { return score; } private set { score = value; } }
@@ -21,6 +22,7 @@ public class PlayerProgress : IResetable, ITempValuesApplyable, ILoadedDataApply
     /// Allowed equipment which will be able in market
     /// </summary>
     public DSPlayerEquipment Equipment { get { return equipment; } private set { equipment = value; } }
+    public DSPlayerSquad Squad { get { return squad; } private set { squad = value; } }
 
     public event Action OnSaved;
     public event Action OnLoaded;
@@ -32,6 +34,7 @@ public class PlayerProgress : IResetable, ITempValuesApplyable, ILoadedDataApply
         Stats = new DSUnitStats();
         Skills = new DSPlayerSkills();
         Equipment = new DSPlayerEquipment();
+        Squad = null;
     }
     
     public void Reset()
@@ -41,6 +44,7 @@ public class PlayerProgress : IResetable, ITempValuesApplyable, ILoadedDataApply
         Stats.Reset();
         Skills.Reset();
         Equipment.Reset();
+        Squad.Reset();
     }
 
     public void ApplyTempValues()
@@ -64,6 +68,7 @@ public class PlayerProgress : IResetable, ITempValuesApplyable, ILoadedDataApply
         Stats = d.Stats;
         Skills = d.Skills;
         Equipment = d.Equipment;
+        Squad = d.Squad;
     }
 
     public void Save()
@@ -118,5 +123,6 @@ public class PlayerProgress : IResetable, ITempValuesApplyable, ILoadedDataApply
         Stats.Merge(d.Stats);
         Skills.Merge(d.Skills);
         Equipment.Merge(d.Equipment);
+        Squad.Merge(d.Squad);
     }
 }

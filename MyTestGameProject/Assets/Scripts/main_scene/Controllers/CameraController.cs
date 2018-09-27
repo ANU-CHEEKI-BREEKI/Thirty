@@ -36,7 +36,7 @@ public class CameraController : MonoBehaviour
     {
         if (squadForFollow != null)
         {
-            if(Vector2.SqrMagnitude((Vector2)thisTransform.position - squadForFollow.CenterSquad) > acurasy * acurasy)
+            if (Vector2.SqrMagnitude((Vector2)thisTransform.position - squadForFollow.CenterSquad) > acurasy * acurasy)
             {
                 if (currentSpeed < maxSpeed)
                     currentSpeed += aceleration * Time.deltaTime;
@@ -52,7 +52,7 @@ public class CameraController : MonoBehaviour
 
             //что бы не выходила за пределы карты, делаем соответствующую проверку
             var mapWidth = Ground.Instance.ColCountOfBlocks * MapBlock.WORLD_BLOCK_SIZE;
-            var mapHeight = Ground.Instance.RowCountOfBlocks* MapBlock.WORLD_BLOCK_SIZE;
+            var mapHeight = Ground.Instance.RowCountOfBlocks * MapBlock.WORLD_BLOCK_SIZE;
 
             Vector2 scrSizeDivTwo = new Vector2(thisCam.orthographicSize * Screen.width / Screen.height, thisCam.orthographicSize);
 
@@ -63,12 +63,12 @@ public class CameraController : MonoBehaviour
 
             if (newPosition.y - scrSizeDivTwo.y < 0)
                 newPosition.y = scrSizeDivTwo.y;
-            else if(newPosition.y + scrSizeDivTwo.y > mapHeight)
+            else if (newPosition.y + scrSizeDivTwo.y > mapHeight)
                 newPosition.y = mapHeight - scrSizeDivTwo.y;
 
             thisTransform.position = new Vector3(newPosition.x, newPosition.y, thisTransform.position.z);
         }
-	}
+    }
 
     public void OnScrolbarValueChanged(float newValue)
     {

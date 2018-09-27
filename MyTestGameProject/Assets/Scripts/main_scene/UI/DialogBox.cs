@@ -23,6 +23,7 @@ public class DialogBox : MonoBehaviour, IDialogBox
         public string Text { get; set; }
         public bool IsTextScrolable { get; set; }
         public List<ButtonData> ButtonsData { get; private set; }
+        public ButtonData CancelButtonData { get; set; } = null;
 
         public Color? TitleColor { get; set; }
         public Color? TextColor { get; set; }
@@ -34,6 +35,17 @@ public class DialogBox : MonoBehaviour, IDialogBox
         public DialogData()
         {
             ButtonsData = new List<ButtonData>();
+        }
+
+        public void Reset()
+        {
+            Icon = null;
+            Title = "[non loc] Title";
+            Text = "[non loc] Text";
+            IsTextScrolable = true;
+
+            ButtonsData.Clear();
+            CancelButtonData = null;
         }
     }
 
@@ -152,13 +164,10 @@ public class DialogBox : MonoBehaviour, IDialogBox
         // set buttons
         {
             foreach (var item in dialogData.ButtonsData)
-            {
-                var go = Instantiate(originalButton, buttonsPanel);
-                go.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = item.Text;
-                go.GetComponent<Button>().onClick.AddListener(new UnityEngine.Events.UnityAction(item.Action));
-                if (dialogData.PrefButtonHeight != null)
-                    go.GetComponent<LayoutElement>().preferredHeight = dialogData.PrefButtonHeight.Value;
-            }
+                AddButton(item);
+
+            if (dialogData.CancelButtonData != null)
+                AddButton(dialogData.CancelButtonData);
         }
 
         //set icon
@@ -206,11 +215,21 @@ public class DialogBox : MonoBehaviour, IDialogBox
         dialogData = new DialogData();
     }
 
+    void AddButton(ButtonData data)
+    {
+        var go = Instantiate(originalButton, buttonsPanel);
+        go.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = data.Text;
+        go.GetComponent<Button>().onClick.AddListener(new UnityEngine.Events.UnityAction(data.Action));
+        if (dialogData.PrefButtonHeight != null)
+            go.GetComponent<LayoutElement>().preferredHeight = dialogData.PrefButtonHeight.Value;
+    }
+
     public void Hide()
     {
         thisTansform.anchoredPosition = startPosition;
         cg.blocksRaycasts = false;
         cg.alpha = 0;
+        dialogData.Reset();
 
         Showned = false;
     }
@@ -236,7 +255,7 @@ public class DialogBox : MonoBehaviour, IDialogBox
 
     public IDialogBox AddCancelButton(string text)
     {
-        dialogData.ButtonsData.Add(new ButtonData() { Text = text, Action = ()=> { Hide(); } });
+        dialogData.CancelButtonData = new ButtonData() { Text = text, Action = () => { Hide(); } };
         return this;
     }
 

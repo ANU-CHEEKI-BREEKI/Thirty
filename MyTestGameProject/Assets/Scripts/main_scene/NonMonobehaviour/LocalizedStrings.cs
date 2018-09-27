@@ -10,7 +10,10 @@ public sealed class LocalizedStrings
 {
     public static string current_languade { get; private set; }
     public static string loading { get; private set; }
-    public static string level_generading { get; private set; }
+    public static string newName9998895 { get; private set; }
+    public static string newName66515 { get; private set; }
+    public static string newName2 { get; private set; }
+    public static string level_generading6582 { get; private set; }
     public static string resoures_loadind { get; private set; }
     public static string play_game { get; private set; }
     public static string settings { get; private set; }
@@ -356,4 +359,6 @@ public sealed class LocalizedStrings
     public static string tutorial_tip_lvl3_terrain_road_heavy { get; private set; }
     public static string tutorial_tip_lvl3_weight_base { get; private set; }
     public static string tutorial_tip_lvl3_welcome { get; private set; }
+    public static string level_generading { get; private set; }
+    public static string new_game { get; private set; }
 }

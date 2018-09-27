@@ -118,7 +118,7 @@ public class PlayerSquadController : MonoBehaviour,  IPointerDownHandler, IPoint
                     touch.position = Input.mousePosition;
                 }                
 
-                lookPosition = Camera.main.ScreenToWorldPoint(touch.position);
+                lookPosition = MainCanvas.Instance.ScreenToWorldPoint(touch.position);
                 lookPosition = new Vector3(lookPosition.x, lookPosition.y, transform.position.z);
 
                 switch (squad.CurrentFormation)
@@ -191,7 +191,7 @@ public class PlayerSquadController : MonoBehaviour,  IPointerDownHandler, IPoint
                 touch.position = Input.mousePosition;
             }
 
-            movePosition = Camera.main.ScreenToWorldPoint(touch.position);
+            movePosition = MainCanvas.Instance.ScreenToWorldPoint(touch.position);
             movePosition = new Vector3(movePosition.x, movePosition.y, transform.position.z);
             lookPosition = movePosition;
         }
@@ -222,7 +222,7 @@ public class PlayerSquadController : MonoBehaviour,  IPointerDownHandler, IPoint
                 switch (squad.CurrentFormation)
                 {
                     case FormationStats.Formations.PHALANX:
-                        lookPosition = Camera.main.ScreenToWorldPoint(touch.position);
+                        lookPosition = MainCanvas.Instance.ScreenToWorldPoint(touch.position);
                         lookPosition = new Vector3(lookPosition.x, lookPosition.y, transform.position.z);
 
                         if (Vector3.Distance(lookPosition, movePosition) >= lookVectorDistanse)
@@ -231,7 +231,7 @@ public class PlayerSquadController : MonoBehaviour,  IPointerDownHandler, IPoint
                         break;
 
                     default:// Formation.Formations.RANKS:
-                        movePosition = Camera.main.ScreenToWorldPoint(touch.position);
+                        movePosition = MainCanvas.Instance.ScreenToWorldPoint(touch.position);
                         movePosition = new Vector3(movePosition.x, movePosition.y, transform.position.z);
                         SelectEnemyes();
                         if (rHitsCount > 0)

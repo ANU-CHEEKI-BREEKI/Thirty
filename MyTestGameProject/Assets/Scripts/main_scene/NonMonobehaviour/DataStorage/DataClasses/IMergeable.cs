@@ -8,7 +8,7 @@ public interface IMergeable
 {
     /// <summary>
     /// Разрешить конфликт сохранений.
-    /// Тут нужно решить что куда сохранить
+    /// Тут нужно решить что как загрузить
     /// </summary>
     void Merge(object data);
 }

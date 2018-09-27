@@ -37,9 +37,22 @@ public class GPSWrapperMB : MonoBehaviour
     public void LogInOut()
     {
         if (GPSWrapper.PlayerLoggedIn)
-            LogOut();
+        {
+            DialogBox.Instance
+                .SetTitle("[non loc] Выход из учетной записи Play Games")
+                .SetText("[non loc] Вы действительно хотите выйти из учетной записи Play Games?\r\n" +
+                "Данные будут сохраняться локально на вашем устройстве, и будут синхронизированны с аккаунтом при входе.")
+                .AddCancelButton(LocalizedStrings.no)
+                .AddButton(LocalizedStrings.yes, () =>
+                {
+                    LogOut();
+                })
+                .Show();
+        }
         else
+        {
             LogIn();
+        }
             
     }
 }

@@ -137,6 +137,7 @@
   <string name = "executable_use_type_drag_drop_place">Перетянуть и отпустить</string>
   <string name = "executable_use_type_drag_direction">Перетянуть в направлении</string>
 
+  <string name = "new_game">Заново</string>
   <string name = "_continue">Продолжить</string>
   <string name = "your_money_and_exp">Заработанные деньги и очки опыта</string>
   <string name = "allowed_equipmant">Открытое снаряжение:</string>
