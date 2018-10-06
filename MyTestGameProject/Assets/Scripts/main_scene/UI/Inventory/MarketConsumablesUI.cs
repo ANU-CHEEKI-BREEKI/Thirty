@@ -8,8 +8,7 @@ public class MarketConsumablesUI : AInventoryUI
 {
     [SerializeField] GameObject inventoryItemOriginal;
     [Space]
-    [Tooltip("Родительский объект для ячеек предметов. КРОМЕ ячеек внем не должно быть НИЧЕГО.")]
-    [SerializeField] Transform itemsContainer;
+    [SerializeField] List<Transform> items;
 
     [Header("Автозаполнение магазина")]
     [SerializeField] bool autoFillMarket = true;
@@ -19,7 +18,6 @@ public class MarketConsumablesUI : AInventoryUI
     [SerializeField] int minLevel = 1;
     [SerializeField] int maxLevel = 20;
 
-    List<Transform> items;
 
     List<ConsumableStack> inventory;
 
@@ -32,12 +30,6 @@ public class MarketConsumablesUI : AInventoryUI
         Instance = this;
 
         inventory = new List<ConsumableStack>();
-
-        //получаем ссылки контейнеров для итемов
-        int cnt = itemsContainer.childCount;
-        items = new List<Transform>(itemsContainer.childCount);
-        for (int i = 0; i < cnt; i++)
-            items.Add(itemsContainer.GetChild(i));
     }
 
     private void Start()
@@ -110,7 +102,7 @@ public class MarketConsumablesUI : AInventoryUI
     {
         int cnt = originalConsumables.Length;
 
-        int cnt2 = itemsContainer.childCount - 2;
+        int cnt2 = items.Count - 2;
         for (int i = 0; i < cnt2; i++)
         {
             Consumable s = originalConsumables[Random.Range(0, cnt)];

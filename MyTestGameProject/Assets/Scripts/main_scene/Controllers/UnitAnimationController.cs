@@ -26,7 +26,6 @@ public class UnitAnimationController : MonoBehaviour
 
     new SpriteRenderer[] renderer = new SpriteRenderer[6];
     new UnitAnimation[] animation = new UnitAnimation[6];
-    SpriteOutline[] outline = new SpriteOutline[6];
 
     enum EquipmentIndex { SHIELD, HELMET, WEAPON, BODY, ARMS, LEGS }
 
@@ -188,7 +187,6 @@ public class UnitAnimationController : MonoBehaviour
     {
         renderer[(int)index] = equipment.GetComponent<SpriteRenderer>();
         animation[(int)index] = equipment.GetComponent<UnitAnimation>();
-        outline[(int)index] = equipment.GetComponent<SpriteOutline>();
 
         SetAnimationStates();
     }
@@ -241,7 +239,6 @@ public class UnitAnimationController : MonoBehaviour
                 renderer[i].sortingLayerName = "Item";
                 Outline(i, false);
 
-                Destroy(outline[i]);
                 if (underlayerOutline != null)
                     Destroy(underlayerOutline.gameObject);
                 Destroy(animation[i]);                
@@ -387,9 +384,6 @@ public class UnitAnimationController : MonoBehaviour
 
     void Outline(int itemIndex, bool anable = true)
     {
-        if (outline[itemIndex] != null)
-            outline[itemIndex].ActivateOutline(anable);
-
         if(underlayerOutline != null)
             underlayerOutline.ActivateOutline();
     }

@@ -5,7 +5,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-[RequireComponent(typeof(CanvasGroup), typeof(ContentSizeFitter))]
+[RequireComponent(typeof(CanvasGroup))]
 public class DialogBox : MonoBehaviour, IDialogBox
 {
     #region dialogdata;
@@ -82,7 +82,6 @@ public class DialogBox : MonoBehaviour, IDialogBox
     Vector2 startPosition;
     RectTransform thisTansform;
     CanvasGroup cg;
-    ContentSizeFitter fitter;
 
     private void Awake()
     {
@@ -92,7 +91,6 @@ public class DialogBox : MonoBehaviour, IDialogBox
         startPosition = thisTansform.anchoredPosition;
 
         cg = GetComponent<CanvasGroup>();
-        fitter = GetComponent<ContentSizeFitter>();
 
         dialogData = new DialogData();
 
@@ -143,6 +141,8 @@ public class DialogBox : MonoBehaviour, IDialogBox
                 else
                     scrolableText.color = defaultTextColor;
 
+                scrolableText.fontSize = title.fontSize;
+
                 unscrolableTextContent.SetActive(false);
                 scrolableTextContent.SetActive(true);
             }
@@ -155,6 +155,8 @@ public class DialogBox : MonoBehaviour, IDialogBox
                     unscrolableText.color = dialogData.TextColor.Value;
                 else
                     unscrolableText.color = defaultTextColor;
+
+                unscrolableText.fontSize = title.fontSize;
 
                 scrolableTextContent.SetActive(false);
                 unscrolableTextContent.SetActive(true);
@@ -185,10 +187,7 @@ public class DialogBox : MonoBehaviour, IDialogBox
 
         //set size
         {
-            fitter.horizontalFit = ContentSizeFitter.FitMode.Unconstrained;
-            fitter.verticalFit = ContentSizeFitter.FitMode.Unconstrained;
-
-            Vector2 prefSize = new Vector2(672, 0);
+            Vector2 prefSize = new Vector2(0, 0);
 
             if (dialogData.Wifth != null)
                 prefSize.x = dialogData.Wifth.Value;
@@ -196,15 +195,13 @@ public class DialogBox : MonoBehaviour, IDialogBox
             if (dialogData.Height != null)
                 prefSize.y = dialogData.Height.Value;
             else
-                fitter.verticalFit = ContentSizeFitter.FitMode.PreferredSize;
-
+                // set pref size
+                ;
             thisTansform.sizeDelta = prefSize;
         }
 
         //set position
         thisTansform.anchoredPosition = positionOnScreen;
-        
-        
 
         cg.blocksRaycasts = true;
         cg.alpha = 1;

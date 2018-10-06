@@ -25,11 +25,6 @@ public class GraphixSettings : ICopyabe
     public Color32 FrieldlyDamageColor = Color.yellow;
     [Space]
     /// <summary>
-    /// Как обводить юнитов (по контуру или подложкой под юнита)
-    /// </summary>
-    public OutlineTypes OutlineType = OutlineTypes.BORDER;
-    [Space]
-    /// <summary>
     /// Обводить ли юнитов игрока
     /// </summary>
     public bool AllyOutline = true;
@@ -62,7 +57,6 @@ public class GraphixSettings : ICopyabe
         DamageToEnemyColor = Color.blue;
         DamageToAllyColor = Color.red;
         FrieldlyDamageColor = Color.yellow;
-        OutlineType = OutlineTypes.UNDERLAYER;
         AllyOutline = true;
         AllyOutlineColor = Color.blue;
         EnemyOutline = true;

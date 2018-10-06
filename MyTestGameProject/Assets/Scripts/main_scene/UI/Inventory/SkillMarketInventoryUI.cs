@@ -179,34 +179,7 @@ public class SkillMarketInventoryUI : AInventoryUI
         SkillsUpgrade su = allUpgrades.Find(s => s.SkillId == currentSelectedSkill);
 
         if (su != null)
-        {
             su.gameObject.SetActive(true);
-
-            var tr = su.transform as RectTransform;
-            int q = tr.childCount;
-
-            var vr = tr.GetChild(0) as RectTransform;
-            Bounds b = new Bounds(vr.position, MainCanvas.Instance.ScreenToWorldPoint(vr.rect.size));
-            for (int i = 0; i < q; i++)
-            {
-                var tc = tr.GetChild(i) as RectTransform;
-                b.Encapsulate(new Bounds(
-                    tc.position,
-                    MainCanvas.Instance.ScreenToWorldPoint(tc.rect.size)
-                ));
-            }
-            var l = selectedSkillUpgradeContainer.GetComponent<LayoutElement>();
-            Vector2 size = MainCanvas.Instance.WorldToScreenPoint(b.size);
-            l.preferredHeight = size.y + 100;
-            l.preferredWidth = size.x + 100;           
-        }
-        else
-        {
-            var l = selectedSkillUpgradeContainer.GetComponent<LayoutElement>();
-            l.preferredHeight = 0;
-            l.preferredWidth = 0;
-        }
-
     }
 
     bool BeforeDragClick(Drag drag)

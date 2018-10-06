@@ -10,8 +10,6 @@ public class SettingsGraphixSection : MonoBehaviour
     [SerializeField] Toggle allyOutlineToggle;
     [SerializeField] Toggle enemyOutlineToggle;
     [SerializeField] Toggle neutralOutlineToggle;
-    [SerializeField] Toggle borderOutline;
-    [SerializeField] Toggle underlayerOutline;
     [Space]
     [SerializeField] Button reset;
 
@@ -23,7 +21,6 @@ public class SettingsGraphixSection : MonoBehaviour
         allyOutlineToggle.onValueChanged.AddListener(OnAllyOutlineToggleValChanged);
         enemyOutlineToggle.onValueChanged.AddListener(OnEnemyOutlineToggleValChanged);
         neutralOutlineToggle.onValueChanged.AddListener(OnNeutralOutlineToggleValChanged);
-        borderOutline.onValueChanged.AddListener(OnBorderOutlineToggleValChanged);
 
         reset.onClick.AddListener(OnDefaultSetingsButtonClick);
     }
@@ -34,24 +31,6 @@ public class SettingsGraphixSection : MonoBehaviour
         allyOutlineToggle.isOn = GameManager.Instance.SavablePlayerData.Settings.graphixSettings.AllyOutline;
         enemyOutlineToggle.isOn = GameManager.Instance.SavablePlayerData.Settings.graphixSettings.EnemyOutline;
         neutralOutlineToggle.isOn = GameManager.Instance.SavablePlayerData.Settings.graphixSettings.NeutralOutline;
-
-        //так не переключает бл!!!!
-        //borderOutline.isOn = GameManager.Instance.SavablePlayerData.Settings.graphixSettings.OutlineType == GraphixSettings.OutlineTypes.BORDER;
-        //underlayerOutline.isOn = GameManager.Instance.SavablePlayerData.Settings.graphixSettings.OutlineType == GraphixSettings.OutlineTypes.UNDERLAYER;
-
-        //а так переключает
-        var b1 = GameManager.Instance.SavablePlayerData.Settings.graphixSettings.OutlineType == GraphixSettings.OutlineTypes.BORDER;
-        var b2 = GameManager.Instance.SavablePlayerData.Settings.graphixSettings.OutlineType == GraphixSettings.OutlineTypes.UNDERLAYER;
-        borderOutline.isOn = b1;
-        underlayerOutline.isOn = b2;
-    }
-
-    public void OnBorderOutlineToggleValChanged(bool value)
-    {
-        if(value)
-            GameManager.Instance.SavablePlayerData.Settings.graphixSettings.OutlineType = GraphixSettings.OutlineTypes.BORDER;
-        else
-            GameManager.Instance.SavablePlayerData.Settings.graphixSettings.OutlineType = GraphixSettings.OutlineTypes.UNDERLAYER;
     }
 
     public void OnShowDamageToggleValChanged(bool value)

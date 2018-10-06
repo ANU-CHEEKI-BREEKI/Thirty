@@ -376,7 +376,6 @@
     <Compile Include="Assets\Scripts\main_scene\SoundChannel.cs" />
     <Compile Include="Assets\Scripts\main_scene\SoundManager.cs" />
     <Compile Include="Assets\Scripts\main_scene\SpriteColorAplhaBlinker.cs" />
-    <Compile Include="Assets\Scripts\main_scene\SpriteOutline.cs" />
     <Compile Include="Assets\Scripts\main_scene\SquadMask.cs" />
     <Compile Include="Assets\Scripts\main_scene\Stakes.cs" />
     <Compile Include="Assets\Scripts\main_scene\TempValuesEndLevelScreen.cs" />
@@ -387,6 +386,8 @@
     <Compile Include="Assets\Scripts\main_scene\UI\DeactivateOnAwake.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\DeathScreen.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\DialogBox.cs" />
+    <Compile Include="Assets\Scripts\main_scene\UI\FlexibleGridLayout.cs" />
+    <Compile Include="Assets\Scripts\main_scene\UI\FontSizeByMainCameraHeightPercent.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\GameTipsPanel.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\IDialogBox.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\Inventory\ADropToMe.cs" />
@@ -416,6 +417,8 @@
     <Compile Include="Assets\Scripts\main_scene\UI\Inventory\StatsBlock.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\Inventory\StatsPanelUI.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\IUIItemPresenter.cs" />
+    <Compile Include="Assets\Scripts\main_scene\UI\LayoutElementPrefSizeByMainCameraHeightPercent.cs" />
+    <Compile Include="Assets\Scripts\main_scene\UI\LinearLayoutPercentSpacingByMainCamHeight.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\MainMenu.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\MarketScene\AllowedEquipmantPanel.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\MarketScene\BuyTheGold.cs" />
@@ -456,6 +459,7 @@
     <Compile Include="Assets\Scripts\main_scene\UI\UiEvents.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\UILineConnector.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\UILineRenderer.cs" />
+    <Compile Include="Assets\Scripts\main_scene\UI\UISameSizeAs.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\VolumeSlider.cs" />
     <Compile Include="Assets\Scripts\main_scene\Unit\FollowCanvasToSquad.cs" />
     <Compile Include="Assets\Scripts\main_scene\Unit\Squad.cs" />

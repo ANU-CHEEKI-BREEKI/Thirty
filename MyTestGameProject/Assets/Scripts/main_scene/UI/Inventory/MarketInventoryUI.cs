@@ -9,12 +9,10 @@ public class MarketInventoryUI : AInventoryUI
 {
     [SerializeField] GameObject inventoryItemOriginal;
     [Space]
-    [Tooltip("Родительский объект для ячеек предметов. КРОМЕ ячеек внем не должно быть НИЧЕГО.")]
-    [SerializeField] Transform itemsContainer;
+    [SerializeField]List<Transform> items;
     [Space]
     EquipmentStats.TypeOfEquipment currentType;
 
-    List<Transform> items;
     List<EquipmentStack> inventory;
 
     public static MarketInventoryUI Instance { get; private set; }
@@ -26,15 +24,6 @@ public class MarketInventoryUI : AInventoryUI
         Instance = this;
 
         inventory = new List<EquipmentStack>();
-
-        //получаем ссылки контейнеров для итемов
-        int cnt = itemsContainer.childCount;
-        items = new List<Transform>(itemsContainer.childCount);
-        for (int i = 0; i < cnt; i++)
-        {
-            var ch = itemsContainer.GetChild(i);
-            items.Add(ch);
-        }
     }
 
     private void Start()

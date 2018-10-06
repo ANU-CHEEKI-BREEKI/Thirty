@@ -11,8 +11,7 @@ public class EnvirinmantInventoryUI : AInventoryUI
 
     [SerializeField] GameObject inventoryItemOriginal;
        
-    [SerializeField] Transform envaironmentInventory;
-    Transform[] envaironmentCells;
+    [SerializeField] Transform[] envaironmentCells;
 
     [SerializeField] [Range(0, 2000)] int maxRhitsCount = 1000;
     [SerializeField] [Range(0, 50)] int radiusToFind = 20;
@@ -48,12 +47,7 @@ public class EnvirinmantInventoryUI : AInventoryUI
     {
         Instance = this;
 
-        int cnt = envaironmentInventory.childCount;
-        envaironmentCells = new Transform[cnt];
-        for (int i = 0; i < cnt; i++)
-            envaironmentCells[i] = envaironmentInventory.GetChild(i);
-
-        inventory = new List<EquipmentStack>(cnt);
+        inventory = new List<EquipmentStack>(envaironmentCells.Length);
     }
 
     private void Start()
@@ -275,8 +269,8 @@ public class EnvirinmantInventoryUI : AInventoryUI
 
     override public void RefreshUI()
     {
-        if (!envaironmentInventory.gameObject.activeInHierarchy)
-            return;
+        //if (!envaironmentInventory.gameObject.activeInHierarchy)
+        //    return;
 
         ClearEnvironmantInventoryIcons();
         FindItems();

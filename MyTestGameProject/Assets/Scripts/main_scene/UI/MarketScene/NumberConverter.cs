@@ -7,8 +7,6 @@ using UnityEngine.UI;
 
 public class NumberConverter : MonoBehaviour
 {
-    enum ConvertType { SILVER, EXPIRIENCE}
-
     const string format = "# ### ### ### ##0";
 
     [Header("UI")]
