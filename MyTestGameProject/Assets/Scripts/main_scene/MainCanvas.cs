@@ -40,7 +40,7 @@ public class MainCanvas : MonoBehaviour
         }
     }
 
-    Camera camera;
+    new Camera camera;
     Camera Camera
     {
         get

@@ -509,7 +509,7 @@ public class Ground : MonoBehaviour
                 {
                     indexSame = rnd.Next(blockContainers[i].ExitBlocks[(int)exitDirection].Count);
                 }
-                catch (Exception ex)
+                catch 
                 {
                     StringBuilder builder = new StringBuilder();
                     string space = " ";

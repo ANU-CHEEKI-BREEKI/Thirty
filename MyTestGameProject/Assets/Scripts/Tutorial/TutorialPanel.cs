@@ -281,7 +281,7 @@ public class TutorialPanel : MonoBehaviour
                     break;
                 }
             }
-            catch(Exception ex)
+            catch
             {
                 Debug.Log("Tакого индекса нет!!!!!!!");
             }

@@ -15,7 +15,7 @@ public class Exit : MonoBehaviour
 
     bool goToNextLevel = false;
 
-    Collider2D collider;
+    new Collider2D collider;
 
     void Start()
     {
@@ -50,6 +50,7 @@ public class Exit : MonoBehaviour
                 act = () =>
                 {
                     TempValuesEndLevelScreen.Instance.Show();
+                    GameManager.Instance.SavablePlayerData.PlayerProgress.Squad.SetSquadValues(Squad.playerSquadInstance);
                     FadeScreen.Instance.OnFadeOn -= act;
                 };
 

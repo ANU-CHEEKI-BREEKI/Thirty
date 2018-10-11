@@ -41,7 +41,7 @@ public class Unit : MonoBehaviour
     public float Health
     {
         get { return stats.Health; }
-        private set
+        set
         {
             float oldVal = stats.Health;
             stats.Health = value;
@@ -351,7 +351,7 @@ public class Unit : MonoBehaviour
         if (AfterInitiate != null) AfterInitiate();
     }
 
-    public void Death()
+    public void Death(bool instantDeath = false)
     {
         Selected = false;
 
@@ -404,6 +404,9 @@ public class Unit : MonoBehaviour
         }
 
         DropingItemsManager.Instance.DropUnitCorp(this);
+
+        if (instantDeath)
+            LateDeath();
     }
 
     void LateDeath()
@@ -458,6 +461,8 @@ public class Unit : MonoBehaviour
 
     void Squad_OnUnitStatsChanged(UnitStats oldS, UnitStats newS)
     {
+        Debug.LogWarning("Squad_OnUnitStatsChanged");
+
         if (Health > newS.Health)
             Health = newS.Health;
         else if (oldS.Health < newS.Health)
@@ -719,16 +724,10 @@ public class Unit : MonoBehaviour
         Arms.name = "Arms";
     }
      
-
-    /// <summary>
-    /// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1
-    ///    ТУТ СКОРЕЕ ВСЕГО БАГ!!!!
-    ///    ЕСЛИ ПРИМЕНИТЬ МОДИФИКАТОРЫ К ОТРЯДУ, А ПОТОМ ВЫЗВАТЬ ДАНЫЙ МЕТОД
-    ///    ТО МОДИФИКАТОРЫ НЕ БУДУТ УЧТЕНЫ!!!
-    /// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1
-    /// </summary>
     void SetProperties()
     {
+        Debug.LogWarning("SetProperties");
+
         EquipmentStats[] equipStats = new EquipmentStats[]
         {
             squad.Inventory.Helmet.EquipmentStats,
@@ -747,7 +746,7 @@ public class Unit : MonoBehaviour
             stats = UnitStats.ModifyStats(stats, mod.GetModifierByEquipmentMass(stats.EquipmentMass));
 
         if (health > 0)//без проверки юниты умирают при инициализации
-            stats.Health = health;
+            stats.Health = health;//какие жизни были такие и ставим обратно
         rigidbody2D.mass = stats.EquipmentMass;
     }
     

@@ -7,7 +7,10 @@ public class GameManager : MonoBehaviour
 {
     public enum SceneIndex { MAIN_MENU, MARKET, LEVEL, LOADING_SCREEN, LEVEL_TUTORIAL_1, LEVEL_TUTORIAL_2, LEVEL_TUTORIAL_3, TESTING_LEVEL }
     public static GameManager Instance { get; private set; }
-    
+
+    //КОСТЫЛЬ ЕБАННЫЙ
+    public string command = string.Empty;
+
     bool gamePaused;
     public bool GamePaused { get { return gamePaused; } private set { gamePaused = value; } }
 
@@ -123,6 +126,15 @@ public class GameManager : MonoBehaviour
                 SoundManager.Instance.StopPlayingChannel(SoundManager.SoundType.MUSIC, 1.5f);
                 SoundManager.Instance.StopPlayingChannel(SoundManager.SoundType.FX, 1.5f);
                 SoundManager.Instance.StopPlayingChannel(SoundManager.SoundType.UI, 1.5f);
+
+                if(a == SceneIndex.MARKET)
+                {
+                    if (command == "loadSquad")
+                    {
+                        squad.Copy(GameManager.Instance.SavablePlayerData.PlayerProgress.Squad);
+                        command = string.Empty;
+                    }
+                }
             };
 
             DontDestroyOnLoad(gameObject);
@@ -275,7 +287,7 @@ public class GameManager : MonoBehaviour
     {
         squad = Squad.playerSquadInstance;
 
-
+        //сбрасываем модификаторы
         var mods = squad.StatsModifiers;
         foreach (var m in mods)
             squad.RemoveStatsModifier(m);
@@ -285,7 +297,8 @@ public class GameManager : MonoBehaviour
 
         Vector2 pos;
         Quaternion rot;
-
+        
+        //выставляем начаьную позицию отряда
         if (SceneManager.GetActiveScene().buildIndex == (int)SceneIndex.LEVEL)
         {
             MapBlock block = Ground.Instance.MiniGrid[(int)entranceBlockPosition.y][(int)entranceBlockPosition.x].block;
@@ -313,7 +326,8 @@ public class GameManager : MonoBehaviour
             squad.Path = null;
 
             squad.ResetUnitPositions();
-
+            
+            //выставляем камеру на отряд
             Camera.main.transform.position = new Vector3(
                 squad.PositionsTransform.position.x,
                 squad.PositionsTransform.position.y,

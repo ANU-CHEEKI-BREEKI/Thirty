@@ -15,7 +15,6 @@ public class FadeScreen : MonoBehaviour
     public bool FadeOnStartScene { get; set; } = true;
 
     bool fadeWhenStart = true;
-
     private void Awake()
     {
         Instance = this;

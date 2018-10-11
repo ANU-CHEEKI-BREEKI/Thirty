@@ -137,7 +137,7 @@ public class SoundChannel : MonoBehaviour
         for (int i = 0; i < cnt; i++)
         {
             //проверяем есть ли все клипы в очереди клипов
-            bool t = true;
+            
             if (clips.Count == usedSources[i].clipQueue.Count)
             {
                 //создаемм два отсортированых списка и просто проверяэм все по порядку. если хоть что то не сходится - это не искомый список.

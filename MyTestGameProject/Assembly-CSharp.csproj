@@ -255,6 +255,7 @@
     <Compile Include="Assets\Scripts\main_scene\BreakOnCollision.cs" />
     <Compile Include="Assets\Scripts\main_scene\ButtonSaveAndQuite.cs" />
     <Compile Include="Assets\Scripts\main_scene\ButtonSavePlayerData.cs" />
+    <Compile Include="Assets\Scripts\main_scene\ButtonsNewGameOrLoadInMainMenu.cs" />
     <Compile Include="Assets\Scripts\main_scene\CenterUnitSelection.cs" />
     <Compile Include="Assets\Scripts\main_scene\Controllers\AiSquadController.cs" />
     <Compile Include="Assets\Scripts\main_scene\Controllers\CameraController.cs" />

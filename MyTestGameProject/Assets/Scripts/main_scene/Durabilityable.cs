@@ -29,7 +29,7 @@ public class Durabilityable : MonoBehaviour
 
     int spritesCount;
 
-    SpriteRenderer renderer;
+    new SpriteRenderer renderer;
     Transform thisTransform;
 
     public event Action OnBreak;

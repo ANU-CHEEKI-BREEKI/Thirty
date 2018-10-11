@@ -6,17 +6,30 @@ using UnityEngine;
 [Serializable]
 public class DSPlayerSquad : IResetable, IMergeable
 {
-    [SerializeField] Inventory inventory;
-    /// <summary>
-    /// Использовать только для экипировки и расходников!!!! Скиллы хранятся отдельно!!!!
-    /// </summary>
-    public Inventory Inventory { get { return inventory; } }
+    [SerializeField] bool isEmpty;
+    public bool IsEmpty { get { return isEmpty; } }
+
+
+    [SerializeField] EquipmentStack helmetStack;
+    [SerializeField] EquipmentStack bodyStack;
+    [SerializeField] EquipmentStack shieldStack;
+    [SerializeField] EquipmentStack weaponStack;
+
+    public EquipmentStack Helmet { get { return helmetStack; } }
+    public EquipmentStack Body { get { return bodyStack; } }
+    public EquipmentStack Shield { get { return shieldStack; } }
+    public EquipmentStack Weapon { get { return weaponStack; } }
+
+    [SerializeField] EquipmentStack[] inventory;
+    public EquipmentStack[] Inventory { get { return inventory; } }
+
+
     [SerializeField] int count;
     /// <summary>
     /// Количество живых юнитов
     /// </summary>
     public int Count { get { return count; } }
-    float[] health;
+    [SerializeField] float[] health;
     /// <summary>
     /// Здоровье каждого живого юнита.
     /// КОПИЯ массива
@@ -28,9 +41,20 @@ public class DSPlayerSquad : IResetable, IMergeable
         Reset();
     }
 
-    public DSPlayerSquad(Squad squad)
+    public void SetSquadValues(Squad squad)
     {
-        inventory = JsonUtility.FromJson<Inventory>(JsonUtility.ToJson(squad.Inventory));
+        isEmpty = false;
+
+        var inv = squad.Inventory;
+        helmetStack = inv.Helmet;
+        bodyStack = inv.Body;
+        shieldStack = inv.Shield;
+        weaponStack = inv.Weapon;
+
+        inventory = new EquipmentStack[inv.Length];
+        for (int i = 0; i < inv.Length; i++)
+            inventory[i] = inv[i];
+
         count = squad.UnitCount;
         health = new float[count];
         var poss = squad.UnitPositions;
@@ -40,7 +64,15 @@ public class DSPlayerSquad : IResetable, IMergeable
 
     public void Reset()
     {
-        inventory = new Inventory();
+        isEmpty = true;
+
+        helmetStack = null;
+        bodyStack = null;
+        shieldStack = null;
+        weaponStack = null;
+
+        inventory = null;
+
         if (Squad.playerSquadInstance != null)
             count = Squad.playerSquadInstance.FULL_SQUAD_UNIT_COUNT;
         else
@@ -50,6 +82,9 @@ public class DSPlayerSquad : IResetable, IMergeable
 
     public void Merge(object data)
     {
-        
+        var d = data as DSPlayerSquad;
+        inventory = d.inventory;
+        count = d.count;
+        health = d.health;
     }
 }

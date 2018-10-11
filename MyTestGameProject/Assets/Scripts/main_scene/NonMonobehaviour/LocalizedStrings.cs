@@ -361,4 +361,5 @@ public sealed class LocalizedStrings
     public static string tutorial_tip_lvl3_welcome { get; private set; }
     public static string level_generading { get; private set; }
     public static string new_game { get; private set; }
+    public static string continue_game { get; private set; }
 }

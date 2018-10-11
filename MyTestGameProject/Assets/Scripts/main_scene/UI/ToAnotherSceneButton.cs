@@ -11,6 +11,9 @@ public class ToAnotherSceneButton : MonoBehaviour
     [SerializeField] GameManager.SceneIndex scene;
     public GameManager.SceneIndex SceneIndex { get { return scene; } }
 
+    //КОСТЫЛЬ ЕБАННЫЙ
+    [SerializeField] string commandToGamaManager;
+
     private void Start()
     {
         btn = GetComponent<Button>();
@@ -48,6 +51,8 @@ public class ToAnotherSceneButton : MonoBehaviour
 
     void LoadLevel()
     {
+        GameManager.Instance.command = commandToGamaManager;
+
         switch (scene)
         {
             case GameManager.SceneIndex.MAIN_MENU:

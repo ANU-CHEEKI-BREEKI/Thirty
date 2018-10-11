@@ -69,7 +69,7 @@ public class Squad : MonoBehaviour
     [SerializeField] [Range(1, 100)] int squadLength = 10;
     public int SQUAD_LENGTH { get { return squadLength; } set { squadLength = value; } }
     int squadRowsMax;
-    public int SQUAD_ROWS_MAX {  get { return squadRowsMax; } }
+    public int SQUAD_ROWS_MAX { get { return squadRowsMax; } }
     /// <summary>
     /// Радиус вогруг центра отряда, юниты за пределами которого не будут учтены в расчете положения центра отряда.
     /// </summary>
@@ -123,7 +123,7 @@ public class Squad : MonoBehaviour
                     {
                         formation = lastFormation;
 
-                        if(Squad.playerSquadInstance == this)
+                        if (Squad.playerSquadInstance == this)
                             Toast.Instance.Show(LocalizedStrings.toast_cant_reform_shields_without_shields);
                     }
 
@@ -145,12 +145,12 @@ public class Squad : MonoBehaviour
                     currentFormationModifyers = new FormationStats.RisedShields();
                     break;
             }
-            
+
             SetProp();
-           
+
             ReformSquad(FlipRotation);
 
-            if(lastFormation != formation)
+            if (lastFormation != formation)
                 if (OnFormationChanged != null)
                     OnFormationChanged(currentFormationModifyers);
 
@@ -242,7 +242,7 @@ public class Squad : MonoBehaviour
     /// Ни в коем случае не надо ничкго менять в позициях! Понял, йопта?!
     /// </summary>
     public List<UnitPosition> UnitPositions { get { return unitPositions; } }
-    
+
     public GameObject UnitsContainer { get; private set; }
     public int UnitCount { get { return unitPositions.Count; } }
 
@@ -389,7 +389,7 @@ public class Squad : MonoBehaviour
         UnitsContainer.layer = LayerMask.NameToLayer(fraction.ToString());
         PositionsTransform = transform.Find("UnitPositions");
         inventory.Squad = this;
-        squadRowsMax = fullSquadUnitCount / squadLength;        
+        squadRowsMax = fullSquadUnitCount / squadLength;
         unitPositions = new List<UnitPosition>(FULL_SQUAD_UNIT_COUNT);
         squadHelth = 0;
     }
@@ -403,14 +403,7 @@ public class Squad : MonoBehaviour
 
         for (int i = 0; i < FULL_SQUAD_UNIT_COUNT; i++)
         {
-            Unit unit = Instantiate(
-                unitOriginal,
-                new Vector3(PositionsTransform.position.x, PositionsTransform.position.y, PositionsTransform.position.z),
-                Quaternion.identity
-            );
-            unit.name = "Unit " + (i + 1);
-            unit.delayToFindTargetAndAttack = (float)i / FULL_SQUAD_UNIT_COUNT;
-            AddUnitWithoutReformSquad(unit);
+            CreateUnit(i);
         }
 
         CurrentFormation = CurrentFormation;
@@ -427,6 +420,17 @@ public class Squad : MonoBehaviour
         SetProp(inventory.Weapon);
     }
 
+    void CreateUnit(int i)
+    {
+        Unit unit = Instantiate(
+                        unitOriginal,
+                        new Vector3(PositionsTransform.position.x, PositionsTransform.position.y, PositionsTransform.position.z),
+                        Quaternion.identity
+                    );
+        unit.name = "Unit " + (i + 1);
+        unit.delayToFindTargetAndAttack = (float)i / FULL_SQUAD_UNIT_COUNT;
+        AddUnitWithoutReformSquad(unit);
+    }
 
     private void OnDestroy()
     {
@@ -445,7 +449,7 @@ public class Squad : MonoBehaviour
         if (statsDictionary[modifier] >= UnitCountToApplyModifier && !statsModifyers.Contains(modifier))
             AddStatsModifier(modifier);
     }
-    
+
     void UnitModifierRemoved(UnitStatsModifier modifier)
     {
         if (!statsDictionary.ContainsKey(modifier))
@@ -466,7 +470,7 @@ public class Squad : MonoBehaviour
         {
             statsModifyers.Add(modifier);
 
-            if(OnCallApplyModifierToAllUnit != null)
+            if (OnCallApplyModifierToAllUnit != null)
                 OnCallApplyModifierToAllUnit(modifier);
 
             if (OnModifiersListChanged != null)
@@ -590,7 +594,7 @@ public class Squad : MonoBehaviour
     }
 
     #endregion
-        
+
 
     private void Squad_OnTerrainModifiersListChanged(SOTerrainStatsModifier[] obj)
     {
@@ -612,7 +616,7 @@ public class Squad : MonoBehaviour
         maxSpeed = unitStats.Speed / 10;
         CalcSpeed();
 
-        if(OnUnitStatsChanged != null)
+        if (OnUnitStatsChanged != null)
             OnUnitStatsChanged(oldStats, unitStats);
 
         squadHelth = 0;
@@ -637,7 +641,7 @@ public class Squad : MonoBehaviour
         float sumY = 0;
         Vector2 pos;
         int countSumUnit = 0;
-        
+
         float distSqr = distanceToCenterSquad * distanceToCenterSquad;
 
         float sumX2 = 0;
@@ -660,7 +664,7 @@ public class Squad : MonoBehaviour
                 countSumUnit++;
             }
         }
-        if(countSumUnit > 0)
+        if (countSumUnit > 0)
             centerSquad = new Vector2(sumX / countSumUnit, sumY / countSumUnit);
         else
             centerSquad = new Vector2(sumX2 / countSumUnit2, sumY2 / countSumUnit2);
@@ -688,14 +692,14 @@ public class Squad : MonoBehaviour
         CalcSpeed();
 
         if (newEquipment != null && !(inventory.Weapon).EquipmentStats.CanReformToPhalanx)
-                CurrentFormation = FormationStats.Formations.RANKS;
+            CurrentFormation = FormationStats.Formations.RANKS;
 
         if (newEquipment != null && newEquipment.EquipmentStats.Type == EquipmentStats.TypeOfEquipment.SHIELD && newEquipment.EquipmentStats.Empty)
             if (CurrentFormation == FormationStats.Formations.RISEDSHIELDS)
                 CurrentFormation = FormationStats.Formations.RANKS;
     }
 
-    void  SetFlagFight()
+    void SetFlagFight()
     {
         if (attakingUnitsCount > 0 || targettedUnitsCount > 0)
             InFight = true;
@@ -707,7 +711,7 @@ public class Squad : MonoBehaviour
     {
         float time = 0;
 
-        while(time < duration)
+        while (time < duration)
         {
             time += Time.deltaTime;
             yield return null;
@@ -729,13 +733,13 @@ public class Squad : MonoBehaviour
         if (OnBeginCharge != null)
             OnBeginCharge(modifyer);
         charging = true;
-        
+
         yield return new WaitForSeconds(duration);
         if (OnEndCharge != null)
             OnEndCharge(modifyer);
         charging = false;
     }
-    
+
     void Moving()
     {
         isMoving = false;
@@ -779,7 +783,7 @@ public class Squad : MonoBehaviour
                     pathStep++;
             }
             else if (pathStep == Path.Count) // остановились
-            {                
+            {
                 LookWithoutFullRotation(EndLookRotation);
 
                 if (CheckRotationInRange(EndLookRotation, rotationAcuracy))
@@ -884,7 +888,7 @@ public class Squad : MonoBehaviour
         {
             FlipRotation = flipingFlag;
             ReformSquad(FlipRotation);
-        }               
+        }
     }
 
     /// <summary>
@@ -907,22 +911,22 @@ public class Squad : MonoBehaviour
         unit.OnModifierRemove -= UnitModifierRemoved;
 
         unit.OnTerrainModifierAdd -= UnitTerrainModifierAdded;
-        unit.OnTerrainModifierRemove-= UnitTerrainModifierRemoved;
+        unit.OnTerrainModifierRemove -= UnitTerrainModifierRemoved;
         //-------
 
         ReformSquad(flipRotation, unit.TargetMovePositionObject);
-        
+
         if (unitPositions.Count <= 0)
         {
             if (OnSquadDestroy != null)
                 OnSquadDestroy();
             Destroy(GetComponent<LineRenderer>());
 
-            if(this == playerSquadInstance)
+            if (this == playerSquadInstance)
             {
                 gameObject.AddComponent<DestroyOnAwake>(); // Destroy(this); on next level
 
-                Social.ReportProgress(GPSConstants.achievement_heroes_never_die, 100, (b) => 
+                Social.ReportProgress(GPSConstants.achievement_heroes_never_die, 100, (b) =>
                 {
                     if (b) Debug.Log("achievement_heroes_never_die   unlocked");
                     else Debug.Log("achievement_heroes_never_die   can't be unlocked");
@@ -965,7 +969,7 @@ public class Squad : MonoBehaviour
         unit.SetFraction(fraction);
 
         //if (l == LayerMask.NameToLayer(Squad.UnitFraction.NEUTRAL.ToString()))
-            unit.Init();
+        unit.Init();
 
         SquadHealth += unit.Health;
         if (OnUitCountChanged != null) OnUitCountChanged(unitPositions.Count);
@@ -1044,7 +1048,7 @@ public class Squad : MonoBehaviour
 
     public void ResetUnitPositions()
     {
-        if(OnInitiateUnitPositions != null)
+        if (OnInitiateUnitPositions != null)
             OnInitiateUnitPositions();
     }
 
@@ -1053,7 +1057,7 @@ public class Squad : MonoBehaviour
     /// </summary>
     /// <param name="flipRotation">отражать ли формацию отряда по горизонтали</param>
     /// <param name="objToRemove">позиция юнита, которую нужно удалить пере перестроением</param>
-    void ReformSquad(bool flipRotation, UnitPosition objToRemove = null)
+    public void ReformSquad(bool flipRotation, UnitPosition objToRemove = null)
     {
         FormationStats.Formations newFormation = FormationStats.Formations.RANKS;
         switch (CurrentFormation)
@@ -1239,7 +1243,7 @@ public class Squad : MonoBehaviour
             int r = (int)objToRemove.PositionInArray.y;
 
             int c = (int)objToRemove.PositionInArray.x;
-            
+
             int c2;
 
             if (objToRemove != null)
@@ -1311,14 +1315,14 @@ public class Squad : MonoBehaviour
                     );
                 }
 
-                unitPositions[i].RowInPhalanx = (int)unitPositions[i].PositionInArray.y + 1;                
+                unitPositions[i].RowInPhalanx = (int)unitPositions[i].PositionInArray.y + 1;
             }
 
             row++;
             unitCount -= SQUAD_LENGTH;
         }
     }
-    
+
     Quaternion CalcTargetRotations(Vector3 targetPosition)
     {
         return Quaternion.LookRotation(Vector3.forward, targetPosition - PositionsTransform.position);
@@ -1332,7 +1336,7 @@ public class Squad : MonoBehaviour
     bool CheckPositionInRange(Vector2 position, float positionRange)
     {
         return Mathf.Sqrt(
-                (position.x - PositionsTransform.position.x)* (position.x - PositionsTransform.position.x) +
+                (position.x - PositionsTransform.position.x) * (position.x - PositionsTransform.position.x) +
                 (position.y - PositionsTransform.position.y) * (position.y - PositionsTransform.position.y)
         ) <= positionRange;
     }
@@ -1355,13 +1359,13 @@ public class Squad : MonoBehaviour
     /// <param name="stack"></param>
     public void DropEquipment(EquipmentStack stack)
     {
-        if(OnDropStackFromInventory != null)
+        if (OnDropStackFromInventory != null)
             OnDropStackFromInventory(stack);
     }
 
     void OnDrawGizmos()
     {
-        if(inFight)
+        if (inFight)
             Gizmos.color = Color.red;
         else
             Gizmos.color = Color.cyan;
@@ -1373,5 +1377,33 @@ public class Squad : MonoBehaviour
 
         Gizmos.color = Color.magenta;
         Gizmos.DrawWireSphere(centerSquad, distanceToCenterSquad);
+    }
+
+    public void Copy(DSPlayerSquad squadToCopy)
+    {
+        inventory.Weapon = squadToCopy.Weapon;
+        inventory.Shield = squadToCopy.Shield;
+        inventory.Body = squadToCopy.Body;
+        inventory.Helmet = squadToCopy.Helmet;
+
+        for (int i = 0; i < Inventory.Length; i++)
+            inventory[i] = squadToCopy.Inventory[i];
+
+        var tlist = new List<UnitPosition>(unitPositions);
+        if (tlist.Count > squadToCopy.Count)
+        {
+            for (int i = 0; i < tlist.Count - squadToCopy.Count; i++)
+                tlist[i].Unit.Death(true);
+        }
+        else
+        {
+            for (int i = 0; i < squadToCopy.Count - tlist.Count; i++)
+                CreateUnit(i + tlist.Count);
+        }
+
+        var tl = new List<UnitPosition>(unitPositions);
+
+        for (int i = 0; i < squadToCopy.Health.Length; i++)
+            tl[i].Unit.Health = squadToCopy.Health[i];
     }
 }

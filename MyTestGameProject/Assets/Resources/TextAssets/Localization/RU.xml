@@ -7,6 +7,8 @@
   <string name = "resoures_loadind">Загрузка ресурсов:</string>
   
   <string name = "play_game">В бой</string>
+  <string name = "new_game">Новая игра</string>
+  <string name = "continue_game">Продолжить</string>
   <string name = "settings">Настройки</string>
   <string name = "squad">Отряд</string>
   <string name = "training">Обучение</string>
@@ -137,8 +139,6 @@
   <string name = "executable_use_type_drag_drop_place">Перетянуть и отпустить</string>
   <string name = "executable_use_type_drag_direction">Перетянуть в направлении</string>
 
-  <string name = "new_game">Заново</string>
-  <string name = "_continue">Продолжить</string>
   <string name = "your_money_and_exp">Заработанные деньги и очки опыта</string>
   <string name = "allowed_equipmant">Открытое снаряжение:</string>
   <string name = "allowed_equipmant_tooltip">Теперь данное снаряжение будет всегда доступно для покупки в магазине</string>

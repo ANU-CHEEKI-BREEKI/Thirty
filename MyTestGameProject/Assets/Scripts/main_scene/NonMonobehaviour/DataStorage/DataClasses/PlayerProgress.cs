@@ -34,7 +34,7 @@ public class PlayerProgress : IResetable, ITempValuesApplyable, ILoadedDataApply
         Stats = new DSUnitStats();
         Skills = new DSPlayerSkills();
         Equipment = new DSPlayerEquipment();
-        Squad = null;
+        Squad = new DSPlayerSquad();
     }
     
     public void Reset()

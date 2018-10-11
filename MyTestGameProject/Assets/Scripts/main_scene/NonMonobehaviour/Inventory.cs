@@ -11,7 +11,7 @@ public class Inventory
     /// arg is a new  equipment
     /// </summary>
     public event Action<EquipmentStack> OnEquipmentChanged;
-
+    
     EquipmentStack helmetStack;
     EquipmentStack bodyStack;
     EquipmentStack shieldStack;
@@ -165,7 +165,10 @@ public class Inventory
 
         set
         {
-            inventory[index] = value;
+            if (value == null)
+                inventory[index] = null;
+            else
+                inventory[index] = new EquipmentStack(value);
         }
     }
 }
