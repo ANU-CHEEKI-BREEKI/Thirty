@@ -50,7 +50,9 @@ public class Exit : MonoBehaviour
                 act = () =>
                 {
                     TempValuesEndLevelScreen.Instance.Show();
-                    GameManager.Instance.SavablePlayerData.PlayerProgress.Squad.SetSquadValues(Squad.playerSquadInstance);
+                    var gm = GameManager.Instance;
+                    gm.SavablePlayerData.PlayerProgress.Squad.SetSquadValues(Squad.playerSquadInstance);
+                    gm.SavablePlayerData.PlayerProgress.Level.SetValues(gm.CurrentLevel);
                     FadeScreen.Instance.OnFadeOn -= act;
                 };
 

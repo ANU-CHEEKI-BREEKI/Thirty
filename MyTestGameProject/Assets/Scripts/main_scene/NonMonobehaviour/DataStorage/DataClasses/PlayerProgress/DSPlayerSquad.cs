@@ -9,20 +9,21 @@ public class DSPlayerSquad : IResetable, IMergeable
     [SerializeField] bool isEmpty;
     public bool IsEmpty { get { return isEmpty; } }
 
-
     [SerializeField] EquipmentStack helmetStack;
     [SerializeField] EquipmentStack bodyStack;
     [SerializeField] EquipmentStack shieldStack;
     [SerializeField] EquipmentStack weaponStack;
+    [SerializeField] ConsumableStack firstConsumable;
+    [SerializeField] ConsumableStack secondConsumable;
+    [SerializeField] EquipmentStack[] inventory;
 
     public EquipmentStack Helmet { get { return helmetStack; } }
     public EquipmentStack Body { get { return bodyStack; } }
     public EquipmentStack Shield { get { return shieldStack; } }
     public EquipmentStack Weapon { get { return weaponStack; } }
-
-    [SerializeField] EquipmentStack[] inventory;
+    public ConsumableStack FirstConsumable { get { return firstConsumable; } }
+    public ConsumableStack SecondConsumable { get { return secondConsumable; } }
     public EquipmentStack[] Inventory { get { return inventory; } }
-
 
     [SerializeField] int count;
     /// <summary>
@@ -46,10 +47,12 @@ public class DSPlayerSquad : IResetable, IMergeable
         isEmpty = false;
 
         var inv = squad.Inventory;
-        helmetStack = inv.Helmet;
-        bodyStack = inv.Body;
-        shieldStack = inv.Shield;
-        weaponStack = inv.Weapon;
+        helmetStack = new EquipmentStack(inv.Helmet);
+        bodyStack = new EquipmentStack(inv.Body);
+        shieldStack = new EquipmentStack(inv.Shield);
+        weaponStack = new EquipmentStack(inv.Weapon);
+        firstConsumable = new ConsumableStack(inv.FirstConsumable);
+        secondConsumable = new ConsumableStack(inv.SecondConsumable);
 
         inventory = new EquipmentStack[inv.Length];
         for (int i = 0; i < inv.Length; i++)
@@ -71,6 +74,9 @@ public class DSPlayerSquad : IResetable, IMergeable
         shieldStack = null;
         weaponStack = null;
 
+        firstConsumable = null;
+        secondConsumable = null;
+
         inventory = null;
 
         if (Squad.playerSquadInstance != null)
@@ -86,5 +92,12 @@ public class DSPlayerSquad : IResetable, IMergeable
         inventory = d.inventory;
         count = d.count;
         health = d.health;
+
+        helmetStack = new EquipmentStack(d.Helmet);
+        bodyStack = new EquipmentStack(d.Body);
+        shieldStack = new EquipmentStack(d.Shield);
+        weaponStack = new EquipmentStack(d.Weapon);
+        firstConsumable = new ConsumableStack(d.FirstConsumable);
+        secondConsumable = new ConsumableStack(d.SecondConsumable);
     }
 }

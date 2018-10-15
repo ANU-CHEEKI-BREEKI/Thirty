@@ -15,6 +15,10 @@
   <string name = "developers">Разработчики</string>
   <string name = "understud">Понял</string>
 
+  <string name = "video_settings">Видео</string>
+  <string name = "audio_settings">Звук</string>
+  <string name = "progress_settings">Прогресс</string>
+  
   <string name = "healtarget_weakest">сначала слабых</string>
   <string name = "healtarget_strongest">сначала сильных</string>
   <string name = "healtarget_all">Всех</string>

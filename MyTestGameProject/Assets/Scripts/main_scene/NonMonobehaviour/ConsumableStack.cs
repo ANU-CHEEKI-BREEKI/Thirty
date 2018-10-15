@@ -70,6 +70,18 @@ public class ConsumableStack : AExecutableStack, IStackCountConstraintable, IDes
         this.count = count;
     }
 
+    public ConsumableStack(ConsumableStack stack)
+    {
+        this.consumable = stack.consumable;
+        this.consumableStats = stack.consumableStats;
+        this.count = stack.count;
+    }
+
+    public ConsumableStack(ConsumableStack stack, int count) : this(stack)
+    {
+        this.count = count;
+    }
+
     public Description GetDescription()
     {
         Description consubableDesc = consumable.GetDescription();

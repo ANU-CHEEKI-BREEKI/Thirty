@@ -146,10 +146,76 @@ public class Inventory
             EquipmentChanged(weaponStack);
         }
     }
-    public SkillStack FirstSkill { get { return firstSkill; } set { if (value == null) firstSkill.Skill = null; else firstSkill = value; } }
-    public SkillStack SecondSkill { get { return secondSkill; } set { if (value == null) secondSkill.Skill = null; else secondSkill = value; } }
-    public ConsumableStack FirstConsumable { get { return firstConsumable; } set { if (value == null) firstConsumable.Consumable = null; else firstConsumable = value; } }
-    public ConsumableStack SecondConsumable { get { return secondConsumable; } set { if (value == null) secondConsumable.Consumable = null; else secondConsumable = value; } }
+    public SkillStack FirstSkill
+    {
+        get
+        {
+            return firstSkill;
+        }
+        set
+        {
+            if (value == null)
+                firstSkill.Skill = null;
+            else
+            {
+                firstSkill.Skill = value.Skill;
+                firstSkill.SkillStats = value.SkillStats;
+            }
+        }
+    }
+    public SkillStack SecondSkill
+    {
+        get
+        {
+            return secondSkill;
+        }
+        set
+        {
+            if (value == null)
+                secondSkill.Skill = null;
+            else
+            {
+                secondSkill.Skill = value.Skill;
+                secondSkill.SkillStats = value.SkillStats;
+            }
+        }
+    }
+    public ConsumableStack FirstConsumable
+    {
+        get
+        {
+            return firstConsumable;
+        }
+        set
+        {
+            if (value == null)
+                firstConsumable.Consumable = null;
+            else
+            {
+                firstConsumable.Consumable = value.Consumable;
+                firstConsumable.ConsumableStats = value.ConsumableStats;
+                firstConsumable.Count = value.Count;
+            }
+        }
+    }
+    public ConsumableStack SecondConsumable
+    {
+        get
+        {
+            return secondConsumable;
+        }
+        set
+        {
+            if (value == null)
+                secondConsumable.Consumable = null;
+            else
+            {
+                secondConsumable.Consumable = value.Consumable;
+                secondConsumable.ConsumableStats = value.ConsumableStats;
+                secondConsumable.Count = value.Count;
+            }
+        }
+    }
 
     void EquipmentChanged(EquipmentStack eq)
     {

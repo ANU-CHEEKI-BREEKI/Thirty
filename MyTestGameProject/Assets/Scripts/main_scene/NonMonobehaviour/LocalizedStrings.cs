@@ -362,4 +362,7 @@ public sealed class LocalizedStrings
     public static string level_generading { get; private set; }
     public static string new_game { get; private set; }
     public static string continue_game { get; private set; }
+    public static string video_settings { get; private set; }
+    public static string audio_settings { get; private set; }
+    public static string progress_settings { get; private set; }
 }

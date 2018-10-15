@@ -13,6 +13,7 @@ public class PlayerProgress : IResetable, ITempValuesApplyable, ILoadedDataApply
     [SerializeField] DSPlayerSkills skills;
     [SerializeField] DSPlayerEquipment equipment;
     [SerializeField] DSPlayerSquad squad;
+    [SerializeField] LevelInfo level; 
 
     public DSFlags Flags { get { return flags; } private set { flags = value; } }
     public DSPlayerScore Score { get { return score; } private set { score = value; } }
@@ -23,6 +24,7 @@ public class PlayerProgress : IResetable, ITempValuesApplyable, ILoadedDataApply
     /// </summary>
     public DSPlayerEquipment Equipment { get { return equipment; } private set { equipment = value; } }
     public DSPlayerSquad Squad { get { return squad; } private set { squad = value; } }
+    public LevelInfo Level { get { return level; } private set { level = value; } }
 
     public event Action OnSaved;
     public event Action OnLoaded;
@@ -35,6 +37,7 @@ public class PlayerProgress : IResetable, ITempValuesApplyable, ILoadedDataApply
         Skills = new DSPlayerSkills();
         Equipment = new DSPlayerEquipment();
         Squad = new DSPlayerSquad();
+        Level = new LevelInfo();
     }
     
     public void Reset()
@@ -45,6 +48,7 @@ public class PlayerProgress : IResetable, ITempValuesApplyable, ILoadedDataApply
         Skills.Reset();
         Equipment.Reset();
         Squad.Reset();
+        Level.Reset();
     }
 
     public void ApplyTempValues()
@@ -69,6 +73,20 @@ public class PlayerProgress : IResetable, ITempValuesApplyable, ILoadedDataApply
         Skills = d.Skills;
         Equipment = d.Equipment;
         Squad = d.Squad;
+        Level = d.Level;
+    }
+
+    public void Merge(object data)
+    {
+        var d = data as PlayerProgress;
+
+        Flags.Merge(d.Flags);
+        Score.Merge(d.Score);
+        Stats.Merge(d.Stats);
+        Skills.Merge(d.Skills);
+        Equipment.Merge(d.Equipment);
+        Squad.Merge(d.Squad);
+        Level.Merge(d.Level);
     }
 
     public void Save()
@@ -114,15 +132,4 @@ public class PlayerProgress : IResetable, ITempValuesApplyable, ILoadedDataApply
         GameManager.Instance.SavingManager.LoadData<PlayerProgress>(this.GetType().Name);
     }
 
-    public void Merge(object data)
-    {
-        var d = data as PlayerProgress;
-
-        Flags.Merge(d.Flags);
-        Score.Merge(d.Score);
-        Stats.Merge(d.Stats);
-        Skills.Merge(d.Skills);
-        Equipment.Merge(d.Equipment);
-        Squad.Merge(d.Squad);
-    }
 }

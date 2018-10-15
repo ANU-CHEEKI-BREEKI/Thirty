@@ -12,8 +12,6 @@ public class Squad : MonoBehaviour
 
     static public Squad playerSquadInstance;
 
-    [SerializeField] Transform minimapMark;
-
     [Header("Default units properties in this squad")]
     [SerializeField] Unit unitOriginal;
     [Space]
@@ -409,10 +407,7 @@ public class Squad : MonoBehaviour
         CurrentFormation = CurrentFormation;
         if (OnFormationChanged != null)
             OnFormationChanged(CurrentFormationModifyers);
-
-        if (minimapMark != null)
-            minimapMark.gameObject.SetActive(true);
-
+        
         inventory.OnEquipmentChanged += SetProp;
         OnModifiersListChanged += Squad_OnModifiersListChanged;
         OnTerrainModifiersListChanged += Squad_OnTerrainModifiersListChanged;
@@ -915,28 +910,34 @@ public class Squad : MonoBehaviour
         //-------
 
         ReformSquad(flipRotation, unit.TargetMovePositionObject);
-
         if (unitPositions.Count <= 0)
         {
-            if (OnSquadDestroy != null)
-                OnSquadDestroy();
-            Destroy(GetComponent<LineRenderer>());
-
-            if (this == playerSquadInstance)
-            {
-                gameObject.AddComponent<DestroyOnAwake>(); // Destroy(this); on next level
-
-                Social.ReportProgress(GPSConstants.achievement_heroes_never_die, 100, (b) =>
-                {
-                    if (b) Debug.Log("achievement_heroes_never_die   unlocked");
-                    else Debug.Log("achievement_heroes_never_die   can't be unlocked");
-                });
-            }
-
-            Destroy(gameObject);
+            Death();
         }
 
         if (OnUitCountChanged != null) OnUitCountChanged(unitPositions.Count);
+    }
+
+    void Death()
+    {
+        if (OnSquadDestroy != null)
+            OnSquadDestroy();
+        Destroy(GetComponent<LineRenderer>());
+
+        if (this == playerSquadInstance)
+        {
+            gameObject.AddComponent<DestroyOnAwake>(); // Destroy(this); on next level
+            GameManager.Instance.SavablePlayerData.PlayerProgress.Squad.Reset();
+            GameManager.Instance.SavablePlayerData.PlayerProgress.Level.Reset();
+
+            Social.ReportProgress(GPSConstants.achievement_heroes_never_die, 100, (b) =>
+            {
+                if (b) Debug.Log("achievement_heroes_never_die   unlocked");
+                else Debug.Log("achievement_heroes_never_die   can't be unlocked");
+            });
+        }
+
+        Destroy(gameObject);
     }
 
     /// <summary>
@@ -1379,12 +1380,15 @@ public class Squad : MonoBehaviour
         Gizmos.DrawWireSphere(centerSquad, distanceToCenterSquad);
     }
 
-    public void Copy(DSPlayerSquad squadToCopy)
+    public void Load(DSPlayerSquad squadToCopy)
     {
         inventory.Weapon = squadToCopy.Weapon;
         inventory.Shield = squadToCopy.Shield;
         inventory.Body = squadToCopy.Body;
         inventory.Helmet = squadToCopy.Helmet;
+
+        inventory.FirstConsumable = squadToCopy.FirstConsumable;
+        inventory.SecondConsumable = squadToCopy.SecondConsumable;
 
         for (int i = 0; i < Inventory.Length; i++)
             inventory[i] = squadToCopy.Inventory[i];

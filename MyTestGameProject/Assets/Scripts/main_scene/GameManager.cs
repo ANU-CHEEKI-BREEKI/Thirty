@@ -14,14 +14,15 @@ public class GameManager : MonoBehaviour
     bool gamePaused;
     public bool GamePaused { get { return gamePaused; } private set { gamePaused = value; } }
 
+    [SerializeField] LevelInfo currentLevel;
+    public LevelInfo CurrentLevel { get { return currentLevel; } private set { currentLevel = value; } }
+
     [Header("Savable Data")]
     [SerializeField] SavablePlayerData savablePlayerData = new SavablePlayerData();
     public SavablePlayerData SavablePlayerData { get { return savablePlayerData; } }
-    
+
     [Header("Time manage")]
-    [SerializeField]
-    [Range(0, 1)]
-    float timeScale = 1;
+    [SerializeField] [Range(0, 1)] float timeScale = 1;
 
     [Header("Game")]
     [SerializeField]
@@ -45,7 +46,6 @@ public class GameManager : MonoBehaviour
     [HideInInspector] public MapBlock.Direction exitDirection;
     [HideInInspector] public MapBlock.Direction entranceDirection;
 
-    public LevelInfo CurrentLevel { get; private set; }
 
     Squad squad;
     public Squad PlayerSquad { get { return squad; } }
@@ -53,9 +53,11 @@ public class GameManager : MonoBehaviour
     public ISavingManager SavingManager { get; set; }
 
     /// <summary>
-    /// первый агрумент - номер сцены, на которую будет совершен переход. второй агрумент - номер игрового уровня
+    /// первый агрумент - номер сцены, на которую будет совершен переход. 
+    /// второй агрумент - номер текущего игрового уровня.
+    /// третий аргумент - номер текущей сцены
     /// </summary>
-    public event Action<SceneIndex, int> BeforeLoadLevel;
+    public event Action<SceneIndex, int, SceneIndex> BeforeLoadLevel;
 
     void Awake()
     {
@@ -119,7 +121,7 @@ public class GameManager : MonoBehaviour
             };
             GPSWrapper.LogInPlayer(debug, onLogIn);
 
-            BeforeLoadLevel += (a, b) =>
+            BeforeLoadLevel += (nextScene, currentLevel, currentScene) =>
             {
                 savablePlayerData.PlayerProgress.Save();
 
@@ -127,11 +129,12 @@ public class GameManager : MonoBehaviour
                 SoundManager.Instance.StopPlayingChannel(SoundManager.SoundType.FX, 1.5f);
                 SoundManager.Instance.StopPlayingChannel(SoundManager.SoundType.UI, 1.5f);
 
-                if(a == SceneIndex.MARKET)
+                if(nextScene == SceneIndex.MARKET)
                 {
                     if (command == "loadSquad")
                     {
-                        squad.Copy(GameManager.Instance.SavablePlayerData.PlayerProgress.Squad);
+                        squad.Load(GameManager.Instance.SavablePlayerData.PlayerProgress.Squad);
+                        CurrentLevel.SetValues(GameManager.Instance.SavablePlayerData.PlayerProgress.Level);
                         command = string.Empty;
                     }
                 }
@@ -403,7 +406,14 @@ public class GameManager : MonoBehaviour
 
     public void LoadMainMenu()
     {
-        CurrentLevel = new LevelInfo();
+        if (SceneManager.GetActiveScene().buildIndex == (int)SceneIndex.MARKET)
+        {
+            var gm = GameManager.Instance.SavablePlayerData.PlayerProgress;
+            gm.Squad.SetSquadValues(Squad.playerSquadInstance);
+            gm.Level.SetValues(GameManager.Instance.CurrentLevel);
+        }
+
+        CurrentLevel.Reset();
 
         if (Squad.playerSquadInstance != null)
         {
@@ -444,7 +454,7 @@ public class GameManager : MonoBehaviour
     void LoadScene(SceneIndex index)
     {
         if (BeforeLoadLevel != null)
-            BeforeLoadLevel(index, CurrentLevel.Level);
+            BeforeLoadLevel(index, CurrentLevel.Level, (SceneIndex)SceneManager.GetActiveScene().buildIndex);
 
         LoadingScreenManager.NextLevel = index;
         SceneManager.LoadScene((int)SceneIndex.LOADING_SCREEN);
@@ -469,53 +479,6 @@ public class GameManager : MonoBehaviour
         }
     }
     
-    public class LevelInfo
-    {
-        public Ground.GroundType GroundType { get; private set; } = Ground.GroundType.GRASSLAND;
-        /// <summary>
-        /// Текущий уровень на текущем типе уровней
-        /// </summary>
-        public int Level { get; private set; }
-        /// <summary>
-        /// Максимальное количество уровней на одном типе уровней
-        /// </summary>
-        public int MaxLevel { get { return 3; } }
-        /// <summary>
-        /// Текущий уровень включая все уровни всех типов (типа сквозная нумерация)
-        /// </summary>
-        public int WholeLevel { get; private set; }
-        /// <summary>
-        /// Суммарное максимальное количество уровней
-        /// </summary>
-        public int MaxWholeLevel { get; private set; }
-
-        public float WholeLevelT { get { return (float)WholeLevel / MaxWholeLevel; } }
-
-        public LevelInfo()
-        {
-            Level = 0;
-            WholeLevel = 0;
-            GroundType = Ground.GroundType.GRASSLAND;
-            MaxWholeLevel = Enum.GetValues(typeof(Ground.GroundType)).Length * MaxLevel;
-        }       
-
-        public void NextLevel()
-        {
-            WholeLevel++;
-            Level++;
-            if (Level >= MaxLevel)
-            {
-                var v = (Enum.GetValues(typeof(Ground.GroundType)) as Ground.GroundType[]).ToList();
-                var i = v.IndexOf(GroundType);
-                if (i < v.Count - 1)
-                {
-                    GroundType = v[i + 1];
-                    Level = 1;
-                }
-            }
-        }
-    }
-
     [ContextMenu("ResetAllSettings")]
     public void ResetAllSettings()
     {
@@ -562,5 +525,17 @@ public class GameManager : MonoBehaviour
     public void ResetSkills()
     {
         savablePlayerData.PlayerProgress.Skills.Reset();
+    }
+
+    [ContextMenu("ResetLevel")]
+    public void ResetLevel()
+    {
+        savablePlayerData.PlayerProgress.Level.Reset();
+    }
+
+    [ContextMenu("ResetAllowedEquipment")]
+    public void ResetAllowedEquipment()
+    {
+        savablePlayerData.PlayerProgress.Equipment.Reset();
     }
 }

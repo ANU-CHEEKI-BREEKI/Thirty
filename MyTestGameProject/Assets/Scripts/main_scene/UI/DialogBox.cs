@@ -141,7 +141,7 @@ public class DialogBox : MonoBehaviour, IDialogBox
                 else
                     scrolableText.color = defaultTextColor;
 
-                scrolableText.fontSize = title.fontSize;
+                //scrolableText.fontSize = title.fontSize;
 
                 unscrolableTextContent.SetActive(false);
                 scrolableTextContent.SetActive(true);
@@ -156,7 +156,7 @@ public class DialogBox : MonoBehaviour, IDialogBox
                 else
                     unscrolableText.color = defaultTextColor;
 
-                unscrolableText.fontSize = title.fontSize;
+                //unscrolableText.fontSize = title.fontSize;
 
                 scrolableTextContent.SetActive(false);
                 unscrolableTextContent.SetActive(true);
