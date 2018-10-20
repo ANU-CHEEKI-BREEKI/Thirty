@@ -5,7 +5,17 @@ using UnityEngine;
 
 public abstract class AStack
 {
-    abstract public Item.MainProperties? MainProperties { get; }
+    [SerializeField] protected Item.MainProperties mainProperties;
+    virtual public Item.MainProperties? MainProperties
+    {
+        get
+        {
+            if (Item != null)
+                return mainProperties;
+            else
+                return null;
+        }
+    }
 
     /// <summary>
     /// Только в тех случаях, когда используется AStack !!!!!

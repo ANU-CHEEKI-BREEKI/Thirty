@@ -10,15 +10,41 @@ public class ConsumableStack : AExecutableStack, IStackCountConstraintable, IDes
     public event Action<Consumable> OnConsumableChanged;
     public event Action<object> OnStatsChanged;
 
-    [SerializeField] Consumable consumable;
-    public Consumable Consumable { get { return consumable; } set { consumable = value; if (OnConsumableChanged != null) OnConsumableChanged(value); } }
+    public override void ApplyLoadedData(object data)
+    {
+        var d = data as ConsumableStack;
+        if (!string.IsNullOrEmpty(d.mainProperties.PathToPrefab))
+            consumable = Resources.Load<Consumable>(d.mainProperties.PathToPrefab);
 
-    [SerializeField] object consumableStats;
+        count = d.count;
+    }
+
+    /// <summary>
+    /// при ззагрузке сохранений это поле надо обновить
+    /// </summary>
+    [SerializeField] Consumable consumable;
+    public Consumable Consumable
+    {
+        get
+        {
+            return consumable;
+        }
+        set
+        {
+            consumable = value;
+            if(value != null)
+                mainProperties = value.MainPropertie;
+            if (OnConsumableChanged != null)
+                OnConsumableChanged(value);
+        }
+    }
+
+    object consumableStats;
     public object ConsumableStats
     {
         get
         {
-            if(consumableStats == null && consumable != null)
+            if (consumableStats == null && consumable != null)
                 consumableStats = consumable.DefaultStats;
             return consumableStats;
         }
@@ -39,9 +65,7 @@ public class ConsumableStack : AExecutableStack, IStackCountConstraintable, IDes
             if (c != null) return c.MaxCount;
             else return -1;
         }
-    }
-
-    public override Item.MainProperties? MainProperties { get { if (consumable != null) return consumable.MainPropertie; else return null; } }
+    }  
 
     public override Item Item
     {
@@ -65,14 +89,14 @@ public class ConsumableStack : AExecutableStack, IStackCountConstraintable, IDes
 
     public ConsumableStack(Consumable consumable, object consumableStats, int count = 1)
     {
-        this.consumable = consumable;
+        this.Consumable = consumable;
         this.consumableStats = consumableStats;
         this.count = count;
     }
 
     public ConsumableStack(ConsumableStack stack)
     {
-        this.consumable = stack.consumable;
+        this.Consumable = stack.consumable;
         this.consumableStats = stack.consumableStats;
         this.count = stack.count;
     }

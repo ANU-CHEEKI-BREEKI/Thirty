@@ -10,10 +10,34 @@ public class SkillStack : AExecutableStack, IDescriptionable
     public event Action<Executable> OnSkillChanged;
     public event Action<object> OnStatsChanged;
 
-    [SerializeField] Executable skill;
-    public Executable Skill { get { return skill; } set { skill = value; if (OnSkillChanged != null) OnSkillChanged(value); } }
+    public override void ApplyLoadedData(object data)
+    {
+        var d = data as SkillStack;
+        if (!string.IsNullOrEmpty(d.mainProperties.PathToPrefab))
+            skill = Resources.Load<Skill>(d.mainProperties.PathToPrefab);        
+    }
 
-    [SerializeField] object skillStats;
+    /// <summary>
+    /// при ззагрузке сохранений это поле надо обновить
+    /// </summary>
+    [SerializeField] public Executable skill;
+    public Executable Skill
+    {
+        get
+        {
+            return skill;
+        }
+        set
+        {
+            skill = value;
+            if(value != null)
+            mainProperties = value.MainPropertie;
+            if (OnSkillChanged != null)
+                OnSkillChanged(value);
+        }
+    }
+
+    object skillStats;
     public object SkillStats
     {
         get
@@ -27,8 +51,6 @@ public class SkillStack : AExecutableStack, IDescriptionable
             skillStats = value; if (OnStatsChanged != null) OnStatsChanged(value);
         }
     }
-
-    public override Item.MainProperties? MainProperties { get { if (skill != null) return skill.MainPropertie; else return null; } }
 
     public override Item Item
     {
@@ -52,7 +74,7 @@ public class SkillStack : AExecutableStack, IDescriptionable
 
     public SkillStack(Executable skill, object skillStats)
     {
-        this.skill = skill;
+        this.Skill = skill;
         this.skillStats = skillStats;
     }
 
@@ -103,4 +125,5 @@ public class SkillStack : AExecutableStack, IDescriptionable
 
         return skillDesc;
     }
+
 }

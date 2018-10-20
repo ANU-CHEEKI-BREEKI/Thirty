@@ -4,7 +4,7 @@ using System.Reflection;
 using UnityEngine;
 
 [Serializable]
-public class DSPlayerSquad : IResetable, IMergeable
+public class DSPlayerSquad : IResetable, ILoadedDataApplyable
 {
     [SerializeField] bool isEmpty;
     public bool IsEmpty { get { return isEmpty; } }
@@ -65,6 +65,25 @@ public class DSPlayerSquad : IResetable, IMergeable
             health[i] = poss[i].Unit.Health;
     }
 
+    public void ApplyLoadedData(object data)
+    {
+        var d = data as DSPlayerSquad;
+
+        firstConsumable.ApplyLoadedData(d.firstConsumable);
+        secondConsumable.ApplyLoadedData(d.secondConsumable);
+
+        inventory = d.inventory;
+        count = d.count;
+        health = d.health;
+
+        helmetStack = new EquipmentStack(d.Helmet);
+        bodyStack = new EquipmentStack(d.Body);
+        shieldStack = new EquipmentStack(d.Shield);
+        weaponStack = new EquipmentStack(d.Weapon);
+
+        isEmpty = d.isEmpty;
+    }
+
     public void Reset()
     {
         isEmpty = true;
@@ -100,4 +119,5 @@ public class DSPlayerSquad : IResetable, IMergeable
         firstConsumable = new ConsumableStack(d.FirstConsumable);
         secondConsumable = new ConsumableStack(d.SecondConsumable);
     }
+
 }

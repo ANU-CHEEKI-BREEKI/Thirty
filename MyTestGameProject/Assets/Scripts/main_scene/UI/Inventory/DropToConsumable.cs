@@ -60,7 +60,7 @@ public class DropToConsumable : ADropToMe
                 var oldDrop = drag.OldParent.GetComponent<ADropToMe>();
 
                 //если ячейка свободна
-                if (transform.childCount == 0)
+                if (transform.childCount == 0 && oldDrop != this)
                 {
                     if (oldDrop.CanGetFromThisIventory(drag.ConsumableStack, null))
                         if (AddToThisInventory(drag.ConsumableStack))

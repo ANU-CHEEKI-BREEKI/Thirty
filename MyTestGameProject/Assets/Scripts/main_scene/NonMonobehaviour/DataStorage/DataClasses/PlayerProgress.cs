@@ -70,9 +70,9 @@ public class PlayerProgress : IResetable, ITempValuesApplyable, ILoadedDataApply
         Flags = d.Flags;
         Score.ApplyLoadedData(d.Score);
         Stats = d.Stats;
-        Skills = d.Skills;
+        Skills.ApplyLoadedData(d.Skills);
         Equipment = d.Equipment;
-        Squad = d.Squad;
+        Squad.ApplyLoadedData(d.Squad);
         Level = d.Level;
     }
 

@@ -3,15 +3,25 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [Serializable]
-public class DSPlayerSkills : IResetable, IMergeable
+public class DSPlayerSkills : IResetable, ILoadedDataApplyable
 {
     public List<DSPlayerSkill> skills;
-    public Executable firstSkill;
-    public Executable secondSkill;
+    public SkillStack firstSkill;
+    public SkillStack secondSkill;
 
     public DSPlayerSkills()
     {
         Reset();
+    }
+
+    public void ApplyLoadedData(object data)
+    {
+        var d = data as DSPlayerSkills;
+
+        firstSkill.ApplyLoadedData(d.firstSkill);
+        secondSkill.ApplyLoadedData(d.secondSkill);
+
+        skills = d.skills;
     }
 
     public void Merge(object data)

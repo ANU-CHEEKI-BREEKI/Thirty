@@ -19,12 +19,12 @@ public class DropToSkill : ADropToMe
             case SkillNum.FIRS:
                 Squad.playerSquadInstance.Inventory.FirstSkill.Skill = stack.Skill;
                 Squad.playerSquadInstance.Inventory.FirstSkill.SkillStats = stack.SkillStats;
-                skillSaves.firstSkill = Squad.playerSquadInstance.Inventory.FirstSkill.Skill;
+                skillSaves.firstSkill = Squad.playerSquadInstance.Inventory.FirstSkill;
                 break;
             case SkillNum.SECOND:
                 Squad.playerSquadInstance.Inventory.SecondSkill.Skill = stack.Skill;
                 Squad.playerSquadInstance.Inventory.SecondSkill.SkillStats = stack.SkillStats;
-                skillSaves.secondSkill = Squad.playerSquadInstance.Inventory.SecondSkill.Skill;
+                skillSaves.secondSkill = Squad.playerSquadInstance.Inventory.SecondSkill;
                 break;
         }
 

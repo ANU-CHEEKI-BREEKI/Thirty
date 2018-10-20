@@ -92,6 +92,8 @@ public class GPSSavingManager : ISavingManager
             var jsonStr = Encoding.ASCII.GetString(data);
             var loadedData = JsonUtility.FromJson(jsonStr, g.type);
 
+            Debug.Log(jsonStr);
+
             CallOnDataLoaded(g.gameData.Filename, loadedData, true);
         }
         else

@@ -341,13 +341,13 @@ public class GameManager : MonoBehaviour
         var progress = GameManager.Instance.SavablePlayerData.PlayerProgress;
 
         squad.SetUnitsStats(progress.Stats);
-        var skill = progress.Skills.firstSkill;
+        var skill = progress.Skills.firstSkill.Skill;
         squad.Inventory.FirstSkill.Skill = skill;
         if (skill != null)
             squad.Inventory.FirstSkill.SkillStats = skill.CalcUpgradedStats(progress.Skills.skills.Find((t) => { return t.Id == skill.Id; }).Upgrades);
 
-        skill = progress.Skills.secondSkill;
-        squad.Inventory.SecondSkill.Skill = progress.Skills.secondSkill;
+        skill = progress.Skills.secondSkill.Skill;
+        squad.Inventory.SecondSkill.Skill = skill;
         if (skill != null)
             squad.Inventory.SecondSkill.SkillStats = skill.CalcUpgradedStats(progress.Skills.skills.Find((t) => { return t.Id == skill.Id; }).Upgrades);
     }
