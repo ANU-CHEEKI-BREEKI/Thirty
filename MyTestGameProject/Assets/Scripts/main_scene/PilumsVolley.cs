@@ -96,6 +96,9 @@ public class PilumsVolley : MonoBehaviour
         Destroy(gameObject, pSys.main.duration);
         if(CallbackUsedCount!= null)
             CallbackUsedCount(countPilumsInValley, owner);
+
+        if (owner != null && owner == Squad.playerSquadInstance)
+            GPSWrapper.Achivement.IncrementProgress(GPSConstants.achievement_velite, countPilumsInValley, null);
     }
 
     private void OnParticleCollision(GameObject other)

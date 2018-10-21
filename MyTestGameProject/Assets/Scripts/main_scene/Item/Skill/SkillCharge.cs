@@ -52,7 +52,12 @@ public class SkillCharge : Skill
                 stats = this.defaultStats;
 
             if (res && canExecute.Contains(owner.CurrentFormation))
+            {
                 owner.Charge(stats.modifyer, stats.duration);
+
+                if(owner == Squad.playerSquadInstance)
+                    GPSWrapper.Achivement.IncrementProgress(GPSConstants.achievement_runner, 1, null);
+            }
             else
                 res = false;
         }

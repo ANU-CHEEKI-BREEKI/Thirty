@@ -10,6 +10,7 @@ public class UISameSizeAs : MonoBehaviour
 
     void Start()
     {
+        Canvas.ForceUpdateCanvases();
         SetSize();
     }
 

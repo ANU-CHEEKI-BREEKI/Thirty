@@ -92,12 +92,14 @@ public class GPSSavingManager : ISavingManager
             var jsonStr = Encoding.ASCII.GetString(data);
             var loadedData = JsonUtility.FromJson(jsonStr, g.type);
 
-            Debug.Log(jsonStr);
+            Debug.Log("------------OnSavedGameDataRead ------------ jsonStr: " + jsonStr);
+            Debug.Log("------------OnSavedGameDataRead ------------ loadedData: " + loadedData);
 
             CallOnDataLoaded(g.gameData.Filename, loadedData, true);
         }
         else
         {
+            Debug.Log("------------OnSavedGameDataRead --- cant load");
             Toast.Instance.Show("Не удалось загрузить прогресс");
             CallOnDataLoaded(null, null, false);
         }

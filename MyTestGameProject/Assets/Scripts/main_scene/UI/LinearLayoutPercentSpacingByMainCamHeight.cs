@@ -20,6 +20,7 @@ public class LinearLayoutPercentSpacingByMainCamHeight : MonoBehaviour
 
     void Start ()
     {
+        Canvas.ForceUpdateCanvases();
         SetSpacing();
     }
 

@@ -76,6 +76,25 @@ public class DSPlayerEquipment : ITempValuesApplyable, IResetable, IMergeable
     public void ApplyTempValues()
     {
         allowedEquipmentId.AddRange(tempAllowedEquipmentId);
+
+        int armourCount = 0;
+        int weaponCount = 0;
+
+        foreach (var item in tempAllowedEquipmentId)
+        {
+            if (item.Type == EquipmentStats.TypeOfEquipment.WEAPON)
+                weaponCount++;
+            else
+                armourCount++;
+        }
+
+        GPSWrapper.Achivement.IncrementProgress(GPSConstants.achievement_armourer_i, armourCount, null);
+        GPSWrapper.Achivement.IncrementProgress(GPSConstants.achievement_armourer_ii, armourCount, null);
+        GPSWrapper.Achivement.IncrementProgress(GPSConstants.achievement_armourer_iii, armourCount, null);
+
+        GPSWrapper.Achivement.IncrementProgress(GPSConstants.achievement_arms_dealer_i, weaponCount, null);
+        GPSWrapper.Achivement.IncrementProgress(GPSConstants.achievement_arms_dealer_ii, weaponCount, null);
+        GPSWrapper.Achivement.IncrementProgress(GPSConstants.achievement_arms_dealer_iii, weaponCount, null);
     }
     
     /// <summary>

@@ -13,10 +13,13 @@ public class ConsumableStack : AExecutableStack, IStackCountConstraintable, IDes
     public override void ApplyLoadedData(object data)
     {
         var d = data as ConsumableStack;
-        if (!string.IsNullOrEmpty(d.mainProperties.PathToPrefab))
-            consumable = Resources.Load<Consumable>(d.mainProperties.PathToPrefab);
+        if (d != null)
+        {
+            if (!string.IsNullOrEmpty(d.mainProperties.PathToPrefab))
+                consumable = Resources.Load<Consumable>(d.mainProperties.PathToPrefab);
 
-        count = d.count;
+            count = d.count;
+        }
     }
 
     /// <summary>
@@ -94,11 +97,14 @@ public class ConsumableStack : AExecutableStack, IStackCountConstraintable, IDes
         this.count = count;
     }
 
-    public ConsumableStack(ConsumableStack stack)
+    public ConsumableStack(ConsumableStack stack) : this()
     {
-        this.Consumable = stack.consumable;
-        this.consumableStats = stack.consumableStats;
-        this.count = stack.count;
+        if (stack != null)
+        {
+            this.Consumable = stack.consumable;
+            this.consumableStats = stack.consumableStats;
+            this.count = stack.count;
+        }
     }
 
     public ConsumableStack(ConsumableStack stack, int count) : this(stack)

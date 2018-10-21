@@ -299,6 +299,7 @@
     <Compile Include="Assets\Scripts\main_scene\MainCanvas.cs" />
     <Compile Include="Assets\Scripts\main_scene\MinimapCamera.cs" />
     <Compile Include="Assets\Scripts\main_scene\NewBehaviourScript.cs" />
+    <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\AchivementStandToTheLast.cs" />
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\AExecutableStack.cs" />
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\AIExecutableBehaviours\AExecutableBehaviour.cs" />
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\AIExecutableBehaviours\ConsumableBehaviours\PilumsVolleyBehaviour.cs" />

@@ -134,12 +134,123 @@ public static class GPSWrapper
             onSavesOpened.Invoke(PlayerLoggedIn);
     }
 
-    public static void ShowAchivementsGUI(Action<bool> onAchOpened)
+    static public void ShowAchivementsGUI(Action<bool> onAchOpened)
     {
         if(PlayerLoggedIn)
             Social.ShowAchievementsUI();
 
         if (onAchOpened != null)
             onAchOpened.Invoke(PlayerLoggedIn);
+    }
+       
+    public static class Achivement
+    {
+        static public void Unlock(string achivementID, Action<bool> callback)
+        {
+            Social.ReportProgress(achivementID, 100, (succes)=>
+            {
+                if (succes)
+                    Debug.Log("------------" + achivementID + "   unlocked");
+                else
+                    Debug.Log("------------" + achivementID + "   can't be unlocked");
+
+                if (callback != null)
+                    callback.Invoke(succes);
+            });
+        }
+
+        static public void Show(string achivementID, Action<bool> callback)
+        {
+            Social.ReportProgress(achivementID, 0, (succes) =>
+            {
+                if (succes)
+                    Debug.Log("------------" + achivementID + "   showed");
+                else
+                    Debug.Log("------------" + achivementID + "   can't be showed");
+
+                if (callback != null)
+                    callback.Invoke(succes);
+            });
+        }
+
+        static public void ReportProgress(string achivementID, double progress, Action<bool> callback)
+        {
+            Social.ReportProgress(achivementID, progress, (succes) =>
+            {
+                if (succes)
+                    Debug.Log("------------" + achivementID + "   progress reported: " + progress.ToString(StringFormats.intNumberPercent));
+                else
+                    Debug.Log("------------" + achivementID + "   progress can't be reported: " + progress.ToString(StringFormats.intNumberPercent));
+
+                if (callback != null)
+                    callback.Invoke(succes);
+            });
+        }
+
+        static public void IncrementProgress(string achivementID, int steps, Action<bool> callback)
+        {
+            PlayGamesPlatform.Instance.IncrementAchievement(achivementID, steps, (succes) =>
+            {
+                if (succes)
+                    Debug.Log("------------" + achivementID + "   progress incremented: " + steps.ToString(StringFormats.intSignNumber));
+                else
+                    Debug.Log("------------" + achivementID + "   progress can't be incremented: " + steps.ToString(StringFormats.intSignNumber));
+
+                if (callback != null)
+                    callback.Invoke(succes);
+            });
+        }
+
+
+
+        /// <summary>
+        /// Отправляет прогресс с задержкой Delay, накапливая знаения. Callback не стакается!!!!
+        /// </summary>
+        /// <param name="achivementID"></param>
+        /// <param name="steps"></param>
+        /// <param name="context">Лучше всего подойдет GameManeger.Instance</param>
+        public static void IncrementProgressWithDelay(string achivementID, int steps, Action<bool> callback, MonoBehaviour context)
+        {
+            if (!dict.ContainsKey(achivementID))
+            {
+                dict.Add(achivementID, steps);
+                dictAct.Add(achivementID, callback);
+            }
+            else
+                dict[achivementID] += steps;
+
+            if(cor == null)
+                context.StartCoroutine(CorIncrementWithDelay());
+        }
+
+        /// <summary>
+        ///Delay for IncrementProgressWithDelay
+        /// </summary>
+        public static float Delay { get; set; } = 1f;
+
+        static Dictionary<string, int> dict = new Dictionary<string, int>();
+        static Dictionary<string, Action<bool>> dictAct = new Dictionary<string, Action<bool>>();
+
+        static Coroutine cor;
+
+        /// <summary>
+        /// Ждем задержку и стакаем переменные. По окончанию - отправляем
+        /// </summary>
+        static IEnumerator CorIncrementWithDelay()
+        {
+            while (dict.Count > 0)
+            {
+                yield return new WaitForSeconds(Delay);
+                var keys = new List<string>(dict.Keys);
+                foreach (var key in keys)
+                {
+                    Debug.Log("------------IncrementProgressWithDelay for achivementID: " + key +" by: " + dict[key]);
+                    IncrementProgress(key, dict[key], dictAct[key]);                   
+                    dict.Remove(key);
+                    dictAct.Remove(key);
+                }
+            }
+            cor = null;
+        }
     }
 }

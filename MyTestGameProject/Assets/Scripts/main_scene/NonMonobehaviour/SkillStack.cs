@@ -13,8 +13,11 @@ public class SkillStack : AExecutableStack, IDescriptionable
     public override void ApplyLoadedData(object data)
     {
         var d = data as SkillStack;
-        if (!string.IsNullOrEmpty(d.mainProperties.PathToPrefab))
-            skill = Resources.Load<Skill>(d.mainProperties.PathToPrefab);        
+        if (d != null)
+        {
+            if (!string.IsNullOrEmpty(d.mainProperties.PathToPrefab))
+                skill = Resources.Load<Skill>(d.mainProperties.PathToPrefab);
+        }
     }
 
     /// <summary>
@@ -68,7 +71,7 @@ public class SkillStack : AExecutableStack, IDescriptionable
         }
     }
 
-    public SkillStack()
+    public SkillStack() : this(null, null)
     {
     }
 

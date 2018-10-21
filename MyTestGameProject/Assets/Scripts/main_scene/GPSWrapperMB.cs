@@ -46,13 +46,13 @@ public class GPSWrapperMB : MonoBehaviour
                 .AddButton(LocalizedStrings.yes, () =>
                 {
                     LogOut();
+                    DialogBox.Instance.Hide();
                 })
                 .Show();
         }
         else
         {
             LogIn();
-        }
-            
+        }            
     }
 }

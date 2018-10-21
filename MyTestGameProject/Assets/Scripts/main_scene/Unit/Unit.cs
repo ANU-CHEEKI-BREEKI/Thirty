@@ -37,7 +37,7 @@ public class Unit : MonoBehaviour
     [SerializeField] GameObject arms_with_spear;
     [SerializeField] GameObject arms_with_sword;
     [SerializeField] GameObject arms_with_pike;
-
+    
     public float Health
     {
         get { return stats.Health; }
@@ -1136,6 +1136,7 @@ public class Unit : MonoBehaviour
         }
     }
 
+
     void TakeHitFromUnit(Unit enemy)
     {
         if (IsAlive)
@@ -1168,23 +1169,20 @@ public class Unit : MonoBehaviour
                     SetTarget(enemy);
             }
 
-            float dmg = 0;
+            //потенциальный урон
+            var damage = enemy.stats.Damage;            
+            float dmg = damage.BaseDamage + damage.ArmourDamage - stats.Armour;
+            //если попало в спину, то броню щита не учитываем
+            if (hitFromBack && shield != null)
+                dmg += shield.Stats.Armour;
+            if (dmg < damage.ArmourDamage)
+                dmg = damage.ArmourDamage;
+
             //если враг попал по нам
             if (UnityEngine.Random.value <= takeHitChanse)
-            {
-                var damage = enemy.stats.Damage;
-
-                dmg = damage.BaseDamage + damage.ArmourDamage - stats.Armour;
-
-                //если попало в спину, то броню щита не учитываем
-                if (hitFromBack && shield != null)
-                    dmg += shield.Stats.Armour;
-
-                if (dmg < damage.ArmourDamage)
-                    dmg = damage.ArmourDamage;
-
                 TakeDamage(dmg, enemy.squad, enemy);
-            }
+            else if (squad == Squad.playerSquadInstance)
+                    GPSWrapper.Achivement.IncrementProgressWithDelay(GPSConstants.achievement_unbreakable, (int)dmg, null, GameManager.Instance);
         }
     }
 
@@ -1225,18 +1223,17 @@ public class Unit : MonoBehaviour
                 }
             }
 
+            //потенциальный урон
+            dmg = damage.BaseDamage + damage.ArmourDamage - stats.Armour;
+            //если попало в спину, то броню щита не учитываем
+            if (hitFromBack && shield != null)
+                dmg += shield.Stats.Armour;
+            if (dmg < damage.ArmourDamage)
+                dmg = damage.ArmourDamage;
+
             //если стрела не была заблокирована
             if (UnityEngine.Random.value <= chanceTohit)
-            {
-                dmg = damage.BaseDamage + damage.ArmourDamage - stats.Armour;
-
-                //если попало в спину, то броню щита не учитываем
-                if (hitFromBack && shield != null)
-                    dmg += shield.Stats.Armour;
-
-                if (dmg < damage.ArmourDamage)
-                    dmg = damage.ArmourDamage;
-
+            { 
                 TakeDamage(dmg, owner);
             }
             else
@@ -1245,6 +1242,9 @@ public class Unit : MonoBehaviour
                 if (gameObject.layer != LayerMask.NameToLayer(Squad.UnitFraction.ENEMY.ToString()) && owner == Squad.playerSquadInstance)
                     friendlyfire = true;
                 ShowPopUpTakenDamageText("block", friendlyfire);
+
+                if(squad == Squad.playerSquadInstance)
+                    GPSWrapper.Achivement.IncrementProgressWithDelay(GPSConstants.achievement_unbreakable, (int)dmg, null, GameManager.Instance);
             }
         }
     }
@@ -1306,6 +1306,31 @@ public class Unit : MonoBehaviour
     /// <param name="owner">Вгар, который нанес урон</param>
     void AfterTakingDamage(float dmg, Squad owner)
     {
+        if (!IsAlive)
+        {
+            if (owner != null)
+            {
+                //если сам себя или союзника убил, то friendly fire
+                if (owner == Squad.playerSquadInstance && squad.fraction != Squad.UnitFraction.ENEMY)
+                    GPSWrapper.Achivement.IncrementProgressWithDelay(GPSConstants.achievement_friendly_fire, 1, null, GameManager.Instance);
+                //если убил врага, то thanatos и standToTheLast
+                if (owner == Squad.playerSquadInstance && squad.fraction == Squad.UnitFraction.ENEMY)
+                {
+                    GPSWrapper.Achivement.IncrementProgressWithDelay(GPSConstants.achievement_thanatos, 1, null, GameManager.Instance);
+
+                    AchivementStandToTheLast.killsCount++;
+                }
+
+            }
+            else
+            {
+                //если убил себя об непонятно что, то не внимательный знач
+                if (squad == Squad.playerSquadInstance)
+                    GPSWrapper.Achivement.IncrementProgressWithDelay(GPSConstants.achievement_inattentive, 1, null, GameManager.Instance);
+            }
+                
+        }
+
         if (squad != Squad.playerSquadInstance && owner == Squad.playerSquadInstance && SceneManager.GetActiveScene().buildIndex == (int)GameManager.SceneIndex.LEVEL)
             GameManager.Instance.SavablePlayerData.PlayerProgress.Score.tempExpirience.Value += (int)dmg;
 
@@ -1367,7 +1392,6 @@ public class Unit : MonoBehaviour
 
         target = newTarget;
     }
-
 
     void ShowPopUpTakenDamageText(string text, bool friendly = false)
     {

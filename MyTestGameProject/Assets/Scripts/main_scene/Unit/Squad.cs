@@ -223,6 +223,10 @@ public class Squad : MonoBehaviour
         private set
         {
             inFight = value;
+
+            if(this != null && this == playerSquadInstance)
+                AchivementStandToTheLast.PlayerSquadInFight = value;
+
             if (OnInFightFlagChanged != null)
                 OnInFightFlagChanged(value);
         }
@@ -930,11 +934,8 @@ public class Squad : MonoBehaviour
             GameManager.Instance.SavablePlayerData.PlayerProgress.Squad.Reset();
             GameManager.Instance.SavablePlayerData.PlayerProgress.Level.Reset();
 
-            Social.ReportProgress(GPSConstants.achievement_heroes_never_die, 100, (b) =>
-            {
-                if (b) Debug.Log("achievement_heroes_never_die   unlocked");
-                else Debug.Log("achievement_heroes_never_die   can't be unlocked");
-            });
+            GPSWrapper.Achivement.Unlock(GPSConstants.achievement_heroes_never_die, null);
+            GPSWrapper.Achivement.IncrementProgress(GPSConstants.achievement_never_give_up, 1, null);
         }
 
         Destroy(gameObject);

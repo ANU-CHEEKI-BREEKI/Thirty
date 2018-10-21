@@ -85,7 +85,7 @@ public class GameManager : MonoBehaviour
                 if (b)
                 {
                     SavingManager = new GPSSavingManager();
-                    Social.ReportProgress(GPSConstants.achievement_welcome, 100, null);
+                    GPSWrapper.Achivement.Unlock(GPSConstants.achievement_welcome, null);
                 }
                 else
                 {

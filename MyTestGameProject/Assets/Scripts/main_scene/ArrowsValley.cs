@@ -45,7 +45,7 @@ public class ArrowsValley : MonoBehaviour
     [SerializeField] LayerMask raycastTargetLayers;
 
     [SerializeField] bool runOnAwake;
-
+    
     private void Awake()
     {
         realValleyParticleSystem = GetComponent<ParticleSystem>();
@@ -117,6 +117,10 @@ public class ArrowsValley : MonoBehaviour
         warningValleyParticleSystem.Play(false);
 
         StartCoroutine(DestroyValleyObject());
+
+        if(owner!= null && owner == Squad.playerSquadInstance)
+            GPSWrapper.Achivement.IncrementProgress(GPSConstants.achievement_archer, 1, null);
+
     }
 
     IEnumerator WAitForWarningValley(float time)

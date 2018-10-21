@@ -17,6 +17,8 @@ public class DSPlayerSkills : IResetable, ILoadedDataApplyable
     public void ApplyLoadedData(object data)
     {
         var d = data as DSPlayerSkills;
+        if (d == null)
+            d = new DSPlayerSkills();
 
         firstSkill.ApplyLoadedData(d.firstSkill);
         secondSkill.ApplyLoadedData(d.secondSkill);

@@ -53,6 +53,31 @@ public class Exit : MonoBehaviour
                     var gm = GameManager.Instance;
                     gm.SavablePlayerData.PlayerProgress.Squad.SetSquadValues(Squad.playerSquadInstance);
                     gm.SavablePlayerData.PlayerProgress.Level.SetValues(gm.CurrentLevel);
+
+                    GPSWrapper.Achivement.IncrementProgress(GPSConstants.achievement_beginer, 1, null);
+                    GPSWrapper.Achivement.IncrementProgress(GPSConstants.achievement_experienced, 1, null);
+                    GPSWrapper.Achivement.IncrementProgress(GPSConstants.achievement_god_of_war, 1, null);
+
+                    if (Squad.playerSquadInstance.UnitCount == 0)
+                        GPSWrapper.Achivement.Unlock(GPSConstants.achievement_always_go_to_the_end, null);
+
+                    var lvl = GameManager.Instance.CurrentLevel;
+                    if (lvl.Level == lvl.MaxLevel)
+                    {
+                        switch (lvl.GroundType)
+                        {
+                            case Ground.GroundType.GRASSLAND:
+                                GPSWrapper.Achivement.Unlock(GPSConstants.achievement_grassland, null);
+                                break;
+                            case Ground.GroundType.SWAMP:
+                                GPSWrapper.Achivement.Unlock(GPSConstants.achievement_swamp, null);
+                                break;
+                        }
+                    }
+
+                    if(AchivementStandToTheLast.killsCount >= 90)
+                        GPSWrapper.Achivement.Unlock(GPSConstants.achievement_stand_to_the_last, null);
+
                     FadeScreen.Instance.OnFadeOn -= act;
                 };
 

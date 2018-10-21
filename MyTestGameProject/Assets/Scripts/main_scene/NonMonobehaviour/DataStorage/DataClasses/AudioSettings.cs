@@ -13,7 +13,7 @@ public class AudioSettings : ILoadedDataApplyable, ICopyabe
 
     public AudioSettings()
     {
-        generalVolume = new CalledValue();
+        generalVolume = new CalledValue() { Value = 0};
         musicVolume = new CalledValue();
         fxVolume = new CalledValue();
         uiVolume = new CalledValue();
@@ -24,6 +24,8 @@ public class AudioSettings : ILoadedDataApplyable, ICopyabe
     public void ApplyLoadedData(object data)
     {
         var d = data as AudioSettings;
+        if (d == null)
+            d = new AudioSettings();
 
         generalVolume.Value = d.generalVolume.Value;
         musicVolume.Value = d.musicVolume.Value;

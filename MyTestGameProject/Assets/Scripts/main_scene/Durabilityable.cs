@@ -3,6 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Класс, предсавляющий разрушаемые объекты
+/// </summary>
 public class Durabilityable : MonoBehaviour
 {
     /// <summary>
@@ -100,6 +103,11 @@ public class Durabilityable : MonoBehaviour
             thisTransform.rotation = thisTransform.rotation * Quaternion.Euler(0, 0, UnityEngine.Random.Range(-brokenRotationRange, brokenRotationRange));
 
             SetSprite(true);
+
+            var gm = GameManager.Instance;
+            GPSWrapper.Achivement.IncrementProgressWithDelay(GPSConstants.achievement_the_destroyer_i, 1, null, gm);
+            GPSWrapper.Achivement.IncrementProgressWithDelay(GPSConstants.achievement_the_destroyer_ii, 1, null, gm);
+            GPSWrapper.Achivement.IncrementProgressWithDelay(GPSConstants.achievement_the_destroyer_iii, 1, null, gm);
         }
     }
 

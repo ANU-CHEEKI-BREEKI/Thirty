@@ -129,16 +129,19 @@ public class StatsUpgrade : MonoBehaviour
         {
             if (nextLevelCost <= score.expirience.Value)
             {
+                GPSWrapper.Achivement.IncrementProgress(GPSConstants.achievement_there_is_healthy_mind_in_a_healthy_body, (int)nextLevelCost, null);
                 score.expirience.Value -= nextLevelCost;
                 stat.Value += additionnalVal;
                 stat.Progress = 0;
             }
             else
             {
+                GPSWrapper.Achivement.IncrementProgress(GPSConstants.achievement_there_is_healthy_mind_in_a_healthy_body, (int)score.expirience.Value, null);
                 nextLevelCost -= score.expirience.Value;
                 score.expirience.Value = 0;
                 stat.Progress = 1 - nextLevelCost / nextLevelCostWhenProgressZero;
             }
+
             SetValues();
         }
         else

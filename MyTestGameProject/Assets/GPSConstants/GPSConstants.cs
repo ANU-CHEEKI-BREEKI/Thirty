@@ -24,8 +24,38 @@
 
 public static class GPSConstants
 {
-        public const string achievement_heroes_never_die = "CgkI_Nek4K4SEAIQAg"; // <GPGSID>
+        public const string achievement_rich_man = "CgkI_Nek4K4SEAIQHQ"; // <GPGSID>
+        public const string achievement_inattentive = "CgkI_Nek4K4SEAIQFQ"; // <GPGSID>
+        public const string achievement_arms_dealer_ii = "CgkI_Nek4K4SEAIQBA"; // <GPGSID>
+        public const string achievement_armourer_ii = "CgkI_Nek4K4SEAIQBw"; // <GPGSID>
+        public const string achievement_there_is_healthy_mind_in_a_healthy_body = "CgkI_Nek4K4SEAIQGA"; // <GPGSID>
+        public const string achievement_the_destroyer_ii = "CgkI_Nek4K4SEAIQDA"; // <GPGSID>
+        public const string achievement_stand_to_the_last = "CgkI_Nek4K4SEAIQGQ"; // <GPGSID>
+        public const string achievement_explorer = "CgkI_Nek4K4SEAIQDg"; // <GPGSID>
+        public const string achievement_thanatos = "CgkI_Nek4K4SEAIQGg"; // <GPGSID>
         public const string achievement_welcome = "CgkI_Nek4K4SEAIQAQ"; // <GPGSID>
+        public const string achievement_arms_dealer_i = "CgkI_Nek4K4SEAIQBQ"; // <GPGSID>
+        public const string achievement_hoplite = "CgkI_Nek4K4SEAIQDw"; // <GPGSID>
+        public const string achievement_armourer_iii = "CgkI_Nek4K4SEAIQBg"; // <GPGSID>
+        public const string achievement_armourer_i = "CgkI_Nek4K4SEAIQCA"; // <GPGSID>
+        public const string achievement_velite = "CgkI_Nek4K4SEAIQEg"; // <GPGSID>
+        public const string achievement_heroes_never_die = "CgkI_Nek4K4SEAIQAg"; // <GPGSID>
+        public const string achievement_never_give_up = "CgkI_Nek4K4SEAIQFw"; // <GPGSID>
+        public const string achievement_beginer = "CgkI_Nek4K4SEAIQHg"; // <GPGSID>
+        public const string achievement_god_of_war = "CgkI_Nek4K4SEAIQIA"; // <GPGSID>
+        public const string achievement_runner = "CgkI_Nek4K4SEAIQFg"; // <GPGSID>
+        public const string achievement_the_destroyer_iii = "CgkI_Nek4K4SEAIQCw"; // <GPGSID>
+        public const string achievement_unbreakable = "CgkI_Nek4K4SEAIQHA"; // <GPGSID>
+        public const string achievement_grassland = "CgkI_Nek4K4SEAIQCQ"; // <GPGSID>
+        public const string achievement_archer = "CgkI_Nek4K4SEAIQEw"; // <GPGSID>
+        public const string achievement_the_destroyer_i = "CgkI_Nek4K4SEAIQDQ"; // <GPGSID>
+        public const string achievement_experienced = "CgkI_Nek4K4SEAIQHw"; // <GPGSID>
+        public const string achievement_arms_dealer_iii = "CgkI_Nek4K4SEAIQAw"; // <GPGSID>
+        public const string achievement_legionary = "CgkI_Nek4K4SEAIQEA"; // <GPGSID>
+        public const string achievement_friendly_fire = "CgkI_Nek4K4SEAIQFA"; // <GPGSID>
+        public const string achievement_dealer = "CgkI_Nek4K4SEAIQEQ"; // <GPGSID>
+        public const string achievement_swamp = "CgkI_Nek4K4SEAIQCg"; // <GPGSID>
+        public const string achievement_always_go_to_the_end = "CgkI_Nek4K4SEAIQGw"; // <GPGSID>
 
 }
 

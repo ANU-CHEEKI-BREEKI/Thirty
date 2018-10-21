@@ -39,6 +39,8 @@ public class Settings : IResetable, ILoadedDataApplyable, ISavable, ITempValuesA
     public void ApplyLoadedData(object data)
     {
         var d = data as Settings;
+        if (d == null)
+            d = new Settings();
 
         graphixSettings = d.graphixSettings;
         audioSettings.ApplyLoadedData(d.audioSettings);
@@ -54,6 +56,8 @@ public class Settings : IResetable, ILoadedDataApplyable, ISavable, ITempValuesA
 
     public void Save()
     {
+        Debug.Log("------------Settings data saving...");
+
         var mes = "[non loc] Сохранение настроек игры...";
 
         savedDateTime = DateTime.Now;
@@ -69,6 +73,8 @@ public class Settings : IResetable, ILoadedDataApplyable, ISavable, ITempValuesA
                     OnSaved();
                 GameManager.Instance.SavingManager.OnDataSaved -= onSaved;
             }
+
+            Debug.Log("------------Settings data saved: " + b);
         };
         GameManager.Instance.SavingManager.OnDataSaved += onSaved;
         GameManager.Instance.SavingManager.SaveData<Settings>(this.GetType().Name, this);
@@ -78,19 +84,32 @@ public class Settings : IResetable, ILoadedDataApplyable, ISavable, ITempValuesA
     {
         var mes = "[non loc] Загрузка сохраннных настроек...";
 
+        Debug.Log("------------Settings data loading");
+
         ModalInfoPanel.Instance.Add(mes);
         Action<string, object, bool> onLoad = null;
         onLoad = (s, p, success) =>
         {
             if (s == this.GetType().Name)
             {
-                ApplyLoadedData(p);
+                Debug.Log("------------Settings saved data was read");
+                
+                try
+                {
+                    ApplyLoadedData(p);
+                }
+                catch(Exception ex)
+                {
+                    Debug.LogError("------------Settings data applying failed + \r\n" + ex.ToString());
+                }
                 ResetTempValues();
                 ModalInfoPanel.Instance.Remove(mes);
                 if (OnLoaded != null)
                     OnLoaded();
                 GameManager.Instance.SavingManager.OnDataLoaded -= onLoad;
             }
+
+            Debug.Log("------------Settings data loaded: " + success);
         };
         GameManager.Instance.SavingManager.OnDataLoaded += onLoad;
         GameManager.Instance.SavingManager.LoadData<Settings>(this.GetType().Name);

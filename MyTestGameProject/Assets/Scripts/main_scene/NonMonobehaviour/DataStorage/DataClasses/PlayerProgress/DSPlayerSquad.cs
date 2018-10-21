@@ -68,6 +68,8 @@ public class DSPlayerSquad : IResetable, ILoadedDataApplyable
     public void ApplyLoadedData(object data)
     {
         var d = data as DSPlayerSquad;
+        if (d == null)
+            d = new DSPlayerSquad();
 
         firstConsumable.ApplyLoadedData(d.firstConsumable);
         secondConsumable.ApplyLoadedData(d.secondConsumable);

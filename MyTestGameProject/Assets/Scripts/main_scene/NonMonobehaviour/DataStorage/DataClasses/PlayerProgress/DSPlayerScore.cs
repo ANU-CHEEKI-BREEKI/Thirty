@@ -96,13 +96,16 @@ public class DSPlayerScore : ITempValuesApplyable, IResetable, ILoadedDataApplya
             switch (currency)
             {
                 case Currency.GOLD:
-                        gold.Value -= value;
+                    gold.Value -= value;
+
+                    GPSWrapper.Achivement.IncrementProgress(GPSConstants.achievement_rich_man, (int)value, null);
+
                     break;
                 case Currency.SILVER:
-                        silver.Value -= value;
+                    silver.Value -= value;
                     break;
                 case Currency.EXPIRIENCE:
-                        expirience.Value -= value;
+                    expirience.Value -= value;
                     break;
             }
         }
@@ -127,6 +130,9 @@ public class DSPlayerScore : ITempValuesApplyable, IResetable, ILoadedDataApplya
                 break;
             case Currency.SILVER:
                 silver.Value += value;
+
+                GPSWrapper.Achivement.IncrementProgress(GPSConstants.achievement_dealer, (int)value, null);
+
                 break;
             case Currency.EXPIRIENCE:
                 expirience.Value += value;
@@ -161,6 +167,8 @@ public class DSPlayerScore : ITempValuesApplyable, IResetable, ILoadedDataApplya
     public void ApplyLoadedData(object data)
     {
         var d = data as DSPlayerScore;
+        if (d == null)
+            d = new DSPlayerScore();
 
         gold.Value = d.gold.Value;
         silver.Value = d.silver.Value;
@@ -199,7 +207,7 @@ public class DSPlayerScore : ITempValuesApplyable, IResetable, ILoadedDataApplya
         public float Value
         {
             get { return value; }
-            set { float old = this.value;  this.value = value; if (OnValueChanged != null) OnValueChanged(old, value, this); }
+            set { float old = this.value; this.value = value; if (OnValueChanged != null) OnValueChanged(old, value, this); }
         }
     }
 }

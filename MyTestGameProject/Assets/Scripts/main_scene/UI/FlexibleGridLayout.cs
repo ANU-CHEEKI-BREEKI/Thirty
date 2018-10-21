@@ -30,6 +30,7 @@ public class FlexibleGridLayout : MonoBehaviour
 
     void Start()
     {
+        Canvas.ForceUpdateCanvases();
         ResetValues();
         SetSize();
     }

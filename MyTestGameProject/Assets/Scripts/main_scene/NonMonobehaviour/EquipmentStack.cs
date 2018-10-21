@@ -51,17 +51,18 @@ public class EquipmentStack : AStack, IDescriptionable
         this.count = count;
     }
 
-    public EquipmentStack(EquipmentStack itemStackToCopy)
+    public EquipmentStack(EquipmentStack itemStackToCopy): this()
     {
-        this.equipmentMainProperties = itemStackToCopy.equipmentMainProperties;
-        this.equipmentStats = itemStackToCopy.equipmentStats;
-        this.count = itemStackToCopy.count;
+        if (itemStackToCopy != null)
+        {
+            this.equipmentMainProperties = itemStackToCopy.equipmentMainProperties;
+            this.equipmentStats = itemStackToCopy.equipmentStats;
+            this.count = itemStackToCopy.count;
+        }
     }
 
-    public EquipmentStack(EquipmentStack itemStackToCopy, int count)
+    public EquipmentStack(EquipmentStack itemStackToCopy, int count) : this(itemStackToCopy)
     {
-        this.equipmentMainProperties = itemStackToCopy.equipmentMainProperties;
-        this.equipmentStats = itemStackToCopy.equipmentStats;
         this.count = count;
     }
 

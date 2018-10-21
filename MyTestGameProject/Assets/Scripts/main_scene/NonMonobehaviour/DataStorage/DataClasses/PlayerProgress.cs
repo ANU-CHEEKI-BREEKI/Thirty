@@ -3,7 +3,7 @@ using UnityEngine;
 using System.Collections.Generic;
 
 [Serializable]
-public class PlayerProgress : IResetable, ITempValuesApplyable, ILoadedDataApplyable, ISavable, IMergeable
+public class PlayerProgress : IResetable, ITempValuesApplyable, ISavable, IMergeable, ILoadedDataApplyable
 {
     [SerializeField] DateTime savedDateTime;
 
@@ -65,7 +65,11 @@ public class PlayerProgress : IResetable, ITempValuesApplyable, ILoadedDataApply
 
     public void ApplyLoadedData(object data)
     {
+        Debug.Log("------------PlayerProgress loaded data applying...");
+
         var d = data as PlayerProgress;
+        if (d == null)
+            d = new PlayerProgress();
 
         Flags = d.Flags;
         Score.ApplyLoadedData(d.Score);
@@ -74,10 +78,14 @@ public class PlayerProgress : IResetable, ITempValuesApplyable, ILoadedDataApply
         Equipment = d.Equipment;
         Squad.ApplyLoadedData(d.Squad);
         Level = d.Level;
+
+        Debug.Log("------------PlayerProgress loaded data was applyed");
     }
 
     public void Merge(object data)
     {
+        Debug.Log("------------PlayerProgress data merging...");
+
         var d = data as PlayerProgress;
 
         Flags.Merge(d.Flags);
@@ -87,10 +95,14 @@ public class PlayerProgress : IResetable, ITempValuesApplyable, ILoadedDataApply
         Equipment.Merge(d.Equipment);
         Squad.Merge(d.Squad);
         Level.Merge(d.Level);
+
+        Debug.Log("------------PlayerProgress data merged");
     }
 
     public void Save()
     {
+        Debug.Log("------------PlayerProgress data saving...");
+
         var mes = "[non loc] Сохранение прогресса игры...";
 
         savedDateTime = DateTime.Now;
@@ -106,6 +118,8 @@ public class PlayerProgress : IResetable, ITempValuesApplyable, ILoadedDataApply
                     OnSaved();
                 GameManager.Instance.SavingManager.OnDataSaved -= onSaved;
             }
+
+            Debug.Log("------------PlayerProgress data saved: " + b);
         };
         GameManager.Instance.SavingManager.OnDataSaved += onSaved;
         GameManager.Instance.SavingManager.SaveData<PlayerProgress>(this.GetType().Name, this);
@@ -115,18 +129,31 @@ public class PlayerProgress : IResetable, ITempValuesApplyable, ILoadedDataApply
     {
         var mes = "[non loc] Загрузка сохранённого прогресса...";
 
+        Debug.Log("------------PlayerProgress data loading");
+
         ModalInfoPanel.Instance.Add(mes);
         Action<string, object, bool> onLoad = null;
         onLoad = (s, p, success) =>
         {
             if (s == this.GetType().Name)
             {
-                ApplyLoadedData(p);
+                Debug.Log("------------PlayerProgress saved data was read");
+
+                try
+                {
+                    ApplyLoadedData(p);
+                }
+                catch(Exception ex)
+                {
+                    Debug.LogError("------------PlayerProgress data applying failed\r\n" + ex.ToString());
+                }
                 ModalInfoPanel.Instance.Remove(mes);
                 if (OnLoaded != null)
                     OnLoaded();
                 GameManager.Instance.SavingManager.OnDataLoaded -= onLoad;
             }
+
+            Debug.Log("------------PlayerProgress data loaded: " + success);
         };
         GameManager.Instance.SavingManager.OnDataLoaded += onLoad;
         GameManager.Instance.SavingManager.LoadData<PlayerProgress>(this.GetType().Name);
