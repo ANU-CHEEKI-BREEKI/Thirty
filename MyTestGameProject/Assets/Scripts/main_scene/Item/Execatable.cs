@@ -80,7 +80,7 @@ public abstract class Executable : Item, IDescriptionable
 
         foreach (var u in upgrades)
         {
-            if (u.FieldName != null && u.FieldName != "")
+            if (u.FieldName != null && u.FieldName != "" && !u.isUpgradeToUnlock)
             {
                 var names = u.FieldName.Split(new string[] { "/" }, StringSplitOptions.RemoveEmptyEntries);
                 stats = stats.IncreaseNumberField(u.AdditionalValue, names);

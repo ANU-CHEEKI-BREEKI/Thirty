@@ -8,27 +8,8 @@
 ///
 public sealed class LocalizedStrings
 {
-    public static string current_languade { get; private set; }
-    public static string loading { get; private set; }
-    public static string newName9998895 { get; private set; }
-    public static string newName66515 { get; private set; }
-    public static string newName2 { get; private set; }
-    public static string level_generading6582 { get; private set; }
-    public static string resoures_loadind { get; private set; }
-    public static string play_game { get; private set; }
-    public static string settings { get; private set; }
-    public static string squad { get; private set; }
-    public static string training { get; private set; }
-    public static string developers { get; private set; }
-    public static string understud { get; private set; }
-    public static string healtarget_weakest { get; private set; }
-    public static string healtarget_strongest { get; private set; }
-    public static string healtarget_all { get; private set; }
-    public static string first_phase { get; private set; }
-    public static string second_phase { get; private set; }
-    public static string two_phases_skill { get; private set; }
-    public static string error { get; private set; }
-    public static string missing_string { get; private set; }
+#region formations
+
     public static string formation_ranks_name { get; private set; }
     public static string formation_ranks_description { get; private set; }
     public static string formation_phalanx_name { get; private set; }
@@ -37,86 +18,15 @@ public sealed class LocalizedStrings
     public static string formation_shields_description { get; private set; }
     public static string condition_inFight_name { get; private set; }
     public static string condition_inFight_description { get; private set; }
-    public static string terrain_modifier_dirt_name { get; private set; }
-    public static string terrain_modifier_dirt_description { get; private set; }
-    public static string terrain_modifier_forest_name { get; private set; }
-    public static string terrain_modifier_forest_description { get; private set; }
-    public static string terrain_modifier_forest_light_name { get; private set; }
-    public static string terrain_modifier_forest_light_description { get; private set; }
-    public static string terrain_modifier_grass_name { get; private set; }
-    public static string terrain_modifier_grass_description { get; private set; }
-    public static string terrain_modifier_road_ground_name { get; private set; }
-    public static string terrain_modifier_road_ground_description { get; private set; }
-    public static string terrain_modifier_road_rock_name { get; private set; }
-    public static string terrain_modifier_road_rock_description { get; private set; }
-    public static string terrain_modifier_water_light_name { get; private set; }
-    public static string terrain_modifier_water_light_description { get; private set; }
-    public static string health { get; private set; }
-    public static string squadHealth { get; private set; }
-    public static string armour { get; private set; }
-    public static string baseDamage { get; private set; }
-    public static string armourDamage { get; private set; }
-    public static string attack { get; private set; }
-    public static string defence { get; private set; }
-    public static string defenceHalfSector { get; private set; }
-    public static string missileBlock { get; private set; }
-    public static string attackDistance { get; private set; }
-    public static string speed { get; private set; }
-    public static string acceleration { get; private set; }
-    public static string rotationSpeed { get; private set; }
-    public static string chargeImpact { get; private set; }
-    public static string chargeDeflect { get; private set; }
-    public static string chargeDamage { get; private set; }
-    public static string defenceGoingThrough { get; private set; }
-    public static string flyingSpeed { get; private set; }
-    public static string weight { get; private set; }
-    public static string weapon_damage { get; private set; }
-    public static string armour_armour { get; private set; }
-    public static string missile_block_short { get; private set; }
-    public static string squad_info_main { get; private set; }
-    public static string skills { get; private set; }
-    public static string consumables { get; private set; }
-    public static string squad_info_main_stats { get; private set; }
-    public static string weight_very_light { get; private set; }
-    public static string weight_light { get; private set; }
-    public static string weight_medium { get; private set; }
-    public static string weight_heavy { get; private set; }
-    public static string weight_very_heavy { get; private set; }
-    public static string arrowWalley_radius { get; private set; }
-    public static string arrowWalley_arrowscount { get; private set; }
-    public static string cooldown { get; private set; }
-    public static string duration { get; private set; }
-    public static string cost { get; private set; }
-    public static string mass { get; private set; }
     public static string weaponConstraint_cantReformPhalanx { get; private set; }
     public static string weaponConstraint_cantReformPhalanxInFight { get; private set; }
     public static string weaponConstraint_cantUseShield { get; private set; }
-    public static string attention { get; private set; }
-    public static string yes { get; private set; }
-    public static string no { get; private set; }
-    public static string ok { get; private set; }
-    public static string cancel { get; private set; }
-    public static string upgrade { get; private set; }
-    public static string gold { get; private set; }
-    public static string silver { get; private set; }
-    public static string expirience { get; private set; }
-    public static string name { get; private set; }
-    public static string description { get; private set; }
-    public static string equipment { get; private set; }
-    public static string inventory { get; private set; }
-    public static string equipment_market { get; private set; }
-    public static string consumables_market { get; private set; }
-    public static string equipment_ground { get; private set; }
-    public static string you_died { get; private set; }
-    public static string how_to_use { get; private set; }
-    public static string executable_use_type_click { get; private set; }
-    public static string executable_use_type_drag_drop_place { get; private set; }
-    public static string executable_use_type_drag_direction { get; private set; }
-    public static string _continue { get; private set; }
-    public static string your_money_and_exp { get; private set; }
-    public static string allowed_equipmant { get; private set; }
-    public static string allowed_equipmant_tooltip { get; private set; }
-    public static string allowed_equipmant_none_tooltip { get; private set; }
+    public static string can_use_in_this_formations { get; private set; }
+    public static string cant_use_in_this_formations { get; private set; }
+
+#endregion formations
+#region items
+
     public static string equipment_body_chainmail_name { get; private set; }
     public static string equipment_body_chainmail_description { get; private set; }
     public static string equipment_body_linotorax_name { get; private set; }
@@ -177,14 +87,147 @@ public sealed class LocalizedStrings
     public static string equipment_weapon_knife_description { get; private set; }
     public static string equipment_weapon_cudgel_name { get; private set; }
     public static string equipment_weapon_cudgel_description { get; private set; }
+
+#endregion items
+#region other_names
+
+    public static string current_languade { get; private set; }
+    public static string unhendeled_exception { get; private set; }
+    public static string got_it { get; private set; }
+    public static string loading { get; private set; }
+    public static string level_generading { get; private set; }
+    public static string resoures_loadind { get; private set; }
+    public static string play_game { get; private set; }
+    public static string new_game { get; private set; }
+    public static string continue_game { get; private set; }
+    public static string settings { get; private set; }
+    public static string squad { get; private set; }
+    public static string training { get; private set; }
+    public static string developers { get; private set; }
+    public static string understud { get; private set; }
+    public static string video_settings { get; private set; }
+    public static string audio_settings { get; private set; }
+    public static string progress_settings { get; private set; }
+    public static string healtarget_weakest { get; private set; }
+    public static string healtarget_strongest { get; private set; }
+    public static string healtarget_all { get; private set; }
+    public static string first_phase { get; private set; }
+    public static string second_phase { get; private set; }
+    public static string two_phases_skill { get; private set; }
+    public static string error { get; private set; }
+    public static string missing_string { get; private set; }
+    public static string squad_info_main { get; private set; }
+    public static string skills { get; private set; }
+    public static string consumables { get; private set; }
+    public static string squad_info_main_stats { get; private set; }
+    public static string weight_very_light { get; private set; }
+    public static string weight_light { get; private set; }
+    public static string weight_medium { get; private set; }
+    public static string weight_heavy { get; private set; }
+    public static string weight_very_heavy { get; private set; }
+    public static string arrowWalley_radius { get; private set; }
+    public static string arrowWalley_arrowscount { get; private set; }
+    public static string cooldown { get; private set; }
+    public static string duration { get; private set; }
+    public static string cost { get; private set; }
+    public static string mass { get; private set; }
+    public static string attention { get; private set; }
+    public static string yes { get; private set; }
+    public static string no { get; private set; }
+    public static string ok { get; private set; }
+    public static string cancel { get; private set; }
+    public static string upgrade { get; private set; }
+    public static string gold { get; private set; }
+    public static string silver { get; private set; }
+    public static string expirience { get; private set; }
+    public static string name { get; private set; }
+    public static string description { get; private set; }
+    public static string equipment { get; private set; }
+    public static string inventory { get; private set; }
+    public static string equipment_market { get; private set; }
+    public static string consumables_market { get; private set; }
+    public static string equipment_ground { get; private set; }
+    public static string you_died { get; private set; }
+    public static string how_to_use { get; private set; }
+    public static string executable_use_type_click { get; private set; }
+    public static string executable_use_type_drag_drop_place { get; private set; }
+    public static string executable_use_type_drag_direction { get; private set; }
+    public static string your_money_and_exp { get; private set; }
+    public static string allowed_equipmant { get; private set; }
+    public static string allowed_equipmant_tooltip { get; private set; }
+    public static string allowed_equipmant_none_tooltip { get; private set; }
+    public static string toMainMenu { get; private set; }
+    public static string goToMainMenu_header { get; private set; }
+    public static string goToMainMenu_info { get; private set; }
+    public static string resetSettings_header { get; private set; }
+    public static string resetSettings_info { get; private set; }
+    public static string currentValue { get; private set; }
+    public static string baseValue { get; private set; }
+    public static string currentValue_baseValue { get; private set; }
+    public static string durability_new { get; private set; }
+    public static string durability_worn { get; private set; }
+    public static string durability_damaged { get; private set; }
+    public static string next { get; private set; }
+    public static string previous { get; private set; }
+    public static string close { get; private set; }
+    public static string again { get; private set; }
+    public static string button_inv { get; private set; }
+    public static string button_tips_review { get; private set; }
+    public static string button_formation { get; private set; }
+    public static string modyfyers_panel { get; private set; }
+    public static string button_minimap { get; private set; }
+    public static string inv_used_equip { get; private set; }
+    public static string inv_cells_for_store { get; private set; }
+    public static string inv_items_on_ground { get; private set; }
+    public static string all_tips_review { get; private set; }
+    public static string button_squad_panel { get; private set; }
+    public static string buttons_skills { get; private set; }
+    public static string buttons_consumables { get; private set; }
+    public static string log_in { get; private set; }
+    public static string cant_log_in { get; private set; }
+    public static string title { get; private set; }
+    public static string text { get; private set; }
+    public static string are_you_sure { get; private set; }
+    public static string assert_choise { get; private set; }
+    public static string cant_open_player_offline { get; private set; }
+    public static string show_saves_gui { get; private set; }
+    public static string hello { get; private set; }
+    public static string cant_log_in_2 { get; private set; }
+    public static string logged_out { get; private set; }
+    public static string log_out_title { get; private set; }
+    public static string log_out_assert { get; private set; }
+    public static string quit_to_main_menu_title { get; private set; }
+    public static string quit_to_main_menu_assert { get; private set; }
+    public static string save_and_quit_title { get; private set; }
+    public static string save_and_quit_assert { get; private set; }
+    public static string start_new_game_title { get; private set; }
+    public static string start_new_game_assert { get; private set; }
+    public static string saving_progress { get; private set; }
+    public static string loading_progress { get; private set; }
+    public static string saving_settings { get; private set; }
+    public static string loading_settings { get; private set; }
+    public static string saving_gata { get; private set; }
+    public static string loading_data { get; private set; }
+
+#endregion other_names
+#region skills
+
     public static string skill_arrowWalley_name { get; private set; }
     public static string skill_arrowWalley_description { get; private set; }
     public static string skill_charge_name { get; private set; }
     public static string skill_charge_description { get; private set; }
     public static string skill_phalanx_push_name { get; private set; }
     public static string skill_phalanx_push_description { get; private set; }
+    public static string skill_phalanx_push_firstphase_name { get; private set; }
+    public static string skill_phalanx_push_firstphase_description { get; private set; }
+    public static string skill_phalanx_push_secondphase_name { get; private set; }
+    public static string skill_phalanx_push_secondphase_description { get; private set; }
     public static string skill_shield_bash_name { get; private set; }
     public static string skill_shield_bash_description { get; private set; }
+    public static string skill_shield_bashfirstphase__name { get; private set; }
+    public static string skill_shield_bash_firstphase_description { get; private set; }
+    public static string skill_shield_bash_secondphase_name { get; private set; }
+    public static string skill_shield_bash_secondphase_description { get; private set; }
     public static string skill_rally_ranks_name { get; private set; }
     public static string skill_rally_ranks_description { get; private set; }
     public static string consumable_pilums_name { get; private set; }
@@ -231,19 +274,98 @@ public sealed class LocalizedStrings
     public static string skill_upgrade_charge_intensivtrain_description { get; private set; }
     public static string skill_upgrade_charge_damage_runningpunch_name { get; private set; }
     public static string skill_upgrade_charge_damage_runningpunch_description { get; private set; }
-    public static string toMainMenu { get; private set; }
-    public static string goToMainMenu_header { get; private set; }
-    public static string goToMainMenu_info { get; private set; }
-    public static string resetSettings_header { get; private set; }
-    public static string resetSettings_info { get; private set; }
-    public static string currentValue { get; private set; }
-    public static string baseValue { get; private set; }
-    public static string currentValue_baseValue { get; private set; }
-    public static string durability_new { get; private set; }
-    public static string durability_worn { get; private set; }
-    public static string durability_damaged { get; private set; }
-    public static string can_use_in_this_formations { get; private set; }
-    public static string cant_use_in_this_formations { get; private set; }
+    public static string skill_upgrade_phalanx_push_startunlock_name { get; private set; }
+    public static string skill_upgrade_phalanx_push_startunlock_description { get; private set; }
+    public static string skill_upgrade_phalanx_push_basedamage_name { get; private set; }
+    public static string skill_upgrade_phalanx_push_basedamage_description { get; private set; }
+    public static string skill_upgrade_phalanx_push_cooldown_name { get; private set; }
+    public static string skill_upgrade_phalanx_push_cooldown_description { get; private set; }
+    public static string skill_upgrade_phalanx_push_armourdamage_name { get; private set; }
+    public static string skill_upgrade_phalanx_push_armourdamage_description { get; private set; }
+    public static string skill_upgrade_phalanx_push_speed_name { get; private set; }
+    public static string skill_upgrade_phalanx_push_speed_description { get; private set; }
+    public static string skill_upgrade_phalanx_push_duration_name { get; private set; }
+    public static string skill_upgrade_phalanx_push_duration_description { get; private set; }
+    public static string skill_upgrade_shield_bash_startunlock_name { get; private set; }
+    public static string skill_upgrade_shield_bash_startunlock_description { get; private set; }
+    public static string skill_upgrade_shield_bash_basedamage_name { get; private set; }
+    public static string skill_upgrade_shield_bash_basedamage_description { get; private set; }
+    public static string skill_upgrade_shield_bash_cooldown_name { get; private set; }
+    public static string skill_upgrade_shield_bash_cooldown_description { get; private set; }
+    public static string skill_upgrade_shield_bash_armourdamage_name { get; private set; }
+    public static string skill_upgrade_shield_bash_armourdamage_description { get; private set; }
+    public static string skill_upgrade_shield_bash_defence_name { get; private set; }
+    public static string skill_upgrade_shield_bash_defence_description { get; private set; }
+    public static string skill_upgrade_shield_bash_duration_name { get; private set; }
+    public static string skill_upgrade_shield_bash_duration_description { get; private set; }
+    public static string skill_upgrade_rally_ranks_startunlock_name { get; private set; }
+    public static string skill_upgrade_rally_ranks_startunlock_description { get; private set; }
+    public static string skill_upgrade_rally_ranks_cooldown_name { get; private set; }
+    public static string skill_upgrade_rally_ranks_cooldown_description { get; private set; }
+    public static string skill_upgrade_rally_ranks_defence_name { get; private set; }
+    public static string skill_upgrade_rally_ranks_defence_description { get; private set; }
+    public static string skill_upgrade_rally_ranks_chargedeflect_name { get; private set; }
+    public static string skill_upgrade_rally_ranks_chargedeflect_description { get; private set; }
+    public static string skill_upgrade_rally_ranks_speed_name { get; private set; }
+    public static string skill_upgrade_rally_ranks_speed_description { get; private set; }
+    public static string skill_upgrade_rally_ranks_acceleration_name { get; private set; }
+    public static string skill_upgrade_rally_ranks_acceleration_description { get; private set; }
+    public static string skill_upgrade_rally_ranks_duration_name { get; private set; }
+    public static string skill_upgrade_rally_ranks_duration_description { get; private set; }
+
+#endregion skills
+#region stats
+
+    public static string health { get; private set; }
+    public static string squadHealth { get; private set; }
+    public static string armour { get; private set; }
+    public static string baseDamage { get; private set; }
+    public static string armourDamage { get; private set; }
+    public static string attack { get; private set; }
+    public static string defence { get; private set; }
+    public static string defenceHalfSector { get; private set; }
+    public static string missileBlock { get; private set; }
+    public static string attackDistance { get; private set; }
+    public static string speed { get; private set; }
+    public static string acceleration { get; private set; }
+    public static string rotationSpeed { get; private set; }
+    public static string chargeImpact { get; private set; }
+    public static string chargeDeflect { get; private set; }
+    public static string chargeDamage { get; private set; }
+    public static string defenceGoingThrough { get; private set; }
+    public static string flyingSpeed { get; private set; }
+    public static string weight { get; private set; }
+    public static string weapon_damage { get; private set; }
+    public static string armour_armour { get; private set; }
+    public static string missile_block_short { get; private set; }
+
+#endregion stats
+#region terrain
+
+    public static string terrain_modifier_dirt_name { get; private set; }
+    public static string terrain_modifier_dirt_description { get; private set; }
+    public static string terrain_modifier_forest_name { get; private set; }
+    public static string terrain_modifier_forest_description { get; private set; }
+    public static string terrain_modifier_forest_light_name { get; private set; }
+    public static string terrain_modifier_forest_light_description { get; private set; }
+    public static string terrain_modifier_grass_name { get; private set; }
+    public static string terrain_modifier_grass_description { get; private set; }
+    public static string terrain_modifier_road_ground_name { get; private set; }
+    public static string terrain_modifier_road_ground_description { get; private set; }
+    public static string terrain_modifier_road_rock_name { get; private set; }
+    public static string terrain_modifier_road_rock_description { get; private set; }
+    public static string terrain_modifier_water_light_name { get; private set; }
+    public static string terrain_modifier_water_light_description { get; private set; }
+
+#endregion terrain
+#region tips
+
+    public static string tip_try_to_buy_equip_and_consumables { get; private set; }
+    public static string tip_try_to_train_squad_and_skills { get; private set; }
+
+#endregion tips
+#region toast
+
     public static string toast_cant_use_with_shield { get; private set; }
     public static string toast_cant_use_with_current_weapon { get; private set; }
     public static string toast_not_enough_gold { get; private set; }
@@ -259,24 +381,10 @@ public sealed class LocalizedStrings
     public static string toast_cant_use_skill_in_this_formation { get; private set; }
     public static string toast_cant_use_skill_without_shields { get; private set; }
     public static string toast_cant_use_because_of_cooldown { get; private set; }
-    public static string next { get; private set; }
-    public static string previous { get; private set; }
-    public static string close { get; private set; }
-    public static string again { get; private set; }
-    public static string button_inv { get; private set; }
-    public static string button_tips_review { get; private set; }
-    public static string button_formation { get; private set; }
-    public static string modyfyers_panel { get; private set; }
-    public static string button_minimap { get; private set; }
-    public static string inv_used_equip { get; private set; }
-    public static string inv_cells_for_store { get; private set; }
-    public static string inv_items_on_ground { get; private set; }
-    public static string all_tips_review { get; private set; }
-    public static string button_squad_panel { get; private set; }
-    public static string buttons_skills { get; private set; }
-    public static string buttons_consumables { get; private set; }
-    public static string tip_try_to_buy_equip_and_consumables { get; private set; }
-    public static string tip_try_to_train_squad_and_skills { get; private set; }
+
+#endregion toast
+#region tutorial_tips
+
     public static string tutorial_tip_death_try_to_follow_the_advices { get; private set; }
     public static string tutorial_tip_lvl1_barricades { get; private set; }
     public static string tutorial_tip_lvl1_basic { get; private set; }
@@ -359,10 +467,6 @@ public sealed class LocalizedStrings
     public static string tutorial_tip_lvl3_terrain_road_heavy { get; private set; }
     public static string tutorial_tip_lvl3_weight_base { get; private set; }
     public static string tutorial_tip_lvl3_welcome { get; private set; }
-    public static string level_generading { get; private set; }
-    public static string new_game { get; private set; }
-    public static string continue_game { get; private set; }
-    public static string video_settings { get; private set; }
-    public static string audio_settings { get; private set; }
-    public static string progress_settings { get; private set; }
+
+#endregion tutorial_tips
 }

@@ -9,7 +9,19 @@ public class MainStatesPanel : MonoBehaviour
     [Space]
     [SerializeField] SquadInfoCellPresenter[] cells;
 
-    public bool Active { get; set; } = true;
+    bool active = true;
+    public bool Active
+    {
+        get { return active; }
+        set
+        {
+            active = value;
+            if (active)
+            {
+                Present();
+            }
+        }
+    }
 
     private void Start()
     {

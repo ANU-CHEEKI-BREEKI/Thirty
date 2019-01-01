@@ -8,54 +8,61 @@ public class SkillsUpgrade : MonoBehaviour
     public int SkillId { get { return skillId; } }
 
     List<DSPlayerSkill.SkillUpgrade> upgrades;
-    List<SkillUpgradeButton> buttons = new List<SkillUpgradeButton>();
-    public List<SkillUpgradeButton> Buttons { get { return buttons; } }
+    public List<SkillUpgradeButton> Buttons { get; } = new List<SkillUpgradeButton>();
+    SkillUpgradeButton startButton;
 
     void Start ()
     {
-        //для правильной инициализации каждой кнопки, нужно инициализировать от начала дерева до листьев
-        //по этому в иерархии трансформа кони должны идти в порядке: сначала родительский апгрейд, потом дочерний
-        //соответственно надо отсортировать кнопки в списке по id апгрейда
-        //так как дальше будет цикл от начала списка до конца
-        Buttons.Sort();
-
         var skills = GameManager.Instance.SavablePlayerData.PlayerProgress.Skills.skills;
 
+        //ищем в сохранениях информацию о прокачке данного скила
+        var skill = skills.Find(s => s.Id == skillId);
 
-        bool hasSkill = false;
-        //ищем в созранениях информацию о прокачке скиллов
-        foreach (var item in skills)
-        {
-            if(item.Id == skillId)
-            {
-                upgrades = item.Upgrades;
-                hasSkill = true;
-                break;
-            }
-        }
         //если в сохранениях нет прокачки для этого скилла, то добавляем новую информацию,
         //о непрокачанном скиле
-        if (!hasSkill)
+        if (skill == null)
         {
             var newSkillUps = new DSPlayerSkill(skillId);
             skills.Add(newSkillUps);
             upgrades = newSkillUps.Upgrades;
         }
-
-        //проходим по соответствующим кнопкам и инициализируем их
-        int cnt = Buttons.Count;
-        for(int i = 0; i < cnt; i++)
+        else
         {
-            bool load = true;
-            var upgrade = upgrades.Find((u) => { return u.Id == Buttons[i].Id; });
-            if (upgrade == null)
-            {
-                upgrade = new DSPlayerSkill.SkillUpgrade(Buttons[i].Id);
-                upgrades.Add(upgrade);
-                load = false;
-            }
-            Buttons[i].Initiate(upgrade, load);
+            upgrades = skill.Upgrades;
         }
+
+        //находим начальную кнопку
+        startButton = Buttons.Find(b => b.UpgradeStats.isUpgradeToUnlock);
+        if (startButton == null)
+            throw new System.Exception("Тут короч нет начальной кнопки. Скорее всего, в редакторе что то испортилось... не не факт");
+
+        //проходим по соответствующим кнопкам и инициализируем их               
+        bool loaded = true;
+        var upgrade = upgrades.Find((u) => { return u.Id == startButton.Id; });
+        if (upgrade == null)
+        {
+            upgrade = new DSPlayerSkill.SkillUpgrade(startButton.Id);
+            upgrades.Add(upgrade);
+            loaded = false;
+        }
+        IntButtonsReursive(startButton, upgrade, loaded);
 	}
+
+    void IntButtonsReursive(SkillUpgradeButton btn, DSPlayerSkill.SkillUpgrade upgrade, bool isLoadedData)
+    {
+        btn.Initiate(upgrade, isLoadedData);
+        foreach (var nextB in btn.nextButton)
+        {
+            bool loaded = true;
+            var up = upgrades.Find((u) => { return u.Id == nextB.Id; });
+            if (up == null)
+            {
+                up = new DSPlayerSkill.SkillUpgrade(nextB.Id);
+                upgrades.Add(up);
+                loaded = false;
+            }
+            IntButtonsReursive(nextB, up, loaded);
+        }
+    }
 
 }

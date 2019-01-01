@@ -7,13 +7,36 @@ public class PauseToggle : MonoBehaviour
 {
     [SerializeField] CanvasGroup darkscreen;
 
+    Toggle t;
+
+    private void Awake()
+    {
+        t = GetComponent<Toggle>();
+        GameManager.Instance.OnGamePased += Instance_OnGamePased;
+    }
+
+    private void OnDestroy()
+    {
+        GameManager.Instance.OnGamePased -= Instance_OnGamePased;
+    }
+
     void Start ()
     {
         darkscreen.alpha = 0;
         darkscreen.blocksRaycasts = false;
 
-        GetComponent<Toggle>().onValueChanged.AddListener(onValChanged);
+        
+        t.onValueChanged.AddListener(onValChanged);
 	}
+
+    private void Instance_OnGamePased(bool pause)
+    {
+        if (t != null)
+        {
+            t.isOn = pause;
+            darkscreen.blocksRaycasts = pause;
+        }
+    }
 
     public void onValChanged(bool newVal)
     {
@@ -29,6 +52,6 @@ public class PauseToggle : MonoBehaviour
         }
 
         darkscreen.blocksRaycasts = newVal;
-        GameManager.Instance.SetPause(newVal);
+        GameManager.Instance.SetPauseGame(newVal);
     }
 }

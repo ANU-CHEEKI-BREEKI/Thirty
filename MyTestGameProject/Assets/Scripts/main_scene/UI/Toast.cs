@@ -13,6 +13,9 @@ public class Toast : MonoBehaviour, IPointerClickHandler
     
     public static Toast Instance { get; private set; }
 
+    [SerializeField] float maxPhysicSizeMM = 10;
+    const float inchToMM = 25.4f;
+
     [SerializeField] TextMeshProUGUI text;
     [SerializeField] float floatDuration = 0.2f;
     [SerializeField] Vector2 floatShiftInPercent;

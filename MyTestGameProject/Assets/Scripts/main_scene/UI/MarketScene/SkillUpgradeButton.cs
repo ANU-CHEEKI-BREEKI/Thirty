@@ -32,8 +32,8 @@ public class SkillUpgradeButton : MonoBehaviour, IDescriptionable, IPointerClick
     [Header("Script")]
     [SerializeField] SkillsUpgrade parent;
     [Space]
-    [SerializeField] List<SkillUpgradeButton> previousButton;
-    [SerializeField] List<SkillUpgradeButton> nextButton;
+    public List<SkillUpgradeButton> previousButton;
+    public List<SkillUpgradeButton> nextButton;
     [Space]
     [SerializeField] DSPlayerSkill.SkillUpgrade upgradeStats;
     public DSPlayerSkill.SkillUpgrade UpgradeStats { get { return upgradeStats; } }
@@ -61,12 +61,12 @@ public class SkillUpgradeButton : MonoBehaviour, IDescriptionable, IPointerClick
 
     void Awake()
     {
-        upgradeStats.Id = transform.GetSiblingIndex();
+        upgradeStats.Id = (transform.GetSiblingIndex() + 1) + (transform.parent.GetSiblingIndex() + 1) * 10 + (transform.parent.parent.GetSiblingIndex() + 1) * 100;
         parent.Buttons.Add(this);
         connector = GetComponent<UILineConnector>();
 
 		icon.sprite = iconSource;
-		
+
         if (connector != null && previousButton.Count > 0)
             connector.PrevObj = previousButton[0].transform;
     }

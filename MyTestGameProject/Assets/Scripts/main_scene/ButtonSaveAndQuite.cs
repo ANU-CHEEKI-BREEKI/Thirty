@@ -14,6 +14,13 @@ public class ButtonSaveAndQuite : MonoBehaviour
     {
         btn = GetComponent<Button>();
         btn.onClick.AddListener(QuitApp);
+
+        GameManager.Instance.OnBackButtonPressed += QuitApp;
+    }
+
+    private void OnDestroy()
+    {
+        GameManager.Instance.OnBackButtonPressed -= QuitApp;
     }
 
     void QuitApp()
@@ -21,8 +28,8 @@ public class ButtonSaveAndQuite : MonoBehaviour
         if (needConfirm)
         {
             DialogBox.Instance
-                .SetTitle("[non loc] Сохранить и выйти?")
-                .SetText("[non loc] Вы уверены что хотите сохранить и выйти?")
+                .SetTitle(LocalizedStrings.save_and_quit_title)
+                .SetText(LocalizedStrings.save_and_quit_assert)
                 .AddButton(LocalizedStrings.yes, GameManager.Instance.SaveAndQuit)
                 .AddCancelButton(LocalizedStrings.no)
                 .Show();

@@ -35,6 +35,6 @@ public class DeathScreen : MonoBehaviour
             SoundManager.SoundType.MUSIC,
             100
         );        
-        FadeScreen.FadeOn(cg, 2, this, () => { cg.blocksRaycasts = true; GameManager.Instance.Pause(); });
+        FadeScreen.FadeOn(cg, 2, this, () => { cg.blocksRaycasts = true; GameManager.Instance.PauseGame(); });
     }
 }

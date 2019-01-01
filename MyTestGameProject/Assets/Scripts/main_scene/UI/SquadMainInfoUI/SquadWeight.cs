@@ -15,7 +15,19 @@ public class SquadWeight : MonoBehaviour
     [SerializeField] Sprite mediumWeight;
     [SerializeField] Sprite heavyWeight;
 
-    public bool Active { get; set; } = true;
+    bool active = true;
+    public bool Active
+    {
+        get { return active; }
+        set
+        {
+            active = value;
+            if (active)
+            {
+                Present();
+            }
+        }
+    }
 
     void Start()
     {

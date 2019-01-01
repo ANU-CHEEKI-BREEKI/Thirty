@@ -19,7 +19,19 @@ public class MainStatsPanel : MonoBehaviour
     [SerializeField] TextMeshProUGUI armourBlockText;
     [SerializeField] GameObject[] armourIco;
 
-    public bool Active { get; set; } = true;
+    bool active = true;
+    public bool Active
+    {
+        get { return active; }
+        set
+        {
+            active = value;
+            if (active)
+            {
+                Present();
+            }
+        }
+    }
 
     private void Start()
     {
@@ -65,7 +77,6 @@ public class MainStatsPanel : MonoBehaviour
     {
         Present();
     }
-
 
     void Present()
     {

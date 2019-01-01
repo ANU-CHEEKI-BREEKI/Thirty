@@ -748,8 +748,7 @@ public class Unit : MonoBehaviour
         if (health > 0)//без проверки юниты умирают при инициализации
             stats.Health = health;//какие жизни были такие и ставим обратно
         rigidbody2D.mass = stats.EquipmentMass;
-    }
-    
+    }    
 
     RaycastHit2D BoxCast(int layers)
     {

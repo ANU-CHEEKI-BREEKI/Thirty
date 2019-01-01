@@ -103,7 +103,7 @@ public class PlayerProgress : IResetable, ITempValuesApplyable, ISavable, IMerge
     {
         Debug.Log("------------PlayerProgress data saving...");
 
-        var mes = "[non loc] Сохранение прогресса игры...";
+        var mes = LocalizedStrings.saving_progress;
 
         savedDateTime = DateTime.Now;
 
@@ -127,7 +127,7 @@ public class PlayerProgress : IResetable, ITempValuesApplyable, ISavable, IMerge
 
     public void Load()
     {
-        var mes = "[non loc] Загрузка сохранённого прогресса...";
+        var mes = LocalizedStrings.loading_progress;
 
         Debug.Log("------------PlayerProgress data loading");
 

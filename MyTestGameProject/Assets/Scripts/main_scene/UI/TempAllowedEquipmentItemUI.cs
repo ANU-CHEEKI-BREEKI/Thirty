@@ -2,19 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
-public class TempAllowedEquipmentItemUI : MonoBehaviour
+public class TempAllowedEquipmentItemUI : MonoBehaviour, IPointerClickHandler
 {
     Image img;
+    EquipmentStack stack;
 
     private void Awake()
     {
         img = GetComponent<Image>();
     }
 
-    public void Present(Sprite ico, bool enabled = true)
+    public void Present(EquipmentStack stack, bool enabled = true)
     {
-        img.sprite = ico;
+        this.stack = stack;
+
+        img.sprite = stack.EquipmentMainProperties.Icon;
 
         Color c = Color.white;
         if (enabled)
@@ -23,5 +27,10 @@ public class TempAllowedEquipmentItemUI : MonoBehaviour
             c.a = 0.2f;
 
         img.color = c;
+    }
+
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        TipsPanel.Instance.Show(stack.GetDescription(), transform.position);
     }
 }

@@ -40,8 +40,8 @@ public class DialogBox : MonoBehaviour, IDialogBox
         public void Reset()
         {
             Icon = null;
-            Title = "[non loc] Title";
-            Text = "[non loc] Text";
+            Title = LocalizedStrings.title;
+            Text = LocalizedStrings.text;
             IsTextScrolable = true;
 
             ButtonsData.Clear();
@@ -50,7 +50,6 @@ public class DialogBox : MonoBehaviour, IDialogBox
     }
 
     #endregion;
-
     [SerializeField] GameObject originalButton;
     [Space]
     [SerializeField] TextMeshProUGUI title;
@@ -72,7 +71,26 @@ public class DialogBox : MonoBehaviour, IDialogBox
     [SerializeField] Color defaultTitleColor;
     [SerializeField] Color defaultTextColor;
 
-    static public DialogBox Instance { get; private set; }
+    static DialogBox instance;
+    static public DialogBox Instance
+    {
+        get
+        {
+            if(instance == null)
+            {
+                var go = Resources.Load<GameObject>(@"Prefabs\DialogBox");
+                instance = Instantiate(go, MainCanvas.Instance.transform).GetComponent<DialogBox>();
+                instance.transform.SetSiblingIndex(instance.transform.parent.childCount -2);
+            }
+
+            return instance;
+        }
+
+        private set
+        {
+            instance = value;
+        }
+    }
 
     public bool Showned { get; private set; }
     public object Owner { get; private set; }
@@ -95,6 +113,11 @@ public class DialogBox : MonoBehaviour, IDialogBox
         dialogData = new DialogData();
 
         Hide();
+    }
+
+    private void OnDestroy()
+    {
+        instance = null;
     }
 
     void Reset()

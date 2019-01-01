@@ -27,7 +27,7 @@ public class TempValuesEndLevelScreen : MonoBehaviour
         score.gameObject.SetActive(true);
         equipment.gameObject.SetActive(true);
 
-        GameManager.Instance.Pause();
+        GameManager.Instance.PauseGame();
         score.Reset(true, false, true, false);
         score.popUpTextSpeed = new Vector2(0.5f, -1f);
         score.popUpTextLifetime = 1.5f;

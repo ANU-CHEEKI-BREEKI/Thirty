@@ -51,21 +51,25 @@ public sealed class Localization
                 break;
         }
 
-        TextAsset localisationFile = Resources.Load<TextAsset>(PATH_TO_LOCALIZATION_FILES + languageFileName);
-        using (TextReader txtReader = new StringReader(localisationFile.text))
+        var localisationFiles = Resources.LoadAll<TextAsset>(PATH_TO_LOCALIZATION_FILES + languageFileName);
+        foreach (var file in localisationFiles)
         {
-            using (XmlReader reader = XmlReader.Create(txtReader))
+            using (TextReader txtReader = new StringReader(file.text))
             {
-                while (reader.ReadToFollowing("string"))
+                using (XmlReader reader = XmlReader.Create(txtReader))
                 {
-                    reader.MoveToAttribute("name");
-                    var name = reader.Value;
-                    reader.MoveToContent();
-                    var value = reader.ReadElementContentAsString();
+                    while (reader.ReadToFollowing("string"))
+                    {
+                        reader.MoveToAttribute("name");
+                        var name = reader.Value;
+                        reader.MoveToContent();
+                        var value = reader.ReadElementContentAsString();
 
-                    SetString(name, value);
+                        SetString(name, value);
+                    }
                 }
             }
+            Resources.UnloadAsset(file);
         }
     }
 

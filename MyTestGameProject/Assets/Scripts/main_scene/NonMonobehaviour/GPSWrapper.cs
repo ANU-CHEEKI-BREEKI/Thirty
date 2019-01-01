@@ -38,11 +38,11 @@ public static class GPSWrapper
 
             PlayGamesPlatform.DebugLogEnabled = debug;
             PlayGamesPlatform.Activate();
-            Social.localUser.Authenticate((b) =>
+            Social.localUser.Authenticate((succes) =>
             {
-                PlayerLoggedIn = b;
+                PlayerLoggedIn = succes;
                 if (onLogInCompleted != null)
-                    onLogInCompleted.Invoke(b);
+                    onLogInCompleted.Invoke(succes);
             });
         }
         else

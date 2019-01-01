@@ -6,14 +6,14 @@ public class GPSWrapperMB : MonoBehaviour
 {
     public void ShowAchivementsGUI()
     {
-        GPSWrapper.ShowAchivementsGUI((b)=> { if (!b) Toast.Instance.Show("[non loc] Cant Open. Maybe Player Not Logged In"); });
+        GPSWrapper.ShowAchivementsGUI((b)=> { if (!b) Toast.Instance.Show(LocalizedStrings.cant_open_player_offline); });
     }
 
     public void ShowSavesGUI()
     {
         GPSWrapper.ShowSavedGamesUI(
-            (s, g) => { Toast.Instance.Show("[non loc] ShowSavesGUI"); },
-            (b) => { if (!b) Toast.Instance.Show("[non loc] Cant Open. Maybe Player Not Logged In"); }
+            (s, g) => { Toast.Instance.Show(LocalizedStrings.show_saves_gui); },
+            (b) => { if (!b) Toast.Instance.Show(LocalizedStrings.cant_open_player_offline); }
         );
     }
 
@@ -22,16 +22,16 @@ public class GPSWrapperMB : MonoBehaviour
         GPSWrapper.LogInPlayer(true, (b) =>
         {
             if(b)
-                Toast.Instance.Show("[non loc] Hi");
+                Toast.Instance.Show(LocalizedStrings.hello);
             else
-                Toast.Instance.Show("[non loc] Cant log in");
+                Toast.Instance.Show(LocalizedStrings.cant_log_in_2);
         });
     }
 
     public void LogOut()
     {
         GPSWrapper.LogOutPlayer();
-        Toast.Instance.Show("[non loc] Logged out");
+        Toast.Instance.Show(LocalizedStrings.logged_out);
     }
 
     public void LogInOut()
@@ -39,9 +39,8 @@ public class GPSWrapperMB : MonoBehaviour
         if (GPSWrapper.PlayerLoggedIn)
         {
             DialogBox.Instance
-                .SetTitle("[non loc] Выход из учетной записи Play Games")
-                .SetText("[non loc] Вы действительно хотите выйти из учетной записи Play Games?\r\n" +
-                "Данные будут сохраняться локально на вашем устройстве, и будут синхронизированны с аккаунтом при входе.")
+                .SetTitle(LocalizedStrings.log_out_title)
+                .SetText(LocalizedStrings.log_out_assert)
                 .AddCancelButton(LocalizedStrings.no)
                 .AddButton(LocalizedStrings.yes, () =>
                 {

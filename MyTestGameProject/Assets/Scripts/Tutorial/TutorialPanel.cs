@@ -58,7 +58,7 @@ public class TutorialPanel : MonoBehaviour
                     currentNumber.text = (tipsToReview.Count).ToString(StringFormats.intNumber);
                     allNumber.text = (tipsToReview.Count).ToString(StringFormats.intNumber);
 
-                    GameManager.Instance.Pause();
+                    GameManager.Instance.PauseGame();
                 }
             }
         );
@@ -67,7 +67,7 @@ public class TutorialPanel : MonoBehaviour
             () =>
             {
                 Hide();
-                GameManager.Instance.Resume();
+                GameManager.Instance.ResumeGame();
             }
         );
 
@@ -105,7 +105,7 @@ public class TutorialPanel : MonoBehaviour
             () =>
             {
                 tipsPanel.ResetTipPanelLayout();
-                GameManager.Instance.Resume();
+                GameManager.Instance.ResumeGame();
                 Hide();
             }
         );
@@ -224,7 +224,7 @@ public class TutorialPanel : MonoBehaviour
                     if (ttip.tip != null)
                     {
                         Show();
-                        GameManager.Instance.Pause();
+                        GameManager.Instance.PauseGame();
                     }
                 }
             }

@@ -14,7 +14,23 @@ public class HealthBar : MonoBehaviour
     [SerializeField] Squad squad;
     public Squad Squad { get { return squad; } set { squad = value; } }
 
-    public bool Active { get; set; } = true;
+    bool active = true;
+    public bool Active
+    {
+        get { return active; }
+        set
+        {
+            active = value;
+            if(active)
+            {
+                if (squad != null)
+                {
+                    DrawHpBar(squad.SquadHealth);
+                    DrawCountUnits(squad.UnitCount);
+                }
+            }
+        }
+    }
 
     void Start()
     {
@@ -33,12 +49,21 @@ public class HealthBar : MonoBehaviour
         DrawHpBar(squad.SquadHealth);
     }
 
-    private void OnEnable()
+    void OnEnable()
     {
         if (squad != null)
         {
             DrawHpBar(squad.SquadHealth);
             DrawCountUnits(squad.UnitCount);
+        }
+    }
+
+    void OnDestroy()
+    {
+        if (squad != null)
+        {
+            squad.OnSumHealthChanged -= DrawHpBar;
+            squad.OnUitCountChanged -= DrawCountUnits;
         }
     }
 
@@ -48,15 +73,6 @@ public class HealthBar : MonoBehaviour
         {
             if(textCount != null)
                 textCount.text = newCount + "/" + squad.FULL_SQUAD_UNIT_COUNT;
-        }
-    }
-
-    private void OnDestroy()
-    {
-        if (squad != null)
-        {
-            squad.OnSumHealthChanged -= DrawHpBar;
-            squad.OnUitCountChanged -= DrawCountUnits;
         }
     }
 

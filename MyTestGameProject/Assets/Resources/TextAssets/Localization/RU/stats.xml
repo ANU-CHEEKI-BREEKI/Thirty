@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  
+  <string name = "health">Здоровье</string>
+  <string name = "squadHealth">Здоровье отряда</string>
+  <string name = "armour">Броня</string>
+  <string name = "baseDamage">Базовый урон</string>
+  <string name = "armourDamage">Урон сквозь доспехи</string>
+  <string name = "attack">Атака</string>
+  <string name = "defence">Защита</string>
+  <string name = "defenceHalfSector">Сектор защиты</string>
+  <string name = "missileBlock">Блокирование обстрела</string>
+  <string name = "attackDistance">Дальность атаки</string>
+  <string name = "speed">Скорость перемещения</string>
+  <string name = "acceleration">Ускорение</string>
+  <string name = "rotationSpeed">Скорость поворота</string>
+  <string name = "chargeImpact">Сила натиска</string>
+  <string name = "chargeDeflect">Отражение натиска</string>
+  <string name = "chargeDamage">Урон натиска</string>
+  <string name = "defenceGoingThrough">Защита "на бегу"</string>
+  <string name = "flyingSpeed">Скорость полета</string>
+  <string name = "weight">Вес отряда</string>
+  <string name = "weapon_damage">Урон оружия</string>
+  <string name = "armour_armour">Броня доспехов</string>
+  <string name = "missile_block_short">Блок. обстрела</string>
+  
+</resources>

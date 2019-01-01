@@ -1,6 +1,6 @@
 Android
 PlayerPath?
-C:/Users/ANU CHEEKI BREEKI/Desktop/Thirty.v.0.10.10.apk
+C:/Users/ANU CHEEKI BREEKI/Desktop/Thirty.v.0.10.11d.apk
 SceneListBegin?
 Assets/Scenes/main_menu.unity
 Assets/Scenes/market.unity
@@ -162,7 +162,7 @@ fc061f3ae8a876c0687e86378d4a447c UnityEngine.Networking.dll:UnityEngine.Networki
 e78582526374a80cccac3e4bbfc19efb Assembly-CSharp.dll:.SOCount
 0a006f3734181ba8b26758f0866152c0 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 c4a74ee3ac94a4d0df0b497b1afead13 Assembly-CSharp.dll:.HospitalRoom
-7695a0174ca90412d989bdc3e0233ea1 Assembly-CSharp.dll:.Toast
+f9629bb508390e9dd6f7a8879ff0593c Assembly-CSharp.dll:.Toast
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.EnableTutorialButton
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.ConvertBlockToExpected
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.UnitOutline
@@ -298,7 +298,7 @@ df502c6dc581d98844a670506f9d8eb9 Assembly-CSharp.dll:.ToAnotherSceneButton
 8e05cf72685efd27dc3395b769e9793a Assembly-CSharp.dll:.DestroyOnAwakeAllAndStayOne
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.ConvertRuleTileToSimpleTile
 7b3137c76b27f84e15b81a6e43a9299b Assembly-CSharp.dll:.UISameSizeAs
-486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.SquadInfoShowerButton
+8f8f0d80a991ab999c14aaf99909fe23 Assembly-CSharp.dll:.SquadInfoShowerButton
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.SquadMask
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.DroppedItem
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.SetAllTilerenderersToNonmask
@@ -337,7 +337,7 @@ dfd33ff9ae3ce8d7ca1f22b475ec2387 UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.Spa
 b4a8b3ed85775d50ba42bbbaa1fca507 Assembly-CSharp.dll:UnityEngine.Tilemaps.GridInformation
 d992f3a04c798b348442165b56f8726b Assembly-CSharp.dll:.StatsBlock
 452b4210fca4e3e57e928c17a20866b6 Assembly-CSharp.dll:.PauseToggle
-52e01b0b54233d6d093e469234311e15 Assembly-CSharp.dll:.FontSizeByMainCameraHeightPercent
+2489798e43cfa203e2835f6e6ce9f59f Assembly-CSharp.dll:.FontSizeByMainCameraHeightPercent
 c80e12df7ae7e8b80cfa5dc25712677e Assembly-CSharp.dll:.SquadConsumableInventoryUI
 107a05c6340374ce11285dfbf6d55875 Assembly-CSharp.dll:.SOSquadSpawnerSkillsResourse
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.FadeScreen
@@ -353,7 +353,7 @@ f92d59d83f3d407fab414283b1deb11c Assembly-CSharp.dll:.SquadSkillsInventoryUI
 f5ece19966a893bd3def5b7aaf85514d Assembly-CSharp.dll:UnityEngine.Tilemaps.TerrainTile
 e877bde27cf9a1c1ccef617adf40fe5d Assembly-CSharp.dll:.SettingsAudioSection
 4a5c97860d32067bbbe821013d0f55f9 Assembly-CSharp.dll:.SkillUpgradeButton
-50e97dcd68715ef7918b2c1826533b1a Assembly-CSharp.dll:.DebugCunvas
+3a9566151ba74aed5b6a1dd3efa6c3f0 Assembly-CSharp.dll:.DebugCunvas
 de8823665ed3f4042496a6a8613ef6e4 Assembly-CSharp.dll:.UnitAnimationController
 1af51de84d1e907fbbc6453bf33fa2c5 Assembly-CSharp.dll:.LinearLayoutPercentSpacingByMainCamHeight
 9d9a7813980d86688747f2d5eb95b889 Assembly-CSharp.dll:.DropIemsOnBreakDurabilityable

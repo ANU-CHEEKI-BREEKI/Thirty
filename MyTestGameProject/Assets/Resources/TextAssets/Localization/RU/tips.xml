@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>  
+
+  <string name = "tip_try_to_buy_equip_and_consumables">Попробуйте перед битвой купить лучшее снаряжение и расходуемые предметы. Это поможет вам пройти дальше и победить!</string>
+  <string name = "tip_try_to_train_squad_and_skills">Попробуйте перед битвой улучшить характеристики отряда, выбрать и улучшить умения отряда. Это поможет вам пройти дальше и победить!</string>
+  
+</resources>

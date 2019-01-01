@@ -58,7 +58,7 @@ public class Settings : IResetable, ILoadedDataApplyable, ISavable, ITempValuesA
     {
         Debug.Log("------------Settings data saving...");
 
-        var mes = "[non loc] Сохранение настроек игры...";
+        var mes = LocalizedStrings.saving_settings;
 
         savedDateTime = DateTime.Now;
 
@@ -82,7 +82,7 @@ public class Settings : IResetable, ILoadedDataApplyable, ISavable, ITempValuesA
 
     public void Load()
     {
-        var mes = "[non loc] Загрузка сохраннных настроек...";
+        var mes = LocalizedStrings.loading_settings;
 
         Debug.Log("------------Settings data loading");
 

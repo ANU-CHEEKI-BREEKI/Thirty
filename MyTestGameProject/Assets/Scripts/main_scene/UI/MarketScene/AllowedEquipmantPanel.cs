@@ -26,9 +26,9 @@ public class AllowedEquipmantPanel : MonoBehaviour
 
         var item = Instantiate(itemOriginal, transform);
         if(tempValues)
-            item.Present(stack.EquipmentMainProperties.Icon);
+            item.Present(stack);
         else
-            item.Present(stack.EquipmentMainProperties.Icon, playerEq.IsThisEquipmantAllowed(stack.EquipmentStats));
+            item.Present(stack, playerEq.IsThisEquipmantAllowed(stack.EquipmentStats));
     }
 
     void ClearAll()
@@ -48,12 +48,7 @@ public class AllowedEquipmantPanel : MonoBehaviour
         var eqs = Resources.LoadAll<Equipment>(pathToEquipmant);
         foreach (var e in eqs)
         {
-            if(tempValues)
-            {
-                if (playerEq.IsThisEquipmantInTempValues(e.Stats))
-                    AddEq(new EquipmentStack(e));
-            }
-            else
+            if(!tempValues || (tempValues && playerEq.IsThisEquipmantInTempValues(e.Stats)))
             {
                 AddEq(new EquipmentStack(e));
             }

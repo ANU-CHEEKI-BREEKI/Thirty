@@ -11,8 +11,10 @@ public class DebugCunvas : MonoBehaviour
     [SerializeField] TextMeshProUGUI levelText;
     [SerializeField] TextMeshProUGUI wholeLevelText;
     [SerializeField] TextMeshProUGUI timescaleText;
-
+    [Space]
     [SerializeField] TextMeshProUGUI savingManagerText;
+    [Space]
+    [SerializeField] TextMeshProUGUI text;
 
     static DebugCunvas instance;
 
@@ -77,6 +79,15 @@ public class DebugCunvas : MonoBehaviour
             deltaTime: 0.1f,
             type: CoroutineType.REAL_TIME
         ));
+
+        StartCoroutine(Coroutine(
+           condition: () => { return true; },
+           action: () => { text.text = "dpi: " + Screen.dpi; },
+           cleanup: () => { },
+           deltaTime: 0.1f,
+           type: CoroutineType.REAL_TIME
+       ));
+        
     }
 
     public enum CoroutineType { SCALED_TIME, REAL_TIME }

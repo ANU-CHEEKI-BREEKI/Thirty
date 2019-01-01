@@ -22,12 +22,21 @@ public class ToAnotherSceneButton : MonoBehaviour
 
     void OnClick()
     {
-        if (needConfirm)
+        bool confirm = needConfirm;
+        if (needConfirm && commandToGamaManager == "new_game")
+            confirm = !GameManager.Instance.SavablePlayerData.PlayerProgress.Squad.IsEmpty;
+
+        if (confirm)
         {
+            string title;
+            string mes;
+
+            GetStrings(out title, out mes);
+
             DialogBox.Instance
-                .SetTitle("[non localice] вы уверены?")
+                .SetTitle(title)
                 .SetPrefButtonHeight(80)
-                .SetText("[non localice] точто точно???")
+                .SetText(mes)
                 .AddCancelButton(LocalizedStrings.no)
                 .AddButton(LocalizedStrings.yes, FadeOn)
                 .Show();
@@ -47,6 +56,27 @@ public class ToAnotherSceneButton : MonoBehaviour
         }
         else
             LoadLevel();
+    }
+
+    void GetStrings(out string title, out string mes)
+    {
+        title = LocalizedStrings.are_you_sure;
+        mes = LocalizedStrings.assert_choise;
+
+        switch (scene)
+        {
+            case GameManager.SceneIndex.MAIN_MENU:
+                title = LocalizedStrings.quit_to_main_menu_title;
+                mes = LocalizedStrings.quit_to_main_menu_assert;
+                break;
+            case GameManager.SceneIndex.MARKET:
+                if (commandToGamaManager == "new_game")
+                {
+                    title = LocalizedStrings.start_new_game_title;
+                    mes = LocalizedStrings.start_new_game_assert;
+                }
+                break;
+        }
     }
 
     void LoadLevel()

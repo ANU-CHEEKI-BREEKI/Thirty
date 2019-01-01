@@ -11,8 +11,9 @@ public class GameManager : MonoBehaviour
     //КОСТЫЛЬ ЕБАННЫЙ
     public string command = string.Empty;
 
+    public event Action<bool> OnGamePased = (paused) => { };
     bool gamePaused;
-    public bool GamePaused { get { return gamePaused; } private set { gamePaused = value; } }
+    public bool GamePaused { get { return gamePaused; } }
 
     [SerializeField] LevelInfo currentLevel;
     public LevelInfo CurrentLevel { get { return currentLevel; } private set { currentLevel = value; } }
@@ -46,6 +47,7 @@ public class GameManager : MonoBehaviour
     [HideInInspector] public MapBlock.Direction exitDirection;
     [HideInInspector] public MapBlock.Direction entranceDirection;
 
+    public event Action OnBackButtonPressed = ()=>{ };
 
     Squad squad;
     public Squad PlayerSquad { get { return squad; } }
@@ -63,84 +65,7 @@ public class GameManager : MonoBehaviour
     {
         if (Instance == null)
         {
-            Instance = this;
-            CurrentLevel = new LevelInfo();
-            defFixedDeltaTime = Time.fixedDeltaTime;
-            Application.logMessageReceived += OnUnhendeledException;
-
-            Localization.SetLanguage(SystemLanguage.Russian);
-            
-            bool debug = false;
-#if DEBUG
-            debug = true;
-#endif
-            var mes = "Вход в аккаунт...";
-
-            ModalInfoPanel.Instance.Add(mes);
-
-            Action<bool> onLogIn = (b) =>
-            {
-                ModalInfoPanel.Instance.Remove(mes);
-
-                if (b)
-                {
-                    SavingManager = new GPSSavingManager();
-                    GPSWrapper.Achivement.Unlock(GPSConstants.achievement_welcome, null);
-                }
-                else
-                {
-                    SavingManager = new PlayerPrefsSavingManager();
-                    Toast.Instance.Show("[non loc] не удалось войти. игра будет охраняться локально");
-                }
-                DownloadSaves();
-
-                //Это событие вызывается перед событием неудачи действия в GPSWrapper,
-                //поэтому в нем назнаем другой менеджер
-                //а в самом менеджере просто пробуем сохранить/загрузить ещё разок
-                GPSWrapper.OnPlayerLoggedInValueChanged += (val) =>
-                {
-                    if (val)
-                    {
-                        SavingManager = new GPSSavingManager();
-                        var tempSaves = savablePlayerData.Copy() as SavablePlayerData;
-
-                        Action onLoad = null;
-                        onLoad = () =>
-                        {
-                            savablePlayerData.OnLoaded -= onLoad;
-                            savablePlayerData.Merge(tempSaves);
-                        };
-                        savablePlayerData.OnLoaded += onLoad;
-                        savablePlayerData.Load();
-                    }
-                    else
-                    {
-                        SavingManager = new PlayerPrefsSavingManager();
-                    }
-                };
-            };
-            GPSWrapper.LogInPlayer(debug, onLogIn);
-
-            BeforeLoadLevel += (nextScene, currentLevel, currentScene) =>
-            {
-                savablePlayerData.PlayerProgress.Save();
-
-                SoundManager.Instance.StopPlayingChannel(SoundManager.SoundType.MUSIC, 1.5f);
-                SoundManager.Instance.StopPlayingChannel(SoundManager.SoundType.FX, 1.5f);
-                SoundManager.Instance.StopPlayingChannel(SoundManager.SoundType.UI, 1.5f);
-
-                if(nextScene == SceneIndex.MARKET)
-                {
-                    if (command == "loadSquad")
-                    {
-                        squad.Load(GameManager.Instance.SavablePlayerData.PlayerProgress.Squad);
-                        CurrentLevel.SetValues(GameManager.Instance.SavablePlayerData.PlayerProgress.Level);
-                        command = string.Empty;
-                    }
-                }
-            };
-
-            DontDestroyOnLoad(gameObject);
+            InitGameManager();
         }
         else
         {
@@ -148,9 +73,95 @@ public class GameManager : MonoBehaviour
         }
 
         if (SceneManager.GetActiveScene().buildIndex == (int)SceneIndex.LEVEL)
-            Instance.Pause();
+            Instance.PauseGame();
         else
-            Instance.Resume();
+            Instance.ResumeGame();
+    }
+
+    private void InitGameManager()
+    {
+        Instance = this;
+        CurrentLevel = new LevelInfo();
+        defFixedDeltaTime = Time.fixedDeltaTime;
+        Application.logMessageReceived += OnUnhendeledException;
+
+        Localization.SetLanguage(SystemLanguage.Russian);
+
+        var auds = SavablePlayerData.Settings.audioSettings;
+        auds.generalVolume.Value = 0;
+
+        bool debug = false;
+#if DEBUG
+        debug = true;
+#endif
+        var mes = LocalizedStrings.log_in;
+
+        ModalInfoPanel.Instance.Add(mes);
+
+        Action<bool> onLogInCompleted = (succes) =>
+        {
+            ModalInfoPanel.Instance.Remove(mes);
+
+            if (succes)
+            {
+                SavingManager = new GPSSavingManager();
+                GPSWrapper.Achivement.Unlock(GPSConstants.achievement_welcome, null);
+            }
+            else
+            {
+                SavingManager = new PlayerPrefsSavingManager();
+                Toast.Instance.Show(LocalizedStrings.cant_log_in);
+            }
+
+            //Это событие вызывается перед событием неудачи действия в GPSWrapper,
+            //поэтому в нем назнаем другой менеджер
+            //а в самом менеджере просто пробуем сохранить/загрузить ещё разок
+            GPSWrapper.OnPlayerLoggedInValueChanged += (logIn) =>
+            {
+                if (logIn)
+                {
+                    SavingManager = new GPSSavingManager();
+                    var tempSaves = savablePlayerData.Copy() as SavablePlayerData;
+
+                    Action onLoad = null;
+                    onLoad = () =>
+                    {
+                        savablePlayerData.OnLoaded -= onLoad;
+                        savablePlayerData.Merge(tempSaves);
+                    };
+                    savablePlayerData.OnLoaded += onLoad;
+                    savablePlayerData.Load();
+                }
+                else
+                {
+                    SavingManager = new PlayerPrefsSavingManager();
+                }
+            };
+
+            DownloadSaves();
+        };
+        GPSWrapper.LogInPlayer(debug, onLogInCompleted);
+
+        BeforeLoadLevel += (nextScene, currentLevel, currentScene) =>
+        {
+            savablePlayerData.PlayerProgress.Save();
+
+            SoundManager.Instance.StopPlayingChannel(SoundManager.SoundType.MUSIC, 1.5f);
+            SoundManager.Instance.StopPlayingChannel(SoundManager.SoundType.FX, 1.5f);
+            SoundManager.Instance.StopPlayingChannel(SoundManager.SoundType.UI, 1.5f);
+
+            if (nextScene == SceneIndex.MARKET)
+            {
+                if (command == "loadSquad")
+                {
+                    squad.Load(GameManager.Instance.SavablePlayerData.PlayerProgress.Squad);
+                    CurrentLevel.SetValues(GameManager.Instance.SavablePlayerData.PlayerProgress.Level);
+                    command = string.Empty;
+                }
+            }
+        };
+
+        DontDestroyOnLoad(gameObject);
     }
 
     private void OnEnable()
@@ -185,8 +196,8 @@ public class GameManager : MonoBehaviour
                 SoundManager.Instance.PlaySound(new SoundChannel.ClipSet(SoundManager.Instance.SoundClipsContainer.Music.MusicLevel, true), SoundManager.SoundType.MUSIC);
 
                 FadeScreen.Instance.FadeOnStartScene = false;
-                Pause();
-                Ground.Instance.OnGenerationDone += Resume;
+                PauseGame();
+                Ground.Instance.OnGenerationDone += ResumeGame;
                 Ground.Instance.OnGenerationDone += InitPlayer;
                 Ground.Instance.OnGenerationDone += FadeScreen.Instance.FateOnStartScene;
                 Ground.Instance.GeneradeMap(rows, cols);
@@ -200,8 +211,8 @@ public class GameManager : MonoBehaviour
                 SoundManager.Instance.PlaySound(new SoundChannel.ClipSet(SoundManager.Instance.SoundClipsContainer.Music.MusicLevel, true), SoundManager.SoundType.MUSIC);
 
                 FadeScreen.Instance.FadeOnStartScene = false;
-                Pause();
-                Ground.Instance.OnWorkDone += Resume;
+                PauseGame();
+                Ground.Instance.OnWorkDone += ResumeGame;
                 Ground.Instance.OnWorkDone += FadeScreen.Instance.FateOnStartScene;
                 Ground.Instance.RecalcMatrixByCurrentBlocks();
 
@@ -209,8 +220,8 @@ public class GameManager : MonoBehaviour
             default:
 
                 FadeScreen.Instance.FadeOnStartScene = false;
-                Pause();
-                Ground.Instance.OnWorkDone += Resume;
+                PauseGame();
+                Ground.Instance.OnWorkDone += ResumeGame;
                 //Ground.Instance.OnWorkDone += InitPlayer;
                 Ground.Instance.OnWorkDone += FadeScreen.Instance.FateOnStartScene;
                 Ground.Instance.RecalcMatrixByCurrentBlocks();
@@ -240,12 +251,11 @@ public class GameManager : MonoBehaviour
     {
         if (type == LogType.Error || type == LogType.Exception || type == LogType.Assert)
         {
-            Instance.Pause();
+            Instance.PauseGame();
             DialogBox.Instance
-                .SetTitle("Необработаное системное сообщение")
+                .SetTitle(LocalizedStrings.unhendeled_exception)
                 .SetText(condition + "\r\n\r\n" + stackTrace, true)
-                .AddButton("Ясно", () => { Instance.Resume(); DialogBox.Instance.Hide(); })
-                .SetSize(900, 600)
+                .AddButton(LocalizedStrings.got_it, () => { Instance.ResumeGame(); DialogBox.Instance.Hide(); })
                 .Show(Vector2.zero, this);
         }
     }
@@ -279,8 +289,8 @@ public class GameManager : MonoBehaviour
         onSaved = () =>
         {
             savablePlayerData.OnSaved -= onSaved;
-            Application.Quit();
             Debug.Log("Quit");
+            Application.Quit();            
         };
         savablePlayerData.OnSaved += onSaved;
         savablePlayerData.Save();
@@ -359,26 +369,67 @@ public class GameManager : MonoBehaviour
             Time.timeScale = timeScale;
             Time.fixedDeltaTime = defFixedDeltaTime * timeScale;
         }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+            BackButton();
     }
 
-    public void SetPause(bool pause)
+    void BackButton()
+    {
+        switch ((SceneIndex)SceneManager.GetActiveScene().buildIndex)
+        {
+            case SceneIndex.MAIN_MENU:  
+                //в самой сцене подписываемся на событие (кнопка выхода с игры)
+                break;
+            case SceneIndex.MARKET:
+                DialogBox.Instance
+                    .SetTitle(LocalizedStrings.quit_to_main_menu_title)
+                    .SetText(LocalizedStrings.quit_to_main_menu_assert)
+                    .AddButton(LocalizedStrings.yes, GameManager.Instance.LoadMainMenu)
+                    .AddCancelButton(LocalizedStrings.no)
+                    .Show();
+                break;
+            case SceneIndex.LOADING_SCREEN:
+                break;
+            case SceneIndex.LEVEL_TUTORIAL_1:
+            case SceneIndex.LEVEL_TUTORIAL_2:
+            case SceneIndex.LEVEL_TUTORIAL_3:
+            case SceneIndex.TESTING_LEVEL:
+            case SceneIndex.LEVEL:
+                SetPauseGame(!GamePaused);
+                break;
+            default:
+                break;
+        }
+        OnBackButtonPressed.Invoke();
+    }
+
+    public void SetPauseGame(bool pause)
     {
         if (pause)
-            Pause();
+            PauseGame();
         else
-            Resume();
+            ResumeGame();
     }
 
-    public void Pause()
+    public void PauseGame()
     {
-        GamePaused = true;
+        var old = gamePaused;
+        gamePaused = true;
         Time.timeScale = 0;
+
+        if (old != gamePaused)
+            OnGamePased.Invoke(gamePaused);
     }
 
-    public void Resume()
+    public void ResumeGame()
     {
-        GamePaused = false;
+        var old = gamePaused;
+        gamePaused = false;
         Time.timeScale = timeScale;
+
+        if(old != gamePaused)
+            OnGamePased.Invoke(gamePaused);
     }
 
     public void LoadNextLevel()

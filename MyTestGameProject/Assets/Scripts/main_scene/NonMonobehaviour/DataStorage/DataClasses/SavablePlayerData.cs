@@ -39,7 +39,7 @@ public class SavablePlayerData : ISavable, IResetable, IMergeable, ICopyabe
         settings.Reset();
     }
 
-    string mesLoad = "[non loc] Загрузка данных...";
+    string mesLoad = LocalizedStrings.loading_data;
     public void Load()
     {
         chechedL = false;
@@ -72,7 +72,7 @@ public class SavablePlayerData : ISavable, IResetable, IMergeable, ICopyabe
         settings.Load();
     }
 
-    string mesSave = "[non loc] Сохранение данных...";
+    string mesSave = LocalizedStrings.saving_gata;
     public void Save()
     {
         checkedS = false;
