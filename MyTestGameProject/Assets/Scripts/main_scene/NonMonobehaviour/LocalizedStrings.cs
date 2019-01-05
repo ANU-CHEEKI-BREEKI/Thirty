@@ -224,7 +224,7 @@ public sealed class LocalizedStrings
     public static string skill_phalanx_push_secondphase_description { get; private set; }
     public static string skill_shield_bash_name { get; private set; }
     public static string skill_shield_bash_description { get; private set; }
-    public static string skill_shield_bashfirstphase__name { get; private set; }
+    public static string skill_shield_bash_firstphase_name { get; private set; }
     public static string skill_shield_bash_firstphase_description { get; private set; }
     public static string skill_shield_bash_secondphase_name { get; private set; }
     public static string skill_shield_bash_secondphase_description { get; private set; }

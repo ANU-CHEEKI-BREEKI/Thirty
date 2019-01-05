@@ -49,6 +49,26 @@ public class Exit : MonoBehaviour
                 Action act = null;
                 act = () =>
                 {
+                    var playerEq = GameManager.Instance.SavablePlayerData.PlayerProgress.Equipment;
+
+                    var inventory = Squad.playerSquadInstance.Inventory.StoredInventory;
+                    inventory.Add(Squad.playerSquadInstance.Inventory.Helmet);
+                    inventory.Add(Squad.playerSquadInstance.Inventory.Body);
+                    inventory.Add(Squad.playerSquadInstance.Inventory.Weapon);
+                    inventory.Add(Squad.playerSquadInstance.Inventory.Shield);
+                    foreach (var i in inventory)
+                    {
+                        //"открываем" увиденную экипировку - но тлько в временное хранилище
+                        //делаем это именно тка, потому что так было изначально. а ща я поменял концепцию открытия предметов.
+                        //но менять всю структуру я манал.
+                        if (!i.EquipmentStats.Empty && !playerEq.IsThisEquipmantAllowed(i.EquipmentStats) && !playerEq.IsThisEquipmantInTempValues(i.EquipmentStats))
+                        {
+                            playerEq.AddTempValue(i.EquipmentStats);
+                            AllowedEquipmantPanel.MainInstance.AddEq(i);
+                        }
+                    }
+
+
                     TempValuesEndLevelScreen.Instance.Show();
                     var gm = GameManager.Instance;
                     gm.SavablePlayerData.PlayerProgress.Squad.SetSquadValues(Squad.playerSquadInstance);

@@ -208,7 +208,7 @@ public class EnvirinmantInventoryUI : AInventoryUI
 
     public void FindItems()
     {
-        var playerEq = GameManager.Instance.SavablePlayerData.PlayerProgress.Equipment;
+        //var playerEq = GameManager.Instance.SavablePlayerData.PlayerProgress.Equipment;
 
         hitCount = Physics2D.CircleCast(Squad.playerSquadInstance.CenterSquad, radiusToFind, Vector2.zero, rHitFilter, rhits);
 
@@ -222,15 +222,15 @@ public class EnvirinmantInventoryUI : AInventoryUI
 
         inventory.RemoveAll((st) => { return st.Count <= 0; });
         inventory.Sort((a, b) => { return a.EquipmentStats.Type.CompareTo(b.EquipmentStats.Type); });
-        foreach (var i in inventory)
-        {
-            //"открываем" увиденную экипировку - но тлько в временное хранилище
-            if (!playerEq.IsThisEquipmantAllowed(i.EquipmentStats) && !playerEq.IsThisEquipmantInTempValues(i.EquipmentStats))
-            {
-                playerEq.AddTempValue(i.EquipmentStats);
-                AllowedEquipmantPanel.MainInstance.AddEq(i);
-            }
-        }
+        //foreach (var i in inventory)открытие новых предметов теперь не когда увидел, а то что вынес с уровня.
+        //{
+        //    //"открываем" увиденную экипировку - но тлько в временное хранилище
+        //    if (!playerEq.IsThisEquipmantAllowed(i.EquipmentStats) && !playerEq.IsThisEquipmantInTempValues(i.EquipmentStats))
+        //    {
+        //        playerEq.AddTempValue(i.EquipmentStats);
+        //        AllowedEquipmantPanel.MainInstance.AddEq(i);
+        //    }
+        //}
     }
 
     private void FillEnvironmantInventoryIcons()

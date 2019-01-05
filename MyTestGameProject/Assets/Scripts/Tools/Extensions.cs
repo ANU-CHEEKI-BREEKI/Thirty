@@ -174,18 +174,22 @@ namespace Tools
         public static string GetNameLocalize(this UnitStats.EquipmentWeight obj)
         {
             var res = LocalizedStrings.missing_string;
-            res = obj.ToString() + " ВЕС";
             switch (obj)
             {
                 case UnitStats.EquipmentWeight.VERY_LIGHT:
+                    res = LocalizedStrings.weight_very_light;
                     break;
                 case UnitStats.EquipmentWeight.LIGHT:
+                    res = LocalizedStrings.weight_light;
                     break;
                 case UnitStats.EquipmentWeight.MEDIUM:
+                    res = LocalizedStrings.weight_medium;
                     break;
                 case UnitStats.EquipmentWeight.HEAVY:
+                    res = LocalizedStrings.weight_heavy;
                     break;
                 case UnitStats.EquipmentWeight.VERY_HEAVY:
+                    res = LocalizedStrings.weight_very_heavy;
                     break;
             }
             return res;

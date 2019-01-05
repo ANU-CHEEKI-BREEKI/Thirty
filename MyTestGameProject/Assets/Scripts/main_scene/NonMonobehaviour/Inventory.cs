@@ -34,6 +34,11 @@ public class Inventory
     [SerializeField] Equipment shieldNone;
 
     [SerializeField] EquipmentStack[] inventory = new EquipmentStack[3];
+    /// <summary>
+    /// Инвентарь для хранения вещей. Это его копия.
+    /// Если нужен прямой доступ, используйте Inventory[]
+    /// </summary>
+    public List<EquipmentStack> StoredInventory { get { return new List<EquipmentStack>(inventory); } }
     public int Length { get { return inventory.Length; } }
 
     public EquipmentStack Helmet
