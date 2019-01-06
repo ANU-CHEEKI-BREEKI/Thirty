@@ -1,11 +1,12 @@
 ﻿using System;
+using System.Collections;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public enum SceneIndex { MAIN_MENU, MARKET, LEVEL, LOADING_SCREEN, LEVEL_TUTORIAL_1, LEVEL_TUTORIAL_2, LEVEL_TUTORIAL_3, TESTING_LEVEL }
+    public enum SceneIndex { START_SCREEN, MAIN_MENU, MARKET, LEVEL, LOADING_SCREEN, LEVEL_TUTORIAL_1, LEVEL_TUTORIAL_2, LEVEL_TUTORIAL_3, TESTING_LEVEL }
     public static GameManager Instance { get; private set; }
 
     //КОСТЫЛЬ ЕБАННЫЙ
@@ -55,6 +56,11 @@ public class GameManager : MonoBehaviour
     public ISavingManager SavingManager { get; set; }
 
     /// <summary>
+    /// Язык интерфейса
+    /// </summary>
+    public SystemLanguage Language { set { Localization.SetLanguage(value); } }
+
+    /// <summary>
     /// первый агрумент - номер сцены, на которую будет совершен переход. 
     /// второй агрумент - номер текущего игрового уровня.
     /// третий аргумент - номер текущей сцены
@@ -66,6 +72,7 @@ public class GameManager : MonoBehaviour
         if (Instance == null)
         {
             InitGameManager();
+            ModalInfoPanel.Instance.Add(LocalizedStrings.log_in);
         }
         else
         {
@@ -78,29 +85,57 @@ public class GameManager : MonoBehaviour
             Instance.ResumeGame();
     }
 
-    private void InitGameManager()
+    void Start()
+    {
+        if(Instance == this)
+        {
+            LoadSettings(LocalizedStrings.log_in);
+        }
+    }
+
+    void InitGameManager()
     {
         Instance = this;
         CurrentLevel = new LevelInfo();
         defFixedDeltaTime = Time.fixedDeltaTime;
         Application.logMessageReceived += OnUnhendeledException;
 
-        Localization.SetLanguage(SystemLanguage.Russian);
+        Language = SystemLanguage.Russian;
 
         var auds = SavablePlayerData.Settings.audioSettings;
         auds.generalVolume.Value = 0;
+        
+        BeforeLoadLevel += (nextScene, currentLevel, currentScene) =>
+        {
+            savablePlayerData.PlayerProgress.Save();
 
+            SoundManager.Instance.StopPlayingChannel(SoundManager.SoundType.MUSIC, 1.5f);
+            SoundManager.Instance.StopPlayingChannel(SoundManager.SoundType.FX, 1.5f);
+            SoundManager.Instance.StopPlayingChannel(SoundManager.SoundType.UI, 1.5f);
+
+            if (nextScene == SceneIndex.MARKET)
+            {
+                if (command == "loadSquad")
+                {
+                    squad.Load(GameManager.Instance.SavablePlayerData.PlayerProgress.Squad);
+                    CurrentLevel.SetValues(GameManager.Instance.SavablePlayerData.PlayerProgress.Level);
+                    command = string.Empty;
+                }
+            }
+        };
+
+        DontDestroyOnLoad(gameObject);
+    }
+
+    void LoadSettings(string mesToModalPanel)
+    {
         bool debug = false;
 #if DEBUG
         debug = true;
 #endif
-        var mes = LocalizedStrings.log_in;
-
-        ModalInfoPanel.Instance.Add(mes);
-
         Action<bool> onLogInCompleted = (succes) =>
         {
-            ModalInfoPanel.Instance.Remove(mes);
+            ModalInfoPanel.Instance.Remove(mesToModalPanel);
 
             if (succes)
             {
@@ -138,38 +173,49 @@ public class GameManager : MonoBehaviour
                 }
             };
 
+
+            Action<string, object, bool> firstTimeSelectLanguage = null;
+            firstTimeSelectLanguage = (name, data, seccessss) =>
+            {
+                SavingManager.OnDataLoaded -= firstTimeSelectLanguage;
+
+                if (name == typeof(PlayerProgress).Name)
+                {
+                    if (data == null)
+                        data = new PlayerProgress();
+
+                    var pr = data as PlayerProgress;
+
+                    if (SceneManager.GetActiveScene().buildIndex == (int)SceneIndex.START_SCREEN)
+                    {
+                        if (pr.Flags.IsFirstStartGame)
+                        {
+                            SelectLanguageFirstTime.Instance.gameObject.SetActive(true);
+                            pr.Flags.IsFirstStartGame = false;
+                        }
+                        else
+                        {
+                            if (StartScreenLogo.Instance.LogoEnded)
+                                LoadMainMenu();
+                            else
+                                StartScreenLogo.Instance.OnLogoEnded += LoadMainMenu;
+                        }
+                    }
+                }
+            };
+            SavingManager.OnDataLoaded += firstTimeSelectLanguage;
+
             DownloadSaves();
         };
         GPSWrapper.LogInPlayer(debug, onLogInCompleted);
-
-        BeforeLoadLevel += (nextScene, currentLevel, currentScene) =>
-        {
-            savablePlayerData.PlayerProgress.Save();
-
-            SoundManager.Instance.StopPlayingChannel(SoundManager.SoundType.MUSIC, 1.5f);
-            SoundManager.Instance.StopPlayingChannel(SoundManager.SoundType.FX, 1.5f);
-            SoundManager.Instance.StopPlayingChannel(SoundManager.SoundType.UI, 1.5f);
-
-            if (nextScene == SceneIndex.MARKET)
-            {
-                if (command == "loadSquad")
-                {
-                    squad.Load(GameManager.Instance.SavablePlayerData.PlayerProgress.Squad);
-                    CurrentLevel.SetValues(GameManager.Instance.SavablePlayerData.PlayerProgress.Level);
-                    command = string.Empty;
-                }
-            }
-        };
-
-        DontDestroyOnLoad(gameObject);
     }
 
-    private void OnEnable()
+    void OnEnable()
     {
         SceneManager.sceneLoaded += OnLevelLoaded;
     }
 
-    private void OnDisable()
+    void OnDisable()
     {
         SceneManager.sceneLoaded -= OnLevelLoaded;
     }
@@ -180,6 +226,10 @@ public class GameManager : MonoBehaviour
 
         switch (index)
         {
+            case SceneIndex.START_SCREEN:
+
+
+                break;
             case SceneIndex.MAIN_MENU:
                 SoundManager.Instance.PlaySound(new SoundChannel.ClipSet(SoundManager.Instance.SoundClipsContainer.Music.MusicMainMenu, true), SoundManager.SoundType.MUSIC);
                 SoundManager.Instance.PlaySound(new SoundChannel.ClipSet(SoundManager.Instance.SoundClipsContainer.FX.BonfireMainMenu, true, 0.1f), SoundManager.SoundType.FX);
@@ -511,7 +561,7 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene((int)SceneIndex.LOADING_SCREEN);
     }
 
-    private void ReconfigureLevelSettings()
+    void ReconfigureLevelSettings()
     {
         if (CurrentLevel.Level == 1)
         {

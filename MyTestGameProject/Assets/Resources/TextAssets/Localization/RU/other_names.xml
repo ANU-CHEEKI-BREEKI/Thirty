@@ -21,6 +21,7 @@
   <string name = "video_settings">Видео</string>
   <string name = "audio_settings">Звук</string>
   <string name = "progress_settings">Прогресс</string>
+  <string name = "common_settings">Общие</string>
   
   <string name = "healtarget_weakest">сначала слабых</string>
   <string name = "healtarget_strongest">сначала сильных</string>

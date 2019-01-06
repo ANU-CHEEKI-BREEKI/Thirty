@@ -108,6 +108,7 @@ public sealed class LocalizedStrings
     public static string video_settings { get; private set; }
     public static string audio_settings { get; private set; }
     public static string progress_settings { get; private set; }
+    public static string common_settings { get; private set; }
     public static string healtarget_weakest { get; private set; }
     public static string healtarget_strongest { get; private set; }
     public static string healtarget_all { get; private set; }

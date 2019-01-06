@@ -8,16 +8,11 @@ public class MainStatsPanel : MonoBehaviour
     [SerializeField] Squad squad;
     public Squad Squad { get { return squad; } set { squad = value; } }
     [Space]
-    [SerializeField] TextMeshProUGUI attackText;
-    [SerializeField] GameObject[] attackIco;
-    [SerializeField] TextMeshProUGUI defenceText;
-    [SerializeField] GameObject[] defenceIco;
-    [SerializeField] TextMeshProUGUI missileBlockText;
-    [SerializeField] GameObject[] missileIco;
-    [SerializeField] TextMeshProUGUI damageText;
-    [SerializeField] GameObject[] damageIco;
-    [SerializeField] TextMeshProUGUI armourBlockText;
-    [SerializeField] GameObject[] armourIco;
+    [SerializeField] StatsIcon attackIco;
+    [SerializeField] StatsIcon defenceIco;
+    [SerializeField] StatsIcon missileIco;
+    [SerializeField] StatsIcon damageIco;
+    [SerializeField] StatsIcon armourIco;
 
     bool active = true;
     public bool Active
@@ -84,43 +79,36 @@ public class MainStatsPanel : MonoBehaviour
         {
             var stats = squad.UnitStats;
 
-            attackText.text = stats.Attack.ToString(StringFormats.intNumberPercent);
+            attackIco.Text = stats.Attack.ToString(StringFormats.intNumberPercent);
             SetIcoCnt(stats.Attack, attackIco);
 
-            defenceText.text = stats.Defence.ToString(StringFormats.intNumberPercent);
+            defenceIco.Text = stats.Defence.ToString(StringFormats.intNumberPercent);
             SetIcoCnt(stats.Defence, defenceIco);
 
-            missileBlockText.text = stats.MissileBlock.ToString(StringFormats.intNumberPercent);
+            missileIco.Text = stats.MissileBlock.ToString(StringFormats.intNumberPercent);
             SetIcoCnt(stats.MissileBlock, missileIco);
 
-            damageText.text = (stats.Damage.ArmourDamage + stats.Damage.BaseDamage).ToString(StringFormats.intNumber);
+            damageIco.Text = (stats.Damage.ArmourDamage + stats.Damage.BaseDamage).ToString(StringFormats.intNumber);
             SetIcoCnt((stats.Damage.ArmourDamage + stats.Damage.BaseDamage) / 200, damageIco);
-
-            armourBlockText.text = stats.Armour.ToString(StringFormats.intNumber);
+            
+            armourIco.Text = stats.Armour.ToString(StringFormats.intNumber);
             SetIcoCnt(stats.Armour / 200, armourIco);
         }
     }
 
-    void SetIcoCnt(float val, GameObject[] arr)
+    void SetIcoCnt(float val, StatsIcon icon)
     {
-        if (arr != null)
+        if (icon != null)
         {
-            int cnt = arr.Length;
-            int cnt2 = 0;
+            int cnt = 0;
             if (val < 0.3f)
-                cnt2 = 1;
+                cnt = 1;
             else if (val < 0.6f)
-                cnt2 = 2;
+                cnt = 2;
             else
-                cnt2 = 3;
+                cnt = 3;
 
-            for (int i = 0; i < cnt; i++)
-            {
-                if (i < cnt2)
-                    arr[i].SetActive(true);
-                else
-                    arr[i].SetActive(false);
-            }
+            icon.DiaplayCount = cnt;
         }
     }
 

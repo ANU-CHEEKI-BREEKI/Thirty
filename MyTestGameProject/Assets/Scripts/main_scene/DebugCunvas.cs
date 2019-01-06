@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DebugCunvas : MonoBehaviour
 {
@@ -15,6 +16,7 @@ public class DebugCunvas : MonoBehaviour
     [SerializeField] TextMeshProUGUI savingManagerText;
     [Space]
     [SerializeField] TextMeshProUGUI text;
+    [SerializeField] TextMeshProUGUI scene;
 
     static DebugCunvas instance;
 
@@ -87,7 +89,14 @@ public class DebugCunvas : MonoBehaviour
            deltaTime: 0.1f,
            type: CoroutineType.REAL_TIME
        ));
-        
+        StartCoroutine(Coroutine(
+           condition: () => { return true; },
+           action: () => { scene.text = "scene: " + (GameManager.SceneIndex)SceneManager.GetActiveScene().buildIndex; },
+           cleanup: () => { },
+           deltaTime: 1f,
+           type: CoroutineType.REAL_TIME
+       ));
+
     }
 
     public enum CoroutineType { SCALED_TIME, REAL_TIME }

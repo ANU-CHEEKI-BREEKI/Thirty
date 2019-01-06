@@ -7,11 +7,11 @@ public class DSFlags : IResetable, IMergeable
 {
     [SerializeField] bool isFirstStartGame;
     [SerializeField] bool needTraining;
-    //для туториала костыль (
+    //для туториала костыль
     [SerializeField] GameManager.SceneIndex avalaibleTutorialLevel;
 
-    public bool IsFirstStartGame { get { return isFirstStartGame; } private set { isFirstStartGame = value; } }
-    public bool NeedTraining { get { return needTraining; } private set { needTraining = value; } }
+    public bool IsFirstStartGame { get { return isFirstStartGame; } set { isFirstStartGame = value; } }
+    public bool NeedTraining { get { return needTraining; } set { needTraining = value; } }
     public GameManager.SceneIndex AvalaibleTutorialLevel { get { return avalaibleTutorialLevel; } set { avalaibleTutorialLevel = value; } }
 
     public DSFlags()

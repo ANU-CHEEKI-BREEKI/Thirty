@@ -94,7 +94,7 @@ public class GPSSavingManager : ISavingManager
 
             Debug.Log("------------OnSavedGameDataRead ------------ jsonStr: " + jsonStr);
             Debug.Log("------------OnSavedGameDataRead ------------ loadedData: " + loadedData);
-
+            
             CallOnDataLoaded(g.gameData.Filename, loadedData, true);
         }
         else

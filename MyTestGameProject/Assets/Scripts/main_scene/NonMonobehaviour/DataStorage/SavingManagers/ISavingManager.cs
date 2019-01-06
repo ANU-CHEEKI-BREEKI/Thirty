@@ -10,7 +10,8 @@ public abstract class ISavingManager
     /// </summary>
     public event Action<string, bool> OnDataSaved;
     /// <summary>
-    /// string name, object data, bool success
+    /// string name, object data, bool success.
+    /// скорее всего вызовется быстрее чем будут применены загруженные данные
     /// </summary>
     public event Action<string, object, bool> OnDataLoaded;
 
