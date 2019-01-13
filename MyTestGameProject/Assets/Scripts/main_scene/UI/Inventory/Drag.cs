@@ -26,7 +26,7 @@ public abstract class Drag : MonoBehaviour, IDragHandler, IBeginDragHandler, IEn
     void Start()
     {
         thisTransform = transform;
-        canvas = GameObject.Find("Canvas").transform;
+        canvas = MainCanvases.MainInstance.Canvas.transform;
         canvasGroup = thisTransform.GetComponent<CanvasGroup>();
     }
 

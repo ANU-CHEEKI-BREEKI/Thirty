@@ -226,12 +226,12 @@ public class TipsPanel : MonoBehaviour, IDragHandler, IBeginDragHandler, IPointe
 
         if (!gameObject.activeInHierarchy)
         {
-            ThisTransform.position = GetPosOnScreen(MainCanvas.Instance.WorldToScreenPoint(worldPos));
+            ThisTransform.position = GetPosOnScreen(MainCanvases.MainInstance.WorldToScreenPoint(worldPos));
             gameObject.SetActive(true);
         }
         else
         {
-            ThisTransform.position = GetPosOnScreen(MainCanvas.Instance.WorldToScreenPoint(ThisTransform.position));
+            ThisTransform.position = GetPosOnScreen(MainCanvases.MainInstance.WorldToScreenPoint(ThisTransform.position));
         }        
     }
 
@@ -253,12 +253,12 @@ public class TipsPanel : MonoBehaviour, IDragHandler, IBeginDragHandler, IPointe
 
         if (!gameObject.activeInHierarchy)
         {
-            ThisTransform.position = GetPosOnScreen(MainCanvas.Instance.WorldToScreenPoint(worldPos));
+            ThisTransform.position = GetPosOnScreen(MainCanvases.MainInstance.WorldToScreenPoint(worldPos));
             gameObject.SetActive(true);
         }
         else
         {
-            ThisTransform.position = GetPosOnScreen(MainCanvas.Instance.WorldToScreenPoint(ThisTransform.position));
+            ThisTransform.position = GetPosOnScreen(MainCanvases.MainInstance.WorldToScreenPoint(ThisTransform.position));
         }
     }
 
@@ -276,8 +276,8 @@ public class TipsPanel : MonoBehaviour, IDragHandler, IBeginDragHandler, IPointe
             touch.position = Input.mousePosition;
         }
 
-        startSwipe = touch.position / MainCanvas.Instance.Canvas.scaleFactor;
-        startSwipePosition = MainCanvas.Instance.WorldToScreenPoint(ThisTransform.position);
+        startSwipe = touch.position / MainCanvases.MainInstance.Canvas.scaleFactor;
+        startSwipePosition = MainCanvases.MainInstance.WorldToScreenPoint(ThisTransform.position);
     }
 
     public void OnDrag(PointerEventData eventData)
@@ -294,7 +294,7 @@ public class TipsPanel : MonoBehaviour, IDragHandler, IBeginDragHandler, IPointe
             touch.position = Input.mousePosition;
         }
 
-        Vector2 swipe = touch.position / MainCanvas.Instance.Canvas.scaleFactor - startSwipe;
+        Vector2 swipe = touch.position / MainCanvases.MainInstance.Canvas.scaleFactor - startSwipe;
 
         ThisTransform.position = GetPosOnScreen(startSwipePosition + swipe);
 
@@ -305,9 +305,9 @@ public class TipsPanel : MonoBehaviour, IDragHandler, IBeginDragHandler, IPointe
 
     Vector3 GetPosOnScreen(Vector2 screenPosition)
     { 
-        var newPos = MainCanvas.Instance.ClampToScreenRect(screenPosition, ThisTransform.rect.size);
+        var newPos = MainCanvases.MainInstance.ClampToScreenRect(screenPosition, ThisTransform.rect.size);
         
-        newPos = MainCanvas.Instance.ScreenToWorldPoint(newPos);
+        newPos = MainCanvases.MainInstance.ScreenToWorldPoint(newPos);
 
         return new Vector3(
             newPos.x,

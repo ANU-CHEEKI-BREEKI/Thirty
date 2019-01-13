@@ -46,6 +46,7 @@ ed64fdc03cc5cf509dc5b90040a7214a Assembly-CSharp.dll:.TutorialPanel
 3fc9e5701f488e3d6b45ed3cc99960f9 Assembly-CSharp.dll:.ConvertTileResourceManager
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.TriggerConstraintShieldInPlayerInventory
 ba4af63410dadea72c72d4ec9e537b0d Assembly-CSharp.dll:.DropOnBreakResourcesManager
+7822d012cf0f4f775e85b1490d7711c3 Assembly-CSharp.dll:.SetLanguageButton
 055a577944f937dd216cc688e718a2c7 Assembly-CSharp.dll:.PilumsVolley
 ed5e1ba3e15e6cc57178b5f5139acd86 Assembly-CSharp.dll:.DialogBox
 b2b380f24a92bf2594f64a2d35695cff Assembly-CSharp.dll:.MinimapCamera
@@ -258,6 +259,7 @@ d241b953bd96426b51717342bb95894c TextMeshPro-2017.3-1.0.56-Editor.dll:TMPro.Edit
 cbcdd7703c74e554b01cadce953e2404 Assembly-CSharp.dll:.SquadlessUnitSpawner
 8632e50a9a22dc8d4743fb2d9bf1f3f2 Assembly-CSharp.dll:.SettingsGraphixSection
 acd21a953f34c8a7b89791ae3121a460 Assembly-CSharp.dll:.DestroyOnAwakeWithChanse
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.SettingsPanel
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.CustomButton
 ee98729079998eb63435f99f41b30b9e Assembly-CSharp.dll:.ModalInfoPanel
 16fa1e5b0e05be0defc968f738a466f0 Assembly-CSharp.dll:.GroundBlock
@@ -271,6 +273,7 @@ cb51e37f3df24c0c35d10aa5b5b05e43 Assembly-CSharp.dll:.SquadGoToThisTransform
 f6302873df03793015d1f03b59a6ef1f Assembly-CSharp.dll:.DropToSkill
 197d08f0232989b834111f44bb11780b Assembly-CSharp.dll:.ProgressIndicator
 e2b6af9cb6c49099ed4af5de93bcf88e Assembly-CSharp.dll:.SquadInventoryUI
+d73f1dc2e12e3c78559253cacd5e9321 Assembly-CSharp.dll:.SettingsCommonSetting
 242db951753b42be845a5f1713762c73 Assembly-CSharp.dll:.DropToConsumableMarket
 1028c39545bcfa841aaab54121e69a47 Assembly-CSharp.dll:.SliderValueViewer
 ef6be26e039e1f18039f956555094006 Assembly-CSharp.dll:.DragEquipment
@@ -344,6 +347,7 @@ fca3014b135a435ae5306828647d65ea Assembly-CSharp.dll:.FontSizeByMainCameraHeight
 d251bf88db6c95a6b1aa0b69298da9ef UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.SetAllTileCollidersToUseByComposite
 e6a0d3d5f05610866ea6d819d2eb30a3 Assembly-CSharp.dll:.SquadSkillsInventoryUI
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.StartScreenLogo
 14454e19732be07214c8f03c644cf2ab Assembly-CSharp.dll:.GPSLogInButton
 2c78508d67df37094377b29be4b72d85 Assembly-CSharp.dll:.ShowAllyUnitsHp
 870b88f8cf603b55ad41b3ca229fa792 Assembly-CSharp.dll:.SOTip
@@ -382,18 +386,14 @@ b2143c1c1ad602e4191907faef166f16 Assembly-CSharp.dll:.EnvirinmantInventoryUI
 cb51e37f3df24c0c35d10aa5b5b05e43 Assembly-CSharp.dll:.FollowCanvasToSquad
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.TriggerConstraintPlayeFormationShields
 9d9c630effd0ebc49600340b80108361 Assembly-CSharp.dll:.SkillButton
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.SelectLanguageFirstTime
 b447b976b8ba55b2a979fef5855f6657 Assembly-CSharp.dll:.SOSquadSpawnerAISettingsResourse
-71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.MainCanvas
 b76c1304d96ed801e15ab9245aa23440 Assembly-CSharp.dll:.Squad
+d8584b83546c2176e6e6b809e606713e Assembly-CSharp.dll:.LanguageToggleGUI
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.TerrainWalker
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.ShowSettingsSection
 6a2d8bf1cf2d398ead7c93384058e3be Assembly-CSharp.dll:.DropToConsumable
 fab502b88b02fb6bf875a9f04d4bccad Assembly-CSharp.dll:.ConfirmPanel
 513c3a71702643410789c4d986b9a428 Assembly-CSharp.dll:.SkillsPanelScrollAndHeight
 001116b45bdc202ed3a3b37a488d89dd Assembly-CSharp.dll:.SOSquadSpawnerConsumablesResourse
-7822d012cf0f4f775e85b1490d7711c3 Assembly-CSharp.dll:.SetLanguageButton
-71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.SelectLanguageFirstTime
-d73f1dc2e12e3c78559253cacd5e9321 Assembly-CSharp.dll:.SettingsCommonSetting
-d8584b83546c2176e6e6b809e606713e Assembly-CSharp.dll:.LanguageToggleGUI
-71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.StartScreenLogo
-71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.SettingsPanel
+cbd98981c290433975217a34171ee6e4 Assembly-CSharp.dll:.VolumeController

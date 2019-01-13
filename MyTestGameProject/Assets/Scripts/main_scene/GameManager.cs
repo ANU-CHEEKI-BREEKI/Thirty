@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Linq;
+using System.Reflection;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -12,7 +13,7 @@ public class GameManager : MonoBehaviour
     //КОСТЫЛЬ ЕБАННЫЙ
     public string command = string.Empty;
 
-    public event Action<bool> OnGamePased = (paused) => { };
+    public event Action<bool, bool> OnGamePased = (paused, showMenu) => { };
     bool gamePaused;
     public bool GamePaused { get { return gamePaused; } }
 
@@ -53,7 +54,41 @@ public class GameManager : MonoBehaviour
     Squad squad;
     public Squad PlayerSquad { get { return squad; } }
 
-    public ISavingManager SavingManager { get; set; }
+    ISavingManager savingManager;
+    public ISavingManager SavingManager
+    {
+        get => savingManager;
+        set
+        {
+            var old = savingManager;
+            savingManager = value;
+
+            if (old != null)
+            {
+                //так как я проебал (опять) и отовсюду подписываюсь на менеджера,
+                //а он может изменяться, то надо скопировать подписчиков для нового менеджера
+                EventHandler e = typeof(ISavingManager)
+                     .GetField(nameof(ISavingManager.OnDataLoaded), BindingFlags.Instance | BindingFlags.NonPublic)
+                     .GetValue(old) as EventHandler;
+                if (e != null)
+                {
+                    var subscribers = e.GetInvocationList();
+                    foreach (var sub in subscribers)
+                        savingManager.OnDataLoaded += sub as Action<string, object, bool>;
+                }
+                
+                e = typeof(ISavingManager)
+                     .GetField(nameof(ISavingManager.OnDataSaved), BindingFlags.Instance | BindingFlags.NonPublic)
+                     .GetValue(old) as EventHandler;
+                if (e != null)
+                {
+                    var subscribers = e.GetInvocationList();
+                    foreach (var sub in subscribers)
+                        savingManager.OnDataSaved += sub as Action<string, bool>;
+                }
+            }
+        }
+    }
 
     /// <summary>
     /// Язык интерфейса
@@ -247,7 +282,7 @@ public class GameManager : MonoBehaviour
 
                 FadeScreen.Instance.FadeOnStartScene = false;
                 PauseGame();
-                Ground.Instance.OnGenerationDone += ResumeGame;
+                Ground.Instance.OnGenerationDone += ()=> { ResumeGame(); };
                 Ground.Instance.OnGenerationDone += InitPlayer;
                 Ground.Instance.OnGenerationDone += FadeScreen.Instance.FateOnStartScene;
                 Ground.Instance.GeneradeMap(rows, cols);
@@ -262,7 +297,7 @@ public class GameManager : MonoBehaviour
 
                 FadeScreen.Instance.FadeOnStartScene = false;
                 PauseGame();
-                Ground.Instance.OnWorkDone += ResumeGame;
+                Ground.Instance.OnWorkDone += () => { ResumeGame(); };
                 Ground.Instance.OnWorkDone += FadeScreen.Instance.FateOnStartScene;
                 Ground.Instance.RecalcMatrixByCurrentBlocks();
 
@@ -271,7 +306,7 @@ public class GameManager : MonoBehaviour
 
                 FadeScreen.Instance.FadeOnStartScene = false;
                 PauseGame();
-                Ground.Instance.OnWorkDone += ResumeGame;
+                Ground.Instance.OnWorkDone += () => { ResumeGame(); };
                 //Ground.Instance.OnWorkDone += InitPlayer;
                 Ground.Instance.OnWorkDone += FadeScreen.Instance.FateOnStartScene;
                 Ground.Instance.RecalcMatrixByCurrentBlocks();
@@ -301,7 +336,7 @@ public class GameManager : MonoBehaviour
     {
         if (type == LogType.Error || type == LogType.Exception || type == LogType.Assert)
         {
-            Instance.PauseGame();
+            Instance.PauseGame(false);
             DialogBox.Instance
                 .SetTitle(LocalizedStrings.unhendeled_exception)
                 .SetText(condition + "\r\n\r\n" + stackTrace, true)
@@ -462,24 +497,24 @@ public class GameManager : MonoBehaviour
             ResumeGame();
     }
 
-    public void PauseGame()
+    public void PauseGame(bool showMenu = true)
     {
         var old = gamePaused;
         gamePaused = true;
         Time.timeScale = 0;
 
         if (old != gamePaused)
-            OnGamePased.Invoke(gamePaused);
+            OnGamePased.Invoke(gamePaused, showMenu);
     }
 
-    public void ResumeGame()
+    public void ResumeGame(bool showMenu = true)
     {
         var old = gamePaused;
         gamePaused = false;
         Time.timeScale = timeScale;
 
         if(old != gamePaused)
-            OnGamePased.Invoke(gamePaused);
+            OnGamePased.Invoke(gamePaused, showMenu);
     }
 
     public void LoadNextLevel()
@@ -507,6 +542,7 @@ public class GameManager : MonoBehaviour
 
     public void LoadMainMenu()
     {
+        //сохраняем состояние отряда и пройденных уровней
         if (SceneManager.GetActiveScene().buildIndex == (int)SceneIndex.MARKET)
         {
             var gm = GameManager.Instance.SavablePlayerData.PlayerProgress;

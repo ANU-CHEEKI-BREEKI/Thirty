@@ -3,24 +3,43 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Canvas))]
-public class MainCanvas : MonoBehaviour
+public class MainCanvases : MonoBehaviour
 {
-    static MainCanvas instance;
-    public static MainCanvas Instance
+    static MainCanvases mainInstance;
+    public static MainCanvases MainInstance
     {
         get
         {
-            if (instance == null)
+            if (mainInstance == null)
             {
-                instance = GameObject.Find("Canvas").AddComponent<MainCanvas>();
-                instance.Clear();
+                mainInstance = GameObject.FindWithTag("MainCanvas").AddComponent<MainCanvases>();
+                mainInstance.Clear();
             }
-            return instance;
+            return mainInstance;
         }
 
         private set
         {
-            instance = value;
+            mainInstance = value;
+        }
+    }
+
+    static MainCanvases dialogsInstance;
+    public static MainCanvases DialogsInstance
+    {
+        get
+        {
+            if (dialogsInstance == null)
+            {
+                dialogsInstance = GameObject.FindWithTag("DialogsCanvas").AddComponent<MainCanvases>();
+                dialogsInstance.Clear();
+            }
+            return dialogsInstance;
+        }
+
+        private set
+        {
+            dialogsInstance = value;
         }
     }
 
@@ -56,26 +75,21 @@ public class MainCanvas : MonoBehaviour
 
     private void Awake()
     {
-        Instance = this;
         Canvas = GetComponent<Canvas>();
-
         Camera = Camera.main;
     }
 
     private void Start()
     {
-        var arr = gameObject.GetComponents<MainCanvas>();
-        foreach (var item in arr)
-            if (item != instance)
-                Destroy(item);
+        Clear();
     }
 
     [ContextMenu("Clear")]
     void Clear()
     {
-        var arr = gameObject.GetComponents<MainCanvas>();
+        var arr = gameObject.GetComponents<MainCanvases>();
         foreach (var item in arr)
-            if (item != instance)
+            if (item != mainInstance && item != dialogsInstance)
                 DestroyImmediate(item);
     }
 

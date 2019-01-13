@@ -376,6 +376,7 @@
     <Compile Include="Assets\Scripts\main_scene\ScriptableObjects\SOTerrainStatsModifier.cs" />
     <Compile Include="Assets\Scripts\main_scene\ScriptableObjects\SOTip.cs" />
     <Compile Include="Assets\Scripts\main_scene\ShowAllyUnitsHp.cs" />
+    <Compile Include="Assets\Scripts\main_scene\Sound\VolumeController.cs" />
     <Compile Include="Assets\Scripts\main_scene\SoundChannel.cs" />
     <Compile Include="Assets\Scripts\main_scene\SoundManager.cs" />
     <Compile Include="Assets\Scripts\main_scene\SpriteColorAplhaBlinker.cs" />

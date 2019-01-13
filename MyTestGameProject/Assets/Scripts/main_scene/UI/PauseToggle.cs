@@ -29,9 +29,9 @@ public class PauseToggle : MonoBehaviour
         t.onValueChanged.AddListener(onValChanged);
 	}
 
-    private void Instance_OnGamePased(bool pause)
+    private void Instance_OnGamePased(bool pause, bool showMenu)
     {
-        if (t != null)
+        if (t != null && showMenu)
         {
             t.isOn = pause;
             darkscreen.blocksRaycasts = pause;

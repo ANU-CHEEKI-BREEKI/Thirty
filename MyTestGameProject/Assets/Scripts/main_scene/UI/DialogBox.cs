@@ -79,7 +79,7 @@ public class DialogBox : MonoBehaviour, IDialogBox
             if(instance == null)
             {
                 var go = Resources.Load<GameObject>(@"Prefabs\DialogBox");
-                instance = Instantiate(go, MainCanvas.Instance.transform).GetComponent<DialogBox>();
+                instance = Instantiate(go, MainCanvases.DialogsInstance.transform).GetComponent<DialogBox>();
                 instance.transform.SetSiblingIndex(instance.transform.parent.childCount -2);
             }
 

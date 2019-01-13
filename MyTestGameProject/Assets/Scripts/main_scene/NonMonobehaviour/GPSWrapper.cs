@@ -58,14 +58,17 @@ public static class GPSWrapper
         PlayerLoggedIn = false;
     }
 
-    static public void SaveGame(ISavedGameMetadata game, byte[] savedData, TimeSpan totalPlaytime, Action<SavedGameRequestStatus, ISavedGameMetadata> onSavedGameWritten)
+    static public void SaveGame(ISavedGameMetadata game, byte[] savedData, TimeSpan totalPlaytime, Action<SavedGameRequestStatus, ISavedGameMetadata> onSavedGameWritten, string description = "")
     {
         ISavedGameClient savedGameClient = PlayGamesPlatform.Instance.SavedGame;
+
+        if (string.IsNullOrEmpty(description))
+            description = "Saved at " + DateTime.Now;
 
         SavedGameMetadataUpdate.Builder builder = new SavedGameMetadataUpdate.Builder();
         builder = builder
             .WithUpdatedPlayedTime(totalPlaytime)
-            .WithUpdatedDescription("Saved game at " + DateTime.Now);
+            .WithUpdatedDescription(description);
 
         SavedGameMetadataUpdate updatedMetadata = builder.Build();
         savedGameClient.CommitUpdate(game, updatedMetadata, savedData, (status , data) =>

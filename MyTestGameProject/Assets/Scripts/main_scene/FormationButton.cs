@@ -170,7 +170,7 @@ public class FormationButton : MonoBehaviour, IPointerDownHandler, IPointerUpHan
 
         if (!mouseDown)
         {
-            startP = MainCanvas.Instance.WorldToScreenPoint(thisTransform.position);
+            startP = MainCanvases.MainInstance.WorldToScreenPoint(thisTransform.position);
 
             mouseDown = true;
 
@@ -298,7 +298,7 @@ public class FormationButton : MonoBehaviour, IPointerDownHandler, IPointerUpHan
 
     float GetAngle(Vector3 spart, Vector3 end)
     {
-        Vector2 center = MainCanvas.Instance.WorldToScreenPoint(imagePhalanx.transform.position);
+        Vector2 center = MainCanvases.MainInstance.WorldToScreenPoint(imagePhalanx.transform.position);
         center = center - startP;
         center.Normalize();
 

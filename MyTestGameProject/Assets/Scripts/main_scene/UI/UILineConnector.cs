@@ -69,8 +69,8 @@ public class UILineConnector : MonoBehaviour
 
             Vector2[] points = new Vector2[pointsCount];
 
-            Vector2 prevPosScreen = MainCanvas.Instance.WorldToScreenPoint(prevPos);
-            Vector2 thisPosScreen = MainCanvas.Instance.WorldToScreenPoint(thisPos);
+            Vector2 prevPosScreen = MainCanvases.MainInstance.WorldToScreenPoint(prevPos);
+            Vector2 thisPosScreen = MainCanvases.MainInstance.WorldToScreenPoint(thisPos);
 
             //точки в лайнрендерере надо указывать в локальных координатах!
             Vector2 prevScreenLocalPos = prevPosScreen + shiftPrev - thisPosScreen - shiftThis;

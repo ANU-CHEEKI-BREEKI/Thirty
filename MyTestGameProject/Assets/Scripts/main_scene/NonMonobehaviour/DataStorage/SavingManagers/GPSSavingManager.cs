@@ -36,7 +36,8 @@ public class GPSSavingManager : ISavingManager
                     game.gameData,
                     Encoding.ASCII.GetBytes(jsonStr),
                     game.gameData.TotalTimePlayed + (DateTime.Now - game.gameData.LastModifiedTimestamp),
-                    OnSavedGameWritten
+                    OnSavedGameWritten,
+                    name//описание сохранения
                 );
             }
             else
