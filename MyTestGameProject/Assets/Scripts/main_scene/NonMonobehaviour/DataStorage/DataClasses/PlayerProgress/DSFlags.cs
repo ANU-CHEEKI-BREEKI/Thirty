@@ -13,6 +13,9 @@ public class DSFlags : IResetable, IMergeable
     public bool IsFirstStartGame { get { return isFirstStartGame; } set { isFirstStartGame = value; } }
     public bool NeedTraining { get { return needTraining; } set { needTraining = value; } }
     public GameManager.SceneIndex AvalaibleTutorialLevel { get { return avalaibleTutorialLevel; } set { avalaibleTutorialLevel = value; } }
+    
+    [SerializeField] MarketHelp marketHelp;
+    public MarketHelp MarketHelpFlags { get { return marketHelp; } }
 
     public DSFlags()
     {
@@ -23,6 +26,8 @@ public class DSFlags : IResetable, IMergeable
     {
         isFirstStartGame = true;
         needTraining = true;
+
+        marketHelp = new MarketHelp();
 
         avalaibleTutorialLevel = GameManager.SceneIndex.LEVEL_TUTORIAL_1;
     }
@@ -36,5 +41,21 @@ public class DSFlags : IResetable, IMergeable
 
         if (d.avalaibleTutorialLevel > avalaibleTutorialLevel)
             avalaibleTutorialLevel = d.avalaibleTutorialLevel;
+    }
+
+    [Serializable]
+    public class MarketHelp
+    {
+        /// <summary>
+        /// Обзор вкладок сцены (кнопок панели для открытия вкладок и назначения вкладок)
+        /// </summary>
+        public bool needOverviewHelp = true;
+        [Space]
+        //обзор всех вклаок внутри
+        public bool needMarketPlaceHelp = true;
+        public bool needHospitalHelp = true;
+        public bool needStudiesHelp = true;
+        public bool needTrainingwHelp = true;
+        public bool needDonateHelp = true;
     }
 }

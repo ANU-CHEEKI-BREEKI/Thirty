@@ -297,6 +297,7 @@
     <Compile Include="Assets\Scripts\main_scene\LoadingScreenManager.cs" />
     <Compile Include="Assets\Scripts\main_scene\LocalizationByEditor.cs" />
     <Compile Include="Assets\Scripts\main_scene\MainCanvas.cs" />
+    <Compile Include="Assets\Scripts\main_scene\MarketReminder.cs" />
     <Compile Include="Assets\Scripts\main_scene\MinimapCamera.cs" />
     <Compile Include="Assets\Scripts\main_scene\NewBehaviourScript.cs" />
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\AchivementStandToTheLast.cs" />
@@ -382,6 +383,7 @@
     <Compile Include="Assets\Scripts\main_scene\SpriteColorAplhaBlinker.cs" />
     <Compile Include="Assets\Scripts\main_scene\SquadMask.cs" />
     <Compile Include="Assets\Scripts\main_scene\Stakes.cs" />
+    <Compile Include="Assets\Scripts\main_scene\StartMarketSceneTutorial.cs" />
     <Compile Include="Assets\Scripts\main_scene\TempValuesEndLevelScreen.cs" />
     <Compile Include="Assets\Scripts\main_scene\TerrainHeight.cs" />
     <Compile Include="Assets\Scripts\main_scene\TerrainStatsModifier.cs" />
