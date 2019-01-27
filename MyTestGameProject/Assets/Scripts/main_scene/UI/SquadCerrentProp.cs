@@ -123,6 +123,7 @@ public class SquadCerrentProp : MonoBehaviour
         var res = Instantiate(iconOrginal, thisTransform);
         if(index > 0 && index < thisTransform.childCount)
             res.transform.SetSiblingIndex(index);
+        Canvas.ForceUpdateCanvases();
         return res;
     }
 

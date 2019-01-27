@@ -67,6 +67,11 @@ public class SquadSpawner : MonoBehaviour
             else
                 inv.SecondSkill = null;
         }
+        else
+        {
+            inv.FirstSkill = null;
+            inv.SecondSkill = null;
+        }
 
         //consumables
         if (consumables != null)
@@ -86,6 +91,11 @@ public class SquadSpawner : MonoBehaviour
             }
             else
                 inv.SecondConsumable = null;
+        }
+        else
+        {
+            inv.FirstConsumable = null;
+            inv.SecondConsumable = null;
         }
 
         //AI

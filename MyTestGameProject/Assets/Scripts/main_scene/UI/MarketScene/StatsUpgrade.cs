@@ -113,8 +113,10 @@ public class StatsUpgrade : MonoBehaviour
 
         int currentLevel = (int)((stat.Value - stat.MinValue) / addVal);
         float x = (float)(currentLevel)/ uprgadeLevelsCount;
-        sliderToHightestLevel.value = x;
-        sliderToNextLevel.value = stat.Progress;
+        if(sliderToHightestLevel != null)
+            sliderToHightestLevel.value = x;
+        if(sliderToNextLevel != null)
+            sliderToNextLevel.value = stat.Progress;
 
         nextLevelCostWhenProgressZero = (int)Math.Round(Mathf.Lerp(minCost, maxCost, upgradeCost.Evaluate(x)));
         nextLevelCost = (int)Math.Round((1 - stat.Progress) * nextLevelCostWhenProgressZero);

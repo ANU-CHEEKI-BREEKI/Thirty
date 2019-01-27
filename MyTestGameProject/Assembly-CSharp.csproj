@@ -493,6 +493,7 @@
     <Compile Include="Assets\Scripts\MapBlockConverter\SetAllTileCollidersToUseByComposite.cs" />
     <Compile Include="Assets\Scripts\MapBlockConverter\SetAllTilerenderersToNonmask.cs" />
     <Compile Include="Assets\Scripts\MapBlockConverter\SetAllWaterOutterToDefaultPhysicLayer.cs" />
+    <Compile Include="Assets\Scripts\RelativeAnimation.cs" />
     <Compile Include="Assets\Scripts\SelectLanguageFirstTime.cs" />
     <Compile Include="Assets\Scripts\SetLanguageButton.cs" />
     <Compile Include="Assets\Scripts\ShowColliderGizmos.cs" />
@@ -507,6 +508,11 @@
     <Compile Include="Assets\Scripts\Tutorial\GOTriggerEvent.cs" />
     <Compile Include="Assets\Scripts\Tutorial\ITriggerEvent.cs" />
     <Compile Include="Assets\Scripts\Tutorial\KillAllUnitsInRangeOnAwake.cs" />
+    <Compile Include="Assets\Scripts\Tutorial\MarketTutorial\AddPlayerScoreForTutorial.cs" />
+    <Compile Include="Assets\Scripts\Tutorial\MarketTutorial\DisableOnPlayerInvSkillChanged.cs" />
+    <Compile Include="Assets\Scripts\Tutorial\MarketTutorial\DisableOnPlyerInvConsumableChanged.cs" />
+    <Compile Include="Assets\Scripts\Tutorial\MarketTutorial\DisableOnPlyerInvShieldChanged.cs" />
+    <Compile Include="Assets\Scripts\Tutorial\MarketTutorial\SetAnimationTargetPositonAsTooltipActionButtoAtIndex.cs" />
     <Compile Include="Assets\Scripts\Tutorial\SpawnOnTriggerStay.cs" />
     <Compile Include="Assets\Scripts\Tutorial\SquadGoToThisTransform.cs" />
     <Compile Include="Assets\Scripts\Tutorial\SquadTriggerInitiator.cs" />

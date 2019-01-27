@@ -127,7 +127,7 @@ abf1930d8126d0b2e00e9449129a0190 UnityEngine.UI.dll:UnityEngine.EventSystems.Tou
 92583f5c853ea78ec8d05eed0dcbb497 Assembly-CSharp.dll:UnityEngine.Tilemaps.RandomTile
 f87cb1628b6c04a3e19f349820654418 Assembly-CSharp.dll:.TerrainStatsModifier
 cf00854457238812f3af1f3ed2e42360 Assembly-CSharp.dll:.SkillsUpgrade
-0ceba51789c01658a853fb9fba8162ea Assembly-CSharp.dll:.GameManager
+728c1545db1f3d006222432e622a8ba7 Assembly-CSharp.dll:.GameManager
 43b4890164af7cafbfc07be60094cf04 Assembly-CSharp.dll:.DragSkill
 75b328e907c21aa6e1f39cd016b14864 Assembly-CSharp.dll:UnityEngine.RuleTile
 242db951753b42be845a5f1713762c73 Assembly-CSharp.dll:.DropToGround
@@ -169,6 +169,7 @@ d251bf88db6c95a6b1aa0b69298da9ef UnityEngine.SpatialTracking.dll:UnityEngine.Spa
 aeeedbf191dc61d68807fe9a796a89db Assembly-CSharp.dll:.HospitalRoom
 69fd11f743c4b3d8f53b221e0d147f3a Assembly-CSharp.dll:.Toast
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.EnableTutorialButton
+cbd98981c290433975217a34171ee6e4 Assembly-CSharp.dll:.VolumeController
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.ConvertBlockToExpected
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.UnitOutline
 8d4be741269a274415d07c0c2f6c1d4e Assembly-CSharp.dll:.GameTipsPanel
@@ -255,6 +256,7 @@ d241b953bd96426b51717342bb95894c TextMeshPro-2017.3-1.0.56-Editor.dll:TMPro.Edit
 6adf0680d8d7e110dab1c5470b12851b TextMeshPro-2017.3-1.0.56-Editor.dll:TMPro.EditorUtilities.TMPro_FontAssetCreatorWindow
 71bb6a6b6c8f052f948db64c7dd3ca4f TextMeshPro-2017.3-1.0.56-Editor.dll:.TMPro_SDFMaterialEditor
 71bb6a6b6c8f052f948db64c7dd3ca4f TextMeshPro-2017.3-1.0.56-Editor.dll:TMPro.EditorUtilities.TMPro_TextContainerEditor
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.DisableOnPlyerInvShieldChanged
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.Analytics.Editor.dll:UnityEditor.Analytics.AnalyticsEventTrackerEditor
 cbcdd7703c74e554b01cadce953e2404 Assembly-CSharp.dll:.SquadlessUnitSpawner
 8632e50a9a22dc8d4743fb2d9bf1f3f2 Assembly-CSharp.dll:.SettingsGraphixSection
@@ -315,6 +317,7 @@ cf96e5f7b3d069bab453925bd41be04e UnityEngine.TestRunner.dll:UnityEngine.TestTool
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.Callbacks.RemoteTestResultSender
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.Callbacks.TestResultRendererCallback
 000ba992ac41aca32c52b35ce1531cea Assembly-CSharp.dll:.AllowedEquipmantPanel
+09bb2c4c6b9178f79bb89e74b33de05f Assembly-CSharp.dll:.StartMarketSceneTutorial
 931f489e44eadf809e9310429c99dde5 UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioListenerExtension
 fb6a1ea36b4f6ef5948d283d93760765 UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioRoom
 5b0391b7e3d9ea9db6c0a8fbd0ca23f6 UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioSoundfieldExtension
@@ -365,10 +368,11 @@ ba4af63410dadea72c72d4ec9e537b0d Assembly-CSharp.dll:.DropIemsOnBreakDurabilitya
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.TriggerConstraintPlayerVeryHeavyWeight
 17e7fb8f1eedc7b47d3194730bd7e4ac Assembly-CSharp.dll:.DeactivateOnAwake
 7c2d19604dc7b7adf53c88bb7ae0b6be Assembly-CSharp.dll:.FormationButton
+91f7fc49850278837766ac6477126ef4 Assembly-CSharp.dll:.RelativeAnimation
 1fa897b22fbe1e4ed02e79bca41e7bae Assembly-CSharp.dll:.StatsPanelUI
 4927e9a2accbb890d04658e9f12dc4b6 Assembly-CSharp.dll:.SquadSpawner
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.DeleteAllSpriteMaskAndGroups
-db8d3ff3665d60b7d6f709aa179ab175 Assembly-CSharp.dll:.MarketConsumablesUI
+f83e6492ba6a18923dff24b7ac06eb2a Assembly-CSharp.dll:.MarketConsumablesUI
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.TriggerConstraintPlayerTakesUnits
 24dc846543144fd7f4fd3adfe08e0c74 Assembly-CSharp.dll:.Durabilityable
 2a8b34abf4e297a814cca7562b92cc72 Assembly-CSharp.dll:.UiEvents
@@ -388,6 +392,7 @@ cb51e37f3df24c0c35d10aa5b5b05e43 Assembly-CSharp.dll:.FollowCanvasToSquad
 9d9c630effd0ebc49600340b80108361 Assembly-CSharp.dll:.SkillButton
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.SelectLanguageFirstTime
 b447b976b8ba55b2a979fef5855f6657 Assembly-CSharp.dll:.SOSquadSpawnerAISettingsResourse
+9bed547b6f97ff8c23649a5b56eeceba Assembly-CSharp.dll:.MarketReminder
 b76c1304d96ed801e15ab9245aa23440 Assembly-CSharp.dll:.Squad
 d8584b83546c2176e6e6b809e606713e Assembly-CSharp.dll:.LanguageToggleGUI
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.TerrainWalker
@@ -396,4 +401,7 @@ d8584b83546c2176e6e6b809e606713e Assembly-CSharp.dll:.LanguageToggleGUI
 fab502b88b02fb6bf875a9f04d4bccad Assembly-CSharp.dll:.ConfirmPanel
 513c3a71702643410789c4d986b9a428 Assembly-CSharp.dll:.SkillsPanelScrollAndHeight
 001116b45bdc202ed3a3b37a488d89dd Assembly-CSharp.dll:.SOSquadSpawnerConsumablesResourse
-cbd98981c290433975217a34171ee6e4 Assembly-CSharp.dll:.VolumeController
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.DisableOnPlyerInvConsumableChanged
+15a00a3001786987706c6e12906aeed6 Assembly-CSharp.dll:.AddPlayerScoreForTutorial
+c1d10a196ee9af55505062672b7a62be Assembly-CSharp.dll:.SetAnimationTargetPositonAsTooltipActionButtoAtIndex
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.DisableOnPlayerInvSkillChanged

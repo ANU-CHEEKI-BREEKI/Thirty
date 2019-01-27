@@ -43,6 +43,18 @@ public class TipsPanel : MonoBehaviour, IDragHandler, IBeginDragHandler, IPointe
     [SerializeField] Transform actionButtonsPanel;
     [SerializeField] GameObject actionButtonOriginal;
 
+    public GameObject GetActionButtonAt(int index)
+    {
+        try
+        {
+            return actionButtonsPanel.GetChild(index).gameObject;
+        }
+        catch
+        {
+            return null;
+        }
+    }
+
     public RectTransform ThisTransform { get; private set; }
 
     public static TipsPanel Instance { get; private set; }

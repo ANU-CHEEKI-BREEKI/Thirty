@@ -209,5 +209,10 @@ public class DSPlayerScore : ITempValuesApplyable, IResetable, ILoadedDataApplya
             get { return value; }
             set { float old = this.value; this.value = value; if (OnValueChanged != null) OnValueChanged(old, value, this); }
         }
+
+        public Score(float value = 0)
+        {
+            this.value = value;
+        }
     }
 }

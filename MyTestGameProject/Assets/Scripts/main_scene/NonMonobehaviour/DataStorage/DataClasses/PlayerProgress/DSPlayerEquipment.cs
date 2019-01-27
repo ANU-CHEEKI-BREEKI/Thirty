@@ -27,6 +27,9 @@ public class DSPlayerEquipment : ITempValuesApplyable, IResetable, IMergeable
         else
             allowedEquipmentId.Clear();
 
+        allowedEquipmentId.Add(new EqId(1, EquipmentStats.TypeOfEquipment.SHIELD, false));
+        allowedEquipmentId.Add(new EqId(1, EquipmentStats.TypeOfEquipment.WEAPON, false));
+
         ResetTempValues();
     }
 

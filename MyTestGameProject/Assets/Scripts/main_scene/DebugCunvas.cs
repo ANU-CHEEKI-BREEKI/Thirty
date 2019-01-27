@@ -47,7 +47,10 @@ public class DebugCunvas : MonoBehaviour
 
         StartCoroutine(Coroutine(
             condition: () => { return true; },
-            action: () => { fpsScaledText.text = "ground:    " + GameManager.Instance.CurrentLevel.GroundType.ToString(); },
+            action: () => {
+                if (fpsScaledText != null)
+                    fpsScaledText.text = "ground:    " + GameManager.Instance.CurrentLevel.GroundType.ToString();
+            },
             cleanup: () => { },
             deltaTime: 0.1f,
             type: CoroutineType.REAL_TIME
@@ -55,7 +58,10 @@ public class DebugCunvas : MonoBehaviour
 
         StartCoroutine(Coroutine(
             condition: () => { return true; },
-            action: () => { levelText.text = "level:    " + GameManager.Instance.CurrentLevel.Level.ToString(StringFormats.intNumber); },
+            action: () => {
+                if (levelText != null)
+                    levelText.text = "level:    " + GameManager.Instance.CurrentLevel.Level.ToString(StringFormats.intNumber);
+            },
             cleanup: () => { },
             deltaTime: 1f,
             type: CoroutineType.REAL_TIME
@@ -76,7 +82,10 @@ public class DebugCunvas : MonoBehaviour
 
         StartCoroutine(Coroutine(
             condition: () => { return true; },
-            action: () => { timescaleText.text = "timescale:    " + Time.timeScale.ToString(StringFormats.floatNumber); },
+            action: () => {
+                if(timescaleText != null) 
+                    timescaleText.text = "timescale:    " + Time.timeScale.ToString(StringFormats.floatNumber);
+            },
             cleanup: () => { },
             deltaTime: 0.1f,
             type: CoroutineType.REAL_TIME
@@ -84,14 +93,20 @@ public class DebugCunvas : MonoBehaviour
 
         StartCoroutine(Coroutine(
            condition: () => { return true; },
-           action: () => { text.text = "dpi: " + Screen.dpi; },
+           action: () => {
+               if (text != null)
+                   text.text = "dpi: " + Screen.dpi;
+           },
            cleanup: () => { },
            deltaTime: 0.1f,
            type: CoroutineType.REAL_TIME
        ));
         StartCoroutine(Coroutine(
            condition: () => { return true; },
-           action: () => { scene.text = "scene: " + (GameManager.SceneIndex)SceneManager.GetActiveScene().buildIndex; },
+           action: () => {
+               if (scene != null)
+                   scene.text = "scene: " + (GameManager.SceneIndex)SceneManager.GetActiveScene().buildIndex;
+           },
            cleanup: () => { },
            deltaTime: 1f,
            type: CoroutineType.REAL_TIME

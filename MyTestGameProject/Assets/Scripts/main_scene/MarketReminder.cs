@@ -58,22 +58,28 @@ public class MarketReminder : MonoBehaviour
     void SetupSkill()
     {
         var playerInv = Squad.playerSquadInstance.Inventory;
-        playerInv.FirstSkill.OnSkillChanged += OnSkillChanged;
-        playerInv.SecondSkill.OnSkillChanged += OnSkillChanged;
+        if (playerInv != null)
+        {
+            playerInv.FirstSkill.OnSkillChanged += OnSkillChanged;
+            playerInv.SecondSkill.OnSkillChanged += OnSkillChanged;
 
-        OnSkillChanged(null);
+            OnSkillChanged(null);
+        }
     }
 
     void ShutDownSkill()
     {
-        var playerInv = Squad.playerSquadInstance.Inventory;
-        playerInv.FirstSkill.OnSkillChanged -= OnSkillChanged;
-        playerInv.SecondSkill.OnSkillChanged -= OnSkillChanged;
+        var playerInv = Squad.playerSquadInstance?.Inventory;
+        if (playerInv != null)
+        {
+            playerInv.FirstSkill.OnSkillChanged -= OnSkillChanged;
+            playerInv.SecondSkill.OnSkillChanged -= OnSkillChanged;
+        }
     }
 
     void OnSkillChanged(Executable ex)
     {
-        var playerInv = Squad.playerSquadInstance.Inventory;
+        var playerInv = Squad.playerSquadInstance?.Inventory;
         bool first = playerInv.FirstSkill.Skill == null;
         bool second = playerInv.SecondSkill.Skill == null;
 
@@ -97,18 +103,24 @@ public class MarketReminder : MonoBehaviour
     #region Consumable
     void SetupConsumable()
     {
-        var playerInv = Squad.playerSquadInstance.Inventory;
-        playerInv.FirstConsumable.OnConsumableChanged += OnConsumableChanged;
-        playerInv.SecondConsumable.OnConsumableChanged += OnConsumableChanged;
+        var playerInv = Squad.playerSquadInstance?.Inventory;
+        if (playerInv != null)
+        {
+            playerInv.FirstConsumable.OnConsumableChanged += OnConsumableChanged;
+            playerInv.SecondConsumable.OnConsumableChanged += OnConsumableChanged;
 
-        OnConsumableChanged(null);
+            OnConsumableChanged(null);
+        }
     }
 
     void ShutDownConsumable()
     {
-        var playerInv = Squad.playerSquadInstance.Inventory;
-        playerInv.FirstConsumable.OnConsumableChanged -= OnConsumableChanged;
-        playerInv.SecondConsumable.OnConsumableChanged -= OnConsumableChanged;
+        var playerInv = Squad.playerSquadInstance?.Inventory;
+        if (playerInv != null)
+        {
+            playerInv.FirstConsumable.OnConsumableChanged -= OnConsumableChanged;
+            playerInv.SecondConsumable.OnConsumableChanged -= OnConsumableChanged;
+        }
     }
 
     void OnConsumableChanged(Executable ex)

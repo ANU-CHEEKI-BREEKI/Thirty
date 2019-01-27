@@ -59,9 +59,9 @@ public class Exit : MonoBehaviour
                     foreach (var i in inventory)
                     {
                         //"открываем" увиденную экипировку - но тлько в временное хранилище
-                        //делаем это именно тка, потому что так было изначально. а ща я поменял концепцию открытия предметов.
+                        //делаем это именно так, потому что так было изначально. а ща я поменял концепцию открытия предметов.
                         //но менять всю структуру я манал.
-                        if (!i.EquipmentStats.Empty && !playerEq.IsThisEquipmantAllowed(i.EquipmentStats) && !playerEq.IsThisEquipmantInTempValues(i.EquipmentStats))
+                        if (i != null && !i.EquipmentStats.Empty && !playerEq.IsThisEquipmantAllowed(i.EquipmentStats) && !playerEq.IsThisEquipmantInTempValues(i.EquipmentStats))
                         {
                             playerEq.AddTempValue(i.EquipmentStats);
                             AllowedEquipmantPanel.MainInstance.AddEq(i);

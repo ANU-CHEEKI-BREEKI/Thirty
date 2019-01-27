@@ -49,6 +49,11 @@ public class ScorePanel : MonoBehaviour
         PopUpTextController.Instance.ScaledDeltaTime = scaledDeltaTimeInPopUpTextController;
     }
 
+    private void Start()
+    {
+        Canvas.ForceUpdateCanvases();
+    }
+
     void OnDestroy()
     {
         if (gold != null)
