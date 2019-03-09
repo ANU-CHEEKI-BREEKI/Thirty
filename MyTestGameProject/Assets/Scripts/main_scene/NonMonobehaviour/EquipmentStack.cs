@@ -51,7 +51,7 @@ public class EquipmentStack : AStack, IDescriptionable
         this.count = count;
     }
 
-    public EquipmentStack(EquipmentStack itemStackToCopy): this()
+    public EquipmentStack(EquipmentStack itemStackToCopy) : this()
     {
         if (itemStackToCopy != null)
         {
@@ -69,7 +69,7 @@ public class EquipmentStack : AStack, IDescriptionable
 
     public void PushItems(EquipmentStack stack)
     {
-        if (stack.equipmentStats.Type == this.equipmentStats.Type 
+        if (stack.equipmentStats.Type == this.equipmentStats.Type
             && stack.equipmentStats.Id == this.equipmentStats.Id
             && stack.equipmentStats.ItemDurability == this.equipmentStats.ItemDurability)
             this.count += stack.Count;
@@ -92,7 +92,7 @@ public class EquipmentStack : AStack, IDescriptionable
         desc.Icon = equipmentMainProperties.Icon;
         desc.Name = Localization.GetString(equipmentMainProperties.StringResourceName);
         desc.Desc = Localization.GetString(equipmentMainProperties.StringResourceDescription);
-        
+
         if (desc.Cost != null)
             desc.Cost = new Description.CostInfo()
             {

@@ -2,26 +2,78 @@
 <resources>
   
   <string name = "health">Здоровье</string>
+  <string name = "health_description">Максимальное количество здоровья бойца в отряде.</string>
+  
   <string name = "squadHealth">Здоровье отряда</string>
+  <string name = "squadHealth_description">Здоровье отряда</string>
+  
   <string name = "armour">Броня</string>
+  <string name = "armour_description">Значение брони обороняющегося солдата вычитается из количества урона атакующего.</string>
+  
   <string name = "baseDamage">Базовый урон</string>
+  <string name = "baseDamage_description">Количество базовой части урона, который нанесет солдат врагу.
+Этот урон может быть заблокирован броней обороняющегося солдата.</string>
+  
   <string name = "armourDamage">Урон сквозь доспехи</string>
+  <string name = "armourDamage_description">Количество специальной части урона, который нанесет солдат врагу.
+Этот урон не может быть заблокирован броней.</string>
+  
   <string name = "attack">Атака</string>
+  <string name = "attack_description">Умение солдата атаковать.
+Фактически - вероятность успешного нанесения удара по не обороняющейся цели.</string>
+  
   <string name = "defence">Защита</string>
+  <string name = "defence_description">Умение солдата обороняться.
+Фактически - вероятность успешного отражения удара, который должен был поразить солдата.</string>
+  
   <string name = "defenceHalfSector">Сектор защиты</string>
+  <string name = "defenceHalfSector_description">Половина сектора впереди солдата, в котором он может успешно обороняться.</string>
+  
   <string name = "missileBlock">Блокирование обстрела</string>
+  <string name = "missileBlock_description">Вероятность успешно заблокировать снаряд.
+Стоит ичитывать, что шит блокирует снаряды только при фронтальном обстреле. Кроме того, если щиты не подняты, их шанс блока уменьшается вдвое.
+Отображается значение для фронтальнго обстрела.</string>
+  
   <string name = "attackDistance">Дальность атаки</string>
+  <string name = "attackDistance_description">Максимальная дистанция, на которой солдат может нанести урон врагу.</string>
+  
   <string name = "speed">Скорость перемещения</string>
+  <string name = "speed_description">Максимальная скорость передвижения солдат в отряде.</string>
+  
   <string name = "acceleration">Ускорение</string>
+  <string name = "acceleration_description">Ускорение</string>
+  
   <string name = "rotationSpeed">Скорость поворота</string>
+  <string name = "rotationSpeed_description">Скорость поворота солдата вокруг своей оси в градусах.</string>
+  
   <string name = "chargeImpact">Сила натиска</string>
+  <string name = "chargeImpact_description">Сила натиска. Чем больше это значение, теб выше шанс нанести урон врагу и откинуть его, при натиске.
+Из силы натиска атакующего солдата выитается отражение атиска обороняющегося солдата.</string>
+  
   <string name = "chargeDeflect">Отражение натиска</string>
+  <string name = "chargeDeflect_description">Отражение натиска. Чем больше это значение, теб выше шанс отразить урон врагу и откинуть его, при натиске врага.
+Из силы натиска атакующего солдата выитается отражение атиска обороняющегося солдата.</string>
+  
   <string name = "chargeDamage">Урон натиска</string>
+  <string name = "chargeDamage_description">Дополнительный процент от атаки содата, который будет нанесен при успешной атаке натиском.</string>
+  
   <string name = "defenceGoingThrough">Защита "на бегу"</string>
+  <string name = "defenceGoingThrough_description">Способность обороняться в движении.</string>
+  
   <string name = "flyingSpeed">Скорость полета</string>
+  <string name = "flyingSpeed_description">Скорость полета</string>
+  
   <string name = "weight">Вес отряда</string>
+  <string name = "weight_description">Разная местность по разному влияет на отряды рязной тяжести.
+Будте внимательны, местность может как дать вам преимущество, так и стать вашим местом захоронения.</string>
+  
   <string name = "weapon_damage">Урон оружия</string>
+  <string name = "weapon_damage_description">Урон оружия</string>
+  
   <string name = "armour_armour">Броня доспехов</string>
+  <string name = "armour_armour_description">Броня доспехов</string>
+  
   <string name = "missile_block_short">Блок. обстрела</string>
+  <string name = "missile_block_short_description">Блок. обстрела</string>
   
 </resources>

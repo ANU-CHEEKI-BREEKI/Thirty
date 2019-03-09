@@ -9,6 +9,9 @@ public class GameTipsPanel : MonoBehaviour
     [Header("UI")]
     [SerializeField] TextMeshProUGUI tipsText;
     [SerializeField] RectTransform tipsImagePlace;
+    [Space]
+    [SerializeField] VerticalLayoutGroup vertialLayout;
+    [SerializeField] HorizontalLayoutGroup horisontalLayout;
     [Header("Tips")]
     [SerializeField] SOTip[] tips;
 
@@ -50,13 +53,14 @@ public class GameTipsPanel : MonoBehaviour
         {
             tipsImagePlace.gameObject.SetActive(false);
         }
-
-        if (GetComponent<LayoutGroup>() != null)
-            ResetTipPanelLayout(true);
+           
 
         if (tip.Direction == SOTip.Directions.HORISONTAL)
         {
-            var layout = gameObject.AddComponent<HorizontalLayoutGroup>();
+
+            var layout = horisontalLayout;
+            ResetTipPanelLayout(layout);
+
             layout.childAlignment = TextAnchor.MiddleCenter;
             layout.spacing = 20;
             layout.padding.left = 100;
@@ -70,7 +74,9 @@ public class GameTipsPanel : MonoBehaviour
         }
         else
         {
-            var layout = gameObject.AddComponent<VerticalLayoutGroup>();
+            var layout = vertialLayout;
+            ResetTipPanelLayout(layout);
+
             layout.childAlignment = TextAnchor.MiddleCenter;
             layout.spacing = 10;
             layout.childControlHeight = true;
@@ -82,14 +88,11 @@ public class GameTipsPanel : MonoBehaviour
         }
     }
 
-    public void ResetTipPanelLayout(bool immediate = false)
+    public void ResetTipPanelLayout(LayoutGroup layout)
     {
-        var layout = GetComponent<LayoutGroup>();
-
-        if (immediate)
-            DestroyImmediate(layout);
-        else
-            Destroy(layout);
+        Transform parent = layout.transform;
+        tipsImagePlace.SetParent(parent);
+        tipsText.transform.SetParent(parent);
     }
 
     void SetImage(Sprite image, SOTip.Directions dir, bool preserveAspect = true)

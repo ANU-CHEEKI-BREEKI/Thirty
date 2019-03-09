@@ -1,24 +1,32 @@
 ﻿using UnityEngine;
 
-[CreateAssetMenu(menuName = "SOSquadSpawnerResourse/SquadProperties",  fileName = "SO_SSR_SquadProperties")]
+[CreateAssetMenu(menuName = "SOSquadSpawnerResourse/SquadProperties", fileName = "SO_SSR_SquadProperties")]
 public class SOSquadSpawnerSquadPropertiesResourse : ScriptableObject
 {
-    [SerializeField] AnimationCurve squadLevelDependency;
-    [SerializeField] Squad[] origin;
-    public Squad SquadOrigin
+    [SerializeField] AnimationCurve squadStatsLevelDependency;
+    [SerializeField] Squad originSquad;
+    public Squad SquadOrigin { get { return originSquad; } }
+    [SerializeField] UnitStats minUnitStats;
+    [SerializeField] UnitStats maxUnitStats;
+    public UnitStats UnitStats
     {
         get
         {
-            Squad res = null;
-
-            if (origin.Length > 0)
-            {
-                float t = GameManager.Instance.CurrentLevel.WholeLevelT;
-                int index = Mathf.RoundToInt(squadLevelDependency.Evaluate(t) * (origin.Length - 1));
-                res = origin[index];
-            }
-
-            return res;
+            float level = GameManager.Instance.CurrentLevel.WholeLevelT;
+            float t = squadStatsLevelDependency.Evaluate(level);
+            return new UnitStats
+            (
+                Mathf.Lerp(minUnitStats.Health, maxUnitStats.Health, t),
+                Mathf.Lerp(minUnitStats.Attack, maxUnitStats.Attack, t),
+                Mathf.Lerp(minUnitStats.Defence, maxUnitStats.Defence, t),
+                Mathf.Lerp(minUnitStats.DefenceHalfSector, maxUnitStats.DefenceHalfSector, t),
+                Mathf.Lerp(minUnitStats.Speed, maxUnitStats.Speed, t),
+                Mathf.Lerp(minUnitStats.Acceleration, maxUnitStats.Acceleration, t),
+                Mathf.Lerp(minUnitStats.RotationSpeed, maxUnitStats.RotationSpeed, t),
+                Mathf.Lerp(minUnitStats.ChargeImpact, maxUnitStats.ChargeImpact, t),
+                Mathf.Lerp(minUnitStats.ChargeDeflect, maxUnitStats.ChargeDeflect, t),
+                Mathf.Lerp(minUnitStats.ChargeAddDamage, maxUnitStats.ChargeAddDamage, t)
+            );
         }
     }
     [Space]

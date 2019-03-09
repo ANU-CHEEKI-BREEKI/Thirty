@@ -168,6 +168,28 @@ public class GOTriggerEvent : MonoBehaviour, IPointerClickHandler, IPointerDownH
     public void OnPointerClick(PointerEventData eventData)
     {
         Trigger(null, TriggerType.PCLICK);
+
+        var tr = transform;
+        int ch = tr.childCount;
+        for (int i = 0; i < ch; i++)
+        {
+            var chld = tr.GetChild(i);
+            var pclick = chld.GetComponents<IPointerClickHandler>();
+            if(pclick != null && pclick.Length > 0)
+            {
+                foreach (var pcl in pclick)
+                {
+                    var rectTr = chld.transform as RectTransform;
+                    if(rectTr != null)
+                    {
+                        if (rectTr.rect.Contains(eventData.position))
+                            pcl.OnPointerClick(eventData);
+                    }
+                }
+                  
+            }
+        }
+
     }
 
     public void OnDrop(PointerEventData eventData)

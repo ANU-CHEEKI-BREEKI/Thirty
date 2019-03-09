@@ -85,8 +85,31 @@ public struct UnitStats
     public float ChargeDeflect { get { return chargeDeflect; } }
 
     [SerializeField] [Range(0, 5)] float unitChargeAddDamage;
-
     public float ChargeAddDamage { get { return unitChargeAddDamage; } }
+
+    public UnitStats(float health, float attack, float defence, float defSector, 
+        float speed, float acceleration, float rotSpeed, float chargeImpact, 
+        float chargeDeflect, float addChargeDamage)
+    {
+        this.health = health;
+        this.attack = attack;
+        this.defence = defence;
+        this.defenceHalfSector = defSector;
+        this.speed = speed;
+        this.acceleration = acceleration;
+        this.rotationSpeed = rotSpeed;
+        this.chargeImpact = chargeImpact;
+        this.chargeDeflect = chargeDeflect;
+        this.unitChargeAddDamage = addChargeDamage;
+
+
+        this.equipmentMass = 0;
+        this.armour = 0;
+        this.damage = new Damage();
+        this.defenceGoingThrough = 0;
+        this.missileBlock = 0;
+        this.attackDistance = 0;
+}
 
     public static UnitStats CalcStats(UnitStats baseStats, EquipmentStats[] equipmentStats, FormationStats formationStats)
     {

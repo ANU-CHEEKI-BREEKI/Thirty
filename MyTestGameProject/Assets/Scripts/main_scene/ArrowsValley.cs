@@ -169,7 +169,7 @@ public class ArrowsValley : MonoBehaviour
                     {
                         hittedArrowsCount++;
 
-                        rhit = Physics2D.CircleCast(trigPartc[i].position, 0.5f, Vector2.zero, 0, layerMask);
+                        rhit = Physics2D.CircleCast(trigPartc[i].position, realValleyParticleSystem.trigger.radiusScale, Vector2.zero, 0, layerMask);
 
                         Debug.DrawLine(
                             trigPartc[i].position + new Vector3(0.2f, 0.2f, 0),

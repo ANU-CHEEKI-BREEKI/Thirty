@@ -25,6 +25,14 @@ public abstract class Item : MonoBehaviour
         [Space]
         [SerializeField] DSPlayerScore.Currency currency;
         public DSPlayerScore.Currency Currency { get { return currency; } }
+
+
+        public void ResetIcon()
+        {
+            var eq = Resources.Load<Item>(pathToPrefab);            
+            if(eq != null)
+                icon = eq.MainPropertie.Icon;
+        }
     }
 
     [Header("Item properties")]

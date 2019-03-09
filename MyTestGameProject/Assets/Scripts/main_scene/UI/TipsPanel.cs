@@ -92,13 +92,17 @@ public class TipsPanel : MonoBehaviour, IDragHandler, IBeginDragHandler, IPointe
             itemIcon.gameObject.SetActive(false);
         }
 
-        if(desc.Name != null)
+        if (desc.Name != null)
             name.text = desc.Name;
+        else
+            name.text = string.Empty;
 
         if (desc.Desc != null)
             description.text = desc.Desc;
+        else
+            description.text = string.Empty;
 
-        if(desc.Constraints != null && desc.Constraints.Length > 0)
+        if (desc.Constraints != null && desc.Constraints.Length > 0)
         {
             foreach (var d in desc.Constraints)
             {
@@ -156,10 +160,10 @@ public class TipsPanel : MonoBehaviour, IDragHandler, IBeginDragHandler, IPointe
         else
             secondStatsPanel.gameObject.SetActive(false);
 
-        if (desc.Cost != null)
+        if (desc.Cost.HasValue)
         {
             costPanel.alpha = 1;
-            if (desc.Cost.Value.CostPerOne != null)
+            if (desc.Cost.Value.CostPerOne.HasValue)
             {
                 costPerOneText.gameObject.SetActive(true);
                 costPerOneText.text = desc.Cost.Value.CostPerOne.Value.ToString(StringFormats.intSeparatorNumber, StringFormats.nfi);
@@ -169,7 +173,7 @@ public class TipsPanel : MonoBehaviour, IDragHandler, IBeginDragHandler, IPointe
                 costPerOneText.gameObject.SetActive(false);
             }
 
-            if (desc.Cost.Value.CostAll != null)
+            if (desc.Cost.Value.CostAll.HasValue)
             {
                 costAllText.gameObject.SetActive(true);
                 costAllText.text = desc.Cost.Value.CostAll.Value.ToString(StringFormats.intSeparatorNumber, StringFormats.nfi);
@@ -179,7 +183,7 @@ public class TipsPanel : MonoBehaviour, IDragHandler, IBeginDragHandler, IPointe
                 costAllText.gameObject.SetActive(false);
             }
             
-            if (desc.Cost.Value.CostCurrency != null)
+            if (desc.Cost.Value.CostCurrency.HasValue)
                 currencyIcon.sprite = currency[(int)desc.Cost.Value.CostCurrency];
             else
                 currencyIcon.sprite = currency[(int)DSPlayerScore.Currency.SILVER];
@@ -189,7 +193,7 @@ public class TipsPanel : MonoBehaviour, IDragHandler, IBeginDragHandler, IPointe
             costPanel.alpha = 0;
         }
 
-        if (desc.Condition != null)
+        if (desc.Condition.HasValue)
         {
             conditionText.text = desc.Condition.Value.Name;
             conditionText.color = desc.Condition.Value.Value.GetColor();

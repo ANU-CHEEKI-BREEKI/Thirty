@@ -190,7 +190,11 @@ public class RelativeAnimation : MonoBehaviour
                 while (time <= duration)
                 {
                     time += scaledTime ? Time.deltaTime : Time.unscaledDeltaTime;
-                    float lerpArg = time / duration;
+                    float lerpArg;
+                    if (duration != 0)
+                        lerpArg = time / duration;
+                    else
+                        lerpArg = 1;
 
                     transform.position = Vector3.Lerp(oldPos, newPos, lerpArg);
                     transform.rotation = Quaternion.Lerp(oldRotation, newRotation, lerpArg);

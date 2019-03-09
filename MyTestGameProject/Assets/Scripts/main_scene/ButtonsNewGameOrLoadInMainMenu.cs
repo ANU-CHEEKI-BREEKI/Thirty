@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class ButtonsNewGameOrLoadInMainMenu : MonoBehaviour
 {
-    [SerializeField] GameObject[] buttonNewGame;
     [SerializeField] GameObject[] buttonContinueGame;
 
     private void Awake()
@@ -12,7 +11,8 @@ public class ButtonsNewGameOrLoadInMainMenu : MonoBehaviour
         var progres = GameManager.Instance.SavablePlayerData.PlayerProgress;
 
         foreach (var item in buttonContinueGame)
-            item.SetActive(progres.Squad.IsEmpty == false);
+            if(item != null)
+                item.SetActive(progres.Squad.IsEmpty == false);
 
         progres.OnLoaded += Progres_OnLoaded;
     }
@@ -23,7 +23,8 @@ public class ButtonsNewGameOrLoadInMainMenu : MonoBehaviour
         progres.OnLoaded -= Progres_OnLoaded;
 
         foreach (var item in buttonContinueGame)
-            item.SetActive(progres.Squad.IsEmpty == false);
+            if (item != null)
+                item.SetActive(progres.Squad.IsEmpty == false);
     }
 
     private void OnDestroy()

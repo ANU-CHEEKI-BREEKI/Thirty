@@ -30,7 +30,7 @@
   <string name = "consumable_pilums_light_description">Метательное оружие. Облегченный вариант обычных пилумов. Летят дальше, можно взять с собой больше штук, но урон сквозь доспехи меньше. Можно кинуть только по прямой траектории.</string>
   <string name = "consumable_pilums_heavy_name">Тяжёлые пилумы</string>
   <string name = "consumable_pilums_heavy_description">Метательное оружие. Намного тяжелее обычных пилумов. Летят на меньшее расстояние, можно взять меньше штук, но урон сквозь доспехи намного больше. Можно кинуть только по прямой траектории.</string>
-  <string name = "consumable_pilums_perfect_name">Калёные острые сбалансированные пилумы</string>
+  <string name = "consumable_pilums_perfect_name">Сбалансированные пилумы</string>
   <string name = "consumable_pilums_perfect_description">Метательное оружие с закаленным и заточенным наконечником. Прошивает броню насквозь. Можно кинуть только по прямой траектории.</string>
 
   <string name = "skill_upgrade_arrowWalley_startunlock_name">Созвать ополчение</string>

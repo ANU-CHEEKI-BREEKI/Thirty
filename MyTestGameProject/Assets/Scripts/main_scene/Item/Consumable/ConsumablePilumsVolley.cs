@@ -25,13 +25,13 @@ public class ConsumablePilumsVolley : Consumable
         [SerializeField] float distance;        
         [SerializeField] float cooldown;
         [SerializeField] int maxCount;
-        [SerializeField] int costPerOne;
+        [SerializeField] int costAllStack;
         [SerializeField] float delay;
         
 
         public float Cooldown { get { return cooldown; } }
         
-        public int Cost { get { return costPerOne; } }
+        public int Cost { get { return costAllStack; } }
 
         public int MaxCount { get { return maxCount; } }
 
@@ -53,7 +53,7 @@ public class ConsumablePilumsVolley : Consumable
             };
 
             d.Stats = stats;
-            d.Cost = new Description.CostInfo() { CostPerOne = costPerOne };
+            d.Cost = new Description.CostInfo() { CostAll = costAllStack };
 
             return d;
         }        

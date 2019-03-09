@@ -249,6 +249,7 @@
     <Compile Include="Assets\GooglePlayGames\Platforms\TokenClient.cs" />
     <Compile Include="Assets\GooglePlayGames\PluginVersion.cs" />
     <Compile Include="Assets\GPSConstants\GPSConstants.cs" />
+    <Compile Include="Assets\InvokeButtonClick.cs" />
     <Compile Include="Assets\poly.cs" />
     <Compile Include="Assets\Scripts\main_scene\AddInfoPanelToSquad.cs" />
     <Compile Include="Assets\Scripts\main_scene\ArrowsValley.cs" />
@@ -513,6 +514,8 @@
     <Compile Include="Assets\Scripts\Tutorial\MarketTutorial\DisableOnPlyerInvConsumableChanged.cs" />
     <Compile Include="Assets\Scripts\Tutorial\MarketTutorial\DisableOnPlyerInvShieldChanged.cs" />
     <Compile Include="Assets\Scripts\Tutorial\MarketTutorial\SetAnimationTargetPositonAsTooltipActionButtoAtIndex.cs" />
+    <Compile Include="Assets\Scripts\Tutorial\ScaleByScreenSize.cs" />
+    <Compile Include="Assets\Scripts\Tutorial\SetPositionAsShieldItem.cs" />
     <Compile Include="Assets\Scripts\Tutorial\SpawnOnTriggerStay.cs" />
     <Compile Include="Assets\Scripts\Tutorial\SquadGoToThisTransform.cs" />
     <Compile Include="Assets\Scripts\Tutorial\SquadTriggerInitiator.cs" />

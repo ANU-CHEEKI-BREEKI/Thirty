@@ -36,5 +36,8 @@ public class DeathScreen : MonoBehaviour
             100
         );        
         FadeScreen.FadeOn(cg, 2, this, () => { cg.blocksRaycasts = true; GameManager.Instance.PauseGame(); });
+
+        //когда умерает отряд, даём нафармленый опыт. а то уж слишком хардкорно
+        GameManager.Instance.SavablePlayerData.PlayerProgress.Score.ApplyTempValues(DSPlayerScore.Currency.EXPIRIENCE);
     }
 }

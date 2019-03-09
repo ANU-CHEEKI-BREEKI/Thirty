@@ -11,7 +11,13 @@ public class PlayerProgress : IResetable, ITempValuesApplyable, ISavable, IMerge
     [SerializeField] DSPlayerScore score;
     [SerializeField] DSUnitStats stats;
     [SerializeField] DSPlayerSkills skills;
+    /// <summary>
+    /// доступная в магазине экипировка
+    /// </summary>
     [SerializeField] DSPlayerEquipment equipment;
+    /// <summary>
+    /// кол-во солдат, хп, инвентарь
+    /// </summary>
     [SerializeField] DSPlayerSquad squad;
     [SerializeField] LevelInfo level; 
 

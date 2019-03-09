@@ -5,15 +5,17 @@ using UnityEngine;
 [Serializable]
 public class DSFlags : IResetable, IMergeable
 {
-    [SerializeField] bool isFirstStartGame;
-    [SerializeField] bool needTraining;
+    [SerializeField] OnceFlag isDefaultLanguageNotSelected;
+    [SerializeField] OnceFlag isTrainingStartedAtLeastOnce;
+    [SerializeField] OnceFlag isTutorialCompleted;
     //для туториала костыль
     [SerializeField] GameManager.SceneIndex avalaibleTutorialLevel;
-
-    public bool IsFirstStartGame { get { return isFirstStartGame; } set { isFirstStartGame = value; } }
-    public bool NeedTraining { get { return needTraining; } set { needTraining = value; } }
+        
+    public OnceFlag IsDefaultLanguageSelected { get { return isDefaultLanguageNotSelected; } set { isDefaultLanguageNotSelected = value; } }
+    public OnceFlag IsTrainingStartedAtLeastOnce { get { return isTrainingStartedAtLeastOnce; } set { isTrainingStartedAtLeastOnce = value; } }
     public GameManager.SceneIndex AvalaibleTutorialLevel { get { return avalaibleTutorialLevel; } set { avalaibleTutorialLevel = value; } }
-    
+    public OnceFlag IsTutorialCompleted { get { return isTutorialCompleted; } set { isTutorialCompleted = value; } }
+
     [SerializeField] MarketHelp marketHelp;
     public MarketHelp MarketHelpFlags { get { return marketHelp; } }
 
@@ -24,8 +26,9 @@ public class DSFlags : IResetable, IMergeable
 
     public void Reset()
     {
-        isFirstStartGame = true;
-        needTraining = true;
+        isDefaultLanguageNotSelected = new OnceFlag();
+        isTrainingStartedAtLeastOnce = new OnceFlag();
+        isTutorialCompleted = new OnceFlag();
 
         marketHelp = new MarketHelp();
 
@@ -36,11 +39,31 @@ public class DSFlags : IResetable, IMergeable
     {
         var d = data as DSFlags;
 
-        isFirstStartGame = d.isFirstStartGame || isFirstStartGame;
-        needTraining = d.needTraining || needTraining;
+        isDefaultLanguageNotSelected.Merge(d.isDefaultLanguageNotSelected);
+        isTrainingStartedAtLeastOnce.Merge(d.isTrainingStartedAtLeastOnce);
+        isTutorialCompleted.Merge(d.isTutorialCompleted);
 
         if (d.avalaibleTutorialLevel > avalaibleTutorialLevel)
             avalaibleTutorialLevel = d.avalaibleTutorialLevel;
+    }
+
+    [Serializable]
+    public class OnceFlag : IMergeable
+    {
+        [SerializeField] bool flag;
+        [SerializeField] bool isOlreadySet;
+
+        public bool Flag { get { return flag; } set { flag = value; isOlreadySet = true; } }
+        public bool IsOlreadySet { get { return isOlreadySet; } }
+
+        public void Merge(object data)
+        {
+            OnceFlag fl = data as OnceFlag;
+            if (fl == null) return;
+
+            flag = flag || fl.flag;
+            isOlreadySet = isOlreadySet || fl.isOlreadySet;
+        }
     }
 
     [Serializable]
@@ -57,5 +80,7 @@ public class DSFlags : IResetable, IMergeable
         public bool needStudiesHelp = true;
         public bool needTrainingwHelp = true;
         public bool needDonateHelp = true;
+
+        
     }
 }

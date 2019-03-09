@@ -17,6 +17,7 @@
   <string name = "training">Обучение</string>
   <string name = "developers">Разработчики</string>
   <string name = "understud">Понял</string>
+  <string name = "save_and_quit">Сохранить и выйти</string>
 
   <string name = "video_settings">Видео</string>
   <string name = "audio_settings">Звук</string>
@@ -83,9 +84,11 @@
   <string name = "executable_use_type_drag_direction">Перетянуть в направлении</string>
 
   <string name = "your_money_and_exp">Заработанные деньги и очки опыта</string>
+  <string name = "your_exp">Заработанный опыт:</string>
   <string name = "allowed_equipmant">Открытое снаряжение:</string>
   <string name = "allowed_equipmant_tooltip">Теперь данное снаряжение будет всегда доступно для покупки в магазине</string>
-  <string name = "allowed_equipmant_none_tooltip">Вы не открыли нового снаряжения :(</string>
+  <string name = "allowed_equipmant_none_tooltip">Вы не открыли нового снаряжения :(
+Чтобы новое снаряжение стало лоступно для покупки в магазине, принесите торговцу его образец</string>
   
 
   <string name = "toMainMenu">В главное меню</string>

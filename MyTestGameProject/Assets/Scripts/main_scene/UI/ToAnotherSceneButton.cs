@@ -1,6 +1,8 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 [RequireComponent(typeof(Button))]
@@ -12,7 +14,7 @@ public class ToAnotherSceneButton : MonoBehaviour
     public GameManager.SceneIndex SceneIndex { get { return scene; } }
 
     //КОСТЫЛЬ ЕБАННЫЙ
-    [SerializeField] string commandToGamaManager;
+    [SerializeField] string commandToGameManager;
 
     private void Start()
     {
@@ -23,7 +25,7 @@ public class ToAnotherSceneButton : MonoBehaviour
     void OnClick()
     {
         bool confirm = needConfirm;
-        if (needConfirm && commandToGamaManager == "new_game")
+        if (needConfirm && commandToGameManager == "new_game")
             confirm = !GameManager.Instance.SavablePlayerData.PlayerProgress.Squad.IsEmpty;
 
         if (confirm)
@@ -49,6 +51,7 @@ public class ToAnotherSceneButton : MonoBehaviour
 
     void FadeOn()
     {
+        DialogBox.Instance.Hide();
         if (FadeScreen.Instance != null)
         {
             FadeScreen.Instance.OnFadeOn += LoadLevel;
@@ -70,7 +73,7 @@ public class ToAnotherSceneButton : MonoBehaviour
                 mes = LocalizedStrings.quit_to_main_menu_assert;
                 break;
             case GameManager.SceneIndex.MARKET:
-                if (commandToGamaManager == "new_game")
+                if (commandToGameManager == "new_game")
                 {
                     title = LocalizedStrings.start_new_game_title;
                     mes = LocalizedStrings.start_new_game_assert;
@@ -81,7 +84,7 @@ public class ToAnotherSceneButton : MonoBehaviour
 
     void LoadLevel()
     {
-        GameManager.Instance.command = commandToGamaManager;
+        GameManager.Instance.command = commandToGameManager;
 
         switch (scene)
         {
@@ -89,7 +92,89 @@ public class ToAnotherSceneButton : MonoBehaviour
                 GameManager.Instance.LoadMainMenu();
                 break;
             case GameManager.SceneIndex.MARKET:
-                GameManager.Instance.LoadMarket();
+                if (commandToGameManager == "new_game")
+                {
+                    Action actOnYes = null;
+                    Action actOnNo = null;
+                    string title = string.Empty;
+                    string message = string.Empty;
+
+                    if (!GameManager.Instance.SavablePlayerData.PlayerProgress.Flags.IsTrainingStartedAtLeastOnce.IsOlreadySet &&
+                    !GameManager.Instance.SavablePlayerData.PlayerProgress.Flags.IsTrainingStartedAtLeastOnce.Flag)
+
+                    {
+                        //тут предлагаем туториал.                        
+                        title = "[nl]Похоже, вы запустили игру вперые.";
+                        message = "[nl]Похоже, вы запустили игру вперые. Желаете пройти обучение основам?";
+                        actOnYes = () =>
+                        {
+                            DialogBox.Instance.Hide();
+                            GameManager.Instance.LoadTutorialLevel(GameManager.SceneIndex.LEVEL_TUTORIAL_1);
+                            GameManager.Instance.SavablePlayerData.PlayerProgress.Flags.IsTrainingStartedAtLeastOnce.Flag = true;
+                        };
+                        actOnNo = () =>
+                        {
+                            DialogBox.Instance.Hide();
+                            GameManager.Instance.SavablePlayerData.PlayerProgress.Flags.IsTrainingStartedAtLeastOnce.Flag = false;
+                            LoadLevel();
+                        };
+                    }
+                    else if(!GameManager.Instance.SavablePlayerData.PlayerProgress.Flags.IsTutorialCompleted.IsOlreadySet &&
+                        !GameManager.Instance.SavablePlayerData.PlayerProgress.Flags.IsTutorialCompleted.Flag)
+                    {
+                        //тут предлагаем допройти туториал.                        
+                        title = "[nl]Похоже, вы не закончили обучение.";
+                        message = "[nl]Похоже, вы не закончили обучение. Желаете допройти обучение основам?";
+                        actOnYes = () =>
+                        {
+                            DialogBox.Instance.Hide();
+                            GameManager.Instance.LoadTutorialLevel(GameManager.Instance.SavablePlayerData.PlayerProgress.Flags.AvalaibleTutorialLevel);                            
+                        };
+                        actOnNo = () =>
+                        {
+                            DialogBox.Instance.Hide();
+                            GameManager.Instance.SavablePlayerData.PlayerProgress.Flags.IsTutorialCompleted.Flag = false;
+                            LoadLevel();
+                        };
+                    }
+
+                    if (actOnYes != null)
+                    {
+                        DialogBox.Instance
+                           .SetTitle(title)
+                           .SetPrefButtonHeight(80)
+                           .SetText(message)
+                           .AddButton(LocalizedStrings.yes, () =>
+                           {
+                               if (FadeScreen.Instance != null)
+                               {
+                                   FadeScreen.Instance.OnFadeOn += actOnYes;
+                                   FadeScreen.Instance.FadeOn(0.5f);
+                               }
+                               else
+                                   actOnYes.Invoke();
+                           })
+                           .AddButton(LocalizedStrings.no, () =>
+                           {
+                               if (FadeScreen.Instance != null)
+                               {
+                                   FadeScreen.Instance.OnFadeOn += actOnNo;
+                                   FadeScreen.Instance.FadeOn(0.5f);
+                               }
+                               else
+                                   actOnNo.Invoke();
+                           })
+                           .Show();
+                    }
+                    else
+                    {
+                        GameManager.Instance.LoadMarket();
+                    }
+                }
+                else
+                {
+                    GameManager.Instance.LoadMarket();
+                }
                 break;
             case GameManager.SceneIndex.LEVEL:
                 GameManager.Instance.LoadNextLevel();
@@ -99,7 +184,7 @@ public class ToAnotherSceneButton : MonoBehaviour
                 break;
             case GameManager.SceneIndex.LEVEL_TUTORIAL_1:
             case GameManager.SceneIndex.LEVEL_TUTORIAL_2:
-            case GameManager.SceneIndex.LEVEL_TUTORIAL_3:        
+            case GameManager.SceneIndex.LEVEL_TUTORIAL_3:
                 GameManager.Instance.LoadTutorialLevel(scene);
                 break;
             default:

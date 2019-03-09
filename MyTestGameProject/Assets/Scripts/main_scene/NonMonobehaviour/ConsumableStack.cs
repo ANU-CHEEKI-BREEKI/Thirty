@@ -122,17 +122,37 @@ public class ConsumableStack : AExecutableStack, IStackCountConstraintable, IDes
             consubableDesc.Constraints = statsDesc.Constraints;
             consubableDesc.Stats = statsDesc.Stats;
 
-            if (consumableStats is IStackCountConstraintable 
-            && Count != (consumableStats as IStackCountConstraintable).MaxCount 
+            if (consumableStats is IStackCountConstraintable
+            && Count != (consumableStats as IStackCountConstraintable).MaxCount
             && consumable.MainPropertie.Currency != DSPlayerScore.Currency.GOLD)
                 consubableDesc.Cost = null;
             else
+            {
+                int? perOne = null;
+                int? all = null;
+                if (statsDesc.Cost.Value.CostPerOne.HasValue && statsDesc.Cost.Value.CostAll.HasValue)
+                {
+                    perOne = statsDesc.Cost.Value.CostPerOne;
+                    all = statsDesc.Cost.Value.CostAll;
+                }
+                else if (!statsDesc.Cost.Value.CostPerOne.HasValue && statsDesc.Cost.Value.CostAll.HasValue)
+                {
+                    perOne = statsDesc.Cost.Value.CostAll / Count;
+                    all = statsDesc.Cost.Value.CostAll;
+                }
+                else if (statsDesc.Cost.Value.CostPerOne.HasValue && !statsDesc.Cost.Value.CostAll.HasValue)
+                {
+                    perOne = statsDesc.Cost.Value.CostPerOne;
+                    all = statsDesc.Cost.Value.CostPerOne * Count;
+                }
+
                 consubableDesc.Cost = new Description.CostInfo()
                 {
-                    CostPerOne = statsDesc.Cost.Value.CostPerOne,
-                    CostAll = statsDesc.Cost.Value.CostPerOne * Count,
+                    CostPerOne = perOne,
+                    CostAll = all,
                     CostCurrency = consumable.MainPropertie.Currency
                 };
+            }
         }
         consubableDesc.Icon = consumable.MainPropertie.Icon;
         consubableDesc.UseType = consumable.UseType.GetNameLocalise();

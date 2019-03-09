@@ -4,7 +4,7 @@ using UnityEngine;
 [Serializable]
 public class DSPlayerScore : ITempValuesApplyable, IResetable, ILoadedDataApplyable, IMergeable
 {
-    public enum Currency { SILVER, GOLD, EXPIRIENCE }
+    public enum Currency { SILVER, GOLD, EXPIRIENCE, ANY}
 
     public Score gold;
     public Score silver;
@@ -25,21 +25,59 @@ public class DSPlayerScore : ITempValuesApplyable, IResetable, ILoadedDataApplya
         tempExpirience = new Score();
     }
 
+    public void ApplyTempValues()
+    {
+        ApplyTempValues(Currency.ANY);
+    }
+
     /// <summary>
     /// Применяет
     /// </summary>
-    public void ApplyTempValues()
+    public void ApplyTempValues(Currency currency)
     {
-        gold.Value += tempGold.Value;
-        silver.Value += tempSilver.Value;
-        expirience.Value += tempExpirience.Value;
+        switch (currency)
+        {
+            case Currency.SILVER:
+                silver.Value += tempSilver.Value;
+                break;
+            case Currency.GOLD:
+                gold.Value += tempGold.Value;
+                break;
+            case Currency.EXPIRIENCE:
+                expirience.Value += tempExpirience.Value;
+                break;
+            case Currency.ANY:
+                gold.Value += tempGold.Value;
+                silver.Value += tempSilver.Value;
+                expirience.Value += tempExpirience.Value;
+                break;
+        }
     }
 
     public void ResetTempValues()
     {
-        tempGold.Value = 0;
-        tempSilver.Value = 0;
-        tempExpirience.Value = 0;
+        ResetTempValues(Currency.ANY);
+    }
+
+    public void ResetTempValues(Currency currency)
+    {
+        switch (currency)
+        {
+            case Currency.SILVER:
+                tempSilver.Value = 0;
+                break;
+            case Currency.GOLD:
+                tempGold.Value = 0;
+                break;
+            case Currency.EXPIRIENCE:
+                tempExpirience.Value = 0;
+                break;
+            case Currency.ANY:
+                tempGold.Value = 0;
+                tempSilver.Value = 0;
+                tempExpirience.Value = 0;
+                break;
+        }
     }
 
     public void Reset()

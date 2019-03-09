@@ -75,6 +75,8 @@ public class DSPlayerSquad : IResetable, ILoadedDataApplyable
         secondConsumable.ApplyLoadedData(d.secondConsumable);
 
         inventory = d.inventory;
+        
+
         count = d.count;
         health = d.health;
 
@@ -84,6 +86,40 @@ public class DSPlayerSquad : IResetable, ILoadedDataApplyable
         weaponStack = new EquipmentStack(d.Weapon);
 
         isEmpty = d.isEmpty;
+
+        //призагрузке надо пройтись по спрайтам и обновить. так как они сериальзуются по id а не по содержимому
+        ResetIcons();
+    }
+    
+    void ResetIcons()
+    {
+        //призагрузке надо пройтись по спрайтам и обновить. так как они сериальзуются по id а не по содержимому
+        foreach (var stack in inventory)
+            ResetIcon(stack);
+
+        ResetIcon(helmetStack);
+        ResetIcon(bodyStack);
+        ResetIcon(shieldStack);
+        ResetIcon(weaponStack);
+
+        ResetIcon(firstConsumable);
+        ResetIcon(secondConsumable);
+    }
+
+    void ResetIcon(EquipmentStack stack)
+    {
+        var mp = stack.EquipmentMainProperties;
+        mp.ResetIcon();
+        stack.EquipmentMainProperties = mp;
+    }
+
+    void ResetIcon(ConsumableStack stack)
+    {
+        if (stack.Consumable == null) return;
+        
+        var mp = stack.Consumable.MainPropertie;
+        mp.ResetIcon();
+        stack.Consumable.MainPropertie = mp;
     }
 
     public void Reset()
@@ -120,6 +156,9 @@ public class DSPlayerSquad : IResetable, ILoadedDataApplyable
         weaponStack = new EquipmentStack(d.Weapon);
         firstConsumable = new ConsumableStack(d.FirstConsumable);
         secondConsumable = new ConsumableStack(d.SecondConsumable);
+
+        //призагрузке надо пройтись по спрайтам и обновить. так как они сериальзуются по id а не по содержимому
+        ResetIcons();
     }
 
 }

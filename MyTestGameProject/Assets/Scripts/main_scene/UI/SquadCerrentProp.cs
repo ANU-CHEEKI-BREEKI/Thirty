@@ -110,8 +110,7 @@ public class SquadCerrentProp : MonoBehaviour
         var ind = weightIcons[0].transform.parent.GetComponent<SquadPropertyIndicator>();
         var d = new Description();
         d.Name = w.GetNameLocalize();
-        d.Desc = "Разная местность по разному влияет на отряды рязной тяжести.\r\n" +
-            "Будте внимательны, местность может как дать вам преимущество, так и стать вашим местом захоронения.";
+        d.Desc = LocalizedStrings.weight_description;
         ind.Present(null, d);
 
         Squad_OnModifiersListChanged(squad.StatsModifiers);

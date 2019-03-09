@@ -38,6 +38,7 @@ public class SquadSpawner : MonoBehaviour
         squad.PositionsTransform.position = transform.position;
         squad.PositionsTransform.rotation = rotation;
         squad.EndLookRotation = rotation;
+        squad.DefaultUnitStats = squadProperties.UnitStats;
 
         var inv = squad.Inventory;
         //equipment

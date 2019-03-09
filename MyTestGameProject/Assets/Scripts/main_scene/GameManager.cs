@@ -223,10 +223,10 @@ public class GameManager : MonoBehaviour
 
                     if (SceneManager.GetActiveScene().buildIndex == (int)SceneIndex.START_SCREEN)
                     {
-                        if (pr.Flags.IsFirstStartGame)
+                        if (!pr.Flags.IsDefaultLanguageSelected.IsOlreadySet && !pr.Flags.IsDefaultLanguageSelected.Flag)
                         {
                             SelectLanguageFirstTime.Instance.gameObject.SetActive(true);
-                            pr.Flags.IsFirstStartGame = false;
+                            pr.Flags.IsDefaultLanguageSelected.Flag = true;
                         }
                         else
                         {

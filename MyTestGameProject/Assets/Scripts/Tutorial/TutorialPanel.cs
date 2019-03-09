@@ -99,7 +99,6 @@ public class TutorialPanel : MonoBehaviour
 
         buttonOk?.onClick.AddListener(() =>
             {
-                tipsPanel.ResetTipPanelLayout();
                 GameManager.Instance.ResumeGame();
                 Hide();
             }
@@ -154,7 +153,6 @@ public class TutorialPanel : MonoBehaviour
             }
         }
 
-        tipsPanel?.ResetTipPanelLayout();
         Hide();       
     }
 
@@ -249,9 +247,7 @@ public class TutorialPanel : MonoBehaviour
             panelCanvasGroup.alpha = 0;
             panelCanvasGroup.blocksRaycasts = false;
         }
-
-        tipsPanel?.ResetTipPanelLayout();
-
+        
         if (lastTip.screenTextDublicate)
         {
             if (lastTip.tip.IsLocalisedText)
@@ -259,6 +255,7 @@ public class TutorialPanel : MonoBehaviour
             else
                 currentOrderText.text = lastTip.tip.TipText;
 
+            currentOrderText.text = "<font=\"PFHellenicaSerifPro-Regular SDF\"><mark=#000000>" + currentOrderText.text;
             currentOrderText.enabled = true;
         }
 

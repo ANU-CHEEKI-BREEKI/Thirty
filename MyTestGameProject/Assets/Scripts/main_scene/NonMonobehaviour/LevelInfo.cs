@@ -5,7 +5,10 @@ using UnityEngine;
 [Serializable]
 public class LevelInfo : IResetable, IMergeable
 {
-    const int MAX_LEVEL = 3;
+    /// <summary>
+    /// Максимальное количество уровней на одном типе уровней
+    /// </summary>
+    const int MAX_LEVEL = 4;
 
     [SerializeField] Ground.GroundType groundType = Ground.GroundType.GRASSLAND;
     [SerializeField] int level;
@@ -71,7 +74,7 @@ public class LevelInfo : IResetable, IMergeable
     {
         WholeLevel++;
         Level++;
-        if (Level >= MaxLevel)
+        if (Level > MaxLevel)
         {
             var v = (Enum.GetValues(typeof(Ground.GroundType)) as Ground.GroundType[]).ToList();
             var i = v.IndexOf(GroundType);

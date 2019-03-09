@@ -105,6 +105,7 @@ public sealed class LocalizedStrings
     public static string training { get; private set; }
     public static string developers { get; private set; }
     public static string understud { get; private set; }
+    public static string save_and_quit { get; private set; }
     public static string video_settings { get; private set; }
     public static string audio_settings { get; private set; }
     public static string progress_settings { get; private set; }
@@ -154,6 +155,7 @@ public sealed class LocalizedStrings
     public static string executable_use_type_drag_drop_place { get; private set; }
     public static string executable_use_type_drag_direction { get; private set; }
     public static string your_money_and_exp { get; private set; }
+    public static string your_exp { get; private set; }
     public static string allowed_equipmant { get; private set; }
     public static string allowed_equipmant_tooltip { get; private set; }
     public static string allowed_equipmant_none_tooltip { get; private set; }
@@ -318,27 +320,49 @@ public sealed class LocalizedStrings
 #region stats
 
     public static string health { get; private set; }
+    public static string health_description { get; private set; }
     public static string squadHealth { get; private set; }
+    public static string squadHealth_description { get; private set; }
     public static string armour { get; private set; }
+    public static string armour_description { get; private set; }
     public static string baseDamage { get; private set; }
+    public static string baseDamage_description { get; private set; }
     public static string armourDamage { get; private set; }
+    public static string armourDamage_description { get; private set; }
     public static string attack { get; private set; }
+    public static string attack_description { get; private set; }
     public static string defence { get; private set; }
+    public static string defence_description { get; private set; }
     public static string defenceHalfSector { get; private set; }
+    public static string defenceHalfSector_description { get; private set; }
     public static string missileBlock { get; private set; }
+    public static string missileBlock_description { get; private set; }
     public static string attackDistance { get; private set; }
+    public static string attackDistance_description { get; private set; }
     public static string speed { get; private set; }
+    public static string speed_description { get; private set; }
     public static string acceleration { get; private set; }
+    public static string acceleration_description { get; private set; }
     public static string rotationSpeed { get; private set; }
+    public static string rotationSpeed_description { get; private set; }
     public static string chargeImpact { get; private set; }
+    public static string chargeImpact_description { get; private set; }
     public static string chargeDeflect { get; private set; }
+    public static string chargeDeflect_description { get; private set; }
     public static string chargeDamage { get; private set; }
+    public static string chargeDamage_description { get; private set; }
     public static string defenceGoingThrough { get; private set; }
+    public static string defenceGoingThrough_description { get; private set; }
     public static string flyingSpeed { get; private set; }
+    public static string flyingSpeed_description { get; private set; }
     public static string weight { get; private set; }
+    public static string weight_description { get; private set; }
     public static string weapon_damage { get; private set; }
+    public static string weapon_damage_description { get; private set; }
     public static string armour_armour { get; private set; }
+    public static string armour_armour_description { get; private set; }
     public static string missile_block_short { get; private set; }
+    public static string missile_block_short_description { get; private set; }
 
 #endregion stats
 #region terrain
