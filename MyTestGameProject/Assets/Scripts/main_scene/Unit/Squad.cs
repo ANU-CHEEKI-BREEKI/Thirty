@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Text;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.SceneManagement;
@@ -165,6 +166,7 @@ public class Squad : MonoBehaviour
     [SerializeField] [Range(0, 20)] float distanceToUnionWithSquad;
     public float DistanceToUnionWithSquad { get { return distanceToUnionWithSquad; } }
     [Space]
+    [ContextMenuItem("ResetMainProps", "ResetMainProps")]
     [SerializeField] Inventory inventory;
     public Inventory Inventory { get { return inventory; } }
     [Header("Squad current properties")]
@@ -1410,5 +1412,10 @@ public class Squad : MonoBehaviour
 
         for (int i = 0; i < squadToCopy.Health.Length; i++)
             tl[i].Unit.Health = squadToCopy.Health[i];
+    }
+
+    void ResetMainProps()
+    {
+        inventory.ResetMainProps();
     }
 }

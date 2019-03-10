@@ -307,36 +307,6 @@ public class TutorialPanel : MonoBehaviour
             lastTip = ttip;
     }
 
-    [ContextMenu("RemoveUselessItems")]
-    void RemoveUselessItems()
-    {
-        int cntToRemove = 0;
-        for (int i = 0; i < triggerTips.Length; i++)
-        {
-            if(triggerTips[i].tip == null)
-            {
-                cntToRemove++;
-                for (int j = i; j < triggerTips.Length - 1; j++)
-                {
-                    triggerTips[j] = triggerTips[j + 1];
-                    triggerTips[j].id--;
-
-                    if (triggerTips[j].needExequteAnotherTriggerAftarThat && triggerTips[j].anotherTriggerIndex >= i)
-                        triggerTips[j].anotherTriggerIndex--;
-                    else
-                        triggerTips[j].anotherTriggerIndex = 0;
-
-                    if (triggerTips[j].requiresExequtePreviousTrigger && triggerTips[j].previousTriggerIndex >= i)
-                        triggerTips[j].previousTriggerIndex--;
-                    else
-                        triggerTips[j].previousTriggerIndex = 0;
-                }
-            }
-        }
-        Array.Resize(ref triggerTips, triggerTips.Length - cntToRemove);
-        Debug.Log("Было удалено " + cntToRemove + " штук бесполезных итемов массива.");
-    }
-
     [Serializable]
     struct TriggerTip
     {

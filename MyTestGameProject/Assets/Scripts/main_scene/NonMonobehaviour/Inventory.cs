@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 [Serializable]
@@ -241,5 +242,13 @@ public class Inventory
             else
                 inventory[index] = new EquipmentStack(value);
         }
+    }
+
+    public void ResetMainProps()
+    {
+        firstSkill.ResetMainProperties();
+        secondSkill.ResetMainProperties();
+        firstConsumable.ResetMainProperties();
+        secondConsumable.ResetMainProperties();
     }
 }

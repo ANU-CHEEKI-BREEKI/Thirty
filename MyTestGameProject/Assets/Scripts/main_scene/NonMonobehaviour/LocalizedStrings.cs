@@ -447,6 +447,7 @@ public sealed class LocalizedStrings
     public static string tutorial_tip_lvl1_tutorial_welcome { get; private set; }
     public static string tutorial_tip_lvl2_charge_how_to_use { get; private set; }
     public static string tutorial_tip_lvl2_charge_pikes { get; private set; }
+    public static string tutorial_tip_lvl2_how_to_kill_pikes { get; private set; }
     public static string tutorial_tip_lvl2_congratulations { get; private set; }
     public static string tutorial_tip_lvl2_consumables { get; private set; }
     public static string tutorial_tip_lvl2_destroy_enemy_on_path { get; private set; }

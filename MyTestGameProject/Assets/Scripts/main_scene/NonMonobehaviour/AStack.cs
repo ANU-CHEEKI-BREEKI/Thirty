@@ -17,6 +17,13 @@ public abstract class AStack
         }
     }
 
+    public void ResetMainProperties()
+    {
+        if (Item != null)
+            mainProperties = Item.MainPropertie;
+    }
+
+
     /// <summary>
     /// Только в тех случаях, когда используется AStack !!!!!
     /// </summary>
