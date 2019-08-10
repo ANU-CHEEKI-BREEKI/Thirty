@@ -79,6 +79,8 @@ public class DropToEquipment : ADropToMe
                 return false;
             }
         }
+        
+        PlayUiEffectForEquipmant();
 
         return true;
     }

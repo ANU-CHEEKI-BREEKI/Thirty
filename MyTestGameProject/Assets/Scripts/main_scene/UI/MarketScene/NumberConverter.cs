@@ -16,10 +16,15 @@ public class NumberConverter : MonoBehaviour
     [SerializeField] TextMeshProUGUI textCurrentValueConvertedSelected;
     [SerializeField] Slider slider;
     [SerializeField] Button btnOk;
+    [Space]
+    [SerializeField] AudioSource uiEffect;
+    [SerializeField] float uiEffectDuration = 0.2f;
+    Coroutine uiEffCor = null;
 
     [Header("Script")]
     [SerializeField] int valueConvertFrom;
     [SerializeField] int valueConvertTo;
+    
 
     float k;
 
@@ -75,6 +80,15 @@ public class NumberConverter : MonoBehaviour
 
     void OnSliderValChanged(float val)
     {
+        if (uiEffect != null)
+        {
+            if (uiEffCor != null)
+                StopCoroutine(uiEffCor);
+            else
+                uiEffect.Play();
+            uiEffCor = StartCoroutine(UiEffect());
+        }
+
         int ost = (int)val % valueConvertFrom;
         if (ost != 0)
         {
@@ -87,6 +101,18 @@ public class NumberConverter : MonoBehaviour
         textCurrentValueConvertedSelected.text = convertedValue.ToString(format);
     }
 
+    IEnumerator UiEffect()
+    {
+        yield return new WaitForSecondsRealtime(uiEffectDuration);
+        uiEffect.Stop();
+        uiEffCor = null;
+    }
+
+    private void OnDestroy()
+    {
+        StopAllCoroutines();
+
+    }
     float Convert(float val)
     {
         return val * k;

@@ -103,6 +103,15 @@ public class SOSoundContainer : ScriptableObject
             }
         }
 
+        [SerializeField] AudioClip[] missHit;
+        public AudioClip[] MissHit
+        {
+            get
+            {
+                return missHit;
+            }
+        }
+
         [SerializeField] AudioClip charge;
         public AudioClip Charge
         {
@@ -118,6 +127,33 @@ public class SOSoundContainer : ScriptableObject
             get
             {
                 return death;
+            }
+        }
+
+        [SerializeField] AudioClip[] walkGrass;
+        public AudioClip[] WalkGrass
+        {
+            get
+            {
+                return walkGrass;
+            }
+        }
+
+        [SerializeField] AudioClip[] walkDirt;
+        public AudioClip[] WalkDirt
+        {
+            get
+            {
+                return walkDirt;
+            }
+        }
+
+        [SerializeField] AudioClip[] walkWater;
+        public AudioClip[] WalkWater
+        {
+            get
+            {
+                return walkWater;
             }
         }
 
@@ -144,12 +180,24 @@ public class SOSoundContainer : ScriptableObject
     public struct UIAudioClips
     {
         [SerializeField] AudioClip buttonClick;
-        public AudioClip ButtonClick
-        {
-            get
-            {
-                return buttonClick;
-            }
-        }
+        public AudioClip ButtonClick { get { return buttonClick; } }
+
+        [SerializeField] AudioClip sliderValChanged;
+        public AudioClip SliderValChanged { get { return sliderValChanged; } }
+
+        [SerializeField] AudioClip windowOpen;
+        public AudioClip WindowOpen { get { return windowOpen; } }
+
+        [SerializeField] AudioClip windowClosed;
+        public AudioClip WindowClosed { get { return windowClosed; } }
+
+        [SerializeField] AudioClip tabChanged;
+        public AudioClip TabChanged { get { return tabChanged; } }
+
+        [SerializeField] AudioClip coins;
+        public AudioClip Coins { get { return coins; } }
+
+        [SerializeField] AudioClip equipmant;
+        public AudioClip Equipmant { get { return equipmant; } }
     }
 }

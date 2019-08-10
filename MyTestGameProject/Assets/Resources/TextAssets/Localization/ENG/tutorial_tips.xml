@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  
+  <string name="tutorial_tip_death_try_to_follow_the_advices">Try to follow the tips and you will definitely manage!</string>
+    
+  <string name="tutorial_tip_lvl1_barricades">Barricades and wooden stakes are extremely dangerous!
+The barricades do not have much damage, but they are very durable.
+Stakes have huge damage, but they only inflict it from the front.</string>
+  <string name="tutorial_tip_lvl1_basic">You control a squad of Thirty soldiers.
+A detachment can be rebuilt in three formations:
+free system, phalanx and "turtle".
+</string>
+  <string name="tutorial_tip_lvl1_how_to_block_arrows">Move the squad to the designated point so that the soldiers meet the shelling frontally and block as many arrows as possible</string>
+  <string name="tutorial_tip_lvl1_close_inventory">Close inventory</string>
+  <string name="tutorial_tip_lvl1_congratulations">Congratulations!
+Now you know the basics of mechanics and will be able to succeed in passing difficult levels!</string>
+  <string name="tutorial_tip_lvl1_drag_equipment">To place the equipment in the inventory or remove it from the inventory, drag the icon of the desired item to a new location.</string>
+  <string name="tutorial_tip_lvl1_dropped_equipment">After the death of any soldier, his equipment is on the ground.
+Equipments can be raised and placed in inventory, but no more than soldiers in your unit one cell.
+You can also replace the current equipment if the new one is enough for all members of the squadron</string>
+  <string name="tutorial_tip_lvl1_form_info_phalanx">The unit in the phalanx attacks everyone in its path, pushing the enemy back.
+Most phalanx is suitable for defence.</string>
+  <string name="tutorial_tip_lvl1_form_info_ranks">By default, the unit is built with a free line.
+In the free order, the detachment is quite maneuverable, but when receiving damage, the soldiers will be stunned and will not be able to do anything.
+A free system is best suited for moving or attacking small enemy troops.</string>
+  <string name="tutorial_tip_lvl1_form_info_shields">Raised shields are extremely effective for blocking shelling, but at the same time, the unit becomes very vulnerable in melee combat.
+Shields do not block shelling, if soldiers are deployed to the shells back</string>
+  <string name="tutorial_tip_lvl1_go_to_camp_exit">Go to the exit to the camp</string>
+  <string name="tutorial_tip_lvl1_go_level_exit">Go to exit level</string>
+  <string name="tutorial_tip_lvl1_go_to_point">Move the squad to the marked point</string>
+  <string name="tutorial_tip_lvl1_how_to_open_inventory">Open the squad inventory by clicking the button at the top right of the screen.
+(If you hold down this button, then in a second the radius of the search for objects will be displayed)</string>
+
+<string name="tutorial_tip_lvl1_minimap_info">For orienteering and moving over long distances, you have the opportunity to view the mini-car.</string>
+  <string name="tutorial_tip_lvl1_minimap_how_to_use">Open the mini-car by holding the corresponding button in the upper right.
+To indicate the detachment of the displacement point, tap the desired location directly on the mini-car</string>
+  <string name="tutorial_tip_lvl1_open_inventory">Open inventory</string>
+  <string name="tutorial_tip_lvl1_open_minimap">Open the mini map</string>
+  <string name="tutorial_tip_lvl1_other_formations_dependedn">Other constructions depend on the equipment, for example, on whether the unit is in combat</string>
+  <string name="tutorial_tip_lvl1_phalanx_side_movement">Phalanx holds order in any situation, and sometimes, this ability is extremely useful.
+For example, to go through insurmountable obstacles, you can deploy a detachment sideways, and squeeze in without receiving damage</string>
+  <string name="tutorial_tip_lvl1_read_modifyer_panel">Carefully study all modifiers.
+Then there will be no unpredictable battle outcomes for you!</string>
+  <string name="tutorial_tip_lvl1_how_to_reform_squad">To change the construction, click on the button on the upper left and slide your finger towards the button that appears corresponding to the desired construction.
+If rebuilding is possible, the unit will be rebuilt.
+The current build is displayed on the main button.</string>
+  <string name="tutorial_tip_lvl1_reform_to_phalanx">Reorganize your phalanx squad</string>
+  <string name="tutorial_tip_lvl1_reform_to_shields">Rebuild the Turtle Detachment</string>
+  <string name="tutorial_tip_lvl1_squad_modifyer_panel">More detailed information about each construction and other modifiers acting on a squad can be found by clicking on the corresponding icon on the panel at the top of the screen</string>
+  <string name="tutorial_tip_lvl1_squad_phalanx_movement">To move in the phalanx, tell the squad where to go and where to look. Throughout the movement, the squad will attempt to turn in the indicated direction.
+The squad will attack anyone who gets in the way.</string>
+  <string name="tutorial_tip_lvl1_squad_ranks_movement">To move by free order, tell the squad where to go. Throughout the movement, the unit will be rotated in the direction of travel.
+ In a radius around the specified point, enemies will be highlighted. The squad will attack only selected enemies</string>
+  <string name="tutorial_tip_lvl1_squad_shields_movement">Managing a squad in a turtle building is similar to managing a squad in a free build</string>
+  <string name="tutorial_tip_lvl1_take_a_shields">To be able to rebuild the "turtle", you need to have shields.
+
+Raise shields from the ground</string>
+  <string name="tutorial_tip_lvl1_take_a_spears">To be able to reorganize with the phalanx, you need to have spears or spades.
+
+Raise spears and replace your weapon with them</string>
+  <string name="tutorial_tip_lvl1_watch_equipment_stats">Wearing outfits affects the characteristics of the unit’s fighters and the ability to rebuild into other formations.
+To see what effect equipment will have, tap the desired item icon. To close the properties window, tap it.</string>
+  <string name="tutorial_tip_lvl1_watch_squad_stats">To find out the current characteristics of the squad, click the button with the arrow on the left side of the inventory interface.
+To close the properties window, click this button again.</string>
+  <string name="tutorial_tip_lvl1_open_squad_modifyer_stats">Open a detachment characteristics modifier view window</string>
+  <string name="tutorial_tip_lvl1_tutorial_welcome">Welcome to the training of basic mechanics.
+(This is, in fact, an early version. Since in the game, so far, there is no plot, the clues are kept on behalf of the narrator. After adding the plot, the text will be rewritten in order to immerse the player in the atmosphere of the game)
+Good luck!</string>
+
+  
+<string name="tutorial_tip_lvl2_charge_how_to_use">To apply the onslaught, click on the appropriate skill button.
+The soldiers will make a breakthrough in the direction in which your squad is now turned and, if they encounter an enemy, they will inflict damage</string>
+  <string name="tutorial_tip_lvl2_charge_pikes">These pikemen guard the territory and try to reorganize with a phalanx as they approach.
+Apply onslaught to quickly approach the enemy so that the pikemen do not have time to restructure themselves.</string>
+  <string name="tutorial_tip_lvl2_how_to_kill_pikes">If you fail to catch the pikemen by surprise, you will suffer serious losses,
+However, there is a last chance to win - retreat, provoking the pikemen to restructure themselves with the free system to chase you, and then attack again.
+Pikemen will not have time to rise again with phalanx!</string>
+  <string name="tutorial_tip_lvl2_congratulations">Congratulations!
+Now you have mastered the basics of battle tactics and know how to behave in the most desperate situations!</string>
+  <string name="tutorial_tip_lvl2_consumables">You're in luck right now! You have pilumas and onslaught!
+Pilums are consumable items. They can be bought in the store between levels. In the same place, it is possible to study the skills of a detachment, for example an onslaught. Consumable items and skills are applied similarly. To find out how - see their description by clicking on the icon in the inventory</string>
+  <string name="tutorial_tip_lvl2_destroy_enemy_on_path">The enemy blocked the road. Destroy it!</string>
+  <string name="tutorial_tip_lvl2_destroy_marked_enemy">Destroy the marked enemy unit</string>
+  <string name="tutorial_tip_lvl2_enemy_pilums">The enemies also have consumables and skills. These here are pilums!</string>
+  <string name="tutorial_tip_lvl2_go_to_point_1">The shortest path to the left. Go there</string>
+  <string name="tutorial_tip_lvl2_go_to_point_2">The road is blocked. It is necessary to bypass through the camp ...</string>
+  <string name="tutorial_tip_lvl2_go_to_point_3">The closest way to the exit is through a narrow passage. Go there</string>
+  <string name="tutorial_tip_lvl2_go_to_point_after_fight">After fierce battles, it would not be bad to join the ranks of his squad.
+
+Go to the specified point</string>
+  <string name="tutorial_tip_lvl2_go_to_point_exit">Go to exit</string>
+  <string name="tutorial_tip_lvl2_how_to_open_squad_main_info_panels">To show or remove panels of the characteristics of enemy units, click on the appropriate button on the right of the screen</string>
+  <string name="tutorial_tip_lvl2_look_to_enemy_end_regroup_to_phalanx">Turn your face to the enemy, and then rearrange with a phalanx.
+
+Destroy the enemy</string>
+
+<string name="tutorial_tip_lvl2_open_squad_main_info_panels">Turn on the display of the characteristics panel of enemy units</string>
+  <string name="tutorial_tip_lvl2_phalanx_defence">Phalanx is a defensive build.
+Retreating in the phalanx ass, you can even stand against the superior number of enemy forces.
+However, if you are armed with pikes, then the phalanx feels great in attack</string>
+  <string name="tutorial_tip_lvl2_pikes">The passage is blocked by pikemen! If the pikemen got into the phalanx, then in a fair fight, forehead-to-the-head no one has a chance to resist them.
+There are only two options: either to attack them while the pikes are not yet lowered (then they will not be able to reorganize with a phalanx), or shoot them from afar (since pikemen cannot use shields)</string>
+  <string name="tutorial_tip_lvl2_pilums_how_to_use">To throw pilums at the enemy, click on the button with their image, and without lifting a finger, drag it towards the enemy. Raise your finger from the screen</string>
+  <string name="tutorial_tip_lvl2_retreat_and_regroup">Back down to the indicated position and regroup</string>
+  <string name="tutorial_tip_lvl2_shoot_pikes">These pikemen have already become phalanxes. The best way to beat them is to shoot from afar.</string>
+  <string name="tutorial_tip_lvl2_squadless_unit">In addition to the enemies, there are still neutral soldiers. They can replenish their ranks.
+To replenish your squad, rebuild it into a free system and select neutral soldiers. When they get close, they will join you.
+The squad must be out of combat</string>
+  <string name="tutorial_tip_lvl2_squad_main_info_panel_icons">Each given characteristic has its own icon. The higher the characteristic, the more its icons will be visible.
+1 icon - small value, 2 - medium, 3 - large</string>
+  <string name="tutorial_tip_lvl2_squad_main_info_panels">In order to learn more about your enemy, there is a panel showing the main characteristics of the enemy unit, its weapons, construction, skills and consumable items</string>
+  <string name="tutorial_tip_lvl2_squad_phalanx_movement">To move in the phalanx, tell the squad where to go and where to look. Throughout the movement, the squad will attempt to turn in the indicated direction.
+The squad will attack anyone who gets in the way.</string>
+  <string name="tutorial_tip_lvl2_squad_ranks_movement">To move by free order, tell the squad where to go. Throughout the movement, the unit will be rotated in the direction of travel.
+ In a radius around the specified point, enemies will be highlighted. The squad will attack only selected enemies</string>
+  <string name="tutorial_tip_lvl2_squad_shields_movement">Managing a squad in a turtle building is similar to managing a squad in a free build</string>
+  <string name="tutorial_tip_lvl2_squad_surround">​​Do not allow the environment! Soldiers cannot protect their backs. If you are surrounded, most likely you will lose.
+In such a situation, it is better to retreat and regroup to meet the enemy face to face.</string>
+  <string name="tutorial_tip_lvl2_take_shields_and_attack">Sometimes, a deliberately losing situation happens.
+In this case, it is better to try to avoid the battle and leave the level.
+Take the shelling on the raised shields, and then, by means of an onslaught, go around the enemy.
+Be careful, the onslaught can only be used in a free line!</string>
+  <string name="tutorial_tip_lvl2_take_units">Enrich the squad with new soldiers</string>
+  <string name="tutorial_tip_lvl2_welcome">And so, here you will learn the basics of combat tactics, the use of detachment skills and consumable items.
+Good luck</string>
+    
+  
+  <string name="tutorial_tip_lvl3_congratulations">Congratulations!
+Now you have mastered all the basics of the game and can succeed in passing difficult levels!</string>
+  <string name="tutorial_tip_lvl3_destroy_enemy">Destroy the enemy</string>
+  <string name="tutorial_tip_lvl3_forest_be_carefull">A very heavy squad in the forest receives very strong fines against attack and defence, so you have an advantage over the enemy.
+However, the enemy still has strong armor and a lot of damage, so be careful</string>
+  <string name="tutorial_tip_lvl3_go_to_enemy_1">The way out was blocked by the page squad. Need to destroy him.
+
+Go to the enemy unit</string>
+
+<string name="tutorial_tip_lvl3_go_to_exit">Go to exit</string>
+  <string name="tutorial_tip_lvl3_go_to_forest">This enemy unit is very heavy. He has an advantage even in neutral terrain, not to mention the road.
+To even the odds, lure the enemy into the forest.
+Pay attention to the characteristics panel of the enemy unit, how the characteristics change under the influence of the terrain.</string>
+  <string name="tutorial_tip_lvl3_go_to_forest_enemy">Lure the enemy into the forest</string>
+  <string name="tutorial_tip_lvl3_go_to_road">Go to the road</string>
+  <string name="tutorial_tip_lvl3_take_heavy_equipment">Go back to the destroyed enemy and put on his equipment so that the weight of your unit is very heavy</string>
+  <string name="tutorial_tip_lvl3_take_units">There is a neutral camp at the top. Replenish your troops there</string>
+  <string name="tutorial_tip_lvl3_terrain_base">In addition to neutral terrain, there is terrain that affects the characteristics of the squad.
+All current terrain modifiers are displayed in the order modifier panel</string>
+  <string name="tutorial_tip_lvl3_terrain_forest">Each terrain has a different effect on units of different gravity.
+For example, a forest gives the advantages of attacking and defending light units and fines to heavy units.
+All units imposed fine movement speed.</string>
+  <string name="tutorial_tip_lvl3_terrain_other">in addition to the terrain that gives advantages, there is also an area that gives only fines, for example, water and mud. Try to bypass such a terrain and lure the enemy onto it</string>
+  <string name="tutorial_tip_lvl3_terrain_road">The road allows you to move faster. In addition, it gives heavy squads advantages in attack and defence</string>
+  <string name="tutorial_tip_lvl3_terrain_road_heavy">With heavy armor and road bonuses, you can easily deal with even a surpassing amount of light units of enemies.
+To meet the enemy's light troops, take a position on the road</string>
+  <string name="tutorial_tip_lvl3_weight_base">Any piece of equipment has a mass. The total weight of equipment affects the severity of the detachment.
+The severity of your detachment is displayed on the panel of modifiers of the detachment</string>
+  <string name="tutorial_tip_lvl3_welcome">And so, here you will learn about the severity of units and the impact on them of the terrain, and learn how to use the advantages and penalties of the terrain.
+
+Good luck!</string>
+  
+  
+  
+ <string name = "tutorial_tip_market_zones_pages"> Store pages </string>
+<string name = "tutorial_tip_market_zones_score"> Your gold, silver, troop experience </string>
+<string name = "tutorial_tip_market_zones_settings"> Settings </string>
+
+<string name = "tutorial_tip_market_main_page_name"> Merchant </string>
+<string name = "tutorial_tip_market_main_page_desc"> Here you can buy and sell equipment and consumable items.
+
+You can see the characteristics of the squad in equipped equipment.
+
+You can see all open and not open items of equipment. </string>
+
+<string name = "tutorial_tip_market_hospital_name"> Hospital </string>
+<string name = "tutorial_tip_market_hospital_desc"> Here you can heal wounded soldiers.
+
+(In the future, you can replenish the squad with mercenaries for gold ...) </string>
+
+<string name = "tutorial_tip_market_studies_name"> Gymnasium </string>
+<string name = "tutorial_tip_market_studies_desc"> Here you can train soldiers in new skills.
+
+Otradya skills - one of the components of success!
+Do not underestimate their power. </string>
+
+<string name = "tutorial_tip_market_stats_train_name"> Training camp </string>
+<string name = "tutorial_tip_market_stats_train_desc"> Here you can train soldiers, increasing their heading characteristics.
+
+The soldier won the battle! </string>
+
+<string name = "tutorial_tip_market_zones_donate_name"> Market </string>
+<string name = "tutorial_tip_market_zones_donate_desc"> Here you can exchange gold for silver or scrolls with invaluable experience.
+
+Here you can also earn gold in different ways :) </string>
+
+<string name = "tutorial_tip_market_play_page_name"> Camp </string>
+<string name = "tutorial_tip_market_play_page_desc"> From here you set off to meet your adventures. Good luck
+
+(And also, from here you can go to the main menu ...) </string>
+
+<string name = "tutorial_tip_market_do_go_to_studies"> Go to the Gymnasium page </string>
+<string name = "tutorial_tip_market_do_buy_pilums"> Buy pilums </string>
+<string name = "tutorial_tip_market_do_buy_shield"> Buy a shield </string>
+<string name = "tutorial_tip_market_do_open_shield_page"> Open the shield tab </string>
+<string name = "tutorial_tip_market_drag_drop"> To buy or sell an item, drag it with your finger </string>
+<string name = "tutorial_tip_market_drag_drop_equipmant"> Equipment can be dragged in a zone with equipment </string>
+<string name = "tutorial_tip_market_drag_drop_consumables"> Expenses can be dragged into the zone with consumables </string>
+<string name = "tutorial_tip_market_equipmant_pages"> Equipment filters </string>
+<string name = "tutorial_tip_market_all_equipmant_page"> All open and not open equipment </string>
+<string name = "tutorial_tip_market_equipmant_market"> Equipment for sale </string>
+<string name = "tutorial_tip_market_consumables_market"> Consumables for sale </string>
+<string name = "tutorial_tip_market_player_stats"> Characteristics of your project with the current equipment and construction </string>
+<string name = "tutorial_tip_market_playes_consumables"> Your consumable items </string>
+<string name = "tutorial_tip_market_player_equipmant"> Your equipment </string>
+<string name = "tutorial_tip_market_player_inv_equipmant"> Equipment in your inventory </string>
+  
+  <string name = "tutorial_tip_hospital_squad_state"> Status of soldiers in your unit.
+Green is healthy, red is death. </string>
+  <string name = "tutorial_tip_hospital_heal_squad"> Pay the healers with silver and they will heal your fighters </string>
+  <string name = "tutorial_tip_hospital_order_to_heeal"> Tell the doctors to treat the healers first.
+
+If you don’t have enough money to cure everyone, this can greatly affect future battles </string>
+    
+  <string name = "tutorial_tip_studies_player_skills"> Used skills of your squad </string>
+  <string name = "tutorial_tip_studies_all_skills"> All available skills </string>
+  <string name = "tutorial_tip_studies_skill_page"> Click on the skill icon to select it and open its page </string>
+  <string name = "tutorial_tip_studies_skill_desc"> Click on the icon of the selected skill to highlight it, see the description and characteristics of the skill </string>
+  <string name = "tutorial_tip_studies_skill_opened_page"> Page of the selected skill </string>
+  <string name = "tutorial_tip_studies_skill_upgrade_tree"> Here you can see the skill improvement tree, unlock and improve the squad skill </string>
+  <string name = "tutorial_tip_studies_skill_unlock"> To unlock the skill, examine the first node in the enhancement tree </string>
+  <string name = "tutorial_tip_studies_skill_drag_drop_take"> To select an unlocked skill to use, drag it from the slot of all skills into the slot of the squad’s skills </string>
+  <string name = "tutorial_tip_studies_skill_drag_drop_drop"> To remove a skill, drag it from the squad's skills slot </string>
+  <string name = "tutorial_tip_studies_kill_do_unlock"> unlock skill </string>
+  <string name = "tutorial_tip_studies_skill_do_take"> Select an open skill to use </string>
+  <string name = "tutorial_tip_studies_skill_do_open_another_page"> Open the page of another skill </string>
+  <string name = "tutorial_tip_studies_skill_do_go_to_play"> Open the camp page </string>
+  
+  <string name = "tutorial_tip_training_page_desc"> To improve the characteristics of the squad, click on the appropriate buttons </string>
+  <string name = "tutorial_tip_training_stat_name"> Feature </string>
+  <string name = "tutorial_tip_training_stat_value"> Current value </string>
+  <string name = "tutorial_tip_training_stat_add_value"> How much will change after improvement </string>
+  <string name = "tutorial_tip_training_stat_cost"> Cost of improvement </string>
+  <string name = "tutorial_tip_training_stat_whole_progress_bar"> green bar - how many improvement levels have you already studied out of all possible </string>
+  <string name = "tutorial_tip_training_stat_level_progress_bar"> yellow bar - how much have you already paid for opening the next level of improvement </string>
+  
+</resources>

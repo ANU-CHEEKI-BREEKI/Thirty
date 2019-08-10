@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="formation_ranks_name">Free line</string>
+  <string name="formation_ranks_description">The squad does not hold formation.
+  When taking damage, the soldiers will be stunned and will not be able to defend for a while.</string>
+  <string name="formation_phalanx_name">Phalanx</string>
+  <string name="formation_phalanx_description">The squad is built into the phalanx.
+  Dense rows of soldiers will push the enemy back, not allowing him to pass through your squad.</string>
+  <string name="formation_shields_name">Raised Shields</string>
+  <string name="formation_shields_description">The squad raising shields up and defending from shelling.
+While the shields are raised, their armor against shelling is taken into account and the blocking property of shelling is fully taken into account.
+If the shields are lowered, their armor will not be counted, and their blockage of shelling will be half counted.
+When firing in the rear, the blocking of the firing of the shield is not taken into account, regardless of the construction.</string>
+  <string name="condition_inFight_name">Melee</string>
+  <string name="condition_inFight_description">The squad is fighting in melee.
+  This may impose some restrictions, for example, you cannot replenish a squad or omit pikes, so read the description of items carefully.</string>
+    
+  <string name="weaponConstraint_cantReformPhalanx">the squad cannot reorganize into the phalanx</string>
+  <string name="weaponConstraint_cantReformPhalanxInFight">the squad cannot reorganize into the phalanx during melee</string>
+  <string name="weaponConstraint_cantUseShield">squad cannot use shields</string>
+
+  <string name="can_use_in_this_formations">Can be used in formation:</string>
+  <string name="cant_use_in_this_formations">Cannot be used in formation:</string>
+
+</resources>

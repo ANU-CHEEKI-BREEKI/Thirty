@@ -62,13 +62,16 @@ public class SettingsCommonSetting : MonoBehaviour
     {
         var len = AvalableLanguages.Where(
             l => l.Language == GameManager.Instance.SavablePlayerData.Settings.commonSettings.Language
-        ).First();
+        ).FirstOrDefault();
+
+        if (len == null)
+            return;
 
         var t = toggles[
             AvalableLanguages.ToList().IndexOf(len)
         ];
-
         t.Toggle.isOn = true;
+
     }
     void OnValChanged(Toggle sender, bool newVal)
     {
@@ -78,12 +81,14 @@ public class SettingsCommonSetting : MonoBehaviour
             foreach (var tt in toggles)
                 if(tt.Toggle != sender)
                     tt.Toggle.isOn = false;
+            GameManager.Instance.Language = GameManager.Instance.SavablePlayerData.Settings.commonSettings.Language;
         }
     }
 
     void OnDefaultSetingsButtonClick()
     {
         GameManager.Instance.SavablePlayerData.Settings.commonSettings.Language = SystemLanguage.Russian;
+        GameManager.Instance.Language = GameManager.Instance.SavablePlayerData.Settings.commonSettings.Language;
         Refresh();
     }
 }

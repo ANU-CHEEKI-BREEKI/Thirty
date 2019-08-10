@@ -33,6 +33,9 @@ public class LinearLayoutPercentSpacingByMainCamHeight : MonoBehaviour
 
     void SetSpacing()
     {
+        if (layout == null) return;
+        if (mainCam == null) return;
+
         layout.spacing = spacingPercentByMainCamHeight * mainCam.pixelHeight;
         layout.padding.left =  paddindPercentByMainCamHeight.left * mainCam.pixelHeight / 100;
         layout.padding.right = paddindPercentByMainCamHeight.right * mainCam.pixelHeight / 100;
@@ -40,3 +43,4 @@ public class LinearLayoutPercentSpacingByMainCamHeight : MonoBehaviour
         layout.padding.bottom = paddindPercentByMainCamHeight.bottom * mainCam.pixelHeight / 100;
     }
 }
+ 

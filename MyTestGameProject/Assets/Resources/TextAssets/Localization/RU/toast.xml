@@ -1,23 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <resources>
     
-  <string name = "toast_cant_use_with_shield">Нельзя использовать вместе со щитом</string>
-  <string name = "toast_cant_use_with_current_weapon">Нельзя использовать вместе с текущим оружием</string>
-  <string name = "toast_not_enough_gold">Недостаточно золота</string>
-  <string name = "toast_not_enough_silver">Недостаточно серебра</string>
-  <string name = "toast_not_enough_expirience">Недостаточно опыта</string>
-  <string name = "toast_not_enough_equipment_count">Экипировки не хватает на весь отряд</string>
-  <string name = "toast_stat_max_upgrade">Уже изучено на максимум</string>
-  <string name = "toast_cant_drop_weapon">Нельзя снимать оружие</string>
-  <string name = "toast_cant_drop">Невозможно снять</string>
+  <string name="toast_cant_use_with_shield">Нельзя использовать вместе со щитом</string>
+  <string name="toast_cant_use_with_current_weapon">Нельзя использовать вместе с текущим оружием</string>
+  <string name="toast_not_enough_gold">Недостаточно золота</string>
+  <string name="toast_not_enough_silver">Недостаточно серебра</string>
+  <string name="toast_not_enough_expirience">Недостаточно опыта</string>
+  <string name="toast_not_enough_equipment_count">Экипировки не хватает на весь отряд</string>
+  <string name="toast_stat_max_upgrade">Уже изучено на максимум</string>
+  <string name="toast_cant_drop_weapon">Нельзя снимать оружие</string>
+  <string name="toast_cant_drop">Невозможно снять</string>
   
-  <string name = "toast_cant_reform_phalanx_with_this_weapon">C этим оружием нельзя перестроится в фалангу</string>
-  <string name = "toast_cant_reform_phalanx_in_fight_with_this_weapon">C этим оружием нельзя перестроится в фалангу в бою</string>
-  <string name = "toast_cant_reform_shields_without_shields">Без щитов нельзя перестроится "черепахой"</string>
+  <string name="toast_cant_reform_phalanx_with_this_weapon">C этим оружием нельзя перестроится в фалангу</string>
+  <string name="toast_cant_reform_phalanx_in_fight_with_this_weapon">C этим оружием нельзя перестроится в фалангу в бою</string>
+  <string name="toast_cant_reform_shields_without_shields">Без щитов нельзя перестроится "черепахой"</string>
   
-  <string name = "toast_cant_use_skill_in_this_formation">Нельзя использовать это умение в текущем построении</string>
-  <string name = "toast_cant_use_skill_without_shields">Нельзя использовать это умение без щитов</string>
+  <string name="toast_cant_use_skill_in_this_formation">Нельзя использовать это умение в текущем построении</string>
+  <string name="toast_cant_use_skill_without_shields">Нельзя использовать это умение без щитов</string>
   
-  <string name = "toast_cant_use_because_of_cooldown">Умение на перезярядке</string>
+  <string name="toast_cant_use_because_of_cooldown">Умение на перезарядке</string>
   
 </resources>

@@ -735,10 +735,49 @@ public class Squad : MonoBehaviour
             OnBeginCharge(modifyer);
         charging = true;
 
-        yield return new WaitForSeconds(duration);
+        SoundManager.Instance.PlayManagedSound(
+            Squad.playerSquadInstance,
+            Squad.playerSquadInstance.PositionsTransform,            
+            new SoundChannel.ClipSet(
+                SoundManager.Instance.SoundClipsContainer.FX.Charge,
+                false,
+                0.5f
+            ),
+            SoundManager.SoundType.FX,
+            updateDeltaTime: 0.000001f,
+            priority: 10000
+        );
+
+        var fade = 0.2f;
+        if (duration > fade)
+        {
+            yield return new WaitForSeconds(duration - 0.2f);
+            SoundManager.Instance.StopPlayingManagedSound(
+                Squad.playerSquadInstance,
+                SoundManager.SoundType.FX,
+                fade
+            );
+            yield return new WaitForSeconds(fade);
+        }
+        else
+        {
+            SoundManager.Instance.StopPlayingManagedSound(
+                Squad.playerSquadInstance,
+                SoundManager.SoundType.FX,
+                fade
+            );
+            yield return new WaitForSeconds(duration);
+        }
+
         if (OnEndCharge != null)
             OnEndCharge(modifyer);
         charging = false;
+
+        SoundManager.Instance.StopPlayingManagedSound(
+            Squad.playerSquadInstance,
+            SoundManager.SoundType.FX,
+            0
+        );
     }
 
     void Moving()

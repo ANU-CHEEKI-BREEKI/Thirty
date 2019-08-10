@@ -1,163 +1,173 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <resources>
-  <string name = "current_languade">Русский</string>
+  <string name="current_languade">Русский</string>
   
-  <string name = "unhendeled_exception">Необработаное системное сообщение</string>
-  <string name = "got_it">Ясно</string>
+  <string name="unhendeled_exception">Необработанное системное сообщение</string>
+  <string name="got_it">Ясно</string>
   
-  <string name = "loading">Загрузка:</string>
-  <string name = "level_generading">Генерация уровня:</string>
-  <string name = "resoures_loadind">Загрузка ресурсов:</string>
+  <string name="loading">Загрузка:</string>
+  <string name="level_generading">Генерация уровня:</string>
+  <string name="resoures_loadind">Загрузка ресурсов:</string>
   
-  <string name = "play_game">В бой</string>
-  <string name = "new_game">Новая игра</string>
-  <string name = "continue_game">Продолжить</string>
-  <string name = "settings">Настройки</string>
-  <string name = "squad">Отряд</string>
-  <string name = "training">Обучение</string>
-  <string name = "developers">Разработчики</string>
-  <string name = "understud">Понял</string>
-  <string name = "save_and_quit">Сохранить и выйти</string>
+  <string name="play_game">В бой</string>
+  <string name="new_game">Новая игра</string>
+  <string name="continue_game">Продолжить</string>
+  <string name="settings">Настройки</string>
+  <string name="squad">Отряд</string>
+  <string name="training">Обучение</string>
+  <string name="developers">Разработчики</string>
+  <string name="understud">Понял</string>
+  <string name="save_and_quit">Сохранить и выйти</string>
 
-  <string name = "video_settings">Видео</string>
-  <string name = "audio_settings">Звук</string>
-  <string name = "progress_settings">Прогресс</string>
-  <string name = "common_settings">Общие</string>
+  <string name="video_settings">Видео</string>
+  <string name="audio_settings">Звук</string>
+  <string name="progress_settings">Прогресс</string>
+  <string name="common_settings">Общие</string>
   
-  <string name = "healtarget_weakest">сначала слабых</string>
-  <string name = "healtarget_strongest">сначала сильных</string>
-  <string name = "healtarget_all">Всех</string>
+  <string name="healtarget_weakest">сначала слабых</string>
+  <string name="healtarget_strongest">сначала сильных</string>
+  <string name="healtarget_all">Всех</string>
 
-  <string name = "first_phase">Первый этап</string>
-  <string name = "second_phase">Второй этап</string>
-  <string name = "two_phases_skill">Это умение имеет два этапа</string>
+  <string name="first_phase">Первый этап</string>
+  <string name="second_phase">Второй этап</string>
+  <string name="two_phases_skill">Это умение имеет два этапа</string>
   
-  <string name = "error">[ERROR]</string>
-  <string name = "missing_string">[missing_string]</string>
+  <string name="error">[ERROR]</string>
+  <string name="missing_string">[missing_string]</string>
     
-  <string name = "squad_info_main">Вес отряда, оружие,
+  <string name="squad_info_main">Вес отряда, оружие,
 построение</string>
-  <string name = "skills">Умения</string>
-  <string name = "consumables">Расходники</string>
-  <string name = "squad_info_main_stats">Основные характеристики</string>
+  <string name="skills">Умения</string>
+  <string name="consumables">Расходники</string>
+  <string name="squad_info_main_stats">Основные характеристики</string>
   
-  <string name = "weight_very_light">Очень легкий</string>
-  <string name = "weight_light">Легкий</string>
-  <string name = "weight_medium">Средний</string>
-  <string name = "weight_heavy">Тяжелый</string>
-  <string name = "weight_very_heavy">Очень тяжелый</string>
+  <string name="weight_very_light">Очень легкий</string>
+  <string name="weight_light">Легкий</string>
+  <string name="weight_medium">Средний</string>
+  <string name="weight_heavy">Тяжелый</string>
+  <string name="weight_very_heavy">Очень тяжелый</string>
   
-  <string name = "arrowWalley_radius">Радиус поражения залпа</string>
-  <string name = "arrowWalley_arrowscount">Количество стрел в залпе</string>
-  <string name = "cooldown">Время перезарядки</string>
-  <string name = "duration">Время действия</string>
+  <string name="arrowWalley_radius">Радиус поражения залпа</string>
+  <string name="arrowWalley_arrowscount">Количество стрел в залпе</string>
+  <string name="cooldown">Время перезарядки</string>
+  <string name="duration">Время действия</string>
 
-  <string name = "cost">Стоимость</string>
-  <string name = "mass">Масса</string>
+  <string name="cost">Стоимость</string>
+  <string name="mass">Масса</string>
   
-  <string name = "attention">Внимание :</string>
+  <string name="attention">Внимание :</string>
   
-  <string name = "yes">Да</string>
-  <string name = "no">Нет</string>
-  <string name = "ok">Принять</string>
-  <string name = "cancel">Отмена</string>
-  <string name = "upgrade">улучшить</string>
+  <string name="yes">Да</string>
+  <string name="no">Нет</string>
+  <string name="ok">Принять</string>
+  <string name="cancel">Отмена</string>
+  <string name="upgrade">улучшить</string>
+  <string name="apply">Применить</string>
+
+
+  <string name="gold">Золото</string>
+  <string name="silver">Серебро</string>
+  <string name="expirience">Опыт</string>
   
-  <string name = "gold">Золото</string>
-  <string name = "silver">Серебро</string>
-  <string name = "expirience">Опыт</string>
-  
-  <string name = "name">Название</string>
-  <string name = "description">Описание</string>
-  <string name = "equipment">Экипировка</string>
-  <string name = "inventory">Инвентарь</string>
-  <string name = "consumables">Расходники</string>
-  <string name = "equipment_market">Магазин экипировки</string>
-  <string name = "consumables_market">Магазин расходников</string>
-  <string name = "equipment_ground">Экипировка на земле</string>
+  <string name="name">Название</string>
+  <string name="description">Описание</string>
+  <string name="equipment">Экипировка</string>
+  <string name="inventory">Инвентарь</string>
+  <string name="consumables">Расходники</string>
+  <string name="equipment_market">Магазин экипировки</string>
+  <string name="consumables_market">Магазин расходников</string>
+  <string name="equipment_ground">Экипировка на земле</string>
 
-  <string name = "you_died">Вы погибли</string>
+  <string name="you_died">Вы погибли</string>
 
-  <string name = "how_to_use">Как использовать:</string>
-  <string name = "executable_use_type_click">Кликнуть</string>
-  <string name = "executable_use_type_drag_drop_place">Перетянуть и отпустить</string>
-  <string name = "executable_use_type_drag_direction">Перетянуть в направлении</string>
+  <string name="how_to_use">Как использовать:</string>
+  <string name="executable_use_type_click">Кликнуть</string>
+  <string name="executable_use_type_drag_drop_place">Перетянуть и отпустить</string>
+  <string name="executable_use_type_drag_direction">Перетянуть в направлении</string>
 
-  <string name = "your_money_and_exp">Заработанные деньги и очки опыта</string>
-  <string name = "your_exp">Заработанный опыт:</string>
-  <string name = "allowed_equipmant">Открытое снаряжение:</string>
-  <string name = "allowed_equipmant_tooltip">Теперь данное снаряжение будет всегда доступно для покупки в магазине</string>
-  <string name = "allowed_equipmant_none_tooltip">Вы не открыли нового снаряжения :(
-Чтобы новое снаряжение стало лоступно для покупки в магазине, принесите торговцу его образец</string>
+  <string name="your_money_and_exp">Заработанные деньги и очки опыта</string>
+  <string name="your_exp">Заработанный опыт:</string>
+  <string name="allowed_equipmant">Открытое снаряжение:</string>
+  <string name="allowed_equipmant_tooltip">Теперь данное снаряжение будет всегда доступно для покупки в магазине</string>
+  <string name="allowed_equipmant_none_tooltip">Вы не открыли нового снаряжения :(
+Чтобы новое снаряжение стало доступно для покупки в магазине, принесите торговцу его образец</string>
   
 
-  <string name = "toMainMenu">В главное меню</string>
-  <string name = "goToMainMenu_header">Вы действительно хотите выйти в главное меню?</string>
-  <string name = "goToMainMenu_info">Текущий прогресс игры будет утерян.</string>
-  <string name = "resetSettings_header">Вы действительно хотите установить настройки по умолчанию?</string>
-  <string name = "resetSettings_info">Все настройки будут установлены по умолчанию.</string>
+  <string name="toMainMenu">В главное меню</string>
+  <string name="goToMainMenu_header">Вы действительно хотите выйти в главное меню?</string>
+  <string name="goToMainMenu_info">Текущий прогресс игры будет утерян.</string>
+  <string name="resetSettings_header">Вы действительно хотите установить настройки по умолчанию?</string>
+  <string name="resetSettings_info">Все настройки будут установлены по умолчанию.</string>
 
-  <string name = "currentValue">тек.знач.</string>
-  <string name = "baseValue">баз.знач.</string>
-  <string name = "currentValue_baseValue">тек.знач.(баз.знач.)</string>
+  <string name="currentValue">тек.знач.</string>
+  <string name="baseValue">баз.знач.</string>
+  <string name="currentValue_baseValue">тек.знач.(баз.знач.)</string>
 
-  <string name = "durability_new">новый</string>
-  <string name = "durability_worn">поношенный</string>
-  <string name = "durability_damaged">испорченный</string>
+  <string name="durability_new">новый</string>
+  <string name="durability_worn">поношенный</string>
+  <string name="durability_damaged">испорченный</string>
   
   
-  <string name = "next">Следующий</string>
-  <string name = "previous">Предыдущий</string>
-  <string name = "close">Закрыть</string>
+  <string name="next">Следующий</string>
+  <string name="previous">Предыдущий</string>
+  <string name="close">Закрыть</string>
 
-  <string name = "again">Заново</string>
+  <string name="again">Заново</string>
   
-  <string name = "button_inv">Кнопка отображения инвентаря</string>
-  <string name = "button_tips_review">Для того чтобы ещё раз просмотреть ранее показанные подсказки, нажмите на эту кнопку</string>
-  <string name = "button_formation">Переключатель построения отряда</string>
-  <string name = "modyfyers_panel">Панель модификаторов, действующих на отряд</string>
-  <string name = "button_minimap">Кнопка отображения мини-карты</string>
-  <string name = "inv_used_equip">Надетая экипировка</string>
-  <string name = "inv_cells_for_store">Ячейки для хранения предметов</string>
-  <string name = "inv_items_on_ground">Предметы на земле</string>
-  <string name = "all_tips_review">Все подсказки</string>
-  <string name = "button_squad_panel">Кнопка отображения панели основных характеристик вражеских отрядов</string>
-  <string name = "buttons_skills">Места кнопок применения умений</string>
-  <string name = "buttons_consumables">Места кнопок применения расходуемых предметов</string>
+  <string name="button_inv">Кнопка отображения инвентаря</string>
+  <string name="button_tips_review">Для того чтобы ещё раз просмотреть ранее показанные подсказки, нажмите на эту кнопку</string>
+  <string name="button_formation">Переключатель построения отряда</string>
+  <string name="modyfyers_panel">Панель модификаторов, действующих на отряд</string>
+  <string name="button_minimap">Кнопка отображения мини-карты</string>
+  <string name="inv_used_equip">Надетая экипировка</string>
+  <string name="inv_cells_for_store">Ячейки для хранения предметов</string>
+  <string name="inv_items_on_ground">Предметы на земле</string>
+  <string name="all_tips_review">Все подсказки</string>
+  <string name="button_squad_panel">Кнопка отображения панели основных характеристик вражеских отрядов</string>
+  <string name="buttons_skills">Места кнопок применения умений</string>
+  <string name="buttons_consumables">Места кнопок применения расходуемых предметов</string>
 
-  <string name = "log_in">Вход в аккаунт...</string>
-  <string name = "cant_log_in">Не удалось войти. Игра будет cохраняться локально</string>
+  <string name="log_in">Вход в аккаунт...</string>
+  <string name="cant_log_in">Не удалось войти. Игра будет cохраняться локально</string>
 
-  <string name = "title">Заголовок</string>
-  <string name = "text">Текст</string>
+  <string name="title">Заголовок</string>
+  <string name="text">Текст</string>
 
-  <string name = "are_you_sure">Вы уверены?</string>
-  <string name = "assert_choise">Точно точно?</string>
+  <string name="are_you_sure">Вы уверены?</string>
+  <string name="assert_choise">Точно точно?</string>
 
-  <string name = "cant_open_player_offline">Не удалсь открыть. Возможно, нет подлючения к сети</string>
-  <string name = "show_saves_gui">ShowSavesGUI</string>
-  <string name = "hello">Здравствуйте!</string>
-  <string name = "cant_log_in_2">Не удалось войти</string>
-  <string name = "logged_out">Вы вышли из учетной записи</string>
-  <string name = "log_out_title">Выход из учетной записи Play Games</string>
-  <string name = "log_out_assert">Вы действительно хотите выйти из учетной записи Play Games?
-Данные будут сохраняться локально на вашем устройстве, и будут синхронизированны с аккаунтом при входе.</string>
+  <string name="cant_open_player_offline">Не удалось открыть. Возможно, нет подключения к сети</string>
+  <string name="show_saves_gui">ShowSavesGUI</string>
+  <string name="hello">Здравствуйте!</string>
+  <string name="cant_log_in_2">Не удалось войти</string>
+  <string name="logged_out">Вы вышли из учетной записи</string>
+  <string name="log_out_title">Выход из учетной записи Play Games</string>
+  <string name="log_out_assert">Вы действительно хотите выйти из учетной записи Play Games?
+Данные будут сохраняться локально на вашем устройстве, и будут синхронизированы с аккаунтом при входе.</string>
 
 
-  <string name = "quit_to_main_menu_title">Выйти в главное меню?</string>
-  <string name = "quit_to_main_menu_assert">Вы уверены, что хотите выйти в главное меню?
+  <string name="quit_to_main_menu_title">Выйти в главное меню?</string>
+  <string name="quit_to_main_menu_assert">Вы уверены, что хотите выйти в главное меню?
 Весь не сохранённый прогресс будет утерян.</string>
-  <string name = "save_and_quit_title">Сохранить и выйти?</string>
-  <string name = "save_and_quit_assert">Вы уверены что хотите сохранить и выйти?</string>
-  <string name = "start_new_game_title">Начать новую игру?</string>
-  <string name = "start_new_game_assert">Прогресс пройденных уровней будет утерян, а инвентарь будет очищен.</string>
+  <string name="save_and_quit_title">Сохранить и выйти?</string>
+  <string name="save_and_quit_assert">Вы уверены что хотите сохранить и выйти?</string>
+  <string name="start_new_game_title">Начать новую игру?</string>
+  <string name="start_new_game_assert">Прогресс пройденных уровней будет утерян, а инвентарь будет очищен.</string>
 
-  <string name = "saving_progress">Сохранение прогресса игры...</string>
-  <string name = "loading_progress">Загрузка сохранённого прогресса...</string>
-  <string name = "saving_settings">Сохранение настроек игры...</string>
-  <string name = "loading_settings">Загрузка сохраннных настроек...</string>
+  <string name="saving_progress">Сохранение прогресса игры...</string>
+  <string name="loading_progress">Загрузка сохранённого прогресса...</string>
+  <string name="saving_settings">Сохранение настроек игры...</string>
+  <string name="loading_settings">Загрузка сохраненных настроек...</string>
 
-  <string name = "saving_gata">Сохранение данных...</string>
-  <string name = "loading_data">Загрузка данных...</string>
-  
+  <string name="saving_gata">Сохранение данных...</string>
+  <string name="loading_data">Загрузка данных...</string>
+
+  <string name="remove_ads">+откл. рекламу</string>
+  <string name="ads_disabled">Реклама отключена. Спасибо ^__^</string>
+  <string name="sale_10">10% скидка</string>
+  <string name="sale_20">20% скидка</string>
+  <string name="free">Бесплатно</string>
+  <string name="for_ad">За рекламу</string>
+
+  <string name="healing_priority">Приоритет лечения</string>
 </resources>

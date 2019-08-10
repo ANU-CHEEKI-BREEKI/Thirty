@@ -196,9 +196,9 @@ public class RelativeAnimation : MonoBehaviour
                     else
                         lerpArg = 1;
 
-                    transform.position = Vector3.Lerp(oldPos, newPos, lerpArg);
+                    transform.position = (Vector2)Vector3.Lerp(oldPos, newPos, lerpArg);
                     transform.rotation = Quaternion.Lerp(oldRotation, newRotation, lerpArg);
-                    transform.localScale = Vector3.Lerp(oldScale, newScale, lerpArg);
+                    transform.localScale = (Vector2)Vector3.Lerp(oldScale, newScale, lerpArg);
 
                     if (scaledTime)
                         yield return new WaitForSeconds(frequensy);

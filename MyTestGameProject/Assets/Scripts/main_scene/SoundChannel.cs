@@ -1,10 +1,12 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class SoundChannel : MonoBehaviour
 {
-    [Range(1, 30)] public int maxAudioSourceCount = 3;
+    [Range(1, 1000)] public int maxAudioSourceCount = 3;
 
     /// <summary>
     /// сурсы в пуле
@@ -15,6 +17,11 @@ public class SoundChannel : MonoBehaviour
     /// </summary>
     List<AudioSourseSet> usedSources;
 
+    /// <summary>
+    /// используемые сейчас сурсы
+    /// </summary>
+    Dictionary<object, List<AudioSourseSet>> managedUsedSources;
+
     public SoundManager.SoundType Type { get; set; }
 
     void Awake()
@@ -23,6 +30,8 @@ public class SoundChannel : MonoBehaviour
         usedSources = new List<AudioSourseSet>(maxAudioSourceCount);
         for (int i = 0; i < maxAudioSourceCount; i++)
             poolSources.Add(CreateNewSource("Source" + (i + 1)));
+
+        managedUsedSources = new Dictionary<object, List<AudioSourseSet>>(maxAudioSourceCount);
     }
 
     AudioSourseSet CreateNewSource(string name)
@@ -48,7 +57,7 @@ public class SoundChannel : MonoBehaviour
 
         return new AudioSourseSet() { source = res };
     }
-
+    
     AudioSourseSet GetSource()
     {
         AudioSourseSet res = new AudioSourseSet();
@@ -59,31 +68,104 @@ public class SoundChannel : MonoBehaviour
 
             usedSources.Add(res);
         }
-        else if(poolSources.Count + usedSources.Count < maxAudioSourceCount)
+        else if(poolSources.Count + usedSources.Count + managedUsedSources.Count < maxAudioSourceCount)
         {
-            res = CreateNewSource("Source" + (poolSources.Count + usedSources.Count));
+            res = CreateNewSource("Source" + (poolSources.Count + usedSources.Count + managedUsedSources.Count));
 
             usedSources.Add(res);
         }
         return res;
     }
 
+    AudioSourseSet GetManagedSource(object key, Transform parent = null)
+    {
+        AudioSourseSet res = new AudioSourseSet();
+
+        if (!managedUsedSources.ContainsKey(key))
+            managedUsedSources.Add(key, new List<AudioSourseSet>(maxAudioSourceCount));
+
+        if (poolSources.Count > 0)
+        {
+            res = poolSources[0];
+            poolSources.RemoveAt(0);
+            managedUsedSources[key].Add(res);
+        }
+        else if (poolSources.Count + usedSources.Count + managedUsedSources.Count < maxAudioSourceCount)
+        {
+            res = CreateNewSource("Source" + (poolSources.Count + usedSources.Count + managedUsedSources.Count));
+            managedUsedSources[key].Add(res);
+        }
+
+        if(res.source != null)
+            res.PosToUpdate = parent;
+
+        return res;
+    }
+
+    internal void StopPlayingManagedClips(object key, float fade = 0)
+    {
+        GameManager.Instance.StartCoroutine(StopPlayingManagedClipsCoroutine(key, fade));
+    }
+
+    IEnumerator StopPlayingManagedClipsCoroutine(object key, float fade)
+    {
+        if (managedUsedSources.ContainsKey(key))
+        {
+            var srcs = managedUsedSources[key];
+
+            foreach (var item in srcs)
+            {
+                item.fadeStartVolume = item.source.volume;
+                item.needToStop = true;
+            }
+
+            float timer = fade;
+
+            while (timer > 0)
+            {
+                foreach (var item in srcs)
+                    if (item.needToStop)
+                        item.source.volume = Mathf.Lerp(0, item.fadeStartVolume, timer / fade);
+
+                timer -= Time.unscaledDeltaTime;
+                yield return null;
+            }
+                        
+            ReturnBackManagedSources(key);
+        }
+    }
+
+    void ReturnBackManagedSources(object key)
+    {
+        if (!managedUsedSources.ContainsKey(key))
+            return;
+
+        var sources = managedUsedSources[key];
+
+        foreach (var source in sources)
+            ReturnBackSource(source);
+
+        managedUsedSources.Remove(key);
+    }
+
     void ReturnBackSource(AudioSourseSet source)
     {
-        if (usedSources.Remove(source))
+        usedSources.Remove(source);
+
+        poolSources.Add(source);
+        if (source.coroutineClipQueue != null)
         {
-            poolSources.Add(source);
-            if (source.coroutineClipQueue != null)
-            {
-                StopCoroutine(source.coroutineClipQueue);
-                source.coroutineClipQueue = null;
-            }
-            source.clipQueue = null;
-            source.fadeStartVolume = 1;
-            source.priority = 0;
-            source.needToStop = false;
-            source.source.Stop();
+            StopCoroutine(source.coroutineClipQueue);
+            source.coroutineClipQueue = null;
         }
+        source.clipQueue = null;
+        source.fadeStartVolume = 1;
+        source.priority = 0;
+        source.needToStop = false;
+        //source.source.transform.parent = transform;
+        source.PosToUpdate = null;
+        source.source.Stop();
+
     }
 
     /// <summary>
@@ -104,7 +186,7 @@ public class SoundChannel : MonoBehaviour
         }
         else
         {
-            if(usedSources[0].priority < priority)
+            if(usedSources.Count > 0 && usedSources[0].priority < priority)
             {
                 ReturnBackSource(usedSources[0]);
                 src = GetSource();
@@ -121,57 +203,53 @@ public class SoundChannel : MonoBehaviour
 
         return res;
     }
-        
-    /// <summary>
-    /// останавливает проигрывание первого попавшегося клипа НЕ РЕАЛИЗОВАНО
-    /// </summary>
-    /// <param name="clip"></param>
-    /// <returns></returns>
-    public bool StopPlayingClipQueue(List<AudioClip> clips)
+
+    public bool PlayManagedClip(object key, Transform parent, ClipSet clip, SoundManager.SoundType type, int priority = 0, float volume = 1, float updateDeltaTime = 0.5f)
     {
-        throw new System.NotImplementedException();
-
-        bool res = false;
-
-        int cnt = usedSources.Count;
-        for (int i = 0; i < cnt; i++)
+        bool res = true;
+        var src = GetManagedSource(key, parent);
+        if (src.source != null)
         {
-            //проверяем есть ли все клипы в очереди клипов
-            
-            if (clips.Count == usedSources[i].clipQueue.Count)
-            {
-                //создаемм два отсортированых списка и просто проверяэм все по порядку. если хоть что то не сходится - это не искомый список.
-                List<AudioClip> clips1 = new List<AudioClip>(clips);
-                clips1.Sort();
-                List<AudioClip> clips2 = new List<AudioClip>(usedSources[i].clipQueue.Count);
-                foreach (var item in usedSources[i].clipQueue)
-                    clips2.Add(item.Clip);
-                clips2.Sort();
-
-                int cnt2 = clips1.Count;
-                for (int j = 0; j < cnt2; j++)
-                {
-
-                }
-
-            }
-            //если все клипы есть, то останавливаем, иначе  -  проверяем следущий источник звука.
-
-
-            //if (usedSources[i].clipQueue == clip && usedSources[i].source.isPlaying)
-            //{
-            //    if(usedSources[i].coroutineOneClip != null)
-            //        StopCoroutine(usedSources[i].coroutineOneClip);
-            //    ReturnBackSource(usedSources[i]);
-
-            //    res = true;
-
-            //    break;
-            //}
+            src.clipQueue = new Queue<ClipSet>();
+            src.clipQueue.Enqueue(clip);
+            src.coroutineClipQueue = StartCoroutine(PlayClipsQueue(src, false, volume, type, updateDeltaTime));
         }
+        else
+        {
+            if (usedSources.Count > 0 && usedSources.Any(s=>s.priority < priority))
+            {
+                var prirsrc = usedSources.Where(s => s.priority < priority).OrderBy(s=>s.priority).First();
+                ReturnBackSource(prirsrc);
+                src = GetManagedSource(key, parent);
+                src.clipQueue = new Queue<ClipSet>();
+                src.clipQueue.Enqueue(clip);
+                src.coroutineClipQueue = StartCoroutine(PlayClipsQueue(src, false, volume, type));
+                Debug.Log("Был заменен источник звука с боле низким приоритетом");
+            }
+            else if (managedUsedSources.Count > 0 && managedUsedSources.Any(s => s.Value.Any(ss=>ss.priority < priority)))
+            {
+                var prirsrc = managedUsedSources.Where(s => s.Value.Any(ss => ss.priority < priority))
+                    .SelectMany(s => s.Value.Where(ss => ss.priority < priority))
+                    .OrderBy(s => s.priority)
+                    .First();
+                ReturnBackSource(prirsrc);
+                src = GetManagedSource(key, parent);
+                src.clipQueue = new Queue<ClipSet>();
+                src.clipQueue.Enqueue(clip);
+                src.coroutineClipQueue = StartCoroutine(PlayClipsQueue(src, false, volume, type));
+                Debug.Log("Был заменен источник звука с боле низким приоритетом");
+            }
+            else
+            {
+                Debug.Log("В пуле нет доступного сурса");
+                res = false;
+            }
+        }
+
         return res;
     }
-
+        
+    
     public void StopPlayingAll(float fade = 0)
     {
         GameManager.Instance.StartCoroutine(StopPlayingAllCoroutine(fade));
@@ -185,6 +263,15 @@ public class SoundChannel : MonoBehaviour
             item.needToStop = true;
         }
 
+        foreach (var key in managedUsedSources.Keys)
+        {
+            foreach (var item in managedUsedSources[key])
+            {
+                item.fadeStartVolume = item.source.volume;
+                item.needToStop = true;
+            }            
+        }
+
         float timer = fade;
 
         while(timer > 0)
@@ -192,6 +279,11 @@ public class SoundChannel : MonoBehaviour
             foreach (var item in usedSources)
                 if(item.needToStop)
                     item.source.volume = Mathf.Lerp(0, item.fadeStartVolume, timer / fade);
+
+            foreach (var key in managedUsedSources.Keys)
+                foreach (var item in managedUsedSources[key])
+                    if (item.needToStop)
+                        item.source.volume = Mathf.Lerp(0, item.fadeStartVolume, timer / fade);
 
             timer -= Time.unscaledDeltaTime;
             yield return null;
@@ -207,9 +299,15 @@ public class SoundChannel : MonoBehaviour
                 i--;
             }
         }
+
+        var tkeys = new object[managedUsedSources.Keys.Count];
+        managedUsedSources.Keys.CopyTo(tkeys, 0);
+
+        foreach (var key in tkeys)
+            ReturnBackManagedSources(key);
     }
 
-    IEnumerator PlayClipsQueue(AudioSourseSet src, bool loop, float volume, SoundManager.SoundType type)
+    IEnumerator PlayClipsQueue(AudioSourseSet src, bool loop, float volume, SoundManager.SoundType type, float updateDeltaTime = 0.5f)
     {
         while (src.clipQueue.Count > 0)
         {
@@ -221,6 +319,7 @@ public class SoundChannel : MonoBehaviour
             src.volumeDempfer = volume;
             src.Type = type;
             src.source.transform.position = src.clipQueue.Peek().Position;
+            //src.source.transform.localPosition = src.clipQueue.Peek().Position;
             src.Play();
 
             if (!src.source.loop)
@@ -229,11 +328,39 @@ public class SoundChannel : MonoBehaviour
 
                 if (loop)
                     src.clipQueue.Enqueue(clip);
-
-                yield return new WaitForSecondsRealtime(src.source.clip.length);
+                
+                //если установили позицию для апдейта, то обновляем регулярно...
+                if (src.PosToUpdate != null)
+                {
+                    var timer = 0f;
+                    var duration = src.source.clip.length;
+                    while (timer < duration)
+                    {
+                        timer += Time.unscaledDeltaTime;
+                        if(src.PosToUpdate != null)
+                            src.source.transform.position = src.PosToUpdate.position;
+                        yield return new WaitForSecondsRealtime(updateDeltaTime);
+                    }
+                }
+                else
+                {
+                    yield return new WaitForSecondsRealtime(src.source.clip.length);
+                }
             }
             else
-                break;
+            {
+                if (src.PosToUpdate != null)
+                {
+                    while (true)
+                    {
+                        if (src.PosToUpdate != null)
+                            src.source.transform.position = src.PosToUpdate.position;
+                        yield return new WaitForSecondsRealtime(updateDeltaTime);
+                    }
+                }
+                else break;
+            }
+
         }
 
         if (src.clipQueue.Count == 0)
@@ -248,6 +375,8 @@ public class SoundChannel : MonoBehaviour
         public Queue<ClipSet> clipQueue;
         public ClipSet currentClipSet;
 
+        public Transform PosToUpdate = null;
+
         public float fadeStartVolume;
         public bool needToStop;
 
@@ -256,6 +385,8 @@ public class SoundChannel : MonoBehaviour
         float chanelVolume;
         float generalVolume;
 
+       
+        
         public float Volume { get { return source.volume; } }
 
         SoundManager.SoundType type;

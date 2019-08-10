@@ -17,7 +17,7 @@ public class TerrainStatsModifier : MonoBehaviour
 
         gameObject.layer = 0;//default layer
     }
-    
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         var unit = collision.gameObject.GetComponent<Unit>();

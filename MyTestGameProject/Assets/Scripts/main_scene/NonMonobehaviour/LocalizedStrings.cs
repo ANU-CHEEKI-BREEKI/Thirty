@@ -8,6 +8,14 @@
 ///
 public sealed class LocalizedStrings
 {
+#region ads
+
+    public static string reward_ad_not_loaded_yet { get; private set; }
+    public static string reward_ad_not_loaded { get; private set; }
+    public static string reward_ad_load_error { get; private set; }
+    public static string reward_ad_show_error { get; private set; }
+
+#endregion ads
 #region formations
 
     public static string formation_ranks_name { get; private set; }
@@ -139,6 +147,7 @@ public sealed class LocalizedStrings
     public static string ok { get; private set; }
     public static string cancel { get; private set; }
     public static string upgrade { get; private set; }
+    public static string apply { get; private set; }
     public static string gold { get; private set; }
     public static string silver { get; private set; }
     public static string expirience { get; private set; }
@@ -211,6 +220,13 @@ public sealed class LocalizedStrings
     public static string loading_settings { get; private set; }
     public static string saving_gata { get; private set; }
     public static string loading_data { get; private set; }
+    public static string remove_ads { get; private set; }
+    public static string ads_disabled { get; private set; }
+    public static string sale_10 { get; private set; }
+    public static string sale_20 { get; private set; }
+    public static string free { get; private set; }
+    public static string for_ad { get; private set; }
+    public static string healing_priority { get; private set; }
 
 #endregion other_names
 #region skills
@@ -493,6 +509,99 @@ public sealed class LocalizedStrings
     public static string tutorial_tip_lvl3_terrain_road_heavy { get; private set; }
     public static string tutorial_tip_lvl3_weight_base { get; private set; }
     public static string tutorial_tip_lvl3_welcome { get; private set; }
+    public static string tutorial_tip_market_zones_pages { get; private set; }
+    public static string tutorial_tip_market_zones_score { get; private set; }
+    public static string tutorial_tip_market_zones_settings { get; private set; }
+    public static string tutorial_tip_market_main_page_name { get; private set; }
+    public static string tutorial_tip_market_main_page_desc { get; private set; }
+    public static string tutorial_tip_market_hospital_name { get; private set; }
+    public static string tutorial_tip_market_hospital_desc { get; private set; }
+    public static string tutorial_tip_market_studies_name { get; private set; }
+    public static string tutorial_tip_market_studies_desc { get; private set; }
+    public static string tutorial_tip_market_stats_train_name { get; private set; }
+    public static string tutorial_tip_market_stats_train_desc { get; private set; }
+    public static string tutorial_tip_market_zones_donate_name { get; private set; }
+    public static string tutorial_tip_market_zones_donate_desc { get; private set; }
+    public static string tutorial_tip_market_play_page_name { get; private set; }
+    public static string tutorial_tip_market_play_page_desc { get; private set; }
+    public static string tutorial_tip_market_do_go_to_studies { get; private set; }
+    public static string tutorial_tip_market_do_buy_pilums { get; private set; }
+    public static string tutorial_tip_market_do_buy_shield { get; private set; }
+    public static string tutorial_tip_market_do_open_shield_page { get; private set; }
+    public static string tutorial_tip_market_drag_drop { get; private set; }
+    public static string tutorial_tip_market_drag_drop_equipmant { get; private set; }
+    public static string tutorial_tip_market_drag_drop_consumables { get; private set; }
+    public static string tutorial_tip_market_equipmant_pages { get; private set; }
+    public static string tutorial_tip_market_all_equipmant_page { get; private set; }
+    public static string tutorial_tip_market_equipmant_market { get; private set; }
+    public static string tutorial_tip_market_consumables_market { get; private set; }
+    public static string tutorial_tip_market_player_stats { get; private set; }
+    public static string tutorial_tip_market_playes_consumables { get; private set; }
+    public static string tutorial_tip_market_player_equipmant { get; private set; }
+    public static string tutorial_tip_market_player_inv_equipmant { get; private set; }
+    public static string tutorial_tip_hospital_squad_state { get; private set; }
+    public static string tutorial_tip_hospital_heal_squad { get; private set; }
+    public static string tutorial_tip_hospital_order_to_heeal { get; private set; }
+    public static string tutorial_tip_studies_player_skills { get; private set; }
+    public static string tutorial_tip_studies_all_skills { get; private set; }
+    public static string tutorial_tip_studies_skill_page { get; private set; }
+    public static string tutorial_tip_studies_skill_desc { get; private set; }
+    public static string tutorial_tip_studies_skill_opened_page { get; private set; }
+    public static string tutorial_tip_studies_skill_upgrade_tree { get; private set; }
+    public static string tutorial_tip_studies_skill_unlock { get; private set; }
+    public static string tutorial_tip_studies_skill_drag_drop_take { get; private set; }
+    public static string tutorial_tip_studies_skill_drag_drop_drop { get; private set; }
+    public static string tutorial_tip_studies_kill_do_unlock { get; private set; }
+    public static string tutorial_tip_studies_skill_do_take { get; private set; }
+    public static string tutorial_tip_studies_skill_do_open_another_page { get; private set; }
+    public static string tutorial_tip_studies_skill_do_go_to_play { get; private set; }
+    public static string tutorial_tip_training_page_desc { get; private set; }
+    public static string tutorial_tip_training_stat_name { get; private set; }
+    public static string tutorial_tip_training_stat_value { get; private set; }
+    public static string tutorial_tip_training_stat_add_value { get; private set; }
+    public static string tutorial_tip_training_stat_cost { get; private set; }
+    public static string tutorial_tip_training_stat_whole_progress_bar { get; private set; }
+    public static string tutorial_tip_training_stat_level_progress_bar { get; private set; }
+
+#endregion tutorial_tips
+#region ads
+
+
+#endregion ads
+#region formations
+
+
+#endregion formations
+#region items
+
+
+#endregion items
+#region other_names
+
+
+#endregion other_names
+#region skills
+
+
+#endregion skills
+#region stats
+
+
+#endregion stats
+#region terrain
+
+
+#endregion terrain
+#region tips
+
+
+#endregion tips
+#region toast
+
+
+#endregion toast
+#region tutorial_tips
+
 
 #endregion tutorial_tips
 }

@@ -24,6 +24,8 @@ public class ToAnotherSceneButton : MonoBehaviour
 
     void OnClick()
     {
+        SoundManager.Instance.PlaySound(new SoundChannel.ClipSet(SoundManager.Instance.SoundClipsContainer.UI.ButtonClick), SoundManager.SoundType.UI);
+        
         bool confirm = needConfirm;
         if (needConfirm && commandToGameManager == "new_game")
             confirm = !GameManager.Instance.SavablePlayerData.PlayerProgress.Squad.IsEmpty;
@@ -54,7 +56,7 @@ public class ToAnotherSceneButton : MonoBehaviour
         DialogBox.Instance.Hide();
         if (FadeScreen.Instance != null)
         {
-            FadeScreen.Instance.OnFadeOn += LoadLevel;
+            FadeScreen.Instance.OnFadeOn += ()=> LoadLevel();
             FadeScreen.Instance.FadeOn(0.5f);
         }
         else
@@ -81,8 +83,8 @@ public class ToAnotherSceneButton : MonoBehaviour
                 break;
         }
     }
-
-    void LoadLevel()
+    
+    void LoadLevel(bool skipTutorialDialogs = false)
     {
         GameManager.Instance.command = commandToGameManager;
 
@@ -99,43 +101,45 @@ public class ToAnotherSceneButton : MonoBehaviour
                     string title = string.Empty;
                     string message = string.Empty;
 
-                    if (!GameManager.Instance.SavablePlayerData.PlayerProgress.Flags.IsTrainingStartedAtLeastOnce.IsOlreadySet &&
-                    !GameManager.Instance.SavablePlayerData.PlayerProgress.Flags.IsTrainingStartedAtLeastOnce.Flag)
+                    if (!skipTutorialDialogs)
+                    {
+                        if (!GameManager.Instance.SavablePlayerData.PlayerProgress.Flags.IsTrainingStartedAtLeastOnce.IsOlreadySet &&
+                        !GameManager.Instance.SavablePlayerData.PlayerProgress.Flags.IsTrainingStartedAtLeastOnce.Flag)
 
-                    {
-                        //тут предлагаем туториал.                        
-                        title = "[nl]Похоже, вы запустили игру вперые.";
-                        message = "[nl]Похоже, вы запустили игру вперые. Желаете пройти обучение основам?";
-                        actOnYes = () =>
                         {
-                            DialogBox.Instance.Hide();
-                            GameManager.Instance.LoadTutorialLevel(GameManager.SceneIndex.LEVEL_TUTORIAL_1);
-                            GameManager.Instance.SavablePlayerData.PlayerProgress.Flags.IsTrainingStartedAtLeastOnce.Flag = true;
-                        };
-                        actOnNo = () =>
+                            //тут предлагаем туториал.                        
+                            title = "[nl]Похоже, вы запустили игру вперые.";
+                            message = "[nl]Похоже, вы запустили игру вперые. Желаете пройти обучение основам?";
+                            actOnYes = () =>
+                            {
+                                DialogBox.Instance.Hide();
+                                GameManager.Instance.LoadTutorialLevel(GameManager.SceneIndex.LEVEL_TUTORIAL_1);
+                            };
+                            actOnNo = () =>
+                            {
+                                DialogBox.Instance.Hide();
+                                GameManager.Instance.SavablePlayerData.PlayerProgress.Flags.IsTrainingStartedAtLeastOnce.Flag = GameManager.Instance.SavablePlayerData.PlayerProgress.Flags.IsTrainingStartedAtLeastOnce.Flag;
+                                LoadLevel(true);
+                            };
+                        }
+                        else if (!GameManager.Instance.SavablePlayerData.PlayerProgress.Flags.IsTutorialCompleted.IsOlreadySet &&
+                            !GameManager.Instance.SavablePlayerData.PlayerProgress.Flags.IsTutorialCompleted.Flag)
                         {
-                            DialogBox.Instance.Hide();
-                            GameManager.Instance.SavablePlayerData.PlayerProgress.Flags.IsTrainingStartedAtLeastOnce.Flag = false;
-                            LoadLevel();
-                        };
-                    }
-                    else if(!GameManager.Instance.SavablePlayerData.PlayerProgress.Flags.IsTutorialCompleted.IsOlreadySet &&
-                        !GameManager.Instance.SavablePlayerData.PlayerProgress.Flags.IsTutorialCompleted.Flag)
-                    {
-                        //тут предлагаем допройти туториал.                        
-                        title = "[nl]Похоже, вы не закончили обучение.";
-                        message = "[nl]Похоже, вы не закончили обучение. Желаете допройти обучение основам?";
-                        actOnYes = () =>
-                        {
-                            DialogBox.Instance.Hide();
-                            GameManager.Instance.LoadTutorialLevel(GameManager.Instance.SavablePlayerData.PlayerProgress.Flags.AvalaibleTutorialLevel);                            
-                        };
-                        actOnNo = () =>
-                        {
-                            DialogBox.Instance.Hide();
-                            GameManager.Instance.SavablePlayerData.PlayerProgress.Flags.IsTutorialCompleted.Flag = false;
-                            LoadLevel();
-                        };
+                            //тут предлагаем допройти туториал.                        
+                            title = "[nl]Похоже, вы не закончили обучение.";
+                            message = "[nl]Похоже, вы не закончили обучение. Желаете допройти обучение основам?";
+                            actOnYes = () =>
+                            {
+                                DialogBox.Instance.Hide();
+                                GameManager.Instance.LoadTutorialLevel(GameManager.Instance.SavablePlayerData.PlayerProgress.Flags.AvalaibleTutorialLevel);
+                            };
+                            actOnNo = () =>
+                            {
+                                DialogBox.Instance.Hide();
+                                GameManager.Instance.SavablePlayerData.PlayerProgress.Flags.IsTutorialCompleted.Flag = GameManager.Instance.SavablePlayerData.PlayerProgress.Flags.IsTutorialCompleted.Flag;
+                                LoadLevel(true);
+                            };
+                        }
                     }
 
                     if (actOnYes != null)

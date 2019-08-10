@@ -46,7 +46,7 @@ public sealed class Localization
                 break;
             default:
                 //english
-                languageFileName = "EN";
+                languageFileName = "ENG";
                 newLanguage = SystemLanguage.English;
                 break;
         }

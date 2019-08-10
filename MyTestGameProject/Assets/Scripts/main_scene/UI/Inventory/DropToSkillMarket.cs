@@ -8,6 +8,7 @@ public class DropToSkillMarket : ADropToMe
 {
     public override bool AddToThisInventory(AStack aStack)
     {
+        //PlayUiEffectForMoney();
         return true;
     }
 

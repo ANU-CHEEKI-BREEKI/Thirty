@@ -6,6 +6,13 @@ using Tools;
 [CreateAssetMenu(fileName = "SO_TSM_")]
 public class SOTerrainStatsModifier : ScriptableObject
 {
+    /// <summary>
+    /// для звуковых эффектов использую
+    /// </summary>
+    public enum Type { GRASS, ROAD, DIRT, WATER }
+
+    [SerializeField] Type terrainType;
+    public Type TerrainType { get { return terrainType; } }
     [SerializeField] SOStatsModifier veryLightWeightUnit;
     [SerializeField] SOStatsModifier lightWeightUnit;
     [SerializeField] SOStatsModifier mediumWeightUnit;

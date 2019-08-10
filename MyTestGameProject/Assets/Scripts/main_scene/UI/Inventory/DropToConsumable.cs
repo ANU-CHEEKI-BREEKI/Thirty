@@ -30,7 +30,7 @@ public class DropToConsumable : ADropToMe
         int cost = -1;
         //проверяем стоит ли оно денег
         if (stack.ConsumableStats is ISkillCostable)
-            cost = (stack.ConsumableStats as ISkillCostable).Cost * stack.Count;
+            cost = (stack.ConsumableStats as ISkillCostable).Cost;
 
         //если оно уже ипользовано, то бесплатно добавляем (но ток если это не голдовый расходник)
         if (stack.ConsumableStats is IStackCountConstraintable
@@ -39,6 +39,8 @@ public class DropToConsumable : ADropToMe
             cost = 0;
         if(cost > 0)
             score.SpendMoney(cost, stack.Consumable.MainPropertie.Currency);
+
+        PlayUiEffectForEquipmant();
 
         return true;
     }
@@ -100,7 +102,7 @@ public class DropToConsumable : ADropToMe
 
             if (t)
             {
-                int cost = (stack.ConsumableStats as ISkillCostable).Cost * stack.Count;
+                int cost = (stack.ConsumableStats as ISkillCostable).Cost;
                 var score = GameManager.Instance.SavablePlayerData.PlayerProgress.Score;
                 score.EarnMoney(cost, stack.Consumable.MainPropertie.Currency);
             }

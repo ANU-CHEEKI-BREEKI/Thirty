@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  
+  <string name="reward_ad_not_loaded_yet">Реклама для Вас ещё загружается</string>
+  <string name="reward_ad_not_loaded">Реклама для Вас не загружена :(
+Попробуйте снова чуть позже</string>
+  <string name="reward_ad_load_error">Не удалось загрузить рекламу</string>
+  <string name="reward_ad_show_error">Не удалось отобразить рекламу</string>
+  
+</resources>

@@ -28,6 +28,8 @@ public class DropToSkill : ADropToMe
                 break;
         }
 
+        PlayUiEffectForEquipmant();        
+
         return true;
     }
 

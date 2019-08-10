@@ -31,8 +31,12 @@ public class MainCanvases : MonoBehaviour
         {
             if (dialogsInstance == null)
             {
-                dialogsInstance = GameObject.FindWithTag("DialogsCanvas").AddComponent<MainCanvases>();
-                dialogsInstance.Clear();
+                var d = GameObject.FindWithTag("DialogsCanvas");
+                if (d != null)
+                {
+                    dialogsInstance = d.AddComponent<MainCanvases>();
+                    dialogsInstance.Clear();
+                }
             }
             return dialogsInstance;
         }

@@ -224,15 +224,18 @@ public class TutorialPanel : MonoBehaviour
             else
             {
                 var scInd = (GameManager.SceneIndex)SceneManager.GetActiveScene().buildIndex;
-                if(scInd < GameManager.SceneIndex.LEVEL_TUTORIAL_3)
+                if (scInd < GameManager.SceneIndex.LEVEL_TUTORIAL_3)
                 {
                     var nextLevel = (GameManager.SceneIndex)((int)scInd + 1);
-                    if(GameManager.Instance.SavablePlayerData.PlayerProgress.Flags.AvalaibleTutorialLevel < nextLevel)
+                    if (GameManager.Instance.SavablePlayerData.PlayerProgress.Flags.AvalaibleTutorialLevel < nextLevel)
                         GameManager.Instance.SavablePlayerData.PlayerProgress.Flags.AvalaibleTutorialLevel = nextLevel;
                     GameManager.Instance.LoadTutorialLevel(nextLevel);
                 }
                 else
+                {
+                    GameManager.Instance.SavablePlayerData.PlayerProgress.Flags.IsTutorialCompleted.Flag = true;
                     GameManager.Instance.LoadMainMenu();
+                }
             }
         }
 

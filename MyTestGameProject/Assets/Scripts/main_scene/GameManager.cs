@@ -1,9 +1,11 @@
-﻿using System;
+﻿
+using System;
 using System.Collections;
 using System.Linq;
 using System.Reflection;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using static DSPlayerScore;
 
 public class GameManager : MonoBehaviour
 {
@@ -93,7 +95,17 @@ public class GameManager : MonoBehaviour
     /// <summary>
     /// Язык интерфейса
     /// </summary>
-    public SystemLanguage Language { set { Localization.SetLanguage(value); } }
+    public SystemLanguage Language
+    {
+        set
+        {
+            Localization.SetLanguage(value);
+
+            foreach (var item in FindObjectsOfType<LocalizationByEditor>())
+                item.ReloadText();
+        }
+
+    }
 
     /// <summary>
     /// первый агрумент - номер сцены, на которую будет совершен переход. 
@@ -125,6 +137,7 @@ public class GameManager : MonoBehaviour
         if(Instance == this)
         {
             LoadSettings(LocalizedStrings.log_in);
+            GADWrapper.Initialize(true, 2, 1);
         }
     }
 
@@ -134,12 +147,20 @@ public class GameManager : MonoBehaviour
         CurrentLevel = new LevelInfo();
         defFixedDeltaTime = Time.fixedDeltaTime;
         Application.logMessageReceived += OnUnhendeledException;
-
-        Language = SystemLanguage.Russian;
+        
+        Language = SavablePlayerData.Settings.commonSettings.Language;
 
         var auds = SavablePlayerData.Settings.audioSettings;
         auds.generalVolume.Value = 0;
-        
+
+        IAPWrapper.Initiate();
+        IAPWrapper.OnPurchaseSuccess += (data) =>
+        {
+            if (data.type != UnityEngine.Purchasing.ProductType.NonConsumable) return;
+            if (data.id != IAPWrapper.Const.NonConsumable.ID_DISABLE_ADS) return;
+            Toast.Instance.Show(LocalizedStrings.ads_disabled, Toast.ToastLifetime.SLOW);
+        };
+
         BeforeLoadLevel += (nextScene, currentLevel, currentScene) =>
         {
             savablePlayerData.PlayerProgress.Save();
@@ -160,6 +181,20 @@ public class GameManager : MonoBehaviour
         };
 
         DontDestroyOnLoad(gameObject);
+
+        Score.OnValChanged valChanged = (oldScore, newScore, sender) =>
+        {
+            if (newScore - oldScore > 0 && SceneManager.GetActiveScene().buildIndex != (int)SceneIndex.MAIN_MENU)
+            {
+                SoundManager.Instance.PlaySound(
+                    new SoundChannel.ClipSet(SoundManager.Instance.SoundClipsContainer.UI.Coins), 
+                    SoundManager.SoundType.UI
+                );
+            }
+        };
+
+        SavablePlayerData.PlayerProgress.Score.gold.OnValueChanged += valChanged;
+        SavablePlayerData.PlayerProgress.Score.silver.OnValueChanged += valChanged;
     }
 
     void LoadSettings(string mesToModalPanel)
@@ -274,6 +309,13 @@ public class GameManager : MonoBehaviour
                 break;
             case SceneIndex.MARKET:
                 SoundManager.Instance.PlaySound(new SoundChannel.ClipSet(SoundManager.Instance.SoundClipsContainer.Music.MusicMarket, false), SoundManager.SoundType.MUSIC);
+
+                GADWrapper.LoadInterstitialAd(GADWrapper.Const.InterstitialAds.ID_ALL_KIND_OF_INTERSTITIAL_ADS);
+
+                GADWrapper.LoadRewardedAd(
+                    GADWrapper.Const.RevardedAds.ID_FREE_GOLD,
+                    2
+                );
                 InitPlayer();
 
                 break;
@@ -282,6 +324,9 @@ public class GameManager : MonoBehaviour
 
                 FadeScreen.Instance.FadeOnStartScene = false;
                 PauseGame();
+
+                GADWrapper.LoadInterstitialAd(GADWrapper.Const.InterstitialAds.ID_ALL_KIND_OF_INTERSTITIAL_ADS);
+
                 Ground.Instance.OnGenerationDone += ()=> { ResumeGame(); };
                 Ground.Instance.OnGenerationDone += InitPlayer;
                 Ground.Instance.OnGenerationDone += FadeScreen.Instance.FateOnStartScene;
@@ -293,8 +338,8 @@ public class GameManager : MonoBehaviour
             case SceneIndex.LEVEL_TUTORIAL_1:
             case SceneIndex.LEVEL_TUTORIAL_2:
             case SceneIndex.LEVEL_TUTORIAL_3:
+                GameManager.Instance.SavablePlayerData.PlayerProgress.Flags.IsTrainingStartedAtLeastOnce.Flag = true;
                 SoundManager.Instance.PlaySound(new SoundChannel.ClipSet(SoundManager.Instance.SoundClipsContainer.Music.MusicLevel, true), SoundManager.SoundType.MUSIC);
-
                 FadeScreen.Instance.FadeOnStartScene = false;
                 PauseGame();
                 Ground.Instance.OnWorkDone += () => { ResumeGame(); };
@@ -489,12 +534,12 @@ public class GameManager : MonoBehaviour
         OnBackButtonPressed.Invoke();
     }
 
-    public void SetPauseGame(bool pause)
+    public void SetPauseGame(bool pause, bool showMenu = true)
     {
         if (pause)
-            PauseGame();
+            PauseGame(showMenu);
         else
-            ResumeGame();
+            ResumeGame(showMenu);
     }
 
     public void PauseGame(bool showMenu = true)

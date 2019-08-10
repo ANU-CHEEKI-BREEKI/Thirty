@@ -44,4 +44,28 @@ public abstract class ADropToMe: MonoBehaviour, IDropHandler
         foreach (var inv in GameObject.FindObjectsOfType(typeof(AInventoryUI)) as AInventoryUI[])
             inv.RefreshUI();
     }
+
+    protected void PlayUiEffectForEquipmant()
+    {
+        try
+        {
+            SoundManager.Instance.PlaySound(
+                new SoundChannel.ClipSet(SoundManager.Instance.SoundClipsContainer.UI.Equipmant),
+                SoundManager.SoundType.UI
+            );
+        }
+        catch { }
+    }
+
+    protected void PlayUiEffectForMoney()
+    {
+        try
+        {
+            SoundManager.Instance.PlaySound(
+                new SoundChannel.ClipSet(SoundManager.Instance.SoundClipsContainer.UI.Coins),
+                SoundManager.SoundType.UI
+            );
+        }
+        catch { }
+    }
 }

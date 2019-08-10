@@ -7,7 +7,9 @@ public class CommonSettings : ICopyabe
     /// <summary>
     /// Язык локализации
     /// </summary>
-    public SystemLanguage Language = SystemLanguage.Russian;
+    public SystemLanguage Language { get; set; } = SystemLanguage.English;
+
+    public event Action<SystemLanguage> OnLanguageChanged;
 
     public object Copy()
     {

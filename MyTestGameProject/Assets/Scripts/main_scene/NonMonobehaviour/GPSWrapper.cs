@@ -6,6 +6,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// всё что с гугл сервисами: логин, сохранения, ачивки
+/// </summary>
 public static class GPSWrapper
 {
     static public event Action<bool> OnPlayerLoggedInValueChanged;

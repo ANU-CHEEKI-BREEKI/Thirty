@@ -34,9 +34,11 @@ public class UISameSizeAs : MonoBehaviour
 
         rt.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, sameSizeAs.rect.width);
         rt.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, sameSizeAs.rect.height);
-        //rectTransf.ForceUpdateRectTransforms(); - needed before we adjust pivot a second time?
 
         rt.pivot = myPrevPivot;
-        rt.position = mypos;
+        var z = rt.position.z;
+        var newPos = (Vector3) mypos;
+        newPos.z = z;
+        rt.position = newPos;
     }
 }

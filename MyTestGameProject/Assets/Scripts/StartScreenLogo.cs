@@ -18,7 +18,7 @@ public class StartScreenLogo : MonoBehaviour
 
     public void _StartScreenLogoAnimationEnd()
     {
-        transform.parent.gameObject.SetActive(false);
+        transform.gameObject.SetActive(false);
         LogoEnded = true;
         OnLogoEnded.Invoke();
     }

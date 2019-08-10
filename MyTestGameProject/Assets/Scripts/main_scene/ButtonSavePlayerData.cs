@@ -21,11 +21,13 @@ public class ButtonSavePlayerData : MonoBehaviour
     public void AllpySettingsTempValues()
     {
         GameManager.Instance.SavablePlayerData.Settings.ApplyTempValues();
+        GameManager.Instance.Language = GameManager.Instance.SavablePlayerData.Settings.commonSettings.Language;
     }
 
     public void ResetSettingsTempValues()
     {
         GameManager.Instance.SavablePlayerData.Settings.ResetTempValues();
+        GameManager.Instance.Language = GameManager.Instance.SavablePlayerData.Settings.commonSettings.Language;
     }
 
     public void SaveProgress()

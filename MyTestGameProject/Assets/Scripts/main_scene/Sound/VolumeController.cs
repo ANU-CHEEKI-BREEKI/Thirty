@@ -8,14 +8,14 @@ public class VolumeController : MonoBehaviour
     [SerializeField] SoundManager.SoundType type;
     [SerializeField] [Range(0f, 1f)] float damper = 1;
 
-    AudioSource aus;
+    AudioSource[] aus;
     float volumeGeneral;
     float volumeChanel;
 
     #region UNITY
     void Awake()
     {
-        aus = GetComponent<AudioSource>();
+        aus = GetComponents<AudioSource>();
     }
 
     void Start()
@@ -37,7 +37,9 @@ public class VolumeController : MonoBehaviour
 
     public void ForciblyPlaySound()
     {
-        aus.Play();
+        if (aus != null)
+            foreach (var item in aus)
+                item.Play();
     }
 
     void Subscribe(bool positive)
@@ -100,6 +102,7 @@ public class VolumeController : MonoBehaviour
 
     void SetVolume()
     {
-        aus.volume = volumeGeneral * volumeChanel * damper;
+        foreach (var item in aus)
+            item.volume = volumeGeneral * volumeChanel * damper;
     }
 }

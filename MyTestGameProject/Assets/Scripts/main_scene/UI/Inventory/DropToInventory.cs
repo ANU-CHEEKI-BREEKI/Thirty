@@ -70,6 +70,8 @@ public class DropToInventory : ADropToMe
         else
             Squad.playerSquadInstance.Inventory[CellIndex].PushItems(stack);
 
+        PlayUiEffectForEquipmant();
+
         return true;
     }
 

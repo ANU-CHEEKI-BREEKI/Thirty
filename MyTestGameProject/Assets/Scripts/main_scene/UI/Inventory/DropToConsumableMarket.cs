@@ -38,6 +38,10 @@ public class DropToConsumableMarket : ADropToMe
                 res = true;
             }
         }
+
+        //if(res)
+        //    PlayUiEffectForMoney();
+
         return res;
     }
 
@@ -59,7 +63,7 @@ public class DropToConsumableMarket : ADropToMe
 
             if (st.ConsumableStats is ISkillCostable)
             {
-                int cost = (st.ConsumableStats as ISkillCostable).Cost * st.Count;
+                int cost = (st.ConsumableStats as ISkillCostable).Cost;
 
                 if (st.ConsumableStats is IStackCountConstraintable
                 && st.Count != (st.ConsumableStats as IStackCountConstraintable).MaxCount

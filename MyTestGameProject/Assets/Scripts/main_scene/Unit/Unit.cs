@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -301,6 +302,43 @@ public class Unit : MonoBehaviour
 
         selection = ThisTransform.Find("SelectionUnit").gameObject;
         selectionRenderer = selection.GetComponent<SpriteRenderer>();
+        
+        OnRunValueChanged += (running) => { PlayRanningSound(running); };
+        OnTerrainModifierAdd += (s) => { PlayRanningSound(running); };
+        OnTerrainModifierRemove += (s) => { PlayRanningSound(running); };
+    }
+
+    private void OnDestroy()
+    {
+        StopAllCoroutines();
+    }
+
+    private void OnDisable()
+    {
+        StopAllCoroutines();
+    }
+
+    private void PlayRanningSound(bool running)
+    {
+        if (!this.gameObject.activeInHierarchy)
+            return;
+
+        SoundManager.Instance.StopPlayingManagedSound(this, SoundManager.SoundType.FX, 0.2f);
+
+        float delay = 0.4f;
+        float volumeDempfer = 0.3f;
+        int ttt = 3;
+        if (running && (ThisTransform.GetSiblingIndex() + ttt) % ttt == 0)
+        {
+            bool water = terrainStatsModifyers.Any(tsm => tsm.TerrainType == SOTerrainStatsModifier.Type.WATER);
+            if (water)
+                StartCoroutine(PlayManagedSoundEffectWithDelay(this, ThisTransform, SoundManager.Instance.SoundClipsContainer.FX.WalkWater, Vector2.zero, delay, volumeDempfer));
+            bool dirt = terrainStatsModifyers.Any(tsm => tsm.TerrainType == SOTerrainStatsModifier.Type.DIRT);
+            if (dirt)
+                StartCoroutine(PlayManagedSoundEffectWithDelay(this, ThisTransform, SoundManager.Instance.SoundClipsContainer.FX.WalkDirt, Vector2.zero, delay, volumeDempfer));
+            if (!water && !dirt)
+                StartCoroutine(PlayManagedSoundEffectWithDelay(this, ThisTransform, SoundManager.Instance.SoundClipsContainer.FX.WalkGrass, Vector2.zero, delay, volumeDempfer));
+        }            
     }
 
     void Start()
@@ -420,7 +458,11 @@ public class Unit : MonoBehaviour
         if (OnAnyUnitDeath != null)
             OnAnyUnitDeath();
 
+        StopAllCoroutines();
+        SoundManager.Instance.StopPlayingManagedSound(this, SoundManager.SoundType.FX, 0.2f);
+
         Destroy(this);
+        
     }
 
     private void DropEquipment()
@@ -1146,20 +1188,7 @@ public class Unit : MonoBehaviour
 
             // если враг атакует в спину
             bool hitFromBack = !(rot <= stats.DefenceHalfSector || rot >= 360 - stats.DefenceHalfSector);
-
-            if (hitFromBack || fallen)
-            {
-                takeHitChanse = enemy.stats.Attack;
-            }
-            else
-            {
-                if (squad.CurrentFormation == FormationStats.Formations.PHALANX || target != null)
-                    takeHitChanse = enemy.stats.Attack * (1 - stats.Defence);
-                else
-                    //если нет цели и не фаланга (т.е. отряд пытается пробежать насквозь другой отряд)
-                    //то не защищаться
-                    takeHitChanse = enemy.stats.Attack * (1 - stats.Defence * stats.DefenceGoingThrought);
-            }
+                       
 
             //если нет цели и это свободное построение, то пускай целью будет тот кто пытался ударить, если он выделенн
             if (squad.CurrentFormation == FormationStats.Formations.RANKS && target == null)
@@ -1168,20 +1197,48 @@ public class Unit : MonoBehaviour
                     SetTarget(enemy);
             }
 
-            //потенциальный урон
-            var damage = enemy.stats.Damage;            
-            float dmg = damage.BaseDamage + damage.ArmourDamage - stats.Armour;
-            //если попало в спину, то броню щита не учитываем
-            if (hitFromBack && shield != null)
-                dmg += shield.Stats.Armour;
-            if (dmg < damage.ArmourDamage)
-                dmg = damage.ArmourDamage;
+            //сначала наносим удар
+            var hit = UnityEngine.Random.value <= enemy.stats.Attack;
+            if(!hit)
+            {
+                //если промазал, то пускаем эфект промазывания
+                if (UnityEngine.Random.value <= 0.05f)//уменьшим кол-во звуков промахов, а то спам идёт мрям
+                    StartCoroutine(PlaySoundEffectWithDelay(
+                        SoundManager.Instance.SoundClipsContainer.FX.MissHit,
+                        ThisTransform.position, 0.2f)
+                    );
+            }
+            else
+            {
+                var damage = enemy.stats.Damage;//потенциальный урон
+                float dmg = damage.BaseDamage + damage.ArmourDamage - stats.Armour;
+                //если попало в спину, то броню щита не учитываем
+                if (hitFromBack && shield != null)
+                    dmg += shield.Stats.Armour;
+                if (dmg < damage.ArmourDamage)
+                    dmg = damage.ArmourDamage;
 
-            //если враг попал по нам
-            if (UnityEngine.Random.value <= takeHitChanse)
-                TakeDamage(dmg, enemy.squad, enemy);
-            else if (squad == Squad.playerSquadInstance)
-                    GPSWrapper.Achivement.IncrementProgressWithDelay(GPSConstants.achievement_unbreakable, (int)dmg, null, GameManager.Instance);
+                //если должен попасть, то защищаемся
+                if (hitFromBack || fallen || //если удар сзади или упал
+                    (squad.CurrentFormation != FormationStats.Formations.PHALANX && target != null && 
+                    UnityEngine.Random.value <= stats.Defence * stats.DefenceGoingThrought) || //или пробегает насквозь
+                    UnityEngine.Random.value <= stats.Defence)//или обычный расчет
+                {
+                    //если попал   
+                    TakeDamage(dmg, enemy.squad, enemy);
+                }
+                else
+                {
+                    //заблокировал
+                    StartCoroutine(PlaySoundEffectWithDelay(
+                        SoundManager.Instance.SoundClipsContainer.FX.BlockHit,
+                        ThisTransform.position, 0.2f)
+                    );
+                    if(squad == Squad.playerSquadInstance)
+                        GPSWrapper.Achivement.IncrementProgressWithDelay(GPSConstants.achievement_unbreakable, (int)dmg, null, GameManager.Instance);
+                }
+
+            }
         }
     }
 
@@ -1282,15 +1339,18 @@ public class Unit : MonoBehaviour
             if (Health - damage < 0)
                 damage = Health;
 
-            SoundManager.Instance.PlaySound(
-                new SoundChannel.ClipSet(
-                    SoundManager.Instance.SoundClipsContainer.FX.TakeDamage[UnityEngine.Random.Range(0, SoundManager.Instance.SoundClipsContainer.FX.TakeDamage.Length - 1)],
-                    false,
-                    0.2f,
-                    ThisTransform.position
-                ),
-                SoundManager.SoundType.FX
-            );
+            StartCoroutine(PlaySoundEffectWithDelay(SoundManager.Instance.SoundClipsContainer.FX.TakeHit, ThisTransform.position, 0.2f));
+            StartCoroutine(PlaySoundEffectWithDelay(SoundManager.Instance.SoundClipsContainer.FX.TakeDamage, ThisTransform.position, 0.2f));
+
+            //SoundManager.Instance.PlaySound(
+            //    new SoundChannel.ClipSet(
+            //        SoundManager.Instance.SoundClipsContainer.FX.TakeDamage[UnityEngine.Random.Range(0, SoundManager.Instance.SoundClipsContainer.FX.TakeDamage.Length - 1)],
+            //        false,
+            //        0.2f,
+            //        ThisTransform.position
+            //    ),
+            //    SoundManager.SoundType.FX
+            //);
 
             Health -= damage;
 
@@ -1298,6 +1358,43 @@ public class Unit : MonoBehaviour
         }
     }
 
+    IEnumerator PlaySoundEffectWithDelay(AudioClip[] clips, Vector2 position, float delayRange = 0.2f)
+    {
+        if (clips.Length > 0)
+        {
+            yield return new WaitForSeconds(UnityEngine.Random.value * delayRange);
+            SoundManager.Instance.PlaySound(
+                new SoundChannel.ClipSet(
+                    clips[UnityEngine.Random.Range(0, clips.Length - 1)],
+                    false,
+                    0.2f,
+                    position
+                ),
+                SoundManager.SoundType.FX
+            );
+        }
+    }
+
+    IEnumerator PlayManagedSoundEffectWithDelay(object key, Transform parent, AudioClip[] clips, Vector2 position, float delayRange = 0.2f, float dempfer = 1)
+    {
+        if (clips.Length > 0)
+        {
+            yield return new WaitForSeconds(UnityEngine.Random.value * delayRange);
+            SoundManager.Instance.PlayManagedSound(
+                key,
+                parent,
+                new SoundChannel.ClipSet(
+                    clips[UnityEngine.Random.Range(0, clips.Length - 1)],
+                    true,
+                    0.2f,
+                    position
+                ),
+                SoundManager.SoundType.FX,                
+                volumeDempfer: dempfer
+            );
+        }
+    }
+    
     /// <summary>
     /// События после получения урона
     /// </summary>
@@ -1307,7 +1404,7 @@ public class Unit : MonoBehaviour
     {
         if (!IsAlive)
         {
-            if (owner != null)
+            if (owner != null && squad != null)
             {
                 //если сам себя или союзника убил, то friendly fire
                 if (owner == Squad.playerSquadInstance && squad.fraction != Squad.UnitFraction.ENEMY)

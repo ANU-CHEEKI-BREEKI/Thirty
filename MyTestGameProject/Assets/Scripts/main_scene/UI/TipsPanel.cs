@@ -356,5 +356,23 @@ public class TipsPanel : MonoBehaviour, IDragHandler, IBeginDragHandler, IPointe
     {
         if (mouseDownStartPosition == mouseDownPosition)
             Hide();
-    }    
+    }
+
+    private void OnEnable()
+    {
+        try
+        {
+            SoundManager.Instance.PlaySound(new SoundChannel.ClipSet(SoundManager.Instance.SoundClipsContainer.UI.WindowOpen), SoundManager.SoundType.UI);
+        }
+        catch { }
+    }
+
+    private void OnDisable()
+    {
+        try
+        {
+            SoundManager.Instance.PlaySound(new SoundChannel.ClipSet(SoundManager.Instance.SoundClipsContainer.UI.WindowClosed), SoundManager.SoundType.UI);
+        }
+        catch { }
+    }
 }

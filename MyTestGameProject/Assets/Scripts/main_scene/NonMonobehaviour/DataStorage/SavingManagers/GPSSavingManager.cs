@@ -74,7 +74,7 @@ public class GPSSavingManager : ISavingManager
         if (status == SavedGameRequestStatus.Success)
         {
             CallOnDataSaved(game.Filename, true);
-            Toast.Instance.Show("Прогресс сохранён: " + game.Filename);
+            //Toast.Instance.Show("Прогресс сохранён: " + game.Filename);
         }
         else
         {
@@ -88,7 +88,7 @@ public class GPSSavingManager : ISavingManager
         if (status == SavedGameRequestStatus.Success)
         {
             var g = games[game.Filename];
-            Toast.Instance.Show("Прогресс загружен: " + game.Filename);
+            //Toast.Instance.Show("Прогресс загружен: " + game.Filename);
 
             var jsonStr = Encoding.ASCII.GetString(data);
             var loadedData = JsonUtility.FromJson(jsonStr, g.type);

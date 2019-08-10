@@ -73,10 +73,14 @@ public class SoundManager : MonoBehaviour
         return PlaySound(new List<SoundChannel.ClipSet>() { clipSet }, type, priority);
     }
 
-    public bool StopPlayingSound(AudioClip clip, SoundType type, bool loop)
+    public bool PlayManagedSound(object key, Transform parent, SoundChannel.ClipSet clipSet, SoundType type, int priority = 0, float volumeDempfer = 1, float updateDeltaTime = 0.5f)
     {
-        throw new NotImplementedException();
-        //return channels[(int)type].StopPlayingClipQueue(clip);
+        return channels[(int)type].PlayManagedClip(key, parent, clipSet, type, priority, volumeDempfer, updateDeltaTime);
+    }
+
+    public void StopPlayingManagedSound(object key, SoundType type, float fade = 0)
+    {
+        channels[(int)type].StopPlayingManagedClips(key, fade);
     }
 
     /// <summary>

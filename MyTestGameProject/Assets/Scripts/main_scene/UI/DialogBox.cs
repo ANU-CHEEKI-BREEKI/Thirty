@@ -309,5 +309,23 @@ public class DialogBox : MonoBehaviour, IDialogBox
         dialogData.Height = height;
         return this;
     }
+
+    private void OnEnable()
+    {
+        try
+        {
+            SoundManager.Instance.PlaySound(new SoundChannel.ClipSet(SoundManager.Instance.SoundClipsContainer.UI.WindowOpen), SoundManager.SoundType.UI);
+        }
+        catch { }
+    }
+
+    private void OnDisable()
+    {
+        try
+        {
+            SoundManager.Instance.PlaySound(new SoundChannel.ClipSet(SoundManager.Instance.SoundClipsContainer.UI.WindowClosed), SoundManager.SoundType.UI);
+        }
+        catch { }
+    }
 }
 

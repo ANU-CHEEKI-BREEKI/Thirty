@@ -43,6 +43,8 @@ public class DropToEquipmentMarket : ADropToMe
         // а тут уже добавояем
         MarketInventoryUI.Instance.AddToInventory(stack);
 
+        //PlayUiEffectForMoney();
+
         return true;
     }
 

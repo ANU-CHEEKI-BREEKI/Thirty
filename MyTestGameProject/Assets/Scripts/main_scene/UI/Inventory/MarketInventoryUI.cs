@@ -85,6 +85,8 @@ public class MarketInventoryUI : AInventoryUI
         if (!gameObject.activeInHierarchy)
             return;
 
+        if (inventory == null) return;
+
         int cnt = inventory.Count;
         int q = 0;
         for (int i = 0; i < cnt; i++)
