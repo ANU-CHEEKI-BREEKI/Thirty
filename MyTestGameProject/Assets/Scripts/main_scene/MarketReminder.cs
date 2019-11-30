@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-[RequireComponent(typeof(Image))]
 public class MarketReminder : MonoBehaviour
 {
     enum ReminderType { SKILL, CONSUMABLE, EXPIRIENCE }
@@ -11,13 +10,9 @@ public class MarketReminder : MonoBehaviour
 
     [SerializeField] ReminderType type;
     [SerializeField] WhichOf whichOf;
-    Image icon;
+    [SerializeField]  Image[] icons;
 
     #region API
-    void Awake()
-    {
-        icon = GetComponent<Image>();    
-    }
 
     void Start()
     {
@@ -160,12 +155,14 @@ public class MarketReminder : MonoBehaviour
 
     void Show()
     {
-        icon.enabled = true;
+        foreach (var icon in icons)
+            icon.enabled = true;
     }
 
     void Hide()
     {
-        icon.enabled = false;
+        foreach (var icon in icons)
+            icon.enabled = false;
     }
     #endregion
 }

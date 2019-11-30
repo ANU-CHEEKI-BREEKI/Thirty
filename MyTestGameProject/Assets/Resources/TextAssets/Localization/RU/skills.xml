@@ -1,38 +1,31 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
-  
   <string name="skill_arrowWalley_name">Залп стрел</string>
-  <string name="skill_arrowWalley_description">Залп стрел в небольшой области, который замочит все что там есть</string>
-  
+  <string name="skill_arrowWalley_description">Залп стрел в ограниченной области, который уничтожит все что там есть</string>
   <string name="skill_charge_name">Натиск</string>
   <string name="skill_charge_description">Быстрый натиск для стремительного сближения с врагом.</string>
-
   <string name="skill_phalanx_push_name">Отпор фаланги</string>
   <string name="skill_phalanx_push_description">Тяжелый удар фаланги, пробивающий даже самую сильную броню. Однако такой удар истощает воинов и им нужно некоторое время чтобы перевести дух.</string>
   <string name="skill_phalanx_push_firstphase_name">Первый этап</string>
   <string name="skill_phalanx_push_firstphase_description">Тяжелый удар фаланги, пробивающий даже самую сильную броню</string>
   <string name="skill_phalanx_push_secondphase_name">Второй этап</string>
   <string name="skill_phalanx_push_secondphase_description">Такой удар истощает воинов и им нужно некоторое время чтобы перевести дух.</string>
-  
   <string name="skill_shield_bash_name">Удар щитом</string>
-  <string name="skill_shield_bash_description">Сокрушительный удар щитом, способный повалить на ноги любого воина.</string>
+  <string name="skill_shield_bash_description">Сокрушительный удар щитом, способный повалить на землю любого воина.</string>
   <string name="skill_shield_bash_firstphase_name">Первый этап</string>
-  <string name="skill_shield_bash_firstphase_description">Сокрушительный удар щитом, способный повалить на ноги любого воина.</string>
+  <string name="skill_shield_bash_firstphase_description">Сокрушительный удар щитом, способный повалить на землю любого воина.</string>
   <string name="skill_shield_bash_secondphase_name">Второй этап</string>
-  <string name="skill_shield_bash_secondphase_description">Такой удар открывает уязвимые места воинов и им нужно некоторое время перестроится обратно.</string>
-  
+  <string name="skill_shield_bash_secondphase_description">Такой удар открывает уязвимые места воинов и им нужно некоторое время перестроиться обратно.</string>
   <string name="skill_rally_ranks_name">Сплотить ряды!</string>
   <string name="skill_rally_ranks_description">Воины уплотняют строй, увеличивая защиту, но жертвуя скоростью.</string>
-  
   <string name="consumable_pilums_name">Пилумы</string>
-  <string name="consumable_pilums_description">Пилумы - метательное оружие. Намного тяжелее стрел, что позволяет легко пробивать броню, но кинуть их можно совсем недалеко, и только по прямой траектории.</string>
+  <string name="consumable_pilums_description">Пилумы - метательное оружие. Намного тяжелее стрел, что позволяет легко пробивать броню, но метать их можно совсем недалеко, и только по прямой траектории.</string>
   <string name="consumable_pilums_light_name">Легкие пилумы</string>
-  <string name="consumable_pilums_light_description">Метательное оружие. Облегченный вариант обычных пилумов. Летят дальше, можно взять с собой больше штук, но урон сквозь доспехи меньше. Можно кинуть только по прямой траектории.</string>
+  <string name="consumable_pilums_light_description">Метательное оружие. Облегченный вариант обычных пилумов. Летят дальше, можно взять с собой больше штук, но урон сквозь доспехи меньше. Можно метать только по прямой траектории.</string>
   <string name="consumable_pilums_heavy_name">Тяжёлые пилумы</string>
-  <string name="consumable_pilums_heavy_description">Метательное оружие. Намного тяжелее обычных пилумов. Летят на меньшее расстояние, можно взять меньше штук, но урон сквозь доспехи намного больше. Можно кинуть только по прямой траектории.</string>
+  <string name="consumable_pilums_heavy_description">Метательное оружие. Намного тяжелее обычных пилумов. Летят на меньшее расстояние, можно взять меньше штук, но урон сквозь доспехи намного больше. Можно метать только по прямой траектории.</string>
   <string name="consumable_pilums_perfect_name">Сбалансированные пилумы</string>
-  <string name="consumable_pilums_perfect_description">Метательное оружие с закаленным и заточенным наконечником. Прошивает броню насквозь. Можно кинуть только по прямой траектории.</string>
-
+  <string name="consumable_pilums_perfect_description">Метательное оружие с закаленным и заточенным наконечником. Прошивает броню насквозь. Можно метать только по прямой траектории.</string>
   <string name="skill_upgrade_arrowWalley_startunlock_name">Созвать ополчение</string>
   <string name="skill_upgrade_arrowWalley_startunlock_description">Созвать ополчение и вооружить луками. Теперь вы сможете вызывать ливень стрел на указанную территорию.</string>
   <string name="skill_upgrade_arrowWalley_basedamage_largebow_name">Большой лук</string>
@@ -46,14 +39,13 @@
   <string name="skill_upgrade_arrowWalley_arrowscount_name">Набрать рекрутов</string>
   <string name="skill_upgrade_arrowWalley_arrowscount_description">Набрать новых рекрутов. Теперь даже солнце закроется огромной тучей выпущенных стрел.</string>
   <string name="skill_upgrade_arrowWalley_radius_name">Шире строй!</string>
-  <string name="skill_upgrade_arrowWalley_radius_description">Рассредоточить ряды. Это позволит снарядить лучников более мощными луками.</string>  
+  <string name="skill_upgrade_arrowWalley_radius_description">Рассредоточить ряды. Это позволит снарядить лучников более мощными луками.</string>
   <string name="skill_upgrade_arrowWalley_radius_minus_name">Орлиный глаз</string>
   <string name="skill_upgrade_arrowWalley_radius_minus_description">Обучить лучников точной стрельбе на большие расстояния. Это увеличит кучность стрельбы.</string>
   <string name="skill_upgrade_arrowWalley_cooldown_name">Быстрые руки</string>
   <string name="skill_upgrade_arrowWalley_cooldown_description">Обучить лучников технике быстрой перезарядки. Это позволит стрелять чаще.</string>
-  
   <string name="skill_upgrade_charge_startunlock_name">Тренировать натиск</string>
-  <string name="skill_upgrade_charge_startunlock_description">Обучить солдат в отряде, по команде, быстро ускоряться и сбивать врагов с ног, нанося им урон своим оружием.</string>
+  <string name="skill_upgrade_charge_startunlock_description">Обучить солдат в отряде, по команде, быстро ускоряться и сбивать врага с ног, нанося ему урон своим оружием.</string>
   <string name="skill_upgrade_charge_speed_moretrain_name">Больше тренировок!</string>
   <string name="skill_upgrade_charge_speed_moretrain_description">Тренировать солдат ещё и ещё, пока они не станут бегать быстрее.</string>
   <string name="skill_upgrade_charge_speed_ligthfootwear_name">Облегченная обувь</string>
@@ -70,9 +62,8 @@
   <string name="skill_upgrade_charge_intensivtrain_description">Интенсивные тренировки позволят солдатам быстрее переводить дух после бега. Скорость перезарядки умения сократится.</string>
   <string name="skill_upgrade_charge_damage_runningpunch_name">Удар на бегу</string>
   <string name="skill_upgrade_charge_damage_runningpunch_description">Тренировать удар оружием на бегу. Это позволит наносить больше урона при столкновении с врагом.</string>
-  
   <string name="skill_upgrade_phalanx_push_startunlock_name">Отпор фаланги</string>
-  <string name="skill_upgrade_phalanx_push_startunlock_description">Тренировать пронзающий удар копьем, в построении фалангой. При удачном исполнении, такой удар не переживет никто!</string>
+  <string name="skill_upgrade_phalanx_push_startunlock_description">Тренировать пронзающий удар копьем в построении фалангой. При удачном исполнении, такой удар не переживет никто!</string>
   <string name="skill_upgrade_phalanx_push_basedamage_name">Бей сильнее!</string>
   <string name="skill_upgrade_phalanx_push_basedamage_description">Тренировать силу удара. Больше силы - больше урона</string>
   <string name="skill_upgrade_phalanx_push_cooldown_name">Интенсивные тренировки</string>
@@ -83,7 +74,6 @@
   <string name="skill_upgrade_phalanx_push_speed_description">Тренировать быструю смену стойки после удара. Это позволит нивелировать замедление</string>
   <string name="skill_upgrade_phalanx_push_duration_name">Больше, больше тренировок!</string>
   <string name="skill_upgrade_phalanx_push_duration_description">Нужно быстрее восстанавливаться в бою? Значит нужно больше тренироваться вне боя!</string>
-  
   <string name="skill_upgrade_shield_bash_startunlock_name">Удар щитом</string>
   <string name="skill_upgrade_shield_bash_startunlock_description">Щит - не только броня, но и отличное оружие! Тяжелый удар щитом способен сбить с ног любого противника.</string>
   <string name="skill_upgrade_shield_bash_basedamage_name">Бей сильнее!</string>
@@ -96,20 +86,18 @@
   <string name="skill_upgrade_shield_bash_defence_description">Тренировать быструю смену стойки после удара. Это позволит прикрыть уязвимые места, ранее прикрытые щитом</string>
   <string name="skill_upgrade_shield_bash_duration_name">Больше, больше тренировок!</string>
   <string name="skill_upgrade_shield_bash_duration_description">Нужно быстрее восстанавливаться в бою? Значит нужно больше тренироваться вне боя!</string>
-  
   <string name="skill_upgrade_rally_ranks_startunlock_name">Сплотить ряды</string>
   <string name="skill_upgrade_rally_ranks_startunlock_description">Чем плотнее строй, тем легче противостоять врагу!</string>
   <string name="skill_upgrade_rally_ranks_cooldown_name">Интенсивные тренировки</string>
   <string name="skill_upgrade_rally_ranks_cooldown_description">Интенсивные тренировки позволят бойцам быстрее восстанавливаться после нагрузок.</string>
   <string name="skill_upgrade_rally_ranks_defence_name">Прикрывать ближнего!</string>
-  <string name="skill_upgrade_rally_ranks_defence_description">Отладить взаимодействие солдат в строю, что даст большой прирост защиты всего отряда!</string> 
+  <string name="skill_upgrade_rally_ranks_defence_description">Отладить взаимодействие солдат в строю, что даст большой прирост защиты всего отряда!</string>
   <string name="skill_upgrade_rally_ranks_chargedeflect_name">Мертвая стойка</string>
   <string name="skill_upgrade_rally_ranks_chargedeflect_description">В такой стойке никто и с места не сдвинет. А уж столкнуться с такой стойкой на бегу - себе дороже</string>
   <string name="skill_upgrade_rally_ranks_speed_name">Маневрирование</string>
   <string name="skill_upgrade_rally_ranks_speed_description">Тренировать перемещение в сплочённых рядах. Это значительно повысит скорость передвижения в таком построении.</string>
   <string name="skill_upgrade_rally_ranks_acceleration_name">Твердая почва</string>
-  <string name="skill_upgrade_rally_ranks_acceleration_description">Солдаты смогут пользоваться всеми преимуществами почвы,что позволит им эффективнее набирать скорость при перемещении</string>
+  <string name="skill_upgrade_rally_ranks_acceleration_description">Солдаты смогут пользоваться всеми преимуществами почвы, что позволит им эффективнее набирать скорость при перемещении</string>
   <string name="skill_upgrade_rally_ranks_duration_name">Больше, больше тренировок!</string>
   <string name="skill_upgrade_rally_ranks_duration_description">Нужно больше выносливости в бою? Значит нужно больше тренироваться вне боя!</string>
-  
 </resources>

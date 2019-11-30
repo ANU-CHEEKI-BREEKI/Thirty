@@ -12,6 +12,7 @@ public class ButtonShowAds : MonoBehaviour
     }
     void OnClickBtn()
     {
-        GADWrapper.ShowInterstitialAd(GADWrapper.Const.InterstitialAds.ID_ALL_KIND_OF_INTERSTITIAL_ADS, false, true);
+        if(!IAPWrapper.IsOlreadyBought(IAPWrapper.Const.NonConsumable.ID_DISABLE_ADS))
+            GADWrapper.ShowInterstitialAd(GADWrapper.Const.InterstitialAds.ID_ALL_KIND_OF_INTERSTITIAL_ADS, false, true);
     }
 }

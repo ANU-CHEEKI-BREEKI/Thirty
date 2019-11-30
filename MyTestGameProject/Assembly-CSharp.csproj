@@ -602,6 +602,7 @@
     <None Include="Assets\Resources\TextAssets\Localization\RU\formations.xml" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
     <None Include="Assets\Resources\TextAssets\Localization\RU\items.xml" />
+    <None Include="Assets\Resources\TextAssets\Localization\ENG\terrain..xml" />
     <None Include="Assets\Resources\TextAssets\Localization\ENG\toast.xml" />
     <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (BOTTOM) (LEFT) ] [EXIT TOP] [GRASSLAND] (1).xml" />
     <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (BOTTOM) (TOP) ] [EXIT RIGHT] [SWAMP] (1).xml" />
@@ -613,7 +614,6 @@
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (RIGHT) ] [EXIT BOTTOM] [SWAMP] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\Localization\ENG\terrain.xml" />
     <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (TOP) ] [EXIT BOTTOM] [SWAMP] (1).xml" />
     <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (LEFT) (RIGHT) ] [EXIT TOP] [SWAMP] (1).xml" />
     <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (BOTTOM) (TOP) (RIGHT) ] [EXIT LEFT] [GRASSLAND] (1).xml" />
@@ -640,7 +640,6 @@
     <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (LEFT) ] [GRASSLAND] (1).xml" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
     <None Include="Assets\Resources\TextAssets\Localization\RU\toast.xml" />
-    <None Include="Assets\Resources\TextAssets\Localization\ENG\tips.xml" />
     <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (TOP) (LEFT) ] [EXIT RIGHT] [SWAMP] (1).xml" />
     <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (RIGHT) ] [SWAMP] (1).xml" />
     <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (LEFT) (RIGHT) ] [SWAMP] (1).xml" />
@@ -667,6 +666,7 @@
     <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (RIGHT) ] [GRASSLAND] (1).xml" />
     <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (BOTTOM) (TOP) (LEFT) ] [SWAMP] (1).xml" />
     <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (LEFT) ] [EXIT BOTTOM] [SWAMP] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\Localization\ENG\tips.xml.xml" />
     <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (TOP) (LEFT) (RIGHT) ] [SWAMP] (1).xml" />
     <None Include="Assets\Shaders\SpriteOutline.shader" />
     <None Include="Assets\Resources\TextAssets\Localization\RU\terrain.xml" />
