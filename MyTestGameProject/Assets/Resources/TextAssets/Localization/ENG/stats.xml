@@ -1,54 +1,79 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="health">Health</string>
-  <string name="health_description">Maximum quantity of soldier health in the squad.</string>
-  <string name="squadHealth">Squad health</string>
-  <string name="squadHealth_description">Squad health</string>
-  <string name="armour">Armour</string>
-  <string name="armour_description">The value of armour of the defending soldier is  deducted from the  amount of damage of the attacker.</string>
-  <string name="baseDamage">Basic damage</string>
-  <string name="baseDamage_description">The amount of basic part of the damage, done to the enemy by the soldier.
-This damage can de blocked by the armour of the defending soldier.</string>
-  <string name="armourDamage">Damage through the armour.</string>
-  <string name="armourDamage_description">The amount of the special part of the damage,  done to the enemy by the soldier.  
-This damage can't be blocked by the armour.</string>
-  <string name="attack">Attack</string>
-  <string name="attack_description">The skill of the soldier to attack.  
-The skill to conduct successful attack  to the non-defensive target.</string>
-  <string name="defence">Defence</string>
-  <string name="defence_description">The skill of the soldier to defend himself.
-The skill to  override successfully the blow, aimed at the soldier's defeat.</string>
-  <string name="defenceHalfSector">Defence sector</string>
-  <string name="defenceHalfSector_description">Sector ahead of the soldier, where he can successfully defend himself.</string>
-  <string name="missileBlock">Missile block</string>
-  <string name="missileBlock_description">Probability to block the squad successfully.
-You should take into account that the shield blocks missiles only during  frontal shelling. Besides, if the shields are not raised,  the chance to block  shelling reduces by half.
-The value of frontal shooting is displayed.</string>
-  <string name="attackDistance">Distance of attack</string>
-  <string name="attackDistance_description">Maximum distance, at which the soldier can do damage to the enemy.</string>
-  <string name="speed">The speed of displacement</string>
-  <string name="speed_description">Maximum speed of displacement of the soldier in the  squad.</string>
-  <string name="acceleration">Acceleration</string>
-  <string name="acceleration_description">Acceleration</string>
-  <string name="rotationSpeed">Rotation speed</string>
-  <string name="rotationSpeed_description">Rotation speed of the soldier  about its axis in degrees.</string>
-  <string name="chargeImpact">Charge impact</string>
-  <string name="chargeImpact_description">Charge impact. The higher this value is, the higher is the chance to do harm to the enemy and throw back the enemy  during the charge.</string>
-  <string name="chargeDeflect">Charge deflect</string>
-  <string name="chargeDeflect_description">Charge deflect. The higher this value is, the higher is the chance to do harm to the enemy and throw back the enemy  during the charge.</string>
-  <string name="chargeDamage">Charge damage</string>
-  <string name="chargeDamage_description">Extra interest of the damage by the soldier's attack, which will be done during successful charge.</string>
-  <string name="defenceGoingThrough">Defence by "going through"</string>
-  <string name="defenceGoingThrough_description">The skill of defence while going through.</string>
-  <string name="flyingSpeed">Flying speed</string>
-  <string name="flyingSpeed_description">Flying speed</string>
-  <string name="weight">Weight of the squad</string>
-  <string name="weight_description">Various landscapes affect the squads of different heaviness in different ways.
-Be careful, landscape can both give you the advantage, and become the place of your burial site.</string>
-  <string name="weapon_damage">Weapon damage</string>
-  <string name="weapon_damage_description">Weapon damage</string>
-  <string name="armour_armour">Protection of armour</string>
-  <string name="armour_armour_description">Protection of armour</string>
-  <string name="missile_block_short">Missile block</string>
-  <string name="missile_block_short_description">Missile block</string>
+  
+  <string name="health">Health</string>
+  <string name="health_description">The maximum amount of health for a unit in a unit.</string>
+  
+  <string name="squadHealth">Detachment Health</string>
+  <string name="squadHealth_description">Detachment Health</string>
+  
+  <string name="armour">Armor</string>
+  <string name="armour_description">The defensive soldier’s armor value is subtracted from the attacker's damage.</string>
+  
+  <string name="baseDamage">Base Damage</string>
+  <string name="baseDamage_description">The amount of base damage that a soldier will inflict on an enemy.
+This damage can be blocked by the armor of the defending soldier.</string>
+  
+  <string name="armourDamage">Damage through armor</string>
+  <string name="armourDamage_description">The number of the special part of the damage the soldier will inflict on the enemy.
+This damage cannot be blocked by armor.</string>
+  
+  <string name="attack">Attack</string>
+  <string name="attack_description">A soldier’s ability to attack.
+In fact, the probability of a successful strike on a non-defending goal.</string>
+  
+  <string name="defence">Protection</string>
+  <string name="defence_description">A soldier’s ability to defend himself.
+In fact, the probability of successful repelling the strike that was supposed to hit the soldier.</string>
+  
+  <string name="defenceHalfSector">Protection Sector</string>
+  <string name="defenceHalfSector_description">Half the sector ahead of the soldier in which he can successfully defend himself.</string>
+  
+  <string name="missileBlock">Block Shelling</string>
+  <string name="missileBlock_description">The probability of successfully blocking the projectile.
+It should be borne in mind that shit blocks shells only in frontal shelling. In addition, if the shields are not raised, their block chance is halved.
+Displays the value for the front fire.</string>
+  
+  <string name="attackDistance">Attack Range</string>
+  <string name="attackDistance_description">The maximum distance a soldier can inflict damage on an enemy.</string>
+  
+  <string name="speed">move speed</string>
+  <string name="speed_description">The maximum speed of movement of the soldiers in the unit.</string>
+  
+  <string name="acceleration">Acceleration</string>
+  <string name="acceleration_description">Acceleration</string>
+  
+  <string name="rotationSpeed">Turn Speed ​​</string>
+  <string name="rotationSpeed_description">The speed of a soldier turning around its axis in degrees.</string>
+  
+  <string name="chargeImpact">Onslaught Force</string>
+  <string name="chargeImpact_description">Onslaught Force. The greater this value, the higher the chance to inflict damage to the enemy and throw it back when there is an onslaught.
+A reflection of the onslaught of the defending soldier is subtracted from the onslaught of the attacking soldier.</string>
+  
+  <string name="chargeDeflect">Reflection of an onslaught</string>
+  <string name="chargeDeflect_description">Reflection of the onslaught. The greater this value, the higher the chance to repel damage to the enemy and throw it back, when the enemy attacks.
+A reflection of the onslaught of the defending soldier is subtracted from the onslaught of the attacking soldier.</string>
+  
+  <string name="chargeDamage">Damage onslaught</string>
+  <string name="chargeDamage_description">An additional percentage of the soldier’s attack that will be inflicted upon a successful onslaught attack.</string>
+  
+  <string name="defenceGoingThrough">Protection "on the run"</string>
+  <string name="defenceGoingThrough_description">Ability to defend in motion.</string>
+  
+  <string name="flyingSpeed">Flight Speed ​​</string>
+  <string name="flyingSpeed_description">Flight Speed ​​</string>
+  
+  <string name="weight">squad weight</string>
+  <string name="weight_description">Different terrain has a different effect on units of different severity.
+Be careful, the terrain can both give you an advantage or become your burial site.</string>
+  
+  <string name="weapon_damage">Weapon Damage</string>
+  <string name="weapon_damage_description">Weapon Damage</string>
+  
+  <string name="armour_armour">Armor armor</string>
+  <string name="armour_armour_description">Armor armor</string>
+  
+  <string name="missile_block_short">Block. bombardment</string>
+  <string name="missile_block_short_description">Block. bombardment</string>
+  
 </resources>

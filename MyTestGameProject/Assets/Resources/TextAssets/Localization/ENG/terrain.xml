@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   
+  <string name="terrain_modifier_dirt_name">Dirt</string>
+  <string name="terrain_modifier_dirt_description">In mud it is difficult to move, the speed of movement and protection respectively decrease.
+The heavier the soldiers, the more difficult they will have in the mud.</string>
+  <string name="terrain_modifier_forest_name">Forest</string>
+  <string name="terrain_modifier_forest_description">The heavier the soldier, the harder it is for him to move, defend and attack in the forest.
+However, lightly armed soldiers, on the contrary, feel at home in the forest.</string>
+  <string name="terrain_modifier_forest_light_name">Woodland</string>
+  <string name="terrain_modifier_forest_light_description">It is more difficult for heavily armed soldiers to move, defend and attack in light forest, however these inconveniences are not critical.
+Lightly armed soldiers, feel in light forest a little more secure than in an open field.</string>
+  <string name="terrain_modifier_grass_name">Tall grass</string>
+  <string name="terrain_modifier_grass_description">Does not affect the abilities of the soldiers, however, it is easy to hide an entire detachment in it.</string>
+  <string name="terrain_modifier_road_ground_name">Dirt Road</string>
+  <string name="terrain_modifier_road_ground_description">On the road it is much easier to navigate than in unsuitable locations.
+To heavily armed soldiers it is easier to bear the burden of their armor.</string>
+  <string name="terrain_modifier_road_rock_name">Causeway</string>
+  <string name="terrain_modifier_road_rock_description">It is much easier to move along the road, because it was created for this purpose.
+Heavily armed soldiers feel most protected on such a road.</string>
+  <string name="terrain_modifier_water_light_name">Shallow</string>
+  <string name="terrain_modifier_water_light_description">It is quite difficult to make attacks or maneuvers in the water. Falls attack and movement speed.
+The heavier the soldiers, the harder they will have in the water.</string>
+    
+</resources>

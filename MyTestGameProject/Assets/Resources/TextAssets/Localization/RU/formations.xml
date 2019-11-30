@@ -1,22 +1,25 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<resources>
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>  
   <string name="formation_ranks_name">Свободный строй</string>
   <string name="formation_ranks_description">Отряд не держит строй.
-При получении урона солдаты будут ошеломлены и некоторое время не смогут защищаться.</string>
+  При получении урона солдаты будут ошеломлены, и некоторое время не смогут защищаться.</string>
   <string name="formation_phalanx_name">Фаланга</string>
   <string name="formation_phalanx_description">Отряд построен в фалангу.
-Плотные ряды солдат будут отталкивать врага назад, не давая ему пройти сквозь Ваш отряд.</string>
+  Плотные ряды солдаты будут отталкивать врага назад, не давая ему пройти сквозь Ваш отряд.</string>
   <string name="formation_shields_name">Поднятые щиты</string>
   <string name="formation_shields_description">Отряд поднял щиты и защищается от обстрела.
-Пока щиты подняты, полностью учитываются их свойства - блокирование обстрела и броня против обстрела.
+Пока щиты подняты, учитывается их броня против обстрела и полностью учитывается свойство блокирования обстрела.
 Если щиты будут опущены, их броня не будет учитываться, а их блокирование обстрела будет учитываться наполовину.
-При обстреле в тыл, не зависимо от построения, блокирование щитом обстрела не учитывается.</string>
+При обстреле в тыл, блокировка обстрела щита не учитывается, не зависимо от построения.</string>
   <string name="condition_inFight_name">Ближний бой</string>
   <string name="condition_inFight_description">Отряд сражается в ближнем бою.
-Это может накладывать некоторые ограничения. Например, нельзя пополнить отряд или опустить пики. Поэтому, внимательно читайте описание предметов.</string>
+  Это может накладывать некоторые ограничения, например, нельзя пополнить отряд или опустить пики, поэтому, внимательно читайте описание предметов.</string>
+    
   <string name="weaponConstraint_cantReformPhalanx">отряд не может перестроиться в фалангу</string>
   <string name="weaponConstraint_cantReformPhalanxInFight">отряд не может перестроиться в фалангу во время ближнего боя</string>
   <string name="weaponConstraint_cantUseShield">отряд не может использовать щит</string>
-  <string name="can_use_in_this_formations">Можно использовать в построениях:</string>
-  <string name="cant_use_in_this_formations">Нельзя использовать в построениях:</string>
+
+  <string name="can_use_in_this_formations">Можно использовать в построениях: </string>
+  <string name="cant_use_in_this_formations">Нельзя использовать в построениях: </string>
+
 </resources>

@@ -1,7 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="reward_ad_not_loaded_yet">Your ads are still loading</string>
-  <string name="reward_ad_not_loaded">Your ads haven't been loaded yet  :(  Try again a bit later</string>
-  <string name="reward_ad_load_error">Failed to load the ads</string>
-  <string name="reward_ad_show_error">Failed to show the ads</string>
+  
+   <string name="reward_ad_not_loaded_yet">Your ad is still loading</string>
+   <string name="reward_ad_not_loaded">Ads not loaded for you :(
+Try again later.</string>
+   <string name="reward_ad_load_error">Failed to load ads</string>
+   <string name="reward_ad_show_error">Failed to display ads</string>
+  
 </resources>

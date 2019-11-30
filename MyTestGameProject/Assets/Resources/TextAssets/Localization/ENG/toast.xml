@@ -1,18 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="toast_cant_use_with_shield">Can't use it together with shield</string>
-  <string name="toast_cant_use_with_current_weapon">Can’t use it with current weapon</string>
-  <string name="toast_not_enough_gold">Not enough gold</string>
-  <string name="toast_not_enough_silver">Not enough silver</string>
-  <string name="toast_not_enough_expirience">Not enough experience</string>
-  <string name="toast_not_enough_equipment_count">Not enough experience for the whole squad</string>
-  <string name="toast_stat_max_upgrade">Maximum upgrade</string>
-  <string name="toast_cant_drop_weapon">Can't drop the weapon</string>
-  <string name="toast_cant_drop">Can't drop</string>
-  <string name="toast_cant_reform_phalanx_with_this_weapon">Can't reform into phalanx with this weapon</string>
-  <string name="toast_cant_reform_phalanx_in_fight_with_this_weapon">Can't reform into phalanx with this weapon  in fight</string>
-  <string name="toast_cant_reform_shields_without_shields">You can't reform into testudo without shields</string>
-  <string name="toast_cant_use_skill_in_this_formation">Can't use this skill in this formation</string>
-  <string name="toast_cant_use_skill_without_shields">Can't use this skill without shields</string>
-  <string name="toast_cant_use_because_of_cooldown">Skill cooldown</string>
+    
+  <string name="toast_cant_use_with_shield">Cannot be used with a shield</string>
+  <string name="toast_cant_use_with_current_weapon">Cannot be used with current weapon</string>
+  <string name="toast_not_enough_gold">Not enough gold</string>
+  <string name="toast_not_enough_silver">Not enough silver</string>
+  <string name="toast_not_enough_expirience">Not enough experience</string>
+  <string name="toast_not_enough_equipment_count">The equipment is not enough for the entire squad</string>
+  <string name="toast_stat_max_upgrade">Already learned to the maximum</string>
+  <string name="toast_cant_drop_weapon">You can not remove weapons</string>
+  <string name="toast_cant_drop">Unable to remove</string>
+  
+  <string name="toast_cant_reform_phalanx_with_this_weapon">With this weapon you cannot change your phalanx</string>
+  <string name="toast_cant_reform_phalanx_in_fight_with_this_weapon">With this weapon you cannot change into a phalanx in battle</string>
+  <string name="toast_cant_reform_shields_without_shields">You can’t rebuild without a shield with a "turtle"</string>
+  
+  <string name="toast_cant_use_skill_in_this_formation">You cannot use this skill in the current build</string>
+  <string name="toast_cant_use_skill_without_shields">You cannot use this skill without shields</string>
+  
+  <string name="toast_cant_use_because_of_cooldown">Recharge skill</string>
+  
 </resources>

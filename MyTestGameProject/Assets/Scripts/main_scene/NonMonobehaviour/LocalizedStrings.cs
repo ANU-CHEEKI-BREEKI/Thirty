@@ -381,7 +381,7 @@ public sealed class LocalizedStrings
     public static string missile_block_short_description { get; private set; }
 
 #endregion stats
-#region terrain.
+#region terrain
 
     public static string terrain_modifier_dirt_name { get; private set; }
     public static string terrain_modifier_dirt_description { get; private set; }
@@ -398,28 +398,13 @@ public sealed class LocalizedStrings
     public static string terrain_modifier_water_light_name { get; private set; }
     public static string terrain_modifier_water_light_description { get; private set; }
 
-#endregion terrain.
-#region tips.xml
+#endregion terrain
+#region tips
 
     public static string tip_try_to_buy_equip_and_consumables { get; private set; }
     public static string tip_try_to_train_squad_and_skills { get; private set; }
-    public static string tip_how_to_block_shelling { get; private set; }
-    public static string tip_terrain_how_to_get_max_pros { get; private set; }
-    public static string tip_how_to_open_new_equipmant { get; private set; }
-    public static string tip_short_all_formations { get; private set; }
-    public static string tip_use_skills { get; private set; }
-    public static string tip_use_consubamles { get; private set; }
-    public static string tip_do_not_be_surronded { get; private set; }
-    public static string tip_how_to_block_charge { get; private set; }
-    public static string tip_do_not_try_to_avoid_pilums { get; private set; }
-    public static string tip_how_to_check_units_health { get; private set; }
-    public static string tip_skill_arrow_valley { get; private set; }
-    public static string tip_skill_charge { get; private set; }
-    public static string tip_skill_rally_ranks { get; private set; }
-    public static string tip_phalanx_push { get; private set; }
-    public static string tip_shield_bash { get; private set; }
 
-#endregion tips.xml
+#endregion tips
 #region toast
 
     public static string toast_cant_use_with_shield { get; private set; }

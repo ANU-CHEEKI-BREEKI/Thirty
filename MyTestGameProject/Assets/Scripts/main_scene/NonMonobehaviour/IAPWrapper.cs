@@ -37,12 +37,6 @@ public static class IAPWrapper
         OnPurchaseSuccess?.Invoke(data);
     }
 
-    public static bool IsOlreadyBought(string productId)
-    {
-        if (manager == null || !manager.IsInitialized) throw new Exception("Сначала надо инициализировать...");
-        return manager.IsOlreadyBought(productId);
-    }
-
     public static bool BuyProduct(string productId, Action onPurchaseSuccess, Action onPurchaseFails = null, bool disableAds = true)
     {
         if (manager == null || !manager.IsInitialized) return false;
