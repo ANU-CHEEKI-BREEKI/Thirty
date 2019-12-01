@@ -123,7 +123,7 @@ public class FormationButton : MonoBehaviour, IPointerDownHandler, IPointerUpHan
     private void PlayerSquadInstance_OnFormationChanged(FormationStats formation)
     {
         StartCoroutine(Tools.Others.Cooldown(
-            3,
+            formation.COOLDOWN,
             StartCooldown,
             EndCooldown,
             cooldownText

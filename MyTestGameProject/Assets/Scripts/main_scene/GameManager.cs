@@ -123,8 +123,14 @@ public class GameManager : MonoBehaviour
         }
         else
         {
+            Instance.SavablePlayerData.Settings.UndoSettingsChanges();
+            Instance.Language = Instance.SavablePlayerData.Settings.commonSettings.Language;
+            Instance.SavablePlayerData.Settings.RecordSettings();
+
             Destroy(gameObject);
         }
+
+        
 
         if (SceneManager.GetActiveScene().buildIndex == (int)SceneIndex.LEVEL)
             Instance.PauseGame();
@@ -308,9 +314,10 @@ public class GameManager : MonoBehaviour
 
                 break;
             case SceneIndex.MARKET:
-                SoundManager.Instance.PlaySound(new SoundChannel.ClipSet(SoundManager.Instance.SoundClipsContainer.Music.MusicMarket, false), SoundManager.SoundType.MUSIC);
+                SoundManager.Instance.PlaySound(new SoundChannel.ClipSet(SoundManager.Instance.SoundClipsContainer.Music.MusicMarket, true), SoundManager.SoundType.MUSIC);
 
-                GADWrapper.LoadInterstitialAd(GADWrapper.Const.InterstitialAds.ID_ALL_KIND_OF_INTERSTITIAL_ADS);
+                if (!IAPWrapper.IsAdDisabled)
+                    GADWrapper.LoadInterstitialAd(GADWrapper.Const.InterstitialAds.ID_ALL_KIND_OF_INTERSTITIAL_ADS);
 
                 GADWrapper.LoadRewardedAd(
                     GADWrapper.Const.RevardedAds.ID_FREE_GOLD,
@@ -325,7 +332,8 @@ public class GameManager : MonoBehaviour
                 FadeScreen.Instance.FadeOnStartScene = false;
                 PauseGame();
 
-                GADWrapper.LoadInterstitialAd(GADWrapper.Const.InterstitialAds.ID_ALL_KIND_OF_INTERSTITIAL_ADS);
+                if (!IAPWrapper.IsAdDisabled)
+                    GADWrapper.LoadInterstitialAd(GADWrapper.Const.InterstitialAds.ID_ALL_KIND_OF_INTERSTITIAL_ADS);
 
                 Ground.Instance.OnGenerationDone += ()=> { ResumeGame(); };
                 Ground.Instance.OnGenerationDone += InitPlayer;
@@ -367,12 +375,12 @@ public class GameManager : MonoBehaviour
 
     public void ResetPlayerTempProgressValues()
     {
-        savablePlayerData.PlayerProgress.ResetTempValues();
+        savablePlayerData.PlayerProgress.RecordSettings();
     }
 
     public void ApplyPlayerTempProgressValues()
     {
-        savablePlayerData.PlayerProgress.ApplyTempValues();
+        savablePlayerData.PlayerProgress.UndoSettingsChanges();
 
         ResetPlayerTempProgressValues();    
     }

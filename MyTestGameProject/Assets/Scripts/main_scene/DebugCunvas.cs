@@ -7,6 +7,8 @@ using UnityEngine.SceneManagement;
 
 public class DebugCunvas : MonoBehaviour
 {
+    [SerializeField] private bool update = true;
+
     [SerializeField] TextMeshProUGUI fpsText;
     [SerializeField] TextMeshProUGUI fpsScaledText;
     [SerializeField] TextMeshProUGUI levelText;
@@ -20,6 +22,8 @@ public class DebugCunvas : MonoBehaviour
 
     static DebugCunvas instance;
 
+
+
     void Awake()
     {
         if (instance != null)
@@ -30,21 +34,24 @@ public class DebugCunvas : MonoBehaviour
 
         instance = this;
 
-        Init();
+        if (update)
+            Init();
 
         DontDestroyOnLoad(gameObject);
     }
 
     void Init()
     {
+        if(fpsText != null)
         StartCoroutine(Coroutine(
             condition: () => { return true; },
-            action: () => { fpsText.text = "fps:    " + (1f / Time.unscaledDeltaTime).ToString(StringFormats.floatNumber); },
+            action: () => { fpsText.text = "fps: " + (1f / Time.unscaledDeltaTime).ToString(StringFormats.floatNumber); },
             cleanup: () => { },
-            deltaTime: 0.1f,
+            deltaTime: 0.5f,
             type: CoroutineType.REAL_TIME
         ));
 
+        if (fpsScaledText != null)
         StartCoroutine(Coroutine(
             condition: () => { return true; },
             action: () => {
@@ -56,6 +63,7 @@ public class DebugCunvas : MonoBehaviour
             type: CoroutineType.REAL_TIME
         ));
 
+        if (levelText != null)
         StartCoroutine(Coroutine(
             condition: () => { return true; },
             action: () => {
@@ -67,6 +75,7 @@ public class DebugCunvas : MonoBehaviour
             type: CoroutineType.REAL_TIME
         ));
 
+        if (savingManagerText != null)
         StartCoroutine(Coroutine(
            condition: () => { return true; },
            action: () => 
@@ -80,6 +89,7 @@ public class DebugCunvas : MonoBehaviour
            type: CoroutineType.REAL_TIME
        ));
 
+        if (timescaleText != null)
         StartCoroutine(Coroutine(
             condition: () => { return true; },
             action: () => {
@@ -91,6 +101,7 @@ public class DebugCunvas : MonoBehaviour
             type: CoroutineType.REAL_TIME
         ));
 
+        if (text != null)
         StartCoroutine(Coroutine(
            condition: () => { return true; },
            action: () => {
@@ -101,6 +112,8 @@ public class DebugCunvas : MonoBehaviour
            deltaTime: 0.1f,
            type: CoroutineType.REAL_TIME
        ));
+
+        if (scene != null)
         StartCoroutine(Coroutine(
            condition: () => { return true; },
            action: () => {

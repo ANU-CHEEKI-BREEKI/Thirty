@@ -118,9 +118,9 @@ public class MarketInventoryUI : AInventoryUI
         return go;
     }
 
-    public void SetCurrentEquipmentType(string type)
+    public void SetCurrentEquipmentType(EquipmentStats.TypeOfEquipment type)
     {
-        currentType = (EquipmentStats.TypeOfEquipment)Enum.Parse(typeof(EquipmentStats.TypeOfEquipment), type);
+        currentType = type;
         RefreshUI();
     }
 }

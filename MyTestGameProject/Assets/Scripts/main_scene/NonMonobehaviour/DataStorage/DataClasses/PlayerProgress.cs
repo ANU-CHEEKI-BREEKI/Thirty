@@ -57,16 +57,16 @@ public class PlayerProgress : IResetable, ITempValuesApplyable, ISavable, IMerge
         Level.Reset();
     }
 
-    public void ApplyTempValues()
+    public void UndoSettingsChanges()
     {
-        Score.ApplyTempValues();
-        Equipment.ApplyTempValues();
+        Score.UndoSettingsChanges();
+        Equipment.UndoSettingsChanges();
     }
 
-    public void ResetTempValues()
+    public void RecordSettings()
     {
-        Score.ResetTempValues();
-        Equipment.ResetTempValues();
+        Score.RecordSettings();
+        Equipment.RecordSettings();
     }
 
     public void ApplyLoadedData(object data)

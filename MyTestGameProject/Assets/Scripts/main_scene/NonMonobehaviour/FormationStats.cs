@@ -26,18 +26,24 @@ public abstract class FormationStats : IDescriptionable
     public readonly float UNIT_CHARGE_IMPACT;
     public readonly float UNIT_CHARGE_DEFLECT;
 
+    /// <summary>
+    /// cooldown after change some formation to this formation
+    /// </summary>
+    public readonly float COOLDOWN;
+
     public FormationStats(
-        float SQUAD_ADDITIONAL_SPEED = 0,
-        float SQUAD_ADDITIONAL_ROTATION_SPEED = 0,
-        float UNIT_ADDITIONAL_SPEED = 0,
-        float UNIT_ADDITIONAL_ROTATION_SPEED = 0,
-        float UNIT_ADDITIONAL_DAMAGE = 0,
-        float UNIT_ADDITIONAL_ATTACK = 0,
-        float UNIT_ADDITIONAL_DEFENCE = 0,
-        float UNIT_ADDITIONAL_DEFENCE_SECTOR = 0,
-        float UNIT_CHARGE_IMPACT = 0,
-        float UNIT_CHARGE_DEFLECT = 0,
-        Formations FORMATION = Formations.RANKS
+        float SQUAD_ADDITIONAL_SPEED,
+        float SQUAD_ADDITIONAL_ROTATION_SPEED,
+        float UNIT_ADDITIONAL_SPEED,
+        float UNIT_ADDITIONAL_ROTATION_SPEED,
+        float UNIT_ADDITIONAL_DAMAGE,
+        float UNIT_ADDITIONAL_ATTACK ,
+        float UNIT_ADDITIONAL_DEFENCE ,
+        float UNIT_ADDITIONAL_DEFENCE_SECTOR ,
+        float UNIT_CHARGE_IMPACT ,
+        float UNIT_CHARGE_DEFLECT ,
+        float COOLDOWN,
+        Formations FORMATION 
     )
     {
         this.SQUAD_ADDITIONAL_SPEED = SQUAD_ADDITIONAL_SPEED;
@@ -55,6 +61,8 @@ public abstract class FormationStats : IDescriptionable
 
         this.UNIT_CHARGE_IMPACT = UNIT_CHARGE_IMPACT;
         this.UNIT_CHARGE_DEFLECT = UNIT_CHARGE_DEFLECT;
+
+        this.COOLDOWN = COOLDOWN;
 
         this.FORMATION = FORMATION;
     }
@@ -243,32 +251,59 @@ public abstract class FormationStats : IDescriptionable
 
     public class Ranks : FormationStats
     {
-        public Ranks() { }
+        public Ranks() : base(
+
+            SQUAD_ADDITIONAL_SPEED: 0,
+            SQUAD_ADDITIONAL_ROTATION_SPEED: 0,
+            UNIT_ADDITIONAL_SPEED: 0,
+            UNIT_ADDITIONAL_ROTATION_SPEED: 0,
+            UNIT_ADDITIONAL_DAMAGE: 0,
+            UNIT_ADDITIONAL_ATTACK: 0.1f,
+            UNIT_ADDITIONAL_DEFENCE: 0,
+            UNIT_ADDITIONAL_DEFENCE_SECTOR: 0,
+            UNIT_CHARGE_IMPACT: 0,
+            UNIT_CHARGE_DEFLECT: 0,
+            COOLDOWN: 3f,
+            FORMATION: Formations.RANKS
+        )
+        { }
     }
 
     public class Phalanx : FormationStats
     {
         public Phalanx() : base(
-            -0.8f, -0.9f,
-            -0.8f, -0.955f,
-             0.9f,
-            -0.1f,  0.1f,
-            -0.5f,
-             0f,    0f,
-            Formations.PHALANX
+
+            SQUAD_ADDITIONAL_SPEED: -0.8f,
+            SQUAD_ADDITIONAL_ROTATION_SPEED: -0.9f,
+            UNIT_ADDITIONAL_SPEED: -0.8f,
+            UNIT_ADDITIONAL_ROTATION_SPEED: -0.955f,
+            UNIT_ADDITIONAL_DAMAGE: 0.9f,
+            UNIT_ADDITIONAL_ATTACK: 0,//-0.1f,
+            UNIT_ADDITIONAL_DEFENCE: 0.1f,
+            UNIT_ADDITIONAL_DEFENCE_SECTOR: -0.5f,
+            UNIT_CHARGE_IMPACT: 0f,
+            UNIT_CHARGE_DEFLECT: 0f,
+            COOLDOWN: 3f,
+            FORMATION: Formations.PHALANX
         ) { }
     }
 
     public class RisedShields : FormationStats
     {
         public RisedShields() : base(
-             0, 0,
-             0, 0,
-             0,
-            -0.5f, -0.8f, 
-             0,
-             0f,   -0.2f,
-             Formations.RISEDSHIELDS
-        ) { }
+            SQUAD_ADDITIONAL_SPEED: 0,
+            SQUAD_ADDITIONAL_ROTATION_SPEED: 0,
+            UNIT_ADDITIONAL_SPEED: 0,
+            UNIT_ADDITIONAL_ROTATION_SPEED: 0,
+            UNIT_ADDITIONAL_DAMAGE: 0,
+            UNIT_ADDITIONAL_ATTACK: -0.5f,
+            UNIT_ADDITIONAL_DEFENCE: -0.8f,
+            UNIT_ADDITIONAL_DEFENCE_SECTOR: 0,
+            UNIT_CHARGE_IMPACT: 0f,
+            UNIT_CHARGE_DEFLECT: -0.2f,
+            COOLDOWN: 0.5f,
+            FORMATION: Formations.RISEDSHIELDS
+        )
+        { }
     }
 }

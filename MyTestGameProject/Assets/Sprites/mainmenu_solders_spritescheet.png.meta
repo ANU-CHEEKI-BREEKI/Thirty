@@ -1,58 +1,150 @@
 fileFormatVersion: 2
 guid: 6c85d6e0d2bf796469a6a4777af70ea2
-timeCreated: 1525355809
-licenseType: Free
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: mainmenu_solders_spritescheet_0
-    21300002: mainmenu_solders_spritescheet_1
-    21300004: mainmenu_solders_spritescheet_2
-    21300006: mainmenu_solders_spritescheet_3
-    21300008: mainmenu_solders_spritescheet_4
-    21300010: mainmenu_solders_spritescheet_5
-    21300012: mainmenu_solders_spritescheet_6
-    21300014: mainmenu_solders_spritescheet_7
-    21300016: mainmenu_solders_spritescheet_8
-    21300018: mainmenu_solders_spritescheet_9
-    21300020: mainmenu_solders_spritescheet_10
-    21300022: mainmenu_solders_spritescheet_11
-    21300024: mainmenu_solders_spritescheet_12
-    21300026: mainmenu_solders_spritescheet_13
-    21300028: mainmenu_solders_spritescheet_14
-    21300030: mainmenu_solders_spritescheet_15
-    21300032: mainmenu_solders_spritescheet_16
-    21300034: mainmenu_solders_spritescheet_17
-    21300036: mainmenu_solders_spritescheet_18
-    21300038: mainmenu_solders_spritescheet_19
-    21300040: mainmenu_solders_spritescheet_20
-    21300042: mainmenu_solders_spritescheet_21
-    21300044: mainmenu_solders_spritescheet_22
-    21300046: mainmenu_solders_spritescheet_23
-    21300048: mainmenu_solders_spritescheet_24
-    21300050: mainmenu_solders_spritescheet_25
-    21300052: mainmenu_solders_spritescheet_26
-    21300054: mainmenu_solders_spritescheet_27
-    21300056: mainmenu_solders_spritescheet_28
-    21300058: mainmenu_solders_spritescheet_29
-    21300060: mainmenu_solders_spritescheet_30
-    21300062: mainmenu_solders_spritescheet_31
-    21300064: mainmenu_solders_spritescheet_32
-    21300066: mainmenu_solders_spritescheet_33
-    21300068: mainmenu_solders_spritescheet_34
-    21300070: mainmenu_solders_spritescheet_35
-    21300072: mainmenu_solders_spritescheet_36
-    21300074: mainmenu_solders_spritescheet_37
-    21300076: mainmenu_solders_spritescheet_39
-    21300078: mainmenu_solders_spritescheet_40
-    21300080: mainmenu_solders_spritescheet_38
-    21300082: mainmenu_solders_spritescheet_blink_1
-    21300084: mainmenu_solders_spritescheet_blink_2
-    21300086: mainmenu_solders_spritescheet_blink_4
-    21300088: mainmenu_solders_spritescheet_blink_3
-    21300090: mainmenu_solders_spritescheet_blink_5
-    21300092: mainmenu_solders_spritescheet_blink_6
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: mainmenu_solders_spritescheet_0
+  - first:
+      213: 21300002
+    second: mainmenu_solders_spritescheet_1
+  - first:
+      213: 21300004
+    second: mainmenu_solders_spritescheet_2
+  - first:
+      213: 21300006
+    second: mainmenu_solders_spritescheet_3
+  - first:
+      213: 21300008
+    second: mainmenu_solders_spritescheet_4
+  - first:
+      213: 21300010
+    second: mainmenu_solders_spritescheet_5
+  - first:
+      213: 21300012
+    second: mainmenu_solders_spritescheet_6
+  - first:
+      213: 21300014
+    second: mainmenu_solders_spritescheet_7
+  - first:
+      213: 21300016
+    second: mainmenu_solders_spritescheet_8
+  - first:
+      213: 21300018
+    second: mainmenu_solders_spritescheet_9
+  - first:
+      213: 21300020
+    second: mainmenu_solders_spritescheet_10
+  - first:
+      213: 21300022
+    second: mainmenu_solders_spritescheet_11
+  - first:
+      213: 21300024
+    second: mainmenu_solders_spritescheet_12
+  - first:
+      213: 21300026
+    second: mainmenu_solders_spritescheet_13
+  - first:
+      213: 21300028
+    second: mainmenu_solders_spritescheet_14
+  - first:
+      213: 21300030
+    second: mainmenu_solders_spritescheet_15
+  - first:
+      213: 21300032
+    second: mainmenu_solders_spritescheet_16
+  - first:
+      213: 21300034
+    second: mainmenu_solders_spritescheet_17
+  - first:
+      213: 21300036
+    second: mainmenu_solders_spritescheet_18
+  - first:
+      213: 21300038
+    second: mainmenu_solders_spritescheet_19
+  - first:
+      213: 21300040
+    second: mainmenu_solders_spritescheet_20
+  - first:
+      213: 21300042
+    second: mainmenu_solders_spritescheet_21
+  - first:
+      213: 21300044
+    second: mainmenu_solders_spritescheet_22
+  - first:
+      213: 21300046
+    second: mainmenu_solders_spritescheet_23
+  - first:
+      213: 21300048
+    second: mainmenu_solders_spritescheet_24
+  - first:
+      213: 21300050
+    second: mainmenu_solders_spritescheet_25
+  - first:
+      213: 21300052
+    second: mainmenu_solders_spritescheet_26
+  - first:
+      213: 21300054
+    second: mainmenu_solders_spritescheet_27
+  - first:
+      213: 21300056
+    second: mainmenu_solders_spritescheet_28
+  - first:
+      213: 21300058
+    second: mainmenu_solders_spritescheet_29
+  - first:
+      213: 21300060
+    second: mainmenu_solders_spritescheet_30
+  - first:
+      213: 21300062
+    second: mainmenu_solders_spritescheet_31
+  - first:
+      213: 21300064
+    second: mainmenu_solders_spritescheet_32
+  - first:
+      213: 21300066
+    second: mainmenu_solders_spritescheet_33
+  - first:
+      213: 21300068
+    second: mainmenu_solders_spritescheet_34
+  - first:
+      213: 21300070
+    second: mainmenu_solders_spritescheet_35
+  - first:
+      213: 21300072
+    second: mainmenu_solders_spritescheet_36
+  - first:
+      213: 21300074
+    second: mainmenu_solders_spritescheet_37
+  - first:
+      213: 21300076
+    second: mainmenu_solders_spritescheet_39
+  - first:
+      213: 21300078
+    second: mainmenu_solders_spritescheet_40
+  - first:
+      213: 21300080
+    second: mainmenu_solders_spritescheet_38
+  - first:
+      213: 21300082
+    second: mainmenu_solders_spritescheet_blink_1
+  - first:
+      213: 21300084
+    second: mainmenu_solders_spritescheet_blink_2
+  - first:
+      213: 21300086
+    second: mainmenu_solders_spritescheet_blink_4
+  - first:
+      213: 21300088
+    second: mainmenu_solders_spritescheet_blink_3
+  - first:
+      213: 21300090
+    second: mainmenu_solders_spritescheet_blink_5
+  - first:
+      213: 21300092
+    second: mainmenu_solders_spritescheet_blink_6
   externalObjects: {}
-  serializedVersion: 4
+  serializedVersion: 10
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -70,6 +162,8 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -78,9 +172,9 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 1
     aniso: -1
-    mipBias: -1
+    mipBias: -100
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -92,18 +186,21 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 15
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 8
   textureShape: 1
+  singleChannelComponent: 0
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
   platformSettings:
-  - buildTarget: DefaultTexturePlatform
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -113,7 +210,8 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - buildTarget: Standalone
+  - serializedVersion: 2
+    buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -123,7 +221,8 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - buildTarget: Android
+  - serializedVersion: 2
+    buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -150,6 +249,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 23aedec98d3d8a140ae087b399e56ad1
+      internalID: 21300000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mainmenu_solders_spritescheet_1
       rect:
@@ -164,6 +270,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: bc10d92e0a451c24090af5437e70626e
+      internalID: 21300002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mainmenu_solders_spritescheet_2
       rect:
@@ -178,6 +291,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: ab172f5d0abe9504f893c353ae12fb66
+      internalID: 21300004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mainmenu_solders_spritescheet_3
       rect:
@@ -192,6 +312,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 3bb98fe76cba5b54bad5a3c638c58ffa
+      internalID: 21300006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mainmenu_solders_spritescheet_4
       rect:
@@ -206,6 +333,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 210b07c8dda6f3c489b3663f0928ddab
+      internalID: 21300008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mainmenu_solders_spritescheet_5
       rect:
@@ -220,6 +354,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 945c94dc4c4abf542b4dd9dc1664fcce
+      internalID: 21300010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mainmenu_solders_spritescheet_6
       rect:
@@ -234,6 +375,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 584f8ee547bfe3c4aae73779ba31c87a
+      internalID: 21300012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mainmenu_solders_spritescheet_7
       rect:
@@ -248,6 +396,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 5d54c2a6272691b48bbbff9781ba5c97
+      internalID: 21300014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mainmenu_solders_spritescheet_8
       rect:
@@ -262,6 +417,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 5ad7dc2866d994f4a8f0ad481da8a564
+      internalID: 21300016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mainmenu_solders_spritescheet_9
       rect:
@@ -276,6 +438,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 1e460ce4a94dc324f8872a48ef8b84fd
+      internalID: 21300018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mainmenu_solders_spritescheet_10
       rect:
@@ -290,6 +459,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 649cc5b2c42d9b8489c9f6be2c24a8ee
+      internalID: 21300020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mainmenu_solders_spritescheet_11
       rect:
@@ -304,6 +480,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: edbf66ba53ecbe74b93fd688a5dbf71b
+      internalID: 21300022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mainmenu_solders_spritescheet_12
       rect:
@@ -318,6 +501,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 20e11740350e68d478ba90823694cd06
+      internalID: 21300024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mainmenu_solders_spritescheet_13
       rect:
@@ -332,6 +522,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 474fc8362c4e9524a98ae38f211c5616
+      internalID: 21300026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mainmenu_solders_spritescheet_14
       rect:
@@ -346,6 +543,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 54c3ba55cd1cc61449d802b82ba47fe0
+      internalID: 21300028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mainmenu_solders_spritescheet_15
       rect:
@@ -360,6 +564,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 6983c54b90b464a468adac771ec90582
+      internalID: 21300030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mainmenu_solders_spritescheet_16
       rect:
@@ -374,6 +585,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: c0b357c10f8ccd142aaa0738e5e778b6
+      internalID: 21300032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mainmenu_solders_spritescheet_17
       rect:
@@ -388,6 +606,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: dc3ffdeae7fc72948913520dc89a8104
+      internalID: 21300034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mainmenu_solders_spritescheet_18
       rect:
@@ -402,6 +627,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: ae766e03069ef2744ba2f9c2f58b7a23
+      internalID: 21300036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mainmenu_solders_spritescheet_19
       rect:
@@ -416,6 +648,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: e9b127481ea0b33439869ec8b40e27fa
+      internalID: 21300038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mainmenu_solders_spritescheet_20
       rect:
@@ -430,6 +669,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 142d85bdbae26b9418f8512f83e16f0e
+      internalID: 21300040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mainmenu_solders_spritescheet_21
       rect:
@@ -444,6 +690,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 5e8064bd094b2b6438cf47cbfc603b38
+      internalID: 21300042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mainmenu_solders_spritescheet_22
       rect:
@@ -458,6 +711,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 5e34ace24d9fc7848898077288fcaf3b
+      internalID: 21300044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mainmenu_solders_spritescheet_23
       rect:
@@ -472,6 +732,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: a495602c7547d5a4faa0e4faa3d90a37
+      internalID: 21300046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mainmenu_solders_spritescheet_24
       rect:
@@ -486,6 +753,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: cbb633da587c7ac4287cf80fcf80a8c0
+      internalID: 21300048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mainmenu_solders_spritescheet_25
       rect:
@@ -500,6 +774,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: ad2445b7ed6681e46992219164c09123
+      internalID: 21300050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mainmenu_solders_spritescheet_26
       rect:
@@ -514,6 +795,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: bc1a5f949e7953e4ebff03f7bb2c67fe
+      internalID: 21300052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mainmenu_solders_spritescheet_27
       rect:
@@ -528,6 +816,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: cb3e155554af7b242b0bf49a5469315c
+      internalID: 21300054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mainmenu_solders_spritescheet_28
       rect:
@@ -542,6 +837,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 9d529e57f351e7c4d9b439e8108e49f4
+      internalID: 21300056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mainmenu_solders_spritescheet_29
       rect:
@@ -556,6 +858,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 94feef7e64622e14983157c079e872c1
+      internalID: 21300058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mainmenu_solders_spritescheet_30
       rect:
@@ -570,6 +879,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: a2a38233d5447fc41ac15030c9678c96
+      internalID: 21300060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mainmenu_solders_spritescheet_31
       rect:
@@ -584,6 +900,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 757e78883356b6448b9d5d8c1dd27544
+      internalID: 21300062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mainmenu_solders_spritescheet_32
       rect:
@@ -598,6 +921,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 520243cf214a15647bf99c398dff58f2
+      internalID: 21300064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mainmenu_solders_spritescheet_33
       rect:
@@ -612,6 +942,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 09eb22cb09b85ce4583cf6b73d462c7d
+      internalID: 21300066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mainmenu_solders_spritescheet_34
       rect:
@@ -626,6 +963,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 7282b0505bb555c42914c91e1dac00b8
+      internalID: 21300068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mainmenu_solders_spritescheet_35
       rect:
@@ -640,6 +984,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 65bde44d8a6ea184384596be5117511b
+      internalID: 21300070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mainmenu_solders_spritescheet_36
       rect:
@@ -654,6 +1005,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 2f7fd68dfc5521344bd32695dfd3da25
+      internalID: 21300072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mainmenu_solders_spritescheet_37
       rect:
@@ -668,6 +1026,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 0d5d7abbf0e591c4184ddf68dded2a64
+      internalID: 21300074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mainmenu_solders_spritescheet_39
       rect:
@@ -682,6 +1047,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 6afa255d037612644bb077edab9604ea
+      internalID: 21300076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mainmenu_solders_spritescheet_40
       rect:
@@ -696,6 +1068,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 492260314fb520b49a874660615f85ba
+      internalID: 21300078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mainmenu_solders_spritescheet_38
       rect:
@@ -710,6 +1089,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: a3c9dc4a0ee0cb947ad915c7df15b9df
+      internalID: 21300080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mainmenu_solders_spritescheet_blink_1
       rect:
@@ -724,6 +1110,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 4a7822552c044e44b8c7420f290d7b10
+      internalID: 21300082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mainmenu_solders_spritescheet_blink_2
       rect:
@@ -738,6 +1131,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 0afbcf7d195a4a94aacd0df5a3140954
+      internalID: 21300084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mainmenu_solders_spritescheet_blink_4
       rect:
@@ -752,6 +1152,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 1b8de00cdbbf58a489f3f9236f0404ff
+      internalID: 21300086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mainmenu_solders_spritescheet_blink_3
       rect:
@@ -766,6 +1173,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 4ed05bcdfa097c54daf33b74cbd1f7df
+      internalID: 21300088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mainmenu_solders_spritescheet_blink_5
       rect:
@@ -780,6 +1194,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 41e6f2deaec9b4847abc17222115af06
+      internalID: 21300090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: mainmenu_solders_spritescheet_blink_6
       rect:
@@ -794,9 +1215,26 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 28291b4154963ae409d2f92f327e6e90
+      internalID: 21300092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
   spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

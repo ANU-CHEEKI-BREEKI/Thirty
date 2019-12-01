@@ -1,5 +1,5 @@
 ﻿public interface ITempValuesApplyable
 {
-    void ApplyTempValues();
-    void ResetTempValues();
+    void UndoSettingsChanges();
+    void RecordSettings();
 }

@@ -39,22 +39,27 @@ public class LanguageToggleGUI : MonoBehaviour
         }
     }
 
-    void Awake()
+    private void OnEnable()
     {
         if (Toggle == null)
         {
             Toggle = GetComponent<Toggle>();
-            Toggle.onValueChanged.AddListener
-            (
-                (v) => 
-                {
-                    OnValCh.Invoke(Toggle, v);
-                }
-            );
+            Toggle.onValueChanged.AddListener(ValChanged);
         }
     }
 
-    void Start()
+    private void OnDisable()
+    {
+        if (Toggle != null)
+            Toggle.onValueChanged.RemoveListener(ValChanged);
+    }
+
+    private void ValChanged(bool val)
+    {
+        OnValCh.Invoke(Toggle, val);
+    }
+
+    private void Start()
     {
         Init();
     }

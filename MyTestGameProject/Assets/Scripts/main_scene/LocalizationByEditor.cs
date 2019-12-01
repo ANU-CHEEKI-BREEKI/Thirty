@@ -15,6 +15,11 @@ public class LocalizationByEditor : MonoBehaviour
         ReloadText();
     }
 
+    private void OnEnable()
+    {
+        ReloadText();
+    }
+
     public void ReloadText()
     {
         if (text != null)

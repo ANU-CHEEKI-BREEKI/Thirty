@@ -227,6 +227,23 @@ public sealed class LocalizedStrings
     public static string free { get; private set; }
     public static string for_ad { get; private set; }
     public static string healing_priority { get; private set; }
+    public static string reset { get; private set; }
+    public static string volume_master { get; private set; }
+    public static string volume_music { get; private set; }
+    public static string volume_effects { get; private set; }
+    public static string volume_ui { get; private set; }
+    public static string display_damage { get; private set; }
+    public static string outline_ally { get; private set; }
+    public static string outline_enemy { get; private set; }
+    public static string outline_neutral { get; private set; }
+    public static string go_back { get; private set; }
+    public static string training_level_1 { get; private set; }
+    public static string training_level_2 { get; private set; }
+    public static string training_level_3 { get; private set; }
+    public static string first_game_load_title { get; private set; }
+    public static string first_game_load_message { get; private set; }
+    public static string continue_training_title { get; private set; }
+    public static string continue_training_message { get; private set; }
 
 #endregion other_names
 #region skills
@@ -403,6 +420,21 @@ public sealed class LocalizedStrings
 
     public static string tip_try_to_buy_equip_and_consumables { get; private set; }
     public static string tip_try_to_train_squad_and_skills { get; private set; }
+    public static string tip_how_to_block_shelling { get; private set; }
+    public static string tip_terrain_how_to_get_max_pros { get; private set; }
+    public static string tip_how_to_open_new_equipmant { get; private set; }
+    public static string tip_short_all_formations { get; private set; }
+    public static string tip_use_skills { get; private set; }
+    public static string tip_use_consubamles { get; private set; }
+    public static string tip_do_not_be_surronded { get; private set; }
+    public static string tip_how_to_block_charge { get; private set; }
+    public static string tip_do_not_try_to_avoid_pilums { get; private set; }
+    public static string tip_how_to_check_units_health { get; private set; }
+    public static string tip_skill_arrow_valley { get; private set; }
+    public static string tip_skill_charge { get; private set; }
+    public static string tip_skill_rally_ranks { get; private set; }
+    public static string tip_phalanx_push { get; private set; }
+    public static string tip_shield_bash { get; private set; }
 
 #endregion tips
 #region toast

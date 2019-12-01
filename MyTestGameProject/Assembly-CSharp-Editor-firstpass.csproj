@@ -80,40 +80,40 @@
     <Compile Include="Assets\Plugins\UnityPurchasing\Editor\IAPButtonEditor.cs" />
     <None Include="Assets\Plugins\UnityPurchasing\Editor\IAPGeneratedCredentials.cs.template" />
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>D:/development/unity/MyGame - Thirty/Game/MyTestGameProject/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>D:/development/unity/Thirty/UnityProject/MyTestGameProject/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="com.unity.multiplayer-hlapi.Editor">
-      <HintPath>D:/development/unity/MyGame - Thirty/Game/MyTestGameProject/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Editor.dll</HintPath>
+      <HintPath>D:/development/unity/Thirty/UnityProject/MyTestGameProject/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>D:/development/unity/MyGame - Thirty/Game/MyTestGameProject/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>D:/development/unity/Thirty/UnityProject/MyTestGameProject/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>D:/development/unity/MyGame - Thirty/Game/MyTestGameProject/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>D:/development/unity/Thirty/UnityProject/MyTestGameProject/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>D:/development/unity/MyGame - Thirty/Game/MyTestGameProject/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>D:/development/unity/Thirty/UnityProject/MyTestGameProject/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="com.unity.multiplayer-weaver.Editor">
-      <HintPath>D:/development/unity/MyGame - Thirty/Game/MyTestGameProject/Library/ScriptAssemblies/com.unity.multiplayer-weaver.Editor.dll</HintPath>
+      <HintPath>D:/development/unity/Thirty/UnityProject/MyTestGameProject/Library/ScriptAssemblies/com.unity.multiplayer-weaver.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.XR.LegacyInputHelpers">
-      <HintPath>D:/development/unity/MyGame - Thirty/Game/MyTestGameProject/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
+      <HintPath>D:/development/unity/Thirty/UnityProject/MyTestGameProject/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.SpatialTracking">
-      <HintPath>D:/development/unity/MyGame - Thirty/Game/MyTestGameProject/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
+      <HintPath>D:/development/unity/Thirty/UnityProject/MyTestGameProject/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.SpatialTracking">
-      <HintPath>D:/development/unity/MyGame - Thirty/Game/MyTestGameProject/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
+      <HintPath>D:/development/unity/Thirty/UnityProject/MyTestGameProject/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>D:/development/unity/MyGame - Thirty/Game/MyTestGameProject/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+      <HintPath>D:/development/unity/Thirty/UnityProject/MyTestGameProject/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.XR.LegacyInputHelpers">
-      <HintPath>D:/development/unity/MyGame - Thirty/Game/MyTestGameProject/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
+      <HintPath>D:/development/unity/Thirty/UnityProject/MyTestGameProject/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
     </Reference>
     <Reference Include="com.unity.multiplayer-hlapi.Runtime">
-      <HintPath>D:/development/unity/MyGame - Thirty/Game/MyTestGameProject/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Runtime.dll</HintPath>
+      <HintPath>D:/development/unity/Thirty/UnityProject/MyTestGameProject/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -320,79 +320,79 @@
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/16.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
     <Reference Include="Google.IOSResolver_v1.2.102.0">
-      <HintPath>D:/development/unity/MyGame - Thirty/Game/MyTestGameProject/Assets/PlayServicesResolver/Editor/Google.IOSResolver_v1.2.102.0.dll</HintPath>
+      <HintPath>D:/development/unity/Thirty/UnityProject/MyTestGameProject/Assets/PlayServicesResolver/Editor/Google.IOSResolver_v1.2.102.0.dll</HintPath>
     </Reference>
     <Reference Include="Google.JarResolver_v1.2.102.0">
-      <HintPath>D:/development/unity/MyGame - Thirty/Game/MyTestGameProject/Assets/PlayServicesResolver/Editor/Google.JarResolver_v1.2.102.0.dll</HintPath>
+      <HintPath>D:/development/unity/Thirty/UnityProject/MyTestGameProject/Assets/PlayServicesResolver/Editor/Google.JarResolver_v1.2.102.0.dll</HintPath>
     </Reference>
     <Reference Include="Google.VersionHandler">
-      <HintPath>D:/development/unity/MyGame - Thirty/Game/MyTestGameProject/Assets/PlayServicesResolver/Editor/Google.VersionHandler.dll</HintPath>
+      <HintPath>D:/development/unity/Thirty/UnityProject/MyTestGameProject/Assets/PlayServicesResolver/Editor/Google.VersionHandler.dll</HintPath>
     </Reference>
     <Reference Include="Google.VersionHandlerImpl_v1.2.102.0">
-      <HintPath>D:/development/unity/MyGame - Thirty/Game/MyTestGameProject/Assets/PlayServicesResolver/Editor/Google.VersionHandlerImpl_v1.2.102.0.dll</HintPath>
+      <HintPath>D:/development/unity/Thirty/UnityProject/MyTestGameProject/Assets/PlayServicesResolver/Editor/Google.VersionHandlerImpl_v1.2.102.0.dll</HintPath>
     </Reference>
     <Reference Include="UDP">
-      <HintPath>D:/development/unity/MyGame - Thirty/Game/MyTestGameProject/Assets/Plugins/UDP/UDP.dll</HintPath>
+      <HintPath>D:/development/unity/Thirty/UnityProject/MyTestGameProject/Assets/Plugins/UDP/UDP.dll</HintPath>
     </Reference>
     <Reference Include="ChannelPurchase">
-      <HintPath>D:/development/unity/MyGame - Thirty/Game/MyTestGameProject/Assets/Plugins/UnityChannel/ChannelPurchase.dll</HintPath>
+      <HintPath>D:/development/unity/Thirty/UnityProject/MyTestGameProject/Assets/Plugins/UnityChannel/ChannelPurchase.dll</HintPath>
     </Reference>
     <Reference Include="UnityStore">
-      <HintPath>D:/development/unity/MyGame - Thirty/Game/MyTestGameProject/Assets/Plugins/UnityChannel/UnityStore.dll</HintPath>
+      <HintPath>D:/development/unity/Thirty/UnityProject/MyTestGameProject/Assets/Plugins/UnityChannel/UnityStore.dll</HintPath>
     </Reference>
     <Reference Include="Editor">
-      <HintPath>D:/development/unity/MyGame - Thirty/Game/MyTestGameProject/Assets/Plugins/UnityPurchasing/Bin/Editor.dll</HintPath>
+      <HintPath>D:/development/unity/Thirty/UnityProject/MyTestGameProject/Assets/Plugins/UnityPurchasing/Bin/Editor.dll</HintPath>
     </Reference>
     <Reference Include="Purchasing.Common">
-      <HintPath>D:/development/unity/MyGame - Thirty/Game/MyTestGameProject/Assets/Plugins/UnityPurchasing/Bin/Purchasing.Common.dll</HintPath>
+      <HintPath>D:/development/unity/Thirty/UnityProject/MyTestGameProject/Assets/Plugins/UnityPurchasing/Bin/Purchasing.Common.dll</HintPath>
     </Reference>
     <Reference Include="Stores">
-      <HintPath>D:/development/unity/MyGame - Thirty/Game/MyTestGameProject/Assets/Plugins/UnityPurchasing/Bin/Stores.dll</HintPath>
+      <HintPath>D:/development/unity/Thirty/UnityProject/MyTestGameProject/Assets/Plugins/UnityPurchasing/Bin/Stores.dll</HintPath>
     </Reference>
     <Reference Include="Apple">
-      <HintPath>D:/development/unity/MyGame - Thirty/Game/MyTestGameProject/Assets/Plugins/UnityPurchasing/Bin/Apple/Apple.dll</HintPath>
+      <HintPath>D:/development/unity/Thirty/UnityProject/MyTestGameProject/Assets/Plugins/UnityPurchasing/Bin/Apple/Apple.dll</HintPath>
     </Reference>
     <Reference Include="FacebookStore">
-      <HintPath>D:/development/unity/MyGame - Thirty/Game/MyTestGameProject/Assets/Plugins/UnityPurchasing/Bin/Facebook/FacebookStore.dll</HintPath>
+      <HintPath>D:/development/unity/Thirty/UnityProject/MyTestGameProject/Assets/Plugins/UnityPurchasing/Bin/Facebook/FacebookStore.dll</HintPath>
     </Reference>
     <Reference Include="Security">
-      <HintPath>D:/development/unity/MyGame - Thirty/Game/MyTestGameProject/Assets/Plugins/UnityPurchasing/Bin/Security/live/Security.dll</HintPath>
+      <HintPath>D:/development/unity/Thirty/UnityProject/MyTestGameProject/Assets/Plugins/UnityPurchasing/Bin/Security/live/Security.dll</HintPath>
     </Reference>
     <Reference Include="Tizen">
-      <HintPath>D:/development/unity/MyGame - Thirty/Game/MyTestGameProject/Assets/Plugins/UnityPurchasing/Bin/Tizen/Tizen.dll</HintPath>
+      <HintPath>D:/development/unity/Thirty/UnityProject/MyTestGameProject/Assets/Plugins/UnityPurchasing/Bin/Tizen/Tizen.dll</HintPath>
     </Reference>
     <Reference Include="winrt">
-      <HintPath>D:/development/unity/MyGame - Thirty/Game/MyTestGameProject/Assets/Plugins/UnityPurchasing/winrt/winrt.dll</HintPath>
+      <HintPath>D:/development/unity/Thirty/UnityProject/MyTestGameProject/Assets/Plugins/UnityPurchasing/winrt/winrt.dll</HintPath>
     </Reference>
     <Reference Include="TextMeshPro-2017.3-1.0.56-Editor">
-      <HintPath>D:/development/unity/MyGame - Thirty/Game/MyTestGameProject/Assets/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.3-1.0.56-Editor.dll</HintPath>
+      <HintPath>D:/development/unity/Thirty/UnityProject/MyTestGameProject/Assets/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.3-1.0.56-Editor.dll</HintPath>
     </Reference>
     <Reference Include="TextMeshPro-2017.3-1.0.56-Runtime">
-      <HintPath>D:/development/unity/MyGame - Thirty/Game/MyTestGameProject/Assets/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.3-1.0.56-Runtime.dll</HintPath>
+      <HintPath>D:/development/unity/Thirty/UnityProject/MyTestGameProject/Assets/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.3-1.0.56-Runtime.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.Advertisements">
-      <HintPath>D:/development/unity/MyGame - Thirty/Game/MyTestGameProject/Library/PackageCache/com.unity.ads@2.3.1/Editor/UnityEditor.Advertisements.dll</HintPath>
+      <HintPath>D:/development/unity/Thirty/UnityProject/MyTestGameProject/Library/PackageCache/com.unity.ads@2.3.1/Editor/UnityEditor.Advertisements.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Advertisements">
-      <HintPath>D:/development/unity/MyGame - Thirty/Game/MyTestGameProject/Library/PackageCache/com.unity.ads@2.3.1/Runtime/UnityEngine.Advertisements.dll</HintPath>
+      <HintPath>D:/development/unity/Thirty/UnityProject/MyTestGameProject/Library/PackageCache/com.unity.ads@2.3.1/Runtime/UnityEngine.Advertisements.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Advertisements.Editor">
-      <HintPath>D:/development/unity/MyGame - Thirty/Game/MyTestGameProject/Library/PackageCache/com.unity.ads@2.3.1/Runtime/UnityEngine.Advertisements.Editor.dll</HintPath>
+      <HintPath>D:/development/unity/Thirty/UnityProject/MyTestGameProject/Library/PackageCache/com.unity.ads@2.3.1/Runtime/UnityEngine.Advertisements.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>D:/development/unity/MyGame - Thirty/Game/MyTestGameProject/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>D:/development/unity/Thirty/UnityProject/MyTestGameProject/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>D:/development/unity/MyGame - Thirty/Game/MyTestGameProject/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>D:/development/unity/Thirty/UnityProject/MyTestGameProject/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>D:/development/unity/MyGame - Thirty/Game/MyTestGameProject/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>D:/development/unity/Thirty/UnityProject/MyTestGameProject/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Purchasing">
-      <HintPath>D:/development/unity/MyGame - Thirty/Game/MyTestGameProject/Library/PackageCache/com.unity.purchasing@2.0.6/UnityEngine.Purchasing.dll</HintPath>
+      <HintPath>D:/development/unity/Thirty/UnityProject/MyTestGameProject/Library/PackageCache/com.unity.purchasing@2.0.6/UnityEngine.Purchasing.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.Purchasing">
-      <HintPath>D:/development/unity/MyGame - Thirty/Game/MyTestGameProject/Library/PackageCache/com.unity.purchasing@2.0.6/Editor/UnityEditor.Purchasing.dll</HintPath>
+      <HintPath>D:/development/unity/Thirty/UnityProject/MyTestGameProject/Library/PackageCache/com.unity.purchasing@2.0.6/Editor/UnityEditor.Purchasing.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>

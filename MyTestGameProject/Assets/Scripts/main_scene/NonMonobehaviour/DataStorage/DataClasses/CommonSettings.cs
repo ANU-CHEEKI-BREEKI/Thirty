@@ -4,12 +4,11 @@ using UnityEngine;
 [Serializable]
 public class CommonSettings : ICopyabe
 {
-    /// <summary>
+    [SerializeField] private SystemLanguage language = SystemLanguage.English;
+    /// <summary> 
     /// Язык локализации
     /// </summary>
-    public SystemLanguage Language { get; set; } = SystemLanguage.English;
-
-    public event Action<SystemLanguage> OnLanguageChanged;
+    public SystemLanguage Language { get => language; set { language = value; } }
 
     public object Copy()
     {
@@ -18,6 +17,6 @@ public class CommonSettings : ICopyabe
 
     public void Reset()
     {
-        Language = SystemLanguage.Russian;
+        Language = SystemLanguage.English;
     }
 }

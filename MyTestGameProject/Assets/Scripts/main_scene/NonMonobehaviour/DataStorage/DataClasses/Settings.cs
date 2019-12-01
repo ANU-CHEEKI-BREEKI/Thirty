@@ -31,7 +31,7 @@ public class Settings : IResetable, ILoadedDataApplyable, ISavable, ITempValuesA
     public Settings(bool resetTemp = false) : this()
     {
         if (resetTemp)
-            ResetTempValues();
+            RecordSettings();
         else
             TemporarySettings = null;
     }
@@ -102,7 +102,7 @@ public class Settings : IResetable, ILoadedDataApplyable, ISavable, ITempValuesA
                 {
                     Debug.LogError("------------Settings data applying failed + \r\n" + ex.ToString());
                 }
-                ResetTempValues();
+                RecordSettings();
                 ModalInfoPanel.Instance.Remove(mes);
                 if (OnLoaded != null)
                     OnLoaded();
@@ -115,12 +115,18 @@ public class Settings : IResetable, ILoadedDataApplyable, ISavable, ITempValuesA
         GameManager.Instance.SavingManager.LoadData<Settings>(this.GetType().Name);
     }
 
-    public void ApplyTempValues()
+    /// <summary>
+    /// Применить сохранённые настройки с текущим (типа undo)
+    /// </summary>
+    public void UndoSettingsChanges()
     {
         ApplyLoadedData(TemporarySettings);
     }
 
-    public void ResetTempValues()
+    /// <summary>
+    /// Сделать запись текущих настроек
+    /// </summary>
+    public void RecordSettings()
     {
         TemporarySettings = Copy() as Settings;
     }

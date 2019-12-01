@@ -25,7 +25,7 @@ public class DSPlayerScore : ITempValuesApplyable, IResetable, ILoadedDataApplya
         tempExpirience = new Score();
     }
 
-    public void ApplyTempValues()
+    public void UndoSettingsChanges()
     {
         ApplyTempValues(Currency.ANY);
     }
@@ -54,7 +54,7 @@ public class DSPlayerScore : ITempValuesApplyable, IResetable, ILoadedDataApplya
         }
     }
 
-    public void ResetTempValues()
+    public void RecordSettings()
     {
         ResetTempValues(Currency.ANY);
     }
@@ -86,7 +86,7 @@ public class DSPlayerScore : ITempValuesApplyable, IResetable, ILoadedDataApplya
         silver.Value = 0;
         expirience.Value = 0;
 
-        ResetTempValues();
+        RecordSettings();
     }
 
     /// <summary>

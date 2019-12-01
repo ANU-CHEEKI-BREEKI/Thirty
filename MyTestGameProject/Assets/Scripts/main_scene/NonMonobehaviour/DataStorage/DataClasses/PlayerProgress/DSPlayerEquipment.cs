@@ -30,7 +30,7 @@ public class DSPlayerEquipment : ITempValuesApplyable, IResetable, IMergeable
         allowedEquipmentId.Add(new EqId(1, EquipmentStats.TypeOfEquipment.SHIELD, false));
         allowedEquipmentId.Add(new EqId(1, EquipmentStats.TypeOfEquipment.WEAPON, false));
 
-        ResetTempValues();
+        RecordSettings();
     }
 
     public EqId GetEquipmantAllowed(EquipmentStats stats)
@@ -76,7 +76,7 @@ public class DSPlayerEquipment : ITempValuesApplyable, IResetable, IMergeable
     /// <summary>
     /// Применяет
     /// </summary>
-    public void ApplyTempValues()
+    public void UndoSettingsChanges()
     {
         allowedEquipmentId.AddRange(tempAllowedEquipmentId);
 
@@ -103,7 +103,7 @@ public class DSPlayerEquipment : ITempValuesApplyable, IResetable, IMergeable
     /// <summary>
     /// Сбрасывает
     /// </summary>
-    public void ResetTempValues()
+    public void RecordSettings()
     {
         if (tempAllowedEquipmentId == null)
             tempAllowedEquipmentId = new List<EqId>();

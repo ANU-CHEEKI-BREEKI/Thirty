@@ -34,8 +34,8 @@ public class SettingsCommonSetting : MonoBehaviour
         [SerializeField] Sprite ico;
         public Sprite Ico { get { return ico; } }
     }
-
-    private void Start()
+    
+    void OnEnable()
     {
         for (int i = 0; i < toggles.Length; i++)
         {
@@ -44,21 +44,18 @@ public class SettingsCommonSetting : MonoBehaviour
             toggles[i].Ico = AvalableLanguages[i].Ico;
         }
         reset.onClick.AddListener(OnDefaultSetingsButtonClick);
-    }
 
-    void OnEnable()
-    {
         Refresh();
     }
 
-    private void OnDestroy()
+    private void OnDisable()
     {
         foreach (var t in toggles)
-            if(t != null)
+            if (t != null)
                 t.OnValCh -= OnValChanged;
     }
 
-    void Refresh()
+    public void Refresh()
     {
         var len = AvalableLanguages.Where(
             l => l.Language == GameManager.Instance.SavablePlayerData.Settings.commonSettings.Language

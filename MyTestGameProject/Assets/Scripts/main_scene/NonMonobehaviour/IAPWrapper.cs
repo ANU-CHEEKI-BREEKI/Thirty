@@ -14,6 +14,8 @@ public static class IAPWrapper
     static MyIAPManager manager;
     public static event Action<ProductData> OnPurchaseSuccess;
 
+    public static bool IsAdDisabled { get; private set; }
+
     public static bool Initiate(bool reinit = true)
     {
         if (reinit || manager == null || !manager.IsInitialized)
@@ -25,7 +27,17 @@ public static class IAPWrapper
                 new ProductData() { id = Const.Consumable.ID_GOLD_3, type = ProductType.Consumable }
             );
         manager.OnPurchasingSuccess += CallOnPurchaseSucess;
+        manager.OnInitiated += Manager_OnInitiated;
+
+        Manager_OnInitiated();
+
         return manager.IsInitialized;
+    }
+
+    private static void Manager_OnInitiated()
+    {
+        if(manager.IsInitialized)
+            IsAdDisabled = manager.IsOlreadyBought(Const.NonConsumable.ID_DISABLE_ADS);
     }
 
     /// <summary>
@@ -41,7 +53,7 @@ public static class IAPWrapper
     {
         if (manager == null || !manager.IsInitialized) return false;
 
-        if (disableAds && !manager.IsOlreadyBought(Const.NonConsumable.ID_DISABLE_ADS))
+        if (disableAds && !IsAdDisabled)
         {
             Action<ProductData> onSuccess = null;
             onSuccess = (pd) =>
@@ -49,9 +61,9 @@ public static class IAPWrapper
                 manager.OnPurchasingSuccess -= onSuccess;
 
                 if (pd.id == productId)
-                    manager.BuyProductID(Const.NonConsumable.ID_DISABLE_ADS);
+                    manager.BuyProductID(Const.NonConsumable.ID_DISABLE_ADS, ()=> { IsAdDisabled = true; });
             };
-            manager.OnPurchasingSuccess += (pd) => {  };
+            manager.OnPurchasingSuccess += onSuccess;
         }
 
         manager.BuyProductID(productId, onPurchaseSuccess, onPurchaseFails);

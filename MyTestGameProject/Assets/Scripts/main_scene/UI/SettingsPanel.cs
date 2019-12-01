@@ -6,9 +6,9 @@ public class SettingsPanel : MonoBehaviour
 {
     //[Header("когда вкл панельку - делаем бэкап настроек")]
 
-    void OnEnable()
+    public void RecodrSettings()
     {
         //когда вкл панельку - делаем бэкап настроек
-        GameManager.Instance.SavablePlayerData.Settings.ResetTempValues();
+        GameManager.Instance.SavablePlayerData.Settings.RecordSettings();
     }
 }

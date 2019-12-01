@@ -1,25 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
-   
-  <string name="terrain_modifier_dirt_name">Dirt</string>
-  <string name="terrain_modifier_dirt_description">In mud it is difficult to move, the speed of movement and protection respectively decrease.
-The heavier the soldiers, the more difficult they will have in the mud.</string>
-  <string name="terrain_modifier_forest_name">Forest</string>
-  <string name="terrain_modifier_forest_description">The heavier the soldier, the harder it is for him to move, defend and attack in the forest.
-However, lightly armed soldiers, on the contrary, feel at home in the forest.</string>
-  <string name="terrain_modifier_forest_light_name">Woodland</string>
-  <string name="terrain_modifier_forest_light_description">It is more difficult for heavily armed soldiers to move, defend and attack in light forest, however these inconveniences are not critical.
-Lightly armed soldiers, feel in light forest a little more secure than in an open field.</string>
-  <string name="terrain_modifier_grass_name">Tall grass</string>
-  <string name="terrain_modifier_grass_description">Does not affect the abilities of the soldiers, however, it is easy to hide an entire detachment in it.</string>
-  <string name="terrain_modifier_road_ground_name">Dirt Road</string>
-  <string name="terrain_modifier_road_ground_description">On the road it is much easier to navigate than in unsuitable locations.
-To heavily armed soldiers it is easier to bear the burden of their armor.</string>
-  <string name="terrain_modifier_road_rock_name">Causeway</string>
-  <string name="terrain_modifier_road_rock_description">It is much easier to move along the road, because it was created for this purpose.
-Heavily armed soldiers feel most protected on such a road.</string>
-  <string name="terrain_modifier_water_light_name">Shallow</string>
-  <string name="terrain_modifier_water_light_description">It is quite difficult to make attacks or maneuvers in the water. Falls attack and movement speed.
-The heavier the soldiers, the harder they will have in the water.</string>
-    
+  <string name="terrain_modifier_dirt_name">Dirt</string>
+  <string name="terrain_modifier_dirt_description">It's difficult to move in the dirt, so,  respectively, it reduces the speed of displacement and defence. 
+The heavier the soldiers are, the more difficult it will be for them to move in the dirt.</string>
+  <string name="terrain_modifier_forest_name">Forest</string>
+  <string name="terrain_modifier_forest_description">The heavier the soldier is, the more difficult it will be for him to move, attack and defend and attack in the forest. 
+However, light-armed soldiers,on the contrary,  feel at home in the forest.</string>
+  <string name="terrain_modifier_forest_light_name">Open forest</string>
+  <string name="terrain_modifier_forest_light_description">It's more difficult for a heavily-armed soldier to move, defend and attack in the open forest, but these inconveniences are not critical.
+Light-armed soldiers  feel themselves a bit more protected in the open forest than in the fields.</string>
+  <string name="terrain_modifier_grass_name">Tall grass</string>
+  <string name="terrain_modifier_grass_description">It doesn't affect the skills  of soldiers, but it's possible to hide easily the whole squad there.</string>
+  <string name="terrain_modifier_road_ground_name">Unpaved road</string>
+  <string name="terrain_modifier_road_ground_description">It's much easier to move along the unpaved road than along the ground, which is not adapted for movements.
+It's easier for heavily-armed soldiers to endure  the heaviness of their armor.</string>
+  <string name="terrain_modifier_road_rock_name">Paved road</string>
+  <string name="terrain_modifier_road_rock_description">It's much easier to move along paved road, as it has been made for it. 
+Heavily-armed soldiers feel themselves the most safely on such a road.</string>
+  <string name="terrain_modifier_water_light_name">Shallow waters</string>
+  <string name="terrain_modifier_water_light_description">It's rather difficult to make attacks or maneuvers in the water, as it reduces the possibility to attack and displacement speed.
+The heavier the soldiers are, the more difficult it will be for them to be in the water.</string>
 </resources>

@@ -14,6 +14,8 @@ public class MyIAPManager : IStoreListener
     public event Action<ProductData, PurchaseFailureReason> OnPurchasingFailed;
     public event Action<ProductData> OnPurchasingSuccess;
 
+    public event Action OnInitiated;
+
     public MyIAPManager(params ProductData[] productsData)
     {
         var builder = ConfigurationBuilder.Instance(StandardPurchasingModule.Instance());
@@ -38,6 +40,8 @@ public class MyIAPManager : IStoreListener
     {
         this.controller = controller;
         this.extensions = extensions;
+
+        OnInitiated?.Invoke();
     }
 
     /// <summary>

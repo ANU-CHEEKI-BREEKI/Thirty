@@ -108,8 +108,8 @@ public class ToAnotherSceneButton : MonoBehaviour
 
                         {
                             //тут предлагаем туториал.                        
-                            title = "[nl]Похоже, вы запустили игру вперые.";
-                            message = "[nl]Похоже, вы запустили игру вперые. Желаете пройти обучение основам?";
+                            title = LocalizedStrings.first_game_load_title;
+                            message = LocalizedStrings.first_game_load_message;
                             actOnYes = () =>
                             {
                                 DialogBox.Instance.Hide();
@@ -126,8 +126,8 @@ public class ToAnotherSceneButton : MonoBehaviour
                             !GameManager.Instance.SavablePlayerData.PlayerProgress.Flags.IsTutorialCompleted.Flag)
                         {
                             //тут предлагаем допройти туториал.                        
-                            title = "[nl]Похоже, вы не закончили обучение.";
-                            message = "[nl]Похоже, вы не закончили обучение. Желаете допройти обучение основам?";
+                            title = LocalizedStrings.continue_training_title;
+                            message = LocalizedStrings.continue_training_message;
                             actOnYes = () =>
                             {
                                 DialogBox.Instance.Hide();

@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Children:
   - {fileID: 3}
-  - {fileID: 11}
-  - {fileID: 16}
+  - {fileID: 12}
+  - {fileID: 17}
   m_Position:
     serializedVersion: 2
     x: 0
@@ -25,7 +25,7 @@ MonoBehaviour:
   m_MinSize: {x: 613, y: 494}
   m_MaxSize: {x: 18008, y: 14044}
   vertical: 0
-  controlID: 31
+  controlID: 32
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -49,8 +49,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 73.6
-    width: 905
-    height: 516
+    width: 903
+    height: 559
   m_ViewDataDictionary: {fileID: 0}
   m_VSyncEnabled: 0
   m_MaximizeOnPlay: 0
@@ -84,25 +84,25 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 17
-      width: 905
-      height: 499
-    m_Scale: {x: 0.8663195, y: 0.8663194}
-    m_Translation: {x: 452.5, y: 249.5}
+      width: 903
+      height: 542
+    m_Scale: {x: 0.88183594, y: 0.881836}
+    m_Translation: {x: 451.5, y: 271}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -522.32465
-      y: -288
-      width: 1044.6493
-      height: 576
+      x: -512
+      y: -307.3134
+      width: 1024
+      height: 614.6268
     m_MinimalGUI: 1
-  m_defaultScale: 0.8663194
+  m_defaultScale: 1
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 0
-  m_LastWindowPixelSize: {x: 1131.25, y: 645}
+  m_LastWindowPixelSize: {x: 1128.75, y: 698.75}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000001000000000000
@@ -121,17 +121,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Children:
   - {fileID: 4}
-  - {fileID: 8}
+  - {fileID: 9}
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 905
+    width: 903
     height: 741
   m_MinSize: {x: 102, y: 244}
   m_MaxSize: {x: 4002, y: 8044}
   vertical: 1
-  controlID: 32
+  controlID: 33
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -149,8 +149,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 905
-    height: 535
+    width: 903
+    height: 578
   m_MinSize: {x: 102, y: 122}
   m_MaxSize: {x: 4002, y: 4022}
   m_ActualView: {fileID: 2}
@@ -159,6 +159,7 @@ MonoBehaviour:
   - {fileID: 5}
   - {fileID: 6}
   - {fileID: 7}
+  - {fileID: 8}
   m_Selected: 0
   m_LastSelected: 1
 --- !u!114 &5
@@ -184,8 +185,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 73.6
-    width: 818
-    height: 516
+    width: 903
+    height: 559
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: 6d8ac9e1d86025249adc49157142e5db
@@ -197,9 +198,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.5221575, y: 0.2537852, z: -30.666794}
+    m_Target: {x: 50.484177, y: 38.381485, z: -121.48801}
     speed: 2
-    m_Value: {x: 0.5221575, y: 0.2537852, z: -30.666794}
+    m_Value: {x: 50.484177, y: 38.381485, z: -121.48801}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -232,9 +233,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 42.12416
+    m_Target: 45.961437
     speed: 2
-    m_Value: 42.12416
+    m_Value: 45.961437
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -280,12 +281,12 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 73
-    width: 855
-    height: 525
+    y: 73.6
+    width: 923
+    height: 545
   m_ViewDataDictionary: {fileID: 0}
   Collection:
-    filter: 0
+    filter: 1
     lastUpdateTime: "\u0438\u044E\u043D\u044C 1, 17:13"
     listPackagesOffline:
     - Name: com.unity.ads
@@ -310,7 +311,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.3.1
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.ads@2.3.1
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.ads@2.3.1
         m_AssetPath: Packages/com.unity.ads
         m_Name: com.unity.ads
         m_DisplayName: Advertisement
@@ -347,6 +348,8 @@ MonoBehaviour:
           - 3.0.3
           - 3.1.1
           - 3.2.0
+          - 3.3.0
+          - 3.3.1
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -373,6 +376,8 @@ MonoBehaviour:
           - 3.0.3
           - 3.1.1
           - 3.2.0
+          - 3.3.0
+          - 3.3.1
           m_Recommended: 2.0.8
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -410,7 +415,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.3.1
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.ads@2.3.1
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.ads@2.3.1
         m_AssetPath: Packages/com.unity.ads
         m_Name: com.unity.ads
         m_DisplayName: Advertisement
@@ -447,6 +452,8 @@ MonoBehaviour:
           - 3.0.3
           - 3.1.1
           - 3.2.0
+          - 3.3.0
+          - 3.3.1
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -473,6 +480,8 @@ MonoBehaviour:
           - 3.0.3
           - 3.1.1
           - 3.2.0
+          - 3.3.0
+          - 3.3.1
           m_Recommended: 2.0.8
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -510,7 +519,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.3.1
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.ads@2.3.1
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.ads@2.3.1
         m_AssetPath: Packages/com.unity.ads
         m_Name: com.unity.ads
         m_DisplayName: Advertisement
@@ -547,6 +556,8 @@ MonoBehaviour:
           - 3.0.3
           - 3.1.1
           - 3.2.0
+          - 3.3.0
+          - 3.3.1
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -573,6 +584,8 @@ MonoBehaviour:
           - 3.0.3
           - 3.1.1
           - 3.2.0
+          - 3.3.0
+          - 3.3.1
           m_Recommended: 2.0.8
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -610,7 +623,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.3.1
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.ads@2.3.1
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.ads@2.3.1
         m_AssetPath: Packages/com.unity.ads
         m_Name: com.unity.ads
         m_DisplayName: Advertisement
@@ -647,6 +660,8 @@ MonoBehaviour:
           - 3.0.3
           - 3.1.1
           - 3.2.0
+          - 3.3.0
+          - 3.3.1
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -673,6 +688,8 @@ MonoBehaviour:
           - 3.0.3
           - 3.1.1
           - 3.2.0
+          - 3.3.0
+          - 3.3.1
           m_Recommended: 2.0.8
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -710,7 +727,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.3.1
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.ads@2.3.1
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.ads@2.3.1
         m_AssetPath: Packages/com.unity.ads
         m_Name: com.unity.ads
         m_DisplayName: Advertisement
@@ -747,6 +764,8 @@ MonoBehaviour:
           - 3.0.3
           - 3.1.1
           - 3.2.0
+          - 3.3.0
+          - 3.3.1
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -773,6 +792,8 @@ MonoBehaviour:
           - 3.0.3
           - 3.1.1
           - 3.2.0
+          - 3.3.0
+          - 3.3.1
           m_Recommended: 2.0.8
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -810,7 +831,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.3.1
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.ads@2.3.1
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.ads@2.3.1
         m_AssetPath: Packages/com.unity.ads
         m_Name: com.unity.ads
         m_DisplayName: Advertisement
@@ -847,6 +868,8 @@ MonoBehaviour:
           - 3.0.3
           - 3.1.1
           - 3.2.0
+          - 3.3.0
+          - 3.3.1
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -873,6 +896,8 @@ MonoBehaviour:
           - 3.0.3
           - 3.1.1
           - 3.2.0
+          - 3.3.0
+          - 3.3.1
           m_Recommended: 2.0.8
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -910,7 +935,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.3.1
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.ads@2.3.1
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.ads@2.3.1
         m_AssetPath: Packages/com.unity.ads
         m_Name: com.unity.ads
         m_DisplayName: Advertisement
@@ -947,6 +972,8 @@ MonoBehaviour:
           - 3.0.3
           - 3.1.1
           - 3.2.0
+          - 3.3.0
+          - 3.3.1
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -973,6 +1000,8 @@ MonoBehaviour:
           - 3.0.3
           - 3.1.1
           - 3.2.0
+          - 3.3.0
+          - 3.3.1
           m_Recommended: 2.0.8
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -1010,7 +1039,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.3.1
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.ads@2.3.1
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.ads@2.3.1
         m_AssetPath: Packages/com.unity.ads
         m_Name: com.unity.ads
         m_DisplayName: Advertisement
@@ -1047,6 +1076,8 @@ MonoBehaviour:
           - 3.0.3
           - 3.1.1
           - 3.2.0
+          - 3.3.0
+          - 3.3.1
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -1073,6 +1104,8 @@ MonoBehaviour:
           - 3.0.3
           - 3.1.1
           - 3.2.0
+          - 3.3.0
+          - 3.3.1
           m_Recommended: 2.0.8
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -1110,7 +1143,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.3.1
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.ads@2.3.1
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.ads@2.3.1
         m_AssetPath: Packages/com.unity.ads
         m_Name: com.unity.ads
         m_DisplayName: Advertisement
@@ -1147,6 +1180,8 @@ MonoBehaviour:
           - 3.0.3
           - 3.1.1
           - 3.2.0
+          - 3.3.0
+          - 3.3.1
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -1173,6 +1208,8 @@ MonoBehaviour:
           - 3.0.3
           - 3.1.1
           - 3.2.0
+          - 3.3.0
+          - 3.3.1
           m_Recommended: 2.0.8
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -1210,7 +1247,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.3.1
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.ads@2.3.1
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.ads@2.3.1
         m_AssetPath: Packages/com.unity.ads
         m_Name: com.unity.ads
         m_DisplayName: Advertisement
@@ -1247,6 +1284,8 @@ MonoBehaviour:
           - 3.0.3
           - 3.1.1
           - 3.2.0
+          - 3.3.0
+          - 3.3.1
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -1273,6 +1312,8 @@ MonoBehaviour:
           - 3.0.3
           - 3.1.1
           - 3.2.0
+          - 3.3.0
+          - 3.3.1
           m_Recommended: 2.0.8
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -1310,7 +1351,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.3.1
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.ads@2.3.1
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.ads@2.3.1
         m_AssetPath: Packages/com.unity.ads
         m_Name: com.unity.ads
         m_DisplayName: Advertisement
@@ -1347,6 +1388,8 @@ MonoBehaviour:
           - 3.0.3
           - 3.1.1
           - 3.2.0
+          - 3.3.0
+          - 3.3.1
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -1373,6 +1416,8 @@ MonoBehaviour:
           - 3.0.3
           - 3.1.1
           - 3.2.0
+          - 3.3.0
+          - 3.3.1
           m_Recommended: 2.0.8
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -1410,7 +1455,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.3.1
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.ads@2.3.1
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.ads@2.3.1
         m_AssetPath: Packages/com.unity.ads
         m_Name: com.unity.ads
         m_DisplayName: Advertisement
@@ -1447,6 +1492,8 @@ MonoBehaviour:
           - 3.0.3
           - 3.1.1
           - 3.2.0
+          - 3.3.0
+          - 3.3.1
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -1473,6 +1520,8 @@ MonoBehaviour:
           - 3.0.3
           - 3.1.1
           - 3.2.0
+          - 3.3.0
+          - 3.3.1
           m_Recommended: 2.0.8
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -1510,7 +1559,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.3.1
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.ads@2.3.1
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.ads@2.3.1
         m_AssetPath: Packages/com.unity.ads
         m_Name: com.unity.ads
         m_DisplayName: Advertisement
@@ -1547,6 +1596,8 @@ MonoBehaviour:
           - 3.0.3
           - 3.1.1
           - 3.2.0
+          - 3.3.0
+          - 3.3.1
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -1573,6 +1624,8 @@ MonoBehaviour:
           - 3.0.3
           - 3.1.1
           - 3.2.0
+          - 3.3.0
+          - 3.3.1
           m_Recommended: 2.0.8
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -1610,7 +1663,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.3.1
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.ads@2.3.1
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.ads@2.3.1
         m_AssetPath: Packages/com.unity.ads
         m_Name: com.unity.ads
         m_DisplayName: Advertisement
@@ -1647,6 +1700,8 @@ MonoBehaviour:
           - 3.0.3
           - 3.1.1
           - 3.2.0
+          - 3.3.0
+          - 3.3.1
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -1673,6 +1728,8 @@ MonoBehaviour:
           - 3.0.3
           - 3.1.1
           - 3.2.0
+          - 3.3.0
+          - 3.3.1
           m_Recommended: 2.0.8
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -1710,7 +1767,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.3.1
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.ads@2.3.1
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.ads@2.3.1
         m_AssetPath: Packages/com.unity.ads
         m_Name: com.unity.ads
         m_DisplayName: Advertisement
@@ -1747,6 +1804,8 @@ MonoBehaviour:
           - 3.0.3
           - 3.1.1
           - 3.2.0
+          - 3.3.0
+          - 3.3.1
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -1773,6 +1832,8 @@ MonoBehaviour:
           - 3.0.3
           - 3.1.1
           - 3.2.0
+          - 3.3.0
+          - 3.3.1
           m_Recommended: 2.0.8
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -1810,7 +1871,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.3.1
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.ads@2.3.1
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.ads@2.3.1
         m_AssetPath: Packages/com.unity.ads
         m_Name: com.unity.ads
         m_DisplayName: Advertisement
@@ -1847,6 +1908,8 @@ MonoBehaviour:
           - 3.0.3
           - 3.1.1
           - 3.2.0
+          - 3.3.0
+          - 3.3.1
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -1873,6 +1936,8 @@ MonoBehaviour:
           - 3.0.3
           - 3.1.1
           - 3.2.0
+          - 3.3.0
+          - 3.3.1
           m_Recommended: 2.0.8
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -1910,7 +1975,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.3.1
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.ads@2.3.1
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.ads@2.3.1
         m_AssetPath: Packages/com.unity.ads
         m_Name: com.unity.ads
         m_DisplayName: Advertisement
@@ -1947,6 +2012,8 @@ MonoBehaviour:
           - 3.0.3
           - 3.1.1
           - 3.2.0
+          - 3.3.0
+          - 3.3.1
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -1973,6 +2040,8 @@ MonoBehaviour:
           - 3.0.3
           - 3.1.1
           - 3.2.0
+          - 3.3.0
+          - 3.3.1
           m_Recommended: 2.0.8
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -2010,7 +2079,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.3.1
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.ads@2.3.1
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.ads@2.3.1
         m_AssetPath: Packages/com.unity.ads
         m_Name: com.unity.ads
         m_DisplayName: Advertisement
@@ -2047,6 +2116,8 @@ MonoBehaviour:
           - 3.0.3
           - 3.1.1
           - 3.2.0
+          - 3.3.0
+          - 3.3.1
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -2073,6 +2144,8 @@ MonoBehaviour:
           - 3.0.3
           - 3.1.1
           - 3.2.0
+          - 3.3.0
+          - 3.3.1
           m_Recommended: 2.0.8
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -2110,7 +2183,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.3.1
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.ads@2.3.1
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.ads@2.3.1
         m_AssetPath: Packages/com.unity.ads
         m_Name: com.unity.ads
         m_DisplayName: Advertisement
@@ -2147,6 +2220,8 @@ MonoBehaviour:
           - 3.0.3
           - 3.1.1
           - 3.2.0
+          - 3.3.0
+          - 3.3.1
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -2173,6 +2248,8 @@ MonoBehaviour:
           - 3.0.3
           - 3.1.1
           - 3.2.0
+          - 3.3.0
+          - 3.3.1
           m_Recommended: 2.0.8
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -2210,7 +2287,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.3.1
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.ads@2.3.1
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.ads@2.3.1
         m_AssetPath: Packages/com.unity.ads
         m_Name: com.unity.ads
         m_DisplayName: Advertisement
@@ -2247,6 +2324,8 @@ MonoBehaviour:
           - 3.0.3
           - 3.1.1
           - 3.2.0
+          - 3.3.0
+          - 3.3.1
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -2273,6 +2352,8 @@ MonoBehaviour:
           - 3.0.3
           - 3.1.1
           - 3.2.0
+          - 3.3.0
+          - 3.3.1
           m_Recommended: 2.0.8
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -2310,7 +2391,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.3.1
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.ads@2.3.1
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.ads@2.3.1
         m_AssetPath: Packages/com.unity.ads
         m_Name: com.unity.ads
         m_DisplayName: Advertisement
@@ -2347,6 +2428,8 @@ MonoBehaviour:
           - 3.0.3
           - 3.1.1
           - 3.2.0
+          - 3.3.0
+          - 3.3.1
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -2373,6 +2456,8 @@ MonoBehaviour:
           - 3.0.3
           - 3.1.1
           - 3.2.0
+          - 3.3.0
+          - 3.3.1
           m_Recommended: 2.0.8
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -2410,7 +2495,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.3.1
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.ads@2.3.1
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.ads@2.3.1
         m_AssetPath: Packages/com.unity.ads
         m_Name: com.unity.ads
         m_DisplayName: Advertisement
@@ -2447,6 +2532,8 @@ MonoBehaviour:
           - 3.0.3
           - 3.1.1
           - 3.2.0
+          - 3.3.0
+          - 3.3.1
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -2473,6 +2560,8 @@ MonoBehaviour:
           - 3.0.3
           - 3.1.1
           - 3.2.0
+          - 3.3.0
+          - 3.3.1
           m_Recommended: 2.0.8
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -2510,7 +2599,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.3.1
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.ads@2.3.1
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.ads@2.3.1
         m_AssetPath: Packages/com.unity.ads
         m_Name: com.unity.ads
         m_DisplayName: Advertisement
@@ -2547,6 +2636,8 @@ MonoBehaviour:
           - 3.0.3
           - 3.1.1
           - 3.2.0
+          - 3.3.0
+          - 3.3.1
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -2573,6 +2664,8 @@ MonoBehaviour:
           - 3.0.3
           - 3.1.1
           - 3.2.0
+          - 3.3.0
+          - 3.3.1
           m_Recommended: 2.0.8
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -2610,7 +2703,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.3.1
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.ads@2.3.1
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.ads@2.3.1
         m_AssetPath: Packages/com.unity.ads
         m_Name: com.unity.ads
         m_DisplayName: Advertisement
@@ -2647,6 +2740,8 @@ MonoBehaviour:
           - 3.0.3
           - 3.1.1
           - 3.2.0
+          - 3.3.0
+          - 3.3.1
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -2673,6 +2768,8 @@ MonoBehaviour:
           - 3.0.3
           - 3.1.1
           - 3.2.0
+          - 3.3.0
+          - 3.3.1
           m_Recommended: 2.0.8
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -2696,7 +2793,7 @@ MonoBehaviour:
       Category: 
       State: 1
       IsCurrent: 0
-      IsLatest: 1
+      IsLatest: 0
       Group: Packages
       Type: 
       Origin: 1
@@ -2710,7 +2807,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.3.1
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.ads@2.3.1
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.ads@2.3.1
         m_AssetPath: Packages/com.unity.ads
         m_Name: com.unity.ads
         m_DisplayName: Advertisement
@@ -2747,6 +2844,8 @@ MonoBehaviour:
           - 3.0.3
           - 3.1.1
           - 3.2.0
+          - 3.3.0
+          - 3.3.1
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -2773,6 +2872,216 @@ MonoBehaviour:
           - 3.0.3
           - 3.1.1
           - 3.2.0
+          - 3.3.0
+          - 3.3.1
+          m_Recommended: 2.0.8
+        m_Dependencies: []
+        m_ResolvedDependencies: []
+        m_Keywords:
+        - ads
+        - unity
+        m_Author:
+          m_Name: 
+          m_Email: 
+          m_Url: 
+        m_HasRegistry: 1
+        m_Registry:
+          m_Name: 
+          m_Url: https://packages.unity.com
+          m_IsDefault: 1
+    - Name: com.unity.ads
+      DisplayName: Advertisement
+      _Version: 3.3.0
+      Description: Unity Ads is a video ad network for iOS and Android that allows
+        you to quickly and effectively monetize your games.
+      Category: 
+      State: 1
+      IsCurrent: 0
+      IsLatest: 0
+      Group: Packages
+      Type: 
+      Origin: 1
+      Errors: []
+      IsVerified: 0
+      Author: Unity Technologies Inc.
+      Samples: []
+      HasFullFetch: 0
+      Info:
+        m_PackageId: com.unity.ads@2.3.1
+        m_IsRootDependency: 1
+        m_Version: 2.3.1
+        m_Source: 1
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.ads@2.3.1
+        m_AssetPath: Packages/com.unity.ads
+        m_Name: com.unity.ads
+        m_DisplayName: Advertisement
+        m_Category: 
+        m_Type: 
+        m_Description: Unity Ads is a video ad network for iOS and Android that allows
+          you to quickly and effectively monetize your games.
+        m_Status: 4
+        m_Errors: []
+        m_Versions:
+          m_All:
+          - 0.0.3
+          - 0.0.4
+          - 0.0.5
+          - 0.0.6
+          - 0.0.7
+          - 0.0.8
+          - 0.0.10
+          - 0.0.11
+          - 0.0.12
+          - 0.0.13
+          - 0.0.14
+          - 0.0.15
+          - 0.0.16
+          - 2.0.0
+          - 2.0.3
+          - 2.0.4
+          - 2.0.7
+          - 2.0.8
+          - 2.3.1
+          - 2.3.2
+          - 3.0.1
+          - 3.0.2
+          - 3.0.3
+          - 3.1.1
+          - 3.2.0
+          - 3.3.0
+          - 3.3.1
+          m_Compatible:
+          - 0.0.3
+          - 0.0.4
+          - 0.0.5
+          - 0.0.6
+          - 0.0.7
+          - 0.0.8
+          - 0.0.10
+          - 0.0.11
+          - 0.0.12
+          - 0.0.13
+          - 0.0.14
+          - 0.0.15
+          - 0.0.16
+          - 2.0.0
+          - 2.0.3
+          - 2.0.4
+          - 2.0.7
+          - 2.0.8
+          - 2.3.1
+          - 2.3.2
+          - 3.0.1
+          - 3.0.2
+          - 3.0.3
+          - 3.1.1
+          - 3.2.0
+          - 3.3.0
+          - 3.3.1
+          m_Recommended: 2.0.8
+        m_Dependencies: []
+        m_ResolvedDependencies: []
+        m_Keywords:
+        - ads
+        - unity
+        m_Author:
+          m_Name: 
+          m_Email: 
+          m_Url: 
+        m_HasRegistry: 1
+        m_Registry:
+          m_Name: 
+          m_Url: https://packages.unity.com
+          m_IsDefault: 1
+    - Name: com.unity.ads
+      DisplayName: Advertisement
+      _Version: 3.3.1
+      Description: Unity Ads is a video ad network for iOS and Android that allows
+        you to quickly and effectively monetize your games.
+      Category: 
+      State: 1
+      IsCurrent: 0
+      IsLatest: 1
+      Group: Packages
+      Type: 
+      Origin: 1
+      Errors: []
+      IsVerified: 0
+      Author: Unity Technologies Inc.
+      Samples: []
+      HasFullFetch: 0
+      Info:
+        m_PackageId: com.unity.ads@2.3.1
+        m_IsRootDependency: 1
+        m_Version: 2.3.1
+        m_Source: 1
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.ads@2.3.1
+        m_AssetPath: Packages/com.unity.ads
+        m_Name: com.unity.ads
+        m_DisplayName: Advertisement
+        m_Category: 
+        m_Type: 
+        m_Description: Unity Ads is a video ad network for iOS and Android that allows
+          you to quickly and effectively monetize your games.
+        m_Status: 4
+        m_Errors: []
+        m_Versions:
+          m_All:
+          - 0.0.3
+          - 0.0.4
+          - 0.0.5
+          - 0.0.6
+          - 0.0.7
+          - 0.0.8
+          - 0.0.10
+          - 0.0.11
+          - 0.0.12
+          - 0.0.13
+          - 0.0.14
+          - 0.0.15
+          - 0.0.16
+          - 2.0.0
+          - 2.0.3
+          - 2.0.4
+          - 2.0.7
+          - 2.0.8
+          - 2.3.1
+          - 2.3.2
+          - 3.0.1
+          - 3.0.2
+          - 3.0.3
+          - 3.1.1
+          - 3.2.0
+          - 3.3.0
+          - 3.3.1
+          m_Compatible:
+          - 0.0.3
+          - 0.0.4
+          - 0.0.5
+          - 0.0.6
+          - 0.0.7
+          - 0.0.8
+          - 0.0.10
+          - 0.0.11
+          - 0.0.12
+          - 0.0.13
+          - 0.0.14
+          - 0.0.15
+          - 0.0.16
+          - 2.0.0
+          - 2.0.3
+          - 2.0.4
+          - 2.0.7
+          - 2.0.8
+          - 2.3.1
+          - 2.3.2
+          - 3.0.1
+          - 3.0.2
+          - 3.0.3
+          - 3.1.1
+          - 3.2.0
+          - 3.3.0
+          - 3.3.1
           m_Recommended: 2.0.8
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -2794,7 +3103,7 @@ MonoBehaviour:
       Description: The Unity Analytics Library contains the Analytics Event Tracker
         component, the Data Privacy plug-in, and the Standard Events API.
       Category: 
-      State: 0
+      State: 1
       IsCurrent: 0
       IsLatest: 0
       Group: Packages
@@ -2810,7 +3119,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 3.3.2
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.analytics@3.3.2
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.analytics@3.3.2
         m_AssetPath: Packages/com.unity.analytics
         m_Name: com.unity.analytics
         m_DisplayName: Analytics Library
@@ -2851,6 +3160,8 @@ MonoBehaviour:
           - 3.3.0
           - 3.3.2-preview
           - 3.3.2
+          - 3.3.4
+          - 3.4.0
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -2881,7 +3192,9 @@ MonoBehaviour:
           - 3.3.0
           - 3.3.2-preview
           - 3.3.2
-          m_Recommended: 3.3.2
+          - 3.3.4
+          - 3.4.0
+          m_Recommended: 3.3.4
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -2906,7 +3219,7 @@ MonoBehaviour:
       Description: The Unity Analytics Library contains the Analytics Event Tracker
         component, the Data Privacy plug-in, and the Standard Events API.
       Category: 
-      State: 0
+      State: 1
       IsCurrent: 0
       IsLatest: 0
       Group: Packages
@@ -2922,7 +3235,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 3.3.2
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.analytics@3.3.2
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.analytics@3.3.2
         m_AssetPath: Packages/com.unity.analytics
         m_Name: com.unity.analytics
         m_DisplayName: Analytics Library
@@ -2963,6 +3276,8 @@ MonoBehaviour:
           - 3.3.0
           - 3.3.2-preview
           - 3.3.2
+          - 3.3.4
+          - 3.4.0
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -2993,7 +3308,9 @@ MonoBehaviour:
           - 3.3.0
           - 3.3.2-preview
           - 3.3.2
-          m_Recommended: 3.3.2
+          - 3.3.4
+          - 3.4.0
+          m_Recommended: 3.3.4
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -3018,7 +3335,7 @@ MonoBehaviour:
       Description: The Unity Analytics Library contains the Analytics Event Tracker
         component, the Data Privacy plug-in, and the Standard Events API.
       Category: 
-      State: 0
+      State: 1
       IsCurrent: 0
       IsLatest: 0
       Group: Packages
@@ -3034,7 +3351,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 3.3.2
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.analytics@3.3.2
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.analytics@3.3.2
         m_AssetPath: Packages/com.unity.analytics
         m_Name: com.unity.analytics
         m_DisplayName: Analytics Library
@@ -3075,6 +3392,8 @@ MonoBehaviour:
           - 3.3.0
           - 3.3.2-preview
           - 3.3.2
+          - 3.3.4
+          - 3.4.0
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -3105,7 +3424,9 @@ MonoBehaviour:
           - 3.3.0
           - 3.3.2-preview
           - 3.3.2
-          m_Recommended: 3.3.2
+          - 3.3.4
+          - 3.4.0
+          m_Recommended: 3.3.4
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -3130,7 +3451,7 @@ MonoBehaviour:
       Description: The Unity Analytics Library contains the Analytics Event Tracker
         component, the Data Privacy plug-in, and the Standard Events API.
       Category: 
-      State: 0
+      State: 1
       IsCurrent: 0
       IsLatest: 0
       Group: Packages
@@ -3146,7 +3467,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 3.3.2
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.analytics@3.3.2
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.analytics@3.3.2
         m_AssetPath: Packages/com.unity.analytics
         m_Name: com.unity.analytics
         m_DisplayName: Analytics Library
@@ -3187,6 +3508,8 @@ MonoBehaviour:
           - 3.3.0
           - 3.3.2-preview
           - 3.3.2
+          - 3.3.4
+          - 3.4.0
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -3217,7 +3540,9 @@ MonoBehaviour:
           - 3.3.0
           - 3.3.2-preview
           - 3.3.2
-          m_Recommended: 3.3.2
+          - 3.3.4
+          - 3.4.0
+          m_Recommended: 3.3.4
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -3242,7 +3567,7 @@ MonoBehaviour:
       Description: The Unity Analytics Library contains the Analytics Event Tracker
         component, the Data Privacy plug-in, and the Standard Events API.
       Category: 
-      State: 0
+      State: 1
       IsCurrent: 0
       IsLatest: 0
       Group: Packages
@@ -3258,7 +3583,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 3.3.2
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.analytics@3.3.2
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.analytics@3.3.2
         m_AssetPath: Packages/com.unity.analytics
         m_Name: com.unity.analytics
         m_DisplayName: Analytics Library
@@ -3299,6 +3624,8 @@ MonoBehaviour:
           - 3.3.0
           - 3.3.2-preview
           - 3.3.2
+          - 3.3.4
+          - 3.4.0
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -3329,7 +3656,9 @@ MonoBehaviour:
           - 3.3.0
           - 3.3.2-preview
           - 3.3.2
-          m_Recommended: 3.3.2
+          - 3.3.4
+          - 3.4.0
+          m_Recommended: 3.3.4
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -3354,7 +3683,7 @@ MonoBehaviour:
       Description: The Unity Analytics Library contains the Analytics Event Tracker
         component, the Data Privacy plug-in, and the Standard Events API.
       Category: 
-      State: 0
+      State: 1
       IsCurrent: 0
       IsLatest: 0
       Group: Packages
@@ -3370,7 +3699,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 3.3.2
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.analytics@3.3.2
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.analytics@3.3.2
         m_AssetPath: Packages/com.unity.analytics
         m_Name: com.unity.analytics
         m_DisplayName: Analytics Library
@@ -3411,6 +3740,8 @@ MonoBehaviour:
           - 3.3.0
           - 3.3.2-preview
           - 3.3.2
+          - 3.3.4
+          - 3.4.0
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -3441,7 +3772,9 @@ MonoBehaviour:
           - 3.3.0
           - 3.3.2-preview
           - 3.3.2
-          m_Recommended: 3.3.2
+          - 3.3.4
+          - 3.4.0
+          m_Recommended: 3.3.4
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -3466,7 +3799,7 @@ MonoBehaviour:
       Description: The Unity Analytics Library contains the Analytics Event Tracker
         component, the Data Privacy plug-in, and the Standard Events API.
       Category: 
-      State: 0
+      State: 1
       IsCurrent: 0
       IsLatest: 0
       Group: Packages
@@ -3482,7 +3815,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 3.3.2
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.analytics@3.3.2
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.analytics@3.3.2
         m_AssetPath: Packages/com.unity.analytics
         m_Name: com.unity.analytics
         m_DisplayName: Analytics Library
@@ -3523,6 +3856,8 @@ MonoBehaviour:
           - 3.3.0
           - 3.3.2-preview
           - 3.3.2
+          - 3.3.4
+          - 3.4.0
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -3553,7 +3888,9 @@ MonoBehaviour:
           - 3.3.0
           - 3.3.2-preview
           - 3.3.2
-          m_Recommended: 3.3.2
+          - 3.3.4
+          - 3.4.0
+          m_Recommended: 3.3.4
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -3578,7 +3915,7 @@ MonoBehaviour:
       Description: The Unity Analytics Library contains the Analytics Event Tracker
         component, the Data Privacy plug-in, and the Standard Events API.
       Category: 
-      State: 0
+      State: 1
       IsCurrent: 0
       IsLatest: 0
       Group: Packages
@@ -3594,7 +3931,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 3.3.2
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.analytics@3.3.2
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.analytics@3.3.2
         m_AssetPath: Packages/com.unity.analytics
         m_Name: com.unity.analytics
         m_DisplayName: Analytics Library
@@ -3635,6 +3972,8 @@ MonoBehaviour:
           - 3.3.0
           - 3.3.2-preview
           - 3.3.2
+          - 3.3.4
+          - 3.4.0
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -3665,7 +4004,9 @@ MonoBehaviour:
           - 3.3.0
           - 3.3.2-preview
           - 3.3.2
-          m_Recommended: 3.3.2
+          - 3.3.4
+          - 3.4.0
+          m_Recommended: 3.3.4
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -3690,7 +4031,7 @@ MonoBehaviour:
       Description: The Unity Analytics Library contains the Analytics Event Tracker
         component, the Data Privacy plug-in, and the Standard Events API.
       Category: 
-      State: 0
+      State: 1
       IsCurrent: 0
       IsLatest: 0
       Group: Packages
@@ -3706,7 +4047,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 3.3.2
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.analytics@3.3.2
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.analytics@3.3.2
         m_AssetPath: Packages/com.unity.analytics
         m_Name: com.unity.analytics
         m_DisplayName: Analytics Library
@@ -3747,6 +4088,8 @@ MonoBehaviour:
           - 3.3.0
           - 3.3.2-preview
           - 3.3.2
+          - 3.3.4
+          - 3.4.0
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -3777,7 +4120,9 @@ MonoBehaviour:
           - 3.3.0
           - 3.3.2-preview
           - 3.3.2
-          m_Recommended: 3.3.2
+          - 3.3.4
+          - 3.4.0
+          m_Recommended: 3.3.4
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -3802,7 +4147,7 @@ MonoBehaviour:
       Description: The Unity Analytics Library contains the Analytics Event Tracker
         component, the Data Privacy plug-in, and the Standard Events API.
       Category: 
-      State: 0
+      State: 1
       IsCurrent: 0
       IsLatest: 0
       Group: Packages
@@ -3818,7 +4163,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 3.3.2
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.analytics@3.3.2
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.analytics@3.3.2
         m_AssetPath: Packages/com.unity.analytics
         m_Name: com.unity.analytics
         m_DisplayName: Analytics Library
@@ -3859,6 +4204,8 @@ MonoBehaviour:
           - 3.3.0
           - 3.3.2-preview
           - 3.3.2
+          - 3.3.4
+          - 3.4.0
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -3889,7 +4236,9 @@ MonoBehaviour:
           - 3.3.0
           - 3.3.2-preview
           - 3.3.2
-          m_Recommended: 3.3.2
+          - 3.3.4
+          - 3.4.0
+          m_Recommended: 3.3.4
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -3914,7 +4263,7 @@ MonoBehaviour:
       Description: The Unity Analytics Library contains the Analytics Event Tracker
         component, the Data Privacy plug-in, and the Standard Events API.
       Category: 
-      State: 0
+      State: 1
       IsCurrent: 0
       IsLatest: 0
       Group: Packages
@@ -3930,7 +4279,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 3.3.2
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.analytics@3.3.2
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.analytics@3.3.2
         m_AssetPath: Packages/com.unity.analytics
         m_Name: com.unity.analytics
         m_DisplayName: Analytics Library
@@ -3971,6 +4320,8 @@ MonoBehaviour:
           - 3.3.0
           - 3.3.2-preview
           - 3.3.2
+          - 3.3.4
+          - 3.4.0
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -4001,7 +4352,9 @@ MonoBehaviour:
           - 3.3.0
           - 3.3.2-preview
           - 3.3.2
-          m_Recommended: 3.3.2
+          - 3.3.4
+          - 3.4.0
+          m_Recommended: 3.3.4
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -4026,7 +4379,7 @@ MonoBehaviour:
       Description: The Unity Analytics Library contains the Analytics Event Tracker
         component, the Data Privacy plug-in, and the Standard Events API.
       Category: 
-      State: 0
+      State: 1
       IsCurrent: 0
       IsLatest: 0
       Group: Packages
@@ -4042,7 +4395,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 3.3.2
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.analytics@3.3.2
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.analytics@3.3.2
         m_AssetPath: Packages/com.unity.analytics
         m_Name: com.unity.analytics
         m_DisplayName: Analytics Library
@@ -4083,6 +4436,8 @@ MonoBehaviour:
           - 3.3.0
           - 3.3.2-preview
           - 3.3.2
+          - 3.3.4
+          - 3.4.0
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -4113,7 +4468,9 @@ MonoBehaviour:
           - 3.3.0
           - 3.3.2-preview
           - 3.3.2
-          m_Recommended: 3.3.2
+          - 3.3.4
+          - 3.4.0
+          m_Recommended: 3.3.4
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -4138,7 +4495,7 @@ MonoBehaviour:
       Description: The Unity Analytics Library contains the Analytics Event Tracker
         component, the Data Privacy plug-in, and the Standard Events API.
       Category: 
-      State: 0
+      State: 1
       IsCurrent: 0
       IsLatest: 0
       Group: Packages
@@ -4154,7 +4511,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 3.3.2
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.analytics@3.3.2
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.analytics@3.3.2
         m_AssetPath: Packages/com.unity.analytics
         m_Name: com.unity.analytics
         m_DisplayName: Analytics Library
@@ -4195,6 +4552,8 @@ MonoBehaviour:
           - 3.3.0
           - 3.3.2-preview
           - 3.3.2
+          - 3.3.4
+          - 3.4.0
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -4225,7 +4584,9 @@ MonoBehaviour:
           - 3.3.0
           - 3.3.2-preview
           - 3.3.2
-          m_Recommended: 3.3.2
+          - 3.3.4
+          - 3.4.0
+          m_Recommended: 3.3.4
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -4250,7 +4611,7 @@ MonoBehaviour:
       Description: The Unity Analytics Library contains the Analytics Event Tracker
         component, the Data Privacy plug-in, and the Standard Events API.
       Category: 
-      State: 0
+      State: 1
       IsCurrent: 0
       IsLatest: 0
       Group: Packages
@@ -4266,7 +4627,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 3.3.2
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.analytics@3.3.2
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.analytics@3.3.2
         m_AssetPath: Packages/com.unity.analytics
         m_Name: com.unity.analytics
         m_DisplayName: Analytics Library
@@ -4307,6 +4668,8 @@ MonoBehaviour:
           - 3.3.0
           - 3.3.2-preview
           - 3.3.2
+          - 3.3.4
+          - 3.4.0
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -4337,7 +4700,9 @@ MonoBehaviour:
           - 3.3.0
           - 3.3.2-preview
           - 3.3.2
-          m_Recommended: 3.3.2
+          - 3.3.4
+          - 3.4.0
+          m_Recommended: 3.3.4
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -4362,7 +4727,7 @@ MonoBehaviour:
       Description: The Unity Analytics Library contains the Analytics Event Tracker
         component, the Data Privacy plug-in, and the Standard Events API.
       Category: 
-      State: 0
+      State: 1
       IsCurrent: 0
       IsLatest: 0
       Group: Packages
@@ -4378,7 +4743,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 3.3.2
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.analytics@3.3.2
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.analytics@3.3.2
         m_AssetPath: Packages/com.unity.analytics
         m_Name: com.unity.analytics
         m_DisplayName: Analytics Library
@@ -4419,6 +4784,8 @@ MonoBehaviour:
           - 3.3.0
           - 3.3.2-preview
           - 3.3.2
+          - 3.3.4
+          - 3.4.0
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -4449,7 +4816,9 @@ MonoBehaviour:
           - 3.3.0
           - 3.3.2-preview
           - 3.3.2
-          m_Recommended: 3.3.2
+          - 3.3.4
+          - 3.4.0
+          m_Recommended: 3.3.4
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -4474,7 +4843,7 @@ MonoBehaviour:
       Description: The Unity Analytics Library contains the Analytics Event Tracker
         component, the Data Privacy plug-in, and the Standard Events API.
       Category: 
-      State: 0
+      State: 1
       IsCurrent: 0
       IsLatest: 0
       Group: Packages
@@ -4490,7 +4859,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 3.3.2
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.analytics@3.3.2
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.analytics@3.3.2
         m_AssetPath: Packages/com.unity.analytics
         m_Name: com.unity.analytics
         m_DisplayName: Analytics Library
@@ -4531,6 +4900,8 @@ MonoBehaviour:
           - 3.3.0
           - 3.3.2-preview
           - 3.3.2
+          - 3.3.4
+          - 3.4.0
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -4561,7 +4932,9 @@ MonoBehaviour:
           - 3.3.0
           - 3.3.2-preview
           - 3.3.2
-          m_Recommended: 3.3.2
+          - 3.3.4
+          - 3.4.0
+          m_Recommended: 3.3.4
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -4586,7 +4959,7 @@ MonoBehaviour:
       Description: The Unity Analytics Library contains the Analytics Event Tracker
         component, the Data Privacy plug-in, and the Standard Events API.
       Category: 
-      State: 0
+      State: 1
       IsCurrent: 0
       IsLatest: 0
       Group: Packages
@@ -4602,7 +4975,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 3.3.2
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.analytics@3.3.2
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.analytics@3.3.2
         m_AssetPath: Packages/com.unity.analytics
         m_Name: com.unity.analytics
         m_DisplayName: Analytics Library
@@ -4643,6 +5016,8 @@ MonoBehaviour:
           - 3.3.0
           - 3.3.2-preview
           - 3.3.2
+          - 3.3.4
+          - 3.4.0
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -4673,7 +5048,9 @@ MonoBehaviour:
           - 3.3.0
           - 3.3.2-preview
           - 3.3.2
-          m_Recommended: 3.3.2
+          - 3.3.4
+          - 3.4.0
+          m_Recommended: 3.3.4
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -4698,7 +5075,7 @@ MonoBehaviour:
       Description: The Unity Analytics Library contains the Analytics Event Tracker
         component, the Data Privacy plug-in, and the Standard Events API.
       Category: 
-      State: 0
+      State: 1
       IsCurrent: 0
       IsLatest: 0
       Group: Packages
@@ -4714,7 +5091,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 3.3.2
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.analytics@3.3.2
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.analytics@3.3.2
         m_AssetPath: Packages/com.unity.analytics
         m_Name: com.unity.analytics
         m_DisplayName: Analytics Library
@@ -4755,6 +5132,8 @@ MonoBehaviour:
           - 3.3.0
           - 3.3.2-preview
           - 3.3.2
+          - 3.3.4
+          - 3.4.0
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -4785,7 +5164,9 @@ MonoBehaviour:
           - 3.3.0
           - 3.3.2-preview
           - 3.3.2
-          m_Recommended: 3.3.2
+          - 3.3.4
+          - 3.4.0
+          m_Recommended: 3.3.4
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -4810,7 +5191,7 @@ MonoBehaviour:
       Description: The Unity Analytics Library contains the Analytics Event Tracker
         component, the Data Privacy plug-in, and the Standard Events API.
       Category: 
-      State: 0
+      State: 1
       IsCurrent: 0
       IsLatest: 0
       Group: Packages
@@ -4826,7 +5207,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 3.3.2
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.analytics@3.3.2
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.analytics@3.3.2
         m_AssetPath: Packages/com.unity.analytics
         m_Name: com.unity.analytics
         m_DisplayName: Analytics Library
@@ -4867,6 +5248,8 @@ MonoBehaviour:
           - 3.3.0
           - 3.3.2-preview
           - 3.3.2
+          - 3.3.4
+          - 3.4.0
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -4897,7 +5280,9 @@ MonoBehaviour:
           - 3.3.0
           - 3.3.2-preview
           - 3.3.2
-          m_Recommended: 3.3.2
+          - 3.3.4
+          - 3.4.0
+          m_Recommended: 3.3.4
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -4922,7 +5307,7 @@ MonoBehaviour:
       Description: The Unity Analytics Library contains the Analytics Event Tracker
         component, the Data Privacy plug-in, and the Standard Events API.
       Category: 
-      State: 0
+      State: 1
       IsCurrent: 0
       IsLatest: 0
       Group: Packages
@@ -4938,7 +5323,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 3.3.2
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.analytics@3.3.2
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.analytics@3.3.2
         m_AssetPath: Packages/com.unity.analytics
         m_Name: com.unity.analytics
         m_DisplayName: Analytics Library
@@ -4979,6 +5364,8 @@ MonoBehaviour:
           - 3.3.0
           - 3.3.2-preview
           - 3.3.2
+          - 3.3.4
+          - 3.4.0
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -5009,7 +5396,9 @@ MonoBehaviour:
           - 3.3.0
           - 3.3.2-preview
           - 3.3.2
-          m_Recommended: 3.3.2
+          - 3.3.4
+          - 3.4.0
+          m_Recommended: 3.3.4
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -5034,7 +5423,7 @@ MonoBehaviour:
       Description: The Unity Analytics Library contains the Analytics Event Tracker
         component, the Data Privacy plug-in, and the Standard Events API.
       Category: 
-      State: 0
+      State: 1
       IsCurrent: 0
       IsLatest: 0
       Group: Packages
@@ -5050,7 +5439,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 3.3.2
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.analytics@3.3.2
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.analytics@3.3.2
         m_AssetPath: Packages/com.unity.analytics
         m_Name: com.unity.analytics
         m_DisplayName: Analytics Library
@@ -5091,6 +5480,8 @@ MonoBehaviour:
           - 3.3.0
           - 3.3.2-preview
           - 3.3.2
+          - 3.3.4
+          - 3.4.0
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -5121,7 +5512,9 @@ MonoBehaviour:
           - 3.3.0
           - 3.3.2-preview
           - 3.3.2
-          m_Recommended: 3.3.2
+          - 3.3.4
+          - 3.4.0
+          m_Recommended: 3.3.4
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -5146,7 +5539,7 @@ MonoBehaviour:
       Description: The Unity Analytics Library contains the Analytics Event Tracker
         component, the Data Privacy plug-in, and the Standard Events API.
       Category: 
-      State: 0
+      State: 1
       IsCurrent: 0
       IsLatest: 0
       Group: Packages
@@ -5162,7 +5555,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 3.3.2
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.analytics@3.3.2
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.analytics@3.3.2
         m_AssetPath: Packages/com.unity.analytics
         m_Name: com.unity.analytics
         m_DisplayName: Analytics Library
@@ -5203,6 +5596,8 @@ MonoBehaviour:
           - 3.3.0
           - 3.3.2-preview
           - 3.3.2
+          - 3.3.4
+          - 3.4.0
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -5233,7 +5628,9 @@ MonoBehaviour:
           - 3.3.0
           - 3.3.2-preview
           - 3.3.2
-          m_Recommended: 3.3.2
+          - 3.3.4
+          - 3.4.0
+          m_Recommended: 3.3.4
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -5258,7 +5655,7 @@ MonoBehaviour:
       Description: The Unity Analytics Library contains the Analytics Event Tracker
         component, the Data Privacy plug-in, and the Standard Events API.
       Category: 
-      State: 0
+      State: 1
       IsCurrent: 0
       IsLatest: 0
       Group: Packages
@@ -5274,7 +5671,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 3.3.2
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.analytics@3.3.2
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.analytics@3.3.2
         m_AssetPath: Packages/com.unity.analytics
         m_Name: com.unity.analytics
         m_DisplayName: Analytics Library
@@ -5315,6 +5712,8 @@ MonoBehaviour:
           - 3.3.0
           - 3.3.2-preview
           - 3.3.2
+          - 3.3.4
+          - 3.4.0
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -5345,7 +5744,9 @@ MonoBehaviour:
           - 3.3.0
           - 3.3.2-preview
           - 3.3.2
-          m_Recommended: 3.3.2
+          - 3.3.4
+          - 3.4.0
+          m_Recommended: 3.3.4
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -5370,7 +5771,7 @@ MonoBehaviour:
       Description: The Unity Analytics Library contains the Analytics Event Tracker
         component, the Data Privacy plug-in, and the Standard Events API.
       Category: 
-      State: 0
+      State: 1
       IsCurrent: 0
       IsLatest: 0
       Group: Packages
@@ -5386,7 +5787,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 3.3.2
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.analytics@3.3.2
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.analytics@3.3.2
         m_AssetPath: Packages/com.unity.analytics
         m_Name: com.unity.analytics
         m_DisplayName: Analytics Library
@@ -5427,6 +5828,8 @@ MonoBehaviour:
           - 3.3.0
           - 3.3.2-preview
           - 3.3.2
+          - 3.3.4
+          - 3.4.0
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -5457,7 +5860,9 @@ MonoBehaviour:
           - 3.3.0
           - 3.3.2-preview
           - 3.3.2
-          m_Recommended: 3.3.2
+          - 3.3.4
+          - 3.4.0
+          m_Recommended: 3.3.4
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -5482,7 +5887,7 @@ MonoBehaviour:
       Description: The Unity Analytics Library contains the Analytics Event Tracker
         component, the Data Privacy plug-in, and the Standard Events API.
       Category: 
-      State: 0
+      State: 1
       IsCurrent: 0
       IsLatest: 0
       Group: Packages
@@ -5498,7 +5903,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 3.3.2
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.analytics@3.3.2
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.analytics@3.3.2
         m_AssetPath: Packages/com.unity.analytics
         m_Name: com.unity.analytics
         m_DisplayName: Analytics Library
@@ -5539,6 +5944,8 @@ MonoBehaviour:
           - 3.3.0
           - 3.3.2-preview
           - 3.3.2
+          - 3.3.4
+          - 3.4.0
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -5569,7 +5976,9 @@ MonoBehaviour:
           - 3.3.0
           - 3.3.2-preview
           - 3.3.2
-          m_Recommended: 3.3.2
+          - 3.3.4
+          - 3.4.0
+          m_Recommended: 3.3.4
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -5594,7 +6003,7 @@ MonoBehaviour:
       Description: The Unity Analytics Library contains the Analytics Event Tracker
         component, the Data Privacy plug-in, and the Standard Events API.
       Category: 
-      State: 0
+      State: 1
       IsCurrent: 0
       IsLatest: 0
       Group: Packages
@@ -5610,7 +6019,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 3.3.2
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.analytics@3.3.2
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.analytics@3.3.2
         m_AssetPath: Packages/com.unity.analytics
         m_Name: com.unity.analytics
         m_DisplayName: Analytics Library
@@ -5651,6 +6060,8 @@ MonoBehaviour:
           - 3.3.0
           - 3.3.2-preview
           - 3.3.2
+          - 3.3.4
+          - 3.4.0
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -5681,7 +6092,9 @@ MonoBehaviour:
           - 3.3.0
           - 3.3.2-preview
           - 3.3.2
-          m_Recommended: 3.3.2
+          - 3.3.4
+          - 3.4.0
+          m_Recommended: 3.3.4
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -5706,7 +6119,7 @@ MonoBehaviour:
       Description: The Unity Analytics Library contains the Analytics Event Tracker
         component, the Data Privacy plug-in, and the Standard Events API.
       Category: 
-      State: 0
+      State: 1
       IsCurrent: 0
       IsLatest: 0
       Group: Packages
@@ -5722,7 +6135,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 3.3.2
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.analytics@3.3.2
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.analytics@3.3.2
         m_AssetPath: Packages/com.unity.analytics
         m_Name: com.unity.analytics
         m_DisplayName: Analytics Library
@@ -5763,6 +6176,8 @@ MonoBehaviour:
           - 3.3.0
           - 3.3.2-preview
           - 3.3.2
+          - 3.3.4
+          - 3.4.0
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -5793,7 +6208,9 @@ MonoBehaviour:
           - 3.3.0
           - 3.3.2-preview
           - 3.3.2
-          m_Recommended: 3.3.2
+          - 3.3.4
+          - 3.4.0
+          m_Recommended: 3.3.4
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -5818,7 +6235,7 @@ MonoBehaviour:
       Description: The Unity Analytics Library contains the Analytics Event Tracker
         component, the Data Privacy plug-in, and the Standard Events API.
       Category: 
-      State: 0
+      State: 1
       IsCurrent: 0
       IsLatest: 0
       Group: Packages
@@ -5834,7 +6251,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 3.3.2
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.analytics@3.3.2
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.analytics@3.3.2
         m_AssetPath: Packages/com.unity.analytics
         m_Name: com.unity.analytics
         m_DisplayName: Analytics Library
@@ -5875,6 +6292,8 @@ MonoBehaviour:
           - 3.3.0
           - 3.3.2-preview
           - 3.3.2
+          - 3.3.4
+          - 3.4.0
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -5905,7 +6324,9 @@ MonoBehaviour:
           - 3.3.0
           - 3.3.2-preview
           - 3.3.2
-          m_Recommended: 3.3.2
+          - 3.3.4
+          - 3.4.0
+          m_Recommended: 3.3.4
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -5930,14 +6351,14 @@ MonoBehaviour:
       Description: The Unity Analytics Library contains the Analytics Event Tracker
         component, the Data Privacy plug-in, and the Standard Events API.
       Category: 
-      State: 0
+      State: 1
       IsCurrent: 1
-      IsLatest: 1
+      IsLatest: 0
       Group: Packages
       Type: 
       Origin: 1
       Errors: []
-      IsVerified: 1
+      IsVerified: 0
       Author: Unity Technologies Inc.
       Samples: []
       HasFullFetch: 1
@@ -5946,7 +6367,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 3.3.2
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.analytics@3.3.2
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.analytics@3.3.2
         m_AssetPath: Packages/com.unity.analytics
         m_Name: com.unity.analytics
         m_DisplayName: Analytics Library
@@ -5987,6 +6408,8 @@ MonoBehaviour:
           - 3.3.0
           - 3.3.2-preview
           - 3.3.2
+          - 3.3.4
+          - 3.4.0
           m_Compatible:
           - 0.0.3
           - 0.0.4
@@ -6017,7 +6440,241 @@ MonoBehaviour:
           - 3.3.0
           - 3.3.2-preview
           - 3.3.2
-          m_Recommended: 3.3.2
+          - 3.3.4
+          - 3.4.0
+          m_Recommended: 3.3.4
+        m_Dependencies:
+        - m_Name: com.unity.ugui
+          m_Version: 1.0.0
+        m_ResolvedDependencies:
+        - m_Name: com.unity.ugui
+          m_Version: 1.0.0
+        m_Keywords:
+        - analytics
+        - unity
+        m_Author:
+          m_Name: 
+          m_Email: 
+          m_Url: 
+        m_HasRegistry: 1
+        m_Registry:
+          m_Name: 
+          m_Url: https://packages.unity.com
+          m_IsDefault: 1
+    - Name: com.unity.analytics
+      DisplayName: Analytics Library
+      _Version: 3.3.4
+      Description: The Unity Analytics Library contains the Analytics Event Tracker
+        component, the Data Privacy plug-in, and the Standard Events API.
+      Category: 
+      State: 1
+      IsCurrent: 0
+      IsLatest: 0
+      Group: Packages
+      Type: 
+      Origin: 1
+      Errors: []
+      IsVerified: 1
+      Author: Unity Technologies Inc.
+      Samples: []
+      HasFullFetch: 0
+      Info:
+        m_PackageId: com.unity.analytics@3.3.2
+        m_IsRootDependency: 1
+        m_Version: 3.3.2
+        m_Source: 1
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.analytics@3.3.2
+        m_AssetPath: Packages/com.unity.analytics
+        m_Name: com.unity.analytics
+        m_DisplayName: Analytics Library
+        m_Category: 
+        m_Type: 
+        m_Description: The Unity Analytics Library contains the Analytics Event Tracker
+          component, the Data Privacy plug-in, and the Standard Events API.
+        m_Status: 4
+        m_Errors: []
+        m_Versions:
+          m_All:
+          - 0.0.3
+          - 0.0.4
+          - 0.0.5
+          - 0.0.7
+          - 0.0.8
+          - 0.0.9
+          - 0.0.10
+          - 0.0.11
+          - 0.0.12
+          - 0.0.13
+          - 0.0.14
+          - 0.0.15
+          - 0.0.16
+          - 0.0.17
+          - 0.0.19
+          - 2.0.5
+          - 2.0.11
+          - 2.0.13
+          - 2.0.14
+          - 2.0.15
+          - 2.0.16
+          - 3.0.5
+          - 3.0.9
+          - 3.1.1
+          - 3.2.0
+          - 3.2.2
+          - 3.3.0
+          - 3.3.2-preview
+          - 3.3.2
+          - 3.3.4
+          - 3.4.0
+          m_Compatible:
+          - 0.0.3
+          - 0.0.4
+          - 0.0.5
+          - 0.0.7
+          - 0.0.8
+          - 0.0.9
+          - 0.0.10
+          - 0.0.11
+          - 0.0.12
+          - 0.0.13
+          - 0.0.14
+          - 0.0.15
+          - 0.0.16
+          - 0.0.17
+          - 0.0.19
+          - 2.0.5
+          - 2.0.11
+          - 2.0.13
+          - 2.0.14
+          - 2.0.15
+          - 2.0.16
+          - 3.0.5
+          - 3.0.9
+          - 3.1.1
+          - 3.2.0
+          - 3.2.2
+          - 3.3.0
+          - 3.3.2-preview
+          - 3.3.2
+          - 3.3.4
+          - 3.4.0
+          m_Recommended: 3.3.4
+        m_Dependencies:
+        - m_Name: com.unity.ugui
+          m_Version: 1.0.0
+        m_ResolvedDependencies:
+        - m_Name: com.unity.ugui
+          m_Version: 1.0.0
+        m_Keywords:
+        - analytics
+        - unity
+        m_Author:
+          m_Name: 
+          m_Email: 
+          m_Url: 
+        m_HasRegistry: 1
+        m_Registry:
+          m_Name: 
+          m_Url: https://packages.unity.com
+          m_IsDefault: 1
+    - Name: com.unity.analytics
+      DisplayName: Analytics Library
+      _Version: 3.4.0
+      Description: The Unity Analytics Library contains the Analytics Event Tracker
+        component, the Data Privacy plug-in, and the Standard Events API.
+      Category: 
+      State: 1
+      IsCurrent: 0
+      IsLatest: 1
+      Group: Packages
+      Type: 
+      Origin: 1
+      Errors: []
+      IsVerified: 0
+      Author: Unity Technologies Inc.
+      Samples: []
+      HasFullFetch: 0
+      Info:
+        m_PackageId: com.unity.analytics@3.3.2
+        m_IsRootDependency: 1
+        m_Version: 3.3.2
+        m_Source: 1
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.analytics@3.3.2
+        m_AssetPath: Packages/com.unity.analytics
+        m_Name: com.unity.analytics
+        m_DisplayName: Analytics Library
+        m_Category: 
+        m_Type: 
+        m_Description: The Unity Analytics Library contains the Analytics Event Tracker
+          component, the Data Privacy plug-in, and the Standard Events API.
+        m_Status: 4
+        m_Errors: []
+        m_Versions:
+          m_All:
+          - 0.0.3
+          - 0.0.4
+          - 0.0.5
+          - 0.0.7
+          - 0.0.8
+          - 0.0.9
+          - 0.0.10
+          - 0.0.11
+          - 0.0.12
+          - 0.0.13
+          - 0.0.14
+          - 0.0.15
+          - 0.0.16
+          - 0.0.17
+          - 0.0.19
+          - 2.0.5
+          - 2.0.11
+          - 2.0.13
+          - 2.0.14
+          - 2.0.15
+          - 2.0.16
+          - 3.0.5
+          - 3.0.9
+          - 3.1.1
+          - 3.2.0
+          - 3.2.2
+          - 3.3.0
+          - 3.3.2-preview
+          - 3.3.2
+          - 3.3.4
+          - 3.4.0
+          m_Compatible:
+          - 0.0.3
+          - 0.0.4
+          - 0.0.5
+          - 0.0.7
+          - 0.0.8
+          - 0.0.9
+          - 0.0.10
+          - 0.0.11
+          - 0.0.12
+          - 0.0.13
+          - 0.0.14
+          - 0.0.15
+          - 0.0.16
+          - 0.0.17
+          - 0.0.19
+          - 2.0.5
+          - 2.0.11
+          - 2.0.13
+          - 2.0.14
+          - 2.0.15
+          - 2.0.16
+          - 3.0.5
+          - 3.0.9
+          - 3.1.1
+          - 3.2.0
+          - 3.2.2
+          - 3.3.0
+          - 3.3.2-preview
+          - 3.3.2
+          - 3.3.4
+          - 3.4.0
+          m_Recommended: 3.3.4
         m_Dependencies:
         - m_Name: com.unity.ugui
           m_Version: 1.0.0
@@ -6058,7 +6715,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 1.2.16
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.collab-proxy@1.2.16
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.collab-proxy@1.2.16
         m_AssetPath: Packages/com.unity.collab-proxy
         m_Name: com.unity.collab-proxy
         m_DisplayName: Unity Collaborate
@@ -6078,6 +6735,7 @@ MonoBehaviour:
           - 1.2.11
           - 1.2.15
           - 1.2.16
+          - 1.2.17-preview.3
           - 2.0.0-preview.6
           - 2.0.0-preview.8
           - 2.0.0-preview.15
@@ -6129,7 +6787,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 1.2.16
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.collab-proxy@1.2.16
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.collab-proxy@1.2.16
         m_AssetPath: Packages/com.unity.collab-proxy
         m_Name: com.unity.collab-proxy
         m_DisplayName: Unity Collaborate
@@ -6149,6 +6807,7 @@ MonoBehaviour:
           - 1.2.11
           - 1.2.15
           - 1.2.16
+          - 1.2.17-preview.3
           - 2.0.0-preview.6
           - 2.0.0-preview.8
           - 2.0.0-preview.15
@@ -6200,7 +6859,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 1.2.16
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.collab-proxy@1.2.16
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.collab-proxy@1.2.16
         m_AssetPath: Packages/com.unity.collab-proxy
         m_Name: com.unity.collab-proxy
         m_DisplayName: Unity Collaborate
@@ -6220,6 +6879,7 @@ MonoBehaviour:
           - 1.2.11
           - 1.2.15
           - 1.2.16
+          - 1.2.17-preview.3
           - 2.0.0-preview.6
           - 2.0.0-preview.8
           - 2.0.0-preview.15
@@ -6271,7 +6931,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 1.2.16
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.collab-proxy@1.2.16
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.collab-proxy@1.2.16
         m_AssetPath: Packages/com.unity.collab-proxy
         m_Name: com.unity.collab-proxy
         m_DisplayName: Unity Collaborate
@@ -6291,6 +6951,7 @@ MonoBehaviour:
           - 1.2.11
           - 1.2.15
           - 1.2.16
+          - 1.2.17-preview.3
           - 2.0.0-preview.6
           - 2.0.0-preview.8
           - 2.0.0-preview.15
@@ -6342,7 +7003,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 1.2.16
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.collab-proxy@1.2.16
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.collab-proxy@1.2.16
         m_AssetPath: Packages/com.unity.collab-proxy
         m_Name: com.unity.collab-proxy
         m_DisplayName: Unity Collaborate
@@ -6362,6 +7023,7 @@ MonoBehaviour:
           - 1.2.11
           - 1.2.15
           - 1.2.16
+          - 1.2.17-preview.3
           - 2.0.0-preview.6
           - 2.0.0-preview.8
           - 2.0.0-preview.15
@@ -6412,7 +7074,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 1.0.2
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.multiplayer-hlapi@1.0.2
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.multiplayer-hlapi@1.0.2
         m_AssetPath: Packages/com.unity.multiplayer-hlapi
         m_Name: com.unity.multiplayer-hlapi
         m_DisplayName: Multiplayer HLAPI
@@ -6479,7 +7141,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 1.0.2
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.multiplayer-hlapi@1.0.2
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.multiplayer-hlapi@1.0.2
         m_AssetPath: Packages/com.unity.multiplayer-hlapi
         m_Name: com.unity.multiplayer-hlapi
         m_DisplayName: Multiplayer HLAPI
@@ -6546,7 +7208,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 1.0.2
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.multiplayer-hlapi@1.0.2
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.multiplayer-hlapi@1.0.2
         m_AssetPath: Packages/com.unity.multiplayer-hlapi
         m_Name: com.unity.multiplayer-hlapi
         m_DisplayName: Multiplayer HLAPI
@@ -6613,7 +7275,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 1.0.2
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.multiplayer-hlapi@1.0.2
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.multiplayer-hlapi@1.0.2
         m_AssetPath: Packages/com.unity.multiplayer-hlapi
         m_Name: com.unity.multiplayer-hlapi
         m_DisplayName: Multiplayer HLAPI
@@ -6680,7 +7342,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 1.0.2
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.multiplayer-hlapi@1.0.2
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.multiplayer-hlapi@1.0.2
         m_AssetPath: Packages/com.unity.multiplayer-hlapi
         m_Name: com.unity.multiplayer-hlapi
         m_DisplayName: Multiplayer HLAPI
@@ -6747,7 +7409,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 1.0.2
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.multiplayer-hlapi@1.0.2
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.multiplayer-hlapi@1.0.2
         m_AssetPath: Packages/com.unity.multiplayer-hlapi
         m_Name: com.unity.multiplayer-hlapi
         m_DisplayName: Multiplayer HLAPI
@@ -6888,7 +7550,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.6
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.purchasing@2.0.6
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.purchasing@2.0.6
         m_AssetPath: Packages/com.unity.purchasing
         m_Name: com.unity.purchasing
         m_DisplayName: In App Purchasing
@@ -7017,7 +7679,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.6
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.purchasing@2.0.6
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.purchasing@2.0.6
         m_AssetPath: Packages/com.unity.purchasing
         m_Name: com.unity.purchasing
         m_DisplayName: In App Purchasing
@@ -7146,7 +7808,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.6
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.purchasing@2.0.6
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.purchasing@2.0.6
         m_AssetPath: Packages/com.unity.purchasing
         m_Name: com.unity.purchasing
         m_DisplayName: In App Purchasing
@@ -7275,7 +7937,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.6
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.purchasing@2.0.6
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.purchasing@2.0.6
         m_AssetPath: Packages/com.unity.purchasing
         m_Name: com.unity.purchasing
         m_DisplayName: In App Purchasing
@@ -7404,7 +8066,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.6
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.purchasing@2.0.6
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.purchasing@2.0.6
         m_AssetPath: Packages/com.unity.purchasing
         m_Name: com.unity.purchasing
         m_DisplayName: In App Purchasing
@@ -7533,7 +8195,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.6
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.purchasing@2.0.6
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.purchasing@2.0.6
         m_AssetPath: Packages/com.unity.purchasing
         m_Name: com.unity.purchasing
         m_DisplayName: In App Purchasing
@@ -7662,7 +8324,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.6
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.purchasing@2.0.6
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.purchasing@2.0.6
         m_AssetPath: Packages/com.unity.purchasing
         m_Name: com.unity.purchasing
         m_DisplayName: In App Purchasing
@@ -7791,7 +8453,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.6
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.purchasing@2.0.6
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.purchasing@2.0.6
         m_AssetPath: Packages/com.unity.purchasing
         m_Name: com.unity.purchasing
         m_DisplayName: In App Purchasing
@@ -7920,7 +8582,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.6
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.purchasing@2.0.6
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.purchasing@2.0.6
         m_AssetPath: Packages/com.unity.purchasing
         m_Name: com.unity.purchasing
         m_DisplayName: In App Purchasing
@@ -8049,7 +8711,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.6
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.purchasing@2.0.6
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.purchasing@2.0.6
         m_AssetPath: Packages/com.unity.purchasing
         m_Name: com.unity.purchasing
         m_DisplayName: In App Purchasing
@@ -8178,7 +8840,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.6
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.purchasing@2.0.6
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.purchasing@2.0.6
         m_AssetPath: Packages/com.unity.purchasing
         m_Name: com.unity.purchasing
         m_DisplayName: In App Purchasing
@@ -8307,7 +8969,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.6
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.purchasing@2.0.6
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.purchasing@2.0.6
         m_AssetPath: Packages/com.unity.purchasing
         m_Name: com.unity.purchasing
         m_DisplayName: In App Purchasing
@@ -8436,7 +9098,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.6
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.purchasing@2.0.6
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.purchasing@2.0.6
         m_AssetPath: Packages/com.unity.purchasing
         m_Name: com.unity.purchasing
         m_DisplayName: In App Purchasing
@@ -8565,7 +9227,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.6
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.purchasing@2.0.6
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.purchasing@2.0.6
         m_AssetPath: Packages/com.unity.purchasing
         m_Name: com.unity.purchasing
         m_DisplayName: In App Purchasing
@@ -8694,7 +9356,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.6
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.purchasing@2.0.6
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.purchasing@2.0.6
         m_AssetPath: Packages/com.unity.purchasing
         m_Name: com.unity.purchasing
         m_DisplayName: In App Purchasing
@@ -8823,7 +9485,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.6
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.purchasing@2.0.6
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.purchasing@2.0.6
         m_AssetPath: Packages/com.unity.purchasing
         m_Name: com.unity.purchasing
         m_DisplayName: In App Purchasing
@@ -8952,7 +9614,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.6
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.purchasing@2.0.6
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.purchasing@2.0.6
         m_AssetPath: Packages/com.unity.purchasing
         m_Name: com.unity.purchasing
         m_DisplayName: In App Purchasing
@@ -9081,7 +9743,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.6
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.purchasing@2.0.6
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.purchasing@2.0.6
         m_AssetPath: Packages/com.unity.purchasing
         m_Name: com.unity.purchasing
         m_DisplayName: In App Purchasing
@@ -9210,7 +9872,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.6
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.purchasing@2.0.6
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.purchasing@2.0.6
         m_AssetPath: Packages/com.unity.purchasing
         m_Name: com.unity.purchasing
         m_DisplayName: In App Purchasing
@@ -9339,7 +10001,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.6
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.purchasing@2.0.6
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.purchasing@2.0.6
         m_AssetPath: Packages/com.unity.purchasing
         m_Name: com.unity.purchasing
         m_DisplayName: In App Purchasing
@@ -9468,7 +10130,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.6
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.purchasing@2.0.6
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.purchasing@2.0.6
         m_AssetPath: Packages/com.unity.purchasing
         m_Name: com.unity.purchasing
         m_DisplayName: In App Purchasing
@@ -9597,7 +10259,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.6
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.purchasing@2.0.6
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.purchasing@2.0.6
         m_AssetPath: Packages/com.unity.purchasing
         m_Name: com.unity.purchasing
         m_DisplayName: In App Purchasing
@@ -9768,7 +10430,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.2
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.xr.legacyinputhelpers@2.0.2
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.xr.legacyinputhelpers@2.0.2
         m_AssetPath: Packages/com.unity.xr.legacyinputhelpers
         m_Name: com.unity.xr.legacyinputhelpers
         m_DisplayName: XR Legacy Input Helpers
@@ -9791,9 +10453,13 @@ MonoBehaviour:
           - 1.3.2
           - 1.3.4
           - 1.3.5
+          - 1.3.6
+          - 1.3.7
+          - 1.3.8
           - 2.0.1
           - 2.0.2
           - 2.0.4
+          - 2.0.6
           m_Compatible:
           - 1.0.0
           - 1.0.2
@@ -9802,9 +10468,13 @@ MonoBehaviour:
           - 1.3.2
           - 1.3.4
           - 1.3.5
+          - 1.3.6
+          - 1.3.7
+          - 1.3.8
           - 2.0.1
           - 2.0.2
           - 2.0.4
+          - 2.0.6
           m_Recommended: 
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -9849,7 +10519,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.2
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.xr.legacyinputhelpers@2.0.2
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.xr.legacyinputhelpers@2.0.2
         m_AssetPath: Packages/com.unity.xr.legacyinputhelpers
         m_Name: com.unity.xr.legacyinputhelpers
         m_DisplayName: XR Legacy Input Helpers
@@ -9872,9 +10542,13 @@ MonoBehaviour:
           - 1.3.2
           - 1.3.4
           - 1.3.5
+          - 1.3.6
+          - 1.3.7
+          - 1.3.8
           - 2.0.1
           - 2.0.2
           - 2.0.4
+          - 2.0.6
           m_Compatible:
           - 1.0.0
           - 1.0.2
@@ -9883,9 +10557,13 @@ MonoBehaviour:
           - 1.3.2
           - 1.3.4
           - 1.3.5
+          - 1.3.6
+          - 1.3.7
+          - 1.3.8
           - 2.0.1
           - 2.0.2
           - 2.0.4
+          - 2.0.6
           m_Recommended: 
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -9930,7 +10608,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.2
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.xr.legacyinputhelpers@2.0.2
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.xr.legacyinputhelpers@2.0.2
         m_AssetPath: Packages/com.unity.xr.legacyinputhelpers
         m_Name: com.unity.xr.legacyinputhelpers
         m_DisplayName: XR Legacy Input Helpers
@@ -9953,9 +10631,13 @@ MonoBehaviour:
           - 1.3.2
           - 1.3.4
           - 1.3.5
+          - 1.3.6
+          - 1.3.7
+          - 1.3.8
           - 2.0.1
           - 2.0.2
           - 2.0.4
+          - 2.0.6
           m_Compatible:
           - 1.0.0
           - 1.0.2
@@ -9964,9 +10646,13 @@ MonoBehaviour:
           - 1.3.2
           - 1.3.4
           - 1.3.5
+          - 1.3.6
+          - 1.3.7
+          - 1.3.8
           - 2.0.1
           - 2.0.2
           - 2.0.4
+          - 2.0.6
           m_Recommended: 
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -10011,7 +10697,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.2
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.xr.legacyinputhelpers@2.0.2
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.xr.legacyinputhelpers@2.0.2
         m_AssetPath: Packages/com.unity.xr.legacyinputhelpers
         m_Name: com.unity.xr.legacyinputhelpers
         m_DisplayName: XR Legacy Input Helpers
@@ -10034,9 +10720,13 @@ MonoBehaviour:
           - 1.3.2
           - 1.3.4
           - 1.3.5
+          - 1.3.6
+          - 1.3.7
+          - 1.3.8
           - 2.0.1
           - 2.0.2
           - 2.0.4
+          - 2.0.6
           m_Compatible:
           - 1.0.0
           - 1.0.2
@@ -10045,9 +10735,13 @@ MonoBehaviour:
           - 1.3.2
           - 1.3.4
           - 1.3.5
+          - 1.3.6
+          - 1.3.7
+          - 1.3.8
           - 2.0.1
           - 2.0.2
           - 2.0.4
+          - 2.0.6
           m_Recommended: 
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -10092,7 +10786,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.2
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.xr.legacyinputhelpers@2.0.2
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.xr.legacyinputhelpers@2.0.2
         m_AssetPath: Packages/com.unity.xr.legacyinputhelpers
         m_Name: com.unity.xr.legacyinputhelpers
         m_DisplayName: XR Legacy Input Helpers
@@ -10115,9 +10809,13 @@ MonoBehaviour:
           - 1.3.2
           - 1.3.4
           - 1.3.5
+          - 1.3.6
+          - 1.3.7
+          - 1.3.8
           - 2.0.1
           - 2.0.2
           - 2.0.4
+          - 2.0.6
           m_Compatible:
           - 1.0.0
           - 1.0.2
@@ -10126,9 +10824,13 @@ MonoBehaviour:
           - 1.3.2
           - 1.3.4
           - 1.3.5
+          - 1.3.6
+          - 1.3.7
+          - 1.3.8
           - 2.0.1
           - 2.0.2
           - 2.0.4
+          - 2.0.6
           m_Recommended: 
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -10173,7 +10875,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.2
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.xr.legacyinputhelpers@2.0.2
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.xr.legacyinputhelpers@2.0.2
         m_AssetPath: Packages/com.unity.xr.legacyinputhelpers
         m_Name: com.unity.xr.legacyinputhelpers
         m_DisplayName: XR Legacy Input Helpers
@@ -10196,9 +10898,13 @@ MonoBehaviour:
           - 1.3.2
           - 1.3.4
           - 1.3.5
+          - 1.3.6
+          - 1.3.7
+          - 1.3.8
           - 2.0.1
           - 2.0.2
           - 2.0.4
+          - 2.0.6
           m_Compatible:
           - 1.0.0
           - 1.0.2
@@ -10207,9 +10913,13 @@ MonoBehaviour:
           - 1.3.2
           - 1.3.4
           - 1.3.5
+          - 1.3.6
+          - 1.3.7
+          - 1.3.8
           - 2.0.1
           - 2.0.2
           - 2.0.4
+          - 2.0.6
           m_Recommended: 
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -10254,7 +10964,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.2
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.xr.legacyinputhelpers@2.0.2
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.xr.legacyinputhelpers@2.0.2
         m_AssetPath: Packages/com.unity.xr.legacyinputhelpers
         m_Name: com.unity.xr.legacyinputhelpers
         m_DisplayName: XR Legacy Input Helpers
@@ -10277,9 +10987,13 @@ MonoBehaviour:
           - 1.3.2
           - 1.3.4
           - 1.3.5
+          - 1.3.6
+          - 1.3.7
+          - 1.3.8
           - 2.0.1
           - 2.0.2
           - 2.0.4
+          - 2.0.6
           m_Compatible:
           - 1.0.0
           - 1.0.2
@@ -10288,9 +11002,280 @@ MonoBehaviour:
           - 1.3.2
           - 1.3.4
           - 1.3.5
+          - 1.3.6
+          - 1.3.7
+          - 1.3.8
           - 2.0.1
           - 2.0.2
           - 2.0.4
+          - 2.0.6
+          m_Recommended: 
+        m_Dependencies: []
+        m_ResolvedDependencies: []
+        m_Keywords:
+        - TPD
+        - Tracked Pose Driver
+        - XR
+        - Input
+        - Helpers
+        m_Author:
+          m_Name: 
+          m_Email: 
+          m_Url: 
+        m_HasRegistry: 1
+        m_Registry:
+          m_Name: 
+          m_Url: https://packages.unity.com
+          m_IsDefault: 1
+    - Name: com.unity.xr.legacyinputhelpers
+      DisplayName: XR Legacy Input Helpers
+      _Version: 1.3.6
+      Description: This package includes the tracked pose driver for the legacy input
+        system, the XR Bindings Seeding Tool and 3Dof Arm Model support for the Tracked
+        Pose Driver. The Tracked Pose Driver is a monobehavior that enables GameObjects
+        to track input devices, the XR Bindings Seeding Tool adds a menu item under
+        the 'Assets' menu which populates the Input Asset with Unity's crossplatform
+        Input Bindings
+      Category: XR
+      State: 1
+      IsCurrent: 0
+      IsLatest: 0
+      Group: Packages
+      Type: 
+      Origin: 1
+      Errors: []
+      IsVerified: 0
+      Author: Unity Technologies Inc.
+      Samples: []
+      HasFullFetch: 0
+      Info:
+        m_PackageId: com.unity.xr.legacyinputhelpers@2.0.2
+        m_IsRootDependency: 1
+        m_Version: 2.0.2
+        m_Source: 1
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.xr.legacyinputhelpers@2.0.2
+        m_AssetPath: Packages/com.unity.xr.legacyinputhelpers
+        m_Name: com.unity.xr.legacyinputhelpers
+        m_DisplayName: XR Legacy Input Helpers
+        m_Category: XR
+        m_Type: 
+        m_Description: This package includes the tracked pose driver for the legacy
+          input system, the XR Bindings Seeding Tool and 3Dof Arm Model support for
+          the Tracked Pose Driver. The Tracked Pose Driver is a monobehavior that
+          enables GameObjects to track input devices, the XR Bindings Seeding Tool
+          adds a menu item under the 'Assets' menu which populates the Input Asset
+          with Unity's crossplatform Input Bindings
+        m_Status: 4
+        m_Errors: []
+        m_Versions:
+          m_All:
+          - 1.0.0
+          - 1.0.2
+          - 1.0.3
+          - 1.3.1
+          - 1.3.2
+          - 1.3.4
+          - 1.3.5
+          - 1.3.6
+          - 1.3.7
+          - 1.3.8
+          - 2.0.1
+          - 2.0.2
+          - 2.0.4
+          - 2.0.6
+          m_Compatible:
+          - 1.0.0
+          - 1.0.2
+          - 1.0.3
+          - 1.3.1
+          - 1.3.2
+          - 1.3.4
+          - 1.3.5
+          - 1.3.6
+          - 1.3.7
+          - 1.3.8
+          - 2.0.1
+          - 2.0.2
+          - 2.0.4
+          - 2.0.6
+          m_Recommended: 
+        m_Dependencies: []
+        m_ResolvedDependencies: []
+        m_Keywords:
+        - TPD
+        - Tracked Pose Driver
+        - XR
+        - Input
+        - Helpers
+        m_Author:
+          m_Name: 
+          m_Email: 
+          m_Url: 
+        m_HasRegistry: 1
+        m_Registry:
+          m_Name: 
+          m_Url: https://packages.unity.com
+          m_IsDefault: 1
+    - Name: com.unity.xr.legacyinputhelpers
+      DisplayName: XR Legacy Input Helpers
+      _Version: 1.3.7
+      Description: This package includes the tracked pose driver for the legacy input
+        system, the XR Bindings Seeding Tool and 3Dof Arm Model support for the Tracked
+        Pose Driver. The Tracked Pose Driver is a monobehavior that enables GameObjects
+        to track input devices, the XR Bindings Seeding Tool adds a menu item under
+        the 'Assets' menu which populates the Input Asset with Unity's crossplatform
+        Input Bindings
+      Category: XR
+      State: 1
+      IsCurrent: 0
+      IsLatest: 0
+      Group: Packages
+      Type: 
+      Origin: 1
+      Errors: []
+      IsVerified: 0
+      Author: Unity Technologies Inc.
+      Samples: []
+      HasFullFetch: 0
+      Info:
+        m_PackageId: com.unity.xr.legacyinputhelpers@2.0.2
+        m_IsRootDependency: 1
+        m_Version: 2.0.2
+        m_Source: 1
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.xr.legacyinputhelpers@2.0.2
+        m_AssetPath: Packages/com.unity.xr.legacyinputhelpers
+        m_Name: com.unity.xr.legacyinputhelpers
+        m_DisplayName: XR Legacy Input Helpers
+        m_Category: XR
+        m_Type: 
+        m_Description: This package includes the tracked pose driver for the legacy
+          input system, the XR Bindings Seeding Tool and 3Dof Arm Model support for
+          the Tracked Pose Driver. The Tracked Pose Driver is a monobehavior that
+          enables GameObjects to track input devices, the XR Bindings Seeding Tool
+          adds a menu item under the 'Assets' menu which populates the Input Asset
+          with Unity's crossplatform Input Bindings
+        m_Status: 4
+        m_Errors: []
+        m_Versions:
+          m_All:
+          - 1.0.0
+          - 1.0.2
+          - 1.0.3
+          - 1.3.1
+          - 1.3.2
+          - 1.3.4
+          - 1.3.5
+          - 1.3.6
+          - 1.3.7
+          - 1.3.8
+          - 2.0.1
+          - 2.0.2
+          - 2.0.4
+          - 2.0.6
+          m_Compatible:
+          - 1.0.0
+          - 1.0.2
+          - 1.0.3
+          - 1.3.1
+          - 1.3.2
+          - 1.3.4
+          - 1.3.5
+          - 1.3.6
+          - 1.3.7
+          - 1.3.8
+          - 2.0.1
+          - 2.0.2
+          - 2.0.4
+          - 2.0.6
+          m_Recommended: 
+        m_Dependencies: []
+        m_ResolvedDependencies: []
+        m_Keywords:
+        - TPD
+        - Tracked Pose Driver
+        - XR
+        - Input
+        - Helpers
+        m_Author:
+          m_Name: 
+          m_Email: 
+          m_Url: 
+        m_HasRegistry: 1
+        m_Registry:
+          m_Name: 
+          m_Url: https://packages.unity.com
+          m_IsDefault: 1
+    - Name: com.unity.xr.legacyinputhelpers
+      DisplayName: XR Legacy Input Helpers
+      _Version: 1.3.8
+      Description: This package includes the tracked pose driver for the legacy input
+        system, the XR Bindings Seeding Tool and 3Dof Arm Model support for the Tracked
+        Pose Driver. The Tracked Pose Driver is a monobehavior that enables GameObjects
+        to track input devices, the XR Bindings Seeding Tool adds a menu item under
+        the 'Assets' menu which populates the Input Asset with Unity's crossplatform
+        Input Bindings
+      Category: XR
+      State: 1
+      IsCurrent: 0
+      IsLatest: 0
+      Group: Packages
+      Type: 
+      Origin: 1
+      Errors: []
+      IsVerified: 0
+      Author: Unity Technologies Inc.
+      Samples: []
+      HasFullFetch: 0
+      Info:
+        m_PackageId: com.unity.xr.legacyinputhelpers@2.0.2
+        m_IsRootDependency: 1
+        m_Version: 2.0.2
+        m_Source: 1
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.xr.legacyinputhelpers@2.0.2
+        m_AssetPath: Packages/com.unity.xr.legacyinputhelpers
+        m_Name: com.unity.xr.legacyinputhelpers
+        m_DisplayName: XR Legacy Input Helpers
+        m_Category: XR
+        m_Type: 
+        m_Description: This package includes the tracked pose driver for the legacy
+          input system, the XR Bindings Seeding Tool and 3Dof Arm Model support for
+          the Tracked Pose Driver. The Tracked Pose Driver is a monobehavior that
+          enables GameObjects to track input devices, the XR Bindings Seeding Tool
+          adds a menu item under the 'Assets' menu which populates the Input Asset
+          with Unity's crossplatform Input Bindings
+        m_Status: 4
+        m_Errors: []
+        m_Versions:
+          m_All:
+          - 1.0.0
+          - 1.0.2
+          - 1.0.3
+          - 1.3.1
+          - 1.3.2
+          - 1.3.4
+          - 1.3.5
+          - 1.3.6
+          - 1.3.7
+          - 1.3.8
+          - 2.0.1
+          - 2.0.2
+          - 2.0.4
+          - 2.0.6
+          m_Compatible:
+          - 1.0.0
+          - 1.0.2
+          - 1.0.3
+          - 1.3.1
+          - 1.3.2
+          - 1.3.4
+          - 1.3.5
+          - 1.3.6
+          - 1.3.7
+          - 1.3.8
+          - 2.0.1
+          - 2.0.2
+          - 2.0.4
+          - 2.0.6
           m_Recommended: 
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -10335,7 +11320,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.2
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.xr.legacyinputhelpers@2.0.2
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.xr.legacyinputhelpers@2.0.2
         m_AssetPath: Packages/com.unity.xr.legacyinputhelpers
         m_Name: com.unity.xr.legacyinputhelpers
         m_DisplayName: XR Legacy Input Helpers
@@ -10358,9 +11343,13 @@ MonoBehaviour:
           - 1.3.2
           - 1.3.4
           - 1.3.5
+          - 1.3.6
+          - 1.3.7
+          - 1.3.8
           - 2.0.1
           - 2.0.2
           - 2.0.4
+          - 2.0.6
           m_Compatible:
           - 1.0.0
           - 1.0.2
@@ -10369,9 +11358,13 @@ MonoBehaviour:
           - 1.3.2
           - 1.3.4
           - 1.3.5
+          - 1.3.6
+          - 1.3.7
+          - 1.3.8
           - 2.0.1
           - 2.0.2
           - 2.0.4
+          - 2.0.6
           m_Recommended: 
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -10416,7 +11409,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.2
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.xr.legacyinputhelpers@2.0.2
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.xr.legacyinputhelpers@2.0.2
         m_AssetPath: Packages/com.unity.xr.legacyinputhelpers
         m_Name: com.unity.xr.legacyinputhelpers
         m_DisplayName: XR Legacy Input Helpers
@@ -10439,9 +11432,13 @@ MonoBehaviour:
           - 1.3.2
           - 1.3.4
           - 1.3.5
+          - 1.3.6
+          - 1.3.7
+          - 1.3.8
           - 2.0.1
           - 2.0.2
           - 2.0.4
+          - 2.0.6
           m_Compatible:
           - 1.0.0
           - 1.0.2
@@ -10450,9 +11447,13 @@ MonoBehaviour:
           - 1.3.2
           - 1.3.4
           - 1.3.5
+          - 1.3.6
+          - 1.3.7
+          - 1.3.8
           - 2.0.1
           - 2.0.2
           - 2.0.4
+          - 2.0.6
           m_Recommended: 
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -10483,7 +11484,7 @@ MonoBehaviour:
       Category: XR
       State: 1
       IsCurrent: 0
-      IsLatest: 1
+      IsLatest: 0
       Group: Packages
       Type: 
       Origin: 1
@@ -10497,7 +11498,7 @@ MonoBehaviour:
         m_IsRootDependency: 1
         m_Version: 2.0.2
         m_Source: 1
-        m_ResolvedPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject\Library\PackageCache\com.unity.xr.legacyinputhelpers@2.0.2
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.xr.legacyinputhelpers@2.0.2
         m_AssetPath: Packages/com.unity.xr.legacyinputhelpers
         m_Name: com.unity.xr.legacyinputhelpers
         m_DisplayName: XR Legacy Input Helpers
@@ -10520,9 +11521,13 @@ MonoBehaviour:
           - 1.3.2
           - 1.3.4
           - 1.3.5
+          - 1.3.6
+          - 1.3.7
+          - 1.3.8
           - 2.0.1
           - 2.0.2
           - 2.0.4
+          - 2.0.6
           m_Compatible:
           - 1.0.0
           - 1.0.2
@@ -10531,9 +11536,102 @@ MonoBehaviour:
           - 1.3.2
           - 1.3.4
           - 1.3.5
+          - 1.3.6
+          - 1.3.7
+          - 1.3.8
           - 2.0.1
           - 2.0.2
           - 2.0.4
+          - 2.0.6
+          m_Recommended: 
+        m_Dependencies: []
+        m_ResolvedDependencies: []
+        m_Keywords:
+        - TPD
+        - Tracked Pose Driver
+        - XR
+        - Input
+        - Helpers
+        m_Author:
+          m_Name: 
+          m_Email: 
+          m_Url: 
+        m_HasRegistry: 1
+        m_Registry:
+          m_Name: 
+          m_Url: https://packages.unity.com
+          m_IsDefault: 1
+    - Name: com.unity.xr.legacyinputhelpers
+      DisplayName: XR Legacy Input Helpers
+      _Version: 2.0.6
+      Description: This package includes the tracked pose driver for the legacy input
+        system, the XR Bindings Seeding Tool and 3Dof Arm Model support for the Tracked
+        Pose Driver. The Tracked Pose Driver is a monobehavior that enables GameObjects
+        to track input devices, the XR Bindings Seeding Tool adds a menu item under
+        the 'Assets' menu which populates the Input Asset with Unity's crossplatform
+        Input Bindings
+      Category: XR
+      State: 1
+      IsCurrent: 0
+      IsLatest: 1
+      Group: Packages
+      Type: 
+      Origin: 1
+      Errors: []
+      IsVerified: 0
+      Author: Unity Technologies Inc.
+      Samples: []
+      HasFullFetch: 0
+      Info:
+        m_PackageId: com.unity.xr.legacyinputhelpers@2.0.2
+        m_IsRootDependency: 1
+        m_Version: 2.0.2
+        m_Source: 1
+        m_ResolvedPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject\Library\PackageCache\com.unity.xr.legacyinputhelpers@2.0.2
+        m_AssetPath: Packages/com.unity.xr.legacyinputhelpers
+        m_Name: com.unity.xr.legacyinputhelpers
+        m_DisplayName: XR Legacy Input Helpers
+        m_Category: XR
+        m_Type: 
+        m_Description: This package includes the tracked pose driver for the legacy
+          input system, the XR Bindings Seeding Tool and 3Dof Arm Model support for
+          the Tracked Pose Driver. The Tracked Pose Driver is a monobehavior that
+          enables GameObjects to track input devices, the XR Bindings Seeding Tool
+          adds a menu item under the 'Assets' menu which populates the Input Asset
+          with Unity's crossplatform Input Bindings
+        m_Status: 4
+        m_Errors: []
+        m_Versions:
+          m_All:
+          - 1.0.0
+          - 1.0.2
+          - 1.0.3
+          - 1.3.1
+          - 1.3.2
+          - 1.3.4
+          - 1.3.5
+          - 1.3.6
+          - 1.3.7
+          - 1.3.8
+          - 2.0.1
+          - 2.0.2
+          - 2.0.4
+          - 2.0.6
+          m_Compatible:
+          - 1.0.0
+          - 1.0.2
+          - 1.0.3
+          - 1.3.1
+          - 1.3.2
+          - 1.3.4
+          - 1.3.5
+          - 1.3.6
+          - 1.3.7
+          - 1.3.8
+          - 2.0.1
+          - 2.0.2
+          - 2.0.4
+          - 2.0.6
           m_Recommended: 
         m_Dependencies: []
         m_ResolvedDependencies: []
@@ -79893,7 +80991,39 @@ MonoBehaviour:
     SearchText: 
   SelectionManager:
     ListSelection:
-      States: []
+      States:
+      - PackageId: com.unity.ads@2.3.1
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 1
+      - PackageId: com.unity.analytics@3.3.2
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.purchasing@2.0.6
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.multiplayer-hlapi@1.0.2
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.package-manager-ui@2.1.2
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.collab-proxy@1.2.16
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.timeline@1.0.0
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
+      - PackageId: com.unity.xr.legacyinputhelpers@2.0.2
+        Expanded: 0
+        SeeAllVersions: 0
+        Selected: 0
     SearchSelection:
       States:
       - PackageId: com.unity.ads@2.3.1
@@ -80076,6 +81206,36 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
+  m_Script: {fileID: 13854, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 300, y: 300}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Project Settings
+    m_Image: {fileID: 8487775502441791945, guid: 0000000000000000d000000000000000,
+      type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 0
+    y: 73.6
+    width: 903
+    height: 559
+  m_ViewDataDictionary: {fileID: 0}
+  m_PosLeft: {x: 0, y: 0}
+  m_PosRight: {x: 0, y: 240}
+  m_Scope: 1
+  m_SplitterFlex: 0.15329513
+--- !u!114 &9
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -80083,18 +81243,18 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 535
-    width: 905
-    height: 206
+    y: 578
+    width: 903
+    height: 163
   m_MinSize: {x: 102, y: 122}
   m_MaxSize: {x: 4002, y: 4022}
-  m_ActualView: {fileID: 9}
+  m_ActualView: {fileID: 10}
   m_Panes:
-  - {fileID: 9}
   - {fileID: 10}
+  - {fileID: 11}
   m_Selected: 0
   m_LastSelected: 1
---- !u!114 &9
+--- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -80116,11 +81276,11 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 608
-    width: 905
-    height: 187
+    y: 651.2
+    width: 903
+    height: 144
   m_ViewDataDictionary: {fileID: 0}
---- !u!114 &10
+--- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -80141,15 +81301,15 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 287
-    y: 496
-    width: 703
-    height: 202
+    x: 0
+    y: 651.2
+    width: 903
+    height: 144
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 103038
---- !u!114 &11
+  m_LastSelectedObjectID: -403384
+--- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -80162,19 +81322,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 12}
-  - {fileID: 14}
+  - {fileID: 13}
+  - {fileID: 15}
   m_Position:
     serializedVersion: 2
-    x: 905
+    x: 903
     y: 0
-    width: 333
+    width: 282
     height: 741
   m_MinSize: {x: 234, y: 494}
   m_MaxSize: {x: 10004, y: 14044}
   vertical: 1
-  controlID: 90
---- !u!114 &12
+  controlID: 89
+--- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -80191,16 +81351,16 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 333
+    width: 282
     height: 429
-  m_MinSize: {x: 204, y: 222}
-  m_MaxSize: {x: 4004, y: 4022}
-  m_ActualView: {fileID: 13}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 14}
   m_Panes:
-  - {fileID: 13}
+  - {fileID: 14}
   m_Selected: 0
   m_LastSelected: 0
---- !u!114 &13
+--- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -80221,33 +81381,33 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 904.8
+    x: 903.2
     y: 73.6
-    width: 331
+    width: 280
     height: 410
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: ca3c0000
-      m_LastClickedID: 0
-      m_ExpandedIDs: badeffff8efbffff
+      m_SelectedIDs: 02ae0d00
+      m_LastClickedID: 896514
+      m_ExpandedIDs: 7ed8f9ffe0fffaff7812fbff981bfbff081ffbff3c26fbff6826fbff7c40fbff4260fbffce83fbff06a8fbff90a8fbff18bdfbfff6bffbff02c9fbff20cbfbff5cd6fcff4cd9fcff2ee9fcff82effcff4ac8fdff2216feffe216feff3e17feff5c17fefff617feffec1afeffecdeffff72dfffffb8dfffff44e0ffff8ee0fffface0ffff46e1ffff8efbfffff4ffffff8c5c00004c9f040016a004009ca004009aa1040002a20400cea30400eca304009ca50400cea504001ca6040038a604001a7b0500827b0500047f0500fe82050012830500be8505000c8b0500c08c0500a0cc050008cd050064d005008ad0050084d4050098d40500ded5050032d7050044d7050080d7050092dc050076dd050046de050062de05005edf0500bce10500ccb30d00
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: Reminder
+        m_OriginalName: Reminder
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: 396126
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 12}
+        m_ClientGUIView: {fileID: 13}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -80255,7 +81415,7 @@ MonoBehaviour:
       m_IsLocked: 0
     m_CurrentSortingName: TransformSorting
   m_WindowGUID: ae561538bf6450f4d99fe69928e50b48
---- !u!114 &14
+--- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -80272,16 +81432,16 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 429
-    width: 333
+    width: 282
     height: 312
   m_MinSize: {x: 234, y: 272}
   m_MaxSize: {x: 10004, y: 10022}
-  m_ActualView: {fileID: 15}
+  m_ActualView: {fileID: 16}
   m_Panes:
-  - {fileID: 15}
+  - {fileID: 16}
   m_Selected: 0
   m_LastSelected: 0
---- !u!114 &15
+--- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -80302,9 +81462,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 904.8
+    x: 903.2
     y: 502.4
-    width: 331
+    width: 280
     height: 293
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
@@ -80325,14 +81485,14 @@ MonoBehaviour:
   m_LastFolders:
   - Assets/Scenes
   m_LastFoldersGridSize: 16
-  m_LastProjectPath: D:\development\unity\MyGame - Thirty\Game\MyTestGameProject
+  m_LastProjectPath: D:\development\unity\Thirty\UnityProject\MyTestGameProject
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 60}
-    m_SelectedIDs: bc4d0000
-    m_LastClickedID: 19900
-    m_ExpandedIDs: 0000000002320000983400009c3500000e360000c0360000f83800004c39000070390000043a0000223a0000063b00000c3c0000103d00008a3d0000a83d00001a3e0000363e00003c3e0000e23e00000a4d0000ae4d0000584e0000b44f0000f04f0000a26e000000ca9a3b
+    scrollPos: {x: 0, y: 59}
+    m_SelectedIDs: 124e0000
+    m_LastClickedID: 19986
+    m_ExpandedIDs: 000000000e320000b8340000c4350000363600002c39000084390000aa3900003e3a00005c3a0000443b0000503c0000583d0000f23d0000663e0000823e0000883e0000323f00005c4d0000044e0000b04e00000c500000f2b3000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -80360,7 +81520,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: f4250000
     m_LastClickedID: 9716
-    m_ExpandedIDs: 0000000002320000983400009c3500000e360000f83800004c39000070390000043a0000223a0000063b0000923b00000c3c0000103d0000a83d00001a3e0000363e00003c3e0000e23e00000a4d0000ae4d0000584e0000b44f0000a26e0000
+    m_ExpandedIDs: 000000000e320000b8340000c435000036360000e6360000e23800002c39000084390000aa3900003e3a00005c3a0000443b0000583d0000f23d0000663e0000823e0000883e0000323f00005c4d0000044e0000b04e00000c500000f2b30000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -80385,26 +81545,26 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: ca3c0000
-    m_LastClickedInstanceID: 15562
+    m_SelectedInstanceIDs: 02ae0d00
+    m_LastClickedInstanceID: 896514
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c62300001a2500005a2500005e25000040250000462500008225000080250000823a00007e290000c83b0000a625000042260000d0270000de250000b6250000bc250000cc250000ec260000f4760000e4260000ba280000d0250000c625000014280000222800002c2800003e280000e6270000d82a0000982e0000622c0000b42e000066290000402d0000a42f0000ac2a00001a67000058400000002a00006c290000102a00007229000070290000384100006a3fddff8e76e4ff722f0000963b0000ee2d0000d42f0000422f00005a9800000e470000502f000090460000b03200006677000042320000ac460000b63d0000d8320000b6470000322c00007a2b00007e3e0000dc380000b030000016300000724800007c470000063400006c4e0000fe4c00005c30000050300000d84c0000983e0000804e00009e3c0000504e00007e3100006a300000783100005e300000a03e00006e3500000000000038400000a0470000bc500000
+    m_ExpandedInstanceIDs: c62300001a2500005a2500005e25000040250000462500008225000080250000823a00007e290000c83b0000a625000042260000d0270000de250000b6250000bc250000cc250000ec260000f4760000e4260000ba280000d0250000c625000014280000222800002c2800003e280000e6270000d82a0000982e0000622c0000b42e000066290000402d0000a42f0000ac2a00001a67000058400000002a00006c290000102a00007229000070290000384100006a3fddff8e76e4ff722f0000963b0000ee2d0000d42f0000422f00005a9800000e470000502f000090460000b03200006677000042320000ac460000b63d0000d8320000b6470000322c00007a2b00007e3e0000dc380000b030000016300000724800007c470000063400006c4e0000fe4c00005c30000050300000d84c0000983e0000804e00009e3c0000504e00007e3100006a300000783100005e300000a03e00006e35000000000000a0470000bc500000769601000c4f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: main_menu
+      m_OriginalName: main_menu
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 15634
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 14}
+      m_ClientGUIView: {fileID: 15}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -80415,7 +81575,7 @@ MonoBehaviour:
     m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 16
   m_DirectoriesAreaWidth: 112
---- !u!114 &16
+--- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -80430,18 +81590,18 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1238
+    x: 1185
     y: 0
-    width: 298
+    width: 351
     height: 741
   m_MinSize: {x: 275, y: 50}
   m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 17}
+  m_ActualView: {fileID: 18}
   m_Panes:
-  - {fileID: 17}
+  - {fileID: 18}
   m_Selected: 0
   m_LastSelected: 0
---- !u!114 &17
+--- !u!114 &18
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -80462,19 +81622,18 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1238.4
+    x: 1184.8
     y: 73.6
-    width: 296
+    width: 349
     height: 722
   m_ViewDataDictionary: {fileID: 0}
   m_OpenAddComponentMenu: 0
-  m_ObjectsLockedBeforeSerialization:
-  - {fileID: 11400000, guid: fdb6edc699c3a38468170d83fec519f5, type: 2}
+  m_ObjectsLockedBeforeSerialization: []
   m_InstanceIDsLockedBeforeSerialization: 
   m_LockTracker:
-    m_IsLocked: 1
+    m_IsLocked: 0
   m_PreviewResizer:
-    m_CachedPref: -228
+    m_CachedPref: 147
     m_ControlHash: 1412526313
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}

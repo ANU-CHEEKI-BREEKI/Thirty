@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class AllowedEquipmantPanel : MonoBehaviour
@@ -46,9 +47,9 @@ public class AllowedEquipmantPanel : MonoBehaviour
         var playerEq = GameManager.Instance.SavablePlayerData.PlayerProgress.Equipment;
 
         var eqs = Resources.LoadAll<Equipment>(pathToEquipmant);
-        foreach (var e in eqs)
+        foreach (var e in eqs.Where(eq => !eq.Stats.Empty).OrderBy(eq=>eq.Stats.Type).ThenBy(eq => eq.Stats.Id))
         {
-            if(!tempValues || (tempValues && playerEq.IsThisEquipmantInTempValues(e.Stats)))
+            if (!tempValues || (tempValues && playerEq.IsThisEquipmantInTempValues(e.Stats)))
             {
                 AddEq(new EquipmentStack(e));
             }
