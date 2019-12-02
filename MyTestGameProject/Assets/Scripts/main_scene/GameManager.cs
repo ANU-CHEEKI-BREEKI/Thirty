@@ -143,7 +143,7 @@ public class GameManager : MonoBehaviour
         if(Instance == this)
         {
             LoadSettings(LocalizedStrings.log_in);
-            GADWrapper.Initialize(true, 2, 1);
+            GADWrapper.Initialize(false, 2, 1);
         }
     }
 
