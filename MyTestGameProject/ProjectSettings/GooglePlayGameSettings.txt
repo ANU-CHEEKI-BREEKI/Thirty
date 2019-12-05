@@ -1,5 +1,5 @@
-lastUpgrade=00950
-proj.pluginVersion=0.9.50
+lastUpgrade=01006
+proj.pluginVersion=0.10.06
 proj.AppId=631025249276
 and.BundleId=com.damki.thirty
 proj.classDir=Assets%2fGPSConstants

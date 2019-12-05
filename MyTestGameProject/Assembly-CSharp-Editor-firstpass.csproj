@@ -319,17 +319,17 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/16.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
-    <Reference Include="Google.IOSResolver_v1.2.102.0">
-      <HintPath>D:/development/unity/Thirty/UnityProject/MyTestGameProject/Assets/PlayServicesResolver/Editor/Google.IOSResolver_v1.2.102.0.dll</HintPath>
+    <Reference Include="Google.IOSResolver_v1.2.131.0">
+      <HintPath>D:/development/unity/Thirty/UnityProject/MyTestGameProject/Assets/PlayServicesResolver/Editor/Google.IOSResolver_v1.2.131.0.dll</HintPath>
     </Reference>
-    <Reference Include="Google.JarResolver_v1.2.102.0">
-      <HintPath>D:/development/unity/Thirty/UnityProject/MyTestGameProject/Assets/PlayServicesResolver/Editor/Google.JarResolver_v1.2.102.0.dll</HintPath>
+    <Reference Include="Google.JarResolver_v1.2.131.0">
+      <HintPath>D:/development/unity/Thirty/UnityProject/MyTestGameProject/Assets/PlayServicesResolver/Editor/Google.JarResolver_v1.2.131.0.dll</HintPath>
     </Reference>
     <Reference Include="Google.VersionHandler">
       <HintPath>D:/development/unity/Thirty/UnityProject/MyTestGameProject/Assets/PlayServicesResolver/Editor/Google.VersionHandler.dll</HintPath>
     </Reference>
-    <Reference Include="Google.VersionHandlerImpl_v1.2.102.0">
-      <HintPath>D:/development/unity/Thirty/UnityProject/MyTestGameProject/Assets/PlayServicesResolver/Editor/Google.VersionHandlerImpl_v1.2.102.0.dll</HintPath>
+    <Reference Include="Google.VersionHandlerImpl_v1.2.131.0">
+      <HintPath>D:/development/unity/Thirty/UnityProject/MyTestGameProject/Assets/PlayServicesResolver/Editor/Google.VersionHandlerImpl_v1.2.131.0.dll</HintPath>
     </Reference>
     <Reference Include="UDP">
       <HintPath>D:/development/unity/Thirty/UnityProject/MyTestGameProject/Assets/Plugins/UDP/UDP.dll</HintPath>

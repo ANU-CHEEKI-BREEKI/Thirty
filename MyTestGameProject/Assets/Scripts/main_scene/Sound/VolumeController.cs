@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -12,7 +13,6 @@ public class VolumeController : MonoBehaviour
     float volumeGeneral;
     float volumeChanel;
 
-    #region UNITY
     void Awake()
     {
         aus = GetComponents<AudioSource>();
@@ -33,7 +33,6 @@ public class VolumeController : MonoBehaviour
         if(aus != null)
             SetVolume();
     }
-    #endregion
 
     public void ForciblyPlaySound()
     {
@@ -44,43 +43,53 @@ public class VolumeController : MonoBehaviour
 
     void Subscribe(bool positive)
     {
-        var ausset = GameManager.Instance.SavablePlayerData.Settings.audioSettings;
-        switch (type)
+        try
         {
-            case SoundManager.SoundType.MUSIC:
-                if (positive)
-                    ausset.musicVolume.OnValueChanged += ChanelVolume_OnValueChanged;
-                else
-                    ausset.musicVolume.OnValueChanged -= ChanelVolume_OnValueChanged;
-                volumeChanel = ausset.musicVolume.Value;
-                break;
-            case SoundManager.SoundType.UI:
-                if (positive)
-                    ausset.uiVolume.OnValueChanged += ChanelVolume_OnValueChanged;
-                else
-                    ausset.uiVolume.OnValueChanged -= ChanelVolume_OnValueChanged;
-                volumeChanel = ausset.uiVolume.Value;
-                break;
-            case SoundManager.SoundType.FX:
-                if (positive)
-                    ausset.fxVolume.OnValueChanged += ChanelVolume_OnValueChanged;
-                else
-                    ausset.fxVolume.OnValueChanged -= ChanelVolume_OnValueChanged;
-                volumeChanel = ausset.fxVolume.Value;
-                break;
-        }
-        if(positive)
-            ausset.generalVolume.OnValueChanged += GeneralVolume_OnValueChanged;
-        else
-            ausset.generalVolume.OnValueChanged -= GeneralVolume_OnValueChanged;
-        volumeGeneral = ausset.generalVolume.Value;
 
-        var sm = GameManager.Instance.SavingManager;
-        if(positive)
-            sm.OnDataLoaded += Sm_OnDataLoaded;
-        else
-            sm.OnDataLoaded -= Sm_OnDataLoaded;
-        SetVolume();
+            var ausset = GameManager.Instance.SavablePlayerData.Settings.audioSettings;
+
+            switch (type)
+            {
+                case SoundManager.SoundType.MUSIC:
+                    if (positive)
+                        ausset.musicVolume.OnValueChanged += ChanelVolume_OnValueChanged;
+                    else
+                        ausset.musicVolume.OnValueChanged -= ChanelVolume_OnValueChanged;
+                    volumeChanel = ausset.musicVolume.Value;
+                    break;
+                case SoundManager.SoundType.UI:
+                    if (positive)
+                        ausset.uiVolume.OnValueChanged += ChanelVolume_OnValueChanged;
+                    else
+                        ausset.uiVolume.OnValueChanged -= ChanelVolume_OnValueChanged;
+                    volumeChanel = ausset.uiVolume.Value;
+                    break;
+                case SoundManager.SoundType.FX:
+                    if (positive)
+                        ausset.fxVolume.OnValueChanged += ChanelVolume_OnValueChanged;
+                    else
+                        ausset.fxVolume.OnValueChanged -= ChanelVolume_OnValueChanged;
+                    volumeChanel = ausset.fxVolume.Value;
+                    break;
+            }
+            if (positive)
+                ausset.generalVolume.OnValueChanged += GeneralVolume_OnValueChanged;
+            else
+                ausset.generalVolume.OnValueChanged -= GeneralVolume_OnValueChanged;
+            volumeGeneral = ausset.generalVolume.Value;
+
+            var sm = GameManager.Instance.SavingManager;
+            if (positive)
+                sm.OnDataLoaded += Sm_OnDataLoaded;
+            else
+                sm.OnDataLoaded -= Sm_OnDataLoaded;
+            SetVolume();
+
+        }
+        catch(Exception ex)
+        {
+            Console.WriteLine(ex.ToString());
+        }
     }
 
     void Sm_OnDataLoaded(string arg1, object arg2, bool arg3)
