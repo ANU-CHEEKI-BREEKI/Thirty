@@ -1,5 +1,5 @@
 # Thirty (репозиторий перенесён из BitBucket Mercurial)
-Тактическая 2D android игра в античном сеттинге. [Опубликована](https://play.google.com/apps/testing/com.damki.thirty) в Google Play в стадии открытого бета тестирования.
+Тактическая 2D android игра в античном сеттинге. [Опубликована](https://play.google.com/store/apps/details?id=com.damki.thirty) в Google Play.
 
 Проект был выполнен в рамках выпускной квалификационной работы магистра по специальности “Программная инженерия” (2017-2018 учебный год).
 
