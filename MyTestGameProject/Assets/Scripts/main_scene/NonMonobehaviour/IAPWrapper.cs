@@ -62,6 +62,7 @@ public static class IAPWrapper
 
                 if (pd.id == productId)
                     manager.BuyProductID(Const.NonConsumable.ID_DISABLE_ADS, ()=> { IsAdDisabled = true; });
+                CallOnPurchaseSucess(pd);
             };
             manager.OnPurchasingSuccess += onSuccess;
         }

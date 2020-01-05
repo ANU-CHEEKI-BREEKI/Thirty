@@ -8,6 +8,15 @@ public class LocalizationByEditor : MonoBehaviour
     [SerializeField] TMPro.TextMeshProUGUI text;
     [SerializeField] string stringResourceName;
 
+    /// <summary>
+    /// get or set translaion string resource name without reloading tmpro.text
+    /// </summary>
+    public string ResourceName
+    {
+        get => stringResourceName;
+        set => stringResourceName = value;
+    }
+
     private void Start()
     {
         if (text == null)

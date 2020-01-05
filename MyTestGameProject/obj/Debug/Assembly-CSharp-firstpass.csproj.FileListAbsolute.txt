@@ -388,7 +388,6 @@ D:\development\unity\Thirty\UnityProject\MyTestGameProject\Temp\bin\Debug\UnityE
 D:\development\unity\Thirty\UnityProject\MyTestGameProject\Temp\bin\Debug\UnityEditor.XR.LegacyInputHelpers.dll
 D:\development\unity\Thirty\UnityProject\MyTestGameProject\Temp\bin\Debug\UnityEngine.AccessibilityModule.dll
 D:\development\unity\Thirty\UnityProject\MyTestGameProject\Temp\bin\Debug\UnityEngine.Advertisements.dll
-D:\development\unity\Thirty\UnityProject\MyTestGameProject\Temp\bin\Debug\UnityEngine.Advertisements.Editor.dll
 D:\development\unity\Thirty\UnityProject\MyTestGameProject\Temp\bin\Debug\UnityEngine.AIModule.dll
 D:\development\unity\Thirty\UnityProject\MyTestGameProject\Temp\bin\Debug\UnityEngine.AnimationModule.dll
 D:\development\unity\Thirty\UnityProject\MyTestGameProject\Temp\bin\Debug\UnityEngine.ARModule.dll
@@ -483,6 +482,7 @@ D:\development\unity\Thirty\UnityProject\MyTestGameProject\obj\Debug\Assembly-CS
 D:\development\unity\Thirty\UnityProject\MyTestGameProject\obj\Debug\Assembly-CSharp-firstpass.csproj.CopyComplete
 D:\development\unity\Thirty\UnityProject\MyTestGameProject\obj\Debug\Assembly-CSharp-firstpass.dll
 D:\development\unity\Thirty\UnityProject\MyTestGameProject\obj\Debug\Assembly-CSharp-firstpass.pdb
-D:\development\unity\Thirty\UnityProject\MyTestGameProject\Temp\bin\Debug\UnityEditor.Purchasing.dll
-D:\development\unity\Thirty\UnityProject\MyTestGameProject\Temp\bin\Debug\UnityEditor.UI.dll
 D:\development\unity\Thirty\UnityProject\MyTestGameProject\obj\Debug\Assembly-CSharp-firstpass.csprojAssemblyReference.cache
+D:\development\unity\Thirty\UnityProject\MyTestGameProject\Temp\bin\Debug\UnityEngine.Monetization.dll
+D:\development\unity\Thirty\UnityProject\MyTestGameProject\Temp\bin\Debug\UnityEngine.Monetization.pdb
+D:\development\unity\Thirty\UnityProject\MyTestGameProject\Temp\bin\Debug\UnityEngine.Advertisements.pdb

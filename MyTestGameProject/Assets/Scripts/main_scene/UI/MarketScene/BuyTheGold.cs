@@ -27,7 +27,7 @@ public class BuyTheGold : MonoBehaviour
         if (cost <= 0)
         {
             var showed=GADWrapper.ShowRewardedAd(
-                GADWrapper.Const.RevardedAds.ID_FREE_GOLD, 
+                GADWrapper.RewardedAdId.ID_FREE_GOLD, 
                 (reward) => { AddGold(gold); },
                 true,
                 false,
@@ -36,7 +36,7 @@ public class BuyTheGold : MonoBehaviour
             if(!showed)
             {
                 GADWrapper.LoadRewardedAd(
-                    GADWrapper.Const.RevardedAds.ID_FREE_GOLD, 
+                    GADWrapper.RewardedAdId.ID_FREE_GOLD, 
                     2
                 );
             }

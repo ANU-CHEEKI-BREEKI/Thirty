@@ -143,7 +143,7 @@ public class GameManager : MonoBehaviour
         if(Instance == this)
         {
             LoadSettings(LocalizedStrings.log_in);
-            GADWrapper.Initialize(false, 2, 1);
+            GADWrapper.Initialize(2, 1);
         }
     }
 
@@ -317,10 +317,10 @@ public class GameManager : MonoBehaviour
                 SoundManager.Instance.PlaySound(new SoundChannel.ClipSet(SoundManager.Instance.SoundClipsContainer.Music.MusicMarket, true), SoundManager.SoundType.MUSIC);
 
                 if (!IAPWrapper.IsAdDisabled)
-                    GADWrapper.LoadInterstitialAd(GADWrapper.Const.InterstitialAds.ID_ALL_KIND_OF_INTERSTITIAL_ADS);
+                    GADWrapper.LoadInterstitialAd(GADWrapper.InterstitialAdId.ID_ALL_KIND_OF_INTERSTITIAL_ADS);
 
                 GADWrapper.LoadRewardedAd(
-                    GADWrapper.Const.RevardedAds.ID_FREE_GOLD,
+                    GADWrapper.RewardedAdId.ID_FREE_GOLD,
                     2
                 );
                 InitPlayer();
@@ -333,7 +333,7 @@ public class GameManager : MonoBehaviour
                 PauseGame();
 
                 if (!IAPWrapper.IsAdDisabled)
-                    GADWrapper.LoadInterstitialAd(GADWrapper.Const.InterstitialAds.ID_ALL_KIND_OF_INTERSTITIAL_ADS);
+                    GADWrapper.LoadInterstitialAd(GADWrapper.InterstitialAdId.ID_ALL_KIND_OF_INTERSTITIAL_ADS);
 
                 Ground.Instance.OnGenerationDone += ()=> { ResumeGame(); };
                 Ground.Instance.OnGenerationDone += InitPlayer;

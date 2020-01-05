@@ -2,24 +2,68 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEngine;
 
 /// <summary>
 /// всё что с рекламой
 /// </summary>
 public static class GADWrapper
 {
-    static bool debug;
+    #region consts
+
+    public enum RewardedAdId
+    {
+        ID__TEST,
+        ID_FREE_GOLD
+    }
+    public enum InterstitialAdId
+    {
+        ID__TEST,
+        ID_ALL_KIND_OF_INTERSTITIAL_ADS
+    }
+
+    private static class Const
+    {
+        public const string ANDROID_APP_ID = "ca-app-pub-3678745180251733~6721050083";
+
+        private static string[] revardedAdIds = new[]
+        {
+           "ca-app-pub-3940256099942544/5224354917",//ID__TEST
+           "ca-app-pub-3678745180251733/7117114831" //ID_FREE_GOLD
+        };
+        private static string[] interstitialAdIds = new[]
+        {
+            "ca-app-pub-3940256099942544/1033173712",//ID__TEST
+            "ca-app-pub-3678745180251733/8504735542" //ID_ALL_KIND_OF_INTERSTITIAL_ADS
+        };
+
+        public static string GetId(RewardedAdId revardedId)
+        {
+            return revardedAdIds[(int)revardedId];
+        }
+
+        public static string GetId(InterstitialAdId interstitialId)
+        {
+            return interstitialAdIds[(int)interstitialId];
+        }
+    }
+
+    #endregion
+
+    //private static bool debug;
     /// <summary>
     /// сколько одинаковых блоков рекламы может быть загружено одновременно(паралельно)
     /// <para>это нужно, например, чтобы после закрытия рекламного окна, уже было готово ещё одно</para>
     /// </summary>
-    static int maximumSameRevardedAds;
-    static int maximumSameInterstitialAds;
-    static List<RewardedAdWrap> rewardedAds = new List<RewardedAdWrap>();
-    static List<InterstitialAdWrap> interAds = new List<InterstitialAdWrap>();
+    private static int maximumSameRevardedAds;
+    private static int maximumSameInterstitialAds;
+
+    //нужен именно список, чтобы потом можно было удалить обертки в собитиях
+    private static List<RewardedAdWrap> rewardedAds = new List<RewardedAdWrap>();
+    private static List<InterstitialAdWrap> interAds = new List<InterstitialAdWrap>();
+
     public class AdWrap
     {
-        public string adId;
         public Action onAdClosed;
 
         public float oldGameVolume;
@@ -30,9 +74,9 @@ public static class GADWrapper
         public int tryReloadOnLoadingFailed;
     }
 
-    public static void Initialize(bool debug = true, int maximumSameRevardedAds = 2, int maximumSameInterstitialAds = 1)
+    public static void Initialize(int maximumSameRevardedAds = 2, int maximumSameInterstitialAds = 1)
     {
-        GADWrapper.debug = debug;
+        //GADWrapper.debug = debug;
         GADWrapper.maximumSameRevardedAds = maximumSameRevardedAds;
         GADWrapper.maximumSameInterstitialAds = maximumSameInterstitialAds;
 
@@ -52,16 +96,22 @@ public static class GADWrapper
     /// <param name="adId"></param>
     /// <param name="onRewardEarned"></param>
     /// <returns>false если что то пошло не так. true если началась загрузка</returns>
-    public static bool LoadRewardedAd(string adId, int tryReloadOnLoadingFailed = 0)
+    public static bool LoadRewardedAd(RewardedAdId adId, int tryReloadOnLoadingFailed = 0)
     {
-        //это для тестирования
-        if (debug)
-            adId = Const.RevardedAds.ID__TEST;
+        //Debug.Log($"advertising dubig is {debug}");
 
-        if (rewardedAds.Where(rad => rad.adId == adId).ToList().Count >= GADWrapper.maximumSameRevardedAds)
+        ////это для тестирования
+        //if (debug)
+        //    adId = RewardedAdId.ID__TEST;
+
+        var adCount = rewardedAds.Count(a => a.adId == adId);
+
+        Debug.Log($"count of olready loaded advertising {adId} is: {adCount}. and max is: {GADWrapper.maximumSameRevardedAds}");
+
+        if (adCount >= GADWrapper.maximumSameRevardedAds)
             return false;
 
-        var ad = new RewardedAd(adId);
+        var ad = new RewardedAd(Const.GetId(adId));
         rewardedAds.Add
         (
             new RewardedAdWrap()
@@ -79,7 +129,12 @@ public static class GADWrapper
         ad.OnAdOpening += Ad_OnAdOpening;
         ad.OnUserEarnedReward += Ad_OnUserEarnedReward;
 
-        ad.LoadAd(new AdRequest.Builder().Build());
+        //Use AdRequest.Builder.addTestDevice("B36E541FF471B2ADC7410D9DEAC3A651") to get test ads on this device.
+        ad.LoadAd(new AdRequest
+            .Builder()
+            .AddTestDevice("B36E541FF471B2ADC7410D9DEAC3A651")
+            .Build()
+        );
 
         return true;
     }
@@ -93,35 +148,34 @@ public static class GADWrapper
     /// <param name="reloadAfterClosing">загрузить такой же блок рекламы после закрытия этого</param>
     /// <param name="tryReshowingOnShowingFailed"></param>
     /// <returns>показалась ли рекламка</returns>
-    public static bool ShowRewardedAd(string adId, Action<Reward> onRewardEarned = null, bool loadOneMoreOnOpening = false, bool reloadAfterClosing = false, int tryReshowingOnShowingFailed = 0)
+    public static bool ShowRewardedAd(RewardedAdId adId, Action<Reward> onRewardEarned = null, bool loadOneMoreOnOpening = false, bool reloadAfterClosing = false, int tryReshowingOnShowingFailed = 0)
     {
         //это для тестирования
-        if (debug)
-            adId = Const.RevardedAds.ID__TEST;
+        //if (debug)
+        //    adId = RewardedAdId.ID__TEST;
 
-        var sameId = rewardedAds.Where(ad => ad.adId == adId).ToList();
-        var loaded = sameId.Where(ad => ad.ad.IsLoaded()).ToList();
+        var thisIdAds = rewardedAds.Where(a => a.adId == adId);
+        var loadedAd = thisIdAds.Where(r => r.ad.IsLoaded()).FirstOrDefault();
 
-        if (sameId.Count == 0)
+        if (!thisIdAds.Any())
         {
             Toast.Instance.Show(LocalizedStrings.reward_ad_not_loaded);
             return false;
         }
 
-        if (loaded.Count == 0)
+        if (loadedAd == null)
         {
             Toast.Instance.Show(LocalizedStrings.reward_ad_not_loaded_yet);
             return false;
         }
 
-        var adWrap = loaded[0];
-        adWrap.onRewardEarned = onRewardEarned;
-        adWrap.loadOneMoreOnOpening = loadOneMoreOnOpening;
-        adWrap.reloadAfterClosing = reloadAfterClosing;
-        adWrap.tryReshowingOnShowingFailed = tryReshowingOnShowingFailed;
+        loadedAd.onRewardEarned = onRewardEarned;
+        loadedAd.loadOneMoreOnOpening = loadOneMoreOnOpening;
+        loadedAd.reloadAfterClosing = reloadAfterClosing;
+        loadedAd.tryReshowingOnShowingFailed = tryReshowingOnShowingFailed;
 
-        adWrap.ad.Show();
-
+        loadedAd.ad.Show();
+        
         return true;
     }
 
@@ -132,7 +186,14 @@ public static class GADWrapper
         var adWrap = rewardedAds.Where(d => d.ad == sender).SingleOrDefault();
         if (adWrap == null) return;
 
-        adWrap.onRewardEarned?.Invoke(e);
+        try
+        {
+            adWrap.onRewardEarned?.Invoke(e);
+        }
+        catch (Exception ex)
+        {
+            Debug.LogError(ex.ToString());
+        }
     }
 
     private static void Ad_OnAdOpening(object sender, EventArgs e)
@@ -140,13 +201,20 @@ public static class GADWrapper
         var adWrap = rewardedAds.Where(d => d.ad == sender).SingleOrDefault();
         if (adWrap == null) return;
 
-        var gm = GameManager.Instance;
-        var audio = gm.SavablePlayerData.Settings.audioSettings;
-        adWrap.oldGameVolume = audio.generalVolume.Value;
-        adWrap.oldGamePaused = gm.GamePaused;
+        try
+        {
+            var gm = GameManager.Instance;
+            var audio = gm.SavablePlayerData.Settings.audioSettings;
+            adWrap.oldGameVolume = audio.generalVolume.Value;
+            adWrap.oldGamePaused = gm.GamePaused;
 
-        audio.generalVolume.Value = 0;
-        gm.PauseGame();
+            audio.generalVolume.Value = 0;
+            gm.PauseGame();
+        }
+        catch (Exception ex)
+        {
+            Debug.LogError(ex.ToString());
+        }
 
         if (adWrap.loadOneMoreOnOpening)
             LoadRewardedAd(adWrap.adId, adWrap.tryReloadOnLoadingFailed);
@@ -171,8 +239,6 @@ public static class GADWrapper
 
     private static void Ad_OnAdFailedToLoad(object sender, AdErrorEventArgs e)
     {
-        //Toast.Instance.Show(LocalizedStrings.reward_ad_load_error);
-
         var adWrap = rewardedAds.Where(d => d.ad == sender).SingleOrDefault();
         if (adWrap == null) return;
 
@@ -187,14 +253,20 @@ public static class GADWrapper
         var adWrap = rewardedAds.Where(d => d.ad == sender).SingleOrDefault();
         if (adWrap == null) return;
 
-        var gm = GameManager.Instance;
-        var audio = gm.SavablePlayerData.Settings.audioSettings;
-
-        gm.SetPauseGame(adWrap.oldGamePaused, false);
-        audio.generalVolume.Value = adWrap.oldGameVolume;
-
         rewardedAds.Remove(adWrap);
-        
+
+        try
+        {
+            var gm = GameManager.Instance;
+            var audio = gm.SavablePlayerData.Settings.audioSettings;
+            audio.generalVolume.Value = adWrap.oldGameVolume;
+            gm.SetPauseGame(adWrap.oldGamePaused, false);
+        }
+        catch (Exception ex)
+        {
+            Debug.LogError(ex.ToString());
+        }
+
         if (adWrap.reloadAfterClosing)
             LoadRewardedAd(adWrap.adId, adWrap.tryReloadOnLoadingFailed);
     }
@@ -203,6 +275,7 @@ public static class GADWrapper
 
     public class RewardedAdWrap : AdWrap
     {
+        public RewardedAdId adId;
         public RewardedAd ad;
         public Action<Reward> onRewardEarned;
 
@@ -212,16 +285,16 @@ public static class GADWrapper
     #endregion
 
     #region InterstitialAds
-    public static bool LoadInterstitialAd(string adId, int tryReloadOnLoadingFailed = 0)
+    public static bool LoadInterstitialAd(InterstitialAdId adId, int tryReloadOnLoadingFailed = 0)
     {
         //это для тестирования
-        if (debug)
-            adId = Const.InterstitialAds.ID__TEST;
+        //if (debug)
+        //    adId = InterstitialAdId.ID__TEST;
 
         if (interAds.Where(rad => rad.adId == adId).ToList().Count >= GADWrapper.maximumSameInterstitialAds)
             return false;
 
-        var ad = new InterstitialAd(adId);
+        var ad = new InterstitialAd(Const.GetId(adId));
         interAds.Add
         (
             new InterstitialAdWrap()
@@ -238,31 +311,29 @@ public static class GADWrapper
         ad.OnAdLoaded += Ad_OnInterstitialAdLoaded;
         ad.OnAdOpening += Ad_OnInterstitialAdOpening;
 
-        ad.LoadAd(new AdRequest.Builder().Build());
+        ad.LoadAd(new AdRequest
+            .Builder()
+            .AddTestDevice("B36E541FF471B2ADC7410D9DEAC3A651")
+            .Build()
+        );
 
         return true;
     }
 
-    public static bool ShowInterstitialAd(string adId, bool loadOneMoreOnOpening = false, bool reloadAfterClosing = false)
+    public static bool ShowInterstitialAd(InterstitialAdId adId, bool loadOneMoreOnOpening = false, bool reloadAfterClosing = false)
     {
         //это для тестирования
-        if (debug)
-            adId = Const.InterstitialAds.ID__TEST;
+        //if (debug)
+        //    adId = InterstitialAdId.ID__TEST;
 
         var sameId = interAds.Where(ad => ad.adId == adId).ToList();
         var loaded = sameId.Where(ad => ad.ad.IsLoaded()).ToList();
 
         if (sameId.Count == 0)
-        {
-            //Toast.Instance.Show(LocalizedStrings.reward_ad_not_loaded);
             return false;
-        }
 
         if (loaded.Count == 0)
-        {
-            //Toast.Instance.Show(LocalizedStrings.reward_ad_not_loaded_yet);
             return false;
-        }
 
         var adWrap = loaded[0];
         adWrap.loadOneMoreOnOpening = loadOneMoreOnOpening;
@@ -280,13 +351,20 @@ public static class GADWrapper
         var adWrap = interAds.Where(d => d.ad == sender).SingleOrDefault();
         if (adWrap == null) return;
 
-        var gm = GameManager.Instance;
-        var audio = gm.SavablePlayerData.Settings.audioSettings;
-        adWrap.oldGameVolume = audio.generalVolume.Value;
-        adWrap.oldGamePaused = gm.GamePaused;
+        try
+        {
+            var gm = GameManager.Instance;
+            var audio = gm.SavablePlayerData.Settings.audioSettings;
+            adWrap.oldGameVolume = audio.generalVolume.Value;
+            adWrap.oldGamePaused = gm.GamePaused;
 
-        audio.generalVolume.Value = 0;
-        gm.PauseGame();
+            audio.generalVolume.Value = 0;
+            gm.PauseGame();
+        }
+        catch (Exception ex)
+        {
+            Debug.LogError(ex.ToString());
+        }
 
         if (adWrap.loadOneMoreOnOpening)
             LoadInterstitialAd(adWrap.adId, adWrap.tryReloadOnLoadingFailed);
@@ -318,14 +396,20 @@ public static class GADWrapper
         var adWrap = interAds.Where(d => d.ad == sender).SingleOrDefault();
         if (adWrap == null) return;
 
-        var gm = GameManager.Instance;
-        var audio = gm.SavablePlayerData.Settings.audioSettings;
+        try
+        {
+            var gm = GameManager.Instance;
+            var audio = gm.SavablePlayerData.Settings.audioSettings;
 
-        gm.SetPauseGame(adWrap.oldGamePaused, false);
-        audio.generalVolume.Value = adWrap.oldGameVolume;
+            audio.generalVolume.Value = adWrap.oldGameVolume;
+            gm.SetPauseGame(adWrap.oldGamePaused, false);
+        }
+        catch (Exception ex)
+        {
+            Debug.LogError(ex.ToString());
+        }
 
         interAds.Remove(adWrap);
-
         adWrap.ad.Destroy();
 
         if (adWrap.reloadAfterClosing)
@@ -336,26 +420,9 @@ public static class GADWrapper
 
     public class InterstitialAdWrap : AdWrap
     {
+        public InterstitialAdId adId;
         public InterstitialAd ad;
     }
 
     #endregion
-
-    public static class Const
-    {
-        public const string ANDROID_APP_ID = "ca-app-pub-3678745180251733~6721050083";
-
-        public static class RevardedAds
-        {
-            public const string ID__TEST = "ca-app-pub-3940256099942544/5224354917";
-            public const string ID_FREE_GOLD = "ca-app-pub-3678745180251733/7117114831";
-        }
-
-        public static class InterstitialAds
-        {
-            public const string ID__TEST = "ca-app-pub-3940256099942544/1033173712";
-            public const string ID_ALL_KIND_OF_INTERSTITIAL_ADS = "ca-app-pub-3678745180251733/8504735542";
-        }
-
-    }
 }

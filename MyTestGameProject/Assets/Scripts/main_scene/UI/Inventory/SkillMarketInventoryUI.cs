@@ -18,7 +18,7 @@ public class SkillMarketInventoryUI : AInventoryUI
     [Space]
     [SerializeField] Transform selectedSkillUpgradeContainer;
     [Space]
-    [SerializeField] TextMeshProUGUI selectedSkillUpgradesPage;
+    [SerializeField] LocalizationByEditor selectedSkillText;
 
     Color cellDefaultColor;
 
@@ -132,8 +132,11 @@ public class SkillMarketInventoryUI : AInventoryUI
                 if (skillCells[i] != null)
                     skillCells[i].GetComponent<Image>().color = selectedSkillCellColor;
 
-                if (selectedSkillUpgradesPage != null)
-                    selectedSkillUpgradesPage.text = Localization.GetString(drag.SkillStack.Skill.MainPropertie.StringResourceName);
+                if(selectedSkillText != null)
+                {
+                    selectedSkillText.ResourceName = drag.SkillStack.Skill.MainPropertie.StringResourceName;
+                    selectedSkillText.ReloadText();
+                }
             }
             else
             {

@@ -8,10 +8,7 @@ D:\development\unity\Thirty\UnityProject\MyTestGameProject\Temp\bin\Debug\com.un
 D:\development\unity\Thirty\UnityProject\MyTestGameProject\Temp\bin\Debug\com.unity.multiplayer-weaver.Editor.dll
 D:\development\unity\Thirty\UnityProject\MyTestGameProject\Temp\bin\Debug\Editor.dll
 D:\development\unity\Thirty\UnityProject\MyTestGameProject\Temp\bin\Debug\FacebookStore.dll
-D:\development\unity\Thirty\UnityProject\MyTestGameProject\Temp\bin\Debug\Google.IOSResolver_v1.2.102.0.dll
-D:\development\unity\Thirty\UnityProject\MyTestGameProject\Temp\bin\Debug\Google.JarResolver_v1.2.102.0.dll
 D:\development\unity\Thirty\UnityProject\MyTestGameProject\Temp\bin\Debug\Google.VersionHandler.dll
-D:\development\unity\Thirty\UnityProject\MyTestGameProject\Temp\bin\Debug\Google.VersionHandlerImpl_v1.2.102.0.dll
 D:\development\unity\Thirty\UnityProject\MyTestGameProject\Temp\bin\Debug\Microsoft.CSharp.dll
 D:\development\unity\Thirty\UnityProject\MyTestGameProject\Temp\bin\Debug\Microsoft.Win32.Primitives.dll
 D:\development\unity\Thirty\UnityProject\MyTestGameProject\Temp\bin\Debug\mscorlib.dll
@@ -158,7 +155,6 @@ D:\development\unity\Thirty\UnityProject\MyTestGameProject\Temp\bin\Debug\UnityE
 D:\development\unity\Thirty\UnityProject\MyTestGameProject\Temp\bin\Debug\UnityEditor.XR.LegacyInputHelpers.dll
 D:\development\unity\Thirty\UnityProject\MyTestGameProject\Temp\bin\Debug\UnityEngine.AccessibilityModule.dll
 D:\development\unity\Thirty\UnityProject\MyTestGameProject\Temp\bin\Debug\UnityEngine.Advertisements.dll
-D:\development\unity\Thirty\UnityProject\MyTestGameProject\Temp\bin\Debug\UnityEngine.Advertisements.Editor.dll
 D:\development\unity\Thirty\UnityProject\MyTestGameProject\Temp\bin\Debug\UnityEngine.AIModule.dll
 D:\development\unity\Thirty\UnityProject\MyTestGameProject\Temp\bin\Debug\UnityEngine.AnimationModule.dll
 D:\development\unity\Thirty\UnityProject\MyTestGameProject\Temp\bin\Debug\UnityEngine.ARModule.dll
@@ -256,3 +252,9 @@ D:\development\unity\Thirty\UnityProject\MyTestGameProject\obj\Debug\Assembly-CS
 D:\development\unity\Thirty\UnityProject\MyTestGameProject\obj\Debug\Assembly-CSharp-Editor-firstpass.csproj.CopyComplete
 D:\development\unity\Thirty\UnityProject\MyTestGameProject\obj\Debug\Assembly-CSharp-Editor-firstpass.dll
 D:\development\unity\Thirty\UnityProject\MyTestGameProject\obj\Debug\Assembly-CSharp-Editor-firstpass.pdb
+D:\development\unity\Thirty\UnityProject\MyTestGameProject\Temp\bin\Debug\Google.IOSResolver_v1.2.135.0.dll
+D:\development\unity\Thirty\UnityProject\MyTestGameProject\Temp\bin\Debug\Google.JarResolver_v1.2.135.0.dll
+D:\development\unity\Thirty\UnityProject\MyTestGameProject\Temp\bin\Debug\Google.VersionHandlerImpl_v1.2.135.0.dll
+D:\development\unity\Thirty\UnityProject\MyTestGameProject\Temp\bin\Debug\UnityEngine.Monetization.dll
+D:\development\unity\Thirty\UnityProject\MyTestGameProject\Temp\bin\Debug\UnityEngine.Monetization.pdb
+D:\development\unity\Thirty\UnityProject\MyTestGameProject\Temp\bin\Debug\UnityEngine.Advertisements.pdb
