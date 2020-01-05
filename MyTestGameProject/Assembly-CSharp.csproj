@@ -10,7 +10,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <ProjectGuid>{015A8C12-616A-808C-1116-2C959B9A1A5E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -569,6 +570,7 @@
     <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (BOTTOM) (TOP) (LEFT) ] [EXIT RIGHT] [GRASSLAND] (1).xml" />
     <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (TOP) (RIGHT) ] [SWAMP] (1).xml" />
     <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (BOTTOM) (RIGHT) ] [GRASSLAND] (1).xml" />
+    <None Include="Assets\FacebookSDK\link.xml" />
     <None Include="Assets\Shaders\VertexColorAlpha.shader" />
     <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (BOTTOM) (LEFT) (RIGHT) ] [SWAMP] (1).xml" />
     <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (BOTTOM) (LEFT) ] [EXIT TOP] [SWAMP] (1).xml" />
@@ -807,6 +809,18 @@
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Facebook.Unity">
+      <HintPath>D:/development/unity/Thirty/UnityProject/MyTestGameProject/Assets/FacebookSDK/Plugins/Facebook.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Facebook.Unity.Gameroom">
+      <HintPath>D:/development/unity/Thirty/UnityProject/MyTestGameProject/Assets/FacebookSDK/Plugins/Gameroom/Facebook.Unity.Gameroom.dll</HintPath>
+    </Reference>
+    <Reference Include="FacebookNamedPipeClient">
+      <HintPath>D:/development/unity/Thirty/UnityProject/MyTestGameProject/Assets/FacebookSDK/Plugins/Gameroom/FacebookNamedPipeClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Facebook.Unity.Settings">
+      <HintPath>D:/development/unity/Thirty/UnityProject/MyTestGameProject/Assets/FacebookSDK/Plugins/Settings/Facebook.Unity.Settings.dll</HintPath>
     </Reference>
     <Reference Include="UDP">
       <HintPath>D:/development/unity/Thirty/UnityProject/MyTestGameProject/Assets/Plugins/UDP/UDP.dll</HintPath>
@@ -1213,6 +1227,9 @@
       <Project>{B33A4332-54AC-5BA2-3E5B-FDDC2CD186FA}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets\Scripts\main_scene\NonMonobehaviour\NewFolder1\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

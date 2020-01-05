@@ -1,4 +1,4 @@
-﻿
+﻿using Facebook.Unity;
 using System;
 using System.Collections;
 using System.Linq;
@@ -159,6 +159,33 @@ public class GameManager : MonoBehaviour
         var auds = SavablePlayerData.Settings.audioSettings;
         auds.generalVolume.Value = 0;
 
+        #region Facebooa api activation
+        if (!FB.IsInitialized)
+        {
+            FB.Init(
+                onInitComplete: () =>
+                {
+                    if (FB.IsInitialized)
+                    {
+                        FB.ActivateApp();
+                        print("FB app Activated");
+                    }
+                    else
+                    {
+                        print("FB app init failed");
+                    }
+                },
+                onHideUnity: (isGameShown) => Instance.SetPauseGame(!isGameShown, false)
+            );
+        }
+        else
+        {
+            FB.ActivateApp();
+            print("FB app Activated");
+        }
+        #endregion
+
+        #region IAP activation
         IAPWrapper.Initiate();
         IAPWrapper.OnPurchaseSuccess += (data) =>
         {
@@ -166,6 +193,9 @@ public class GameManager : MonoBehaviour
             if (data.id != IAPWrapper.Const.NonConsumable.ID_DISABLE_ADS) return;
             Toast.Instance.Show(LocalizedStrings.ads_disabled, Toast.ToastLifetime.SLOW);
         };
+        #endregion
+
+        //GoogleAds activated ad GameManager.Start function
 
         BeforeLoadLevel += (nextScene, currentLevel, currentScene) =>
         {
