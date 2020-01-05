@@ -2,6 +2,7 @@
 layout: default
 ---
 
+
 ## Privacy Policy
 
 ANU built the Thirty app as a Freemium app. This SERVICE is provided by ANU at no cost and is intended for use as is.
