@@ -71,9 +71,10 @@
     <Compile Include="Assets\Plugins\UnityPurchasing\script\IAPDemoProductUI.cs" />
     <Compile Include="Assets\Plugins\UnityPurchasing\script\IAPListener.cs" />
     <Compile Include="Assets\Plugins\UnityPurchasing\script\PurchasingCheck.cs" />
+    <None Include="Assets\Plugins\Android\proguard-user.txt" />
+    <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
     <None Include="Assets\Plugins\UnityPurchasing\script\link.xml" />
     <None Include="Assets\Plugins\Android\GoogleMobileAdsPlugin\AndroidManifest.xml" />
-    <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>D:/development/unity/Thirty/UnityProject/MyTestGameProject/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
