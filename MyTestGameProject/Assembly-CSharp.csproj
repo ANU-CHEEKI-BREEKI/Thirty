@@ -414,6 +414,7 @@
     <Compile Include="Assets\Scripts\main_scene\Unit\Unit.cs" />
     <Compile Include="Assets\Scripts\main_scene\Unit\UnitPosition.cs" />
     <Compile Include="Assets\Scripts\main_scene\UnitOutline.cs" />
+    <Compile Include="Assets\Scripts\MainThreadDispatcher.cs" />
     <Compile Include="Assets\Scripts\MapBlockConverter\ConvertBlockToExpected.cs" />
     <Compile Include="Assets\Scripts\MapBlockConverter\ConvertMockRuleTileToRealRuleTile.cs" />
     <Compile Include="Assets\Scripts\MapBlockConverter\ConvertRuleTileToSimpleTile.cs" />

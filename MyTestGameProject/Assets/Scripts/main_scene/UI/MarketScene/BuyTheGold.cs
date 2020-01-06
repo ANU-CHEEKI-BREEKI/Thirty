@@ -27,8 +27,8 @@ public class BuyTheGold : MonoBehaviour
         if (cost <= 0)
         {
             var showed=GADWrapper.ShowRewardedAd(
-                GADWrapper.RewardedAdId.ID_FREE_GOLD, 
-                (reward) => { AddGold(gold); },
+                GADWrapper.RewardedAdId.ID_FREE_GOLD,
+                (reward) => MainThreadDispatcher.Instance.Enqueue(() => AddGold(gold)),
                 true,
                 false,
                 2
@@ -44,7 +44,8 @@ public class BuyTheGold : MonoBehaviour
         else
         {
             var id="";
-            Action onSuccess=() => { AddGold(gold); };
+            
+            Action onSuccess=() => { MainThreadDispatcher.Instance.Enqueue(() => AddGold(gold)); };
             switch (cost)
             {
                 case 1:
