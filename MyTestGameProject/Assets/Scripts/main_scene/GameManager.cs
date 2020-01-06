@@ -149,6 +149,9 @@ public class GameManager : MonoBehaviour
 
     void InitGameManager()
     {
+        // to be shure what dispatcher is init in main thread
+        var dispatcher = MainThreadDispatcher.Instance;
+
         Instance = this;
         CurrentLevel = new LevelInfo();
         defFixedDeltaTime = Time.fixedDeltaTime;
@@ -162,9 +165,12 @@ public class GameManager : MonoBehaviour
         IAPWrapper.Initiate();
         IAPWrapper.OnPurchaseSuccess += (data) =>
         {
-            if (data.type != UnityEngine.Purchasing.ProductType.NonConsumable) return;
-            if (data.id != IAPWrapper.Const.NonConsumable.ID_DISABLE_ADS) return;
-            Toast.Instance.Show(LocalizedStrings.ads_disabled, Toast.ToastLifetime.SLOW);
+            MainThreadDispatcher.Instance.Enqueue(() =>
+            {
+                if (data.type != UnityEngine.Purchasing.ProductType.NonConsumable) return;
+                if (data.id != IAPWrapper.Const.NonConsumable.ID_DISABLE_ADS) return;
+                Toast.Instance.Show(LocalizedStrings.ads_disabled, Toast.ToastLifetime.SLOW);
+            });
         };
 
         BeforeLoadLevel += (nextScene, currentLevel, currentScene) =>
