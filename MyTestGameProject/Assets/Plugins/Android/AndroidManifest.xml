@@ -20,5 +20,10 @@
     <meta-data android:name="com.facebook.sdk.AutoLogAppEventsEnabled" android:value="true" />
     <meta-data android:name="com.facebook.sdk.AdvertiserIDCollectionEnabled" android:value="true" />
     <provider android:name="com.facebook.FacebookContentProvider" android:authorities="com.facebook.app.FacebookContentProvider780844982391448" android:exported="true" />
-  </application>
+    <receiver android:name="com.appsflyer.SingleInstallBroadcastReceiver" android:exported="true">
+      <intent-filter>
+         <action android:name="com.android.vending.INSTALL_REFERRER" />
+       </intent-filter>
+    </receiver> 
+</application>
 </manifest>

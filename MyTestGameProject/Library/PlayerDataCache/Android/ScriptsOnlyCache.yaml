@@ -58,6 +58,7 @@ ScriptsOnlyBuild:
     - GPSWrapperMB
     - GameManager
     - GameTipsPanel
+    - GoogleMobileAds.Common.MobileAdsEventExecutor
     - GridLayoutCellWidth
     - Ground
     - GroundBlock
@@ -198,6 +199,8 @@ ScriptsOnlyBuild:
     - TMPro.TextMeshProUGUI
     Unity.PackageManagerUI.Editor.dll:
     - UnityEditor.PackageManager.UI.PackageManagerWindow
+    UnityEditor.TestRunner.dll:
+    - UnityEditor.TestTools.TestRunner.TestListCacheData
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.EventTrigger
@@ -224,6 +227,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.ToggleGroup
     - UnityEngine.UI.VerticalLayoutGroup
     com.unity.multiplayer-hlapi.Runtime.dll:
+    - UnityEngine.Networking.NetworkCallbacks
     - UnityEngine.Networking.NetworkIdentity
   sceneClasses:
     Assets/Scenes/level.unity:
@@ -1687,7 +1691,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12340}
     - Class: 114
-      Script: {instanceID: 1925736}
+      Script: {instanceID: 2199742}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -2004,15 +2008,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 31912}
     - Class: 114
-      Script: {instanceID: 1935636}
+      Script: {instanceID: 2218684}
     - Class: 114
-      Script: {instanceID: 1941000}
-    - Class: 114
-      Script: {instanceID: 1947016}
-    - Class: 114
-      Script: {instanceID: 1947076}
-    - Class: 114
-      Script: {instanceID: 1951358}
+      Script: {instanceID: 2221014}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -5136,6 +5134,18 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: 
     className: IAPDemo
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: 
+    className: AppsFlyerTrackerCallbacks
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: 
+    className: AppsFlyer
   platform: 13
   scenePathNames:
   - Assets/Scenes/start_screen.unity

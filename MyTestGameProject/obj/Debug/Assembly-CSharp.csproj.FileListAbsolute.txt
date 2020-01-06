@@ -551,7 +551,6 @@ D:\development\unity\Thirty\UnityProject\MyTestGameProject\Temp\bin\Debug\Assemb
 D:\development\unity\Thirty\UnityProject\MyTestGameProject\Temp\bin\Debug\Assembly-CSharp.pdb
 D:\development\unity\Thirty\UnityProject\MyTestGameProject\Temp\bin\Debug\Apple.dll
 D:\development\unity\Thirty\UnityProject\MyTestGameProject\Temp\bin\Debug\Boo.Lang.dll
-D:\development\unity\Thirty\UnityProject\MyTestGameProject\Temp\bin\Debug\ChannelPurchase.dll
 D:\development\unity\Thirty\UnityProject\MyTestGameProject\Temp\bin\Debug\com.unity.multiplayer-hlapi.Editor.dll
 D:\development\unity\Thirty\UnityProject\MyTestGameProject\Temp\bin\Debug\com.unity.multiplayer-hlapi.Runtime.dll
 D:\development\unity\Thirty\UnityProject\MyTestGameProject\Temp\bin\Debug\com.unity.multiplayer-weaver.Editor.dll
@@ -694,7 +693,6 @@ D:\development\unity\Thirty\UnityProject\MyTestGameProject\Temp\bin\Debug\UnityE
 D:\development\unity\Thirty\UnityProject\MyTestGameProject\Temp\bin\Debug\UnityEditor.XR.LegacyInputHelpers.dll
 D:\development\unity\Thirty\UnityProject\MyTestGameProject\Temp\bin\Debug\UnityEngine.AccessibilityModule.dll
 D:\development\unity\Thirty\UnityProject\MyTestGameProject\Temp\bin\Debug\UnityEngine.Advertisements.dll
-D:\development\unity\Thirty\UnityProject\MyTestGameProject\Temp\bin\Debug\UnityEngine.Advertisements.Editor.dll
 D:\development\unity\Thirty\UnityProject\MyTestGameProject\Temp\bin\Debug\UnityEngine.AIModule.dll
 D:\development\unity\Thirty\UnityProject\MyTestGameProject\Temp\bin\Debug\UnityEngine.AnimationModule.dll
 D:\development\unity\Thirty\UnityProject\MyTestGameProject\Temp\bin\Debug\UnityEngine.ARModule.dll
@@ -757,7 +755,6 @@ D:\development\unity\Thirty\UnityProject\MyTestGameProject\Temp\bin\Debug\UnityE
 D:\development\unity\Thirty\UnityProject\MyTestGameProject\Temp\bin\Debug\UnityEngine.XRModule.dll
 D:\development\unity\Thirty\UnityProject\MyTestGameProject\Temp\bin\Debug\UnityScript.dll
 D:\development\unity\Thirty\UnityProject\MyTestGameProject\Temp\bin\Debug\UnityScript.Lang.dll
-D:\development\unity\Thirty\UnityProject\MyTestGameProject\Temp\bin\Debug\UnityStore.dll
 D:\development\unity\Thirty\UnityProject\MyTestGameProject\Temp\bin\Debug\winrt.dll
 D:\development\unity\Thirty\UnityProject\MyTestGameProject\Temp\bin\Debug\UnityEngine.ClusterInputModule.dll
 D:\development\unity\Thirty\UnityProject\MyTestGameProject\Temp\bin\Debug\UnityEngine.ClusterRendererModule.dll
@@ -790,6 +787,11 @@ D:\development\unity\Thirty\UnityProject\MyTestGameProject\obj\Debug\Assembly-CS
 D:\development\unity\Thirty\UnityProject\MyTestGameProject\obj\Debug\Assembly-CSharp.csproj.CopyComplete
 D:\development\unity\Thirty\UnityProject\MyTestGameProject\obj\Debug\Assembly-CSharp.dll
 D:\development\unity\Thirty\UnityProject\MyTestGameProject\obj\Debug\Assembly-CSharp.pdb
-D:\development\unity\Thirty\UnityProject\MyTestGameProject\Temp\bin\Debug\UnityEditor.Purchasing.dll
-D:\development\unity\Thirty\UnityProject\MyTestGameProject\Temp\bin\Debug\UnityEditor.UI.dll
 D:\development\unity\Thirty\UnityProject\MyTestGameProject\Temp\bin\Debug\Assembly-CSharp-firstpass.pdb
+D:\development\unity\Thirty\UnityProject\MyTestGameProject\Temp\bin\Debug\Facebook.Unity.dll
+D:\development\unity\Thirty\UnityProject\MyTestGameProject\Temp\bin\Debug\Facebook.Unity.Gameroom.dll
+D:\development\unity\Thirty\UnityProject\MyTestGameProject\Temp\bin\Debug\Facebook.Unity.Settings.dll
+D:\development\unity\Thirty\UnityProject\MyTestGameProject\Temp\bin\Debug\FacebookNamedPipeClient.dll
+D:\development\unity\Thirty\UnityProject\MyTestGameProject\Temp\bin\Debug\UnityEngine.Monetization.dll
+D:\development\unity\Thirty\UnityProject\MyTestGameProject\Temp\bin\Debug\UnityEngine.Monetization.pdb
+D:\development\unity\Thirty\UnityProject\MyTestGameProject\Temp\bin\Debug\UnityEngine.Advertisements.pdb
