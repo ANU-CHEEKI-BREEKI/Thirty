@@ -27,8 +27,8 @@
   <string name="two_phases_skill">This skill consists of two phases</string>
   <string name="error">[ERROR]</string>
   <string name="missing_string">[missing_string]</string>
-  <string name="squad_info_main">Weight, weapons and formation of the squad 
-Weight, weapons and formation of the squad</string>
+  <string name="squad_info_main">Weight, weapons and 
+formation</string>
   <string name="skills">Skills</string>
   <string name="consumables">Consumables</string>
   <string name="squad_info_main_stats">Basic characteristics</string>

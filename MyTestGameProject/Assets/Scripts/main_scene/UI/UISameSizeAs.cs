@@ -7,7 +7,8 @@ using UnityEngine;
 public class UISameSizeAs : MonoBehaviour
 {
     [SerializeField] RectTransform sameSizeAs;
-
+    [SerializeField] bool forceSetPivot = false;
+    [SerializeField] Vector2 pivot = Vector2.one;
     void Start()
     {
         Canvas.ForceUpdateCanvases();
@@ -40,5 +41,8 @@ public class UISameSizeAs : MonoBehaviour
         var newPos = (Vector3) mypos;
         newPos.z = z;
         rt.position = newPos;
+
+        if(forceSetPivot)
+            rt.pivot = pivot;
     }
 }

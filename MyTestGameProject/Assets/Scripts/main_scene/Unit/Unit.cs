@@ -205,11 +205,12 @@ public class Unit : MonoBehaviour
     /// список всех юнитов который атакуют данный юнит (который взяли данный юнит как target)
     /// </summary>
     List<Unit> targettedBy = new List<Unit>(5);
+    public int CountOfEnemiesWhichTagtetThisUnit => targettedBy.Count();
     bool attaking = false;
-    bool Attaking
+    public bool Attaking
     {
         get { return attaking; }
-        set
+        private set
         {
             if (value != attaking)
             {

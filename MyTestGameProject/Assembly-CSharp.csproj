@@ -177,6 +177,7 @@
     <Compile Include="Assets\GooglePlayGames\Platforms\TokenClient.cs" />
     <Compile Include="Assets\GooglePlayGames\PluginVersion.cs" />
     <Compile Include="Assets\GPSConstants\GPSConstants.cs" />
+    <Compile Include="Assets\GpsGOActivator.cs" />
     <Compile Include="Assets\InvokeButtonClick.cs" />
     <Compile Include="Assets\poly.cs" />
     <Compile Include="Assets\Scripts\main_scene\AddInfoPanelToSquad.cs" />
@@ -225,7 +226,7 @@
     <Compile Include="Assets\Scripts\main_scene\LevelGeneradingProgress.cs" />
     <Compile Include="Assets\Scripts\main_scene\LoadingScreenManager.cs" />
     <Compile Include="Assets\Scripts\main_scene\LocalizationByEditor.cs" />
-    <Compile Include="Assets\Scripts\main_scene\MainCanvas.cs" />
+    <Compile Include="Assets\Scripts\main_scene\MainCanvases.cs" />
     <Compile Include="Assets\Scripts\main_scene\MarketReminder.cs" />
     <Compile Include="Assets\Scripts\main_scene\MinimapCamera.cs" />
     <Compile Include="Assets\Scripts\main_scene\NewBehaviourScript.cs" />

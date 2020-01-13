@@ -22,7 +22,10 @@ public class FormationButton : MonoBehaviour, IPointerDownHandler, IPointerUpHan
     [SerializeField] TextMeshProUGUI cooldownText;
     [Space]
     [SerializeField] float buttonRadius = 50;
-
+    [Space]
+    [Header("Transforps for calc angles")]
+    [SerializeField] private Transform angleStartPos;
+    [SerializeField] private Transform angleMedianaDirPos;
     CanvasGroup thisCg;
 
     float angle;
@@ -170,7 +173,7 @@ public class FormationButton : MonoBehaviour, IPointerDownHandler, IPointerUpHan
 
         if (!mouseDown)
         {
-            startP = MainCanvases.MainInstance.WorldToScreenPoint(thisTransform.position);
+            startP = angleStartPos.position;
 
             mouseDown = true;
 
@@ -205,8 +208,8 @@ public class FormationButton : MonoBehaviour, IPointerDownHandler, IPointerUpHan
 
         if (touchId == touch.fingerId || count == 0)
             mouseDown = false;
-        
-        endP = touch.position;
+
+        GetEndPos(touch);
 
         if (canUse && enable && !mouseDown && OutOfButton(startP, endP))
         {
@@ -216,7 +219,12 @@ public class FormationButton : MonoBehaviour, IPointerDownHandler, IPointerUpHan
 
         SetImage(playerSquad.CurrentFormation);
         SetButtonsEnabled(false);
-    }    
+    }
+
+    private void GetEndPos(Touch touch)
+    {
+        endP = MainCanvases.MainInstance.ScreenToWorldPoint(touch.position);
+    }
 
     public void OnDrag(PointerEventData eventData)
     {
@@ -242,7 +250,7 @@ public class FormationButton : MonoBehaviour, IPointerDownHandler, IPointerUpHan
                 touch.position = Input.mousePosition;
             }
 
-            endP = touch.position;
+            GetEndPos(touch);
             if (OutOfButton(startP, endP))
             {
 
@@ -298,23 +306,24 @@ public class FormationButton : MonoBehaviour, IPointerDownHandler, IPointerUpHan
 
     float GetAngle(Vector3 spart, Vector3 end)
     {
-        Vector2 center = MainCanvases.MainInstance.WorldToScreenPoint(imagePhalanx.transform.position);
-        center = center - startP;
-        center.Normalize();
+        Vector2 center = angleMedianaDirPos.position;
 
-        Vector2 direction = endP - startP;
-        direction.Normalize();
+        var centerDir = center - startP;
+        var dragDir = endP - startP;
 
-        float res = Vector2.Angle(center, direction);
-        if (direction.y < center.x - direction.x)
+        float res = Vector2.Angle(centerDir, dragDir);
+
+        if (((endP.y - startP.y) * (center.x - startP.x) - (endP.x - startP.x) * (center.y - startP.y) ) < 0)
             res *= -1;
 
         return res;
     }
 
-    bool OutOfButton(Vector2 buttonCenterOnScreenCoord, Vector2 mousePosonScreenCoord)
+    bool OutOfButton(Vector2 buttonCenterOnWorldCoord, Vector2 mousePosOnWorldCoord)
     {
-        return (buttonCenterOnScreenCoord - mousePosonScreenCoord).sqrMagnitude > buttonRadius * buttonRadius;
-    }
+        var btnScreenPos = MainCanvases.MainInstance.WorldToScreenPoint(buttonCenterOnWorldCoord);
+        var mouseScreenPos = MainCanvases.MainInstance.WorldToScreenPoint(mousePosOnWorldCoord);
 
+        return (btnScreenPos - mouseScreenPos).sqrMagnitude > buttonRadius * buttonRadius;
+    }
 }
