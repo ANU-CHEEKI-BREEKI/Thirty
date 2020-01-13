@@ -832,6 +832,13 @@ public class Unit : MonoBehaviour
 
     float timerForCheckEquipment = 0;
 
+    #region костыль флага Attack
+
+    const float attackCheckDeltaTime = 2;
+    float attackCheckTimer = 0;
+
+    #endregion
+
     void Update()
     {
         float deltaTime = Time.deltaTime;
@@ -893,6 +900,24 @@ public class Unit : MonoBehaviour
             {
                 delayToFindTargetAndAttack -= deltaTime;
             }
+
+            #region костыль флага Attack
+            if (attackCheckTimer <= 0)
+            {
+                attackCheckTimer = attackCheckDeltaTime;
+
+                if(targettedBy.Count > 0)
+                    targettedBy.RemoveAll( (enemy) =>
+                    {
+                        return enemy == null || 
+                        Vector2.Distance(enemy.ThisTransform.position, ThisTransform.position) > enemy.Stats.AttackDistance;
+                    });
+            }
+            else
+            {
+                attackCheckTimer -= deltaTime;
+            }
+            #endregion
         }
         else
         {
