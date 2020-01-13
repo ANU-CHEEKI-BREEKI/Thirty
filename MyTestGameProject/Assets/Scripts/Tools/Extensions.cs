@@ -229,5 +229,20 @@ namespace Tools
             return firstObj;
         }
 
+
+        public static T GetComponentInParentUpToHierarchy<T>(this Transform transporm) where T : Component
+        {
+            T comp = null;
+            Transform parent = transporm;
+
+            while(parent != null && comp == null)
+            {
+                parent = parent.parent;
+                if (parent != null)
+                    comp = parent.GetComponent<T>();
+            }
+
+            return comp;
+        }
     }
 }

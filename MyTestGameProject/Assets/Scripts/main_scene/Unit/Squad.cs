@@ -421,6 +421,74 @@ public class Squad : MonoBehaviour
         SetProp(inventory.Weapon);
     }
 
+    private void OnEnable()
+    {
+        attackStateCheckingCoroutine = StartCoroutine(CheckAttackingState());
+        targetingStateCheckingCoroutine = StartCoroutine(CheckTargetingState());
+    }
+
+    private void OnDisable()
+    {
+        if (attackStateCheckingCoroutine != null)
+            StopCoroutine(attackStateCheckingCoroutine);
+        if (targetingStateCheckingCoroutine != null)
+            StopCoroutine(targetingStateCheckingCoroutine);
+    }
+
+    #region костыль флага боя отряда
+
+    //иногда отряд не выходит с боя, даже когда больше не сражается
+    //поэтому нужно иногда перепроверять состояние юнитов
+
+    //лучьше, конечно, всё переписать... но пока нет времени разбирать легаси код....
+
+    private Coroutine attackStateCheckingCoroutine = null;
+    IEnumerator CheckAttackingState()
+    {
+        while(true)
+        {
+            yield return new WaitForSeconds(2);
+            if (!inFight)
+                continue;
+            if(AttakingUnitsCount <= 0)            
+                continue;
+
+            var newCnt = 0;
+            foreach (var pos in UnitPositions)
+            {
+                var unit = pos.Unit;
+                if (unit.Attaking)
+                    newCnt++;
+            }
+
+            AttakingUnitsCount = newCnt;
+        }
+    }
+    private Coroutine targetingStateCheckingCoroutine = null;
+    IEnumerator CheckTargetingState()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(2);
+            if (!inFight)
+                continue;
+            if (TargettedUnitsCount <= 0)
+                continue;
+
+            var newCnt = 0;
+            foreach (var pos in UnitPositions)
+            {
+                var unit = pos.Unit;
+                if (unit.CountOfEnemiesWhichTagtetThisUnit > 0)
+                    newCnt++;
+            }
+
+            TargettedUnitsCount = newCnt;
+        }
+    }
+
+    #endregion
+
     void CreateUnit(int i)
     {
         Unit unit = Instantiate(

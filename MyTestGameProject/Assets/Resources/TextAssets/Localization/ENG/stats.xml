@@ -21,7 +21,7 @@ The skill to  override successfully the blow, aimed at the soldier's defeat.</st
   <string name="defenceHalfSector">Defence sector</string>
   <string name="defenceHalfSector_description">Sector ahead of the soldier, where he can successfully defend himself.</string>
   <string name="missileBlock">Missile block</string>
-  <string name="missileBlock_description">Probability to block the squad successfully.
+  <string name="missileBlock_description">Probability to block the projectile successfully.
 You should take into account that the shield blocks missiles only during  frontal shelling. Besides, if the shields are not raised,  the chance to block  shelling reduces by half.
 The value of frontal shooting is displayed.</string>
   <string name="attackDistance">Distance of attack</string>

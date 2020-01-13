@@ -245,7 +245,6 @@ D:\development\unity\Thirty\UnityProject\MyTestGameProject\Temp\bin\Debug\Assemb
 D:\development\unity\Thirty\UnityProject\MyTestGameProject\Temp\bin\Debug\Assembly-CSharp-firstpass.pdb
 D:\development\unity\Thirty\UnityProject\MyTestGameProject\Temp\bin\Debug\Apple.dll
 D:\development\unity\Thirty\UnityProject\MyTestGameProject\Temp\bin\Debug\Boo.Lang.dll
-D:\development\unity\Thirty\UnityProject\MyTestGameProject\Temp\bin\Debug\ChannelPurchase.dll
 D:\development\unity\Thirty\UnityProject\MyTestGameProject\Temp\bin\Debug\com.unity.multiplayer-hlapi.Editor.dll
 D:\development\unity\Thirty\UnityProject\MyTestGameProject\Temp\bin\Debug\com.unity.multiplayer-hlapi.Runtime.dll
 D:\development\unity\Thirty\UnityProject\MyTestGameProject\Temp\bin\Debug\com.unity.multiplayer-weaver.Editor.dll
@@ -450,7 +449,6 @@ D:\development\unity\Thirty\UnityProject\MyTestGameProject\Temp\bin\Debug\UnityE
 D:\development\unity\Thirty\UnityProject\MyTestGameProject\Temp\bin\Debug\UnityEngine.XRModule.dll
 D:\development\unity\Thirty\UnityProject\MyTestGameProject\Temp\bin\Debug\UnityScript.dll
 D:\development\unity\Thirty\UnityProject\MyTestGameProject\Temp\bin\Debug\UnityScript.Lang.dll
-D:\development\unity\Thirty\UnityProject\MyTestGameProject\Temp\bin\Debug\UnityStore.dll
 D:\development\unity\Thirty\UnityProject\MyTestGameProject\Temp\bin\Debug\winrt.dll
 D:\development\unity\Thirty\UnityProject\MyTestGameProject\Temp\bin\Debug\UnityEngine.ClusterInputModule.dll
 D:\development\unity\Thirty\UnityProject\MyTestGameProject\Temp\bin\Debug\UnityEngine.ClusterRendererModule.dll

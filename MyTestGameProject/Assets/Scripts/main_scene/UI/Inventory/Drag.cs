@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using Tools;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -15,7 +16,7 @@ public abstract class Drag : MonoBehaviour, IDragHandler, IBeginDragHandler, IEn
     protected bool CanCallClick { get { return canCallClick; } }
 
     protected Transform thisTransform;
-    Transform canvas;
+    Transform canvasTransform;
     public Transform OldParent { get; private set; }
     CanvasGroup canvasGroup;
 
@@ -26,7 +27,7 @@ public abstract class Drag : MonoBehaviour, IDragHandler, IBeginDragHandler, IEn
     void Start()
     {
         thisTransform = transform;
-        canvas = MainCanvases.MainInstance.Canvas.transform;
+        canvasTransform = thisTransform.GetComponentInParentUpToHierarchy<Canvas>().transform;
         canvasGroup = thisTransform.GetComponent<CanvasGroup>();
     }
 
@@ -57,7 +58,7 @@ public abstract class Drag : MonoBehaviour, IDragHandler, IBeginDragHandler, IEn
         if (CanDrag)
         {
             OldParent = thisTransform.parent;
-            thisTransform.SetParent(canvas);
+            thisTransform.SetParent(canvasTransform);
             canvasGroup.blocksRaycasts = false;
         }
         else
@@ -75,7 +76,7 @@ public abstract class Drag : MonoBehaviour, IDragHandler, IBeginDragHandler, IEn
     {
         if (CanDrag)
         {
-            if (thisTransform.parent == canvas)
+            if (thisTransform.parent == canvasTransform)
             {
                 if (OldParent.childCount == 0)
                     thisTransform.SetParent(OldParent);
