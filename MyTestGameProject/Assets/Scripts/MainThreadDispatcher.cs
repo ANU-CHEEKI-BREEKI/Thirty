@@ -24,7 +24,11 @@ public class MainThreadDispatcher : MonoBehaviour
     private static void CreateNewInstance(MainThreadDispatcher component = null)
     {
         if (component == null)
-            new GameObject().AddComponent<MainThreadDispatcher>();
+        {
+            var go = new GameObject();
+            go.name = nameof(MainThreadDispatcher);
+            go.AddComponent<MainThreadDispatcher>();
+        }
         else
             _instance = component;
 

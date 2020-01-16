@@ -833,10 +833,12 @@ public class Unit : MonoBehaviour
     float timerForCheckEquipment = 0;
 
     #region костыль флага Attack
-
     const float attackCheckDeltaTime = 2;
     float attackCheckTimer = 0;
-
+    #endregion
+    #region units stuck after pushing bug fix
+    const float pudhStuckCheckDeltaTime = 2;
+    float pudhStuckCheckTimer = 0;
     #endregion
 
     void Update()
@@ -918,6 +920,27 @@ public class Unit : MonoBehaviour
                 attackCheckTimer -= deltaTime;
             }
             #endregion
+            #region units stuck after pushing bug fix
+            if (pudhStuckCheckTimer <= 0)
+            {
+                pudhStuckCheckTimer = pudhStuckCheckDeltaTime;
+
+                if (pushedUnit.Count > 0)
+                {
+                    pushedUnit.RemoveAll((punit) =>
+                    {
+                        return punit == null ||
+                        Vector2.SqrMagnitude(punit.ThisTransform.position - ThisTransform.position) > 1;
+                    });
+                    olreadyNotPushingAlly = true;
+                }
+            }
+            else
+            {
+                pudhStuckCheckTimer -= deltaTime;
+            }
+            #endregion
+
         }
         else
         {
