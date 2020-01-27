@@ -435,6 +435,8 @@ public sealed class LocalizedStrings
     public static string tip_skill_rally_ranks { get; private set; }
     public static string tip_phalanx_push { get; private set; }
     public static string tip_shield_bash { get; private set; }
+    public static string tip_arrow_valley_warning_shoot { get; private set; }
+    public static string tip_skills_and_cons_warning_text { get; private set; }
 
 #endregion tips
 #region toast

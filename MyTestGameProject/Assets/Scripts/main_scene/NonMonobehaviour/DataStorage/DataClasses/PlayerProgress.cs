@@ -79,7 +79,12 @@ public class PlayerProgress : IResetable, ITempValuesApplyable, ISavable, IMerge
 
         Flags = d.Flags;
         Score.ApplyLoadedData(d.Score);
+
         Stats = d.Stats;
+        //if some gamers olready have some saved data
+        //we need to repair it to new stats range
+        Stats.RepairMaxMinRanges();
+
         Skills.ApplyLoadedData(d.Skills);
         Equipment = d.Equipment;
         Squad.ApplyLoadedData(d.Squad);
