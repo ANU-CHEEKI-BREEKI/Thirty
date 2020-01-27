@@ -36,3 +36,6 @@
 
 # Google Ads
 -keep class com.google.unity.ads.** { *; }
+
+# Goole Play Games
+-keep class com.google.androidgamesdk.* { *; }
