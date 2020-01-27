@@ -2,7 +2,7 @@
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <LangVersion>latest</LangVersion>
-    <CscToolPath>C:\UnityEditor\2019.1.0f2\Editor\Data\Tools\RoslynScripts</CscToolPath>
+    <CscToolPath>C:\UnityEditor\2019.3.0f3\Editor\Data\Tools\RoslynScripts</CscToolPath>
     <CscToolExe>unity_csc.bat</CscToolExe>
   </PropertyGroup>
   <PropertyGroup>
@@ -24,7 +24,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE;UNITY_2019_1_0;UNITY_2019_1;UNITY_2019;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_INCLUDE_TESTS;UNITY_PURCHASING;UNITY_ANALYTICS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_TEXTURE_STREAMING;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;INCLUDE_PUBNUB;ENABLE_VIDEO;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_LOCALIZATION;PLATFORM_ANDROID;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_SUBSTANCE;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_EVENT_QUEUE;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_ADS_ID;UNITY_CAN_SHOW_SPLASH_SCREEN;ENABLE_VR;ENABLE_AR;UNITY_HAS_GOOGLEVR;UNITY_HAS_TANGO;ENABLE_SPATIALTRACKING;ENABLE_RUNTIME_PERMISSIONS;ENABLE_ENGINE_CODE_STRIPPING;UNITY_ASTC_ONLY_DECOMPRESS;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;NET_4_6;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_VSTU;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <DefineConstants>DEBUG;TRACE;UNITY_2019_3_0;UNITY_2019_3;UNITY_2019;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_INCLUDE_TESTS;UNITY_PURCHASING;UNITY_ANALYTICS;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_RUNTIME_PERMISSIONS;ENABLE_ENGINE_CODE_STRIPPING;ENABLE_ONSCREEN_KEYBOARD;INCLUDE_DYNAMIC_GI;ENABLE_MONO_BDWGC;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;ENABLE_VIDEO;PLATFORM_ANDROID;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;PLATFORM_SUPPORTS_ADS_ID;UNITY_CAN_SHOW_SPLASH_SCREEN;UNITY_HAS_GOOGLEVR;UNITY_HAS_TANGO;ENABLE_SPATIALTRACKING;UNITY_ASTC_ONLY_DECOMPRESS;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;NET_4_6;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_VSTU;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169;CS0649;IDE0051</NoWarn>
@@ -51,14 +51,14 @@
     <UnityProjectGenerator>Unity/VSTU</UnityProjectGenerator>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>Android:13</UnityBuildTarget>
-    <UnityVersion>2019.1.0f2</UnityVersion>
+    <UnityVersion>2019.3.0f3</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
-      <HintPath>C:\UnityEditor\2019.1.0f2\Editor\Data\Managed/UnityEngine/UnityEngine.dll</HintPath>
+      <HintPath>C:\UnityEditor\2019.3.0f3\Editor\Data\Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor">
-      <HintPath>C:\UnityEditor\2019.1.0f2\Editor\Data\Managed/UnityEditor.dll</HintPath>
+      <HintPath>C:\UnityEditor\2019.3.0f3\Editor\Data\Managed/UnityEditor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -83,13 +83,14 @@
     <Compile Include="Assets\FacebookSDK\Examples\Scripts\SubMenus\MainMenu.cs" />
     <Compile Include="Assets\FacebookSDK\Examples\Scripts\SubMenus\Pay.cs" />
     <Compile Include="Assets\GOActivator.cs" />
-    <Compile Include="Assets\GoogleMobileAds\Api\AdapterStatus.cs" />
+    <Compile Include="Assets\GPSConstants\GPSConstants.cs" />
     <Compile Include="Assets\GoogleMobileAds\Api\AdErrorEventArgs.cs" />
     <Compile Include="Assets\GoogleMobileAds\Api\AdFailedToLoadEventArgs.cs" />
     <Compile Include="Assets\GoogleMobileAds\Api\AdLoader.cs" />
     <Compile Include="Assets\GoogleMobileAds\Api\AdPosition.cs" />
     <Compile Include="Assets\GoogleMobileAds\Api\AdRequest.cs" />
     <Compile Include="Assets\GoogleMobileAds\Api\AdSize.cs" />
+    <Compile Include="Assets\GoogleMobileAds\Api\AdapterStatus.cs" />
     <Compile Include="Assets\GoogleMobileAds\Api\BannerView.cs" />
     <Compile Include="Assets\GoogleMobileAds\Api\CustomNativeEventArgs.cs" />
     <Compile Include="Assets\GoogleMobileAds\Api\CustomNativeTemplateAd.cs" />
@@ -134,9 +135,9 @@
     <Compile Include="Assets\GooglePlayGames\BasicApi\Events\IEventsClient.cs" />
     <Compile Include="Assets\GooglePlayGames\BasicApi\IPlayGamesClient.cs" />
     <Compile Include="Assets\GooglePlayGames\BasicApi\LeaderboardScoreData.cs" />
-    <Compile Include="Assets\GooglePlayGames\BasicApi\Multiplayer\Invitation.cs" />
     <Compile Include="Assets\GooglePlayGames\BasicApi\Multiplayer\IRealTimeMultiplayerClient.cs" />
     <Compile Include="Assets\GooglePlayGames\BasicApi\Multiplayer\ITurnBasedMultiplayerClient.cs" />
+    <Compile Include="Assets\GooglePlayGames\BasicApi\Multiplayer\Invitation.cs" />
     <Compile Include="Assets\GooglePlayGames\BasicApi\Multiplayer\MatchOutcome.cs" />
     <Compile Include="Assets\GooglePlayGames\BasicApi\Multiplayer\Participant.cs" />
     <Compile Include="Assets\GooglePlayGames\BasicApi\Multiplayer\Player.cs" />
@@ -149,16 +150,16 @@
     <Compile Include="Assets\GooglePlayGames\BasicApi\Nearby\EndpointDetails.cs" />
     <Compile Include="Assets\GooglePlayGames\BasicApi\Nearby\INearbyConnectionClient.cs" />
     <Compile Include="Assets\GooglePlayGames\BasicApi\Nearby\NearbyConnectionConfiguration.cs" />
-    <Compile Include="Assets\GooglePlayGames\BasicApi\PlayerStats.cs" />
     <Compile Include="Assets\GooglePlayGames\BasicApi\PlayGamesClientConfiguration.cs" />
+    <Compile Include="Assets\GooglePlayGames\BasicApi\PlayerStats.cs" />
     <Compile Include="Assets\GooglePlayGames\BasicApi\SavedGame\ISavedGameClient.cs" />
     <Compile Include="Assets\GooglePlayGames\BasicApi\SavedGame\ISavedGameMetadata.cs" />
     <Compile Include="Assets\GooglePlayGames\BasicApi\SavedGame\SavedGameMetadataUpdate.cs" />
     <Compile Include="Assets\GooglePlayGames\BasicApi\ScorePageToken.cs" />
     <Compile Include="Assets\GooglePlayGames\BasicApi\Video\CaptureOverlayStateListener.cs" />
-    <Compile Include="Assets\GooglePlayGames\BasicApi\Video\iVideoClient.cs" />
     <Compile Include="Assets\GooglePlayGames\BasicApi\Video\VideoCapabilities.cs" />
     <Compile Include="Assets\GooglePlayGames\BasicApi\Video\VideoCaptureState.cs" />
+    <Compile Include="Assets\GooglePlayGames\BasicApi\Video\iVideoClient.cs" />
     <Compile Include="Assets\GooglePlayGames\GameInfo.cs" />
     <Compile Include="Assets\GooglePlayGames\ISocialPlatform\PlayGamesAchievement.cs" />
     <Compile Include="Assets\GooglePlayGames\ISocialPlatform\PlayGamesLeaderboard.cs" />
@@ -187,11 +188,58 @@
     <Compile Include="Assets\GooglePlayGames\Platforms\PlayGamesClientFactory.cs" />
     <Compile Include="Assets\GooglePlayGames\Platforms\TokenClient.cs" />
     <Compile Include="Assets\GooglePlayGames\PluginVersion.cs" />
-    <Compile Include="Assets\GPSConstants\GPSConstants.cs" />
     <Compile Include="Assets\GpsGOActivator.cs" />
     <Compile Include="Assets\InvokeButtonClick.cs" />
     <Compile Include="Assets\OpenAllEquipmant.cs" />
-    <Compile Include="Assets\poly.cs" />
+    <Compile Include="Assets\Scripts\MainThreadDispatcher.cs" />
+    <Compile Include="Assets\Scripts\MapBlockConverter\ConvertBlockToExpected.cs" />
+    <Compile Include="Assets\Scripts\MapBlockConverter\ConvertMockRuleTileToRealRuleTile.cs" />
+    <Compile Include="Assets\Scripts\MapBlockConverter\ConvertRuleTileToSimpleTile.cs" />
+    <Compile Include="Assets\Scripts\MapBlockConverter\ConvertTileResourceManager.cs" />
+    <Compile Include="Assets\Scripts\MapBlockConverter\DeleteAllSpriteMaskAndGroups.cs" />
+    <Compile Include="Assets\Scripts\MapBlockConverter\DeleteTilesOutOfBounds.cs" />
+    <Compile Include="Assets\Scripts\MapBlockConverter\DropOnBreakResourcesManager.cs" />
+    <Compile Include="Assets\Scripts\MapBlockConverter\MockRuleTile.cs" />
+    <Compile Include="Assets\Scripts\MapBlockConverter\ResetAllDropOnBreakComponents.cs" />
+    <Compile Include="Assets\Scripts\MapBlockConverter\SetAllTileCollidersToUseByComposite.cs" />
+    <Compile Include="Assets\Scripts\MapBlockConverter\SetAllTilerenderersToNonmask.cs" />
+    <Compile Include="Assets\Scripts\MapBlockConverter\SetAllWaterOutterToDefaultPhysicLayer.cs" />
+    <Compile Include="Assets\Scripts\PreferedCameraAspect.cs" />
+    <Compile Include="Assets\Scripts\RelativeAnimation.cs" />
+    <Compile Include="Assets\Scripts\SelectLanguageFirstTime.cs" />
+    <Compile Include="Assets\Scripts\SetLanguageButton.cs" />
+    <Compile Include="Assets\Scripts\ShowColliderGizmos.cs" />
+    <Compile Include="Assets\Scripts\StartScreenLogo.cs" />
+    <Compile Include="Assets\Scripts\Tools\Extensions.cs" />
+    <Compile Include="Assets\Scripts\Tools\FileManagement.cs" />
+    <Compile Include="Assets\Scripts\Tools\Math.cs" />
+    <Compile Include="Assets\Scripts\Tools\Others.cs" />
+    <Compile Include="Assets\Scripts\Tutorial\ATriggerConstraint.cs" />
+    <Compile Include="Assets\Scripts\Tutorial\ActivateOnTriggerEnter.cs" />
+    <Compile Include="Assets\Scripts\Tutorial\CloseSquadPanelsOnAwake.cs" />
+    <Compile Include="Assets\Scripts\Tutorial\GOTriggerEvent.cs" />
+    <Compile Include="Assets\Scripts\Tutorial\ITriggerEvent.cs" />
+    <Compile Include="Assets\Scripts\Tutorial\KillAllUnitsInRangeOnAwake.cs" />
+    <Compile Include="Assets\Scripts\Tutorial\MarketTutorial\AddPlayerScoreForTutorial.cs" />
+    <Compile Include="Assets\Scripts\Tutorial\MarketTutorial\DisableOnPlayerInvSkillChanged.cs" />
+    <Compile Include="Assets\Scripts\Tutorial\MarketTutorial\DisableOnPlyerInvConsumableChanged.cs" />
+    <Compile Include="Assets\Scripts\Tutorial\MarketTutorial\DisableOnPlyerInvShieldChanged.cs" />
+    <Compile Include="Assets\Scripts\Tutorial\MarketTutorial\SetAnimationTargetPositonAsTooltipActionButtoAtIndex.cs" />
+    <Compile Include="Assets\Scripts\Tutorial\ScaleByScreenSize.cs" />
+    <Compile Include="Assets\Scripts\Tutorial\SetPositionAsShieldItem.cs" />
+    <Compile Include="Assets\Scripts\Tutorial\SpawnOnTriggerStay.cs" />
+    <Compile Include="Assets\Scripts\Tutorial\SquadGoToThisTransform.cs" />
+    <Compile Include="Assets\Scripts\Tutorial\SquadTriggerInitiator.cs" />
+    <Compile Include="Assets\Scripts\Tutorial\TriggerConstraintDestroyGameObject.cs" />
+    <Compile Include="Assets\Scripts\Tutorial\TriggerConstraintGOInside.cs" />
+    <Compile Include="Assets\Scripts\Tutorial\TriggerConstraintPlayeFormationPhalanx.cs" />
+    <Compile Include="Assets\Scripts\Tutorial\TriggerConstraintPlayeFormationShields.cs" />
+    <Compile Include="Assets\Scripts\Tutorial\TriggerConstraintPlayerTakesUnits.cs" />
+    <Compile Include="Assets\Scripts\Tutorial\TriggerConstraintPlayerVeryHeavyWeight.cs" />
+    <Compile Include="Assets\Scripts\Tutorial\TriggerConstraintShieldInPlayerInventory.cs" />
+    <Compile Include="Assets\Scripts\Tutorial\TriggerConstraintSpearInPlayerInventory.cs" />
+    <Compile Include="Assets\Scripts\Tutorial\TriggerGoToMainMenu.cs" />
+    <Compile Include="Assets\Scripts\Tutorial\TutorialPanel.cs" />
     <Compile Include="Assets\Scripts\main_scene\AddInfoPanelToSquad.cs" />
     <Compile Include="Assets\Scripts\main_scene\ArrowsValley.cs" />
     <Compile Include="Assets\Scripts\main_scene\BreakOnCollision.cs" />
@@ -218,9 +266,9 @@
     <Compile Include="Assets\Scripts\main_scene\Exit.cs" />
     <Compile Include="Assets\Scripts\main_scene\FadeScreen.cs" />
     <Compile Include="Assets\Scripts\main_scene\FormationButton.cs" />
-    <Compile Include="Assets\Scripts\main_scene\GameManager.cs" />
     <Compile Include="Assets\Scripts\main_scene\GPSLogInButton.cs" />
     <Compile Include="Assets\Scripts\main_scene\GPSWrapperMB.cs" />
+    <Compile Include="Assets\Scripts\main_scene\GameManager.cs" />
     <Compile Include="Assets\Scripts\main_scene\Ground.cs" />
     <Compile Include="Assets\Scripts\main_scene\GroundBlock.cs" />
     <Compile Include="Assets\Scripts\main_scene\ISkillRadiusable.cs" />
@@ -242,7 +290,6 @@
     <Compile Include="Assets\Scripts\main_scene\MarketReminder.cs" />
     <Compile Include="Assets\Scripts\main_scene\MinimapCamera.cs" />
     <Compile Include="Assets\Scripts\main_scene\NewBehaviourScript.cs" />
-    <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\AchivementStandToTheLast.cs" />
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\AExecutableStack.cs" />
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\AIExecutableBehaviours\AExecutableBehaviour.cs" />
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\AIExecutableBehaviours\ConsumableBehaviours\PilumsVolleyBehaviour.cs" />
@@ -250,6 +297,7 @@
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\AIExecutableBehaviours\SkillsBehaviours\ArrowVolleyBehaviour.cs" />
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\AIExecutableBehaviours\SkillsBehaviours\SkillChargeBehaviour.cs" />
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\AStack.cs" />
+    <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\AchivementStandToTheLast.cs" />
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\ConsumableStack.cs" />
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\Controllers\SquadController.cs" />
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\Damage.cs" />
@@ -285,7 +333,6 @@
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\IDescriptionable.cs" />
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\IGizmosDrawable.cs" />
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\IInventoryUI.cs" />
-    <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\Inventory.cs" />
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\IPresenter.cs" />
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\ISkillCooldownable.cs" />
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\ISkillCostable.cs" />
@@ -296,6 +343,7 @@
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\ISkillTwoPhases.cs" />
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\IStackCountConstraintable.cs" />
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\ITerrainWalker.cs" />
+    <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\Inventory.cs" />
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\Labirinth.cs" />
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\LevelInfo.cs" />
     <Compile Include="Assets\Scripts\main_scene\NonMonobehaviour\Localization.cs" />
@@ -342,6 +390,7 @@
     <Compile Include="Assets\Scripts\main_scene\UI\GameTipsPanel.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\HideCanvasOnAvake.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\IDialogBox.cs" />
+    <Compile Include="Assets\Scripts\main_scene\UI\IUIItemPresenter.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\Inventory\ADropToMe.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\Inventory\Drag.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\Inventory\DragConsumable.cs" />
@@ -368,7 +417,6 @@
     <Compile Include="Assets\Scripts\main_scene\UI\Inventory\SquadSkillsInventoryUI.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\Inventory\StatsBlock.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\Inventory\StatsPanelUI.cs" />
-    <Compile Include="Assets\Scripts\main_scene\UI\IUIItemPresenter.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\LanguageToggleGUI.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\LayoutElementPrefSizeByMainCameraHeightPercent.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\LinearLayoutPercentSpacingByMainCamHeight.cs" />
@@ -381,9 +429,9 @@
     <Compile Include="Assets\Scripts\main_scene\UI\MarketScene\NumberConverter.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\MarketScene\ScoreMarket.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\MarketScene\ScorePanel.cs" />
+    <Compile Include="Assets\Scripts\main_scene\UI\MarketScene\SkillUpgradeButton.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\MarketScene\SkillsPanelScrollAndHeight.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\MarketScene\SkillsUpgrade.cs" />
-    <Compile Include="Assets\Scripts\main_scene\UI\MarketScene\SkillUpgradeButton.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\MarketScene\StatsUpgrade.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\ModalInfoPanel.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\NumberPickerDialogBox.cs" />
@@ -414,199 +462,151 @@
     <Compile Include="Assets\Scripts\main_scene\UI\ToAnotherSceneButton.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\Toast.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\ToggleDoubleCheckmarks.cs" />
-    <Compile Include="Assets\Scripts\main_scene\UI\UiEvents.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\UILineConnector.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\UILineRenderer.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\UISameSizeAs.cs" />
+    <Compile Include="Assets\Scripts\main_scene\UI\UiEvents.cs" />
     <Compile Include="Assets\Scripts\main_scene\UI\VolumeSlider.cs" />
     <Compile Include="Assets\Scripts\main_scene\Unit\FollowCanvasToSquad.cs" />
     <Compile Include="Assets\Scripts\main_scene\Unit\Squad.cs" />
     <Compile Include="Assets\Scripts\main_scene\Unit\SquadDirectionIndicator.cs" />
-    <Compile Include="Assets\Scripts\main_scene\Unit\SquadlessUnitSpawner.cs" />
     <Compile Include="Assets\Scripts\main_scene\Unit\SquadSpawner.cs" />
+    <Compile Include="Assets\Scripts\main_scene\Unit\SquadlessUnitSpawner.cs" />
     <Compile Include="Assets\Scripts\main_scene\Unit\Unit.cs" />
     <Compile Include="Assets\Scripts\main_scene\Unit\UnitPosition.cs" />
     <Compile Include="Assets\Scripts\main_scene\UnitOutline.cs" />
-    <Compile Include="Assets\Scripts\MainThreadDispatcher.cs" />
-    <Compile Include="Assets\Scripts\MapBlockConverter\ConvertBlockToExpected.cs" />
-    <Compile Include="Assets\Scripts\MapBlockConverter\ConvertMockRuleTileToRealRuleTile.cs" />
-    <Compile Include="Assets\Scripts\MapBlockConverter\ConvertRuleTileToSimpleTile.cs" />
-    <Compile Include="Assets\Scripts\MapBlockConverter\ConvertTileResourceManager.cs" />
-    <Compile Include="Assets\Scripts\MapBlockConverter\DeleteAllSpriteMaskAndGroups.cs" />
-    <Compile Include="Assets\Scripts\MapBlockConverter\DeleteTilesOutOfBounds.cs" />
-    <Compile Include="Assets\Scripts\MapBlockConverter\DropOnBreakResourcesManager.cs" />
-    <Compile Include="Assets\Scripts\MapBlockConverter\MockRuleTile.cs" />
-    <Compile Include="Assets\Scripts\MapBlockConverter\ResetAllDropOnBreakComponents.cs" />
-    <Compile Include="Assets\Scripts\MapBlockConverter\SetAllTileCollidersToUseByComposite.cs" />
-    <Compile Include="Assets\Scripts\MapBlockConverter\SetAllTilerenderersToNonmask.cs" />
-    <Compile Include="Assets\Scripts\MapBlockConverter\SetAllWaterOutterToDefaultPhysicLayer.cs" />
-    <Compile Include="Assets\Scripts\PreferedCameraAspect.cs" />
-    <Compile Include="Assets\Scripts\RelativeAnimation.cs" />
-    <Compile Include="Assets\Scripts\SelectLanguageFirstTime.cs" />
-    <Compile Include="Assets\Scripts\SetLanguageButton.cs" />
-    <Compile Include="Assets\Scripts\ShowColliderGizmos.cs" />
-    <Compile Include="Assets\Scripts\StartScreenLogo.cs" />
-    <Compile Include="Assets\Scripts\Tools\Extensions.cs" />
-    <Compile Include="Assets\Scripts\Tools\FileManagement.cs" />
-    <Compile Include="Assets\Scripts\Tools\Math.cs" />
-    <Compile Include="Assets\Scripts\Tools\Others.cs" />
-    <Compile Include="Assets\Scripts\Tutorial\ActivateOnTriggerEnter.cs" />
-    <Compile Include="Assets\Scripts\Tutorial\ATriggerConstraint.cs" />
-    <Compile Include="Assets\Scripts\Tutorial\CloseSquadPanelsOnAwake.cs" />
-    <Compile Include="Assets\Scripts\Tutorial\GOTriggerEvent.cs" />
-    <Compile Include="Assets\Scripts\Tutorial\ITriggerEvent.cs" />
-    <Compile Include="Assets\Scripts\Tutorial\KillAllUnitsInRangeOnAwake.cs" />
-    <Compile Include="Assets\Scripts\Tutorial\MarketTutorial\AddPlayerScoreForTutorial.cs" />
-    <Compile Include="Assets\Scripts\Tutorial\MarketTutorial\DisableOnPlayerInvSkillChanged.cs" />
-    <Compile Include="Assets\Scripts\Tutorial\MarketTutorial\DisableOnPlyerInvConsumableChanged.cs" />
-    <Compile Include="Assets\Scripts\Tutorial\MarketTutorial\DisableOnPlyerInvShieldChanged.cs" />
-    <Compile Include="Assets\Scripts\Tutorial\MarketTutorial\SetAnimationTargetPositonAsTooltipActionButtoAtIndex.cs" />
-    <Compile Include="Assets\Scripts\Tutorial\ScaleByScreenSize.cs" />
-    <Compile Include="Assets\Scripts\Tutorial\SetPositionAsShieldItem.cs" />
-    <Compile Include="Assets\Scripts\Tutorial\SpawnOnTriggerStay.cs" />
-    <Compile Include="Assets\Scripts\Tutorial\SquadGoToThisTransform.cs" />
-    <Compile Include="Assets\Scripts\Tutorial\SquadTriggerInitiator.cs" />
-    <Compile Include="Assets\Scripts\Tutorial\TriggerConstraintDestroyGameObject.cs" />
-    <Compile Include="Assets\Scripts\Tutorial\TriggerConstraintGOInside.cs" />
-    <Compile Include="Assets\Scripts\Tutorial\TriggerConstraintPlayeFormationPhalanx.cs" />
-    <Compile Include="Assets\Scripts\Tutorial\TriggerConstraintPlayeFormationShields.cs" />
-    <Compile Include="Assets\Scripts\Tutorial\TriggerConstraintPlayerTakesUnits.cs" />
-    <Compile Include="Assets\Scripts\Tutorial\TriggerConstraintPlayerVeryHeavyWeight.cs" />
-    <Compile Include="Assets\Scripts\Tutorial\TriggerConstraintShieldInPlayerInventory.cs" />
-    <Compile Include="Assets\Scripts\Tutorial\TriggerConstraintSpearInPlayerInventory.cs" />
-    <Compile Include="Assets\Scripts\Tutorial\TriggerGoToMainMenu.cs" />
-    <Compile Include="Assets\Scripts\Tutorial\TutorialPanel.cs" />
     <Compile Include="Assets\SortEquipmentByType.cs" />
     <Compile Include="Assets\ToggleGroupAllowSwitchOffReverse.cs" />
-    <None Include="Assets\Resources\TextAssets\Localization\ENG\formations.xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (BOTTOM) (TOP) (RIGHT) ] [EXIT LEFT] [SWAMP] (1).xml" />
-    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
-    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (RIGHT) ] [EXIT TOP] [SWAMP] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (RIGHT) ] [EXIT TOP] [GRASSLAND] (1).xml" />
+    <Compile Include="Assets\poly.cs" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (BOTTOM) (LEFT) (RIGHT) ] [GRASSLAND] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (BOTTOM) (TOP) (LEFT) ] [EXIT RIGHT] [SWAMP] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (TOP) ] [EXIT LEFT] [GRASSLAND] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (BOTTOM) (LEFT) ] [EXIT TOP] [GRASSLAND] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (BOTTOM) (LEFT) ] [EXIT RIGHT] [SWAMP] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (RIGHT) ] [EXIT LEFT] [SWAMP] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (BOTTOM) (RIGHT) ] [SWAMP] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (LEFT) ] [GRASSLAND] (1).xml" />
+    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (TOP) (LEFT) ] [EXIT RIGHT] [GRASSLAND] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (BOTTOM) (TOP) ] [SWAMP] (1).xml" />
+    <None Include="Assets\FacebookSDK\link.xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (BOTTOM) (TOP) (LEFT) (RIGHT) ] [SWAMP] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\Localization\ENG\terrain..xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (BOTTOM) (TOP) ] [GRASSLAND] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (TOP) ] [EXIT BOTTOM] [SWAMP] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (LEFT) (RIGHT) ] [EXIT TOP] [GRASSLAND] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\Localization\RU\ads.xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (BOTTOM) (RIGHT) ] [EXIT TOP] [SWAMP] (1).xml" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (TOP) (LEFT) ] [SWAMP] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (LEFT) ] [EXIT RIGHT] [GRASSLAND] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (TOP) (LEFT) ] [GRASSLAND] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (BOTTOM) (LEFT) ] [SWAMP] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (LEFT) ] [EXIT TOP] [GRASSLAND] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\Localization\ENG\items.xml" />
+    <None Include="Assets\Resources\TextAssets\Localization\RU\tips.xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (BOTTOM) (TOP) ] [EXIT RIGHT] [GRASSLAND] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (BOTTOM) (TOP) ] [EXIT LEFT] [SWAMP] (1).xml" />
     <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (BOTTOM) ] [SWAMP] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\Localization\ENG\formations.xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (TOP) ] [EXIT RIGHT] [SWAMP] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (BOTTOM) (TOP) (RIGHT) ] [EXIT LEFT] [SWAMP] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (RIGHT) ] [SWAMP] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (TOP) (LEFT) ] [EXIT BOTTOM] [GRASSLAND] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (BOTTOM) (LEFT) (RIGHT) ] [EXIT TOP] [SWAMP] (1).xml" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (BOTTOM) (RIGHT) ] [EXIT LEFT] [SWAMP] (1).xml" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
+    <None Include="Assets\Resources\TextAssets\Localization\RU\skills.xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (BOTTOM) (RIGHT) ] [EXIT LEFT] [GRASSLAND] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (BOTTOM) (RIGHT) ] [GRASSLAND] (1).xml" />
+    <None Include="Assets\GooglePlayGames\Plugins\Android\GooglePlayGamesManifest.plugin\AndroidManifest.xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (TOP) (RIGHT) ] [GRASSLAND] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\Localization\ENG\toast.xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (TOP) (RIGHT) ] [EXIT BOTTOM] [SWAMP] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (LEFT) ] [EXIT TOP] [SWAMP] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (LEFT) (RIGHT) ] [GRASSLAND] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\Localization\ENG\skills.xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (BOTTOM) ] [GRASSLAND] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\Localization\ENG\tips.xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (BOTTOM) (TOP) (LEFT) ] [GRASSLAND] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (TOP) (RIGHT) ] [EXIT LEFT] [SWAMP] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (BOTTOM) ] [EXIT RIGHT] [SWAMP] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (TOP) (LEFT) (RIGHT) ] [GRASSLAND] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (TOP) (LEFT) ] [EXIT RIGHT] [SWAMP] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (BOTTOM) (TOP) ] [EXIT LEFT] [GRASSLAND] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (TOP) (LEFT) (RIGHT) ] [SWAMP] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (TOP) (RIGHT) ] [SWAMP] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (BOTTOM) (LEFT) (RIGHT) ] [EXIT TOP] [GRASSLAND] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (BOTTOM) (TOP) (RIGHT) ] [EXIT LEFT] [GRASSLAND] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (TOP) ] [GRASSLAND] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (BOTTOM) (LEFT) ] [EXIT RIGHT] [GRASSLAND] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (BOTTOM) (LEFT) ] [EXIT TOP] [SWAMP] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (TOP) ] [EXIT BOTTOM] [GRASSLAND] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (LEFT) (RIGHT) ] [EXIT BOTTOM] [GRASSLAND] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (LEFT) ] [SWAMP] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (LEFT) (RIGHT) ] [SWAMP] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\Localization\RU\toast.xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (LEFT) ] [EXIT RIGHT] [SWAMP] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (BOTTOM) ] [EXIT LEFT] [GRASSLAND] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (RIGHT) ] [GRASSLAND] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (LEFT) ] [EXIT BOTTOM] [GRASSLAND] (1).xml" />
+    <None Include="Assets\Shaders\SpriteOutline.shader" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (BOTTOM) (LEFT) ] [GRASSLAND] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (BOTTOM) ] [EXIT TOP] [SWAMP] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (BOTTOM) ] [EXIT LEFT] [SWAMP] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (TOP) (RIGHT) ] [EXIT BOTTOM] [GRASSLAND] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (RIGHT) ] [EXIT LEFT] [GRASSLAND] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\Localization\ENG\tips.xml.xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (BOTTOM) (TOP) (RIGHT) ] [SWAMP] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (TOP) (LEFT) (RIGHT) ] [EXIT BOTTOM] [SWAMP] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (BOTTOM) ] [EXIT TOP] [GRASSLAND] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\Localization\ENG\stats.xml" />
     <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (TOP) (LEFT) (RIGHT) ] [EXIT BOTTOM] [GRASSLAND] (1).xml" />
     <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (RIGHT) ] [EXIT BOTTOM] [GRASSLAND] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (RIGHT) ] [EXIT LEFT] [GRASSLAND] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (TOP) ] [EXIT LEFT] [GRASSLAND] (1).xml" />
-    <None Include="Assets\2d-extras-master\Tilemap\Brushes\Tint Brush Smooth\Shaders\TintedTilemap.shader" />
-    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (LEFT) ] [EXIT TOP] [GRASSLAND] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (TOP) ] [EXIT RIGHT] [GRASSLAND] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (BOTTOM) (LEFT) ] [SWAMP] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (LEFT) (RIGHT) ] [EXIT BOTTOM] [GRASSLAND] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (BOTTOM) ] [EXIT LEFT] [GRASSLAND] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (TOP) (LEFT) ] [EXIT BOTTOM] [GRASSLAND] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (BOTTOM) (TOP) (RIGHT) ] [GRASSLAND] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (BOTTOM) (RIGHT) ] [EXIT LEFT] [SWAMP] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (TOP) ] [EXIT RIGHT] [SWAMP] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (BOTTOM) ] [EXIT RIGHT] [GRASSLAND] (1).xml" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
-    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (TOP) ] [GRASSLAND] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (BOTTOM) (TOP) ] [EXIT LEFT] [GRASSLAND] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\Localization\RU\formations.xml" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
-    <None Include="Assets\Resources\TextAssets\Localization\RU\items.xml" />
-    <None Include="Assets\Resources\TextAssets\Localization\ENG\terrain..xml" />
-    <None Include="Assets\Resources\TextAssets\Localization\ENG\toast.xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (BOTTOM) (LEFT) ] [EXIT TOP] [GRASSLAND] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (BOTTOM) (TOP) ] [EXIT RIGHT] [SWAMP] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (BOTTOM) (LEFT) (RIGHT) ] [EXIT TOP] [GRASSLAND] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\Localization\ENG\items.xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (TOP) (RIGHT) ] [EXIT LEFT] [SWAMP] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (BOTTOM) (LEFT) ] [EXIT RIGHT] [GRASSLAND] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (BOTTOM) (TOP) (LEFT) (RIGHT) ] [SWAMP] (1).xml" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
-    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (RIGHT) ] [EXIT BOTTOM] [SWAMP] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\Localization\ENG\terrain.xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (TOP) ] [EXIT BOTTOM] [SWAMP] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (LEFT) (RIGHT) ] [EXIT TOP] [SWAMP] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (BOTTOM) (TOP) (RIGHT) ] [EXIT LEFT] [GRASSLAND] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (BOTTOM) (LEFT) ] [EXIT RIGHT] [SWAMP] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (BOTTOM) (TOP) (LEFT) ] [EXIT RIGHT] [SWAMP] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (BOTTOM) (TOP) ] [SWAMP] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (TOP) ] [EXIT LEFT] [SWAMP] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (BOTTOM) (LEFT) (RIGHT) ] [EXIT TOP] [SWAMP] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (LEFT) (RIGHT) ] [GRASSLAND] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (BOTTOM) (TOP) ] [EXIT LEFT] [SWAMP] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (LEFT) ] [EXIT RIGHT] [GRASSLAND] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (BOTTOM) ] [EXIT TOP] [SWAMP] (1).xml" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
-    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (BOTTOM) (TOP) ] [EXIT RIGHT] [GRASSLAND] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\Localization\RU\stats.xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (TOP) (LEFT) (RIGHT) ] [GRASSLAND] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\Localization\RU\other_names.xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (TOP) (LEFT) ] [EXIT BOTTOM] [SWAMP] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (TOP) ] [SWAMP] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\Localization\ENG\tutorial_tips.xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (BOTTOM) ] [GRASSLAND] (1).xml" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
-    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (BOTTOM) ] [EXIT LEFT] [SWAMP] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (LEFT) ] [GRASSLAND] (1).xml" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
-    <None Include="Assets\Resources\TextAssets\Localization\RU\toast.xml" />
-    <None Include="Assets\Resources\TextAssets\Localization\ENG\tips.xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (TOP) (LEFT) ] [EXIT RIGHT] [SWAMP] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (RIGHT) ] [SWAMP] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (LEFT) (RIGHT) ] [SWAMP] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (TOP) (RIGHT) ] [EXIT BOTTOM] [GRASSLAND] (1).xml" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
-    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (LEFT) ] [SWAMP] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (LEFT) ] [EXIT RIGHT] [SWAMP] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (BOTTOM) (RIGHT) ] [SWAMP] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (BOTTOM) (TOP) (LEFT) ] [GRASSLAND] (1).xml" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
-    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (BOTTOM) ] [EXIT TOP] [GRASSLAND] (1).xml" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
-    <None Include="Assets\Resources\TextAssets\Localization\ENG\stats.xml" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
-    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (TOP) (LEFT) (RIGHT) ] [EXIT BOTTOM] [SWAMP] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (LEFT) ] [EXIT TOP] [SWAMP] (1).xml" />
-    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
-    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (TOP) (RIGHT) ] [EXIT LEFT] [GRASSLAND] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (BOTTOM) (RIGHT) ] [EXIT TOP] [SWAMP] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (RIGHT) ] [EXIT LEFT] [SWAMP] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (BOTTOM) (LEFT) ] [GRASSLAND] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\Localization\RU\tips.xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (TOP) (RIGHT) ] [GRASSLAND] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (RIGHT) ] [GRASSLAND] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (BOTTOM) (TOP) (LEFT) ] [SWAMP] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (TOP) ] [EXIT LEFT] [SWAMP] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (TOP) ] [SWAMP] (1).xml" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (RIGHT) ] [EXIT BOTTOM] [SWAMP] (1).xml" />
     <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (LEFT) ] [EXIT BOTTOM] [SWAMP] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\Localization\ENG\tips.xml.xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (TOP) (LEFT) (RIGHT) ] [SWAMP] (1).xml" />
-    <None Include="Assets\Shaders\SpriteOutline.shader" />
-    <None Include="Assets\Resources\TextAssets\Localization\RU\terrain.xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (BOTTOM) (RIGHT) ] [EXIT LEFT] [GRASSLAND] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (BOTTOM) (RIGHT) ] [EXIT TOP] [GRASSLAND] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (LEFT) (RIGHT) ] [EXIT BOTTOM] [SWAMP] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (BOTTOM) (TOP) (RIGHT) ] [SWAMP] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (TOP) ] [EXIT BOTTOM] [GRASSLAND] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (TOP) (RIGHT) ] [EXIT BOTTOM] [SWAMP] (1).xml" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (TOP) (RIGHT) ] [EXIT LEFT] [GRASSLAND] (1).xml" />
     <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (BOTTOM) (TOP) (LEFT) ] [EXIT RIGHT] [GRASSLAND] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (TOP) (RIGHT) ] [SWAMP] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (BOTTOM) (RIGHT) ] [GRASSLAND] (1).xml" />
-    <None Include="Assets\FacebookSDK\link.xml" />
-    <None Include="Assets\Shaders\VertexColorAlpha.shader" />
-    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (BOTTOM) (LEFT) (RIGHT) ] [SWAMP] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (BOTTOM) (LEFT) ] [EXIT TOP] [SWAMP] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (BOTTOM) ] [EXIT RIGHT] [SWAMP] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\Localization\ENG\skills.xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (BOTTOM) (TOP) ] [GRASSLAND] (1).xml" />
-    <None Include="Assets\Shaders\VertexColor.shader" />
-    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (LEFT) ] [EXIT BOTTOM] [GRASSLAND] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (LEFT) (RIGHT) ] [EXIT TOP] [GRASSLAND] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\Localization\ENG\ads.xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (BOTTOM) (LEFT) (RIGHT) ] [GRASSLAND] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (TOP) (LEFT) ] [EXIT RIGHT] [GRASSLAND] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\Localization\RU\skills.xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (TOP) (LEFT) ] [GRASSLAND] (1).xml" />
-    <None Include="Assets\Resources\TextAssets\Localization\RU\ads.xml" />
-    <None Include="Assets\GooglePlayGames\Plugins\Android\GooglePlayGamesManifest.plugin\AndroidManifest.xml" />
-    <None Include="Assets\Resources\TextAssets\Localization\ENG\other_names.xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (BOTTOM) (TOP) (LEFT) (RIGHT) ] [GRASSLAND] (1).xml" />
     <None Include="Assets\Resources\TextAssets\Localization\RU\tutorial_tips.xml" />
-    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (TOP) (LEFT) ] [SWAMP] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (BOTTOM) (TOP) (LEFT) (RIGHT) ] [GRASSLAND] (1).xml" />
+    <None Include="Assets\Shaders\VertexColorAlpha.shader" />
+    <None Include="Assets\Shaders\VertexColor.shader" />
+    <None Include="Assets\Resources\TextAssets\Localization\RU\terrain.xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (LEFT) (RIGHT) ] [EXIT BOTTOM] [SWAMP] (1).xml" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
+    <None Include="Assets\Resources\TextAssets\Localization\ENG\ads.xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (RIGHT) ] [EXIT TOP] [SWAMP] (1).xml" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (TOP) (LEFT) ] [EXIT BOTTOM] [SWAMP] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\Localization\RU\stats.xml" />
+    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+    <None Include="Assets\Resources\TextAssets\Localization\RU\other_names.xml" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (BOTTOM) (LEFT) (RIGHT) ] [SWAMP] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\Localization\RU\items.xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (RIGHT) ] [EXIT TOP] [GRASSLAND] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (LEFT) (RIGHT) ] [EXIT TOP] [SWAMP] (1).xml" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
+    <None Include="Assets\Resources\TextAssets\Localization\ENG\other_names.xml" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
+    <None Include="Assets\Resources\TextAssets\Localization\ENG\tutorial_tips.xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (TOP) ] [EXIT RIGHT] [GRASSLAND] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (BOTTOM) ] [EXIT RIGHT] [GRASSLAND] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (BOTTOM) (TOP) (RIGHT) ] [GRASSLAND] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (BOTTOM) (TOP) ] [EXIT RIGHT] [SWAMP] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\Localization\ENG\terrain.xml" />
+    <None Include="Assets\2d-extras-master\Tilemap\Brushes\Tint Brush Smooth\Shaders\TintedTilemap.shader" />
+    <None Include="Assets\Resources\TextAssets\Localization\RU\formations.xml" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (BOTTOM) (TOP) (LEFT) ] [SWAMP] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (BOTTOM) (RIGHT) ] [EXIT TOP] [GRASSLAND] (1).xml" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>D:/development/unity/Thirty/UnityProject/MyTestGameProject/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
@@ -616,11 +616,17 @@
     <Reference Include="com.unity.multiplayer-hlapi.Editor">
       <HintPath>D:/development/unity/Thirty/UnityProject/MyTestGameProject/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.VSCode.Editor">
+      <HintPath>D:/development/unity/Thirty/UnityProject/MyTestGameProject/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.Advertisements">
       <HintPath>D:/development/unity/Thirty/UnityProject/MyTestGameProject/Library/ScriptAssemblies/UnityEngine.Advertisements.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>D:/development/unity/Thirty/UnityProject/MyTestGameProject/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+    <Reference Include="Unity.TextMeshPro.Editor">
+      <HintPath>D:/development/unity/Thirty/UnityProject/MyTestGameProject/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>D:/development/unity/Thirty/UnityProject/MyTestGameProject/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
       <HintPath>D:/development/unity/Thirty/UnityProject/MyTestGameProject/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
@@ -634,11 +640,23 @@
     <Reference Include="UnityEngine.XR.LegacyInputHelpers">
       <HintPath>D:/development/unity/Thirty/UnityProject/MyTestGameProject/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Rider.Editor">
+      <HintPath>D:/development/unity/Thirty/UnityProject/MyTestGameProject/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+      <HintPath>D:/development/unity/Thirty/UnityProject/MyTestGameProject/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Tilemap.Editor">
+      <HintPath>D:/development/unity/Thirty/UnityProject/MyTestGameProject/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.SpatialTracking">
       <HintPath>D:/development/unity/Thirty/UnityProject/MyTestGameProject/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.SpatialTracking">
       <HintPath>D:/development/unity/Thirty/UnityProject/MyTestGameProject/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>D:/development/unity/Thirty/UnityProject/MyTestGameProject/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
       <HintPath>D:/development/unity/Thirty/UnityProject/MyTestGameProject/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
@@ -646,191 +664,182 @@
     <Reference Include="UnityEditor.XR.LegacyInputHelpers">
       <HintPath>D:/development/unity/Thirty/UnityProject/MyTestGameProject/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>D:/development/unity/Thirty/UnityProject/MyTestGameProject/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+    </Reference>
     <Reference Include="com.unity.multiplayer-hlapi.Runtime">
       <HintPath>D:/development/unity/Thirty/UnityProject/MyTestGameProject/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Runtime.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>D:/development/unity/Thirty/UnityProject/MyTestGameProject/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro">
-      <HintPath>D:/development/unity/Thirty/UnityProject/MyTestGameProject/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEngine.AIModule">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.ARModule">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.ARModule.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/Managed/UnityEngine/UnityEngine.ARModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AccessibilityModule">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.AccessibilityModule.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/Managed/UnityEngine/UnityEngine.AccessibilityModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AndroidJNIModule">
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/Managed/UnityEngine/UnityEngine.AndroidJNIModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AnimationModule">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.AnimationModule.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/Managed/UnityEngine/UnityEngine.AnimationModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AssetBundleModule">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.AssetBundleModule.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/Managed/UnityEngine/UnityEngine.AssetBundleModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AudioModule">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.AudioModule.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/Managed/UnityEngine/UnityEngine.AudioModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.ClothModule">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.ClothModule.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/Managed/UnityEngine/UnityEngine.ClothModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.CoreModule">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.CrashReportingModule">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.CrashReportingModule.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/Managed/UnityEngine/UnityEngine.CrashReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DSPGraphModule">
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/Managed/UnityEngine/UnityEngine.DSPGraphModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.DirectorModule">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.DirectorModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.FileSystemHttpModule">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.FileSystemHttpModule.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/Managed/UnityEngine/UnityEngine.DirectorModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.GameCenterModule">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.GameCenterModule.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/Managed/UnityEngine/UnityEngine.GameCenterModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.GridModule">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.GridModule.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/Managed/UnityEngine/UnityEngine.GridModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.HotReloadModule">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.HotReloadModule.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/Managed/UnityEngine/UnityEngine.HotReloadModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.IMGUIModule">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.IMGUIModule.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/Managed/UnityEngine/UnityEngine.IMGUIModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.ImageConversionModule">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.ImageConversionModule.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/Managed/UnityEngine/UnityEngine.ImageConversionModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.InputModule">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.InputModule.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/Managed/UnityEngine/UnityEngine.InputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/Managed/UnityEngine/UnityEngine.InputLegacyModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.JSONSerializeModule">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.LocalizationModule">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.LocalizationModule.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/Managed/UnityEngine/UnityEngine.LocalizationModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.ParticleSystemModule">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.PerformanceReportingModule">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.PhysicsModule">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.PhysicsModule.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/Managed/UnityEngine/UnityEngine.PhysicsModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Physics2DModule">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.Physics2DModule.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/Managed/UnityEngine/UnityEngine.Physics2DModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.ProfilerModule">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.ProfilerModule.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/Managed/UnityEngine/UnityEngine.ProfilerModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.ScreenCaptureModule">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.SharedInternalsModule">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.SpriteMaskModule">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.SpriteShapeModule">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.StreamingModule">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.StreamingModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.StyleSheetsModule">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.StyleSheetsModule.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/Managed/UnityEngine/UnityEngine.StreamingModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.SubstanceModule">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.SubstanceModule.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/Managed/UnityEngine/UnityEngine.SubstanceModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubsystemsModule">
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/Managed/UnityEngine/UnityEngine.SubsystemsModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TLSModule">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.TLSModule.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/Managed/UnityEngine/UnityEngine.TLSModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TerrainModule">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainModule.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TerrainPhysicsModule">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainPhysicsModule.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainPhysicsModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TextCoreModule">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.TextCoreModule.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/Managed/UnityEngine/UnityEngine.TextCoreModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TextRenderingModule">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.TextRenderingModule.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/Managed/UnityEngine/UnityEngine.TextRenderingModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TilemapModule">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.TilemapModule.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/Managed/UnityEngine/UnityEngine.TilemapModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UIModule">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.UIModule.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/Managed/UnityEngine/UnityEngine.UIModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UIElementsModule">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.UIElementsModule.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/Managed/UnityEngine/UnityEngine.UIElementsModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UNETModule">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.UNETModule.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/Managed/UnityEngine/UnityEngine.UNETModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UmbraModule">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.UmbraModule.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/Managed/UnityEngine/UnityEngine.UmbraModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UnityAnalyticsModule">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.UnityAnalyticsModule.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/Managed/UnityEngine/UnityEngine.UnityAnalyticsModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UnityConnectModule">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.UnityConnectModule.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/Managed/UnityEngine/UnityEngine.UnityConnectModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UnityTestProtocolModule">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.UnityTestProtocolModule.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/Managed/UnityEngine/UnityEngine.UnityTestProtocolModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UnityWebRequestModule">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UnityWebRequestAudioModule">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UnityWebRequestTextureModule">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UnityWebRequestWWWModule">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.VFXModule">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.VFXModule.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/Managed/UnityEngine/UnityEngine.VFXModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.VRModule">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.VRModule.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/Managed/UnityEngine/UnityEngine.VRModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.VehiclesModule">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.VehiclesModule.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/Managed/UnityEngine/UnityEngine.VehiclesModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.VideoModule">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.VideoModule.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/Managed/UnityEngine/UnityEngine.VideoModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.WindModule">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.XRModule">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Locator">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/Managed/Unity.Locator.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.TestRunner">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
-    </Reference>
-    <Reference Include="nunit.framework">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
     </Reference>
     <Reference Include="Facebook.Unity">
       <HintPath>D:/development/unity/Thirty/UnityProject/MyTestGameProject/Assets/FacebookSDK/Plugins/Facebook.Unity.dll</HintPath>
@@ -884,358 +893,358 @@
       <HintPath>D:/development/unity/Thirty/UnityProject/MyTestGameProject/Library/PackageCache/com.unity.purchasing@2.0.6/UnityEngine.Purchasing.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
     </Reference>
     <Reference Include="System">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.dll</HintPath>
     </Reference>
     <Reference Include="System.Core">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Core.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Core.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.Serialization">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Runtime.Serialization.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Runtime.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Xml.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Xml.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.Linq">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Xml.Linq.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Xml.Linq.dll</HintPath>
     </Reference>
     <Reference Include="System.Numerics">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Numerics.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Numerics.dll</HintPath>
     </Reference>
     <Reference Include="System.Numerics.Vectors">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Numerics.Vectors.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Numerics.Vectors.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.Http">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Net.Http.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Net.Http.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Microsoft.CSharp.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Microsoft.CSharp.dll</HintPath>
     </Reference>
     <Reference Include="System.Data">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Data.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/System.Data.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Win32.Primitives">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/Microsoft.Win32.Primitives.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/Microsoft.Win32.Primitives.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/netstandard.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/netstandard.dll</HintPath>
     </Reference>
     <Reference Include="System.AppContext">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.AppContext.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.AppContext.dll</HintPath>
     </Reference>
     <Reference Include="System.Collections.Concurrent">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Collections.Concurrent.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Collections.Concurrent.dll</HintPath>
     </Reference>
     <Reference Include="System.Collections">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Collections.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Collections.dll</HintPath>
     </Reference>
     <Reference Include="System.Collections.NonGeneric">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Collections.NonGeneric.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Collections.NonGeneric.dll</HintPath>
     </Reference>
     <Reference Include="System.Collections.Specialized">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Collections.Specialized.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Collections.Specialized.dll</HintPath>
     </Reference>
     <Reference Include="System.ComponentModel.Annotations">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.Annotations.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.Annotations.dll</HintPath>
     </Reference>
     <Reference Include="System.ComponentModel">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.dll</HintPath>
     </Reference>
     <Reference Include="System.ComponentModel.EventBasedAsync">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.EventBasedAsync.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.EventBasedAsync.dll</HintPath>
     </Reference>
     <Reference Include="System.ComponentModel.Primitives">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.Primitives.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.Primitives.dll</HintPath>
     </Reference>
     <Reference Include="System.ComponentModel.TypeConverter">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.TypeConverter.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.TypeConverter.dll</HintPath>
     </Reference>
     <Reference Include="System.Console">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Console.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Console.dll</HintPath>
     </Reference>
     <Reference Include="System.Data.Common">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Data.Common.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Data.Common.dll</HintPath>
     </Reference>
     <Reference Include="System.Diagnostics.Contracts">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.Contracts.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.Contracts.dll</HintPath>
     </Reference>
     <Reference Include="System.Diagnostics.Debug">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.Debug.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.Debug.dll</HintPath>
     </Reference>
     <Reference Include="System.Diagnostics.FileVersionInfo">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.FileVersionInfo.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.FileVersionInfo.dll</HintPath>
     </Reference>
     <Reference Include="System.Diagnostics.Process">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.Process.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.Process.dll</HintPath>
     </Reference>
     <Reference Include="System.Diagnostics.StackTrace">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.StackTrace.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.StackTrace.dll</HintPath>
     </Reference>
     <Reference Include="System.Diagnostics.TextWriterTraceListener">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.TextWriterTraceListener.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.TextWriterTraceListener.dll</HintPath>
     </Reference>
     <Reference Include="System.Diagnostics.Tools">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.Tools.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.Tools.dll</HintPath>
     </Reference>
     <Reference Include="System.Diagnostics.TraceSource">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.TraceSource.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.TraceSource.dll</HintPath>
     </Reference>
     <Reference Include="System.Drawing.Primitives">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Drawing.Primitives.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Drawing.Primitives.dll</HintPath>
     </Reference>
     <Reference Include="System.Dynamic.Runtime">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Dynamic.Runtime.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Dynamic.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="System.Globalization.Calendars">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Globalization.Calendars.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Globalization.Calendars.dll</HintPath>
     </Reference>
     <Reference Include="System.Globalization">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Globalization.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Globalization.dll</HintPath>
     </Reference>
     <Reference Include="System.Globalization.Extensions">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Globalization.Extensions.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Globalization.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="System.IO.Compression.ZipFile">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.Compression.ZipFile.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.Compression.ZipFile.dll</HintPath>
     </Reference>
     <Reference Include="System.IO">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.dll</HintPath>
     </Reference>
     <Reference Include="System.IO.FileSystem">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.FileSystem.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.FileSystem.dll</HintPath>
     </Reference>
     <Reference Include="System.IO.FileSystem.DriveInfo">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.FileSystem.DriveInfo.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.FileSystem.DriveInfo.dll</HintPath>
     </Reference>
     <Reference Include="System.IO.FileSystem.Primitives">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.FileSystem.Primitives.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.FileSystem.Primitives.dll</HintPath>
     </Reference>
     <Reference Include="System.IO.FileSystem.Watcher">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.FileSystem.Watcher.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.FileSystem.Watcher.dll</HintPath>
     </Reference>
     <Reference Include="System.IO.IsolatedStorage">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.IsolatedStorage.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.IsolatedStorage.dll</HintPath>
     </Reference>
     <Reference Include="System.IO.MemoryMappedFiles">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.MemoryMappedFiles.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.MemoryMappedFiles.dll</HintPath>
     </Reference>
     <Reference Include="System.IO.Pipes">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.Pipes.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.Pipes.dll</HintPath>
     </Reference>
     <Reference Include="System.IO.UnmanagedMemoryStream">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.UnmanagedMemoryStream.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.UnmanagedMemoryStream.dll</HintPath>
     </Reference>
     <Reference Include="System.Linq">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Linq.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Linq.dll</HintPath>
     </Reference>
     <Reference Include="System.Linq.Expressions">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Linq.Expressions.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Linq.Expressions.dll</HintPath>
     </Reference>
     <Reference Include="System.Linq.Parallel">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Linq.Parallel.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Linq.Parallel.dll</HintPath>
     </Reference>
     <Reference Include="System.Linq.Queryable">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Linq.Queryable.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Linq.Queryable.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.Http.Rtc">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Http.Rtc.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Http.Rtc.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.NameResolution">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.NameResolution.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.NameResolution.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.NetworkInformation">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.NetworkInformation.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.NetworkInformation.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.Ping">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Ping.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Ping.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.Primitives">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Primitives.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Primitives.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.Requests">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Requests.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Requests.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.Security">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Security.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Security.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.Sockets">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Sockets.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Sockets.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.WebHeaderCollection">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.WebHeaderCollection.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.WebHeaderCollection.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.WebSockets.Client">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.WebSockets.Client.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.WebSockets.Client.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.WebSockets">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.WebSockets.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.WebSockets.dll</HintPath>
     </Reference>
     <Reference Include="System.ObjectModel">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ObjectModel.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ObjectModel.dll</HintPath>
     </Reference>
     <Reference Include="System.Reflection">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.dll</HintPath>
     </Reference>
     <Reference Include="System.Reflection.Emit">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Emit.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Emit.dll</HintPath>
     </Reference>
     <Reference Include="System.Reflection.Emit.ILGeneration">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Emit.ILGeneration.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Emit.ILGeneration.dll</HintPath>
     </Reference>
     <Reference Include="System.Reflection.Emit.Lightweight">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Emit.Lightweight.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Emit.Lightweight.dll</HintPath>
     </Reference>
     <Reference Include="System.Reflection.Extensions">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Extensions.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="System.Reflection.Primitives">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Primitives.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Primitives.dll</HintPath>
     </Reference>
     <Reference Include="System.Resources.Reader">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Resources.Reader.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Resources.Reader.dll</HintPath>
     </Reference>
     <Reference Include="System.Resources.ResourceManager">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Resources.ResourceManager.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Resources.ResourceManager.dll</HintPath>
     </Reference>
     <Reference Include="System.Resources.Writer">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Resources.Writer.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Resources.Writer.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.CompilerServices.VisualC">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.CompilerServices.VisualC.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.CompilerServices.VisualC.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.Extensions">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Extensions.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.Handles">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Handles.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Handles.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.InteropServices">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.InteropServices.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.InteropServices.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.InteropServices.RuntimeInformation">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.InteropServices.WindowsRuntime">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.InteropServices.WindowsRuntime.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.InteropServices.WindowsRuntime.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.Numerics">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Numerics.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Numerics.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.Serialization.Formatters">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Serialization.Formatters.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Serialization.Formatters.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.Serialization.Json">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Serialization.Json.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Serialization.Json.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.Serialization.Primitives">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Serialization.Primitives.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Serialization.Primitives.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.Serialization.Xml">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Serialization.Xml.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Serialization.Xml.dll</HintPath>
     </Reference>
     <Reference Include="System.Security.Claims">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Claims.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Claims.dll</HintPath>
     </Reference>
     <Reference Include="System.Security.Cryptography.Algorithms">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.Algorithms.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.Algorithms.dll</HintPath>
     </Reference>
     <Reference Include="System.Security.Cryptography.Csp">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.Csp.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.Csp.dll</HintPath>
     </Reference>
     <Reference Include="System.Security.Cryptography.Encoding">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.Encoding.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.Encoding.dll</HintPath>
     </Reference>
     <Reference Include="System.Security.Cryptography.Primitives">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.Primitives.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.Primitives.dll</HintPath>
     </Reference>
     <Reference Include="System.Security.Cryptography.X509Certificates">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.X509Certificates.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.X509Certificates.dll</HintPath>
     </Reference>
     <Reference Include="System.Security.Principal">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Principal.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Principal.dll</HintPath>
     </Reference>
     <Reference Include="System.Security.SecureString">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.SecureString.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.SecureString.dll</HintPath>
     </Reference>
     <Reference Include="System.ServiceModel.Duplex">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.Duplex.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.Duplex.dll</HintPath>
     </Reference>
     <Reference Include="System.ServiceModel.Http">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.Http.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.Http.dll</HintPath>
     </Reference>
     <Reference Include="System.ServiceModel.NetTcp">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.NetTcp.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.NetTcp.dll</HintPath>
     </Reference>
     <Reference Include="System.ServiceModel.Primitives">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.Primitives.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.Primitives.dll</HintPath>
     </Reference>
     <Reference Include="System.ServiceModel.Security">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.Security.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.Security.dll</HintPath>
     </Reference>
     <Reference Include="System.Text.Encoding">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Text.Encoding.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Text.Encoding.dll</HintPath>
     </Reference>
     <Reference Include="System.Text.Encoding.Extensions">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Text.Encoding.Extensions.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Text.Encoding.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="System.Text.RegularExpressions">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Text.RegularExpressions.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Text.RegularExpressions.dll</HintPath>
     </Reference>
     <Reference Include="System.Threading">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.dll</HintPath>
     </Reference>
     <Reference Include="System.Threading.Overlapped">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Overlapped.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Overlapped.dll</HintPath>
     </Reference>
     <Reference Include="System.Threading.Tasks">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Tasks.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Tasks.dll</HintPath>
     </Reference>
     <Reference Include="System.Threading.Tasks.Parallel">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Tasks.Parallel.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Tasks.Parallel.dll</HintPath>
     </Reference>
     <Reference Include="System.Threading.Thread">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Thread.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Thread.dll</HintPath>
     </Reference>
     <Reference Include="System.Threading.ThreadPool">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.ThreadPool.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.ThreadPool.dll</HintPath>
     </Reference>
     <Reference Include="System.Threading.Timer">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Timer.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Timer.dll</HintPath>
     </Reference>
     <Reference Include="System.ValueTuple">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ValueTuple.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ValueTuple.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.ReaderWriter">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.ReaderWriter.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.ReaderWriter.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.XDocument">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XDocument.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XDocument.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.XmlDocument">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XmlDocument.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XmlDocument.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.XmlSerializer">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XmlSerializer.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XmlSerializer.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.XPath">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XPath.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XPath.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.XPath.XDocument">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XPath.XDocument.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XPath.XDocument.dll</HintPath>
     </Reference>
     <Reference Include="UnityScript">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/UnityScript.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/UnityScript.dll</HintPath>
     </Reference>
     <Reference Include="UnityScript.Lang">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/UnityScript.Lang.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/UnityScript.Lang.dll</HintPath>
     </Reference>
     <Reference Include="Boo.Lang">
-      <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll</HintPath>
+      <HintPath>C:/UnityEditor/2019.3.0f3/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
