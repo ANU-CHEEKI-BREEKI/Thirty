@@ -19,4 +19,4 @@ MonoBehaviour:
   animatedImageOriginal: {fileID: 0}
   tipText: tip_use_skills
   isLocalisedText: 1
-  direction: 1
+  direction: 0

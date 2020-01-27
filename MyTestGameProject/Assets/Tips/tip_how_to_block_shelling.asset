@@ -19,4 +19,4 @@ MonoBehaviour:
   animatedImageOriginal: {fileID: 0}
   tipText: tip_how_to_block_shelling
   isLocalisedText: 1
-  direction: 1
+  direction: 0
