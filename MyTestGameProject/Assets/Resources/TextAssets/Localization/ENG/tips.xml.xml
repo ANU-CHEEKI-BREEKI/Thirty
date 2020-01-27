@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="tip_try_to_buy_equip_and_consumables">Try to buy better equipment and consumables before the battle.  It will help you to go further and win!</string>
+  <string name="tip_try_to_train_squad_and_skills">Try to improve  the characteristics of the squad, to choose and improve the squad skills. It will help you to go further and win!</string>
+  <string name="tip_how_to_block_shelling">If you can't avoid shelling, confront it, if possible, raising the shields. But even lowered shields give you protection from shelling.</string>
+  <string name="tip_terrain_how_to_get_max_pros">Use the advantages of the terrain. For example, if stay on the road, which borders the dirt, it will be easier for you to attack and  defend yourself, and your enemy will have more difficulties.</string>
+  <string name="tip_how_to_open_new_equipmant">To make new items available in the shop, get their samples from the battle.</string>
+  <string name="tip_short_all_formations">Phalanx is an ideal formation for defence.  Free formation allows to move quickly and pounce upon the enemy. Raised shields will block  frontal shelling.</string>
+  <string name="tip_use_skills">You shouldn't underestimate squad skills. They significantly increase its  combat effectiveness.  Skill, which was  used in time can  give you superquick victory.</string>
+  <string name="tip_use_consubamles">Consumables considerably increase  chances of winning.  
+For example, pikemen, who  took up concrete defence, can be easily killed by pilums.</string>
+  <string name="tip_do_not_be_surronded">Avoid being trapped. Even if your soldiers are well-equipped and trained, you can have heavy losses.  If someone tries to trap you,  retreat and  regroup to confront the enemy.</string>
+  <string name="tip_how_to_block_charge">Meet the  enemy's charge in the phalanx.  It will repel the enemy and do damage to him. 
+You can also use the skill  "Close the ranks", which will increase resistance to the charge,  or you can throw pilums to the enemy,  they will decrease the enemy's speed of displacement.</string>
+  <string name="tip_do_not_try_to_avoid_pilums">It's difficult to avoid pilums. It's much easier to block them with shields.</string>
+  <string name="tip_how_to_check_units_health">To check health condition of your soldiers, touch  the counter of health quantity in the lower part of the screen.  
+Healthy soldiers will  shine green,  and badly wounded will shine red.</string>
+  <string name="tip_skill_arrow_valley">The squad skill  "Arrow discharge" has a long range and is rather effective  for the enemy defeat in concrete defence.</string>
+  <string name="tip_skill_charge">The squad skill  "Charge" will allow to  charge, which you'll need to do the maneuver, and to deal a devastaing blow to a weaker enemy.</string>
+  <string name="tip_skill_rally_ranks">The squad skill "Close the ranks" will increase the defence and resistance to the charge. 
+If you prefer swords, which makes phalanx formation unavailable,  this skill will balance combat characteristics of your squad.</string>
+  <string name="tip_phalanx_push">The skill "Phalanx pushback" will balance the deficiency of attacking skill of the squad in Phalanx formation.</string>
+  <string name="tip_shield_bash">The skill  "Shield bash" can pull down any enemy, having done him a significant damage.
+If you  don't let go of the shields, this skill will  add to your battle style  to the uttermost.</string>
+</resources>

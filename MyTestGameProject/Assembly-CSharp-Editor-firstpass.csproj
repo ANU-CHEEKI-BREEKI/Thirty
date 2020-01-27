@@ -117,6 +117,12 @@
     <Reference Include="com.unity.multiplayer-hlapi.Runtime">
       <HintPath>D:/development/unity/Thirty/UnityProject/MyTestGameProject/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Runtime.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.TextMeshPro.Editor">
+      <HintPath>D:/development/unity/Thirty/UnityProject/MyTestGameProject/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>D:/development/unity/Thirty/UnityProject/MyTestGameProject/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
     </Reference>
@@ -359,12 +365,6 @@
     </Reference>
     <Reference Include="winrt">
       <HintPath>D:/development/unity/Thirty/UnityProject/MyTestGameProject/Assets/Plugins/UnityPurchasing/winrt/winrt.dll</HintPath>
-    </Reference>
-    <Reference Include="TextMeshPro-2017.3-1.0.56-Editor">
-      <HintPath>D:/development/unity/Thirty/UnityProject/MyTestGameProject/Assets/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.3-1.0.56-Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="TextMeshPro-2017.3-1.0.56-Runtime">
-      <HintPath>D:/development/unity/Thirty/UnityProject/MyTestGameProject/Assets/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.3-1.0.56-Runtime.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.Advertisements">
       <HintPath>D:/development/unity/Thirty/UnityProject/MyTestGameProject/Library/PackageCache/com.unity.ads@3.3.1/Editor/UnityEditor.Advertisements.dll</HintPath>

@@ -71,6 +71,17 @@
     <Compile Include="Assets\2d-extras-master\Tilemap\Tiles\Terrain Tile\Scripts\TerrainTile.cs" />
     <Compile Include="Assets\ButtonShowAds.cs" />
     <Compile Include="Assets\CommentForDeveloper.cs" />
+    <Compile Include="Assets\FacebookSDK\Examples\Scripts\ConsoleBase.cs" />
+    <Compile Include="Assets\FacebookSDK\Examples\Scripts\LogView.cs" />
+    <Compile Include="Assets\FacebookSDK\Examples\Scripts\MenuBase.cs" />
+    <Compile Include="Assets\FacebookSDK\Examples\Scripts\SubMenus\AccessTokenMenu.cs" />
+    <Compile Include="Assets\FacebookSDK\Examples\Scripts\SubMenus\AppEvents.cs" />
+    <Compile Include="Assets\FacebookSDK\Examples\Scripts\SubMenus\AppLinks.cs" />
+    <Compile Include="Assets\FacebookSDK\Examples\Scripts\SubMenus\AppRequests.cs" />
+    <Compile Include="Assets\FacebookSDK\Examples\Scripts\SubMenus\DialogShare.cs" />
+    <Compile Include="Assets\FacebookSDK\Examples\Scripts\SubMenus\GraphRequest.cs" />
+    <Compile Include="Assets\FacebookSDK\Examples\Scripts\SubMenus\MainMenu.cs" />
+    <Compile Include="Assets\FacebookSDK\Examples\Scripts\SubMenus\Pay.cs" />
     <Compile Include="Assets\GOActivator.cs" />
     <Compile Include="Assets\GoogleMobileAds\Api\AdapterStatus.cs" />
     <Compile Include="Assets\GoogleMobileAds\Api\AdErrorEventArgs.cs" />
@@ -144,7 +155,7 @@
     <Compile Include="Assets\GooglePlayGames\BasicApi\SavedGame\SavedGameMetadataUpdate.cs" />
     <Compile Include="Assets\GooglePlayGames\BasicApi\ScorePageToken.cs" />
     <Compile Include="Assets\GooglePlayGames\BasicApi\Video\CaptureOverlayStateListener.cs" />
-    <Compile Include="Assets\GooglePlayGames\BasicApi\Video\IVideoClient.cs" />
+    <Compile Include="Assets\GooglePlayGames\BasicApi\Video\iVideoClient.cs" />
     <Compile Include="Assets\GooglePlayGames\BasicApi\Video\VideoCapabilities.cs" />
     <Compile Include="Assets\GooglePlayGames\BasicApi\Video\VideoCaptureState.cs" />
     <Compile Include="Assets\GooglePlayGames\GameInfo.cs" />
@@ -495,6 +506,7 @@
     <None Include="Assets\Resources\TextAssets\Localization\RU\formations.xml" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
     <None Include="Assets\Resources\TextAssets\Localization\RU\items.xml" />
+    <None Include="Assets\Resources\TextAssets\Localization\ENG\terrain..xml" />
     <None Include="Assets\Resources\TextAssets\Localization\ENG\toast.xml" />
     <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (BOTTOM) (LEFT) ] [EXIT TOP] [GRASSLAND] (1).xml" />
     <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (BOTTOM) (TOP) ] [EXIT RIGHT] [SWAMP] (1).xml" />
@@ -560,6 +572,7 @@
     <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\GRASSLAND\[ (RIGHT) ] [GRASSLAND] (1).xml" />
     <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (BOTTOM) (TOP) (LEFT) ] [SWAMP] (1).xml" />
     <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (LEFT) ] [EXIT BOTTOM] [SWAMP] (1).xml" />
+    <None Include="Assets\Resources\TextAssets\Localization\ENG\tips.xml.xml" />
     <None Include="Assets\Resources\TextAssets\MapBlockPathMatrix\SWAMP\[ (TOP) (LEFT) (RIGHT) ] [SWAMP] (1).xml" />
     <None Include="Assets\Shaders\SpriteOutline.shader" />
     <None Include="Assets\Resources\TextAssets\Localization\RU\terrain.xml" />
@@ -633,6 +646,12 @@
     </Reference>
     <Reference Include="com.unity.multiplayer-hlapi.Runtime">
       <HintPath>D:/development/unity/Thirty/UnityProject/MyTestGameProject/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro.Editor">
+      <HintPath>D:/development/unity/Thirty/UnityProject/MyTestGameProject/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>D:/development/unity/Thirty/UnityProject/MyTestGameProject/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/UnityEditor/2019.1.0f2/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -837,12 +856,6 @@
     </Reference>
     <Reference Include="winrt">
       <HintPath>D:/development/unity/Thirty/UnityProject/MyTestGameProject/Assets/Plugins/UnityPurchasing/winrt/winrt.dll</HintPath>
-    </Reference>
-    <Reference Include="TextMeshPro-2017.3-1.0.56-Editor">
-      <HintPath>D:/development/unity/Thirty/UnityProject/MyTestGameProject/Assets/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.3-1.0.56-Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="TextMeshPro-2017.3-1.0.56-Runtime">
-      <HintPath>D:/development/unity/Thirty/UnityProject/MyTestGameProject/Assets/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.3-1.0.56-Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
       <HintPath>D:/development/unity/Thirty/UnityProject/MyTestGameProject/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll</HintPath>
