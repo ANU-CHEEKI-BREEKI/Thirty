@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -33,22 +34,26 @@ public class MarketInventoryUI : AInventoryUI
 
     public void AddToInventory(EquipmentStack stack)
     {
-        bool t = false;
+        bool stackFinded = false;
         foreach (var inv in inventory)
         {
             if (stack.EquipmentStats.Type == inv.EquipmentStats.Type 
                 && stack.EquipmentStats.Id == inv.EquipmentStats.Id 
                 && stack.EquipmentStats.ItemDurability == inv.EquipmentStats.ItemDurability)
             {
-                t = true;
+                stackFinded = true;
                 inv.PushItems(stack);
                 break;
             }
         }
 
-        if(!t)
+
+        if(!stackFinded)
         {
-            if (inventory.Count < items.Count)
+            //if stack not finded 
+            //we need to add new stack if there are enough space for it
+            var thisItemTypeCnt = inventory.Count(s => s.EquipmentStats.Type == stack.EquipmentStats.Type);
+            if (thisItemTypeCnt < items.Count)
                 inventory.Add(stack);
             else
                 throw new System.Exception("больше нет места в инвентаре");

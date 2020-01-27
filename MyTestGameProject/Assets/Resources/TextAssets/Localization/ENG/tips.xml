@@ -22,4 +22,7 @@ If you prefer swords, which makes phalanx formation unavailable,  this skill wil
   <string name="tip_phalanx_push">The skill "Phalanx pushback" will balance the deficiency of attacking skill of the squad in Phalanx formation.</string>
   <string name="tip_shield_bash">The skill  "Shield bash" can pull down any enemy, having done him a significant damage.
 If you  don't let go of the shields, this skill will  add to your battle style  to the uttermost.</string>
+  <string name="tip_arrow_valley_warning_shoot">Before a arrows volley, several premature arrows always arrive. So you can understand that it’s time to hide or run.</string>
+  <string name="tip_skills_and_cons_warning_text">To apply a skill or consumable, the squad leader will always yeal about it.
+So, from the text above the squad, you can understand what he gonna do at the next moment in time.</string>
 </resources>

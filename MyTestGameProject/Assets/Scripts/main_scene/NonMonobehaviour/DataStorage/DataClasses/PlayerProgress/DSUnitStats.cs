@@ -79,11 +79,21 @@ public class DSUnitStats : IResetable, IMergeable
         Reset();
     }
     
+    public void RepairMaxMinRanges()
+    {
+        //get current data copy
+        var dataCopy = JsonUtility.FromJson(JsonUtility.ToJson(this), this.GetType());
+        //reset data to repair min and max ranges
+        this.Reset();
+        //merge data to restore val value
+        this.Merge(dataCopy);
+    }
+
     public void Reset()
     {
-        health = new Stat(50, 200, 50);
-        attack = new Stat(0.2f, 0.7f, 0.2f);
-        defence = new Stat(0.2f, 0.7f, 0.2f);
+        health = new Stat(100, 200, 50);
+        attack = new Stat(0.4f, 0.7f, 0.2f);
+        defence = new Stat(0.4f, 0.7f, 0.2f);
         speed = new Stat(35, 50, 35);
         aceleration = new Stat(35, 60, 35);
         rotationSpeed = new Stat(360, 460, 360);
